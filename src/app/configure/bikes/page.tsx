@@ -1,29 +1,23 @@
 
-import { FAMILIES } from '@/app/constants/constants'
+import BtnLink from '@/app/components/BtnLink'
+import { BIKES } from '@/app/constants/constants'
 import React from 'react'
 
 type Props = {}
 
 const BikesPage = async (props: Props) => {
 
-    const allBikes: any[] = []
-
-    const allBikesRes = await fetch(`${FAMILIES}`, {cache: 'no-store'})
+    // ovde zaradi sortingot treba da odlucime dali ke bide client side 
+    const allBikesRes = await fetch(`${BIKES}`, {cache: 'no-store'})
     const allBikesData = await allBikesRes.json()
 
-
-    allBikesData.forEach((family: any) => {
-      family.bikes.forEach((bike:any) => allBikes.push(bike))
-    })
-    
-
-    console.log('all bikes ama posle logika', allBikes);
 
   return (
     <>
     <div>BikesPage</div>
     <ul>
-        {allBikes.map((bike: any) => <li key={bike.id}>{bike.name}</li>)}
+        {allBikesData.map((bike: any) => <li key={bike.bikeId}>{bike.model} {bike.bikeId} ---- <BtnLink link={`/configure/bike/${bike.bikeId}`} text={'Configuration'} />  --- <BtnLink link={`/motorcycles/${bike.type}/${bike.model}`} text={'Details'} /></li>)}
+        
     </ul>
     </>
   )

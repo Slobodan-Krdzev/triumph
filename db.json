@@ -3,300 +3,317 @@
     {
       "id": 1,
       "type": "adventure",
-      "shortDesc": "Explore a world of adventure, with motorcycles built to always reach the end of the road, ready to go anywhere and accomplish anything.",
-      "bikes": [
-        {
-          "bikeId": 1,
-          "name": "Tiger 800",
-          "price": 15000,
-          "galery": {
-            "mainImage": {
-              "src": "image",
-              "alt": "Tiger 800 Main"
-            },
-            "leftSideImage": {
-              "src": "image",
-              "alt": "Tiger 800 Left Side"
-            },
-            "rightSideImage": {
-              "src": "image",
-              "alt": "Tiger 800 Right Side"
-            }
-          }
-        },
-        {
-          "bikeId": 2,
-          "name": "Tiger 1000",
-          "price": 20000,
-          "galery": {
-            "mainImage": {
-              "src": "image",
-              "alt": "Tiger 1000 Main"
-            },
-            "leftSideImage": {
-              "src": "image",
-              "alt": "Tiger 1000 Left Side"
-            },
-            "rightSideImage": {
-              "src": "image",
-              "alt": "Tiger 1000 Right Side"
-            }
-          }
-        },
-        {
-          "bikeId": 3,
-          "name": "Tiger 800 R",
-          "price": 15000,
-          "galery": {
-            "mainImage": {
-              "src": "image",
-              "alt": "Roadster 800 Main"
-            },
-            "leftSideImage": {
-              "src": "image",
-              "alt": "Roadster 800 Left Side"
-            },
-            "rightSideImage": {
-              "src": "image",
-              "alt": "Roadster 800 Right Side"
-            }
-          }
-        },
-        {
-          "bikeId": 4,
-          "name": "Tiger 1000 R",
-          "price": 20000,
-          "galery": {
-            "mainImage": {
-              "src": "image",
-              "alt": "Roadster 1000 Main"
-            },
-            "leftSideImage": {
-              "src": "image",
-              "alt": "Roadster 1000 Left Side"
-            },
-            "rightSideImage": {
-              "src": "image",
-              "alt": "Roadster 1000 Right Side"
-            }
-          }
-        }
-      ]
+      "shortDesc": "Explore a world of adventure, with motorcycles built to always reach the end of the road, ready to go anywhere and accomplish anything."
     },
     {
       "id": 2,
       "type": "classics",
-      "shortDesc": "Triumph builds ground-breaking motorcycles and incredible three-cylinder engines with an emphasis on power, torque and instant response.",
-      "bikes": [
-        {
-          "bikeId": 5,
-          "name": "Classic 800",
-          "price": 15000,
-          "galery": {
-            "mainImage": {
-              "src": "image",
-              "alt": "Classic 800 Main"
-            },
-            "leftSideImage": {
-              "src": "image",
-              "alt": "Classic 800 Left Side"
-            },
-            "rightSideImage": {
-              "src": "image",
-              "alt": "Classic 800 Right Side"
-            }
-          }
-        },
-        {
-          "bikeId": 6,
-          "name": "Classic 1000",
-          "price": 20000,
-          "galery": {
-            "mainImage": {
-              "src": "image",
-              "alt": "Classic 1000 Main"
-            },
-            "leftSideImage": {
-              "src": "image",
-              "alt": "Classic 1000 Left Side"
-            },
-            "rightSideImage": {
-              "src": "image",
-              "alt": "Classic 1000 Right Side"
-            }
-          }
-        },
-        {
-          "bikeId": 7,
-          "name": "Classic 800 R",
-          "price": 15000,
-          "galery": {
-            "mainImage": {
-              "src": "image",
-              "alt": "Classic 800 Main"
-            },
-            "leftSideImage": {
-              "src": "image",
-              "alt": "Classic 800 Left Side"
-            },
-            "rightSideImage": {
-              "src": "image",
-              "alt": "Classic 800 Right Side"
-            }
-          }
-        },
-        {
-          "bikeId": 8,
-          "name": "Classic 1000 R",
-          "price": 20000,
-          "galery": {
-            "mainImage": {
-              "src": "image",
-              "alt": "Classic 1000 Main"
-            },
-            "leftSideImage": {
-              "src": "image",
-              "alt": "Classic 1000 Left Side"
-            },
-            "rightSideImage": {
-              "src": "image",
-              "alt": "Classic 1000 Right Side"
-            }
-          }
-        }
-      ]
+      "shortDesc": "Triumph builds ground-breaking motorcycles and incredible three-cylinder engines with an emphasis on power, torque and instant response."
     },
     {
       "id": 3,
       "type": "roadsters",
-      "shortDesc": "The legendary Bonneville bloodline is built into our Modern Classics, with an unparalleled performance history, racing success and cultural impact.",
-      "bikes": [
-        {
-          "bikeId": 9,
-          "name": "Roadster 800",
-          "price": 15000,
-          "galery": {
-            "mainImage": {
-              "src": "image",
-              "alt": "Roadster 800 Main"
-            },
-            "leftSideImage": {
-              "src": "image",
-              "alt": "Roadster 800 Left Side"
-            },
-            "rightSideImage": {
-              "src": "image",
-              "alt": "Roadster 800 Right Side"
-            }
-          }
-        },
-        {
-          "bikeId": 10,
-          "name": "Roadster 1000",
-          "price": 20000,
-          "galery": {
-            "mainImage": {
-              "src": "image",
-              "alt": "Roadster 1000 Main"
-            },
-            "leftSideImage": {
-              "src": "image",
-              "alt": "Roadster 1000 Left Side"
-            },
-            "rightSideImage": {
-              "src": "image",
-              "alt": "Roadster 1000 Right Side"
-            }
-          }
-        },
-        {
-          "bikeId": 11,
-          "name": "Roadster 800 R",
-          "price": 15000,
-          "galery": {
-            "mainImage": {
-              "src": "image",
-              "alt": "Roadster 800 Main"
-            },
-            "leftSideImage": {
-              "src": "image",
-              "alt": "Roadster 800 Left Side"
-            },
-            "rightSideImage": {
-              "src": "image",
-              "alt": "Roadster 800 Right Side"
-            }
-          }
-        },
-        {
-          "bikeId": 12,
-          "name": "Roadster 1000 R",
-          "price": 20000,
-          "galery": {
-            "mainImage": {
-              "src": "image",
-              "alt": "Roadster 1000 Main"
-            },
-            "leftSideImage": {
-              "src": "image",
-              "alt": "Roadster 1000 Left Side"
-            },
-            "rightSideImage": {
-              "src": "image",
-              "alt": "Roadster 1000 Right Side"
-            }
-          }
-        }
-      ]
+      "shortDesc": "The legendary Bonneville bloodline is built into our Modern Classics, with an unparalleled performance history, racing success and cultural impact."
     },
     {
       "id": 4,
       "type": "rocket",
-      "shortDesc": "Equipped with the largest production engine in the world and boasting the highest torque, this is the ultimate high-performance muscle roadster.",
-      "bikes": [
-        {
-          "bikeId": 13,
-          "name": "Rocket 2500",
-          "price": 25000,
-          "galery": {
-            "mainImage": {
-              "src": "image",
-              "alt": "Rocket 800 Main"
-            },
-            "leftSideImage": {
-              "src": "image",
-              "alt": "Rocket 800 Left Side"
-            },
-            "rightSideImage": {
-              "src": "image",
-              "alt": "Rocket 800 Right Side"
-            }
-          }
-        },
-        {
-          "bikeId": 14,
-          "name": "Rocket 2500 POSLE rEVALIDATE",
-          "price": 25000,
-          "galery": {
-            "mainImage": {
-              "src": "image",
-              "alt": "Rocket 800 Main"
-            },
-            "leftSideImage": {
-              "src": "image",
-              "alt": "Rocket 800 Left Side"
-            },
-            "rightSideImage": {
-              "src": "image",
-              "alt": "Rocket 800 Right Side"
-            }
-          }
-        }
-
-      ]
+      "shortDesc": "Equipped with the largest production engine in the world and boasting the highest torque, this is the ultimate high-performance muscle roadster."
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "bikes": [
+    {
+      "bikeId": 1,
+      "model": "Tiger 800",
+      "price": 15000,
+      "type": "adventure",
+      "galery": {
+        "mainImage": {
+          "src": "image",
+          "alt": "Tiger 800 Main"
+        },
+        "leftSideImage": {
+          "src": "image",
+          "alt": "Tiger 800 Left Side"
+        },
+        "rightSideImage": {
+          "src": "image",
+          "alt": "Tiger 800 Right Side"
+        }
+      }
+    },
+    {
+      "bikeId": 2,
+      "model": "Tiger 1000",
+      "price": 20000,
+      "type": "adventure",
+
+      "galery": {
+        "mainImage": {
+          "src": "image",
+          "alt": "Tiger 1000 Main"
+        },
+        "leftSideImage": {
+          "src": "image",
+          "alt": "Tiger 1000 Left Side"
+        },
+        "rightSideImage": {
+          "src": "image",
+          "alt": "Tiger 1000 Right Side"
+        }
+      }
+    },
+    {
+      "bikeId": 3,
+      "model": "Tiger 800 R",
+      "price": 15000,
+      "type": "adventure",
+
+      "galery": {
+        "mainImage": {
+          "src": "image",
+          "alt": "Roadster 800 Main"
+        },
+        "leftSideImage": {
+          "src": "image",
+          "alt": "Roadster 800 Left Side"
+        },
+        "rightSideImage": {
+          "src": "image",
+          "alt": "Roadster 800 Right Side"
+        }
+      }
+    },
+    {
+      "bikeId": 4,
+      "model": "Tiger 1000 R",
+      "price": 20000,
+      "type": "adventure",
+
+      "galery": {
+        "mainImage": {
+          "src": "image",
+          "alt": "Roadster 1000 Main"
+        },
+        "leftSideImage": {
+          "src": "image",
+          "alt": "Roadster 1000 Left Side"
+        },
+        "rightSideImage": {
+          "src": "image",
+          "alt": "Roadster 1000 Right Side"
+        }
+      }
+    },
+    {
+      "bikeId": 5,
+      "model": "Classic 800",
+      "price": 15000,
+      "type": "classics",
+
+      "galery": {
+        "mainImage": {
+          "src": "image",
+          "alt": "Classic 800 Main"
+        },
+        "leftSideImage": {
+          "src": "image",
+          "alt": "Classic 800 Left Side"
+        },
+        "rightSideImage": {
+          "src": "image",
+          "alt": "Classic 800 Right Side"
+        }
+      }
+    },
+    {
+      "bikeId": 6,
+      "model": "Classic 1000",
+      "price": 20000,
+      "type": "classics",
+
+      "galery": {
+        "mainImage": {
+          "src": "image",
+          "alt": "Classic 1000 Main"
+        },
+        "leftSideImage": {
+          "src": "image",
+          "alt": "Classic 1000 Left Side"
+        },
+        "rightSideImage": {
+          "src": "image",
+          "alt": "Classic 1000 Right Side"
+        }
+      }
+    },
+    {
+      "bikeId": 7,
+      "model": "Classic 800 R",
+      "price": 15000,
+      "type": "classics",
+
+      "galery": {
+        "mainImage": {
+          "src": "image",
+          "alt": "Classic 800 Main"
+        },
+        "leftSideImage": {
+          "src": "image",
+          "alt": "Classic 800 Left Side"
+        },
+        "rightSideImage": {
+          "src": "image",
+          "alt": "Classic 800 Right Side"
+        }
+      }
+    },
+    {
+      "bikeId": 8,
+      "model": "Classic 1000 R",
+      "price": 20000,
+      "type": "classics",
+
+      "galery": {
+        "mainImage": {
+          "src": "image",
+          "alt": "Classic 1000 Main"
+        },
+        "leftSideImage": {
+          "src": "image",
+          "alt": "Classic 1000 Left Side"
+        },
+        "rightSideImage": {
+          "src": "image",
+          "alt": "Classic 1000 Right Side"
+        }
+      }
+    },
+    {
+      "bikeId": 9,
+      "model": "Roadster 800",
+      "price": 15000,
+      "type": "roadsters",
+
+      "galery": {
+        "mainImage": {
+          "src": "image",
+          "alt": "Roadster 800 Main"
+        },
+        "leftSideImage": {
+          "src": "image",
+          "alt": "Roadster 800 Left Side"
+        },
+        "rightSideImage": {
+          "src": "image",
+          "alt": "Roadster 800 Right Side"
+        }
+      }
+    },
+    {
+      "bikeId": 10,
+      "model": "Roadster 1000",
+      "price": 20000,
+      "type": "roadsters",
+
+      "galery": {
+        "mainImage": {
+          "src": "image",
+          "alt": "Roadster 1000 Main"
+        },
+        "leftSideImage": {
+          "src": "image",
+          "alt": "Roadster 1000 Left Side"
+        },
+        "rightSideImage": {
+          "src": "image",
+          "alt": "Roadster 1000 Right Side"
+        }
+      }
+    },
+    {
+      "bikeId": 11,
+      "model": "Roadster 800 R",
+      "price": 15000,
+      "type": "roadsters",
+
+      "galery": {
+        "mainImage": {
+          "src": "image",
+          "alt": "Roadster 800 Main"
+        },
+        "leftSideImage": {
+          "src": "image",
+          "alt": "Roadster 800 Left Side"
+        },
+        "rightSideImage": {
+          "src": "image",
+          "alt": "Roadster 800 Right Side"
+        }
+      }
+    },
+    {
+      "bikeId": 12,
+      "model": "Roadster 1000 R",
+      "price": 20000,
+      "type": "roadsters",
+
+      "galery": {
+        "mainImage": {
+          "src": "image",
+          "alt": "Roadster 1000 Main"
+        },
+        "leftSideImage": {
+          "src": "image",
+          "alt": "Roadster 1000 Left Side"
+        },
+        "rightSideImage": {
+          "src": "image",
+          "alt": "Roadster 1000 Right Side"
+        }
+      }
+    },
+    {
+      "bikeId": 13,
+      "model": "Rocket 2500",
+      "price": 25000,
+      "type": "rocket",
+
+      "galery": {
+        "mainImage": {
+          "src": "image",
+          "alt": "Rocket 800 Main"
+        },
+        "leftSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Left Side"
+        },
+        "rightSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Right Side"
+        }
+      }
+    },
+    {
+      "bikeId": 14,
+      "model": "Rocket 2500 POSLE rEVALIDATE",
+      "price": 25000,
+      "type": "rocket",
+
+      "galery": {
+        "mainImage": {
+          "src": "image",
+          "alt": "Rocket 800 Main"
+        },
+        "leftSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Left Side"
+        },
+        "rightSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Right Side"
+        }
+      }
+    }
+  ]
 }
