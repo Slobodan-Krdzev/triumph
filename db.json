@@ -314,6 +314,27 @@
           "alt": "Rocket 800 Right Side"
         }
       }
+    },
+    {
+      "bikeId": 15,
+      "model": "Rocket 2500 admin panel ",
+      "price": 25000,
+      "type": "rocket",
+
+      "galery": {
+        "mainImage": {
+          "src": "image",
+          "alt": "Rocket 800 Main"
+        },
+        "leftSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Left Side"
+        },
+        "rightSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Right Side"
+        }
+      }
     }
   ]
 }

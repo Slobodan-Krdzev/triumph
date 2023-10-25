@@ -1,21 +1,32 @@
 "use client";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import React, { useState } from "react";
 
 type NavListItemProps = {
   text: string;
-  action: (type:string) => void
 };
 
 
-const NavListItem = ({ text, action }: NavListItemProps) => {
+const NavListItem = ({ text }: NavListItemProps) => {
 
+  const router = useRouter()
+  const searchParams = useSearchParams()
+
+  const handleHover = () => {
+    router.push(`/?navItem=${text}`)
+    
+  }
+
+  const handleHoverOut = () => {
+    router.push(`/`)
+  }
 
   return (
     <>
       <li
-        className="mr-4 uppercase font-semibold"
-        onMouseEnter={() => action(text)}
-        onMouseLeave={() => action(text)}
+        className="px-4 uppercase font-semibold border cursor-pointer"
+        onMouseEnter={handleHover}
+        onMouseLeave={handleHoverOut}
       >
         {text}
       </li>

@@ -1,18 +1,18 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import Link from "next/link";
 import logo from "../../../public/images/logo.png";
 import NavbarLinkList from "./NavbarLinkList";
-import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 
 const Nav = () => {
-  const [isSectionShown, setIsSectionShown] = useState(false);
-  const [sectionType, setSectionType] = useState('')
+ 
+  const query = useSearchParams()
 
-  const handleHiddenSection = (type: string) => {
-    setIsSectionShown(!isSectionShown);
-    setSectionType(type)
-  };
+  const getQueryParam = () => {
+
+    return query.get('navItem')
+  }
 
   return (
     <>
@@ -21,10 +21,11 @@ const Nav = () => {
           <Image src={logo} alt={"Logo"} height={70} />
         </Link>
 
-        <NavbarLinkList action={handleHiddenSection} />
+        <NavbarLinkList />
       </nav>
 
-      {isSectionShown && <div className="text-slate-500 border h-screen">{sectionType}</div>}
+      {getQueryParam() && <div className="text-slate-500 border p-10">{getQueryParam()}</div>}
+      {/* {isSectionShown && <div className="text-slate-500 border h-screen">{sectionType}</div>} */}
     </>
   );
 };

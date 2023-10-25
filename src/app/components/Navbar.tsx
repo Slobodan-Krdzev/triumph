@@ -2,13 +2,13 @@ import React from 'react'
 import Prenav from './Prenav';
 import Nav from './Nav';
 
-type Props = {}
 
-const Navbar = async (props: Props) => {
+
+const Navbar = async () => {
   return (
     <header>
         <Prenav />
-        <Nav />
+        <Nav/>
     </header>
   )
 }

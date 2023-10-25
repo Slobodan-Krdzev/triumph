@@ -15,7 +15,7 @@ const AdventurePage = async () => {
       <div className='flex'>
         <h1>Adventure</h1>
 
-        {bikes.map((bike: any) => <p key={bike.bikeId} className='ml-10'>{bike.model}</p>)}
+        {bikes.map((bike: any) => <Link key={bike.bikeId} className='ml-10' href={`/motorcycles/adventure/${bike.model}`}>{bike.model}</Link>)}
 
       </div>
 
