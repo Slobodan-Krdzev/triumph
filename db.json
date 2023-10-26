@@ -3,7 +3,14 @@
     {
       "id": 1,
       "type": "adventure",
-      "shortDesc": "Explore a world of adventure, with motorcycles built to always reach the end of the road, ready to go anywhere and accomplish anything."
+      "mainBikeLogoImage": {
+        "url": "adventure/mainBikeLogo.png",
+        "alt": "Adventure Main Bike Logo"
+      },
+      "shortDesc": "Explore a world of adventure, with motorcycles built to always reach the end of the road, ready to go anywhere and accomplish anything.",
+      "familyPageBannerDesc": "The next generation Tiger has arrived. The state-of-the-art adventure bikes with exciting distinctive three-cylinder engines, pioneering progressive technology and equipment, rider ergonomics for ultimate control, and flexible neutral handling. Every Tiger is built with maximum capabilities to take you anywhere in style, comfort and control. The Triumph Tiger is the ultimate adventure series of adventure bikes that allow you to test every moment.",
+      "familyPageBannerVideo": "adventure/adventureHeroVideo.webm"
+
     },
     {
       "id": 2,

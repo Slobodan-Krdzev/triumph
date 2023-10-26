@@ -10,15 +10,20 @@ type NavListItemProps = {
 const NavListItem = ({ text }: NavListItemProps) => {
 
   const router = useRouter()
+  const pathname = usePathname()
   const searchParams = useSearchParams()
 
   const handleHover = () => {
-    router.push(`/?navItem=${text}`)
+
+    console.log(pathname);
+    
+
+    router.push(`${pathname}/?navItem=${text}`)
     
   }
 
   const handleHoverOut = () => {
-    router.push(`/`)
+    router.push(`${pathname}`)
   }
 
   return (

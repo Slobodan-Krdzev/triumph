@@ -16,8 +16,8 @@ const Nav = () => {
 
   return (
     <>
-      <nav className="flex bg items-center px-5">
-        <Link href={""}>
+      <nav className="flex bg items-center px-9">
+        <Link href={"/"}>
           <Image src={logo} alt={"Logo"} height={70} />
         </Link>
 

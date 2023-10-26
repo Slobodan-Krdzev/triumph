@@ -8,7 +8,7 @@ type BtnProps = {
 
 const BtnLink = ({link, text}: BtnProps) => {
   return (
-    <Link href={link}> {text}</Link>
+    <Link href={link} className='bg-red-400 uppercase font-bold px-5 py-3 text-slate-100'> {text}</Link>
   )
 }
 
