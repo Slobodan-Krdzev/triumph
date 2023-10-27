@@ -1,6 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://db.onlinewebfonts.com/c/1dd1c7d8df011c2266f33ebd5927c0ab?family=DIN+2014+Demi');
+@font-face {
+  font-family: "DIN 2014 Demi";
+  src: url("https://db.onlinewebfonts.com/t/1dd1c7d8df011c2266f33ebd5927c0ab.eot");
+  src: url("https://db.onlinewebfonts.com/t/1dd1c7d8df011c2266f33ebd5927c0ab.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/1dd1c7d8df011c2266f33ebd5927c0ab.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/1dd1c7d8df011c2266f33ebd5927c0ab.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/1dd1c7d8df011c2266f33ebd5927c0ab.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/1dd1c7d8df011c2266f33ebd5927c0ab.svg#DIN 2014 Demi")format("svg");
+}
+
 
 * {
   margin: 0;
@@ -32,6 +43,7 @@
   background-color: var(--primary-bg-color);
 }
 
+
 .gray-bg{
   background-color: var(--secondary-bg-color);
 }
@@ -51,6 +63,10 @@
 .outline-gray-1px {
   outline: 1px #DFDFDF solid;
 }
+
+.main-btn-black-hover:hover {
+  background-color: var(--primary-hover-color);
+} 
 
 .border{
   border: 2px solid red;

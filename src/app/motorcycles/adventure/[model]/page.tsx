@@ -3,7 +3,8 @@ import React from 'react'
 
 const BikeModelPage = async ({params}: any) => {
 
-  const bikeRes = await fetch(`${BIKES}?model=${params.model}`)
+  // sredi cache
+  const bikeRes = await fetch(`${BIKES}?model=${params.model}`, {cache: 'no-store'})
   const bike = await bikeRes.json()
     
   console.log("bike", bike);

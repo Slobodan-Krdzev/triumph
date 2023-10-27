@@ -1,12 +1,13 @@
 import React from 'react'
 
 type SectionTitleH2Props = {
-    text: string
+    text: string,
+    marginBot?: boolean
 }
 
-const SectionTitleH2 = ({text}: SectionTitleH2Props) => {
+const SectionTitleH2 = ({text, marginBot}: SectionTitleH2Props) => {
   return (
-    <h2 className="font-semibold mb-10 text-2xl">{text}</h2>
+    <h2 className={`font-semibold text-2xl ${marginBot ? '': 'mb-5'}`}>{text}</h2>
   )
 }
 

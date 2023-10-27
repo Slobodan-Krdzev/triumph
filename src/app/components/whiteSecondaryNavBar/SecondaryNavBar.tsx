@@ -17,7 +17,7 @@ const SecondaryNavBar = ({ items = [] }: SecondaryNavBarProps) => {
         {/* RIGHT SIDE */}
         <div className="flex items-center">
           <p className="mr-10 uppercase font-semibold text-neutral-800 text-sm">FIND A DEALER</p>
-          <MainBtn text={'CONFIGURATION'} link={"/configure"}/>
+          <MainBtn bgBlack={false} text={'CONFIGURATION'} link={"/configure"}/>
         </div>
       </section>
     );

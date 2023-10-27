@@ -16,10 +16,15 @@ type BikeInfoTextImageBtnProps = {
         src: string,
         alt: string
     },
-    imageOnTheLeft?: boolean
+    video?: {
+        src: string,
+        type: string
+    }
+    imageOnTheLeft?: boolean,
+    blackBtn: boolean
 }
 
-const BikeInfoTextImageBtn = ({title, desc, price, ctaBtn, image, imageOnTheLeft}: BikeInfoTextImageBtnProps) => {
+const BikeInfoTextImageBtn = ({title, desc, price, ctaBtn, image, video, imageOnTheLeft, blackBtn}: BikeInfoTextImageBtnProps) => {
   return (
     <section className="flex justify-between px-8 my-14">
       <div className={`basis-2/5 flex flex-col justify-center px-20 text-left ${imageOnTheLeft ? 'order-2' : ''}`}>
@@ -28,7 +33,7 @@ const BikeInfoTextImageBtn = ({title, desc, price, ctaBtn, image, imageOnTheLeft
         <PageParagraph marginBot={true} text={desc}/>
         {price && <PageParagraph text={`Price From €${price}`}/>  }
         
-        <MainBtn text={ctaBtn.text} link={ctaBtn.link} isLink={true}/>
+        <MainBtn text={ctaBtn.text} link={ctaBtn.link} isLink={true} bgBlack={blackBtn}/>
         </div>
         
       </div>

@@ -56,6 +56,7 @@ const AdventurePage = async () => {
           src: "/images/adventure/tiger1200Gt955x537.avif",
           alt: "Tiger 1200 GT",
         }}
+        blackBtn={false}
       />
 
       <BikeInfoTextImageBtn
@@ -72,6 +73,7 @@ const AdventurePage = async () => {
           src: "/images/adventure/tiger1200Rally.avif",
           alt: "Tiger 1200 GT",
         }}
+        blackBtn={false}
       />
 
       <BikeInfoTextImageBtn
@@ -87,7 +89,37 @@ const AdventurePage = async () => {
           src: "/images/adventure/tiger660.avif",
           alt: "Tiger 1200 GT",
         }}
+        blackBtn={false}
       />
+
+      <BikeInfoTextImageBtn
+        title={"TIGER 900 RALLY"}
+        desc={
+          "Возбудлива 'Tiger' серија дизајнирана за максимална 'off-road' авантура, удобност, контрола и многу способности, врз темелот на најдобрите досегашни перформанси и спецификација на 3-цилиндричниот мотор."
+        }
+        ctaBtn={{
+          text: "Детали",
+          link: "/motorcycles/adventure/Tiger 900 Rally",
+        }}
+        image={{
+          src: "/images/adventure/tiger900Rally.avif",
+          alt: "Tiger 1200 GT",
+        }}
+        blackBtn={true}
+      />
+
+      <BikeInfoTextImageBtn
+        title={"TIGER 1200"}
+        desc={"Triumph Tiger 1200: авантуристички 'all-terain' мотор што го освојува светот, усовршен од вас…"}
+        ctaBtn={{
+          text: "Детали",
+          link: "/motorcycles/adventure/Tiger 1200",
+        }}
+        image={{
+          src: "/images/adventure/tiger1200Gif.gif",
+          alt: "video/mp4",
+        }}
+        blackBtn={true}     />
     </main>
   );
 };
