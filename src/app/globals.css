@@ -8,14 +8,79 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #000000;
+  --secondary-color: #CD192D;
+  --tetriary-color: #505050;
+
+  --primary-hover-color: #505050;
+  --secondary-hover-color: #A11D2C;
+  --tetriary-hover-color: #2A2A2A;
+  --white-btn-hover-color: #A7A9AC;
+
+  --primary-bg-color: #000000;
+  --secondary-bg-color: #2A2A2A;
+  --tetriary-bg-color: #f4f4f4;
+  --white-bg-color: #ffffff;
+}
+
 .gray-cl{
   background-color: #2A2A2A;
 }
 
 .bg {
-  background-color: black;
+  background-color: var(--primary-bg-color);
+}
+
+.gray-bg{
+  background-color: var(--secondary-bg-color);
+}
+
+.slight-white-bg{
+  background-color: var(--tetriary-bg-color);
+}
+
+.text-red{
+  color: var(--secondary-color);
+}
+
+.red-bg-color{ 
+  background-color: var(--secondary-color);
+}
+
+.outline-gray-1px {
+  outline: 1px #DFDFDF solid;
 }
 
 .border{
   border: 2px solid red;
+}
+
+/* HOVER EFFECT LINKS UNDERLINE */
+
+.main-btn-hover:hover{
+  background-color: var(--secondary-hover-color);
+}
+
+.underline-hover-effect{
+  display: inline-block;
+  position: relative;
+}
+
+.underline-hover-effect::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--secondary-color);
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+}
+
+.underline-hover-effect:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }

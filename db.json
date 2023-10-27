@@ -9,7 +9,16 @@
       },
       "shortDesc": "Explore a world of adventure, with motorcycles built to always reach the end of the road, ready to go anywhere and accomplish anything.",
       "familyPageBannerDesc": "The next generation Tiger has arrived. The state-of-the-art adventure bikes with exciting distinctive three-cylinder engines, pioneering progressive technology and equipment, rider ergonomics for ultimate control, and flexible neutral handling. Every Tiger is built with maximum capabilities to take you anywhere in style, comfort and control. The Triumph Tiger is the ultimate adventure series of adventure bikes that allow you to test every moment.",
-      "familyPageBannerVideo": "adventure/adventureHeroVideo.webm"
+      "familyPageBannerVideo": "adventure/adventureHeroVideo.webm",
+      "topSectionInfo": {
+        "image": {
+          "src": "/images/adventure/firstSectionImage.avif",
+          "alt": "Adventure Bikes"
+        },
+        "title": "Направен за Авантури",
+        "desc1": "Секој моторцикл во 'Tigеr' фамилијата е роден со вистински дух за авантура. 'Triumph Tiger' моторциклот живее во нашата крв од моментот кога првиот 'Triumph Tiger' моторцикл освои три златни медали на '1936 International Six Days Trial' во 1936 година, и со тоа започна првото поглавје од најдолготрајниот авантуристички моторцикл.",
+        "desc2": "Познато по нивното агилно управување, командна позиција на возење, карактеристична силуета и опрема со високи спецификации, секој 'Tiger' моторцикл нуди највисоко ниво на стил, удобност и контрола."
+      }
 
     },
     {
@@ -31,84 +40,84 @@
   "bikes": [
     {
       "bikeId": 1,
-      "model": "Tiger 800",
+      "model": "Tiger 1200",
       "price": 15000,
       "type": "adventure",
       "galery": {
         "mainImage": {
           "src": "image",
-          "alt": "Tiger 800 Main"
+          "alt": "Tiger 1200 Main"
         },
         "leftSideImage": {
           "src": "image",
-          "alt": "Tiger 800 Left Side"
+          "alt": "Tiger 1200 Left Side"
         },
         "rightSideImage": {
           "src": "image",
-          "alt": "Tiger 800 Right Side"
+          "alt": "Tiger 1200 Right Side"
         }
       }
     },
     {
       "bikeId": 2,
-      "model": "Tiger 1000",
+      "model": "Tiger 660",
       "price": 20000,
       "type": "adventure",
 
       "galery": {
         "mainImage": {
           "src": "image",
-          "alt": "Tiger 1000 Main"
+          "alt": "Tiger 660 Main"
         },
         "leftSideImage": {
           "src": "image",
-          "alt": "Tiger 1000 Left Side"
+          "alt": "Tiger 660 Left Side"
         },
         "rightSideImage": {
           "src": "image",
-          "alt": "Tiger 1000 Right Side"
+          "alt": "Tiger 660 Right Side"
         }
       }
     },
     {
       "bikeId": 3,
-      "model": "Tiger 800 R",
+      "model": "Tiger 850 Sport",
       "price": 15000,
       "type": "adventure",
 
       "galery": {
         "mainImage": {
           "src": "image",
-          "alt": "Roadster 800 Main"
+          "alt": "Roadster 850 Sport Main"
         },
         "leftSideImage": {
           "src": "image",
-          "alt": "Roadster 800 Left Side"
+          "alt": "Roadster 850 Sport Left Side"
         },
         "rightSideImage": {
           "src": "image",
-          "alt": "Roadster 800 Right Side"
+          "alt": "Roadster 850 Sport Right Side"
         }
       }
     },
     {
       "bikeId": 4,
-      "model": "Tiger 1000 R",
+      "model": "Tiger 900 ",
       "price": 20000,
       "type": "adventure",
 
       "galery": {
         "mainImage": {
           "src": "image",
-          "alt": "Roadster 1000 Main"
+          "alt": "Roadster 900 Main"
         },
         "leftSideImage": {
           "src": "image",
-          "alt": "Roadster 1000 Left Side"
+          "alt": "Roadster 900 Left Side"
         },
         "rightSideImage": {
           "src": "image",
-          "alt": "Roadster 1000 Right Side"
+          "alt": "Roadster 900 Right Side"
         }
       }
     },

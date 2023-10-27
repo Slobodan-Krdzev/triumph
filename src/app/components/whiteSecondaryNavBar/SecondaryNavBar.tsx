@@ -1,6 +1,5 @@
-import Link from "next/link";
-import React from "react";
-import BtnLink from "../BtnLink";
+import MainBtn from "../MainBtn";
+import LinkItem from "./LinkItem";
 
 type SecondaryNavBarProps = {
   items: any[];
@@ -9,24 +8,16 @@ type SecondaryNavBarProps = {
 const SecondaryNavBar = ({ items = [] }: SecondaryNavBarProps) => {
   if (items) {
     return (
-      <section className="flex justify-between px-10 py-1">
+      <section className="flex justify-between px-8 outline-gray-1px sticky top-0 bg-white">
         {/* LEFT SIDE */}
         <div className="flex items-center">
-          <p className="text-rose-700 font-bold uppercase italic">Adventure</p>
-          {items.map((item: any) => (
-            <Link
-              key={item.itemId}
-              className="ml-10 uppercase font-semibold"
-              href={`/motorcycles/adventure/${item.model}`}
-            >
-              {item.model}
-            </Link>
-          ))}
+          <p className="text-red text-xl font-bold uppercase italic mr-10 tracking-tighter">Adventure</p>
+          {items.map((item: any) => <LinkItem key={item.id} model={item.model}/>)}
         </div>
         {/* RIGHT SIDE */}
         <div className="flex items-center">
-          <p className="mr-10 uppercase font-semibold">FIND A DEALER</p>
-          <BtnLink text={'CONFIGURATION'} link={"/configure"}/>
+          <p className="mr-10 uppercase font-semibold text-neutral-800 text-sm">FIND A DEALER</p>
+          <MainBtn text={'CONFIGURATION'} link={"/configure"}/>
         </div>
       </section>
     );

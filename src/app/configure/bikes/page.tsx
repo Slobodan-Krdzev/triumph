@@ -1,5 +1,5 @@
 
-import BtnLink from '@/app/components/BtnLink'
+import BtnLink from '@/app/components/MainBtn'
 import { BIKES } from '@/app/constants/constants'
 import React from 'react'
 

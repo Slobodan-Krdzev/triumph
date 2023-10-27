@@ -1,7 +1,7 @@
 import React from "react";
 import { BIKES, FAMILIES } from "../constants/constants";
 import { filterOutBikesByFamily } from "../helpers/filterBikesByFamily";
-import BtnLink from "../components/BtnLink";
+import BtnLink from "../components/MainBtn";
 
 const ConfigurePage = async () => {
 
