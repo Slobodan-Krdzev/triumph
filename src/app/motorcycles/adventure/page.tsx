@@ -1,3 +1,4 @@
+import GrayBand from "@/app/components/GrayBand";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
 import PageHeroSection from "@/app/components/familiySharedComponents/PageHeroSection";
 import PageParagraph from "@/app/components/familiySharedComponents/PageParagraph";
@@ -61,6 +62,16 @@ const AdventurePage = async () => {
           mobileTextRight={bike.mobileTextRight}
         />
       ))}
+
+      <GrayBand itemOne={{
+        text: "Контакт",
+        url: "/",
+        icon: "/point.svg"
+      }} itemTwo={{
+        text: "Тест Возење",
+        url: "/",
+        icon: "/bike.svg"
+      }}/>
 
       
     </main>
