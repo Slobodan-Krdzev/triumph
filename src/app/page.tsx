@@ -5,7 +5,7 @@ import CardLinkItem from "./components/homePageComponents/CardLinkItem";
 import { HomeCardLinkType } from "./types/HomeTypes/types";
 
 const linkCardsSection: HomeCardLinkType[] = [{
-  title: 'Вашиот "Thriump" од соништата, поблиску од кога било кога',
+  title: 'Вашиот "Thriump" од соништата, поблиску од било кога',
   image: '/images/home/discoverBikesImg.avif',
   text: "Истражи ги моделите",
   url: '/configure'
