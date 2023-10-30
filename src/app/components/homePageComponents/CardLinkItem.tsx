@@ -32,10 +32,10 @@ const CardLinkItem = ({ title, image, text, url }: CardLinkItemProps) => {
         )}
       </div>
 
-      <h2 className="lg:text-xl uppercase font-semibold tracking-tighter my-6">
+      <h2 className="lg:text-xl text-base uppercase font-semibold tracking-tighter my-6">
         {title}
       </h2>
-      <p className="lg:text-base font-semibold uppercase">{text}</p>
+      <p className="lg:text-base text-sm font-semibold uppercase">{text}</p>
     </Link>
   );
 };
