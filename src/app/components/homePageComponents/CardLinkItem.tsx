@@ -1,4 +1,5 @@
 "use client";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -23,12 +24,17 @@ const CardLinkItem = ({ title, image, text, url }: CardLinkItemProps) => {
       <div className="relative">
         <Image src={image} alt={title} width={1500} height={270} />
         {isHovered && (
-          <div className="overlay z-1 w-full h-full absolute transform top-0 left-0 right-0 flex justify-center items-center">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 , transition: {duration: 0.3}}}
+            exit={{ opacity: 0 }}
+            className="overlay z-1 w-full h-full absolute transform top-0 left-0 right-0 flex justify-center items-center"
+          >
             {" "}
             <p className="z-2 text-body font-semibold uppercase text-white ">
               {text}
             </p>
-          </div>
+          </motion.div>
         )}
       </div>
 
