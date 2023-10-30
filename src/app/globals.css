@@ -72,6 +72,7 @@
   border: 2px solid red;
 }
 
+
 /* HOVER EFFECT LINKS UNDERLINE */
 
 .main-btn-hover:hover{
@@ -100,3 +101,25 @@
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+/* IMAGE ZOOM TRANSFORM */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  transform: scale(1.025);
+}
+
+.zoom-link-image img, h2, p {
+  transition: all 0.3s ease-in-out;
+}
+
+.zoom-link-image:hover img {
+  overflow: hidden;
+  transform: scale(1.03);
+
+}
+
+
+
+
