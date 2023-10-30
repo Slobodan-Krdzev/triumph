@@ -45,11 +45,11 @@ export default async function Home() {
       />
 
       <section className="py-16 text-center">
-        <h1 className="text-6xl font-semibold mb-12">Добредојдовте</h1>
-        <h2 className="text-2xl uppercase font-semibold tracking-tighter">Каде би сакале да започнете?</h2>
+        <h1 className="md:text-6xl text-4xl font-semibold mb-12">Добредојдовте</h1>
+        <h2 className="md:text-2xl text-xl uppercase font-semibold tracking-tighter">Каде би сакале да започнете?</h2>
       </section>
 
-      <section className="flex flex-col md:flex-row md:px-8 px-4 md:gap-4">
+      <section className="pb-16 flex flex-col md:flex-row md:px-8 px-4 md:gap-4">
         {linkCardsSection.map(card => <CardLinkItem key={card.title} title={card.title} image={card.image} text={card.text} url={card.url}/>)}
       </section>
       <DEMOFOOTER />
