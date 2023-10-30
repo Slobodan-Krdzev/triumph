@@ -19,9 +19,9 @@ const PageHeroSection = ({
   image,
 }: PageHeroSectionProps) => {
   return (
-    <section className="bg-neutral-800 flex justify-between pl-8">
-      <div className="flex basis-1/2 flex-col justify-center py-10 text-white">
-        <div className="pr-40">
+    <section className="bg-neutral-800 flex flex-col lg:flex-row justify-between lg:pl-8">
+      <div className="flex flex-col justify-center py-10 text-white lg:basis-1/2 order-2 lg:order-1 px-4 lg:px-0">
+        <div className="lg:pr-40">
           <PageTitle text={title} />
           {mainBikeLogo && (
             <Image
@@ -39,7 +39,7 @@ const PageHeroSection = ({
         </div>
       </div>
 
-      <div className="flex basis-1/2 justify-center text-white">
+      <div className="flex lg:basis-1/2 justify-center text-white order-1 lg:order-2">
         <video autoPlay muted loop>
           <source src={`/images/${video}`} type="video/mp4"/>
         </video>

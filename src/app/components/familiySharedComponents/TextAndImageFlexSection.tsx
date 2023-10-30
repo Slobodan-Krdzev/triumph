@@ -14,11 +14,11 @@ type TextAndImageProps = {
 
 const TextAndImageFlexSection = ({title, textMain, textSecondary, image}: TextAndImageProps) => {
   return (
-    <section className='flex justify-between'>
+    <section className='flex flex-col lg:flex-row justify-between'>
         <div className='basis-1/2'>
             <Image src={image.src} alt={image.alt} height={0} width={1000}/>
         </div>
-        <div className='flex flex-col justify-center p-28 basis-1/2'>
+        <div className='flex flex-col justify-center lg:p-28 p-4 py-8 basis-1/2'>
             <SectionTitleH2 text={title}/>
             <PageParagraph marginBot={true} text={textMain}/>
 

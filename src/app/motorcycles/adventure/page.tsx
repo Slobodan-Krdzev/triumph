@@ -17,7 +17,7 @@ const AdventurePage = async () => {
 
   return (
     <main className="relative">
-      <SecondaryNavBar items={bikes} />
+      {/* <SecondaryNavBar items={bikes} /> */}
       <PageHeroSection
         title={familyData[0].type}
         mainBikeLogo={familyData[0].mainBikeLogoImage}
@@ -25,8 +25,8 @@ const AdventurePage = async () => {
         video={familyData[0].familyPageBannerVideo}
       />
 
-      <section className="py-32">
-        <div className="flex flex-col justify-items-center items-center w-2/4 m-auto text-center">
+      <section className="py-16 lg:py-32">
+        <div className="flex flex-col justify-items-center items-center lg:w-2/4 w-11/12 m-auto text-center">
           <SectionTitleH2 text="THE ULTIMATE RANGE OF ADVENTURE MOTORCYCLES" />
           <PageParagraph
             marginBot={true}
@@ -74,6 +74,8 @@ const AdventurePage = async () => {
           alt: "Tiger 1200 GT",
         }}
         blackBtn={false}
+        mobileTextRight={true}
+
       />
 
       <BikeInfoTextImageBtn
