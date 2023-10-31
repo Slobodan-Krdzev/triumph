@@ -1,5 +1,5 @@
 import Link from "next/link";
-import FooterList from "./FooterList";
+import FooterList from "./DescktopFooterList";
 import Image from "next/image";
 
 const footerLists = [
@@ -95,7 +95,7 @@ const footerLists = [
   },
 ];
 
-const Footer = () => {
+const DesktopFooter = () => {
   return (
     <footer className="px-8 border-t-2 border-t-zinc-600 pt-16">
       <div className="flex ">
@@ -149,4 +149,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default DesktopFooter;

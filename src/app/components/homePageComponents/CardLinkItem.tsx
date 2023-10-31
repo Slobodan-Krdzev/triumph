@@ -1,4 +1,6 @@
 "use client";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -31,8 +33,10 @@ const CardLinkItem = ({ title, image, text, url }: CardLinkItemProps) => {
             className="overlay z-1 w-full h-full absolute transform top-0 left-0 right-0 flex justify-center items-center"
           >
             {" "}
-            <p className="z-2 text-body font-semibold uppercase text-white ">
+            <p className="z-2 text-body font-semibold uppercase text-white flex flex-col items-center">
               {text}
+              <FontAwesomeIcon icon={faArrowRight} />
+
             </p>
           </motion.div>
         )}
@@ -41,7 +45,7 @@ const CardLinkItem = ({ title, image, text, url }: CardLinkItemProps) => {
       <h2 className="lg:text-xl text-base uppercase font-semibold tracking-tighter my-6">
         {title}
       </h2>
-      <p className="lg:text-base text-sm font-semibold uppercase">{text}</p>
+      <p className="lg:text-base text-sm font-semibold uppercase flex gap-2 items-center">{text} <FontAwesomeIcon icon={faArrowRight} /></p>
     </Link>
   );
 };
