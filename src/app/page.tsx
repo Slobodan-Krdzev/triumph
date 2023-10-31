@@ -2,6 +2,7 @@ import BanerAndCTASection from "./components/BanerAndCTASection";
 import DEMOFOOTER from "./components/DEMOFOOTER";
 import GrayBand from "./components/GrayBand";
 import CardLinkItem from "./components/homePageComponents/CardLinkItem";
+import DiscoverThriumphSection from "./components/homePageComponents/DiscoverThriumphSection";
 import LatestModelsCarousellSection from "./components/homePageComponents/LatestModelsCarousellSection";
 import { HomeCardLinkType } from "./types/HomeTypes/types";
 
@@ -57,7 +58,7 @@ export default async function Home() {
 
       <BanerAndCTASection text={"Конфигурирајте го вашиот перфектен мотор"} image={"/images/bigBannerImg.avif"} link={"/configure"} btnText={"Конфигурирај"}/>
       <LatestModelsCarousellSection/>
-      
+      <DiscoverThriumphSection />
       <DEMOFOOTER />
 
     </>

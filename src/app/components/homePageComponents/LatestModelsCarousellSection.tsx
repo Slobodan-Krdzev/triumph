@@ -44,7 +44,7 @@ const LatestModelsCarousellSection = () => {
   };
 
   return (
-    <section className="flex items-center flex-col overflow-hidden relative pt-16">
+    <section className="flex items-center flex-col overflow-hidden relative pt-16 basis-1/2">
       <SectionTitleH2 text={"Најнови Модели"} color={"dark"} />
 
       <div className="carousell-indicators z-10 flex justify-between w-1/6 text-xl text-neutral-600">
@@ -59,7 +59,7 @@ const LatestModelsCarousellSection = () => {
 
       <div
         style={{ transform: `translate(-${activeIndex * 100}%)` }}
-        className="transition-transform delay-500 ease-in-out flex mt-16"
+        className="transition-transform delay-300 ease-in-out flex mt-16"
       >
         {carousellItems.map((item) => (
           <LatestModelsCarousellItem
