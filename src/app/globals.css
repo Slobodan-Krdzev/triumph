@@ -64,6 +64,10 @@
   outline: 1px #DFDFDF solid;
 }
 
+.main-btn-black-hover {
+  transition: all 0.2s ease-in-out;
+}
+
 .main-btn-black-hover:hover {
   background-color: var(--primary-hover-color);
 } 
@@ -74,6 +78,10 @@
 
 
 /* HOVER EFFECT LINKS UNDERLINE */
+
+.main-btn-hover {
+  transition: all 0.2s ease-in-out;
+}
 
 .main-btn-hover:hover{
   background-color: var(--secondary-hover-color);
@@ -120,6 +128,12 @@
 
 }
 
+/*LATEST MODELS CAROUSELL INDICATORS POSITIONING */
 
+.carousell-indicators {
+  position: absolute;
+  top: 31%;
+  right: 19%;
+}
 
 

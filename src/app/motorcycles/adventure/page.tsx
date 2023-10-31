@@ -28,7 +28,7 @@ const AdventurePage = async () => {
 
       <section className="py-16 lg:py-32">
         <div className="flex flex-col justify-items-center items-center lg:w-2/4 w-11/12 m-auto text-center">
-          <SectionTitleH2 text="THE ULTIMATE RANGE OF ADVENTURE MOTORCYCLES" />
+          <SectionTitleH2 text="THE ULTIMATE RANGE OF ADVENTURE MOTORCYCLES" color="dark"/>
           <PageParagraph
             marginBot={true}
             text="Open up a world of adventure, with motorcycles built to go the distance."
