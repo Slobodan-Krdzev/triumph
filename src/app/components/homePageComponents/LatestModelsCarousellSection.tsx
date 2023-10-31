@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import SectionTitleH2 from "../familiySharedComponents/SectionTitleH2";
 import LatestModelsCarousellItem from "./LatestModelsCarousellItem";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 const carousellItems = [
   {
@@ -49,11 +51,15 @@ const LatestModelsCarousellSection = () => {
 
       <div className="carousell-indicators z-10 flex justify-between w-1/6 text-xl text-neutral-600">
         <p>
-          {activeIndex + 1} / {carousellItems.length}
+          0{activeIndex + 1} / 0{carousellItems.length}
         </p>
         <div className="flex justify-between gap-4">
-          <button onClick={() => updateIndex(activeIndex - 1)}>-</button>
-          <button onClick={() => updateIndex(activeIndex + 1)}>+</button>
+          <button onClick={() => updateIndex(activeIndex - 1)}>
+            <FontAwesomeIcon icon={faArrowLeft} />
+          </button>
+          <button onClick={() => updateIndex(activeIndex + 1)}>
+            <FontAwesomeIcon icon={faArrowRight} />
+          </button>
         </div>
       </div>
 
