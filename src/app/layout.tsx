@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import Navbar from './components/Navbar'
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
+import Footer from './components/footer/Footer';
 config.autoAddCss = false;
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,7 +24,10 @@ export default function RootLayout({
       <body className={inter.className}>
       {/* <Navbar/> */}
         
-        {children}</body>
+        {children}
+        <Footer/>
+        
+        </body>
     </html>
   )
 }

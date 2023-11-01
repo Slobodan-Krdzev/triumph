@@ -96,14 +96,14 @@ const footerLists = [
 
 const DesktopFooter = () => {
   return (
-    <footer className="px-8 border-t-2 border-t-zinc-600 pt-16">
+    <div className="px-8 border-t-2 border-t-zinc-600 pt-16">
       <div className="flex ">
         {footerLists.map((list) => (
           <FooterList key={list.title} title={list.title} items={list.items} />
         ))}
       </div>
       <BottomFoot/>
-    </footer>
+    </div>
   );
 };
 
