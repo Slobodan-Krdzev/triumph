@@ -680,6 +680,302 @@
       }
     },
     {
+      "bikeId": 18,
+      "model": "bobber-purple-stelth-edition",
+      "price": "Цени Наскоро",
+      "category": "classics",
+      "subFamilyCategory":"stealth",
+      "specialEdition": "stealth",
+      "familyPageInfo": {
+        "title": "BOBBER PURPLE STEALTH EDITION",
+        "desc": "BOBBER PURPLE STEALTH EDITION",
+        "link": {
+          "text": "Детали",
+          "url": "motorcycles/classics/bonneville-boober/bobber-purple-stelth-edition"
+        },
+        "image": {
+          "src": "/images/classics/bobberStealth.avif",
+          "alt": "Bobber Stealth"
+        },
+        "blackBtn": true,
+        "imageOnTheLeft": false,
+        "mobileTextRight": false
+      },
+      "galery": {
+        "mainImage": {
+          "src": "image",
+          "alt": "Rocket 800 Main"
+        },
+        "leftSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Left Side"
+        },
+        "rightSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Right Side"
+        }
+      }
+    },
+    {
+      "bikeId": 19,
+      "model": "scrambler-900-orange-stealth-edition",
+      "price": "Цени Наскоро",
+      "category": "classics",
+      "subFamilyCategory":"stealth",
+      "specialEdition": "stealth",
+      "familyPageInfo": {
+        "title": "SCRAMBLER 900 ORANGE STEALTH EDITION",
+        "desc": "SCRAMBLER 900 ORANGE STEALTH EDITION",
+        "link": {
+          "text": "Детали",
+          "url": "motorcycles/classics/bonneville-scrambler-900/scrambler-900-orange-stealth-edition"
+        },
+        "image": {
+          "src": "/images/classics/scrambler900Orange.avif",
+          "alt": "Bobber Stealth"
+        },
+        "blackBtn": true,
+        "imageOnTheLeft": false,
+        "mobileTextRight": false
+      },
+      "galery": {
+        "mainImage": {
+          "src": "image",
+          "alt": "Rocket 800 Main"
+        },
+        "leftSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Left Side"
+        },
+        "rightSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Right Side"
+        }
+      }
+    },
+    {
+      "bikeId": 20,
+      "model": "speed-twin-900-green-stealth-edition",
+      "price": "Цени Наскоро",
+      "category": "classics",
+      "subFamilyCategory":"stealth",
+      "specialEdition": "stealth",
+      "familyPageInfo": {
+        "title": "SPEED TWIN 900 GREEN EDITION STEALTH EDITION",
+        "desc": "SPEED TWIN 900 GREEN EDITION STEALTH EDITION",
+        "link": {
+          "text": "Детали",
+          "url": "motorcycles/classics/bonneville-speed-twin-900/speed-twin-900-green-stealth-edition"
+        },
+        "image": {
+          "src": "/images/classics/speedTwin900Stealth.avif",
+          "alt": "Spped Twin 900 Green"
+        },
+        "blackBtn": true,
+        "imageOnTheLeft": false,
+        "mobileTextRight": false
+      },
+      "galery": {
+        "mainImage": {
+          "src": "image",
+          "alt": "Rocket 800 Main"
+        },
+        "leftSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Left Side"
+        },
+        "rightSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Right Side"
+        }
+      }
+    },
+    {
+      "bikeId": 21,
+      "model": "speed-twin-1200-red-stealth-edition",
+      "price": "Цени Наскоро",
+      "category": "classics",
+      "subFamilyCategory":"stealth",
+      "specialEdition": "stealth",
+      "familyPageInfo": {
+        "title": "SPEED TWIN 1200 RED STEALTH EDITION",
+        "desc": "SPEED TWIN 1200 RED STEALTH EDITION",
+        "link": {
+          "text": "Детали",
+          "url": "motorcycles/classics/bonneville-speed-twin-900/speed-twin-1200-red-stealth-edition"
+        },
+        "image": {
+          "src": "/images/classics/speedTwin1200Stealth.avif",
+          "alt": "Speed Twin Stealth"
+        },
+        "blackBtn": true,
+        "imageOnTheLeft": false,
+        "mobileTextRight": false
+      },
+      "galery": {
+        "mainImage": {
+          "src": "image",
+          "alt": "Rocket 800 Main"
+        },
+        "leftSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Left Side"
+        },
+        "rightSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Right Side"
+        }
+      }
+    },
+    {
+      "bikeId": 22,
+      "model": "speedmaster-red-stealth-edition",
+      "price": "Цени Наскоро",
+      "category": "classics",
+      "subFamilyCategory":"stealth",
+      "specialEdition": "stealth",
+      "familyPageInfo": {
+        "title": "SPEEDMASTER RED STEALTH EDITION",
+        "desc": "SPEEDMASTER RED STEALTH EDITION",
+        "link": {
+          "text": "Детали",
+          "url": "motorcycles/classics/bonneville-speedmaster/speedmaster-red-stealth-edition"
+        },
+        "image": {
+          "src": "/images/classics/bonnevilleSpeedmasterStealth.avif",
+          "alt": "Speed Twin Stealth"
+        },
+        "blackBtn": true,
+        "imageOnTheLeft": false,
+        "mobileTextRight": false
+      },
+      "galery": {
+        "mainImage": {
+          "src": "image",
+          "alt": "Rocket 800 Main"
+        },
+        "leftSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Left Side"
+        },
+        "rightSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Right Side"
+        }
+      }
+    },
+    {
+      "bikeId": 23,
+      "model": "t100-blue-stealth-edition",
+      "price": "Цени Наскоро",
+      "category": "classics",
+      "subFamilyCategory":"stealth",
+      "specialEdition": "stealth",
+      "familyPageInfo": {
+        "title": "T100 BLUE STEALTH EDITION",
+        "desc": "T100 BLUE STEALTH EDITION",
+        "link": {
+          "text": "Детали",
+          "url": "motorcycles/classics/bonneville-t100/t100-blue-stealth-edition"
+        },
+        "image": {
+          "src": "/images/classics/bonnevilleT100Stealth.avif",
+          "alt": "Speed Twin Stealth"
+        },
+        "blackBtn": true,
+        "imageOnTheLeft": false,
+        "mobileTextRight": false
+      },
+      "galery": {
+        "mainImage": {
+          "src": "image",
+          "alt": "Rocket 800 Main"
+        },
+        "leftSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Left Side"
+        },
+        "rightSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Right Side"
+        }
+      }
+    },
+    {
+      "bikeId": 24,
+      "model": "t120-blue-stealth-edition",
+      "price": "Цени Наскоро",
+      "category": "classics",
+      "subFamilyCategory":"stealth",
+      "specialEdition": "stealth",
+      "familyPageInfo": {
+        "title": "T120 BLUE STEALTH EDITION",
+        "desc": "T120 BLUE STEALTH EDITION",
+        "link": {
+          "text": "Детали",
+          "url": "motorcycles/classics/bonneville-t120/t120-blue-stealth-edition"
+        },
+        "image": {
+          "src": "/images/classics/bonnevilleT120Stealth.avif",
+          "alt": "Speed Twin Stealth"
+        },
+        "blackBtn": true,
+        "imageOnTheLeft": false,
+        "mobileTextRight": false
+      },
+      "galery": {
+        "mainImage": {
+          "src": "image",
+          "alt": "Rocket 800 Main"
+        },
+        "leftSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Left Side"
+        },
+        "rightSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Right Side"
+        }
+      }
+    },
+    {
+      "bikeId": 25,
+      "model": "t120-black-stealth-edition",
+      "price": "Цени Наскоро",
+      "category": "classics",
+      "subFamilyCategory":"stealth",
+      "specialEdition": "stealth",
+      "familyPageInfo": {
+        "title": "T120 BLACK STEALTH EDITION",
+        "desc": "T120 BLACK STEALTH EDITION",
+        "link": {
+          "text": "Детали",
+          "url": "motorcycles/classics/bonneville-t120/t120-black-stealth-edition"
+        },
+        "image": {
+          "src": "/images/classics/bonnevilleT120StealthBlack.avif",
+          "alt": "Speed Twin Stealth"
+        },
+        "blackBtn": true,
+        "imageOnTheLeft": false,
+        "mobileTextRight": false
+      },
+      "galery": {
+        "mainImage": {
+          "src": "image",
+          "alt": "Rocket 800 Main"
+        },
+        "leftSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Left Side"
+        },
+        "rightSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Right Side"
+        }
+      }
+    },
+    {
       "bikeId": 15,
       "model": "Rocket 2500 admin panel ",
       "price": 25000,

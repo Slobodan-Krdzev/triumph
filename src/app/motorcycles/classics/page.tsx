@@ -1,3 +1,4 @@
+import StelthCarousell from "@/app/components/classicsPageComp/StelthCarousell";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
 import PageHeroSection from "@/app/components/familiySharedComponents/PageHeroSection";
 import PageParagraph from "@/app/components/familiySharedComponents/PageParagraph";
@@ -23,6 +24,19 @@ const ClassicPage = async () => {
     const filteredBikes = allBikes.filter(
       (bike: any) => bike.subFamilyCategory === cat
     );
+
+    return filteredBikes;
+  };
+
+  const getBikesBySpecialEdition = (edition: string) => {
+    const allBikes = bikes;
+
+    // type treba da e bike
+    const filteredBikes = allBikes.filter(
+      (bike: any) => bike.specialEdition === edition
+    );
+
+    console.log("ovde", allBikes);
 
     return filteredBikes;
   };
@@ -99,7 +113,14 @@ const ClassicPage = async () => {
 
       <section className="flex flex-wrap px-8">
         {getBikesBySubFamCategory("1200cc").map((bike: any) => (
-          <DiscoverThriumphCard key={bike.bikeId} desc={bike.familyPageInfo.desc} image={bike.familyPageInfo.image.src} title={bike.familyPageInfo.title} url={bike.familyPageInfo.link.url} btnText={'Детали'} />
+          <DiscoverThriumphCard
+            key={bike.bikeId}
+            desc={bike.familyPageInfo.desc}
+            image={bike.familyPageInfo.image.src}
+            title={bike.familyPageInfo.title}
+            url={bike.familyPageInfo.link.url}
+            btnText={"Детали"}
+          />
         ))}
       </section>
 
@@ -122,7 +143,13 @@ const ClassicPage = async () => {
         ))}
       </section>
 
-      <section></section>
+      <section className="lg:py-16 lg:px-8 flex flex-col ">
+        <div className="text-center">
+          <SectionTitleH2 text="Новата Stealth Серија" color="dark" />
+        </div>
+
+        <StelthCarousell bikes={getBikesBySpecialEdition("stealth")} />
+      </section>
     </>
   );
 };
