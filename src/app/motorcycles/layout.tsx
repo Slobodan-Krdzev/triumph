@@ -10,7 +10,7 @@ export default function FamilyLayout({
         {/* Include shared UI here e.g. a header or sidebar */}
    
         {children}
-        <DesktopFooter/>
+        {/* <DesktopFooter/> */}
 
       </section>
     )

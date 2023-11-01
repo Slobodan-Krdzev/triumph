@@ -8,13 +8,12 @@ import SecondaryNavBar from "@/app/components/whiteSecondaryNavBar/SecondaryNavB
 import { BIKES, FAMILIES } from "@/app/constants/constants";
 
 const AdventurePage = async () => {
-  const familyRes = await fetch(`${FAMILIES}?type=adventure`, {
-    cache: "no-store",
-  });
+  const familyRes = await fetch(`${FAMILIES}?type=adventure`, {next: {revalidate: 3000}});
   const familyData = await familyRes.json();
 
-  const bikesRes = await fetch(`${BIKES}?type=adventure`);
+  const bikesRes = await fetch(`${BIKES}?category=adventure`, {next: {revalidate: 3000}});
   const bikes = await bikesRes.json();
+
 
   return (
     <main className="relative">
@@ -44,22 +43,22 @@ const AdventurePage = async () => {
         image={familyData[0].topSectionInfo.image}
       />
 
-      {familyData[0].bikesInfo.map((bike: any) => (
+       {bikes.map((bike: any) => (
         <BikeInfoTextImageBtn
-          key={bike.title}
-          title={bike.title}
-          desc={bike.desc}
+          key={bike.familyPageInfo.title}
+          title={bike.familyPageInfo.title}
+          desc={bike.familyPageInfo.desc}
           ctaBtn={{
-            text: bike.link.text,
-            link: bike.link.link,
+            text: bike.familyPageInfo.link.text,
+            link: bike.familyPageInfo.link.url,
           }}
           image={{
-            src: bike.image.src,
-            alt: bike.image.alt,
+            src: bike.familyPageInfo.image.src,
+            alt: bike.familyPageInfo.image.alt,
           }}
-          blackBtn={bike.blackBtn}
-          imageOnTheLeft={bike.imageOnTheLeft}
-          mobileTextRight={bike.mobileTextRight}
+          blackBtn={bike.familyPageInfo.blackBtn}
+          imageOnTheLeft={bike.familyPageInfo.imageOnTheLeft}
+          mobileTextRight={bike.familyPageInfo.mobileTextRight}
         />
       ))}
 

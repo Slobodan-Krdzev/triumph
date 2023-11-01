@@ -11,9 +11,10 @@ type CardLinkItemProps = {
   image: string;
   text: string;
   url: string;
+  desc?: string;
 };
 
-const CardLinkItem = ({ title, image, text, url }: CardLinkItemProps) => {
+const CardLinkItem = ({ title, image, text, url, desc }: CardLinkItemProps) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -28,7 +29,7 @@ const CardLinkItem = ({ title, image, text, url }: CardLinkItemProps) => {
         {isHovered && (
           <motion.div
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 , transition: {duration: 0.3}}}
+            animate={{ opacity: 1, transition: { duration: 0.3 } }}
             exit={{ opacity: 0 }}
             className="overlay z-1 w-full h-full absolute transform top-0 left-0 right-0 flex justify-center items-center"
           >
@@ -36,7 +37,6 @@ const CardLinkItem = ({ title, image, text, url }: CardLinkItemProps) => {
             <p className="z-2 text-body font-semibold uppercase text-white flex flex-col items-center">
               {text}
               <FontAwesomeIcon icon={faArrowRight} />
-
             </p>
           </motion.div>
         )}
@@ -45,7 +45,12 @@ const CardLinkItem = ({ title, image, text, url }: CardLinkItemProps) => {
       <h2 className="lg:text-xl text-base uppercase font-semibold tracking-tighter my-6">
         {title}
       </h2>
-      <p className="lg:text-base text-sm font-semibold uppercase flex gap-2 items-center">{text} <FontAwesomeIcon icon={faArrowRight} /></p>
+
+      {desc && <p className="mb-8">{desc}</p>}
+
+      <p className="lg:text-base text-sm font-semibold capitalize flex gap-2 items-center">
+        {text} <FontAwesomeIcon icon={faArrowRight} />
+      </p>
     </Link>
   );
 };
