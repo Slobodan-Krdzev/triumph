@@ -1,7 +1,5 @@
-import Link from "next/link";
-import FooterList from "./DescktopFooterList";
-import Image from "next/image";
 import BottomFoot from "./BottomFoot";
+import FooterList from "./DescktopFooterList";
 
 const footerLists = [
   {

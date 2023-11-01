@@ -17,10 +17,8 @@ const DiscoverThriumphCard = ({
   btnText,
 }: DiscoverThriumphCardProps) => {
   return (
-    <Link
-      href={url}
-      className="basis-full lg:basis-1/2  second: mb-20 last:mb-0 lg:px-4"
-    >
+    <div className="basis-full lg:basis-1/2  second: mb-20 last:mb-0 lg:px-4">
+      <Link href={url}>
         <div
           className="p-20 md:p-48"
           style={{
@@ -32,11 +30,13 @@ const DiscoverThriumphCard = ({
           }}
         ></div>
         <div className="pt-4">
-          <h2 className="text-xl md:text-2xl uppercase font-semibold mb-4 hover:text-neutral-400 hover:underline">{title}</h2>
-          <MainBtn text={btnText} bgBlack={true} isLink={true} link={url}/>
+          <h2 className="text-xl md:text-2xl uppercase font-semibold mb-4 hover:text-neutral-400 hover:underline">
+            {title}
+          </h2>
+          <MainBtn text={btnText} bgBlack={true} />
         </div>
-      
-    </Link>
+      </Link>
+    </div>
   );
 };
 

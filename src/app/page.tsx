@@ -57,7 +57,7 @@ export default async function Home() {
       </section>
 
       <BanerAndCTASection text={"Конфигурирајте го вашиот перфектен мотор"} image={"/images/bigBannerImg.avif"} link={"/configure"} btnText={"Конфигурирај"}/>
-      <LatestModelsCarousellSection/>
+      {/* <LatestModelsCarousellSection/> */}
       <DiscoverThriumphSection />
       <DesktopFooter />
 
