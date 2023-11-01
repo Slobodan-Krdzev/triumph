@@ -12,7 +12,5 @@ export const useBreakpoint = () => {
         }
     }, [window.innerWidth])
     
-    console.log("breakpoint", breakpoint);
-    
     return breakpoint
 }

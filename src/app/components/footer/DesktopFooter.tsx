@@ -22,7 +22,7 @@ const footerLists = [
       },
       {
         id: 4,
-        url: "/motorcycles/adventure",
+        url: "/motorcycles/classics",
         text: "Rocket-3",
       },
       {
