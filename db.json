@@ -119,7 +119,7 @@
       "type": "classics",
       "shortDesc": "Triumph builds ground-breaking motorcycles and incredible three-cylinder engines with an emphasis on power, torque and instant response.",
       "familyPageBannerVideo": "adventure/adventureHeroVideo.webm",
-      "bikesInfo": [
+      "bikes400cc": [
         {
          "title": "SPEED 400",
          "desc": "Роден од неспоредлива крвна линија, Speed ​​400 го има уникатниот модерен класичен родстер дизајн на Triumph во својата ДНК.",
@@ -135,7 +135,23 @@
          "blackBtn": true,
          "imageOnTheLeft": false,
          "mobileTextRight": false
-       }]
+       },
+       {
+        "title": "SCRABLER 400 X",
+        "desc": "Sc",
+        "price":"Достапен од Јануари 2024 €5,690.00",
+        "link": {
+          "text": "Детали",
+          "url": "/motorcycles/classics/Speed 400"
+        },
+        "image": {
+          "src": "/images/classics/speed400.avif",
+          "alt": "Speed 400"
+        },
+        "blackBtn": true,
+        "imageOnTheLeft": false,
+        "mobileTextRight": false
+      }]
     },
     {
       "id": 3,
@@ -151,9 +167,25 @@
   "bikes": [
     {
       "bikeId": 1,
-      "model": "Tiger 1200",
+      "model": "Tiger-1200-GT",
       "price": 15000,
-      "type": "adventure",
+      "category": "adventure",
+      "subFamilyCategory": "adventure",
+      "familyPageInfo": {
+        "title": "TIGER 1200 GT, GT PRO AND GT EXPLORER",
+          "desc": "Врвна авантуристичка серија фокусирана на патишта, со можности и удобност за интерконтинентално патување.",
+          "link": {
+            "text": "Детали",
+            "url": "/motorcycles/adventure/Tiger 1200 GT"
+          },
+          "image": {
+            "src": "/images/adventure/tiger1200Gt955x537.avif",
+            "alt": "Tiger 1200 GT"
+          },
+          "blackBtn": false,
+          "imageOnTheLeft": false,
+          "mobileTextRight": false
+      },
       "galery": {
         "mainImage": {
           "src": "image",
@@ -171,10 +203,25 @@
     },
     {
       "bikeId": 2,
-      "model": "Tiger 660",
+      "model": "Tiger-1200-Rally",
       "price": 20000,
-      "type": "adventure",
-
+      "category": "adventure",
+      "subFamilyCategory": "adventure",
+      "familyPageInfo": {
+        "title": "TIGER 1200 RALLY PRO AND RALLY EXPLORER",
+          "desc": "Теренски карактер и ултра способности, од врвната all-terrain авантуристичка палета.",
+          "link": {
+            "text": "Детали",
+            "url": "/motorcycles/adventure/Tiger 1200 Rally"
+          },
+          "image": {
+            "src": "/images/adventure/tiger1200Rally.avif",
+            "alt": "Tiger 1200 Rally"
+          },
+          "blackBtn": false,
+          "imageOnTheLeft": true,
+          "mobileTextRight": true
+      },
       "galery": {
         "mainImage": {
           "src": "image",
@@ -192,10 +239,25 @@
     },
     {
       "bikeId": 3,
-      "model": "Tiger 850 Sport",
+      "model": "Tiger-Sport-660",
       "price": 15000,
-      "type": "adventure",
-
+      "category": "adventure",
+      "subFamilyCategory": "adventure",
+      "familyPageInfo": {
+        "title": "TIGER SPORT 660",
+        "desc": "Прв во авантуристичката палета, со трицилиндрични перформанси, неверојатен комфор, карактеристики и висока употребливост и со најниски трошоци за работа во класата",
+        "link": {
+          "text": "Детали",
+          "url": "/motorcycles/adventure/Tiger 600"
+        },
+        "image": {
+          "src": "/images/adventure/tiger660.avif",
+          "alt": "Tiger Sport 660"
+        },
+        "blackBtn": false,
+        "imageOnTheLeft": false,
+        "mobileTextRight": false
+      },
       "galery": {
         "mainImage": {
           "src": "image",
@@ -213,10 +275,25 @@
     },
     {
       "bikeId": 4,
-      "model": "Tiger 900",
+      "model": "Tiger-900-GT",
       "price": 20000,
-      "type": "adventure",
-
+      "category": "adventure",
+      "subFamilyCategory": "adventure",
+      "familyPageInfo": {
+        "title": "TIGER 900 GT",
+        "desc": "Дизајниран за авантура на пат, удобност и многу други способности, моторциклите во палетата на Tiger 900 GT ги имаат сите перформанси, сета опрема и технологија на располагање се со цел возачот да пристапи на која било патека со максимална сигурност.",
+        "link": {
+          "text": "Детали",
+          "url": "/motorcycles/adventure/Tiger 900 GT"
+        },
+        "image": {
+          "src": "/images/adventure/tiger900Gt.avif",
+          "alt": "Tiger 900 Gt"
+        },
+        "blackBtn": false,
+        "imageOnTheLeft": true,
+        "mobileTextRight": false
+      },
       "galery": {
         "mainImage": {
           "src": "image",
@@ -234,10 +311,25 @@
     },
     {
       "bikeId": 5,
-      "model": "Classic 800",
+      "model": "Classic-900-Rally",
       "price": 15000,
-      "type": "classics",
-
+      "category": "classics",
+      "subFamilyCategory": "clasics",
+      "familyPageInfo": {
+        "title": "TIGER 900 RALLY",
+        "desc": "Возбудлива 'Tiger' серија дизајнирана за максимална 'off-road' авантура, удобност, контрола и многу способности, врз темелот на најдобрите досегашни перформанси и спецификација на 3-цилиндричниот мотор.",
+        "link": {
+          "text": "Детали",
+          "url": "/motorcycles/adventure/Tiger 900 Rally"
+        },
+        "image": {
+          "src": "/images/adventure/tiger900Rally.avif",
+          "alt": "Tiger 900 Rally"
+        },
+        "blackBtn": true,
+        "imageOnTheLeft": false,
+        "mobileTextRight": false
+      },
       "galery": {
         "mainImage": {
           "src": "image",
@@ -255,10 +347,25 @@
     },
     {
       "bikeId": 6,
-      "model": "Classic 1000",
+      "model": "TIger-1200",
       "price": 20000,
-      "type": "classics",
-
+      "category": "adventure",
+      "subFamilyCategory": "adventure",
+      "familyPageInfo": {
+        "title": "TIGER 1200",
+          "desc": "Triumph Tiger 1200: авантуристички 'all-terain' мотор што го освојува светот, усовршен од вас…",
+          "link": {
+            "text": "Детали",
+            "url": "motorcycles/adventure/Tiger 1200"
+          },
+          "image": {
+            "src": "/images/adventure/tiger1200Gif.gif",
+            "alt": "video/mp4"
+          },
+          "blackBtn": true,
+          "imageOnTheLeft": false,
+          "mobileTextRight": false
+      },
       "galery": {
         "mainImage": {
           "src": "image",
@@ -278,7 +385,7 @@
       "bikeId": 7,
       "model": "Classic 800 R",
       "price": 15000,
-      "type": "classics",
+      "category": "classics",
 
       "galery": {
         "mainImage": {
@@ -299,7 +406,7 @@
       "bikeId": 8,
       "model": "Classic 1000 R",
       "price": 20000,
-      "type": "classics",
+      "category": "classics",
 
       "galery": {
         "mainImage": {
@@ -320,7 +427,7 @@
       "bikeId": 9,
       "model": "Roadster 800",
       "price": 15000,
-      "type": "roadsters",
+      "category": "roadsters",
 
       "galery": {
         "mainImage": {
@@ -341,7 +448,7 @@
       "bikeId": 10,
       "model": "Roadster 1000",
       "price": 20000,
-      "type": "roadsters",
+      "category": "roadsters",
 
       "galery": {
         "mainImage": {
@@ -362,7 +469,7 @@
       "bikeId": 11,
       "model": "Roadster 800 R",
       "price": 15000,
-      "type": "roadsters",
+      "category": "roadsters",
 
       "galery": {
         "mainImage": {
@@ -383,7 +490,7 @@
       "bikeId": 12,
       "model": "Roadster 1000 R",
       "price": 20000,
-      "type": "roadsters",
+      "category": "roadsters",
 
       "galery": {
         "mainImage": {
@@ -404,7 +511,7 @@
       "bikeId": 13,
       "model": "Rocket 2500",
       "price": 25000,
-      "type": "rocket",
+      "category": "rocket",
 
       "galery": {
         "mainImage": {
@@ -425,7 +532,7 @@
       "bikeId": 14,
       "model": "Rocket 2500 POSLE rEVALIDATE",
       "price": 25000,
-      "type": "rocket",
+      "category": "rocket",
 
       "galery": {
         "mainImage": {
@@ -446,7 +553,7 @@
       "bikeId": 15,
       "model": "Rocket 2500 admin panel ",
       "price": 25000,
-      "type": "rocket",
+      "category": "rocket",
 
       "galery": {
         "mainImage": {
