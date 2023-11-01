@@ -30,7 +30,7 @@ const BikeInfoTextImageBtn = ({title, desc, price, ctaBtn, image, video, imageOn
     <section className="flex flex-col lg:flex-row justify-between lg:px-8 lg:my-14 my-8 px-4">
       <div className={`lg:basis-2/5 flex flex-col justify-center ${mobileTextRight ? 'items-end ' : 'lg:items-center'} lg:px-20 text-left ${imageOnTheLeft ? 'order-2' : ''} my-8 lg:mb-0 lg:pl-0`}>
         <div className="lg:max-w-xs md: max-w-md">
-        <SectionTitleH2 text={title}/>
+        <SectionTitleH2 text={title} color={"dark"}/>
         <PageParagraph marginBot={true} text={desc}/>
         {price && <PageParagraph text={`Price From €${price}`}/>  }
         

@@ -6,7 +6,7 @@ import PageTitle from "./PageTitle";
 type PageHeroSectionProps = {
   title: string;
   mainBikeLogo?: any;
-  desc: string;
+  desc?: string;
   video?: string;
   image?: string;
 };
