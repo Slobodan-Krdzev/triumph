@@ -13,12 +13,12 @@ type StealthCarousellCardProps = {
 
 const StealthCarousellCard = ({title, price, url, image}: StealthCarousellCardProps) => {
   return (
-    <div className='px-6 hover:bg-neutral-100 transition-colors delay-100 ease-in-out'>
+    <div className='px-6flex flex-col items-center justify-center text-center'>
         <Link href={url}>
         <Image src={image} alt={title} width={358} height={201}/>
-        <p>Детали <FontAwesomeIcon icon={faChevronRight}/></p>
-        <p>{title}</p>
-        <p>{price}</p>
+        <p className='font-semibold uppercase hover:text-red-900 transition-colors ease-in-out'>Детали <FontAwesomeIcon size={'sm'} icon={faChevronRight}/></p>
+        <p className='text-sm capitalize'>{title}</p>
+        <p className='text-sm'>{price}</p>
 
         </Link>
 

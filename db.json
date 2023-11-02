@@ -976,6 +976,302 @@
       }
     },
     {
+      "bikeId": 26,
+      "model": "bonneville-bobber-chrome-edition",
+      "price": 17090,
+      "category": "classics",
+      "subFamilyCategory":"chrome",
+      "specialEdition": "chrome",
+      "familyPageInfo": {
+        "title": "BONNEVILLE BOBBER CHROME EDITION",
+        "desc": "BONNEVILLE BOBBER CHROME EDITION",
+        "link": {
+          "text": "Детали",
+          "url": "motorcycles/classics/bonneville-bobber/bonneville-bobber-chrome-edition"
+        },
+        "image": {
+          "src": "/images/classics/bonnevilleBobberChrome.avif",
+          "alt": "Bonneville Bobber Chrome Edition"
+        },
+        "blackBtn": true,
+        "imageOnTheLeft": false,
+        "mobileTextRight": false
+      },
+      "galery": {
+        "mainImage": {
+          "src": "image",
+          "alt": "Rocket 800 Main"
+        },
+        "leftSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Left Side"
+        },
+        "rightSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Right Side"
+        }
+      }
+    },
+    {
+      "bikeId": 27,
+      "model": "bonneville-speedmaster-chrome-edition",
+      "price": 17090,
+      "category": "classics",
+      "subFamilyCategory":"chrome",
+      "specialEdition": "chrome",
+      "familyPageInfo": {
+        "title": "BONNEVILLE SPEEDMASTER CHROME EDITION",
+        "desc": "BONNEVILLE SPEEDMASTER CHROME EDITION",
+        "link": {
+          "text": "Детали",
+          "url": "motorcycles/classics/bonneville-speedmaster/bonneville-speedmaster-chrome-edition"
+        },
+        "image": {
+          "src": "/images/classics/speedmasterChrome.avif",
+          "alt": "BONNEVILLE SPEEDMASTER CHROME EDITION"
+        },
+        "blackBtn": true,
+        "imageOnTheLeft": false,
+        "mobileTextRight": false
+      },
+      "galery": {
+        "mainImage": {
+          "src": "image",
+          "alt": "Rocket 800 Main"
+        },
+        "leftSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Left Side"
+        },
+        "rightSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Right Side"
+        }
+      }
+    },
+    {
+      "bikeId": 28,
+      "model": "scrambler-1200-xe-chrome-edition",
+      "price": 17790,
+      "category": "classics",
+      "subFamilyCategory":"chrome",
+      "specialEdition": "chrome",
+      "familyPageInfo": {
+        "title": "SCRAMBLER 1200 XE CHROME EDITION",
+        "desc": "SCRAMBLER 1200 XE CHROME EDITION",
+        "link": {
+          "text": "Детали",
+          "url": "motorcycles/classics/bonneville-scrambler-1200/scrambler-1200-xe-chrome-edition"
+        },
+        "image": {
+          "src": "/images/classics/scrambler1200XeChrome.avif",
+          "alt": "SCRAMBLER 1200 XE CHROME EDITION"
+        },
+        "blackBtn": true,
+        "imageOnTheLeft": false,
+        "mobileTextRight": false
+      },
+      "galery": {
+        "mainImage": {
+          "src": "image",
+          "alt": "Rocket 800 Main"
+        },
+        "leftSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Left Side"
+        },
+        "rightSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Right Side"
+        }
+      }
+    },
+    {
+      "bikeId": 29,
+      "model": "scrambler-900-chrome-edition",
+      "price": 12490,
+      "category": "classics",
+      "subFamilyCategory":"chrome",
+      "specialEdition": "chrome",
+      "familyPageInfo": {
+        "title": "SCRAMBLER 900 CHROME EDITION",
+        "desc": "SCRAMBLER 900 CHROME EDITION",
+        "link": {
+          "text": "Детали",
+          "url": "motorcycles/classics/bonneville-scrambler-1200/scrambler-900-chrome-edition"
+        },
+        "image": {
+          "src": "/images/classics/scrambler900Chrome.avif",
+          "alt": "SCRAMBLER 900 CHROME EDITION"
+        },
+        "blackBtn": true,
+        "imageOnTheLeft": false,
+        "mobileTextRight": false
+      },
+      "galery": {
+        "mainImage": {
+          "src": "image",
+          "alt": "Rocket 800 Main"
+        },
+        "leftSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Left Side"
+        },
+        "rightSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Right Side"
+        }
+      }
+    },
+    {
+      "bikeId": 30,
+      "model": "speed-twin-900-chrome-edition",
+      "price": 10990,
+      "category": "classics",
+      "subFamilyCategory":"chrome",
+      "specialEdition": "chrome",
+      "familyPageInfo": {
+        "title": "SPEED TWIN 900 CHROME EDITION",
+        "desc": "SPEED TWIN 900 CHROME EDITION",
+        "link": {
+          "text": "Детали",
+          "url": "motorcycles/classics/bonneville-speeed-twin-900/speed-twin-900-chrome-edition"
+        },
+        "image": {
+          "src": "/images/classics/speedTwin900Chrome.avif",
+          "alt": "SPEED TWIN 900 CHROME EDITION"
+        },
+        "blackBtn": true,
+        "imageOnTheLeft": false,
+        "mobileTextRight": false
+      },
+      "galery": {
+        "mainImage": {
+          "src": "image",
+          "alt": "Rocket 800 Main"
+        },
+        "leftSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Left Side"
+        },
+        "rightSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Right Side"
+        }
+      }
+    },
+    {
+      "bikeId": 31,
+      "model": "bonneville-t100-chrome-edition",
+      "price": 12290,
+      "category": "classics",
+      "subFamilyCategory":"chrome",
+      "specialEdition": "chrome",
+      "familyPageInfo": {
+        "title": "BONNEVILLE T100 CHROME EDITION",
+        "desc": "BONNEVILLE T100 CHROME EDITION",
+        "link": {
+          "text": "Детали",
+          "url": "motorcycles/classics/bonneville-t100/bonneville-t100-chrome-edition"
+        },
+        "image": {
+          "src": "/images/classics/t100Chrome.avif",
+          "alt": "BONNEVILLE T100 CHROME EDITION"
+        },
+        "blackBtn": true,
+        "imageOnTheLeft": false,
+        "mobileTextRight": false
+      },
+      "galery": {
+        "mainImage": {
+          "src": "image",
+          "alt": "Rocket 800 Main"
+        },
+        "leftSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Left Side"
+        },
+        "rightSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Right Side"
+        }
+      }
+    },
+    {
+      "bikeId": 32,
+      "model": "bonneville-t120-chrome-edition",
+      "price": 15090,
+      "category": "classics",
+      "subFamilyCategory":"chrome",
+      "specialEdition": "chrome",
+      "familyPageInfo": {
+        "title": "BONNEVILLE T120 CHROME EDITION",
+        "desc": "BONNEVILLE T120 CHROME EDITION",
+        "link": {
+          "text": "Детали",
+          "url": "motorcycles/classics/bonneville-t100/bonneville-t120-chrome-edition"
+        },
+        "image": {
+          "src": "/images/classics/t120Chrome.avif",
+          "alt": "BONNEVILLE T120 CHROME EDITION"
+        },
+        "blackBtn": true,
+        "imageOnTheLeft": false,
+        "mobileTextRight": false
+      },
+      "galery": {
+        "mainImage": {
+          "src": "image",
+          "alt": "Rocket 800 Main"
+        },
+        "leftSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Left Side"
+        },
+        "rightSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Right Side"
+        }
+      }
+    },
+    {
+      "bikeId": 33,
+      "model": "bthruxton-rs-chrome-edition",
+      "price": 18790,
+      "category": "classics",
+      "subFamilyCategory":"chrome",
+      "specialEdition": "chrome",
+      "familyPageInfo": {
+        "title": "THRUXTON RS CHROME EDITION",
+        "desc": "THRUXTON RS CHROME EDITION",
+        "link": {
+          "text": "Детали",
+          "url": "motorcycles/classics/bonneville-t100/bthruxton-rs-chrome-edition"
+        },
+        "image": {
+          "src": "/images/classics/thruxtonRsChrome.avif",
+          "alt": "THRUXTON RS CHROME EDITION"
+        },
+        "blackBtn": true,
+        "imageOnTheLeft": false,
+        "mobileTextRight": false
+      },
+      "galery": {
+        "mainImage": {
+          "src": "image",
+          "alt": "Rocket 800 Main"
+        },
+        "leftSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Left Side"
+        },
+        "rightSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Right Side"
+        }
+      }
+    },
+    {
       "bikeId": 15,
       "model": "Rocket 2500 admin panel ",
       "price": 25000,

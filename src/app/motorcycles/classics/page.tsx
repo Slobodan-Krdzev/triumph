@@ -1,5 +1,6 @@
 import StelthCarousell from "@/app/components/classicsPageComp/StelthCarousell";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
+import BikeListingNoSlider from "@/app/components/familiySharedComponents/BikeListingNoSlider";
 import PageHeroSection from "@/app/components/familiySharedComponents/PageHeroSection";
 import PageParagraph from "@/app/components/familiySharedComponents/PageParagraph";
 import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
@@ -149,6 +150,22 @@ const ClassicPage = async () => {
         </div>
 
         <StelthCarousell bikes={getBikesBySpecialEdition("stealth")} />
+      </section>
+
+      <section>
+        <div className="text-center lg:w-2/4 w-full px-4 lg:px-0 m-auto">
+          <SectionTitleH2 text="Chrome Колекција" color="dark" />
+          <PageParagraph
+            marginBot={true}
+            text="Десет иконски мотори, секој од нив со прекрасен и уникатен нов хромиран дизајн, инспириран од класичниот изглед, прекрасно изведен од тимовите за дизајн и производство на Triumph. Оваа едноставно неверојатна палета од десет иконски мотоцикли Triumph во хром е прослава на рачно изработениот стил и традиција."
+          />
+          <SectionTitleH2
+            text="Специјални. Рачно изработени. Прекрасни."
+            color="dark"
+          />
+        </div>
+
+        <BikeListingNoSlider bikes={getBikesBySpecialEdition('chrome')}/>
       </section>
     </>
   );
