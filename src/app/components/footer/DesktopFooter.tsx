@@ -12,17 +12,17 @@ const footerLists = [
       },
       {
         id: 2,
-        url: "/motorcycles/adventure",
+        url: "/motorcycles/classics",
         text: "Classic",
       },
       {
         id: 3,
-        url: "/motorcycles/adventure",
+        url: "/motorcycles/roadsters",
         text: "Roadster",
       },
       {
         id: 4,
-        url: "/motorcycles/classics",
+        url: "/motorcycles/rocket-3",
         text: "Rocket-3",
       },
       {
