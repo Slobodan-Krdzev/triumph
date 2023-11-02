@@ -2,14 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://db.onlinewebfonts.com/c/1dd1c7d8df011c2266f33ebd5927c0ab?family=DIN+2014+Demi');
+
 @font-face {
   font-family: "DIN 2014 Demi";
   src: url("https://db.onlinewebfonts.com/t/1dd1c7d8df011c2266f33ebd5927c0ab.eot");
   src: url("https://db.onlinewebfonts.com/t/1dd1c7d8df011c2266f33ebd5927c0ab.eot?#iefix")format("embedded-opentype"),
-  url("https://db.onlinewebfonts.com/t/1dd1c7d8df011c2266f33ebd5927c0ab.woff2")format("woff2"),
-  url("https://db.onlinewebfonts.com/t/1dd1c7d8df011c2266f33ebd5927c0ab.woff")format("woff"),
-  url("https://db.onlinewebfonts.com/t/1dd1c7d8df011c2266f33ebd5927c0ab.ttf")format("truetype"),
-  url("https://db.onlinewebfonts.com/t/1dd1c7d8df011c2266f33ebd5927c0ab.svg#DIN 2014 Demi")format("svg");
+    url("https://db.onlinewebfonts.com/t/1dd1c7d8df011c2266f33ebd5927c0ab.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/1dd1c7d8df011c2266f33ebd5927c0ab.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/1dd1c7d8df011c2266f33ebd5927c0ab.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/1dd1c7d8df011c2266f33ebd5927c0ab.svg#DIN 2014 Demi")format("svg");
 }
 
 
@@ -19,7 +20,7 @@
   box-sizing: border-box;
 }
 
-img{
+img {
   max-width: 100%;
 }
 
@@ -39,7 +40,7 @@ img{
   --white-bg-color: #ffffff;
 }
 
-.gray-cl{
+.gray-cl {
   background-color: #2A2A2A;
 }
 
@@ -48,19 +49,19 @@ img{
 }
 
 
-.gray-bg{
+.gray-bg {
   background-color: var(--secondary-bg-color);
 }
 
-.slight-white-bg{
+.slight-white-bg {
   background-color: var(--tetriary-bg-color);
 }
 
-.text-red{
+.text-red {
   color: var(--secondary-color);
 }
 
-.red-bg-color{ 
+.red-bg-color {
   background-color: var(--secondary-color);
 }
 
@@ -74,9 +75,9 @@ img{
 
 .main-btn-black-hover:hover {
   background-color: var(--primary-hover-color);
-} 
+}
 
-.border{
+.border {
   border: 2px solid red;
 }
 
@@ -87,16 +88,16 @@ img{
   transition: all 0.2s ease-in-out;
 }
 
-.main-btn-hover:hover{
+.main-btn-hover:hover {
   background-color: var(--secondary-hover-color);
 }
 
-.underline-hover-effect{
+.underline-hover-effect {
   display: inline-block;
   position: relative;
 }
 
-.underline-hover-effect::after{
+.underline-hover-effect::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -109,7 +110,7 @@ img{
   transition: transform 0.25s ease-out;
 }
 
-.underline-hover-effect:hover::after{
+.underline-hover-effect:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -122,7 +123,9 @@ img{
   transform: scale(1.025);
 }
 
-.zoom-link-image img, h2, p {
+.zoom-link-image img,
+h2,
+p {
   transition: all 0.3s ease-in-out;
 }
 
@@ -140,4 +143,53 @@ img{
   right: 19%;
 }
 
+/* BOTTOM SLIDER CLASSIC */
 
+.swiper-button-prev {
+  background-color: var(--secondary-color);
+  width: 30%;
+  height: 30%;
+  line-height: 30%;
+  border-radius: 100%;
+  padding: 1.5rem;
+  background-image: url('/left-arrow.png');
+  background-position: center;
+
+  background-repeat: no-repeat;
+}
+
+.swiper-button-next {
+  background-color: var(--secondary-color);
+  width: 30%;
+  height: 30%;
+  line-height: 30%;
+  border-radius: 100%;
+  padding: 1.5rem;
+  background-image: url('/right-arrow.png');
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #A11D2C;
+  color: #A11D2C !important;
+
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: " " !important;
+}
+
+.carousell-classics::before {
+  background-image: radial-gradient(70% 50%, transparent 0, #2a2a2a 100%);
+  content: "";
+  height: calc(100% + 4px);
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
