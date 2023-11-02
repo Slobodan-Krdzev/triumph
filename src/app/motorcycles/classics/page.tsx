@@ -1,3 +1,4 @@
+import GrayBand from "@/app/components/GrayBand";
 import StelthCarousell from "@/app/components/classicsPageComp/StelthCarousell";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
 import BikeListingNoSlider from "@/app/components/familiySharedComponents/BikeListingNoSlider";
@@ -167,6 +168,19 @@ const ClassicPage = async () => {
 
         <BikeListingNoSlider bikes={getBikesBySpecialEdition('chrome')}/>
       </section>
+
+      <GrayBand
+        itemOne={{
+          text: "Контакт",
+          url: "/",
+          icon: "/point.svg",
+        }}
+        itemTwo={{
+          text: "Конфигурација",
+          url: "/configure",
+          icon: "/icon-configurator.svg",
+        }}
+      />
     </>
   );
 };
