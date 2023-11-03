@@ -58,7 +58,8 @@
     {
       "id": 3,
       "type": "roadsters",
-      "shortDesc": "The legendary Bonneville bloodline is built into our Modern Classics, with an unparalleled performance history, racing success and cultural impact."
+      "shortDesc": "Мотори кои ги менуваат правилата за 'Naked Bike'. Препознатливите 3-цилиндрични мотори на Triumph се дизајнирани за моќност, вртежен момент и моментален одговор.",
+      "familyPageBannerVideo": "roadsters/roadsterHeroVideo.webm"
     },
     {
       "id": 4,
@@ -359,7 +360,7 @@
       "bikeId": 9,
       "model": "speed-twin-900",
       "price": 15000,
-      "category": "roadsters",
+      "category": "classics",
       "subFamilyCategory": "900cc",
       "familyPageInfo": {
         "title": "SPEED TWIN 900",
@@ -395,7 +396,7 @@
       "bikeId": 10,
       "model": "bonneville-t100",
       "price": 20000,
-      "category": "roadsters",
+      "category": "classics",
       "subFamilyCategory": "900cc",
       "familyPageInfo": {
         "title": "BONNEVILLE T100 ",
@@ -431,7 +432,7 @@
       "bikeId": 11,
       "model": "scrambler-900",
       "price": 15000,
-      "category": "roadsters",
+      "category": "classics",
       "subFamilyCategory": "900cc",
       "familyPageInfo": {
         "title": "SCRAMBLER 900",
@@ -503,7 +504,7 @@
       "bikeId": 13,
       "model": "bonneville-speedmaster",
       "price": 25000,
-      "category": "rocket",
+      "category": "classics",
       "subFamilyCategory":"1200cc",
       "familyPageInfo": {
         "title": "BONNEVILLE SPEEDMASTER",
@@ -650,7 +651,7 @@
       "category": "classics",
       "subFamilyCategory":"1200cc",
       "familyPageInfo": {
-        "title": "SPEED TWIN 1200",
+        "title": "TRUXTON RS",
         "desc": "Mоторот од 1200 кубика на Thruxton еволуираше за да обезбеди значителна надградба на перформансите.",
         "link": {
           "text": "Детали",
@@ -1236,7 +1237,7 @@
     },
     {
       "bikeId": 33,
-      "model": "bthruxton-rs-chrome-edition",
+      "model": "thruxton-rs-chrome-edition",
       "price": 18790,
       "category": "classics",
       "subFamilyCategory":"chrome",
@@ -1246,13 +1247,161 @@
         "desc": "THRUXTON RS CHROME EDITION",
         "link": {
           "text": "Детали",
-          "url": "motorcycles/classics/bonneville-t100/bthruxton-rs-chrome-edition"
+          "url": "motorcycles/classics/bonneville-t100/thruxton-rs-chrome-edition"
         },
         "image": {
           "src": "/images/classics/thruxtonRsChrome.avif",
           "alt": "THRUXTON RS CHROME EDITION"
         },
         "blackBtn": true,
+        "imageOnTheLeft": false,
+        "mobileTextRight": false
+      },
+      "galery": {
+        "mainImage": {
+          "src": "image",
+          "alt": "Rocket 800 Main"
+        },
+        "leftSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Left Side"
+        },
+        "rightSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Right Side"
+        }
+      }
+    },
+    {
+      "bikeId": 34,
+      "model": "speed-triple-765",
+      "price": 12290,
+      "category": "roadsters",
+      "subFamilyCategory":"roadsters",
+      "specialEdition": "roadsters",
+      "familyPageInfo": {
+        "title": "SPEED TRIPLE 765",
+        "desc": "Подкрепен од еволуцијата на тркачкиот мотор Moto2™, што резултира со највисоки перформанси, највисоки спецификации и најразноврсна Street Triple серија досега.",
+        "link": {
+          "text": "Детали",
+          "url": "motorcycles/roadsters/speed-triple-765"
+        },
+        "image": {
+          "src": "/images/roadsters/speedTriple765FamPic.avif",
+          "alt": "SPEED TRIPLE 765"
+        },
+        "blackBtn": true,
+        "imageOnTheLeft": true,
+        "mobileTextRight": false
+      },
+      "galery": {
+        "mainImage": {
+          "src": "image",
+          "alt": "Rocket 800 Main"
+        },
+        "leftSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Left Side"
+        },
+        "rightSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Right Side"
+        }
+      }
+    },
+    {
+      "bikeId": 35,
+      "model": "trident-660",
+      "price": 8690,
+      "category": "roadsters",
+      "subFamilyCategory":"roadsters",
+      "specialEdition": "roadsters",
+      "familyPageInfo": {
+        "title": "ТРИДЕНТ 660",
+        "desc": "Go for it all - Конкурентни цени, спортски, стилски, возбудлив и разноврсен, сето ова го може новиот Trident 660.",
+        "link": {
+          "text": "Детали",
+          "url": "motorcycles/roadsters/trident/trident-660"
+        },
+        "image": {
+          "src": "/images/roadsters/trident660.avif",
+          "alt": "ТРИДЕНТ 660"
+        },
+        "blackBtn": false,
+        "imageOnTheLeft": true,
+        "mobileTextRight": false
+      },
+      "galery": {
+        "mainImage": {
+          "src": "image",
+          "alt": "Rocket 800 Main"
+        },
+        "leftSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Left Side"
+        },
+        "rightSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Right Side"
+        }
+      }
+    },
+    {
+      "bikeId": 36,
+      "model": "speed-triple-1200-rr",
+      "price": 20990,
+      "category": "roadsters",
+      "subFamilyCategory":"roadsters",
+      "specialEdition": "roadsters",
+      "familyPageInfo": {
+        "title": "НОВИОТ SPEED TRIPLE 1200 RR",
+        "desc": "Колку е блескаво за гледање, толку и возбудливо за возење, со највисоки спецификации досега.",
+        "link": {
+          "text": "Детали",
+          "url": "motorcycles/roadsters/speed-triple-1200/speed-triple-1200-rr"
+        },
+        "image": {
+          "src": "/images/roadsters/speedRR.avif",
+          "alt": "НОВИОТ SPEED TRIPLE 1200 RR"
+        },
+        "blackBtn": false,
+        "imageOnTheLeft": true,
+        "mobileTextRight": false
+      },
+      "galery": {
+        "mainImage": {
+          "src": "image",
+          "alt": "Rocket 800 Main"
+        },
+        "leftSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Left Side"
+        },
+        "rightSideImage": {
+          "src": "image",
+          "alt": "Rocket 800 Right Side"
+        }
+      }
+    },
+    {
+      "bikeId": 37,
+      "model": "speed-triple-1200-rs",
+      "price": 18990,
+      "category": "roadsters",
+      "subFamilyCategory":"roadsters",
+      "specialEdition": "roadsters",
+      "familyPageInfo": {
+        "title": "НАЈНОВИОТ SPEED TRIPLE 1200 RS",
+        "desc": "Најмоќниот, динамичен и технолошки напреден Speed ​​​​Triple некогаш направен.",
+        "link": {
+          "text": "Детали",
+          "url": "motorcycles/roadsters/speed-triple-1200/speed-triple-1200-rs"
+        },
+        "image": {
+          "src": "/images/roadsters/speedRS.avif",
+          "alt": "НАЈНОВИОТ SPEED TRIPLE 1200 RS"
+        },
+        "blackBtn": false,
         "imageOnTheLeft": false,
         "mobileTextRight": false
       },

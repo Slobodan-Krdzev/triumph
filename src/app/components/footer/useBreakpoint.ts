@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react"
 
 export const useBreakpoint = () => {
-    const [breakpoint, setBreakpoint] = useState(window.innerWidth)
+    const [breakpoint, setBreakpoint] = useState(1400)
+    
 
     useEffect(() => {
       
@@ -10,7 +11,7 @@ export const useBreakpoint = () => {
         return () => {
             window.removeEventListener('resize', () => setBreakpoint(window.innerWidth));
         }
-    }, [window.innerWidth])
+    }, [])
     
     return breakpoint
 }

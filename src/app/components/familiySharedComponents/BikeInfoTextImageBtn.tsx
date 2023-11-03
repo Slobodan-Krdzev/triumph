@@ -32,7 +32,7 @@ const BikeInfoTextImageBtn = ({title, desc, price, ctaBtn, image, video, imageOn
         <div className="lg:max-w-xs md: max-w-md">
         <SectionTitleH2 text={title} color={"dark"}/>
         <PageParagraph marginBot={true} text={desc}/>
-        {price && <PageParagraph text={`Price From €${price}`}/>  }
+        {price && <p className="mb-4">Цени од €${price}</p> }
         
         <MainBtn text={ctaBtn.text} link={ctaBtn.link} isLink={true} bgBlack={blackBtn}/>
         </div>

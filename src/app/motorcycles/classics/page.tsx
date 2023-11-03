@@ -12,12 +12,10 @@ import { FAMILIES, BIKES } from "@/app/constants/constants";
 import React from "react";
 
 const ClassicPage = async () => {
-  const familyRes = await fetch(`${FAMILIES}?type=classics`, {
-    cache: "no-store",
-  });
+  const familyRes = await fetch(`${FAMILIES}?type=classics`, {cache: 'no-store'});
   const familyData = await familyRes.json();
 
-  const bikesRes = await fetch(`${BIKES}?type=classics`);
+  const bikesRes = await fetch(`${BIKES}?category=classics`, {cache: 'no-store'});
   const bikes = await bikesRes.json();
 
   const getBikesBySubFamCategory = (cat: string) => {
@@ -167,10 +165,10 @@ const ClassicPage = async () => {
           />
         </div>
 
-        <BikeListingNoSlider bikes={getBikesBySpecialEdition('chrome')}/>
+        <BikeListingNoSlider bikes={getBikesBySpecialEdition("chrome")} />
       </section>
 
-            <BottomCarousell/>
+      <BottomCarousell />
 
       <GrayBand
         itemOne={{
