@@ -7,10 +7,10 @@ type PageParagraphProps = {
 
 const PageParagraph = ({ text, marginBot }: PageParagraphProps) => {
   if (marginBot) {
-    return <p className="text-base mb-5">{text}</p>;
+    return <p className="md:text-base text-sm mb-5">{text}</p>;
   }
 
-  return <p className="text-base">{text}</p>;
+  return <p className="md:text-base text-sm">{text}</p>;
 };
 
 export default PageParagraph;
