@@ -1317,7 +1317,7 @@
       "subFamilyCategory":"roadsters",
       "specialEdition": "roadsters",
       "familyPageInfo": {
-        "title": "ТРИДЕНТ 660",
+        "title": "TRIDENT 660",
         "desc": "Go for it all - Конкурентни цени, спортски, стилски, возбудлив и разноврсен, сето ова го може новиот Trident 660.",
         "link": {
           "text": "Детали",
@@ -1325,11 +1325,11 @@
         },
         "image": {
           "src": "/images/roadsters/trident660.avif",
-          "alt": "ТРИДЕНТ 660"
+          "alt": "TRIDENT 660"
         },
         "blackBtn": false,
         "imageOnTheLeft": true,
-        "mobileTextRight": false
+        "mobileTextRight": true
       },
       "galery": {
         "mainImage": {
@@ -1366,7 +1366,7 @@
         },
         "blackBtn": false,
         "imageOnTheLeft": true,
-        "mobileTextRight": false
+        "mobileTextRight": true
       },
       "galery": {
         "mainImage": {

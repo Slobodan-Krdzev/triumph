@@ -40,6 +40,7 @@ const RoadstersPage = async () => {
           }}
           blackBtn={bikes[0].familyPageInfo.blackBtn}
           imageOnTheLeft={bikes[0].familyPageInfo.imageOnTheLeft}
+          mobileTextRight={bikes[0].familyPageInfo.mobileTextRight}
         />
       </section>
 
@@ -73,6 +74,8 @@ const RoadstersPage = async () => {
           }}
           blackBtn={bikes[1].familyPageInfo.blackBtn}
           imageOnTheLeft={bikes[1].familyPageInfo.imageOnTheLeft}
+          mobileTextRight={true}
+
         />
       </section>
 
