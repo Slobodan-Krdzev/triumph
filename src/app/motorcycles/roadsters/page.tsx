@@ -1,6 +1,7 @@
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
 import PageHeroSection from "@/app/components/familiySharedComponents/PageHeroSection";
 import TextAndImageFlexSection from "@/app/components/familiySharedComponents/TextAndImageFlexSection";
+import AudioSection from "@/app/components/roadstersUniqueComp/AudioSection";
 import { BIKES, FAMILIES } from "@/app/constants/constants";
 import React from "react";
 
@@ -14,8 +15,6 @@ const RoadstersPage = async () => {
     cache: "no-store",
   });
   const bikes = await bikesRes.json();
-
-  console.log("bikesRoadsters", bikes);
 
   return (
     <>
@@ -127,6 +126,8 @@ const RoadstersPage = async () => {
           imageOnTheLeft={true}
         />
       </section>
+
+      <AudioSection/>
     </>
   );
 };
