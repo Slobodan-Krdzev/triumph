@@ -18,6 +18,10 @@
         "title": "Направен за Авантури",
         "desc1": "Секој моторцикл во 'Tigеr' фамилијата е роден со вистински дух за авантура. 'Triumph Tiger' моторциклот живее во нашата крв од моментот кога првиот 'Triumph Tiger' моторцикл освои три златни медали на '1936 International Six Days Trial' во 1936 година, и со тоа започна првото поглавје од најдолготрајниот авантуристички моторцикл.",
         "desc2": "Познато по нивното агилно управување, командна позиција на возење, карактеристична силуета и опрема со високи спецификации, секој 'Tiger' моторцикл нуди највисоко ниво на стил, удобност и контрола."
+      },
+      "configPageInfo": {
+        "desc": "Истражете го светот на авантурите, со мотоцикли изградени за секогаш да стигнат до крајот на патот, подготвени да одат каде било и да постигнат сè.",
+        "link": "/configure/families/adventure"
       }
     },
     {
@@ -53,18 +57,30 @@
           "blackBtn": true
 
         }
-      ]
+      ],
+      "configPageInfo": {
+        "desc": "Легендарната 'Bonneville' крвна линија е вградена во нашите модерни класици, со неспоредлива историја на изведби, тркачки успех и културно влијание.",
+        "link": "/configure/families/classics"
+      }
     },
     {
       "id": 3,
       "type": "roadsters",
       "shortDesc": "Мотори кои ги менуваат правилата за 'Naked Bike'. Препознатливите 3-цилиндрични мотори на Triumph се дизајнирани за моќност, вртежен момент и моментален одговор.",
-      "familyPageBannerVideo": "roadsters/roadsterHeroVideo.webm"
+      "familyPageBannerVideo": "roadsters/roadsterHeroVideo.webm",
+      "configPageInfo": {
+        "desc": "Triumph создава револуционерни мотоцикли и неверојатни трицилиндрични мотори со акцент на моќноста, вртежен момент и моменталната реакција.",
+        "link": "/configure/families/roadsters"
+      }
     },
     {
       "id": 4,
       "type": "rocket",
-      "shortDesc": "Equipped with the largest production engine in the world and boasting the highest torque, this is the ultimate high-performance muscle roadster."
+      "shortDesc": "Опремен со најголемиот сериски мотор во светот и со најголем вртежен момент, ова е врвниот мускулен родстер со високи перформанси.",
+      "configPageInfo": {
+        "desc": "Опремен со најголемиот сериски мотор во светот и со најголем вртежен момент, ова е врвниот мускулен родстер со високи перформанси.",
+        "link": "/configure/families/rocket"
+      }
     }
   ],
   "bikes": [
@@ -1425,7 +1441,21 @@
       "model": "Rocket 2500 admin panel ",
       "price": 25000,
       "category": "rocket",
-
+      "familyPageInfo": {
+        "title": "НАЈНОВИОТ SPEED TRIPLE 1200 RS",
+        "desc": "Најмоќниот, динамичен и технолошки напреден Speed ​​​​Triple некогаш направен.",
+        "link": {
+          "text": "Детали",
+          "url": "motorcycles/roadsters/speed-triple-1200/speed-triple-1200-rs"
+        },
+        "image": {
+          "src": "/images/roadsters/speedRS.avif",
+          "alt": "НАЈНОВИОТ SPEED TRIPLE 1200 RS"
+        },
+        "blackBtn": false,
+        "imageOnTheLeft": false,
+        "mobileTextRight": false
+      },
       "galery": {
         "mainImage": {
           "src": "image",

@@ -1,36 +1,48 @@
 import React from "react";
 import { BIKES, FAMILIES } from "../constants/constants";
 import { filterOutBikesByFamily } from "../helpers/filterBikesByFamily";
-import BtnLink from "../components/MainBtn";
+import MainBtn from "../components/MainBtn";
+import HeroSectionCTA from "../components/HeroSectionCTA";
+import BikesByFamilyWithSlider from "../components/BikesByFamilyWithSlider";
+import { getBikesByFamily } from "../components/helpers/getBikesByFamily";
 
 const ConfigurePage = async () => {
-
   // PROMISE.ALL sredi
-  const familiesRes = await fetch(`${FAMILIES}`);
+  const familiesRes = await fetch(`${FAMILIES}`, { cache: "no-store" });
   const families = await familiesRes.json();
 
-  // ovde revalidate ili no-cache treba da odlucime 
-  // mada eden motor bi se dodaval mnogu retko 
+  // ovde revalidate ili no-cache treba da odlucime
+  // mada eden motor bi se dodaval mnogu retko
   // revalidate e podobro
-  const bikesRes = await fetch(`${BIKES}`, {cache: 'no-cache'})
-  const bikes = await bikesRes.json()
+  const bikesRes = await fetch(`${BIKES}`, { cache: "no-cache" });
+  const bikes = await bikesRes.json();
+
+  console.log("familiesData", families);
 
   return (
-    <>
-      <div>Configure Page renders all families</div>
-      <ul>
+    <main className="slight-white-bg ">
+      <HeroSectionCTA
+        image={"/images/heroConfigBanner.avif"}
+        title={"Изберете додатоци за вашиот мотор"}
+        link={{
+          text: "Види ги сите",
+          url: "/configure/bikes",
+        }}
+      />
+      <section className="lg:pl-28 px-4 md:mt-16 mt-8">
         {families.map((family: any) => (
-          <li key={family.id}>
-            <b>{family.type.toUpperCase()}</b> <br />
-            {family.shortDesc}{" "}
-            <div>
-              {filterOutBikesByFamily(family.type, bikes).map((bike: any) => <p key={bike.id}>{bike.name}</p>)}
-            </div>
-            <BtnLink link={`/configure/families/${family.type}`} text={'View Colection'}/>
-          </li>
+          <BikesByFamilyWithSlider
+          key={family.id}
+            bikes={getBikesByFamily(family.type,bikes)}
+            familyData={{
+              title: family.type,
+              desc: family.configPageInfo.desc,
+              url: family.configPageInfo.link,
+            }}
+          />
         ))}
-      </ul>
-    </>
+      </section>
+    </main>
   );
 };
 
