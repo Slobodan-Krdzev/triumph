@@ -18,7 +18,7 @@ const BikesByFamilyWithSlider = ({
   familyData,
 }: BikesByFamilyWithSliderProps) => (
   <div className="flex lg:flex-row flex-col md:mb-24 mb-16 gap-8">
-    <div className="lg:basis-2/6 basis-1 border-r-2 border-gray-300">
+    <div className="lg:basis-3/12 basis-1 border-r-2 border-gray-300">
       <SectionTitleH2 text={familyData.title} color={"dark"} />
       <div className="lg:flex flex-col items-start hidden">
         <p className="mb-8 text-gray-700">{familyData.desc}</p>
@@ -30,7 +30,7 @@ const BikesByFamilyWithSlider = ({
         />
       </div>
     </div>
-    <div className="lg:basis-4/6 grow-0  overflow-hidden" >
+    <div className="lg:basis-9/12 grow-0  overflow-hidden" >
         <FamilyBikesSlider bikesToRender={bikes}/>
     </div>
   </div>

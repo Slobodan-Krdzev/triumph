@@ -86,6 +86,7 @@
   "bikes": [
     {
       "bikeId": 1,
+      "name": "Tiger 1200 GT",
       "model": "tiger-1200-gt",
       "price": 15000,
       "category": "adventure",
@@ -122,6 +123,7 @@
     },
     {
       "bikeId": 2,
+      "name": "Tiger 1200 Rally",
       "model": "tiger-1200-rally",
       "price": 20000,
       "category": "adventure",
@@ -158,6 +160,7 @@
     },
     {
       "bikeId": 3,
+      "name": "Tiger Sport 660",
       "model": "tiger-sport-660",
       "price": 15000,
       "category": "adventure",
@@ -194,6 +197,7 @@
     },
     {
       "bikeId": 4,
+      "name": "Tiger 900 GT",
       "model": "tiger-900-gt",
       "price": 20000,
       "category": "adventure",
@@ -230,7 +234,8 @@
     },
     {
       "bikeId": 5,
-      "model": "tlassic-900-rally",
+      "name": "Tiger 900 Rally",
+      "model": "tiger-900-rally",
       "price": 15000,
       "category": "adventure",
       "subFamilyCategory": "adventure",
@@ -266,6 +271,7 @@
     },
     {
       "bikeId": 6,
+      "name": "Tiger 1200",
       "model": "tiger-1200",
       "price": 20000,
       "category": "adventure",
@@ -302,6 +308,7 @@
     },
     {
       "bikeId": 7,
+      "name": "Speed 400",
       "model": "speed-400",
       "price": 5690.00,
       "category": "classics",
@@ -338,6 +345,7 @@
     },
     {
       "bikeId": 8,
+      "name": "Scrambler 400",
       "model": "scrambler-400-x",
       "price": 20000,
       "category": "classics",
@@ -374,6 +382,7 @@
     },
     {
       "bikeId": 9,
+      "name": "Speed Twin 900",
       "model": "speed-twin-900",
       "price": 15000,
       "category": "classics",
@@ -410,6 +419,7 @@
     },
     {
       "bikeId": 10,
+      "name": "Bonneville T100",
       "model": "bonneville-t100",
       "price": 20000,
       "category": "classics",
@@ -446,6 +456,7 @@
     },
     {
       "bikeId": 11,
+      "name": "Scrambler 900",
       "model": "scrambler-900",
       "price": 15000,
       "category": "classics",
@@ -482,6 +493,7 @@
     },
     {
       "bikeId": 12,
+      "name": "Bonneville Bobber",
       "model": "bonneville-bobber",
       "price": 20000,
       "category": "classics",
@@ -518,6 +530,7 @@
     },
     {
       "bikeId": 13,
+      "name": "Bonneville Speedmaster",
       "model": "bonneville-speedmaster",
       "price": 25000,
       "category": "classics",
@@ -554,6 +567,7 @@
     },
     {
       "bikeId": 14,
+      "name": "Bonneville T120",
       "model": "bonneville-t120",
       "price": 25000,
       "category": "classics",
@@ -590,6 +604,7 @@
     },
     {
       "bikeId": 15,
+      "name": "Scrambler 1200",
       "model": "scrambler-1200",
       "price": 25000,
       "category": "classics",
@@ -626,6 +641,7 @@
     },
     {
       "bikeId": 16,
+      "name": "Speed Twin 1200",
       "model": "speed-twin-1200",
       "price": 25000,
       "category": "classics",
@@ -662,6 +678,7 @@
     },
     {
       "bikeId": 17,
+      "name": "Truxton RS",
       "model": "thruxton-rs",
       "price": 25000,
       "category": "classics",
@@ -698,6 +715,7 @@
     },
     {
       "bikeId": 18,
+      "name": "Bobber Purple Stealth Edition",
       "model": "bobber-purple-stelth-edition",
       "price": "Цени Наскоро",
       "category": "classics",
@@ -735,6 +753,7 @@
     },
     {
       "bikeId": 19,
+      "name": "Scrambler 900 Orange Stealth Edition",
       "model": "scrambler-900-orange-stealth-edition",
       "price": "Цени Наскоро",
       "category": "classics",
@@ -772,6 +791,7 @@
     },
     {
       "bikeId": 20,
+      "name": "Speed Twin 900 Green Stealth Edition",
       "model": "speed-twin-900-green-stealth-edition",
       "price": "Цени Наскоро",
       "category": "classics",
@@ -809,6 +829,7 @@
     },
     {
       "bikeId": 21,
+      "name": "Speed Twin 1200 Red Stealth Edition",
       "model": "speed-twin-1200-red-stealth-edition",
       "price": "Цени Наскоро",
       "category": "classics",
@@ -846,6 +867,7 @@
     },
     {
       "bikeId": 22,
+      "name": "Speedtwin Red Stealth Edition",
       "model": "speedmaster-red-stealth-edition",
       "price": "Цени Наскоро",
       "category": "classics",
@@ -883,6 +905,7 @@
     },
     {
       "bikeId": 23,
+      "name": "T100 Blue Stealth Edition",
       "model": "t100-blue-stealth-edition",
       "price": "Цени Наскоро",
       "category": "classics",
@@ -920,6 +943,7 @@
     },
     {
       "bikeId": 24,
+      "name": "T120 Blue Stealth Edition",
       "model": "t120-blue-stealth-edition",
       "price": "Цени Наскоро",
       "category": "classics",
@@ -957,6 +981,7 @@
     },
     {
       "bikeId": 25,
+      "name": "T120 Black Stealth Edition",
       "model": "t120-black-stealth-edition",
       "price": "Цени Наскоро",
       "category": "classics",
@@ -994,6 +1019,7 @@
     },
     {
       "bikeId": 26,
+      "name": "Bonneville Bobber Chrome Edition",
       "model": "bonneville-bobber-chrome-edition",
       "price": 17090,
       "category": "classics",
@@ -1031,6 +1057,7 @@
     },
     {
       "bikeId": 27,
+      "name": "Bonneville Speed Master Chroem Edition",
       "model": "bonneville-speedmaster-chrome-edition",
       "price": 17090,
       "category": "classics",
@@ -1068,6 +1095,7 @@
     },
     {
       "bikeId": 28,
+      "name": "Scrambler 1200 XE Chrome Edition",
       "model": "scrambler-1200-xe-chrome-edition",
       "price": 17790,
       "category": "classics",
@@ -1105,6 +1133,7 @@
     },
     {
       "bikeId": 29,
+      "name": "Scrambler 900 Chrome Edition",
       "model": "scrambler-900-chrome-edition",
       "price": 12490,
       "category": "classics",
@@ -1142,6 +1171,7 @@
     },
     {
       "bikeId": 30,
+      "name": "Speed Twin 900 Chrome Edition",
       "model": "speed-twin-900-chrome-edition",
       "price": 10990,
       "category": "classics",
@@ -1179,6 +1209,7 @@
     },
     {
       "bikeId": 31,
+      "name": "Bonneville T100 Chrome Edition",
       "model": "bonneville-t100-chrome-edition",
       "price": 12290,
       "category": "classics",
@@ -1216,6 +1247,7 @@
     },
     {
       "bikeId": 32,
+      "name": "Bonneville T120 Chrome Edition",
       "model": "bonneville-t120-chrome-edition",
       "price": 15090,
       "category": "classics",
@@ -1253,6 +1285,7 @@
     },
     {
       "bikeId": 33,
+      "name": "Truxton RS Chrome Edition",
       "model": "thruxton-rs-chrome-edition",
       "price": 18790,
       "category": "classics",
@@ -1290,6 +1323,7 @@
     },
     {
       "bikeId": 34,
+      "name": "Speed Triple 765",
       "model": "speed-triple-765",
       "price": 12290,
       "category": "roadsters",
@@ -1327,6 +1361,7 @@
     },
     {
       "bikeId": 35,
+      "name": "Trident 600",
       "model": "trident-660",
       "price": 8690,
       "category": "roadsters",
@@ -1364,6 +1399,7 @@
     },
     {
       "bikeId": 36,
+      "name": "Speed Triple 1200 RR",
       "model": "speed-triple-1200-rr",
       "price": 20990,
       "category": "roadsters",
@@ -1401,6 +1437,7 @@
     },
     {
       "bikeId": 37,
+      "name": "Speed Triple 1200 RS",
       "model": "speed-triple-1200-rs",
       "price": 18990,
       "category": "roadsters",
@@ -1438,7 +1475,8 @@
     },
     {
       "bikeId": 15,
-      "model": "Rocket 2500 admin panel ",
+      "name": "Rocket 2500",
+      "model": "rocket-2500",
       "price": 25000,
       "category": "rocket",
       "familyPageInfo": {
