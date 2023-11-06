@@ -22,6 +22,133 @@
       "configPageInfo": {
         "desc": "Истражете го светот на авантурите, со мотоцикли изградени за секогаш да стигнат до крајот на патот, подготвени да одат каде било и да постигнат сè.",
         "link": "/configure/families/adventure"
+      },
+      "subFamilies": {
+        "tiger-900-range":{
+          "id": 1,
+          "subFamilyName": "tiger-900-range",
+          "title": "Нова Tiger 900 Серија",
+          "startingPrice": "Наскоро",
+          "url": "/motorcycles/adventure/tiger-900",
+          "subFamilyPageInfo": {
+            "desc1": "Изграден за најтешките патеки и најпребирливите патни тури, Новата Tiger 900 серија нуди незаменлива комбинација на перформанси, способности, удобност и карактер. Повторно подигање на нивото на перформансите на авантуристички мотории со подобрени спецификации: откријте го New Tiger 900"
+          },
+          "gallery": {
+            "modelImage": {
+              "src": "/images/adventure/tiger900GtModel.png",
+              "alt": "Tiger 900 Range Model Image"
+            }
+          }
+        },
+        "tiger-sport-660":{
+          "id": 2,
+          "subFamilyName": "tiger-sport-660",
+          "title": "Tiger Sport 660",
+          "startingPrice": 9590,
+          "url": "/motorcycles/adventure/tiger-sport-660",
+          "shortDesc": "Тројна предност во перформансите, водечка моќ и спецификации во класата и удобна употребливост при возење - сето тоа со одлична вредност.",
+          "subFamilyPageInfo": {
+            "desc1": "Изграден за најтешките патеки и најпребирливите патни тури, Новата Tiger 900 серија нуди незаменлива комбинација на перформанси, способности, удобност и карактер. Повторно подигање на нивото на перформансите на авантуристички мотории со подобрени спецификации: откријте го New Tiger 900"
+          },
+          "shortSpecInfo": {
+            "engine": "660cc мотор",
+            "trademarkInfo": "Водечки во класата по способност и ракување",
+            "trademarkInfo2": "Далечински прилагодлива Showa суспензија"
+          },
+          "gallery": {
+            "modelImage": {
+              "src": "/images/adventure/tigerSport660Model.png",
+              "alt": "Tiger Sport 660 Range Model Image"
+            }
+          }
+        },
+        "tiger-850-sport":{
+          "id": 3,
+          "subFamilyName": "tiger-850-sport",
+          "title": "Tiger 850 Sport",
+          "startingPrice": 12890,
+          "url": "/motorcycles/adventure/tiger-850-sport",
+          "shortDesc": "Прилагодлив на секој предизвик а сепак карактерот, агилноста и перформансите на Tiger, со завидувачки дизајн  и адаптабилност за сите потреби.",
+          "subFamilyPageInfo": {
+            "desc1": ""
+          },
+          "shortSpecInfo": {
+            "engine": "850cc T-plane мотор",
+            "trademarkInfo": "Авантуристичко настроен патнички мотор",
+            "trademarkInfo2": "20 литарски резервоар"
+          },
+          "gallery": {
+            "modelImage": {
+              "src": "/images/adventure/tiger850Sport.png",
+              "alt": "Tiger 850 Sport Model Image"
+            }
+          }
+        },
+        "tiger-1200-gt":{
+          "id": 4,
+          "subFamilyName": "tiger-1200-gt",
+          "title": "Tiger 1200 GT",
+          "startingPrice": 20990,
+          "url": "/motorcycles/adventure/tiger-1200-gt",
+          "shortDesc": "Врвен авантуристички мотор фокусиран за асфалтни подлоги. Интер-континентални можности, со висока комоција, перформанси и стил.",
+          "subFamilyPageInfo": {
+            "desc1": ""
+          },
+          "shortSpecInfo": {
+            "engine": "1,160 cc T-plane мотор",
+            "trademarkInfo": "Мотор со високи перформанси",
+            "trademarkInfo2": "3 години гаранција"
+          },
+          "gallery": {
+            "modelImage": {
+              "src": "/images/adventure/tiger1200GtModel.png",
+              "alt": "Tiger 1200 Gt Range Model Image"
+            }
+          }
+        },
+        "tiger-1200-rally":{
+          "id": 5,
+          "subFamilyName": "tiger-1200-rally",
+          "title": "Tiger 1200 Rally",
+          "startingPrice": 21990,
+          "url": "/motorcycles/adventure/tiger-1200-gt",
+          "shortDesc": "",
+          "subFamilyPageInfo": {
+            "desc1": "Изработен за сите подлоги. Најновиот авантурист на Triumph ве води насекаде низ светот, совалдува пустини и планини."
+          },
+          "shortSpecInfo": {
+            "engine": "1,160 cc T-plane мотор",
+            "trademarkInfo": "Мотор со високи перформанси",
+            "trademarkInfo2": "3 години гаранција"
+          },
+          "gallery": {
+            "modelImage": {
+              "src": "/images/adventure/tiger1200RallyModel.png",
+              "alt": "Tiger 1200 Rally Range Model Image"
+            }
+          }
+        },
+        "tiger-900-2023":{
+          "id": 6,
+          "subFamilyName": "tiger-900-2023",
+          "title": "Tiger 900 - MY23",
+          "startingPrice": 16290,
+          "url": "/motorcycles/adventure/tiger-900-2023",
+          "subFamilyPageInfo": {
+            "desc1": ""
+          },
+          "shortSpecInfo": {
+            "engine": "Потполно нов, возбудлив 900cc мотор осо три цилиндри",
+            "trademarkInfo": "Градски мотор со високо ниво на технолошки додатоци",
+            "trademarkInfo2": "Комфортен и флексибилен"
+          },
+          "gallery": {
+            "modelImage": {
+              "src": "/images/adventure/tiger900Model.png",
+              "alt": "Tiger 900 Range Model Image"
+            }
+          }
+        }
       }
     },
     {
@@ -55,12 +182,241 @@
             "alt": "Stealth Series"
           },
           "blackBtn": true
-
         }
       ],
       "configPageInfo": {
         "desc": "Легендарната 'Bonneville' крвна линија е вградена во нашите модерни класици, со неспоредлива историја на изведби, тркачки успех и културно влијание.",
         "link": "/configure/families/classics"
+      },
+      "subFamilies": {
+        "speed-400": {
+          "id": 1,
+          "subFamilyName": "speed-400",
+          "title": "Speed 400",
+          "startingPrice": 5690,
+          "url": "/motorcycles/classics/speed-400",
+          "shortDesc": "Граден по скици од неговите предци, Speed 400 во својата ДНК го поседува уникатниот 'roadster' дизајн на Triumph.",
+
+          "subFamilyPageInfo": {
+            "desc1": ""
+          },
+          "shortSpecInfo": {
+            "engine": "398cc TR Мотор",
+            "trademarkInfo": "Сервис Интервал 16,000 км"
+          },
+          "gallery": {
+            "modelImage": {
+              "src": "/images/classics/speed400.avif",
+              "alt": "Speed 400 Range Model Image"
+            }
+          }
+        },
+        "scrambler-400-x": {
+          "id": 2,
+          "subFamilyName": "scrambler-400-x",
+          "title": "Scrambler 400 X",
+          "startingPrice": 6390,
+          "url": "/motorcycles/classics/scrambler-400-x",
+          "shortDesc":"Со агилно управување, водечки перформанси во класата и луксузна завршница, Scrambler 400 X е „кул“ и способен за секаков предизвик.",
+          "subFamilyPageInfo": {
+            "desc1": ""
+          },
+          "shortSpecInfo": {
+            "engine": "398cc TR Мотор",
+            "trademarkInfo": "Сервис Интервал 16,000 км"
+          },
+          "gallery": {
+            "modelImage": {
+              "src": "/images/classics/scrambler400X.avif",
+              "alt": "Speed 400 X Range Model Image"
+            }
+          }
+        },
+        "speed-twin-900": {
+          "id": 3,
+          "subFamilyName": "speed-twin-900",
+          "title": "Speed Twin 900",
+          "startingPrice": 10390,
+          "url": "/motorcycles/classics/speed-twin-900",
+          "shortDesc": "Возбудливи перформанси и управување што инспирира самодоверба, сега со уште поголема удобност и стил.",
+          "subFamilyPageInfo": {
+            "desc1": ""
+          },
+          "shortSpecInfo": {
+            "trademarkInfo": "Новата Thriumph Stealth Серија е достапна"
+          },
+          "gallery": {
+            "modelImage": {
+              "src": "/images/classics/speedTwin900.png",
+              "alt": "Speed Twin 900 Range Model Image"
+            }
+          }
+        },
+        "bonneville-bobber": {
+          "id": 4,
+          "subFamilyName": "bonneville-bobber",
+          "title": "Bonneville Bobber",
+          "startingPrice": 16290,
+          "url": "/motorcycles/classics/bonneville-bobber",
+          "shortDesc": "Највозбуливиот Bobber, успешно ги краде погледите благодарејки на некговиот мускулест изглед и агилност.",
+          "subFamilyPageInfo": {
+            "desc1": ""
+          },
+          "shortSpecInfo": {
+            "trademarkInfo": "Новата Thriumph Stealth Серија е достапна"
+
+          },
+          "gallery": {
+            "modelImage": {
+              "src": "/images/classics/bonnevilleBobber.avif",
+              "alt": "Bonneville Bobber Range Model Image"
+            }
+          }
+        },
+        "scrambler-1200": {
+          "id": 5,
+          "subFamilyName": "scrambler-1200",
+          "title": "Scrambler 1200",
+          "startingPrice": 15990,
+          "url": "/motorcycles/classics/scrambler-1200",
+          "shortDesc": "Автентичен Scrambler стајлинг со авантуристички спецификации кои се најдобри во класата. Scrambler 1200 е најдобриот мотор во својата класа.",
+          "subFamilyPageInfo": {
+            "desc1": ""
+          },
+          "shortSpecInfo": {
+            "engine": "1,200cc Bonneville дво-цилинричен мотор",
+            "trademarkInfo": "Максимална јачина - 90 PS",
+            "trademarkInfo2": "Максимален вртежен момент - 110 Nm"
+          },
+          "gallery": {
+            "modelImage": {
+              "src": "/images/classics/scrambler1200.webp",
+              "alt": "Scrambler 1200 Range Model Image"
+            }
+          }
+        },
+        "bonneville-speedmaster": {
+          "id": 6,
+          "subFamilyName": "bonneville-speedmaster",
+          "title": "Bonneville Speedmaster",
+          "startingPrice": 16290,
+          "url": "/motorcycles/classics/bonneville-speedmaster",
+          "shortDesc": "Класичен 'custom' став, со комфортна позиција за возење за крузирање и 'premium' спецификации, сега веќе еволуирани.",
+          "subFamilyPageInfo": {
+            "desc1": ""
+          },
+          "shortSpecInfo": {
+            "trademarkInfo": "Новата Thriumph Stealth Серија е достапна"
+          },
+          "gallery": {
+            "modelImage": {
+              "src": "/images/classics/bonnevilleSpeedmasterStealth.avif",
+              "alt": "Bonneville Speedmaster Range Model Image"
+            }
+          }
+        },
+        "speed-twin-1200": {
+          "id": 7,
+          "subFamilyName": "speed-twin-1200",
+          "title": "Speed Twin 1200",
+          "startingPrice": 14190,
+          "url": "/motorcycles/classics/speed-twin-1200",
+          "shortDesc": "Модерно-класичен приспособен 'roadster' со динамични способности, целосно лесен за управување, многу напредна технологија, возбудлива испорака на вртежен момент со препознатлив британски звук.",
+          "subFamilyPageInfo": {
+            "desc1": ""
+          },
+          "shortSpecInfo": {
+            "trademarkInfo": "Новата Thriumph Stealth Серија е достапна"
+          },
+          "gallery": {
+            "modelImage": {
+              "src": "/images/classics/speedTwin1200.png",
+              "alt": "Speed Twin 1200 Speedmaster Range Model Image"
+            }
+          }
+        },
+        "scrambler-900": {
+          "id": 8,
+          "subFamilyName": "scrambler-900",
+          "title": "Scrambler 900",
+          "startingPrice": 11890,
+          "url": "/motorcycles/classics/scrambler-900",
+          "shortDesc": "Еден од најприфатените мотори на Triumph, кој благодарејки на преубавиот стајлинг и 'off-road' карактер, си доби висока репутација без никаков преседан.",
+          "subFamilyPageInfo": {
+            "desc1": ""
+          },
+          "shortSpecInfo": {
+            "trademarkInfo": "Новата Thriumph Stealth Серија е достапна"
+          },
+          "gallery": {
+            "modelImage": {
+              "src": "/images/classics/scrambler900.png",
+              "alt": "Scrambler 900 Speedmaster Range Model Image"
+            }
+          }
+        },
+        "bonneville-t100": {
+          "id": 9,
+          "subFamilyName": "bonneville-t100",
+          "title": "Bonneville T100",
+          "startingPrice": 11690,
+          "url": "/motorcycles/classics/bonneville-t100",
+          "shortDesc": "T100 е модерен класик. Доаѓа како наследик на Bonneville '59 со сега веќе перфектни финиши и детали.",
+          "subFamilyPageInfo": {
+            "desc1": ""
+          },
+          "shortSpecInfo": {
+            "trademarkInfo": "Новата Thriumph Stealth Серија е достапна"
+          },
+          "gallery": {
+            "modelImage": {
+              "src": "/images/classics/bonnevilleT100.png",
+              "alt": "Bonneville T100 Speedmaster Range Model Image"
+            }
+          }
+        },
+        "bonneville-t120": {
+          "id": 10,
+          "subFamilyName": "bonneville-t120",
+          "title": "Bonneville T120",
+          "startingPrice": 14290,
+          "url": "/motorcycles/classics/bonneville-t120",
+          "shortDesc": "Т120 и Т120 Black се вистински потомци на Bonneville моторите но со модерни перформанси, технологија и можности кои сепак го поседуваат оној автентичен Британски стил и карактер.",
+          "subFamilyPageInfo": {
+            "desc1": ""
+          },
+          "shortSpecInfo": {
+            "trademarkInfo": "Новата Thriumph Stealth Серија е достапна"
+          },
+          "gallery": {
+            "modelImage": {
+              "src": "/images/classics/bonnevilleT120.png",
+              "alt": "Bonneville T120 Speedmaster Range Model Image"
+            }
+          }
+        },
+        "thruxton-rs": {
+          "id": 11,
+          "subFamilyName": "thruxton-rs",
+          "title": "Thruxton RS",
+          "startingPrice": 14290,
+          "url": "/motorcycles/classics/thruxton-rs",
+          "shortDesc": "Новиот Thruxton RS комбинира оригинален стил и напредни перформанси со автентичен 'cafe-racer' дизајн.",
+          "subFamilyPageInfo": {
+            "desc1": ""
+          },
+          "shortSpecInfo": {
+            "engine": "1,200cc Thruxton Серија",
+            "trademarkInfo": "Автентичен Cafe Racer Дизајн",
+            "trademarkInfo2": "Oдлично управување и дизајн"
+          },
+          "gallery": {
+            "modelImage": {
+              "src": "/images/classics/truxtonRs.avif",
+              "alt": "Thruxton RS Speedmaster Range Model Image"
+            }
+          }
+        }
       }
     },
     {
@@ -71,1442 +427,377 @@
       "configPageInfo": {
         "desc": "Triumph создава револуционерни мотоцикли и неверојатни трицилиндрични мотори со акцент на моќноста, вртежен момент и моменталната реакција.",
         "link": "/configure/families/roadsters"
+      },
+      "subFamilies": {
+        "street-triple-765": {
+          "id": 1,
+          "subFamilyName": "street-triple-765",
+          "title": "Street Triple 765",
+          "startingPrice": 12290,
+          "url": "/motorcycles/roadsters/street-triple-765",
+          "shortDesc": "Со легендарен карактер, а со големо засилување во перформанси и технологија оваа серија го доби префиксот 'definitive streetfighter'. ",
+          "subFamilyPageInfo": {
+            "desc1": ""
+          },
+          "shortSpecInfo": {
+            "engine": "765cc мотор",
+            "trademarkInfo": "Максимална јачина од 120-130 PS",
+            "trademarkInfo2": "10000 км сервисен интервал"
+          },
+          "gallery": {
+            "modelImage": {
+              "src": "/images/roadsters/streetTriple765.png",
+              "alt": "Street Triple 765 Range Model Image"
+            }
+          }
+        },
+        "trident-660": {
+          "id": 2,
+          "subFamilyName": "trident-660",
+          "title": "Trident 660",
+          "startingPrice": 8690,
+          "url": "/motorcycles/roadsters/trident-660",
+          "shortDesc": "И спортски, и стилски, и возбудлив и со конкурентна цена - сето ова го може новиот Trident 660.",
+          "subFamilyPageInfo": {
+            "desc1": ""
+          },
+          "shortSpecInfo": {
+            "engine": "660cc мотор (Euro 5 Стандарди)",
+            "trademarkInfo": "2 мода на работа (Road Mode и Rain Mode)",
+            "trademarkInfo2": "10000 милји / 12 месеци сервисен интервал"
+          },
+          "gallery": {
+            "modelImage": {
+              "src": "/images/roadsters/trident660Model.png",
+              "alt": "Trident 660 Range Model Image"
+            }
+          }
+        },
+        "speed-triple-1200-rs": {
+          "id": 3,
+          "subFamilyName": "speed-triple-1200-rs",
+          "title": "Speed Triple 1200 RS",
+          "startingPrice": 18990,
+          "url": "/motorcycles/roadsters/speed-triple-1200-rs",
+          "shortDesc": "Најмоќниот, најдинамичниот и технолошки најнапредниот Speed Triple некогаш направен.",
+          "subFamilyPageInfo": {
+            "desc1": ""
+          },
+          "shortSpecInfo": {
+            "engine": "Нов 1160cc со 180PS",
+            "trademarkInfo": "198kg тежина и спремен за на патека",
+            "trademarkInfo2": "Најмодерна технологија фокусирана на возачот"
+          },
+          "gallery": {
+            "modelImage": {
+              "src": "/images/roadsters/speedTriple1200RsModel.png",
+              "alt": "Speed Triple 1200 RS Range Model Image"
+            }
+          }
+        },
+        "speed-triple-1200-rr": {
+          "id": 4,
+          "subFamilyName": "speed-triple-1200-rr",
+          "title": "Speed Triple 1200 RR",
+          "startingPrice": 20990,
+          "url": "/motorcycles/roadsters/speed-triple-1200-rr",
+          "shortDesc": "Колку повозбудливо изгледа толку повозбудлив е за возење. Најновиот Speed Triple 1200 RR со досега најдобрата спецификација.",
+          "subFamilyPageInfo": {
+            "desc1": ""
+          },
+          "shortSpecInfo": {
+            "engine": "Нов 1160cc со 180PS",
+            "trademarkInfo": "198kg тежина и спремен за на патека",
+            "trademarkInfo2": "Најмодерна технологија фокусирана на возачот"
+          },
+          "gallery": {
+            "modelImage": {
+              "src": "/images/roadsters/speedTriple1200RrModel.png",
+              "alt": "Speed Triple 1200 RR Range Model Image"
+            }
+          }
+        }
       }
     },
     {
       "id": 4,
       "type": "rocket",
       "shortDesc": "Опремен со најголемиот сериски мотор во светот и со најголем вртежен момент, ова е врвниот мускулен родстер со високи перформанси.",
+      
       "configPageInfo": {
         "desc": "Опремен со најголемиот сериски мотор во светот и со најголем вртежен момент, ова е врвниот мускулен родстер со високи перформанси.",
         "link": "/configure/families/rocket"
+      },
+      "subFamilies": {
+        "rocket-3": {
+          "id": 4,
+          "subFamilyName": "rocket-3",
+          "title": "Rocket 3",
+          "startingPrice": 25290,
+          "url": "/motorcycles/rocket-3/rocket-3",
+          "shortDesc": "Со мускулестиот изглед, прекрасениот стил и највисокото ниво на спецификации и технологија, Rocket-3 серијата изгледа енормно на патот но сепак е лесно управлива.",
+          "subFamilyPageInfo": {
+            "desc1": ""
+          },
+          "shortSpecInfo": {
+            "engine": "2500cc Rocket Мотор",
+            "trademarkInfo": "'Ultimate high performance roadster'"
+          },
+          "gallery": {
+            "modelImage": {
+              "src": "/images/rocket/rocket3Model.png",
+              "alt": "Rocket 3 Range Model Image"
+            }
+          }
+        }
       }
     }
   ],
   "bikes": [
+
     {
-      "bikeId": 1,
-      "name": "Tiger 1200 GT",
-      "model": "tiger-1200-gt",
-      "price": 15000,
+      "id": 1,
+      "title": "Tiger 900 GT",
+      "model": "tiger-900-gt-2024",
       "category": "adventure",
-      "subFamilyCategory": "adventure",
-      "familyPageInfo": {
-        "title": "TIGER 1200 GT, GT PRO AND GT EXPLORER",
-          "desc": "Врвна авантуристичка серија фокусирана на патишта, со можности и удобност за интерконтинентално патување.",
-          "link": {
-            "text": "Детали",
-            "url": "/motorcycles/adventure/tiger-1200-gt"
-          },
-          "image": {
-            "src": "/images/adventure/tiger1200Gt955x537.avif",
-            "alt": "Tiger 1200 GT"
-          },
-          "blackBtn": false,
-          "imageOnTheLeft": false,
-          "mobileTextRight": false
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Tiger 1200 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Tiger 1200 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Tiger 1200 Right Side"
+      "subFamilyCategory": "tiger-900-range",
+      "edition" : "1200gt" ,
+      "price": "Цени Наскоро",
+      "gallery": {
+        "modelImage": {
+          "src": "/images/adventure/tiger900GtModel.png",
+          "alt": "Tiger 900 GT"
         }
       }
     },
     {
-      "bikeId": 2,
-      "name": "Tiger 1200 Rally",
-      "model": "tiger-1200-rally",
-      "price": 20000,
+      "id": 2,
+      "title": "Tiger 900 GT PRO",
+      "model": "tiger-900-gt-pro-2024",
       "category": "adventure",
-      "subFamilyCategory": "adventure",
-      "familyPageInfo": {
-        "title": "TIGER 1200 RALLY PRO AND RALLY EXPLORER",
-          "desc": "Теренски карактер и ултра способности, од врвната all-terrain авантуристичка палета.",
-          "link": {
-            "text": "Детали",
-            "url": "/motorcycles/adventure/tiger-1200-rally"
-          },
-          "image": {
-            "src": "/images/adventure/tiger1200Rally.avif",
-            "alt": "Tiger 1200 Rally"
-          },
-          "blackBtn": false,
-          "imageOnTheLeft": true,
-          "mobileTextRight": true
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Tiger 660 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Tiger 660 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Tiger 660 Right Side"
+      "subFamilyCategory": "tiger-900-range",
+      "edition" : "1200gt" ,
+      "price": "Цени Наскоро",
+      "gallery": {
+        "modelImage": {
+          "src": "/images/adventure/tiger900GtModel.png",
+          "alt": "Tiger 900 GT"
         }
       }
     },
     {
-      "bikeId": 3,
-      "name": "Tiger Sport 660",
+      "id": 3,
+      "title": "Tiger 900 Rally PRO",
+      "model": "tiger-900-rally-pro-2024",
+      "category": "adventure",
+      "subFamilyCategory": "tiger-900-range",
+      "edition" : "1200gt" ,
+      "price": "Цени Наскоро",
+      "gallery": {
+        "modelImage": {
+          "src": "/images/adventure/tiger900RallyProModel.png",
+          "alt": "Tiger 900 Rally Pro"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "title": "Tiger Sport 660",
       "model": "tiger-sport-660",
-      "price": 15000,
       "category": "adventure",
-      "subFamilyCategory": "adventure",
-      "familyPageInfo": {
-        "title": "TIGER SPORT 660",
-        "desc": "Прв во авантуристичката палета, со трицилиндрични перформанси, неверојатен комфор, карактеристики и висока употребливост и со најниски трошоци за работа во класата",
-        "link": {
-          "text": "Детали",
-          "url": "/motorcycles/adventure/tiger-600"
-        },
-        "image": {
-          "src": "/images/adventure/tiger660.avif",
+      "subFamilyCategory": "tiger-sport-660",
+      "edition" : "660Sport" ,
+      "price": 9590,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/adventure/tigerSport660Model.png",
           "alt": "Tiger Sport 660"
-        },
-        "blackBtn": false,
-        "imageOnTheLeft": false,
-        "mobileTextRight": false
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Roadster 850 Sport Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Roadster 850 Sport Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Roadster 850 Sport Right Side"
         }
+      },
+      "shortInfo": {
+        "info1": "660cc Triple Motor",
+        "info2": "Лидер во категоријата",
+        "info3": "Прилагодлива 'Showa' суспензија"
       }
     },
     {
-      "bikeId": 4,
-      "name": "Tiger 900 GT",
-      "model": "tiger-900-gt",
-      "price": 20000,
+      "id": 6,
+      "title": "Tiger 850 Sport",
+      "model": "850-sport",
       "category": "adventure",
-      "subFamilyCategory": "adventure",
-      "familyPageInfo": {
-        "title": "TIGER-900-GT",
-        "desc": "Дизајниран за авантура на пат, удобност и многу други способности, моторциклите во палетата на Tiger 900 GT ги имаат сите перформанси, сета опрема и технологија на располагање се со цел возачот да пристапи на која било патека со максимална сигурност.",
-        "link": {
-          "text": "Детали",
-          "url": "/motorcycles/adventure/tiger-900-gt"
-        },
-        "image": {
-          "src": "/images/adventure/tiger900Gt.avif",
-          "alt": "Tiger 900 Gt"
-        },
-        "blackBtn": false,
-        "imageOnTheLeft": true,
-        "mobileTextRight": false
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Roadster 900 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Roadster 900 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Roadster 900 Right Side"
+      "subFamilyCategory": "tiger-850-sport",
+      "edition" : "850sport" ,
+      "price": 12890,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/adventure/tiger850Sport.png",
+          "alt": "Tiger 850 Sport"
         }
+      },
+      "shortInfo": {
+        "info1": "850cc T-plane Triple Motor",
+        "info2": "Патнички мотор со авантуристички дух",
+        "info3": "20 литарски резервоар"
       }
     },
     {
-      "bikeId": 5,
-      "name": "Tiger 900 Rally",
-      "model": "tiger-900-rally",
-      "price": 15000,
+      "id": 7,
+      "title": "Tiger 1200 GT PRO",
+      "model": "tiger-1200-gt-pro-2022",
       "category": "adventure",
-      "subFamilyCategory": "adventure",
-      "familyPageInfo": {
-        "title": "TIGER 900 RALLY",
-        "desc": "Возбудлива 'Tiger' серија дизајнирана за максимална 'off-road' авантура, удобност, контрола и многу способности, врз темелот на најдобрите досегашни перформанси и спецификација на 3-цилиндричниот мотор.",
-        "link": {
-          "text": "Детали",
-          "url": "/motorcycles/adventure/tiger-900-rally"
-        },
-        "image": {
-          "src": "/images/adventure/tiger900Rally.avif",
-          "alt": "Tiger 900 Rally"
-        },
-        "blackBtn": true,
-        "imageOnTheLeft": false,
-        "mobileTextRight": false
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Classic 800 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Classic 800 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Classic 800 Right Side"
-        }
-      }
-    },
-    {
-      "bikeId": 6,
-      "name": "Tiger 1200",
-      "model": "tiger-1200",
-      "price": 20000,
-      "category": "adventure",
-      "subFamilyCategory": "adventure",
-      "familyPageInfo": {
-        "title": "TIGER 1200",
-          "desc": "Triumph Tiger 1200: авантуристички 'all-terain' мотор што го освојува светот, усовршен од вас…",
-          "link": {
-            "text": "Детали",
-            "url": "motorcycles/adventure/tiger-1200"
-          },
-          "image": {
-            "src": "/images/adventure/tiger1200Gif.gif",
-            "alt": "video/mp4"
-          },
-          "blackBtn": true,
-          "imageOnTheLeft": false,
-          "mobileTextRight": false
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Classic 1000 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Classic 1000 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Classic 1000 Right Side"
-        }
-      }
-    },
-    {
-      "bikeId": 7,
-      "name": "Speed 400",
-      "model": "speed-400",
-      "price": 5690.00,
-      "category": "classics",
-      "subFamilyCategory": "400cc",
-      "familyPageInfo": {
-        "title": "SPEED 400",
-          "desc": "Уникатниот Модерен-Класик Роадстер Дизајн на Triumph во форма на Speed 400.",
-          "link": {
-            "text": "Детали",
-            "url": "motorcycles/classics/speed-400"
-          },
-          "image": {
-            "src": "/images/classics/speed400.avif",
-            "alt": "Speed 400"
-          },
-          "blackBtn": true,
-          "imageOnTheLeft": false,
-          "mobileTextRight": false
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Classic 800 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Classic 800 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Classic 800 Right Side"
-        }
-      }
-    },
-    {
-      "bikeId": 8,
-      "name": "Scrambler 400",
-      "model": "scrambler-400-x",
-      "price": 20000,
-      "category": "classics",
-      "subFamilyCategory": "400cc",
-      "familyPageInfo": {
-        "title": "SCRAMBLER 400 X",
-        "desc": "Scrabler 400 е подготвен за авантури на сите подлоги.",
-        "link": {
-          "text": "Детали",
-          "url": "motorcycles/classics/scrambler-400"
-        },
-        "image": {
-          "src": "/images/classics/scrambler400X.avif",
-          "alt": "Speed 400 X"
-        },
-        "blackBtn": true,
-        "imageOnTheLeft": false,
-        "mobileTextRight": false
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Classic 1000 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Classic 1000 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Classic 1000 Right Side"
-        }
-      }
-    },
-    {
-      "bikeId": 9,
-      "name": "Speed Twin 900",
-      "model": "speed-twin-900",
-      "price": 15000,
-      "category": "classics",
-      "subFamilyCategory": "900cc",
-      "familyPageInfo": {
-        "title": "SPEED TWIN 900",
-        "desc": "Возбудливи перформанси и агилно управување кое создава самодоверба кај возачот, сега со уште повеќе комоција и стил",
-        "link": {
-          "text": "Детали",
-          "url": "motorcycles/classics/speed-twin-900"
-        },
-        "image": {
-          "src": "/images/classics/speedTwin900.avif",
-          "alt": "Speed Twin 900"
-        },
-        "blackBtn": true,
-        "imageOnTheLeft": false,
-        "mobileTextRight": false
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Roadster 800 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Roadster 800 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Roadster 800 Right Side"
-        }
-      }
-    },
-    {
-      "bikeId": 10,
-      "name": "Bonneville T100",
-      "model": "bonneville-t100",
-      "price": 20000,
-      "category": "classics",
-      "subFamilyCategory": "900cc",
-      "familyPageInfo": {
-        "title": "BONNEVILLE T100 ",
-        "desc": "Иконичниот моторцикл na  Bonneville T100, сега еволвиран во уште полесна и помоќна верзија.",
-        "link": {
-          "text": "Детали",
-          "url": "motorcycles/classics/bonneville-t100"
-        },
-        "image": {
-          "src": "/images/classics/bonnevilleT100.avif",
-          "alt": "Bonneville T100"
-        },
-        "blackBtn": true,
-        "imageOnTheLeft": false,
-        "mobileTextRight": false
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Roadster 1000 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Roadster 1000 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Roadster 1000 Right Side"
-        }
-      }
-    },
-    {
-      "bikeId": 11,
-      "name": "Scrambler 900",
-      "model": "scrambler-900",
-      "price": 15000,
-      "category": "classics",
-      "subFamilyCategory": "900cc",
-      "familyPageInfo": {
-        "title": "SCRAMBLER 900",
-        "desc": "Цврст теренски карактер, извонредна агилност и иконски стил, со способност и перформанси за забава на сите патишта.",
-        "link": {
-          "text": "Детали",
-          "url": "motorcycles/classics/scrambler-900"
-        },
-        "image": {
-          "src": "/images/classics/scrambler900.avif",
-          "alt": "Scrambler 900"
-        },
-        "blackBtn": true,
-        "imageOnTheLeft": false,
-        "mobileTextRight": false
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Roadster 800 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Roadster 800 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Roadster 800 Right Side"
-        }
-      }
-    },
-    {
-      "bikeId": 12,
-      "name": "Bonneville Bobber",
-      "model": "bonneville-bobber",
-      "price": 20000,
-      "category": "classics",
-      "subFamilyCategory": "1200cc",
-      "familyPageInfo": {
-        "title": "BONNEVILLE BOBBER",
-        "desc": "Автентично, иновативно и возбудливо за возење - сега со уште повеќе перформанси, способност, спецификација и стил.",
-        "link": {
-          "text": "Детали",
-          "url": "motorcycles/classics/bonneville-bobber"
-        },
-        "image": {
-          "src": "/images/classics/bonnevilleBobber.avif",
-          "alt": "Bonneville Bobber"
-        },
-        "blackBtn": true,
-        "imageOnTheLeft": false,
-        "mobileTextRight": false
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Roadster 1000 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Roadster 1000 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Roadster 1000 Right Side"
-        }
-      }
-    },
-    {
-      "bikeId": 13,
-      "name": "Bonneville Speedmaster",
-      "model": "bonneville-speedmaster",
-      "price": 25000,
-      "category": "classics",
-      "subFamilyCategory":"1200cc",
-      "familyPageInfo": {
-        "title": "BONNEVILLE SPEEDMASTER",
-        "desc": "Автентично британски мотор со прилагоден релаксиран стил, со подобрени перформанси и управување и уште поудобно возење.",
-        "link": {
-          "text": "Детали",
-          "url": "motorcycles/classics/bonneville-speedmaster"
-        },
-        "image": {
-          "src": "/images/classics/bonnevilleSpeedmaster.avif",
-          "alt": "Bonneville SpeedMaster"
-        },
-        "blackBtn": true,
-        "imageOnTheLeft": false,
-        "mobileTextRight": false
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Rocket 800 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Right Side"
-        }
-      }
-    },
-    {
-      "bikeId": 14,
-      "name": "Bonneville T120",
-      "model": "bonneville-t120",
-      "price": 25000,
-      "category": "classics",
-      "subFamilyCategory":"1200cc",
-      "familyPageInfo": {
-        "title": "BONNEVILLE T120",
-        "desc": "Подобрени перформанси, ракување и технологија со безвременски дизајн на Bonneville DNA. Крајниот амблем на британскиот мотоциклизам, прекрасно префинет.",
-        "link": {
-          "text": "Детали",
-          "url": "motorcycles/classics/bonneville-t120"
-        },
-        "image": {
-          "src": "/images/classics/bonnevilleT120.avif",
-          "alt": "Bonneville T120"
-        },
-        "blackBtn": true,
-        "imageOnTheLeft": false,
-        "mobileTextRight": false
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Rocket 800 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Right Side"
-        }
-      }
-    },
-    {
-      "bikeId": 15,
-      "name": "Scrambler 1200",
-      "model": "scrambler-1200",
-      "price": 25000,
-      "category": "classics",
-      "subFamilyCategory":"1200cc",
-      "familyPageInfo": {
-        "title": "SCRAMBLER 1200",
-        "desc": "Автентичен стил на Scrambler со водечки спецификации за авантура во класата. Scrambler 1200 е најдобар во класата.",
-        "link": {
-          "text": "Детали",
-          "url": "motorcycles/classics/scrambler-1200"
-        },
-        "image": {
-          "src": "/images/classics/scrambler1200.webp",
-          "alt": "Scrambler 1200"
-        },
-        "blackBtn": true,
-        "imageOnTheLeft": false,
-        "mobileTextRight": false
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Rocket 800 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Right Side"
-        }
-      }
-    },
-    {
-      "bikeId": 16,
-      "name": "Speed Twin 1200",
-      "model": "speed-twin-1200",
-      "price": 25000,
-      "category": "classics",
-      "subFamilyCategory":"1200cc",
-      "familyPageInfo": {
-        "title": "SPEED TWIN 1200",
-        "desc": "Шаблонот на модерерно-класичен роадстер но еволуиран",
-        "link": {
-          "text": "Детали",
-          "url": "motorcycles/classics/speed-twin-1200"
-        },
-        "image": {
-          "src": "/images/classics/speedTwin1200.avif",
-          "alt": "Scrambler 1200"
-        },
-        "blackBtn": true,
-        "imageOnTheLeft": false,
-        "mobileTextRight": false
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Rocket 800 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Right Side"
-        }
-      }
-    },
-    {
-      "bikeId": 17,
-      "name": "Truxton RS",
-      "model": "thruxton-rs",
-      "price": 25000,
-      "category": "classics",
-      "subFamilyCategory":"1200cc",
-      "familyPageInfo": {
-        "title": "TRUXTON RS",
-        "desc": "Mоторот од 1200 кубика на Thruxton еволуираше за да обезбеди значителна надградба на перформансите.",
-        "link": {
-          "text": "Детали",
-          "url": "motorcycles/classics/thruxton-rs"
-        },
-        "image": {
-          "src": "/images/classics/truxtonRs.avif",
-          "alt": "Truxton RS"
-        },
-        "blackBtn": true,
-        "imageOnTheLeft": false,
-        "mobileTextRight": false
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Rocket 800 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Right Side"
-        }
-      }
-    },
-    {
-      "bikeId": 18,
-      "name": "Bobber Purple Stealth Edition",
-      "model": "bobber-purple-stelth-edition",
-      "price": "Цени Наскоро",
-      "category": "classics",
-      "subFamilyCategory":"stealth",
-      "specialEdition": "stealth",
-      "familyPageInfo": {
-        "title": "BOBBER PURPLE STEALTH EDITION",
-        "desc": "BOBBER PURPLE STEALTH EDITION",
-        "link": {
-          "text": "Детали",
-          "url": "motorcycles/classics/bonneville-boober/bobber-purple-stelth-edition"
-        },
-        "image": {
-          "src": "/images/classics/bobberStealth.avif",
-          "alt": "Bobber Stealth"
-        },
-        "blackBtn": true,
-        "imageOnTheLeft": false,
-        "mobileTextRight": false
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Rocket 800 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Right Side"
-        }
-      }
-    },
-    {
-      "bikeId": 19,
-      "name": "Scrambler 900 Orange Stealth Edition",
-      "model": "scrambler-900-orange-stealth-edition",
-      "price": "Цени Наскоро",
-      "category": "classics",
-      "subFamilyCategory":"stealth",
-      "specialEdition": "stealth",
-      "familyPageInfo": {
-        "title": "SCRAMBLER 900 ORANGE STEALTH EDITION",
-        "desc": "SCRAMBLER 900 ORANGE STEALTH EDITION",
-        "link": {
-          "text": "Детали",
-          "url": "motorcycles/classics/bonneville-scrambler-900/scrambler-900-orange-stealth-edition"
-        },
-        "image": {
-          "src": "/images/classics/scrambler900Orange.avif",
-          "alt": "Bobber Stealth"
-        },
-        "blackBtn": true,
-        "imageOnTheLeft": false,
-        "mobileTextRight": false
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Rocket 800 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Right Side"
-        }
-      }
-    },
-    {
-      "bikeId": 20,
-      "name": "Speed Twin 900 Green Stealth Edition",
-      "model": "speed-twin-900-green-stealth-edition",
-      "price": "Цени Наскоро",
-      "category": "classics",
-      "subFamilyCategory":"stealth",
-      "specialEdition": "stealth",
-      "familyPageInfo": {
-        "title": "SPEED TWIN 900 GREEN EDITION STEALTH EDITION",
-        "desc": "SPEED TWIN 900 GREEN EDITION STEALTH EDITION",
-        "link": {
-          "text": "Детали",
-          "url": "motorcycles/classics/bonneville-speed-twin-900/speed-twin-900-green-stealth-edition"
-        },
-        "image": {
-          "src": "/images/classics/speedTwin900Stealth.avif",
-          "alt": "Spped Twin 900 Green"
-        },
-        "blackBtn": true,
-        "imageOnTheLeft": false,
-        "mobileTextRight": false
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Rocket 800 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Right Side"
-        }
-      }
-    },
-    {
-      "bikeId": 21,
-      "name": "Speed Twin 1200 Red Stealth Edition",
-      "model": "speed-twin-1200-red-stealth-edition",
-      "price": "Цени Наскоро",
-      "category": "classics",
-      "subFamilyCategory":"stealth",
-      "specialEdition": "stealth",
-      "familyPageInfo": {
-        "title": "SPEED TWIN 1200 RED STEALTH EDITION",
-        "desc": "SPEED TWIN 1200 RED STEALTH EDITION",
-        "link": {
-          "text": "Детали",
-          "url": "motorcycles/classics/bonneville-speed-twin-900/speed-twin-1200-red-stealth-edition"
-        },
-        "image": {
-          "src": "/images/classics/speedTwin1200Stealth.avif",
-          "alt": "Speed Twin Stealth"
-        },
-        "blackBtn": true,
-        "imageOnTheLeft": false,
-        "mobileTextRight": false
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Rocket 800 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Right Side"
-        }
-      }
-    },
-    {
-      "bikeId": 22,
-      "name": "Speedtwin Red Stealth Edition",
-      "model": "speedmaster-red-stealth-edition",
-      "price": "Цени Наскоро",
-      "category": "classics",
-      "subFamilyCategory":"stealth",
-      "specialEdition": "stealth",
-      "familyPageInfo": {
-        "title": "SPEEDMASTER RED STEALTH EDITION",
-        "desc": "SPEEDMASTER RED STEALTH EDITION",
-        "link": {
-          "text": "Детали",
-          "url": "motorcycles/classics/bonneville-speedmaster/speedmaster-red-stealth-edition"
-        },
-        "image": {
-          "src": "/images/classics/bonnevilleSpeedmasterStealth.avif",
-          "alt": "Speed Twin Stealth"
-        },
-        "blackBtn": true,
-        "imageOnTheLeft": false,
-        "mobileTextRight": false
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Rocket 800 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Right Side"
-        }
-      }
-    },
-    {
-      "bikeId": 23,
-      "name": "T100 Blue Stealth Edition",
-      "model": "t100-blue-stealth-edition",
-      "price": "Цени Наскоро",
-      "category": "classics",
-      "subFamilyCategory":"stealth",
-      "specialEdition": "stealth",
-      "familyPageInfo": {
-        "title": "T100 BLUE STEALTH EDITION",
-        "desc": "T100 BLUE STEALTH EDITION",
-        "link": {
-          "text": "Детали",
-          "url": "motorcycles/classics/bonneville-t100/t100-blue-stealth-edition"
-        },
-        "image": {
-          "src": "/images/classics/bonnevilleT100Stealth.avif",
-          "alt": "Speed Twin Stealth"
-        },
-        "blackBtn": true,
-        "imageOnTheLeft": false,
-        "mobileTextRight": false
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Rocket 800 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Right Side"
-        }
-      }
-    },
-    {
-      "bikeId": 24,
-      "name": "T120 Blue Stealth Edition",
-      "model": "t120-blue-stealth-edition",
-      "price": "Цени Наскоро",
-      "category": "classics",
-      "subFamilyCategory":"stealth",
-      "specialEdition": "stealth",
-      "familyPageInfo": {
-        "title": "T120 BLUE STEALTH EDITION",
-        "desc": "T120 BLUE STEALTH EDITION",
-        "link": {
-          "text": "Детали",
-          "url": "motorcycles/classics/bonneville-t120/t120-blue-stealth-edition"
-        },
-        "image": {
-          "src": "/images/classics/bonnevilleT120Stealth.avif",
-          "alt": "Speed Twin Stealth"
-        },
-        "blackBtn": true,
-        "imageOnTheLeft": false,
-        "mobileTextRight": false
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Rocket 800 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Right Side"
-        }
-      }
-    },
-    {
-      "bikeId": 25,
-      "name": "T120 Black Stealth Edition",
-      "model": "t120-black-stealth-edition",
-      "price": "Цени Наскоро",
-      "category": "classics",
-      "subFamilyCategory":"stealth",
-      "specialEdition": "stealth",
-      "familyPageInfo": {
-        "title": "T120 BLACK STEALTH EDITION",
-        "desc": "T120 BLACK STEALTH EDITION",
-        "link": {
-          "text": "Детали",
-          "url": "motorcycles/classics/bonneville-t120/t120-black-stealth-edition"
-        },
-        "image": {
-          "src": "/images/classics/bonnevilleT120StealthBlack.avif",
-          "alt": "Speed Twin Stealth"
-        },
-        "blackBtn": true,
-        "imageOnTheLeft": false,
-        "mobileTextRight": false
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Rocket 800 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Right Side"
-        }
-      }
-    },
-    {
-      "bikeId": 26,
-      "name": "Bonneville Bobber Chrome Edition",
-      "model": "bonneville-bobber-chrome-edition",
-      "price": 17090,
-      "category": "classics",
-      "subFamilyCategory":"chrome",
-      "specialEdition": "chrome",
-      "familyPageInfo": {
-        "title": "BONNEVILLE BOBBER CHROME EDITION",
-        "desc": "BONNEVILLE BOBBER CHROME EDITION",
-        "link": {
-          "text": "Детали",
-          "url": "motorcycles/classics/bonneville-bobber/bonneville-bobber-chrome-edition"
-        },
-        "image": {
-          "src": "/images/classics/bonnevilleBobberChrome.avif",
-          "alt": "Bonneville Bobber Chrome Edition"
-        },
-        "blackBtn": true,
-        "imageOnTheLeft": false,
-        "mobileTextRight": false
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Rocket 800 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Right Side"
-        }
-      }
-    },
-    {
-      "bikeId": 27,
-      "name": "Bonneville Speed Master Chroem Edition",
-      "model": "bonneville-speedmaster-chrome-edition",
-      "price": 17090,
-      "category": "classics",
-      "subFamilyCategory":"chrome",
-      "specialEdition": "chrome",
-      "familyPageInfo": {
-        "title": "BONNEVILLE SPEEDMASTER CHROME EDITION",
-        "desc": "BONNEVILLE SPEEDMASTER CHROME EDITION",
-        "link": {
-          "text": "Детали",
-          "url": "motorcycles/classics/bonneville-speedmaster/bonneville-speedmaster-chrome-edition"
-        },
-        "image": {
-          "src": "/images/classics/speedmasterChrome.avif",
-          "alt": "BONNEVILLE SPEEDMASTER CHROME EDITION"
-        },
-        "blackBtn": true,
-        "imageOnTheLeft": false,
-        "mobileTextRight": false
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Rocket 800 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Right Side"
-        }
-      }
-    },
-    {
-      "bikeId": 28,
-      "name": "Scrambler 1200 XE Chrome Edition",
-      "model": "scrambler-1200-xe-chrome-edition",
-      "price": 17790,
-      "category": "classics",
-      "subFamilyCategory":"chrome",
-      "specialEdition": "chrome",
-      "familyPageInfo": {
-        "title": "SCRAMBLER 1200 XE CHROME EDITION",
-        "desc": "SCRAMBLER 1200 XE CHROME EDITION",
-        "link": {
-          "text": "Детали",
-          "url": "motorcycles/classics/bonneville-scrambler-1200/scrambler-1200-xe-chrome-edition"
-        },
-        "image": {
-          "src": "/images/classics/scrambler1200XeChrome.avif",
-          "alt": "SCRAMBLER 1200 XE CHROME EDITION"
-        },
-        "blackBtn": true,
-        "imageOnTheLeft": false,
-        "mobileTextRight": false
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Rocket 800 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Right Side"
-        }
-      }
-    },
-    {
-      "bikeId": 29,
-      "name": "Scrambler 900 Chrome Edition",
-      "model": "scrambler-900-chrome-edition",
-      "price": 12490,
-      "category": "classics",
-      "subFamilyCategory":"chrome",
-      "specialEdition": "chrome",
-      "familyPageInfo": {
-        "title": "SCRAMBLER 900 CHROME EDITION",
-        "desc": "SCRAMBLER 900 CHROME EDITION",
-        "link": {
-          "text": "Детали",
-          "url": "motorcycles/classics/bonneville-scrambler-1200/scrambler-900-chrome-edition"
-        },
-        "image": {
-          "src": "/images/classics/scrambler900Chrome.avif",
-          "alt": "SCRAMBLER 900 CHROME EDITION"
-        },
-        "blackBtn": true,
-        "imageOnTheLeft": false,
-        "mobileTextRight": false
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Rocket 800 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Right Side"
-        }
-      }
-    },
-    {
-      "bikeId": 30,
-      "name": "Speed Twin 900 Chrome Edition",
-      "model": "speed-twin-900-chrome-edition",
-      "price": 10990,
-      "category": "classics",
-      "subFamilyCategory":"chrome",
-      "specialEdition": "chrome",
-      "familyPageInfo": {
-        "title": "SPEED TWIN 900 CHROME EDITION",
-        "desc": "SPEED TWIN 900 CHROME EDITION",
-        "link": {
-          "text": "Детали",
-          "url": "motorcycles/classics/bonneville-speeed-twin-900/speed-twin-900-chrome-edition"
-        },
-        "image": {
-          "src": "/images/classics/speedTwin900Chrome.avif",
-          "alt": "SPEED TWIN 900 CHROME EDITION"
-        },
-        "blackBtn": true,
-        "imageOnTheLeft": false,
-        "mobileTextRight": false
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Rocket 800 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Right Side"
-        }
-      }
-    },
-    {
-      "bikeId": 31,
-      "name": "Bonneville T100 Chrome Edition",
-      "model": "bonneville-t100-chrome-edition",
-      "price": 12290,
-      "category": "classics",
-      "subFamilyCategory":"chrome",
-      "specialEdition": "chrome",
-      "familyPageInfo": {
-        "title": "BONNEVILLE T100 CHROME EDITION",
-        "desc": "BONNEVILLE T100 CHROME EDITION",
-        "link": {
-          "text": "Детали",
-          "url": "motorcycles/classics/bonneville-t100/bonneville-t100-chrome-edition"
-        },
-        "image": {
-          "src": "/images/classics/t100Chrome.avif",
-          "alt": "BONNEVILLE T100 CHROME EDITION"
-        },
-        "blackBtn": true,
-        "imageOnTheLeft": false,
-        "mobileTextRight": false
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Rocket 800 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Right Side"
-        }
-      }
-    },
-    {
-      "bikeId": 32,
-      "name": "Bonneville T120 Chrome Edition",
-      "model": "bonneville-t120-chrome-edition",
-      "price": 15090,
-      "category": "classics",
-      "subFamilyCategory":"chrome",
-      "specialEdition": "chrome",
-      "familyPageInfo": {
-        "title": "BONNEVILLE T120 CHROME EDITION",
-        "desc": "BONNEVILLE T120 CHROME EDITION",
-        "link": {
-          "text": "Детали",
-          "url": "motorcycles/classics/bonneville-t100/bonneville-t120-chrome-edition"
-        },
-        "image": {
-          "src": "/images/classics/t120Chrome.avif",
-          "alt": "BONNEVILLE T120 CHROME EDITION"
-        },
-        "blackBtn": true,
-        "imageOnTheLeft": false,
-        "mobileTextRight": false
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Rocket 800 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Right Side"
-        }
-      }
-    },
-    {
-      "bikeId": 33,
-      "name": "Truxton RS Chrome Edition",
-      "model": "thruxton-rs-chrome-edition",
-      "price": 18790,
-      "category": "classics",
-      "subFamilyCategory":"chrome",
-      "specialEdition": "chrome",
-      "familyPageInfo": {
-        "title": "THRUXTON RS CHROME EDITION",
-        "desc": "THRUXTON RS CHROME EDITION",
-        "link": {
-          "text": "Детали",
-          "url": "motorcycles/classics/bonneville-t100/thruxton-rs-chrome-edition"
-        },
-        "image": {
-          "src": "/images/classics/thruxtonRsChrome.avif",
-          "alt": "THRUXTON RS CHROME EDITION"
-        },
-        "blackBtn": true,
-        "imageOnTheLeft": false,
-        "mobileTextRight": false
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Rocket 800 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Right Side"
-        }
-      }
-    },
-    {
-      "bikeId": 34,
-      "name": "Speed Triple 765",
-      "model": "speed-triple-765",
-      "price": 12290,
-      "category": "roadsters",
-      "subFamilyCategory":"roadsters",
-      "specialEdition": "roadsters",
-      "familyPageInfo": {
-        "title": "SPEED TRIPLE 765",
-        "desc": "Подкрепен од еволуцијата на тркачкиот мотор Moto2™, што резултира со највисоки перформанси, највисоки спецификации и најразноврсна Street Triple серија досега.",
-        "link": {
-          "text": "Детали",
-          "url": "motorcycles/roadsters/speed-triple-765"
-        },
-        "image": {
-          "src": "/images/roadsters/speedTriple765FamPic.avif",
-          "alt": "SPEED TRIPLE 765"
-        },
-        "blackBtn": true,
-        "imageOnTheLeft": true,
-        "mobileTextRight": false
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Rocket 800 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Right Side"
-        }
-      }
-    },
-    {
-      "bikeId": 35,
-      "name": "Trident 600",
-      "model": "trident-660",
-      "price": 8690,
-      "category": "roadsters",
-      "subFamilyCategory":"roadsters",
-      "specialEdition": "roadsters",
-      "familyPageInfo": {
-        "title": "TRIDENT 660",
-        "desc": "Go for it all - Конкурентни цени, спортски, стилски, возбудлив и разноврсен, сето ова го може новиот Trident 660.",
-        "link": {
-          "text": "Детали",
-          "url": "motorcycles/roadsters/trident/trident-660"
-        },
-        "image": {
-          "src": "/images/roadsters/trident660.avif",
-          "alt": "TRIDENT 660"
-        },
-        "blackBtn": false,
-        "imageOnTheLeft": true,
-        "mobileTextRight": true
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Rocket 800 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Right Side"
-        }
-      }
-    },
-    {
-      "bikeId": 36,
-      "name": "Speed Triple 1200 RR",
-      "model": "speed-triple-1200-rr",
+      "subFamilyCategory": "tiger-1200-gt",
+      "edition" : "1200gt" ,
       "price": 20990,
-      "category": "roadsters",
-      "subFamilyCategory":"roadsters",
-      "specialEdition": "roadsters",
-      "familyPageInfo": {
-        "title": "НОВИОТ SPEED TRIPLE 1200 RR",
-        "desc": "Колку е блескаво за гледање, толку и возбудливо за возење, со највисоки спецификации досега.",
-        "link": {
-          "text": "Детали",
-          "url": "motorcycles/roadsters/speed-triple-1200/speed-triple-1200-rr"
-        },
-        "image": {
-          "src": "/images/roadsters/speedRR.avif",
-          "alt": "НОВИОТ SPEED TRIPLE 1200 RR"
-        },
-        "blackBtn": false,
-        "imageOnTheLeft": true,
-        "mobileTextRight": true
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Rocket 800 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Right Side"
+      "gallery": {
+        "modelImage": {
+          "src": "/images/adventure/tiger1200GtModel.png",
+          "alt": "Tiger 1200 GT"
         }
+      },
+      "shortInfo": {
+        "info1": "1,160cc T-plane Triple Motor",
+        "info2": "20 литарски резервоар",
+        "info3": "3 години гаранција"
       }
     },
     {
-      "bikeId": 37,
-      "name": "Speed Triple 1200 RS",
-      "model": "speed-triple-1200-rs",
-      "price": 18990,
-      "category": "roadsters",
-      "subFamilyCategory":"roadsters",
-      "specialEdition": "roadsters",
-      "familyPageInfo": {
-        "title": "НАЈНОВИОТ SPEED TRIPLE 1200 RS",
-        "desc": "Најмоќниот, динамичен и технолошки напреден Speed ​​​​Triple некогаш направен.",
-        "link": {
-          "text": "Детали",
-          "url": "motorcycles/roadsters/speed-triple-1200/speed-triple-1200-rs"
-        },
-        "image": {
-          "src": "/images/roadsters/speedRS.avif",
-          "alt": "НАЈНОВИОТ SPEED TRIPLE 1200 RS"
-        },
-        "blackBtn": false,
-        "imageOnTheLeft": false,
-        "mobileTextRight": false
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Rocket 800 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Right Side"
+      "id": 8,
+      "title": "Tiger 1200 GT Explorer",
+      "model": "tiger-1200-gt-explorer-2022",
+      "category": "adventure",
+      "subFamilyCategory": "tiger-1200-gt",
+      "edition" : "1200gt" ,
+      "price": 22990,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/adventure/tiger1200GtExplorerModel.png",
+          "alt": "Tiger 1200 GT Explorer"
         }
+      },
+      "shortInfo": {
+        "info1": "1,160cc T-plane Triple Motor",
+        "info2": "30 литарски резервоар",
+        "info3": "3 години гаранција"
       }
     },
     {
-      "bikeId": 15,
-      "name": "Rocket 2500",
-      "model": "rocket-2500",
-      "price": 25000,
-      "category": "rocket",
-      "familyPageInfo": {
-        "title": "НАЈНОВИОТ SPEED TRIPLE 1200 RS",
-        "desc": "Најмоќниот, динамичен и технолошки напреден Speed ​​​​Triple некогаш направен.",
-        "link": {
-          "text": "Детали",
-          "url": "motorcycles/roadsters/speed-triple-1200/speed-triple-1200-rs"
-        },
-        "image": {
-          "src": "/images/roadsters/speedRS.avif",
-          "alt": "НАЈНОВИОТ SPEED TRIPLE 1200 RS"
-        },
-        "blackBtn": false,
-        "imageOnTheLeft": false,
-        "mobileTextRight": false
-      },
-      "galery": {
-        "mainImage": {
-          "src": "image",
-          "alt": "Rocket 800 Main"
-        },
-        "leftSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Left Side"
-        },
-        "rightSideImage": {
-          "src": "image",
-          "alt": "Rocket 800 Right Side"
+      "id": 9,
+      "title": "Tiger 1200 Rally Pro",
+      "model": "tiger-1200-rally-pro-2022",
+      "category": "adventure",
+      "subFamilyCategory": "tiger-1200-rally",
+      "edition" : "1200gt" ,
+      "price": 21990,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/adventure/tiger1200RallyModel.png",
+          "alt": "Tiger 1200 Rally Pro"
         }
+      },
+      "shortInfo": {
+        "info1": "1,160cc T-plane Triple Motor",
+        "info2": "20 литарски резервоар",
+        "info3": "3 години гаранција"
+      }
+    },
+    {
+      "id": 10,
+      "title": "Tiger 1200 Rally Explorer",
+      "model": "tiger-1200-rally-explorer-2022",
+      "category": "adventure",
+      "subFamilyCategory": "tiger-1200-rally",
+      "edition" : "1200gt" ,
+      "price": 23990,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/adventure/tiger1200RallyModel.png",
+          "alt": "Tiger 1200 Rally Explorer"
+        }
+      },
+      "shortInfo": {
+        "info1": "1,160cc T-plane Triple Motor",
+        "info2": "30 литарски резервоар",
+        "info3": "3 години гаранција"
+      }
+    },
+    {
+      "id": 11,
+      "title": "Tiger 900 GT Aragon Edition",
+      "model": "gt-aragon-edition-2024",
+      "category": "adventure",
+      "subFamilyCategory": "tiger-900-2023",
+      "edition" : "900gtAragon" ,
+      "price": 16290,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/adventure/tiger900GtAragonModel.png",
+          "alt": "Tiger 1200 GT Aragon"
+        }
+      },
+      "shortInfo": {
+        "info1": "Нов 900cc три-цилиндричен мотор",
+        "info2": "Високи спецификации за подобро искуство",
+        "info3": "Врвна технологија фокусирана на возачот"
+      }
+    },
+    {
+      "id": 12,
+      "title": "Tiger 900 Rally Aragon Edition",
+      "model": "rally-aragon-edition-2024",
+      "category": "adventure",
+      "subFamilyCategory": "tiger-900-2023",
+      "edition" : "900gtAragon" ,
+      "price": 16990,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/adventure/tiger900RallyAragonModel.png",
+          "alt": "iger 900 Rally Aragon Edition"
+        }
+      },
+      "shortInfo": {
+        "info1": "Нов 900cc три-цилиндричен мотор",
+        "info2": "Врвна спецификација за екстремни off-road можности",
+        "info3": "Врвни перформанси и агилност"
+      }
+    },
+    {
+      "id": 13,
+      "title": "Tiger 900 GT Pro (MY23)",
+      "model": "gt-pro",
+      "category": "adventure",
+      "subFamilyCategory": "tiger-900-2023",
+      "edition" : "900gtAragon-my23" ,
+      "price": 16290,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/adventure/tiger900GtProModel.png",
+          "alt": "Tiger 900 GT PRo (MY23)"
+        }
+      },
+      "shortInfo": {
+        "info1": "Потполно нов 900сс три-цилиндарски мотор",
+        "info2": "GT спецификација за долги дистанци",
+        "info3": "Врвна технологија фокусирана на возачот"
+      }
+    },
+    {
+      "id": 14,
+      "title": "Tiger 900 Rally Pro (MY23)",
+      "model": "rally-pro",
+      "category": "adventure",
+      "subFamilyCategory": "tiger-900-2023",
+      "edition" : "900gtAragon-my23" ,
+      "price": 16990,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/adventure/tiger900RallyProModel.png",
+          "alt": "Tiger 900 Rally Pro Edition"
+        }
+      },
+      "shortInfo": {
+        "info1": "Потполно нов 900сс три-цилиндарски мотор",
+        "info2": "Врвна спецификација за екстремни off-road можности",
+        "info3": "Врвни перформанси и агилност"
       }
     }
   ]

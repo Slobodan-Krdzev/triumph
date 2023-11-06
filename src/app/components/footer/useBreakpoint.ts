@@ -11,7 +11,7 @@ export const useBreakpoint = () => {
         return () => {
             window.removeEventListener('resize', () => setBreakpoint(window.innerWidth));
         }
-    }, [window.innerWidth])
+    }, [])
     
     return breakpoint
 }

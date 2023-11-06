@@ -11,13 +11,14 @@ const ConfigurePage = async () => {
   const familiesRes = await fetch(`${FAMILIES}`, { cache: "no-store" });
   const families = await familiesRes.json();
 
-  // ovde revalidate ili no-cache treba da odlucime
-  // mada eden motor bi se dodaval mnogu retko
-  // revalidate e podobro
-  const bikesRes = await fetch(`${BIKES}`, { cache: "no-cache" });
-  const bikes = await bikesRes.json();
+  const getSubFamilies = (subFamilyObj: any) => {
+    const subFamiliesArray = Object.keys(subFamilyObj).map(
+      (key) => subFamilyObj[key]
+    );
 
-  console.log("familiesData", families);
+    return subFamiliesArray;
+  };
+
 
   return (
     <main className="slight-white-bg ">
@@ -32,8 +33,8 @@ const ConfigurePage = async () => {
       <section className="lg:pl-28 px-4 md:mt-16 mt-8">
         {families.map((family: any) => (
           <BikesByFamilyWithSlider
-          key={family.id}
-            bikes={getBikesByFamily(family.type,bikes)}
+            key={family.id}
+            subFamilies={getSubFamilies(family.subFamilies)}
             familyData={{
               title: family.type,
               desc: family.configPageInfo.desc,

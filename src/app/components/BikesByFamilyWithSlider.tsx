@@ -5,7 +5,7 @@ import FamilyBikesSlider from "./FamilyBikesSlider";
 
 // type bike[] ,  familyType
 type BikesByFamilyWithSliderProps = {
-  bikes: any[];
+  subFamilies: any[];
   familyData: {
     title: string;
     desc: string;
@@ -14,26 +14,32 @@ type BikesByFamilyWithSliderProps = {
 };
 
 const BikesByFamilyWithSlider = ({
-  bikes,
+  subFamilies,
   familyData,
-}: BikesByFamilyWithSliderProps) => (
-  <div className="flex lg:flex-row flex-col md:mb-24 mb-16 gap-8">
-    <div className="lg:basis-3/12 basis-1 border-r-2 border-gray-300">
+}: BikesByFamilyWithSliderProps) => {
+  
+  return (
+    <div className="flex lg:flex-row flex-col md:mb-24 mb-16 gap-8">
+    <div className="lg:basis-1/3 basis-1 border-r-2 border-gray-300">
       <SectionTitleH2 text={familyData.title} color={"dark"} />
-      <div className="lg:flex flex-col items-start hidden">
-        <p className="mb-8 text-gray-700">{familyData.desc}</p>
-        <MainBtn
+      <div className="lg:flex flex-col items-start hidden md:w-10/12">
+        {familyData.desc && <p className="mb-8 text-gray-700">{familyData.desc}</p>  }
+        {familyData.url === '' ? '' : <MainBtn
           text={"Види Колекција"}
           bgBlack={true}
           isLink={true}
           link={familyData.url}
-        />
+        />}
+        
       </div>
     </div>
-    <div className="lg:basis-9/12 grow-0  overflow-hidden" >
-        <FamilyBikesSlider bikesToRender={bikes}/>
+    <div className="lg:basis-2/3 grow-0  overflow-hidden" >
+      
+        <FamilyBikesSlider bikesToRender={subFamilies}/>
     </div>
   </div>
-);
+  )
+  
+};
 
 export default BikesByFamilyWithSlider;
