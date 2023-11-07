@@ -554,7 +554,7 @@
       },
       "configFamilyPageInfo": {
         "image": {
-          "src": "/images/rocket/configFamilyBanner.avif",
+          "src": "/images/rocket-3/configFamilyBanner.avif",
           "alt": "Adventure Bikes Banner"
         },
         "title": "Додајте аксесоари на вашиот мотор",
@@ -942,7 +942,7 @@
       "price": 25290,
       "gallery": {
         "modelImage": {
-          "src": "/images/rocket/rocket3Model.png",
+          "src": "/images/rocket-3/rocket3Model.png",
           "alt": "Rocket 3 R"
         }
       },
@@ -962,7 +962,7 @@
       "price": 25990,
       "gallery": {
         "modelImage": {
-          "src": "/images/rocket/rocket3GtModel.png",
+          "src": "/images/rocket-3/rocket3GtModel.png",
           "alt": "Rocket 3 GT"
         }
       },
@@ -982,7 +982,7 @@
       "price": 26190,
       "gallery": {
         "modelImage": {
-          "src": "/images/rocket/rocket3R221Model.png",
+          "src": "/images/rocket-3/rocket3R221Model.png",
           "alt": "Rocket 3 R 221"
         }
       },
@@ -1002,7 +1002,7 @@
       "price": 26890,
       "gallery": {
         "modelImage": {
-          "src": "/images/rocket/rocket3GtModel.png",
+          "src": "/images/rocket-3/rocket3GtModel.png",
           "alt": "Rocket 3 GT 221"
         }
       },
@@ -1022,7 +1022,7 @@
       "price": 26890,
       "gallery": {
         "modelImage": {
-          "src": "/images/rocket/rocket3GtChrome.png",
+          "src": "/images/rocket-3/rocket3GtChrome.png",
           "alt": "Rocket 3 GT Chrome Edition"
         }
       },
@@ -1042,7 +1042,7 @@
       "price": 26190,
       "gallery": {
         "modelImage": {
-          "src": "/images/rocket/rocket3RChromeModel.png",
+          "src": "/images/rocket-3/rocket3RChromeModel.png",
           "alt": "Rocket 3 R Chrome Edition"
         }
       },
