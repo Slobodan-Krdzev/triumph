@@ -16,7 +16,7 @@ const TypeOfFamilyPage = async (data: any, props: Props) => {
   });
   const family = await familyRes.json();
 
-  const bikesRes = await fetch(`${BIKES}?category=${pathname}`, {cache: 'no-store'});
+  const bikesRes = await fetch(`${BIKES}?category=${pathname === 'rocket' ? 'rocket-3' : pathname}`, {cache: 'no-store'});
   const bikes = await bikesRes.json();
 
   const getSubFamilies = (subFamilyObj: any) => {

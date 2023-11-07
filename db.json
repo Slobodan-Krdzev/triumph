@@ -28,7 +28,7 @@
           "id": 1,
           "subFamilyName": "tiger-900-range",
           "title": "Нова Tiger 900 Серија",
-          "startingPrice": "Наскоро",
+          "price": "Наскоро",
           "url": "/motorcycles/adventure/tiger-900",
           "subFamilyPageInfo": {
             "desc1": "Изграден за најтешките патеки и најпребирливите патни тури, Новата Tiger 900 серија нуди незаменлива комбинација на перформанси, способности, удобност и карактер. Повторно подигање на нивото на перформансите на авантуристички мотории со подобрени спецификации: откријте го New Tiger 900"
@@ -44,7 +44,7 @@
           "id": 2,
           "subFamilyName": "tiger-sport-660",
           "title": "Tiger Sport 660",
-          "startingPrice": 9590,
+          "price": 9590,
           "url": "/motorcycles/adventure/tiger-sport-660",
           "shortDesc": "Тројна предност во перформансите, водечка моќ и спецификации во класата и удобна употребливост при возење - сето тоа со одлична вредност.",
           "subFamilyPageInfo": {
@@ -66,7 +66,7 @@
           "id": 3,
           "subFamilyName": "tiger-850-sport",
           "title": "Tiger 850 Sport",
-          "startingPrice": 12890,
+          "price": 12890,
           "url": "/motorcycles/adventure/tiger-850-sport",
           "shortDesc": "Прилагодлив на секој предизвик а сепак карактерот, агилноста и перформансите на Tiger, со завидувачки дизајн  и адаптабилност за сите потреби.",
           "subFamilyPageInfo": {
@@ -88,7 +88,7 @@
           "id": 4,
           "subFamilyName": "tiger-1200-gt",
           "title": "Tiger 1200 GT",
-          "startingPrice": 20990,
+          "price": 20990,
           "url": "/motorcycles/adventure/tiger-1200-gt",
           "shortDesc": "Врвен авантуристички мотор фокусиран за асфалтни подлоги. Интер-континентални можности, со висока комоција, перформанси и стил.",
           "subFamilyPageInfo": {
@@ -110,7 +110,7 @@
           "id": 5,
           "subFamilyName": "tiger-1200-rally",
           "title": "Tiger 1200 Rally",
-          "startingPrice": 21990,
+          "price": 21990,
           "url": "/motorcycles/adventure/tiger-1200-gt",
           "shortDesc": "",
           "subFamilyPageInfo": {
@@ -132,7 +132,7 @@
           "id": 6,
           "subFamilyName": "tiger-900-2023",
           "title": "Tiger 900 - MY23",
-          "startingPrice": 16290,
+          "price": 16290,
           "url": "/motorcycles/adventure/tiger-900-2023",
           "subFamilyPageInfo": {
             "desc1": ""
@@ -193,7 +193,7 @@
           "id": 1,
           "subFamilyName": "speed-400",
           "title": "Speed 400",
-          "startingPrice": 5690,
+          "price": 5690,
           "url": "/motorcycles/classics/speed-400",
           "shortDesc": "Граден по скици од неговите предци, Speed 400 во својата ДНК го поседува уникатниот 'roadster' дизајн на Triumph.",
 
@@ -215,7 +215,7 @@
           "id": 2,
           "subFamilyName": "scrambler-400-x",
           "title": "Scrambler 400 X",
-          "startingPrice": 6390,
+          "price": 6390,
           "url": "/motorcycles/classics/scrambler-400-x",
           "shortDesc":"Со агилно управување, водечки перформанси во класата и луксузна завршница, Scrambler 400 X е „кул“ и способен за секаков предизвик.",
           "subFamilyPageInfo": {
@@ -236,7 +236,7 @@
           "id": 3,
           "subFamilyName": "speed-twin-900",
           "title": "Speed Twin 900",
-          "startingPrice": 10390,
+          "price": 10390,
           "url": "/motorcycles/classics/speed-twin-900",
           "shortDesc": "Возбудливи перформанси и управување што инспирира самодоверба, сега со уште поголема удобност и стил.",
           "subFamilyPageInfo": {
@@ -256,7 +256,7 @@
           "id": 4,
           "subFamilyName": "bonneville-bobber",
           "title": "Bonneville Bobber",
-          "startingPrice": 16290,
+          "price": 16290,
           "url": "/motorcycles/classics/bonneville-bobber",
           "shortDesc": "Највозбуливиот Bobber, успешно ги краде погледите благодарејки на некговиот мускулест изглед и агилност.",
           "subFamilyPageInfo": {
@@ -277,7 +277,7 @@
           "id": 5,
           "subFamilyName": "scrambler-1200",
           "title": "Scrambler 1200",
-          "startingPrice": 15990,
+          "price": 15990,
           "url": "/motorcycles/classics/scrambler-1200",
           "shortDesc": "Автентичен Scrambler стајлинг со авантуристички спецификации кои се најдобри во класата. Scrambler 1200 е најдобриот мотор во својата класа.",
           "subFamilyPageInfo": {
@@ -299,7 +299,7 @@
           "id": 6,
           "subFamilyName": "bonneville-speedmaster",
           "title": "Bonneville Speedmaster",
-          "startingPrice": 16290,
+          "price": 16290,
           "url": "/motorcycles/classics/bonneville-speedmaster",
           "shortDesc": "Класичен 'custom' став, со комфортна позиција за возење за крузирање и 'premium' спецификации, сега веќе еволуирани.",
           "subFamilyPageInfo": {
@@ -319,7 +319,7 @@
           "id": 7,
           "subFamilyName": "speed-twin-1200",
           "title": "Speed Twin 1200",
-          "startingPrice": 14190,
+          "price": 14190,
           "url": "/motorcycles/classics/speed-twin-1200",
           "shortDesc": "Модерно-класичен приспособен 'roadster' со динамични способности, целосно лесен за управување, многу напредна технологија, возбудлива испорака на вртежен момент со препознатлив британски звук.",
           "subFamilyPageInfo": {
@@ -339,7 +339,7 @@
           "id": 8,
           "subFamilyName": "scrambler-900",
           "title": "Scrambler 900",
-          "startingPrice": 11890,
+          "price": 11890,
           "url": "/motorcycles/classics/scrambler-900",
           "shortDesc": "Еден од најприфатените мотори на Triumph, кој благодарејки на преубавиот стајлинг и 'off-road' карактер, си доби висока репутација без никаков преседан.",
           "subFamilyPageInfo": {
@@ -359,7 +359,7 @@
           "id": 9,
           "subFamilyName": "bonneville-t100",
           "title": "Bonneville T100",
-          "startingPrice": 11690,
+          "price": 11690,
           "url": "/motorcycles/classics/bonneville-t100",
           "shortDesc": "T100 е модерен класик. Доаѓа како наследик на Bonneville '59 со сега веќе перфектни финиши и детали.",
           "subFamilyPageInfo": {
@@ -379,7 +379,7 @@
           "id": 10,
           "subFamilyName": "bonneville-t120",
           "title": "Bonneville T120",
-          "startingPrice": 14290,
+          "price": 14290,
           "url": "/motorcycles/classics/bonneville-t120",
           "shortDesc": "Т120 и Т120 Black се вистински потомци на Bonneville моторите но со модерни перформанси, технологија и можности кои сепак го поседуваат оној автентичен Британски стил и карактер.",
           "subFamilyPageInfo": {
@@ -399,7 +399,7 @@
           "id": 11,
           "subFamilyName": "thruxton-rs",
           "title": "Thruxton RS",
-          "startingPrice": 14290,
+          "price": 14290,
           "url": "/motorcycles/classics/thruxton-rs",
           "shortDesc": "Новиот Thruxton RS комбинира оригинален стил и напредни перформанси со автентичен 'cafe-racer' дизајн.",
           "subFamilyPageInfo": {
@@ -433,7 +433,7 @@
           "id": 1,
           "subFamilyName": "street-triple-765",
           "title": "Street Triple 765",
-          "startingPrice": 12290,
+          "price": 12290,
           "url": "/motorcycles/roadsters/street-triple-765",
           "shortDesc": "Со легендарен карактер, а со големо засилување во перформанси и технологија оваа серија го доби префиксот 'definitive streetfighter'. ",
           "subFamilyPageInfo": {
@@ -455,7 +455,7 @@
           "id": 2,
           "subFamilyName": "trident-660",
           "title": "Trident 660",
-          "startingPrice": 8690,
+          "price": 8690,
           "url": "/motorcycles/roadsters/trident-660",
           "shortDesc": "И спортски, и стилски, и возбудлив и со конкурентна цена - сето ова го може новиот Trident 660.",
           "subFamilyPageInfo": {
@@ -477,7 +477,7 @@
           "id": 3,
           "subFamilyName": "speed-triple-1200-rs",
           "title": "Speed Triple 1200 RS",
-          "startingPrice": 18990,
+          "price": 18990,
           "url": "/motorcycles/roadsters/speed-triple-1200-rs",
           "shortDesc": "Најмоќниот, најдинамичниот и технолошки најнапредниот Speed Triple некогаш направен.",
           "subFamilyPageInfo": {
@@ -499,7 +499,7 @@
           "id": 4,
           "subFamilyName": "speed-triple-1200-rr",
           "title": "Speed Triple 1200 RR",
-          "startingPrice": 20990,
+          "price": 20990,
           "url": "/motorcycles/roadsters/speed-triple-1200-rr",
           "shortDesc": "Колку повозбудливо изгледа толку повозбудлив е за возење. Најновиот Speed Triple 1200 RR со досега најдобрата спецификација.",
           "subFamilyPageInfo": {
@@ -533,7 +533,7 @@
           "id": 4,
           "subFamilyName": "rocket-3",
           "title": "Rocket 3",
-          "startingPrice": 25290,
+          "price": 25290,
           "url": "/motorcycles/rocket-3/rocket-3",
           "shortDesc": "Со мускулестиот изглед, прекрасениот стил и највисокото ниво на спецификации и технологија, Rocket-3 серијата изгледа енормно на патот но сепак е лесно управлива.",
           "subFamilyPageInfo": {
@@ -798,6 +798,226 @@
         "info1": "Потполно нов 900сс три-цилиндарски мотор",
         "info2": "Врвна спецификација за екстремни off-road можности",
         "info3": "Врвни перформанси и агилност"
+      }
+    },
+    {
+      "id": 15,
+      "title": "Street Triple 765 R",
+      "model": "street-triple-765-r-2023",
+      "category": "roadsters",
+      "subFamilyCategory": "street-triple-765",
+      "edition" : "streetTriple765R" ,
+      "price": 12290,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/roadsters/streetTriple765RModel.png",
+          "alt": "Street Triple 765 R"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "765cc мотор",
+        "info2": "Максимална јачина од 120-130 PS",
+        "info3": "10000 км сервисен интервал"
+      }
+    },
+    {
+      "id": 16,
+      "title": "Street Triple 765 RS",
+      "model": "street-triple-765-rs-2023",
+      "category": "roadsters",
+      "subFamilyCategory": "street-triple-765",
+      "edition" : "streetTriple765RS" ,
+      "price": 13990,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/roadsters/streetTriple765RsModel.png",
+          "alt": "Street Triple 765 RS"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "765cc мотор",
+        "info2": "Максимална јачина од 130 PS",
+        "info3": "10000 км сервисен интервал"
+      }
+    },
+    {
+      "id": 17,
+      "title": "Trident 660",
+      "model": "trident-660",
+      "category": "roadsters",
+      "subFamilyCategory": "trident-660",
+      "edition" : "trident660" ,
+      "price": 8690,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/roadsters/trident660Model.png",
+          "alt": "Trident 660"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "660cc мотор",
+        "info2": "2 мода на работа (Road & Rain)",
+        "info3": "10000км / 12 месеци сервисен интервал"
+      }
+    },
+    {
+      "id": 18,
+      "title": "Speed Triple 1200 RR",
+      "model": "speed-triple-1200-rs",
+      "category": "roadsters",
+      "subFamilyCategory": "speed-triple-1200-rs",
+      "edition" : "streetTriple1200RS" ,
+      "price": 18990,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/roadsters/speedTriple1200RsModel.png",
+          "alt": "Speed Triple 1200 Rs"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "660cc мотор",
+        "info2": "2 мода на работа (Road & Rain)",
+        "info3": "10000км / 12 месеци сервисен интервал"
+      }
+    },
+    {
+      "id": 19,
+      "title": "Speed Triple 1200 RR",
+      "model": "speed-triple-1200-rr",
+      "category": "roadsters",
+      "subFamilyCategory": "speed-triple-1200-rr",
+      "edition" : "streetTriple1200RR" ,
+      "price": 20990,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/roadsters/speedTriple1200Rr2Model.png",
+          "alt": "Speed Triple 1200 RR"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "Нов 1160cc мотор со 180 коњски сили ",
+        "info2": "Нов кокпит и едно предно светло",
+        "info3": "Најново технологија фокусирана на возачот"
+      }
+    },
+    {
+      "id": 20,
+      "title": "Rocket 3 R",
+      "model": "rocket-3-r",
+      "category": "rocket-3",
+      "subFamilyCategory": "rocket-3",
+      "edition" : "rocket3R" ,
+      "price": 25290,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/rocket/rocket3Model.png",
+          "alt": "Rocket 3 R"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "Три-цилиндричен Rocket 3 мотор со 2,500cc зафатнина",
+        "info2": "167 коњски сили при 6000rpm",
+        "info3": "Обртен момент од 221Nm"
+      }
+    },
+    {
+      "id": 21,
+      "title": "Rocket 3 GT",
+      "model": "rocket-3-gt",
+      "category": "rocket-3",
+      "subFamilyCategory": "rocket-3",
+      "edition" : "rocket3GT" ,
+      "price": 25990,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/rocket/rocket3GtModel.png",
+          "alt": "Rocket 3 GT"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "Три-цилиндричен Rocket 3 мотор со 2,500cc зафатнина",
+        "info2": "167 коњски сили при 6000rpm",
+        "info3": "Обртен момент од 221Nm"
+      }
+    },
+    {
+      "id": 22,
+      "title": "Rocket 3 R 221",
+      "model": "rocket-3-r-221-edition-2022",
+      "category": "rocket-3",
+      "subFamilyCategory": "rocket-3",
+      "edition" : "rocket3R221" ,
+      "price": 26190,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/rocket/rocket3R221Model.png",
+          "alt": "Rocket 3 R 221"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "Три-цилиндричен Rocket 3 мотор со 2,500cc зафатнина",
+        "info2": "167 коњски сили при 6000rpm",
+        "info3": "Обртен момент од 221Nm"
+      }
+    },
+    {
+      "id": 23,
+      "title": "Rocket 3 GT 221",
+      "model": "rocket-3-gt-chrome-edition-2023",
+      "category": "rocket-3",
+      "subFamilyCategory": "rocket-3",
+      "edition" : "rocket3R221" ,
+      "price": 26890,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/rocket/rocket3GtModel.png",
+          "alt": "Rocket 3 GT 221"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "Три-цилиндричен Rocket 3 мотор со 2,500cc зафатнина",
+        "info2": "167 коњски сили при 6000rpm",
+        "info3": "Обртен момент од 221Nm"
+      }
+    },
+    {
+      "id": 24,
+      "title": "Rocket 3 GT Chrome Edition",
+      "model": "rocket-3-gt-221-edition-2022",
+      "category": "rocket-3",
+      "subFamilyCategory": "rocket-3",
+      "edition" : "rocket3Chrome" ,
+      "price": 26890,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/rocket/rocket3GtChrome.png",
+          "alt": "Rocket 3 GT Chrome Edition"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "Три-цилиндричен Rocket 3 мотор со 2,500cc зафатнина",
+        "info2": "167 коњски сили при 6000rpm",
+        "info3": "Обртен момент од 221Nm"
+      }
+    },
+    {
+      "id": 25,
+      "title": "Rocket 3 R Chrome Edition",
+      "model": "rocket-3-r-chrome-edition-2023",
+      "category": "rocket-3",
+      "subFamilyCategory": "rocket-3",
+      "edition" : "rocket3Chrome" ,
+      "price": 26190,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/rocket/rocket3RChromeModel.png",
+          "alt": "Rocket 3 R Chrome Edition"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "Три-цилиндричен Rocket 3 мотор со 2,500cc зафатнина",
+        "info2": "167 коњски сили при 6000rpm",
+        "info3": "Обртен момент од 221Nm"
       }
     }
   ]

@@ -1,7 +1,5 @@
-import React from "react";
-import SectionTitleH2 from "./familiySharedComponents/SectionTitleH2";
-import MainBtn from "./MainBtn";
 import FamilyBikesSlider from "./FamilyBikesSlider";
+import MainBtn from "./MainBtn";
 
 // type bike[] ,  familyType
 type BikesByFamilyWithSliderProps = {
@@ -33,7 +31,7 @@ const BikesByFamilyWithSlider = ({
         
       </div>
     </div>
-    <div className="lg:basis-2/3 grow-0  overflow-hidden" >
+    <div className="lg:basis-2/3 grow-0 shadow-sm overflow-hidden" >
       
         <FamilyBikesSlider itemsToRender={items}/>
         

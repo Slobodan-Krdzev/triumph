@@ -14,7 +14,7 @@ const FamilyBikesSlider = ({ itemsToRender = [] }: FamilyBikesSliderProps) => {
         {itemsToRender.map((item: any) => (
           <div
             key={item.id}
-            className="bg-white shadow-lg lg:mb-8 flex flex-col justify-between rounded-md"
+            className="bg-white shadow-xl lg:mb-8 flex flex-col justify-between rounded-md"
           >
             <div className="">
               <Image
@@ -30,9 +30,9 @@ const FamilyBikesSlider = ({ itemsToRender = [] }: FamilyBikesSliderProps) => {
                 {item.title}
               </h3>
               <p className="text-md mb-4">
-                {item.startingPrice === "Наскоро"
+                {item.price === "Наскоро"
                   ? "Цени Наскоро."
-                  : `Oд ${item.startingPrice} €.`}
+                  : `Oд ${item.price} €.`}
               </p>
 
               {item.shortSpecInfo && (
@@ -88,9 +88,9 @@ const FamilyBikesSlider = ({ itemsToRender = [] }: FamilyBikesSliderProps) => {
                 {item.title}
               </h3>
               <p className="text-md mb-4">
-                {item.startingPrice === "Наскоро"
+                {item.price === "Наскоро"
                   ? "Цени Наскоро."
-                  : `Oд ${item.startingPrice} €.`}
+                  : `Oд ${item.price} €.`}
               </p>
 
               {item.shortSpecInfo && (
