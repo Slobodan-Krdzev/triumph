@@ -1051,6 +1051,311 @@
         "info2": "167 коњски сили при 6000rpm",
         "info3": "Обртен момент од 221Nm"
       }
+    },
+    {
+      "id": 26,
+      "title": "Speed 400",
+      "model": "speed-400-2024",
+      "category": "classics",
+      "subFamilyCategory": "speed-400",
+      "edition" : "400cc" ,
+      "price": 5690,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/classics/speed400Model.jpg",
+          "alt": "Speed 400"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "398cc TR Мотор",
+        "info2": "16 000 km сервисен интервал",
+        "info3": "Достапен од Јануари 2024."
+      }
+    },
+    {
+      "id": 27,
+      "title": "Scrambler 400 x",
+      "model": "scrambler-400-x-2024",
+      "category": "classics",
+      "subFamilyCategory": "scrambler-400-x",
+      "edition" : "400cc" ,
+      "price": 6390,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/classics/scrambler400XModel.jpg",
+          "alt": "Scrambler 400 x"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "398cc TR Мотор",
+        "info2": "16 000 km сервисен интервал",
+        "info3": "Достапен од Јануари 2024."
+      }
+    },
+    {
+      "id": 28,
+      "title": "Speed Twin 900",
+      "model": "speed-twin-900-2023",
+      "category": "classics",
+      "subFamilyCategory": "speed-twin-900",
+      "edition" : "900cc" ,
+      "price": 10390,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/classics/speedТwin900Model.png",
+          "alt": "Speed Twin 900"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "Новата Stealth Edition Серија е Достапна"
+      }
+    },
+    {
+      "id": 29,
+      "title": "Bonneville Bobber",
+      "model": "bobber-2023",
+      "category": "classics",
+      "subFamilyCategory": "bonneville-bobber",
+      "edition" : "900cc" ,
+      "price": 16290,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/classics/bonnevilleBobberModel.png",
+          "alt": "Bonneville Bobber"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "Новата Stealth Edition Серија е Достапна"
+      }
+    },
+    {
+      "id": 30,
+      "title": "scrambler 1200 X (MY24)",
+      "model": "scrambler-1200-x-2024",
+      "category": "classics",
+      "subFamilyCategory": "scrambler-1200",
+      "edition" : "1200cc" ,
+      "price": "Цени Наскоро",
+      "gallery": {
+        "modelImage": {
+          "src": "/images/classics/scrambler1200XMy24Model.png",
+          "alt": "scrambler 1200 X (MY24)"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "1,200cc Bonneville дво-цилинричен мотор",
+        "info2": "Максимална јачина - 90 PS",
+        "info3": "Максимален вртежен момент - 110 Nm"
+      }
+    },
+    {
+      "id": 31,
+      "title": "scrambler 1200 XE (MY24)",
+      "model": "scrambler-1200-xe-2024",
+      "category": "classics",
+      "subFamilyCategory": "scrambler-1200",
+      "edition" : "1200cc" ,
+      "price": "Цени Наскоро",
+      "gallery": {
+        "modelImage": {
+          "src": "/images/classics/scrambler1200XeMy24Model.png",
+          "alt": "scrambler 1200 XE (MY24)"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "1,200cc Bonneville дво-цилинричен мотор",
+        "info2": "Максимална јачина - 90 PS",
+        "info3": "Максимален вртежен момент - 110 Nm"
+      }
+    },
+    {
+      "id": 32,
+      "title": "Scrambler 1200 XC (MY23)",
+      "model": "scrambler-1200-xc-2023",
+      "category": "classics",
+      "subFamilyCategory": "scrambler-1200",
+      "edition" : "1200cc" ,
+      "price": 15990,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/classics/scrambler1200XcMy23Model.png",
+          "alt": "Scrambler 1200 XC (MY23)"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "1,200cc Bonneville дво-цилинричен мотор",
+        "info2": "Максимална јачина - 90 PS и вртежен момент - 110 Nm.",
+        "info3": "Динамичен и многу способен мотор."
+      }
+    },
+    {
+      "id": 33,
+      "title": "Scrambler 1200 XE (MY23)",
+      "model": "scrambler-1200-xe-2023",
+      "category": "classics",
+      "subFamilyCategory": "scrambler-1200",
+      "edition" : "1200cc" ,
+      "price": 16990,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/classics/scrambler1200XeMy23Model.png",
+          "alt": "Scrambler 1200 XE (MY23)"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "1,200cc Bonneville дво-цилинричен мотор",
+        "info2": "Максимална јачина - 90 PS и вртежен момент - 110 Nm.",
+        "info3": "Scrambler наменет за секого."
+      }
+    },
+    {
+      "id": 34,
+      "title": "Bonneville Speedmaster",
+      "model": "speedmaster-2023",
+      "category": "classics",
+      "subFamilyCategory": "bonneville-speedmaster",
+      "edition" : "1200cc" ,
+      "price": 16290,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/classics/bonnevilleSpeedmasterModel.png",
+          "alt": "Bonneville Speedmaster"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "Новата Stealth Edition Серија е Достапна"
+      }
+    },
+    {
+      "id": 35,
+      "title": "Speed Twin 1200",
+      "model": "speed-twin-1200-2023",
+      "category": "classics",
+      "subFamilyCategory": "speed-twin-1200",
+      "edition" : "1200cc" ,
+      "price": 14190,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/classics/speedTwin1200Model.png",
+          "alt": "Speed Twin 1200"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "Новата Stealth Edition Серија е Достапна"
+      }
+    },
+    {
+      "id": 36,
+      "title": "Scrambler 900",
+      "model": "scrambler-900-2023",
+      "category": "classics",
+      "subFamilyCategory": "scrambler-900",
+      "edition" : "900cc" ,
+      "price": 11890,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/classics/scrambler900Model.png",
+          "alt": "Scrambler 900"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "Новата Stealth Edition Серија е Достапна"
+      }
+    },
+    {
+      "id": 37,
+      "title": "Bonneville T100",
+      "model": "t100-2023",
+      "category": "classics",
+      "subFamilyCategory": "bonneville-t100",
+      "edition" : "900cc" ,
+      "price": 11690,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/classics/bonnevilleT100Model.png",
+          "alt": "Bonneville T100"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "Новата Stealth Edition Серија е Достапна"
+      }
+    },
+    {
+      "id": 38,
+      "title": "Bonneville T120",
+      "model": "t120-2023",
+      "category": "classics",
+      "subFamilyCategory": "bonneville-t120",
+      "edition" : "900cc" ,
+      "price": 14290,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/classics/bonnevilleT120Model.png",
+          "alt": "Bonneville T100"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "Новата Stealth Edition Серија е Достапна"
+      }
+    },
+    {
+      "id": 39,
+      "title": "Bonneville T120 Black",
+      "model": "t120-black-2023",
+      "category": "classics",
+      "subFamilyCategory": "bonneville-t120",
+      "edition" : "900cc" ,
+      "price": 14290,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/classics/bonnevilleT120BlackModel.png",
+          "alt": "Bonneville T120 Black"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "Новата Stealth Edition Серија е Достапна"
+      }
+    },
+    {
+      "id": 40,
+      "title": "Thruxton Final Edition",
+      "model": "thruxton-final-edition-2024",
+      "category": "classics",
+      "subFamilyCategory": "thruxton-rs",
+      "edition" : "thruxtonFinal" ,
+      "price": 19690,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/classics/thruxtonRsFinalEditionModel.png",
+          "alt": "Thruxton Final Edition"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "1,200cc Thruxton тунинг мотор",
+        "info2": "Повеќе сила, со подобра агилност.",
+        "info3": "Неверојатни финиши на боја и стил."
+      }
+    },
+    {
+      "id": 41,
+      "title": "Thruxton RS",
+      "model": "thruxton-rs-2023",
+      "category": "classics",
+      "subFamilyCategory": "thruxton-rs",
+      "edition" : "thruxtonRS" ,
+      "price": 17990,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/classics/thruxtonRsModel.png",
+          "alt": "Thruxton RS"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "1,200cc Thruxton тунинг мотор",
+        "info2": "Повеќе сила, со подобра агилност во склоп со автентичната ДНК на 'Cafe-Racer' моторите.",
+        "info3": "Неверојатни финиши на боја и стил."
+      }
     }
+
   ]
 }
