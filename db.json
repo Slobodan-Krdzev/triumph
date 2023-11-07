@@ -23,6 +23,14 @@
         "desc": "Истражете го светот на авантурите, со мотоцикли изградени за секогаш да стигнат до крајот на патот, подготвени да одат каде било и да постигнат сè.",
         "link": "/configure/families/adventure"
       },
+      "configFamilyPageInfo": {
+        "image": {
+          "src": "/images/adventure/configFamilyBanner.avif",
+          "alt": "Adventure Bikes Banner"
+        },
+        "title": "Додајте аксесоари на вашиот мотор",
+        "link": "/configure/bikes"
+      },
       "subFamilies": {
         "tiger-900-range":{
           "id": 1,
@@ -187,6 +195,14 @@
       "configPageInfo": {
         "desc": "Легендарната 'Bonneville' крвна линија е вградена во нашите модерни класици, со неспоредлива историја на изведби, тркачки успех и културно влијание.",
         "link": "/configure/families/classics"
+      },
+      "configFamilyPageInfo": {
+        "image": {
+          "src": "/images/classics/configFamilyBanner.avif",
+          "alt": "Classic Bikes Banner"
+        },
+        "title": "Додајте аксесоари на вашиот мотор",
+        "link": "/configure/bikes"
       },
       "subFamilies": {
         "speed-400": {
@@ -428,6 +444,14 @@
         "desc": "Triumph создава револуционерни мотоцикли и неверојатни трицилиндрични мотори со акцент на моќноста, вртежен момент и моменталната реакција.",
         "link": "/configure/families/roadsters"
       },
+      "configFamilyPageInfo": {
+        "image": {
+          "src": "/images/roadsters/configFamilyBanner.avif",
+          "alt": "Adventure Bikes Banner"
+        },
+        "title": "Додајте аксесоари на вашиот мотор",
+        "link": "/configure/bikes"
+      },
       "subFamilies": {
         "street-triple-765": {
           "id": 1,
@@ -527,6 +551,14 @@
       "configPageInfo": {
         "desc": "Опремен со најголемиот сериски мотор во светот и со најголем вртежен момент, ова е врвниот мускулен родстер со високи перформанси.",
         "link": "/configure/families/rocket"
+      },
+      "configFamilyPageInfo": {
+        "image": {
+          "src": "/images/rocket/configFamilyBanner.avif",
+          "alt": "Adventure Bikes Banner"
+        },
+        "title": "Додајте аксесоари на вашиот мотор",
+        "link": "/configure/bikes"
       },
       "subFamilies": {
         "rocket-3": {

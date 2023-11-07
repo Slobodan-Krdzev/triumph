@@ -41,7 +41,7 @@ const TypeOfFamilyPage = async (data: any, props: Props) => {
   return (
     <main className="slight-white-bg">
       <HeroSectionCTA
-        image={"/images/configFamilyBanner.avif"}
+        image={family[0].configFamilyPageInfo.image.src}
         title={"Додајте аксесоари на вашиот мотор"}
         link={{
           text: "Види ги Сите",
