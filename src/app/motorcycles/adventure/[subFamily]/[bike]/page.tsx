@@ -1,8 +1,10 @@
 import React from 'react'
 
-const BikePage = () => {
+const BikePage = ({params}: any) => {
   return (
-    <div>BikePage</div>
+    <div>BikePage
+      {params.bike}
+    </div>
   )
 }
 

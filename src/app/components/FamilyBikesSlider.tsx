@@ -6,11 +6,9 @@ type FamilyBikesSliderProps = {
 };
 
 const FamilyBikesSlider = ({ itemsToRender = [] }: FamilyBikesSliderProps) => {
-  
   if (itemsToRender && itemsToRender.length >= 3) {
     return (
       <div className="flex justify-start gap-8 overflow-x-scroll bg-white rounded-sm slight-white-bg ">
-        
         {itemsToRender.map((item: any) => (
           <div
             key={item.id}
@@ -51,12 +49,23 @@ const FamilyBikesSlider = ({ itemsToRender = [] }: FamilyBikesSliderProps) => {
             </div>
             <div className="flex border-t-2 border-gray-300 py-2 items-center text-center ">
               <Link
-                href={`/configure/bikes/${item.model}`}
+                href={`${
+                  item.model
+                    ? `/configure/bike/${item.model}`
+                    : `/configure/bikes/${item.subFamilyName}`
+                }`}
                 className="text-sm text-red uppercase w-1/2"
               >
                 Конфигурација
               </Link>
-              <Link href={''} className="text-md p-2 w-1/2 uppercase text-sm border-l-2 border-gray-300">
+              <Link
+                href={`${
+                  item.model
+                    ? `/motorcycles/${item.category}/${item.subFamilyCategory}/${item.model}`
+                    : `${item.url}`
+                }`}
+                className="text-md p-2 w-1/2 uppercase text-sm border-l-2 border-gray-300"
+              >
                 Види Детали
               </Link>
             </div>
@@ -66,11 +75,11 @@ const FamilyBikesSlider = ({ itemsToRender = [] }: FamilyBikesSliderProps) => {
     );
   }
 
-  if(itemsToRender && itemsToRender.length < 3) {
+  if (itemsToRender && itemsToRender.length < 3) {
     return (
       <div className="flex justify-start gap-8">
-      
-      {itemsToRender.map((item:any) =><div
+        {itemsToRender.map((item: any) => (
+          <div
             key={item.id}
             className="bg-white shadow-lg lg:mb-8 flex flex-col justify-between rounded-md"
           >
@@ -109,19 +118,30 @@ const FamilyBikesSlider = ({ itemsToRender = [] }: FamilyBikesSliderProps) => {
             </div>
             <div className="flex border-t-2 border-gray-300 py-2 items-center text-center ">
               <Link
-                href={`/configure/bikes/${item.model}`}
+                href={`${
+                  item.model
+                    ? `/configure/bike/${item.model}`
+                    : `/configure/bikes/${item.subFamilyName}`
+                }`}
                 className="text-sm text-red uppercase w-1/2"
               >
                 Конфигурација
               </Link>
-              <Link href={''} className="text-md p-2 w-1/2 uppercase text-sm border-l-2 border-gray-300">
+              <Link
+                href={`${
+                  item.model
+                    ? `/motorcycles/${item.category}/${item.subFamilyCategory}/${item.model}`
+                    : `${item.url}`
+                }`}
+                className="text-md p-2 w-1/2 uppercase text-sm border-l-2 border-gray-300"
+              >
                 Види Детали
               </Link>
             </div>
-          </div>)}
-
+          </div>
+        ))}
       </div>
-    )
+    );
   }
 };
 
