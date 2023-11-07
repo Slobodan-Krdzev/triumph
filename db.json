@@ -51,9 +51,9 @@
             "desc1": "Изграден за најтешките патеки и најпребирливите патни тури, Новата Tiger 900 серија нуди незаменлива комбинација на перформанси, способности, удобност и карактер. Повторно подигање на нивото на перформансите на авантуристички мотории со подобрени спецификации: откријте го New Tiger 900"
           },
           "shortSpecInfo": {
-            "engine": "660cc мотор",
-            "trademarkInfo": "Водечки во класата по способност и ракување",
-            "trademarkInfo2": "Далечински прилагодлива Showa суспензија"
+            "info1": "660cc мотор",
+            "info2": "Водечки во класата по способност и ракување",
+            "info3": "Далечински прилагодлива Showa суспензија"
           },
           "gallery": {
             "modelImage": {
@@ -73,9 +73,9 @@
             "desc1": ""
           },
           "shortSpecInfo": {
-            "engine": "850cc T-plane мотор",
-            "trademarkInfo": "Авантуристичко настроен патнички мотор",
-            "trademarkInfo2": "20 литарски резервоар"
+            "info1": "850cc T-plane мотор",
+            "info2": "Авантуристичко настроен патнички мотор",
+            "info3": "20 литарски резервоар"
           },
           "gallery": {
             "modelImage": {
@@ -95,9 +95,9 @@
             "desc1": ""
           },
           "shortSpecInfo": {
-            "engine": "1,160 cc T-plane мотор",
-            "trademarkInfo": "Мотор со високи перформанси",
-            "trademarkInfo2": "3 години гаранција"
+            "info1": "1,160 cc T-plane мотор",
+            "info2": "Мотор со високи перформанси",
+            "info3": "3 години гаранција"
           },
           "gallery": {
             "modelImage": {
@@ -117,9 +117,9 @@
             "desc1": "Изработен за сите подлоги. Најновиот авантурист на Triumph ве води насекаде низ светот, совалдува пустини и планини."
           },
           "shortSpecInfo": {
-            "engine": "1,160 cc T-plane мотор",
-            "trademarkInfo": "Мотор со високи перформанси",
-            "trademarkInfo2": "3 години гаранција"
+            "info1": "1,160 cc T-plane мотор",
+            "info2": "Мотор со високи перформанси",
+            "info3": "3 години гаранција"
           },
           "gallery": {
             "modelImage": {
@@ -138,9 +138,9 @@
             "desc1": ""
           },
           "shortSpecInfo": {
-            "engine": "Потполно нов, возбудлив 900cc мотор осо три цилиндри",
-            "trademarkInfo": "Градски мотор со високо ниво на технолошки додатоци",
-            "trademarkInfo2": "Комфортен и флексибилен"
+            "info1": "Потполно нов, возбудлив 900cc мотор осо три цилиндри",
+            "info2": "Градски мотор со високо ниво на технолошки додатоци",
+            "info3": "Комфортен и флексибилен"
           },
           "gallery": {
             "modelImage": {
@@ -201,8 +201,8 @@
             "desc1": ""
           },
           "shortSpecInfo": {
-            "engine": "398cc TR Мотор",
-            "trademarkInfo": "Сервис Интервал 16,000 км"
+            "info1": "398cc TR Мотор",
+            "info2": "Сервис Интервал 16,000 км"
           },
           "gallery": {
             "modelImage": {
@@ -222,8 +222,8 @@
             "desc1": ""
           },
           "shortSpecInfo": {
-            "engine": "398cc TR Мотор",
-            "trademarkInfo": "Сервис Интервал 16,000 км"
+            "info1": "398cc TR Мотор",
+            "info2": "Сервис Интервал 16,000 км"
           },
           "gallery": {
             "modelImage": {
@@ -243,7 +243,7 @@
             "desc1": ""
           },
           "shortSpecInfo": {
-            "trademarkInfo": "Новата Thriumph Stealth Серија е достапна"
+            "info2": "Новата Thriumph Stealth Серија е достапна"
           },
           "gallery": {
             "modelImage": {
@@ -263,7 +263,7 @@
             "desc1": ""
           },
           "shortSpecInfo": {
-            "trademarkInfo": "Новата Thriumph Stealth Серија е достапна"
+            "info2": "Новата Thriumph Stealth Серија е достапна"
 
           },
           "gallery": {
@@ -284,9 +284,9 @@
             "desc1": ""
           },
           "shortSpecInfo": {
-            "engine": "1,200cc Bonneville дво-цилинричен мотор",
-            "trademarkInfo": "Максимална јачина - 90 PS",
-            "trademarkInfo2": "Максимален вртежен момент - 110 Nm"
+            "info1": "1,200cc Bonneville дво-цилинричен мотор",
+            "info2": "Максимална јачина - 90 PS",
+            "info3": "Максимален вртежен момент - 110 Nm"
           },
           "gallery": {
             "modelImage": {
@@ -306,7 +306,7 @@
             "desc1": ""
           },
           "shortSpecInfo": {
-            "trademarkInfo": "Новата Thriumph Stealth Серија е достапна"
+            "info2": "Новата Thriumph Stealth Серија е достапна"
           },
           "gallery": {
             "modelImage": {
@@ -326,7 +326,7 @@
             "desc1": ""
           },
           "shortSpecInfo": {
-            "trademarkInfo": "Новата Thriumph Stealth Серија е достапна"
+            "info2": "Новата Thriumph Stealth Серија е достапна"
           },
           "gallery": {
             "modelImage": {
@@ -346,7 +346,7 @@
             "desc1": ""
           },
           "shortSpecInfo": {
-            "trademarkInfo": "Новата Thriumph Stealth Серија е достапна"
+            "info2": "Новата Thriumph Stealth Серија е достапна"
           },
           "gallery": {
             "modelImage": {
@@ -366,7 +366,7 @@
             "desc1": ""
           },
           "shortSpecInfo": {
-            "trademarkInfo": "Новата Thriumph Stealth Серија е достапна"
+            "info2": "Новата Thriumph Stealth Серија е достапна"
           },
           "gallery": {
             "modelImage": {
@@ -386,7 +386,7 @@
             "desc1": ""
           },
           "shortSpecInfo": {
-            "trademarkInfo": "Новата Thriumph Stealth Серија е достапна"
+            "info2": "Новата Thriumph Stealth Серија е достапна"
           },
           "gallery": {
             "modelImage": {
@@ -406,9 +406,9 @@
             "desc1": ""
           },
           "shortSpecInfo": {
-            "engine": "1,200cc Thruxton Серија",
-            "trademarkInfo": "Автентичен Cafe Racer Дизајн",
-            "trademarkInfo2": "Oдлично управување и дизајн"
+            "info1": "1,200cc Thruxton Серија",
+            "info2": "Автентичен Cafe Racer Дизајн",
+            "info3": "Oдлично управување и дизајн"
           },
           "gallery": {
             "modelImage": {
@@ -440,9 +440,9 @@
             "desc1": ""
           },
           "shortSpecInfo": {
-            "engine": "765cc мотор",
-            "trademarkInfo": "Максимална јачина од 120-130 PS",
-            "trademarkInfo2": "10000 км сервисен интервал"
+            "info1": "765cc мотор",
+            "info2": "Максимална јачина од 120-130 PS",
+            "info3": "10000 км сервисен интервал"
           },
           "gallery": {
             "modelImage": {
@@ -462,9 +462,9 @@
             "desc1": ""
           },
           "shortSpecInfo": {
-            "engine": "660cc мотор (Euro 5 Стандарди)",
-            "trademarkInfo": "2 мода на работа (Road Mode и Rain Mode)",
-            "trademarkInfo2": "10000 милји / 12 месеци сервисен интервал"
+            "info1": "660cc мотор (Euro 5 Стандарди)",
+            "info2": "2 мода на работа (Road Mode и Rain Mode)",
+            "info3": "10000 милји / 12 месеци сервисен интервал"
           },
           "gallery": {
             "modelImage": {
@@ -484,9 +484,9 @@
             "desc1": ""
           },
           "shortSpecInfo": {
-            "engine": "Нов 1160cc со 180PS",
-            "trademarkInfo": "198kg тежина и спремен за на патека",
-            "trademarkInfo2": "Најмодерна технологија фокусирана на возачот"
+            "info1": "Нов 1160cc со 180PS",
+            "info2": "198kg тежина и спремен за на патека",
+            "info3": "Најмодерна технологија фокусирана на возачот"
           },
           "gallery": {
             "modelImage": {
@@ -506,9 +506,9 @@
             "desc1": ""
           },
           "shortSpecInfo": {
-            "engine": "Нов 1160cc со 180PS",
-            "trademarkInfo": "198kg тежина и спремен за на патека",
-            "trademarkInfo2": "Најмодерна технологија фокусирана на возачот"
+            "info1": "Нов 1160cc со 180PS",
+            "info2": "198kg тежина и спремен за на патека",
+            "info3": "Најмодерна технологија фокусирана на возачот"
           },
           "gallery": {
             "modelImage": {
@@ -540,8 +540,8 @@
             "desc1": ""
           },
           "shortSpecInfo": {
-            "engine": "2500cc Rocket Мотор",
-            "trademarkInfo": "'Ultimate high performance roadster'"
+            "info1": "2500cc Rocket Мотор",
+            "info2": "'Ultimate high performance roadster'"
           },
           "gallery": {
             "modelImage": {
@@ -614,7 +614,7 @@
           "alt": "Tiger Sport 660"
         }
       },
-      "shortInfo": {
+      "shortSpecInfo": {
         "info1": "660cc Triple Motor",
         "info2": "Лидер во категоријата",
         "info3": "Прилагодлива 'Showa' суспензија"
@@ -634,7 +634,7 @@
           "alt": "Tiger 850 Sport"
         }
       },
-      "shortInfo": {
+      "shortSpecInfo": {
         "info1": "850cc T-plane Triple Motor",
         "info2": "Патнички мотор со авантуристички дух",
         "info3": "20 литарски резервоар"
@@ -654,7 +654,7 @@
           "alt": "Tiger 1200 GT"
         }
       },
-      "shortInfo": {
+      "shortSpecInfo": {
         "info1": "1,160cc T-plane Triple Motor",
         "info2": "20 литарски резервоар",
         "info3": "3 години гаранција"
@@ -674,7 +674,7 @@
           "alt": "Tiger 1200 GT Explorer"
         }
       },
-      "shortInfo": {
+      "shortSpecInfo": {
         "info1": "1,160cc T-plane Triple Motor",
         "info2": "30 литарски резервоар",
         "info3": "3 години гаранција"
@@ -694,7 +694,7 @@
           "alt": "Tiger 1200 Rally Pro"
         }
       },
-      "shortInfo": {
+      "shortSpecInfo": {
         "info1": "1,160cc T-plane Triple Motor",
         "info2": "20 литарски резервоар",
         "info3": "3 години гаранција"
@@ -714,7 +714,7 @@
           "alt": "Tiger 1200 Rally Explorer"
         }
       },
-      "shortInfo": {
+      "shortSpecInfo": {
         "info1": "1,160cc T-plane Triple Motor",
         "info2": "30 литарски резервоар",
         "info3": "3 години гаранција"
@@ -734,7 +734,7 @@
           "alt": "Tiger 1200 GT Aragon"
         }
       },
-      "shortInfo": {
+      "shortSpecInfo": {
         "info1": "Нов 900cc три-цилиндричен мотор",
         "info2": "Високи спецификации за подобро искуство",
         "info3": "Врвна технологија фокусирана на возачот"
@@ -754,7 +754,7 @@
           "alt": "iger 900 Rally Aragon Edition"
         }
       },
-      "shortInfo": {
+      "shortSpecInfo": {
         "info1": "Нов 900cc три-цилиндричен мотор",
         "info2": "Врвна спецификација за екстремни off-road можности",
         "info3": "Врвни перформанси и агилност"
@@ -774,7 +774,7 @@
           "alt": "Tiger 900 GT PRo (MY23)"
         }
       },
-      "shortInfo": {
+      "shortSpecInfo": {
         "info1": "Потполно нов 900сс три-цилиндарски мотор",
         "info2": "GT спецификација за долги дистанци",
         "info3": "Врвна технологија фокусирана на возачот"
@@ -794,7 +794,7 @@
           "alt": "Tiger 900 Rally Pro Edition"
         }
       },
-      "shortInfo": {
+      "shortSpecInfo": {
         "info1": "Потполно нов 900сс три-цилиндарски мотор",
         "info2": "Врвна спецификација за екстремни off-road можности",
         "info3": "Врвни перформанси и агилност"

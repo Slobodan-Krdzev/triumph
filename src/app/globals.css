@@ -24,6 +24,10 @@ img {
   max-width: 100%;
 }
 
+body {
+  background-color: var(--tetriary-bg-color);
+}
+
 :root {
   --primary-color: #000000;
   --secondary-color: #CD192D;

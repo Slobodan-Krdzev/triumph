@@ -52,7 +52,7 @@ const TypeOfFamilyPage = async (data: any, props: Props) => {
         {getSubFamilies(family[0].subFamilies).map((subFam: any) => (
           <BikesByFamilyWithSlider
             key={subFam.subFamilyName}
-            subFamilies={filterBikesBySumFamilyCategory(subFam.subFamilyName)}
+            items={filterBikesBySumFamilyCategory(subFam.subFamilyName)}
             familyData={{
               title: subFam.title,
               desc: subFam.shortDesc,

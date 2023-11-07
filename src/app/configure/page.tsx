@@ -21,7 +21,7 @@ const ConfigurePage = async () => {
 
 
   return (
-    <main className="slight-white-bg ">
+    <>
       <HeroSectionCTA
         image={"/images/heroConfigBanner.avif"}
         title={"Изберете додатоци за вашиот мотор"}
@@ -34,7 +34,7 @@ const ConfigurePage = async () => {
         {families.map((family: any) => (
           <BikesByFamilyWithSlider
             key={family.id}
-            subFamilies={getSubFamilies(family.subFamilies)}
+            items={getSubFamilies(family.subFamilies)}
             familyData={{
               title: family.type,
               desc: family.configPageInfo.desc,
@@ -43,7 +43,7 @@ const ConfigurePage = async () => {
           />
         ))}
       </section>
-    </main>
+    </>
   );
 };
 
