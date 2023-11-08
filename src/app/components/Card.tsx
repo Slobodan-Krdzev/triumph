@@ -14,7 +14,7 @@ const Card = ({ item }: any) => {
       key={item.id}
       className="bg-white shadow-lg lg:mb-8 flex flex-col justify-between rounded-md"
     >
-      <div className="basis-2/6">
+      <div className="basis-2/6 border-b-2 border-gray-300">
         <Image
           src={item.gallery.modelImage.src}
           alt={item.gallery.modelImage.alt}
@@ -27,12 +27,12 @@ const Card = ({ item }: any) => {
         <h3 className="text-xl font-semibold uppercase tracking-tighter">
           {item.title}
         </h3>
-        <p className="text-md mb-4">
+        <p className="text-md mb-4 font-medium">
           {item.price === "Наскоро" ? "Цени Наскоро." : `Oд ${item.price} €.`}
         </p>
 
         {item.shortSpecInfo && (
-          <ul className="flex flex-col list-disc text-sm px-10 text-start">
+          <ul className="flex flex-col list-disc text-sm px-8 text-start">
             {item.shortSpecInfo.info1 && <li>{item.shortSpecInfo.info1}</li>}
             {item.shortSpecInfo.info2 && <li>{item.shortSpecInfo.info2}</li>}
             {item.shortSpecInfo.info3 && <li>{item.shortSpecInfo.info3}</li>}
@@ -46,7 +46,7 @@ const Card = ({ item }: any) => {
               ? `/configure/bike/${item.model}`
               : `/configure/bikes/${item.subFamilyName}`
           }`}
-          className="text-sm text-red uppercase w-1/2"
+          className="text-sm text-red uppercase w-1/2 font-medium"
         >
           Конфигурација
         </Link>
@@ -56,7 +56,7 @@ const Card = ({ item }: any) => {
               ? `/motorcycles/${item.category}/${item.subFamilyCategory}/${item.model}`
               : `${item.url}`
           }`}
-          className="text-md p-2 w-1/2 uppercase text-sm border-l-2 border-gray-300"
+          className="text-md p-2 w-1/2 uppercase text-sm border-l-2 border-gray-300 font-medium"
         >
           Види Детали
         </Link>

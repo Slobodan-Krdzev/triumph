@@ -1,26 +1,42 @@
+import Card from "@/app/components/Card";
+import HeroSectionCTA from "@/app/components/HeroSectionCTA";
+import PaginationBtn from "@/app/components/PaginationBtn";
+import { BIKES } from "@/app/constants/constants";
 
-import BtnLink from '@/app/components/MainBtn'
-import { BIKES } from '@/app/constants/constants'
-import React from 'react'
+const BikesPage = async ({ params, searchParams }: any) => {
+  console.log("params i searchParams", params, searchParams);
 
-type Props = {}
+  try {
+    const bikesRes = await fetch(
+      `${BIKES}?_page=${
+        searchParams._page ? searchParams._page : "1"
+      }&_limit=8`,
+      { cache: "no-store" }
+    );
+    const bikes = await bikesRes.json();
 
-const BikesPage = async (props: Props) => {
-
-    // ovde zaradi sortingot treba da odlucime dali ke bide client side 
-    const allBikesRes = await fetch(`${BIKES}`, {cache: 'no-store'})
-    const allBikesData = await allBikesRes.json()
-
-
-  return (
-    <>
-    <div>BikesPage</div>
-    <ul>
-        {allBikesData.map((bike: any) => <li key={bike.bikeId}>{bike.model} {bike.bikeId} ---- <BtnLink link={`/configure/bike/${bike.bikeId}`} text={'Configuration'} />  --- <BtnLink link={`/motorcycles/${bike.type}/${bike.model}`} text={'Details'} /></li>)}
-        
-    </ul>
-    </>
-  )
-}
+    return (
+      <>
+        <HeroSectionCTA
+          image={`/images/roadsters/configSubFamilyBanner.avif`}
+          title={"Додајте Аксесоари на вашиот мотор"}
+          link={{
+            text: "Види ги Сите",
+            url: "/configure/bikes",
+          }}
+          noBtn={true}
+        />
+        <section className="flex flex-wrap justify-center md:justify-between gap-8 px-4 md:px-8 md:pt-16 md:pb-10">
+          {bikes.map((bike: any) => (
+            <Card key={bike.id} item={bike} />
+          ))}
+        </section>
+        <PaginationBtn />
+      </>
+    );
+  } catch {
+    return "Error ";
+  }
+};
 
 export default BikesPage;

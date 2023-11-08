@@ -9,9 +9,10 @@ type HeroSectionCTAType = {
     text: string;
     url: string;
   };
+  noBtn?: boolean;
 };
 
-const HeroSectionCTA = ({ image, title, link }: HeroSectionCTAType) => {
+const HeroSectionCTA = ({ image, title, link, noBtn }: HeroSectionCTAType) => {
   return (
     <section
       style={{
@@ -26,12 +27,16 @@ const HeroSectionCTA = ({ image, title, link }: HeroSectionCTAType) => {
           <h1 className="lg:text-6xl text-2xl uppercase font-bold text-white text-center md:mb-8 mb-4">
             {title}
           </h1>
-          <Link
-            href={link.url}
-            className="bg-white uppercase font-bold px-5 py-3 text-black md:text-base text-sm tracking-tighter hover:bg-gray-200 transition-colors ease-in-out delay-100"
-          >
-            {link.text}
-          </Link>
+          {noBtn ? (
+            ""
+          ) : (
+            <Link
+              href={link.url}
+              className="bg-white uppercase font-bold px-5 py-3 text-black md:text-base text-sm tracking-tighter hover:bg-gray-200 transition-colors ease-in-out delay-100"
+            >
+              {link.text}
+            </Link>
+          )}
         </div>
       </div>
     </section>

@@ -7,8 +7,6 @@ const Footer = () => {
 
     const breakpoint = useBreakpoint()
 
-    console.log(breakpoint);
-    
 
   return (
     <footer>
