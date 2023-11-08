@@ -34,7 +34,7 @@ const ColorCard = ({ color }: ColorCardProps) => {
         </button>
       </div>
       <div className="bg-white px-2 py-4">
-        <h3 className="text-sm font-semibold uppercase">{color.collorName}</h3>
+        <h3 className="text-sm font-semibold uppercase">{color.colorName}</h3>
         <p className="text-xs text-gray-600">{color.price}</p>
       </div>
     </div>

@@ -19,7 +19,7 @@ const BikeConfigPage = async ({ params }: any) => {
     return (
       <>
         <section className="flex lg:flex-row flex-col">
-          <div className="flex flex-col basis-5/12 grow bg-white shadow-2xl">
+          <div className="flex flex-col basis-12/12 grow bg-white shadow-2xl">
             <div className="flex border-b-2 border-gray-300 uppercase text-sm font-medium">
               <div className="grow flex justify-center items-center py-3 px-10">
                 <p> <FontAwesomeIcon icon={faCheck} color="black"/> Mотор</p>
