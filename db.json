@@ -1066,21 +1066,32 @@
           "alt": "Speed 400"
         }
       },
-      "customizationCollors": [
+      "bikeCollorPalletteGallery": {
+        "default": "/images/classics/speed400CarnivalRed.png",
+        "carnivalRedStormGrey": "/images/classics/speed400CarnivalRed.png",
+        "caspianBlueStormGray": "/images/classics/speed400CaspianBlue.png",
+        "phantomBlackStormGrey": "/images/classics/speed400PhantomBlack.png"
+      },
+      "customizationColors": [
         {
-          "collorName": "Carnival Red / Storm Gray",
+          "colorName": "Carnival Red / Storm Gray",
           "price": "Вклучена во Цената",
-          "image": "/images/custom-collors/carnivalRedStormGrey.jpg"
+          "image": "/images/custom-collors/carnivalRedStormGrey.jpg",
+          "colorCode": "carnivalRedStormGrey"
         },
         {
-          "collorName": "Caspian Blue / Storm Gray",
+          "colorName": "Caspian Blue / Storm Gray",
           "price": "Вклучена во Цената",
-          "image": "/images/custom-collors/caspianBlueStormGray.jpg"
+          "image": "/images/custom-collors/caspianBlueStormGray.jpg",
+          "colorCode": "caspianBlueStormGray"
+
         },
         {
-          "collorName": "Phantom Black / Storm Gray",
+          "colorName": "Phantom Black / Storm Gray",
           "price": "Вклучена во Цената",
-          "image": "/images/custom-collors/phantomBlackStormGrey.jpg"
+          "image": "/images/custom-collors/phantomBlackStormGrey.jpg",
+          "colorCode": "phantomBlackStormGrey"
+
         }
       ],
       "shortSpecInfo": {
