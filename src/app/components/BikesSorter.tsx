@@ -19,7 +19,7 @@ const BikesSorter = () => {
       <select
         onChange={hanldeQueryChange}
         ref={selectorValue}
-        className="md:px-8 md:py-4 py-2 rounded-sm border-2 border-gray-600 focus:border-gray-800  text-md bg-inherit"
+        className="md:px-6 py-2 rounded-sm border-2 border-gray-600 focus:border-gray-800  text-md bg-inherit"
       >
         <option value="" defaultChecked>
           Стандард

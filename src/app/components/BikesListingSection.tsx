@@ -11,8 +11,6 @@ const BikesListingSection = ({ bikes }: BikesListingSectionProps) => {
   const [bikesToRender, setBikesToRender] = useState<any[]>([]);
   const query = useSearchParams().get("sortBy");
 
-  console.log(query);
-
   useEffect(() => {
     switch (query) {
       case "nameAsc":

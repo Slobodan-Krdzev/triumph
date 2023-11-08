@@ -1066,6 +1066,23 @@
           "alt": "Speed 400"
         }
       },
+      "customizationCollors": [
+        {
+          "collorName": "Carnival Red / Storm Gray",
+          "price": "Вклучена во Цената",
+          "image": "/images/custom-collors/carnivalRedStormGrey.jpg"
+        },
+        {
+          "collorName": "Caspian Blue / Storm Gray",
+          "price": "Вклучена во Цената",
+          "image": "/images/custom-collors/caspianBlueStormGray.jpg"
+        },
+        {
+          "collorName": "Phantom Black / Storm Gray",
+          "price": "Вклучена во Цената",
+          "image": "/images/custom-collors/phantomBlackStormGrey.jpg"
+        }
+      ],
       "shortSpecInfo": {
         "info1": "398cc TR Мотор",
         "info2": "16 000 km сервисен интервал",

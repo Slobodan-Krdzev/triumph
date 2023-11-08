@@ -2,6 +2,8 @@ import { BIKES } from "@/app/constants/constants";
 import Image from "next/image";
 import React from "react";
 
+import boja from "../../../../../../triumf-trial/public/images/redStormPaint.jpg";
+
 const BikeConfigPage = async ({ params }: any) => {
   // ovde treba fallback da se sredi ako nema toj bike da mani 404
   // try / catch
@@ -27,7 +29,7 @@ const BikeConfigPage = async ({ params }: any) => {
                   <p>2. Бои</p>
                 </div>
               </div>
-              <div className="relative md:px-48 md:py-32">
+              <div className="relative md:px-52 md:py-32">
                 <h1 className="absolute top-30 left-36 font-semibold text-2xl uppercase">
                   {bike[0].title}
                 </h1>
@@ -39,18 +41,39 @@ const BikeConfigPage = async ({ params }: any) => {
                 />
               </div>
             </div>
-            <div className="flex justiy-center items-center">
-              <div className="border w-10/12 m-auto">
-                <h2 className="text-2xl font-semibold uppercase md:mb-4 mb-2">Одберете Боја</h2>
-                <p className="text-sm font-medium">Боите кои се на располагање се прикажани долу.</p>
-                <div>OVDE BOI</div>
+            <div className="flex justiy-center items-center md:px-8">
+              <div>
+                <h2 className="text-2xl font-semibold uppercase mb-2">
+                  Одберете Боја
+                </h2>
+                <p className="text-md font-medium">
+                  Боите кои се на располагање се прикажани долу.
+                </p>
+                <div className="flex flex-wrap gap-4">
+                  {bike[0].customizationCollors.map((color: any) => (
+                    <div className="grow" key={color.collorName}>
+                      <div 
+                      className="w-100 h-20"
+                        style={{
+                          backgroundImage: `url('${color.image}')`,
+                          backgroundSize: "cover",
+                          backgroundRepeat: "no-repeat",
+                          backgroundPosition: "center",
+                          padding: 2,
+                        }}
+                      >
+                      </div>
+                      <div className="bg-white px-2 py-4">
+                        <h3 className="text-sm font-semibold uppercase">{color.collorName}</h3>
+                        <p className="text-xs">{color.price}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </section>
-          <div>
-            <h1>Bike Model: {bike[0].model}</h1>
-            <h2>Bike Price: {bike[0].price}</h2>
-          </div>
+          <div>tuka lentata</div>
         </>
       );
     }
