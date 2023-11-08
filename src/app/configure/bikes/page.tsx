@@ -1,3 +1,5 @@
+import BikesListingSection from "@/app/components/BikesListingSection";
+import BikesSorter from "@/app/components/BikesSorter";
 import Card from "@/app/components/Card";
 import HeroSectionCTA from "@/app/components/HeroSectionCTA";
 import PaginationBtn from "@/app/components/PaginationBtn";
@@ -13,7 +15,7 @@ const BikesPage = async ({ params, searchParams }: any) => {
     //   }&_limit=8`,
     //   { cache: "no-store" }
     // );
-    const bikesRes = await fetch(`${BIKES}`, {next: {revalidate: 2000}})
+    const bikesRes = await fetch(`${BIKES}`, { next: { revalidate: 2000 } });
     const bikes = await bikesRes.json();
 
     return (
@@ -27,11 +29,12 @@ const BikesPage = async ({ params, searchParams }: any) => {
           }}
           noBtn={true}
         />
-        <section className="flex flex-wrap justify-center md:justify-between gap-8 px-4 md:px-8 md:pt-16 md:pb-10">
-          {bikes.map((bike: any) => (
-            <Card key={bike.id} item={bike} />
-          ))}
+
+        <section className="flex flex-col px-4 md:px-10 md:py-16 md:pb-10 py-4">
+          <BikesSorter />
+          <BikesListingSection bikes={bikes} />
         </section>
+
         {/* <PaginationBtn /> */}
       </>
     );
