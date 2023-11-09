@@ -11,11 +11,9 @@ const BikeModelImage = ({bike}: BikeModelImageProps) => {
 
     const query = useSearchParams()
 
-    console.log('QUERY', query.get('color'));
-    
   return (
     <Image
-      src={bike.bikeCollorPalletteGallery[query.get('color') as string]}
+      src={query.get('color') ? bike.bikeCollorPalletteGallery[query.get('color') as string] : bike.bikeCollorPalletteGallery.default }
       alt={bike.title}
       width={824}
       height={376}

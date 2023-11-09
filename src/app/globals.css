@@ -57,6 +57,10 @@ body {
   background-color: var(--secondary-bg-color);
 }
 
+.light-gray-bg {
+  background-color: var(--white-btn-hover-color);
+}
+
 .slight-white-bg {
   background-color: var(--tetriary-bg-color);
 }
@@ -67,6 +71,10 @@ body {
 
 .red-bg-color {
   background-color: var(--secondary-color);
+}
+
+.red-bg-hover-color:hover {
+  background-color: var(--secondary-hover-color);
 }
 
 .outline-gray-1px {
@@ -88,6 +96,10 @@ body {
 .overlay-darken {
   background-color: rgba(0, 0, 0, 0.25);
 
+}
+
+.red-border-bottom {
+  border-bottom:4px solid var(--secondary-color);
 }
 
 
