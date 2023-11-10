@@ -12,10 +12,11 @@ const ColorCard = ({ color }: ColorCardProps) => {
     const router = useRouter()
     const pathname = usePathname()
     const query = useSearchParams().get('color')
+    const rotationQuery = useSearchParams().get('reversed')
 
     const handleColorChange = (query: any) => {
 
-        router.push(`${pathname}?color=${query}`)
+        router.push(`${pathname}?color=${query}&reversed=${rotationQuery}`)
     }    
 
   return (

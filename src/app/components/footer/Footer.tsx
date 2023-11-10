@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import { useBreakpoint } from './useBreakpoint'
+import { useBreakpoint } from '../helpers/useBreakpoint'
 import DesktopFooter from './DesktopFooter'
 
 const Footer = () => {

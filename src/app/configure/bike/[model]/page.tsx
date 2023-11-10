@@ -6,6 +6,7 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons/faCheck";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import BikeModelImage from "@/app/components/customatizationPageComponents/BikeModelImage";
 import BottomFixedRibbon from "@/app/components/customatizationPageComponents/BottomFixedRibbon";
+import ImageActions from "@/app/components/customatizationPageComponents/ImageActions";
 
 const BikeConfigPage = async ({ params }: any) => {
   // ovde treba fallback da se sredi ako nema toj bike da mani 404
@@ -34,6 +35,7 @@ const BikeConfigPage = async ({ params }: any) => {
                 {bike[0].title}
               </h1>
               <BikeModelImage bike={bike[0]}/>
+              <ImageActions/>
             </div>
           </div>
           <div className="flex justify-center lg:justify-start items-center md:px-8 px-4 lg:py-10 py-8 shrink">

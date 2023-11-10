@@ -11,14 +11,27 @@ const BikeModelImage = ({bike}: BikeModelImageProps) => {
 
     const query = useSearchParams()
 
-  return (
-    <Image
-      src={query.get('color') ? bike.bikeCollorPalletteGallery[query.get('color') as string] : bike.bikeCollorPalletteGallery.default }
-      alt={bike.title}
-      width={824}
-      height={376}
-    />
-  );
+    if(query.get('color') && query.get('reversed') === 'true'){
+
+      return (
+        <Image
+          src={bike.bikeCollorPalletteGallery[(query.get('color') as string) + 'Reversed']}
+          alt={bike.title}
+          width={824}
+          height={376}
+        />
+      );
+    }else {
+      return (
+        <Image
+          src={query.get('color') ? bike.bikeCollorPalletteGallery[query.get('color') as string] : bike.bikeCollorPalletteGallery.default }
+          alt={bike.title}
+          width={824}
+          height={376}
+        />
+      );
+    }
+  
 };
 
 export default BikeModelImage;

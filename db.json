@@ -32,7 +32,7 @@
         "link": "/configure/bikes"
       },
       "subFamilies": {
-        "tiger-900-range":{
+        "tiger-900-range": {
           "id": 1,
           "subFamilyName": "tiger-900-range",
           "title": "Нова Tiger 900 Серија",
@@ -48,7 +48,7 @@
             }
           }
         },
-        "tiger-sport-660":{
+        "tiger-sport-660": {
           "id": 2,
           "subFamilyName": "tiger-sport-660",
           "title": "Tiger Sport 660",
@@ -70,7 +70,7 @@
             }
           }
         },
-        "tiger-850-sport":{
+        "tiger-850-sport": {
           "id": 3,
           "subFamilyName": "tiger-850-sport",
           "title": "Tiger 850 Sport",
@@ -92,7 +92,7 @@
             }
           }
         },
-        "tiger-1200-gt":{
+        "tiger-1200-gt": {
           "id": 4,
           "subFamilyName": "tiger-1200-gt",
           "title": "Tiger 1200 GT",
@@ -114,7 +114,7 @@
             }
           }
         },
-        "tiger-1200-rally":{
+        "tiger-1200-rally": {
           "id": 5,
           "subFamilyName": "tiger-1200-rally",
           "title": "Tiger 1200 Rally",
@@ -136,7 +136,7 @@
             }
           }
         },
-        "tiger-900-2023":{
+        "tiger-900-2023": {
           "id": 6,
           "subFamilyName": "tiger-900-2023",
           "title": "Tiger 900 - MY23",
@@ -233,7 +233,7 @@
           "title": "Scrambler 400 X",
           "price": 6390,
           "url": "/motorcycles/classics/scrambler-400-x",
-          "shortDesc":"Со агилно управување, водечки перформанси во класата и луксузна завршница, Scrambler 400 X е „кул“ и способен за секаков предизвик.",
+          "shortDesc": "Со агилно управување, водечки перформанси во класата и луксузна завршница, Scrambler 400 X е „кул“ и способен за секаков предизвик.",
           "subFamilyPageInfo": {
             "desc1": ""
           },
@@ -280,7 +280,6 @@
           },
           "shortSpecInfo": {
             "info2": "Новата Thriumph Stealth Серија е достапна"
-
           },
           "gallery": {
             "modelImage": {
@@ -547,7 +546,7 @@
       "id": 4,
       "type": "rocket",
       "shortDesc": "Опремен со најголемиот сериски мотор во светот и со најголем вртежен момент, ова е врвниот мускулен родстер со високи перформанси.",
-      
+
       "configPageInfo": {
         "desc": "Опремен со најголемиот сериски мотор во светот и со најголем вртежен момент, ова е врвниот мускулен родстер со високи перформанси.",
         "link": "/configure/families/rocket"
@@ -586,14 +585,13 @@
     }
   ],
   "bikes": [
-
     {
       "id": 1,
       "title": "Tiger 900 GT",
       "model": "tiger-900-gt-2024",
       "category": "adventure",
       "subFamilyCategory": "tiger-900-range",
-      "edition" : "1200gt" ,
+      "edition": "1200gt",
       "price": "Цени Наскоро",
       "gallery": {
         "modelImage": {
@@ -608,7 +606,7 @@
       "model": "tiger-900-gt-pro-2024",
       "category": "adventure",
       "subFamilyCategory": "tiger-900-range",
-      "edition" : "1200gt" ,
+      "edition": "1200gt",
       "price": "Цени Наскоро",
       "gallery": {
         "modelImage": {
@@ -623,7 +621,7 @@
       "model": "tiger-900-rally-pro-2024",
       "category": "adventure",
       "subFamilyCategory": "tiger-900-range",
-      "edition" : "1200gt" ,
+      "edition": "1200gt",
       "price": "Цени Наскоро",
       "gallery": {
         "modelImage": {
@@ -638,7 +636,7 @@
       "model": "tiger-sport-660",
       "category": "adventure",
       "subFamilyCategory": "tiger-sport-660",
-      "edition" : "660Sport" ,
+      "edition": "660Sport",
       "price": 9590,
       "gallery": {
         "modelImage": {
@@ -658,7 +656,7 @@
       "model": "850-sport",
       "category": "adventure",
       "subFamilyCategory": "tiger-850-sport",
-      "edition" : "850sport" ,
+      "edition": "850sport",
       "price": 12890,
       "gallery": {
         "modelImage": {
@@ -678,7 +676,7 @@
       "model": "tiger-1200-gt-pro-2022",
       "category": "adventure",
       "subFamilyCategory": "tiger-1200-gt",
-      "edition" : "1200gt" ,
+      "edition": "1200gt",
       "price": 20990,
       "gallery": {
         "modelImage": {
@@ -698,7 +696,7 @@
       "model": "tiger-1200-gt-explorer-2022",
       "category": "adventure",
       "subFamilyCategory": "tiger-1200-gt",
-      "edition" : "1200gt" ,
+      "edition": "1200gt",
       "price": 22990,
       "gallery": {
         "modelImage": {
@@ -718,7 +716,7 @@
       "model": "tiger-1200-rally-pro-2022",
       "category": "adventure",
       "subFamilyCategory": "tiger-1200-rally",
-      "edition" : "1200gt" ,
+      "edition": "1200gt",
       "price": 21990,
       "gallery": {
         "modelImage": {
@@ -738,7 +736,7 @@
       "model": "tiger-1200-rally-explorer-2022",
       "category": "adventure",
       "subFamilyCategory": "tiger-1200-rally",
-      "edition" : "1200gt" ,
+      "edition": "1200gt",
       "price": 23990,
       "gallery": {
         "modelImage": {
@@ -758,7 +756,7 @@
       "model": "gt-aragon-edition-2024",
       "category": "adventure",
       "subFamilyCategory": "tiger-900-2023",
-      "edition" : "900gtAragon" ,
+      "edition": "900gtAragon",
       "price": 16290,
       "gallery": {
         "modelImage": {
@@ -778,7 +776,7 @@
       "model": "rally-aragon-edition-2024",
       "category": "adventure",
       "subFamilyCategory": "tiger-900-2023",
-      "edition" : "900gtAragon" ,
+      "edition": "900gtAragon",
       "price": 16990,
       "gallery": {
         "modelImage": {
@@ -798,7 +796,7 @@
       "model": "gt-pro",
       "category": "adventure",
       "subFamilyCategory": "tiger-900-2023",
-      "edition" : "900gtAragon-my23" ,
+      "edition": "900gtAragon-my23",
       "price": 16290,
       "gallery": {
         "modelImage": {
@@ -818,7 +816,7 @@
       "model": "rally-pro",
       "category": "adventure",
       "subFamilyCategory": "tiger-900-2023",
-      "edition" : "900gtAragon-my23" ,
+      "edition": "900gtAragon-my23",
       "price": 16990,
       "gallery": {
         "modelImage": {
@@ -838,7 +836,7 @@
       "model": "street-triple-765-r-2023",
       "category": "roadsters",
       "subFamilyCategory": "street-triple-765",
-      "edition" : "streetTriple765R" ,
+      "edition": "streetTriple765R",
       "price": 12290,
       "gallery": {
         "modelImage": {
@@ -858,7 +856,7 @@
       "model": "street-triple-765-rs-2023",
       "category": "roadsters",
       "subFamilyCategory": "street-triple-765",
-      "edition" : "streetTriple765RS" ,
+      "edition": "streetTriple765RS",
       "price": 13990,
       "gallery": {
         "modelImage": {
@@ -878,7 +876,7 @@
       "model": "trident-660",
       "category": "roadsters",
       "subFamilyCategory": "trident-660",
-      "edition" : "trident660" ,
+      "edition": "trident660",
       "price": 8690,
       "gallery": {
         "modelImage": {
@@ -898,7 +896,7 @@
       "model": "speed-triple-1200-rs",
       "category": "roadsters",
       "subFamilyCategory": "speed-triple-1200-rs",
-      "edition" : "streetTriple1200RS" ,
+      "edition": "streetTriple1200RS",
       "price": 18990,
       "gallery": {
         "modelImage": {
@@ -918,7 +916,7 @@
       "model": "speed-triple-1200-rr",
       "category": "roadsters",
       "subFamilyCategory": "speed-triple-1200-rr",
-      "edition" : "streetTriple1200RR" ,
+      "edition": "streetTriple1200RR",
       "price": 20990,
       "gallery": {
         "modelImage": {
@@ -938,7 +936,7 @@
       "model": "rocket-3-r",
       "category": "rocket-3",
       "subFamilyCategory": "rocket-3",
-      "edition" : "rocket3R" ,
+      "edition": "rocket3R",
       "price": 25290,
       "gallery": {
         "modelImage": {
@@ -958,7 +956,7 @@
       "model": "rocket-3-gt",
       "category": "rocket-3",
       "subFamilyCategory": "rocket-3",
-      "edition" : "rocket3GT" ,
+      "edition": "rocket3GT",
       "price": 25990,
       "gallery": {
         "modelImage": {
@@ -978,7 +976,7 @@
       "model": "rocket-3-r-221-edition-2022",
       "category": "rocket-3",
       "subFamilyCategory": "rocket-3",
-      "edition" : "rocket3R221" ,
+      "edition": "rocket3R221",
       "price": 26190,
       "gallery": {
         "modelImage": {
@@ -998,7 +996,7 @@
       "model": "rocket-3-gt-chrome-edition-2023",
       "category": "rocket-3",
       "subFamilyCategory": "rocket-3",
-      "edition" : "rocket3R221" ,
+      "edition": "rocket3R221",
       "price": 26890,
       "gallery": {
         "modelImage": {
@@ -1018,7 +1016,7 @@
       "model": "rocket-3-gt-221-edition-2022",
       "category": "rocket-3",
       "subFamilyCategory": "rocket-3",
-      "edition" : "rocket3Chrome" ,
+      "edition": "rocket3Chrome",
       "price": 26890,
       "gallery": {
         "modelImage": {
@@ -1038,7 +1036,7 @@
       "model": "rocket-3-r-chrome-edition-2023",
       "category": "rocket-3",
       "subFamilyCategory": "rocket-3",
-      "edition" : "rocket3Chrome" ,
+      "edition": "rocket3Chrome",
       "price": 26190,
       "gallery": {
         "modelImage": {
@@ -1058,7 +1056,7 @@
       "model": "speed-400-2024",
       "category": "classics",
       "subFamilyCategory": "speed-400",
-      "edition" : "400cc" ,
+      "edition": "400cc",
       "price": 5690,
       "gallery": {
         "modelImage": {
@@ -1069,8 +1067,11 @@
       "bikeCollorPalletteGallery": {
         "default": "/images/classics/speed400CarnivalRed.png",
         "carnivalRedStormGrey": "/images/classics/speed400CarnivalRed.png",
+        "carnivalRedStormGreyReversed": "/images/classics/speed400CarnivalRedReversed.png",
         "caspianBlueStormGray": "/images/classics/speed400CaspianBlue.png",
-        "phantomBlackStormGrey": "/images/classics/speed400PhantomBlack.png"
+        "caspianBlueStormGrayReversed": "/images/classics/speed400CaspianBlueStormGreyReversed.png",
+        "phantomBlackStormGrey": "/images/classics/speed400PhantomBlack.png",
+        "phantomBlackStormGreyReversed": "/images/classics/speed400phantomBlackStormGreyReversed.png"
       },
       "customizationColors": [
         {
@@ -1084,14 +1085,12 @@
           "price": "Вклучена во Цената",
           "image": "/images/custom-collors/caspianBlueStormGray.jpg",
           "colorCode": "caspianBlueStormGray"
-
         },
         {
           "colorName": "Phantom Black / Storm Gray",
           "price": "Вклучена во Цената",
           "image": "/images/custom-collors/phantomBlackStormGrey.jpg",
           "colorCode": "phantomBlackStormGrey"
-
         }
       ],
       "shortSpecInfo": {
@@ -1106,7 +1105,7 @@
       "model": "scrambler-400-x-2024",
       "category": "classics",
       "subFamilyCategory": "scrambler-400-x",
-      "edition" : "400cc" ,
+      "edition": "400cc",
       "price": 6390,
       "gallery": {
         "modelImage": {
@@ -1126,7 +1125,7 @@
       "model": "speed-twin-900-2023",
       "category": "classics",
       "subFamilyCategory": "speed-twin-900",
-      "edition" : "900cc" ,
+      "edition": "900cc",
       "price": 10390,
       "gallery": {
         "modelImage": {
@@ -1144,7 +1143,7 @@
       "model": "bobber-2023",
       "category": "classics",
       "subFamilyCategory": "bonneville-bobber",
-      "edition" : "900cc" ,
+      "edition": "900cc",
       "price": 16290,
       "gallery": {
         "modelImage": {
@@ -1162,7 +1161,7 @@
       "model": "scrambler-1200-x-2024",
       "category": "classics",
       "subFamilyCategory": "scrambler-1200",
-      "edition" : "1200cc" ,
+      "edition": "1200cc",
       "price": "Цени Наскоро",
       "gallery": {
         "modelImage": {
@@ -1182,7 +1181,7 @@
       "model": "scrambler-1200-xe-2024",
       "category": "classics",
       "subFamilyCategory": "scrambler-1200",
-      "edition" : "1200cc" ,
+      "edition": "1200cc",
       "price": "Цени Наскоро",
       "gallery": {
         "modelImage": {
@@ -1202,7 +1201,7 @@
       "model": "scrambler-1200-xc-2023",
       "category": "classics",
       "subFamilyCategory": "scrambler-1200",
-      "edition" : "1200cc" ,
+      "edition": "1200cc",
       "price": 15990,
       "gallery": {
         "modelImage": {
@@ -1222,7 +1221,7 @@
       "model": "scrambler-1200-xe-2023",
       "category": "classics",
       "subFamilyCategory": "scrambler-1200",
-      "edition" : "1200cc" ,
+      "edition": "1200cc",
       "price": 16990,
       "gallery": {
         "modelImage": {
@@ -1242,7 +1241,7 @@
       "model": "speedmaster-2023",
       "category": "classics",
       "subFamilyCategory": "bonneville-speedmaster",
-      "edition" : "1200cc" ,
+      "edition": "1200cc",
       "price": 16290,
       "gallery": {
         "modelImage": {
@@ -1260,7 +1259,7 @@
       "model": "speed-twin-1200-2023",
       "category": "classics",
       "subFamilyCategory": "speed-twin-1200",
-      "edition" : "1200cc" ,
+      "edition": "1200cc",
       "price": 14190,
       "gallery": {
         "modelImage": {
@@ -1278,7 +1277,7 @@
       "model": "scrambler-900-2023",
       "category": "classics",
       "subFamilyCategory": "scrambler-900",
-      "edition" : "900cc" ,
+      "edition": "900cc",
       "price": 11890,
       "gallery": {
         "modelImage": {
@@ -1296,7 +1295,7 @@
       "model": "t100-2023",
       "category": "classics",
       "subFamilyCategory": "bonneville-t100",
-      "edition" : "900cc" ,
+      "edition": "900cc",
       "price": 11690,
       "gallery": {
         "modelImage": {
@@ -1314,7 +1313,7 @@
       "model": "t120-2023",
       "category": "classics",
       "subFamilyCategory": "bonneville-t120",
-      "edition" : "900cc" ,
+      "edition": "900cc",
       "price": 14290,
       "gallery": {
         "modelImage": {
@@ -1332,7 +1331,7 @@
       "model": "t120-black-2023",
       "category": "classics",
       "subFamilyCategory": "bonneville-t120",
-      "edition" : "900cc" ,
+      "edition": "900cc",
       "price": 14290,
       "gallery": {
         "modelImage": {
@@ -1350,7 +1349,7 @@
       "model": "thruxton-final-edition-2024",
       "category": "classics",
       "subFamilyCategory": "thruxton-rs",
-      "edition" : "thruxtonFinal" ,
+      "edition": "thruxtonFinal",
       "price": 19690,
       "gallery": {
         "modelImage": {
@@ -1370,7 +1369,7 @@
       "model": "thruxton-rs-2023",
       "category": "classics",
       "subFamilyCategory": "thruxton-rs",
-      "edition" : "thruxtonRS" ,
+      "edition": "thruxtonRS",
       "price": 17990,
       "gallery": {
         "modelImage": {
@@ -1384,6 +1383,5 @@
         "info3": "Неверојатни финиши на боја и стил."
       }
     }
-
   ]
 }
