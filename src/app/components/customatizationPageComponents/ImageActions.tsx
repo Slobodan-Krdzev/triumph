@@ -10,7 +10,6 @@ const ImageActions = () => {
   const router = useRouter();
   const pathname = usePathname();
   const colorQuery = useSearchParams().get("color");
-  const reversQuery = useSearchParams().get('reversed')
 
   const handleReversal = () => {
 

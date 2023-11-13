@@ -26,6 +26,7 @@ img {
 
 body {
   background-color: var(--tetriary-bg-color);
+  overflow: hidden;
 }
 
 :root {
