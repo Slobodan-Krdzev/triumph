@@ -26,7 +26,7 @@ img {
 
 body {
   background-color: var(--tetriary-bg-color);
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 :root {
@@ -42,6 +42,7 @@ body {
   --primary-bg-color: #000000;
   --secondary-bg-color: #2A2A2A;
   --tetriary-bg-color: #f4f4f4;
+  --light-tetriary-bg-color: #f9f9f9;
   --white-bg-color: #ffffff;
 }
 
@@ -64,6 +65,11 @@ body {
 
 .slight-white-bg {
   background-color: var(--tetriary-bg-color);
+}
+
+.lighter-white-bg {
+  background-color: var(--light-tetriary-bg-color);
+
 }
 
 .text-red {
@@ -92,6 +98,10 @@ body {
 
 .border {
   border: 2px solid red;
+}
+
+.border-thin-gray {
+  border: 1px solid var(--primary-hover-color)
 }
 
 .overlay-darken {

@@ -1,5 +1,5 @@
 import React from 'react'
-import Prenav from './Prenav';
+import Prenav from '../Prenav';
 import Nav from './Nav';
 
 
