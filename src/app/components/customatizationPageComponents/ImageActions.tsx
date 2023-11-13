@@ -5,14 +5,22 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import React, { useState } from "react";
 
 const ImageActions = () => {
-  const [isImageReversed, setIsImageReversed] = useState(false);
+  const [isImageReversed, setIsImageReversed] = useState(true);
 
   const router = useRouter();
   const pathname = usePathname();
-  const queries = useSearchParams().get("color");
+  const colorQuery = useSearchParams().get("color");
+  const reversQuery = useSearchParams().get('reversed')
 
   const handleReversal = () => {
-    router.push(`${pathname}?color=${queries}&reversed=${isImageReversed}`);
+
+    if(colorQuery) {
+      router.push(`${pathname}?color=${colorQuery}&reversed=${isImageReversed}`);
+
+    } else {
+      router.push(`${pathname}?color=color1&reversed=${isImageReversed}`);
+
+    }
 
     setIsImageReversed(!isImageReversed);
   };
