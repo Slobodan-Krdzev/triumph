@@ -544,7 +544,7 @@
     },
     {
       "id": 4,
-      "type": "rocket",
+      "type": "rocket-3",
       "shortDesc": "Опремен со најголемиот сериски мотор во светот и со најголем вртежен момент, ова е врвниот мускулен родстер со високи перформанси.",
 
       "configPageInfo": {
@@ -592,7 +592,7 @@
       "category": "adventure",
       "subFamilyCategory": "tiger-900-range",
       "edition": "1200gt",
-      "price": "Цени Наскоро",
+      "price": null,
       "gallery": {
         "modelImage": {
           "src": "/images/adventure/tiger900GtModel.png",
@@ -607,7 +607,7 @@
       "category": "adventure",
       "subFamilyCategory": "tiger-900-range",
       "edition": "1200gt",
-      "price": "Цени Наскоро",
+      "price": null,
       "gallery": {
         "modelImage": {
           "src": "/images/adventure/tiger900GtModel.png",
@@ -622,7 +622,7 @@
       "category": "adventure",
       "subFamilyCategory": "tiger-900-range",
       "edition": "1200gt",
-      "price": "Цени Наскоро",
+      "price": null,
       "gallery": {
         "modelImage": {
           "src": "/images/adventure/tiger900RallyProModel.png",
@@ -1162,7 +1162,7 @@
       "category": "classics",
       "subFamilyCategory": "scrambler-1200",
       "edition": "1200cc",
-      "price": "Цени Наскоро",
+      "price": null,
       "gallery": {
         "modelImage": {
           "src": "/images/classics/scrambler1200XMy24Model.png",
@@ -1182,7 +1182,7 @@
       "category": "classics",
       "subFamilyCategory": "scrambler-1200",
       "edition": "1200cc",
-      "price": "Цени Наскоро",
+      "price": null,
       "gallery": {
         "modelImage": {
           "src": "/images/classics/scrambler1200XeMy24Model.png",

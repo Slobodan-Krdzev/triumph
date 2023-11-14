@@ -10,7 +10,7 @@ const MotorcyclesNavSection = ({families, bikes, bikeToRender}: any) => {
       <div className="px-10 ">
         <ul className="flex font-bold text-md gap-6 mt-4">
           <li>
-            <button className="uppercase py-6 px-4 rounded-t-md text-neutral-500 focus:text-black hover:text-black" onClick={() => setAreMotorsShown(true)}
+            <button className="uppercase py-3 px-4 rounded-t-md text-neutral-500 focus:text-black hover:text-black" onClick={() => setAreMotorsShown(true)}
             style={{
                 backgroundColor: areMotorsShown ? 'white' : '',
                 color: areMotorsShown ? 'black' : ''
@@ -20,7 +20,7 @@ const MotorcyclesNavSection = ({families, bikes, bikeToRender}: any) => {
             </button>
           </li>
           <li>
-            <button className="uppercase py-6 px-4 rounded-t-md text-neutral-500 focus:text-black hover:text-black" onClick={() => setAreMotorsShown(false)} 
+            <button className="uppercase py-3 px-4 rounded-t-md text-neutral-500 focus:text-black hover:text-black" onClick={() => setAreMotorsShown(false)} 
             style={{
                 backgroundColor: areMotorsShown ? "" : 'white' ,
                 color: areMotorsShown ? "" : 'black'

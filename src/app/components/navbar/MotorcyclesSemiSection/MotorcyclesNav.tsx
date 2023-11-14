@@ -22,13 +22,15 @@ type Props = {
 const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
   const [family, setFamily] = useState('adventure')
 
+  const originalFamilies = ['adventure', 'classics', 'rocket-3', 'roadsters']
+
   return (
     <div className="flex ">
-      <div className=" flex flex-col gap-6 basis-3/12 py-8">
+      <div className=" flex flex-col gap-6 basis-3/12 pt-8">
         <ul>
           {families?.map((filter: any) => (
             <li key={filter}>
-              <button className={`${family === filter ? 'text-red-600' : 'text-black'} uppercase font-medium text-lg  focus:text-red-700`} onClick={() => setFamily(filter)}>
+              <button className={`${family === filter ? 'text-red-600' : 'text-black'} uppercase font-semibold text-lg  focus:text-red-700`} onClick={() => setFamily(filter)}>
                 {filter}
               </button>
             </li>
@@ -68,10 +70,11 @@ const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
           </li>
         </ul>
       </div>
-      <div className="basis-3/12 lighter-white-bg py-8">
-        <div className="flex justify-between ">
-          <p className="text-black text-lg font-medium uppercase">Фамилија д</p>
-          <Link href={"/"} className="text-black text-md font-medium uppercase">
+      <div className="basis-3/12 lighter-white-bg py-8 ">
+        <div className="flex justify-between px-2">
+          <p className="text-black text-lg font-semibold uppercase">{family}</p>
+
+          <Link href={`/motorcycles/${family}`} className="text-black text-sm font-semibold uppercase">
             Истражи
             <FontAwesomeIcon
               icon={faChevronRight}
@@ -81,7 +84,7 @@ const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
             />
           </Link>
         </div>
-        <div className="overflow-y-scroll h-80">
+        <div className="overflow-y-scroll h-96">
           {getBikesByFamily(family, bikes).map((bike: any) => (
             <SingleMotorcycleCard key={bike.id} bike={bike} />
           ))}
