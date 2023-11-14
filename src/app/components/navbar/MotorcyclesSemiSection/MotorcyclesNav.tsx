@@ -12,17 +12,18 @@ import { getBikesByFamily } from "../../helpers/getBikesByFamily";
 import MotorcycleInfo from "./MotorcycleInfo";
 import SingleMotorcycleCard from "./SingleMotorcycleCard";
 import { useState } from "react";
+import { getBikesByEdition } from "../../helpers/getBikesByEdition";
 
 type Props = {
   families: any[];
   bikes: any[];
-  bikeToRender: any
+  bikeToRender: any;
 };
 
 const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
-  const [family, setFamily] = useState('adventure')
+  const [family, setFamily] = useState("adventure");
 
-  const originalFamilies = ['adventure', 'classics', 'rocket-3', 'roadsters']
+  // const originalFamilies = ['adventure', 'classics', 'rocket-3', 'roadsters']
 
   return (
     <div className="flex ">
@@ -30,7 +31,12 @@ const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
         <ul>
           {families?.map((filter: any) => (
             <li key={filter}>
-              <button className={`${family === filter ? 'text-red-600' : 'text-black'} uppercase font-semibold text-lg  focus:text-red-700`} onClick={() => setFamily(filter)}>
+              <button
+                className={`${
+                  family === filter ? "text-red-600" : "text-black"
+                } uppercase font-semibold text-lg  focus:text-red-700`}
+                onClick={() => setFamily(filter)}
+              >
                 {filter}
               </button>
             </li>
@@ -74,7 +80,10 @@ const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
         <div className="flex justify-between px-2">
           <p className="text-black text-lg font-semibold uppercase">{family}</p>
 
-          <Link href={`/motorcycles/${family}`} className="text-black text-sm font-semibold uppercase">
+          <Link
+            href={`/motorcycles/${family}`}
+            className="text-black text-sm font-semibold uppercase"
+          >
             Истражи
             <FontAwesomeIcon
               icon={faChevronRight}
@@ -84,14 +93,23 @@ const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
             />
           </Link>
         </div>
-        <div className="overflow-y-scroll h-96">
-          {getBikesByFamily(family, bikes).map((bike: any) => (
-            <SingleMotorcycleCard key={bike.id} bike={bike} />
-          ))}
-        </div>
+
+        {getBikesByEdition(family, bikes).length >= 5 ? (
+          <div className="overflow-y-scroll h-96">
+            {getBikesByEdition(family, bikes).map((bike: any) => (
+              <SingleMotorcycleCard key={bike.id} bike={bike} />
+            ))}
+          </div>
+        ) : (
+          <div className="h-96">
+            {getBikesByEdition(family, bikes).map((bike: any) => (
+              <SingleMotorcycleCard key={bike.id} bike={bike} />
+            ))}
+          </div>
+        )}
       </div>
       <div className="basis-6/12 py-8">
-        <MotorcycleInfo bike={bikeToRender} bikes={bikes}/>
+        <MotorcycleInfo bike={bikeToRender} bikes={bikes} />
       </div>
     </div>
   );

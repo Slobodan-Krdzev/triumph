@@ -24,9 +24,9 @@ const Nav = () => {
         const familiesToRender = data.map((family: any) => family.type);
         const filtersToRender = [
           ...familiesToRender,
-          "special editions",
-          "stealth edition",
-          "chrome collection",
+          "special",
+          "stealth",
+          "chrome",
         ];
 
         setFamilies(filtersToRender);

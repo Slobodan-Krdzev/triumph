@@ -591,7 +591,7 @@
       "model": "tiger-900-gt-2024",
       "category": "adventure",
       "subFamilyCategory": "tiger-900-range",
-      "edition": "1200gt",
+      "edition": "adventure",
       "price": null,
       "gallery": {
         "modelImage": {
@@ -606,7 +606,7 @@
       "model": "tiger-900-gt-pro-2024",
       "category": "adventure",
       "subFamilyCategory": "tiger-900-range",
-      "edition": "1200gt",
+      "edition": "adventure",
       "price": null,
       "gallery": {
         "modelImage": {
@@ -621,7 +621,7 @@
       "model": "tiger-900-rally-pro-2024",
       "category": "adventure",
       "subFamilyCategory": "tiger-900-range",
-      "edition": "1200gt",
+      "edition": "adventure",
       "price": null,
       "gallery": {
         "modelImage": {
@@ -636,7 +636,7 @@
       "model": "tiger-sport-660",
       "category": "adventure",
       "subFamilyCategory": "tiger-sport-660",
-      "edition": "660Sport",
+      "edition": "adventure",
       "price": 9590,
       "specs": {
         "cc": 398,
@@ -664,7 +664,7 @@
       "model": "850-sport",
       "category": "adventure",
       "subFamilyCategory": "tiger-850-sport",
-      "edition": "850sport",
+      "edition": "adventure",
       "price": 12890,
       "specs": {
         "cc": 398,
@@ -720,7 +720,7 @@
       "model": "tiger-1200-gt-explorer-2022",
       "category": "adventure",
       "subFamilyCategory": "tiger-1200-gt",
-      "edition": "1200gt",
+      "edition": "adventure",
       "price": 22990,
       "specs": {
         "cc": 398,
@@ -748,7 +748,7 @@
       "model": "tiger-1200-rally-pro-2022",
       "category": "adventure",
       "subFamilyCategory": "tiger-1200-rally",
-      "edition": "1200gt",
+      "edition": "adventure",
       "price": 21990,
       "specs": {
         "cc": 398,
@@ -776,7 +776,7 @@
       "model": "tiger-1200-rally-explorer-2022",
       "category": "adventure",
       "subFamilyCategory": "tiger-1200-rally",
-      "edition": "1200gt",
+      "edition": "adventure",
       "price": 23990,
       "specs": {
         "cc": 398,
@@ -804,7 +804,7 @@
       "model": "gt-aragon-edition-2024",
       "category": "adventure",
       "subFamilyCategory": "tiger-900-2023",
-      "edition": "900gtAragon",
+      "edition": "special",
       "price": 16290,
       "specs": {
         "cc": 398,
@@ -832,7 +832,7 @@
       "model": "rally-aragon-edition-2024",
       "category": "adventure",
       "subFamilyCategory": "tiger-900-2023",
-      "edition": "900gtAragon",
+      "edition": "special",
       "price": 16990,
       "specs": {
         "cc": 398,
@@ -860,7 +860,7 @@
       "model": "gt-pro",
       "category": "adventure",
       "subFamilyCategory": "tiger-900-2023",
-      "edition": "900gtAragon-my23",
+      "edition": "adventure",
       "price": 16290,
       "specs": {
         "cc": 398,
@@ -888,7 +888,7 @@
       "model": "rally-pro",
       "category": "adventure",
       "subFamilyCategory": "tiger-900-2023",
-      "edition": "900gtAragon-my23",
+      "edition": "adventure",
       "price": 16990,
       "specs": {
         "cc": 398,
@@ -916,7 +916,7 @@
       "model": "street-triple-765-r-2023",
       "category": "roadsters",
       "subFamilyCategory": "street-triple-765",
-      "edition": "streetTriple765R",
+      "edition": "roadsters",
       "price": 12290,
       "specs": {
         "cc": 398,
@@ -944,7 +944,7 @@
       "model": "street-triple-765-rs-2023",
       "category": "roadsters",
       "subFamilyCategory": "street-triple-765",
-      "edition": "streetTriple765RS",
+      "edition": "roadsters",
       "price": 13990,
       "specs": {
         "cc": 398,
@@ -972,7 +972,7 @@
       "model": "trident-660",
       "category": "roadsters",
       "subFamilyCategory": "trident-660",
-      "edition": "trident660",
+      "edition": "roadsters",
       "price": 8690,
       "specs": {
         "cc": 398,
@@ -1000,7 +1000,7 @@
       "model": "speed-triple-1200-rs",
       "category": "roadsters",
       "subFamilyCategory": "speed-triple-1200-rs",
-      "edition": "streetTriple1200RS",
+      "edition": "roadsters",
       "price": 18990,
       "specs": {
         "cc": 398,
@@ -1028,7 +1028,7 @@
       "model": "speed-triple-1200-rr",
       "category": "roadsters",
       "subFamilyCategory": "speed-triple-1200-rr",
-      "edition": "streetTriple1200RR",
+      "edition": "roadsters",
       "price": 20990,
       "specs": {
         "cc": 398,
@@ -1084,7 +1084,7 @@
       "model": "rocket-3-gt",
       "category": "rocket-3",
       "subFamilyCategory": "rocket-3",
-      "edition": "rocket3GT",
+      "edition": "rocket-3",
       "price": 25990,
       "specs": {
         "cc": 398,
@@ -1112,7 +1112,7 @@
       "model": "rocket-3-r-221-edition-2022",
       "category": "rocket-3",
       "subFamilyCategory": "rocket-3",
-      "edition": "rocket3R221",
+      "edition": "special",
       "price": 26190,
       "specs": {
         "cc": 398,
@@ -1140,7 +1140,7 @@
       "model": "rocket-3-gt-chrome-edition-2023",
       "category": "rocket-3",
       "subFamilyCategory": "rocket-3",
-      "edition": "rocket3R221",
+      "edition": "special",
       "price": 26890,
       "specs": {
         "cc": 398,
@@ -1168,7 +1168,7 @@
       "model": "rocket-3-gt-221-edition-2022",
       "category": "rocket-3",
       "subFamilyCategory": "rocket-3",
-      "edition": "rocket3Chrome",
+      "edition": "chrome",
       "price": 26890,
       "specs": {
         "cc": 398,
@@ -1196,7 +1196,7 @@
       "model": "rocket-3-r-chrome-edition-2023",
       "category": "rocket-3",
       "subFamilyCategory": "rocket-3",
-      "edition": "rocket3Chrome",
+      "edition": "chrome",
       "price": 26190,
       "specs": {
         "cc": 398,
@@ -1224,7 +1224,7 @@
       "model": "speed-400-2024",
       "category": "classics",
       "subFamilyCategory": "speed-400",
-      "edition": "400cc",
+      "edition": "classics",
       "price": 5690,
       "specs": {
         "cc": 398,
@@ -1281,7 +1281,7 @@
       "model": "scrambler-400-x-2024",
       "category": "classics",
       "subFamilyCategory": "scrambler-400-x",
-      "edition": "400cc",
+      "edition": "classics",
       "price": 6390,
       "specs": {
         "cc": 398,
@@ -1309,7 +1309,7 @@
       "model": "speed-twin-900-2023",
       "category": "classics",
       "subFamilyCategory": "speed-twin-900",
-      "edition": "900cc",
+      "edition": "classics",
       "price": 10390,
       "specs": {
         "cc": 398,
@@ -1335,7 +1335,7 @@
       "model": "bobber-2023",
       "category": "classics",
       "subFamilyCategory": "bonneville-bobber",
-      "edition": "900cc",
+      "edition": "classics",
       "price": 16290,
       "specs": {
         "cc": 398,
@@ -1361,7 +1361,7 @@
       "model": "scrambler-1200-x-2024",
       "category": "classics",
       "subFamilyCategory": "scrambler-1200",
-      "edition": "1200cc",
+      "edition": "classics",
       "price": null,
       "specs": {
         "cc": 398,
@@ -1389,7 +1389,7 @@
       "model": "scrambler-1200-xe-2024",
       "category": "classics",
       "subFamilyCategory": "scrambler-1200",
-      "edition": "1200cc",
+      "edition": "classics",
       "price": null,
       "specs": {
         "cc": 398,
@@ -1417,7 +1417,7 @@
       "model": "scrambler-1200-xc-2023",
       "category": "classics",
       "subFamilyCategory": "scrambler-1200",
-      "edition": "1200cc",
+      "edition": "classics",
       "price": 15990,
       "specs": {
         "cc": 398,
@@ -1445,7 +1445,7 @@
       "model": "scrambler-1200-xe-2023",
       "category": "classics",
       "subFamilyCategory": "scrambler-1200",
-      "edition": "1200cc",
+      "edition": "classics",
       "price": 16990,
       "specs": {
         "cc": 398,
@@ -1473,7 +1473,7 @@
       "model": "speedmaster-2023",
       "category": "classics",
       "subFamilyCategory": "bonneville-speedmaster",
-      "edition": "1200cc",
+      "edition": "classics",
       "price": 16290,
       "specs": {
         "cc": 398,
@@ -1499,7 +1499,7 @@
       "model": "speed-twin-1200-2023",
       "category": "classics",
       "subFamilyCategory": "speed-twin-1200",
-      "edition": "1200cc",
+      "edition": "classics",
       "price": 14190,
       "specs": {
         "cc": 398,
@@ -1525,7 +1525,7 @@
       "model": "scrambler-900-2023",
       "category": "classics",
       "subFamilyCategory": "scrambler-900",
-      "edition": "900cc",
+      "edition": "classics",
       "price": 11890,
       "specs": {
         "cc": 398,
@@ -1551,7 +1551,7 @@
       "model": "t100-2023",
       "category": "classics",
       "subFamilyCategory": "bonneville-t100",
-      "edition": "900cc",
+      "edition": "classics",
       "price": 11690,
       "specs": {
         "cc": 398,
@@ -1577,7 +1577,7 @@
       "model": "t120-2023",
       "category": "classics",
       "subFamilyCategory": "bonneville-t120",
-      "edition": "900cc",
+      "edition": "classics",
       "price": 14290,
       "specs": {
         "cc": 398,
@@ -1603,7 +1603,7 @@
       "model": "t120-black-2023",
       "category": "classics",
       "subFamilyCategory": "bonneville-t120",
-      "edition": "900cc",
+      "edition": "classics",
       "price": 14290,
       "specs": {
         "cc": 398,
@@ -1629,7 +1629,7 @@
       "model": "thruxton-final-edition-2024",
       "category": "classics",
       "subFamilyCategory": "thruxton-rs",
-      "edition": "thruxtonFinal",
+      "edition": "classics",
       "price": 19690,
       "specs": {
         "cc": 398,
@@ -1657,7 +1657,7 @@
       "model": "thruxton-rs-2023",
       "category": "classics",
       "subFamilyCategory": "thruxton-rs",
-      "edition": "thruxtonRS",
+      "edition": "classics",
       "price": 17990,
       "specs": {
         "cc": 398,
