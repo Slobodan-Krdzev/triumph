@@ -2,9 +2,7 @@
 import React, { useState } from "react";
 import MotorcyclesNav from "./MotorcyclesSemiSection/MotorcyclesNav";
 
-
-
-const MotorcyclesNavSection = () => {
+const MotorcyclesNavSection = ({families, bikes, bikeToRender}: any) => {
   const [areMotorsShown, setAreMotorsShown] = useState(true);
 
   return (
@@ -36,7 +34,7 @@ const MotorcyclesNavSection = () => {
       <div className="bg-white px-10">
         {areMotorsShown ? (
           <>
-            <MotorcyclesNav/>
+            <MotorcyclesNav families={families} bikes={bikes} bikeToRender={bikeToRender}/>
           </>
         ) : 
           <>

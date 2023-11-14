@@ -54,7 +54,6 @@ body {
   background-color: var(--primary-bg-color);
 }
 
-
 .gray-bg {
   background-color: var(--secondary-bg-color);
 }
@@ -69,11 +68,15 @@ body {
 
 .lighter-white-bg {
   background-color: var(--light-tetriary-bg-color);
-
 }
+
 
 .text-red {
   color: var(--secondary-color);
+}
+
+.text-light-color {
+  color: var(--white-btn-hover-color)
 }
 
 .red-bg-color {

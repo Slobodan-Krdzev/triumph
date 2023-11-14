@@ -1,4 +1,6 @@
+"use client"
 import Image from "next/image";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import React from "react";
 
 type SingleMorotcycleCardProps = {
@@ -6,14 +8,24 @@ type SingleMorotcycleCardProps = {
 };
 
 const SingleMotorcycleCard = ({ bike }: SingleMorotcycleCardProps) => {
+
+  const router = useRouter()
+  const pathname = usePathname()
+  const queries = useSearchParams().get('navItem')
+
+  const handleBikeSelect = () => {
+
+    router.push(`${pathname}?navItem=${queries}&bikeID=${bike.id}`)
+  }
+
   return (
-    <div className="flex justify-start py-2 px-2 rounded-sm items-center border-t-2 border-neutral-500 first:border-none">
+    <button onClick={handleBikeSelect} className="flex w-full gap-4 justify-start py-2 px-2 rounded-sm items-center border-t-2 border-neutral-500 first:border-none">
       <Image src={bike.gallery.modelImage.src} alt={bike.gallery.modelImage.alt} width={120} height={68} />
-      <div>
+      <div className="text-start">
         <p className="text-md text-black font-medium uppercase">{bike.title}</p>
         <p className="text-sm text-neutral-500">{bike.price}</p>
       </div>
-    </div>
+    </button>
   );
 };
 

@@ -1,55 +1,57 @@
 "use client";
 import { motion, useAnimation } from "framer-motion";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import React, { useEffect, useState } from "react";
-import MotorcyclesNavSection from "./MotorcyclesNavSection";
+import { useEffect } from "react";
 import AccessoriesNavSection from "./AccessoriesNavSection";
+import MotorcyclesNavSection from "./MotorcyclesNavSection";
 
+type Props = {
+  families: any[],
+  bikes: any[],
+  bikeToRender: any
+}
 
-
-const SectionContent = () => {
+const SectionContent = ({families, bikes, bikeToRender}: Props) => {
   const router = useRouter();
   const pathname = usePathname();
-  const query = useSearchParams();
-
-  const [sectionType, setSectionType] = useState(query.get("navItem"));
+  const query = useSearchParams().get('navItem');
 
   const controls = useAnimation();
 
   const handleSectionClose = () => router.push(pathname);
 
   useEffect(() => {
-    if (query.get("navItem")) {
-      controls.start({ y: 0 }); // Start animation when the section is visible
+    if (query) {
+      controls.start({ y: 0 });
     } else {
-      controls.start({ y: -1000 }); // Start exit animation when the section is hidden
+      controls.start({ y: -1000 });
     }
   }, [controls]);
 
   useEffect(() => {
-    setSectionType(query.get('navItem'))
-  }, [query.get('navItem')])
+    router.push(`${pathname}?navItem=${query}&bikeID=1`)
+  }, [])
 
   return (
     <motion.section
-      initial={{ y: -1000 }} // Initial position above the viewport
+      initial={{ y: -1000 }}
       animate={controls}
       exit={{ y: -1000 }}
       transition={{ type: "spring", duration: 0.5 }}
-      className="text-slate-500 slight-white-bg border z-50"
+      className="text-slate-500 slight-white-bg z-40"
       onMouseLeave={handleSectionClose}
       style={{
         position: "fixed",
         top: 93,
         left: 0,
-        width: "100%"
+        width: "100%",
       }}
     >
-        {sectionType === 'Motorcycles' && <MotorcyclesNavSection/>}
-        {sectionType === 'Accessories' && <AccessoriesNavSection/>}
-        {sectionType === 'Clothing' && 'Clothing'}
-        {sectionType === 'Owners' && 'Owners'}
-        {sectionType === 'Discover' && 'Discover'}
+      {query === "Motorcycles" && <MotorcyclesNavSection families={families} bikes={bikes} bikeToRender={bikeToRender}/>}
+      {query === "Accessories" && <AccessoriesNavSection />}
+      {query === "Clothing" && "Clothing"}
+      {query === "Owners" && "Owners"}
+      {query === "Discover" && "Discover"}
     </motion.section>
   );
 };
