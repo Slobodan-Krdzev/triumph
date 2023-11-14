@@ -7,7 +7,7 @@ type MotorcycleInfoProps = {
 };
 
 const MotorcycleInfo = ({ bike }: MotorcycleInfoProps) => {
-  console.log("BIKE TO RENDER", bike);
+  
   return (
     <div className="px-8 relative">
       <h2 className="text-7xl text-light-color font-bold uppercase">

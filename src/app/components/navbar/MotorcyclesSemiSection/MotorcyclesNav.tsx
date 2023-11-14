@@ -7,12 +7,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
-import { getBikesByFamily } from "../../helpers/getBikesByFamily";
-import MotorcycleInfo from "./MotorcycleInfo";
-import SingleMotorcycleCard from "./SingleMotorcycleCard";
 import { useState } from "react";
 import { getBikesByEdition } from "../../helpers/getBikesByEdition";
+import MotorcycleInfo from "./MotorcycleInfo";
+import SingleMotorcycleCard from "./SingleMotorcycleCard";
 
 type Props = {
   families: any[];
@@ -94,13 +92,15 @@ const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
           </Link>
         </div>
 
-        {getBikesByEdition(family, bikes).length >= 5 ? (
+        {getBikesByEdition(family, bikes).length >= 5 && (
           <div className="overflow-y-scroll h-96">
             {getBikesByEdition(family, bikes).map((bike: any) => (
               <SingleMotorcycleCard key={bike.id} bike={bike} />
             ))}
           </div>
-        ) : (
+        )}
+
+        {getBikesByEdition(family, bikes).length < 5 && (
           <div className="h-96">
             {getBikesByEdition(family, bikes).map((bike: any) => (
               <SingleMotorcycleCard key={bike.id} bike={bike} />
