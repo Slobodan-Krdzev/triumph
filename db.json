@@ -638,6 +638,14 @@
       "subFamilyCategory": "tiger-sport-660",
       "edition": "660Sport",
       "price": 9590,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/adventure/tigerSport660Model.png",
@@ -658,6 +666,14 @@
       "subFamilyCategory": "tiger-850-sport",
       "edition": "850sport",
       "price": 12890,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/adventure/tiger850Sport.png",
@@ -678,6 +694,14 @@
       "subFamilyCategory": "tiger-1200-gt",
       "edition": "1200gt",
       "price": 20990,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/adventure/tiger1200GtModel.png",
@@ -698,6 +722,14 @@
       "subFamilyCategory": "tiger-1200-gt",
       "edition": "1200gt",
       "price": 22990,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/adventure/tiger1200GtExplorerModel.png",
@@ -718,6 +750,14 @@
       "subFamilyCategory": "tiger-1200-rally",
       "edition": "1200gt",
       "price": 21990,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/adventure/tiger1200RallyModel.png",
@@ -738,6 +778,14 @@
       "subFamilyCategory": "tiger-1200-rally",
       "edition": "1200gt",
       "price": 23990,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/adventure/tiger1200RallyModel.png",
@@ -758,6 +806,14 @@
       "subFamilyCategory": "tiger-900-2023",
       "edition": "900gtAragon",
       "price": 16290,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/adventure/tiger900GtAragonModel.png",
@@ -778,6 +834,14 @@
       "subFamilyCategory": "tiger-900-2023",
       "edition": "900gtAragon",
       "price": 16990,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/adventure/tiger900RallyAragonModel.png",
@@ -798,6 +862,14 @@
       "subFamilyCategory": "tiger-900-2023",
       "edition": "900gtAragon-my23",
       "price": 16290,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/adventure/tiger900GtProModel.png",
@@ -818,6 +890,14 @@
       "subFamilyCategory": "tiger-900-2023",
       "edition": "900gtAragon-my23",
       "price": 16990,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/adventure/tiger900RallyProModel.png",
@@ -838,6 +918,14 @@
       "subFamilyCategory": "street-triple-765",
       "edition": "streetTriple765R",
       "price": 12290,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/roadsters/streetTriple765RModel.png",
@@ -858,6 +946,14 @@
       "subFamilyCategory": "street-triple-765",
       "edition": "streetTriple765RS",
       "price": 13990,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/roadsters/streetTriple765RsModel.png",
@@ -878,6 +974,14 @@
       "subFamilyCategory": "trident-660",
       "edition": "trident660",
       "price": 8690,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/roadsters/trident660Model.png",
@@ -898,6 +1002,14 @@
       "subFamilyCategory": "speed-triple-1200-rs",
       "edition": "streetTriple1200RS",
       "price": 18990,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/roadsters/speedTriple1200RsModel.png",
@@ -918,6 +1030,14 @@
       "subFamilyCategory": "speed-triple-1200-rr",
       "edition": "streetTriple1200RR",
       "price": 20990,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/roadsters/speedTriple1200Rr2Model.png",
@@ -938,6 +1058,14 @@
       "subFamilyCategory": "rocket-3",
       "edition": "rocket3R",
       "price": 25290,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/rocket-3/rocket3Model.png",
@@ -958,6 +1086,14 @@
       "subFamilyCategory": "rocket-3",
       "edition": "rocket3GT",
       "price": 25990,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/rocket-3/rocket3GtModel.png",
@@ -978,6 +1114,14 @@
       "subFamilyCategory": "rocket-3",
       "edition": "rocket3R221",
       "price": 26190,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/rocket-3/rocket3R221Model.png",
@@ -998,6 +1142,14 @@
       "subFamilyCategory": "rocket-3",
       "edition": "rocket3R221",
       "price": 26890,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/rocket-3/rocket3GtModel.png",
@@ -1018,6 +1170,14 @@
       "subFamilyCategory": "rocket-3",
       "edition": "rocket3Chrome",
       "price": 26890,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/rocket-3/rocket3GtChrome.png",
@@ -1038,6 +1198,14 @@
       "subFamilyCategory": "rocket-3",
       "edition": "rocket3Chrome",
       "price": 26190,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/rocket-3/rocket3RChromeModel.png",
@@ -1058,6 +1226,14 @@
       "subFamilyCategory": "speed-400",
       "edition": "400cc",
       "price": 5690,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/classics/speed400Model.jpg",
@@ -1107,6 +1283,14 @@
       "subFamilyCategory": "scrambler-400-x",
       "edition": "400cc",
       "price": 6390,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/classics/scrambler400XModel.jpg",
@@ -1127,6 +1311,14 @@
       "subFamilyCategory": "speed-twin-900",
       "edition": "900cc",
       "price": 10390,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/classics/speedТwin900Model.png",
@@ -1145,6 +1337,14 @@
       "subFamilyCategory": "bonneville-bobber",
       "edition": "900cc",
       "price": 16290,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/classics/bonnevilleBobberModel.png",
@@ -1163,6 +1363,14 @@
       "subFamilyCategory": "scrambler-1200",
       "edition": "1200cc",
       "price": null,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/classics/scrambler1200XMy24Model.png",
@@ -1183,6 +1391,14 @@
       "subFamilyCategory": "scrambler-1200",
       "edition": "1200cc",
       "price": null,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/classics/scrambler1200XeMy24Model.png",
@@ -1203,6 +1419,14 @@
       "subFamilyCategory": "scrambler-1200",
       "edition": "1200cc",
       "price": 15990,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/classics/scrambler1200XcMy23Model.png",
@@ -1223,6 +1447,14 @@
       "subFamilyCategory": "scrambler-1200",
       "edition": "1200cc",
       "price": 16990,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/classics/scrambler1200XeMy23Model.png",
@@ -1243,6 +1475,14 @@
       "subFamilyCategory": "bonneville-speedmaster",
       "edition": "1200cc",
       "price": 16290,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/classics/bonnevilleSpeedmasterModel.png",
@@ -1261,6 +1501,14 @@
       "subFamilyCategory": "speed-twin-1200",
       "edition": "1200cc",
       "price": 14190,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/classics/speedTwin1200Model.png",
@@ -1279,6 +1527,14 @@
       "subFamilyCategory": "scrambler-900",
       "edition": "900cc",
       "price": 11890,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/classics/scrambler900Model.png",
@@ -1297,6 +1553,14 @@
       "subFamilyCategory": "bonneville-t100",
       "edition": "900cc",
       "price": 11690,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/classics/bonnevilleT100Model.png",
@@ -1315,6 +1579,14 @@
       "subFamilyCategory": "bonneville-t120",
       "edition": "900cc",
       "price": 14290,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/classics/bonnevilleT120Model.png",
@@ -1333,6 +1605,14 @@
       "subFamilyCategory": "bonneville-t120",
       "edition": "900cc",
       "price": 14290,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/classics/bonnevilleT120BlackModel.png",
@@ -1351,6 +1631,14 @@
       "subFamilyCategory": "thruxton-rs",
       "edition": "thruxtonFinal",
       "price": 19690,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/classics/thruxtonRsFinalEditionModel.png",
@@ -1371,6 +1659,14 @@
       "subFamilyCategory": "thruxton-rs",
       "edition": "thruxtonRS",
       "price": 17990,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
       "gallery": {
         "modelImage": {
           "src": "/images/classics/thruxtonRsModel.png",

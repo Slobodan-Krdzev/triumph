@@ -4,18 +4,20 @@ import React, { useState } from "react";
 
 type NavListItemProps = {
   text: string;
+  filter: string
 };
 
-const NavListItem = ({ text }: NavListItemProps) => {
+const NavListItem = ({ text, filter }: NavListItemProps) => {
   const router = useRouter();
   const pathname = usePathname();
+  const query = useSearchParams().get('navItem')
 
-  const handleHover = () => router.push(`${pathname}/?navItem=${text}`);
+  const handleHover = () => router.push(`${pathname}/?navItem=${filter}`);
 
   return (
     <>
       <li
-        className="px-4 uppercase  font-semibold flex items-center cursor-pointer h-16"
+        className={`px-4 uppercase font-semibold flex items-center cursor-pointer h-16 gray-btn-hover ${query === filter ? 'gray-btn' : ''}`}
         onMouseEnter={handleHover}
       >
         {text}
