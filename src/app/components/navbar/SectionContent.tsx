@@ -4,6 +4,7 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useEffect } from "react";
 import AccessoriesNavSection from "./AccessoriesNavSection";
 import MotorcyclesNavSection from "./MotorcyclesNavSection";
+import ClothingNavSection from "./ClothingNavSection";
 
 type Props = {
   families: any[],
@@ -38,7 +39,7 @@ const SectionContent = ({families, bikes, bikeToRender}: Props) => {
       animate={controls}
       exit={{ y: -1000 }}
       transition={{ type: "spring", duration: 0.5 }}
-      className="text-slate-500 slight-white-bg z-40"
+      className=" slight-white-bg z-40"
       onMouseLeave={handleSectionClose}
       style={{
         position: "fixed",
@@ -49,7 +50,7 @@ const SectionContent = ({families, bikes, bikeToRender}: Props) => {
     >
       {query === "Motorcycles" && <MotorcyclesNavSection families={families} bikes={bikes} bikeToRender={bikeToRender}/>}
       {query === "Accessories" && <AccessoriesNavSection />}
-      {query === "Clothing" && "Clothing"}
+      {query === "Clothing" && <ClothingNavSection/>}
       {query === "Owners" && "Owners"}
       {query === "Discover" && "Discover"}
     </motion.section>

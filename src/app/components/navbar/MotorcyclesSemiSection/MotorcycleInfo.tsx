@@ -14,7 +14,7 @@ const MotorcycleInfo = ({ bike }: MotorcycleInfoProps) => {
         {bike[0]?.title}
       </h2>
       <p className="text-neutral-700 text-lg font-semibold">
-        Цена {bike[0]?.price ?? "Наскоро"}
+         {bike[0]?.price ? <>Цена <br /><span>{bike[0]?.price}.00 €</span></> : "Цена Наскоро"} 
       </p>
       <div className="flex justify-between items-end">
         <Image

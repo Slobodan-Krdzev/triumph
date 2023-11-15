@@ -40,35 +40,34 @@ const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
             </li>
           ))}
         </ul>
-        <Link href={"/"} className="text-md text-black">
-          {" "}
-          Aproved{" "}
+        <Link href={"/"} className="text-sm text-black">
+          Проверени Second-Hand Мотори 
         </Link>
         <ul className="flex flex-col gap-2">
           <li>
             <Link
               href={"/configure/bikes"}
-              className="text-black flex justify-start gap-4 items-center"
+              className="text-black flex justify-start gap-4 items-center text-sm"
             >
-              <FontAwesomeIcon icon={faBars} color="black" size="xl" />
+              <FontAwesomeIcon icon={faBars} color="black" size="lg" className="basis-1/12"/>
               Модели
             </Link>
           </li>
           <li>
             <Link
               href={"/configure"}
-              className="text-black flex justify-start gap-4 items-center"
+              className="text-black flex justify-start gap-4 items-center text-sm"
             >
-              <FontAwesomeIcon icon={faSlidersH} color="black" size="xl" />
+              <FontAwesomeIcon icon={faSlidersH} color="black" size="lg" className="basis-1/12"/>
               Конфигурација
             </Link>
           </li>
           <li>
             <Link
               href={"/dealers/dealers-search"}
-              className="text-black flex justify-start gap-4 items-center"
+              className="text-black flex justify-start gap-4 items-center text-sm"
             >
-              <FontAwesomeIcon icon={faLocationPin} color="black" size="xl" />
+              <FontAwesomeIcon icon={faLocationPin} color="black" size="lg" className="basis-1/12"/>
               Продавница
             </Link>
           </li>

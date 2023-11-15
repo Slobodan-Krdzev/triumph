@@ -1236,7 +1236,7 @@
       },
       "gallery": {
         "modelImage": {
-          "src": "/images/classics/speed400Model.jpg",
+          "src": "/images/classics/speed400Model.png",
           "alt": "Speed 400"
         }
       },
@@ -1293,7 +1293,7 @@
       },
       "gallery": {
         "modelImage": {
-          "src": "/images/classics/scrambler400XModel.jpg",
+          "src": "/images/classics/scrambler400XModel.png",
           "alt": "Scrambler 400 x"
         }
       },

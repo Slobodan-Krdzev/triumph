@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import MotorcyclesNav from "./MotorcyclesSemiSection/MotorcyclesNav";
+import OffersNav from "./MotorcyclesSemiSection/OffersNav";
 
 const MotorcyclesNavSection = ({families, bikes, bikeToRender}: any) => {
   const [areMotorsShown, setAreMotorsShown] = useState(true);
@@ -38,7 +39,7 @@ const MotorcyclesNavSection = ({families, bikes, bikeToRender}: any) => {
           </>
         ) : 
           <>
-            ponudi
+            <OffersNav/>
           </>  
         }
       </div>
