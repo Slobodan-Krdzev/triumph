@@ -9,15 +9,15 @@ import OwnersNavSection from "./OwnersNavSection";
 import DiscoverNavSection from "./DiscoverNavSection";
 
 type Props = {
-  families: any[],
-  bikes: any[],
-  bikeToRender: any
-}
+  families: any[];
+  bikes: any[];
+  bikeToRender: any;
+};
 
-const SectionContent = ({families, bikes, bikeToRender}: Props) => {
+const SectionContent = ({ families, bikes, bikeToRender }: Props) => {
   const router = useRouter();
   const pathname = usePathname();
-  const query = useSearchParams().get('navItem');
+  const query = useSearchParams().get("navItem");
 
   const controls = useAnimation();
 
@@ -32,8 +32,8 @@ const SectionContent = ({families, bikes, bikeToRender}: Props) => {
   }, [controls]);
 
   useEffect(() => {
-    router.push(`${pathname}?navItem=${query}&bikeID=1`)
-  }, [])
+    router.push(`${pathname}?navItem=${query}&bikeID=1`);
+  }, []);
 
   return (
     <motion.section
@@ -50,11 +50,17 @@ const SectionContent = ({families, bikes, bikeToRender}: Props) => {
         width: "100%",
       }}
     >
-      {query === "Motorcycles" && <MotorcyclesNavSection families={families} bikes={bikes} bikeToRender={bikeToRender}/>}
+      {query === "Motorcycles" && (
+        <MotorcyclesNavSection
+          families={families}
+          bikes={bikes}
+          bikeToRender={bikeToRender}
+        />
+      )}
       {query === "Accessories" && <AccessoriesNavSection />}
-      {query === "Clothing" && <ClothingNavSection/>}
-      {query === "Owners" && <OwnersNavSection/>}
-      {query === "Discover" && <DiscoverNavSection/>}
+      {query === "Clothing" && <ClothingNavSection />}
+      {query === "Owners" && <OwnersNavSection />}
+      {query === "Discover" && <DiscoverNavSection />}
     </motion.section>
   );
 };
