@@ -70,36 +70,33 @@ const linkItemsQuickLinks: NavLinkListingItemsType[] = [
   {
     text: "Мојот Triumph",
     link: "/owners/your-triumph",
-  }
+  },
 ];
 
 const AccessoriesNavSection = () => {
   return (
     <div className="flex justify-between p-8">
-      <div>
-          <NavLinkListing
-            items={linkItemsAccessory}
-            title={"Аксесоари"}
-            bottomLinkText={"Аксесоари за Вашиот Мотор"}
-            bottomLinkUrl={"/configure"}
-          />
-      </div>
-      <div>
-          <NavLinkListing
-            items={linkItemsModels}
-            title={"Најнови Модели"}
-            bottomLinkText={"Конфигурација"}
-            bottomLinkUrl={"/configure"}
-          />
-      </div>
-      <div>
-          <NavLinkListing
-            items={linkItemsQuickLinks}
-            title={"Барани Линкови"}
-            bottomLinkText={"Koнтакт"}
-            bottomLinkUrl={"/dealers/dealer-search"}
-          />
-      </div>
+      <NavLinkListing
+        items={linkItemsAccessory}
+        title={"Аксесоари"}
+        bottomLinkText={"Аксесоари за Вашиот Мотор"}
+        bottomLinkUrl={"/configure"}
+      />
+
+      <NavLinkListing
+        items={linkItemsModels}
+        title={"Најнови Модели"}
+        bottomLinkText={"Конфигурација"}
+        bottomLinkUrl={"/configure"}
+      />
+
+      <NavLinkListing
+        items={linkItemsQuickLinks}
+        title={"Барани Линкови"}
+        bottomLinkText={"Koнтакт"}
+        bottomLinkUrl={"/dealers/dealer-search"}
+      />
+
       <Link href={"/configure"}>
         <Image src={image} alt="Tiger 1200 GT" />
       </Link>

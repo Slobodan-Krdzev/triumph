@@ -2,8 +2,8 @@ import React from "react";
 import NavLinkListing, { NavLinkListingItemsType } from "./NavLinkListing";
 import Link from "next/link";
 import Image from "next/image";
-import img1 from "../../../../public/images/discoverNavDropdown1.avif"
-import img2 from "../../../../public/images/discoverDropdown2.avif"
+import img1 from "../../../../public/images/discoverNavDropdown1.avif";
+import img2 from "../../../../public/images/discoverDropdown2.avif";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -88,53 +88,68 @@ const linkItemsBrand: NavLinkListingItemsType[] = [
 ];
 
 const linkItemsExperience: NavLinkListingItemsType[] = [
-    {
-      text: "Авантуризам со Triumph",
-      link: "/for-the-ride/experiences/adventure",
-    }]
+  {
+    text: "Авантуризам со Triumph",
+    link: "/for-the-ride/experiences/adventure",
+  },
+];
 
 const DiscoverNavSection = () => {
   return (
     <div className="flex justify-between p-8">
-      <div>
-        <NavLinkListing
-          items={linkItemsNews}
-          title={"Ново"}
-          bottomLinkText={"Истражи Повеќе"}
-          bottomLinkUrl={"/for-the-ride/news"}
-        />
-      </div>
-      <div>
-        <NavLinkListing
-          items={linkItemsRaces}
-          title={"Трки"}
-          bottomLinkText={"Истражи Повеќе"}
-          bottomLinkUrl={"/for-the-ride/racing"}
-        />
-      </div>
-      <div>
-        <NavLinkListing
-          items={linkItemsBrand}
-          title={"За Брендот"}
-          bottomLinkText={"Истражи Повеќе"}
-          bottomLinkUrl={"/for-the-ride/brand"}
-        />
-      </div>
-      <div>
-        <NavLinkListing
-          items={linkItemsExperience}
-          title={"Искуства"}
-          bottomLinkText={"Истражи Повеќе"}
-          bottomLinkUrl={"/for-the-ride/experiences"}
-        />
-      </div>
+      <NavLinkListing
+        items={linkItemsNews}
+        title={"Ново"}
+        bottomLinkText={"Истражи Повеќе"}
+        bottomLinkUrl={"/for-the-ride/news"}
+      />
+
+      <NavLinkListing
+        items={linkItemsRaces}
+        title={"Трки"}
+        bottomLinkText={"Истражи Повеќе"}
+        bottomLinkUrl={"/for-the-ride/racing"}
+      />
+
+      <NavLinkListing
+        items={linkItemsBrand}
+        title={"За Брендот"}
+        bottomLinkText={"Истражи Повеќе"}
+        bottomLinkUrl={"/for-the-ride/brand"}
+      />
+
+      <NavLinkListing
+        items={linkItemsExperience}
+        title={"Искуства"}
+        bottomLinkText={"Истражи Повеќе"}
+        bottomLinkUrl={"/for-the-ride/experiences"}
+      />
+
       <Link href={"/configure"} className="group">
-        <Image src={img1} alt="Tiger 1200 GT" height={367} className='group flex justify-start items-center gap-2 hover:text-red-800 transition-colors ease-in-out pb-4'/>
-        <p className='child uppercase text-md font-medium group-hover:text-red-800'>Истражи Повеќе <FontAwesomeIcon icon={faChevronRight} size="xs" /></p>
+        <div className="overflow-hidden">
+          <Image
+            src={img1}
+            alt="Tiger 1200 GT"
+            height={367}
+            className="group flex justify-start items-center gap-2 group-hover:scale-105 transition-transform ease-in-out delay-75 pb-4"
+          />
+        </div>
+        <p className="child uppercase text-md font-medium group-hover:text-red-800">
+          Истражи Повеќе <FontAwesomeIcon icon={faChevronRight} size="xs" />
+        </p>
       </Link>
       <Link href={"/configure"} className="group">
-        <Image src={img2} alt="Tiger 1200 GT" height={367} className='group flex justify-start items-center gap-2 hover:text-red-800 transition-colors ease-in-out pb-4'/>
-        <p className='child uppercase text-md font-medium group-hover:text-red-800'>Истражи Повеќе <FontAwesomeIcon icon={faChevronRight} size="xs" /></p>
+        <div className="overflow-hidden">
+          <Image
+            src={img2}
+            alt="Tiger 1200 GT"
+            height={367}
+            className="group flex justify-start items-center gap-2 group-hover:group-hover:scale-105 transition-transform ease-in-out delay-75 pb-4"
+          />
+        </div>
+        <p className="child uppercase text-md font-medium group-hover:text-red-800">
+          Истражи Повеќе <FontAwesomeIcon icon={faChevronRight} size="xs" />
+        </p>
       </Link>
     </div>
   );
