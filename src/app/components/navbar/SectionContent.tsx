@@ -5,6 +5,8 @@ import { useEffect } from "react";
 import AccessoriesNavSection from "./AccessoriesNavSection";
 import MotorcyclesNavSection from "./MotorcyclesNavSection";
 import ClothingNavSection from "./ClothingNavSection";
+import OwnersNavSection from "./OwnersNavSection";
+import DiscoverNavSection from "./DiscoverNavSection";
 
 type Props = {
   families: any[],
@@ -51,8 +53,8 @@ const SectionContent = ({families, bikes, bikeToRender}: Props) => {
       {query === "Motorcycles" && <MotorcyclesNavSection families={families} bikes={bikes} bikeToRender={bikeToRender}/>}
       {query === "Accessories" && <AccessoriesNavSection />}
       {query === "Clothing" && <ClothingNavSection/>}
-      {query === "Owners" && "Owners"}
-      {query === "Discover" && "Discover"}
+      {query === "Owners" && <OwnersNavSection/>}
+      {query === "Discover" && <DiscoverNavSection/>}
     </motion.section>
   );
 };

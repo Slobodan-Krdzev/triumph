@@ -17,7 +17,7 @@ const NavListItem = ({ text, filter }: NavListItemProps) => {
   return (
     <>
       <li
-        className={`px-4 uppercase font-semibold flex items-center cursor-pointer h-16 gray-btn-hover ${query === filter ? 'gray-btn' : ''}`}
+        className={`px-4 text-base uppercase font-medium flex items-center cursor-pointer h-16 gray-btn-hover ${query === filter ? 'gray-btn' : ''}`}
         onMouseEnter={handleHover}
       >
         {text}
