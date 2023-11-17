@@ -1,21 +1,23 @@
 "use client";
 import {
-  faChevronDown,
-  faChevronLeft,
-  faChevronUp,
+    faChevronLeft,
+    faChevronRight
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useState } from "react";
-import {
-  linkItemsAccessory,
-  linkItemsModels,
-  linkItemsQuickLinks,
-} from "../AccessoriesNavSection";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { useState } from "react";
+import {
+    linkItemsAccessory,
+    linkItemsModels,
+    linkItemsQuickLinks,
+} from "../AccessoriesNavSection";
 import MobileMenuList from "./MobileMenuList";
 
-const AccesorySectionMobile = () => {
+type AccesorySectionProps = {
+  handler: () => void;
+};
+
+const AccesorySectionMobile = ({ handler }: AccesorySectionProps) => {
   const [menusVisibility, setMenusVisibility] = useState({
     accessories: false,
     models: false,
@@ -53,7 +55,7 @@ const AccesorySectionMobile = () => {
   return (
     <div>
       <div className="flex justify-start items-center px-8 py-4 gray-bg">
-        <button className="basis-1/12">
+        <button className="basis-1/12" onClick={handler}>
           <FontAwesomeIcon icon={faChevronLeft} />
         </button>
         <p className="uppercase text-md basis-10/12 text-center font-semibold">
@@ -62,7 +64,6 @@ const AccesorySectionMobile = () => {
         <div className="basis-1/12"></div>
       </div>
       <ul className="px-8 py-4 bg-white text-black">
-
         <MobileMenuList
           handler={() => handleVisibleMenu("accesories")}
           state={menusVisibility.accessories}
@@ -77,7 +78,6 @@ const AccesorySectionMobile = () => {
           menuTitle={"модели"}
           menuType={"models"}
           menuItems={linkItemsModels}
-          
         />
 
         <MobileMenuList
@@ -86,10 +86,17 @@ const AccesorySectionMobile = () => {
           menuTitle={"Најбарани Линкови"}
           menuType={"links"}
           menuItems={linkItemsQuickLinks}
-
         />
 
-        
+        <li>
+          <Link
+            href={"/configure"}
+            className={`text-sm font-light text-gray uppercase py-3 flex w-full justify-between items-center`}
+          >
+            Конфигурација
+            <FontAwesomeIcon icon={faChevronRight} size="sm" color="gray" />
+          </Link>
+        </li>
       </ul>
     </div>
   );

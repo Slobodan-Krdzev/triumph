@@ -10,7 +10,7 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 // OVDE TREBA QUERY PARAMETRI ZA 2,3,4,5 OD PRVIOT LISTING
 // SE KORISTAT ZA FILTRIRANJE NA BLOGOVITE
 
-const linkItemsNews: NavLinkListingItemsType[] = [
+export const linkItemsNews: NavLinkListingItemsType[] = [
   {
     text: "Новости",
     link: "/for-the-ride/news",
@@ -33,7 +33,7 @@ const linkItemsNews: NavLinkListingItemsType[] = [
   },
 ];
 
-const linkItemsRaces: NavLinkListingItemsType[] = [
+export const linkItemsRaces: NavLinkListingItemsType[] = [
   {
     text: "Motocross and Enduro",
     link: "/for-the-ride/racing/official-announcement-mx-enduro",
@@ -56,7 +56,7 @@ const linkItemsRaces: NavLinkListingItemsType[] = [
   },
 ];
 
-const linkItemsBrand: NavLinkListingItemsType[] = [
+export const linkItemsBrand: NavLinkListingItemsType[] = [
   {
     text: "Партнерство со James Bond",
     link: "/for-the-ride/brand/james-bond-partnership",
@@ -87,7 +87,7 @@ const linkItemsBrand: NavLinkListingItemsType[] = [
   },
 ];
 
-const linkItemsExperience: NavLinkListingItemsType[] = [
+export const linkItemsExperience: NavLinkListingItemsType[] = [
   {
     text: "Авантуризам со Triumph",
     link: "/for-the-ride/experiences/adventure",

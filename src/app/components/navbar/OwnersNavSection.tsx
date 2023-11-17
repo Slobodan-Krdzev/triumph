@@ -3,7 +3,7 @@ import NavLinkListing, { NavLinkListingItemsType } from "./NavLinkListing";
 import Image from "next/image";
 import image from "../../../../public/images/ownersNavDropdownImage.avif";
 
-const linkItemsTriumph: NavLinkListingItemsType[] = [
+export const linkItemsTriumph: NavLinkListingItemsType[] = [
   {
     text: "Muc-off",
     link: "/owners/your-triumph",
@@ -38,7 +38,7 @@ const linkItemsTriumph: NavLinkListingItemsType[] = [
   },
 ];
 
-const linkItemsQuickLinks: NavLinkListingItemsType[] = [
+export const linkItemsQuickLinksOwners: NavLinkListingItemsType[] = [
   {
     text: "Повлекување",
     link: "/owners/recalls",
@@ -60,7 +60,7 @@ const OwnersNavSection = () => {
       />
 
       <NavLinkListing
-        items={linkItemsQuickLinks}
+        items={linkItemsQuickLinksOwners}
         title={"Најнови Модели"}
         bottomLinkText={"Конфигурација"}
         bottomLinkUrl={"/dealers/dealers-search"}

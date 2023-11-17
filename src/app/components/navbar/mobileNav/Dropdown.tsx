@@ -34,25 +34,27 @@ const Dropdown = ({ visibility }: DropdownProps) => {
   const pathname = usePathname();
   const query = useSearchParams();
 
-  const handleSectionOpen = (type: SectionTypeType) => {
+  const handleSectionOpen = (type?: SectionTypeType) => {
     if (query.get("section") && query.get("section") === "true") {
       router.push(`${pathname}?section=${false}`);
     } else {
       router.push(`${pathname}?section=${true}`);
     }
 
-    setSectionType(type);
+    setSectionType(type ? type : "");
   };
+
+  const handleSectionClose = () => router.push(`${pathname}?section=false`)
 
   return (
     <>
       <motion.div
-        className="fixed bg top-24 right-0 left-0 h-screen z-50 text-white"
+        className="fixed bg top-16 right-0 left-0 h-screen z-50 text-white"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -20 }}
       >
-        <ul className="block mt-4">
+        <ul className="block">
           <li className="min-w-100 px-8">
             <button
               className="flex justify-between items-center w-full py-4"
@@ -133,16 +135,16 @@ const Dropdown = ({ visibility }: DropdownProps) => {
 
       {query.get("section") === "true" && (
         <motion.div
-          className="fixed top-24 right-0 left-0  bg-white z-50 text-white"
+          className="fixed top-16 right-0 left-0 h-screen bg-white z-50 text-white border"
           initial={{ x: "100vw" }}
           animate={{ x: 0 }}
           exit={{ x: "100vw" }}
         >
           {sectionType === "moto" && <MotorcycleSectionMobile />}
-          {sectionType === "accessories" && <AccesorySectionMobile />}
+          {sectionType === "accessories" && <AccesorySectionMobile handler={handleSectionClose}/>}
           {sectionType === "clothing" && <ClothingSectionMobile />}
-          {sectionType === "owners" && <OwnersSectionMobile />}
-          {sectionType === "discover" && <DiscoverSectionMobile />}
+          {sectionType === "owners" && <OwnersSectionMobile handler={handleSectionClose}/>}
+          {sectionType === "discover" && <DiscoverSectionMobile handler={handleSectionClose} />}
         </motion.div>
       )}
     </>

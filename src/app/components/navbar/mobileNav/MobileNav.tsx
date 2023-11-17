@@ -18,7 +18,7 @@ const MobileNav = () => {
   const handleMenuVisibility = () => {
 
     if(!isMainDropdownShown){
-        router.push(`${pathname}`)
+        router.push(`${pathname}?section=false`)
     }
 
     setIsMainDropdownShown(!isMainDropdownShown);

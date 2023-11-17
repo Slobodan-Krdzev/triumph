@@ -18,7 +18,7 @@ const MobileMenuList = ({handler, state, menuTitle, menuType, menuItems = []}: M
   return (
     <li className="border-thin-gray-bottom">
           <button
-            className={`text-md uppercase py-3 flex w-full justify-between items-center focus:text-red-800 ${state ? "border-thin-gray-bottom font-medium" : 'font-light'}`}
+            className={`text-sm uppercase py-3 flex w-full justify-between items-center focus:text-red-800 ${state ? "border-thin-gray-bottom font-medium" : 'font-light'}`}
             onClick={() => handler(menuType)}
           >
             {menuTitle}
@@ -33,7 +33,7 @@ const MobileMenuList = ({handler, state, menuTitle, menuType, menuItems = []}: M
               exit={{ x: "100vw" }}
             >
               {menuItems.map((item, idx) => (
-                <li key={`${item.link} + ${idx}`} className="mb-2 uppercase font-medium last:mb-0">
+                <li key={`${item.link} + ${idx}`} className="mb-2 uppercase font-medium text-sm">
                   <Link href={item.link}>{item.text}</Link>
                 </li>
               ))}
