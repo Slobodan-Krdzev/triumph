@@ -37,7 +37,7 @@ const MobileNav = () => {
         <div className="basis-1/12"></div>
       </nav>
 
-      {isMainDropdownShown && <Dropdown visibility={isMainDropdownShown}/>}
+      {isMainDropdownShown && <Dropdown visibility={isMainDropdownShown} closeMainMenu={handleMenuVisibility}/>}
     </>
   );
 };

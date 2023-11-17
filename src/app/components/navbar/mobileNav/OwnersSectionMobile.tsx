@@ -1,3 +1,4 @@
+"use client"
 import { faChevronLeft, faLocationPin } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
@@ -6,10 +7,12 @@ import { linkItemsQuickLinksOwners, linkItemsTriumph } from '../OwnersNavSection
 import MobileMenuList from './MobileMenuList'
 
 type OwnersSectionProps = {
-  handler: () => void
+  handler: () => void,
+  closeMainMenu: () => void
+
 }
 
-const OwnersSectionMobile = ({handler}: OwnersSectionProps) => {
+const OwnersSectionMobile = ({handler, closeMainMenu}: OwnersSectionProps) => {
 
   const [menusVisibility, setMenusVisibility] = useState({
     yourTriumph: false,
@@ -65,7 +68,7 @@ const OwnersSectionMobile = ({handler}: OwnersSectionProps) => {
 
       </ul>
 
-      <Link href={'/dealers/dealer-search'} className='text-black ml-8 text-sm'>
+      <Link href={'/dealers/dealer-search'} className='text-black ml-8 text-sm' onClick={closeMainMenu}>
         <FontAwesomeIcon icon={faLocationPin} className='mr-2'/>
           Контакт
       </Link>

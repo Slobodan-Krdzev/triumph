@@ -1,3 +1,5 @@
+"use client"
+
 import {
   faChevronLeft,
   faChevronRight,
@@ -15,9 +17,11 @@ import MobileMenuList from "./MobileMenuList";
 
 type DiscoverSectionMobile = {
   handler: () => void;
+  closeMainMenu: () => void
+
 };
 
-const DiscoverSectionMobile = ({ handler }: DiscoverSectionMobile) => {
+const DiscoverSectionMobile = ({ handler, closeMainMenu }: DiscoverSectionMobile) => {
   const [menusVisibility, setMenusVisibility] = useState({
     news: false,
     races: false,
@@ -112,19 +116,22 @@ const DiscoverSectionMobile = ({ handler }: DiscoverSectionMobile) => {
 
         <li>
           <Link
-            href={"/configure"}
+            href={"/for-the-ride/reviews"}
             className={`text-sm font-light text-gray uppercase py-3 flex w-full justify-between items-center`}
+            onClick={closeMainMenu}
           >
-            Конфигурација
+            Критики и Препораки
             <FontAwesomeIcon icon={faChevronRight} size="sm" color="gray" />
           </Link>
         </li>
         <li>
           <Link
-            href={"/configure"}
+            href={"/for-the-ride/news/epic-adventures"}
             className={`text-sm font-light text-gray uppercase py-3 flex w-full justify-between items-center`}
+            onClick={closeMainMenu}
+
           >
-            Конфигурација
+            Информации
             <FontAwesomeIcon icon={faChevronRight} size="sm" color="gray" />
           </Link>
         </li>

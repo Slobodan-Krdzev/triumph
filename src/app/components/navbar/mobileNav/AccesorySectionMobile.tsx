@@ -12,17 +12,22 @@ import {
     linkItemsQuickLinks,
 } from "../AccessoriesNavSection";
 import MobileMenuList from "./MobileMenuList";
+import { usePathname, useRouter } from "next/navigation";
 
 type AccesorySectionProps = {
   handler: () => void;
+  closeMainMenu: () => void
 };
 
-const AccesorySectionMobile = ({ handler }: AccesorySectionProps) => {
+const AccesorySectionMobile = ({ handler, closeMainMenu }: AccesorySectionProps) => {
   const [menusVisibility, setMenusVisibility] = useState({
     accessories: false,
     models: false,
     links: false,
   });
+
+  const router = useRouter();
+  const pathname = usePathname();
 
   const handleVisibleMenu = (menu: "accesories" | "models" | "links") => {
     switch (menu) {
@@ -92,6 +97,7 @@ const AccesorySectionMobile = ({ handler }: AccesorySectionProps) => {
           <Link
             href={"/configure"}
             className={`text-sm font-light text-gray uppercase py-3 flex w-full justify-between items-center`}
+            onClick={closeMainMenu}
           >
             Конфигурација
             <FontAwesomeIcon icon={faChevronRight} size="sm" color="gray" />

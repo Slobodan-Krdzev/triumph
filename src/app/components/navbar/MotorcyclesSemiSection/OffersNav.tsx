@@ -3,7 +3,7 @@ import NavLinkListing, { NavLinkListingItemsType } from "../NavLinkListing";
 import Image from "next/image";
 import image from "../../../../../public/images/offersNavDropdownImage.avif"
 
-const linkItems: NavLinkListingItemsType[] = [
+export const linkItems: NavLinkListingItemsType[] = [
   {
     text: "Финансирање",
     link: "/motorcycles/ride4less-finance",

@@ -13,6 +13,7 @@ import ClothingSectionMobile from "./ClothingSectionMobile";
 import DiscoverSectionMobile from "./DiscoverSectionMobile";
 import MotorcycleSectionMobile from "./MotorcycleSectionMobile";
 import OwnersSectionMobile from "./OwnersSectionMobile";
+import OffersSectionMobile from "./OffersSectionMobile";
 
 type SectionTypeType =
   | ""
@@ -20,13 +21,15 @@ type SectionTypeType =
   | "accessories"
   | "owners"
   | "clothing"
-  | "discover";
+  | "discover"
+  | "moto-offers"
 
 type DropdownProps = {
   visibility: boolean;
+  closeMainMenu: () => void
 };
 
-const Dropdown = ({ visibility }: DropdownProps) => {
+const Dropdown = ({ visibility, closeMainMenu }: DropdownProps) => {
   const [isMotoTabOpen, setIsMotoTabOpen] = useState(true);
   const [sectionType, setSectionType] = useState<SectionTypeType>("");
 
@@ -69,7 +72,11 @@ const Dropdown = ({ visibility }: DropdownProps) => {
           </li>
           {isMotoTabOpen && (
             <>
-              <li className="min-w-100 bg-white text-black px-8">
+              <motion.li 
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              className="min-w-100 bg-white text-black px-8">
                 <button
                   className="flex justify-between items-center w-full py-4"
                   onClick={() => handleSectionOpen("moto")}
@@ -79,16 +86,21 @@ const Dropdown = ({ visibility }: DropdownProps) => {
                   </span>
                   <FontAwesomeIcon icon={faChevronRight} size="lg" />
                 </button>
-              </li>
+              </motion.li>
 
-              <li className="min-w-100 bg-white text-black px-8">
-                <button className="flex justify-between items-center w-full py-4">
+              <motion.li
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              className="min-w-100 bg-white text-black px-8">
+                <button className="flex justify-between items-center w-full py-4" 
+                onClick={() => handleSectionOpen("moto-offers")}>
                   <span className="text-md uppercase font-semibold">
                     Понуди
                   </span>
                   <FontAwesomeIcon icon={faChevronRight} size="lg" />
                 </button>
-              </li>
+              </motion.li>
             </>
           )}
 
@@ -135,16 +147,18 @@ const Dropdown = ({ visibility }: DropdownProps) => {
 
       {query.get("section") === "true" && (
         <motion.div
-          className="fixed top-16 right-0 left-0 h-screen bg-white z-50 text-white border"
+          className="fixed top-16 right-0 left-0 h-screen bg-white z-50 text-white overflow-y-auto"
           initial={{ x: "100vw" }}
           animate={{ x: 0 }}
           exit={{ x: "100vw" }}
         >
           {sectionType === "moto" && <MotorcycleSectionMobile />}
-          {sectionType === "accessories" && <AccesorySectionMobile handler={handleSectionClose}/>}
+          {sectionType === "moto-offers" && <OffersSectionMobile handler={handleSectionClose} />}
+
+          {sectionType === "accessories" && <AccesorySectionMobile handler={handleSectionClose} closeMainMenu={closeMainMenu}/>}
           {sectionType === "clothing" && <ClothingSectionMobile />}
-          {sectionType === "owners" && <OwnersSectionMobile handler={handleSectionClose}/>}
-          {sectionType === "discover" && <DiscoverSectionMobile handler={handleSectionClose} />}
+          {sectionType === "owners" && <OwnersSectionMobile handler={handleSectionClose} closeMainMenu={closeMainMenu}/>}
+          {sectionType === "discover" && <DiscoverSectionMobile handler={handleSectionClose} closeMainMenu={closeMainMenu}/>}
         </motion.div>
       )}
     </>

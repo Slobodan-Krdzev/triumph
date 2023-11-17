@@ -125,7 +125,7 @@ const DiscoverNavSection = () => {
         bottomLinkUrl={"/for-the-ride/experiences"}
       />
 
-      <Link href={"/configure"} className="group">
+      <Link href={"/for-the-ride/reviews"} className="group">
         <div className="overflow-hidden">
           <Image
             src={img1}
@@ -138,7 +138,7 @@ const DiscoverNavSection = () => {
           Истражи Повеќе <FontAwesomeIcon icon={faChevronRight} size="xs" />
         </p>
       </Link>
-      <Link href={"/configure"} className="group">
+      <Link href={"/for-the-ride/news/epic-adventures"} className="group">
         <div className="overflow-hidden">
           <Image
             src={img2}
