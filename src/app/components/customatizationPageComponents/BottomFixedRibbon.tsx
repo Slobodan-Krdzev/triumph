@@ -13,6 +13,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import { useBreakpoint } from "../helpers/useBreakpoint";
 import { useRouter } from "next/navigation";
+import { handleBodyScrollWhenMenuIsOpen } from "../helpers/handleBodyScrollWhenMenuOpens";
 
 type BottomFixedRibbonProps = {
   info: any;
@@ -36,6 +37,8 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
 
   const handleMenu = () => {
     setIsMobileMenuShown(!isMobileMenuShown);
+
+    handleBodyScrollWhenMenuIsOpen(isMobileMenuShown)
   };
 
   if (breakpoint > 768) {

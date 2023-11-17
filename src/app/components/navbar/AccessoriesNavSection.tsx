@@ -4,7 +4,7 @@ import React from "react";
 import image from "../../../../public/images/accessoriesNavDropdownImage.avif";
 import NavLinkListing, { NavLinkListingItemsType } from "./NavLinkListing";
 
-const linkItemsAccessory: NavLinkListingItemsType[] = [
+export const linkItemsAccessory: NavLinkListingItemsType[] = [
   {
     text: "Конфигурација",
     link: "/configuration",
@@ -27,7 +27,7 @@ const linkItemsAccessory: NavLinkListingItemsType[] = [
   },
 ];
 
-const linkItemsModels: NavLinkListingItemsType[] = [
+export const linkItemsModels: NavLinkListingItemsType[] = [
   {
     text: "Speed triple 765",
     link: "/motorcycles/roadsters/street-triple-765/accessories-street-triple-765",
@@ -58,7 +58,7 @@ const linkItemsModels: NavLinkListingItemsType[] = [
   },
 ];
 
-const linkItemsQuickLinks: NavLinkListingItemsType[] = [
+export const linkItemsQuickLinks: NavLinkListingItemsType[] = [
   {
     text: "Orizondas Оригинални Аксесоари",
     link: "/accessories/why-buy-genuine",

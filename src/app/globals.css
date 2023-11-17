@@ -29,6 +29,11 @@ body {
   /* overflow: hidden; */
 }
 
+.menu-visible {
+  overflow: hidden;
+  height: 100vh;
+}
+
 :root {
   --primary-color: #000000;
   --secondary-color: #CD192D;

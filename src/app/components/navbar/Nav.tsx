@@ -47,8 +47,6 @@ const Nav = () => {
 
     }
 
-    console.log(bikeToRender);
-    
   }, [query.get('bikeID')])
 
   try {
@@ -63,7 +61,6 @@ const Nav = () => {
         </nav>
 
         {getQueryParam() && <SectionContent families={families} bikes={bikes} bikeToRender={bikeToRender}/>}
-        {/* {isSectionShown && <div className="text-slate-500 border h-screen">{getQueryParam()}</div>} */}
       </>
     );
   } catch {

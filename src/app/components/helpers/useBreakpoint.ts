@@ -5,8 +5,13 @@ export const useBreakpoint = () => {
     
 
     useEffect(() => {
-      
+        
+        const handleResize = () => setBreakpoint(window.innerWidth)
+
+        handleResize()
+
         window.addEventListener('resize' , () => setBreakpoint(window.innerWidth))
+
 
         return () => {
             window.removeEventListener('resize', () => setBreakpoint(window.innerWidth));
