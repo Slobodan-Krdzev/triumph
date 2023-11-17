@@ -77,7 +77,7 @@ const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
         <div className="flex justify-between px-2">
           <p className="text-black text-lg font-semibold uppercase">{family}</p>
 
-          <Link
+          {(family !== "special" && family !== "stealth" && family !== "chrome") && <Link
             href={`/motorcycles/${family}`}
             className="text-black text-sm font-semibold uppercase"
           >
@@ -88,7 +88,8 @@ const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
               size="xs"
               className="pl-2"
             />
-          </Link>
+          </Link>}
+          
         </div>
 
         {getBikesByEdition(family, bikes).length >= 5 && (

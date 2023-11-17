@@ -9,7 +9,12 @@ import Dropdown from "./Dropdown";
 import { handleBodyScrollWhenMenuIsOpen } from "../../helpers/handleBodyScrollWhenMenuOpens";
 import { usePathname, useRouter } from "next/navigation";
 
-const MobileNav = () => {
+type MobileNavProps ={
+  fams: any[],
+  allBikes: any[]
+}
+
+const MobileNav = ({fams, allBikes}: MobileNavProps) => {
   const [isMainDropdownShown, setIsMainDropdownShown] = useState(false);
   
   const router = useRouter()
@@ -37,7 +42,7 @@ const MobileNav = () => {
         <div className="basis-1/12"></div>
       </nav>
 
-      {isMainDropdownShown && <Dropdown visibility={isMainDropdownShown} closeMainMenu={handleMenuVisibility}/>}
+      {isMainDropdownShown && <Dropdown visibility={isMainDropdownShown} closeMainMenu={handleMenuVisibility} families={fams} bikes={allBikes}/>}
     </>
   );
 };

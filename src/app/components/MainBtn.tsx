@@ -27,7 +27,7 @@ const MainBtn = ({
           bgBlack ? "bg main-btn-black-hover" : "red-bg-color main-btn-hover"
         }  ${
           fullWidth ? "block" : ""
-        } uppercase font-bold px-5 py-3 text-slate-100 text-base leading-7 `}
+        } uppercase font-bold px-5 md:py-3 py-1 text-slate-100 text-base leading-7 `}
       >
         {" "}
         {text}

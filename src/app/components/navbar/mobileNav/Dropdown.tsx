@@ -1,8 +1,8 @@
 "use client";
 import {
-    faChevronDown,
-    faChevronRight,
-    faChevronUp,
+  faChevronDown,
+  faChevronRight,
+  faChevronUp,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
@@ -22,14 +22,21 @@ type SectionTypeType =
   | "owners"
   | "clothing"
   | "discover"
-  | "moto-offers"
+  | "moto-offers";
 
 type DropdownProps = {
   visibility: boolean;
-  closeMainMenu: () => void
+  closeMainMenu: () => void;
+  families: any[];
+  bikes: any[];
 };
 
-const Dropdown = ({ visibility, closeMainMenu }: DropdownProps) => {
+const Dropdown = ({
+  visibility,
+  closeMainMenu,
+  families,
+  bikes,
+}: DropdownProps) => {
   const [isMotoTabOpen, setIsMotoTabOpen] = useState(true);
   const [sectionType, setSectionType] = useState<SectionTypeType>("");
 
@@ -47,7 +54,7 @@ const Dropdown = ({ visibility, closeMainMenu }: DropdownProps) => {
     setSectionType(type ? type : "");
   };
 
-  const handleSectionClose = () => router.push(`${pathname}?section=false`)
+  const handleSectionClose = () => router.push(`${pathname}?section=false`);
 
   return (
     <>
@@ -72,11 +79,12 @@ const Dropdown = ({ visibility, closeMainMenu }: DropdownProps) => {
           </li>
           {isMotoTabOpen && (
             <>
-              <motion.li 
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              className="min-w-100 bg-white text-black px-8">
+              <motion.li
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                className="min-w-100 bg-white text-black px-8"
+              >
                 <button
                   className="flex justify-between items-center w-full py-4"
                   onClick={() => handleSectionOpen("moto")}
@@ -89,12 +97,15 @@ const Dropdown = ({ visibility, closeMainMenu }: DropdownProps) => {
               </motion.li>
 
               <motion.li
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              className="min-w-100 bg-white text-black px-8">
-                <button className="flex justify-between items-center w-full py-4" 
-                onClick={() => handleSectionOpen("moto-offers")}>
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                className="min-w-100 bg-white text-black px-8"
+              >
+                <button
+                  className="flex justify-between items-center w-full py-4"
+                  onClick={() => handleSectionOpen("moto-offers")}
+                >
                   <span className="text-md uppercase font-semibold">
                     Понуди
                   </span>
@@ -152,13 +163,32 @@ const Dropdown = ({ visibility, closeMainMenu }: DropdownProps) => {
           animate={{ x: 0 }}
           exit={{ x: "100vw" }}
         >
-          {sectionType === "moto" && <MotorcycleSectionMobile />}
-          {sectionType === "moto-offers" && <OffersSectionMobile handler={handleSectionClose} />}
+          {sectionType === "moto" && (
+            <MotorcycleSectionMobile handler={handleSectionClose} families={families} bikes={bikes}/>
+          )}
+          {sectionType === "moto-offers" && (
+            <OffersSectionMobile handler={handleSectionClose} />
+          )}
 
-          {sectionType === "accessories" && <AccesorySectionMobile handler={handleSectionClose} closeMainMenu={closeMainMenu}/>}
+          {sectionType === "accessories" && (
+            <AccesorySectionMobile
+              handler={handleSectionClose}
+              closeMainMenu={closeMainMenu}
+            />
+          )}
           {sectionType === "clothing" && <ClothingSectionMobile />}
-          {sectionType === "owners" && <OwnersSectionMobile handler={handleSectionClose} closeMainMenu={closeMainMenu}/>}
-          {sectionType === "discover" && <DiscoverSectionMobile handler={handleSectionClose} closeMainMenu={closeMainMenu}/>}
+          {sectionType === "owners" && (
+            <OwnersSectionMobile
+              handler={handleSectionClose}
+              closeMainMenu={closeMainMenu}
+            />
+          )}
+          {sectionType === "discover" && (
+            <DiscoverSectionMobile
+              handler={handleSectionClose}
+              closeMainMenu={closeMainMenu}
+            />
+          )}
         </motion.div>
       )}
     </>
