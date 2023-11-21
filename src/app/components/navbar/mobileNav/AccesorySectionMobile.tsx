@@ -16,10 +16,9 @@ import { usePathname, useRouter } from "next/navigation";
 
 type AccesorySectionProps = {
   handler: () => void;
-  closeMainMenu: () => void
 };
 
-const AccesorySectionMobile = ({ handler, closeMainMenu }: AccesorySectionProps) => {
+const AccesorySectionMobile = ({ handler}: AccesorySectionProps) => {
   const [menusVisibility, setMenusVisibility] = useState({
     accessories: false,
     models: false,
@@ -97,7 +96,6 @@ const AccesorySectionMobile = ({ handler, closeMainMenu }: AccesorySectionProps)
           <Link
             href={"/configure"}
             className={`text-sm font-light text-gray uppercase py-3 flex w-full justify-between items-center`}
-            onClick={closeMainMenu}
           >
             Конфигурација
             <FontAwesomeIcon icon={faChevronRight} size="sm" color="gray" />

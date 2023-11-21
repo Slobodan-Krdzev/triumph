@@ -11,6 +11,7 @@ type MotorcycleCardProps = {
   idx: number;
   bikeToFocus: number;
   focusHandler: (idx: number) => void;
+  closeMainMenu: () => void
 };
 
 const MotorcycleCard = ({
@@ -18,6 +19,7 @@ const MotorcycleCard = ({
   idx,
   bikeToFocus,
   focusHandler,
+  closeMainMenu
 }: MotorcycleCardProps) => {
 
   return (
@@ -60,12 +62,14 @@ const MotorcycleCard = ({
             bgBlack={false}
             isLink={true}
             link={`/configure/bike/${bike?.model}`}
+            // action={closeMainMenu}
           />
           <MainBtn
             text={"Детали"}
             bgBlack={true}
             isLink={true}
             link={`/motorcycles/${bike?.category}/${bike?.model}`}
+            action={closeMainMenu}
           />
         </motion.div>
       )}

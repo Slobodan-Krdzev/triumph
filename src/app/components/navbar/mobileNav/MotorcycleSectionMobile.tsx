@@ -18,12 +18,14 @@ type MotorcycleSectionMobileProps = {
   handler: () => void;
   families: any[];
   bikes: any[];
+  closeMainMenu: () => void;
 };
 
 const MotorcycleSectionMobile = ({
   handler,
   families = [],
   bikes = [],
+  closeMainMenu,
 }: MotorcycleSectionMobileProps) => {
   const [areMotorsShown, setAreMotorsShown] = useState(false);
   const [bikeInFocus, setBikeInFocus] = useState(0);
@@ -39,6 +41,8 @@ const MotorcycleSectionMobile = ({
     setAreMotorsShown(!areMotorsShown);
   };
 
+  const closeSection = () => router.push(`${pathname}?section=false`);
+
   const handleBikeToFocus = (bikeNum: number) => {
     setBikeInFocus(bikeNum);
   };
@@ -46,10 +50,14 @@ const MotorcycleSectionMobile = ({
   return (
     <div>
       <div className="flex justify-start items-center px-8 py-4 gray-bg">
-        <button className="basis-1/12" onClick={() => {
-          handleSectionClose()
-          setBikeInFocus(0)
-        }}>
+        <button
+          className="basis-1/12"
+          onClick={() => {
+            handleSectionClose();
+            setBikeInFocus(0);
+            closeSection();
+          }}
+        >
           <FontAwesomeIcon icon={faChevronLeft} />
         </button>
         <p className="uppercase text-md basis-10/12 text-center font-semibold">
@@ -126,19 +134,32 @@ const MotorcycleSectionMobile = ({
 
       {areMotorsShown && (
         <motion.div
-          className="fixed top-16 right-0 left-0 h-screen bg-white z-50 text-black overflow-y-auto"
+          className="fixed top-0 right-0 left-0 h-screen bg-white z-50 text-black overflow-y-auto"
           initial={{ x: "100vw" }}
           animate={{ x: 0 }}
           exit={{ x: "100vw" }}
         >
+          <div className="px-8 py-4 gray-bg text-white items-center flex justify-between" >
+            <button
+              className="basis-1/12"
+              onClick={() => setAreMotorsShown(false)}
+            >
+              <FontAwesomeIcon icon={faChevronLeft} />
+            </button>
+            <p className="uppercase text-md basis-10/12 text-center font-semibold">
+              {famQuery}
+            </p>
+            <div className="basis-1/12"></div>
+          </div>
           <div className="flex justify-between items-center mb-4 px-3 pt-2">
             <p className="uppercase font-semibold text-2xl">{famQuery}</p>
             {famQuery !== "special" &&
               famQuery !== "stealth" &&
               famQuery !== "chrome" && (
                 <Link
-                  href={`/motorcycles/famType`}
+                  href={`/motorcycles/${famQuery}`}
                   className="font-semibold uppercase text-md"
+                  onClick={closeMainMenu}
                 >
                   Истражи
                   <FontAwesomeIcon
@@ -157,6 +178,7 @@ const MotorcycleSectionMobile = ({
                 idx={idx}
                 bikeToFocus={bikeInFocus}
                 focusHandler={handleBikeToFocus}
+                closeMainMenu={closeMainMenu}
               />
             ))}
           </div>

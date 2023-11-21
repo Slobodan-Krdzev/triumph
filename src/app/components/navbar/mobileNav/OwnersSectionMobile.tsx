@@ -7,12 +7,11 @@ import { linkItemsQuickLinksOwners, linkItemsTriumph } from '../OwnersNavSection
 import MobileMenuList from './MobileMenuList'
 
 type OwnersSectionProps = {
-  handler: () => void,
-  closeMainMenu: () => void
+  handler: () => void
 
 }
 
-const OwnersSectionMobile = ({handler, closeMainMenu}: OwnersSectionProps) => {
+const OwnersSectionMobile = ({handler}: OwnersSectionProps) => {
 
   const [menusVisibility, setMenusVisibility] = useState({
     yourTriumph: false,
@@ -68,7 +67,7 @@ const OwnersSectionMobile = ({handler, closeMainMenu}: OwnersSectionProps) => {
 
       </ul>
 
-      <Link href={'/dealers/dealer-search'} className='text-black ml-8 text-sm' onClick={closeMainMenu}>
+      <Link href={'/dealers/dealer-search'} className='text-black ml-8 text-sm'>
         <FontAwesomeIcon icon={faLocationPin} className='mr-2'/>
           Контакт
       </Link>

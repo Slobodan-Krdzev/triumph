@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo1 from "../../../../../public/logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
@@ -29,6 +29,11 @@ const MobileNav = ({fams, allBikes}: MobileNavProps) => {
     setIsMainDropdownShown(!isMainDropdownShown);
     handleBodyScrollWhenMenuIsOpen(isMainDropdownShown)
   };
+
+  useEffect(() => {
+
+    setIsMainDropdownShown(false)
+  }, [pathname])
 
   return (
     <>

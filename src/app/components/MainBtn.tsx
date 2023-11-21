@@ -1,4 +1,6 @@
+"use client"
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 import React from "react";
 
 type BtnProps = {
@@ -19,6 +21,10 @@ const MainBtn = ({
   fullWidth,
   action,
 }: BtnProps) => {
+
+  const router = useRouter()
+  const pathname = usePathname()
+
   if (isLink && link) {
     return (
       <Link
@@ -28,6 +34,9 @@ const MainBtn = ({
         }  ${
           fullWidth ? "block" : ""
         } uppercase font-bold px-5 md:py-3 py-1 text-slate-100 text-base leading-7 `}
+        onClick={() => {
+          router.push(`${link}?section=${false}`)
+        }}
       >
         {" "}
         {text}

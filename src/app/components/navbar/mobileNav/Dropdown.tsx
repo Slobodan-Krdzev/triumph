@@ -164,7 +164,7 @@ const Dropdown = ({
           exit={{ x: "100vw" }}
         >
           {sectionType === "moto" && (
-            <MotorcycleSectionMobile handler={handleSectionClose} families={families} bikes={bikes}/>
+            <MotorcycleSectionMobile handler={handleSectionClose} families={families} bikes={bikes} closeMainMenu={closeMainMenu}/>
           )}
           {sectionType === "moto-offers" && (
             <OffersSectionMobile handler={handleSectionClose} />
@@ -173,20 +173,17 @@ const Dropdown = ({
           {sectionType === "accessories" && (
             <AccesorySectionMobile
               handler={handleSectionClose}
-              closeMainMenu={closeMainMenu}
             />
           )}
           {sectionType === "clothing" && <ClothingSectionMobile />}
           {sectionType === "owners" && (
             <OwnersSectionMobile
               handler={handleSectionClose}
-              closeMainMenu={closeMainMenu}
             />
           )}
           {sectionType === "discover" && (
             <DiscoverSectionMobile
               handler={handleSectionClose}
-              closeMainMenu={closeMainMenu}
             />
           )}
         </motion.div>
