@@ -14,6 +14,7 @@ import DiscoverSectionMobile from "./DiscoverSectionMobile";
 import MotorcycleSectionMobile from "./MotorcycleSectionMobile";
 import OwnersSectionMobile from "./OwnersSectionMobile";
 import OffersSectionMobile from "./OffersSectionMobile";
+import Link from "next/link";
 
 type SectionTypeType =
   | ""
@@ -59,7 +60,7 @@ const Dropdown = ({
   return (
     <>
       <motion.div
-        className="fixed bg top-16 right-0 left-0 h-screen z-50 text-white"
+        className="fixed bg top-16 right-0 left-0 z-50 h-screen text-white overflow-y-auto"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -20 }}
@@ -154,6 +155,17 @@ const Dropdown = ({
             </button>
           </li>
         </ul>
+        <ul className="px-8 pt-8 text-xs h-48">
+          <li className="mt-2">
+            <Link href={"/dealers/dealer-search"}>Контакт</Link>
+          </li>
+          <li className="mt-2">
+            <Link href={"/configuration"}>Конфигурација</Link>
+          </li>
+          <li className="uppercase mt-2">
+            <Link href={"/latest-offers"}>Понуди</Link>
+          </li>
+        </ul>
       </motion.div>
 
       {query.get("section") === "true" && (
@@ -164,27 +176,28 @@ const Dropdown = ({
           exit={{ x: "100vw" }}
         >
           {sectionType === "moto" && (
-            <MotorcycleSectionMobile handler={handleSectionClose} families={families} bikes={bikes} closeMainMenu={closeMainMenu}/>
+            <MotorcycleSectionMobile
+              handler={handleSectionClose}
+              families={families}
+              bikes={bikes}
+              closeMainMenu={closeMainMenu}
+            />
           )}
           {sectionType === "moto-offers" && (
             <OffersSectionMobile handler={handleSectionClose} />
           )}
 
           {sectionType === "accessories" && (
-            <AccesorySectionMobile
-              handler={handleSectionClose}
-            />
+            <AccesorySectionMobile handler={handleSectionClose} />
           )}
-          {sectionType === "clothing" && <ClothingSectionMobile handler={handleSectionClose}/>}
+          {sectionType === "clothing" && (
+            <ClothingSectionMobile handler={handleSectionClose} />
+          )}
           {sectionType === "owners" && (
-            <OwnersSectionMobile
-              handler={handleSectionClose}
-            />
+            <OwnersSectionMobile handler={handleSectionClose} />
           )}
           {sectionType === "discover" && (
-            <DiscoverSectionMobile
-              handler={handleSectionClose}
-            />
+            <DiscoverSectionMobile handler={handleSectionClose} />
           )}
         </motion.div>
       )}
