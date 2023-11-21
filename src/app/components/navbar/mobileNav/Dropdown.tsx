@@ -175,7 +175,7 @@ const Dropdown = ({
               handler={handleSectionClose}
             />
           )}
-          {sectionType === "clothing" && <ClothingSectionMobile />}
+          {sectionType === "clothing" && <ClothingSectionMobile handler={handleSectionClose}/>}
           {sectionType === "owners" && (
             <OwnersSectionMobile
               handler={handleSectionClose}

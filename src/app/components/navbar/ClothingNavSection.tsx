@@ -1,7 +1,7 @@
 import React from "react";
 import ClothingNavCard, { ClothingCardProps } from "./ClothingNavCard";
 
-const clothingItems: ClothingCardProps[] = [
+export const clothingItems: ClothingCardProps[] = [
   {
     title: "Основни За Возење",
     desc: "Сите ние знаеме колку е важно да се има соодветна опрема за возење на сите временски услови. Овие наши препораки се секогаш спремни за било каква авантура.",

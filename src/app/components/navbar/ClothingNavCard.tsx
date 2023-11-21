@@ -19,7 +19,7 @@ const ClothingNavCard = ({
   link,
 }: ClothingCardProps) => {
   return (
-    <Link href={link} className="group basis-3/12 hover:">
+    <Link href={link} className="group basis-3/12">
       <div className="overflow-hidden">
         <Image
           src={src}
@@ -32,7 +32,7 @@ const ClothingNavCard = ({
       <h4 className="child text-md uppercase font-semibold mb-1 group-hover:text-red-800">
         {title}
       </h4>
-      <p className="text-sm">{desc}</p>
+      <p className="sm:text-sm text-xs">{desc}</p>
     </Link>
   );
 };
