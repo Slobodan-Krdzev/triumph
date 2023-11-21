@@ -40,7 +40,7 @@ const BottomFoot = () => {
         </Link>
       </div>
 
-      <div className="pt-4 pb-8 flex justify-between text-neutral-500">
+      <div className="pt-4 pb-4 flex justify-between text-neutral-400 font-normal">
         <div className="flex gap-4">
           <Link href={"/global-content/contact-us"} className="text-sm">
             Контакт
