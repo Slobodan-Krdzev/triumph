@@ -4,11 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import MainBtn from "../MainBtn";
 import SectionTitleH2 from "../familiySharedComponents/SectionTitleH2";
-import { LatestModelsCarousellItemType, carousellItems } from "./LatestModelsCarousellSection";
-
-type LatestModelsMobileProps = {
-    items: LatestModelsCarousellItemType[]
-}
+import { carousellItems } from "./LatestModelsCarousellSection";
 
 const LatestModelsMobile = () => {
   const [activeIndex, setActiveIndex] = useState(0);

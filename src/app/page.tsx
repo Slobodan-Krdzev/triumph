@@ -1,5 +1,4 @@
 import BanerAndCTASection from "./components/BanerAndCTASection";
-import DesktopFooter from "./components/footer/DesktopFooter";
 import GrayBand from "./components/GrayBand";
 import CardLinkItem from "./components/homePageComponents/CardLinkItem";
 import DiscoverThriumphSection from "./components/homePageComponents/DiscoverThriumphSection";
@@ -36,14 +35,9 @@ export default async function Home() {
           icon: "/icon-configurator.svg",
         }}
         itemTwo={{
-          text: "Тест Возење",
-          url: "/",
-          icon: "/bike.svg",
-        }}
-        itemThree={{
-          text: "Сервис",
-          url: "/",
-          icon: "/icon-olsb.svg",
+          text: "Контакт",
+          url: "/dealers/dealer-search",
+          icon: "/pin.svg",
         }}
       />
 
