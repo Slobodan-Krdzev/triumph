@@ -28,12 +28,12 @@ const MainCarousellItem = ({
     <div
       className=""
       style={{
-        minWidth: "92%",
+        minWidth: "100%",
         backgroundImage: `url('${image}')`,
-        backgroundPosition: "center center",
+        backgroundPosition: "center top",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        height: 700,
+        height: "auto",
       }}
     >
       {video && (
@@ -46,9 +46,8 @@ const MainCarousellItem = ({
             loop
             
             style={{
-              height: "100%",
-              minWidth: "92%",
-              // paddingBottom: '56.25%'
+              height: "auto",
+              minWidth: "92%"
             }}
           >
             <source

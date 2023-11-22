@@ -7,25 +7,25 @@ import MainCarousellItem from "./MainCarousellItem";
 import MobileCarousell from "./MobileCarousell/MobileCarousell";
 
 export type CarousellItemType = {
-    image?: string
-    video?: string
-    title: string
-    desc: string
-    link1: {
-      url: string
-      text: string
-    }
-    link2?: {
-      url: string
-      text: string
-    }
-  }
+  image?: string;
+  video?: string;
+  title: string;
+  desc: string;
+  link1: {
+    url: string;
+    text: string;
+  };
+  link2?: {
+    url: string;
+    text: string;
+  };
+};
 
 type MainCarousellProps = {
-    items: CarousellItemType[]
-}
+  items: CarousellItemType[];
+};
 
-const MainCarousell = ({items = []}: MainCarousellProps) => {
+const MainCarousell = ({ items = [] }: MainCarousellProps) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [progress, setProgress] = useState(0);
   const breakpoint = useBreakpoint();
@@ -67,25 +67,12 @@ const MainCarousell = ({items = []}: MainCarousellProps) => {
     };
   }, [activeIndex]);
 
-  if(breakpoint >= 1024) {
+  if (breakpoint >= 1024) {
     return (
       <div className="relative overflow-hidden" style={{ height: "90vh" }}>
-        <div>
-          <div
-            className="h-1 z-30 rotate-90 w-screen absolute"
-            style={{ right: "-42.5%" }}
-          >
-            <div
-              className="red-bg-color h-2"
-              style={{
-                width: `${progress}%`,
-                height: "100%",
-              }}
-            ></div>
-          </div>
-        </div>
+        
         <div
-          style={{ transform: `translate(-${activeIndex * 92}%)` }}
+          style={{ transform: `translate(-${activeIndex * 100}%)` }}
           className="transition-transform delay-300 ease-in-out flex"
         >
           {items.map((item, idx) => (
@@ -95,7 +82,7 @@ const MainCarousell = ({items = []}: MainCarousellProps) => {
         <button
           onClick={() => updateIndex(activeIndex - 1)}
           className="gradient-caro-btn-right-to-left absolute z-20 bg-white text-black top-0 h-full overlay-carousell-btn w-18 flex flex-col justify-end items-center pb-10"
-          style={{ right: "8.0%" }}
+          style={{ right: "80px" }}
         >
           <p className="rotate-90 text-white font-semibold uppercase font-xl mb-5">
             {"Претходно"}
@@ -107,28 +94,51 @@ const MainCarousell = ({items = []}: MainCarousellProps) => {
             className="mt-5"
           />
         </button>
-  
-        <button
-          onClick={() => updateIndex(activeIndex + 1)}
-          className="gradient-caro-btn-left-to-right absolute z-20 bg-white text-black top-0 h-full overlay-carousell-btn w-20 flex flex-col justify-end items-center pb-10"
-          style={{ right: "2.75%" }}
-        >
-          <p className="rotate-90 text-white font-semibold uppercase font-xl mb-5">
+
+        <div className="absolute top-0 h-full right-0 flex flex-row">
+
+        {/* <div>
+          <div className="h-2 z-30 rotate-90 border w-full">
+            <div
+              className="red-bg-color h-2"
+              style={{
+                width: `${progress}%`,
+                height: "100%",
+                content: ''
+              }}
+            ></div>
+          </div>
+        </div> */}
+
+          <button
+            onClick={() => updateIndex(activeIndex + 1)}
+            className="gradient-caro-btn-left-to-right h-full z-20 bg-white text-black  overlay-carousell-btn w-20 flex flex-col justify-end items-center pb-10"
+            style={{ right: "0%" }}
+          >
+            <p className="rotate-90 text-white font-semibold uppercase font-xl mb-5">
               {"Следно"}
-          </p>
-          <FontAwesomeIcon
-            icon={faArrowRight}
-            color="white"
-            size="lg"
-            className="mt-5"
-          />
-        </button>
+            </p>
+            <FontAwesomeIcon
+              icon={faArrowRight}
+              color="white"
+              size="lg"
+              className="mt-5"
+            />
+          </button>
+        </div>
       </div>
     );
   }
-  
-  if(breakpoint < 1024) {
-    return <MobileCarousell items={items} progress={progress} activeIndex={activeIndex} updateIndex={updateIndex}/>
+
+  if (breakpoint < 1024) {
+    return (
+      <MobileCarousell
+        items={items}
+        progress={progress}
+        activeIndex={activeIndex}
+        updateIndex={updateIndex}
+      />
+    );
   }
 };
 
