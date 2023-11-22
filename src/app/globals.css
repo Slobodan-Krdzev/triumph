@@ -130,6 +130,16 @@ body {
   border-bottom:4px solid var(--secondary-color);
 }
 
+/* GRADIENT CAROUSELL BTNS */
+.gradient-caro-btn-right-to-left {
+  background: rgb(227,227,227);
+  background: linear-gradient(90deg, rgba(22, 22, 22, 0) 0%, rgba(27, 27, 27, 0.178) 28%, rgba(15, 15, 15, 0.664) 56%, rgba(0, 0, 0, 0.781) 84%);
+}
+
+.gradient-caro-btn-left-to-right {
+  background: rgb(227,227,227);
+background: linear-gradient(270deg, rgba(12, 12, 12, 0.021) 0%, rgba(31, 31, 31, 0.267) 28%, rgba(15, 15, 15, 0.616) 56%, rgba(0,0,0,0.7567401960784313) 84%);
+}
 
 /* HOVER EFFECT LINKS UNDERLINE */
 

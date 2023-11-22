@@ -71,7 +71,7 @@ const MainCarousell = ({items = []}: MainCarousellProps) => {
       <div>
         <div
           className="h-1 z-30 rotate-90 w-screen absolute"
-          style={{ right: "-42.7%" }}
+          style={{ right: "-42.5%" }}
         >
           <div
             className="red-bg-color h-2"
@@ -92,8 +92,8 @@ const MainCarousell = ({items = []}: MainCarousellProps) => {
       </div>
       <button
         onClick={() => updateIndex(activeIndex - 1)}
-        className="absolute z-20 bg-white text-black top-0 h-full overlay-carousell-btn w-14 flex flex-col justify-end items-center pb-10"
-        style={{ right: "8%" }}
+        className="gradient-caro-btn-right-to-left absolute z-20 bg-white text-black top-0 h-full overlay-carousell-btn w-18 flex flex-col justify-end items-center pb-10"
+        style={{ right: "8.0%" }}
       >
         <p className="rotate-90 text-white font-semibold uppercase font-xl mb-5">
           Previous
@@ -108,8 +108,8 @@ const MainCarousell = ({items = []}: MainCarousellProps) => {
 
       <button
         onClick={() => updateIndex(activeIndex + 1)}
-        className="absolute z-20 bg-white text-black top-0 h-full overlay-carousell-btn w-14 flex flex-col justify-end items-center pb-10"
-        style={{ right: "4.3%" }}
+        className="gradient-caro-btn-left-to-right absolute z-20 bg-white text-black top-0 h-full overlay-carousell-btn w-20 flex flex-col justify-end items-center pb-10"
+        style={{ right: "2.75%" }}
       >
         <p className="rotate-90 text-white font-semibold uppercase font-xl">
           Next
