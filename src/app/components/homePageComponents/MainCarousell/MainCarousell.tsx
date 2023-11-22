@@ -9,11 +9,62 @@ import {
   faChevronLeft,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
+import MainCarousellItem from "./MainCarousellItem";
 
 const items = [
-  { src: "/images/home/reviews.avif", alt: "Item 1" },
-  { src: "/images/home/races.avif", alt: "Item 2" },
-  { src: "/images/home/experience.avif", alt: "Item 3" },
+  {
+    video: "/images/home/mainCarousell/thruxtonCaroVideo.webm",
+    title: "Новата Thruxton Final Edition",
+    desc: "За крај на една ера - Thruxton Final Edition",
+    link1: {
+      url: "/motorcycles/classic/thruxton-rs/thruxton-final-edition-2024",
+      text: "Погледни ја Серијата",
+    },
+  },
+  {
+    image: "/images/home/mainCarousell/Speed400CaroImage.avif",
+    title: "Нови Попусти, Нови Цени",
+    desc: "Погледнете ги новите цени за Speed 400 & Scrambler 400 X",
+    link1: {
+      url: "/motorcycles/classic/speed-400",
+      text: "Speed 400",
+    },
+    link2: {
+      url: "/motorcycles/classic/scrambler-400-x",
+      text: "Scrambler 400 X",
+    },
+  },
+  {
+    video: "/images/home/mainCarousell/scrambler1200CaroVideo.webm",
+    title: "Направени за секој терен",
+    desc: "Новите Scrambler 1200 XE & X",
+    link1: {
+      url: "/motorcycles/classic/bonneville-scrambler-1200",
+      text: "Погледни ја Серијата",
+    },
+  },
+  {
+    video: "/images/home/mainCarousell/tigerCaroVideo.webm",
+    title: "Tiger 900 Серија",
+    desc: "Новиот Tiger 900 повторно повторно се искачи на врвот и стана репер за останатите мотори од авантуристички карактер. Откријте го новиот Tiger 900.",
+    link1: {
+      url: "/motorcycles/adventure/tiger-900",
+      text: "Погледни ја Серијата",
+    },
+    link2: {
+        url: "/configure/bike/tiger-900-gt-2024",
+        text: "Конфигурации",
+      },
+  },
+  {
+    video: "/images/home/mainCarousell/stealthEditionsCaroVideo.webm",
+    title: "Драматичен Custom Стил",
+    desc: "Новата Triumph Stealth Серија",
+    link1: {
+      url: "/motorcycles/classic/stealth-editions",
+      text: "Погледни ја Серијата",
+    },
+  },
 ];
 
 const MainCarousell = () => {
@@ -31,14 +82,17 @@ const MainCarousell = () => {
     setActiveIndex(newIndex);
   };
 
+// AUTOPLAY  
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % items.length);
-    }, 3000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [activeIndex, items.length]);
 
+
+//   PROGRESS BAR
   useEffect(() => {
     const interval = setInterval(() => {
       setProgress((prevProgress) => {
@@ -48,7 +102,7 @@ const MainCarousell = () => {
         }
         return newProgress;
       });
-    }, 25);
+    }, 55);
 
     return () => {
       setProgress(0);
@@ -57,11 +111,10 @@ const MainCarousell = () => {
   }, [activeIndex]);
 
   return (
-    <div className="relative overflow-hidden h-screen">
+    <div className="relative overflow-hidden" style={{height: '90vh'}}>
       <div>
-    
         <div
-          className="h-1 z-50 rotate-90 w-screen absolute"
+          className="h-1 z-30 rotate-90 w-screen absolute"
           style={{ right: "-42.7%" }}
         >
           <div
@@ -78,9 +131,7 @@ const MainCarousell = () => {
         className="transition-transform delay-300 ease-in-out flex"
       >
         {items.map((item, idx) => (
-          <div key={idx} style={{ minWidth: "92%" }}>
-            <Image src={item.src} alt="asd" width={2000} height={200} />
-          </div>
+          <MainCarousellItem key={idx} item={item} />
         ))}
       </div>
       <button
@@ -102,7 +153,7 @@ const MainCarousell = () => {
       <button
         onClick={() => updateIndex(activeIndex + 1)}
         className="absolute z-20 bg-white text-black top-0 h-full overlay-carousell-btn w-14 flex flex-col justify-end items-center pb-10"
-        style={{ right: "3.8%" }}
+        style={{ right: "4.3%" }}
       >
         <p className="rotate-90 text-white font-semibold uppercase font-xl">
           Next
