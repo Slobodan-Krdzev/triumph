@@ -1683,6 +1683,7 @@
   "main-carousell-items": [
     {
       "video": "/images/home/mainCarousell/thruxtonCaroVideo.webm",
+      "image": "/images/home/mainCarousell/thruxtonCaroImg.avif",
       "title": "Новата Thruxton Final Edition",
       "desc": "За крај на една ера - Thruxton Final Edition",
       "link1": {
@@ -1705,6 +1706,7 @@
     },
     {
       "video": "/images/home/mainCarousell/scrambler1200CaroVideo.webm",
+      "image": "/images/home/mainCarousell/scrambler1200CaroImage.avif",
       "title": "Направени за секој терен",
       "desc": "Новите Scrambler 1200 XE & X",
       "link1": {
@@ -1714,6 +1716,7 @@
     },
     {
       "video": "/images/home/mainCarousell/tigerCaroVideo.webm",
+      "image": "/images/home/mainCarousell/tigerCaroImage.avif",
       "title": "Tiger 900 Серија",
       "desc": "Новиот Tiger 900 повторно повторно се искачи на врвот и стана репер за останатите мотори од авантуристички карактер. Откријте го новиот Tiger 900.",
       "link1": {
@@ -1727,6 +1730,7 @@
     },
     {
       "video": "/images/home/mainCarousell/stealthEditionsCaroVideo.webm",
+      "image": "/images/home/mainCarousell/stealthCaroImage.avif",
       "title": "Драматичен Custom Стил",
       "desc": "Новата Triumph Stealth Серија",
       "link1": {

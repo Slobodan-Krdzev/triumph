@@ -22,30 +22,6 @@ const Nav = ({fams, allBikes}: NavProps) => {
 
   const [bikeToRender, setBikeToRender] = useState<any>(bikes.filter(bike => bike.id === +query.get('bikeID')!))
 
-  // useEffect(() => {
-  //   setFamilies(fams)
-  //   setBikes(allBikes)
-  // }, [])
-
-  // useEffect(() => {
-  //   fetch(`${FAMILIES}`)
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       const familiesToRender = data.map((family: any) => family.type);
-  //       const filtersToRender = [
-  //         ...familiesToRender,
-  //         "special",
-  //         "stealth",
-  //         "chrome",
-  //       ];
-
-  //       setFamilies(filtersToRender);
-  //     });
-
-  //   fetch(`${BIKES}`)
-  //     .then((res) => res.json())
-  //     .then((data) => setBikes(data));
-  // }, []);
 
   useEffect(() => {
 

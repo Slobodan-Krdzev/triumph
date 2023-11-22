@@ -48,6 +48,7 @@ const MainCarousellItem = ({
             style={{
               height: "100%",
               minWidth: "92%",
+              // paddingBottom: '56.25%'
             }}
           >
             <source

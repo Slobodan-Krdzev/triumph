@@ -7,6 +7,7 @@ import MotorcyclesNavSection from "./MotorcyclesNavSection";
 import ClothingNavSection from "./ClothingNavSection";
 import OwnersNavSection from "./OwnersNavSection";
 import DiscoverNavSection from "./DiscoverNavSection";
+import { handleBodyScrollWhenMenuIsOpen } from "../helpers/handleBodyScrollWhenMenuOpens";
 
 type Props = {
   families: any[];
