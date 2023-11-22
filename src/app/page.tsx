@@ -4,6 +4,7 @@ import CardLinkItem from "./components/homePageComponents/CardLinkItem";
 import DiscoverThriumphSection from "./components/homePageComponents/DiscoverThriumphSection";
 import LatestModelsCarousellSection from "./components/homePageComponents/LatestModelsCarousellSection";
 import MainCarousell from "./components/homePageComponents/MainCarousell/MainCarousell";
+import { MAINCAROUSELLITEMS } from "./constants/constants";
 import { HomeCardLinkType } from "./types/HomeTypes/types";
 
 const linkCardsSection: HomeCardLinkType[] = [
@@ -28,51 +29,61 @@ const linkCardsSection: HomeCardLinkType[] = [
 ];
 
 export default async function Home() {
-  return (
-    <>
-    <MainCarousell/>
-      <GrayBand
-        itemOne={{
-          text: "Конфигурации",
-          url: "/configure",
-          icon: "/icon-configurator.svg",
-        }}
-        itemTwo={{
-          text: "Контакт",
-          url: "/dealers/dealer-search",
-          icon: "/pin.svg",
-        }}
-      />
 
-      <section className="py-16 text-center">
-        <h1 className="md:text-6xl text-4xl font-semibold mb-12">
-          Добредојдовте
-        </h1>
-        <h2 className="md:text-2xl text-xl uppercase font-semibold tracking-tighter">
-          Каде би сакале да започнете?
-        </h2>
-      </section>
+    try {
+      const mainCarousellItemsRes = await fetch(`${MAINCAROUSELLITEMS}`)
+      const mainCarousellItems = await mainCarousellItemsRes.json()
 
-      <section className="pb-16 flex flex-col md:flex-row md:px-8 px-4 md:gap-4">
-        {linkCardsSection.map((card) => (
-          <CardLinkItem
-            key={card.title}
-            title={card.title}
-            image={card.image}
-            text={card.text}
-            url={card.url}
+      return (
+        <>
+        <MainCarousell items={mainCarousellItems}/>
+          <GrayBand
+            itemOne={{
+              text: "Конфигурации",
+              url: "/configure",
+              icon: "/icon-configurator.svg",
+            }}
+            itemTwo={{
+              text: "Контакт",
+              url: "/dealers/dealer-search",
+              icon: "/pin.svg",
+            }}
           />
-        ))}
-      </section>
+    
+          <section className="py-16 text-center">
+            <h1 className="md:text-6xl text-4xl font-semibold mb-12">
+              Добредојдовте
+            </h1>
+            <h2 className="md:text-2xl text-xl uppercase font-semibold tracking-tighter">
+              Каде би сакале да започнете?
+            </h2>
+          </section>
+    
+          <section className="pb-16 flex flex-col md:flex-row md:px-8 px-4 md:gap-4">
+            {linkCardsSection.map((card) => (
+              <CardLinkItem
+                key={card.title}
+                title={card.title}
+                image={card.image}
+                text={card.text}
+                url={card.url}
+              />
+            ))}
+          </section>
+    
+          <BanerAndCTASection
+            text={"Конфигурирајте го вашиот перфектен мотор"}
+            image={"/images/bigBannerImg.avif"}
+            link={"/configure"}
+            btnText={"Конфигурирај"}
+          />
+          <LatestModelsCarousellSection />
+          <DiscoverThriumphSection />
+        </>
+      );
+    } catch {
+      'err'
+    }
 
-      <BanerAndCTASection
-        text={"Конфигурирајте го вашиот перфектен мотор"}
-        image={"/images/bigBannerImg.avif"}
-        link={"/configure"}
-        btnText={"Конфигурирај"}
-      />
-      <LatestModelsCarousellSection />
-      <DiscoverThriumphSection />
-    </>
-  );
+  
 }

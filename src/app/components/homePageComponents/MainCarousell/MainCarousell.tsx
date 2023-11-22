@@ -1,73 +1,30 @@
 "use client";
-import Image from "next/image";
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import { useBreakpoint } from "../../helpers/useBreakpoint";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faArrowLeft,
-  faArrowRight,
-  faChevronLeft,
-  faChevronRight,
-} from "@fortawesome/free-solid-svg-icons";
 import MainCarousellItem from "./MainCarousellItem";
 
-const items = [
-  {
-    video: "/images/home/mainCarousell/thruxtonCaroVideo.webm",
-    title: "Новата Thruxton Final Edition",
-    desc: "За крај на една ера - Thruxton Final Edition",
+type CarousellItemType = {
+    image?: string
+    video?: string
+    title: string
+    desc: string
     link1: {
-      url: "/motorcycles/classic/thruxton-rs/thruxton-final-edition-2024",
-      text: "Погледни ја Серијата",
-    },
-  },
-  {
-    image: "/images/home/mainCarousell/Speed400CaroImage.avif",
-    title: "Нови Попусти, Нови Цени",
-    desc: "Погледнете ги новите цени за Speed 400 & Scrambler 400 X",
-    link1: {
-      url: "/motorcycles/classic/speed-400",
-      text: "Speed 400",
-    },
-    link2: {
-      url: "/motorcycles/classic/scrambler-400-x",
-      text: "Scrambler 400 X",
-    },
-  },
-  {
-    video: "/images/home/mainCarousell/scrambler1200CaroVideo.webm",
-    title: "Направени за секој терен",
-    desc: "Новите Scrambler 1200 XE & X",
-    link1: {
-      url: "/motorcycles/classic/bonneville-scrambler-1200",
-      text: "Погледни ја Серијата",
-    },
-  },
-  {
-    video: "/images/home/mainCarousell/tigerCaroVideo.webm",
-    title: "Tiger 900 Серија",
-    desc: "Новиот Tiger 900 повторно повторно се искачи на врвот и стана репер за останатите мотори од авантуристички карактер. Откријте го новиот Tiger 900.",
-    link1: {
-      url: "/motorcycles/adventure/tiger-900",
-      text: "Погледни ја Серијата",
-    },
-    link2: {
-        url: "/configure/bike/tiger-900-gt-2024",
-        text: "Конфигурации",
-      },
-  },
-  {
-    video: "/images/home/mainCarousell/stealthEditionsCaroVideo.webm",
-    title: "Драматичен Custom Стил",
-    desc: "Новата Triumph Stealth Серија",
-    link1: {
-      url: "/motorcycles/classic/stealth-editions",
-      text: "Погледни ја Серијата",
-    },
-  },
-];
+      url: string
+      text: string
+    }
+    link2?: {
+      url: string
+      text: string
+    }
+  }
 
-const MainCarousell = () => {
+type MainCarousellProps = {
+    items: CarousellItemType[]
+}
+
+const MainCarousell = ({items = []}: MainCarousellProps) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [progress, setProgress] = useState(0);
   const breakpoint = useBreakpoint();
@@ -82,17 +39,16 @@ const MainCarousell = () => {
     setActiveIndex(newIndex);
   };
 
-// AUTOPLAY  
+  // AUTOPLAY
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % items.length);
-    }, 5000);
+    }, 8000);
 
     return () => clearInterval(interval);
   }, [activeIndex, items.length]);
 
-
-//   PROGRESS BAR
+  //   PROGRESS BAR
   useEffect(() => {
     const interval = setInterval(() => {
       setProgress((prevProgress) => {
@@ -102,7 +58,7 @@ const MainCarousell = () => {
         }
         return newProgress;
       });
-    }, 55);
+    }, 85);
 
     return () => {
       setProgress(0);
@@ -111,7 +67,7 @@ const MainCarousell = () => {
   }, [activeIndex]);
 
   return (
-    <div className="relative overflow-hidden" style={{height: '90vh'}}>
+    <div className="relative overflow-hidden" style={{ height: "90vh" }}>
       <div>
         <div
           className="h-1 z-30 rotate-90 w-screen absolute"

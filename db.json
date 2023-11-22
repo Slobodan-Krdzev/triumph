@@ -1679,5 +1679,60 @@
         "info3": "Неверојатни финиши на боја и стил."
       }
     }
+  ],
+  "main-carousell-items": [
+    {
+      "video": "/images/home/mainCarousell/thruxtonCaroVideo.webm",
+      "title": "Новата Thruxton Final Edition",
+      "desc": "За крај на една ера - Thruxton Final Edition",
+      "link1": {
+        "url": "/motorcycles/classic/thruxton-rs/thruxton-final-edition-2024",
+        "text": "Погледни ја Серијата"
+      }
+    },
+    {
+      "image": "/images/home/mainCarousell/Speed400CaroImage.avif",
+      "title": "Нови Попусти, Нови Цени",
+      "desc": "Погледнете ги новите цени за Speed 400 & Scrambler 400 X",
+      "link1": {
+        "url": "/motorcycles/classic/speed-400",
+        "text": "Speed 400"
+      },
+      "link2": {
+        "url": "/motorcycles/classic/scrambler-400-x",
+        "text": "Scrambler 400 X"
+      }
+    },
+    {
+      "video": "/images/home/mainCarousell/scrambler1200CaroVideo.webm",
+      "title": "Направени за секој терен",
+      "desc": "Новите Scrambler 1200 XE & X",
+      "link1": {
+        "url": "/motorcycles/classic/bonneville-scrambler-1200",
+        "text": "Погледни ја Серијата"
+      }
+    },
+    {
+      "video": "/images/home/mainCarousell/tigerCaroVideo.webm",
+      "title": "Tiger 900 Серија",
+      "desc": "Новиот Tiger 900 повторно повторно се искачи на врвот и стана репер за останатите мотори од авантуристички карактер. Откријте го новиот Tiger 900.",
+      "link1": {
+        "url": "/motorcycles/adventure/tiger-900",
+        "text": "Погледни ја Серијата"
+      },
+      "link2": {
+        "url": "/configure/bike/tiger-900-gt-2024",
+        "text": "Конфигурации"
+      }
+    },
+    {
+      "video": "/images/home/mainCarousell/stealthEditionsCaroVideo.webm",
+      "title": "Драматичен Custom Стил",
+      "desc": "Новата Triumph Stealth Серија",
+      "link1": {
+        "url": "/motorcycles/classic/stealth-editions",
+        "text": "Погледни ја Серијата"
+      }
+    }
   ]
 }
