@@ -8,12 +8,17 @@ import SecondaryNavBar from "@/app/components/whiteSecondaryNavBar/SecondaryNavB
 import { BIKES, FAMILIES } from "@/app/constants/constants";
 
 const AdventurePage = async () => {
-  const familyRes = await fetch(`${FAMILIES}?type=adventure`, {next: {revalidate: 3000}});
+  const familyRes = await fetch(`${FAMILIES}?type=adventure`, {
+    cache: "no-store",
+  });
   const familyData = await familyRes.json();
 
-  const bikesRes = await fetch(`${BIKES}?category=adventure`, {next: {revalidate: 3000}});
+  const bikesRes = await fetch(`${BIKES}?category=adventure`, {
+    next: { revalidate: 3000 },
+  });
   const bikes = await bikesRes.json();
 
+  console.log(familyData[0].promo[0]);
 
   return (
     <main className="relative">
@@ -25,14 +30,17 @@ const AdventurePage = async () => {
         video={familyData[0].familyPageBannerVideo}
       />
 
-      <section className="py-16 lg:py-32">
+      <section className="py-4 lg:py-10">
         <div className="flex flex-col justify-items-center items-center lg:w-2/4 w-11/12 m-auto text-center">
-          <SectionTitleH2 text="THE ULTIMATE RANGE OF ADVENTURE MOTORCYCLES" color="dark"/>
+          <SectionTitleH2
+            text="Најсериозните авантуристички моторцикли"
+            color="dark"
+          />
           <PageParagraph
             marginBot={true}
-            text="Open up a world of adventure, with motorcycles built to go the distance."
+            text="Искусете го светот на авантурите, со мотори кои се спремни за долги патувања"
           />
-          <PageParagraph text="No matter how far the ride, no matter how epic the journey, the Tiger generation is ready to go anywhere and face anything." />
+          <PageParagraph text="Без разлика на дистанцата, без разлика на големината на предизвикот, Tiger серијата е спремна за било какви препреки кои стојат до вашата цел." />
         </div>
       </section>
 
@@ -43,25 +51,41 @@ const AdventurePage = async () => {
         image={familyData[0].topSectionInfo.image}
       />
 
-       {bikes.map((bike: any) => (
+      {familyData[0].promo.map((item: any, idx: number) => (
         <BikeInfoTextImageBtn
-          key={bike.familyPageInfo.title}
-          title={bike.familyPageInfo.title}
-          desc={bike.familyPageInfo.desc}
+          key={`${item.title},${idx}`}
+          title={item.title}
+          desc={item.desc}
           ctaBtn={{
-            text: bike.familyPageInfo.link.text,
-            link: bike.familyPageInfo.link.url,
+            text: "Детали",
+            link: `/motorcycles/adventure/${item.subFamilyType}`,
           }}
           image={{
-            src: bike.familyPageInfo.image.src,
-            alt: bike.familyPageInfo.image.alt,
+            src: `${item.image}`,
+            alt: `${item.title}`,
           }}
-          blackBtn={bike.familyPageInfo.blackBtn}
-          imageOnTheLeft={bike.familyPageInfo.imageOnTheLeft}
-          mobileTextRight={bike.familyPageInfo.mobileTextRight}
+          blackBtn={item.btnBlack}
+          imageOnTheLeft={idx % 2 === 0 ? true : false}
+          mobileTextRight={idx % 2 === 0 ? true : false}
         />
       ))}
 
+      <BikeInfoTextImageBtn
+        title={"TIGER 1200"}
+        desc={'All-terrain моторцикли кои го освојуваат светот...'}
+        ctaBtn={{
+          text: "Детали",
+          link: "/configure/families/adventure",
+        }}
+        image={{
+          src: "/images/adventure/adventurePromoTiger1200Gif.gif",
+          alt: "slika",
+        }}
+        blackBtn={true}
+        imageOnTheLeft={false}
+        mobileTextRight={false}
+      />
+      
       <GrayBand
         itemOne={{
           text: "Контакт",

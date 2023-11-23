@@ -13,7 +13,7 @@ const BottomFoot = () => {
           target="_blank"
         >
           <Image
-            src={"instagram.svg"}
+            src={"/instagram.svg"}
             alt={"Instagram Icon"}
             width={20}
             height={20}
@@ -21,7 +21,7 @@ const BottomFoot = () => {
         </Link>
         <Link href={"https://twitter.com/OfficialTriumph"} target="_blank">
           <Image
-            src={"twitter.svg"}
+            src={"/twitter.svg"}
             alt={"Instagram Icon"}
             width={20}
             height={20}
@@ -32,7 +32,7 @@ const BottomFoot = () => {
           target="_blank"
         >
           <Image
-            src={"youtube.svg"}
+            src={"/youtube.svg"}
             alt={"Instagram Icon"}
             width={20}
             height={20}

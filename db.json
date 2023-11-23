@@ -19,6 +19,43 @@
         "desc1": "Секој моторцикл во 'Tigеr' фамилијата е роден со вистински дух за авантура. 'Triumph Tiger' моторциклот живее во нашата крв од моментот кога првиот 'Triumph Tiger' моторцикл освои три златни медали на '1936 International Six Days Trial' во 1936 година, и со тоа започна првото поглавје од најдолготрајниот авантуристички моторцикл.",
         "desc2": "Познато по нивното агилно управување, командна позиција на возење, карактеристична силуета и опрема со високи спецификации, секој 'Tiger' моторцикл нуди највисоко ниво на стил, удобност и контрола."
       },
+      "promo": [
+        {
+          "title": "Tiger 1200 Gt, GT Pro & Gt Explorer",
+          "subFamilyType": "tiger-1200-gt",
+          "desc": "Врвни, патничко-авантуристички мотори, спремни и за интерконтинентални патувања.",
+          "image": "/images/adventure/adventurePromoTiger1200Gt.avif",
+          "btnBlack": "red"
+        },
+        {
+          "title": "TIGER 1200 RALLY PRO AND RALLY EXPLORER",
+          "subFamilyType": "tiger-1200-rally",
+          "desc": "Со уште поголем off-road карактер и способности, најдобрата all-terrain авантуристичка серија.",
+          "image": "/images/adventure/adventurePromoTiger1200Rally.avif",
+          "btnBlack": false
+        },
+        {
+          "title": "TIGER SPORT 660",
+          "subFamilyType": "tiger-sport-660",
+          "desc": "Tiger Sport 660, со ефикасен три-цилиндричен мотор, врвни перформанси, комфорт а сепак агилен и со најниски трошоци за одржување во класата. Сето ова од  €9,590.00.",
+          "image": "/images/adventure/adventurePromoTiger660.avif",
+          "btnBlack": false
+        },
+        {
+          "title": "TIGER 900 GT",
+          "subFamilyType": "tiger-900-gt",
+          "desc": "Дизајниран за авантури по асфалт и комфорт, Tiger 900 GT серијата е фокусирана на возачот и нуди многу опрема и технологија на располагање.",
+          "image": "/images/adventure/adventurePromoTiger900Gt.avif",
+          "btnBlack": false
+        },
+        {
+          "title": "TIGER 900 RALLY",
+          "subFamilyType": "tiger-900-rally",
+          "desc": "Возбудлив Tiger серија, дизајнирана за максимално off-road доживување, комфорт и исклучително врвна контрола врз моторот со погон од најмоќниот три-цилиндричен Triumph мотор.",
+          "image": "/images/adventure/adventurePromoTiger900Rally.avif",
+          "btnBlack": true
+        }
+      ],
       "configPageInfo": {
         "desc": "Истражете го светот на авантурите, со мотоцикли изградени за секогаш да стигнат до крајот на патот, подготвени да одат каде било и да постигнат сè.",
         "link": "/configure/families/adventure"
