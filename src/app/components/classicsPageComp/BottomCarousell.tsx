@@ -43,7 +43,7 @@ const carousellItems = [
 
 const BottomCarousell = () => {
   return (
-    <section className="py-40 gray-bg border-b-2 border-neutral-500">
+    <section className="py-20 gray-bg border-b-2 border-neutral-500">
       <Swiper
         navigation={true}
         modules={[Navigation]}

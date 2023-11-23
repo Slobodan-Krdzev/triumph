@@ -168,7 +168,7 @@ const ClassicPage = async () => {
           />
         </div>
 
-        <BikeListingNoSlider bikes={getBikesByEdition("chrome", getBikesByFamily('classics', bikes))} />
+        <BikeListingNoSlider bikes={getBikesByEdition("chrome", bikes)} />
       </section>
 
       <BottomCarousell />

@@ -1,10 +1,11 @@
 import GrayBand from "@/app/components/GrayBand";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
+import BikeListingNoSlider from "@/app/components/familiySharedComponents/BikeListingNoSlider";
 import PageHeroSection from "@/app/components/familiySharedComponents/PageHeroSection";
 import PageParagraph from "@/app/components/familiySharedComponents/PageParagraph";
 import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
 import TextAndImageFlexSection from "@/app/components/familiySharedComponents/TextAndImageFlexSection";
-import SecondaryNavBar from "@/app/components/whiteSecondaryNavBar/SecondaryNavBar";
+import { getBikesByEdition } from "@/app/components/helpers/getBikesByEdition";
 import { BIKES, FAMILIES } from "@/app/constants/constants";
 import { PromoDataType } from "@/app/types/HomeTypes/SharedTypes/types";
 
@@ -15,11 +16,11 @@ const AdventurePage = async () => {
   const familyData = await familyRes.json();
 
   const bikesRes = await fetch(`${BIKES}?category=adventure`, {
-    next: { revalidate: 3000 },
+    cache: "no-store",
   });
   const bikes = await bikesRes.json();
 
-  console.log(familyData[0].promo[0]);
+  console.log("OVDE", getBikesByEdition("900-tiger", bikes), bikes);
 
   return (
     <main className="relative">
@@ -52,6 +53,18 @@ const AdventurePage = async () => {
         image={familyData[0].topSectionInfo.image}
       />
 
+      <section className="py-4 lg:py-10">
+        <div className="flex flex-col justify-items-center items-center lg:w-2/4 w-11/12 m-auto text-center">
+          <SectionTitleH2 text="Tiger 900 Серија" color="dark" />
+          <p className="uppercase ">Што би одбрале вие ?</p>
+        </div>
+
+        <BikeListingNoSlider
+          bikes={getBikesByEdition("900-tiger", bikes)}
+          configureLink={true}
+        />
+      </section>
+
       {familyData[0].promo.map((item: PromoDataType, idx: number) => (
         <BikeInfoTextImageBtn
           key={`${item.title},${idx}`}
@@ -73,7 +86,7 @@ const AdventurePage = async () => {
 
       <BikeInfoTextImageBtn
         title={"TIGER 1200"}
-        desc={'All-terrain моторцикли кои го освојуваат светот...'}
+        desc={"All-terrain моторцикли кои го освојуваат светот..."}
         ctaBtn={{
           text: "Детали",
           link: "/configure/families/adventure",
@@ -86,7 +99,7 @@ const AdventurePage = async () => {
         imageOnTheLeft={false}
         mobileTextRight={false}
       />
-      
+
       <GrayBand
         itemOne={{
           text: "Контакт",
