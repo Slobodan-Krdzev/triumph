@@ -155,7 +155,7 @@ const ClassicPage = async () => {
         <StelthCarousell bikes={getBikesByEdition('stealth', bikes)} />
       </section>
 
-      <section>
+      <section className="my-8">
         <div className="text-center lg:w-2/4 w-full px-4 lg:px-0 m-auto">
           <SectionTitleH2 text="Chrome Колекција" color="dark" />
           <PageParagraph
