@@ -13,13 +13,13 @@ const BikeListingNoSlider = ({ bikes = [] }: BikeListingNoSliderProps) => {
             <section className="lg:px-8 lg:mb-16 mb-8 px-4 flex flex-wrap">
               {bikes.map((bike) => (
                 <BikeListingNoSliderCard
-                  key={bike.bikeId}
-                  title={bike.familyPageInfo.title}
+                  key={bike.id}
+                  title={bike.title}
                   price={bike.price}
-                  link={bike.familyPageInfo.link.url}
+                  link={`/motorcycles/${bike.category}/${bike.subFamilyCategory}/${bike.model}`}
                   image={{
-                    src: bike.familyPageInfo.image.src,
-                    alt: bike.familyPageInfo.image.alt,
+                    src: bike.gallery.modelImage.src,
+                    alt: bike.title,
                   }}
                 />
               ))}

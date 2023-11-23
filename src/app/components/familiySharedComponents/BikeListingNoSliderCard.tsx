@@ -23,7 +23,7 @@ const BikeListingNoSliderCard = ({
       <Image src={image.src} alt={image.alt} width={243} height={137} />
       <div className="basis-1/2 flex flex-col justify-between">
         <h3 className="uppercase text-md font-medium mb-2">{title}</h3>
-        <p className="text-sm">Price From € {price}</p>
+        <p className="text-sm">Price From: {price}.00€</p>
         <Link href={link} className="text-red mt-4">
           {" "}
           Детали{" "}

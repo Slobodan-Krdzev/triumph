@@ -1932,6 +1932,230 @@
         "info2": "Повеќе сила, со подобра агилност во склоп со автентичната ДНК на 'Cafe-Racer' моторите.",
         "info3": "Неверојатни финиши на боја и стил."
       }
+    },
+    {
+      "id": 49,
+      "title": "Bonneville Bobber Chrome Edition",
+      "model": "bobber-chrome-edition-2023",
+      "category": "classics",
+      "subFamilyCategory": "bonneville-bobber",
+      "edition": "chrome",
+      "price": 17090,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
+      "gallery": {
+        "modelImage": {
+          "src": "/images/classics/bonnevilleBobberChrome.avif",
+          "alt": "Bonneville Bobber Chrome Edition"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "1,200cc Thruxton тунинг мотор",
+        "info2": "Повеќе сила, со подобра агилност во склоп со автентичната ДНК на 'Cafe-Racer' моторите.",
+        "info3": "Неверојатни финиши на боја и стил."
+      }
+    },
+    {
+      "id": 50,
+      "title": "Bonneville Speedmaster Chrome Edition",
+      "model": "speedmaster-chrome-edition-2023",
+      "category": "classics",
+      "subFamilyCategory": "bonneville-speedmaster",
+      "edition": "chrome",
+      "price": 17090,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
+      "gallery": {
+        "modelImage": {
+          "src": "/images/classics/speedmasterChrome.avif",
+          "alt": "Bonneville Speedmaster Chrome Edition"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "1,200cc Thruxton тунинг мотор",
+        "info2": "Повеќе сила, со подобра агилност во склоп со автентичната ДНК на 'Cafe-Racer' моторите.",
+        "info3": "Неверојатни финиши на боја и стил."
+      }
+    },
+    {
+      "id": 51,
+      "title": "Scrambler 1200 XE Chrome Edition",
+      "model": "scrambler-1200-xe-chrome-edition-2023",
+      "category": "classics",
+      "subFamilyCategory": "bonneville-scrambler-1200",
+      "edition": "chrome",
+      "price": 17090,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
+      "gallery": {
+        "modelImage": {
+          "src": "/images/classics/scrambler1200XeChrome.avif",
+          "alt": "Scrambler 1200 XE Chrome Edition"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "1,200cc Thruxton тунинг мотор",
+        "info2": "Повеќе сила, со подобра агилност во склоп со автентичната ДНК на 'Cafe-Racer' моторите.",
+        "info3": "Неверојатни финиши на боја и стил."
+      }
+    },
+    {
+      "id": 52,
+      "title": "Scrambler 900 Chrome Edition",
+      "model": "scrambler-900-chrome-edition-2023",
+      "category": "classics",
+      "subFamilyCategory": "bonneville-scrambler-900",
+      "edition": "chrome",
+      "price": 12490,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
+      "gallery": {
+        "modelImage": {
+          "src": "/images/classics/scrambler900Chrome.png",
+          "alt": "Scrambler 900 Chrome Edition"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "1,200cc Thruxton тунинг мотор",
+        "info2": "Повеќе сила, со подобра агилност во склоп со автентичната ДНК на 'Cafe-Racer' моторите.",
+        "info3": "Неверојатни финиши на боја и стил."
+      }
+    },
+    {
+      "id": 53,
+      "title": "Speed Twin 900 Chrome Edition",
+      "model": "speed-twin-900-chrome-edition-2023",
+      "category": "classics",
+      "subFamilyCategory": "bonneville-speed-twin-900",
+      "edition": "chrome",
+      "price": 10990,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
+      "gallery": {
+        "modelImage": {
+          "src": "/images/classics/speedTwin900Chrome.avif",
+          "alt": "Speed Twin 900 Chrome Edition"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "1,200cc Thruxton тунинг мотор",
+        "info2": "Повеќе сила, со подобра агилност во склоп со автентичната ДНК на 'Cafe-Racer' моторите.",
+        "info3": "Неверојатни финиши на боја и стил."
+      }
+    },
+    {
+      "id": 54,
+      "title": "Bonneville T100 Chrome Edition",
+      "model": "t100-chrome-edition-2023",
+      "category": "classics",
+      "subFamilyCategory": "bonneville-t100",
+      "edition": "chrome",
+      "price": 12290,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
+      "gallery": {
+        "modelImage": {
+          "src": "/images/classics/t100Chrome.avif",
+          "alt": "Bonneville T100 Chrome Edition"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "1,200cc Thruxton тунинг мотор",
+        "info2": "Повеќе сила, со подобра агилност во склоп со автентичната ДНК на 'Cafe-Racer' моторите.",
+        "info3": "Неверојатни финиши на боја и стил."
+      }
+    },
+    {
+      "id": 55,
+      "title": "Bonneville T120 Chrome Edition",
+      "model": "t120-chrome-edition-2023",
+      "category": "classics",
+      "subFamilyCategory": "bonneville-t120",
+      "edition": "chrome",
+      "price": 15090,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
+      "gallery": {
+        "modelImage": {
+          "src": "/images/classics/t120Chrome.avif",
+          "alt": "Bonneville T120 Chrome Edition"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "1,200cc Thruxton тунинг мотор",
+        "info2": "Повеќе сила, со подобра агилност во склоп со автентичната ДНК на 'Cafe-Racer' моторите.",
+        "info3": "Неверојатни финиши на боја и стил."
+      }
+    },
+    {
+      "id": 56,
+      "title": "Thruxton RS Chrome Edition",
+      "model": "thruxton-rs-chrome-edition-2023",
+      "category": "classics",
+      "subFamilyCategory": "thruxton-rs",
+      "edition": "chrome",
+      "price": 18790,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
+      "gallery": {
+        "modelImage": {
+          "src": "/images/classics/thruxtonRsChrome.avif",
+          "alt": "Thruxton RS Chrome Edition"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "1,200cc Thruxton тунинг мотор",
+        "info2": "Повеќе сила, со подобра агилност во склоп со автентичната ДНК на 'Cafe-Racer' моторите.",
+        "info3": "Неверојатни финиши на боја и стил."
+      }
     }
   ],
   "main-carousell-items": [
