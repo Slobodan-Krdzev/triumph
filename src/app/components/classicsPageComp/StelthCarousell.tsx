@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -10,34 +10,30 @@ type StelthCarousellProps = {
 };
 
 const responsive = {
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-      slidesToSlide: 3 // optional, default to 1.
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-      slidesToSlide: 2 // optional, default to 1.
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-      slidesToSlide: 1 // optional, default to 1.
-    }
-  };
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+    slidesToSlide: 3, // optional, default to 1.
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+    slidesToSlide: 2, // optional, default to 1.
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    slidesToSlide: 1, // optional, default to 1.
+  },
+};
 
 const StelthCarousell = ({ bikes = [] }: StelthCarousellProps) => {
-
-
   if (bikes) {
     return (
-      
-        <Carousel
+      <Carousel
         slidesToSlide={1}
         // infinite
         draggable
-
         // showDots
         responsive={responsive}
         // swipeable={true}
@@ -53,14 +49,18 @@ const StelthCarousell = ({ bikes = [] }: StelthCarousellProps) => {
         // dotListClass="custom-dot-list-style"
         // itemClass="carousel-item-padding-40-px"
         // pauseOnHover
-        
-        >
-          {/* items */}
-          {bikes.map((bike: any) => <StealthCarousellCard key={bike.bikeId} title={bike.familyPageInfo.title} price={bike.price} url={bike.familyPageInfo.link.url} image={bike.familyPageInfo.image.src}/>)}
-          
-
-        </Carousel>
-        
+      >
+        {/* items */}
+        {bikes.map((bike: any) => (
+          <StealthCarousellCard
+            key={bike.id}
+            title={bike.title}
+            price={bike.price ?? 'Цени Наскоро'}
+            url={''}
+            image={bike.gallery.modelImage.src}
+          />
+        ))}
+      </Carousel>
     );
   }
 };

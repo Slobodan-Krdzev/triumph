@@ -6,6 +6,7 @@ import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitl
 import TextAndImageFlexSection from "@/app/components/familiySharedComponents/TextAndImageFlexSection";
 import SecondaryNavBar from "@/app/components/whiteSecondaryNavBar/SecondaryNavBar";
 import { BIKES, FAMILIES } from "@/app/constants/constants";
+import { PromoDataType } from "@/app/types/HomeTypes/SharedTypes/types";
 
 const AdventurePage = async () => {
   const familyRes = await fetch(`${FAMILIES}?type=adventure`, {
@@ -51,7 +52,7 @@ const AdventurePage = async () => {
         image={familyData[0].topSectionInfo.image}
       />
 
-      {familyData[0].promo.map((item: any, idx: number) => (
+      {familyData[0].promo.map((item: PromoDataType, idx: number) => (
         <BikeInfoTextImageBtn
           key={`${item.title},${idx}`}
           title={item.title}

@@ -25,7 +25,7 @@
           "subFamilyType": "tiger-1200-gt",
           "desc": "Врвни, патничко-авантуристички мотори, спремни и за интерконтинентални патувања.",
           "image": "/images/adventure/adventurePromoTiger1200Gt.avif",
-          "btnBlack": "red"
+          "btnBlack": true
         },
         {
           "title": "TIGER 1200 RALLY PRO AND RALLY EXPLORER",
@@ -201,32 +201,20 @@
       "type": "classics",
       "shortDesc": "Triumph builds ground-breaking motorcycles and incredible three-cylinder engines with an emphasis on power, torque and instant response.",
       "familyPageBannerVideo": "adventure/adventureHeroVideo.webm",
-      "specialEditions": [
+      "promo": [
         {
           "title": "Нова 'Truxton Final-Edition' Серија",
+          "subFamilyType": "truxton-final-edition",
           "desc": "Крајот на една ера - последната продукциска серија на иконата во Triumph серијата. Откријте повеќе за ексклузивното Thruxton Final Edition.",
-          "link": {
-            "text": "Детали",
-            "url": "/motorcycles/classics/truxton-final-edition"
-          },
-          "image": {
-            "src": "/images/classics/thruxtonFinalEdition.avif",
-            "alt": "Stealth Series"
-          },
-          "blackBtn": true
+          "image": "/images/classics/thruxtonFinalEdition.avif",
+          "btnBlack": true
         },
         {
           "title": "Нова 'Stealth' Серија",
+          "subFamilyType": "stealth-edition",
           "desc": "Темно и софистицирано, но сепак смело и живо. Достапна само една година, оваа неверојатна колекција се одликува со неверојатен финиш на боја по ваша нарачка.",
-          "link": {
-            "text": "Детали",
-            "url": "/motorcycles/classics/stelth-edition"
-          },
-          "image": {
-            "src": "/images/classics/stealthEdition.avif",
-            "alt": "Stealth Series"
-          },
-          "blackBtn": true
+          "image": "/images/classics/stealthEdition.avif",
+          "btnBlack": true
         }
       ],
       "configPageInfo": {
@@ -1177,7 +1165,7 @@
       "model": "rocket-3-gt-chrome-edition-2023",
       "category": "rocket-3",
       "subFamilyCategory": "rocket-3",
-      "edition": "special",
+      "edition": "chrome",
       "price": 26890,
       "specs": {
         "cc": 398,
@@ -1261,8 +1249,9 @@
       "model": "speed-400-2024",
       "category": "classics",
       "subFamilyCategory": "speed-400",
-      "edition": "classics",
+      "edition": "400cc",
       "price": 5690,
+      "desc": "Со класичниот изглед Speed 400, навистина ја носи онаа modern-classic ДНК во неговата крв.",
       "specs": {
         "cc": 398,
         "hp": 20,
@@ -1318,7 +1307,8 @@
       "model": "scrambler-400-x-2024",
       "category": "classics",
       "subFamilyCategory": "scrambler-400-x",
-      "edition": "classics",
+      "edition": "400cc",
+      "desc": "Scrambler 400 X - Подготвен за секаков на подлога.",
       "price": 6390,
       "specs": {
         "cc": 398,
@@ -1346,7 +1336,8 @@
       "model": "speed-twin-900-2023",
       "category": "classics",
       "subFamilyCategory": "speed-twin-900",
-      "edition": "classics",
+      "edition": "900cc",
+      "desc": "Возбудливи перформанси и управување кое инспирира самодоверба, сега со уште повеќе комфорт и стил.",
       "price": 10390,
       "specs": {
         "cc": 398,
@@ -1562,7 +1553,8 @@
       "model": "scrambler-900-2023",
       "category": "classics",
       "subFamilyCategory": "scrambler-900",
-      "edition": "classics",
+      "edition": "900cc",
+      "desc": "Дрзок off-road карактер, врвна агилност и иконичен стил, со перформанси за забава на секаков терен.",
       "price": 11890,
       "specs": {
         "cc": 398,
@@ -1588,7 +1580,8 @@
       "model": "t100-2023",
       "category": "classics",
       "subFamilyCategory": "bonneville-t100",
-      "edition": "classics",
+      "edition": "900cc",
+      "desc": "Bonneville T100 - еволуција на иконичен мотор сега уште полесен и посиле.",
       "price": 11690,
       "specs": {
         "cc": 398,
@@ -1708,6 +1701,230 @@
         "modelImage": {
           "src": "/images/classics/thruxtonRsModel.png",
           "alt": "Thruxton RS"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "1,200cc Thruxton тунинг мотор",
+        "info2": "Повеќе сила, со подобра агилност во склоп со автентичната ДНК на 'Cafe-Racer' моторите.",
+        "info3": "Неверојатни финиши на боја и стил."
+      }
+    },
+    {
+      "id": 42,
+      "title": "Bobber Purple Stealth Edition",
+      "model": "bobber-2023",
+      "category": "classics",
+      "subFamilyCategory": "bonneville-bobber",
+      "edition": "stealth",
+      "price": null,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
+      "gallery": {
+        "modelImage": {
+          "src": "/images/classics/bobberStealth.avif",
+          "alt": "Bobber Purple Stealth Edition"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "1,200cc Thruxton тунинг мотор",
+        "info2": "Повеќе сила, со подобра агилност во склоп со автентичната ДНК на 'Cafe-Racer' моторите.",
+        "info3": "Неверојатни финиши на боја и стил."
+      }
+    },
+    {
+      "id": 43,
+      "title": "Scrambler 900 Orange Stealth Edition",
+      "model": "scrambler-900-2023",
+      "category": "classics",
+      "subFamilyCategory": "bonneville-scrambler-900",
+      "edition": "stealth",
+      "price": null,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
+      "gallery": {
+        "modelImage": {
+          "src": "/images/classics/scrambler900Orange.avif",
+          "alt": "Scrambler 900 Orange Stealth Edition"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "1,200cc Thruxton тунинг мотор",
+        "info2": "Повеќе сила, со подобра агилност во склоп со автентичната ДНК на 'Cafe-Racer' моторите.",
+        "info3": "Неверојатни финиши на боја и стил."
+      }
+    },
+    {
+      "id": 44,
+      "title": "Speed Twin 900 Green Stealth Edition",
+      "model": "speed-twin-900-2023",
+      "category": "classics",
+      "subFamilyCategory": "bonneville-speed-twin-900",
+      "edition": "stealth",
+      "price": null,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
+      "gallery": {
+        "modelImage": {
+          "src": "/images/classics/speedTwin900Stealth.avif",
+          "alt": "Speed Twin 900 Green Stealth Edition"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "1,200cc Thruxton тунинг мотор",
+        "info2": "Повеќе сила, со подобра агилност во склоп со автентичната ДНК на 'Cafe-Racer' моторите.",
+        "info3": "Неверојатни финиши на боја и стил."
+      }
+    },
+    {
+      "id": 45,
+      "title": "Speed Twin 1200 Red Stealth Edition",
+      "model": "speed-twin-1200-2023",
+      "category": "classics",
+      "subFamilyCategory": "bonneville-speed-twin-1200",
+      "edition": "stealth",
+      "price": null,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
+      "gallery": {
+        "modelImage": {
+          "src": "/images/classics/speedTwin1200Stealth.avif",
+          "alt": "Speed Twin 1200 Red Stealth Edition"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "1,200cc Thruxton тунинг мотор",
+        "info2": "Повеќе сила, со подобра агилност во склоп со автентичната ДНК на 'Cafe-Racer' моторите.",
+        "info3": "Неверојатни финиши на боја и стил."
+      }
+    },
+    {
+      "id": 46,
+      "title": "Speedmaster Red Stealth Edition",
+      "model": "speedmaster-2023",
+      "category": "classics",
+      "subFamilyCategory": "bonneville-speedmaster",
+      "edition": "stealth",
+      "price": null,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
+      "gallery": {
+        "modelImage": {
+          "src": "/images/classics/speedmasterRedStealth.avif",
+          "alt": "Speedmaster Red Stealth Edition"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "1,200cc Thruxton тунинг мотор",
+        "info2": "Повеќе сила, со подобра агилност во склоп со автентичната ДНК на 'Cafe-Racer' моторите.",
+        "info3": "Неверојатни финиши на боја и стил."
+      }
+    },
+    {
+      "id": 46,
+      "title": "T100 Blue Stealth Edition",
+      "model": "t100-2023",
+      "category": "classics",
+      "subFamilyCategory": "bonneville-t100",
+      "edition": "stealth",
+      "price": null,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
+      "gallery": {
+        "modelImage": {
+          "src": "/images/classics/t100Stealth.avif",
+          "alt": "T100 Blue Stealth Edition"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "1,200cc Thruxton тунинг мотор",
+        "info2": "Повеќе сила, со подобра агилност во склоп со автентичната ДНК на 'Cafe-Racer' моторите.",
+        "info3": "Неверојатни финиши на боја и стил."
+      }
+    },
+    {
+      "id": 47,
+      "title": "T120 Blue Edition Stealth",
+      "model": "t120-2023",
+      "category": "classics",
+      "subFamilyCategory": "bonneville-t120",
+      "edition": "stealth",
+      "price": null,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
+      "gallery": {
+        "modelImage": {
+          "src": "/images/classics/t120Stealth.avif",
+          "alt": "T120 Blue Edition Stealth"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "1,200cc Thruxton тунинг мотор",
+        "info2": "Повеќе сила, со подобра агилност во склоп со автентичната ДНК на 'Cafe-Racer' моторите.",
+        "info3": "Неверојатни финиши на боја и стил."
+      }
+    },
+    {
+      "id": 48,
+      "title": "T120 Black Stealth Edition",
+      "model": "t120-black-2023",
+      "category": "classics",
+      "subFamilyCategory": "bonneville-t120",
+      "edition": "stealth",
+      "price": null,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
+      "gallery": {
+        "modelImage": {
+          "src": "/images/classics/t120BlackStealth.avif",
+          "alt": "T120 Black Stealth Edition"
         }
       },
       "shortSpecInfo": {

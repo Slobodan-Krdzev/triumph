@@ -6,9 +6,12 @@ import BikeListingNoSlider from "@/app/components/familiySharedComponents/BikeLi
 import PageHeroSection from "@/app/components/familiySharedComponents/PageHeroSection";
 import PageParagraph from "@/app/components/familiySharedComponents/PageParagraph";
 import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
+import { getBikesByEdition } from "@/app/components/helpers/getBikesByEdition";
+import { getBikesByFamily } from "@/app/components/helpers/getBikesByFamily";
 import CardLinkItem from "@/app/components/homePageComponents/CardLinkItem";
 import DiscoverThriumphCard from "@/app/components/homePageComponents/DiscoverThriumphCard";
 import { FAMILIES, BIKES } from "@/app/constants/constants";
+import { PromoDataType } from "@/app/types/HomeTypes/SharedTypes/types";
 import React from "react";
 
 const ClassicPage = async () => {
@@ -59,22 +62,22 @@ const ClassicPage = async () => {
         </div>
       </section>
 
-      <section>
+      <section >
         {/* type treba da e bike */}
-        {getBikesBySubFamCategory("400cc").map((bike: any) => (
+        {getBikesByEdition("400cc", bikes).map((bike: any) => (
           <BikeInfoTextImageBtn
-            key={bike.bikeId}
-            title={bike.familyPageInfo.title}
-            desc={bike.familyPageInfo.desc}
+            key={bike.id}
+            title={bike.title}
+            desc={bike.desc}
             ctaBtn={{
-              text: bike.familyPageInfo.link.text,
-              link: bike.familyPageInfo.link.url,
+              text: 'Детали',
+              link: `/motorcycles/classics/${bike.subFamilyCategory.model}`,
             }}
             image={{
-              src: bike.familyPageInfo.image.src,
-              alt: bike.familyPageInfo.image.alt,
+              src: bike.gallery.modelImage.src,
+              alt: bike.gallery.modelImage.alt,
             }}
-            blackBtn={bike.familyPageInfo.blackBtn}
+            blackBtn={true}
           />
         ))}
       </section>
@@ -90,14 +93,14 @@ const ClassicPage = async () => {
       </section>
 
       <section className="flex flex-col md:flex-row md:px-8 px-4 md:gap-4">
-        {getBikesBySubFamCategory("900cc").map((bike: any) => (
+        {getBikesByEdition("900cc", bikes).map((bike: any) => (
           <CardLinkItem
-            key={bike.bikeId}
-            title={bike.familyPageInfo.title}
-            image={bike.familyPageInfo.image.src}
+            key={bike.id}
+            title={bike.title}
+            image={bike.gallery.modelImage.src}
             text={"Детали"}
-            url={bike.familyPageInfo.link.url}
-            desc={bike.familyPageInfo.desc}
+            url={`/motorcycles/classic/${bike.model}`}
+            desc={bike.desc}
           />
         ))}
       </section>
@@ -126,20 +129,20 @@ const ClassicPage = async () => {
       </section>
 
       <section>
-        {familyData[0].specialEditions.map((edition: any) => (
+        {familyData[0].promo.map((item: PromoDataType) => (
           <BikeInfoTextImageBtn
-            key={edition.title}
-            title={edition.title}
-            desc={edition.desc}
+            key={item.title}
+            title={item.title}
+            desc={item.desc}
             ctaBtn={{
-              text: edition.link.text,
-              link: edition.link.url,
+              text: 'Детали',
+              link: `/motorcycles/classics/${item.subFamilyType}`,
             }}
             image={{
-              src: edition.image.src,
-              alt: edition.image.alt,
+              src: item.image,
+              alt: item.title,
             }}
-            blackBtn={edition.blackBtn}
+            blackBtn={item.btnBlack}
           />
         ))}
       </section>
@@ -149,7 +152,7 @@ const ClassicPage = async () => {
           <SectionTitleH2 text="Новата Stealth Серија" color="dark" />
         </div>
 
-        <StelthCarousell bikes={getBikesBySpecialEdition("stealth")} />
+        <StelthCarousell bikes={getBikesByEdition('stealth', bikes)} />
       </section>
 
       <section>
@@ -165,7 +168,7 @@ const ClassicPage = async () => {
           />
         </div>
 
-        <BikeListingNoSlider bikes={getBikesBySpecialEdition("chrome")} />
+        <BikeListingNoSlider bikes={getBikesByEdition("chrome", getBikesByFamily('classics', bikes))} />
       </section>
 
       <BottomCarousell />
