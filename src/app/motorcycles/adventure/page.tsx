@@ -6,6 +6,7 @@ import PageParagraph from "@/app/components/familiySharedComponents/PageParagrap
 import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
 import TextAndImageFlexSection from "@/app/components/familiySharedComponents/TextAndImageFlexSection";
 import { getBikesByEdition } from "@/app/components/helpers/getBikesByEdition";
+import { getBikesBySubfamilyCategory } from "@/app/components/helpers/getBikesBySubfamilyCategory";
 import { BIKES, FAMILIES } from "@/app/constants/constants";
 import { PromoDataType } from "@/app/types/HomeTypes/SharedTypes/types";
 
@@ -59,7 +60,7 @@ const AdventurePage = async () => {
           </div>
 
           <BikeListingNoSlider
-            bikes={getBikesByEdition("900-tiger", bikes)}
+            bikes={getBikesBySubfamilyCategory("tiger-900-range", bikes)}
             configureLink={true}
           />
         </section>

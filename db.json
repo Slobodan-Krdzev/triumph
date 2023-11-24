@@ -655,7 +655,7 @@
       "model": "tiger-900-gt-2024",
       "category": "adventure",
       "subFamilyCategory": "tiger-900-range",
-      "edition": "900-tiger",
+      "edition": "adventure",
       "price": null,
       "gallery": {
         "modelImage": {
@@ -670,7 +670,7 @@
       "model": "tiger-900-gt-pro-2024",
       "category": "adventure",
       "subFamilyCategory": "tiger-900-range",
-      "edition": "900-tiger",
+      "edition": "adventure",
       "price": null,
       "gallery": {
         "modelImage": {
@@ -685,7 +685,7 @@
       "model": "tiger-900-rally-pro-2024",
       "category": "adventure",
       "subFamilyCategory": "tiger-900-range",
-      "edition": "900-tiger",
+      "edition": "adventure",
       "price": null,
       "gallery": {
         "modelImage": {
