@@ -1,5 +1,5 @@
 import GrayBand from "@/app/components/GrayBand";
-import BottomCarousell from "@/app/components/classicsPageComp/BottomCarousell";
+import BottomCarousell, { carousellItems } from "@/app/components/classicsPageComp/BottomCarousell";
 import StelthCarousell from "@/app/components/classicsPageComp/StelthCarousell";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
 import BikeListingNoSlider from "@/app/components/familiySharedComponents/BikeListingNoSlider";
@@ -171,7 +171,7 @@ const ClassicPage = async () => {
         <BikeListingNoSlider bikes={getBikesByEdition("chrome", bikes)} />
       </section>
 
-      <BottomCarousell />
+      <BottomCarousell items={carousellItems} />
 
       <GrayBand
         itemOne={{

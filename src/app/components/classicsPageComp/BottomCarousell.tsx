@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SectionTitleH2 from "../familiySharedComponents/SectionTitleH2";
 import Image from "next/image";
 
-const carousellItems = [
+export const carousellItems: BottomCarousellItemType[] = [
   {
     id: "carouselItem1",
     title: "Британски двоцилиндричен мотор",
@@ -41,7 +41,18 @@ const carousellItems = [
   },
 ];
 
-const BottomCarousell = () => {
+type BottomCarousellItemType = {
+  id: string,
+  title: string,
+  desc: string,
+  image: string
+}
+
+type BottomCarousellProps = {
+  items: BottomCarousellItemType[]
+}
+
+const BottomCarousell = ({items}: BottomCarousellProps) => {
   return (
     <section className="py-20 gray-bg border-b-2 border-neutral-500">
       <Swiper
@@ -50,7 +61,7 @@ const BottomCarousell = () => {
         tag="div"
         className="text-white "
       >
-        {carousellItems.map((item) => (
+        {items.map(item => (
           <SwiperSlide key={item.id}>
             <div
             className="carousell-classics relative"
@@ -59,13 +70,13 @@ const BottomCarousell = () => {
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center center',
-                minHeight: '102vh',
+                minHeight: '80vh',
               }}
             >
               
-                <div className="text-white z-10 absolute lg:w-2/5 md:w-3/5 md:left-10 left-4 md:top-0 overflow-visible">
+                <div className="text-white z-10 absolute lg:w-2/5 md:w-3/5 overflow-visible" style={{top: '10%', left: '10%'}}>
                     <h3 className="md:text-2xl lg:text-2xl text-md capitalize font-medium mb-4">{item.title}</h3>
-                    <p className="text-xs md:text-base">{item.desc}</p>
+                    <p className="text-xs md:text-base w-3/4">{item.desc}</p>
                 </div>
             </div>
           </SwiperSlide>

@@ -1,12 +1,13 @@
 import HeroSection from "@/app/components/SubFamily/HeroSection";
+import NumbersSection from "@/app/components/SubFamily/NumbersSection";
 import TopSection from "@/app/components/SubFamily/TopSection";
+import BottomCarousell, { carousellItems } from "@/app/components/classicsPageComp/BottomCarousell";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
 import { BIKES, FAMILIES } from "@/app/constants/constants";
 import React from "react";
 
 const SubFamilyPage = async ({ params }: any) => {
   const query = params.subFamily;
-
 
   try {
     const familyRes = await fetch(`${FAMILIES}?type=adventure`, {
@@ -18,13 +19,14 @@ const SubFamilyPage = async ({ params }: any) => {
     const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${query}`)
     const bikes = await bikesRes.json()
 
-    console.log(bikes);
+    console.log('OVDE', bikes);
     
 
     return (
       <>
         <HeroSection video={family.subFamilies[query].gallery.subFamilyHeroVideo.src} model={query} slogans={family.subFamilies[query].subFamilyPageInfo.heroSlogans}/>
-        <main>
+
+        <main className="bg-white">
           <TopSection
             title={family.subFamilies[query].subFamilyPageInfo.topSection.title}
             desc={family.subFamilies[query].subFamilyPageInfo.topSection.desc}
@@ -52,6 +54,9 @@ const SubFamilyPage = async ({ params }: any) => {
           />)}
           </section>
         </main>
+
+        <BottomCarousell items={family.subFamilies[query].subFamilyPageInfo.grayCarousell}/>
+        <NumbersSection model={query} specNumbers={family.subFamilies[query].specNumbers}/>
       </>
     );
   } catch(error) {
