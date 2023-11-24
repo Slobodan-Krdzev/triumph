@@ -10,9 +10,9 @@ type FooterListProps = {
 const FooterList = ({title, items}:FooterListProps) => {
   return (
     <div className='basis-1/4'>
-        <SectionTitleH2 text={title} color={'dark'} />
+        <h4 className='uppercase font-semibold text-2xl mb-4'>{title}</h4>
         <ul>
-            {items.map(item => <li key={item.id} className='md:mb-6'><Link href={item.url} className='text-neutral-400 uppercase font-medium '>{item.text}</Link></li>)}
+            {items.map(item => <li key={item.id} className='md:mb-6'><Link href={item.url} className='text-neutral-400 uppercase font-medium text-md'>{item.text}</Link></li>)}
         </ul>
     </div>
   )

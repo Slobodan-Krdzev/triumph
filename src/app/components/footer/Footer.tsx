@@ -102,7 +102,7 @@ const Footer = () => {
     const breakpoint = useBreakpoint()
     
   return (
-    <footer className="md:px-8 px-4 border-t-2 border-thin-gray md:pt-8 pt-4 mt-4 md:mt-0">
+    <footer className="md:px-20 px-4 border-t-2 border-thin-gray md:pt-8 pt-4 mt-4 md:mt-0">
         {breakpoint > 1024 ? <DesktopFooter/> : <MobileFooter/>}
     </footer>
   )

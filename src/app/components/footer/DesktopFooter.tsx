@@ -7,7 +7,7 @@ import { footerLists } from "./Footer";
 const DesktopFooter = () => {
   return (
     <>
-      <div className="flex ">
+      <div className="flex">
         {footerLists.map((list) => (
           <FooterList key={list.title} title={list.title} items={list.items} />
         ))}
