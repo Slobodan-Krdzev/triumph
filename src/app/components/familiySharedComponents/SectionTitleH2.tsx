@@ -8,7 +8,7 @@ type SectionTitleH2Props = {
 
 const SectionTitleH2 = ({text, marginBot, color}: SectionTitleH2Props) => {
   return (
-    <h2 className={`uppercase font-semibold tracking-tighter  text-2xl ${marginBot ? '': 'mb-5'} ${color === 'white' ? 'text-white' : 'text-black' }`}>{text}</h2>
+    <h2 className={`uppercase font-semibold tracking-tighter text-4xl ${marginBot ? '': 'mb-5'} ${color === 'white' ? 'text-white' : 'text-black' }`}>{text}</h2>
   )
 }
 

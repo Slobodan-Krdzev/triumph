@@ -59,7 +59,7 @@ const MainCarousellItem = ({
             
           </>
         )}
-        <div className="ml-44 absolute top-64">
+        <div className="ml-44 absolute" style={{top: '15%'}}>
               <h2 className="mb-4 uppercase font-bold text-7xl text-white w-2/4">
                 {title}
               </h2>

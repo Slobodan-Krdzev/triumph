@@ -13,7 +13,7 @@ const AudioSection = () => {
     <section className="lg:px-8 px-4 md:py-12 flex flex-col lg:flex-row justify-between bg">
       <div className="lg:basis-1/2 basis-1 text-white lg:py-28 lg:px-20 py-8">
         <h3 className="md:text-4xl text-2xl uppercase font-semibold md:mb-8 mb-4">
-          БОГАТ ДЛАБОК ТРИ ЦИЛИНДРИ ЗВУК
+          БОГАТ ДЛАБОК ТРИ ЦИЛИНДРИЧЕН ЗВУК
         </h3>
         <p className="mb-4 md:text-base text-sm">
           Street Triple RS има почист и попрефинет звук благодарение на системот

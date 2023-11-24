@@ -81,7 +81,7 @@ const MainCarousell = ({ items = [] }: MainCarousellProps) => {
         </div>
         <button
           onClick={() => updateIndex(activeIndex - 1)}
-          className="gradient-caro-btn-right-to-left absolute z-20 bg-white text-black top-0 h-full overlay-carousell-btn w-18 flex flex-col justify-end items-center pb-10"
+          className="gradient-caro-btn-right-to-left absolute z-20 bg-transparent text-black top-0 h-full  w-18 flex flex-col justify-end items-center pb-10"
           style={{ right: "80px" }}
         >
           <p className="rotate-90 text-white font-semibold uppercase font-xl mb-5">
@@ -112,7 +112,7 @@ const MainCarousell = ({ items = [] }: MainCarousellProps) => {
 
           <button
             onClick={() => updateIndex(activeIndex + 1)}
-            className="gradient-caro-btn-left-to-right h-full z-20 bg-white text-black  overlay-carousell-btn w-20 flex flex-col justify-end items-center pb-10"
+            className="gradient-caro-btn-left-to-right bg-transparent h-full z-20 text-black  w-20 flex flex-col justify-end items-center pb-10"
             style={{ right: "0%" }}
           >
             <p className="rotate-90 text-white font-semibold uppercase font-xl mb-5">

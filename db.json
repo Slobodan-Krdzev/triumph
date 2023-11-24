@@ -476,6 +476,44 @@
         "title": "Додајте аксесоари на вашиот мотор",
         "link": "/configure/bikes"
       },
+      "promo": [
+        {
+          "title": "НОВИОТ STREET TRIPLE 765",
+          "subFamilyType": "speed-triple_765",
+          "desc": "Подкрепнат од еволуциран Moto2™ тркачки мотор. новата Speed Triple серија е високо перформантна, со висока спецификација и прилагодлива за секого. Цени од: €12,290.00",
+          "image": "/images/roadsters/roadstersPromoSpeedTriple765.avif",
+          "btnBlack": true
+        },
+        
+        {
+          "title": "TRIDENT 660",
+          "subFamilyType": "trident-660",
+          "desc": "Компетативни цени, спорстки, стилски, возбудлив и прилагодлив - новиот Trident 660 може се. Вашата Tri-Reel Advantage ви е на располагање и чека на вас. Цени од €8,690.00.",
+          "image": "/images/roadsters/roadstersPromoTrident660.avif",
+          "btnBlack": false
+        },
+        {
+          "title": "НОВИОТ SPEED TRIPLE 1200 RR",
+          "subFamilyType": "speed-triple-1200-rr/speed-triple-1200-rr",
+          "desc": "Колку повозбудливо изгледа толку е повозбудлив за возење, притоа со највисокото ниво на спецификации. Цени од €20,990.00.",
+          "image": "/images/roadsters/roadstersPromoSpeedRR.avif",
+          "btnBlack": false
+        },
+        {
+          "title": "НАЈНОВИОТ SPEED TRIPLE 1200 RS",
+          "subFamilyType": "speed-triple-1200/speed-triple-1200-rs",
+          "desc": "Најмоќниот, динамичен и технолошки напреден Speed Triple мотор некогаш изработен. Цени од  €18,990.00.",
+          "image": "/images/roadsters/roadstersPromoSpeedRS.avif",
+          "btnBlack": false
+        },
+        {
+          "title": "3-ЦИЛИНДРИЧЕН MOTO2™ МОТОР",
+          "subFamilyType": "/for-the-ride/racing/moto2/engine",
+          "desc": "Потрагата по  подобар квалитет не доведе до изработна на нови 'street' мотори кои се карактеризираат со неверојатна моќност, врвни перформанси и фукнционалност. Резултат на сето ова е нај-напредната серија на 'naked' мотори кои некогаш сме ги изработиле, дизајнирани за забава и на патека и на нормални патишта.",
+          "image": "/images/roadsters/roadstersPromoMoto2.avif",
+          "btnBlack": false
+        }
+      ],
       "subFamilies": {
         "street-triple-765": {
           "id": 1,
@@ -576,6 +614,7 @@
         "desc": "Опремен со најголемиот сериски мотор во светот и со најголем вртежен момент, ова е врвниот мускулен родстер со високи перформанси.",
         "link": "/configure/families/rocket"
       },
+      
       "configFamilyPageInfo": {
         "image": {
           "src": "/images/rocket-3/configFamilyBanner.avif",

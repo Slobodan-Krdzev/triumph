@@ -23,7 +23,7 @@ const AdventurePage = async () => {
   console.log("OVDE", getBikesByEdition("900-tiger", bikes), bikes);
 
   return (
-    <main className="relative">
+    <main className="relative white-bg">
       {/* <SecondaryNavBar items={bikes} /> */}
       <PageHeroSection
         title={familyData[0].type}
@@ -32,8 +32,8 @@ const AdventurePage = async () => {
         video={familyData[0].familyPageBannerVideo}
       />
 
-      <section className="py-4 lg:py-10">
-        <div className="flex flex-col justify-items-center items-center lg:w-2/4 w-11/12 m-auto text-center">
+      <section className="p-4 lg:p-28 ">
+        <div className="flex flex-col justify-items-center items-center lg:w-2/4 w-11/12 m-auto text-center my-8 md:mb-16">
           <SectionTitleH2
             text="Најсериозните авантуристички моторцикли"
             color="dark"
@@ -44,62 +44,61 @@ const AdventurePage = async () => {
           />
           <PageParagraph text="Без разлика на дистанцата, без разлика на големината на предизвикот, Tiger серијата е спремна за било какви препреки кои стојат до вашата цел." />
         </div>
-      </section>
 
-      <TextAndImageFlexSection
-        title={familyData[0].topSectionInfo.title}
-        textMain={familyData[0].topSectionInfo.desc1}
-        textSecondary={familyData[0].topSectionInfo.desc2}
-        image={familyData[0].topSectionInfo.image}
-      />
-
-      <section className="py-4 lg:py-10">
-        <div className="flex flex-col justify-items-center items-center lg:w-2/4 w-11/12 m-auto text-center">
-          <SectionTitleH2 text="Tiger 900 Серија" color="dark" />
-          <p className="uppercase ">Што би одбрале вие ?</p>
-        </div>
-
-        <BikeListingNoSlider
-          bikes={getBikesByEdition("900-tiger", bikes)}
-          configureLink={true}
+        <TextAndImageFlexSection
+          title={familyData[0].topSectionInfo.title}
+          textMain={familyData[0].topSectionInfo.desc1}
+          textSecondary={familyData[0].topSectionInfo.desc2}
+          image={familyData[0].topSectionInfo.image}
         />
-      </section>
 
-      {familyData[0].promo.map((item: PromoDataType, idx: number) => (
+        <section className="py-4 lg:py-10">
+          <div className="flex flex-col justify-items-center items-center lg:w-2/4 w-11/12 m-auto text-center">
+            <SectionTitleH2 text="Tiger 900 Серија" color="dark" />
+            <p className="uppercase ">Што би одбрале вие ?</p>
+          </div>
+
+          <BikeListingNoSlider
+            bikes={getBikesByEdition("900-tiger", bikes)}
+            configureLink={true}
+          />
+        </section>
+
+        {familyData[0].promo.map((item: PromoDataType, idx: number) => (
+          <BikeInfoTextImageBtn
+            key={`${item.title},${idx}`}
+            title={item.title}
+            desc={item.desc}
+            ctaBtn={{
+              text: "Детали",
+              link: `/motorcycles/adventure/${item.subFamilyType}`,
+            }}
+            image={{
+              src: `${item.image}`,
+              alt: `${item.title}`,
+            }}
+            blackBtn={item.btnBlack}
+            imageOnTheLeft={idx % 2 === 0 ? true : false}
+            mobileTextRight={idx % 2 === 0 ? true : false}
+          />
+        ))}
+
         <BikeInfoTextImageBtn
-          key={`${item.title},${idx}`}
-          title={item.title}
-          desc={item.desc}
+          title={"TIGER 1200"}
+          desc={"All-terrain моторцикли кои го освојуваат светот..."}
           ctaBtn={{
             text: "Детали",
-            link: `/motorcycles/adventure/${item.subFamilyType}`,
+            link: "/configure/families/adventure",
           }}
           image={{
-            src: `${item.image}`,
-            alt: `${item.title}`,
+            src: "/images/adventure/adventurePromoTiger1200Gif.gif",
+            alt: "slika",
           }}
-          blackBtn={item.btnBlack}
-          imageOnTheLeft={idx % 2 === 0 ? true : false}
-          mobileTextRight={idx % 2 === 0 ? true : false}
+          blackBtn={true}
+          imageOnTheLeft={false}
+          mobileTextRight={false}
         />
-      ))}
-
-      <BikeInfoTextImageBtn
-        title={"TIGER 1200"}
-        desc={"All-terrain моторцикли кои го освојуваат светот..."}
-        ctaBtn={{
-          text: "Детали",
-          link: "/configure/families/adventure",
-        }}
-        image={{
-          src: "/images/adventure/adventurePromoTiger1200Gif.gif",
-          alt: "slika",
-        }}
-        blackBtn={true}
-        imageOnTheLeft={false}
-        mobileTextRight={false}
-      />
-
+      </section>
       <GrayBand
         itemOne={{
           text: "Контакт",
