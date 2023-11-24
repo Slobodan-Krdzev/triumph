@@ -1,19 +1,64 @@
-import { BIKES, FAMILIES } from '@/app/constants/constants'
-import React from 'react'
+import HeroSection from "@/app/components/SubFamily/HeroSection";
+import TopSection from "@/app/components/SubFamily/TopSection";
+import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
+import { BIKES, FAMILIES } from "@/app/constants/constants";
+import React from "react";
 
-const SubFamilyPage = async ({params}: any) => {
+const SubFamilyPage = async ({ params }: any) => {
+  const query = params.subFamily;
 
-  const familyRes = await fetch(`${FAMILIES}?type=adventure`, {cache: 'no-store'})
-  const family = await familyRes.json()
 
-  const query = params.subFamily
-  
-  return (
-    <div>
-      SubFamilyPage
-      <h1> From Params....{family[0].subFamilies[query].title}....{family[0].subFamilies[query].startingPrice}</h1>
-    </div>
-  )
-}
+  try {
+    const familyRes = await fetch(`${FAMILIES}?type=adventure`, {
+      cache: "no-store",
+    });
+    const familyData = await familyRes.json();
+    const family = familyData[0]
 
-export default SubFamilyPage
+    const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${query}`)
+    const bikes = await bikesRes.json()
+
+    console.log(bikes);
+    
+
+    return (
+      <>
+        <HeroSection video={family.subFamilies[query].gallery.subFamilyHeroVideo.src} model={query} slogans={family.subFamilies[query].subFamilyPageInfo.heroSlogans}/>
+        <main>
+          <TopSection
+            title={family.subFamilies[query].subFamilyPageInfo.topSection.title}
+            desc={family.subFamilies[query].subFamilyPageInfo.topSection.desc}
+            subtitle={family.subFamilies[query].subFamilyPageInfo.topSection.subtitle}
+            image={family.subFamilies[query].gallery.subFamilyTopSectionImage.src}
+            bgImage={family.subFamilies[query].gallery.subFamilyTopSectionBGImage.src}
+          />
+
+          <section className="px-4 lg:px-20 xl:px-40">
+            {bikes.map((bike: any) => <BikeInfoTextImageBtn
+            key={bike.id}
+            title={bike.subFamilyPromo.title}
+            desc={bike.subFamilyPromo.desc}
+            ctaBtn={{
+              text: "Детали",
+              link: `/motorcycles/${family.type}/${query}/${bike.model}`,
+            }}
+            image={{
+              src: `${bike.gallery.modelImage.src}`,
+              alt: `${bike.gallery.modelImage.alt}`,
+            }}
+            blackBtn={true}
+            imageOnTheLeft={false}
+            mobileTextRight={false}
+          />)}
+          </section>
+        </main>
+      </>
+    );
+  } catch(error) {
+    console.log(error);
+    
+    return "err"
+  }
+};
+
+export default SubFamilyPage;

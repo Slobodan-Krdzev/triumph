@@ -93,7 +93,13 @@
           "url": "/motorcycles/adventure/tiger-sport-660",
           "shortDesc": "Тројна предност во перформансите, водечка моќ и спецификации во класата и удобна употребливост при возење - сето тоа со одлична вредност.",
           "subFamilyPageInfo": {
-            "desc1": "Изграден за најтешките патеки и најпребирливите патни тури, Новата Tiger 900 серија нуди незаменлива комбинација на перформанси, способности, удобност и карактер. Повторно подигање на нивото на перформансите на авантуристички мотории со подобрени спецификации: откријте го New Tiger 900"
+            "heroSlogans" : ["Автентичност", "Версатилен", "3-цилиндричен"],
+            "topSection": {
+              "title": "АВТЕНТИЧНА ВИТАЛНОСТ НА ТРИ ЦИЛИНДРИ",
+              "desc": "Перформансна предност, класно лидерство во моќност, спецификации и удобно возење - сè тоа на одлична вредност",
+              "subtitle" : "Дизајниран како перфектен секојдневен, градски мотор но и за уживање за време на викенд"
+              
+            }
           },
           "shortSpecInfo": {
             "info1": "660cc мотор",
@@ -104,6 +110,19 @@
             "modelImage": {
               "src": "/images/adventure/tigerSport660Model.png",
               "alt": "Tiger Sport 660 Range Model Image"
+            },
+            "subFamilyHeroVideo" : {
+              "src": "/images/adventure/tigerSport660/heroVideo.webm",
+              "alt": "Tiger Sport 660 Range Hero Image"
+
+            },
+            "subFamilyTopSectionImage": {
+              "src": "/images/adventure/tigerSport660/tiger660TopSection.avif",
+              "alt": "Tiger Sport 660 Range Top-Section Image"
+            },
+            "subFamilyTopSectionBGImage": {
+              "src": "/images/adventure/tigerSport660/tiger660TopSectionBG.avif",
+              "alt": "Tiger Sport 660 Range Top-Section Image"
             }
           }
         },
@@ -720,6 +739,10 @@
         "info1": "660cc Triple Motor",
         "info2": "Лидер во категоријата",
         "info3": "Прилагодлива 'Showa' суспензија"
+      },
+      "subFamilyPromo": {
+        "title": "TIGER SPORT 660",
+        "desc": "Првиот избор за многу корисници, со три-цилиндарски мотор, неверојатен комфорт, перформантен, искористлив и агилен, стот тоа со најниски трошоци за одржување во класата. Цени од €9,590.00"
       }
     },
     {
