@@ -1,7 +1,11 @@
 "use client";
 import React, { useRef, useState } from "react";
 
-const AudioItem = () => {
+type AudioItemPropsType = {
+  audio:string
+}
+
+const AudioItem = ({audio}: AudioItemPropsType) => {
   const [isAudioPlaying, setIsAudioPlaying] = useState(false);
   const audioTag = useRef<HTMLAudioElement>(null);
 
@@ -29,7 +33,7 @@ const AudioItem = () => {
         <p>{isAudioPlaying ? "STOP" : "START"}</p>
       </button>
       <audio controls className="hidden" ref={audioTag}>
-        <source src="/images/roadsters/audio.mp3" type="audio/mpeg" />
+        <source src={audio} type="audio/mpeg" />
       </audio>
     </div>
   );

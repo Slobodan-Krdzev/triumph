@@ -82,12 +82,26 @@
               "desc": "Перформансна предност, класно лидерство во моќност, спецификации и удобно возење - сè тоа на одлична вредност",
               "subtitle" : "Дизајниран како перфектен секојдневен, градски мотор но и за уживање за време на викенд"
               
-            }
+            },
+            "specNumbers": [{ "data": "888", "info": "cc Мотор"},{"data": "85", "info": "РЅ Коњски сили"}, {"data": "82", "info": "Nm Максимален Обртен Момент"}, {"data": "60+", "info": "Аксесоари"}
+          ]
           },
           "gallery": {
             "modelImage": {
               "src": "/images/adventure/tiger900GtModel.png",
               "alt": "Tiger 900 Range Model Image"
+            },
+            "subFamilyHeroVideo" : {
+              "src": "/images/adventure/tigerSport850/tigerSport850HeroVideo.webm",
+              "alt": "Tiger Sport 850 Range Hero Image"
+            },
+            "subFamilyTopSectionImage": {
+              "src": "/images/adventure/tigerSport850/tiger850TopSection.avif",
+              "alt": "Tiger Sport 850 Range Top-Section Image"
+            },
+            "subFamilyTopSectionBGImage": {
+              "src": "/images/adventure/tigerSport850/tigerSport850TopSectionBG.avif",
+              "alt": "Tiger Sport 850 Range Top-Section Image"
             }
           }
         },
@@ -105,6 +119,38 @@
               "desc": "Перформансна предност, класно лидерство во моќност, спецификации и удобно возење - сè тоа на одлична вредност",
               "subtitle" : "Дизајниран како перфектен секојдневен, градски мотор но и за уживање за време на викенд"
               
+            },
+            "grayCarousell": [{
+              "id": "carouselItem1",
+              "title": "Три-цилиндрични перформанси",
+              "desc": "Располага со спортски карактер произведен од три-цилиндричниот мотор со перфектен баланс помеѓу обртен момент при мала апликација на гас и возбудлива моќност при висока апликација на гас.",
+              "image": "/images/adventure/tigerSport850/tiger850Caro1.avif"
+            },
+            {
+              "id": "carouselItem2",
+              "title": "Технологија фокусирана на возачот",
+              "desc": "Технологија од врвно ниво, сопирачки и одлична суспензија за подобро секојдневно возење со максимално чувство на самодоверба, перформанси и сигурност.",
+              "image": "/images/adventure/tigerSport850/tiger850Caro2.avif"
+            },
+            {
+              "id": "carouselItem3",
+              "title": "Комбинација помеѓу карактер и перформанси",
+              "desc": "Соилуета по која сите се вртат, со агресивни линии и ексклузивни детали .",
+              "image": "/images/adventure/tigerSport850/tiger850Caro3.avif"
+            },
+            {
+              "id": "carouselItem4",
+              "title": "Дизајниран да инспирира самодоверба",
+              "desc": "Лесно прилагодлив за сечиј возачки стил, од височината на седиштето, до воланот па се до ерканот, Tiger 850 е спремен да се прилагоди на вас.",
+              "image": "/images/adventure/tigerSport850/tiger850Caro4.avif"
+            }],
+            "specNumbers": [{ "data": "660", "info": "cc Мотор"},{"data": "81", "info": "РЅ Коњски сили"}, {"data": "64", "info": "Nm Максимален Обртен Момент"}, {"data": "16,000", "info": "KM СЕРВИСЕН ИНТЕРВАЛ"}],
+            "youtubeVideo": "https://www.youtube.com/embed/QvVCEk4t8IE",
+            "audioSection": {
+              "audio": "/images/adventure/tigerSport660/tiger660Audio.mp3",
+              "title": "Богато Три-Цилиндрично Грмење",
+              "desc": "Звукот е снимен во живо на реален пат.",
+              "logo": null
             }
           },
           "shortSpecInfo": {
@@ -112,8 +158,6 @@
             "info2": "Водечки во класата по способност и ракување",
             "info3": "Далечински прилагодлива Showa суспензија"
           },
-          "specNumbers": [{ "data": "888", "info": "cc Мотор"},{"data": "85", "info": "РЅ Коњски сили"}, {"data": "82", "info": "Nm Максимален Обртен Момент"}, {"data": "60+", "info": "Аксесоари"}
-        ],
           "gallery": {
             "modelImage": {
               "src": "/images/adventure/tigerSport660Model.png",
@@ -187,7 +231,7 @@
           },
           "gallery": {
             "modelImage": {
-              "src": "/images/adventure/tigerSport850.png",
+              "src": "/images/adventure/tiger850Sport.png",
               "alt": "Tiger 850 Sport Model Image"
             },
             "subFamilyHeroVideo" : {
@@ -218,7 +262,9 @@
               "desc": "Перформансна предност, класно лидерство во моќност, спецификации и удобно возење - сè тоа на одлична вредност",
               "subtitle" : "Дизајниран како перфектен секојдневен, градски мотор но и за уживање за време на викенд"
               
-            }
+            },
+            "specNumbers": [{ "data": "888", "info": "cc Мотор"},{"data": "85", "info": "РЅ Коњски сили"}, {"data": "82", "info": "Nm Максимален Обртен Момент"}, {"data": "60+", "info": "Аксесоари"}
+          ]
           },
           "shortSpecInfo": {
             "info1": "1,160 cc T-plane мотор",
@@ -229,6 +275,18 @@
             "modelImage": {
               "src": "/images/adventure/tiger1200GtModel.png",
               "alt": "Tiger 1200 Gt Range Model Image"
+            },
+            "subFamilyHeroVideo" : {
+              "src": "/images/adventure/tigerSport850/tigerSport850HeroVideo.webm",
+              "alt": "Tiger Sport 850 Range Hero Image"
+            },
+            "subFamilyTopSectionImage": {
+              "src": "/images/adventure/tigerSport850/tiger850TopSection.avif",
+              "alt": "Tiger Sport 850 Range Top-Section Image"
+            },
+            "subFamilyTopSectionBGImage": {
+              "src": "/images/adventure/tigerSport850/tigerSport850TopSectionBG.avif",
+              "alt": "Tiger Sport 850 Range Top-Section Image"
             }
           }
         },
@@ -246,7 +304,9 @@
               "desc": "Перформансна предност, класно лидерство во моќност, спецификации и удобно возење - сè тоа на одлична вредност",
               "subtitle" : "Дизајниран како перфектен секојдневен, градски мотор но и за уживање за време на викенд"
               
-            }
+            },
+            "specNumbers": [{ "data": "888", "info": "cc Мотор"},{"data": "85", "info": "РЅ Коњски сили"}, {"data": "82", "info": "Nm Максимален Обртен Момент"}, {"data": "60+", "info": "Аксесоари"}
+          ]
           },
           "shortSpecInfo": {
             "info1": "1,160 cc T-plane мотор",
@@ -257,6 +317,18 @@
             "modelImage": {
               "src": "/images/adventure/tiger1200RallyModel.png",
               "alt": "Tiger 1200 Rally Range Model Image"
+            },
+            "subFamilyHeroVideo" : {
+              "src": "/images/adventure/tigerSport850/tigerSport850HeroVideo.webm",
+              "alt": "Tiger Sport 850 Range Hero Image"
+            },
+            "subFamilyTopSectionImage": {
+              "src": "/images/adventure/tigerSport850/tiger850TopSection.avif",
+              "alt": "Tiger Sport 850 Range Top-Section Image"
+            },
+            "subFamilyTopSectionBGImage": {
+              "src": "/images/adventure/tigerSport850/tigerSport850TopSectionBG.avif",
+              "alt": "Tiger Sport 850 Range Top-Section Image"
             }
           }
         },
@@ -273,7 +345,9 @@
               "desc": "Перформансна предност, класно лидерство во моќност, спецификации и удобно возење - сè тоа на одлична вредност",
               "subtitle" : "Дизајниран како перфектен секојдневен, градски мотор но и за уживање за време на викенд"
               
-            }
+            },
+            "specNumbers": [{ "data": "888", "info": "cc Мотор"},{"data": "85", "info": "РЅ Коњски сили"}, {"data": "82", "info": "Nm Максимален Обртен Момент"}, {"data": "60+", "info": "Аксесоари"}
+          ]
           },
           "shortSpecInfo": {
             "info1": "Потполно нов, возбудлив 900cc мотор осо три цилиндри",
@@ -284,6 +358,18 @@
             "modelImage": {
               "src": "/images/adventure/tiger900Model.png",
               "alt": "Tiger 900 Range Model Image"
+            },
+            "subFamilyHeroVideo" : {
+              "src": "/images/adventure/tigerSport850/tigerSport850HeroVideo.webm",
+              "alt": "Tiger Sport 850 Range Hero Image"
+            },
+            "subFamilyTopSectionImage": {
+              "src": "/images/adventure/tigerSport850/tiger850TopSection.avif",
+              "alt": "Tiger Sport 850 Range Top-Section Image"
+            },
+            "subFamilyTopSectionBGImage": {
+              "src": "/images/adventure/tigerSport850/tigerSport850TopSectionBG.avif",
+              "alt": "Tiger Sport 850 Range Top-Section Image"
             }
           }
         }
@@ -569,6 +655,12 @@
         "title": "Додајте аксесоари на вашиот мотор",
         "link": "/configure/bikes"
       },
+      "audioSection": {
+        "audio": "/images/roadsters/audio.mp3",
+        "title": "Длабок Богат Три-Цилиндричен Звук",
+        "desc": "Speed Triple RS моторциклот, има чист, префинет звук благодарејки на двојниот катализаторски систем и карбонскиот врв на издувната цевка.",
+        "logo": "/images/roadsters/logoAudioSection.png"
+      },
       "promo": [
         {
           "title": "НОВИОТ STREET TRIPLE 765",
@@ -755,6 +847,10 @@
           "src": "/images/adventure/tiger900GtModel.png",
           "alt": "Tiger 900 GT"
         }
+      },
+      "subFamilyPromo": {
+        "title": "TIGER SPORT 660",
+        "desc": "Првиот избор за многу корисници, со три-цилиндарски мотор, неверојатен комфорт, перформантен, искористлив и агилен, стот тоа со најниски трошоци за одржување во класата. Цени од €9,590.00"
       }
     },
     {
@@ -770,6 +866,10 @@
           "src": "/images/adventure/tiger900GtModel.png",
           "alt": "Tiger 900 GT"
         }
+      },
+      "subFamilyPromo": {
+        "title": "TIGER SPORT 660",
+        "desc": "Првиот избор за многу корисници, со три-цилиндарски мотор, неверојатен комфорт, перформантен, искористлив и агилен, стот тоа со најниски трошоци за одржување во класата. Цени од €9,590.00"
       }
     },
     {
@@ -785,6 +885,10 @@
           "src": "/images/adventure/tiger900RallyProModel.png",
           "alt": "Tiger 900 Rally Pro"
         }
+      },
+      "subFamilyPromo": {
+        "title": "TIGER SPORT 660",
+        "desc": "Првиот избор за многу корисници, со три-цилиндарски мотор, неверојатен комфорт, перформантен, искористлив и агилен, стот тоа со најниски трошоци за одржување во класата. Цени од €9,590.00"
       }
     },
     {
@@ -877,6 +981,10 @@
         "info1": "1,160cc T-plane Triple Motor",
         "info2": "20 литарски резервоар",
         "info3": "3 години гаранција"
+      },
+      "subFamilyPromo": {
+        "title": "TIGER SPORT 660",
+        "desc": "Првиот избор за многу корисници, со три-цилиндарски мотор, неверојатен комфорт, перформантен, искористлив и агилен, стот тоа со најниски трошоци за одржување во класата. Цени од €9,590.00"
       }
     },
     {
@@ -905,6 +1013,10 @@
         "info1": "1,160cc T-plane Triple Motor",
         "info2": "30 литарски резервоар",
         "info3": "3 години гаранција"
+      },
+      "subFamilyPromo": {
+        "title": "TIGER SPORT 660",
+        "desc": "Првиот избор за многу корисници, со три-цилиндарски мотор, неверојатен комфорт, перформантен, искористлив и агилен, стот тоа со најниски трошоци за одржување во класата. Цени од €9,590.00"
       }
     },
     {
@@ -933,6 +1045,10 @@
         "info1": "1,160cc T-plane Triple Motor",
         "info2": "20 литарски резервоар",
         "info3": "3 години гаранција"
+      },
+      "subFamilyPromo": {
+        "title": "TIGER SPORT 660",
+        "desc": "Првиот избор за многу корисници, со три-цилиндарски мотор, неверојатен комфорт, перформантен, искористлив и агилен, стот тоа со најниски трошоци за одржување во класата. Цени од €9,590.00"
       }
     },
     {
@@ -961,6 +1077,10 @@
         "info1": "1,160cc T-plane Triple Motor",
         "info2": "30 литарски резервоар",
         "info3": "3 години гаранција"
+      },
+      "subFamilyPromo": {
+        "title": "TIGER SPORT 660",
+        "desc": "Првиот избор за многу корисници, со три-цилиндарски мотор, неверојатен комфорт, перформантен, искористлив и агилен, стот тоа со најниски трошоци за одржување во класата. Цени од €9,590.00"
       }
     },
     {
@@ -989,6 +1109,10 @@
         "info1": "Нов 900cc три-цилиндричен мотор",
         "info2": "Високи спецификации за подобро искуство",
         "info3": "Врвна технологија фокусирана на возачот"
+      },
+      "subFamilyPromo": {
+        "title": "TIGER SPORT 660",
+        "desc": "Првиот избор за многу корисници, со три-цилиндарски мотор, неверојатен комфорт, перформантен, искористлив и агилен, стот тоа со најниски трошоци за одржување во класата. Цени од €9,590.00"
       }
     },
     {
@@ -1017,6 +1141,10 @@
         "info1": "Нов 900cc три-цилиндричен мотор",
         "info2": "Врвна спецификација за екстремни off-road можности",
         "info3": "Врвни перформанси и агилност"
+      },
+      "subFamilyPromo": {
+        "title": "TIGER SPORT 660",
+        "desc": "Првиот избор за многу корисници, со три-цилиндарски мотор, неверојатен комфорт, перформантен, искористлив и агилен, стот тоа со најниски трошоци за одржување во класата. Цени од €9,590.00"
       }
     },
     {
@@ -1045,6 +1173,10 @@
         "info1": "Потполно нов 900сс три-цилиндарски мотор",
         "info2": "GT спецификација за долги дистанци",
         "info3": "Врвна технологија фокусирана на возачот"
+      },
+      "subFamilyPromo": {
+        "title": "TIGER SPORT 660",
+        "desc": "Првиот избор за многу корисници, со три-цилиндарски мотор, неверојатен комфорт, перформантен, искористлив и агилен, стот тоа со најниски трошоци за одржување во класата. Цени од €9,590.00"
       }
     },
     {
@@ -1073,6 +1205,10 @@
         "info1": "Потполно нов 900сс три-цилиндарски мотор",
         "info2": "Врвна спецификација за екстремни off-road можности",
         "info3": "Врвни перформанси и агилност"
+      },
+      "subFamilyPromo": {
+        "title": "TIGER SPORT 660",
+        "desc": "Првиот избор за многу корисници, со три-цилиндарски мотор, неверојатен комфорт, перформантен, искористлив и агилен, стот тоа со најниски трошоци за одржување во класата. Цени од €9,590.00"
       }
     },
     {

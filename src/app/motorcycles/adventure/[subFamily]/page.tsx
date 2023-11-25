@@ -1,10 +1,12 @@
 import HeroSection from "@/app/components/SubFamily/HeroSection";
 import NumbersSection from "@/app/components/SubFamily/NumbersSection";
 import TopSection from "@/app/components/SubFamily/TopSection";
+import YouTubePromo from "@/app/components/SubFamily/YouTubePromo";
 import BottomCarousell, {
   carousellItems,
 } from "@/app/components/classicsPageComp/BottomCarousell";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
+import AudioSection from "@/app/components/roadstersUniqueComp/AudioSection";
 import { BIKES, FAMILIES } from "@/app/constants/constants";
 import React from "react";
 
@@ -26,7 +28,10 @@ const SubFamilyPage = async ({ params }: any) => {
         "grayCarousell"
       );
 
-    console.log("OVDE", Boolean());
+    const hasYoutubeVid =
+      family.subFamilies[query].subFamilyPageInfo.hasOwnProperty(
+        "youtubeVideo"
+      );
 
     return (
       <>
@@ -73,6 +78,12 @@ const SubFamilyPage = async ({ params }: any) => {
           </section>
         </main>
 
+        {hasYoutubeVid && (
+          <YouTubePromo
+            video={family.subFamilies[query].subFamilyPageInfo.youtubeVideo}
+          />
+        )}
+
         {hasGrayCaro && (
           <BottomCarousell
             items={family.subFamilies[query].subFamilyPageInfo.grayCarousell}
@@ -82,6 +93,13 @@ const SubFamilyPage = async ({ params }: any) => {
         <NumbersSection
           model={query}
           specNumbers={family.subFamilies[query].subFamilyPageInfo.specNumbers}
+        />
+
+        <AudioSection
+          audio={family.subFamilies[query].subFamilyPageInfo.audioSection.audio}
+          title={family.subFamilies[query].subFamilyPageInfo.audioSection.title}
+          desc={family.subFamilies[query].subFamilyPageInfo.audioSection.desc}
+          model={query}
         />
       </>
     );
