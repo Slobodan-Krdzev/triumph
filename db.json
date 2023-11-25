@@ -171,7 +171,13 @@
               "title": "Дизајниран да инспирира самодоверба",
               "desc": "Лесно прилагодлив за сечиј возачки стил, од височината на седиштето, до воланот па се до ерканот, Tiger 850 е спремен да се прилагоди на вас.",
               "image": "/images/adventure/tigerSport850/tiger850Caro4.avif"
-            }]
+            }],
+            "soundSection": {
+              "desc": "Уникатен звук произведен од три-цилиндричниот мотор со T-crank радалица.",
+              "audio": "/images/adventure/tiger850Sport/tigerSound.mp3"
+            },
+            "specNumbers": [{ "data": "888", "info": "cc Мотор"},{"data": "85", "info": "РЅ Коњски сили"}, {"data": "82", "info": "Nm Максимален Обртен Момент"}, {"data": "60+", "info": "Аксесоари"}
+        ]
           },
           "shortSpecInfo": {
             "info1": "888cc T-plane мотор",
@@ -179,8 +185,6 @@
             "info3": "20 литарски резервоар",
             "info4": "60+ аксесоари"
           },
-          "specNumbers": [{ "data": "888", "info": "cc Мотор"},{"data": "85", "info": "РЅ Коњски сили"}, {"data": "82", "info": "Nm Максимален Обртен Момент"}, {"data": "60+", "info": "Аксесоари"}
-        ],
           "gallery": {
             "modelImage": {
               "src": "/images/adventure/tigerSport850.png",
