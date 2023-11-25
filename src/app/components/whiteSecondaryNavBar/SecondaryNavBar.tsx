@@ -1,5 +1,8 @@
+import Link from "next/link";
 import MainBtn from "../MainBtn";
 import LinkItem from "./LinkItem";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 type SecondaryNavItemsType = {
   text: string,
@@ -8,10 +11,11 @@ type SecondaryNavItemsType = {
 
 type SecondaryNavBarProps = {
   items: SecondaryNavItemsType[];
-  title: string
+  title: string | string[],
+  configurationLink: string[] | string
 };
 
-const SecondaryNavBar = ({ items = [],title }: SecondaryNavBarProps) => {
+const SecondaryNavBar = ({ items = [],title, configurationLink }: SecondaryNavBarProps) => {
   if (items) {
     return (
       <section className="flex justify-between px-8 outline-gray-1px sticky top-0 bg-white z-50">
@@ -22,8 +26,9 @@ const SecondaryNavBar = ({ items = [],title }: SecondaryNavBarProps) => {
         </div>
         {/* RIGHT SIDE */}
         <div className="flex items-center">
-          <p className="mr-10 uppercase font-semibold text-neutral-800 text-sm">FIND A DEALER</p>
-          <MainBtn bgBlack={false} text={'CONFIGURATION'} link={"/configure"}/>
+          <Link href={'/dealer/dealers-search'} className="mr-10 upercase font-semibold text-neutral-800 text-sm">FIND A DEALER 
+          <FontAwesomeIcon icon={faChevronRight} size="xs" className="text-red-800 ml-2"/></Link>
+          <MainBtn bgBlack={false} text={'CONFIGURATION'} isLink={true} link={`/configure/bike/${configurationLink}`}/>
         </div>
       </section>
     );

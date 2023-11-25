@@ -24,28 +24,7 @@ const SubFamilyPage = async ({ params }: any) => {
     const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${query}`);
     const bikes = await bikesRes.json();
 
-    const secondaryNavItems = [
-      {
-        text: "Преглед",
-        link: `/motorcycles/${family.type}/${query}`,
-      },
-      {
-        text: "Модели",
-        link: `/motorcycles/${family.type}/${query}/models`,
-      },
-      {
-        text: "Спецификации",
-        link: `/motorcycles/${family.type}/${query}/specifications`,
-      },
-      {
-        text: "Зошто треба да ја одберете!",
-        link: `/motorcycles/${family.type}/${query}/reasons-to-ride`,
-      },
-      {
-        text: "Аксесоари",
-        link: `/motorcycles/${family.type}/${query}/accessories`,
-      },
-    ];
+   
 
     const hasGrayCaro =
       family.subFamilies[query].subFamilyPageInfo.hasOwnProperty(
@@ -64,7 +43,6 @@ const SubFamilyPage = async ({ params }: any) => {
 
     return (
       <>
-        <SecondaryNavBar items={secondaryNavItems} title={query} />
         <HeroSection
           video={family.subFamilies[query].gallery.subFamilyHeroVideo.src}
           model={query}
