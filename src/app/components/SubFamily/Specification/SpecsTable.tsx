@@ -1,8 +1,16 @@
 import React from 'react'
+import SpecTableListi from './SpecTableListi'
 
-const SpecsTable = () => {
+
+type SpecsTableProps ={
+  specs: any
+}
+
+const SpecsTable = ({specs}: SpecsTableProps) => {
   return (
-    <div>SpecsTable</div>
+    <section className='px-4'>
+      <SpecTableListi items={specs.engineTransmission} title={'Мотор и Менувач'}/>
+    </section>
   )
 }
 

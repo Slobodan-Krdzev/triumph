@@ -42,13 +42,14 @@ const SectionContent = ({ families, bikes, bikeToRender }: Props) => {
       animate={controls}
       exit={{ y: -1000 }}
       transition={{ type: "spring", duration: 0.5 }}
-      className=" slight-white-bg z-40"
+      className=" slight-white-bg"
       onMouseLeave={handleSectionClose}
       style={{
         position: "fixed",
         top: 93,
         left: 0,
         width: "100%",
+        zIndex: 9999,
       }}
     >
       {query === "Motorcycles" && (

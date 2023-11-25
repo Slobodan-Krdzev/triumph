@@ -113,6 +113,15 @@ body {
   border: 2px solid red;
 }
 
+.border-thin{
+  border: 1px solid #d3d4d7
+}
+
+.border-thin-left{
+  border-left: 1px solid #d3d4d7
+
+}
+
 .border-thin-gray {
   border-top: 1px solid #d3d4d7
 }

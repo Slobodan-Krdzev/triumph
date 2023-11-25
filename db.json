@@ -76,22 +76,25 @@
           "price": "Наскоро",
           "url": "/motorcycles/adventure/tiger-900",
           "subFamilyPageInfo": {
-            "heroSlogans" : ["Автентичност", "Версатилен", "3-цилиндричен"],
+            "heroSlogans": ["Автентичност", "Версатилен", "3-цилиндричен"],
             "topSection": {
               "title": "АВТЕНТИЧНА ВИТАЛНОСТ НА ТРИ ЦИЛИНДРИ",
               "desc": "Перформансна предност, класно лидерство во моќност, спецификации и удобно возење - сè тоа на одлична вредност",
-              "subtitle" : "Дизајниран како перфектен секојдневен, градски мотор но и за уживање за време на викенд"
-              
+              "subtitle": "Дизајниран како перфектен секојдневен, градски мотор но и за уживање за време на викенд"
             },
-            "specNumbers": [{ "data": "888", "info": "cc Мотор"},{"data": "85", "info": "РЅ Коњски сили"}, {"data": "82", "info": "Nm Максимален Обртен Момент"}, {"data": "60+", "info": "Аксесоари"}
-          ]
+            "specNumbers": [
+              { "data": "888", "info": "cc Мотор" },
+              { "data": "85", "info": "РЅ Коњски сили" },
+              { "data": "82", "info": "Nm Максимален Обртен Момент" },
+              { "data": "60+", "info": "Аксесоари" }
+            ]
           },
           "gallery": {
             "modelImage": {
               "src": "/images/adventure/tiger900GtModel.png",
               "alt": "Tiger 900 Range Model Image"
             },
-            "subFamilyHeroVideo" : {
+            "subFamilyHeroVideo": {
               "src": "/images/adventure/tigerSport850/tigerSport850HeroVideo.webm",
               "alt": "Tiger Sport 850 Range Hero Image"
             },
@@ -113,38 +116,44 @@
           "url": "/motorcycles/adventure/tiger-sport-660",
           "shortDesc": "Тројна предност во перформансите, водечка моќ и спецификации во класата и удобна употребливост при возење - сето тоа со одлична вредност.",
           "subFamilyPageInfo": {
-            "heroSlogans" : ["Автентичност", "Версатилен", "3-цилиндричен"],
+            "heroSlogans": ["Автентичност", "Версатилен", "3-цилиндричен"],
             "topSection": {
               "title": "АВТЕНТИЧНА ВИТАЛНОСТ НА ТРИ ЦИЛИНДРИ",
               "desc": "Перформансна предност, класно лидерство во моќност, спецификации и удобно возење - сè тоа на одлична вредност",
-              "subtitle" : "Дизајниран како перфектен секојдневен, градски мотор но и за уживање за време на викенд"
-              
+              "subtitle": "Дизајниран како перфектен секојдневен, градски мотор но и за уживање за време на викенд"
             },
-            "grayCarousell": [{
-              "id": "carouselItem1",
-              "title": "Три-цилиндрични перформанси",
-              "desc": "Располага со спортски карактер произведен од три-цилиндричниот мотор со перфектен баланс помеѓу обртен момент при мала апликација на гас и возбудлива моќност при висока апликација на гас.",
-              "image": "/images/adventure/tigerSport850/tiger850Caro1.avif"
-            },
-            {
-              "id": "carouselItem2",
-              "title": "Технологија фокусирана на возачот",
-              "desc": "Технологија од врвно ниво, сопирачки и одлична суспензија за подобро секојдневно возење со максимално чувство на самодоверба, перформанси и сигурност.",
-              "image": "/images/adventure/tigerSport850/tiger850Caro2.avif"
-            },
-            {
-              "id": "carouselItem3",
-              "title": "Комбинација помеѓу карактер и перформанси",
-              "desc": "Соилуета по која сите се вртат, со агресивни линии и ексклузивни детали .",
-              "image": "/images/adventure/tigerSport850/tiger850Caro3.avif"
-            },
-            {
-              "id": "carouselItem4",
-              "title": "Дизајниран да инспирира самодоверба",
-              "desc": "Лесно прилагодлив за сечиј возачки стил, од височината на седиштето, до воланот па се до ерканот, Tiger 850 е спремен да се прилагоди на вас.",
-              "image": "/images/adventure/tigerSport850/tiger850Caro4.avif"
-            }],
-            "specNumbers": [{ "data": "660", "info": "cc Мотор"},{"data": "81", "info": "РЅ Коњски сили"}, {"data": "64", "info": "Nm Максимален Обртен Момент"}, {"data": "16,000", "info": "KM СЕРВИСЕН ИНТЕРВАЛ"}],
+            "grayCarousell": [
+              {
+                "id": "carouselItem1",
+                "title": "Три-цилиндрични перформанси",
+                "desc": "Располага со спортски карактер произведен од три-цилиндричниот мотор со перфектен баланс помеѓу обртен момент при мала апликација на гас и возбудлива моќност при висока апликација на гас.",
+                "image": "/images/adventure/tigerSport850/tiger850Caro1.avif"
+              },
+              {
+                "id": "carouselItem2",
+                "title": "Технологија фокусирана на возачот",
+                "desc": "Технологија од врвно ниво, сопирачки и одлична суспензија за подобро секојдневно возење со максимално чувство на самодоверба, перформанси и сигурност.",
+                "image": "/images/adventure/tigerSport850/tiger850Caro2.avif"
+              },
+              {
+                "id": "carouselItem3",
+                "title": "Комбинација помеѓу карактер и перформанси",
+                "desc": "Соилуета по која сите се вртат, со агресивни линии и ексклузивни детали .",
+                "image": "/images/adventure/tigerSport850/tiger850Caro3.avif"
+              },
+              {
+                "id": "carouselItem4",
+                "title": "Дизајниран да инспирира самодоверба",
+                "desc": "Лесно прилагодлив за сечиј возачки стил, од височината на седиштето, до воланот па се до ерканот, Tiger 850 е спремен да се прилагоди на вас.",
+                "image": "/images/adventure/tigerSport850/tiger850Caro4.avif"
+              }
+            ],
+            "specNumbers": [
+              { "data": "660", "info": "cc Мотор" },
+              { "data": "81", "info": "РЅ Коњски сили" },
+              { "data": "64", "info": "Nm Максимален Обртен Момент" },
+              { "data": "16,000", "info": "KM СЕРВИСЕН ИНТЕРВАЛ" }
+            ],
             "youtubeVideo": "https://www.youtube.com/embed/QvVCEk4t8IE",
             "audioSection": {
               "audio": "/images/adventure/tigerSport660/tiger660Audio.mp3",
@@ -163,10 +172,9 @@
               "src": "/images/adventure/tigerSport660Model.png",
               "alt": "Tiger Sport 660 Range Model Image"
             },
-            "subFamilyHeroVideo" : {
+            "subFamilyHeroVideo": {
               "src": "/images/adventure/tigerSport660/heroVideo.webm",
               "alt": "Tiger Sport 660 Range Hero Image"
-
             },
             "subFamilyTopSectionImage": {
               "src": "/images/adventure/tigerSport660/tiger660TopSection.avif",
@@ -186,42 +194,100 @@
           "url": "/motorcycles/adventure/tiger-850-sport",
           "shortDesc": "Прилагодлив на секој предизвик а сепак карактерот, агилноста и перформансите на Tiger, со завидувачки дизајн  и адаптабилност за сите потреби.",
           "subFamilyPageInfo": {
-            "heroSlogans" : ["практичен", "неверојатен"],
+            "heroSlogans": ["практичен", "неверојатен"],
             "topSection": {
               "title": "ПЕРФОРАМАНСИ КОИ ИНСПИРИРААТ",
               "desc": "Tiger 850 Sport поставува нови стандарди за на патиштата, во градска средина, за патување и за било која голема животна авантура.",
-              "subtitle" : "перфектен - повеќенамеснки мотор, со одличен баланс помеѓу пристапност и дневното користење"
+              "subtitle": "перфектен - повеќенамеснки мотор, со одличен баланс помеѓу пристапност и дневното користење"
             },
-            "grayCarousell": [{
-              "id": "carouselItem1",
-              "title": "Возбудлив Три Цилиндарски Мотор",
-              "desc": "Почувствувајте го карактерот на моторот и чувството на лесно управување со иновативната T-crank радалица и најновиот 850 три-цилиндричен мотор.",
-              "image": "/images/adventure/tigerSport850/tiger850Caro1.avif"
+            "fullSpecs": {
+              "engineTransmission": [
+                {
+                  "title": "Тип на Мотор",
+                  "desc": "водно ладење, 12 вентили, DOHC, линиски 3-цилиндри, 240° редослед на есклпозии"
+                },
+                {
+                  "title": "капацитет",
+                  "desc": "660 cc"
+                },
+                {
+                  "title": "диаметар",
+                  "desc": "74.04 mm"
+                },
+                {
+                  "title": "рута",
+                  "desc": "51.1 mm"
+                },
+                {
+                  "title": "компресија",
+                  "desc": "11.95:1"
+                },
+                {
+                  "title": "Мах. Коњски Сила",
+                  "desc": "81 PS / 80 bhp (59.6 kW) @ 10,250 rpm"
+                },
+                {
+                  "title": "Мах. Обртен Момент",
+                  "desc": "64 Nm @ 6,250 rpm"
+                },
+                {
+                  "title": "Систем за убризгување",
+                  "desc": "Multipoint sequential electronic fuel injection with electronic throttle control"
+                },
+                {
+                  "title": "Систем за Издувни гасови",
+                  "desc": "3 во 1 не-раѓосувачки челик"
+                },
+                {
+                  "title": "Финална Трансмисија",
+                  "desc": "X-ring chain"
+                },
+                {
+                  "title": "Квачило",
+                  "desc": "Wet, multi-plate, slip"
+                },
+                {
+                  "title": "Менувачка Кутија",
+                  "desc": "6 брзини"
+                }
+              ]
             },
-            {
-              "id": "carouselItem2",
-              "title": "Технологија фокусирана на возачот",
-              "desc": "Технологија од врвно ниво, сопирачки и одлична суспензија за подобро секојдневно возење со максимално чувство на самодоверба, перформанси и сигурност.",
-              "image": "/images/adventure/tigerSport850/tiger850Caro2.avif"
-            },
-            {
-              "id": "carouselItem3",
-              "title": "Комбинација помеѓу карактер и перформанси",
-              "desc": "Соилуета по која сите се вртат, со агресивни линии и ексклузивни детали .",
-              "image": "/images/adventure/tigerSport850/tiger850Caro3.avif"
-            },
-            {
-              "id": "carouselItem4",
-              "title": "Дизајниран да инспирира самодоверба",
-              "desc": "Лесно прилагодлив за сечиј возачки стил, од височината на седиштето, до воланот па се до ерканот, Tiger 850 е спремен да се прилагоди на вас.",
-              "image": "/images/adventure/tigerSport850/tiger850Caro4.avif"
-            }],
+            "grayCarousell": [
+              {
+                "id": "carouselItem1",
+                "title": "Возбудлив Три Цилиндарски Мотор",
+                "desc": "Почувствувајте го карактерот на моторот и чувството на лесно управување со иновативната T-crank радалица и најновиот 850 три-цилиндричен мотор.",
+                "image": "/images/adventure/tigerSport850/tiger850Caro1.avif"
+              },
+              {
+                "id": "carouselItem2",
+                "title": "Технологија фокусирана на возачот",
+                "desc": "Технологија од врвно ниво, сопирачки и одлична суспензија за подобро секојдневно возење со максимално чувство на самодоверба, перформанси и сигурност.",
+                "image": "/images/adventure/tigerSport850/tiger850Caro2.avif"
+              },
+              {
+                "id": "carouselItem3",
+                "title": "Комбинација помеѓу карактер и перформанси",
+                "desc": "Соилуета по која сите се вртат, со агресивни линии и ексклузивни детали .",
+                "image": "/images/adventure/tigerSport850/tiger850Caro3.avif"
+              },
+              {
+                "id": "carouselItem4",
+                "title": "Дизајниран да инспирира самодоверба",
+                "desc": "Лесно прилагодлив за сечиј возачки стил, од височината на седиштето, до воланот па се до ерканот, Tiger 850 е спремен да се прилагоди на вас.",
+                "image": "/images/adventure/tigerSport850/tiger850Caro4.avif"
+              }
+            ],
             "soundSection": {
               "desc": "Уникатен звук произведен од три-цилиндричниот мотор со T-crank радалица.",
               "audio": "/images/adventure/tiger850Sport/tigerSound.mp3"
             },
-            "specNumbers": [{ "data": "888", "info": "cc Мотор"},{"data": "85", "info": "РЅ Коњски сили"}, {"data": "82", "info": "Nm Максимален Обртен Момент"}, {"data": "60+", "info": "Аксесоари"}
-        ]
+            "specNumbers": [
+              { "data": "888", "info": "cc Мотор" },
+              { "data": "85", "info": "РЅ Коњски сили" },
+              { "data": "82", "info": "Nm Максимален Обртен Момент" },
+              { "data": "60+", "info": "Аксесоари" }
+            ]
           },
           "shortSpecInfo": {
             "info1": "888cc T-plane мотор",
@@ -234,7 +300,7 @@
               "src": "/images/adventure/tiger850Sport.png",
               "alt": "Tiger 850 Sport Model Image"
             },
-            "subFamilyHeroVideo" : {
+            "subFamilyHeroVideo": {
               "src": "/images/adventure/tigerSport850/tigerSport850HeroVideo.webm",
               "alt": "Tiger Sport 850 Range Hero Image"
             },
@@ -256,15 +322,18 @@
           "url": "/motorcycles/adventure/tiger-1200-gt",
           "shortDesc": "Врвен авантуристички мотор фокусиран за асфалтни подлоги. Интер-континентални можности, со висока комоција, перформанси и стил.",
           "subFamilyPageInfo": {
-            "heroSlogans" : ["Автентичност", "Версатилен", "3-цилиндричен"],
+            "heroSlogans": ["Автентичност", "Версатилен", "3-цилиндричен"],
             "topSection": {
               "title": "АВТЕНТИЧНА ВИТАЛНОСТ НА ТРИ ЦИЛИНДРИ",
               "desc": "Перформансна предност, класно лидерство во моќност, спецификации и удобно возење - сè тоа на одлична вредност",
-              "subtitle" : "Дизајниран како перфектен секојдневен, градски мотор но и за уживање за време на викенд"
-              
+              "subtitle": "Дизајниран како перфектен секојдневен, градски мотор но и за уживање за време на викенд"
             },
-            "specNumbers": [{ "data": "888", "info": "cc Мотор"},{"data": "85", "info": "РЅ Коњски сили"}, {"data": "82", "info": "Nm Максимален Обртен Момент"}, {"data": "60+", "info": "Аксесоари"}
-          ]
+            "specNumbers": [
+              { "data": "888", "info": "cc Мотор" },
+              { "data": "85", "info": "РЅ Коњски сили" },
+              { "data": "82", "info": "Nm Максимален Обртен Момент" },
+              { "data": "60+", "info": "Аксесоари" }
+            ]
           },
           "shortSpecInfo": {
             "info1": "1,160 cc T-plane мотор",
@@ -276,7 +345,7 @@
               "src": "/images/adventure/tiger1200GtModel.png",
               "alt": "Tiger 1200 Gt Range Model Image"
             },
-            "subFamilyHeroVideo" : {
+            "subFamilyHeroVideo": {
               "src": "/images/adventure/tigerSport850/tigerSport850HeroVideo.webm",
               "alt": "Tiger Sport 850 Range Hero Image"
             },
@@ -298,15 +367,18 @@
           "url": "/motorcycles/adventure/tiger-1200-gt",
           "shortDesc": "",
           "subFamilyPageInfo": {
-            "heroSlogans" : ["Автентичност", "Версатилен", "3-цилиндричен"],
+            "heroSlogans": ["Автентичност", "Версатилен", "3-цилиндричен"],
             "topSection": {
               "title": "АВТЕНТИЧНА ВИТАЛНОСТ НА ТРИ ЦИЛИНДРИ",
               "desc": "Перформансна предност, класно лидерство во моќност, спецификации и удобно возење - сè тоа на одлична вредност",
-              "subtitle" : "Дизајниран како перфектен секојдневен, градски мотор но и за уживање за време на викенд"
-              
+              "subtitle": "Дизајниран како перфектен секојдневен, градски мотор но и за уживање за време на викенд"
             },
-            "specNumbers": [{ "data": "888", "info": "cc Мотор"},{"data": "85", "info": "РЅ Коњски сили"}, {"data": "82", "info": "Nm Максимален Обртен Момент"}, {"data": "60+", "info": "Аксесоари"}
-          ]
+            "specNumbers": [
+              { "data": "888", "info": "cc Мотор" },
+              { "data": "85", "info": "РЅ Коњски сили" },
+              { "data": "82", "info": "Nm Максимален Обртен Момент" },
+              { "data": "60+", "info": "Аксесоари" }
+            ]
           },
           "shortSpecInfo": {
             "info1": "1,160 cc T-plane мотор",
@@ -318,7 +390,7 @@
               "src": "/images/adventure/tiger1200RallyModel.png",
               "alt": "Tiger 1200 Rally Range Model Image"
             },
-            "subFamilyHeroVideo" : {
+            "subFamilyHeroVideo": {
               "src": "/images/adventure/tigerSport850/tigerSport850HeroVideo.webm",
               "alt": "Tiger Sport 850 Range Hero Image"
             },
@@ -339,15 +411,18 @@
           "price": 16290,
           "url": "/motorcycles/adventure/tiger-900-2023",
           "subFamilyPageInfo": {
-            "heroSlogans" : ["Автентичност", "Версатилен", "3-цилиндричен"],
+            "heroSlogans": ["Автентичност", "Версатилен", "3-цилиндричен"],
             "topSection": {
               "title": "АВТЕНТИЧНА ВИТАЛНОСТ НА ТРИ ЦИЛИНДРИ",
               "desc": "Перформансна предност, класно лидерство во моќност, спецификации и удобно возење - сè тоа на одлична вредност",
-              "subtitle" : "Дизајниран како перфектен секојдневен, градски мотор но и за уживање за време на викенд"
-              
+              "subtitle": "Дизајниран како перфектен секојдневен, градски мотор но и за уживање за време на викенд"
             },
-            "specNumbers": [{ "data": "888", "info": "cc Мотор"},{"data": "85", "info": "РЅ Коњски сили"}, {"data": "82", "info": "Nm Максимален Обртен Момент"}, {"data": "60+", "info": "Аксесоари"}
-          ]
+            "specNumbers": [
+              { "data": "888", "info": "cc Мотор" },
+              { "data": "85", "info": "РЅ Коњски сили" },
+              { "data": "82", "info": "Nm Максимален Обртен Момент" },
+              { "data": "60+", "info": "Аксесоари" }
+            ]
           },
           "shortSpecInfo": {
             "info1": "Потполно нов, возбудлив 900cc мотор осо три цилиндри",
@@ -359,7 +434,7 @@
               "src": "/images/adventure/tiger900Model.png",
               "alt": "Tiger 900 Range Model Image"
             },
-            "subFamilyHeroVideo" : {
+            "subFamilyHeroVideo": {
               "src": "/images/adventure/tigerSport850/tigerSport850HeroVideo.webm",
               "alt": "Tiger Sport 850 Range Hero Image"
             },
@@ -669,7 +744,7 @@
           "image": "/images/roadsters/roadstersPromoSpeedTriple765.avif",
           "btnBlack": true
         },
-        
+
         {
           "title": "TRIDENT 660",
           "subFamilyType": "trident-660",
@@ -799,7 +874,7 @@
         "desc": "Опремен со најголемиот сериски мотор во светот и со најголем вртежен момент, ова е врвниот мускулен родстер со високи перформанси.",
         "link": "/configure/families/rocket"
       },
-      
+
       "configFamilyPageInfo": {
         "image": {
           "src": "/images/rocket-3/configFamilyBanner.avif",
@@ -926,7 +1001,7 @@
     {
       "id": 6,
       "title": "Tiger 850 Sport",
-      "model": "850-sport",
+      "model": "tiger-850-sport",
       "category": "adventure",
       "subFamilyCategory": "tiger-850-sport",
       "edition": "adventure",
@@ -939,6 +1014,7 @@
         "serviceInterval": "16.000km",
         "motorType": "TR"
       },
+
       "gallery": {
         "modelImage": {
           "src": "/images/adventure/tiger850Sport.png",
