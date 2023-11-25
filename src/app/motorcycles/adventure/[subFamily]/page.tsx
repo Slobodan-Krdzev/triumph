@@ -7,6 +7,7 @@ import BottomCarousell, {
 } from "@/app/components/classicsPageComp/BottomCarousell";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
 import AudioSection from "@/app/components/roadstersUniqueComp/AudioSection";
+import SecondaryNavBar from "@/app/components/whiteSecondaryNavBar/SecondaryNavBar";
 import { BIKES, FAMILIES } from "@/app/constants/constants";
 import React from "react";
 
@@ -23,6 +24,29 @@ const SubFamilyPage = async ({ params }: any) => {
     const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${query}`);
     const bikes = await bikesRes.json();
 
+    const secondaryNavItems = [
+      {
+        text: "Преглед",
+        link: `/motorcycles/${family.type}/${query}`,
+      },
+      {
+        text: "Модели",
+        link: `/motorcycles/${family.type}/${query}/models`,
+      },
+      {
+        text: "Спецификации",
+        link: `/motorcycles/${family.type}/${query}/specifications`,
+      },
+      {
+        text: "Зошто треба да ја одберете!",
+        link: `/motorcycles/${family.type}/${query}/reasons-to-ride`,
+      },
+      {
+        text: "Аксесоари",
+        link: `/motorcycles/${family.type}/${query}/accessories`,
+      },
+    ];
+
     const hasGrayCaro =
       family.subFamilies[query].subFamilyPageInfo.hasOwnProperty(
         "grayCarousell"
@@ -33,8 +57,14 @@ const SubFamilyPage = async ({ params }: any) => {
         "youtubeVideo"
       );
 
+    const hasAudio =
+      family.subFamilies[query].subFamilyPageInfo.hasOwnProperty(
+        "audioSection"
+      );
+
     return (
       <>
+        <SecondaryNavBar items={secondaryNavItems} title={query} />
         <HeroSection
           video={family.subFamilies[query].gallery.subFamilyHeroVideo.src}
           model={query}
@@ -95,12 +125,18 @@ const SubFamilyPage = async ({ params }: any) => {
           specNumbers={family.subFamilies[query].subFamilyPageInfo.specNumbers}
         />
 
-        <AudioSection
-          audio={family.subFamilies[query].subFamilyPageInfo.audioSection.audio}
-          title={family.subFamilies[query].subFamilyPageInfo.audioSection.title}
-          desc={family.subFamilies[query].subFamilyPageInfo.audioSection.desc}
-          model={query}
-        />
+        {hasAudio && (
+          <AudioSection
+            audio={
+              family.subFamilies[query].subFamilyPageInfo.audioSection.audio
+            }
+            title={
+              family.subFamilies[query].subFamilyPageInfo.audioSection.title
+            }
+            desc={family.subFamilies[query].subFamilyPageInfo.audioSection.desc}
+            model={query}
+          />
+        )}
       </>
     );
   } catch (error) {

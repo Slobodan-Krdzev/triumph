@@ -1,19 +1,19 @@
-import Link from 'next/link'
-import React from 'react'
+import Link from "next/link";
 
 type LinkItemProps = {
-    model: string,
-}
+  link: string;
+  text: string;
+};
 
-const LinkItem = ({model}: LinkItemProps) => {
+const LinkItem = ({ link, text }: LinkItemProps) => {
   return (
     <Link
-    className="mr-7 uppercase font-semibold text-neutral-600 text-sm tracking-tight underline-hover-effect py-2"
-    href={`/motorcycles/adventure/${model}`}
-  >
-    {model}
-  </Link>
-  )
-}
+      className="mr-7 uppercase font-semibold text-neutral-600 text-sm tracking-tight underline-hover-effect py-2"
+      href={link}
+    >
+      {text}
+    </Link>
+  );
+};
 
-export default LinkItem
+export default LinkItem;

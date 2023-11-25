@@ -1,18 +1,24 @@
 import MainBtn from "../MainBtn";
 import LinkItem from "./LinkItem";
 
+type SecondaryNavItemsType = {
+  text: string,
+  link: string
+}
+
 type SecondaryNavBarProps = {
-  items: any[];
+  items: SecondaryNavItemsType[];
+  title: string
 };
 
-const SecondaryNavBar = ({ items = [] }: SecondaryNavBarProps) => {
+const SecondaryNavBar = ({ items = [],title }: SecondaryNavBarProps) => {
   if (items) {
     return (
-      <section className="flex justify-between px-8 outline-gray-1px sticky top-0 bg-white">
+      <section className="flex justify-between px-8 outline-gray-1px sticky top-0 bg-white z-50">
         {/* LEFT SIDE */}
         <div className="flex items-center">
-          <p className="text-red text-xl font-bold uppercase italic mr-10 tracking-tighter">Adventure</p>
-          {items.map((item: any) => <LinkItem key={item.id} model={item.model}/>)}
+          <p className="text-red text-xl font-bold uppercase italic mr-10 tracking-tighter">{title}</p>
+          {items.map((item: SecondaryNavItemsType) => <LinkItem key={item.link} link={item.link} text={item.text}/>)}
         </div>
         {/* RIGHT SIDE */}
         <div className="flex items-center">
