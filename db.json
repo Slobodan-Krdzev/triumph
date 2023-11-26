@@ -173,7 +173,7 @@
                   "desc": "6 брзини"
                 }
               ],
-              "frame" : [
+              "frame": [
                 {
                   "title": "шасија",
                   "desc": "тубуларна челична шасија"
@@ -200,7 +200,7 @@
                 },
                 {
                   "title": "предна суспензија",
-                  "desc": 	"Marzocchi Inverted Fork 45mm"
+                  "desc": "Marzocchi Inverted Fork 45mm"
                 },
                 {
                   "title": "задна суспензија",
@@ -304,6 +304,52 @@
               "logo": null
             }
           },
+          "reasonsToDrive": {
+            "banner": {
+              "image": "/images/adventure/tigerSport660/tiger660ReasonsBanner.avif"
+            },
+            "infoText": {
+              "title": "Дефиницијата за разноликост е да се биде најдобар во се.",
+              "desc": "Време е да се разбудите од досадните соништа со Tiger Sport 660. Ова е најпристапниот мотор од Tiger фамилијата на Triumph и е спремен за секојдневни авантури.Tiger Sport 660 е дизајниран да ги надмине вашите очекувања, од авантуристички тури па се до дневни обврски. Кај нас во Triumph се е во знак на возење, а еве и зошто:"
+            },
+            "reasons": [
+              {
+                "title": "Перформанси од Tiger Sport Серијата",
+                "desc": "Equipped with the proven 660 three-cylinder engine, it is the lightest and most versatile Tiger yet. Designed to increase rider confidence from the moment you ride it, with an effortless feel on the Tiger 660. Its smooth 6-speed gearbox has been optimized for fun and agility, while the slip and assist clutch provides light engagement that reduces rider fatigue. rider, allowing you to enjoy the bike even more. The 660 delivers usable three-cylinder power with the twist of the wrist. Central to the versatility and exciting performance is the 660cc engine. A three-cylinder Triumph that beats the two-cylinder competition, delivering strong torque from low to high in the rev range, peaking at 64Nm @ 6,250rpm. Power is class-leading and utterly thrilling, peaking at 81PS @ 10,250rpm. It is smooth and linear, sporty and fun, for your daily commute or weekend pleasures.",
+                "image": "/images/adventure/tigerSport660/tiger660ReasonsListImage1.avif"
+              },
+              {
+                "title": "Перфектна Хармонија Помеѓу Моторциклот и Возачот ",
+                "desc": "Harmonizing with Tiger's rhythm comes naturally. It is the ultimate combination of practical performance and top thrills. The Tiger Sport 660 can be limited to an A2 license, opening doors to new adventure experiences, from touring to flexible fun driving. Designed to excite but tamed to build the confidence you need. Whether it's your first bike, your first motorcycle adventure, or a flexible means of transportation you're looking for, the Tiger Sport 660 has the technology and flair to revitalize your riding experience."
+              },
+              {
+                "title": "Инспирира Самодоверба",
+                "desc": "Riding confidence is at the forefront of the adventure, setting off for a ride knowing that Tiger Sport's rider-focused technology and premium brakes and suspension are there to support you every moment. The upright stance with the lightweight frame and nimble engine make for a nimble and easy feel, without ever being intimidating. Add in the narrow riding position for easy ground contact, the low 835mm seat height and the excellent ergonomics setup and you have a bike with great agility and handling in any riding scenario.",
+                "image": "/images/adventure/tigerSport660/tiger660ReasonsImage2.avif"
+              },
+              {
+                "title": "Направен за Вас",
+                "desc": "No two riders are the same, so you can personalize your Tiger Sport 660 with a choice of three special colors and graphics and over 40 genuine Triumph accessories. From built-in luggage to a central case that holds 2 helmets, you'll be inspired by the options to suit your adventure. When everyday flexibility is your goal, you shouldn't be left behind. The bike is designed with the rider in mind - make it your own."
+              },
+              {
+                "title": "Секој ден, Цел Ден",
+                "desc": "It's the journey that counts, not the destination, but the Tiger Sport 660 is designed to offer the ultimate in road adventure comfort. Featuring premium Showa 41mm separate function forks, Showa monoshock with remote hydraulically adjustable preload, slip and assist clutch, Road and Rain riding programs and the latest Triumph ABS technology and traction control program deactivation. From top to bottom the Tiger is designed to reduce fatigue and enhance your comfort to continue your adventure, with or without a passenger."
+              },
+              {
+                "title": "Максимална искористливост",
+                "desc": "With its 17-litre fuel tank and top-of-the-line specification, the new Tiger Sport is ready for any adventure. Whether it's your daily commute, epic journeys with friends or maneuvering in tight urban spaces, the ride is anything but boring. The Tiger Sport's lightweight frame, road adventure setup and sporty feel make it the ultimate companion. Ready for the hard work of your daily commute revitalizing your work week but also fully capable of weekend jaunts and touring fun.",
+                "image": "/images/adventure/tigerSport660/tiger660ReasonsImage3.avif"
+              },
+              {
+                "title": "Прекрасна Зделка",
+                "desc": "The Tiger Sport 660's state-of-the-art technology, high-spec brakes, tires and suspension, confidence-inspiring agile handling, thrilling performance from the three-cylinder engine, unique styling and a very competitive price all combine to make it the perfect sporty choice. mid-range adventure - and the perfect entry point to the Triumph range. A leading service interval of 16,000km (or 12 months) and the lowest required service time in the segment also contribute to incredibly low running costs."
+              },
+              {
+                "title": "Уникатен Стил",
+                "desc": "A new generation Tiger Sport in every way, with all the benefits of Triumph's class-redefining 660cc three-cylinder engine. Strong. Versatile. And with its thoughtful design, it embodies the modern Triumph style and character. The upright and imposing adventure stance, the protective gel and refined ergonomics promise comfort and thrills throughout your ride. All-new Tiger Sport 660 color schemes, class-leading premium finish and over 40 accessories will make the bike an absolute eye-catcher. Unmistakably Triumph, and the new perfectly-rounded mid-range adventure sports bike."
+              }
+            ]
+          },
           "shortSpecInfo": {
             "info1": "660cc мотор",
             "info2": "Водечки во класата по способност и ракување",
@@ -393,7 +439,7 @@
                   "desc": "6 брзини"
                 }
               ],
-              "frame" : [
+              "frame": [
                 {
                   "title": "шасија",
                   "desc": "тубуларна челична шасија"
@@ -420,7 +466,7 @@
                 },
                 {
                   "title": "предна суспензија",
-                  "desc": 	"Marzocchi Inverted Fork 45mm"
+                  "desc": "Marzocchi Inverted Fork 45mm"
                 },
                 {
                   "title": "задна суспензија",
@@ -611,7 +657,7 @@
                   "desc": "6 брзини"
                 }
               ],
-              "frame" : [
+              "frame": [
                 {
                   "title": "шасија",
                   "desc": "тубуларна челична шасија"
@@ -638,7 +684,7 @@
                 },
                 {
                   "title": "предна суспензија",
-                  "desc": 	"Marzocchi Inverted Fork 45mm"
+                  "desc": "Marzocchi Inverted Fork 45mm"
                 },
                 {
                   "title": "задна суспензија",
@@ -798,7 +844,7 @@
                   "desc": "6 брзини"
                 }
               ],
-              "frame" : [
+              "frame": [
                 {
                   "title": "шасија",
                   "desc": "тубуларна челична шасија"
@@ -825,7 +871,7 @@
                 },
                 {
                   "title": "предна суспензија",
-                  "desc": 	"Marzocchi Inverted Fork 45mm"
+                  "desc": "Marzocchi Inverted Fork 45mm"
                 },
                 {
                   "title": "задна суспензија",
@@ -984,7 +1030,7 @@
                   "desc": "6 брзини"
                 }
               ],
-              "frame" : [
+              "frame": [
                 {
                   "title": "шасија",
                   "desc": "тубуларна челична шасија"
@@ -1011,7 +1057,7 @@
                 },
                 {
                   "title": "предна суспензија",
-                  "desc": 	"Marzocchi Inverted Fork 45mm"
+                  "desc": "Marzocchi Inverted Fork 45mm"
                 },
                 {
                   "title": "задна суспензија",
