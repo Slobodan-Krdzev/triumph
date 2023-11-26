@@ -4,7 +4,7 @@ import LinkItem from "./LinkItem";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
-type SecondaryNavItemsType = {
+export type SecondaryNavItemsType = {
   text: string,
   link: string
 }
