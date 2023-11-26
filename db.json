@@ -99,11 +99,11 @@
               "alt": "Tiger Sport 850 Range Hero Image"
             },
             "subFamilyTopSectionImage": {
-              "src": "/images/adventure/tigerSport850/tiger850TopSection.avif",
+              "src": "/images/adventure/tiger1200Rally/tiger1200Rally.avif",
               "alt": "Tiger Sport 850 Range Top-Section Image"
             },
             "subFamilyTopSectionBGImage": {
-              "src": "/images/adventure/tigerSport850/tigerSport850TopSectionBG.avif",
+              "src": "/images/adventure/tiger1200Rally/tiger1200RallyTopSectionBG.avif",
               "alt": "Tiger Sport 850 Range Top-Section Image"
             }
           }
@@ -600,11 +600,11 @@
           "url": "/motorcycles/adventure/tiger-1200-gt",
           "shortDesc": "Врвен авантуристички мотор фокусиран за асфалтни подлоги. Интер-континентални можности, со висока комоција, перформанси и стил.",
           "subFamilyPageInfo": {
-            "heroSlogans": ["Автентичност", "Версатилен", "3-цилиндричен"],
+            "heroSlogans": ["Вие ја ", "креирате", "авантурата"],
             "topSection": {
-              "title": "АВТЕНТИЧНА ВИТАЛНОСТ НА ТРИ ЦИЛИНДРИ",
-              "desc": "Перформансна предност, класно лидерство во моќност, спецификации и удобно возење - сè тоа на одлична вредност",
-              "subtitle": "Дизајниран како перфектен секојдневен, градски мотор но и за уживање за време на викенд"
+              "title": "ТРАНСФОРМИРАЈТЕ ЈА ВАШАТА АВАНТУРА",
+              "desc": "Ултимативниот авантуристички моторцикл фокусиран на асфалтот. Интерконтинентални можности, неверојатен комфорт, перформанси и стил.",
+              "subtitle": "Нај-способниот, нај-версатилниот, и агилен мотор, со најголемата зафатнина на мотор во целиот свет"
             },
             "fullSpecs": {
               "engineTransmission": [
@@ -748,6 +748,32 @@
                 }
               ]
             },
+            "grayCarousell": [
+              {
+                "id": "carouselItem1",
+                "title": "Возбудлив Три Цилиндарски Мотор",
+                "desc": "Почувствувајте го карактерот на моторот и чувството на лесно управување со иновативната T-crank радалица и најновиот 850 три-цилиндричен мотор.",
+                "image": "/images/adventure/tigerSport850/tiger850Caro1.avif"
+              },
+              {
+                "id": "carouselItem2",
+                "title": "Технологија фокусирана на возачот",
+                "desc": "Технологија од врвно ниво, сопирачки и одлична суспензија за подобро секојдневно возење со максимално чувство на самодоверба, перформанси и сигурност.",
+                "image": "/images/adventure/tigerSport850/tiger850Caro2.avif"
+              },
+              {
+                "id": "carouselItem3",
+                "title": "Комбинација помеѓу карактер и перформанси",
+                "desc": "Соилуета по која сите се вртат, со агресивни линии и ексклузивни детали .",
+                "image": "/images/adventure/tigerSport850/tiger850Caro3.avif"
+              },
+              {
+                "id": "carouselItem4",
+                "title": "Дизајниран да инспирира самодоверба",
+                "desc": "Лесно прилагодлив за сечиј возачки стил, од височината на седиштето, до воланот па се до ерканот, Tiger 850 е спремен да се прилагоди на вас.",
+                "image": "/images/adventure/tigerSport850/tiger850Caro4.avif"
+              }
+            ],
             "specNumbers": [
               { "data": "888", "info": "cc Мотор" },
               { "data": "85", "info": "РЅ Коњски сили" },
@@ -766,15 +792,15 @@
               "alt": "Tiger 1200 Gt Range Model Image"
             },
             "subFamilyHeroVideo": {
-              "src": "/images/adventure/tigerSport850/tigerSport850HeroVideo.webm",
+              "src": "/images/adventure/tiger1200GT/tiger1200GTHeroVideo.webm",
               "alt": "Tiger Sport 850 Range Hero Image"
             },
             "subFamilyTopSectionImage": {
-              "src": "/images/adventure/tigerSport850/tiger850TopSection.avif",
+              "src": "/images/adventure/tiger1200GT/tiger1200GTTopSection.avif",
               "alt": "Tiger Sport 850 Range Top-Section Image"
             },
             "subFamilyTopSectionBGImage": {
-              "src": "/images/adventure/tigerSport850/tigerSport850TopSectionBG.avif",
+              "src": "/images/adventure/tiger1200GT/tiger1200GTTopSectionBG.avif",
               "alt": "Tiger Sport 850 Range Top-Section Image"
             }
           }
@@ -787,11 +813,11 @@
           "url": "/motorcycles/adventure/tiger-1200-gt",
           "shortDesc": "",
           "subFamilyPageInfo": {
-            "heroSlogans": ["Автентичност", "Версатилен", "3-цилиндричен"],
+            "heroSlogans": ["оживеј", "ја", "авантурата"],
             "topSection": {
-              "title": "АВТЕНТИЧНА ВИТАЛНОСТ НА ТРИ ЦИЛИНДРИ",
-              "desc": "Перформансна предност, класно лидерство во моќност, спецификации и удобно возење - сè тоа на одлична вредност",
-              "subtitle": "Дизајниран како перфектен секојдневен, градски мотор но и за уживање за време на викенд"
+              "title": "Откриј ја Авантурата",
+              "desc": "Изграден за секаков пат. Најновиот авантуристички шампион ве води низе светот, низ пустина и совладува планини.",
+              "subtitle": "Новиот репер за авантури. Нај-возбудливиот нај-способниот, комфортен и версатилен Tiger 1200 мотор досега."
             },
             "fullSpecs": {
               "engineTransmission": [
@@ -935,6 +961,32 @@
                 }
               ]
             },
+            "grayCarousell": [
+              {
+                "id": "carouselItem1",
+                "title": "Возбудлив Три Цилиндарски Мотор",
+                "desc": "Почувствувајте го карактерот на моторот и чувството на лесно управување со иновативната T-crank радалица и најновиот 850 три-цилиндричен мотор.",
+                "image": "/images/adventure/tigerSport850/tiger850Caro1.avif"
+              },
+              {
+                "id": "carouselItem2",
+                "title": "Технологија фокусирана на возачот",
+                "desc": "Технологија од врвно ниво, сопирачки и одлична суспензија за подобро секојдневно возење со максимално чувство на самодоверба, перформанси и сигурност.",
+                "image": "/images/adventure/tigerSport850/tiger850Caro2.avif"
+              },
+              {
+                "id": "carouselItem3",
+                "title": "Комбинација помеѓу карактер и перформанси",
+                "desc": "Соилуета по која сите се вртат, со агресивни линии и ексклузивни детали .",
+                "image": "/images/adventure/tigerSport850/tiger850Caro3.avif"
+              },
+              {
+                "id": "carouselItem4",
+                "title": "Дизајниран да инспирира самодоверба",
+                "desc": "Лесно прилагодлив за сечиј возачки стил, од височината на седиштето, до воланот па се до ерканот, Tiger 850 е спремен да се прилагоди на вас.",
+                "image": "/images/adventure/tigerSport850/tiger850Caro4.avif"
+              }
+            ],
             "specNumbers": [
               { "data": "888", "info": "cc Мотор" },
               { "data": "85", "info": "РЅ Коњски сили" },
@@ -953,16 +1005,16 @@
               "alt": "Tiger 1200 Rally Range Model Image"
             },
             "subFamilyHeroVideo": {
-              "src": "/images/adventure/tigerSport850/tigerSport850HeroVideo.webm",
-              "alt": "Tiger Sport 850 Range Hero Image"
+              "src": "/images/adventure/tiger1200Rally/tiger1200RallyHeroVideo.webm",
+              "alt": "Tiger 1200 Rally Range Hero Image"
             },
             "subFamilyTopSectionImage": {
-              "src": "/images/adventure/tigerSport850/tiger850TopSection.avif",
-              "alt": "Tiger Sport 850 Range Top-Section Image"
+              "src": "/images/adventure/tiger1200Rally/tiger1200Rally.avif",
+              "alt": "Tiger 1200 Rally Range Top-Section Image"
             },
             "subFamilyTopSectionBGImage": {
-              "src": "/images/adventure/tigerSport850/tigerSport850TopSectionBG.avif",
-              "alt": "Tiger Sport 850 Range Top-Section Image"
+              "src": "/images/adventure/tiger1200Rally/tiger1200RallyTopSectionBG.avif",
+              "alt": "Tiger 1200 Rally Range Top-Section Image"
             }
           }
         },
@@ -1656,9 +1708,9 @@
       "title": "Tiger 900 Rally PRO",
       "model": "tiger-900-rally-pro-2024",
       "category": "adventure",
-      "subFamilyCategory": "tiger-900-range",
+      "subFamilyCategory": "tiger-900-rally",
       "edition": "adventure",
-      "price": null,
+      "price": 21990,
       "gallery": {
         "modelImage": {
           "src": "/images/adventure/tiger900RallyProModel.png",
@@ -1666,8 +1718,8 @@
         }
       },
       "subFamilyPromo": {
-        "title": "TIGER SPORT 660",
-        "desc": "Првиот избор за многу корисници, со три-цилиндарски мотор, неверојатен комфорт, перформантен, искористлив и агилен, стот тоа со најниски трошоци за одржување во класата. Цени од €9,590.00"
+        "title": "Tiger 900 Rally PRO",
+        "desc": "On dirt or tarmac, the Rally Pro combines capability, comfort and performance for the ultimate off-road adventure.Now including a new Active Preload Reduction Mode for advanced suspension preload adjustment. Price From €21,990.00"
       }
     },
     {
@@ -1763,8 +1815,8 @@
         "info3": "3 години гаранција"
       },
       "subFamilyPromo": {
-        "title": "TIGER SPORT 660",
-        "desc": "Првиот избор за многу корисници, со три-цилиндарски мотор, неверојатен комфорт, перформантен, искористлив и агилен, стот тоа со најниски трошоци за одржување во класата. Цени од €9,590.00"
+        "title": "Tiger 1200 GT PRO",
+        "desc": "Најдобриот во класата, GT Pro ги носи технологијата, возењето и спецификациите за оваа серија на ново ниво. Сега доаѓа и со новиот Active Preload Reduction мод кој овозможува прилагодлива суспензија.Цени од: €20,990.00"
       }
     },
     {
@@ -1795,8 +1847,8 @@
         "info3": "3 години гаранција"
       },
       "subFamilyPromo": {
-        "title": "TIGER SPORT 660",
-        "desc": "Првиот избор за многу корисници, со три-цилиндарски мотор, неверојатен комфорт, перформантен, искористлив и агилен, стот тоа со најниски трошоци за одржување во класата. Цени од €9,590.00"
+        "title": "Tiger 1200 GT Explorer",
+        "desc": "GT Explorer има 30 литарски резервоар и ги поставува стандардите за транс-континентални авантури, притоа ги понудува најдобрите спецификации во оваа серија на мотори. Сега доаѓа и со новиот Active Preload Reduction мод кој овозможува прилагодлива суспензија. Цени од: €22,990.00"
       }
     },
     {
@@ -1827,8 +1879,8 @@
         "info3": "3 години гаранција"
       },
       "subFamilyPromo": {
-        "title": "TIGER SPORT 660",
-        "desc": "Првиот избор за многу корисници, со три-цилиндарски мотор, неверојатен комфорт, перформантен, искористлив и агилен, стот тоа со најниски трошоци за одржување во класата. Цени од €9,590.00"
+        "title": "TIGER 1200 Rally PRo",
+        "desc": "On dirt or tarmac, the Rally Pro combines capability, comfort and performance for the ultimate off-road adventure.Now including a new Active Preload Reduction Mode for advanced suspension preload adjustment.Price From €21,990.00"
       }
     },
     {
@@ -1849,7 +1901,7 @@
       },
       "gallery": {
         "modelImage": {
-          "src": "/images/adventure/tiger1200RallyModel.png",
+          "src": "/images/adventure/tiger1200RallyExplorerModelImage.avif",
           "alt": "Tiger 1200 Rally Explorer"
         }
       },
@@ -1859,8 +1911,8 @@
         "info3": "3 години гаранција"
       },
       "subFamilyPromo": {
-        "title": "TIGER SPORT 660",
-        "desc": "Првиот избор за многу корисници, со три-цилиндарски мотор, неверојатен комфорт, перформантен, искористлив и агилен, стот тоа со најниски трошоци за одржување во класата. Цени од €9,590.00"
+        "title": "Tiger 1200 Rally Explorer",
+        "desc": "Refinement with endurance. Setting a new standard, the new Rally Explorer with its 30 liter fuel tank is built for the big adventure.Now including a new Active Preload Reduction Mode for advanced suspension preload adjustment.Price From €23,990.00"
       }
     },
     {
