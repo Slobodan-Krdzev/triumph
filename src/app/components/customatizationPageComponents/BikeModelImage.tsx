@@ -17,7 +17,7 @@ const BikeModelImage = ({bike}: BikeModelImageProps) => {
         <Image
           src={bike.bikeCollorPalletteGallery[(query.get('color') as string) + 'Reversed']}
           alt={bike.title}
-          width={824}
+          width={1424}
           height={376}
         />
       );
@@ -26,7 +26,7 @@ const BikeModelImage = ({bike}: BikeModelImageProps) => {
         <Image
           src={query.get('color') ? bike.bikeCollorPalletteGallery[query.get('color') as string] : bike.bikeCollorPalletteGallery.color1 }
           alt={bike.title}
-          width={824}
+          width={1424}
           height={376}
         />
       );

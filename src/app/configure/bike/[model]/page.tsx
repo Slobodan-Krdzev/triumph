@@ -31,7 +31,9 @@ const BikeConfigPage = async ({ params }: any) => {
               </div>
             </div>
             <div className="relative md:px-32 md:py-10">
-              <h1 className="absolute hidden md:block md:top-1/3 md:left-36 top-14 left-20 font-semibold text-2xl uppercase tracking-tighter">
+              <h1 
+              style={{top: "10%", left: "10%"}}
+              className="absolute font-bold text-2xl md:text-6xl text-neutral-200 uppercase tracking-tighter">
                 {bike[0].title}
               </h1>
               <BikeModelImage bike={bike[0]}/>
