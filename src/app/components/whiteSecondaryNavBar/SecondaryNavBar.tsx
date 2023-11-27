@@ -28,7 +28,7 @@ const SecondaryNavBar = ({ items = [],title, configurationLink }: SecondaryNavBa
         <div className="flex items-center py-1">
           <Link href={'/dealer/dealers-search'} className="mr-10 upercase font-semibold text-neutral-800 text-sm">КОНТАКТ
           <FontAwesomeIcon icon={faChevronRight} size="xs" className="text-red-800 ml-2"/></Link>
-          <MainBtn bgBlack={false} text={'КОНФИГУРАЦИЈА'} isLink={true} link={`/configure/bike/${configurationLink}`}/>
+          <MainBtn bgBlack={false} text={'КОНФИГУРАЦИЈА'} isLink={true} link={`${configurationLink}`}/>
         </div>
       </section>
     );

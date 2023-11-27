@@ -1770,13 +1770,39 @@
         "serviceInterval": "16.000km",
         "motorType": "TR"
       },
-
       "gallery": {
         "modelImage": {
-          "src": "/images/adventure/tiger850Sport.png",
+          "src": "/images/adventure/tigerSport850ModelImage.png",
           "alt": "Tiger 850 Sport"
+        },
+        "image360": {
+          "src": "/images/adventure/tigerSport850/tiger850-360Image.png",
+          "alt": "Tiger 850 Sport 360 Image"
         }
+        
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/adventure/tigerSport850ModelImage.png",
+        "color1": "/images/adventure/tigerSport850ModelImage.png",
+        "color1Reversed": "",
+        "color2": "/images/adventure/tigerSport850/tiger850SportGraphiteJetBlack.avif",
+        "color2Reversed": ""
+      },
+      "customizationColors": [
+        {
+          "colorName": "Graphite Diablo Red",
+          "price": 200,
+          "image": "/images/custom-collors/graphiteDiabloRed.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Graphite / Jet Black",
+          "price": 200,
+          "image": "/images/custom-collors/graphiteJetBlack.jpg",
+          "colorCode": "color2"
+        }
+        
+      ],
       "shortSpecInfo": {
         "info1": "850cc T-plane Triple Motor",
         "info2": "Патнички мотор со авантуристички дух",

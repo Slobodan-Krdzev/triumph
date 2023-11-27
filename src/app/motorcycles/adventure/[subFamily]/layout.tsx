@@ -36,7 +36,7 @@ export default function SubFamilyLayout({
     {
       text: "Аксесоари",
       link: `/${path}/${params.subFamily}/accessories`,
-    },
+    }
   ];
 
   return (
@@ -45,7 +45,7 @@ export default function SubFamilyLayout({
         <SecondaryNavBar
           items={secondaryNavItems}
           title={params.subFamily}
-          configurationLink={params.subFamily}
+          configurationLink={`/configure/bike/${params.subFamily}`}
         />
       )}
 
@@ -53,7 +53,7 @@ export default function SubFamilyLayout({
         <MobileSecondaryNav
           items={secondaryNavItems}
           title={params.subFamily}
-          configurationLink={params.subFamily}
+          configurationLink={`/configure/bike/${params.subFamily}`}
         />
       )}
 
