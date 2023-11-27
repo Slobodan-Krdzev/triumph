@@ -1740,10 +1740,54 @@
       },
       "gallery": {
         "modelImage": {
-          "src": "/images/adventure/tigerSport660Model.png",
+          "src": "/images/adventure/tigerSport660/tiger660ModelImage.avif",
           "alt": "Tiger Sport 660"
+        },
+        "promoYoutubeVideo": {
+          "src": "https://www.youtube.com/embed/QvVCEk4t8IE",
+          "alt": "Tiger 660 Youtbe Video"
         }
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/adventure/tigerSport660/tiger660ModelImage.avif",
+        "color1": "/images/adventure/tigerSport660/tiger660ModelImage.avif",
+        "color1Reversed": "/images/adventure/tigerSport660/tigerSport660ModelImageReversed.png",
+        "color2": "/images/adventure/tigerSport660/tiger660LucerneBlue.avif",
+        "color2Reversed": "/images/adventure/tigerSport660/tigerSport660LucerneBlueReversed.avif",
+        "color3": "/images/adventure/tigerSport660/tiger660JetBlackGraphite.avif",
+        "color3Reversed": "/images/adventure/tigerSport660/tigerSport660JetBlackGraphiteReversed.png",
+        "color4": "/images/adventure/tigerSport660/tiger660SnowdoniaWhiteJetBlack.avif",
+        "color4Reversed": "/images/adventure/tigerSport660/tigerSport660SnowdoniaWhiteJetBlackReversed.png"
+        
+      },
+      "customizationColors": [
+        {
+          "colorName": "Korosi Red / Graphite",
+          "price": 200,
+          "image": "/images/custom-collors/korosiRedSapphireBlack.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Lucerne Blue / Sapphire Black",
+          "price": null,
+          "image": "/images/custom-collors/lucerneBlueSapphireBlack.jpg",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Graphite / Jet Black",
+          "price": null,
+          "image": "/images/custom-collors/jetBlackGraphite.jpg",
+          "colorCode": "color3"
+        },
+        {
+          "colorName": "Snowdonia White / Jet Black",
+          "price": 200,
+          "image": "/images/custom-collors/snowdoniaWhiteJetBlack.jpg",
+          "colorCode": "color4"
+        }
+
+        
+      ],
       "shortSpecInfo": {
         "info1": "660cc Triple Motor",
         "info2": "Лидер во категоријата",
@@ -1860,64 +1904,63 @@
           "desc": "2 Години"
         }
       ],
-      "bikePageCarousell" : 
-      [
+      "bikePageCarousell": [
         {
-        "title": "Нов три-цилиндричен мотор со Т-Радалица",
-        "desc": "Силен карактер и сила на низок обртај и уште поголема моќ од новиот иновативен мотор на Triumph со Т-радалица и уникатна 1, 3, 2 секвенца на палење. Моторот на Tiger 850 испорачува 85РЅ при 8500rpm и 85Nm обртен момент при 6500rpm. .",
-        "image": "/images/adventure/tigerSport850/tiger850LatestCaro1.avif"
-      },
-      {
-        "title": "Мотор кој инспирира самодоверба",
-        "desc": "Витка силуета, со седло на подесување од 810мм до 830мм и волан кој се прилагодува според вашите потреби, комбинирано со Brembo Stylema системот за сопирање, Marzocchi суспензија и сета можна технологија која е фокусирана на возачот и на тоа да му овозможи на возачот максимална самодоверба и контрола врз моторот.",
-        "image": "/images/adventure/tigerSport850/tiger850LatesrCaro2.avif"
-      },
-      {
-        "title": "Технологија фокусирана на возачот",
-        "desc": "Внесете се во секое возење со самодоверба со одлизни перформанси и чувство на сигурност благодарејки на Tiger 850 Sport сигурносна технологија, како најновиот ABS систем и систем за пролизгување кој се прилагодува според вашите потреби. Моќен а сепак лабав авантуристички мотор.",
-        "image": "/images/adventure/tigerSport850/tiger850LatestCaro3.avif"
-      },
-      {
-        "title": "TFT Екран",
-        "desc": "5' инчен екран во боја со минималистички стил кои ви ги дава на дофат сите потребни информации, доволно брзо за да немора да го тргнете погледот од патот.",
-        "image": "/images/adventure/tigerSport850/tiger850LatestCaro4.avif"
-      },
-      {
-        "title": "2 мода на работа",
-        "desc": "На располагање се два мода на работа. Нормален и мод за дожд. Заедно со системите за пролизгување и системот за асистенција при апликација на гас се грижат за сигурна авантура.",
-        "image": "/images/adventure/tigerSport850/tiger850LatestCarо5.avif"
-      },
-      {
-        "title": "LED светла насекаде",
-        "desc": "Прекрасно лесно-одржувачко LED светло го краси предниот крај на Tiger 850 Sport.Истото дава префинет изглед и ви овозможува чиста визија за тоа што ќе се најде пред вас. Нуди максимално осветлување на патиштата како и прекрасни LED дневни светла.",
-        "image": "/images/adventure/tigerSport850/tiger850LatestCaro6.avif"
-      },
-      {
-        "title": "Квачило кое работи за вас",
-        "desc": "Квачилото ви асистира при возењето на Tiger 850 Sport. Ви го олеснува стисокот што овозможува за подолга и по лесна авантура, дури и во градските средини каде запирањето е честа случка.",
-        "image": "/images/adventure/tigerSport850/tiger850LatestCaro7.avif"
-      },
-      {
-        "title": "Подесувачко Ветробранско Стакло",
-        "desc": "Скријте се од ветрот со помош на Ветробранското Стакло кое се прилагодува според вашите потреби со помош на една-рака и при возење.",
-        "image": "/images/adventure/tigerSport850/tiger850LatestCaro8.avif"
-      },
-      {
-        "title": "Систем за сопирање на Brembo",
-        "desc": "Нај-добрата, лесна, и компактна серија на Brembo Stylema клешти за сопирање со 320мм дискови ви дава самодоверба каде и да помислите.",
-        "image": "/images/adventure/tigerSport850/tiger850LatestCaro9.avif"
-      },
-      {
-        "title": "Авантуристички Стил",
-        "desc": "Off-road перформанси кои импресионираат споени со авантуристичка силуета со агресивни линии, детали и Tiger 850 Sport палетата на бои, дава рефиниран но сепак спортски, издржлив карактер кој е спремен за авантура.",
-        "image": "/images/adventure/tigerSport850/tiger850LatestCaro10.avif"
-      },
-      {
-        "title": "20 литарски резервоар",
-        "desc": "20 литарскиот резервоар ви овозможува повеќе возење а помалку време изгубено на бензиските станици.",
-        "image": "/images/adventure/tigerSport850/tiger850LatestCaro11.avif"
-      }
-    ],
+          "title": "Нов три-цилиндричен мотор со Т-Радалица",
+          "desc": "Силен карактер и сила на низок обртај и уште поголема моќ од новиот иновативен мотор на Triumph со Т-радалица и уникатна 1, 3, 2 секвенца на палење. Моторот на Tiger 850 испорачува 85РЅ при 8500rpm и 85Nm обртен момент при 6500rpm. .",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro1.avif"
+        },
+        {
+          "title": "Мотор кој инспирира самодоверба",
+          "desc": "Витка силуета, со седло на подесување од 810мм до 830мм и волан кој се прилагодува според вашите потреби, комбинирано со Brembo Stylema системот за сопирање, Marzocchi суспензија и сета можна технологија која е фокусирана на возачот и на тоа да му овозможи на возачот максимална самодоверба и контрола врз моторот.",
+          "image": "/images/adventure/tigerSport850/tiger850LatesrCaro2.avif"
+        },
+        {
+          "title": "Технологија фокусирана на возачот",
+          "desc": "Внесете се во секое возење со самодоверба со одлизни перформанси и чувство на сигурност благодарејки на Tiger 850 Sport сигурносна технологија, како најновиот ABS систем и систем за пролизгување кој се прилагодува според вашите потреби. Моќен а сепак лабав авантуристички мотор.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro3.avif"
+        },
+        {
+          "title": "TFT Екран",
+          "desc": "5' инчен екран во боја со минималистички стил кои ви ги дава на дофат сите потребни информации, доволно брзо за да немора да го тргнете погледот од патот.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro4.avif"
+        },
+        {
+          "title": "2 мода на работа",
+          "desc": "На располагање се два мода на работа. Нормален и мод за дожд. Заедно со системите за пролизгување и системот за асистенција при апликација на гас се грижат за сигурна авантура.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCarо5.avif"
+        },
+        {
+          "title": "LED светла насекаде",
+          "desc": "Прекрасно лесно-одржувачко LED светло го краси предниот крај на Tiger 850 Sport.Истото дава префинет изглед и ви овозможува чиста визија за тоа што ќе се најде пред вас. Нуди максимално осветлување на патиштата како и прекрасни LED дневни светла.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro6.avif"
+        },
+        {
+          "title": "Квачило кое работи за вас",
+          "desc": "Квачилото ви асистира при возењето на Tiger 850 Sport. Ви го олеснува стисокот што овозможува за подолга и по лесна авантура, дури и во градските средини каде запирањето е честа случка.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro7.avif"
+        },
+        {
+          "title": "Подесувачко Ветробранско Стакло",
+          "desc": "Скријте се од ветрот со помош на Ветробранското Стакло кое се прилагодува според вашите потреби со помош на една-рака и при возење.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro8.avif"
+        },
+        {
+          "title": "Систем за сопирање на Brembo",
+          "desc": "Нај-добрата, лесна, и компактна серија на Brembo Stylema клешти за сопирање со 320мм дискови ви дава самодоверба каде и да помислите.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro9.avif"
+        },
+        {
+          "title": "Авантуристички Стил",
+          "desc": "Off-road перформанси кои импресионираат споени со авантуристичка силуета со агресивни линии, детали и Tiger 850 Sport палетата на бои, дава рефиниран но сепак спортски, издржлив карактер кој е спремен за авантура.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro10.avif"
+        },
+        {
+          "title": "20 литарски резервоар",
+          "desc": "20 литарскиот резервоар ви овозможува повеќе возење а помалку време изгубено на бензиските станици.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro11.avif"
+        }
+      ],
       "subFamilyPromo": {
         "title": "TIGER 850 SPORT",
         "desc": "Изработен за секој предизвик - со целиот можен карактер, перформанси и агилност на еден Tiger мотор, и силуета по која сите се вртат и адаптабилност за сечии потреби. Цени од €12,890.00"
@@ -1925,7 +1968,7 @@
       "bikePagePromo": [
         {
           "title": "Ергономија која инспирира самодоверба",
-          "desc":"Тенката силуета на Tiger 850 Sport, овозможува лесен контакт со површината на која возите. Лесната шасија, прилагодливите седло и волан, го подобруваат комодитетот и самодовербата.",
+          "desc": "Тенката силуета на Tiger 850 Sport, овозможува лесен контакт со површината на која возите. Лесната шасија, прилагодливите седло и волан, го подобруваат комодитетот и самодовербата.",
           "image": "/images/adventure/tigerSport850/tiger850BikePagePromo1.avif"
         }
       ]
@@ -1950,6 +1993,10 @@
         "modelImage": {
           "src": "/images/adventure/tiger1200GTPRO/tiger1200GTPROModelImage.png",
           "alt": "Tiger 1200 GT PRO"
+        },
+        "promoYoutubeVideo": {
+          "src": "https://www.youtube.com/embed/dGfqpR5bwyM",
+          "alt": "Tiger 850 Youtbe Video"
         }
       },
       "bikeCollorPalletteGallery": {
@@ -1973,8 +2020,7 @@
           "price": 200,
           "image": "/images/custom-collors/sapphireBlack.jpg",
           "colorCode": "color2"
-        }
-        ,
+        },
         {
           "colorName": "Lucerne Blue",
           "price": 200,
@@ -1987,10 +2033,124 @@
         "info2": "20 литарски резервоар",
         "info3": "3 години гаранција"
       },
+      "features": [
+        {
+          "title": "Мотор",
+          "desc": "850сс triple мотор со иновативна Т-радалица (EURO 5 Стандарди)"
+        },
+        {
+          "title": "Compliance",
+          "desc": "A2 compliant (Accessory fit conversion kit)"
+        },
+        {
+          "title": "Квачило",
+          "desc": "Slip & assist квачило"
+        },
+        {
+          "title": "Систем за Пролизгување",
+          "desc": "Ride-by-wire со автоматски систем за пролизгување"
+        },
+        {
+          "title": "Мод на работа",
+          "desc": "2 модуса на работа (нормално и за дожд)"
+        },
+        {
+          "title": "Суспензија",
+          "desc": "Marzocchi Гасна Суспензија, со можност за прилагодување"
+        },
+        {
+          "title": "Сопирачки",
+          "desc": "Brembo Stylema сопирачки систем со двојни 320мм дискови"
+        },
+        {
+          "title": "ИНструментна Плоча",
+          "desc": "5” TFТ инструментна плоча"
+        },
+        {
+          "title": "Светло",
+          "desc": "LED главни и дневни светла"
+        },
+        {
+          "title": "Ветробранско Стакло",
+          "desc": "Заштитно стакло, лесно прилагодливо"
+        },
+        {
+          "title": "Гаранција",
+          "desc": "2 Години"
+        },
+        {
+          "title": "Сервисен Интервал",
+          "desc": "2 Години"
+        }
+      ],
+      "bikePageCarousell": [
+        {
+          "title": "Нов три-цилиндричен мотор со Т-Радалица",
+          "desc": "Силен карактер и сила на низок обртај и уште поголема моќ од новиот иновативен мотор на Triumph со Т-радалица и уникатна 1, 3, 2 секвенца на палење. Моторот на Tiger 850 испорачува 85РЅ при 8500rpm и 85Nm обртен момент при 6500rpm. .",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro1.avif"
+        },
+        {
+          "title": "Мотор кој инспирира самодоверба",
+          "desc": "Витка силуета, со седло на подесување од 810мм до 830мм и волан кој се прилагодува според вашите потреби, комбинирано со Brembo Stylema системот за сопирање, Marzocchi суспензија и сета можна технологија која е фокусирана на возачот и на тоа да му овозможи на возачот максимална самодоверба и контрола врз моторот.",
+          "image": "/images/adventure/tigerSport850/tiger850LatesrCaro2.avif"
+        },
+        {
+          "title": "Технологија фокусирана на возачот",
+          "desc": "Внесете се во секое возење со самодоверба со одлизни перформанси и чувство на сигурност благодарејки на Tiger 850 Sport сигурносна технологија, како најновиот ABS систем и систем за пролизгување кој се прилагодува според вашите потреби. Моќен а сепак лабав авантуристички мотор.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro3.avif"
+        },
+        {
+          "title": "TFT Екран",
+          "desc": "5' инчен екран во боја со минималистички стил кои ви ги дава на дофат сите потребни информации, доволно брзо за да немора да го тргнете погледот од патот.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro4.avif"
+        },
+        {
+          "title": "2 мода на работа",
+          "desc": "На располагање се два мода на работа. Нормален и мод за дожд. Заедно со системите за пролизгување и системот за асистенција при апликација на гас се грижат за сигурна авантура.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCarо5.avif"
+        },
+        {
+          "title": "LED светла насекаде",
+          "desc": "Прекрасно лесно-одржувачко LED светло го краси предниот крај на Tiger 850 Sport.Истото дава префинет изглед и ви овозможува чиста визија за тоа што ќе се најде пред вас. Нуди максимално осветлување на патиштата како и прекрасни LED дневни светла.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro6.avif"
+        },
+        {
+          "title": "Квачило кое работи за вас",
+          "desc": "Квачилото ви асистира при возењето на Tiger 850 Sport. Ви го олеснува стисокот што овозможува за подолга и по лесна авантура, дури и во градските средини каде запирањето е честа случка.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro7.avif"
+        },
+        {
+          "title": "Подесувачко Ветробранско Стакло",
+          "desc": "Скријте се од ветрот со помош на Ветробранското Стакло кое се прилагодува според вашите потреби со помош на една-рака и при возење.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro8.avif"
+        },
+        {
+          "title": "Систем за сопирање на Brembo",
+          "desc": "Нај-добрата, лесна, и компактна серија на Brembo Stylema клешти за сопирање со 320мм дискови ви дава самодоверба каде и да помислите.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro9.avif"
+        },
+        {
+          "title": "Авантуристички Стил",
+          "desc": "Off-road перформанси кои импресионираат споени со авантуристичка силуета со агресивни линии, детали и Tiger 850 Sport палетата на бои, дава рефиниран но сепак спортски, издржлив карактер кој е спремен за авантура.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro10.avif"
+        },
+        {
+          "title": "20 литарски резервоар",
+          "desc": "20 литарскиот резервоар ви овозможува повеќе возење а помалку време изгубено на бензиските станици.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro11.avif"
+        }
+      ],
       "subFamilyPromo": {
         "title": "Tiger 1200 GT PRO",
         "desc": "Најдобриот во класата, GT Pro ги носи технологијата, возењето и спецификациите за оваа серија на ново ниво. Сега доаѓа и со новиот Active Preload Reduction мод кој овозможува прилагодлива суспензија.Цени од: €20,990.00"
-      }
+      },
+      "bikePagePromo": [
+        {
+          "title": "Ергономија која инспирира самодоверба",
+          "desc": "Тенката силуета на Tiger 850 Sport, овозможува лесен контакт со површината на која возите. Лесната шасија, прилагодливите седло и волан, го подобруваат комодитетот и самодовербата.",
+          "image": "/images/adventure/tigerSport850/tiger850BikePagePromo1.avif"
+        }
+      ]
     },
     {
       "id": 8,
@@ -2012,6 +2172,10 @@
         "modelImage": {
           "src": "/images/adventure/tiger1200GtExplorerModel.png",
           "alt": "Tiger 1200 GT Explorer"
+        },
+        "promoYoutubeVideo": {
+          "src": "https://www.youtube.com/embed/dGfqpR5bwyM",
+          "alt": "Tiger 850 Youtbe Video"
         }
       },
       "shortSpecInfo": {
@@ -2019,10 +2183,124 @@
         "info2": "30 литарски резервоар",
         "info3": "3 години гаранција"
       },
+      "features": [
+        {
+          "title": "Мотор",
+          "desc": "850сс triple мотор со иновативна Т-радалица (EURO 5 Стандарди)"
+        },
+        {
+          "title": "Compliance",
+          "desc": "A2 compliant (Accessory fit conversion kit)"
+        },
+        {
+          "title": "Квачило",
+          "desc": "Slip & assist квачило"
+        },
+        {
+          "title": "Систем за Пролизгување",
+          "desc": "Ride-by-wire со автоматски систем за пролизгување"
+        },
+        {
+          "title": "Мод на работа",
+          "desc": "2 модуса на работа (нормално и за дожд)"
+        },
+        {
+          "title": "Суспензија",
+          "desc": "Marzocchi Гасна Суспензија, со можност за прилагодување"
+        },
+        {
+          "title": "Сопирачки",
+          "desc": "Brembo Stylema сопирачки систем со двојни 320мм дискови"
+        },
+        {
+          "title": "ИНструментна Плоча",
+          "desc": "5” TFТ инструментна плоча"
+        },
+        {
+          "title": "Светло",
+          "desc": "LED главни и дневни светла"
+        },
+        {
+          "title": "Ветробранско Стакло",
+          "desc": "Заштитно стакло, лесно прилагодливо"
+        },
+        {
+          "title": "Гаранција",
+          "desc": "2 Години"
+        },
+        {
+          "title": "Сервисен Интервал",
+          "desc": "2 Години"
+        }
+      ],
+      "bikePageCarousell": [
+        {
+          "title": "Нов три-цилиндричен мотор со Т-Радалица",
+          "desc": "Силен карактер и сила на низок обртај и уште поголема моќ од новиот иновативен мотор на Triumph со Т-радалица и уникатна 1, 3, 2 секвенца на палење. Моторот на Tiger 850 испорачува 85РЅ при 8500rpm и 85Nm обртен момент при 6500rpm. .",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro1.avif"
+        },
+        {
+          "title": "Мотор кој инспирира самодоверба",
+          "desc": "Витка силуета, со седло на подесување од 810мм до 830мм и волан кој се прилагодува според вашите потреби, комбинирано со Brembo Stylema системот за сопирање, Marzocchi суспензија и сета можна технологија која е фокусирана на возачот и на тоа да му овозможи на возачот максимална самодоверба и контрола врз моторот.",
+          "image": "/images/adventure/tigerSport850/tiger850LatesrCaro2.avif"
+        },
+        {
+          "title": "Технологија фокусирана на возачот",
+          "desc": "Внесете се во секое возење со самодоверба со одлизни перформанси и чувство на сигурност благодарејки на Tiger 850 Sport сигурносна технологија, како најновиот ABS систем и систем за пролизгување кој се прилагодува според вашите потреби. Моќен а сепак лабав авантуристички мотор.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro3.avif"
+        },
+        {
+          "title": "TFT Екран",
+          "desc": "5' инчен екран во боја со минималистички стил кои ви ги дава на дофат сите потребни информации, доволно брзо за да немора да го тргнете погледот од патот.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro4.avif"
+        },
+        {
+          "title": "2 мода на работа",
+          "desc": "На располагање се два мода на работа. Нормален и мод за дожд. Заедно со системите за пролизгување и системот за асистенција при апликација на гас се грижат за сигурна авантура.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCarо5.avif"
+        },
+        {
+          "title": "LED светла насекаде",
+          "desc": "Прекрасно лесно-одржувачко LED светло го краси предниот крај на Tiger 850 Sport.Истото дава префинет изглед и ви овозможува чиста визија за тоа што ќе се најде пред вас. Нуди максимално осветлување на патиштата како и прекрасни LED дневни светла.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro6.avif"
+        },
+        {
+          "title": "Квачило кое работи за вас",
+          "desc": "Квачилото ви асистира при возењето на Tiger 850 Sport. Ви го олеснува стисокот што овозможува за подолга и по лесна авантура, дури и во градските средини каде запирањето е честа случка.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro7.avif"
+        },
+        {
+          "title": "Подесувачко Ветробранско Стакло",
+          "desc": "Скријте се од ветрот со помош на Ветробранското Стакло кое се прилагодува според вашите потреби со помош на една-рака и при возење.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro8.avif"
+        },
+        {
+          "title": "Систем за сопирање на Brembo",
+          "desc": "Нај-добрата, лесна, и компактна серија на Brembo Stylema клешти за сопирање со 320мм дискови ви дава самодоверба каде и да помислите.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro9.avif"
+        },
+        {
+          "title": "Авантуристички Стил",
+          "desc": "Off-road перформанси кои импресионираат споени со авантуристичка силуета со агресивни линии, детали и Tiger 850 Sport палетата на бои, дава рефиниран но сепак спортски, издржлив карактер кој е спремен за авантура.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro10.avif"
+        },
+        {
+          "title": "20 литарски резервоар",
+          "desc": "20 литарскиот резервоар ви овозможува повеќе возење а помалку време изгубено на бензиските станици.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro11.avif"
+        }
+      ],
       "subFamilyPromo": {
         "title": "Tiger 1200 GT Explorer",
         "desc": "GT Explorer има 30 литарски резервоар и ги поставува стандардите за транс-континентални авантури, притоа ги понудува најдобрите спецификации во оваа серија на мотори. Сега доаѓа и со новиот Active Preload Reduction мод кој овозможува прилагодлива суспензија. Цени од: €22,990.00"
-      }
+      },
+      "bikePagePromo": [
+        {
+          "title": "Ергономија која инспирира самодоверба",
+          "desc": "Тенката силуета на Tiger 850 Sport, овозможува лесен контакт со површината на која возите. Лесната шасија, прилагодливите седло и волан, го подобруваат комодитетот и самодовербата.",
+          "image": "/images/adventure/tigerSport850/tiger850BikePagePromo1.avif"
+        }
+      ]
     },
     {
       "id": 9,
@@ -2044,6 +2322,10 @@
         "modelImage": {
           "src": "/images/adventure/tiger12ooGTPRO/tiger1200GTPROModelImage.png",
           "alt": "Tiger 1200 Rally Pro"
+        },
+        "promoYoutubeVideo": {
+          "src": "https://www.youtube.com/embed/dGfqpR5bwyM",
+          "alt": "Tiger 850 Youtbe Video"
         }
       },
       "bikeCollorPalletteGallery": {
@@ -2067,8 +2349,7 @@
           "price": 200,
           "image": "/images/custom-collors/sapphireBlack.jpg",
           "colorCode": "color2"
-        }
-        ,
+        },
         {
           "colorName": "Lucerne Blue",
           "price": 200,
@@ -2081,10 +2362,124 @@
         "info2": "20 литарски резервоар",
         "info3": "3 години гаранција"
       },
+      "features": [
+        {
+          "title": "Мотор",
+          "desc": "850сс triple мотор со иновативна Т-радалица (EURO 5 Стандарди)"
+        },
+        {
+          "title": "Compliance",
+          "desc": "A2 compliant (Accessory fit conversion kit)"
+        },
+        {
+          "title": "Квачило",
+          "desc": "Slip & assist квачило"
+        },
+        {
+          "title": "Систем за Пролизгување",
+          "desc": "Ride-by-wire со автоматски систем за пролизгување"
+        },
+        {
+          "title": "Мод на работа",
+          "desc": "2 модуса на работа (нормално и за дожд)"
+        },
+        {
+          "title": "Суспензија",
+          "desc": "Marzocchi Гасна Суспензија, со можност за прилагодување"
+        },
+        {
+          "title": "Сопирачки",
+          "desc": "Brembo Stylema сопирачки систем со двојни 320мм дискови"
+        },
+        {
+          "title": "ИНструментна Плоча",
+          "desc": "5” TFТ инструментна плоча"
+        },
+        {
+          "title": "Светло",
+          "desc": "LED главни и дневни светла"
+        },
+        {
+          "title": "Ветробранско Стакло",
+          "desc": "Заштитно стакло, лесно прилагодливо"
+        },
+        {
+          "title": "Гаранција",
+          "desc": "2 Години"
+        },
+        {
+          "title": "Сервисен Интервал",
+          "desc": "2 Години"
+        }
+      ],
+      "bikePageCarousell": [
+        {
+          "title": "Нов три-цилиндричен мотор со Т-Радалица",
+          "desc": "Силен карактер и сила на низок обртај и уште поголема моќ од новиот иновативен мотор на Triumph со Т-радалица и уникатна 1, 3, 2 секвенца на палење. Моторот на Tiger 850 испорачува 85РЅ при 8500rpm и 85Nm обртен момент при 6500rpm. .",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro1.avif"
+        },
+        {
+          "title": "Мотор кој инспирира самодоверба",
+          "desc": "Витка силуета, со седло на подесување од 810мм до 830мм и волан кој се прилагодува според вашите потреби, комбинирано со Brembo Stylema системот за сопирање, Marzocchi суспензија и сета можна технологија која е фокусирана на возачот и на тоа да му овозможи на возачот максимална самодоверба и контрола врз моторот.",
+          "image": "/images/adventure/tigerSport850/tiger850LatesrCaro2.avif"
+        },
+        {
+          "title": "Технологија фокусирана на возачот",
+          "desc": "Внесете се во секое возење со самодоверба со одлизни перформанси и чувство на сигурност благодарејки на Tiger 850 Sport сигурносна технологија, како најновиот ABS систем и систем за пролизгување кој се прилагодува според вашите потреби. Моќен а сепак лабав авантуристички мотор.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro3.avif"
+        },
+        {
+          "title": "TFT Екран",
+          "desc": "5' инчен екран во боја со минималистички стил кои ви ги дава на дофат сите потребни информации, доволно брзо за да немора да го тргнете погледот од патот.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro4.avif"
+        },
+        {
+          "title": "2 мода на работа",
+          "desc": "На располагање се два мода на работа. Нормален и мод за дожд. Заедно со системите за пролизгување и системот за асистенција при апликација на гас се грижат за сигурна авантура.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCarо5.avif"
+        },
+        {
+          "title": "LED светла насекаде",
+          "desc": "Прекрасно лесно-одржувачко LED светло го краси предниот крај на Tiger 850 Sport.Истото дава префинет изглед и ви овозможува чиста визија за тоа што ќе се најде пред вас. Нуди максимално осветлување на патиштата како и прекрасни LED дневни светла.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro6.avif"
+        },
+        {
+          "title": "Квачило кое работи за вас",
+          "desc": "Квачилото ви асистира при возењето на Tiger 850 Sport. Ви го олеснува стисокот што овозможува за подолга и по лесна авантура, дури и во градските средини каде запирањето е честа случка.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro7.avif"
+        },
+        {
+          "title": "Подесувачко Ветробранско Стакло",
+          "desc": "Скријте се од ветрот со помош на Ветробранското Стакло кое се прилагодува според вашите потреби со помош на една-рака и при возење.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro8.avif"
+        },
+        {
+          "title": "Систем за сопирање на Brembo",
+          "desc": "Нај-добрата, лесна, и компактна серија на Brembo Stylema клешти за сопирање со 320мм дискови ви дава самодоверба каде и да помислите.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro9.avif"
+        },
+        {
+          "title": "Авантуристички Стил",
+          "desc": "Off-road перформанси кои импресионираат споени со авантуристичка силуета со агресивни линии, детали и Tiger 850 Sport палетата на бои, дава рефиниран но сепак спортски, издржлив карактер кој е спремен за авантура.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro10.avif"
+        },
+        {
+          "title": "20 литарски резервоар",
+          "desc": "20 литарскиот резервоар ви овозможува повеќе возење а помалку време изгубено на бензиските станици.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro11.avif"
+        }
+      ],
       "subFamilyPromo": {
         "title": "TIGER 1200 Rally PRo",
         "desc": "On dirt or tarmac, the Rally Pro combines capability, comfort and performance for the ultimate off-road adventure.Now including a new Active Preload Reduction Mode for advanced suspension preload adjustment.Price From €21,990.00"
-      }
+      },
+      "bikePagePromo": [
+        {
+          "title": "Ергономија која инспирира самодоверба",
+          "desc": "Тенката силуета на Tiger 850 Sport, овозможува лесен контакт со површината на која возите. Лесната шасија, прилагодливите седло и волан, го подобруваат комодитетот и самодовербата.",
+          "image": "/images/adventure/tigerSport850/tiger850BikePagePromo1.avif"
+        }
+      ]
     },
     {
       "id": 10,
@@ -2106,6 +2501,10 @@
         "modelImage": {
           "src": "/images/adventure/tiger1200RallyExplorerModelImage.avif",
           "alt": "Tiger 1200 Rally Explorer"
+        },
+        "promoYoutubeVideo": {
+          "src": "https://www.youtube.com/embed/dGfqpR5bwyM",
+          "alt": "Tiger 850 Youtbe Video"
         }
       },
       "bikeCollorPalletteGallery": {
@@ -2129,8 +2528,7 @@
           "price": 200,
           "image": "/images/custom-collors/sapphireBlack.jpg",
           "colorCode": "color2"
-        }
-        ,
+        },
         {
           "colorName": "Lucerne Blue",
           "price": 200,
@@ -2143,10 +2541,124 @@
         "info2": "30 литарски резервоар",
         "info3": "3 години гаранција"
       },
+      "features": [
+        {
+          "title": "Мотор",
+          "desc": "850сс triple мотор со иновативна Т-радалица (EURO 5 Стандарди)"
+        },
+        {
+          "title": "Compliance",
+          "desc": "A2 compliant (Accessory fit conversion kit)"
+        },
+        {
+          "title": "Квачило",
+          "desc": "Slip & assist квачило"
+        },
+        {
+          "title": "Систем за Пролизгување",
+          "desc": "Ride-by-wire со автоматски систем за пролизгување"
+        },
+        {
+          "title": "Мод на работа",
+          "desc": "2 модуса на работа (нормално и за дожд)"
+        },
+        {
+          "title": "Суспензија",
+          "desc": "Marzocchi Гасна Суспензија, со можност за прилагодување"
+        },
+        {
+          "title": "Сопирачки",
+          "desc": "Brembo Stylema сопирачки систем со двојни 320мм дискови"
+        },
+        {
+          "title": "ИНструментна Плоча",
+          "desc": "5” TFТ инструментна плоча"
+        },
+        {
+          "title": "Светло",
+          "desc": "LED главни и дневни светла"
+        },
+        {
+          "title": "Ветробранско Стакло",
+          "desc": "Заштитно стакло, лесно прилагодливо"
+        },
+        {
+          "title": "Гаранција",
+          "desc": "2 Години"
+        },
+        {
+          "title": "Сервисен Интервал",
+          "desc": "2 Години"
+        }
+      ],
+      "bikePageCarousell": [
+        {
+          "title": "Нов три-цилиндричен мотор со Т-Радалица",
+          "desc": "Силен карактер и сила на низок обртај и уште поголема моќ од новиот иновативен мотор на Triumph со Т-радалица и уникатна 1, 3, 2 секвенца на палење. Моторот на Tiger 850 испорачува 85РЅ при 8500rpm и 85Nm обртен момент при 6500rpm. .",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro1.avif"
+        },
+        {
+          "title": "Мотор кој инспирира самодоверба",
+          "desc": "Витка силуета, со седло на подесување од 810мм до 830мм и волан кој се прилагодува според вашите потреби, комбинирано со Brembo Stylema системот за сопирање, Marzocchi суспензија и сета можна технологија која е фокусирана на возачот и на тоа да му овозможи на возачот максимална самодоверба и контрола врз моторот.",
+          "image": "/images/adventure/tigerSport850/tiger850LatesrCaro2.avif"
+        },
+        {
+          "title": "Технологија фокусирана на возачот",
+          "desc": "Внесете се во секое возење со самодоверба со одлизни перформанси и чувство на сигурност благодарејки на Tiger 850 Sport сигурносна технологија, како најновиот ABS систем и систем за пролизгување кој се прилагодува според вашите потреби. Моќен а сепак лабав авантуристички мотор.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro3.avif"
+        },
+        {
+          "title": "TFT Екран",
+          "desc": "5' инчен екран во боја со минималистички стил кои ви ги дава на дофат сите потребни информации, доволно брзо за да немора да го тргнете погледот од патот.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro4.avif"
+        },
+        {
+          "title": "2 мода на работа",
+          "desc": "На располагање се два мода на работа. Нормален и мод за дожд. Заедно со системите за пролизгување и системот за асистенција при апликација на гас се грижат за сигурна авантура.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCarо5.avif"
+        },
+        {
+          "title": "LED светла насекаде",
+          "desc": "Прекрасно лесно-одржувачко LED светло го краси предниот крај на Tiger 850 Sport.Истото дава префинет изглед и ви овозможува чиста визија за тоа што ќе се најде пред вас. Нуди максимално осветлување на патиштата како и прекрасни LED дневни светла.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro6.avif"
+        },
+        {
+          "title": "Квачило кое работи за вас",
+          "desc": "Квачилото ви асистира при возењето на Tiger 850 Sport. Ви го олеснува стисокот што овозможува за подолга и по лесна авантура, дури и во градските средини каде запирањето е честа случка.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro7.avif"
+        },
+        {
+          "title": "Подесувачко Ветробранско Стакло",
+          "desc": "Скријте се од ветрот со помош на Ветробранското Стакло кое се прилагодува според вашите потреби со помош на една-рака и при возење.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro8.avif"
+        },
+        {
+          "title": "Систем за сопирање на Brembo",
+          "desc": "Нај-добрата, лесна, и компактна серија на Brembo Stylema клешти за сопирање со 320мм дискови ви дава самодоверба каде и да помислите.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro9.avif"
+        },
+        {
+          "title": "Авантуристички Стил",
+          "desc": "Off-road перформанси кои импресионираат споени со авантуристичка силуета со агресивни линии, детали и Tiger 850 Sport палетата на бои, дава рефиниран но сепак спортски, издржлив карактер кој е спремен за авантура.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro10.avif"
+        },
+        {
+          "title": "20 литарски резервоар",
+          "desc": "20 литарскиот резервоар ви овозможува повеќе возење а помалку време изгубено на бензиските станици.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro11.avif"
+        }
+      ],
       "subFamilyPromo": {
         "title": "Tiger 1200 Rally Explorer",
         "desc": "Refinement with endurance. Setting a new standard, the new Rally Explorer with its 30 liter fuel tank is built for the big adventure.Now including a new Active Preload Reduction Mode for advanced suspension preload adjustment.Price From €23,990.00"
-      }
+      },
+      "bikePagePromo": [
+        {
+          "title": "Ергономија која инспирира самодоверба",
+          "desc": "Тенката силуета на Tiger 850 Sport, овозможува лесен контакт со површината на која возите. Лесната шасија, прилагодливите седло и волан, го подобруваат комодитетот и самодовербата.",
+          "image": "/images/adventure/tigerSport850/tiger850BikePagePromo1.avif"
+        }
+      ]
     },
     {
       "id": 11,
@@ -2168,6 +2680,10 @@
         "modelImage": {
           "src": "/images/adventure/tiger900GtAragonModel.png",
           "alt": "Tiger 1200 GT Aragon"
+        },
+        "promoYoutubeVideo": {
+          "src": "https://www.youtube.com/embed/dGfqpR5bwyM",
+          "alt": "Tiger 850 Youtbe Video"
         }
       },
       "bikeCollorPalletteGallery": {
@@ -2191,8 +2707,7 @@
           "price": 200,
           "image": "/images/custom-collors/sapphireBlack.jpg",
           "colorCode": "color2"
-        }
-        ,
+        },
         {
           "colorName": "Lucerne Blue",
           "price": 200,
@@ -2205,10 +2720,124 @@
         "info2": "Високи спецификации за подобро искуство",
         "info3": "Врвна технологија фокусирана на возачот"
       },
+      "features": [
+        {
+          "title": "Мотор",
+          "desc": "850сс triple мотор со иновативна Т-радалица (EURO 5 Стандарди)"
+        },
+        {
+          "title": "Compliance",
+          "desc": "A2 compliant (Accessory fit conversion kit)"
+        },
+        {
+          "title": "Квачило",
+          "desc": "Slip & assist квачило"
+        },
+        {
+          "title": "Систем за Пролизгување",
+          "desc": "Ride-by-wire со автоматски систем за пролизгување"
+        },
+        {
+          "title": "Мод на работа",
+          "desc": "2 модуса на работа (нормално и за дожд)"
+        },
+        {
+          "title": "Суспензија",
+          "desc": "Marzocchi Гасна Суспензија, со можност за прилагодување"
+        },
+        {
+          "title": "Сопирачки",
+          "desc": "Brembo Stylema сопирачки систем со двојни 320мм дискови"
+        },
+        {
+          "title": "ИНструментна Плоча",
+          "desc": "5” TFТ инструментна плоча"
+        },
+        {
+          "title": "Светло",
+          "desc": "LED главни и дневни светла"
+        },
+        {
+          "title": "Ветробранско Стакло",
+          "desc": "Заштитно стакло, лесно прилагодливо"
+        },
+        {
+          "title": "Гаранција",
+          "desc": "2 Години"
+        },
+        {
+          "title": "Сервисен Интервал",
+          "desc": "2 Години"
+        }
+      ],
+      "bikePageCarousell": [
+        {
+          "title": "Нов три-цилиндричен мотор со Т-Радалица",
+          "desc": "Силен карактер и сила на низок обртај и уште поголема моќ од новиот иновативен мотор на Triumph со Т-радалица и уникатна 1, 3, 2 секвенца на палење. Моторот на Tiger 850 испорачува 85РЅ при 8500rpm и 85Nm обртен момент при 6500rpm. .",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro1.avif"
+        },
+        {
+          "title": "Мотор кој инспирира самодоверба",
+          "desc": "Витка силуета, со седло на подесување од 810мм до 830мм и волан кој се прилагодува според вашите потреби, комбинирано со Brembo Stylema системот за сопирање, Marzocchi суспензија и сета можна технологија која е фокусирана на возачот и на тоа да му овозможи на возачот максимална самодоверба и контрола врз моторот.",
+          "image": "/images/adventure/tigerSport850/tiger850LatesrCaro2.avif"
+        },
+        {
+          "title": "Технологија фокусирана на возачот",
+          "desc": "Внесете се во секое возење со самодоверба со одлизни перформанси и чувство на сигурност благодарејки на Tiger 850 Sport сигурносна технологија, како најновиот ABS систем и систем за пролизгување кој се прилагодува според вашите потреби. Моќен а сепак лабав авантуристички мотор.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro3.avif"
+        },
+        {
+          "title": "TFT Екран",
+          "desc": "5' инчен екран во боја со минималистички стил кои ви ги дава на дофат сите потребни информации, доволно брзо за да немора да го тргнете погледот од патот.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro4.avif"
+        },
+        {
+          "title": "2 мода на работа",
+          "desc": "На располагање се два мода на работа. Нормален и мод за дожд. Заедно со системите за пролизгување и системот за асистенција при апликација на гас се грижат за сигурна авантура.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCarо5.avif"
+        },
+        {
+          "title": "LED светла насекаде",
+          "desc": "Прекрасно лесно-одржувачко LED светло го краси предниот крај на Tiger 850 Sport.Истото дава префинет изглед и ви овозможува чиста визија за тоа што ќе се најде пред вас. Нуди максимално осветлување на патиштата како и прекрасни LED дневни светла.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro6.avif"
+        },
+        {
+          "title": "Квачило кое работи за вас",
+          "desc": "Квачилото ви асистира при возењето на Tiger 850 Sport. Ви го олеснува стисокот што овозможува за подолга и по лесна авантура, дури и во градските средини каде запирањето е честа случка.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro7.avif"
+        },
+        {
+          "title": "Подесувачко Ветробранско Стакло",
+          "desc": "Скријте се од ветрот со помош на Ветробранското Стакло кое се прилагодува според вашите потреби со помош на една-рака и при возење.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro8.avif"
+        },
+        {
+          "title": "Систем за сопирање на Brembo",
+          "desc": "Нај-добрата, лесна, и компактна серија на Brembo Stylema клешти за сопирање со 320мм дискови ви дава самодоверба каде и да помислите.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro9.avif"
+        },
+        {
+          "title": "Авантуристички Стил",
+          "desc": "Off-road перформанси кои импресионираат споени со авантуристичка силуета со агресивни линии, детали и Tiger 850 Sport палетата на бои, дава рефиниран но сепак спортски, издржлив карактер кој е спремен за авантура.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro10.avif"
+        },
+        {
+          "title": "20 литарски резервоар",
+          "desc": "20 литарскиот резервоар ви овозможува повеќе возење а помалку време изгубено на бензиските станици.",
+          "image": "/images/adventure/tigerSport850/tiger850LatestCaro11.avif"
+        }
+      ],
       "subFamilyPromo": {
         "title": "TIGER SPORT 660",
         "desc": "Првиот избор за многу корисници, со три-цилиндарски мотор, неверојатен комфорт, перформантен, искористлив и агилен, стот тоа со најниски трошоци за одржување во класата. Цени од €9,590.00"
-      }
+      },
+      "bikePagePromo": [
+        {
+          "title": "Ергономија која инспирира самодоверба",
+          "desc": "Тенката силуета на Tiger 850 Sport, овозможува лесен контакт со површината на која возите. Лесната шасија, прилагодливите седло и волан, го подобруваат комодитетот и самодовербата.",
+          "image": "/images/adventure/tigerSport850/tiger850BikePagePromo1.avif"
+        }
+      ]
     },
     {
       "id": 12,
@@ -2230,6 +2859,10 @@
         "modelImage": {
           "src": "/images/adventure/tiger900RallyAragonModel.png",
           "alt": "iger 900 Rally Aragon Edition"
+        },
+        "promoYoutubeVideo": {
+          "src": "https://www.youtube.com/embed/dGfqpR5bwyM",
+          "alt": "Tiger 850 Youtbe Video"
         }
       },
       "bikeCollorPalletteGallery": {
@@ -2253,8 +2886,7 @@
           "price": 200,
           "image": "/images/custom-collors/sapphireBlack.jpg",
           "colorCode": "color2"
-        }
-        ,
+        },
         {
           "colorName": "Lucerne Blue",
           "price": 200,
@@ -2270,7 +2902,14 @@
       "subFamilyPromo": {
         "title": "TIGER SPORT 660",
         "desc": "Првиот избор за многу корисници, со три-цилиндарски мотор, неверојатен комфорт, перформантен, искористлив и агилен, стот тоа со најниски трошоци за одржување во класата. Цени од €9,590.00"
-      }
+      },
+      "bikePagePromo": [
+        {
+          "title": "Ергономија која инспирира самодоверба",
+          "desc": "Тенката силуета на Tiger 850 Sport, овозможува лесен контакт со површината на која возите. Лесната шасија, прилагодливите седло и волан, го подобруваат комодитетот и самодовербата.",
+          "image": "/images/adventure/tigerSport850/tiger850BikePagePromo1.avif"
+        }
+      ]
     },
     {
       "id": 13,
@@ -2292,6 +2931,10 @@
         "modelImage": {
           "src": "/images/adventure/tiger900GtProModel.png",
           "alt": "Tiger 900 GT PRo (MY23)"
+        },
+        "promoYoutubeVideo": {
+          "src": "https://www.youtube.com/embed/dGfqpR5bwyM",
+          "alt": "Tiger 850 Youtbe Video"
         }
       },
       "bikeCollorPalletteGallery": {
@@ -2315,16 +2958,14 @@
           "price": 200,
           "image": "/images/custom-collors/sapphireBlack.jpg",
           "colorCode": "color2"
-        }
-        ,
+        },
         {
           "colorName": "Lucerne Blue",
           "price": 200,
           "image": "/images/custom-collors/lucerneBlue.jpg",
           "colorCode": "color3"
         }
-      ]
-      ,
+      ],
       "shortSpecInfo": {
         "info1": "Потполно нов 900сс три-цилиндарски мотор",
         "info2": "GT спецификација за долги дистанци",
@@ -2333,7 +2974,14 @@
       "subFamilyPromo": {
         "title": "TIGER SPORT 660",
         "desc": "Првиот избор за многу корисници, со три-цилиндарски мотор, неверојатен комфорт, перформантен, искористлив и агилен, стот тоа со најниски трошоци за одржување во класата. Цени од €9,590.00"
-      }
+      },
+      "bikePagePromo": [
+        {
+          "title": "Ергономија која инспирира самодоверба",
+          "desc": "Тенката силуета на Tiger 850 Sport, овозможува лесен контакт со површината на која возите. Лесната шасија, прилагодливите седло и волан, го подобруваат комодитетот и самодовербата.",
+          "image": "/images/adventure/tigerSport850/tiger850BikePagePromo1.avif"
+        }
+      ]
     },
     {
       "id": 14,
@@ -2355,6 +3003,10 @@
         "modelImage": {
           "src": "/images/adventure/tiger900RallyProModel.png",
           "alt": "Tiger 900 Rally Pro Edition"
+        },
+        "promoYoutubeVideo": {
+          "src": "https://www.youtube.com/embed/dGfqpR5bwyM",
+          "alt": "Tiger 850 Youtbe Video"
         }
       },
       "bikeCollorPalletteGallery": {
@@ -2378,8 +3030,7 @@
           "price": 200,
           "image": "/images/custom-collors/sapphireBlack.jpg",
           "colorCode": "color2"
-        }
-        ,
+        },
         {
           "colorName": "Lucerne Blue",
           "price": 200,
@@ -2395,7 +3046,14 @@
       "subFamilyPromo": {
         "title": "TIGER SPORT 660",
         "desc": "Првиот избор за многу корисници, со три-цилиндарски мотор, неверојатен комфорт, перформантен, искористлив и агилен, стот тоа со најниски трошоци за одржување во класата. Цени од €9,590.00"
-      }
+      },
+      "bikePagePromo": [
+        {
+          "title": "Ергономија која инспирира самодоверба",
+          "desc": "Тенката силуета на Tiger 850 Sport, овозможува лесен контакт со површината на која возите. Лесната шасија, прилагодливите седло и волан, го подобруваат комодитетот и самодовербата.",
+          "image": "/images/adventure/tigerSport850/tiger850BikePagePromo1.avif"
+        }
+      ]
     },
     {
       "id": 15,
