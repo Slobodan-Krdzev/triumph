@@ -2,6 +2,7 @@ import BikeTitle from "@/app/components/BikePageComponents/BikeTitle";
 import ColorNamePreviewer from "@/app/components/BikePageComponents/ColorNamePreviewer";
 import CustomizationColorsListing from "@/app/components/BikePageComponents/CustomizationColorsListing";
 import ImagePreview from "@/app/components/BikePageComponents/ImagePreview";
+import PromoBikeYoutubeVideo from "@/app/components/BikePageComponents/PromoBikeYoutubeVideo";
 import MainBtn from "@/app/components/MainBtn";
 import SpecTableListi from "@/app/components/SubFamily/Specification/SpecTableListi";
 import SpecsTable from "@/app/components/SubFamily/Specification/SpecsTable";
@@ -63,10 +64,16 @@ const BikePage = async ({ params }: any) => {
             Спецификација
           </h2>
           <div className="px-4">
-          <SpecTableListi items={[{title: 'Цена', desc: `€ ${bike.price}`}]} title={'Цена'}/>
+          <SpecTableListi items={[{title: 'Цена', desc: `€ ${bike.price}`}]} title={'Цена'} isOpen={true}/>
 
           </div>
           <SpecsTable specs={subFam.subFamilyPageInfo.fullSpecs} />
+        </section>
+
+          <PromoBikeYoutubeVideo video={bike.gallery.promoYoutubeVideo.src} alt={bike.gallery.promoYoutubeVideo.alt} />
+        
+        <section>
+          <SpecTableListi items={bike.features} title={'Карактеристики'} isOpen={true}/>
         </section>
       </main>
     );

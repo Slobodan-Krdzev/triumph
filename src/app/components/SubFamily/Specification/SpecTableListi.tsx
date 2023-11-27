@@ -11,10 +11,12 @@ type SpecTableListItemType = {
 type SpecTableListPropsType = {
   items: SpecTableListItemType[];
   title: string;
+  isOpen?: boolean
 };
 
-const SpecTableListi = ({ items = [], title }: SpecTableListPropsType) => {
-  const [isListOpen, setisListOpen] = useState(false);
+const SpecTableListi = ({ items = [], title, isOpen }: SpecTableListPropsType) => {
+
+  const [isListOpen, setisListOpen] = useState(isOpen === true ? true : false);
 
   const handleList = () => {
     setisListOpen(!isListOpen);

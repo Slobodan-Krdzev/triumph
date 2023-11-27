@@ -1778,8 +1778,11 @@
         "image360": {
           "src": "/images/adventure/tigerSport850/tiger850-360Image.png",
           "alt": "Tiger 850 Sport 360 Image"
+        },
+        "promoYoutubeVideo": {
+          "src": "https://www.youtube.com/embed/dGfqpR5bwyM",
+          "alt": "Tiger 850 Youtbe Video"
         }
-        
       },
       "bikeCollorPalletteGallery": {
         "default": "/images/adventure/tigerSport850ModelImage.png",
@@ -1801,13 +1804,58 @@
           "image": "/images/custom-collors/graphiteJetBlack.jpg",
           "colorCode": "color2"
         }
-        
       ],
       "shortSpecInfo": {
         "info1": "850cc T-plane Triple Motor",
         "info2": "Патнички мотор со авантуристички дух",
         "info3": "20 литарски резервоар"
       },
+      "features": [
+        {
+          "title": "Мотор",
+          "desc": "850сс triple мотор со иновативна Т-радалица (EURO 5 Стандарди)"
+        },
+        {
+          "title": "Compliance",
+          "desc": "A2 compliant (Accessory fit conversion kit)"
+        },
+        {
+          "title": "Квачило",
+          "desc": "Slip & assist квачило"
+        },
+        {
+          "title": "Систем за Пролизгување",
+          "desc": "Ride-by-wire со автоматски систем за пролизгување"
+        },
+        {
+          "title": "Мод на работа",
+          "desc": "2 модуса на работа (нормално и за дожд)"
+        },
+        {
+          "title": "Суспензија",
+          "desc": "Marzocchi Гасна Суспензија, со можност за прилагодување"
+        },
+        {
+          "title": "Сопирачки",
+          "desc": "Brembo Stylema сопирачки систем со двојни 320мм дискови"
+        },
+        {
+          "title": "ИНструментна Плоча",
+          "desc": "5” TFТ инструментна плоча"
+        },
+        {
+          "title": "Светло",
+          "desc": "LED главни и дневни светла"
+        },
+        {
+          "title": "Ветробранско Стакло",
+          "desc": "Заштитно стакло, лесно прилагодливо"
+        },
+        {
+          "title": "Гаранција",
+          "desc": "2 Години"
+        }
+      ],
       "subFamilyPromo": {
         "title": "TIGER 850 SPORT",
         "desc": "Изработен за секој предизвик - со целиот можен карактер, перформанси и агилност на еден Tiger мотор, и силуета по која сите се вртат и адаптабилност за сечии потреби. Цени од €12,890.00"
