@@ -3,6 +3,7 @@ import BikePageCarousell from "@/app/components/BikePageComponents/Carousell/Bik
 import ColorNamePreviewer from "@/app/components/BikePageComponents/ColorNamePreviewer";
 import CustomizationColorsListing from "@/app/components/BikePageComponents/CustomizationColorsListing";
 import ImagePreview from "@/app/components/BikePageComponents/ImagePreview";
+import PricePriviewer from "@/app/components/BikePageComponents/PricePriviewer";
 import PromoBikeYoutubeVideo from "@/app/components/BikePageComponents/PromoBikeYoutubeVideo";
 import GrayBand from "@/app/components/GrayBand";
 import MainBtn from "@/app/components/MainBtn";
@@ -19,6 +20,9 @@ type BikePagePromoType = {
 };
 
 const BikePage = async ({ params }: any) => {
+
+ 
+
   try {
     const bikeRes = await fetch(`${BIKES}?model=${params.bike}`, {
       cache: "no-store",
@@ -37,13 +41,12 @@ const BikePage = async ({ params }: any) => {
             <BikeTitle text={bike.title} />
             <div className="flex items-center flex-col md:flex-row gap-4 md:gap-0">
               <div className="flex flex-col w-full md:w-2/12 items-start md:justify-center lg:pl-24 md:pl-16 pl-0 order-3 md:order-1">
-                <ColorNamePreviewer bike={bike} />
+                {bike.customizationColors && <ColorNamePreviewer bike={bike} />}
+                
                 <p className="text-sm font-semibold text-neutral-500">
                   Цени од:
                 </p>
-                <p className="text-5xl font-medium tracking-tighter mb-2 lg:mb-4">
-                  €{bike.price}
-                </p>
+                <PricePriviewer bike={bike}/>
                 <div className="flex flex-col gap-6 text-center">
                   <MainBtn
                     text={"КОНФИГУРАЦИЈА"}
@@ -61,10 +64,12 @@ const BikePage = async ({ params }: any) => {
               </div>
 
               <div className="md:w-8/12 w-full m-auto order-1 md:order-2">
-                <ImagePreview bike={bike} />
+                {bike.bikeCollorPalletteGallery && <ImagePreview bike={bike} />}
+                
               </div>
               <div className="md:w-2/12 w-full order-2 md:order-3">
-                <CustomizationColorsListing colors={bike.customizationColors} />
+                {bike.customizationColors && <CustomizationColorsListing colors={bike.customizationColors} />}
+                
               </div>
             </div>
           </div>
@@ -83,20 +88,24 @@ const BikePage = async ({ params }: any) => {
           <SpecsTable specs={subFam.subFamilyPageInfo.fullSpecs} />
         </section>
 
-        <PromoBikeYoutubeVideo
+        {bike.gallery.promoYoutubeVideo && <PromoBikeYoutubeVideo
           video={bike.gallery.promoYoutubeVideo.src}
           alt={bike.gallery.promoYoutubeVideo.alt}
-        />
+        />}
+        
 
-        <SpecTableListi
+        {bike.features && <SpecTableListi
           items={bike.features}
           title={"Карактеристики"}
           isOpen={true}
-        />
+        />}
+        
 
-        <BikePageCarousell items={bike.bikePageCarousell} />
+        {bike.bikePageCarousell && <BikePageCarousell items={bike.bikePageCarousell} />}
+        
 
-        <section className="px-4 md:px-24 py-4 md:py-16">
+
+      {bike.bikePagePromo && <section className="px-4 md:px-24 py-4 md:py-16">
           {bike.bikePagePromo.map((promo: BikePagePromoType, idx:number) => (
             <TextAndImageFlexSection
               key={promo.title}
@@ -109,7 +118,8 @@ const BikePage = async ({ params }: any) => {
               }}
             />
           ))}
-        </section>
+        </section>}
+        
 
         <GrayBand itemOne={{
           text: "Контакт",

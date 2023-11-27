@@ -1854,6 +1854,10 @@
         {
           "title": "Гаранција",
           "desc": "2 Години"
+        },
+        {
+          "title": "Сервисен Интервал",
+          "desc": "2 Години"
         }
       ],
       "bikePageCarousell" : 
@@ -1944,10 +1948,40 @@
       },
       "gallery": {
         "modelImage": {
-          "src": "/images/adventure/tiger1200GtModel.png",
-          "alt": "Tiger 1200 GT"
+          "src": "/images/adventure/tiger1200GTPRO/tiger1200GTPROModelImage.png",
+          "alt": "Tiger 1200 GT PRO"
         }
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/adventure/tiger1200GTPRO/tiger1200GTPROModelImage.png",
+        "color1": "/images/adventure/tiger1200GTPRO/tiger1200GTPROModelImage.png",
+        "color1Reversed": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor1Reversed.png",
+        "color2": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor2.png",
+        "color2Reversed": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor2Reversed.png",
+        "color3": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor3.png",
+        "color3Reversed": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor3Reversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Snowdonia White",
+          "price": null,
+          "image": "/images/custom-collors/snowdoniaWhite.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Saphire Black",
+          "price": 200,
+          "image": "/images/custom-collors/sapphireBlack.jpg",
+          "colorCode": "color2"
+        }
+        ,
+        {
+          "colorName": "Lucerne Blue",
+          "price": 200,
+          "image": "/images/custom-collors/lucerneBlue.jpg",
+          "colorCode": "color3"
+        }
+      ],
       "shortSpecInfo": {
         "info1": "1,160cc T-plane Triple Motor",
         "info2": "20 литарски резервоар",
@@ -2008,10 +2042,40 @@
       },
       "gallery": {
         "modelImage": {
-          "src": "/images/adventure/tiger1200RallyModel.png",
+          "src": "/images/adventure/tiger12ooGTPRO/tiger1200GTPROModelImage.png",
           "alt": "Tiger 1200 Rally Pro"
         }
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/adventure/tiger1200GTPRO/tigerSport850ModelImage.png",
+        "color1": "/images/adventure/tiger1200GTPRO/tigerSport850ModelImage.png",
+        "color1Reversed": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor1Reversed.png",
+        "color2": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor2.png",
+        "color2Reversed": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor2Reversed.png",
+        "color3": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor3.png",
+        "color3Reversed": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor3Reversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Snowdonia White",
+          "price": null,
+          "image": "/images/custom-collors/snowdoniaWhite.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Saphire Black",
+          "price": 200,
+          "image": "/images/custom-collors/sapphireBlack.jpg",
+          "colorCode": "color2"
+        }
+        ,
+        {
+          "colorName": "Lucerne Blue",
+          "price": 200,
+          "image": "/images/custom-collors/lucerneBlue.jpg",
+          "colorCode": "color3"
+        }
+      ],
       "shortSpecInfo": {
         "info1": "1,160cc T-plane Triple Motor",
         "info2": "20 литарски резервоар",
@@ -2044,6 +2108,36 @@
           "alt": "Tiger 1200 Rally Explorer"
         }
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/adventure/tiger1200GTPRO/tigerSport850ModelImage.png",
+        "color1": "/images/adventure/tiger1200GTPRO/tigerSport850ModelImage.png",
+        "color1Reversed": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor1Reversed.png",
+        "color2": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor2.png",
+        "color2Reversed": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor2Reversed.png",
+        "color3": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor3.png",
+        "color3Reversed": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor3Reversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Snowdonia White",
+          "price": null,
+          "image": "/images/custom-collors/snowdoniaWhite.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Saphire Black",
+          "price": 200,
+          "image": "/images/custom-collors/sapphireBlack.jpg",
+          "colorCode": "color2"
+        }
+        ,
+        {
+          "colorName": "Lucerne Blue",
+          "price": 200,
+          "image": "/images/custom-collors/lucerneBlue.jpg",
+          "colorCode": "color3"
+        }
+      ],
       "shortSpecInfo": {
         "info1": "1,160cc T-plane Triple Motor",
         "info2": "30 литарски резервоар",
@@ -2076,6 +2170,36 @@
           "alt": "Tiger 1200 GT Aragon"
         }
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/adventure/tiger1200GTPRO/tigerSport850ModelImage.png",
+        "color1": "/images/adventure/tiger1200GTPRO/tigerSport850ModelImage.png",
+        "color1Reversed": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor1Reversed.png",
+        "color2": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor2.png",
+        "color2Reversed": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor2Reversed.png",
+        "color3": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor3.png",
+        "color3Reversed": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor3Reversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Snowdonia White",
+          "price": null,
+          "image": "/images/custom-collors/snowdoniaWhite.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Saphire Black",
+          "price": 200,
+          "image": "/images/custom-collors/sapphireBlack.jpg",
+          "colorCode": "color2"
+        }
+        ,
+        {
+          "colorName": "Lucerne Blue",
+          "price": 200,
+          "image": "/images/custom-collors/lucerneBlue.jpg",
+          "colorCode": "color3"
+        }
+      ],
       "shortSpecInfo": {
         "info1": "Нов 900cc три-цилиндричен мотор",
         "info2": "Високи спецификации за подобро искуство",
@@ -2108,6 +2232,36 @@
           "alt": "iger 900 Rally Aragon Edition"
         }
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/adventure/tiger1200GTPRO/tigerSport850ModelImage.png",
+        "color1": "/images/adventure/tiger1200GTPRO/tigerSport850ModelImage.png",
+        "color1Reversed": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor1Reversed.png",
+        "color2": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor2.png",
+        "color2Reversed": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor2Reversed.png",
+        "color3": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor3.png",
+        "color3Reversed": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor3Reversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Snowdonia White",
+          "price": null,
+          "image": "/images/custom-collors/snowdoniaWhite.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Saphire Black",
+          "price": 200,
+          "image": "/images/custom-collors/sapphireBlack.jpg",
+          "colorCode": "color2"
+        }
+        ,
+        {
+          "colorName": "Lucerne Blue",
+          "price": 200,
+          "image": "/images/custom-collors/lucerneBlue.jpg",
+          "colorCode": "color3"
+        }
+      ],
       "shortSpecInfo": {
         "info1": "Нов 900cc три-цилиндричен мотор",
         "info2": "Врвна спецификација за екстремни off-road можности",
@@ -2140,6 +2294,37 @@
           "alt": "Tiger 900 GT PRo (MY23)"
         }
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/adventure/tiger1200GTPRO/tigerSport850ModelImage.png",
+        "color1": "/images/adventure/tiger1200GTPRO/tigerSport850ModelImage.png",
+        "color1Reversed": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor1Reversed.png",
+        "color2": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor2.png",
+        "color2Reversed": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor2Reversed.png",
+        "color3": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor3.png",
+        "color3Reversed": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor3Reversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Snowdonia White",
+          "price": null,
+          "image": "/images/custom-collors/snowdoniaWhite.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Saphire Black",
+          "price": 200,
+          "image": "/images/custom-collors/sapphireBlack.jpg",
+          "colorCode": "color2"
+        }
+        ,
+        {
+          "colorName": "Lucerne Blue",
+          "price": 200,
+          "image": "/images/custom-collors/lucerneBlue.jpg",
+          "colorCode": "color3"
+        }
+      ]
+      ,
       "shortSpecInfo": {
         "info1": "Потполно нов 900сс три-цилиндарски мотор",
         "info2": "GT спецификација за долги дистанци",
@@ -2172,6 +2357,36 @@
           "alt": "Tiger 900 Rally Pro Edition"
         }
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/adventure/tiger1200GTPRO/tigerSport850ModelImage.png",
+        "color1": "/images/adventure/tiger1200GTPRO/tigerSport850ModelImage.png",
+        "color1Reversed": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor1Reversed.png",
+        "color2": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor2.png",
+        "color2Reversed": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor2Reversed.png",
+        "color3": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor3.png",
+        "color3Reversed": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor3Reversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Snowdonia White",
+          "price": null,
+          "image": "/images/custom-collors/snowdoniaWhite.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Saphire Black",
+          "price": 200,
+          "image": "/images/custom-collors/sapphireBlack.jpg",
+          "colorCode": "color2"
+        }
+        ,
+        {
+          "colorName": "Lucerne Blue",
+          "price": 200,
+          "image": "/images/custom-collors/lucerneBlue.jpg",
+          "colorCode": "color3"
+        }
+      ],
       "shortSpecInfo": {
         "info1": "Потполно нов 900сс три-цилиндарски мотор",
         "info2": "Врвна спецификација за екстремни off-road можности",

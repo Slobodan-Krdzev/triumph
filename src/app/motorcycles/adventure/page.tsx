@@ -23,8 +23,12 @@ const AdventurePage = async () => {
   const bikes = await bikesRes.json();
 
   const secondaryNavItems: SecondaryNavItemsType[] = [{
-    text: "Tiger 1200",
+    text: "Tiger 1200 GT",
     link: `/motorcycles/adventure/tiger-1200-gt`,
+  },
+  {
+    text: "Tiger 1200 Rally",
+    link: `/motorcycles/adventure/tiger-1200-rally`,
   },
   {
     text: "Tiger Sport 660",

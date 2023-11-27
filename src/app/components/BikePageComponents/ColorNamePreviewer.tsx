@@ -9,7 +9,7 @@ type ColorNamePreviewerProps = {
 const ColorNamePreviewer = ({bike}: ColorNamePreviewerProps) => {
 
     const colorQuery = useSearchParams().get('color')
-    const colorToDisplay = bike.customizationColors.find((color:any) => color.colorCode === colorQuery)
+    const colorToDisplay = bike.customizationColors.find((color:any) => color.colorCode === (colorQuery ?? 'color1'))
 
     if(colorToDisplay) {
         return <p className="text-sm mb-6 text-neutral-500">{colorToDisplay.colorName}</p>
