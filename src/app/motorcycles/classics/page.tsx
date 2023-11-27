@@ -13,6 +13,7 @@ import DiscoverThriumphCard from "@/app/components/homePageComponents/DiscoverTh
 import { FAMILIES, BIKES } from "@/app/constants/constants";
 import { PromoDataType } from "@/app/types/HomeTypes/SharedTypes/types";
 import React from "react";
+import { getBikesByCC } from "./helpers/getBikesByCC";
 
 const ClassicPage = async () => {
   const familyRes = await fetch(`${FAMILIES}?type=classics`, {cache: 'no-store'});
@@ -40,8 +41,6 @@ const ClassicPage = async () => {
       (bike: any) => bike.specialEdition === edition
     );
 
-    console.log("ovde", allBikes);
-
     return filteredBikes;
   };
 
@@ -64,7 +63,7 @@ const ClassicPage = async () => {
 
       <section >
         {/* type treba da e bike */}
-        {getBikesByEdition("400cc", bikes).map((bike: any) => (
+        {getBikesByCC("400", bikes).map((bike: any) => (
           <BikeInfoTextImageBtn
             key={bike.id}
             title={bike.title}

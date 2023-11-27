@@ -2320,7 +2320,7 @@
       },
       "gallery": {
         "modelImage": {
-          "src": "/images/adventure/tiger12ooGTPRO/tiger1200GTPROModelImage.png",
+          "src": "/images/adventure/tiger1200GTPRO/tiger1200GTPROModelImage.png",
           "alt": "Tiger 1200 Rally Pro"
         },
         "promoYoutubeVideo": {
@@ -3369,7 +3369,7 @@
       "model": "speed-400-2024",
       "category": "classics",
       "subFamilyCategory": "speed-400",
-      "edition": "400cc",
+      "edition": "classics",
       "price": 5690,
       "desc": "Со класичниот изглед Speed 400, навистина ја носи онаа modern-classic ДНК во неговата крв.",
       "specs": {
@@ -3427,7 +3427,7 @@
       "model": "scrambler-400-x-2024",
       "category": "classics",
       "subFamilyCategory": "scrambler-400-x",
-      "edition": "400cc",
+      "edition": "classics",
       "desc": "Scrambler 400 X - Подготвен за секаков на подлога.",
       "price": 6390,
       "specs": {

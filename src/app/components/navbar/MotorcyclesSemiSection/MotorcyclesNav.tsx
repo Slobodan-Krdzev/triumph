@@ -21,8 +21,6 @@ type Props = {
 const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
   const [family, setFamily] = useState("adventure");
 
-  // const originalFamilies = ['adventure', 'classics', 'rocket-3', 'roadsters']
-
   return (
     <div className="flex ">
       <div className=" flex flex-col gap-6 basis-3/12 pt-8">
@@ -100,6 +98,7 @@ const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
           </div>
         )}
 
+        {/* za da ne kreira scroll */}
         {getBikesByEdition(family, bikes).length < 5 && (
           <div className="h-96">
             {getBikesByEdition(family, bikes).map((bike: any) => (
