@@ -12,8 +12,9 @@ import { faInfoCircle } from "@fortawesome/free-solid-svg-icons/faInfoCircle";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import { useBreakpoint } from "../helpers/useBreakpoint";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { handleBodyScrollWhenMenuIsOpen } from "../helpers/handleBodyScrollWhenMenuOpens";
+import { CustomizationColorType } from "@/app/types/HomeTypes/SharedTypes/types";
 
 type BottomFixedRibbonProps = {
   info: any;
@@ -24,6 +25,9 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
 
   const breakpoint = useBreakpoint();
   const router = useRouter();
+  const colorQuery = useSearchParams().get('color') ?? 'color1'
+
+  const colorPrice = info.customizationColors.find((color: CustomizationColorType) => color.colorCode === colorQuery).price 
 
   useEffect(() => {
     
@@ -40,6 +44,16 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
 
     handleBodyScrollWhenMenuIsOpen(isMobileMenuShown)
   };
+
+
+  const handlePriceChange = (startingPrice: number) => {
+
+    if(colorQuery !== null) {
+      return startingPrice + colorPrice
+    }
+
+    return startingPrice
+  }
 
   if (breakpoint > 768) {
     return (
@@ -74,7 +88,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
           </button>
           <div className="flex flex-col justify-center items-start basis-2/3 pl-5">
             <p className="text-sm">Цена</p>
-            <p className="text-xl font-medium">€{info.price}.00</p>
+            <p className="text-xl font-medium">€{handlePriceChange(info.price)}.00  </p>
           </div>
         </div>
         <button className="basis-3/12 red-bg-color text-white red-bg-hover-color font-semibold">
