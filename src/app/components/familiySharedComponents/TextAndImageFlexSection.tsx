@@ -21,8 +21,8 @@ const TextAndImageFlexSection = ({
   imageLeft,
 }: TextAndImageProps) => {
   return (
-    <section className="flex flex-col lg:flex-row justify-between items-center ">
-      <div className={`basis-1/2 ${imageLeft ? "order-1" : "order-2"}`}>
+    <section className="flex flex-col lg:flex-row justify-between items-center lg:gap-8">
+      <div className={`basis-1/2 ${imageLeft ? "" : "order-2"}`}>
         <Image src={image.src} alt={image.alt} height={0} width={1000} />
       </div>
       <div className="basis-1/2">

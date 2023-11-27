@@ -4,11 +4,19 @@ import ColorNamePreviewer from "@/app/components/BikePageComponents/ColorNamePre
 import CustomizationColorsListing from "@/app/components/BikePageComponents/CustomizationColorsListing";
 import ImagePreview from "@/app/components/BikePageComponents/ImagePreview";
 import PromoBikeYoutubeVideo from "@/app/components/BikePageComponents/PromoBikeYoutubeVideo";
+import GrayBand from "@/app/components/GrayBand";
 import MainBtn from "@/app/components/MainBtn";
 import SpecTableListi from "@/app/components/SubFamily/Specification/SpecTableListi";
 import SpecsTable from "@/app/components/SubFamily/Specification/SpecsTable";
+import TextAndImageFlexSection from "@/app/components/familiySharedComponents/TextAndImageFlexSection";
 import LatestModelsCarousellSection from "@/app/components/homePageComponents/LatestModelsCarousellSection";
 import { BIKES, FAMILIES } from "@/app/constants/constants";
+
+type BikePagePromoType = {
+  title: string;
+  desc: string;
+  image: string;
+};
 
 const BikePage = async ({ params }: any) => {
   try {
@@ -24,7 +32,7 @@ const BikePage = async ({ params }: any) => {
 
     return (
       <main className="bg-white">
-        <section >
+        <section>
           <div className="flex flex-col justify-end pt-8 md:pt-16 px-4 md:px-8 lg:px-16">
             <BikeTitle text={bike.title} />
             <div className="flex items-center flex-col md:flex-row gap-4 md:gap-0">
@@ -66,17 +74,52 @@ const BikePage = async ({ params }: any) => {
             Спецификација
           </h2>
           <div className="px-4">
-          <SpecTableListi items={[{title: 'Цена', desc: `€ ${bike.price}`}]} title={'Цена'} isOpen={true}/>
-
+            <SpecTableListi
+              items={[{ title: "Цена", desc: `€ ${bike.price}` }]}
+              title={"Цена"}
+              isOpen={true}
+            />
           </div>
           <SpecsTable specs={subFam.subFamilyPageInfo.fullSpecs} />
         </section>
 
-          <PromoBikeYoutubeVideo video={bike.gallery.promoYoutubeVideo.src} alt={bike.gallery.promoYoutubeVideo.alt} />
-        
-          <SpecTableListi items={bike.features} title={'Карактеристики'} isOpen={true}/>
-        
-          <BikePageCarousell items={bike.bikePageCarousell}/>
+        <PromoBikeYoutubeVideo
+          video={bike.gallery.promoYoutubeVideo.src}
+          alt={bike.gallery.promoYoutubeVideo.alt}
+        />
+
+        <SpecTableListi
+          items={bike.features}
+          title={"Карактеристики"}
+          isOpen={true}
+        />
+
+        <BikePageCarousell items={bike.bikePageCarousell} />
+
+        <section className="px-4 md:px-24 py-4 md:py-16">
+          {bike.bikePagePromo.map((promo: BikePagePromoType, idx:number) => (
+            <TextAndImageFlexSection
+              key={promo.title}
+              title={promo.title}
+              textMain={promo.desc}
+              imageLeft={idx % 2 !== 0 ? true : false}
+              image={{
+                src: promo.image,
+                alt: bike.model,
+              }}
+            />
+          ))}
+        </section>
+
+        <GrayBand itemOne={{
+          text: "Контакт",
+          url: "/dealers/dealer-search",
+          icon: "/pin.svg"
+        }} itemTwo={{
+          text: "КОНФИГУРАЦИЈА",
+          url: `/configure/bike/${bike.model}`,
+          icon: "/icon-configurator.svg"
+        }}/>
       </main>
     );
   } catch (err) {
