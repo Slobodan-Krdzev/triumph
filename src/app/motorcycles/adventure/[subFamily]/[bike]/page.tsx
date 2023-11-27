@@ -1,4 +1,5 @@
 import BikeTitle from "@/app/components/BikePageComponents/BikeTitle";
+import BikePageCarousell from "@/app/components/BikePageComponents/Carousell/BikePageCarousell";
 import ColorNamePreviewer from "@/app/components/BikePageComponents/ColorNamePreviewer";
 import CustomizationColorsListing from "@/app/components/BikePageComponents/CustomizationColorsListing";
 import ImagePreview from "@/app/components/BikePageComponents/ImagePreview";
@@ -6,6 +7,7 @@ import PromoBikeYoutubeVideo from "@/app/components/BikePageComponents/PromoBike
 import MainBtn from "@/app/components/MainBtn";
 import SpecTableListi from "@/app/components/SubFamily/Specification/SpecTableListi";
 import SpecsTable from "@/app/components/SubFamily/Specification/SpecsTable";
+import LatestModelsCarousellSection from "@/app/components/homePageComponents/LatestModelsCarousellSection";
 import { BIKES, FAMILIES } from "@/app/constants/constants";
 
 const BikePage = async ({ params }: any) => {
@@ -72,9 +74,9 @@ const BikePage = async ({ params }: any) => {
 
           <PromoBikeYoutubeVideo video={bike.gallery.promoYoutubeVideo.src} alt={bike.gallery.promoYoutubeVideo.alt} />
         
-        <section>
           <SpecTableListi items={bike.features} title={'Карактеристики'} isOpen={true}/>
-        </section>
+        
+          <BikePageCarousell items={bike.bikePageCarousell}/>
       </main>
     );
   } catch (err) {

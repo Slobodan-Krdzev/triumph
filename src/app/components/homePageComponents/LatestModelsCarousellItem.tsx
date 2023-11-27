@@ -7,7 +7,7 @@ type LatestModelsCarousellItemProps = {
   title: string;
   image: string;
   desc: string;
-  url: string;
+  url?: string;
   width: string;
 };
 
@@ -19,21 +19,25 @@ const LatestModelsCarousellItem = ({
   width,
 }: LatestModelsCarousellItemProps) => {
   return (
-    <div className="flex lg:flex-row flex-col" style={{ minWidth: width }}>
-      <div className="md:basis-3/5 basis-full">
-        <Image src={image} alt={title} width={1232} height={468} className="hidden md:block"/>
+    <div className="flex flex-row" style={{ minWidth: width }}>
+      <div className="basis-1/2 overflow-hidden flex justify-end items-center" style={{height: '691px'}}>
+        <Image src={image} alt={title} width={955} height={691}/>
         
       </div>
-      <div className="md:basis-2/5 flex flex-col px-16 justify-center items-start">
+      <div className="basis-1/2 flex flex-col px-16 justify-center items-start">
+        <div className="w-4/12">
         <SectionTitleH2 text={title} color={"dark"} />
         <p className="mb-8">{desc}</p>
-        <MainBtn
+        {url && <MainBtn
           text={"Детали"}
           bgBlack={true}
           isLink={true}
           link={url}
           fullWidth={false}
-        />
+        />}
+        </div>
+        
+        
       </div>
     </div>
   );
