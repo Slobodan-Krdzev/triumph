@@ -70,7 +70,7 @@ const ClassicPage = async () => {
             desc={bike.desc}
             ctaBtn={{
               text: 'Детали',
-              link: `/motorcycles/classics/${bike.subFamilyCategory.model}`,
+              link: `/motorcycles/classics/${bike.subFamilyCategory}/${bike.model}`,
             }}
             image={{
               src: bike.gallery.modelImage.src,
@@ -98,7 +98,7 @@ const ClassicPage = async () => {
             title={bike.title}
             image={bike.gallery.modelImage.src}
             text={"Детали"}
-            url={`/motorcycles/classic/${bike.model}`}
+            url={`/motorcycles/classic/${bike.subFamilyCategory}/${bike.model}`}
             desc={bike.desc}
           />
         ))}
