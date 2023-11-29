@@ -18,7 +18,7 @@ const ReasonsListin = ({ reasons = [] }: ReasonsListinProps) => {
           <h3 className="font-medium md:text-3xl text-xl mb-2">{reason.title}</h3>
           <p className="font-normal md:text-lg text-md">{reason.desc}</p>
 
-          {reason.image && <Image src={reason.image} alt={reason.title} width={1410} height={793}/>}
+          {reason.image && <Image src={reason.image} alt={reason.title} width={1410} height={793} className="mt-2 md:mt-8"/>}
         </li>
       ))}
     </ol>
