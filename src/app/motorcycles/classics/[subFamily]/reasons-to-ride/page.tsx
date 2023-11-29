@@ -1,4 +1,5 @@
 import ReasonsListin from '@/app/components/SubFamily/Reasons/ReasonsListin';
+import SecondaryPagesHeroSection from '@/app/components/SubFamily/SecondaryPagesHeroSection';
 import BikeInfoTextImageBtn from '@/app/components/familiySharedComponents/BikeInfoTextImageBtn';
 import SectionTitleH2 from '@/app/components/familiySharedComponents/SectionTitleH2';
 import { BIKES, FAMILIES } from '@/app/constants/constants';
@@ -19,27 +20,8 @@ const ClassicsReasonsToRide = async ({params}: any) => {
 
     return (
       <>
-        <section
-          style={{
-            backgroundImage: `url("${subFamily.reasonsToDrive.banner.image}")`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            height: "60vh",
-            overflow: "hidden",
-          }}
-        >
-          <div className="flex justify-center items-center w-full h-full overlay">
-            <div className="w-6/12 m-auto flex flex-col justify-center items-center text-white gap-6">
-              <h1 className="md:text-xl text-sm border-b-4 border-white capitalize pb-2">
-                {subFam}
-              </h1>
-              <p className="md:text-5xl text-xl uppercase font-semibold tracking-tighter text-center">
-                Причини зошто да ја одберете серијата
-              </p>
-            </div>
-          </div>
-        </section>
+        <SecondaryPagesHeroSection bannerImage={subFamily.reasonsToDrive.banner.image} subFamilyTitle={subFam} text={`Причини зошто да ја одберете серијата`} />
+
         <main className="px-4">
           <div className="md:w-10/12 lg:w-6/12 m-auto pt-8">
             <SectionTitleH2

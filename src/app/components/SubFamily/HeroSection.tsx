@@ -49,10 +49,11 @@ const HeroSection = ({
         }}
       >
         <div
-          className="absolute text-white flex flex-col items-center"
+          className="absolute text-white flex flex-col items-center w-11/12"
           style={{
             top: "40%",
             left: "50%",
+            right: 0,
             transform: "translate(-50%, -50%)",
           }}
         >

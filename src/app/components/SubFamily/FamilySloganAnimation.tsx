@@ -24,7 +24,7 @@ const FamilySloganAnimation = ({slogans}: FamilySloganAnimationType) => {
     }, [count])
 
   return (
-    <h1 className='lg:text-9xl md:text-6xl text-4xl uppercase font-bold mt-6'>{slogans[count]}</h1>
+    <h1 className='lg:text-9xl md:text-6xl text-4xl uppercase font-bold mt-6 w-full text-center'>{slogans[count]}</h1>
   )
 }
 
