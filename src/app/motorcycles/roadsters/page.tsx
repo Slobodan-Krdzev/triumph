@@ -31,12 +31,12 @@ const RoadstersPage = async () => {
       link: `/motorcycles/roadsters/street-triple-moto2`,
     },
     {
-      text: "street Triple 1200 RR",
-      link: `/motorcycles/roadsters/street-triple-1200-rr`,
+      text: "speed Triple 1200 RR",
+      link: `/motorcycles/roadsters/speed-triple-1200-rr`,
     },
     {
-      text: "street Triple 1200 RS",
-      link: `/motorcycles/roadsters/street-triple-1200`,
+      text: "speed Triple 1200 RS",
+      link: `/motorcycles/roadsters/speed-triple-1200-rs`,
     },
     {
       text: "Trident 660",
