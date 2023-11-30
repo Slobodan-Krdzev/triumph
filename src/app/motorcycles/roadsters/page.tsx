@@ -24,19 +24,19 @@ const RoadstersPage = async () => {
 
     const secondaryNavItems: SecondaryNavItemsType[] = [{
       text: "Street Triple 765",
-      link: `/motorcycles/roadsters/speed-triple-765`,
+      link: `/motorcycles/roadsters/street-triple-765`,
     },
     {
       text: "STREET TRIPLE 765 MOTO2™ EDITION",
-      link: `/motorcycles/roadsters/speed-triple-moto2`,
+      link: `/motorcycles/roadsters/street-triple-moto2`,
     },
     {
-      text: "Speed Triple 1200 RR",
-      link: `/motorcycles/roadsters/speed-triple-1200-rr`,
+      text: "street Triple 1200 RR",
+      link: `/motorcycles/roadsters/street-triple-1200-rr`,
     },
     {
-      text: "Speed Triple 1200 RS",
-      link: `/motorcycles/roadsters/speed-triple-1200`,
+      text: "street Triple 1200 RS",
+      link: `/motorcycles/roadsters/street-triple-1200`,
     },
     {
       text: "Trident 660",

@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { SecondaryNavItemsType } from "../SecondaryNavBar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
@@ -29,7 +29,7 @@ const MobileSecondaryNav = ({
   
 
   return (
-    <section className="px-4 bg-white border-thin-gray-bottom relative">
+    <section className="px-4 bg-white border-thin-gray-bottom relative shadow-xl" style={{zIndex: 47}}>
       <button
         className="py-4 text-red text-md font-bold uppercase italic mr-10 tracking-tighter"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
