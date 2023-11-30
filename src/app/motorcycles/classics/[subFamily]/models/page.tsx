@@ -7,7 +7,7 @@ const ClassicsModelsPage = async ({params}: any) => {
 
   try{
 
-    const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${model}`)
+    const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${model}`, {cache: 'no-store'})
     const bikesData = await bikesRes.json()
 
     return (

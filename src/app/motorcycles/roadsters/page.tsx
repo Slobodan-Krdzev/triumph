@@ -2,6 +2,7 @@ import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeI
 import PageHeroSection from "@/app/components/familiySharedComponents/PageHeroSection";
 import TextAndImageFlexSection from "@/app/components/familiySharedComponents/TextAndImageFlexSection";
 import AudioSection from "@/app/components/roadstersUniqueComp/AudioSection";
+import SecondaryNavBar, { SecondaryNavItemsType } from "@/app/components/whiteSecondaryNavBar/SecondaryNavBar";
 import { BIKES, FAMILIES } from "@/app/constants/constants";
 import { PromoDataType } from "@/app/types/HomeTypes/SharedTypes/types";
 import React from "react";
@@ -21,10 +22,31 @@ const RoadstersPage = async () => {
     });
     const familyData = await familyRes.json();
 
-    console.log(familyData[0].promo);
+    const secondaryNavItems: SecondaryNavItemsType[] = [{
+      text: "Street Triple 765",
+      link: `/motorcycles/roadsters/speed-triple-765`,
+    },
+    {
+      text: "STREET TRIPLE 765 MOTO2™ EDITION",
+      link: `/motorcycles/roadsters/speed-triple-moto2`,
+    },
+    {
+      text: "Speed Triple 1200 RR",
+      link: `/motorcycles/roadsters/speed-triple-1200-rr`,
+    },
+    {
+      text: "Speed Triple 1200 RS",
+      link: `/motorcycles/roadsters/speed-triple-1200`,
+    },
+    {
+      text: "Trident 660",
+      link: `/motorcycles/roadsters/trident`,
+    }]
 
     return (
       <>
+      <SecondaryNavBar items={secondaryNavItems} title={"Roadsters"} configurationLink={"/configure"} />
+
         <PageHeroSection
           title={"Roadsters"}
           desc={familyData[0].shortDesc}
@@ -33,7 +55,7 @@ const RoadstersPage = async () => {
 
         <main className="p-4 lg:p-28 bg-white">
           <TextAndImageFlexSection
-            imageLeft={true}
+            imageLeft={false}
             title={"Генерацискиот Трицилиндричен Мотор"}
             textMain={
               "Моторите на Speed ​​​​Triple и Street Triple се водечки во класата, со карактер и перформанси кои во 1994 година го одбележаа раѓањето на фабричките „streetfighters“ и го создадоа првиот „naked-spotsbike“. Досега најдобро изработени 3-цилиндрични мотори на Triumph се повеќе еволуираат, со експлозивен вртежен момент од почеток до црвено, што обезбедува моментален моментум и врвно забрзување."
