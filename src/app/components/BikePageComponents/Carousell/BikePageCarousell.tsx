@@ -12,11 +12,11 @@ const BikePageCarousell = ({ items = [] }: BikePageCarousellProps) => {
   const breakpoint = useBreakpoint();
 
   if (breakpoint >= 1024) {
-    return <LatestModelsCarousellSection items={items}/>;
+    return <LatestModelsCarousellSection items={items} showTitle={false}/>;
   }
 
   if (breakpoint < 1024) {
-    return <LatestModelsMobile items={items}/>;
+    return <LatestModelsMobile items={items} showTitle={false}/>;
   }
 };
 

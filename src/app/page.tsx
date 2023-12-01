@@ -104,7 +104,7 @@ export default async function Home() {
             link={"/configure"}
             btnText={"Конфигурирај"}
           />
-          <LatestModelsCarousellSection items={carousellItems}/>
+          <LatestModelsCarousellSection items={carousellItems} showTitle={true}/>
           <DiscoverThriumphSection />
         </>
       );

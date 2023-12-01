@@ -4,11 +4,11 @@ import BikeInfoTextImageBtn from '@/app/components/familiySharedComponents/BikeI
 import { BIKES, FAMILIES } from '@/app/constants/constants';
 import React from 'react'
 
-const SubFamReasonsToRide = async ({params}: any) => {
-  const subFam = params.subFamily;
+const AccessoriesPageRoadsters = async ({params}: any) => {
+    const subFam = params.subFamily;
 
     try {
-      const familyRes = await fetch(`${FAMILIES}?type=adventure`, {
+      const familyRes = await fetch(`${FAMILIES}?type=roadsters`, {
         cache: "no-store",
       });
       const familyData = await familyRes.json();
@@ -54,4 +54,4 @@ const SubFamReasonsToRide = async ({params}: any) => {
     }
 }
 
-export default SubFamReasonsToRide
+export default AccessoriesPageRoadsters

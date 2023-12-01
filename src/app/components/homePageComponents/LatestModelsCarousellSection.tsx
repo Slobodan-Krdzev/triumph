@@ -20,10 +20,11 @@ export type LatestModelsCarousellItemType = {
 
 
 type LatesModelsCarousellSectionProps = {
-  items: LatestModelsCarousellItemType[]
+  items: LatestModelsCarousellItemType[],
+  showTitle: boolean
 }
 
-const LatestModelsCarousellSection = ({items}: LatesModelsCarousellSectionProps) => {
+const LatestModelsCarousellSection = ({items, showTitle}: LatesModelsCarousellSectionProps) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const breakpoint = useBreakpoint()
 
@@ -41,7 +42,8 @@ const LatestModelsCarousellSection = ({items}: LatesModelsCarousellSectionProps)
   if(breakpoint >= 1024) {
     return (
       <section className="flex items-center flex-col overflow-hidden relative pt-16 basis-1/2">
-        <SectionTitleH2 text={"Најнови Модели"} color={"dark"} />
+        {showTitle && <SectionTitleH2 text={"Најнови Модели"} color={"dark"} />}
+        
   
         <div className="carousell-indicators z-10 flex justify-between w-1/6 text-xl text-neutral-600">
           <p>
@@ -77,7 +79,7 @@ const LatestModelsCarousellSection = ({items}: LatesModelsCarousellSectionProps)
   }
   
   if(breakpoint < 1024) {
-    return <LatestModelsMobile items={items}/>
+    return <LatestModelsMobile items={items} showTitle={true}/>
   }
 };
 

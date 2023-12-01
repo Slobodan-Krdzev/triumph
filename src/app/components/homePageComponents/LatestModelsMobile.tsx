@@ -7,10 +7,11 @@ import SectionTitleH2 from "../familiySharedComponents/SectionTitleH2";
 import { LatestModelsCarousellItemType } from "./LatestModelsCarousellSection";
 
 type LatesModelsMObileProps = {
-  items: LatestModelsCarousellItemType[]
+  items: LatestModelsCarousellItemType[],
+  showTitle: boolean
 }
 
-const LatestModelsMobile = ({items = []}: LatesModelsMObileProps) => {
+const LatestModelsMobile = ({items = [], showTitle}: LatesModelsMObileProps) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const updateIndex = (newIndex: number) => {
@@ -25,11 +26,12 @@ const LatestModelsMobile = ({items = []}: LatesModelsMObileProps) => {
 
   return (
     <section className="flex flex-col items-center overflow-hidden relative p-4">
-      <SectionTitleH2 text={"Најнови Модели"} color={"dark"} />
+      
+      {showTitle && <SectionTitleH2 text={"Најнови Модели"} color={"dark"} />}
 
       <div className="z-10 mb-2 flex justify-between text-xl text-neutral-600 w-full px-4">
         <p>
-          0{activeIndex + 1} / 0{items.length}
+        {(activeIndex + 1) > 9 ? activeIndex + 1 : `0${activeIndex + 1}`} / {items.length > 9 ? `${items.length}` : `0${items.length}`}
         </p>
         <div className="flex justify-between gap-4">
           <button onClick={() => updateIndex(activeIndex - 1)}>
