@@ -46,7 +46,7 @@ const SectionContent = ({ families, bikes, bikeToRender }: Props) => {
       onMouseLeave={handleSectionClose}
       style={{
         position: "fixed",
-        top: 93,
+        top: 64,
         left: 0,
         width: "100%",
         zIndex: 9999,

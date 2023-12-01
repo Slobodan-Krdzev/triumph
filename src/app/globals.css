@@ -27,6 +27,7 @@ img {
 body {
   background-color: var(--tetriary-bg-color);
   /* overflow: hidden; */
+  padding-top: 64px;
 }
 
 .menu-visible {

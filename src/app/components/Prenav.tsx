@@ -10,7 +10,7 @@ function Prenav () {
 
 
   return (
-    <div className='flex gray-cl py-2 px-10 justify-end text-white text-xs' onMouseEnter={handleSectionClose}>
+    <div className='flex py-2 px-10 justify-end text-white text-xs' onMouseEnter={handleSectionClose}>
       <ul className='flex gap-4 items-center'>
         <li><Link href={"/dealers/dealer-search"} className='text-white'>Контакт</Link></li>
         <li><Link href={"/configuration"} className='text-white'></Link>Конфигурација</li>

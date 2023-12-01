@@ -5121,7 +5121,220 @@
           "url": "/motorcycles/rocket-3/rocket-3",
           "shortDesc": "Со мускулестиот изглед, прекрасениот стил и највисокото ниво на спецификации и технологија, Rocket-3 серијата изгледа енормно на патот но сепак е лесно управлива.",
           "subFamilyPageInfo": {
-            "desc1": ""
+            "heroSlogans": [
+              "Лидерски",
+              "Перформанси",
+              "на светско ниво"
+            ],
+            "topSection": {
+              "title": "Ракета",
+              "desc": "Опремен со најголемиот мотор некогаш ставен во продукциски мотор, Rockеt 3 серијата со нејзиниот 2500сс мотор, продуцира највисок обртен момент и невидено забрзување во светот и тоа со смиреност и превидливост при апликација на гас. Rocket-3 серијата си седи во посебна класа сам за себе.",
+              "subtitle": "Го искусуваме раѓањето на нова ултимативна генерациска Triumph легенда."
+            },
+            "youtubeVideo": "https://www.youtube.com/embed/aB2M_aUgjd8",
+            "fullSpecs": {
+              "engineTransmission": [
+                {
+                  "title": "Тип на Мотор",
+                  "desc": "водно ладење, 12 вентили, DOHC, линиски 3-цилиндри, 240° редослед на есклпозии"
+                },
+                {
+                  "title": "капацитет",
+                  "desc": "660 cc"
+                },
+                {
+                  "title": "диаметар",
+                  "desc": "74.04 mm"
+                },
+                {
+                  "title": "рута",
+                  "desc": "51.1 mm"
+                },
+                {
+                  "title": "компресија",
+                  "desc": "11.95:1"
+                },
+                {
+                  "title": "Мах. Коњски Сила",
+                  "desc": "81 PS / 80 bhp (59.6 kW) @ 10,250 rpm"
+                },
+                {
+                  "title": "Мах. Обртен Момент",
+                  "desc": "64 Nm @ 6,250 rpm"
+                },
+                {
+                  "title": "Систем за убризгување",
+                  "desc": "Multipoint sequential electronic fuel injection with electronic throttle control"
+                },
+                {
+                  "title": "Систем за Издувни гасови",
+                  "desc": "3 во 1 не-раѓосувачки челик"
+                },
+                {
+                  "title": "Финална Трансмисија",
+                  "desc": "X-ring chain"
+                },
+                {
+                  "title": "Квачило",
+                  "desc": "Wet, multi-plate, slip"
+                },
+                {
+                  "title": "Менувачка Кутија",
+                  "desc": "6 брзини"
+                }
+              ],
+              "frame": [
+                {
+                  "title": "шасија",
+                  "desc": "тубуларна челична шасија"
+                },
+                {
+                  "title": "вилушка",
+                  "desc": "алуминиум"
+                },
+                {
+                  "title": "предно тркало",
+                  "desc": "19 x 2.5' die-cast легура "
+                },
+                {
+                  "title": "задно тркало",
+                  "desc": "17 x 4.25' die-cast легура "
+                },
+                {
+                  "title": "предна гума",
+                  "desc": "100/90-19"
+                },
+                {
+                  "title": "задна гума",
+                  "desc": "150/70R17"
+                },
+                {
+                  "title": "предна суспензија",
+                  "desc": "Marzocchi Inverted Fork 45mm"
+                },
+                {
+                  "title": "задна суспензија",
+                  "desc": "Marzocchi задна суспензија со систем за подесување"
+                },
+                {
+                  "title": "предни сопирачки",
+                  "desc": "Dual 320mm дискови, 4-piston monobloc Brembo Stylema calipers. Front radial pump, ABS"
+                },
+                {
+                  "title": "задна сопирачка",
+                  "desc": "Еден 255 mm диск. Brembo single piston floating caliper, ABS"
+                },
+                {
+                  "title": "инструментна плочка",
+                  "desc": "5 TFT екран"
+                }
+              ],
+              "dimension": [
+                {
+                  "title": "ширина на волан",
+                  "desc": "830 mm"
+                },
+                {
+                  "title": "висина без ретровизори",
+                  "desc": "1410-1460 mm"
+                },
+                {
+                  "title": "Solar height",
+                  "desc": "820-840 mm"
+                },
+                {
+                  "title": "мегу-осовинско растојание ",
+                  "desc": "1556 mm"
+                },
+                {
+                  "title": "Custer Corner",
+                  "desc": "24.6 º"
+                },
+                {
+                  "title": "Trace",
+                  "desc": "133.3 mm"
+                },
+                {
+                  "title": "Тежина",
+                  "desc": "192 kg"
+                },
+                {
+                  "title": "капацитет на резервоар",
+                  "desc": "20 L"
+                }
+              ],
+              "fuelConsumption": [
+                {
+                  "title": "Потрошувачка",
+                  "desc": "5.2l /100km"
+                },
+                {
+                  "title": "CO2 загадување",
+                  "desc": "Euro 5 Стандарди измерени според Регулатива 168/2013/EC. Резултатите се добиени во специјални тест средини и се на располагање само за споредба. Вистинските резултат може да варираат врз различни средини."
+                }
+              ]
+            },
+            "grayCarousell": [
+              {
+                "id": "carouselItem1",
+                "title": "Најновиот и Првенец во класата на “Streetfighter“ Моторцикли",
+                "desc": "Сега, уште повеќе сила благодарејки на Мото2 моторот со неверојатна агилност, агресивен изглед и електронска технологија која поставува нови стандарди.",
+                "image": "/images/roadsters/streetTriple765/streetTriple765GrayCaro1.avif"
+              },
+              {
+                "id": "carouselItem2",
+                "title": "Новиот Репер Во класата на “naked“ моторцикли",
+                "desc": "ТНови технолошки унапредувања, агилност, највисока запирачка спецификација и новиот репер во смисла на моќност во класата.",
+                "image": "/images/roadsters/streetTriple765/streetTriple765GrayCaro2.avif"
+              },
+              {
+                "id": "carouselItem3",
+                "title": "Нај-моќната серија досега",
+                "desc": "Со голем чекор напред во развивање на Мото2 моторот, Street Triple серијата се закити со уште повеќе обртен момент и сила - 120 РЅ за R верзијата и 130 РЅ за RS Verzijata.",
+                "image": "/images/roadsters/streetTriple765/streetTriple765GrayCaro3.avif"
+              }
+            ],
+            "youtubeVideosCarousellItems": [{
+                "src": "https://www.youtube.com/embed/cDNnqoRB50w",
+                "title": "Triumph Street Triple Launch Valencia 2022"
+              },
+              {
+                "src": "https://www.youtube.com/embed/A6MwjE782iI",
+                "title": "Web | Street Triple R Hero"
+              },
+              {
+                "src": "https://www.youtube.com/embed/Qj9dxotylh0",
+                "title": "Web | Street Triple RS Hero"
+              },
+              {
+              "src": "https://www.youtube.com/embed/--p8YSQxEp0",
+              "title": "Web | Engine In Motion Street Triple 765"
+              },
+              {
+                "src": "https://www.youtube.com/embed/JR-wXQFKG2Q",
+                "title": "Web - DE | Street Triple R | Features and Benefits"
+              },
+              {
+                "src": "https://www.youtube.com/embed/cDNnqoRB50w",
+                "title": "Triumph Street Triple Launch Valencia 2022"
+              },
+              {
+                "src": "https://www.youtube.com/embed/kP7FA3k6Hv8",
+                "title": "New Street Triple 765 RS | Features and Benefits"
+              }
+            ],
+            "audioSection": {
+              "audio": "/images/roadsters/streetTriple765/streetTriple765Sound.mp3",
+              "title": "Три-цилиндречен звук кој го тресе земјиното тло.",
+              "desc": "Новиот издувен систем го испорачува оној препознатлив три-цилиндарски звук на моторот.",
+              "logo": null
+            },
+            "specNumbers": [
+              { "data": "765", "info": "cc Мотор" },
+              { "data": "80", "info": "Nm обртен момент" },
+              { "data": "120-130", "info": "PS - Максимална Сила" },
+              { "data": "10.000", "info": "КМ Сервисен Интервал" }
+            ]
           },
           "shortSpecInfo": {
             "info1": "2500cc Rocket Мотор",
@@ -5131,6 +5344,18 @@
             "modelImage": {
               "src": "/images/rocket/rocket3Model.png",
               "alt": "Rocket 3 Range Model Image"
+            },
+            "subFamilyHeroVideo": {
+              "src": "/images/rocket-3/rocket3SubFamHeroVideo.webm",
+              "alt": "Rocket 3 "
+            },
+            "subFamilyTopSectionImage": {
+              "src": "/images/rocket-3/rocket-3TopSectionImage.avif",
+              "alt": "Rocket 3"
+            },
+            "subFamilyTopSectionBGImage": {
+              "src": "/images/rocket-3/rocket-3TopSectionImageBG.avif",
+              "alt": "Rocket 3"
             }
           }
         }
@@ -6855,6 +7080,10 @@
         "info1": "Три-цилиндричен Rocket 3 мотор со 2,500cc зафатнина",
         "info2": "167 коњски сили при 6000rpm",
         "info3": "Обртен момент од 221Nm"
+      },
+      "subFamilyPromo": {
+        "title": "Rocket 3 R",
+        "desc": "Врвниот мускулест “Roadster“ кој испорачува инстанта сила и обртен момент, како и извонредна контрола и способност. Цени од €25,290.00."
       }
     },
     {
@@ -6883,6 +7112,10 @@
         "info1": "Три-цилиндричен Rocket 3 мотор со 2,500cc зафатнина",
         "info2": "167 коњски сили при 6000rpm",
         "info3": "Обртен момент од 221Nm"
+      },
+      "subFamilyPromo": {
+        "title": "Rocket 3 GT",
+        "desc": "Врвни перформанси и изглед, неверојатен комфорт со релаксирана возачка позиција која дозволува авантури со долги дистанци. Цени од €25,990.00."
       }
     },
     {
@@ -6911,11 +7144,15 @@
         "info1": "Три-цилиндричен Rocket 3 мотор со 2,500cc зафатнина",
         "info2": "167 коњски сили при 6000rpm",
         "info3": "Обртен момент од 221Nm"
+      },
+      "subFamilyPromo": {
+        "title": "Rocket 3 r 221 special edition",
+        "desc": "Rocket 3 специјално издание, кое го слави и го добива името по тоа што е првиот мотор кој испорача обртен момент од 221 Nm. Цени од €26,190.00."
       }
     },
     {
       "id": 23,
-      "title": "Rocket 3 GT 221",
+      "title": "Rocket 3 GT Chrome Edition",
       "model": "rocket-3-gt-chrome-edition-2023",
       "category": "rocket-3",
       "subFamilyCategory": "rocket-3",
@@ -6939,11 +7176,15 @@
         "info1": "Три-цилиндричен Rocket 3 мотор со 2,500cc зафатнина",
         "info2": "167 коњски сили при 6000rpm",
         "info3": "Обртен момент од 221Nm"
+      },
+      "subFamilyPromo": {
+        "title": "НОВИОТ ROCKET 3 GT CHROME EDITION",
+        "desc": "Врвни перформанси и релаксирана возачка позиција. Цени од €16,990.00."
       }
     },
     {
       "id": 24,
-      "title": "Rocket 3 GT Chrome Edition",
+      "title": "Rocket 3 GT 221",
       "model": "rocket-3-gt-221-edition-2022",
       "category": "rocket-3",
       "subFamilyCategory": "rocket-3",
@@ -6967,6 +7208,10 @@
         "info1": "Три-цилиндричен Rocket 3 мотор со 2,500cc зафатнина",
         "info2": "167 коњски сили при 6000rpm",
         "info3": "Обртен момент од 221Nm"
+      },
+      "subFamilyPromo": {
+        "title": "НОВиот Rocket 3 GT Chrome Edition",
+        "desc": "Врвни перформанси со релаксиран крузерски карактер отсега со нов специјализиран хромиран дизајн. Импресивен, дискретен - достапен само една година. Цени од €26,890.00."
       }
     },
     {
@@ -6995,6 +7240,10 @@
         "info1": "Три-цилиндричен Rocket 3 мотор со 2,500cc зафатнина",
         "info2": "167 коњски сили при 6000rpm",
         "info3": "Обртен момент од 221Nm"
+      },
+      "subFamilyPromo": {
+        "title": "НОВиот Rocket 3 r Chrome Edition",
+        "desc": "Врвниот “roadster“ сега со хромирани детали врз Jet Black боја.Достапен само една година. Цени од €26,190.00."
       }
     },
     {

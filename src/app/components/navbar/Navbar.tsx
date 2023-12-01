@@ -31,16 +31,17 @@ const Navbar = () => {
       .then((data) => setBikes(data));
   }, []);
 
-
   return (
-    <header>
+    <header
+      className={`fixed top-0 left-0 right-0 `}
+      style={{zIndex: 9999}}
+    >
       {breakpoint > 768 && (
         <>
-          <Prenav />
-          <Nav fams={families} allBikes={bikes}/>
+          <Nav fams={families} allBikes={bikes} />
         </>
       )}
-      {breakpoint <= 768 && <MobileNav fams={families} allBikes={bikes}/>}
+      {breakpoint <= 768 && <MobileNav fams={families} allBikes={bikes} />}
     </header>
   );
 };

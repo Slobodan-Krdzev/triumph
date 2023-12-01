@@ -71,7 +71,7 @@ const MotorcycleInfo = ({ bike }: MotorcycleInfoProps) => {
             text={"Детали"}
             bgBlack={true}
             isLink={true}
-            link={`/motorcycles/${bike[0]?.category}/${bike[0]?.model}`}
+            link={`/motorcycles/${bike[0]?.category}/${bike[0]?.subFamilyCategory}`}
           />
         </div>
       </div>
