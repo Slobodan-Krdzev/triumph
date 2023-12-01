@@ -14,10 +14,10 @@ const ImageActions = () => {
   const handleReversal = () => {
 
     if(colorQuery) {
-      router.push(`${pathname}?color=${colorQuery}&reversed=${isImageReversed}`);
+      router.push(`${pathname}?color=${colorQuery}&reversed=${isImageReversed}`, {scroll: false});
 
     } else {
-      router.push(`${pathname}?color=color1&reversed=${isImageReversed}`);
+      router.push(`${pathname}?color=color1&reversed=${isImageReversed}`, {scroll: false});
 
     }
 
@@ -25,8 +25,7 @@ const ImageActions = () => {
   };
 
   return (
-    <div>
-      <div className="absolute group bottom-10  left-1/2">
+      <div className="absolute group actions">
         <button
           className="p-3 bg rounded-full"
           onClick={handleReversal}
@@ -35,7 +34,6 @@ const ImageActions = () => {
         </button>
         <p className="absolute -bottom-5 left-1 hidden group-hover:block text-xs">Сврти</p>
       </div>
-    </div>
   );
 };
 

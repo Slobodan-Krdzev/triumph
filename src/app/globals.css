@@ -276,4 +276,22 @@ p {
   width: 100%;
 }
 
-/* YOUTUBE CARO PAGINATION BULLETS STYLE */
+/* CUSTOMIZATION PAGE ACTIONS POSITIONING */
+
+.actions {
+  bottom: 2.5rem;
+  left: 50%
+
+  
+}
+
+@media screen and (max-width: 768px) {
+  .actions {
+    border: 2px solid red;
+    
+    right: 2%;
+    bottom: 55%;
+    left: unset;
+  }
+}
+

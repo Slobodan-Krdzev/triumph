@@ -21,8 +21,8 @@ const BikeConfigPage = async ({ params }: any) => {
     return (
       <main className="relative h-screen">
         <section className="flex lg:flex-row flex-col">
-          <div className="flex flex-col basis-12/12 grow bg-white shadow-2xl">
-            <div className="flex  uppercase text-sm font-medium slight-white-bg">
+          <div className="flex flex-col md:basis-8/12  bg-white shadow-2xl">
+            <div className="flex uppercase text-sm font-medium slight-white-bg">
               <div className="grow flex justify-center items-center py-3 px-10 border-b-2 border-gray-300">
                 <p> <FontAwesomeIcon icon={faCheck} color="black"/> Mотор</p>
               </div>
@@ -40,7 +40,7 @@ const BikeConfigPage = async ({ params }: any) => {
               <ImageActions/>
             </div>
           </div>
-          <div className="flex justify-center lg:justify-start items-center md:px-8 px-4 lg:py-10 py-8 shrink">
+          <div className="flex justify-center lg:justify-start items-start md:px-8 px-4 lg:py-10 py-8 md:basis-4/12">
             <div className="md:w-10/12 w-full">
               <h2 className="text-xl text-center font-bold uppercase mb-2 tracking-wider">
                 Одберете Боја

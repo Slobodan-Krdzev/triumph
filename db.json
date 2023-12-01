@@ -6547,6 +6547,27 @@
           "alt": "Street Triple 765 R"
         }
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/roadsters/streetTriple765RModel.png",
+        "color1": "/images/roadsters/streetTriple765/streetTriple765Color1.avif",
+        "color1Reversed": "/images/roadsters/streetTriple765/streetTriple765Color1Reversed.png",
+        "color2": "/images/roadsters/streetTriple765/streetTriple765Color2.avif",
+        "color2Reversed": "/images/roadsters/streetTriple765/streetTriple765Color2Reversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Silver Ice",
+          "price": null,
+          "image": "/images/custom-collors/silverice.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Crystal White",
+          "price": 200,
+          "image": "/images/custom-collors/crystalWhite.jpg",
+          "colorCode": "color2"
+        }
+      ],
       "shortSpecInfo": {
         "info1": "765cc мотор",
         "info2": "Максимална јачина од 120-130 PS",
@@ -6555,7 +6576,101 @@
       "subFamilyPromo": {
         "title": "НОВИОТ STREET TIRPLE 765",
         "desc": "Со значаен чекор напред во перформанси, можности и технолошки напредок подкрепнат од легендарниот три-цилиндричен мотор - овој моторцикл е најдобриот “streetfighter“ во класата. Цени од €12,290.00"
-      }
+      },
+      "features": [
+        {
+          "title": "Мотор",
+          "desc": "TR series мотор (Euro 5 compliant))"
+        },
+        {
+          "title": "Менувач",
+          "desc": "6-брзински менувач со асистенција на квачило"
+        },
+        {
+          "title": "Систем за Пролизгување",
+          "desc": "Ride-by-wire со автоматски систем за пролизгување"
+        },
+        {
+          "title": "Ергономија",
+          "desc": "Висина на седиште 790мм, тенка половица и возбудлива ергономија"
+        },
+        {
+          "title": "Шасија",
+          "desc": "Лесна шасија со задна вилушка на штрафови и алуминиумска предна вилушка"
+        },
+        {
+          "title": "Суспензија",
+          "desc": "43мм предна суспензија и заден амортизер со подесување"
+        },
+        {
+          "title": "Сопирачки",
+          "desc": "300мм дискови и клешти со АВЅ"
+        },
+        {
+          "title": "ИНструментна Плоча",
+          "desc": "LCD дисплеј со аналоген мерач на брзина"
+        },
+        {
+          "title": "Светло",
+          "desc": "LED главни и дневни светла"
+        },
+        {
+          "title": "Сервисен Интервал",
+          "desc": "Лидер во класата со 16,000км сервисен интервал"
+        }
+      ],
+      "bikePageCarousell": [
+        {
+          "title": "Стил и ДНК",
+          "desc": "Од класичниот мотор и презисно обликуваниот резервоар за гориво па се до премиум боја, извонредниот стил и силуетата која не се заборава, Speed 400 сигурно е Triumph.",
+          "image": "/images/classics/speed400/speed400BikePageCaro1.avif"
+        },
+        {
+          "title": "Луксузни финиши",
+          "desc": "Препознатливиот пескарен финиш на моторот, елоксирани златни вилушки, високо квалитетна боја и извонредните детали покажуваат дека Speed 400 е изработен по највисоки стандарди.",
+          "image": "/images/classics/speed400/speed400BikePageCaro2.avif"
+        },
+        {
+          "title": "TR Мотори",
+          "desc": "Најновата TR серија на мотори ги комбинира најновите технологии со модерно-класични естетски детали и нуди топ перформанси, како и оној препознатливо чувство кога возите Triumph мотор а и непогрешливиот звук од издувната цевка.",
+          "image": "/images/classics/speed400/speed400BikePageCaro3.avif"
+        },
+        {
+          "title": "Шасија и Суспензија",
+          "desc": "Нова “roadster“ шасија и суспензијата од високо ниво, испорачуваат перфектна позиција за возење и за искусни и за неискусни возачи. .",
+          "image": "/images/classics/speed400/speed400BikePageCaro4.avif"
+        },
+        {
+          "title": "Ергономија",
+          "desc": "Speed 400 е наменет за секого, па така на него комотно ќе се чувствуваат возачи од секакви димензии. Благодарејки на неговата тенка половина, атрактивна и природна возачка позиција комбинира комфорт и самодоверба при возење на моторот.",
+          "image": "/images/classics/speed400/speed400BikePageCaro5.avif"
+        },
+        {
+          "title": "Тркала и Гуми",
+          "desc": "Лесни 10-жични алуминиумски тркала од 17 инчи споени со гуми од премиум брендови, нудат самодоверба во сите услови.",
+          "image": "/images/classics/speed400/speed400BikePageCaro6.avif"
+        },
+        {
+          "title": "Сопирачки",
+          "desc": "Респонсивноста и Самодовербата при запирање произлегува од сопирачки со клешти од по две клипчиња за запирање, дискови и Bosch ABS.",
+          "image": "/images/classics/speed400/speed400BikePageCaro7.avif"
+        },
+        {
+          "title": "Технологија",
+          "desc": "Speed 400 e буквално натоварен со модерна технологија која е фокусирана на возачот. Истата е составена од систем за контрола на пролизгување, асистенција на квачило, Bosch ABS, LED расвета и сосема нова инструментна табла која се состои од аналоген брзино-метар и LCD екран.",
+          "image": "/images/classics/speed400/speed400BikePageCaro8.avif"
+        },
+        {
+          "title": "Безбедност",
+          "desc": "Speed 400 е опремен со волан кој се заклучува и имобилизатор против кражби. Исто така во клучот на Speed 400 е вграден и сигурносен чип кој обезбедува моторот да биде запален само од страна на својот сопственик.",
+          "image": "/images/classics/speed400/speed400BikePageCaro9.avif"
+        },
+        {
+          "title": "Вредност",
+          "desc": "Со висока спецификација, квалитет и перформанси при мали трошоци за одржување со 16,000км сервисен интервал и две годишна гаранција која не истекува по одредена помината километража - Speed 400 е од голема вредност..",
+          "image": "/images/classics/speed400/speed400BikePageCaro10.avif"
+        }
+      ]
     },
     {
       "id": 16,
@@ -6579,6 +6694,35 @@
           "alt": "Street Triple 765 RS"
         }
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/classics/speed400CarnivalRed.png",
+        "color1": "/images/classics/speed400CarnivalRed.png",
+        "color1Reversed": "/images/classics/speed400CarnivalRedReversed.png",
+        "color2": "/images/classics/speed400CaspianBlue.png",
+        "color2Reversed": "/images/classics/speed400CaspianBlueStormGreyReversed.png",
+        "color3": "/images/classics/speed400PhantomBlack.png",
+        "color3Reversed": "/images/classics/speed400phantomBlackStormGreyReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Carnival Red / Storm Gray",
+          "price": "Вклучена во Цената",
+          "image": "/images/custom-collors/carnivalRedStormGrey.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Caspian Blue / Storm Gray",
+          "price": "Вклучена во Цената",
+          "image": "/images/custom-collors/caspianBlueStormGray.jpg",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Phantom Black / Storm Gray",
+          "price": "Вклучена во Цената",
+          "image": "/images/custom-collors/phantomBlackStormGrey.jpg",
+          "colorCode": "color3"
+        }
+      ],
       "shortSpecInfo": {
         "info1": "765cc мотор",
         "info2": "Максимална јачина од 130 PS",
@@ -7897,6 +8041,10 @@
         "modelImage": {
           "src": "/images/roadsters/streetTriple765Moto2ModelImage.avif",
           "alt": "Street Triple MOTO 2"
+        },
+        "promoYoutubeVideo": {
+          "src": "https://www.youtube.com/embed/omKdaaynGCg",
+          "alt": "Speed 400 Youtube Video"
         }
       },
       "shortSpecInfo": {
