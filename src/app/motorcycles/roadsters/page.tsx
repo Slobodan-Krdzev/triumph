@@ -40,7 +40,7 @@ const RoadstersPage = async () => {
     },
     {
       text: "Trident 660",
-      link: `/motorcycles/roadsters/trident`,
+      link: `/motorcycles/roadsters/trident-660`,
     }]
 
     return (
