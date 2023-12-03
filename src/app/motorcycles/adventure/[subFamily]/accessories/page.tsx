@@ -16,6 +16,8 @@ const SubFamReasonsToRide = async ({params}: any) => {
   
       const bikesRes = await fetch(`${BIKES}?model=${subFam}`);
       const bikesData = await bikesRes.json();
+
+      const hasAccessoryInfoText = subFamily.accessory.hasOwnProperty('infoText')
   
       return (
         <>
@@ -24,6 +26,8 @@ const SubFamReasonsToRide = async ({params}: any) => {
             subFamilyTitle={subFam}
             text={`Аксесоари`}
           />
+
+          {hasAccessoryInfoText && <p>has info text</p>}
   
           <main className="px-4 md:px-16 lg:px-40">
             <AccessoriesListing items={subFamily.accessory.accessoryTypes} />

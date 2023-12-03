@@ -40,7 +40,7 @@ const AdventurePage = async () => {
   },
   {
     text: "Tiger 900",
-    link: `/motorcycles/adventure/tiger-900-range`,
+    link: `/motorcycles/adventure/tiger-900-2023`,
   }]
 
   return (

@@ -17,6 +17,8 @@ const SubFamReasonsToRidePage = async ({ params }: any) => {
     const bikesRes = await fetch(`${BIKES}?model=${subFam}`);
     const bikesData = await bikesRes.json();
 
+    console.log("bikes", bikesData);
+    
     return (
       <>
         <section
@@ -41,7 +43,7 @@ const SubFamReasonsToRidePage = async ({ params }: any) => {
           </div>
         </section>
         <main className="px-4">
-          <div className="md:w-10/12 lg:w-6/12 m-auto pt-8">
+          <div className="md:w-10/12 lg:w-6/12 m-auto md:py-16 py-8">
             <SectionTitleH2
               text={subFamily.reasonsToDrive.infoText.title}
               color={"dark"}

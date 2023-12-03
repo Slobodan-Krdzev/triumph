@@ -41,6 +41,10 @@ const SubFamilyPage = async ({ params }: any) => {
         "heroDesc"
       );
 
+      const hasTopSection = family.subFamilies[query].subFamilyPageInfo.hasOwnProperty(
+        "topSection"
+      );
+
     return (
       <>  
       {hasHeroDesc && <HeroSection
@@ -58,7 +62,7 @@ const SubFamilyPage = async ({ params }: any) => {
         
 
         <main className="bg-white">
-          <TopSection
+          {hasTopSection && <TopSection
             title={family.subFamilies[query].subFamilyPageInfo.topSection.title}
             desc={family.subFamilies[query].subFamilyPageInfo.topSection.desc}
             subtitle={
@@ -70,7 +74,8 @@ const SubFamilyPage = async ({ params }: any) => {
             bgImage={
               family.subFamilies[query].gallery.subFamilyTopSectionBGImage.src
             }
-          />
+          />}
+          
 
           <section className="px-4 lg:px-20 xl:px-40">
             {bikes.map((bike: any) => (
