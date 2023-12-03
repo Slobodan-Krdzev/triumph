@@ -12,7 +12,7 @@ const NavListItem = ({ text, filter }: NavListItemProps) => {
   const pathname = usePathname();
   const query = useSearchParams().get('navItem')
 
-  const handleHover = () => router.push(`${pathname}/?navItem=${filter}`);
+  const handleHover = () => router.push(`${pathname}/?navItem=${filter}`, {scroll: false});
 
   return (
     <>

@@ -15,7 +15,7 @@ const SingleMotorcycleCard = ({ bike }: SingleMorotcycleCardProps) => {
 
   const handleBikeSelect = () => {
 
-    router.push(`${pathname}?navItem=${queries}&bikeID=${bike.id}`)
+    router.push(`${pathname}?navItem=${queries}&bikeID=${bike.id}`,{scroll: false})
   }
 
   return (

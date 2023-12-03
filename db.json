@@ -4986,6 +4986,102 @@
               { "data": "10.000", "info": "КМ Сервисен Интервал" }
             ]
           },
+          "reasonsToDrive": {
+            "banner": {
+              "image": "/images/classics/speed400/speed400ReasonsBanner.avif"
+            },
+            "infoText": {
+              "title": "зошто баш Speed 400 !?",
+              "desc": "Време е да се разбудите од досадните соништа со Tiger Sport 660. Ова е најпристапниот мотор од Tiger фамилијата на Triumph и е спремен за секојдневни авантури.Tiger Sport 660 е дизајниран да ги надмине вашите очекувања, од авантуристички тури па се до дневни обврски. Кај нас во Triumph се е во знак на возење, а еве и зошто:"
+            },
+            "reasons": [
+              {
+                "title": "Безвременски и Автентичен Стил",
+                "desc": "Conceived and designed in Hinckley, UK, the Speed ​​400 has been built with the same meticulous attention to detail as every Triumph model. This stunning motorcycle combines timeless design DNA with modern performance. The unmistakable Triumph roadster silhouette, distinctive sculpted fuel tank and classic engine profile echo legends of the past and with exquisite details such as the distinctive cylinder head with radiators, concealed liquid cooling, traditional exhaust header clamps and modern anode muffler, the dazzling blend of retro and modern styling embodies the unique charm of Triumph's famous Modern Classic range.",
+                "image": "/images/classics/speed400/speed400ReasonsStyle.avif"
+              },
+              {
+                "title": "Нов Мотор",
+                "desc": "The brand new 398cc single cylinder engine. fuel-injected combines modern classic Triumph styling with state-of-the-art technology to deliver 40bhp and 37.5Nm of peak torque with a rich, signature exhaust note from the twin-pipe muffler. Technical features include a four-valve, 2EEK cylinder head and a crankshaft that is perfectly weighted and balanced to optimize inertia for low-speed driving. A rocker arm valvetrain with low reciprocating mass and friction-reducing DLC ​​coatings also contribute to the incredible performance of this nimble yet supple engine. The six-speed gearbox offers a light, precise gear selection with ratios perfectly spread out to get the most out of this exciting, characterful and torque-rich engine. ",
+                "image": "/images/classics/speed400/speed400ReasonsMotorImage.avif"
+              },
+              {
+                "title": "Сериозна Забава",
+                "desc": "The Speed ​​400 is all about having fun. The comfortable and attractive riding position gives the ideal balance of weight between the three points of contact for that 'just right' feel, which has become synonymous with Triumph. Riders of all sizes feel right at home on the Speed ​​400 from the very first ride, thanks to the light and compact 398cc engine. and the slim waist makes the 790mm seat height even more approachable, for a confidence-inspiring ride and easy on-the-spot maneuvering.",
+                "image": "/images/classics/speed400/speed400ReasonsFun.avif"
+              },
+              {
+                "title": "Направен за Вас",
+                "desc": "No two riders are the same, so you can personalize your Tiger Sport 660 with a choice of three special colors and graphics and over 40 genuine Triumph accessories. From built-in luggage to a central case that holds 2 helmets, you'll be inspired by the options to suit your adventure. When everyday flexibility is your goal, you shouldn't be left behind. The bike is designed with the rider in mind - make it your own."
+              },
+              {
+                "title": "Модерна Технологија",
+                "desc": "The Speed ​​400 is equipped with technology designed to improve every ride. The Torque Assist Clutch is an intelligent system that reduces the force on the clutch lever to improve ease of use and rider comfort when stopping/starting, and reducing travel fatigue. wheel for greater performance and safety.."
+              }
+            ]
+          },
+          "accessory": {
+            "banner": {
+              "image": "/images/classics/speed400/speed400AccessoryBanner.avif"
+            },
+            "infoText": {
+              "title": "Додајте ваш белег врз Speed 400",
+              "desc": "На располагање ви е селекција од преку 20 оригинални Triupmh аксесоари за оваа серија на мотори. Аксесоарите кои ќе ги додадете може да бидат додадени на вашиот мотор во фабриката. Aксесоарите се дизајнирани од истиот тим кој го креираше Speed 400 и доаѓаат со две-годишна гаранција."
+            },
+            "accessoryTypes": [
+              {
+                "title": "Стил и Комфорт",
+                "desc": "Choose from a range of parts that will make the Speed ​​400 just the way you want it. Direct replacement bullet turn signals a subtle new look and premium touch with their satin black body and machined aluminum bezels.. Or maybe you want to remodel the tank with different knee pads? A comfortable saddle with a stitched and quilted finish makes a style statement and, together with plug and play heated grips, offers luxury on longer rides..",
+                "itemsList": [
+                  "Bullet type LED flash",
+                  "Штитници за колена",
+                  "Комфортно Седло"
+                ],
+                "image1": {
+                  "src": "/images/classics/speed400/speed400SAccesoryStyleImage1.avif",
+                  "alt": "Speed 400 On The Road"
+                },
+                "image2": {
+                  "src": "/images/classics/speed400/speed400AccessoryStyleImage2.avif",
+                  "alt": "Speed 400 PaintJob"
+                }
+              },
+              {
+                "title": "Багаж",
+                "desc": "A full range of Speed ​​400-specific luggage has been created to add some practicality to the fun. The Speed ​​400 is the perfect touring bike, and outfitting it to handle your load really couldn't be easier. Choose from sturdy side or rigid and semi-rigid panniers, each with their own special mounting system or, for those who prefer to travel light, a simple luggage rack, nylon tank bag or roll-on bag could be the perfect choice .",
+                "itemsList": [
+                  "Цврсти Куфери за Багаж",
+                  "Држач за Багаж",
+                  "Најлонска торба за на резервоар",
+                  "Најлонска Торба Roll "
+                ],
+                "image1": {
+                  "src": "/images/classics/speed400/speed400AccessoryLuggageImage.avif",
+                  "alt": "Speed 400 Luggage"
+                }
+              },
+              {
+                "title": "Заштита ",
+                "desc": "Both your protection from the elements and that of the Speed ​​400 have been taken care of. A visor with a special fitting kit is also available to deflect the wind to reduce rider fatigue on longer rides. Easy to fit and with style to match, it's a must-have addition for distance riders.To keep the Speed ​​400 out of harm's way on rougher roads, there's an aluminum skid plate, a radiator guard and a headlight mask, which comes with its own bezel for easy fitting, and offers excellent protection from rocks and debris. All-weather riders may want to add the mudguard kit which consists of front and rear mudguard extensions and a rear wing. These combine nicely to protect against water spray and extend the life of the rear shock in extreme conditions.Upper and lower engine guards are also available — these provide excellent protection against drops and spills, a must-have addition for city and country driving.",
+                "itemsList": [
+                  "Гелатин",
+                  "Заштита за ладник",
+                  "Решетка за светло",
+                  "Алуминиумска заштита",
+                  "Заштита од Кал",
+                  "Цевки за Заштита на Мотор (Горни и Долни)"
+                ],
+                "image1": {
+                  "src": "/images/classics/speed400/speed400AccessoryProtectionImage1.avif",
+                  "alt": "Speed 400 Head"
+                },
+                "image2": {
+                  "src": "/images/classics/speed400/speed400AccessoryRadiatorProtection.avif",
+                  "alt": "speed 400 Accessory Radiator Protection"
+                }
+              }
+            ]
+          },
           "shortSpecInfo": {
             "info1": "Нов 1160cc со 180PS",
             "info2": "198kg тежина и спремен за на патека",
@@ -5231,6 +5327,102 @@
               { "data": "80", "info": "Nm обртен момент" },
               { "data": "120-130", "info": "PS - Максимална Сила" },
               { "data": "10.000", "info": "КМ Сервисен Интервал" }
+            ]
+          },
+          "reasonsToDrive": {
+            "banner": {
+              "image": "/images/classics/speed400/speed400ReasonsBanner.avif"
+            },
+            "infoText": {
+              "title": "зошто баш Speed 400 !?",
+              "desc": "Време е да се разбудите од досадните соништа со Tiger Sport 660. Ова е најпристапниот мотор од Tiger фамилијата на Triumph и е спремен за секојдневни авантури.Tiger Sport 660 е дизајниран да ги надмине вашите очекувања, од авантуристички тури па се до дневни обврски. Кај нас во Triumph се е во знак на возење, а еве и зошто:"
+            },
+            "reasons": [
+              {
+                "title": "Безвременски и Автентичен Стил",
+                "desc": "Conceived and designed in Hinckley, UK, the Speed ​​400 has been built with the same meticulous attention to detail as every Triumph model. This stunning motorcycle combines timeless design DNA with modern performance. The unmistakable Triumph roadster silhouette, distinctive sculpted fuel tank and classic engine profile echo legends of the past and with exquisite details such as the distinctive cylinder head with radiators, concealed liquid cooling, traditional exhaust header clamps and modern anode muffler, the dazzling blend of retro and modern styling embodies the unique charm of Triumph's famous Modern Classic range.",
+                "image": "/images/classics/speed400/speed400ReasonsStyle.avif"
+              },
+              {
+                "title": "Нов Мотор",
+                "desc": "The brand new 398cc single cylinder engine. fuel-injected combines modern classic Triumph styling with state-of-the-art technology to deliver 40bhp and 37.5Nm of peak torque with a rich, signature exhaust note from the twin-pipe muffler. Technical features include a four-valve, 2EEK cylinder head and a crankshaft that is perfectly weighted and balanced to optimize inertia for low-speed driving. A rocker arm valvetrain with low reciprocating mass and friction-reducing DLC ​​coatings also contribute to the incredible performance of this nimble yet supple engine. The six-speed gearbox offers a light, precise gear selection with ratios perfectly spread out to get the most out of this exciting, characterful and torque-rich engine. ",
+                "image": "/images/classics/speed400/speed400ReasonsMotorImage.avif"
+              },
+              {
+                "title": "Сериозна Забава",
+                "desc": "The Speed ​​400 is all about having fun. The comfortable and attractive riding position gives the ideal balance of weight between the three points of contact for that 'just right' feel, which has become synonymous with Triumph. Riders of all sizes feel right at home on the Speed ​​400 from the very first ride, thanks to the light and compact 398cc engine. and the slim waist makes the 790mm seat height even more approachable, for a confidence-inspiring ride and easy on-the-spot maneuvering.",
+                "image": "/images/classics/speed400/speed400ReasonsFun.avif"
+              },
+              {
+                "title": "Направен за Вас",
+                "desc": "No two riders are the same, so you can personalize your Tiger Sport 660 with a choice of three special colors and graphics and over 40 genuine Triumph accessories. From built-in luggage to a central case that holds 2 helmets, you'll be inspired by the options to suit your adventure. When everyday flexibility is your goal, you shouldn't be left behind. The bike is designed with the rider in mind - make it your own."
+              },
+              {
+                "title": "Модерна Технологија",
+                "desc": "The Speed ​​400 is equipped with technology designed to improve every ride. The Torque Assist Clutch is an intelligent system that reduces the force on the clutch lever to improve ease of use and rider comfort when stopping/starting, and reducing travel fatigue. wheel for greater performance and safety.."
+              }
+            ]
+          },
+          "accessory": {
+            "banner": {
+              "image": "/images/classics/speed400/speed400AccessoryBanner.avif"
+            },
+            "infoText": {
+              "title": "Додајте ваш белег врз Speed 400",
+              "desc": "На располагање ви е селекција од преку 20 оригинални Triupmh аксесоари за оваа серија на мотори. Аксесоарите кои ќе ги додадете може да бидат додадени на вашиот мотор во фабриката. Aксесоарите се дизајнирани од истиот тим кој го креираше Speed 400 и доаѓаат со две-годишна гаранција."
+            },
+            "accessoryTypes": [
+              {
+                "title": "Стил и Комфорт",
+                "desc": "Choose from a range of parts that will make the Speed ​​400 just the way you want it. Direct replacement bullet turn signals a subtle new look and premium touch with their satin black body and machined aluminum bezels.. Or maybe you want to remodel the tank with different knee pads? A comfortable saddle with a stitched and quilted finish makes a style statement and, together with plug and play heated grips, offers luxury on longer rides..",
+                "itemsList": [
+                  "Bullet type LED flash",
+                  "Штитници за колена",
+                  "Комфортно Седло"
+                ],
+                "image1": {
+                  "src": "/images/classics/speed400/speed400SAccesoryStyleImage1.avif",
+                  "alt": "Speed 400 On The Road"
+                },
+                "image2": {
+                  "src": "/images/classics/speed400/speed400AccessoryStyleImage2.avif",
+                  "alt": "Speed 400 PaintJob"
+                }
+              },
+              {
+                "title": "Багаж",
+                "desc": "A full range of Speed ​​400-specific luggage has been created to add some practicality to the fun. The Speed ​​400 is the perfect touring bike, and outfitting it to handle your load really couldn't be easier. Choose from sturdy side or rigid and semi-rigid panniers, each with their own special mounting system or, for those who prefer to travel light, a simple luggage rack, nylon tank bag or roll-on bag could be the perfect choice .",
+                "itemsList": [
+                  "Цврсти Куфери за Багаж",
+                  "Држач за Багаж",
+                  "Најлонска торба за на резервоар",
+                  "Најлонска Торба Roll "
+                ],
+                "image1": {
+                  "src": "/images/classics/speed400/speed400AccessoryLuggageImage.avif",
+                  "alt": "Speed 400 Luggage"
+                }
+              },
+              {
+                "title": "Заштита ",
+                "desc": "Both your protection from the elements and that of the Speed ​​400 have been taken care of. A visor with a special fitting kit is also available to deflect the wind to reduce rider fatigue on longer rides. Easy to fit and with style to match, it's a must-have addition for distance riders.To keep the Speed ​​400 out of harm's way on rougher roads, there's an aluminum skid plate, a radiator guard and a headlight mask, which comes with its own bezel for easy fitting, and offers excellent protection from rocks and debris. All-weather riders may want to add the mudguard kit which consists of front and rear mudguard extensions and a rear wing. These combine nicely to protect against water spray and extend the life of the rear shock in extreme conditions.Upper and lower engine guards are also available — these provide excellent protection against drops and spills, a must-have addition for city and country driving.",
+                "itemsList": [
+                  "Гелатин",
+                  "Заштита за ладник",
+                  "Решетка за светло",
+                  "Алуминиумска заштита",
+                  "Заштита од Кал",
+                  "Цевки за Заштита на Мотор (Горни и Долни)"
+                ],
+                "image1": {
+                  "src": "/images/classics/speed400/speed400AccessoryProtectionImage1.avif",
+                  "alt": "Speed 400 Head"
+                },
+                "image2": {
+                  "src": "/images/classics/speed400/speed400AccessoryRadiatorProtection.avif",
+                  "alt": "speed 400 Accessory Radiator Protection"
+                }
+              }
             ]
           },
           "shortSpecInfo": {

@@ -22,7 +22,7 @@ const SectionContent = ({ families, bikes, bikeToRender }: Props) => {
 
   const controls = useAnimation();
 
-  const handleSectionClose = () => router.push(pathname);
+  const handleSectionClose = () => router.push(pathname, {scroll: false});
 
   useEffect(() => {
     if (query) {
@@ -33,7 +33,7 @@ const SectionContent = ({ families, bikes, bikeToRender }: Props) => {
   }, [controls]);
 
   useEffect(() => {
-    router.push(`${pathname}?navItem=${query}&bikeID=1`);
+    router.push(`${pathname}?navItem=${query}&bikeID=1`, {scroll: false});
   }, []);
 
   return (
