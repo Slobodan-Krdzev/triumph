@@ -22,7 +22,7 @@ const SubFamReasonsToRide = async ({params}: any) => {
           <SecondaryPagesHeroSection
             bannerImage={subFamily.accessory.banner.image}
             subFamilyTitle={subFam}
-            text={`Средете го моторот по ваш вкус`}
+            text={`Аксесоари`}
           />
   
           <main className="px-4 md:px-16 lg:px-40">

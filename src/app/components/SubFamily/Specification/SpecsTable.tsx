@@ -14,6 +14,7 @@ const SpecsTable = ({specs}: SpecsTableProps) => {
       <SpecTableListi items={specs.dimension} title={'Димензиии & Тежина'}/>
       <SpecTableListi items={specs.fuelConsumption} title={'Потрошувачка'}/>
 
+    {specs.service && <SpecTableListi items={specs.service} title={'Сервисен Интервал'}/>}
 
 
     </section>

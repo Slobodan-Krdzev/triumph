@@ -75,8 +75,8 @@ const BottomCarousell = ({items}: BottomCarousellProps) => {
             >
               
                 <div className="text-white z-10 absolute lg:w-2/5 md:w-3/5 overflow-visible" style={{top: '10%', left: '10%'}}>
-                    <h3 className="md:text-2xl lg:text-2xl text-md capitalize font-medium mb-4">{item.title}</h3>
-                    <p className="text-xs md:text-base w-3/4">{item.desc}</p>
+                    <h3 className="text-2xl md:text-3xl lg:text-5xl tracking-tighter capitalize font-medium mb-4">{item.title}</h3>
+                    <p className="text-md leading-5 font-medium md:text-xl lg:text-2xl tracking-tighter w-3/4">{item.desc}</p>
                 </div>
             </div>
           </SwiperSlide>

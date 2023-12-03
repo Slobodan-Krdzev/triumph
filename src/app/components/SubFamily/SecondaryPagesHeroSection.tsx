@@ -25,7 +25,7 @@ const SecondaryPagesHeroSection = ({bannerImage, subFamilyTitle, text}: Secondar
               <h1 className="md:text-3xl font-semibold text-md border-b-4 border-red-600 capitalize pb-2">
                 {subFamilyTitle}
               </h1>
-              <p className="md:text-5xl text-4xl uppercase font-semibold tracking-tighter text-center w-full">
+              <p className="md:text-7xl text-4xl uppercase font-bold tracking-tighter text-center w-full">
                 {text}
               </p>
             </div>

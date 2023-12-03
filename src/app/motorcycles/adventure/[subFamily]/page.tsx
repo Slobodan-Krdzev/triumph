@@ -37,13 +37,25 @@ const SubFamilyPage = async ({ params }: any) => {
         "audioSection"
       );
 
+      const hasHeroDesc = family.subFamilies[query].subFamilyPageInfo.hasOwnProperty(
+        "heroDesc"
+      );
+
     return (
-      <>
-        <HeroSection
+      <>  
+      {hasHeroDesc && <HeroSection
+          video={family.subFamilies[query].gallery.subFamilyHeroVideo.src}
+          model={query}
+          desc={family.subFamilies[query].subFamilyPageInfo.heroDesc.desc}
+          logo={family.subFamilies[query].subFamilyPageInfo.heroDesc.logo}
+        />}
+
+        {!hasHeroDesc && <HeroSection
           video={family.subFamilies[query].gallery.subFamilyHeroVideo.src}
           model={query}
           slogans={family.subFamilies[query].subFamilyPageInfo.heroSlogans}
-        />
+        />}
+        
 
         <main className="bg-white">
           <TopSection

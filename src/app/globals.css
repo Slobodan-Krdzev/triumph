@@ -286,6 +286,14 @@ p {
   
 }
 
+.swiper-button-prev {
+  margin-left: 4rem;
+}
+
+.swiper-button-next {
+  margin-right: 4rem;
+}
+
 @media screen and (max-width: 768px) {
   .actions {
     border: 2px solid red;
@@ -294,5 +302,15 @@ p {
     bottom: 55%;
     left: unset;
   }
+
+  .swiper-button-prev {
+    margin-left: 1rem;
+  }
+  
+  .swiper-button-next {
+    margin-right: 1rem;
+  }
 }
+
+
 

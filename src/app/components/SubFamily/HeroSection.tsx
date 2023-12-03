@@ -1,11 +1,14 @@
 import React from "react";
 import FamilySloganAnimation from "./FamilySloganAnimation";
+import Image from "next/image";
 
 type HeroSectionProps = {
   video?: string;
   model: string;
-  slogans: any[];
-  image?: string
+  slogans?: any[];
+  image?: string;
+  desc?: string;
+  logo?: string 
 };
 
 const HeroSection = ({
@@ -13,6 +16,8 @@ const HeroSection = ({
   model,
   slogans = [],
   image,
+  desc,
+  logo
 }: HeroSectionProps) => {
   if (video) {
     return (
@@ -27,10 +32,20 @@ const HeroSection = ({
             transform: "translate(-50%, -50%)",
           }}
         >
-          <p className="text-3xl font-medium uppercase border-b-4 border-red-600 pb-4 inline">
-            {model}
-          </p>
-          <FamilySloganAnimation slogans={slogans} />
+          {slogans && (
+            <>
+              <p className="text-3xl font-medium uppercase border-b-4 border-red-600 pb-4 inline">
+                {model}
+              </p>
+
+              <FamilySloganAnimation slogans={slogans} />
+            </>
+          )}
+
+          {desc && <>
+            <p className="text-2xl md:text-4xl text-center mb-4 font-semibold">{desc}</p>
+            <Image src={logo ?? ''} alt="Model" width={160} height={90}/>
+          </>}
         </div>
       </section>
     );
@@ -45,7 +60,7 @@ const HeroSection = ({
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          height: '90vh'
+          height: "90vh",
         }}
       >
         <div
