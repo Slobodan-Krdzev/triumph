@@ -7134,31 +7134,31 @@
         }
       },
       "bikeCollorPalletteGallery": {
-        "default": "/images/classics/speed400CarnivalRed.png",
-        "color1": "/images/classics/speed400CarnivalRed.png",
-        "color1Reversed": "/images/classics/speed400CarnivalRedReversed.png",
-        "color2": "/images/classics/speed400CaspianBlue.png",
-        "color2Reversed": "/images/classics/speed400CaspianBlueStormGreyReversed.png",
-        "color3": "/images/classics/speed400PhantomBlack.png",
-        "color3Reversed": "/images/classics/speed400phantomBlackStormGreyReversed.png"
+        "default": "/images/roadsters/speedTriple765RS/speedTripleSilverIce.png",
+        "color1": "/images/roadsters/speedTriple765RS/speedTripleSilverIce.png",
+        "color1Reversed": "/images/roadsters/speedTriple765RS/speedTripleSilverIceReversed.png",
+        "color2": "/images/roadsters/speedTriple765RS/speedTripleRSCarnivalRed.png",
+        "color2Reversed": "/images/roadsters/speedTriple765RS/speedTripleRSCarnivalRedReversed.png",
+        "color3": "/images/roadsters/speedTriple765RS/speedTripleYellow.png",
+        "color3Reversed": "/images/roadsters/speedTriple765RS/speedTripleYellowReversed.png"
       },
       "customizationColors": [
         {
-          "colorName": "Carnival Red / Storm Gray",
-          "price": "Вклучена во Цената",
-          "image": "/images/custom-collors/carnivalRedStormGrey.jpg",
+          "colorName": "Silver Ice",
+          "price": null,
+          "image": "/images/custom-collors/silverice.jpg",
           "colorCode": "color1"
         },
         {
-          "colorName": "Caspian Blue / Storm Gray",
-          "price": "Вклучена во Цената",
-          "image": "/images/custom-collors/caspianBlueStormGray.jpg",
+          "colorName": "Carnival Red",
+          "price": null,
+          "image": "/images/custom-collors/carnivalRed.jpg",
           "colorCode": "color2"
         },
         {
-          "colorName": "Phantom Black / Storm Gray",
-          "price": "Вклучена во Цената",
-          "image": "/images/custom-collors/phantomBlackStormGrey.jpg",
+          "colorName": "Cosmic Yellow",
+          "price": 200,
+          "image": "/images/custom-collors/cosmicYellow.jpg",
           "colorCode": "color3"
         }
       ],
@@ -7243,7 +7243,7 @@
     },
     {
       "id": 18,
-      "title": "Speed Triple 1200 RR",
+      "title": "Speed Triple 1200 RS",
       "model": "speed-triple-1200-rs",
       "category": "roadsters",
       "subFamilyCategory": "speed-triple-1200-rs",
@@ -7263,6 +7263,35 @@
           "alt": "Speed Triple 1200 Rs"
         }
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/roadsters/speedTriple1200RS/speedTriple1200rsCarnivalRed.png",
+        "color1": "/images/roadsters/speedTriple1200RS/speedTriple1200rsCarnivalRed.png",
+        "color1Reversed": "/images/roadsters/speedTriple1200RS/speedTriple1200rsCarnivalRedReversed.png",
+        "color2": "/images/roadsters/speedTriple1200RS/speedTriple1200rsCarnivalBlack.png",
+        "color2Reversed": "/images/roadsters/speedTriple1200RS/speedTriple1200rsCarnivalBlackReversed.png",
+        "color3": "/images/roadsters/speedTriple1200RS/speedTriple1200rsSilverIce.png",
+        "color3Reversed": "/images/roadsters/speedTriple1200RS/speedTriple1200rsSilverIceReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Carnival Red",
+          "price": 300,
+          "image": "/images/custom-collors/carnivalRed.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Saphire Black",
+          "price": null,
+          "image": "/images/custom-collors/sapphireBlack.jpg",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Matt Silver Ice",
+          "price": null,
+          "image": "/images/custom-collors/mattSilverIce.jpg",
+          "colorCode": "color3"
+        }
+      ],
       "shortSpecInfo": {
         "info1": "660cc мотор",
         "info2": "2 мода на работа (Road & Rain)",
@@ -7295,6 +7324,27 @@
           "alt": "Speed Triple 1200 RR"
         }
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/roadsters/speedTriple1200RR/speedTriple1200RRGray.png",
+        "color1": "/images/roadsters/speedTriple1200RR/speedTriple1200RRGray.png",
+        "color1Reversed": "/images/roadsters/speedTriple1200RR/speedTriple1200RRGrayReversed.png",
+        "color2": "/images/roadsters/speedTriple1200RR/speedTriple1200RRRed.png",
+        "color2Reversed": "/images/roadsters/speedTriple1200RR/speedTriple1200RRRedReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Crystal White / Storm Gray",
+          "price": null,
+          "image": "/images/custom-collors/crystalWhiteStormGray.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Red Hopper / Storm Gray",
+          "price": 300,
+          "image": "/images/custom-collors/carnivalRedStormGrey.jpg",
+          "colorCode": "color2"
+        }
+      ],
       "shortSpecInfo": {
         "info1": "Нов 1160cc мотор со 180 коњски сили ",
         "info2": "Нов кокпит и едно предно светло",
@@ -8547,6 +8597,27 @@
           "alt": "Speed 400 Youtube Video"
         }
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/roadsters/moto2/streetTripleMoto2Yellow.png",
+        "color1": "/images/roadsters/moto2/streetTripleMoto2Yellow.png",
+        "color1Reversed": "/images/roadsters/moto2/streetTripleMoto2YellowReversed.png",
+        "color2": "/images/roadsters/moto2/streetTripleMoto2White.png",
+        "color2Reversed": "/images/roadsters/moto2/streetTripleMoto2WhiteReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Triumph Racing Yellow",
+          "price": null,
+          "image": "/images/custom-collors/triumphRacingYellow.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Crystal White",
+          "price": null,
+          "image": "/images/custom-collors/crystalWhite.jpg",
+          "colorCode": "color2"
+        }
+      ],
       "shortSpecInfo": {
         "info1": "765cc мотор",
         "info2": "Максимална јачина од 130 PS",
