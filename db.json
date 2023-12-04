@@ -7542,7 +7542,7 @@
       "model": "rocket-3-r",
       "category": "rocket-3",
       "subFamilyCategory": "rocket-3",
-      "edition": "rocket3R",
+      "edition": "rocket-3",
       "price": 25290,
       "specs": {
         "cc": 398,
@@ -7554,10 +7554,39 @@
       },
       "gallery": {
         "modelImage": {
-          "src": "/images/rocket-3/rocket3Model.png",
+          "src": "/images/rocket-3/rocket3R/rocket3RSilverIce.png",
           "alt": "Rocket 3 R"
         }
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/rocket-3/rocket3R/rocket3RSilverIce.png",
+        "color1": "/images/rocket-3/rocket3R/rocket3RSilverIce.png",
+        "color1Reversed": "/images/rocket-3/rocket3R/rocket3RSilverIceReversed.png",
+        "color2": "/images/rocket-3/rocket3R/rocket3RSaphireBlack.png",
+        "color2Reversed": "/images/rocket-3/rocket3R/rocket3RSaphireBlackReversed.png",
+        "color3": "/images/rocket-3/rocket3R/rocket3RSilverRed.png",
+        "color3Reversed": "/images/rocket-3/rocket3R/rocket3RSilverRedReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Matt Silver Ice",
+          "price": 300,
+          "image": "/images/custom-collors/mattSilverIce.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Saphire Black",
+          "price": null,
+          "image": "/images/custom-collors/sapphireBlack.jpg",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Silver Ice Cranberry Red",
+          "price": 600,
+          "image": "/images/custom-collors/silverIceCranberryRed.jpg",
+          "colorCode": "color3"
+        }
+      ],
       "shortSpecInfo": {
         "info1": "Три-цилиндричен Rocket 3 мотор со 2,500cc зафатнина",
         "info2": "167 коњски сили при 6000rpm",
@@ -7586,10 +7615,39 @@
       },
       "gallery": {
         "modelImage": {
-          "src": "/images/rocket-3/rocket3GtModel.png",
+          "src": "/images/rocket-3/rocket3GT/rocket3GTSaphireBlack.png",
           "alt": "Rocket 3 GT"
         }
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/rocket-3/rocket3GT/rocket3GTSaphireBlack.png",
+        "color1": "/images/rocket-3/rocket3GT/rocket3GTSaphireBlack.png",
+        "color1Reversed": "/images/rocket-3/rocket3GT/rocket3GTSaphireBlackReversed.png",
+        "color2": "/images/rocket-3/rocket3GT/rocket3GTCarnivalRedSaphireBlack.png",
+        "color2Reversed": "/images/rocket-3/rocket3GT/rocket3GTCarnivalRedSaphireBlackReversed.png",
+        "color3": "/images/rocket-3/rocket3GT/rocket3GTSilverIceStormGray.png",
+        "color3Reversed": "/images/rocket-3/rocket3GT/rocket3GTSilverIceStormGrayReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Saphire Black",
+          "price": null,
+          "image": "/images/custom-collors/sapphireBlack.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Carnival Red / Saphire Black",
+          "price": null,
+          "image": "/images/custom-collors/carnivalRedSapphireBlack.jpg",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Silver Ice / Storm Gray",
+          "price": 600,
+          "image": "/images/custom-collors/silverIceStormGray.jpg",
+          "colorCode": "color3"
+        }
+      ],
       "shortSpecInfo": {
         "info1": "Три-цилиндричен Rocket 3 мотор со 2,500cc зафатнина",
         "info2": "167 коњски сили при 6000rpm",
@@ -7618,10 +7676,23 @@
       },
       "gallery": {
         "modelImage": {
-          "src": "/images/rocket-3/rocket3R221Model.png",
+          "src": "/images/rocket-3/rocket3R221/rocket3GT221RedHopper.png",
           "alt": "Rocket 3 R 221"
         }
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/rocket-3/rocket3R221/rocket3GT221RedHopper.png",
+        "color1": "/images/rocket-3/rocket3R221/rocket3GT221RedHopper.png",
+        "color1Reversed": "/images/rocket-3/rocket3R221/rocket3GT221RedHopperReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Red Hopper / Sapphire Black",
+          "price": null,
+          "image": "/images/custom-collors/jetBlackCranberryRed.jpg",
+          "colorCode": "color1"
+        }
+      ],
       "shortSpecInfo": {
         "info1": "Три-цилиндричен Rocket 3 мотор со 2,500cc зафатнина",
         "info2": "167 коњски сили при 6000rpm",
@@ -7650,10 +7721,23 @@
       },
       "gallery": {
         "modelImage": {
-          "src": "/images/rocket-3/rocket3GtModel.png",
+          "src": "/images/rocket-3/rocket3GTChrome/rocket3GTChrome.png",
           "alt": "Rocket 3 GT 221"
         }
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/rocket-3/rocket3GTChrome/rocket3GTChrome.png",
+        "color1": "/images/rocket-3/rocket3GTChrome/rocket3GTChrome.png",
+        "color1Reversed": "/images/rocket-3/rocket3GTChrome/rocket3GTChromeReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Chrome / Diablo Red",
+          "price": null,
+          "image": "/images/custom-collors/chromeDiabloRed.jpg",
+          "colorCode": "color1"
+        }
+      ],
       "shortSpecInfo": {
         "info1": "Три-цилиндричен Rocket 3 мотор со 2,500cc зафатнина",
         "info2": "167 коњски сили при 6000rpm",
@@ -7670,7 +7754,7 @@
       "model": "rocket-3-gt-221-edition-2022",
       "category": "rocket-3",
       "subFamilyCategory": "rocket-3",
-      "edition": "chrome",
+      "edition": "special",
       "price": 26890,
       "specs": {
         "cc": 398,
@@ -7682,10 +7766,23 @@
       },
       "gallery": {
         "modelImage": {
-          "src": "/images/rocket-3/rocket3GtChrome.png",
+          "src": "/images/rocket-3/rocket3GT221/rocket3GT221RedSaphireBlack.png",
           "alt": "Rocket 3 GT Chrome Edition"
         }
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/rocket-3/rocket3GT221/rocket3GT221RedSaphireBlack.png",
+        "color1": "/images/rocket-3/rocket3GT221/rocket3GT221RedSaphireBlack.png",
+        "color1Reversed": "/images/rocket-3/rocket3GT221/rocket3GT221RedSaphireBlackReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Red Hopper / Sapphire Black",
+          "price": null,
+          "image": "/images/custom-collors/carnivalRedSapphireBlack.jpg",
+          "colorCode": "color1"
+        }
+      ],
       "shortSpecInfo": {
         "info1": "Три-цилиндричен Rocket 3 мотор со 2,500cc зафатнина",
         "info2": "167 коњски сили при 6000rpm",
@@ -7714,10 +7811,23 @@
       },
       "gallery": {
         "modelImage": {
-          "src": "/images/rocket-3/rocket3RChromeModel.png",
+          "src": "/images/rocket-3/rocket3RChrome/rocket3RChrome.png",
           "alt": "Rocket 3 R Chrome Edition"
         }
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/rocket-3/rocket3RChrome/rocket3RChrome.png",
+        "color1": "/images/rocket-3/rocket3RChrome/rocket3RChrome.png",
+        "color1Reversed": "/images/rocket-3/rocket3RChrome/rocket3RChromeReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Chrome / Jet Black",
+          "price": null,
+          "image": "/images/custom-collors/chromeJetBlack.jpg",
+          "colorCode": "color1"
+        }
+      ],
       "shortSpecInfo": {
         "info1": "Три-цилиндричен Rocket 3 мотор со 2,500cc зафатнина",
         "info2": "167 коњски сили при 6000rpm",

@@ -1,3 +1,4 @@
+import SecondaryNavFamily from "@/app/components/SecondaryNavFamily";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
 import PageHeroSection from "@/app/components/familiySharedComponents/PageHeroSection";
 import TextAndImageFlexSection from "@/app/components/familiySharedComponents/TextAndImageFlexSection";
@@ -45,7 +46,7 @@ const RoadstersPage = async () => {
 
     return (
       <>
-      <SecondaryNavBar items={secondaryNavItems} title={"Roadsters"} configurationLink={"/configure"} />
+      <SecondaryNavFamily items={secondaryNavItems} title={"Roadsters"} configLink={"/configure"} />
 
         <PageHeroSection
           title={"Roadsters"}

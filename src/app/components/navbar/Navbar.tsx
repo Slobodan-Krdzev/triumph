@@ -1,10 +1,9 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import Prenav from "../Prenav";
-import Nav from "./Nav";
+import { BIKES, FAMILIES } from "@/app/constants/constants";
+import { useEffect, useState } from "react";
 import { useBreakpoint } from "../helpers/useBreakpoint";
+import Nav from "./Nav";
 import MobileNav from "./mobileNav/MobileNav";
-import { FAMILIES, BIKES } from "@/app/constants/constants";
 
 const Navbar = () => {
   const [families, setFamilies] = useState<any[]>([]);
@@ -36,12 +35,12 @@ const Navbar = () => {
       className={`fixed top-0 left-0 right-0 `}
       style={{zIndex: 9999}}
     >
-      {breakpoint > 768 && (
+      {breakpoint > 1024 && (
         <>
           <Nav fams={families} allBikes={bikes} />
         </>
       )}
-      {breakpoint <= 768 && <MobileNav fams={families} allBikes={bikes} />}
+      {breakpoint <= 1024 && <MobileNav fams={families} allBikes={bikes} />}
     </header>
   );
 };

@@ -1,8 +1,6 @@
-import React from "react";
-import SectionTitleH2 from "../familiySharedComponents/SectionTitleH2";
-import PageParagraph from "../familiySharedComponents/PageParagraph";
 import Image from "next/image";
-import image from "../../../../public/images/adventure/tigerSport660/tiger660TopSectionBG.avif"
+import PageParagraph from "../familiySharedComponents/PageParagraph";
+import SectionTitleH2 from "../familiySharedComponents/SectionTitleH2";
 
 type TopSectionProps = {
   title: string;
