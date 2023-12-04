@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/swiper-bundle.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useBreakpoint } from "../../helpers/useBreakpoint";
+import SectionTitleH2 from "../../familiySharedComponents/SectionTitleH2";
 
 type YoutubeVideoCarousellItemType = {
   src: string;
@@ -23,6 +24,10 @@ const YoutubeVideoCarousell = ({ items }: YoutubeVideoCarousellProps) => {
 
   return (
     <section className="py-8 md:py-16  border-b-2 border-neutral-500">
+      <div className="py-8 md:py-16 text-center">
+      <SectionTitleH2 text={"Видео Галерија"} color={"dark"} />
+
+      </div>
       <Swiper
         navigation={true}
         modules={[Navigation, Pagination]}

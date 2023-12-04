@@ -43,11 +43,9 @@ const RoadstersSubFamilyPage = async ({ params }: any) => {
       query
     ].subFamilyPageInfo.hasOwnProperty("youtubeVideosCarousellItems");
 
-
-    console.log(hasAudio);
-    
     return (
       <>
+      
         <HeroSection
           video={family.subFamilies[query].gallery.subFamilyHeroVideo.src}
           model={query}

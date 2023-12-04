@@ -4091,11 +4091,11 @@
               "со тркачки мотор"
             ],
             "topSection": {
-              "title": "Врвни Перформанси ",
-              "desc": "Подкрепнат од еволуција на Moto2™ тркачки мотор, Speed Triple 765 е мотор со врвни перформанси и висока спецификација.",
+              "title": "Врвни Перформанси Во Класата",
+              "desc": "Подкрепнат од еволуција на Moto2™ тркачки мотор, ова е нај-версатилниот, најмоќниот Стреет Трипле мотор досега.",
               "subtitle": "Најдобриот “naked“ моторцикл - на пат и на тркачка патека."
             },
-            "youtubeVideo": "https://www.youtube.com/embed/Hd3QZKRIT0Y",
+            "youtubeVideo": "https://www.youtube.com/embed/l5B_Rd4cgHE",
             "fullSpecs": {
               "engineTransmission": [
                 {
@@ -4241,21 +4241,21 @@
             "grayCarousell": [
               {
                 "id": "carouselItem1",
-                "title": "Најновиот и Првенец во класата на “Streetfighter“ Моторцикли",
-                "desc": "Сега, уште повеќе сила благодарејки на Мото2 моторот со неверојатна агилност, агресивен изглед и електронска технологија која поставува нови стандарди.",
-                "image": "/images/roadsters/streetTriple765/streetTriple765GrayCaro1.avif"
+                "title": "Вашиот MOTO2™ тркач за на пат",
+                "desc": "Лимитирано на 765 парчиња во секој од тркачки инспирираните дизајни, со сила која е лидер во својата класа и со потполно прилагодливи Öhlins вилушки.",
+                "image": "/images/roadsters/moto2/streetTripleMoto2GrayCaro3.avif"
               },
               {
                 "id": "carouselItem2",
-                "title": "Новиот Репер Во класата на “naked“ моторцикли",
-                "desc": "ТНови технолошки унапредувања, агилност, највисока запирачка спецификација и новиот репер во смисла на моќност во класата.",
-                "image": "/images/roadsters/streetTriple765/streetTriple765GrayCaro2.avif"
+                "title": "Новиот Репер Во класата на “naked“ перформантни моторцикли",
+                "desc": "Нови технолошки унапредувања, агилност, највисока запирачка спецификација и новиот репер во смисла на моќност во класата.",
+                "image": "/images/roadsters/moto2/streetTripleMoto2GrayCaro2.avif"
               },
               {
                 "id": "carouselItem3",
                 "title": "Нај-моќната серија досега",
                 "desc": "Со голем чекор напред во развивање на Мото2 моторот, Street Triple серијата се закити со уште повеќе обртен момент и сила - 120 РЅ за R верзијата и 130 РЅ за RS Verzijata.",
-                "image": "/images/roadsters/streetTriple765/streetTriple765GrayCaro3.avif"
+                "image": "/images/roadsters/moto2/streetTripleMoto2GrayCaro3.avif"
               }
             ],
             "youtubeVideosCarousellItems": [{
@@ -4263,28 +4263,24 @@
                 "title": "Triumph Street Triple Launch Valencia 2022"
               },
               {
-                "src": "https://www.youtube.com/embed/A6MwjE782iI",
-                "title": "Web | Street Triple R Hero"
-              },
-              {
-                "src": "https://www.youtube.com/embed/Qj9dxotylh0",
-                "title": "Web | Street Triple RS Hero"
-              },
-              {
-              "src": "https://www.youtube.com/embed/--p8YSQxEp0",
-              "title": "Web | Engine In Motion Street Triple 765"
-              },
-              {
-                "src": "https://www.youtube.com/embed/JR-wXQFKG2Q",
-                "title": "Web - DE | Street Triple R | Features and Benefits"
+                "src": "https://www.youtube.com/embed/csViBxs5FSQ",
+                "title": "Street Triple Moto2TM Edition | First Ride at Valencia"
               },
               {
                 "src": "https://www.youtube.com/embed/cDNnqoRB50w",
                 "title": "Triumph Street Triple Launch Valencia 2022"
               },
               {
-                "src": "https://www.youtube.com/embed/kP7FA3k6Hv8",
-                "title": "New Street Triple 765 RS | Features and Benefits"
+              "src": "https://www.youtube.com/embed/PT4txMuuBBs",
+              "title": "New Street Triple 765 Moto2 Edition | Features and Benefits"
+              },
+              {
+                "src": "https://www.youtube.com/embed/l5B_Rd4cgHE",
+                "title": "Web | Street Triple Moto2 Edition"
+              },
+              {
+                "src": "https://www.youtube.com/embed/--p8YSQxEp",
+                "title": "Web | Engine In Motion Street Triple 765"
               }
             ],
             "audioSection": {
@@ -4296,7 +4292,7 @@
             "specNumbers": [
               { "data": "765", "info": "cc Мотор" },
               { "data": "80", "info": "Nm обртен момент" },
-              { "data": "120-130", "info": "PS - Максимална Сила" },
+              { "data": "130", "info": "PS - Максимална Сила" },
               { "data": "10.000", "info": "КМ Сервисен Интервал" }
             ]
           },
@@ -4407,16 +4403,16 @@
               "alt": "Street Triple 765 Range Model Image"
             },
             "subFamilyHeroVideo": {
-              "src": "/images/roadsters/streetTriple765/streetTriple765SubFamHeroVideo.webm",
-              "alt": "Street Triple 765 Video"
+              "src": "/images/roadsters/moto2/streetTripleMoto2HeroVideo.mp4",
+              "alt": "Street Triple 765 Moto2 image"
             },
             "subFamilyTopSectionImage": {
-              "src": "/images/roadsters/streetTriple765/streetTriple765TopSectionImage.avif",
-              "alt": "Street Triple 765 Motorcycle"
+              "src": "/images/roadsters/moto2/streetТriple765TopSectionImage.avif",
+              "alt": "Street Triple 765 Moto2 image"
             },
             "subFamilyTopSectionBGImage": {
-              "src": "/images/roadsters/streetTriple765/streetTriple765TopSectionImageBG.avif",
-              "alt": "Street Triple 765 Motorcycle BG"
+              "src": "/images/roadsters/moto2/streetТriple765TopSectionImageBG.avif",
+              "alt": "Street Triple 765 Moto2 image BG"
             }
           }
         },
@@ -4434,11 +4430,11 @@
               "со тркачки мотор"
             ],
             "topSection": {
-              "title": "Врвни Перформанси ",
-              "desc": "Подкрепнат од еволуција на Moto2™ тркачки мотор, Speed Triple 765 е мотор со врвни перформанси и висока спецификација.",
-              "subtitle": "Најдобриот “naked“ моторцикл - на пат и на тркачка патека."
+              "title": "Забавата е загарантирана",
+              "desc": "Три-цилиндарски перформанси, технологија и спецификации кои се лидери во класата - сето ова со компетативна цена.",
+              "subtitle": "...возбудливo, флексибилно и динамично однесување на пат со технологија по која секој ќе завидува - Lee Morisson менаџер на сите каскадери на James Bond."
             },
-            "youtubeVideo": "https://www.youtube.com/embed/Hd3QZKRIT0Y",
+            "youtubeVideo": "https://www.youtube.com/embed/Po5n-cI9EQw",
             "fullSpecs": {
               "engineTransmission": [
                 {
@@ -4584,50 +4580,39 @@
             "grayCarousell": [
               {
                 "id": "carouselItem1",
-                "title": "Најновиот и Првенец во класата на “Streetfighter“ Моторцикли",
-                "desc": "Сега, уште повеќе сила благодарејки на Мото2 моторот со неверојатна агилност, агресивен изглед и електронска технологија која поставува нови стандарди.",
-                "image": "/images/roadsters/streetTriple765/streetTriple765GrayCaro1.avif"
+                "title": "660сс три-цилиндричени перформанси",
+                "desc": "Три-цилиндарскиот мотор од 66сс, ви нуди перфектен баланс помеѓу обртен момент на низок обртај и возбудлива сила и респонзивност при високи обртаи.",
+                "image": "/images/roadsters/trident660/trident660GrayCaro1.avif"
               },
               {
                 "id": "carouselItem2",
-                "title": "Новиот Репер Во класата на “naked“ моторцикли",
-                "desc": "ТНови технолошки унапредувања, агилност, највисока запирачка спецификација и новиот репер во смисла на моќност во класата.",
-                "image": "/images/roadsters/streetTriple765/streetTriple765GrayCaro2.avif"
+                "title": "технологија",
+                "desc": "Лидер во класата по технологија, TFT инструментна плоча, LED расвета, 2 мода на работа, АВЅ и систем за пролизгување за подобра сигурност и контрола.",
+                "image": "/images/roadsters/trident660/trident660GrayCaro2.avif"
               },
               {
                 "id": "carouselItem3",
-                "title": "Нај-моќната серија досега",
-                "desc": "Со голем чекор напред во развивање на Мото2 моторот, Street Triple серијата се закити со уште повеќе обртен момент и сила - 120 РЅ за R верзијата и 130 РЅ за RS Verzijata.",
-                "image": "/images/roadsters/streetTriple765/streetTriple765GrayCaro3.avif"
+                "title": "Стил",
+                "desc": "Препознатливиот минималистичен изглед и спортката силуета го краси Trident и му дава карактер и стил.",
+                "image": "/images/roadsters/trident660/trident660GrayCaro3.avif"
               }
             ],
-            "youtubeVideosCarousellItems": [{
-                "src": "https://www.youtube.com/embed/cDNnqoRB50w",
-                "title": "Triumph Street Triple Launch Valencia 2022"
+            "youtubeVideosCarousellItems": [
+              {
+                "src": "https://www.youtube.com/embed/JHUeNjilnXA",
+                "title": "New Triumph Trident 660 Engine Story"
               },
               {
-                "src": "https://www.youtube.com/embed/A6MwjE782iI",
-                "title": "Web | Street Triple R Hero"
+                "src": "https://www.youtube.com/embed/4qnpPzumJTs",
+                "title": "New Triumph Trident 660 - Live Launch Even"
               },
               {
-                "src": "https://www.youtube.com/embed/Qj9dxotylh0",
-                "title": "Web | Street Triple RS Hero"
+              "src": "https://www.youtube.com/embed/lLNvbwE0rfo",
+              "title": "New Triumph Trident 660 Features and Benefits"
               },
               {
-              "src": "https://www.youtube.com/embed/--p8YSQxEp0",
-              "title": "Web | Engine In Motion Street Triple 765"
-              },
-              {
-                "src": "https://www.youtube.com/embed/JR-wXQFKG2Q",
-                "title": "Web - DE | Street Triple R | Features and Benefits"
-              },
-              {
-                "src": "https://www.youtube.com/embed/cDNnqoRB50w",
-                "title": "Triumph Street Triple Launch Valencia 2022"
-              },
-              {
-                "src": "https://www.youtube.com/embed/kP7FA3k6Hv8",
-                "title": "New Street Triple 765 RS | Features and Benefits"
+                "src": "https://www.youtube.com/embed/L429P5w78HM",
+                "title": "The New Triumph Trident 660 - Web"
               }
             ],
             "audioSection": {
@@ -4637,10 +4622,10 @@
               "logo": null
             },
             "specNumbers": [
-              { "data": "765", "info": "cc Мотор" },
-              { "data": "80", "info": "Nm обртен момент" },
-              { "data": "120-130", "info": "PS - Максимална Сила" },
-              { "data": "10.000", "info": "КМ Сервисен Интервал" }
+              { "data": "660", "info": "cc Мотор" },
+              { "data": "64", "info": "Nm обртен момент" },
+              { "data": "81", "info": "PS - Максимална Сила" },
+              { "data": "16.000", "info": "КМ Сервисен Интервал" }
             ]
           },
           "reasonsToDrive": {
@@ -4750,16 +4735,16 @@
               "alt": "Trident 660 Range Model Image"
             },
             "subFamilyHeroVideo": {
-              "src": "/images/roadsters/streetTriple765/streetTriple765SubFamHeroVideo.webm",
-              "alt": "Street Triple 765 Video"
+              "src": "/images/roadsters/trident660/trident660HeroVideo.webm",
+              "alt": "Trident 660 Video"
             },
             "subFamilyTopSectionImage": {
-              "src": "/images/roadsters/streetTriple765/streetTriple765TopSectionImage.avif",
-              "alt": "Street Triple 765 Motorcycle"
+              "src": "/images/roadsters/trident660/trident660TopSectionImage.avif",
+              "alt": "Trident 660"
             },
             "subFamilyTopSectionBGImage": {
-              "src": "/images/roadsters/streetTriple765/streetTriple765TopSectionImageBG.avif",
-              "alt": "Street Triple 765 Motorcycle BG"
+              "src": "/images/roadsters/trident660/trident660TopSectionImageBG.avif",
+              "alt": "Trident 660 BG"
             }
           }
         },
@@ -4772,16 +4757,16 @@
           "shortDesc": "Најмоќниот, најдинамичниот и технолошки најнапредниот Speed Triple некогаш направен.",
           "subFamilyPageInfo": {
             "heroSlogans": [
-              "Перфектен",
-              "спортски моторцикл",
-              "со тркачки мотор"
+              "Автентична",
+              "Три-Цилиндарска",
+              "Перфекција"
             ],
             "topSection": {
-              "title": "Врвни Перформанси ",
-              "desc": "Подкрепнат од еволуција на Moto2™ тркачки мотор, Speed Triple 765 е мотор со врвни перформанси и висока спецификација.",
-              "subtitle": "Најдобриот “naked“ моторцикл - на пат и на тркачка патека."
+              "title": "Сосема нов од секој агол",
+              "desc": "Ја воведува врвната револуција во силина, перформанси, управување и Speed Triple технологија.",
+              "subtitle": "Новиот репер за тоа како треба да се спојат сите коцки за да се добијат врвни перформанси на “naked-sports“ мотор."
             },
-            "youtubeVideo": "https://www.youtube.com/embed/Hd3QZKRIT0Y",
+            "youtubeVideo": "https://www.youtube.com/embed/vuSogrXazi0",
             "fullSpecs": {
               "engineTransmission": [
                 {
@@ -4927,63 +4912,61 @@
             "grayCarousell": [
               {
                 "id": "carouselItem1",
-                "title": "Најновиот и Првенец во класата на “Streetfighter“ Моторцикли",
-                "desc": "Сега, уште повеќе сила благодарејки на Мото2 моторот со неверојатна агилност, агресивен изглед и електронска технологија која поставува нови стандарди.",
-                "image": "/images/roadsters/streetTriple765/streetTriple765GrayCaro1.avif"
+                "title": "Револуција во перформансите",
+                "desc": "Најмоќниот Speed Triple, со најмногу обртен момент и најбрза забрзување досега со сосема новиот три-цилиндарски мотор од 1160сс мотор.",
+                "image": "/images/roadsters/speedTriple1200RS/speedTripleRSGrayCaro1.avif"
               },
               {
                 "id": "carouselItem2",
-                "title": "Новиот Репер Во класата на “naked“ моторцикли",
-                "desc": "ТНови технолошки унапредувања, агилност, највисока запирачка спецификација и новиот репер во смисла на моќност во класата.",
-                "image": "/images/roadsters/streetTriple765/streetTriple765GrayCaro2.avif"
+                "title": "Револуција во однесување на пат",
+                "desc": "Нај-флексибилниот, прецизе, динамичен и нај-респонзивниот Speed Triple некогаш изработен.",
+                "image": "/images/roadsters/speedTriple1200RS/speedTripleRSGrayCaro2.avif"
               },
               {
                 "id": "carouselItem3",
-                "title": "Нај-моќната серија досега",
-                "desc": "Со голем чекор напред во развивање на Мото2 моторот, Street Triple серијата се закити со уште повеќе обртен момент и сила - 120 РЅ за R верзијата и 130 РЅ за RS Verzijata.",
-                "image": "/images/roadsters/streetTriple765/streetTriple765GrayCaro3.avif"
+                "title": "Револуција во технологија",
+                "desc": "Пагетен, остар и технолошки нај-напредниот Speed Triple некогаш изработен.",
+                "image": "/images/roadsters/speedTriple1200RS/speedTripleRSGrayCaro3.avif"
+              },
+              {
+                "id": "carouselItem4",
+                "title": "Револуција во стајлингот",
+                "desc": "Поставена е нова дефиниција на вистинска Speed Triple агресивност, карактер и стил.",
+                "image": "/images/roadsters/speedTriple1200RS/speedTripleRSGrayCaro4.avif"
               }
             ],
             "youtubeVideosCarousellItems": [{
-                "src": "https://www.youtube.com/embed/cDNnqoRB50w",
-                "title": "Triumph Street Triple Launch Valencia 2022"
+                "src": "https://www.youtube.com/embed/vuSogrXazi0",
+                "title": "Web - All-New Speed Triple 1200 RS"
               },
               {
-                "src": "https://www.youtube.com/embed/A6MwjE782iI",
-                "title": "Web | Street Triple R Hero"
+                "src": "https://www.youtube.com/embed/jWsjDF88QMo",
+                "title": "Web - Track Riding | All-New Speed Triple 1200 RS"
               },
               {
-                "src": "https://www.youtube.com/embed/Qj9dxotylh0",
-                "title": "Web | Street Triple RS Hero"
+                "src": "https://www.youtube.com/embed/qeGu-JP7B40",
+                "title": "Web - Road focused. Track ready | All-New Speed Triple 1200 RS"
               },
               {
-              "src": "https://www.youtube.com/embed/--p8YSQxEp0",
-              "title": "Web | Engine In Motion Street Triple 765"
+              "src": "https://www.youtube.com/embed/VczRFwgIYgo",
+              "title": "All-New Speed Triple 1200 RS Features and Benefits"
               },
               {
-                "src": "https://www.youtube.com/embed/JR-wXQFKG2Q",
-                "title": "Web - DE | Street Triple R | Features and Benefits"
-              },
-              {
-                "src": "https://www.youtube.com/embed/cDNnqoRB50w",
-                "title": "Triumph Street Triple Launch Valencia 2022"
-              },
-              {
-                "src": "https://www.youtube.com/embed/kP7FA3k6Hv8",
-                "title": "New Street Triple 765 RS | Features and Benefits"
+                "src": "https://www.youtube.com/embed/oQ2C2v-dQtU",
+                "title": "Web - All-New Speed Triple 1200 RS  | Accessories"
               }
             ],
             "audioSection": {
-              "audio": "/images/roadsters/streetTriple765/streetTriple765Sound.mp3",
-              "title": "Три-цилиндречен звук кој го тресе земјиното тло.",
-              "desc": "Новиот издувен систем го испорачува оној препознатлив три-цилиндарски звук на моторот.",
+              "audio": "/images/roadsters/speedTriple1200RS/speedTriple 1200RS.mp3",
+              "title": "Најдобриот звук...",
+              "desc": "...на било кој Speed Triple мотор досега, мистичен, богат и возбудлив звук за возубудливо патување",
               "logo": null
             },
             "specNumbers": [
-              { "data": "765", "info": "cc Мотор" },
-              { "data": "80", "info": "Nm обртен момент" },
-              { "data": "120-130", "info": "PS - Максимална Сила" },
-              { "data": "10.000", "info": "КМ Сервисен Интервал" }
+              { "data": "1160", "info": "cc Мотор" },
+              { "data": "180", "info": "Nm обртен момент" },
+              { "data": "125", "info": "PS - Максимална Сила" },
+              { "data": "198", "info": "Kg - Тежина при полн резервоар" }
             ]
           },
           "reasonsToDrive": {
@@ -5093,16 +5076,16 @@
               "alt": "Speed Triple 1200 RS Range Model Image"
             },
             "subFamilyHeroVideo": {
-              "src": "/images/roadsters/streetTriple765/streetTriple765SubFamHeroVideo.webm",
-              "alt": "Street Triple 765 Video"
+              "src": "/images/roadsters/speedTriple1200RS/speedTripleRSHeroVideo.webm",
+              "alt": "Speed Triple 1200RS Video"
             },
             "subFamilyTopSectionImage": {
-              "src": "/images/roadsters/streetTriple765/streetTriple765TopSectionImage.avif",
-              "alt": "Street Triple 765 Motorcycle"
+              "src": "/images/roadsters/speedTriple1200RS/speedTripleRSTopSectionImage.avif",
+              "alt": "Speed Triple 1200RS Motorcycle"
             },
             "subFamilyTopSectionBGImage": {
-              "src": "/images/roadsters/streetTriple765/streetTriple765TopSectionImageBG.avif",
-              "alt": "Street Triple 765 Motorcycle BG"
+              "src": "/images/roadsters/speedTriple1200RS/speedTripleRSTopSectionImageBG.avif",
+              "alt": "Speed Triple 1200RS Motorcycle BG"
             }
           }
         },
@@ -5115,16 +5098,16 @@
           "shortDesc": "Колку повозбудливо изгледа толку повозбудлив е за возење. Најновиот Speed Triple 1200 RR со досега најдобрата спецификација.",
           "subFamilyPageInfo": {
             "heroSlogans": [
-              "Перфектен",
-              "спортски моторцикл",
-              "со тркачки мотор"
+              "Автентична",
+              "Три-Цилиндарска",
+              "Перфекција"
             ],
             "topSection": {
-              "title": "Врвни Перформанси ",
-              "desc": "Подкрепнат од еволуција на Moto2™ тркачки мотор, Speed Triple 765 е мотор со врвни перформанси и висока спецификација.",
-              "subtitle": "Најдобриот “naked“ моторцикл - на пат и на тркачка патека."
+              "title": "Чиста елеганција, перформанси и карактер",
+              "desc": "Нај-фокусираниот Speed Triple досега. Преубав дизајн, одлично чувство на поврзаност помеѓу возачот и моторот.",
+              "subtitle": "Нов репер за убавина, софистицирано инжињерство и фокусиран карактер и врвот на Speed Triple перформанси и управување."
             },
-            "youtubeVideo": "https://www.youtube.com/embed/Hd3QZKRIT0Y",
+            "youtubeVideo": "https://www.youtube.com/embed/DmPPgMjUD1o",
             "fullSpecs": {
               "engineTransmission": [
                 {
@@ -5270,63 +5253,69 @@
             "grayCarousell": [
               {
                 "id": "carouselItem1",
-                "title": "Најновиот и Првенец во класата на “Streetfighter“ Моторцикли",
-                "desc": "Сега, уште повеќе сила благодарејки на Мото2 моторот со неверојатна агилност, агресивен изглед и електронска технологија која поставува нови стандарди.",
-                "image": "/images/roadsters/streetTriple765/streetTriple765GrayCaro1.avif"
+                "title": "Револуционирање на однесувањето на патиштата",
+                "desc": "Новиот Street Tirple направи голем чекор напред кога е во прашање управувањето со тоа што на возачот му понудива по-директна позиција за возење.",
+                "image": "/images/roadsters/speedTriple1200RR/speedTriple1200RRGrayCaro1.avif"
               },
               {
                 "id": "carouselItem2",
-                "title": "Новиот Репер Во класата на “naked“ моторцикли",
-                "desc": "ТНови технолошки унапредувања, агилност, највисока запирачка спецификација и новиот репер во смисла на моќност во класата.",
-                "image": "/images/roadsters/streetTriple765/streetTriple765GrayCaro2.avif"
+                "title": "Нови луксузни спецификации",
+                "desc": "Новите Öhlins Smart EC 2.0. електорнско подесувачки полу-активни елементи на суспензијата понудуваат високо ниво на перформанси, комфорт и контрола врз моторот.",
+                "image": "/images/roadsters/speedTriple1200RR/speedTriple1200RRGrayCaro2.avif"
               },
               {
                 "id": "carouselItem3",
-                "title": "Нај-моќната серија досега",
-                "desc": "Со голем чекор напред во развивање на Мото2 моторот, Street Triple серијата се закити со уште повеќе обртен момент и сила - 120 РЅ за R верзијата и 130 РЅ за RS Verzijata.",
-                "image": "/images/roadsters/streetTriple765/streetTriple765GrayCaro3.avif"
+                "title": "Нови пневматици специјализирани за на патека",
+                "desc": "Опремен со Pirelli Diablo Supercorsa V3 пневматици, Streeт Triple буквално се лепи на подлогата.",
+                "image": "/images/roadsters/speedTriple1200RR/speedTriple1200RRGrayCaro3.avif"
+              }
+              ,
+              {
+                "id": "carouselItem4",
+                "title": "Високо Перформантни Сопирачки",
+                "desc": "Brembo Stylema® dual radial monobloс клештите во пар со 320mm дискови доставуваат неверојатна презиност и перформанси кога е во прашање сопирањето.",
+                "image": "/images/roadsters/speedTriple1200RR/speedTriple1200RRGrayCaro4.avif"
+              }
+              ,
+              {
+                "id": "carouselItem5",
+                "title": "Три-Цилиндарска Револуција",
+                "desc": "Експлозивни перформанси и перфектна респонзивност се на располагање, изработени од моторот од 1160сс - 180РЅ и 125Nm обртен момент.",
+                "image": "/images/roadsters/speedTriple1200RR/speedTriple1200RRGrayCaro5.avif"
               }
             ],
             "youtubeVideosCarousellItems": [{
-                "src": "https://www.youtube.com/embed/cDNnqoRB50w",
-                "title": "Triumph Street Triple Launch Valencia 2022"
+                "src": "https://www.youtube.com/embed/DSO4IahvOXk",
+                "title": "New Triumph Speed Triple 1200 RR – Global Revea"
               },
               {
-                "src": "https://www.youtube.com/embed/A6MwjE782iI",
-                "title": "Web | Street Triple R Hero"
+                "src": "https://www.youtube.com/embed/DmPPgMjUD1o",
+                "title": "New Speed Triple 1200 RR - Web"
               },
               {
-                "src": "https://www.youtube.com/embed/Qj9dxotylh0",
-                "title": "Web | Street Triple RS Hero"
+                "src": "https://www.youtube.com/embed/0oHPkxbwt70",
+                "title": "Track Riding | New Speed Triple 1200 R"
               },
               {
-              "src": "https://www.youtube.com/embed/--p8YSQxEp0",
-              "title": "Web | Engine In Motion Street Triple 765"
+              "src": "https://www.youtube.com/embed/d8tbBPBEtdw",
+              "title": "New Speed Triple 1200 RR  | Accessories"
               },
               {
-                "src": "https://www.youtube.com/embed/JR-wXQFKG2Q",
-                "title": "Web - DE | Street Triple R | Features and Benefits"
-              },
-              {
-                "src": "https://www.youtube.com/embed/cDNnqoRB50w",
-                "title": "Triumph Street Triple Launch Valencia 2022"
-              },
-              {
-                "src": "https://www.youtube.com/embed/kP7FA3k6Hv8",
-                "title": "New Street Triple 765 RS | Features and Benefits"
+                "src": "https://www.youtube.com/embed/Wkl9OAfK5XQ",
+                "title": "New Speed Triple 1200 RR Features and Benefit"
               }
             ],
             "audioSection": {
-              "audio": "/images/roadsters/streetTriple765/streetTriple765Sound.mp3",
-              "title": "Три-цилиндречен звук кој го тресе земјиното тло.",
-              "desc": "Новиот издувен систем го испорачува оној препознатлив три-цилиндарски звук на моторот.",
+              "audio": "/images/roadsters/speedTriple1200RR/speedTriple 1200RR.mp3",
+              "title": "Пуштете глас и уживајте.",
+              "desc": null,
               "logo": null
             },
             "specNumbers": [
-              { "data": "765", "info": "cc Мотор" },
-              { "data": "80", "info": "Nm обртен момент" },
-              { "data": "120-130", "info": "PS - Максимална Сила" },
-              { "data": "10.000", "info": "КМ Сервисен Интервал" }
+              { "data": "1160", "info": "cc Мотор" },
+              { "data": "180", "info": "Nm обртен момент" },
+              { "data": "125", "info": "PS - Максимална Сила" },
+              { "data": "15.000", "info": "КМ Сервисен Интервал" }
             ]
           },
           "reasonsToDrive": {
@@ -5436,16 +5425,16 @@
               "alt": "Speed Triple 1200 RR Range Model Image"
             },
             "subFamilyHeroVideo": {
-              "src": "/images/roadsters/streetTriple765/streetTriple765SubFamHeroVideo.webm",
-              "alt": "Street Triple 765 Video"
+              "src": "/images/roadsters/speedTriple1200RR/speedTripleRRHeroVideo.webm",
+              "alt": "Speed Triple 1200RR Video"
             },
             "subFamilyTopSectionImage": {
-              "src": "/images/roadsters/streetTriple765/streetTriple765TopSectionImage.avif",
-              "alt": "Street Triple 765 Motorcycle"
+              "src": "/images/roadsters/speedTriple1200RR/speedTriple1200RRTopSectionImage.avif",
+              "alt": "Speed Triple 1200RR Motorcycle"
             },
             "subFamilyTopSectionBGImage": {
-              "src": "/images/roadsters/streetTriple765/streetTriple765TopSectionImageBG.avif",
-              "alt": "Street Triple 765 Motorcycle BG"
+              "src": "/images/roadsters/speedTriple1200RR/speedTriple1200RRTopSectionImageBG.avif",
+              "alt": "Speed Triple 1200RR Motorcycle BG"
             }
           }
         }
@@ -8768,7 +8757,7 @@
       "title": "Street Triple 765 MOTO2™ EDITION",
       "model": "street-triple-moto2-editon-2023",
       "category": "roadsters",
-      "subFamilyCategory": "street-triple-765",
+      "subFamilyCategory": "street-triple-moto2",
       "edition": "roadsters",
       "price": 16990,
       "specs": {
