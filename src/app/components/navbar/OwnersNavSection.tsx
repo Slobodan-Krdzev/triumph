@@ -51,7 +51,7 @@ export const linkItemsQuickLinksOwners: NavLinkListingItemsType[] = [
 
 const OwnersNavSection = () => {
   return (
-    <div className="flex justify-between py-8 md:px-48">
+    <div className="flex justify-between py-8 md:px-48 px-52">
       <NavLinkListing
         items={linkItemsTriumph}
         title={"Вашиот Triumph"}

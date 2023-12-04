@@ -23,7 +23,7 @@ const MobileNav = ({fams, allBikes}: MobileNavProps) => {
   const handleMenuVisibility = () => {
 
     if(!isMainDropdownShown){
-        router.push(`${pathname}?section=false`)
+        router.push(`${pathname}?section=false`,{scroll: false})
     }
 
     setIsMainDropdownShown(!isMainDropdownShown);

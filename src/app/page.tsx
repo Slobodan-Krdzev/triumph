@@ -86,7 +86,7 @@ export default async function Home() {
             </h2>
           </section>
     
-          <section className="pb-16 flex flex-col md:flex-row md:px-8 px-4 md:gap-4">
+          <section className="pb-16 flex flex-col md:flex-row md:px-8 px-4 md:gap-4 w-full md:w-10/12 m-auto">
             {linkCardsSection.map((card) => (
               <CardLinkItem
                 key={card.title}

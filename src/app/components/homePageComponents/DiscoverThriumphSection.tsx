@@ -31,7 +31,7 @@ const items = [
 
 const DiscoverThriumphSection = () => {
   return (
-    <section className="px-4 lg:py-16">
+    <section className="px-4 lg:py-16 w-full md:w-10/12 m-auto">
       <div className="text-center mb-16">
         <SectionTitleH2 text={'Откријте го "Thriumph"'} color={"dark"} />
       </div>

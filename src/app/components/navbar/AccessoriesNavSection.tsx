@@ -75,7 +75,7 @@ export const linkItemsQuickLinks: NavLinkListingItemsType[] = [
 
 const AccessoriesNavSection = () => {
   return (
-    <div className="flex justify-between p-8">
+    <div className="flex justify-between p-8 px-52">
       <NavLinkListing
         items={linkItemsAccessory}
         title={"Аксесоари"}
