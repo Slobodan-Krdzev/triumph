@@ -11,6 +11,7 @@ import MainBtn from "@/app/components/MainBtn";
 import NumbersSection from "@/app/components/SubFamily/NumbersSection";
 import SpecTableListi from "@/app/components/SubFamily/Specification/SpecTableListi";
 import SpecsTable from "@/app/components/SubFamily/Specification/SpecsTable";
+import BikeListingNoSlider from "@/app/components/familiySharedComponents/BikeListingNoSlider";
 import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
 import TextAndImageFlexSection from "@/app/components/familiySharedComponents/TextAndImageFlexSection";
 import { BIKES, FAMILIES } from "@/app/constants/constants";
@@ -26,9 +27,11 @@ const RocketBikePage = async ({ params }: any) => {
     const bikeData = await bikeRes.json();
     const bike = bikeData[0];
 
-    const subFamRes = await fetch(`${FAMILIES}?type=rocket-3`, {cache: 'no-store'});
+    const subFamRes = await fetch(`${FAMILIES}?type=rocket-3`, {
+      cache: "no-store",
+    });
     const subFamData = await subFamRes.json();
-    const subFam = subFamData[0].subFamilies['rocket-3'];
+    const subFam = subFamData[0].subFamilies["rocket-3"];
 
     return (
       <main className="bg-white">
@@ -73,10 +76,16 @@ const RocketBikePage = async ({ params }: any) => {
           </div>
         </section>
 
-        {bike.bikePageInfo && <Rocket3TopDesc info={bike.bikePageInfo.topDesc} />}
+        {bike.bikePageInfo && (
+          <Rocket3TopDesc info={bike.bikePageInfo.topDesc} />
+        )}
 
-        <NumbersSection model={bikeModel} specNumbers={subFam.subFamilyPageInfo.specNumbers} bgBlack={true}/>  
-        
+        <NumbersSection
+          model={bikeModel}
+          specNumbers={subFam.subFamilyPageInfo.specNumbers}
+          bgBlack={true}
+        />
+
         {bike.gallery.promoYoutubeVideo && (
           <PromoBikeYoutubeVideo
             video={bike.gallery.promoYoutubeVideo.src}
@@ -87,7 +96,7 @@ const RocketBikePage = async ({ params }: any) => {
         {bike.features && (
           <section className="px-4 py-4 md:py-8 lg:py-16">
             <div className="text-center md:mb-8">
-                <SectionTitleH2 text={"Карактеристики"} color={"dark"}/>
+              <SectionTitleH2 text={"Карактеристики"} color={"dark"} />
             </div>
             <SpecTableListi
               items={bike.features}
@@ -101,7 +110,7 @@ const RocketBikePage = async ({ params }: any) => {
           <BikePageCarousell items={bike.bikePageCarousell} />
         )}
 
-        {bike.bikePagePromo && (
+        {/* {bike.bikePagePromo && (
           <section className="px-4 md:px-24 py-4 md:py-16">
             {bike.bikePagePromo.map((promo: any, idx: number) => (
               <TextAndImageFlexSection
@@ -116,7 +125,7 @@ const RocketBikePage = async ({ params }: any) => {
               />
             ))}
           </section>
-        )}
+        )} */}
 
         <GrayBand
           itemOne={{
