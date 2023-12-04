@@ -55,7 +55,7 @@ const MobileSecondaryNav = ({
             ))}
           </ul>
 
-          <MainBtn text={"КОНФИГУРИРАЈ"} bgBlack={false} isLink={true} link={`/configure/bike/${configurationLink.toString()}`}/>
+          <MainBtn text={"КОНФИГУРИРАЈ"} bgBlack={false} isLink={true} link={`${configurationLink.toString()}`}/>
         </div>
       )}
     </section>

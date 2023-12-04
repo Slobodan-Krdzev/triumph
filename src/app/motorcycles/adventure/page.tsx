@@ -1,4 +1,5 @@
 import GrayBand from "@/app/components/GrayBand";
+import SecondaryNavFamily from "@/app/components/SecondaryNavFamily";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
 import BikeListingNoSlider from "@/app/components/familiySharedComponents/BikeListingNoSlider";
 import PageHeroSection from "@/app/components/familiySharedComponents/PageHeroSection";
@@ -45,7 +46,8 @@ const AdventurePage = async () => {
 
   return (
     <main className="relative white-bg">
-      <SecondaryNavBar items={secondaryNavItems} title={"Adventure"} configurationLink={"/configure"} />
+      {/* <SecondaryNavBar items={secondaryNavItems} title={"Adventure"} configurationLink={"/configure"} /> */}
+      <SecondaryNavFamily items={secondaryNavItems} title={"Adventure"} configLink={"/configure"} />
       <PageHeroSection
         title={familyData[0].type}
         mainBikeLogo={familyData[0].mainBikeLogoImage}

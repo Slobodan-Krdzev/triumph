@@ -8,19 +8,21 @@ type CardProps = {
   item: any;
 };
 
-const Card = ({ item }: any) => {
+const Card = ({ item }: CardProps) => {
   return (
     <div
       key={item.id}
       className="bg-white shadow-lg lg:mb-8 flex flex-col justify-between rounded-md"
     >
       <div className="basis-2/6 border-b-2 border-gray-300">
-        <Image
-          src={item.gallery.modelImage.src}
-          alt={item.gallery.modelImage.alt}
+        
+        {item.gallery.modelImage && <Image
+          src={item.gallery?.modelImage.src}
+          alt={item.gallery?.modelImage.alt}
           width={271}
           height={150}
-        />
+        />}
+        
       </div>
 
       <div className="mb-8 p-4 text-center flex flex-col justify-start basis-2/6 w-72">
