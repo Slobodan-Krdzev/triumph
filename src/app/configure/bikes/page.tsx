@@ -6,15 +6,9 @@ import PaginationBtn from "@/app/components/PaginationBtn";
 import { BIKES } from "@/app/constants/constants";
 
 const BikesPage = async ({ params, searchParams }: any) => {
-  console.log("params i searchParams", params, searchParams);
 
   try {
-    // const bikesRes = await fetch(
-    //   `${BIKES}?_page=${
-    //     searchParams._page ? searchParams._page : "1"
-    //   }&_limit=8`,
-    //   { cache: "no-store" }
-    // );
+
     const bikesRes = await fetch(`${BIKES}`, { next: { revalidate: 2000 } });
     const bikes = await bikesRes.json();
 
@@ -30,7 +24,7 @@ const BikesPage = async ({ params, searchParams }: any) => {
           noBtn={true}
         />
 
-        <section className="flex flex-col px-4 md:px-10 md:py-16 md:pb-10 py-4">
+        <section className="flex flex-col md:w-10/12 m-auto px-4 md:px-10 md:py-16 md:pb-10 py-4">
           <BikesSorter />
           <BikesListingSection bikes={bikes} />
         </section>

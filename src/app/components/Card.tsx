@@ -12,9 +12,9 @@ const Card = ({ item }: CardProps) => {
   return (
     <div
       key={item.id}
-      className="bg-white shadow-lg lg:mb-8 flex flex-col justify-between rounded-md"
+      className="bg-white shadow-xl lg:mb-8 flex flex-col justify-between rounded-md"
     >
-      <div className="basis-2/6 border-b-2 border-gray-300">
+      <div className="basis-2/6 border-thin-gray-bottom">
         
         {item.gallery.modelImage && <Image
           src={item.gallery?.modelImage.src}
@@ -30,7 +30,8 @@ const Card = ({ item }: CardProps) => {
           {item.title}
         </h3>
         <p className="text-md mb-4 font-medium">
-          {item.price === "Наскоро" ? "Цени Наскоро." : `Oд ${item.price} €.`}
+          
+          {item.price === null ? "Цени Наскоро." : `Oд ${item.price} €.`}
         </p>
 
         {item.shortSpecInfo && (
@@ -41,14 +42,14 @@ const Card = ({ item }: CardProps) => {
           </ul>
         )}
       </div>
-      <div className="flex border-t-2 border-gray-300 py-2 items-center text-center ">
+      <div className="flex border-thin-gray-top py-2 items-center text-center ">
         <Link
           href={`${
             item.model
               ? `/configure/bike/${item.model}`
               : `/configure/bikes/${item.subFamilyName}`
           }`}
-          className="text-sm text-red uppercase w-1/2 font-medium"
+          className="text-sm text-red uppercase w-1/2 font-medium "
         >
           Конфигурација
         </Link>
@@ -58,7 +59,7 @@ const Card = ({ item }: CardProps) => {
               ? `/motorcycles/${item.category}/${item.subFamilyCategory}/${item.model}`
               : `${item.url}`
           }`}
-          className="text-md p-2 w-1/2 uppercase text-sm border-l-2 border-gray-300 font-medium"
+          className="text-md p-2 w-1/2 uppercase text-sm border-thin-left font-medium "
         >
           Види Детали
         </Link>

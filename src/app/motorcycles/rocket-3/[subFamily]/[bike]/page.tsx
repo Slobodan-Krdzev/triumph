@@ -5,15 +5,18 @@ import CustomizationColorsListing from "@/app/components/BikePageComponents/Cust
 import ImagePreview from "@/app/components/BikePageComponents/ImagePreview";
 import PricePriviewer from "@/app/components/BikePageComponents/PricePriviewer";
 import PromoBikeYoutubeVideo from "@/app/components/BikePageComponents/PromoBikeYoutubeVideo";
+import Rocket3TopDesc from "@/app/components/BikePageComponents/Rocket3Components/Rocket3TopDesc";
 import GrayBand from "@/app/components/GrayBand";
 import MainBtn from "@/app/components/MainBtn";
+import NumbersSection from "@/app/components/SubFamily/NumbersSection";
 import SpecTableListi from "@/app/components/SubFamily/Specification/SpecTableListi";
 import SpecsTable from "@/app/components/SubFamily/Specification/SpecsTable";
+import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
 import TextAndImageFlexSection from "@/app/components/familiySharedComponents/TextAndImageFlexSection";
 import { BIKES, FAMILIES } from "@/app/constants/constants";
 import React from "react";
 
-const ClassicsBikePage = async ({ params }: any) => {
+const RocketBikePage = async ({ params }: any) => {
   const bikeModel = params.bike;
 
   try {
@@ -23,9 +26,9 @@ const ClassicsBikePage = async ({ params }: any) => {
     const bikeData = await bikeRes.json();
     const bike = bikeData[0];
 
-    const subFamRes = await fetch(`${FAMILIES}?type=classics`);
+    const subFamRes = await fetch(`${FAMILIES}?type=rocket-3`, {cache: 'no-store'});
     const subFamData = await subFamRes.json();
-    const subFam = subFamData[0].subFamilies[bike.subFamilyCategory];
+    const subFam = subFamData[0].subFamilies['rocket-3'];
 
     return (
       <main className="bg-white">
@@ -69,20 +72,11 @@ const ClassicsBikePage = async ({ params }: any) => {
             </div>
           </div>
         </section>
-        <section className="py-4 md:py-1">
-          <h2 className="uppercase text-2xl md:text-5xl font-semibold text-center mb-4 md:mb-8">
-            Спецификација
-          </h2>
-          <div className="px-4">
-            <SpecTableListi
-              items={[{ title: "Цена", desc: `€ ${bike.price}` }]}
-              title={"Цена"}
-              isOpen={true}
-            />
-          </div>
-          <SpecsTable specs={subFam.subFamilyPageInfo.fullSpecs} />
-        </section>
 
+        {bike.bikePageInfo && <Rocket3TopDesc info={bike.bikePageInfo.topDesc} />}
+
+        <NumbersSection model={bikeModel} specNumbers={subFam.subFamilyPageInfo.specNumbers} bgBlack={true}/>  
+        
         {bike.gallery.promoYoutubeVideo && (
           <PromoBikeYoutubeVideo
             video={bike.gallery.promoYoutubeVideo.src}
@@ -91,7 +85,10 @@ const ClassicsBikePage = async ({ params }: any) => {
         )}
 
         {bike.features && (
-          <section className="px-4">
+          <section className="px-4 py-4 md:py-8 lg:py-16">
+            <div className="text-center md:mb-8">
+                <SectionTitleH2 text={"Карактеристики"} color={"dark"}/>
+            </div>
             <SpecTableListi
               items={bike.features}
               title={"Карактеристики"}
@@ -129,7 +126,7 @@ const ClassicsBikePage = async ({ params }: any) => {
           }}
           itemTwo={{
             text: "КОНФИГУРАЦИЈА",
-            url: `/configure/families/classics`,
+            url: `/configure/families/rocket-3`,
             icon: "/icon-configurator.svg",
           }}
         />
@@ -141,4 +138,4 @@ const ClassicsBikePage = async ({ params }: any) => {
   }
 };
 
-export default ClassicsBikePage;
+export default RocketBikePage;

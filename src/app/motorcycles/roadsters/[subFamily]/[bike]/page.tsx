@@ -129,7 +129,7 @@ const RoadstersBikePage = async ({params}: any) => {
             }}
             itemTwo={{
               text: "КОНФИГУРАЦИЈА",
-              url: `/configure/bike/${bike.model}`,
+              url: `/configure/families/roadsters`,
               icon: "/icon-configurator.svg",
             }}
           />

@@ -127,7 +127,7 @@ const BikePage = async ({ params }: any) => {
           icon: "/pin.svg"
         }} itemTwo={{
           text: "КОНФИГУРАЦИЈА",
-          url: `/configure/bike/${bike.model}`,
+          url: `/configure/families/adventure`,
           icon: "/icon-configurator.svg"
         }}/>
       </main>
