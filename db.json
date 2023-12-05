@@ -5768,9 +5768,43 @@
       "price": null,
       "gallery": {
         "modelImage": {
-          "src": "/images/adventure/tiger900GtModel.png",
+          "src": "/images/adventure/tiger900GT/tiger900GTGraphiteBlack.png",
           "alt": "Tiger 900 GT"
         }
+      },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/adventure/tiger900GT/tiger900GTGraphiteBlack.png",
+        "color1": "/images/adventure/tiger900GT/tiger900GTGraphiteBlack.png",
+        "color1Reversed": "/images/adventure/tiger900GT/tiger900GTGraphiteBlackReversed.png",
+        "color2": "/images/adventure/tiger900GT/tiger900GTSnowdonia.png",
+        "color2Reversed": "/images/adventure/tiger900GT/tiger900GTSnowdoniaReversed.png",
+        "color3": "/images/adventure/tiger900GT/tiger900GTRed.png",
+        "color3Reversed": "/images/adventure/tiger900GT/tiger900GTRedReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Graphite / Saphire Black",
+          "price": null,
+          "image": "/images/custom-collors/graphiteJetBlack.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Snowdonia White / Saphire Black",
+          "price": null,
+          "image": "/images/custom-collors/snowdoniaWhiteJetBlack.jpg",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Carnival Red / Saphire Black",
+          "price": null,
+          "image": "/images/custom-collors/carnivalRedSapphireBlack.jpg",
+          "colorCode": "color3"
+        }
+      ],
+      "shortSpecInfo": {
+        "info1": "Нов 900cc три-цилиндричен мотор",
+        "info2": "Високи спецификации за подобро искуство",
+        "info3": "Врвна технологија фокусирана на возачот"
       },
       "subFamilyPromo": {
         "title": "Новиот Tiger 900 GT",
@@ -5787,10 +5821,39 @@
       "price": null,
       "gallery": {
         "modelImage": {
-          "src": "/images/adventure/tiger900GtModel.png",
+          "src": "/images/adventure/tiger900GTPRO/tiger900GTPROGraphite.png",
           "alt": "Tiger 900 GT"
         }
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/adventure/tiger900GTPRO/tiger900GTPROGraphite.png",
+        "color1": "/images/adventure/tiger900GTPRO/tiger900GTPROGraphite.png",
+        "color1Reversed": "/images/adventure/tiger900GTPRO/tiger900GTPROGraphiteReversed.png",
+        "color2": "/images/adventure/tiger900GTPRO/tiger900GTPRORed.png",
+        "color2Reversed": "/images/adventure/tiger900GTPRO/tiger900GTPRORedReversed.png",
+        "color3": "/images/adventure/tiger900GTPRO/tiger900GTPROWhite.png",
+        "color3Reversed": "/images/adventure/tiger900GTPRO/tiger900GTPROWhiteReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Graphite / Saphire Black",
+          "price": null,
+          "image": "/images/custom-collors/graphiteJetBlack.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Snowdonia White / Saphire Black",
+          "price": null,
+          "image": "/images/custom-collors/snowdoniaWhiteJetBlack.jpg",
+          "colorCode": "color3"
+        },
+        {
+          "colorName": "Carnival Red / Saphire Black",
+          "price": null,
+          "image": "/images/custom-collors/carnivalRedSapphireBlack.jpg",
+          "colorCode": "color2"
+        }
+      ],
       "subFamilyPromo": {
         "title": "Новиот Tiger 900 GT PRO",
         "desc": "Високи перформанси, комфорт, можности и управување. Новата Tiger 900 GT фамилија е родена за авантури од епски размери."
@@ -5806,9 +5869,43 @@
       "price": 21990,
       "gallery": {
         "modelImage": {
-          "src": "/images/adventure/tiger900RallyProModel.png",
+          "src": "/images/adventure/tiger900RallyPro/tiger900RallyProCarbonBlack.png",
           "alt": "Tiger 900 Rally Pro"
         }
+      },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/adventure/tiger900RallyPro/tiger900RallyProCarbonBlack.png",
+        "color1": "/images/adventure/tiger900RallyPro/tiger900RallyProCarbonBlack.png",
+        "color1Reversed": "/images/adventure/tiger900RallyPro/tiger900RallyProCarbonBlackReversed.png",
+        "color2": "/images/adventure/tiger900RallyPro/tiger900RallyProOrange.png",
+        "color2Reversed": "/images/adventure/tiger900RallyPro/tiger900RallyProOrangeReversed.png",
+        "color3": "/images/adventure/tiger900RallyPro/tiger900RallyProKhaki.png",
+        "color3Reversed": "/images/adventure/tiger900RallyPro/tiger900RallyProKhakiReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Carbon Black / Saphire Black",
+          "price": null,
+          "image": "/images/custom-collors/carbonBlack.png",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Ash Gray / Intense Orange",
+          "price": null,
+          "image": "/images/custom-collors/ashGreyIntenseOrange.png",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Matt Khaki Green / Matt Phantom",
+          "price": null,
+          "image": "/images/custom-collors/mattKahkiGreenMattPhantomBlack.png",
+          "colorCode": "color3"
+        }
+      ],
+      "shortSpecInfo": {
+        "info1": "Нов 900cc три-цилиндричен мотор",
+        "info2": "Високи спецификации за подобро искуство",
+        "info3": "Врвна технологија фокусирана на возачот"
       },
       "subFamilyPromo": {
         "title": "НОВИОТ Tiger 900 Rally PRO",
@@ -5906,12 +6003,8 @@
       },
       "gallery": {
         "modelImage": {
-          "src": "/images/adventure/tigerSport850ModelImage.png",
+          "src": "/images/adventure/tigerSport850/tigerSport850DiabloRed.png",
           "alt": "Tiger 850 Sport"
-        },
-        "image360": {
-          "src": "/images/adventure/tigerSport850/tiger850-360Image.png",
-          "alt": "Tiger 850 Sport 360 Image"
         },
         "promoYoutubeVideo": {
           "src": "https://www.youtube.com/embed/dGfqpR5bwyM",
@@ -5919,11 +6012,11 @@
         }
       },
       "bikeCollorPalletteGallery": {
-        "default": "/images/adventure/tigerSport850ModelImage.png",
-        "color1": "/images/adventure/tigerSport850ModelImage.png",
-        "color1Reversed": "",
-        "color2": "/images/adventure/tigerSport850/tiger850SportGraphiteJetBlack.avif",
-        "color2Reversed": ""
+        "default": "/images/adventure/tigerSport850/tigerSport850DiabloRed.png",
+        "color1": "/images/adventure/tigerSport850/tigerSport850DiabloRed.png",
+        "color1Reversed": "/images/adventure/tigerSport850/tigerSport850DiabloRedReversed.png",
+        "color2": "/images/adventure/tigerSport850/tigerSport850GraphiteJetBlack.png",
+        "color2Reversed": "/images/adventure/tigerSport850/tigerSport850GraphiteJetBlackReversed.png"
       },
       "customizationColors": [
         {
@@ -6069,7 +6162,7 @@
       "model": "tiger-1200-gt-pro-2022",
       "category": "adventure",
       "subFamilyCategory": "tiger-1200-gt",
-      "edition": "1200gt",
+      "edition": "adventure",
       "price": 20990,
       "specs": {
         "cc": 398,
@@ -6268,6 +6361,35 @@
           "alt": "Tiger 850 Youtbe Video"
         }
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerSnowdoniaWhite.png",
+        "color1": "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerSnowdoniaWhite.png",
+        "color1Reversed": "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerSnowdoniaWhiteReversed.png",
+        "color2": "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerSaphireBlack.png",
+        "color2Reversed": "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerSaphireBlackReversed.png",
+        "color3": "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerLucerneBlue.png",
+        "color3Reversed": "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerLucerneBlueReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Snowdonia White",
+          "price": null,
+          "image": "/images/custom-collors/snowdoniaWhite.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Saphire Black",
+          "price": 200,
+          "image": "/images/custom-collors/sapphireBlack.jpg",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Lucerne Blue",
+          "price": 300,
+          "image": "/images/custom-collors/lucerneBlue.jpg",
+          "colorCode": "color3"
+        }
+      ],
       "shortSpecInfo": {
         "info1": "1,160cc T-plane Triple Motor",
         "info2": "30 литарски резервоар",
@@ -6419,13 +6541,13 @@
         }
       },
       "bikeCollorPalletteGallery": {
-        "default": "/images/adventure/tiger1200GTPRO/tigerSport850ModelImage.png",
-        "color1": "/images/adventure/tiger1200GTPRO/tigerSport850ModelImage.png",
-        "color1Reversed": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor1Reversed.png",
-        "color2": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor2.png",
-        "color2Reversed": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor2Reversed.png",
-        "color3": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor3.png",
-        "color3Reversed": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor3Reversed.png"
+        "default": "/images/adventure/tiger1200RallyPro/tiger1200RallyProSnowdoniaWhite.png",
+        "color1": "/images/adventure/tiger1200RallyPro/tiger1200RallyProSnowdoniaWhite.png",
+        "color1Reversed": "/images/adventure/tiger1200RallyPro/tiger1200RallyProSnowdoniaWhiteReversed.png",
+        "color2": "/images/adventure/tiger1200RallyPro/tiger1200RallyProBlack.png",
+        "color2Reversed": "/images/adventure/tiger1200RallyPro/tiger1200RallyProBlackReversed.png",
+        "color3": "/images/adventure/tiger1200RallyPro/tiger1200RallyProMattKhaki.png",
+        "color3Reversed": "/images/adventure/tiger1200RallyPro/tiger1200RallyProMattKhakiReversed.png"
       },
       "customizationColors": [
         {
@@ -6441,9 +6563,9 @@
           "colorCode": "color2"
         },
         {
-          "colorName": "Lucerne Blue",
-          "price": 200,
-          "image": "/images/custom-collors/lucerneBlue.jpg",
+          "colorName": "Matt Khaki",
+          "price": 300,
+          "image": "/images/custom-collors/mattKhaki.jpg",
           "colorCode": "color3"
         }
       ],
@@ -6598,13 +6720,13 @@
         }
       },
       "bikeCollorPalletteGallery": {
-        "default": "/images/adventure/tiger1200GTPRO/tigerSport850ModelImage.png",
-        "color1": "/images/adventure/tiger1200GTPRO/tigerSport850ModelImage.png",
-        "color1Reversed": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor1Reversed.png",
-        "color2": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor2.png",
-        "color2Reversed": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor2Reversed.png",
-        "color3": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor3.png",
-        "color3Reversed": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor3Reversed.png"
+        "default": "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerSnowdonia.png",
+        "color1": "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerSnowdonia.png",
+        "color1Reversed": "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerSnowdoniaReversed.png",
+        "color2": "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerBlack.png",
+        "color2Reversed": "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerBlackReversed.png",
+        "color3": "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerKhaki.png",
+        "color3Reversed": "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerKhakiReversed.png"
       },
       "customizationColors": [
         {
@@ -6620,9 +6742,9 @@
           "colorCode": "color2"
         },
         {
-          "colorName": "Lucerne Blue",
-          "price": 200,
-          "image": "/images/custom-collors/lucerneBlue.jpg",
+          "colorName": "Matt Khaki",
+          "price": 300,
+          "image": "/images/custom-collors/mattKhaki.jpg",
           "colorCode": "color3"
         }
       ],

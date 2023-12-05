@@ -20,8 +20,8 @@ const PageHeroSection = ({
 }: PageHeroSectionProps) => {
   return (
     <section className="bg-neutral-800 flex flex-col lg:flex-row justify-between lg:pl-8">
-      <div className="flex flex-col justify-center py-10 text-white lg:basis-1/2 order-2 lg:order-1 px-4 lg:px-0">
-        <div className="lg:pr-40">
+      <div className="flex flex-col justify-center items-center py-10 text-white lg:basis-1/2 order-2 lg:order-1 px-4 lg:px-0">
+        <div className="w-9/12 m-auto">
           <PageTitle text={title} />
           {mainBikeLogo && (
             <Image
