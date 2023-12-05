@@ -16,7 +16,7 @@ const CustomizationColorBtn = ({color:{colorCode, colorName, image, price}}: Cus
 
     const handleColorChange = (color:string) => {
 
-        router.push(`${pathname}?color=${color}`)
+        router.push(`${pathname}?color=${color}`, {scroll: false})
     }   
 
   return (

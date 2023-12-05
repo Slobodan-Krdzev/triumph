@@ -14,7 +14,7 @@ type Rocket3TopDescProps = {
 
 const Rocket3TopDesc = ({info}: Rocket3TopDescProps) => {
   return (
-    <section className='px-4 py-8 md:py-16 md:px-0 w-full md:w-10/12 lg:w-8/12 m-auto flex flex-col gap-4 font-medium'>
+    <section className={`px-4 py-8 md:py-16 md:px-0 w-full md:w-10/12 lg:w-8/12 m-auto flex flex-col gap-4 font-medium text-center`}>
          {info.desc1 && <PageParagraph text={info.desc1}/>}
          {info.desc2 && <PageParagraph text={info.desc2}/>}   
          {info.desc3 && <PageParagraph text={info.desc3}/>}   

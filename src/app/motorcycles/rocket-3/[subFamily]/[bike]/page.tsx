@@ -110,22 +110,20 @@ const RocketBikePage = async ({ params }: any) => {
           <BikePageCarousell items={bike.bikePageCarousell} />
         )}
 
-        {/* {bike.bikePagePromo && (
-          <section className="px-4 md:px-24 py-4 md:py-16">
-            {bike.bikePagePromo.map((promo: any, idx: number) => (
-              <TextAndImageFlexSection
-                key={promo.title}
-                title={promo.title}
-                textMain={promo.desc}
-                imageLeft={idx % 2 !== 0 ? true : false}
-                image={{
-                  src: promo.image,
-                  alt: bike.model,
-                }}
-              />
-            ))}
-          </section>
-        )} */}
+        <section className="text-center py-4 md:py-32">
+          <h2 className="text-4xl md:text-6xl font-bold uppercase border-b-4 border-red-600 w-1/4 m-auto pb-4 mb-4">
+            Rocket 3
+          </h2>
+          <p className="text-2xl md:text-4xl font-semibold uppercase mb-8">
+            Раѓање на Нова Легенда
+          </p>
+          <MainBtn
+            text={"Откријте Повеќе"}
+            bgBlack={false}
+            isLink={true}
+            link={`/configure/bike/${bike.model}`}
+          />
+        </section>
 
         <GrayBand
           itemOne={{
