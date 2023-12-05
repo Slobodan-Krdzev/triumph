@@ -25,14 +25,14 @@ const ReasonsRoadstersPage = async ({params}: any) => {
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
-              height: "60vh",
+              height: "70vh",
               overflow: "hidden",
             }}
           >
             <div className="flex justify-center items-center w-full h-full overlay">
               <div className="w-6/12 m-auto flex flex-col justify-center items-center text-white gap-6">
                 <h1 className="md:text-xl text-sm border-b-4 border-white capitalize pb-2">
-                  {subFam}
+                  {subFam.toUpperCase()}
                 </h1>
                 <p className="md:text-5xl text-xl uppercase font-semibold tracking-tighter text-center">
                   Причини зошто да ја одберете серијата
@@ -42,13 +42,15 @@ const ReasonsRoadstersPage = async ({params}: any) => {
           </section>
           <main className="px-4">
             <div className="md:w-10/12 lg:w-6/12 m-auto pt-8">
-              <SectionTitleH2
+              {subFamily.reasonsToDrive.infoText.title && <SectionTitleH2
                 text={subFamily.reasonsToDrive.infoText.title}
                 color={"dark"}
-              />
-              <p className="font-normal md:text-lg text-md">
+              />}
+              
+              {subFamily.reasonsToDrive.infoText.desc && <p className="font-normal md:text-lg text-md">
                 {subFamily.reasonsToDrive.infoText.desc}
-              </p>
+              </p>}
+              
             </div>
   
             <ReasonsListin reasons={subFamily.reasonsToDrive.reasons} />

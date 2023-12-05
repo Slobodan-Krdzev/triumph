@@ -24,7 +24,7 @@ const AccessoriesPageRoadsters = async ({params}: any) => {
         <>
           <SecondaryPagesHeroSection
             bannerImage={subFamily.accessory.banner.image}
-            subFamilyTitle={subFam}
+            subFamilyTitle={subFam.toUpperCase()}
             text={`Аксесоари`}
           />
   
