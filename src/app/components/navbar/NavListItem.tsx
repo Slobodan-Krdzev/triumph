@@ -11,8 +11,22 @@ const NavListItem = ({ text, filter }: NavListItemProps) => {
   const router = useRouter();
   const pathname = usePathname();
   const query = useSearchParams().get('navItem')
+  const colorQuery = useSearchParams().get('color')
+  const reversQuery = useSearchParams().get('reversed')
 
-  const handleHover = () => router.push(`${pathname}/?navItem=${filter}`, {scroll: false});
+
+  const handleHover = () => {
+
+    if(colorQuery || reversQuery) {
+
+      router.push(`${pathname}/?navItem=${filter}&color=${colorQuery}&reversed=${reversQuery}`, {scroll: false})
+    
+    }else {
+      router.push(`${pathname}/?navItem=${filter}`, {scroll: false})
+
+    }
+
+  };
 
   return (
     <>

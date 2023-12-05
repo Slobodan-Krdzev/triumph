@@ -19,10 +19,20 @@ const SectionContent = ({ families, bikes, bikeToRender }: Props) => {
   const router = useRouter();
   const pathname = usePathname();
   const query = useSearchParams().get("navItem");
+  const colorQuery = useSearchParams().get('color')
+  const reversQuery = useSearchParams().get('revers') 
+
 
   const controls = useAnimation();
 
-  const handleSectionClose = () => router.push(pathname, {scroll: false});
+  const handleSectionClose = () => {
+
+    if(colorQuery || reversQuery){
+      router.push(`${pathname}?color=${colorQuery}&reversed=${reversQuery}`, {scroll: false})
+    }else{
+      router.push(pathname, {scroll: false});
+    }
+  }
 
   useEffect(() => {
     if (query) {

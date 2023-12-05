@@ -53,7 +53,7 @@ const ColorCard = ({ color }: ColorCardProps) => {
         <p className="text-xs text-gray-600 basis-1/2">
           {color.price ? `€${color.price}.00` : `Вклучено во Цената`}
         </p>
-        <button className="absolute top-1 right-2">
+        <button className="absolute bottom-1 right-2">
           <FontAwesomeIcon icon={faCircleInfo} color="grey" />
         </button>
       </div>
