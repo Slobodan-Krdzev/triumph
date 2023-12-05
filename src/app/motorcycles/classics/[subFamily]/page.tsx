@@ -2,8 +2,10 @@ import HeroSection from "@/app/components/SubFamily/HeroSection";
 import NumbersSection from "@/app/components/SubFamily/NumbersSection";
 import TopSection from "@/app/components/SubFamily/TopSection";
 import YouTubePromo from "@/app/components/SubFamily/YouTubePromo";
+import YoutubeVideoCarousell from "@/app/components/SubFamily/YoutubeVideoCarousell/YoutubeVideoCarousell";
 import BottomCarousell from "@/app/components/classicsPageComp/BottomCarousell";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
+import AudioSection from "@/app/components/roadstersUniqueComp/AudioSection";
 import SecondaryNavBar from "@/app/components/whiteSecondaryNavBar/SecondaryNavBar";
 import { BIKES, FAMILIES } from "@/app/constants/constants";
 import React from "react";
@@ -26,8 +28,6 @@ const ClassicsSubFamilyPage = async ({ params }: any) => {
     );
     const bikes = await bikesRes.json();
 
-    console.log("FAMILIJA OD CLASSICS SUBFAMILY", bikes);
-
     const hasGrayCaro =
       family.subFamilies[subFamily].subFamilyPageInfo.hasOwnProperty(
         "grayCarousell"
@@ -38,13 +38,41 @@ const ClassicsSubFamilyPage = async ({ params }: any) => {
         "youtubeVideo"
       );
 
+    const hasImageAsHero =
+      family.subFamilies[subFamily].gallery.hasOwnProperty(
+        "subFamilyHeroImage"
+      );
+
+    const hasAudioSection =
+    family.subFamilies[subFamily].subFamilyPageInfo.hasOwnProperty(
+      "audioSection"
+    );
+
+    const hasYoutubeCaro = family.subFamilies[subFamily].subFamilyPageInfo.hasOwnProperty(
+      "youtubeVideosCarousellItems"
+    );
+
     return (
       <>
-        <HeroSection
-          image={family.subFamilies[subFamily].gallery.subFamilyHeroVideo.src}
-          model={subFamily}
-          slogans={family.subFamilies[subFamily].subFamilyPageInfo.heroSlogans}
-        />
+        {hasImageAsHero && (
+          <HeroSection
+            image={family.subFamilies[subFamily].gallery.subFamilyHeroImage.src}
+            model={subFamily}
+            slogans={
+              family.subFamilies[subFamily].subFamilyPageInfo.heroSlogans
+            }
+          />
+        )}
+
+        {!hasImageAsHero && (
+          <HeroSection
+            video={family.subFamilies[subFamily].gallery.subFamilyHeroVideo.src}
+            model={subFamily}
+            slogans={
+              family.subFamilies[subFamily].subFamilyPageInfo.heroSlogans
+            }
+          />
+        )}
 
         <main className="bg-white">
           <TopSection
@@ -105,8 +133,25 @@ const ClassicsSubFamilyPage = async ({ params }: any) => {
 
         <NumbersSection
           model={subFamily}
-          specNumbers={family.subFamilies[subFamily].subFamilyPageInfo.specNumbers}
+          specNumbers={
+            family.subFamilies[subFamily].subFamilyPageInfo.specNumbers
+          }
         />
+
+        {hasAudioSection && 
+          <AudioSection
+            audio={family.subFamilies[subFamily].subFamilyPageInfo.audioSection.audio}
+            title={family.subFamilies[subFamily].subFamilyPageInfo.audioSection.title}
+            desc={family.subFamilies[subFamily].subFamilyPageInfo.audioSection.desc}
+            model={subFamily}
+          />
+        }
+
+        {hasYoutubeCaro && (
+          <YoutubeVideoCarousell
+            items={family.subFamilies[subFamily].subFamilyPageInfo.youtubeVideosCarousellItems}
+          />
+        )}
       </>
     );
   } catch (err) {

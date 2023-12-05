@@ -2295,7 +2295,7 @@
               "src": "/images/classics/speed400.avif",
               "alt": "Speed 400 Range Model Image"
             },
-            "subFamilyHeroVideo": {
+            "subFamilyHeroImage": {
               "src": "/images/classics/speed400/speed400HeroSubFamilyImage.avif",
               "alt": "Speed 400"
             },
@@ -2317,13 +2317,13 @@
           "url": "/motorcycles/classics/scrambler-400-x",
           "shortDesc": "Со агилно управување, водечки перформанси во класата и луксузна завршница, Scrambler 400 X е „кул“ и способен за секаков предизвик.",
           "subFamilyPageInfo": {
-            "heroSlogans": ["Пронајдете ја", "вашата", "слобода"],
+            "heroSlogans": ["Стартувајте ја", "вашата", "Авантура"],
             "topSection": {
-              "title": "Автентичност",
-              "desc": "Speed 400 - иконата на Triumph, перфектен стил, перформанси и лидер во класата по квалитет..",
-              "subtitle": "Преубав, агилен, версатилен и изграден со највисоки стандарди, Speed 400 ги поставува границите во својата категорија"
+              "title": "Пристапете Секаде",
+              "desc": "Прекрасно избалансиран, флексибилен без напор. Scrambler 400 X е направен за сите возачи и сите терени",
+              "subtitle": "Безвременски Triumph Стил, Модерни Способности. Авантуристички настроениот Scrambler 400  додава забава на сите ваши авантури"
             },
-            "youtubeVideo": "https://www.youtube.com/embed/QvVCEk4t8IE",
+            "youtubeVideo": "https://www.youtube.com/embed/moLlIk90Ea",
             "fullSpecs": {
               "engineTransmission": [
                 {
@@ -2469,28 +2469,35 @@
             "grayCarousell": [
               {
                 "id": "carouselItem1",
-                "title": "Возбудлив Три Цилиндарски Мотор",
-                "desc": "Почувствувајте го карактерот на моторот и чувството на лесно управување со иновативната T-crank радалица и најновиот 850 три-цилиндричен мотор.",
-                "image": "/images/adventure/tigerSport850/tiger850Caro1.avif"
+                "title": "Стил",
+                "desc": "Непогрешлив Triumph Scrambler DNA со модерен прилагоден стил, теренски карактер и луксузна завршница што поставува нов стандард во класата.",
+                "image": "/images/classics/scrambler400X/scrambler400XGrayCaro1.avif"
               },
               {
                 "id": "carouselItem2",
-                "title": "Технологија фокусирана на возачот",
-                "desc": "Технологија од врвно ниво, сопирачки и одлична суспензија за подобро секојдневно возење со максимално чувство на самодоверба, перформанси и сигурност.",
-                "image": "/images/adventure/tigerSport850/tiger850Caro2.avif"
+                "title": "Прекрасно Управување И Однесување на Патиштата",
+                "desc": "Ексклузивната рамка Scrambler 400 X и импозантната ергономија нудат максимална доверба и контрола на возачот.",
+                "image": "/images/classics/scrambler400X/scrambler400XGrayCaro2.avif"
               },
               {
                 "id": "carouselItem3",
-                "title": "Комбинација помеѓу карактер и перформанси",
-                "desc": "Соилуета по која сите се вртат, со агресивни линии и ексклузивни детали .",
-                "image": "/images/adventure/tigerSport850/tiger850Caro3.avif"
+                "title": "Карактер",
+                "desc": "Scrambler 400 X — насочено управување на сите патишта, заедно со можностите за совпаѓање",
+                "image": "/images/classics/scrambler400X/scrambler400XGrayCaro3.avif"
               },
               {
                 "id": "carouselItem4",
-                "title": "Дизајниран да инспирира самодоверба",
-                "desc": "Лесно прилагодлив за сечиј возачки стил, од височината на седиштето, до воланот па се до ерканот, Tiger 850 е спремен да се прилагоди на вас.",
-                "image": "/images/adventure/tigerSport850/tiger850Caro4.avif"
+                "title": "Квалитет",
+                "desc": "Прекрасно изработен со модерен прилагоден стил, врвен финиш во класата - иконската ДНК Scrambler на Triumph е длабока.",
+                "image": "/images/classics/scrambler400X/scrambler400XGrayCaro4.avif"
+              },
+              {
+                "id": "carouselItem5",
+                "title": "Вредност",
+                "desc": "Со најдобри спецификации во класата и ниски трошоци за работа, Scrambler 400 X претставува непобедлива вредност.",
+                "image": "/images/classics/scrambler400X/scrambler400XGrayCaro5.avif"
               }
+              
             ],
             "soundSection": {
               "desc": "Уникатен звук произведен од три-цилиндричниот мотор со T-crank радалица.",
@@ -2606,19 +2613,19 @@
           "gallery": {
             "modelImage": {
               "src": "/images/classics/speed400.avif",
-              "alt": "Speed 400 Range Model Image"
+              "alt": "Scrambler 400 X Range Model Image"
             },
-            "subFamilyHeroVideo": {
-              "src": "/images/classics/speed400/speed400HeroSubFamilyImage.avif",
-              "alt": "Speed 400"
+            "subFamilyHeroImage": {
+              "src": "/images/classics/scrambler400X/scrambler400XHeroImage.avif",
+              "alt": "Scrambler 400 X"
             },
             "subFamilyTopSectionImage": {
-              "src": "/images/classics/speed400/speed400TopSectionImage.avif",
-              "alt": "Speed 400 Top Section Image"
+              "src": "/images/classics/scrambler400X/scrambler400XTopSectionImage.avif",
+              "alt": "Scrambler 400 X Top Section Image"
             },
             "subFamilyTopSectionBGImage": {
-              "src": "/images/classics/speed400/speed400TopSectionImageBG.avif",
-              "alt": "Speed 400 Top Section Image BG"
+              "src": "/images/classics/scrambler400X/scrambler400XTopSectionImageBG.avif",
+              "alt": "Scrambler 400 X Top Section Image BG"
             }
           }
         },
@@ -2630,7 +2637,219 @@
           "url": "/motorcycles/classics/speed-twin-900",
           "shortDesc": "Возбудливи перформанси и управување што инспирира самодоверба, сега со уште поголема удобност и стил.",
           "subFamilyPageInfo": {
-            "desc1": ""
+            "heroSlogans": ["Забава", "со", "стил"],
+            "topSection": {
+              "title": "Автентичност",
+              "desc": "Best-seller -от на Triumph, еволуираше во елегантен и луксузен моторцикл",
+              "subtitle": "Направен за возење и за забава, спремен за ваша персонализација, Speed Twin 900 е мотор со голем карактер и можности"
+            },
+            "youtubeVideo": "https://www.youtube.com/embed/moLlIk90Ea",
+            "fullSpecs": {
+              "engineTransmission": [
+                {
+                  "title": "Тип на Мотор",
+                  "desc": "водно ладење, 12 вентили, DOHC, линиски 3-цилиндри, 240° редослед на есклпозии"
+                },
+                {
+                  "title": "капацитет",
+                  "desc": "660 cc"
+                },
+                {
+                  "title": "диаметар",
+                  "desc": "74.04 mm"
+                },
+                {
+                  "title": "рута",
+                  "desc": "51.1 mm"
+                },
+                {
+                  "title": "компресија",
+                  "desc": "11.95:1"
+                },
+                {
+                  "title": "Мах. Коњски Сила",
+                  "desc": "81 PS / 80 bhp (59.6 kW) @ 10,250 rpm"
+                },
+                {
+                  "title": "Мах. Обртен Момент",
+                  "desc": "64 Nm @ 6,250 rpm"
+                },
+                {
+                  "title": "Систем за убризгување",
+                  "desc": "Multipoint sequential electronic fuel injection with electronic throttle control"
+                },
+                {
+                  "title": "Систем за Издувни гасови",
+                  "desc": "3 во 1 не-раѓосувачки челик"
+                },
+                {
+                  "title": "Финална Трансмисија",
+                  "desc": "X-ring chain"
+                },
+                {
+                  "title": "Квачило",
+                  "desc": "Wet, multi-plate, slip"
+                },
+                {
+                  "title": "Менувачка Кутија",
+                  "desc": "6 брзини"
+                }
+              ],
+              "frame": [
+                {
+                  "title": "шасија",
+                  "desc": "тубуларна челична шасија"
+                },
+                {
+                  "title": "вилушка",
+                  "desc": "алуминиум"
+                },
+                {
+                  "title": "предно тркало",
+                  "desc": "19 x 2.5' die-cast легура "
+                },
+                {
+                  "title": "задно тркало",
+                  "desc": "17 x 4.25' die-cast легура "
+                },
+                {
+                  "title": "предна гума",
+                  "desc": "100/90-19"
+                },
+                {
+                  "title": "задна гума",
+                  "desc": "150/70R17"
+                },
+                {
+                  "title": "предна суспензија",
+                  "desc": "Marzocchi Inverted Fork 45mm"
+                },
+                {
+                  "title": "задна суспензија",
+                  "desc": "Marzocchi задна суспензија со систем за подесување"
+                },
+                {
+                  "title": "предни сопирачки",
+                  "desc": "Dual 320mm дискови, 4-piston monobloc Brembo Stylema calipers. Front radial pump, ABS"
+                },
+                {
+                  "title": "задна сопирачка",
+                  "desc": "Еден 255 mm диск. Brembo single piston floating caliper, ABS"
+                },
+                {
+                  "title": "инструментна плочка",
+                  "desc": "5 TFT екран"
+                }
+              ],
+              "dimension": [
+                {
+                  "title": "ширина на волан",
+                  "desc": "830 mm"
+                },
+                {
+                  "title": "висина без ретровизори",
+                  "desc": "1410-1460 mm"
+                },
+                {
+                  "title": "Solar height",
+                  "desc": "820-840 mm"
+                },
+                {
+                  "title": "мегу-осовинско растојание ",
+                  "desc": "1556 mm"
+                },
+                {
+                  "title": "Custer Corner",
+                  "desc": "24.6 º"
+                },
+                {
+                  "title": "Trace",
+                  "desc": "133.3 mm"
+                },
+                {
+                  "title": "Тежина",
+                  "desc": "192 kg"
+                },
+                {
+                  "title": "капацитет на резервоар",
+                  "desc": "20 L"
+                }
+              ],
+              "fuelConsumption": [
+                {
+                  "title": "Потрошувачка",
+                  "desc": "5.2l /100km"
+                },
+                {
+                  "title": "CO2 загадување",
+                  "desc": "Euro 5 Стандарди измерени според Регулатива 168/2013/EC. Резултатите се добиени во специјални тест средини и се на располагање само за споредба. Вистинските резултат може да варираат врз различни средини."
+                }
+              ]
+            },
+            "grayCarousell": [
+              {
+                "id": "carouselItem1",
+                "title": "Возбудливи Перформанси",
+                "desc": "Двоцилиндричниот мотор Bonneville 900cc. на нивниот Speed ​​​​Twin 900 е познат по својата моќност на вртежен момент и перформанси.",
+                "image": "/images/classics/speedTwin900/speedTwin900Caro1.avif"
+              },
+              {
+                "id": "carouselItem2",
+                "title": "Модерен “custom“ дизајн",
+                "desc": "Прекрасен современ изглед со безвременски пристап, надграден за 2021 година во луксузен финиш и детали",
+                "image": "/images/classics/speedTwin900/speedTwin900Caro2.avif"
+              },
+              {
+                "id": "carouselItem3",
+                "title": "Возачко искуство кое инспирира самодоверба",
+                "desc": "Ниско седло од 765 mm и динамично, лесно ракување и уште поудобно рамно седло.",
+                "image": "/images/classics/speedTwin900/speedTwin900Caro3.avif"
+              },
+              {
+                "id": "carouselItem4",
+                "title": "Опрема од високи стандарди",
+                "desc": "Четириклипните предни клешти на Brembo и вилушката со патрон од 41 мм се комбинираат за да обезбедат одлична контрола на возачот и моќ на сопирање.",
+                "image": "/images/classics/speedTwin900/speedTwin900Caro4.avif"
+              },
+              {
+                "id": "carouselItem5",
+                "title": "Високо ниво на технологија",
+                "desc": "Програми за возење на пат и дожд, ABS, деактивирање на контрола на тракцијата, помош на спојката и LED задно светло.",
+                "image": "/images/classics/speedTwin900/speedTwin900Caro5.avif"
+              }
+              
+            ],
+            "specNumbers": [
+              { "data": "900", "info": "cc Мотор" },
+              { "data": "80", "info": "Nm обртен момент" },
+              { "data": "65", "info": "PS - Максимална Сила" },
+              { "data": "16,000", "info": "КМ Сервисен Интервал" }
+            ],
+            "audioSection": {
+              "title": "Уживајте во звукот на Speed Twin 900",
+              "desc": "Слушнете го препознатливиот, уникатен звук на моторот со два цилиндри Triumph Bonneville.",
+              "audio": "/images/classics/speedTwin900/speedTwin900Audio.mp3"
+            },
+            "youtubeVideosCarousellItems": [{
+              "src": "https://www.youtube.com/embed/Yq47k_ZJUz4",
+              "title": "Introducing the ALL-NEW Triumph Speed Twin 900 Green Stealth Edition"
+            },
+            {
+              "src": "https://www.youtube.com/embed/30qKRVyb4OM",
+              "title": "New Bonneville Street Twin Features and Benefits"
+            },
+            {
+              "src": "https://www.youtube.com/embed/zQT9lJKPPNY",
+              "title": "New Bonneville Street Twin Gold Line Features and Benefits"
+            },
+            {
+            "src": "https://www.youtube.com/embed/DFPZcQjEdgI",
+            "title": "Bonneville 2021 – Global Reveal"
+            },
+            {
+              "src": "https://www.youtube.com/embed/W11Zkx35eGg",
+              "title": "Bonneville 2021 | British Icons. Beautifully Evolved"
+            }]
           },
           "shortSpecInfo": {
             "info2": "Новата Thriumph Stealth Серија е достапна"
@@ -2735,6 +2954,18 @@
             "modelImage": {
               "src": "/images/classics/speedTwin900.png",
               "alt": "Speed Twin 900 Range Model Image"
+            },
+            "subFamilyHeroVideo": {
+              "src": "/images/classics/speedTwin900/speedTwin900HeroVideo.webm",
+              "alt": "Speed Twin 900"
+            },
+            "subFamilyTopSectionImage": {
+              "src": "/images/classics/speedTwin900/speedTwin900TopSectionImage.avif",
+              "alt": "Speed Twin 900 Top Section Image"
+            },
+            "subFamilyTopSectionBGImage": {
+              "src": "/images/classics/speedTwin900/speedTwin900TopSectionImageBG.avif",
+              "alt": "Speed Twin 900 Top Section Image BG"
             }
           }
         },
@@ -9000,6 +9231,10 @@
       },
       "shortSpecInfo": {
         "info1": "Новата Stealth Edition Серија е Достапна"
+      },
+      "subFamilyPromo": {
+        "title": "Scrambler 400 X",
+        "desc": "Возбудливи перформанси и управување што инспирира самодоверба, сега со уште поголема удобност и стил Цени од: €10,390.00"
       }
     },
     {
@@ -9415,7 +9650,7 @@
       "title": "Speed Twin 900 Green Stealth Edition",
       "model": "speed-twin-900-2023",
       "category": "classics",
-      "subFamilyCategory": "bonneville-speed-twin-900",
+      "subFamilyCategory": "speed-twin-900",
       "edition": "stealth",
       "price": null,
       "specs": {
@@ -9436,6 +9671,10 @@
         "info1": "1,200cc Thruxton тунинг мотор",
         "info2": "Повеќе сила, со подобра агилност во склоп со автентичната ДНК на 'Cafe-Racer' моторите.",
         "info3": "Неверојатни финиши на боја и стил."
+      },
+      "subFamilyPromo": {
+        "title": "Новиот Speed Twin 900 Green Stealth Edition",
+        "desc": "Најуспешната прилагодена класика на Triumph е рачно доработена во светло зелена боја. Впечатливата Speed ​​​​Twin 900 Green Stealth Edition дава изјава за стил… и е достапна само една година."
       }
     },
     {
@@ -9695,7 +9934,7 @@
       "title": "Speed Twin 900 Chrome Edition",
       "model": "speed-twin-900-chrome-edition-2023",
       "category": "classics",
-      "subFamilyCategory": "bonneville-speed-twin-900",
+      "subFamilyCategory": "speed-twin-900",
       "edition": "chrome",
       "price": 10990,
       "specs": {
@@ -9716,6 +9955,10 @@
         "info1": "1,200cc Thruxton тунинг мотор",
         "info2": "Повеќе сила, со подобра агилност во склоп со автентичната ДНК на 'Cafe-Racer' моторите.",
         "info3": "Неверојатни финиши на боја и стил."
+      },
+      "subFamilyPromo": {
+        "title": "Новиот Speed Twin 900 Chrome Edition",
+        "desc": "Достапен само една година, овој Speed Twin 900 доаѓа со повеќе стил и хром елементи. Цени од: €10,990.00"
       }
     },
     {
