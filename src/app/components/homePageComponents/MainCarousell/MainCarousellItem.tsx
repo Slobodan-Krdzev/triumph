@@ -7,7 +7,7 @@ type MainCarousellItemType = {
   video?: string;
   title: string;
   desc: string;
-  link1: {
+  link1?: {
     url: string;
     text: string;
   };
@@ -55,34 +55,32 @@ const MainCarousellItem = ({
                 type="video/webm"
               />
             </video>
-
-            
           </>
         )}
-        <div className="ml-44 absolute" style={{top: '15%'}}>
-              <h2 className="mb-4 uppercase font-bold text-7xl text-white w-2/4">
-                {title}
-              </h2>
-              <p className="mb-4 w-2/4 text-white text-2xl font-semibold">
-                {desc}
-              </p>
-              <div className="flex gap-4">
-                <MainBtn
-                  text={link1.text}
-                  bgBlack={false}
-                  isLink={true}
-                  link={link1.url}
-                />
-                {link2 && (
-                  <MainBtn
-                    text={link2.text}
-                    bgBlack={true}
-                    isLink={true}
-                    link={link2.url}
-                  />
-                )}
-              </div>
-            </div>
+        <div className="ml-44 absolute" style={{ top: "15%" }}>
+          <h2 className="mb-4 uppercase font-bold text-7xl text-white w-2/4">
+            {title}
+          </h2>
+          <p className="mb-4 w-2/4 text-white text-2xl font-semibold">{desc}</p>
+          <div className="flex gap-4">
+            {link1 && (
+              <MainBtn
+                text={link1.text}
+                bgBlack={false}
+                isLink={true}
+                link={link1.url}
+              />
+            )}
+            {link2 && (
+              <MainBtn
+                text={link2.text}
+                bgBlack={true}
+                isLink={true}
+                link={link2.url}
+              />
+            )}
+          </div>
+        </div>
       </div>
 
       <div className="overlay-carousell-btn w-full h-full flex justify-start pt-40 text-white">
@@ -91,13 +89,16 @@ const MainCarousellItem = ({
             {title}
           </h2>
           <p className="mb-4 w-3/4">{desc}</p>
+
           <div className="flex gap-4">
-            <MainBtn
-              text={link1.text}
-              bgBlack={false}
-              isLink={true}
-              link={link1.url}
-            />
+            {link1 && (
+              <MainBtn
+                text={link1.text}
+                bgBlack={false}
+                isLink={true}
+                link={link1.url}
+              />
+            )}
             {link2 && (
               <MainBtn
                 text={link2.text}

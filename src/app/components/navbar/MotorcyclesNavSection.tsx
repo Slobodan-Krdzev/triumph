@@ -8,7 +8,7 @@ const MotorcyclesNavSection = ({families, bikes, bikeToRender}: any) => {
 
   return (
     <>
-      <div className="px-52 ">
+      <div className="px-48">
         <ul className="flex font-bold text-md gap-6 mt-4">
           <li>
             <button className="uppercase py-3 px-4 rounded-t-md text-neutral-500 focus:text-black hover:text-black" onClick={() => setAreMotorsShown(true)}
