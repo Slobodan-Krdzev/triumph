@@ -21,9 +21,9 @@ const PricePriviewer = ({ bike }: PricePreviewerProps) => {
 
     const chosenColor = bike.customizationColors.find((color: CustomatizationColorType) => color.colorCode === (priceQuery ?? 'color1'))
 
-    if(chosenColor.price !== null) {
+    if(chosenColor.price !== null ) {
         return startingPrice + chosenColor.price
-    }
+    } 
 
     return startingPrice
   }

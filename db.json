@@ -3988,35 +3988,35 @@
               "engineTransmission": [
                 {
                   "title": "Тип на Мотор",
-                  "desc": "водно ладење, 12 вентили, DOHC, линиски 3-цилиндри, 240° редослед на есклпозии"
+                  "desc": "водно ладење, 12 вентили, 2EEK, линиски 3-цилиндри"
                 },
                 {
                   "title": "капацитет",
-                  "desc": "660 cc"
+                  "desc": "765 cc"
                 },
                 {
                   "title": "диаметар",
-                  "desc": "74.04 mm"
+                  "desc": "78.0 mm"
                 },
                 {
                   "title": "рута",
-                  "desc": "51.1 mm"
+                  "desc": "53.4 mm"
                 },
                 {
                   "title": "компресија",
-                  "desc": "11.95:1"
+                  "desc": "13.25:1"
                 },
                 {
                   "title": "Мах. Коњски Сила",
-                  "desc": "81 PS / 80 bhp (59.6 kW) @ 10,250 rpm"
+                  "desc": "120-130 (130 за Street Triple 765 R & Mото2™ Edition)"
                 },
                 {
                   "title": "Мах. Обртен Момент",
-                  "desc": "64 Nm @ 6,250 rpm"
+                  "desc": "80 Nm @ 9,500 rpm"
                 },
                 {
                   "title": "Систем за убризгување",
-                  "desc": "Multipoint sequential electronic fuel injection with electronic throttle control"
+                  "desc": "Sequential multi-point electronic injection with electronic throttle"
                 },
                 {
                   "title": "Систем за Издувни гасови",
@@ -4028,7 +4028,7 @@
                 },
                 {
                   "title": "Квачило",
-                  "desc": "Wet, multi-plate, slip"
+                  "desc": "Liquid, multi-disc, assisted glide"
                 },
                 {
                   "title": "Менувачка Кутија",
@@ -4038,7 +4038,7 @@
               "frame": [
                 {
                   "title": "шасија",
-                  "desc": "тубуларна челична шасија"
+                  "desc": "Double-beam aluminum with 2-piece high-pressure die-cast subframe"
                 },
                 {
                   "title": "вилушка",
@@ -4046,65 +4046,65 @@
                 },
                 {
                   "title": "предно тркало",
-                  "desc": "19 x 2.5' die-cast легура "
+                  "desc": "17 x 3.5' леан алуминиум со 5 краци"
                 },
                 {
                   "title": "задно тркало",
-                  "desc": "17 x 4.25' die-cast легура "
+                  "desc": "17 x 3.5' леан алуминиум со 5 краци"
                 },
                 {
                   "title": "предна гума",
-                  "desc": "100/90-19"
+                  "desc": "120/70 ZR 17"
                 },
                 {
                   "title": "задна гума",
-                  "desc": "150/70R17"
+                  "desc": "180/55 ZR 17"
                 },
                 {
                   "title": "предна суспензија",
-                  "desc": "Marzocchi Inverted Fork 45mm"
+                  "desc": "Showa Big Piston 115мм inverted вилушка со прилагодувања за компресија, враќање и претходно оптоварување"
                 },
                 {
                   "title": "задна суспензија",
-                  "desc": "Marzocchi задна суспензија со систем за подесување"
+                  "desc": "Showa piggyback monoshock 133.5mm задна суспензија со систем за прилагодувања за компресија, враќање и претходно оптоварување"
                 },
                 {
                   "title": "предни сопирачки",
-                  "desc": "Dual 320mm дискови, 4-piston monobloc Brembo Stylema calipers. Front radial pump, ABS"
+                  "desc": "Дупли дискови од 310m"
                 },
                 {
                   "title": "задна сопирачка",
-                  "desc": "Еден 255 mm диск. Brembo single piston floating caliper, ABS"
+                  "desc": "Еден диск од 220mm, Brembo клешта со ABS"
                 },
                 {
                   "title": "инструментна плочка",
-                  "desc": "5 TFT екран"
+                  "desc": "Мултифункционален TFT екран"
                 }
               ],
               "dimension": [
                 {
                   "title": "ширина на волан",
-                  "desc": "830 mm"
+                  "desc": "792 mm"
                 },
                 {
                   "title": "висина без ретровизори",
-                  "desc": "1410-1460 mm"
+                  "desc": "1047 mm"
                 },
                 {
                   "title": "Solar height",
-                  "desc": "820-840 mm"
+                  "desc": "826 mm"
                 },
                 {
                   "title": "мегу-осовинско растојание ",
-                  "desc": "1556 mm"
+                  "desc": "1402 mm"
                 },
                 {
                   "title": "Custer Corner",
-                  "desc": "24.6 º"
+                  "desc": "23.7º"
                 },
                 {
                   "title": "Trace",
-                  "desc": "133.3 mm"
+                  "desc": "97.8 mm"
                 },
                 {
                   "title": "Тежина",
@@ -4112,17 +4112,25 @@
                 },
                 {
                   "title": "капацитет на резервоар",
-                  "desc": "20 L"
+                  "desc": "15 L"
+                },
+                {
+                  "title": "Tежина при полн резервозар",
+                  "desc": "189 kg"
                 }
               ],
               "fuelConsumption": [
                 {
                   "title": "Потрошувачка",
-                  "desc": "5.2l /100km"
+                  "desc": "52.8 mpg (5.4 литри / 100 km)"
                 },
                 {
                   "title": "CO2 загадување",
-                  "desc": "Euro 5 Стандарди измерени според Регулатива 168/2013/EC. Резултатите се добиени во специјални тест средини и се на располагање само за споредба. Вистинските резултат може да варираат врз различни средини."
+                  "desc": "120g/km - Euro 5 Стандарди измерени според Регулатива 168/2013/EC. Резултатите се добиени во специјални тест средини и се на располагање само за споредба. Вистинските резултат може да варираат врз различни средини."
+                },
+                {
+                  "title": "Сервисен Интервал",
+                  "desc": "10.000km / 12 месеци"
                 }
               ]
             },
@@ -4190,11 +4198,11 @@
           },
           "reasonsToDrive": {
             "banner": {
-              "image": "/images/classics/speed400/speed400ReasonsBanner.avif"
+              "image": "/images/roadsters/streetTriple765/streetTriple765TopSectionImageBG.avif"
             },
             "infoText": {
-              "title": "зошто баш Speed 400 !?",
-              "desc": "Време е да се разбудите од досадните соништа со Tiger Sport 660. Ова е најпристапниот мотор од Tiger фамилијата на Triumph и е спремен за секојдневни авантури.Tiger Sport 660 е дизајниран да ги надмине вашите очекувања, од авантуристички тури па се до дневни обврски. Кај нас во Triumph се е во знак на возење, а еве и зошто:"
+              "title": "Причини зошто да ja оберете Street Triple 765 серијата",
+              "desc": "Доделена од печатот и од сопствениците од нејзиното лансирање во 2007 година, оваа нова генерација Street Triple се одликува со специфичен нов стил, подобрена ергономија и ревидирана геометрија што дава уште подобра агилност. Најмоќната серија Street Triple досега, со надградби на моторот добиени директно од рекордната програма за трки со мотори Moto2™, во комбинација со шасијата Street Triple светски позната по прецизно управување.Изграден според највисоките спецификации досега, со значителен напредок во суспензијата, сопирачките и технологијата, гамата Street Triple од 2023 година поставува нов репер за спортски велосипеди со голи перформанси.Веќе Уникатниот карактер на Street Triple е дополнително подобрен со серија надградби и поагресивен нов изглед.Подобрени перформанси на моторот, напредок во технологијата фокусирана на возачот, подобрена ергономија на возачот и суспензија и сопирачки со повисоки спецификации, плус целокупниот груб звук во доводот на Street Triple и нови комбинирани издувни гасови со послободно течење за да се постави нов репер во Street Triple моќност и управување. и забава."
             },
             "reasons": [
               {
@@ -4224,7 +4232,7 @@
           },
           "accessory": {
             "banner": {
-              "image": "/images/classics/speed400/speed400AccessoryBanner.avif"
+              "image": "/images/roadsters/streetTriple765/streetTriple765TopSectionImageBG.avif"
             },
             "infoText": {
               "title": "Додајте ваш белег врз Speed 400",
@@ -4232,54 +4240,67 @@
             },
             "accessoryTypes": [
               {
-                "title": "Стил и Комфорт",
-                "desc": "Choose from a range of parts that will make the Speed ​​400 just the way you want it. Direct replacement bullet turn signals a subtle new look and premium touch with their satin black body and machined aluminum bezels.. Or maybe you want to remodel the tank with different knee pads? A comfortable saddle with a stitched and quilted finish makes a style statement and, together with plug and play heated grips, offers luxury on longer rides..",
+                "title": "Технологија",
+                "desc": "Веќе преполна со иновации, најновата генерација Street Triple има неколку полиња за штиклирање во однос на технологијата.Новата контрола на патувањето е совршен додаток за возачите кои поминуваат многу време на автопати и/или возат во области со зголемена брзина. Одржувањето на поставената брзина ја подобрува економичноста на горивото и го намалува заморот, давајќи и на десната рака поголема слобода да се наведнува на долги растојанија.За целосно искористување на способноста за Bluetooth на 5' TFT дисплејот, достапна е единица за целосно поврзување My Triumph. Ова овозможува ракување со телефонот и музиката и нуди навигација чекор-по-сврт.Тркалачките LED индикатори комбинираат стил со технологија и нудат персонализација, како и дополнително подобрување на видливоста на другите учесници во сообраќајот.",
                 "itemsList": [
-                  "Bullet type LED flash",
-                  "Штитници за колена",
-                  "Комфортно Седло"
+                  "Темпомат",
+                  "My Triumph Bluetooth Уред",
+                  "LED Трапкачи"
                 ],
                 "image1": {
-                  "src": "/images/classics/speed400/speed400SAccesoryStyleImage1.avif",
-                  "alt": "Speed 400 On The Road"
+                  "src": "/images/roadsters/streetTriple765/streetТriple765АccessoriesCruiseControl.avif",
+                  "alt": "Street Тriple 765 Cruise Control"
                 },
                 "image2": {
-                  "src": "/images/classics/speed400/speed400AccessoryStyleImage2.avif",
-                  "alt": "Speed 400 PaintJob"
+                  "src": "/images/roadsters/streetTriple765/streetТriple765АccessoriesTFTl.avif",
+                  "alt": "Street Тriple 765 TFT"
+                }
+              },
+              {
+                "title": "Заштита и Комфорт",
+                "desc": "Одржувањето на вашата нова Street Triple безбедна од оштетување, штитниците за рамката и за нишање ги надополнуваат овие карактеристични и агресивни линии, додека штитниците на капакот на моторот, дизајнирани да одговараат совршено, нудат дискретно, но ефективно ублажување на оштетувањето во случај на пад.Достапен е елегантен визир за да се намали ветерот и да се подобри удобноста на долги растојанија, додека возачите за сите временски услови можат да уживаат во зимскиот пат со топли раце без жици да им пречат на рачките, со внатрешно жичените грејни рачки. Достапни се и рачки за држење на патници за дополнителна удобност и безбедност.Завртките за монтирање на тркачки штанд додаваат удобност за задачите за рутинско одржување, а премиум марката Triumph ќе обезбеди вашиот велосипед да остане чист и подготвен за следното возење.",
+                "itemsList": [
+                  "Штитиници на шасија",
+                  "Штитници за вилушки",
+                  "Штитници за мотор",
+                  "Греачи на волан",
+                  "Рачки за држење на совозач",
+                  "Брендирана Triumph Покривка",
+                  "Предна Маска",
+                  "Штрафови за тркачка ногарка"
+                ],
+                "image1": {
+                  "src": "/images/roadsters/streetTriple765/streetТriple765АccessoriesPassengerGrabs.avif",
+                  "alt": "Street Triple 765 Passenger Grabs"
+                }
+              },
+              {
+                "title": "Стил и Детали",
+                "desc": "Иако Street Triple е несомнено прекрасен велосипед, со толку многу различни стилски додатоци достапни, персонализирањето и правењето на вашата Street Triple навистина ваше никогаш не било полесно. Определите вклучуваат долен капак на опашката и бел LED систем за задни светла за почист заден дел. За помалите, но не помалку важни детали се води сметка и со високо обработените компоненти, како што е резервоарот за течност за сопирачките.",
+                "itemsList": [
+                  "Завршен Детал на крајот од моторот (Држач Регистрација)",
+                  "Бели LED задни светла",
+                  "Машинско Изработени Резервоари за Течност за Сопирачки "
+                ],
+                "image1": {
+                  "src": "/images/roadsters/streetTriple765/streetТriple765АccessoriesMask.avif",
+                  "alt": "Street Triple 765 Mask"
+                },
+                "image2": {
+                  "src": "/images/roadsters/streetTriple765/streetТriple765АccessoriesTailKit.avif",
+                  "alt": "Street Triple 765 Tail Kit"
                 }
               },
               {
                 "title": "Багаж",
-                "desc": "A full range of Speed ​​400-specific luggage has been created to add some practicality to the fun. The Speed ​​400 is the perfect touring bike, and outfitting it to handle your load really couldn't be easier. Choose from sturdy side or rigid and semi-rigid panniers, each with their own special mounting system or, for those who prefer to travel light, a simple luggage rack, nylon tank bag or roll-on bag could be the perfect choice .",
+                "desc": "Забавниот и динамичен карактер на Street Triple го прави секое возење пријатно, од долги рекреативни возења до патувања до работа за сите временски услови. Дополнително на неговата практичност, стилската дополнителна водоотпорна торба со резервоар и опашката торбичка може брзо да се откачат од велосипедот за лесно користење и секојдневна практичност..",
                 "itemsList": [
-                  "Цврсти Куфери за Багаж",
-                  "Држач за Багаж",
-                  "Најлонска торба за на резервоар",
-                  "Најлонска Торба Roll "
+                  "Торба за Резервоар",
+                  "Торба за Багажник"
                 ],
                 "image1": {
-                  "src": "/images/classics/speed400/speed400AccessoryLuggageImage.avif",
-                  "alt": "Speed 400 Luggage"
-                }
-              },
-              {
-                "title": "Заштита ",
-                "desc": "Both your protection from the elements and that of the Speed ​​400 have been taken care of. A visor with a special fitting kit is also available to deflect the wind to reduce rider fatigue on longer rides. Easy to fit and with style to match, it's a must-have addition for distance riders.To keep the Speed ​​400 out of harm's way on rougher roads, there's an aluminum skid plate, a radiator guard and a headlight mask, which comes with its own bezel for easy fitting, and offers excellent protection from rocks and debris. All-weather riders may want to add the mudguard kit which consists of front and rear mudguard extensions and a rear wing. These combine nicely to protect against water spray and extend the life of the rear shock in extreme conditions.Upper and lower engine guards are also available — these provide excellent protection against drops and spills, a must-have addition for city and country driving.",
-                "itemsList": [
-                  "Гелатин",
-                  "Заштита за ладник",
-                  "Решетка за светло",
-                  "Алуминиумска заштита",
-                  "Заштита од Кал",
-                  "Цевки за Заштита на Мотор (Горни и Долни)"
-                ],
-                "image1": {
-                  "src": "/images/classics/speed400/speed400AccessoryProtectionImage1.avif",
-                  "alt": "Speed 400 Head"
-                },
-                "image2": {
-                  "src": "/images/classics/speed400/speed400AccessoryRadiatorProtection.avif",
-                  "alt": "speed 400 Accessory Radiator Protection"
+                  "src": "/images/roadsters/streetTriple765/streetТriple765АccessoriesTailBag.avif",
+                  "alt": "Street Triple 765 Tail Bag"
                 }
               }
             ]
@@ -9048,19 +9069,19 @@
       "customizationColors": [
         {
           "colorName": "Carnival Red / Storm Gray",
-          "price": "Вклучена во Цената",
+          "price": null,
           "image": "/images/custom-collors/carnivalRedStormGrey.jpg",
           "colorCode": "color1"
         },
         {
           "colorName": "Caspian Blue / Storm Gray",
-          "price": "Вклучена во Цената",
+          "price": null,
           "image": "/images/custom-collors/caspianBlueStormGray.jpg",
           "colorCode": "color2"
         },
         {
           "colorName": "Phantom Black / Storm Gray",
-          "price": "Вклучена во Цената",
+          "price": null,
           "image": "/images/custom-collors/phantomBlackStormGrey.jpg",
           "colorCode": "color3"
         }
@@ -9186,9 +9207,38 @@
         "serviceInterval": "16.000km",
         "motorType": "TR"
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/classics/scrambler400X/scrambler400XKhakiGreen.png",
+        "color1": "/images/classics/scrambler400X/scrambler400XKhakiGreen.png",
+        "color1Reversed": "/images/classics/scrambler400X/scrambler400XKhakiGreenReversed.png",
+        "color2": "/images/classics/scrambler400X/scrambler400XRedBlack.png",
+        "color2Reversed": "/images/classics/scrambler400X/scrambler400XRedBlackReversed.png",
+        "color3": "/images/classics/scrambler400X/scrambler400XBlackSilver.png",
+        "color3Reversed": "/images/classics/scrambler400X/scrambler400XBlackSilverReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Matt Khaki Green / Fusion White",
+          "price": null,
+          "image": "/images/custom-collors/mattKhakiGreenFusionWhite.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Carnival Red / Saphire Black",
+          "price": null,
+          "image": "/images/custom-collors/carnivalRedSapphireBlack.jpg",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Phantom Black / Silver Ie",
+          "price": null,
+          "image": "/images/custom-collors/phantomBlackStormGrey.jpg",
+          "colorCode": "color3"
+        }
+      ],
       "gallery": {
         "modelImage": {
-          "src": "/images/classics/scrambler400XModel.png",
+          "src": "/images/classics/scrambler400X/scrambler400XKhakiGreen.png",
           "alt": "Scrambler 400 x"
         }
       },
@@ -9205,7 +9255,7 @@
     {
       "id": 28,
       "title": "Speed Twin 900",
-      "model": "speed-twin-900-2023",
+      "model": "speed-twin-900",
       "category": "classics",
       "subFamilyCategory": "speed-twin-900",
       "edition": "900cc",
@@ -9219,6 +9269,44 @@
         "serviceInterval": "16.000km",
         "motorType": "TR"
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/classics/speedTwin900/speedTwin900StealthGreen.png",
+        "color1": "/images/classics/speedTwin900/speedTwin900StealthGreen.png",
+        "color1Reversed": "/images/classics/speedTwin900/speedTwin900StealthGreenReversed.png",
+        "color2": "/images/classics/speedTwin900/speedTwin900Black.png",
+        "color2Reversed": "/images/classics/speedTwin900/speedTwin900BlackReversed.png",
+        "color3": "/images/classics/speedTwin900/speedTwin900CarnivalRed.png",
+        "color3Reversed": "/images/classics/speedTwin900/speedTwin900CarnivalRedReversed.png",
+        "color4": "/images/classics/speedTwin900/speedTwin900Competition.png",
+        "color4Reversed": "/images/classics/speedTwin900/speedTwin900CompetitionReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Stealth Edition - Saphire Green",
+          "price": null,
+          "image": "/images/custom-collors/phantomGreenSilverGreen.png",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Jett Black",
+          "price": null,
+          "image": "/images/custom-collors/jetBlack.jpg",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Carnival Red / Saphire Black",
+          "price": 200,
+          "image": "/images/custom-collors/carnivalRedSapphireBlack.jpg",
+          "colorCode": "color3"
+        }
+        ,
+        {
+          "colorName": "Competition Green / Phantom Black",
+          "price": 200,
+          "image": "/images/custom-collors/competitionGreenPhantomBlack.jpg",
+          "colorCode": "color4"
+        }
+      ],
       "gallery": {
         "modelImage": {
           "src": "/images/classics/speedТwin900Model.png",

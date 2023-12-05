@@ -14,15 +14,18 @@ const AccessoriesPageRoadsters = async ({params}: any) => {
       const familyData = await familyRes.json();
       const subFamily = familyData[0].subFamilies[subFam];
   
-      const bikesRes = await fetch(`${BIKES}?model=${subFam}`);
+      const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${subFam}`);
       const bikesData = await bikesRes.json();
   
+      console.log(bikesData);
+      
+
       return (
         <>
           <SecondaryPagesHeroSection
             bannerImage={subFamily.accessory.banner.image}
             subFamilyTitle={subFam}
-            text={`Средете го моторот по ваш вкус`}
+            text={`Аксесоари`}
           />
   
           <main className="px-4 md:px-16 lg:px-40">
