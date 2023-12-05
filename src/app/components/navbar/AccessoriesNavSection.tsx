@@ -30,22 +30,22 @@ export const linkItemsAccessory: NavLinkListingItemsType[] = [
 export const linkItemsModels: NavLinkListingItemsType[] = [
   {
     text: "Speed triple 765",
-    link: "/motorcycles/roadsters/street-triple-765/accessories-street-triple-765",
+    link: "/motorcycles/roadsters/street-triple-765/accessories",
   },
   {
     text: "Trident 660",
-    link: "/motorcycles/roadsters/trident/accessories",
+    link: "/motorcycles/roadsters/trident-660/accessories",
   },
   {
     text: "Tiger 1200",
-    link: "/motorcycles/adventure/tiger-1200/accessories",
+    link: "/motorcycles/adventure/tiger-1200-gt/accessories",
   },
   {
     text: "Tiger 900",
-    link: "/motorcycles/adventure/tiger-900-2023/tiger-900-accessories",
+    link: "/motorcycles/adventure/tiger-900/accessories",
   },
   {
-    text: "Tiger Rport 660",
+    text: "Tiger Sport 660",
     link: "/motorcycles/adventure/tiger-sport-660/accessories",
   },
   {
@@ -54,7 +54,7 @@ export const linkItemsModels: NavLinkListingItemsType[] = [
   },
   {
     text: "Speed Twin 900",
-    link: "/motorcycles/classic/bonneville-speed-twin-900/accessories",
+    link: "/motorcycles/classic/speed-twin-900/accessories",
   },
 ];
 

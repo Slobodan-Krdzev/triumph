@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 type NavListItemProps = {
   text: string;
-  filter: string
+  filter: string;
 };
 
 const NavListItem = ({ text, filter }: NavListItemProps) => {
@@ -14,16 +14,22 @@ const NavListItem = ({ text, filter }: NavListItemProps) => {
   const colorQuery = useSearchParams().get('color')
   const reversQuery = useSearchParams().get('reversed')
 
+  console.log(colorQuery, reversQuery);
+  
 
   const handleHover = () => {
 
-    if(colorQuery || reversQuery) {
+    if(Boolean(colorQuery) || Boolean(reversQuery)) {
 
       router.push(`${pathname}/?navItem=${filter}&color=${colorQuery}&reversed=${reversQuery}`, {scroll: false})
-    
+      
+      console.log('if');
+      
     }else {
       router.push(`${pathname}/?navItem=${filter}`, {scroll: false})
 
+      console.log('else');
+      
     }
 
   };
