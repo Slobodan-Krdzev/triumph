@@ -12,8 +12,8 @@ const Rocket3AccessoryItemWrapper = ({
   item: { title, desc, image1, image2, itemsList = []}, index,
 }: Rocket3AccessoryItemWrapperTypeProps) => {
   return (
-    <div className=" py-4 gray-bg text-white flex flex-col lg:flex-row gap-6 px-4 w-full md:w-9/12 lg:7/12 m-auto">
-      <div className={`w-full md:w-2/4 m-auto ${(index % 2 === 0) ? 'order-2' : ''}`}>
+    <div className=" py-4 gray-bg text-white flex flex-col lg:flex-row gap-6 px-4 w-full md:w-11/12 lg:7/12 m-auto">
+      <div className={`w-full lg:w-2/4 m-auto ${(index % 2 === 0) ? 'order-2' : ''}`}>
         <div className="md:w-10/12 w-full m-auto">
           <SectionTitleH2 text={title} color={"white"} />
 
