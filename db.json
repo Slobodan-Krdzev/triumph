@@ -7504,16 +7504,20 @@
       "edition": "roadsters",
       "price": 12290,
       "specs": {
-        "cc": 398,
-        "hp": 20,
-        "torque": 37.5,
-        "horsePower": 40,
-        "serviceInterval": "16.000km",
+        "cc": 765,
+        "hp": 120,
+        "torque": 80,
+        "horsePower": 130,
+        "serviceInterval": "10.000km",
         "motorType": "TR"
       },
       "gallery": {
         "modelImage": {
           "src": "/images/roadsters/streetTriple765RModel.png",
+          "alt": "Street Triple 765 R"
+        },
+        "promoYoutubeVideo": {
+          "src": "https://www.youtube.com/embed/cDNnqoRB50w",
           "alt": "Street Triple 765 R"
         }
       },
@@ -7591,55 +7595,62 @@
       ],
       "bikePageCarousell": [
         {
-          "title": "Стил и ДНК",
-          "desc": "Од класичниот мотор и презисно обликуваниот резервоар за гориво па се до премиум боја, извонредниот стил и силуетата која не се заборава, Speed 400 сигурно е Triumph.",
-          "image": "/images/classics/speed400/speed400BikePageCaro1.avif"
+          "title": "Унапредени Перформанси",
+          "desc": "Голема надградба на моторот 765 – поголема моќност со 120 КС, поголем вртежен момент од 80 Nm, подобрена реакција, побрзо забрзување и нов, послободен издув за целиот тој препознатлив звук со три цилиндри.",
+          "image": "/images/roadsters/streetTriple765R/streetTriple765RCaro1.avif"
         },
         {
-          "title": "Луксузни финиши",
-          "desc": "Препознатливиот пескарен финиш на моторот, елоксирани златни вилушки, високо квалитетна боја и извонредните детали покажуваат дека Speed 400 е изработен по највисоки стандарди.",
-          "image": "/images/classics/speed400/speed400BikePageCaro2.avif"
+          "title": "Нов и Оптимизиран ABS Систем",
+          "desc": "ABS оптимизиран за агол, поддржан од IMU со приспособени поставки вградени во секој од четирите режими на возење на Street R, обезбедува оптимални перформанси на сопирање на кој било наклон.",
+          "image": "/images/roadsters/streetTriple765R/streetTriple765RCaro2.avif"
         },
         {
-          "title": "TR Мотори",
-          "desc": "Најновата TR серија на мотори ги комбинира најновите технологии со модерно-класични естетски детали и нуди топ перформанси, како и оној препознатливо чувство кога возите Triumph мотор а и непогрешливиот звук од издувната цевка.",
-          "image": "/images/classics/speed400/speed400BikePageCaro3.avif"
+          "title": "Нов Оптимизиран систем за пролизгување со опција за деактивирање",
+          "desc": "Оптимизираниот систем за контрола на тракцијата за исклучување постојано го пресметува аголот на потпирање за да обезбеди оптимална брзина на лизгање и контрола на вртежниот момент. Може да се изберат четири независно прилагодливи нивоа на интервенција за да одговараат на стилот и условите на возење.",
+          "image": "/images/roadsters/streetTriple765R/streetTriple765RCaro3.avif"
         },
         {
-          "title": "Шасија и Суспензија",
-          "desc": "Нова “roadster“ шасија и суспензијата од високо ниво, испорачуваат перфектна позиција за возење и за искусни и за неискусни возачи. .",
-          "image": "/images/classics/speed400/speed400BikePageCaro4.avif"
+          "title": "Подобра Ергономија",
+          "desc": "Improved control for this new generation comes courtesy of a new 12mm wider handlebar, giving the Street Triple R a more focused and commanding driving position.",
+          "image": "/images/roadsters/streetTriple765R/streetTriple765RCaro4.avif"
         },
         {
-          "title": "Ергономија",
-          "desc": "Speed 400 е наменет за секого, па така на него комотно ќе се чувствуваат возачи од секакви димензии. Благодарејки на неговата тенка половина, атрактивна и природна возачка позиција комбинира комфорт и самодоверба при возење на моторот.",
-          "image": "/images/classics/speed400/speed400BikePageCaro5.avif"
+          "title": "Поголема Моќ на Сопирачките",
+          "desc": "Двојните радијални моноблок клешти на Brembo M4.32 обезбедуваат моќно, контролирано сопирање во сите услови. Аголниот ABS додава сигурност и самодоверба на возачот.",
+          "image": "/images/roadsters/streetTriple765R/streetTriple765RCaro5.avif"
         },
         {
-          "title": "Тркала и Гуми",
-          "desc": "Лесни 10-жични алуминиумски тркала од 17 инчи споени со гуми од премиум брендови, нудат самодоверба во сите услови.",
-          "image": "/images/classics/speed400/speed400BikePageCaro6.avif"
+          "title": "Суспензија",
+          "desc": "Висококвалитетната, целосно приспособлива превртена вилушка Big Piston на Showa со посебни функции и задниот амортизер со прачка обезбедува кадифен, но контролиран амортизација, за беспрекорно управување на патот со спортска моќ.",
+         "image": "/images/roadsters/streetTriple765R/streetTriple765RCaro6.avif"
         },
         {
-          "title": "Сопирачки",
-          "desc": "Респонсивноста и Самодовербата при запирање произлегува од сопирачки со клешти од по две клипчиња за запирање, дискови и Bosch ABS.",
-          "image": "/images/classics/speed400/speed400BikePageCaro7.avif"
+          "title": "Стабилност и на високи брзини",
+          "desc": "Дизајниран за идеална комбинација на торзиона вкочанетост и странична флексибилност, прекрасната ножичка за галебирање комбинира одлични повратни информации од возачот со неверојатна стабилност при голема брзина.",
+          "image": "/images/roadsters/streetTriple765R/streetTriple765RCaro7.avif"
         },
         {
-          "title": "Технологија",
-          "desc": "Speed 400 e буквално натоварен со модерна технологија која е фокусирана на возачот. Истата е составена од систем за контрола на пролизгување, асистенција на квачило, Bosch ABS, LED расвета и сосема нова инструментна табла која се состои од аналоген брзино-метар и LCD екран.",
-          "image": "/images/classics/speed400/speed400BikePageCaro8.avif"
+          "title": "Оптимизирана Висина на Седиштето",
+          "desc": "Со пристапна висина на седиштето од 826 mm на Street Triple R, може да се вгради и дополнителна опција за ниски седишта, со 3D мрежна технологија за подобрен комфор, за намалување на висината за 28 mm.",
+          "image": "/images/roadsters/streetTriple765R/streetTriple765RCaro8.avif"
         },
         {
-          "title": "Безбедност",
-          "desc": "Speed 400 е опремен со волан кој се заклучува и имобилизатор против кражби. Исто така во клучот на Speed 400 е вграден и сигурносен чип кој обезбедува моторот да биде запален само од страна на својот сопственик.",
-          "image": "/images/classics/speed400/speed400BikePageCaro9.avif"
+          "title": "TFT Екран",
+          "desc": "Street Triple R се одликува со повеќефункционален TFT дисплеј лесен за користење. Интуитивни и логично поставени, четирите програми за возење се лесно навигирани преку ергономски оптимизираниот прекинувач.",
+          "image": "/images/roadsters/streetTriple765R/streetTriple765RCaro9.avif"
         },
         {
-          "title": "Вредност",
-          "desc": "Со висока спецификација, квалитет и перформанси при мали трошоци за одржување со 16,000км сервисен интервал и две годишна гаранција која не истекува по одредена помината километража - Speed 400 е од голема вредност..",
-          "image": "/images/classics/speed400/speed400BikePageCaro10.avif"
+          "title": "Агресивен Фокусиран Изглед",
+          "desc": "Впечатливата нова естетика на Street Triple R ја испорачува непогрешливата дизајнерска ДНК на Street Triple, со целосно нов резервоар за гориво од 15 литри, врв на издувот, обвивки на ладилникот, облоги на предните фарови и задни облоги за најагресивен став и силуета досега.",
+          "image": "/images/roadsters/streetTriple765R/streetTriple765RCaro10.avif"
         }
+        ,
+        {
+          "title": "Високи Стандарди",
+          "desc": "Street Triple R со повисоки спецификации е комплетиран со Shift Assist Quickshifter за менување на брзини без спојка, спојка со помош на влечки, целосно LED осветлување, контрола на подигнувањето на предните тркала и гуми Continental ContiRoad.",
+          "image": "/images/roadsters/streetTriple765R/streetTriple765RCaro11.avif"
+        }
+        
       ]
     },
     {
@@ -7651,11 +7662,11 @@
       "edition": "roadsters",
       "price": 13990,
       "specs": {
-        "cc": 398,
-        "hp": 20,
-        "torque": 37.5,
-        "horsePower": 40,
-        "serviceInterval": "16.000km",
+        "cc": 765,
+        "hp": 130,
+        "torque": 80,
+        "horsePower": 130,
+        "serviceInterval": "10.000km",
         "motorType": "TR"
       },
       "gallery": {
@@ -7712,10 +7723,10 @@
       "edition": "roadsters",
       "price": 8690,
       "specs": {
-        "cc": 398,
-        "hp": 20,
-        "torque": 37.5,
-        "horsePower": 40,
+        "cc": 660,
+        "hp": 80,
+        "torque": 64,
+        "horsePower": 80,
         "serviceInterval": "16.000km",
         "motorType": "TR"
       },
@@ -7781,11 +7792,11 @@
       "edition": "roadsters",
       "price": 18990,
       "specs": {
-        "cc": 398,
-        "hp": 20,
-        "torque": 37.5,
-        "horsePower": 40,
-        "serviceInterval": "16.000km",
+        "cc": 1160,
+        "hp": 180,
+        "torque": 125,
+        "horsePower": 180,
+        "serviceInterval": "15.000km",
         "motorType": "TR"
       },
       "gallery": {
@@ -7842,11 +7853,11 @@
       "edition": "roadsters",
       "price": 20990,
       "specs": {
-        "cc": 398,
-        "hp": 20,
-        "torque": 37.5,
-        "horsePower": 40,
-        "serviceInterval": "16.000km",
+        "cc": 1160,
+        "hp": 180,
+        "torque": 125,
+        "horsePower": 180,
+        "serviceInterval": "15.000km",
         "motorType": "TR"
       },
       "gallery": {
@@ -10118,11 +10129,11 @@
       "edition": "roadsters",
       "price": 16990,
       "specs": {
-        "cc": 398,
-        "hp": 20,
-        "torque": 37.5,
-        "horsePower": 40,
-        "serviceInterval": "16.000km",
+        "cc": 765,
+        "hp": 130,
+        "torque": 80,
+        "horsePower": 130,
+        "serviceInterval": "10.000km",
         "motorType": "TR"
       },
       "gallery": {
