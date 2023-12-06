@@ -14,20 +14,16 @@ const SubFamReasonsToRide = async ({params}: any) => {
       const familyData = await familyRes.json();
       const subFamily = familyData[0].subFamilies[subFam];
   
-      const bikesRes = await fetch(`${BIKES}?model=${subFam}`);
+      const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${subFam}`);
       const bikesData = await bikesRes.json();
-
-      const hasAccessoryInfoText = subFamily.accessory.hasOwnProperty('infoText')
   
       return (
         <>
           <SecondaryPagesHeroSection
             bannerImage={subFamily.accessory.banner.image}
-            subFamilyTitle={subFam}
+            subFamilyTitle={subFam.toUpperCase()}
             text={`Аксесоари`}
           />
-
-          {hasAccessoryInfoText && <p>has info text</p>}
   
           <main className="px-4 md:px-16 lg:px-40">
             <AccessoriesListing items={subFamily.accessory.accessoryTypes} />

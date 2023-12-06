@@ -607,59 +607,79 @@
               "image": "/images/adventure/tigerSport660/tigerSport660AccesoryHero.avif"
             },
             "infoText": {
-              "title": "Додајте ваш белег врз Speed 400",
-              "desc": "На располагање ви е селекција од преку 20 оригинални Triupmh аксесоари за оваа серија на мотори. Аксесоарите кои ќе ги додадете може да бидат додадени на вашиот мотор во фабриката. Aксесоарите се дизајнирани од истиот тим кој го креираше Speed 400 и доаѓаат со две-годишна гаранција."
+              "title": "Персонализирајте го вашиот Tiger Sport 660"
             },
             "accessoryTypes": [
               {
-                "title": "Стил и Комфорт",
-                "desc": "Choose from a range of parts that will make the Speed ​​400 just the way you want it. Direct replacement bullet turn signals a subtle new look and premium touch with their satin black body and machined aluminum bezels.. Or maybe you want to remodel the tank with different knee pads? A comfortable saddle with a stitched and quilted finish makes a style statement and, together with plug and play heated grips, offers luxury on longer rides..",
+                "title": "Додатоци",
+                "desc": "Подобрете ја способноста за патување на долги растојанија со целосно интегрирани панталони и средишна покривка од 47 литри со капацитет за две кациги, сите во бојата на велосипедот. Елегантниот дизајн со единствена брава со единствен клуч ќе ги одржува вашите работи суви, заштитени и безбедни. Без разлика дали чувате лаптоп, два шлемови за цело лице или вреќи за спиење, стилскиот багаж ќе додаде практичност и флексибилност во вашиот секојдневен живот. Tiger Sport 660 доаѓа со дискретно интегрирани држачи како стандард, овозможувајќи лесно монтирање на додатоците за обложување, а истовремено задржувајќи го целиот чист стил на Tiger на задната страна кога не се инсталирани табли. Додајте ги целосно водоотпорните внатрешни кеси за да ги заштитите вашите работи од елементите, кои лесно се отстрануваат кога ќе стигнете до вашата дестинација. Други додатоци вклучуваат:",
                 "itemsList": [
-                  "Bullet type LED flash",
-                  "Штитници за колена",
-                  "Комфортно Седло"
+                  "Целосно Интегрирани Куфери",
+                  "Централен Куфер за Две Кациги",
+                  "Водо-отпорни Торби",
+                  "Алуминиумски Држачи за Куфери со Интегрирани Рачки за Патникот",
+                  "Централен Држач за Монтирање на Куфер",
+                  "Заден Потпирач за Патникот"
                 ],
                 "image1": {
-                  "src": "/images/classics/speed400/speed400SAccesoryStyleImage1.avif",
-                  "alt": "Speed 400 On The Road"
-                },
-                "image2": {
-                  "src": "/images/classics/speed400/speed400AccessoryStyleImage2.avif",
-                  "alt": "Speed 400 PaintJob"
+                  "src": "/images/adventure/tigerSport660/tigerSport660Accessory1.avif",
+                  "alt": "Tiger Sport 660 Luggage"
                 }
               },
               {
-                "title": "Багаж",
-                "desc": "A full range of Speed ​​400-specific luggage has been created to add some practicality to the fun. The Speed ​​400 is the perfect touring bike, and outfitting it to handle your load really couldn't be easier. Choose from sturdy side or rigid and semi-rigid panniers, each with their own special mounting system or, for those who prefer to travel light, a simple luggage rack, nylon tank bag or roll-on bag could be the perfect choice .",
+                "title": "Заштита",
+                "desc": "Стравот од пад не треба да виси над вас - додадете ја потребната заштита за мир на умот во секој маневар. Возете самоуверено со капаците на моторот, заштитниците на рамката и вилушката и комплетирајте го изгледот со јаболката и рачките во боја на велосипедот.",
                 "itemsList": [
-                  "Цврсти Куфери за Багаж",
-                  "Држач за Багаж",
-                  "Најлонска торба за на резервоар",
-                  "Најлонска Торба Roll "
+                  "Заштитник на мотор",
+                  "Заштитник на шасија",
+                  "Заштита на вилушки",
+                  "Заштита на Боја",
+                  "Штитници за Дланки",
+                  "Гумена заштита на резервоар"
                 ],
                 "image1": {
-                  "src": "/images/classics/speed400/speed400AccessoryLuggageImage.avif",
-                  "alt": "Speed 400 Luggage"
+                  "src": "/images/adventure/tigerSport660/tigerSport660Accessory2.avif",
+                  "alt": "Tiger Sport 660 Safety"
                 }
               },
               {
-                "title": "Заштита ",
-                "desc": "Both your protection from the elements and that of the Speed ​​400 have been taken care of. A visor with a special fitting kit is also available to deflect the wind to reduce rider fatigue on longer rides. Easy to fit and with style to match, it's a must-have addition for distance riders.To keep the Speed ​​400 out of harm's way on rougher roads, there's an aluminum skid plate, a radiator guard and a headlight mask, which comes with its own bezel for easy fitting, and offers excellent protection from rocks and debris. All-weather riders may want to add the mudguard kit which consists of front and rear mudguard extensions and a rear wing. These combine nicely to protect against water spray and extend the life of the rear shock in extreme conditions.Upper and lower engine guards are also available — these provide excellent protection against drops and spills, a must-have addition for city and country driving.",
+                "title": "технологија",
+                "desc": "Задржете се во бојата на мотоциклот Додадете повеќе практичност и интеракција со возачот со единицата My Triumph Connectivity, овозможувајќи навигација чекор-по-сврт, контрола на камерата GoPro, функционалност на телефонот и музиката, сето тоа контролирано преку прекинувачите на рачката и прикажано на TFT екранот. Чувајте ги вашите лични уреди наполнети за секое возење со пригодниот приклучок за полнење USB под седлото и опцијата за приклучок од 12V што се наоѓа на левата страна од кокпитот. Има и Triumph Shift Assist брз менувач за брзи поместувања без спојка додека се одржува позицијата на гасот. Исто така, за поудобно возење во текот на целата година, внатрешните жици на воланот се веќе инсталирани ако изберете да го додадете комплетот за грип со греење. Ова обезбедува три поставки за температура, избрани преку паметно интегрираното копче. Можете исто така да додадете тркалачки LED индикатори и светли LED помошни светла за зголемена видливост и комплетен авантуристички стил (во зависност од земјата) . Системот за следење на притисокот во гумите (TPMS) е исто така одлична безбедносна помош што ќе ве предупреди рано за секое губење на притисокот во гумите. На споредливите пазари, комплетот за конверзија на лиценца А2 со држач за вртење APS и ексклузивно подесување на моторот ќе го ограничи велосипедот на 35 kW. Ова е лесно реверзибилно од дилер на Triumph штом ќе се добие целосното ослободување.",
                 "itemsList": [
-                  "Гелатин",
-                  "Заштита за ладник",
-                  "Решетка за светло",
-                  "Алуминиумска заштита",
-                  "Заштита од Кал",
-                  "Цевки за Заштита на Мотор (Горни и Долни)"
+                  "Triumph Connectivity ",
+                  "USB и 12 волтни влезови за полнење под седиштето",
+                  "Triumph Shift Assist",
+                  "Интегрирани Греачи на Рачки на Волан",
+                  "LED Трапкачи",
+                  "LED Дополнителни Светла",
+                  "Мониторинг за Притисок На Пневматици",
+                  "A2 Fold Limit Ki"
                 ],
                 "image1": {
-                  "src": "/images/classics/speed400/speed400AccessoryProtectionImage1.avif",
-                  "alt": "Speed 400 Head"
+                  "src": "/images/adventure/tigerSport660/tigerSport660Accessory3.avif",
+                  "alt": "Tiger Sport 660 Luggage"
+                }
+              },
+              {
+                "title": "Сигурност",
+                "desc": "Во зависност од достапноста на локалниот пазар, алармот Triumph Protect+ или тракерот Triumph Track+ може да ги одврати потенцијалните крадци и да помогне во обновувањето доколку се случи незамисливото. Овие безбедносни уреди одобрени од Тачам доаѓаат со луксузни клучеви од брендот Triumph.",
+                "itemsList": [
+                  "Triumph Connectivity ",
+                  "USB и 12 волтни влезови за полнење под седиштето",
+                  "Triumph Shift Assist",
+                  "Интегрирани Греачи на Рачки на Волан",
+                  "LED Трапкачи",
+                  "LED Дополнителни Светла",
+                  "Мониторинг за Притисок На Пневматици",
+                  "A2 Fold Limit Ki"
+                ],
+                "image1": {
+                  "src": "/images/adventure/tigerSport660/tigerSport660Accessory4.avif",
+                  "alt": "Tiger Sport 660 Security"
                 },
                 "image2": {
-                  "src": "/images/classics/speed400/speed400AccessoryRadiatorProtection.avif",
-                  "alt": "speed 400 Accessory Radiator Protection"
+                  "src": "/images/adventure/tigerSport660/tigerSport660Accessory5.avif",
+                  "alt": "Tiger Sport 660"
                 }
               }
             ]
