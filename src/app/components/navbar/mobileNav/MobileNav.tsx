@@ -31,8 +31,9 @@ const MobileNav = ({fams, allBikes}: MobileNavProps) => {
   };
 
   useEffect(() => {
-
     setIsMainDropdownShown(false)
+    handleBodyScrollWhenMenuIsOpen(false)
+
   }, [pathname])
 
   return (
