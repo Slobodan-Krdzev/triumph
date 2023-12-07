@@ -172,7 +172,10 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
               </button>
             </div>
             <button className="red-bg-color py-4 text-white uppercase font-semibold "
-            onClick={() => setIsMobileMenuShown(false)}>
+            onClick={() => {
+              handleBodyScrollWhenMenuIsOpen(true)
+              setIsMobileMenuShown(false)
+            }}>
               НАЗАД
             </button>
           </section>
