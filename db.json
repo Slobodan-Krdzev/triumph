@@ -9354,9 +9354,9 @@
       "subFamilyCategory": "speed-twin-900",
       "edition": "900cc",
       "desc": "Возбудливи перформанси и управување кое инспирира самодоверба, сега со уште повеќе комфорт и стил.",
-      "price": 10390,
+      "price": 10690,
       "specs": {
-        "cc": 398,
+        "cc": 900,
         "hp": 20,
         "torque": 37.5,
         "horsePower": 40,
@@ -9364,41 +9364,32 @@
         "motorType": "TR"
       },
       "bikeCollorPalletteGallery": {
-        "default": "/images/classics/speedTwin900/speedTwin900StealthGreen.png",
-        "color1": "/images/classics/speedTwin900/speedTwin900StealthGreen.png",
-        "color1Reversed": "/images/classics/speedTwin900/speedTwin900StealthGreenReversed.png",
-        "color2": "/images/classics/speedTwin900/speedTwin900Black.png",
-        "color2Reversed": "/images/classics/speedTwin900/speedTwin900BlackReversed.png",
-        "color3": "/images/classics/speedTwin900/speedTwin900CarnivalRed.png",
-        "color3Reversed": "/images/classics/speedTwin900/speedTwin900CarnivalRedReversed.png",
-        "color4": "/images/classics/speedTwin900/speedTwin900Competition.png",
-        "color4Reversed": "/images/classics/speedTwin900/speedTwin900CompetitionReversed.png"
+        "default": "/images/classics/speedTwin900/speedTwin900Ironstone.png",
+        "color1": "/images/classics/speedTwin900/speedTwin900Black.png",
+        "color1Reversed": "/images/classics/speedTwin900/speedTwin900BlackReversed.png",
+        "color2": "/images/classics/speedTwin900/speedTwin900Ironstone.png",
+        "color2Reversed": "/images/classics/speedTwin900/speedTwin900IronstoneReversed.png",
+        "color3": "/images/classics/speedTwin900/speedTwin900SilverICe.png",
+        "color3Reversed": "/images/classics/speedTwin900/speedTwin900SilverICeReversed.png"
       },
       "customizationColors": [
         {
-          "colorName": "Stealth Edition - Saphire Green",
+          "colorName": "Jet Black",
           "price": null,
-          "image": "/images/custom-collors/phantomGreenSilverGreen.png",
+          "image": "/images/custom-collors/jetBlack.jpg",
           "colorCode": "color1"
         },
         {
-          "colorName": "Jett Black",
-          "price": null,
-          "image": "/images/custom-collors/jetBlack.jpg",
+          "colorName": "Matt Ironstone",
+          "price": 200,
+          "image": "/images/custom-collors/ironStoneGrey.jpg",
           "colorCode": "color2"
         },
         {
           "colorName": "Carnival Red / Saphire Black",
           "price": 200,
-          "image": "/images/custom-collors/carnivalRedSapphireBlack.jpg",
+          "image": "/images/custom-collors/mattSilverice.jpg",
           "colorCode": "color3"
-        }
-        ,
-        {
-          "colorName": "Competition Green / Phantom Black",
-          "price": 200,
-          "image": "/images/custom-collors/competitionGreenPhantomBlack.jpg",
-          "colorCode": "color4"
         }
       ],
       "gallery": {
@@ -9475,7 +9466,7 @@
     },
     {
       "id": 31,
-      "title": "scrambler 1200 XE (MY24)",
+      "title": "Scrambler 1200 XE (MY24)",
       "model": "scrambler-1200-xe-2024",
       "category": "classics",
       "subFamilyCategory": "scrambler-1200",
@@ -9590,15 +9581,44 @@
       "category": "classics",
       "subFamilyCategory": "speed-twin-1200",
       "edition": "classics",
-      "price": 14190,
+      "price": 14590,
       "specs": {
-        "cc": 398,
+        "cc": 1200,
         "hp": 20,
         "torque": 37.5,
         "horsePower": 40,
         "serviceInterval": "16.000km",
         "motorType": "TR"
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/classics/speedTwin1200/speedTwin1200Black.png",
+        "color1": "/images/classics/speedTwin1200/speedTwin1200Black.png",
+        "color1Reversed": "/images/classics/speedTwin1200/speedTwin1200BlackReversed.png",
+        "color2": "/images/classics/speedTwin1200/speedTwin1200RedHopper.png",
+        "color2Reversed": "/images/classics/speedTwin1200/speedTwin1200RedHopperReversed.png",
+        "color3": "/images/classics/speedTwin1200/speedTwin1200Baja.png",
+        "color3Reversed": "/images/classics/speedTwin1200/speedTwin1200BajaReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Jet Black",
+          "price": null,
+          "image": "/images/custom-collors/jetBlack.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Red Hopper",
+          "price": 200,
+          "image": "/images/custom-collors/redHopper.jpg",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Matt Baja Orange",
+          "price": 200,
+          "image": "/images/custom-collors/mattBajaOrange.jpg",
+          "colorCode": "color3"
+        }
+      ],
       "gallery": {
         "modelImage": {
           "src": "/images/classics/speedTwin1200Model.png",
@@ -9617,15 +9637,44 @@
       "subFamilyCategory": "scrambler-900",
       "edition": "900cc",
       "desc": "Дрзок off-road карактер, врвна агилност и иконичен стил, со перформанси за забава на секаков терен.",
-      "price": 11890,
+      "price": 12290,
       "specs": {
-        "cc": 398,
+        "cc": 900,
         "hp": 20,
         "torque": 37.5,
         "horsePower": 40,
         "serviceInterval": "16.000km",
         "motorType": "TR"
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/classics/scrambler900/scrambler900Black.png",
+        "color1": "/images/classics/scrambler900/scrambler900Black.png",
+        "color1Reversed": "/images/classics/scrambler900/scrambler900BlackReversed.png",
+        "color2": "/images/classics/scrambler900/scrambler900Red.png",
+        "color2Reversed": "/images/classics/scrambler900/scrambler900RedReversed.png",
+        "color3": "/images/classics/scrambler900/scrambler900Khaki.png",
+        "color3Reversed": "/images/classics/scrambler900/scrambler900KhakiReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Jet Black",
+          "price": null,
+          "image": "/images/custom-collors/jetBlack.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Carnival Red / Jet Black",
+          "price": 300,
+          "image": "/images/custom-collors/carnivalRedSapphireBlack.jpg",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Matt Khaki",
+          "price": 200,
+          "image": "/images/custom-collors/mattKhaki.jpg",
+          "colorCode": "color3"
+        }
+      ],
       "gallery": {
         "modelImage": {
           "src": "/images/classics/scrambler900Model.png",
@@ -9642,20 +9691,57 @@
       "model": "t100-2023",
       "category": "classics",
       "subFamilyCategory": "bonneville-t100",
-      "edition": "900cc",
+      "edition": "classics",
       "desc": "Bonneville T100 - еволуција на иконичен мотор сега уште полесен и посиле.",
-      "price": 11690,
+      "price": 11990,
       "specs": {
-        "cc": 398,
+        "cc": 900,
         "hp": 20,
         "torque": 37.5,
         "horsePower": 40,
         "serviceInterval": "16.000km",
         "motorType": "TR"
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/classics/bonnevilleT100/t100Black.png",
+        "color1": "/images/classics/bonnevilleT100/t100Black.png",
+        "color1Reversed": "/images/classics/bonnevilleT100/t100BlackReversed.png",
+        "color2": "/images/classics/bonnevilleT100/t100RedWhite.png",
+        "color2Reversed": "/images/classics/bonnevilleT100/t100RedWhiteReversed.png",
+        "color3": "/images/classics/bonnevilleT100/t100Tangerine.png",
+        "color3Reversed": "/images/classics/bonnevilleT100/t100TangerineReversed.png",
+        "color4": "/images/classics/bonnevilleT100/t100CobaltBlue.png",
+        "color4Reversed": "/images/classics/bonnevilleT100/t100CobaltBlueReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Jet Black",
+          "price": null,
+          "image": "/images/custom-collors/jetBlack.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Carnival Red / Fusion White",
+          "price": 400,
+          "image": "/images/custom-collors/carnivalRedWhite.jpg",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Meriden Blue / Tangerine",
+          "price": 400,
+          "image": "/images/custom-collors/meridenBlueTangerine.jpg",
+          "colorCode": "color3"
+        },
+        {
+          "colorName": "Cobalt Blue",
+          "price": 700,
+          "image": "/images/custom-collors/phantomBlueSilverBlue.png",
+          "colorCode": "color4"
+        }
+      ],
       "gallery": {
         "modelImage": {
-          "src": "/images/classics/bonnevilleT100Model.png",
+          "src": "/images/classics/bonnevilleT100/t100Black.png",
           "alt": "Bonneville T100"
         }
       },
