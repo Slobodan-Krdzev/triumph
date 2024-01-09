@@ -9417,7 +9417,7 @@
       "category": "classics",
       "subFamilyCategory": "bonneville-bobber",
       "edition": "classics",
-      "price": 16290,
+      "price": 16790,
       "specs": {
         "cc": 398,
         "hp": 20,
@@ -9426,9 +9426,46 @@
         "serviceInterval": "16.000km",
         "motorType": "TR"
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/classics/bonnevilleBobber/bonnevilleBobberRedHopper.png",
+        "color1": "/images/classics/bonnevilleBobber/bonnevilleBobberBlack.png",
+        "color1Reversed": "/images/classics/bonnevilleBobber/bonnevilleBobberBlackReversed.png",
+        "color2": "/images/classics/bonnevilleBobber/bonnevilleBobberRedHopper.png",
+        "color2Reversed": "/images/classics/bonnevilleBobber/bonnevilleBobberRedHopperReversed.png",
+        "color3": "/images/classics/bonnevilleBobber/bonnevilleBobberIronStone.png",
+        "color3Reversed": "/images/classics/bonnevilleBobber/bonnevilleBobberIronStoneReversed.png",
+        "color4": "/images/classics/bonnevilleBobber/bonnevilleBobberChrome.png",
+        "color4Reversed": "/images/classics/bonnevilleBobber/bonnevilleBobberChromeReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Jet Black",
+          "price": null,
+          "image": "/images/custom-collors/jetBlack.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Red Hopper",
+          "price": 200,
+          "image": "/images/custom-collors/redHopper.jpg",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Matt Storm Gray / Matt Ironstone",
+          "price": 200,
+          "image": "/images/custom-collors/ironStoneGrey.jpg",
+          "colorCode": "color3"
+        },
+        {
+          "colorName": "Chrome / Jet Black",
+          "price": 800,
+          "image": "/images/custom-collors/jetBlackChrome.jpg",
+          "colorCode": "color4"
+        }
+      ],
       "gallery": {
         "modelImage": {
-          "src": "/images/classics/bonnevilleBobberModel.png",
+          "src": "/images/classics/bonnevilleBobber/bonnevilleBobberRedHopper.png",
           "alt": "Bonneville Bobber"
         }
       },
@@ -9621,7 +9658,7 @@
       "category": "classics",
       "subFamilyCategory": "bonneville-speedmaster",
       "edition": "classics",
-      "price": 16290,
+      "price": 16690,
       "specs": {
         "cc": 398,
         "hp": 20,
@@ -9630,6 +9667,37 @@
         "serviceInterval": "16.000km",
         "motorType": "TR"
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/classics/speedmaster/speedmasterBlack.png",
+        "color1": "/images/classics/speedmaster/speedmasterBlack.png",
+        "color1Reversed": "/images/classics/speedmaster/speedmasterBlackReversed.png",
+        "color2": "/images/classics/speedmaster/speedmasterRed.png",
+        "color2Reversed": "/images/classics/speedmaster/speedmasterRedReversed.png",
+        "color3": "/images/classics/speedmaster/speedmasterBlackWhite.png",
+        "color3Reversed": "/images/classics/speedmaster/speedmasterBlackWhiteReversed.png",
+        "color4": "/images/classics/speedmaster/speedmasterChromeEdition.avif",
+        "color4Reversed": "/images/classics/speedmaster/speedmasterChromeEdition.avif"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Saphire Black",
+          "price": null,
+          "image": "/images/custom-collors/sapphireBlack.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Cordovan Red",
+          "price": 300,
+          "image": "/images/custom-collors/cordovanRedFull.jpg",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Sapphire Black / Fusion White",
+          "price": 100,
+          "image": "/images/custom-collors/sapphireBlackFussionWhite.jpg",
+          "colorCode": "color3"
+        }
+      ],
       "gallery": {
         "modelImage": {
           "src": "/images/classics/bonnevilleSpeedmasterModel.png",
@@ -9822,7 +9890,7 @@
       "category": "classics",
       "subFamilyCategory": "bonneville-t120",
       "edition": "classics",
-      "price": 14290,
+      "price": 14690,
       "specs": {
         "cc": 398,
         "hp": 20,
@@ -9831,9 +9899,46 @@
         "serviceInterval": "16.000km",
         "motorType": "TR"
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/classics/bonnevilleT120/bonnevillieT120AegeanBlue.png",
+        "color1": "/images/classics/bonnevilleT120/bonnevillieT120Black.png",
+        "color1Reversed": "/images/classics/bonnevilleT120/bonnevillieT120BlackReversed.png",
+        "color2": "/images/classics/bonnevilleT120/bonnevillieT120Red.png",
+        "color2Reversed": "/images/classics/bonnevilleT120/bonnevillieT120RedReversed.png",
+        "color3": "/images/classics/bonnevilleT120/bonnevillieT120AegeanBlue.png",
+        "color3Reversed": "/images/classics/bonnevilleT120/bonnevillieT120AegeanBlueReversed.png",
+        "color4": "/images/classics/bonnevilleT120/t120ChromeEdition-MeridenBlueChrome.avif",
+        "color4Reversed": "/images/classics/bonnevilleT120/t120ChromeEdition-MeridenBlueChrome.avif"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Jet Black",
+          "price": null,
+          "image": "/images/custom-collors/jetBlack.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Cordovan Red / Silver Ice",
+          "price": 300,
+          "image": "/images/custom-collors/cordovanRed.jpg",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Aegean Blue / Fusion White",
+          "price": 300,
+          "image": "/images/custom-collors/aegeanBlueFusionWhite.jpg",
+          "colorCode": "color3"
+        },
+        {
+          "colorName": "Chrome / Meriden Blue",
+          "price": 800,
+          "image": "/images/custom-collors/chromeMeridianBlue.avif",
+          "colorCode": "color4"
+        }
+      ],
       "gallery": {
         "modelImage": {
-          "src": "/images/classics/bonnevilleT120Model.png",
+          "src": "images/classics/bonnevilleT120/bonnevillieT120AegeanBlue.png",
           "alt": "Bonneville T100"
         }
       },
@@ -9848,7 +9953,7 @@
       "category": "classics",
       "subFamilyCategory": "bonneville-t120",
       "edition": "classics",
-      "price": 14290,
+      "price": 14690,
       "specs": {
         "cc": 398,
         "hp": 20,
@@ -9857,6 +9962,27 @@
         "serviceInterval": "16.000km",
         "motorType": "TR"
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/classics/bonnevilleT120Black/t120BlackJetBlack.png",
+        "color1": "/images/classics/bonnevilleT120Black/t120BlackJetBlack.png",
+        "color1Reversed": "/images/classics/bonnevilleT120Black/t120BlackJetBlackReversed.png",
+        "color2": "/images/classics/bonnevilleT120Black/t120BlackMattBlack.png",
+        "color2Reversed": "/images/classics/bonnevilleT120Black/t120BlackMattBlackReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Jet Black",
+          "price": null,
+          "image": "/images/custom-collors/jetBlack.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Sapphire Black / Matt Saphire",
+          "price": 300,
+          "image": "/images/custom-collors/sapphireBlackSapphireBlack.jpg",
+          "colorCode": "color2"
+        }
+      ],
       "gallery": {
         "modelImage": {
           "src": "/images/classics/bonnevilleT120BlackModel.png",
