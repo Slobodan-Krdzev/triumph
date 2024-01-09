@@ -6298,7 +6298,7 @@
       "category": "adventure",
       "subFamilyCategory": "tiger-850-sport",
       "edition": "adventure",
-      "price": 12890,
+      "price": 13390,
       "specs": {
         "cc": 398,
         "hp": 20,
@@ -6327,13 +6327,13 @@
       "customizationColors": [
         {
           "colorName": "Graphite Diablo Red",
-          "price": 200,
+          "price": null,
           "image": "/images/custom-collors/graphiteDiabloRed.jpg",
           "colorCode": "color1"
         },
         {
           "colorName": "Graphite / Jet Black",
-          "price": 200,
+          "price": null,
           "image": "/images/custom-collors/graphiteJetBlack.jpg",
           "colorCode": "color2"
         }
