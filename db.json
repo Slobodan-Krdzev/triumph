@@ -6225,7 +6225,7 @@
       "category": "adventure",
       "subFamilyCategory": "tiger-sport-660",
       "edition": "adventure",
-      "price": 9590,
+      "price": 9290,
       "specs": {
         "cc": 398,
         "hp": 20,
@@ -6251,9 +6251,7 @@
         "color2": "/images/adventure/tigerSport660/tiger660LucerneBlue.avif",
         "color2Reversed": "/images/adventure/tigerSport660/tigerSport660LucerneBlueReversed.avif",
         "color3": "/images/adventure/tigerSport660/tiger660JetBlackGraphite.avif",
-        "color3Reversed": "/images/adventure/tigerSport660/tigerSport660JetBlackGraphiteReversed.png",
-        "color4": "/images/adventure/tigerSport660/tiger660SnowdoniaWhiteJetBlack.avif",
-        "color4Reversed": "/images/adventure/tigerSport660/tigerSport660SnowdoniaWhiteJetBlackReversed.png"
+        "color3Reversed": "/images/adventure/tigerSport660/tigerSport660JetBlackGraphiteReversed.png"
       },
       "customizationColors": [
         {
@@ -6273,12 +6271,6 @@
           "price": null,
           "image": "/images/custom-collors/jetBlackGraphite.jpg",
           "colorCode": "color3"
-        },
-        {
-          "colorName": "Snowdonia White / Jet Black",
-          "price": 200,
-          "image": "/images/custom-collors/snowdoniaWhiteJetBlack.jpg",
-          "colorCode": "color4"
         }
       ],
       "shortSpecInfo": {
@@ -7597,7 +7589,7 @@
       "category": "roadsters",
       "subFamilyCategory": "street-triple-765",
       "edition": "roadsters",
-      "price": 12290,
+      "price": 11590,
       "specs": {
         "cc": 765,
         "hp": 120,
@@ -7828,7 +7820,7 @@
       "category": "roadsters",
       "subFamilyCategory": "trident-660",
       "edition": "roadsters",
-      "price": 8690,
+      "price": 9590,
       "specs": {
         "cc": 660,
         "hp": 80,
@@ -7838,33 +7830,33 @@
         "motorType": "TR"
       },
       "bikeCollorPalletteGallery": {
-        "default": "/images/roadsters/trident660/trident660TriumphYellow.png",
-        "color1": "/images/roadsters/trident660/trident660TriumphYellow.png",
-        "color1Reversed": "/images/roadsters/trident660/trident660TriumphYellowReversed.png",
-        "color2": "/images/roadsters/trident660/trident660SapphireBlack.png",
-        "color2Reversed": "/images/roadsters/trident660/trident660SapphireBlackReversed.png",
+        "default": "/images/roadsters/trident660/tridentMattBajaOrange.png",
+        "color1": "/images/roadsters/trident660/trident660SapphireBlack.png",
+        "color1Reversed": "/images/roadsters/trident660/trident660SapphireBlackReversed.png",
+        "color2": "/images/roadsters/trident660/tridentMattBajaOrange.png",
+        "color2Reversed": "/images/roadsters/trident660/tridentMattBajaOrangeReversed.png",
         "color3": "/images/roadsters/trident660/trident660MattBlack.png",
         "color3Reversed": "/images/roadsters/trident660/trident660MattBlackReversed.png",
-        "color4": "/images/roadsters/trident660/trident660Red.png",
-        "color4Reversed": "/images/roadsters/trident660/trident660RedReversed.png"
+        "color4": "/images/roadsters/trident660/tridentIceRed.png",
+        "color4Reversed": "/images/roadsters/trident660/tridentIceRedReversed.png"
       },
       "customizationColors": [
         {
-          "colorName": "Jett Black / Triumph Racing Yellow",
-          "price": 200,
-          "image": "/images/custom-collors/jetBlackTriumphRacingYellow.jpg",
+          "colorName": "Sapphire Black",
+          "price": null,
+          "image": "/images/custom-collors/sapphireBlack.jpg",
           "colorCode": "color1"
         },
         {
-          "colorName": "Sapphire Black / Storm Gray",
-          "price": null,
-          "image": "/images/custom-collors/sapphireBlack.jpg",
+          "colorName": "Matt Baja Orange / Matt Storm Gray",
+          "price": 200,
+          "image": "/images/custom-collors/mattBajaOrangeMattStormGrey.jpg",
           "colorCode": "color2"
         },
         {
           "colorName": "Matt Jet Black / Matt Silver Ice",
           "price": 200,
-          "image": "/images/custom-collors/mattJettBlackMattSilverIce.jpg",
+          "image": "/images/custom-collors/mattJetBlackICe.jp",
           "colorCode": "color3"
         },
         {
@@ -7876,7 +7868,7 @@
       ],
       "gallery": {
         "modelImage": {
-          "src": "/images/roadsters/trident660Model.png",
+          "src": "/images/roadsters/trident660/tridentMattBajaOrange.png",
           "alt": "Trident 660"
         }
       },
