@@ -9494,20 +9494,49 @@
     },
     {
       "id": 32,
-      "title": "Scrambler 1200 XC (MY23)",
+      "title": "Scrambler 1200 XC",
       "model": "scrambler-1200-xc-2023",
       "category": "classics",
       "subFamilyCategory": "scrambler-1200",
       "edition": "classics",
-      "price": 15990,
+      "price": 16490,
       "specs": {
-        "cc": 398,
+        "cc": 1200,
         "hp": 20,
         "torque": 37.5,
         "horsePower": 40,
         "serviceInterval": "16.000km",
         "motorType": "TR"
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/classics/scrambler1200XC/scrambler1200XCSapphireBlack.png",
+        "color1": "/images/classics/scrambler1200XC/scrambler1200XCSapphireBlack.png",
+        "color1Reversed": "/images/classics/scrambler1200XC/scrambler1200XCSapphireBlackReversed.png",
+        "color2": "/images/classics/scrambler1200XC/scrambler1200XCKhaki.png",
+        "color2Reversed": "/images/classics/scrambler1200XC/scrambler1200XCKhakiReversed.png",
+        "color3": "/images/classics/scrambler1200XC/scrambler1200XCRed.png",
+        "color3Reversed": "/images/classics/scrambler1200XC/scrambler1200XCRedReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Saphire Black",
+          "price": null,
+          "image": "/images/custom-collors/sapphireBlack.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Matt Khaki Green / Matt Jet Black",
+          "price": 400,
+          "image": "/images/custom-collors/mattKhakiGreeenMattJetBlack.jpg",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Carnival Red / Jet Black",
+          "price": 400,
+          "image": "/images/custom-collors/carnivalRedSapphireBlack.jpg",
+          "colorCode": "color3"
+        }
+      ],
       "gallery": {
         "modelImage": {
           "src": "/images/classics/scrambler1200XcMy23Model.png",
@@ -9522,20 +9551,57 @@
     },
     {
       "id": 33,
-      "title": "Scrambler 1200 XE (MY23)",
+      "title": "Scrambler 1200 XE",
       "model": "scrambler-1200-xe-2023",
       "category": "classics",
       "subFamilyCategory": "scrambler-1200",
       "edition": "classics",
-      "price": 16990,
+      "price": 17490,
       "specs": {
-        "cc": 398,
+        "cc": 1200,
         "hp": 20,
         "torque": 37.5,
         "horsePower": 40,
         "serviceInterval": "16.000km",
         "motorType": "TR"
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/classics/scrambler1200XE/scrambler1200XEBlack.png",
+        "color1": "/images/classics/scrambler1200XE/scrambler1200XEBlack.png",
+        "color1Reversed": "/images/classics/scrambler1200XE/scrambler1200XEBlackReversed.png",
+        "color2": "/images/classics/scrambler1200XE/scrambler1200XEKhaki.png",
+        "color2Reversed": "/images/classics/scrambler1200XE/scrambler1200XEKhakiReversed.png",
+        "color3": "/images/classics/scrambler1200XE/scrambler1200XERed.png",
+        "color3Reversed": "/images/classics/scrambler1200XE/scrambler1200XERedReversed.png",
+        "color4": "/images/classics/scrambler1200XE/scrambler1200XEChromeEdition.avif",
+        "color4Reversed": "/images/classics/scrambler1200XE/scrambler1200XEChromeEdition.avif"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Saphire Black",
+          "price": null,
+          "image": "/images/custom-collors/sapphireBlack.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Matt Khaki Green / Matt Jet Black",
+          "price": 400,
+          "image": "/images/custom-collors/mattKhakiGreeenMattJetBlack.jpg",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Carnival Red / Jet Black",
+          "price": 400,
+          "image": "/images/custom-collors/carnivalRedSapphireBlack.jpg",
+          "colorCode": "color3"
+        },
+        {
+          "colorName": "Chrome / Brooklands Green",
+          "price": 800,
+          "image": "/images/custom-collors/chromeBrooklandsGreen.avif",
+          "colorCode": "color4"
+        }
+      ],
       "gallery": {
         "modelImage": {
           "src": "/images/classics/scrambler1200XeMy23Model.png",
@@ -9836,7 +9902,7 @@
       "category": "classics",
       "subFamilyCategory": "thruxton-rs",
       "edition": "classics",
-      "price": 17990,
+      "price": 18490,
       "specs": {
         "cc": 398,
         "hp": 20,
@@ -9845,6 +9911,35 @@
         "serviceInterval": "16.000km",
         "motorType": "TR"
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/classics/thruxtonRS/thruxtonRSBlack.png",
+        "color1": "/images/classics/thruxtonRS/thruxtonRSBlack.png",
+        "color1Reversed": "/images/classics/thruxtonRS/thruxtonRSBlackReversed.png",
+        "color2": "/images/classics/thruxtonRS/thruxtonRSCompetitionGreen.png",
+        "color2Reversed": "/images/classics/thruxtonRS/thruxtonRSCompetitionGreenReversed.png",
+        "color3": "/images/classics/thruxtonRS/thruxtonRSBlackSilver.png",
+        "color3Reversed": "/images/classics/thruxtonRS/thruxtonRSBlackSilverReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Jet Black",
+          "price": null,
+          "image": "/images/custom-collors/jetBlack.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Competition green / Silver Ice",
+          "price": 400,
+          "image": "/images/custom-collors/competitionGreenStorGrey.jpg",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Chrome / Jet Black",
+          "price": 800,
+          "image": "/images/custom-collors/chromeJetBlack.jpg",
+          "colorCode": "color3"
+        }
+      ],
       "gallery": {
         "modelImage": {
           "src": "/images/classics/thruxtonRsModel.png",
