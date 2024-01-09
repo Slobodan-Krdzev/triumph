@@ -6071,7 +6071,7 @@
       "category": "adventure",
       "subFamilyCategory": "tiger-900-gt",
       "edition": "adventure",
-      "price": null,
+      "price": 14290,
       "gallery": {
         "modelImage": {
           "src": "/images/adventure/tiger900GT/tiger900GTGraphiteBlack.png",
@@ -6079,31 +6079,31 @@
         }
       },
       "bikeCollorPalletteGallery": {
-        "default": "/images/adventure/tiger900GT/tiger900GTGraphiteBlack.png",
-        "color1": "/images/adventure/tiger900GT/tiger900GTGraphiteBlack.png",
-        "color1Reversed": "/images/adventure/tiger900GT/tiger900GTGraphiteBlackReversed.png",
-        "color2": "/images/adventure/tiger900GT/tiger900GTSnowdonia.png",
-        "color2Reversed": "/images/adventure/tiger900GT/tiger900GTSnowdoniaReversed.png",
-        "color3": "/images/adventure/tiger900GT/tiger900GTRed.png",
-        "color3Reversed": "/images/adventure/tiger900GT/tiger900GTRedReversed.png"
+        "default": "/images/adventure/tiger900GT/tiger900PureWhite.png",
+        "color1": "/images/adventure/tiger900GT/tiger900PureWhite.png",
+        "color1Reversed": "/images/adventure/tiger900GT/tiger900PureWhiteReversed.png",
+        "color2": "/images/adventure/tiger900GT/tiger900GTBlack.png",
+        "color2Reversed": "/images/adventure/tiger900GT/tiger900GTBlackReversed.png",
+        "color3": "/images/adventure/tiger900GT/tiger900GTBlue.png",
+        "color3Reversed": "/images/adventure/tiger900GT/tiger900GTBlueReversed.png"
       },
       "customizationColors": [
         {
-          "colorName": "Graphite / Saphire Black",
+          "colorName": "Pure White",
           "price": null,
-          "image": "/images/custom-collors/graphiteJetBlack.jpg",
+          "image": "/images/custom-collors/pureWhite.jpg",
           "colorCode": "color1"
         },
         {
-          "colorName": "Snowdonia White / Saphire Black",
-          "price": null,
-          "image": "/images/custom-collors/snowdoniaWhiteJetBlack.jpg",
+          "colorName": "Saphire Black",
+          "price": 200,
+          "image": "/images/custom-collors/sapphireBlack.jpg",
           "colorCode": "color2"
         },
         {
-          "colorName": "Carnival Red / Saphire Black",
-          "price": null,
-          "image": "/images/custom-collors/carnivalRedSapphireBlack.jpg",
+          "colorName": "Caspian Blue",
+          "price": 200,
+          "image": "/images/custom-collors/caspianBlue.jpg",
           "colorCode": "color3"
         }
       ],
@@ -6124,7 +6124,7 @@
       "category": "adventure",
       "subFamilyCategory": "tiger-900",
       "edition": "adventure",
-      "price": null,
+      "price": 16790,
       "gallery": {
         "modelImage": {
           "src": "/images/adventure/tiger900GTPRO/tiger900GTPROGraphite.png",
@@ -6132,32 +6132,32 @@
         }
       },
       "bikeCollorPalletteGallery": {
-        "default": "/images/adventure/tiger900GTPRO/tiger900GTPROGraphite.png",
-        "color1": "/images/adventure/tiger900GTPRO/tiger900GTPROGraphite.png",
-        "color1Reversed": "/images/adventure/tiger900GTPRO/tiger900GTPROGraphiteReversed.png",
-        "color2": "/images/adventure/tiger900GTPRO/tiger900GTPRORed.png",
-        "color2Reversed": "/images/adventure/tiger900GTPRO/tiger900GTPRORedReversed.png",
-        "color3": "/images/adventure/tiger900GTPRO/tiger900GTPROWhite.png",
-        "color3Reversed": "/images/adventure/tiger900GTPRO/tiger900GTPROWhiteReversed.png"
+        "default": "/images/adventure/tiger900GTPRO/tiger900GTPROWhite.png",
+        "color1": "/images/adventure/tiger900GTPRO/tiger900GTPROWhite.png",
+        "color1Reversed": "/images/adventure/tiger900GTPRO/tiger900GTPROWhiteReversed.png",
+        "color2": "/images/adventure/tiger900GTPRO/tiger900GTPROBlack.png",
+        "color2Reversed": "/images/adventure/tiger900GTPRO/tiger900GTPROBlackReversed.png",
+        "color3": "/images/adventure/tiger900GTPRO/tiger900GTPROBlue.png",
+        "color3Reversed": "/images/adventure/tiger900GTPRO/tiger900GTPROBlueReversed.png"
       },
       "customizationColors": [
         {
-          "colorName": "Graphite / Saphire Black",
+          "colorName": "Pure White",
           "price": null,
-          "image": "/images/custom-collors/graphiteJetBlack.jpg",
+          "image": "/images/custom-collors/pureWhite.jpg",
           "colorCode": "color1"
         },
         {
-          "colorName": "Snowdonia White / Saphire Black",
-          "price": null,
-          "image": "/images/custom-collors/snowdoniaWhiteJetBlack.jpg",
-          "colorCode": "color3"
+          "colorName": "Saphire Black",
+          "price": 200,
+          "image": "/images/custom-collors/sapphireBlack.jpg",
+          "colorCode": "color2"
         },
         {
-          "colorName": "Carnival Red / Saphire Black",
-          "price": null,
-          "image": "/images/custom-collors/carnivalRedSapphireBlack.jpg",
-          "colorCode": "color2"
+          "colorName": "Caspian Blue",
+          "price": 200,
+          "image": "/images/custom-collors/caspianBlue.jpg",
+          "colorCode": "color3"
         }
       ],
       "subFamilyPromo": {
@@ -6172,7 +6172,7 @@
       "category": "adventure",
       "subFamilyCategory": "tiger-900",
       "edition": "adventure",
-      "price": 21990,
+      "price": 17490,
       "gallery": {
         "modelImage": {
           "src": "/images/adventure/tiger900RallyPro/tiger900RallyProCarbonBlack.png",
@@ -6180,31 +6180,31 @@
         }
       },
       "bikeCollorPalletteGallery": {
-        "default": "/images/adventure/tiger900RallyPro/tiger900RallyProCarbonBlack.png",
-        "color1": "/images/adventure/tiger900RallyPro/tiger900RallyProCarbonBlack.png",
-        "color1Reversed": "/images/adventure/tiger900RallyPro/tiger900RallyProCarbonBlackReversed.png",
-        "color2": "/images/adventure/tiger900RallyPro/tiger900RallyProOrange.png",
-        "color2Reversed": "/images/adventure/tiger900RallyPro/tiger900RallyProOrangeReversed.png",
+        "default": "/images/adventure/tiger900RallyPro/tiger900RallyProWhite.png",
+        "color1": "/images/adventure/tiger900RallyPro/tiger900RallyProWhite.png",
+        "color1Reversed": "/images/adventure/tiger900RallyPro/tiger900RallyProWhiteReversed.png",
+        "color2": "/images/adventure/tiger900RallyPro/tiger900RallyProSandstorm.png",
+        "color2Reversed": "/images/adventure/tiger900RallyPro/tiger900RallyProSandstormReversed.png",
         "color3": "/images/adventure/tiger900RallyPro/tiger900RallyProKhaki.png",
         "color3Reversed": "/images/adventure/tiger900RallyPro/tiger900RallyProKhakiReversed.png"
       },
       "customizationColors": [
         {
-          "colorName": "Carbon Black / Saphire Black",
+          "colorName": "Pure White",
           "price": null,
-          "image": "/images/custom-collors/carbonBlack.png",
+          "image": "/images/custom-collors/pureWhite.jpg",
           "colorCode": "color1"
         },
         {
-          "colorName": "Ash Gray / Intense Orange",
-          "price": null,
-          "image": "/images/custom-collors/ashGreyIntenseOrange.png",
+          "colorName": "Sandstorm",
+          "price": 200,
+          "image": "/images/custom-collors/sandstorm.jpg",
           "colorCode": "color2"
         },
         {
-          "colorName": "Matt Khaki Green / Matt Phantom",
-          "price": null,
-          "image": "/images/custom-collors/mattKahkiGreenMattPhantomBlack.png",
+          "colorName": "Matt Khaki",
+          "price": 300,
+          "image": "/images/custom-collors/mattKhaki.jpg",
           "colorCode": "color3"
         }
       ],
@@ -6322,7 +6322,12 @@
         "color1": "/images/adventure/tigerSport850/tigerSport850DiabloRed.png",
         "color1Reversed": "/images/adventure/tigerSport850/tigerSport850DiabloRedReversed.png",
         "color2": "/images/adventure/tigerSport850/tigerSport850GraphiteJetBlack.png",
-        "color2Reversed": "/images/adventure/tigerSport850/tigerSport850GraphiteJetBlackReversed.png"
+        "color2Reversed": "/images/adventure/tigerSport850/tigerSport850GraphiteJetBlackReversed.png",
+        "color3": "/images/adventure/tigerSport850/tigerSport850CaspianBlue.png",
+        "color3Reversed": "/images/adventure/tigerSport850/tigerSport850CaspianBlueReversed.png",
+        "color4": "/images/adventure/tigerSport850/tigerSport850Baja.png",
+        "color4Reversed": "/images/adventure/tigerSport850/tigerSport850BajaReversed.png"
+
       },
       "customizationColors": [
         {
@@ -6336,6 +6341,18 @@
           "price": null,
           "image": "/images/custom-collors/graphiteJetBlack.jpg",
           "colorCode": "color2"
+        },
+        {
+          "colorName": "Graphite / Caspian Blue",
+          "price": null,
+          "image": "/images/custom-collors/caspianBluePhantomBlack.jpg",
+          "colorCode": "color3"
+        },
+        {
+          "colorName": "Graphite / Baja Orange",
+          "price": null,
+          "image": "/images/custom-collors/graphiteBajaOrange.jpg",
+          "colorCode": "color4"
         }
       ],
       "shortSpecInfo": {
@@ -10265,6 +10282,71 @@
       "subFamilyPromo": {
         "title": "НОВАТА STREET TIRPLE 765 MOTO2™ СЕРИЈА",
         "desc": "Најдобриот Street Triple моторцикл кој може да се купи. Ве носи најблиску до Moto2™ моторите но е спремен за патишта. Сосема ексклузивен и најопремен и нај-агилен. Цени од €16,990.00."
+      }
+    },
+    {
+      "id": 58,
+      "title": "Tiger 900 Rally",
+      "model": "tiger-900-rally",
+      "category": "adventure",
+      "subFamilyCategory": "tiger-900",
+      "edition": "adventure",
+      "price": 14990,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
+      "gallery": {
+        "modelImage": {
+          "src": "/images/adventure/tigerSport660/tiger660ModelImage.avif",
+          "alt": "Tiger Sport 660"
+        },
+        "promoYoutubeVideo": {
+          "src": "https://www.youtube.com/embed/QvVCEk4t8IE",
+          "alt": "Tiger 660 Youtbe Video"
+        }
+      },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/adventure/tiger900Rally/tiger900RallyWhite.png",
+        "color1": "/images/adventure/tiger900Rally/tiger900RallyWhite.png",
+        "color1Reversed": "/images/adventure/tiger900Rally/tiger900RallyWhiteReversed.png",
+        "color2": "/images/adventure/tiger900Rally/tiger900RallySandstorm.png",
+        "color2Reversed": "/images/adventure/tiger900Rally/tiger900RallySandstormReversed.png",
+        "color3": "/images/adventure/tiger900Rally/tiger900RallyKhaki.png",
+        "color3Reversed": "/images/adventure/tiger900Rally/tiger900RallyKhakiReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Pure White",
+          "price": null,
+          "image": "/images/custom-collors/pureWhite.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Sandstorm",
+          "price": 200,
+          "image": "/images/custom-collors/sandstorm.jpg",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Matt Khaki",
+          "price": 200,
+          "image": "/images/custom-collors/mattKhaki.jpg",
+          "colorCode": "color3"
+        }
+      ],
+      "shortSpecInfo": {
+        "info1": "660cc Triple Motor",
+        "info2": "Лидер во категоријата",
+        "info3": "Прилагодлива 'Showa' суспензија"
+      },
+      "subFamilyPromo": {
+        "title": "TIGER SPORT 660",
+        "desc": "Првиот избор за многу корисници, со три-цилиндарски мотор, неверојатен комфорт, перформантен, искористлив и агилен, стот тоа со најниски трошоци за одржување во класата. Цени од €9,590.00"
       }
     }
   ],
