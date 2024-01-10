@@ -10700,6 +10700,16 @@
   ],
   "main-carousell-items": [
     {
+      "video": null,
+      "image": "/images/home/mainCarousell/daytona.avif",
+      "title": "Новaтa Daytona 660",
+      "desc": "Динамична ДНК со нов карактер.",
+      "link1": {
+        "url": "/motorcycles/sport/daytona-660",
+        "text": "Погледни ја Серијата"
+      }
+    },
+    {
       "video": "/images/home/mainCarousell/thruxtonCaroVideo.webm",
       "image": "/images/home/mainCarousell/thruxtonCaroImg.avif",
       "title": "Новата Thruxton Final Edition",
