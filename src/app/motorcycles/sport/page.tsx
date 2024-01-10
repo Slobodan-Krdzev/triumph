@@ -24,21 +24,9 @@ const SportBikePage = async () => {
 
   const secondaryNavItems: SecondaryNavItemsType[] = [
     {
-      text: "Преглед",
-      link: `/motorcycles/sport`,
-    },
-    {
-      text: "Модел",
+      text: "Daytona 660",
       link: `/motorcycles/sport/daytona-660`,
-    },
-    {
-      text: "Во Детали",
-      link: `/motorcycles/sport/daytona-660/in-detail`,
-    },
-    {
-      text: "Аксесоари",
-      link: `/motorcycles/sport/tiger-850-sport`,
-    },
+    }
   ];
 
   return (
