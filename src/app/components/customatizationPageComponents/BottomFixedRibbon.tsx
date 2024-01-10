@@ -89,6 +89,8 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
           <div className="flex flex-col justify-center items-start basis-2/3 pl-5">
             <p className="text-sm">Цена</p>
             {info.price && <p className="text-xl font-medium">€{handlePriceChange(info.price)}.00  </p>}
+            {info.price === null && <p className="text-xl font-medium">Наскоро!!! </p>}
+
             
           </div>
         </div>
@@ -171,11 +173,16 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
                 />
               </button>
             </div>
+<<<<<<< HEAD
             <button className="red-bg-color py-4 text-white uppercase font-semibold "
             onClick={() => {
               handleBodyScrollWhenMenuIsOpen(true)
               setIsMobileMenuShown(false)
             }}>
+=======
+            <button className="red-bg-color py-4 text-white uppercase font-semibold " 
+            onClick={() => setIsMobileMenuShown(false)}>
+>>>>>>> c9a38c204c459579f7552675e21914b6bad124b3
               НАЗАД
             </button>
           </section>

@@ -16,6 +16,9 @@ import React from 'react'
 const RoadstersBikePage = async ({params}: any) => {
     const bikeModel = params.bike;
 
+    console.log("bike model", bikeModel);
+    
+
     try {
       const bikeRes = await fetch(`${BIKES}?model=${params.bike}`, {
         cache: "no-store",

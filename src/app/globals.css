@@ -300,6 +300,7 @@ p {
 
 @media screen and (max-width: 768px) {
   .actions {
+    
     right: 2%;
     bottom: 55%;
     left: unset;

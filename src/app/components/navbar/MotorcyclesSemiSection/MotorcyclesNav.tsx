@@ -71,7 +71,7 @@ const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
           </li>
         </ul>
       </div>
-      <div className="basis-3/12 lighter-white-bg py-8 ">
+      <div className="basis-4/12 lighter-white-bg py-8 ">
         <div className="flex justify-between px-2">
           <p className="text-black text-lg font-semibold uppercase">{family}</p>
 
@@ -107,7 +107,7 @@ const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
           </div>
         )}
       </div>
-      <div className="basis-6/12 py-8">
+      <div className="basis-5/12 py-8">
         <MotorcycleInfo bike={bikeToRender} bikes={bikes} />
       </div>
     </div>

@@ -9,7 +9,6 @@ const TypeOfFamilyPage = async (data: any, props: Props) => {
   // OVDE TREBA DA PREVZEMIMI SUB FAMILIES
 
   let pathname = data.params.slug;
-  console.log(pathname);
 
   const familyRes = await fetch(`${FAMILIES}?type=${pathname}`, {
     cache: "no-store",
@@ -35,9 +34,6 @@ const TypeOfFamilyPage = async (data: any, props: Props) => {
     return filteredBikes
   }
 
-  console.log('bikes novi ', bikes);
-  
-
   return (
     <main className="slight-white-bg">
       <HeroSectionCTA
@@ -55,7 +51,7 @@ const TypeOfFamilyPage = async (data: any, props: Props) => {
             items={filterBikesBySumFamilyCategory(subFam.subFamilyName)}
             familyData={{
               title: subFam.title,
-              desc: subFam.shortDesc,
+              desc: subFam.shortDesc ?? "",
               url: '',
             }}
           />

@@ -33,7 +33,7 @@ export const clothingItems: ClothingCardProps[] = [
 
 const ClothingNavSection = () => {
   return (
-    <div className="flex justify-start gap-6 p-8 px-52">
+    <div className="flex justify-start gap-6 p-8 lg:px-52">
       {clothingItems.map((item) => (
           <ClothingNavCard
             key={item.title}

@@ -23,6 +23,7 @@ type BikeInfoTextImageBtnProps = {
   imageOnTheLeft?: boolean;
   blackBtn: boolean;
   mobileTextRight?: boolean;
+  textWhite? : boolean
 };
 
 const BikeInfoTextImageBtn = ({
@@ -35,6 +36,7 @@ const BikeInfoTextImageBtn = ({
   imageOnTheLeft,
   blackBtn,
   mobileTextRight,
+  textWhite
 }: BikeInfoTextImageBtnProps) => {
   return (
     <section className="flex flex-col lg:flex-row justify-between gap-4 lg:my-14 my-8">
@@ -44,7 +46,7 @@ const BikeInfoTextImageBtn = ({
         } text-left ${imageOnTheLeft ? "order-2 lg:pl-8" : ""} my-8 lg:mb-0 `}
       >
         <div className="lg:max-w-xs md: max-w-md">
-          <SectionTitleH2 text={title} color={"dark"} />
+          <SectionTitleH2 text={title} color={textWhite ? "white" : "dark"} />
           <PageParagraph marginBot={true} text={desc} />
           {price && (
             <p className="mb-4">

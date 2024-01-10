@@ -2011,10 +2011,40 @@
         "image": {
           "src": "/images/classics/configFamilyBanner.avif",
           "alt": "Classic Bikes Banner"
-        },
-        "title": "Додајте аксесоари на вашиот мотор",
-        "link": "/configure/bikes"
+        }
       },
+      "grayCaro": [
+        {
+          "id": "carouselItem1",
+          "title": "Британски двоцилиндричен мотор",
+          "desc": "Постојат две возбудливи алтернативи - на располагање се два мотора со висок вртежен момент 'HT 900cc' и 'HT 1200cc'. И двата мотора се надградени во 2021 година, со помали емисии и одлична економичност на горивото.",
+          "image": "/images/classics/classicsSlide1.avif"
+        },
+        {
+          "id": "carouselItem2",
+          "title": "Препознатливи Карактеристики",
+          "desc": "Секој мотор има свој автентичен карактер и стил, надграден во 2021 година со уште повисоко ниво на завршница и детали.",
+          "image": "/images/classics/classicsSlide2.avif"
+        },
+        {
+          "id": "carouselItem3",
+          "title": "Неспоредлива Автентичност",
+          "desc": "Денешното 'Triumph Modern Classic' семејство е директен потомок на Bonneville '59, оригиналната британска мотоциклистичка икона и почетокот на генерациите на мотоциклистички субкултури и многуте варијации во денешната модерна класична постава.",
+          "image": "/images/classics/classicsSlide3.avif"
+        },
+        {
+          "id": "carouselItem4",
+          "title": "Сериозни Перформанси",
+          "desc": "Суспензијата и сопирачките со високи спецификации нудат флексибилно и динамично возење, додека најновата генерација електронски програми за возење, ABS и контрола на тракцијата ги носат безбедноста и контролата на највисоко ниво.",
+          "image": "/images/classics/classicsSlide4.avif"
+        },
+        {
+          "id": "carouselItem5",
+          "title": "Безвременски Стил",
+          "desc": "Иконската силуета на Bonneville го зема секој поглед, исто како и секој модел кој е полн со прекрасни детали кои го повторуваат безвременскиот дизајн на оригиналниот мотор.",
+          "image": "/images/classics/classicsSlide5.avif"
+        }
+      ],
       "subFamilies": {
         "speed-400": {
           "id": 1,
@@ -3798,7 +3828,7 @@
           },
           "gallery": {
             "modelImage": {
-              "src": "/images/classics/bonnevilleT120.png",
+              "src": "/images/classics/bonnevilleT120/bonnevillieT120Black.png",
               "alt": "Bonneville T120 Speedmaster Range Model Image"
             }
           }
@@ -3936,9 +3966,7 @@
         "image": {
           "src": "/images/roadsters/configFamilyBanner.avif",
           "alt": "Adventure Bikes Banner"
-        },
-        "title": "Додајте аксесоари на вашиот мотор",
-        "link": "/configure/bikes"
+        }
       },
       "audioSection": {
         "audio": "/images/roadsters/audio.mp3",
@@ -5692,19 +5720,15 @@
       "id": 4,
       "type": "rocket-3",
       "shortDesc": "Опремен со најголемиот сериски мотор во светот и со најголем вртежен момент, ова е врвниот мускулен родстер со високи перформанси.",
-
       "configPageInfo": {
         "desc": "Опремен со најголемиот сериски мотор во светот и со најголем вртежен момент, ова е врвниот мускулен родстер со високи перформанси.",
         "link": "/configure/families/rocket-3"
       },
-
       "configFamilyPageInfo": {
         "image": {
           "src": "/images/rocket-3/configFamilyBanner.avif",
           "alt": "Adventure Bikes Banner"
-        },
-        "title": "Додајте аксесоари на вашиот мотор",
-        "link": "/configure/bikes"
+        }
       },
       "subFamilies": {
         "rocket-3": {
@@ -6061,6 +6085,426 @@
           }
         }
       }
+    },
+    {
+      "id": 5,
+      "type": "sport",
+      "shortDesc": "Мотори кои ги менуваат правилата за 'Naked Bike'. Препознатливите 3-цилиндрични мотори на Triumph се дизајнирани за моќност, вртежен момент и моментален одговор.",
+      "familyPageBannerVideo": "/images/sport/familyPageBannerVideo.webm",
+      "configPageInfo": {
+        "link": "/configure/families/sport"
+      },
+      "configFamilyPageInfo": {
+        "image": {
+          "src": "/images/sport/configPageBannerImage.jpg",
+          "alt": "Sport Bikes Banner Image"
+        }
+      },
+      "youtubeVideo": "https://www.youtube.com/embed/PpnixM8wkv4",
+      "grayCaro": [{
+        "id": "carouselItem1",
+        "title": "Три-Цилиндрична Моќност",
+        "desc": "Екслозивен напад на низок обртај, возбудлив среден опсег и импресивен врв со импресивен звук од три-цилиндри мотор на Дејтона, го понудува најдоброто од сите светови.",
+        "image": "/images/sport/grayCaro/caro1.avif"
+      },
+      {
+        "id": "carouselItem2",
+        "title": "Технологија",
+        "desc": "Технологијата фокусирана на возачот овозможува целосна контрола врз моторот. Daytona нуди три режими на возење (спорт, пат и дожд) и притоа ја оптимизираа реакцијата на гас, поседува ABS и контролата на тракцијата за условите, а најсовремените функции за активна безбедност, како што е предупредувањето за итно забавување, овозможуваат да се фокусирате на возењето.",
+        "image": "/images/sport/grayCaro/caro2.avif"
+      },
+      {
+        "id": "carouselItem3",
+        "title": "Фокусирана на Патиштата",
+        "desc": "Лесно управување и интуитивен спортски одговор, совршено избалансираната рамка, суспензијата со врвен квалитет и природната ергономија инспирираат доверба во секое возење.",
+        "image": "/images/sport/grayCaro/caro3.avif"
+      },
+      {
+        "id": "carouselItem4",
+        "title": "Целосен Пакет",
+        "desc": "Водечкиот сервисен интервал од 16.000 километри во класата, двегодишната гаранција за неограничени километри и високата вредност за препродажба нудат најдобра вредност во својата класа.",
+        "image": "/images/sport/grayCaro/caro4.avif"
+      },
+      {
+        "id": "carouselItem5",
+        "title": "Можност за управување со A2 Возачка Категорија",
+        "desc": "Новите и помладите возачи ограничени на А2 лиценца сè уште можат да уживаат во Daytona 660. Вашиот продавач на Triumph може да постави специјален држач за APS и програма за моторот што ја ограничува коњската сила на 35 kW.",
+        "image": "/images/sport/grayCaro/caro5.avif"
+      }],
+      "audioSection": {
+        "audio": "/images/roadsters/audio.mp3",
+        "title": "Целосен Пакет",
+        "desc": "Водечкиот сервисен интервал од 16.000 километри во класата, двегодишната гаранција за неограничени километри и високата вредност за препродажба нудат најдобра вредност во својата класа.",
+        "logo": "/images/roadsters/logoAudioSection.png"
+      },
+      "promo": [
+        {
+          "title": "НОВАТА DAYTONA 660",
+          "subFamilyType": "daytona-660",
+          "desc": "Подкрепнат од еволуциран Moto2™ тркачки мотор. новата Speed Triple серија е високо перформантна, со висока спецификација и прилагодлива за секого. Цени од: €12,290.00",
+          "image": "/images/sport/daytona660/daytona660SnowdoniaWhite.png",
+          "btnBlack": false
+        }
+      ],
+      "subFamilies": {
+        "daytona-660": {
+          "id": 1,
+          "subFamilyName": "daytona-660",
+          "title": "Daytona 660",
+          "price": null,
+          "url": "/motorcycles/sport/daytona-660",
+          "shortDesc": null,
+          "subFamilyPageInfo": {
+            "heroSlogans": [
+              "Перфектен",
+              "спортски моторцикл",
+              "со тркачки мотор"
+            ],
+            "topSection": {
+              "title": "Врвни Перформанси ",
+              "desc": "Подкрепнат од еволуција на Moto2™ тркачки мотор, Speed Triple 765 е мотор со врвни перформанси и висока спецификација.",
+              "subtitle": "Најдобриот “naked“ моторцикл - на пат и на тркачка патека."
+            },
+            "youtubeVideo": "https://www.youtube.com/embed/Hd3QZKRIT0Y",
+            "fullSpecs": {
+              "engineTransmission": [
+                {
+                  "title": "Тип на Мотор",
+                  "desc": "водно ладење, 12 вентили, 2EEK, линиски 3-цилиндри"
+                },
+                {
+                  "title": "капацитет",
+                  "desc": "765 cc"
+                },
+                {
+                  "title": "диаметар",
+                  "desc": "78.0 mm"
+                },
+                {
+                  "title": "рута",
+                  "desc": "53.4 mm"
+                },
+                {
+                  "title": "компресија",
+                  "desc": "13.25:1"
+                },
+                {
+                  "title": "Мах. Коњски Сила",
+                  "desc": "120-130 (130 за Street Triple 765 R & Mото2™ Edition)"
+                },
+                {
+                  "title": "Мах. Обртен Момент",
+                  "desc": "80 Nm @ 9,500 rpm"
+                },
+                {
+                  "title": "Систем за убризгување",
+                  "desc": "Sequential multi-point electronic injection with electronic throttle"
+                },
+                {
+                  "title": "Систем за Издувни гасови",
+                  "desc": "3 во 1 не-раѓосувачки челик"
+                },
+                {
+                  "title": "Финална Трансмисија",
+                  "desc": "X-ring chain"
+                },
+                {
+                  "title": "Квачило",
+                  "desc": "Liquid, multi-disc, assisted glide"
+                },
+                {
+                  "title": "Менувачка Кутија",
+                  "desc": "6 брзини"
+                }
+              ],
+              "frame": [
+                {
+                  "title": "шасија",
+                  "desc": "Double-beam aluminum with 2-piece high-pressure die-cast subframe"
+                },
+                {
+                  "title": "вилушка",
+                  "desc": "алуминиум"
+                },
+                {
+                  "title": "предно тркало",
+                  "desc": "17 x 3.5' леан алуминиум со 5 краци"
+                },
+                {
+                  "title": "задно тркало",
+                  "desc": "17 x 3.5' леан алуминиум со 5 краци"
+                },
+                {
+                  "title": "предна гума",
+                  "desc": "120/70 ZR 17"
+                },
+                {
+                  "title": "задна гума",
+                  "desc": "180/55 ZR 17"
+                },
+                {
+                  "title": "предна суспензија",
+                  "desc": "Showa Big Piston 115мм inverted вилушка со прилагодувања за компресија, враќање и претходно оптоварување"
+                },
+                {
+                  "title": "задна суспензија",
+                  "desc": "Showa piggyback monoshock 133.5mm задна суспензија со систем за прилагодувања за компресија, враќање и претходно оптоварување"
+                },
+                {
+                  "title": "предни сопирачки",
+                  "desc": "Дупли дискови од 310m"
+                },
+                {
+                  "title": "задна сопирачка",
+                  "desc": "Еден диск од 220mm, Brembo клешта со ABS"
+                },
+                {
+                  "title": "инструментна плочка",
+                  "desc": "Мултифункционален TFT екран"
+                }
+              ],
+              "dimension": [
+                {
+                  "title": "ширина на волан",
+                  "desc": "792 mm"
+                },
+                {
+                  "title": "висина без ретровизори",
+                  "desc": "1047 mm"
+                },
+                {
+                  "title": "Solar height",
+                  "desc": "826 mm"
+                },
+                {
+                  "title": "мегу-осовинско растојание ",
+                  "desc": "1402 mm"
+                },
+                {
+                  "title": "Custer Corner",
+                  "desc": "23.7º"
+                },
+                {
+                  "title": "Trace",
+                  "desc": "97.8 mm"
+                },
+                {
+                  "title": "Тежина",
+                  "desc": "192 kg"
+                },
+                {
+                  "title": "капацитет на резервоар",
+                  "desc": "15 L"
+                },
+                {
+                  "title": "Tежина при полн резервозар",
+                  "desc": "189 kg"
+                }
+              ],
+              "fuelConsumption": [
+                {
+                  "title": "Потрошувачка",
+                  "desc": "52.8 mpg (5.4 литри / 100 km)"
+                },
+                {
+                  "title": "CO2 загадување",
+                  "desc": "120g/km - Euro 5 Стандарди измерени според Регулатива 168/2013/EC. Резултатите се добиени во специјални тест средини и се на располагање само за споредба. Вистинските резултат може да варираат врз различни средини."
+                },
+                {
+                  "title": "Сервисен Интервал",
+                  "desc": "10.000km / 12 месеци"
+                }
+              ]
+            },
+            "grayCarousell": [
+              {
+                "id": "carouselItem1",
+                "title": "Најновиот и Првенец во класата на “Streetfighter“ Моторцикли",
+                "desc": "Сега, уште повеќе сила благодарејки на Мото2 моторот со неверојатна агилност, агресивен изглед и електронска технологија која поставува нови стандарди.",
+                "image": "/images/roadsters/streetTriple765/streetTriple765GrayCaro1.avif"
+              },
+              {
+                "id": "carouselItem2",
+                "title": "Новиот Репер Во класата на “naked“ моторцикли",
+                "desc": "ТНови технолошки унапредувања, агилност, највисока запирачка спецификација и новиот репер во смисла на моќност во класата.",
+                "image": "/images/roadsters/streetTriple765/streetTriple765GrayCaro2.avif"
+              },
+              {
+                "id": "carouselItem3",
+                "title": "Нај-моќната серија досега",
+                "desc": "Со голем чекор напред во развивање на Мото2 моторот, Street Triple серијата се закити со уште повеќе обртен момент и сила - 120 РЅ за R верзијата и 130 РЅ за RS Verzijata.",
+                "image": "/images/roadsters/streetTriple765/streetTriple765GrayCaro3.avif"
+              }
+            ],
+            "youtubeVideosCarousellItems": [{
+                "src": "https://www.youtube.com/embed/cDNnqoRB50w",
+                "title": "Triumph Street Triple Launch Valencia 2022"
+              },
+              {
+                "src": "https://www.youtube.com/embed/A6MwjE782iI",
+                "title": "Web | Street Triple R Hero"
+              },
+              {
+                "src": "https://www.youtube.com/embed/Qj9dxotylh0",
+                "title": "Web | Street Triple RS Hero"
+              },
+              {
+              "src": "https://www.youtube.com/embed/--p8YSQxEp0",
+              "title": "Web | Engine In Motion Street Triple 765"
+              },
+              {
+                "src": "https://www.youtube.com/embed/JR-wXQFKG2Q",
+                "title": "Web - DE | Street Triple R | Features and Benefits"
+              },
+              {
+                "src": "https://www.youtube.com/embed/cDNnqoRB50w",
+                "title": "Triumph Street Triple Launch Valencia 2022"
+              },
+              {
+                "src": "https://www.youtube.com/embed/kP7FA3k6Hv8",
+                "title": "New Street Triple 765 RS | Features and Benefits"
+              }
+            ],
+            "audioSection": {
+              "audio": "/images/roadsters/streetTriple765/streetTriple765Sound.mp3",
+              "title": "Три-цилиндречен звук кој го тресе земјиното тло.",
+              "desc": "Новиот издувен систем го испорачува оној препознатлив три-цилиндарски звук на моторот.",
+              "logo": null
+            },
+            "specNumbers": [
+              { "data": "765", "info": "cc Мотор" },
+              { "data": "80", "info": "Nm обртен момент" },
+              { "data": "120-130", "info": "PS - Максимална Сила" },
+              { "data": "10.000", "info": "КМ Сервисен Интервал" }
+            ]
+          },
+          "reasonsToDrive": {
+            "banner": {
+              "image": "/images/roadsters/streetTriple765/streetTriple765ReasonsBanner.avif"
+            },
+            "infoText": {
+              "title": "Причини зошто да ja оберете Street Triple 765 серијата."
+              
+            },
+            "reasons": [
+              {
+                "title": "Мотор",
+              "desc": "Користејќи го знаењето стекнато од програмата за тркачки мотори Moto2™, Street Triple R сега произведува 120 КС при 11.500 вртежи во минута, додека RS и Moto2™ Edition испорачуваат максимални 130 КС при 12.000 вртежи во минута. Овие подобрувања беа направени без да се загрози репутацијата на Street Triple за доверливост, една од многуте причини поради кои организаторите на Moto2™ неодамна го продолжија договорот за користење на трицилиндричен мотор од 765 кубици. до крајот на 2024 година. Повисокиот сооднос на компресија, новите клипови, поврзувачките шипки и игличките на клипот, усогласени со новите оптимизирани комори за согорување нудат зголемено ограничување на притисокот во цилиндарот и на крајот поголема моќност. Новите вентили и брегасти вратила даваат зголемено подигање. Вентил за подобрени перформанси за внесување, согорување и издувни гасови, додека новите соодноси на менувачот носат подобрена ефикасност и одговор, што на крајот обезбедува побрзо забрзување, што значи дека оваа нова генерација е најострата и најживата досега. Значително ревидиран и ажуриран за да произведе повеќе моќ од кога било досега, моторот од 765 кубици. добиен од Moto2™ го испорачува препознатливиот Street Triple звук. Правејќи го тврдото отворање на гасот уште позависно, ревидираниот довод на воздух дава застрашувачки татнеж. А, со зголемена компресија и поефикасно согорување, звукот создаден од новиот издувен систем и послободниот заден дел е чиста Moto2™ магија.",
+                "video": "https://www.youtube.com/embed/QKxDQhOaI0U"
+              },
+              {
+                "title": "Шасија",
+                "desc": "Изграден со одлично управување за сигурно возење во сите сценарија, новиот Street Triple е вистинска радост за возење на патеката. Висококвалитетните сопирачки на Brembo заедно со врвната Showa и Öhlins суспензија и неверојатните Pirelli Supercorsa SP V3* гуми ја обезбедуваат способноста потребна за да се вози блиску до лимитот со сигурност. Брзиот менувач со помош на менувачот за менување на брзини без спојка е стандарден кај сите модели на Street Triple, како и оптимизиран ABS во свиоци и контрола на тракцијата. Во зависност од избраниот возач, овие технолошки напредни системи нудат исклучителни нивоа на помош на возачот за побезбедно возење со помалку наметливи поставки достапни за дополнителна способност за фокусирање на патеката. * само кај изданијата RS и Moto2™, R се одликува со пневматиците Continental ContiRoad кои се повеќе фокусирани на патот. Пластиката, резервоарот за гориво од 15 литри, капаците на ладилникот и финишот на фаровите се редизајнирани за поостар, поагресивен изглед, јасно задржувајќи ја иконската дизајнерска ДНК на Street Triple.nОвој нов, спуштен нос со почисти, поостри линии и тие препознатливи двојни фарови доаѓа рака под рака со целото познато неутрално и неверојатно агилно управување на Street Triple.",
+                "video": "https://www.youtube.com/embed/Ppx4BokT26o"
+
+              },
+              {
+                "title": "Направен за Вас",
+                "desc": "Оптоварена со технологија фокусирана на возачот, дизајнирана да го подобри возењето, најновиот опсег на Street Triple има придобивки од големата надградба на електрониката.Новиот Optimized Cornering ABS и исклучувачкиот Optimized Cornering Traction Control System обезбедуваат оптимални перформанси за сопирање и влечење под кој било агол, и на патот и на патеката, во сите услови на возење. Надградени се и режимите на возење со нови мапи за гас. Лесно може да се избере преку интуитивното мени од 5 инчи TFT и ергономски оптимизираниот Возачите се исто така надградени со нови мапи за гас. Лесно може да се избере преку интуитивното мени со TFT екран од 5' и ергономски оптимизираните прекинувачи, совршената поставка е секогаш на дофат. Функција на Bluetooth како додаток, целосно LED осветлување, со дневни светла на RS и Moto2TM Edition... има дури и практичен USB приклучок под седлото за полнење телефони и периферни уреди.",
+                "video": "https://www.youtube.com/embed/xHNIjTSIRiA"
+              }
+            ]
+          },
+          "accessory": {
+            "banner": {
+              "image": "/images/roadsters/streetTriple765/streetTriple765TopSectionImageBG.avif"
+            },
+            "infoText": {
+              "title": "Додајте ваш белег врз Speed 400",
+              "desc": "На располагање ви е селекција од преку 20 оригинални Triupmh аксесоари за оваа серија на мотори. Аксесоарите кои ќе ги додадете може да бидат додадени на вашиот мотор во фабриката. Aксесоарите се дизајнирани од истиот тим кој го креираше Speed 400 и доаѓаат со две-годишна гаранција."
+            },
+            "accessoryTypes": [
+              {
+                "title": "Технологија",
+                "desc": "Веќе преполна со иновации, најновата генерација Street Triple има неколку полиња за штиклирање во однос на технологијата.Новата контрола на патувањето е совршен додаток за возачите кои поминуваат многу време на автопати и/или возат во области со зголемена брзина. Одржувањето на поставената брзина ја подобрува економичноста на горивото и го намалува заморот, давајќи и на десната рака поголема слобода да се наведнува на долги растојанија.За целосно искористување на способноста за Bluetooth на 5' TFT дисплејот, достапна е единица за целосно поврзување My Triumph. Ова овозможува ракување со телефонот и музиката и нуди навигација чекор-по-сврт.Тркалачките LED индикатори комбинираат стил со технологија и нудат персонализација, како и дополнително подобрување на видливоста на другите учесници во сообраќајот.",
+                "itemsList": [
+                  "Темпомат",
+                  "My Triumph Bluetooth Уред",
+                  "LED Трапкачи"
+                ],
+                "image1": {
+                  "src": "/images/roadsters/streetTriple765/streetТriple765АccessoriesCruiseControl.avif",
+                  "alt": "Street Тriple 765 Cruise Control"
+                },
+                "image2": {
+                  "src": "/images/roadsters/streetTriple765/streetТriple765АccessoriesTFTl.avif",
+                  "alt": "Street Тriple 765 TFT"
+                }
+              },
+              {
+                "title": "Заштита и Комфорт",
+                "desc": "Одржувањето на вашата нова Street Triple безбедна од оштетување, штитниците за рамката и за нишање ги надополнуваат овие карактеристични и агресивни линии, додека штитниците на капакот на моторот, дизајнирани да одговараат совршено, нудат дискретно, но ефективно ублажување на оштетувањето во случај на пад.Достапен е елегантен визир за да се намали ветерот и да се подобри удобноста на долги растојанија, додека возачите за сите временски услови можат да уживаат во зимскиот пат со топли раце без жици да им пречат на рачките, со внатрешно жичените грејни рачки. Достапни се и рачки за држење на патници за дополнителна удобност и безбедност.Завртките за монтирање на тркачки штанд додаваат удобност за задачите за рутинско одржување, а премиум марката Triumph ќе обезбеди вашиот велосипед да остане чист и подготвен за следното возење.",
+                "itemsList": [
+                  "Штитиници на шасија",
+                  "Штитници за вилушки",
+                  "Штитници за мотор",
+                  "Греачи на волан",
+                  "Рачки за држење на совозач",
+                  "Брендирана Triumph Покривка",
+                  "Предна Маска",
+                  "Штрафови за тркачка ногарка"
+                ],
+                "image1": {
+                  "src": "/images/roadsters/streetTriple765/streetТriple765АccessoriesPassengerGrabs.avif",
+                  "alt": "Street Triple 765 Passenger Grabs"
+                }
+              },
+              {
+                "title": "Стил и Детали",
+                "desc": "Иако Street Triple е несомнено прекрасен велосипед, со толку многу различни стилски додатоци достапни, персонализирањето и правењето на вашата Street Triple навистина ваше никогаш не било полесно. Определите вклучуваат долен капак на опашката и бел LED систем за задни светла за почист заден дел. За помалите, но не помалку важни детали се води сметка и со високо обработените компоненти, како што е резервоарот за течност за сопирачките.",
+                "itemsList": [
+                  "Завршен Детал на крајот од моторот (Држач Регистрација)",
+                  "Бели LED задни светла",
+                  "Машинско Изработени Резервоари за Течност за Сопирачки "
+                ],
+                "image1": {
+                  "src": "/images/roadsters/streetTriple765/streetТriple765АccessoriesMask.avif",
+                  "alt": "Street Triple 765 Mask"
+                },
+                "image2": {
+                  "src": "/images/roadsters/streetTriple765/streetТriple765АccessoriesTailKit.avif",
+                  "alt": "Street Triple 765 Tail Kit"
+                }
+              },
+              {
+                "title": "Багаж",
+                "desc": "Забавниот и динамичен карактер на Street Triple го прави секое возење пријатно, од долги рекреативни возења до патувања до работа за сите временски услови. Дополнително на неговата практичност, стилската дополнителна водоотпорна торба со резервоар и опашката торбичка може брзо да се откачат од велосипедот за лесно користење и секојдневна практичност..",
+                "itemsList": [
+                  "Торба за Резервоар",
+                  "Торба за Багажник"
+                ],
+                "image1": {
+                  "src": "/images/roadsters/streetTriple765/streetТriple765АccessoriesTailBag.avif",
+                  "alt": "Street Triple 765 Tail Bag"
+                }
+              }
+            ]
+          },
+          "shortSpecInfo": {
+            "info1": "12,650 SAL",
+            "info2": "Максимална јачина од 95 PS",
+            "info3": "69 NM Максимален Обртен Момент"
+          },
+          "gallery": {
+            "modelImage": {
+              "src": "/images/sport/daytona660/daytona660SnowdoniaWhite.png",
+              "alt": "Daytona 660 Range Model Image"
+            },
+            "subFamilyHeroVideo": {
+              "src": "/images/roadsters/streetTriple765/streetTriple765SubFamHeroVideo.webm",
+              "alt": "Street Triple 765 Video"
+            },
+            "subFamilyTopSectionImage": {
+              "src": "/images/roadsters/streetTriple765/streetTriple765TopSectionImage.avif",
+              "alt": "Street Triple 765 Motorcycle"
+            },
+            "subFamilyTopSectionBGImage": {
+              "src": "/images/roadsters/streetTriple765/streetTriple765TopSectionImageBG.avif",
+              "alt": "Street Triple 765 Motorcycle BG"
+            }
+          }
+        }
+      }
     }
   ],
   "bikes": [
@@ -6071,7 +6515,7 @@
       "category": "adventure",
       "subFamilyCategory": "tiger-900-gt",
       "edition": "adventure",
-      "price": null,
+      "price": 14290,
       "gallery": {
         "modelImage": {
           "src": "/images/adventure/tiger900GT/tiger900GTGraphiteBlack.png",
@@ -6079,31 +6523,31 @@
         }
       },
       "bikeCollorPalletteGallery": {
-        "default": "/images/adventure/tiger900GT/tiger900GTGraphiteBlack.png",
-        "color1": "/images/adventure/tiger900GT/tiger900GTGraphiteBlack.png",
-        "color1Reversed": "/images/adventure/tiger900GT/tiger900GTGraphiteBlackReversed.png",
-        "color2": "/images/adventure/tiger900GT/tiger900GTSnowdonia.png",
-        "color2Reversed": "/images/adventure/tiger900GT/tiger900GTSnowdoniaReversed.png",
-        "color3": "/images/adventure/tiger900GT/tiger900GTRed.png",
-        "color3Reversed": "/images/adventure/tiger900GT/tiger900GTRedReversed.png"
+        "default": "/images/adventure/tiger900GT/tiger900PureWhite.png",
+        "color1": "/images/adventure/tiger900GT/tiger900PureWhite.png",
+        "color1Reversed": "/images/adventure/tiger900GT/tiger900PureWhiteReversed.png",
+        "color2": "/images/adventure/tiger900GT/tiger900GTBlack.png",
+        "color2Reversed": "/images/adventure/tiger900GT/tiger900GTBlackReversed.png",
+        "color3": "/images/adventure/tiger900GT/tiger900GTBlue.png",
+        "color3Reversed": "/images/adventure/tiger900GT/tiger900GTBlueReversed.png"
       },
       "customizationColors": [
         {
-          "colorName": "Graphite / Saphire Black",
+          "colorName": "Pure White",
           "price": null,
-          "image": "/images/custom-collors/graphiteJetBlack.jpg",
+          "image": "/images/custom-collors/pureWhite.jpg",
           "colorCode": "color1"
         },
         {
-          "colorName": "Snowdonia White / Saphire Black",
-          "price": null,
-          "image": "/images/custom-collors/snowdoniaWhiteJetBlack.jpg",
+          "colorName": "Saphire Black",
+          "price": 200,
+          "image": "/images/custom-collors/sapphireBlack.jpg",
           "colorCode": "color2"
         },
         {
-          "colorName": "Carnival Red / Saphire Black",
-          "price": null,
-          "image": "/images/custom-collors/carnivalRedSapphireBlack.jpg",
+          "colorName": "Caspian Blue",
+          "price": 200,
+          "image": "/images/custom-collors/caspianBlue.jpg",
           "colorCode": "color3"
         }
       ],
@@ -6124,7 +6568,7 @@
       "category": "adventure",
       "subFamilyCategory": "tiger-900",
       "edition": "adventure",
-      "price": null,
+      "price": 16790,
       "gallery": {
         "modelImage": {
           "src": "/images/adventure/tiger900GTPRO/tiger900GTPROGraphite.png",
@@ -6132,32 +6576,32 @@
         }
       },
       "bikeCollorPalletteGallery": {
-        "default": "/images/adventure/tiger900GTPRO/tiger900GTPROGraphite.png",
-        "color1": "/images/adventure/tiger900GTPRO/tiger900GTPROGraphite.png",
-        "color1Reversed": "/images/adventure/tiger900GTPRO/tiger900GTPROGraphiteReversed.png",
-        "color2": "/images/adventure/tiger900GTPRO/tiger900GTPRORed.png",
-        "color2Reversed": "/images/adventure/tiger900GTPRO/tiger900GTPRORedReversed.png",
-        "color3": "/images/adventure/tiger900GTPRO/tiger900GTPROWhite.png",
-        "color3Reversed": "/images/adventure/tiger900GTPRO/tiger900GTPROWhiteReversed.png"
+        "default": "/images/adventure/tiger900GTPRO/tiger900GTPROWhite.png",
+        "color1": "/images/adventure/tiger900GTPRO/tiger900GTPROWhite.png",
+        "color1Reversed": "/images/adventure/tiger900GTPRO/tiger900GTPROWhiteReversed.png",
+        "color2": "/images/adventure/tiger900GTPRO/tiger900GTPROBlack.png",
+        "color2Reversed": "/images/adventure/tiger900GTPRO/tiger900GTPROBlackReversed.png",
+        "color3": "/images/adventure/tiger900GTPRO/tiger900GTPROBlue.png",
+        "color3Reversed": "/images/adventure/tiger900GTPRO/tiger900GTPROBlueReversed.png"
       },
       "customizationColors": [
         {
-          "colorName": "Graphite / Saphire Black",
+          "colorName": "Pure White",
           "price": null,
-          "image": "/images/custom-collors/graphiteJetBlack.jpg",
+          "image": "/images/custom-collors/pureWhite.jpg",
           "colorCode": "color1"
         },
         {
-          "colorName": "Snowdonia White / Saphire Black",
-          "price": null,
-          "image": "/images/custom-collors/snowdoniaWhiteJetBlack.jpg",
-          "colorCode": "color3"
+          "colorName": "Saphire Black",
+          "price": 200,
+          "image": "/images/custom-collors/sapphireBlack.jpg",
+          "colorCode": "color2"
         },
         {
-          "colorName": "Carnival Red / Saphire Black",
-          "price": null,
-          "image": "/images/custom-collors/carnivalRedSapphireBlack.jpg",
-          "colorCode": "color2"
+          "colorName": "Caspian Blue",
+          "price": 200,
+          "image": "/images/custom-collors/caspianBlue.jpg",
+          "colorCode": "color3"
         }
       ],
       "subFamilyPromo": {
@@ -6172,7 +6616,7 @@
       "category": "adventure",
       "subFamilyCategory": "tiger-900",
       "edition": "adventure",
-      "price": 21990,
+      "price": 17490,
       "gallery": {
         "modelImage": {
           "src": "/images/adventure/tiger900RallyPro/tiger900RallyProCarbonBlack.png",
@@ -6180,31 +6624,31 @@
         }
       },
       "bikeCollorPalletteGallery": {
-        "default": "/images/adventure/tiger900RallyPro/tiger900RallyProCarbonBlack.png",
-        "color1": "/images/adventure/tiger900RallyPro/tiger900RallyProCarbonBlack.png",
-        "color1Reversed": "/images/adventure/tiger900RallyPro/tiger900RallyProCarbonBlackReversed.png",
-        "color2": "/images/adventure/tiger900RallyPro/tiger900RallyProOrange.png",
-        "color2Reversed": "/images/adventure/tiger900RallyPro/tiger900RallyProOrangeReversed.png",
+        "default": "/images/adventure/tiger900RallyPro/tiger900RallyProWhite.png",
+        "color1": "/images/adventure/tiger900RallyPro/tiger900RallyProWhite.png",
+        "color1Reversed": "/images/adventure/tiger900RallyPro/tiger900RallyProWhiteReversed.png",
+        "color2": "/images/adventure/tiger900RallyPro/tiger900RallyProSandstorm.png",
+        "color2Reversed": "/images/adventure/tiger900RallyPro/tiger900RallyProSandstormReversed.png",
         "color3": "/images/adventure/tiger900RallyPro/tiger900RallyProKhaki.png",
         "color3Reversed": "/images/adventure/tiger900RallyPro/tiger900RallyProKhakiReversed.png"
       },
       "customizationColors": [
         {
-          "colorName": "Carbon Black / Saphire Black",
+          "colorName": "Pure White",
           "price": null,
-          "image": "/images/custom-collors/carbonBlack.png",
+          "image": "/images/custom-collors/pureWhite.jpg",
           "colorCode": "color1"
         },
         {
-          "colorName": "Ash Gray / Intense Orange",
-          "price": null,
-          "image": "/images/custom-collors/ashGreyIntenseOrange.png",
+          "colorName": "Sandstorm",
+          "price": 200,
+          "image": "/images/custom-collors/sandstorm.jpg",
           "colorCode": "color2"
         },
         {
-          "colorName": "Matt Khaki Green / Matt Phantom",
-          "price": null,
-          "image": "/images/custom-collors/mattKahkiGreenMattPhantomBlack.png",
+          "colorName": "Matt Khaki",
+          "price": 300,
+          "image": "/images/custom-collors/mattKhaki.jpg",
           "colorCode": "color3"
         }
       ],
@@ -6225,7 +6669,7 @@
       "category": "adventure",
       "subFamilyCategory": "tiger-sport-660",
       "edition": "adventure",
-      "price": 9590,
+      "price": 9290,
       "specs": {
         "cc": 398,
         "hp": 20,
@@ -6251,9 +6695,7 @@
         "color2": "/images/adventure/tigerSport660/tiger660LucerneBlue.avif",
         "color2Reversed": "/images/adventure/tigerSport660/tigerSport660LucerneBlueReversed.avif",
         "color3": "/images/adventure/tigerSport660/tiger660JetBlackGraphite.avif",
-        "color3Reversed": "/images/adventure/tigerSport660/tigerSport660JetBlackGraphiteReversed.png",
-        "color4": "/images/adventure/tigerSport660/tiger660SnowdoniaWhiteJetBlack.avif",
-        "color4Reversed": "/images/adventure/tigerSport660/tigerSport660SnowdoniaWhiteJetBlackReversed.png"
+        "color3Reversed": "/images/adventure/tigerSport660/tigerSport660JetBlackGraphiteReversed.png"
       },
       "customizationColors": [
         {
@@ -6273,12 +6715,6 @@
           "price": null,
           "image": "/images/custom-collors/jetBlackGraphite.jpg",
           "colorCode": "color3"
-        },
-        {
-          "colorName": "Snowdonia White / Jet Black",
-          "price": 200,
-          "image": "/images/custom-collors/snowdoniaWhiteJetBlack.jpg",
-          "colorCode": "color4"
         }
       ],
       "shortSpecInfo": {
@@ -6298,7 +6734,7 @@
       "category": "adventure",
       "subFamilyCategory": "tiger-850-sport",
       "edition": "adventure",
-      "price": 12890,
+      "price": 13390,
       "specs": {
         "cc": 398,
         "hp": 20,
@@ -6322,20 +6758,37 @@
         "color1": "/images/adventure/tigerSport850/tigerSport850DiabloRed.png",
         "color1Reversed": "/images/adventure/tigerSport850/tigerSport850DiabloRedReversed.png",
         "color2": "/images/adventure/tigerSport850/tigerSport850GraphiteJetBlack.png",
-        "color2Reversed": "/images/adventure/tigerSport850/tigerSport850GraphiteJetBlackReversed.png"
+        "color2Reversed": "/images/adventure/tigerSport850/tigerSport850GraphiteJetBlackReversed.png",
+        "color3": "/images/adventure/tigerSport850/tigerSport850CaspianBlue.png",
+        "color3Reversed": "/images/adventure/tigerSport850/tigerSport850CaspianBlueReversed.png",
+        "color4": "/images/adventure/tigerSport850/tigerSport850Baja.png",
+        "color4Reversed": "/images/adventure/tigerSport850/tigerSport850BajaReversed.png"
+
       },
       "customizationColors": [
         {
           "colorName": "Graphite Diablo Red",
-          "price": 200,
+          "price": null,
           "image": "/images/custom-collors/graphiteDiabloRed.jpg",
           "colorCode": "color1"
         },
         {
           "colorName": "Graphite / Jet Black",
-          "price": 200,
+          "price": null,
           "image": "/images/custom-collors/graphiteJetBlack.jpg",
           "colorCode": "color2"
+        },
+        {
+          "colorName": "Graphite / Caspian Blue",
+          "price": null,
+          "image": "/images/custom-collors/caspianBluePhantomBlack.jpg",
+          "colorCode": "color3"
+        },
+        {
+          "colorName": "Graphite / Baja Orange",
+          "price": null,
+          "image": "/images/custom-collors/graphiteBajaOrange.jpg",
+          "colorCode": "color4"
         }
       ],
       "shortSpecInfo": {
@@ -6469,9 +6922,9 @@
       "category": "adventure",
       "subFamilyCategory": "tiger-1200-gt",
       "edition": "adventure",
-      "price": 20990,
+      "price": 21590,
       "specs": {
-        "cc": 398,
+        "cc": 31200,
         "hp": 20,
         "torque": 37.5,
         "horsePower": 40,
@@ -6648,9 +7101,9 @@
       "category": "adventure",
       "subFamilyCategory": "tiger-1200-gt",
       "edition": "adventure",
-      "price": 22990,
+      "price": 23590,
       "specs": {
-        "cc": 398,
+        "cc": 1200,
         "hp": 20,
         "torque": 37.5,
         "horsePower": 40,
@@ -6685,13 +7138,13 @@
         },
         {
           "colorName": "Saphire Black",
-          "price": 200,
+          "price": 300,
           "image": "/images/custom-collors/sapphireBlack.jpg",
           "colorCode": "color2"
         },
         {
           "colorName": "Lucerne Blue",
-          "price": 300,
+          "price": 400,
           "image": "/images/custom-collors/lucerneBlue.jpg",
           "colorCode": "color3"
         }
@@ -6827,9 +7280,9 @@
       "category": "adventure",
       "subFamilyCategory": "tiger-1200-rally",
       "edition": "adventure",
-      "price": 21990,
+      "price": 22590,
       "specs": {
-        "cc": 398,
+        "cc": 1200,
         "hp": 20,
         "torque": 37.5,
         "horsePower": 40,
@@ -7006,9 +7459,9 @@
       "category": "adventure",
       "subFamilyCategory": "tiger-1200-rally",
       "edition": "adventure",
-      "price": 23990,
+      "price": 24690,
       "specs": {
-        "cc": 398,
+        "cc": 1200,
         "hp": 20,
         "torque": 37.5,
         "horsePower": 40,
@@ -7576,11 +8029,11 @@
     {
       "id": 15,
       "title": "Street Triple 765 R",
-      "model": "street-triple-765-r-2023",
+      "model": "street-triple-765-r",
       "category": "roadsters",
       "subFamilyCategory": "street-triple-765",
       "edition": "roadsters",
-      "price": 12290,
+      "price": 12590,
       "specs": {
         "cc": 765,
         "hp": 120,
@@ -7746,11 +8199,11 @@
     {
       "id": 16,
       "title": "Street Triple 765 RS",
-      "model": "street-triple-765-rs-2023",
+      "model": "street-triple-765-rs",
       "category": "roadsters",
       "subFamilyCategory": "street-triple-765",
       "edition": "roadsters",
-      "price": 13990,
+      "price": 14390,
       "specs": {
         "cc": 765,
         "hp": 130,
@@ -7783,7 +8236,7 @@
         },
         {
           "colorName": "Carnival Red",
-          "price": null,
+          "price": 200,
           "image": "/images/custom-collors/carnivalRed.jpg",
           "colorCode": "color2"
         },
@@ -7811,7 +8264,7 @@
       "category": "roadsters",
       "subFamilyCategory": "trident-660",
       "edition": "roadsters",
-      "price": 8690,
+      "price": 9590,
       "specs": {
         "cc": 660,
         "hp": 80,
@@ -7821,33 +8274,33 @@
         "motorType": "TR"
       },
       "bikeCollorPalletteGallery": {
-        "default": "/images/roadsters/trident660/trident660TriumphYellow.png",
-        "color1": "/images/roadsters/trident660/trident660TriumphYellow.png",
-        "color1Reversed": "/images/roadsters/trident660/trident660TriumphYellowReversed.png",
-        "color2": "/images/roadsters/trident660/trident660SapphireBlack.png",
-        "color2Reversed": "/images/roadsters/trident660/trident660SapphireBlackReversed.png",
+        "default": "/images/roadsters/trident660/tridentMattBajaOrange.png",
+        "color1": "/images/roadsters/trident660/trident660SapphireBlack.png",
+        "color1Reversed": "/images/roadsters/trident660/trident660SapphireBlackReversed.png",
+        "color2": "/images/roadsters/trident660/tridentMattBajaOrange.png",
+        "color2Reversed": "/images/roadsters/trident660/tridentMattBajaOrangeReversed.png",
         "color3": "/images/roadsters/trident660/trident660MattBlack.png",
         "color3Reversed": "/images/roadsters/trident660/trident660MattBlackReversed.png",
-        "color4": "/images/roadsters/trident660/trident660Red.png",
-        "color4Reversed": "/images/roadsters/trident660/trident660RedReversed.png"
+        "color4": "/images/roadsters/trident660/tridentIceRed.png",
+        "color4Reversed": "/images/roadsters/trident660/tridentIceRedReversed.png"
       },
       "customizationColors": [
         {
-          "colorName": "Jett Black / Triumph Racing Yellow",
-          "price": 200,
-          "image": "/images/custom-collors/jetBlackTriumphRacingYellow.jpg",
+          "colorName": "Sapphire Black",
+          "price": null,
+          "image": "/images/custom-collors/sapphireBlack.jpg",
           "colorCode": "color1"
         },
         {
-          "colorName": "Sapphire Black / Storm Gray",
-          "price": null,
-          "image": "/images/custom-collors/sapphireBlack.jpg",
+          "colorName": "Matt Baja Orange / Matt Storm Gray",
+          "price": 200,
+          "image": "/images/custom-collors/mattBajaOrangeMattStormGrey.jpg",
           "colorCode": "color2"
         },
         {
           "colorName": "Matt Jet Black / Matt Silver Ice",
           "price": 200,
-          "image": "/images/custom-collors/mattJettBlackMattSilverIce.jpg",
+          "image": "/images/custom-collors/mattJetBlackICe.jp",
           "colorCode": "color3"
         },
         {
@@ -7859,7 +8312,7 @@
       ],
       "gallery": {
         "modelImage": {
-          "src": "/images/roadsters/trident660Model.png",
+          "src": "/images/roadsters/trident660/tridentMattBajaOrange.png",
           "alt": "Trident 660"
         }
       },
@@ -7880,7 +8333,7 @@
       "category": "roadsters",
       "subFamilyCategory": "speed-triple-1200-rs",
       "edition": "roadsters",
-      "price": 18990,
+      "price": 19590,
       "specs": {
         "cc": 1160,
         "hp": 180,
@@ -7897,30 +8350,30 @@
       },
       "bikeCollorPalletteGallery": {
         "default": "/images/roadsters/speedTriple1200RS/speedTriple1200rsCarnivalRed.png",
-        "color1": "/images/roadsters/speedTriple1200RS/speedTriple1200rsCarnivalRed.png",
-        "color1Reversed": "/images/roadsters/speedTriple1200RS/speedTriple1200rsCarnivalRedReversed.png",
-        "color2": "/images/roadsters/speedTriple1200RS/speedTriple1200rsCarnivalBlack.png",
-        "color2Reversed": "/images/roadsters/speedTriple1200RS/speedTriple1200rsCarnivalBlackReversed.png",
-        "color3": "/images/roadsters/speedTriple1200RS/speedTriple1200rsSilverIce.png",
-        "color3Reversed": "/images/roadsters/speedTriple1200RS/speedTriple1200rsSilverIceReversed.png"
+        "color1": "/images/roadsters/speedTriple1200RS/speedTriple1200rsCarnivalBlack.png",
+        "color1Reversed": "/images/roadsters/speedTriple1200RS/speedTriple1200rsCarnivalBlackReversed.png",
+        "color2": "/images/roadsters/speedTriple1200RS/speedTriple1200rsSilverIce.png",
+        "color2Reversed": "/images/roadsters/speedTriple1200RS/speedTriple1200rsSilverIceReversed.png",
+        "color3": "/images/roadsters/speedTriple1200RS/speedTriple1200rsBaja.png",
+        "color3Reversed": "/images/roadsters/speedTriple1200RS/speedTriple1200rsBajaReversed.png"
       },
       "customizationColors": [
-        {
-          "colorName": "Carnival Red",
-          "price": 300,
-          "image": "/images/custom-collors/carnivalRed.jpg",
-          "colorCode": "color1"
-        },
         {
           "colorName": "Saphire Black",
           "price": null,
           "image": "/images/custom-collors/sapphireBlack.jpg",
-          "colorCode": "color2"
+          "colorCode": "color1"
         },
         {
           "colorName": "Matt Silver Ice",
           "price": null,
           "image": "/images/custom-collors/mattSilverIce.jpg",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Matt Baja Orange",
+          "price": 300,
+          "image": "/images/custom-collors/mattBajaOrange.jpg",
           "colorCode": "color3"
         }
       ],
@@ -7941,7 +8394,7 @@
       "category": "roadsters",
       "subFamilyCategory": "speed-triple-1200-rr",
       "edition": "roadsters",
-      "price": 20990,
+      "price": 21590,
       "specs": {
         "cc": 1160,
         "hp": 180,
@@ -7994,9 +8447,9 @@
       "category": "rocket-3",
       "subFamilyCategory": "rocket-3",
       "edition": "rocket-3",
-      "price": 25290,
+      "price": 25990,
       "specs": {
-        "cc": 398,
+        "cc": 2500,
         "hp": 20,
         "torque": 37.5,
         "horsePower": 40,
@@ -8037,7 +8490,7 @@
         },
         {
           "colorName": "Silver Ice Cranberry Red",
-          "price": 600,
+          "price": 700,
           "image": "/images/custom-collors/silverIceCranberryRed.jpg",
           "colorCode": "color3"
         }
@@ -8207,9 +8660,9 @@
       "category": "rocket-3",
       "subFamilyCategory": "rocket-3",
       "edition": "rocket-3",
-      "price": 25990,
+      "price": 26790,
       "specs": {
-        "cc": 398,
+        "cc": 2500,
         "hp": 20,
         "torque": 37.5,
         "horsePower": 40,
@@ -8250,7 +8703,7 @@
         },
         {
           "colorName": "Silver Ice / Storm Gray",
-          "price": 600,
+          "price": 900,
           "image": "/images/custom-collors/silverIceStormGray.jpg",
           "colorCode": "color3"
         }
@@ -9114,7 +9567,7 @@
       "category": "classics",
       "subFamilyCategory": "speed-400",
       "edition": "classics",
-      "price": 5690,
+      "price": 6390,
       "desc": "Со класичниот изглед Speed 400, навистина ја носи онаа modern-classic ДНК во неговата крв.",
       "specs": {
         "cc": 398,
@@ -9275,7 +9728,7 @@
       "subFamilyCategory": "scrambler-400-x",
       "edition": "classics",
       "desc": "Scrambler 400 X - Подготвен за секаков на подлога.",
-      "price": 6390,
+      "price": 6890,
       "specs": {
         "cc": 398,
         "hp": 20,
@@ -9337,9 +9790,9 @@
       "subFamilyCategory": "speed-twin-900",
       "edition": "900cc",
       "desc": "Возбудливи перформанси и управување кое инспирира самодоверба, сега со уште повеќе комфорт и стил.",
-      "price": 10390,
+      "price": 10690,
       "specs": {
-        "cc": 398,
+        "cc": 900,
         "hp": 20,
         "torque": 37.5,
         "horsePower": 40,
@@ -9347,41 +9800,32 @@
         "motorType": "TR"
       },
       "bikeCollorPalletteGallery": {
-        "default": "/images/classics/speedTwin900/speedTwin900StealthGreen.png",
-        "color1": "/images/classics/speedTwin900/speedTwin900StealthGreen.png",
-        "color1Reversed": "/images/classics/speedTwin900/speedTwin900StealthGreenReversed.png",
-        "color2": "/images/classics/speedTwin900/speedTwin900Black.png",
-        "color2Reversed": "/images/classics/speedTwin900/speedTwin900BlackReversed.png",
-        "color3": "/images/classics/speedTwin900/speedTwin900CarnivalRed.png",
-        "color3Reversed": "/images/classics/speedTwin900/speedTwin900CarnivalRedReversed.png",
-        "color4": "/images/classics/speedTwin900/speedTwin900Competition.png",
-        "color4Reversed": "/images/classics/speedTwin900/speedTwin900CompetitionReversed.png"
+        "default": "/images/classics/speedTwin900/speedTwin900Ironstone.png",
+        "color1": "/images/classics/speedTwin900/speedTwin900Black.png",
+        "color1Reversed": "/images/classics/speedTwin900/speedTwin900BlackReversed.png",
+        "color2": "/images/classics/speedTwin900/speedTwin900Ironstone.png",
+        "color2Reversed": "/images/classics/speedTwin900/speedTwin900IronstoneReversed.png",
+        "color3": "/images/classics/speedTwin900/speedTwin900SilverICe.png",
+        "color3Reversed": "/images/classics/speedTwin900/speedTwin900SilverICeReversed.png"
       },
       "customizationColors": [
         {
-          "colorName": "Stealth Edition - Saphire Green",
+          "colorName": "Jet Black",
           "price": null,
-          "image": "/images/custom-collors/phantomGreenSilverGreen.png",
+          "image": "/images/custom-collors/jetBlack.jpg",
           "colorCode": "color1"
         },
         {
-          "colorName": "Jett Black",
-          "price": null,
-          "image": "/images/custom-collors/jetBlack.jpg",
+          "colorName": "Matt Ironstone",
+          "price": 200,
+          "image": "/images/custom-collors/ironStoneGrey.jpg",
           "colorCode": "color2"
         },
         {
           "colorName": "Carnival Red / Saphire Black",
           "price": 200,
-          "image": "/images/custom-collors/carnivalRedSapphireBlack.jpg",
+          "image": "/images/custom-collors/mattSilverice.jpg",
           "colorCode": "color3"
-        }
-        ,
-        {
-          "colorName": "Competition Green / Phantom Black",
-          "price": 200,
-          "image": "/images/custom-collors/competitionGreenPhantomBlack.jpg",
-          "colorCode": "color4"
         }
       ],
       "gallery": {
@@ -9409,7 +9853,7 @@
       "category": "classics",
       "subFamilyCategory": "bonneville-bobber",
       "edition": "classics",
-      "price": 16290,
+      "price": 16790,
       "specs": {
         "cc": 398,
         "hp": 20,
@@ -9418,9 +9862,46 @@
         "serviceInterval": "16.000km",
         "motorType": "TR"
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/classics/bonnevilleBobber/bonnevilleBobberRedHopper.png",
+        "color1": "/images/classics/bonnevilleBobber/bonnevilleBobberBlack.png",
+        "color1Reversed": "/images/classics/bonnevilleBobber/bonnevilleBobberBlackReversed.png",
+        "color2": "/images/classics/bonnevilleBobber/bonnevilleBobberRedHopper.png",
+        "color2Reversed": "/images/classics/bonnevilleBobber/bonnevilleBobberRedHopperReversed.png",
+        "color3": "/images/classics/bonnevilleBobber/bonnevilleBobberIronStone.png",
+        "color3Reversed": "/images/classics/bonnevilleBobber/bonnevilleBobberIronStoneReversed.png",
+        "color4": "/images/classics/bonnevilleBobber/bonnevilleBobberChrome.png",
+        "color4Reversed": "/images/classics/bonnevilleBobber/bonnevilleBobberChromeReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Jet Black",
+          "price": null,
+          "image": "/images/custom-collors/jetBlack.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Red Hopper",
+          "price": 200,
+          "image": "/images/custom-collors/redHopper.jpg",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Matt Storm Gray / Matt Ironstone",
+          "price": 200,
+          "image": "/images/custom-collors/ironStoneGrey.jpg",
+          "colorCode": "color3"
+        },
+        {
+          "colorName": "Chrome / Jet Black",
+          "price": 800,
+          "image": "/images/custom-collors/jetBlackChrome.jpg",
+          "colorCode": "color4"
+        }
+      ],
       "gallery": {
         "modelImage": {
-          "src": "/images/classics/bonnevilleBobberModel.png",
+          "src": "/images/classics/bonnevilleBobber/bonnevilleBobberRedHopper.png",
           "alt": "Bonneville Bobber"
         }
       },
@@ -9458,7 +9939,7 @@
     },
     {
       "id": 31,
-      "title": "scrambler 1200 XE (MY24)",
+      "title": "Scrambler 1200 XE (MY24)",
       "model": "scrambler-1200-xe-2024",
       "category": "classics",
       "subFamilyCategory": "scrambler-1200",
@@ -9486,20 +9967,49 @@
     },
     {
       "id": 32,
-      "title": "Scrambler 1200 XC (MY23)",
+      "title": "Scrambler 1200 XC",
       "model": "scrambler-1200-xc-2023",
       "category": "classics",
       "subFamilyCategory": "scrambler-1200",
       "edition": "classics",
-      "price": 15990,
+      "price": 16490,
       "specs": {
-        "cc": 398,
+        "cc": 1200,
         "hp": 20,
         "torque": 37.5,
         "horsePower": 40,
         "serviceInterval": "16.000km",
         "motorType": "TR"
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/classics/scrambler1200XC/scrambler1200XCSapphireBlack.png",
+        "color1": "/images/classics/scrambler1200XC/scrambler1200XCSapphireBlack.png",
+        "color1Reversed": "/images/classics/scrambler1200XC/scrambler1200XCSapphireBlackReversed.png",
+        "color2": "/images/classics/scrambler1200XC/scrambler1200XCKhaki.png",
+        "color2Reversed": "/images/classics/scrambler1200XC/scrambler1200XCKhakiReversed.png",
+        "color3": "/images/classics/scrambler1200XC/scrambler1200XCRed.png",
+        "color3Reversed": "/images/classics/scrambler1200XC/scrambler1200XCRedReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Saphire Black",
+          "price": null,
+          "image": "/images/custom-collors/sapphireBlack.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Matt Khaki Green / Matt Jet Black",
+          "price": 400,
+          "image": "/images/custom-collors/mattKhakiGreeenMattJetBlack.jpg",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Carnival Red / Jet Black",
+          "price": 400,
+          "image": "/images/custom-collors/carnivalRedSapphireBlack.jpg",
+          "colorCode": "color3"
+        }
+      ],
       "gallery": {
         "modelImage": {
           "src": "/images/classics/scrambler1200XcMy23Model.png",
@@ -9514,20 +10024,57 @@
     },
     {
       "id": 33,
-      "title": "Scrambler 1200 XE (MY23)",
+      "title": "Scrambler 1200 XE",
       "model": "scrambler-1200-xe-2023",
       "category": "classics",
       "subFamilyCategory": "scrambler-1200",
       "edition": "classics",
-      "price": 16990,
+      "price": 17490,
       "specs": {
-        "cc": 398,
+        "cc": 1200,
         "hp": 20,
         "torque": 37.5,
         "horsePower": 40,
         "serviceInterval": "16.000km",
         "motorType": "TR"
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/classics/scrambler1200XE/scrambler1200XEBlack.png",
+        "color1": "/images/classics/scrambler1200XE/scrambler1200XEBlack.png",
+        "color1Reversed": "/images/classics/scrambler1200XE/scrambler1200XEBlackReversed.png",
+        "color2": "/images/classics/scrambler1200XE/scrambler1200XEKhaki.png",
+        "color2Reversed": "/images/classics/scrambler1200XE/scrambler1200XEKhakiReversed.png",
+        "color3": "/images/classics/scrambler1200XE/scrambler1200XERed.png",
+        "color3Reversed": "/images/classics/scrambler1200XE/scrambler1200XERedReversed.png",
+        "color4": "/images/classics/scrambler1200XE/scrambler1200XEChromeEdition.avif",
+        "color4Reversed": "/images/classics/scrambler1200XE/scrambler1200XEChromeEdition.avif"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Saphire Black",
+          "price": null,
+          "image": "/images/custom-collors/sapphireBlack.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Matt Khaki Green / Matt Jet Black",
+          "price": 400,
+          "image": "/images/custom-collors/mattKhakiGreeenMattJetBlack.jpg",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Carnival Red / Jet Black",
+          "price": 400,
+          "image": "/images/custom-collors/carnivalRedSapphireBlack.jpg",
+          "colorCode": "color3"
+        },
+        {
+          "colorName": "Chrome / Brooklands Green",
+          "price": 800,
+          "image": "/images/custom-collors/chromeBrooklandsGreen.avif",
+          "colorCode": "color4"
+        }
+      ],
       "gallery": {
         "modelImage": {
           "src": "/images/classics/scrambler1200XeMy23Model.png",
@@ -9547,7 +10094,7 @@
       "category": "classics",
       "subFamilyCategory": "bonneville-speedmaster",
       "edition": "classics",
-      "price": 16290,
+      "price": 16690,
       "specs": {
         "cc": 398,
         "hp": 20,
@@ -9556,6 +10103,37 @@
         "serviceInterval": "16.000km",
         "motorType": "TR"
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/classics/speedmaster/speedmasterBlack.png",
+        "color1": "/images/classics/speedmaster/speedmasterBlack.png",
+        "color1Reversed": "/images/classics/speedmaster/speedmasterBlackReversed.png",
+        "color2": "/images/classics/speedmaster/speedmasterRed.png",
+        "color2Reversed": "/images/classics/speedmaster/speedmasterRedReversed.png",
+        "color3": "/images/classics/speedmaster/speedmasterBlackWhite.png",
+        "color3Reversed": "/images/classics/speedmaster/speedmasterBlackWhiteReversed.png",
+        "color4": "/images/classics/speedmaster/speedmasterChromeEdition.avif",
+        "color4Reversed": "/images/classics/speedmaster/speedmasterChromeEdition.avif"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Saphire Black",
+          "price": null,
+          "image": "/images/custom-collors/sapphireBlack.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Cordovan Red",
+          "price": 300,
+          "image": "/images/custom-collors/cordovanRedFull.jpg",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Sapphire Black / Fusion White",
+          "price": 100,
+          "image": "/images/custom-collors/sapphireBlackFussionWhite.jpg",
+          "colorCode": "color3"
+        }
+      ],
       "gallery": {
         "modelImage": {
           "src": "/images/classics/bonnevilleSpeedmasterModel.png",
@@ -9573,15 +10151,44 @@
       "category": "classics",
       "subFamilyCategory": "speed-twin-1200",
       "edition": "classics",
-      "price": 14190,
+      "price": 14590,
       "specs": {
-        "cc": 398,
+        "cc": 1200,
         "hp": 20,
         "torque": 37.5,
         "horsePower": 40,
         "serviceInterval": "16.000km",
         "motorType": "TR"
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/classics/speedTwin1200/speedTwin1200Black.png",
+        "color1": "/images/classics/speedTwin1200/speedTwin1200Black.png",
+        "color1Reversed": "/images/classics/speedTwin1200/speedTwin1200BlackReversed.png",
+        "color2": "/images/classics/speedTwin1200/speedTwin1200RedHopper.png",
+        "color2Reversed": "/images/classics/speedTwin1200/speedTwin1200RedHopperReversed.png",
+        "color3": "/images/classics/speedTwin1200/speedTwin1200Baja.png",
+        "color3Reversed": "/images/classics/speedTwin1200/speedTwin1200BajaReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Jet Black",
+          "price": null,
+          "image": "/images/custom-collors/jetBlack.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Red Hopper",
+          "price": 200,
+          "image": "/images/custom-collors/redHopper.jpg",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Matt Baja Orange",
+          "price": 200,
+          "image": "/images/custom-collors/mattBajaOrange.jpg",
+          "colorCode": "color3"
+        }
+      ],
       "gallery": {
         "modelImage": {
           "src": "/images/classics/speedTwin1200Model.png",
@@ -9600,15 +10207,44 @@
       "subFamilyCategory": "scrambler-900",
       "edition": "900cc",
       "desc": "Дрзок off-road карактер, врвна агилност и иконичен стил, со перформанси за забава на секаков терен.",
-      "price": 11890,
+      "price": 12290,
       "specs": {
-        "cc": 398,
+        "cc": 900,
         "hp": 20,
         "torque": 37.5,
         "horsePower": 40,
         "serviceInterval": "16.000km",
         "motorType": "TR"
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/classics/scrambler900/scrambler900Black.png",
+        "color1": "/images/classics/scrambler900/scrambler900Black.png",
+        "color1Reversed": "/images/classics/scrambler900/scrambler900BlackReversed.png",
+        "color2": "/images/classics/scrambler900/scrambler900Red.png",
+        "color2Reversed": "/images/classics/scrambler900/scrambler900RedReversed.png",
+        "color3": "/images/classics/scrambler900/scrambler900Khaki.png",
+        "color3Reversed": "/images/classics/scrambler900/scrambler900KhakiReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Jet Black",
+          "price": null,
+          "image": "/images/custom-collors/jetBlack.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Carnival Red / Jet Black",
+          "price": 300,
+          "image": "/images/custom-collors/carnivalRedSapphireBlack.jpg",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Matt Khaki",
+          "price": 200,
+          "image": "/images/custom-collors/mattKhaki.jpg",
+          "colorCode": "color3"
+        }
+      ],
       "gallery": {
         "modelImage": {
           "src": "/images/classics/scrambler900Model.png",
@@ -9625,20 +10261,57 @@
       "model": "t100-2023",
       "category": "classics",
       "subFamilyCategory": "bonneville-t100",
-      "edition": "900cc",
+      "edition": "classics",
       "desc": "Bonneville T100 - еволуција на иконичен мотор сега уште полесен и посиле.",
-      "price": 11690,
+      "price": 11990,
       "specs": {
-        "cc": 398,
+        "cc": 900,
         "hp": 20,
         "torque": 37.5,
         "horsePower": 40,
         "serviceInterval": "16.000km",
         "motorType": "TR"
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/classics/bonnevilleT100/t100Black.png",
+        "color1": "/images/classics/bonnevilleT100/t100Black.png",
+        "color1Reversed": "/images/classics/bonnevilleT100/t100BlackReversed.png",
+        "color2": "/images/classics/bonnevilleT100/t100RedWhite.png",
+        "color2Reversed": "/images/classics/bonnevilleT100/t100RedWhiteReversed.png",
+        "color3": "/images/classics/bonnevilleT100/t100Tangerine.png",
+        "color3Reversed": "/images/classics/bonnevilleT100/t100TangerineReversed.png",
+        "color4": "/images/classics/bonnevilleT100/t100CobaltBlue.png",
+        "color4Reversed": "/images/classics/bonnevilleT100/t100CobaltBlueReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Jet Black",
+          "price": null,
+          "image": "/images/custom-collors/jetBlack.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Carnival Red / Fusion White",
+          "price": 400,
+          "image": "/images/custom-collors/carnivalRedWhite.jpg",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Meriden Blue / Tangerine",
+          "price": 400,
+          "image": "/images/custom-collors/meridenBlueTangerine.jpg",
+          "colorCode": "color3"
+        },
+        {
+          "colorName": "Cobalt Blue",
+          "price": 700,
+          "image": "/images/custom-collors/phantomBlueSilverBlue.png",
+          "colorCode": "color4"
+        }
+      ],
       "gallery": {
         "modelImage": {
-          "src": "/images/classics/bonnevilleT100Model.png",
+          "src": "/images/classics/bonnevilleT100/t100Black.png",
           "alt": "Bonneville T100"
         }
       },
@@ -9653,7 +10326,7 @@
       "category": "classics",
       "subFamilyCategory": "bonneville-t120",
       "edition": "classics",
-      "price": 14290,
+      "price": 14690,
       "specs": {
         "cc": 398,
         "hp": 20,
@@ -9662,9 +10335,46 @@
         "serviceInterval": "16.000km",
         "motorType": "TR"
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/classics/bonnevilleT120/bonnevillieT120Black.png",
+        "color1": "/images/classics/bonnevilleT120/bonnevillieT120Black.png",
+        "color1Reversed": "/images/classics/bonnevilleT120/bonnevillieT120BlackReversed.png",
+        "color2": "/images/classics/bonnevilleT120/bonnevillieT120Red.png",
+        "color2Reversed": "/images/classics/bonnevilleT120/bonnevillieT120RedReversed.png",
+        "color3": "/images/classics/bonnevilleT120/bonnevillieT120AegeanBlue.png",
+        "color3Reversed": "/images/classics/bonnevilleT120/bonnevillieT120AegeanBlueReversed.png",
+        "color4": "/images/classics/bonnevilleT120/t120ChromeEdition-MeridenBlueChrome.avif",
+        "color4Reversed": "/images/classics/bonnevilleT120/t120ChromeEdition-MeridenBlueChrome.avif"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Jet Black",
+          "price": null,
+          "image": "/images/custom-collors/jetBlack.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Cordovan Red / Silver Ice",
+          "price": 300,
+          "image": "/images/custom-collors/cordovanRed.jpg",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Aegean Blue / Fusion White",
+          "price": 300,
+          "image": "/images/custom-collors/aegeanBlueFusionWhite.jpg",
+          "colorCode": "color3"
+        },
+        {
+          "colorName": "Chrome / Meriden Blue",
+          "price": 800,
+          "image": "/images/custom-collors/chromeMeridianBlue.avif",
+          "colorCode": "color4"
+        }
+      ],
       "gallery": {
         "modelImage": {
-          "src": "/images/classics/bonnevilleT120Model.png",
+          "src": "/images/classics/bonnevilleT120/bonnevillieT120Red.png",
           "alt": "Bonneville T100"
         }
       },
@@ -9679,7 +10389,7 @@
       "category": "classics",
       "subFamilyCategory": "bonneville-t120",
       "edition": "classics",
-      "price": 14290,
+      "price": 14690,
       "specs": {
         "cc": 398,
         "hp": 20,
@@ -9688,6 +10398,27 @@
         "serviceInterval": "16.000km",
         "motorType": "TR"
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/classics/bonnevilleT120Black/t120BlackJetBlack.png",
+        "color1": "/images/classics/bonnevilleT120Black/t120BlackJetBlack.png",
+        "color1Reversed": "/images/classics/bonnevilleT120Black/t120BlackJetBlackReversed.png",
+        "color2": "/images/classics/bonnevilleT120Black/t120BlackMattBlack.png",
+        "color2Reversed": "/images/classics/bonnevilleT120Black/t120BlackMattBlackReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Jet Black",
+          "price": null,
+          "image": "/images/custom-collors/jetBlack.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Sapphire Black / Matt Saphire",
+          "price": 300,
+          "image": "/images/custom-collors/sapphireBlackSapphireBlack.jpg",
+          "colorCode": "color2"
+        }
+      ],
       "gallery": {
         "modelImage": {
           "src": "/images/classics/bonnevilleT120BlackModel.png",
@@ -9733,7 +10464,7 @@
       "category": "classics",
       "subFamilyCategory": "thruxton-rs",
       "edition": "classics",
-      "price": 17990,
+      "price": 18490,
       "specs": {
         "cc": 398,
         "hp": 20,
@@ -9742,6 +10473,35 @@
         "serviceInterval": "16.000km",
         "motorType": "TR"
       },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/classics/thruxtonRS/thruxtonRSBlack.png",
+        "color1": "/images/classics/thruxtonRS/thruxtonRSBlack.png",
+        "color1Reversed": "/images/classics/thruxtonRS/thruxtonRSBlackReversed.png",
+        "color2": "/images/classics/thruxtonRS/thruxtonRSCompetitionGreen.png",
+        "color2Reversed": "/images/classics/thruxtonRS/thruxtonRSCompetitionGreenReversed.png",
+        "color3": "/images/classics/thruxtonRS/thruxtonRSBlackSilver.png",
+        "color3Reversed": "/images/classics/thruxtonRS/thruxtonRSBlackSilverReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Jet Black",
+          "price": null,
+          "image": "/images/custom-collors/jetBlack.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Competition green / Silver Ice",
+          "price": 400,
+          "image": "/images/custom-collors/competitionGreenStorGrey.jpg",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Chrome / Jet Black",
+          "price": 800,
+          "image": "/images/custom-collors/chromeJetBlack.jpg",
+          "colorCode": "color3"
+        }
+      ],
       "gallery": {
         "modelImage": {
           "src": "/images/classics/thruxtonRsModel.png",
@@ -9791,7 +10551,7 @@
       "edition": "stealth",
       "price": null,
       "specs": {
-        "cc": 398,
+        "cc": 900,
         "hp": 20,
         "torque": 37.5,
         "horsePower": 40,
@@ -10075,7 +10835,7 @@
       "edition": "chrome",
       "price": 12490,
       "specs": {
-        "cc": 398,
+        "cc": 900,
         "hp": 20,
         "torque": 37.5,
         "horsePower": 40,
@@ -10217,7 +10977,7 @@
       "category": "roadsters",
       "subFamilyCategory": "street-triple-moto2",
       "edition": "roadsters",
-      "price": 16990,
+      "price": 17490,
       "specs": {
         "cc": 765,
         "hp": 130,
@@ -10266,9 +11026,186 @@
         "title": "НОВАТА STREET TIRPLE 765 MOTO2™ СЕРИЈА",
         "desc": "Најдобриот Street Triple моторцикл кој може да се купи. Ве носи најблиску до Moto2™ моторите но е спремен за патишта. Сосема ексклузивен и најопремен и нај-агилен. Цени од €16,990.00."
       }
+    },
+    {
+      "id": 58,
+      "title": "Tiger 900 Rally",
+      "model": "tiger-900-rally",
+      "category": "adventure",
+      "subFamilyCategory": "tiger-900",
+      "edition": "adventure",
+      "price": 14990,
+      "specs": {
+        "cc": 398,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
+      "gallery": {
+        "modelImage": {
+          "src": "/images/adventure/tigerSport660/tiger660ModelImage.avif",
+          "alt": "Tiger Sport 660"
+        },
+        "promoYoutubeVideo": {
+          "src": "https://www.youtube.com/embed/QvVCEk4t8IE",
+          "alt": "Tiger 660 Youtbe Video"
+        }
+      },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/adventure/tiger900Rally/tiger900RallyWhite.png",
+        "color1": "/images/adventure/tiger900Rally/tiger900RallyWhite.png",
+        "color1Reversed": "/images/adventure/tiger900Rally/tiger900RallyWhiteReversed.png",
+        "color2": "/images/adventure/tiger900Rally/tiger900RallySandstorm.png",
+        "color2Reversed": "/images/adventure/tiger900Rally/tiger900RallySandstormReversed.png",
+        "color3": "/images/adventure/tiger900Rally/tiger900RallyKhaki.png",
+        "color3Reversed": "/images/adventure/tiger900Rally/tiger900RallyKhakiReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Pure White",
+          "price": null,
+          "image": "/images/custom-collors/pureWhite.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Sandstorm",
+          "price": 200,
+          "image": "/images/custom-collors/sandstorm.jpg",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Matt Khaki",
+          "price": 200,
+          "image": "/images/custom-collors/mattKhaki.jpg",
+          "colorCode": "color3"
+        }
+      ],
+      "shortSpecInfo": {
+        "info1": "660cc Triple Motor",
+        "info2": "Лидер во категоријата",
+        "info3": "Прилагодлива 'Showa' суспензија"
+      },
+      "subFamilyPromo": {
+        "title": "TIGER SPORT 660",
+        "desc": "Првиот избор за многу корисници, со три-цилиндарски мотор, неверојатен комфорт, перформантен, искористлив и агилен, стот тоа со најниски трошоци за одржување во класата. Цени од €9,590.00"
+      }
+    },
+    {
+      "id": 59,
+      "title": "Tiger 1200 GT",
+      "model": "tiger-1200-gt",
+      "category": "adventure",
+      "subFamilyCategory": "tiger-1200",
+      "edition": "adventure",
+      "price": 20390,
+      "specs": {
+        "cc": 1200,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
+      "gallery": {
+        "modelImage": {
+          "src": "/images/adventure/tiger1200GT/tiger1200GTSnowdoniaWhite.png",
+          "alt": "Tiger 1200 GT"
+        },
+        "promoYoutubeVideo": {
+          "src": "https://www.youtube.com/embed/QvVCEk4t8IE",
+          "alt": "Tiger 660 Youtbe Video"
+        }
+      },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/adventure/tiger1200GT/tiger1200GTSnowdoniaWhite.png",
+        "color1": "/images/adventure/tiger1200GT/tiger1200GTSnowdoniaWhite.png",
+        "color1Reversed": "/images/adventure/tiger1200GT/tiger1200GTSnowdoniaWhiteReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Snowdonia White",
+          "price": null,
+          "image": "/images/custom-collors/snowdoniaWhite.jpg",
+          "colorCode": "color1"
+        }
+      ],
+      "shortSpecInfo": {
+        "info1": "660cc Triple Motor",
+        "info2": "Лидер во категоријата",
+        "info3": "Прилагодлива 'Showa' суспензија"
+      },
+      "subFamilyPromo": {
+        "title": "TIGER SPORT 660",
+        "desc": "Првиот избор за многу корисници, со три-цилиндарски мотор, неверојатен комфорт, перформантен, искористлив и агилен, стот тоа со најниски трошоци за одржување во класата. Цени од €9,590.00"
+      }
+    },
+    {
+      "id": 60,
+      "title": "Daytona 660",
+      "model": "daytona-660",
+      "category": "sport",
+      "subFamilyCategory": "daytona-660",
+      "edition": "sport",
+      "price": null,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/sport/daytona660/daytona660SnowdoniaWhite.png",
+          "alt": "Daytona 660"
+        }
+      },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/sport/daytona660/daytona660Satin.png",
+        "color1": "/images/sport/daytona660/daytona660Satin.png",
+        "color1Reversed": "/images/sport/daytona660/daytona660SatinReversed.png",
+        "color2": "/images/sport/daytona660/daytona660SnowdoniaWhite.png",
+        "color2Reversed": "/images/sport/daytona660/daytona660SnowdoniaWhiteReversed.png",
+        "color3": "/images/sport/daytona660/daytona660CarnivalRed.png",
+        "color3Reversed": "/images/sport/daytona660/daytona660CarnivalRedReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Satin Granite / Satin Jet Black",
+          "price": null,
+          "image": "/images/custom-collors/satinGraniteSatinJetBlack.png",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Snowdonia White / Sapphire Black",
+          "price": null,
+          "image": "/images/custom-collors/snowdoniaWhiteSapphireBlack.pn",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Carnival Red / Saphire Black",
+          "price": null,
+          "image": "/images/custom-collors/carnivalRedSapphireBlack.jpg",
+          "colorCode": "color3"
+        }
+      ],
+      "shortSpecInfo": {
+        "info1": "Нов 900cc три-цилиндричен мотор",
+        "info2": "Високи спецификации за подобро искуство",
+        "info3": "Врвна технологија фокусирана на возачот"
+      },
+      "subFamilyPromo": {
+        "title": "Новиот Tiger 900 GT",
+        "desc": "Со врвни перформанси и комфорт Tiger 900 GT ве води на долги авантури. Неговата агилност и можности ви доверуваат сигурност и даваат чувство на слобода."
+      }
     }
   ],
   "main-carousell-items": [
+    {
+      "video": null,
+      "image": "/images/home/mainCarousell/daytona.avif",
+      "title": "Новaтa Daytona 660",
+      "desc": "Динамична ДНК со нов карактер.",
+      "link1": {
+        "url": "/motorcycles/sport/daytona-660",
+        "text": "Погледни ја Серијата"
+      }
+    },
     {
       "video": "/images/home/mainCarousell/thruxtonCaroVideo.webm",
       "image": "/images/home/mainCarousell/thruxtonCaroImg.avif",
@@ -10280,7 +11217,7 @@
       }
     },
     {
-      "image": "/images/home/mainCarousell/Speed400CaroImage.avif",
+      "image": "/images/home/mainCarousell/speed400CaroImage.avif",
       "title": "Нови Попусти, Нови Цени",
       "desc": "Погледнете ги новите цени за Speed 400 & Scrambler 400 X",
       "link1": {
@@ -10325,6 +11262,32 @@
         "url": "/motorcycles/classics/stealth-editions",
         "text": "Погледни ја Серијата"
       }
+    }
+  ],
+  "latest-models-carousell-items": [
+    {
+      "title": "SCRAMBLER 1200",
+      "desc": "Authentic Scrambler style with class-defining adventure ready capability; the Scrambler 1200 is the real deal. The latest editions are even more accessible and ready for the everyday, weekend escapism and pure adventure.",
+      "url": "/motorcycles/classic/bonneville-scrambler-1200",
+      "image": "/images/home/scrambler1200LatestModelsCarousell.avif"
+    },
+    {
+      "title": "TIGER 900 ARAGON EDITIONS",
+      "desc": "Inspired by the dominant, race-winning performance of the Tiger 900 Rally Pro at the 2022 Baja Aragón rally.",
+      "url": "/motorcycles/adventure/tiger-900",
+      "image": "/images/home/tiger900AragonLatestModelsCarousell.avif"
+    },
+    {
+      "title": "SPEED 400",
+      "desc": "Born into a peerless bloodline, the Speed 400 has Triumph’s unique Modern Classic roadster design in its DNA.",
+      "url": "/motorcycles/classic/speed-400",
+      "image": "/images/home/speed400LatestModelsCarousell.avif"
+    },
+    {
+      "title": "SCRAMBLER 400 X",
+      "desc": "Beautifully balanced, effortlessly agile. The Scrambler 400 X is built for all riders and all terrains.",
+      "url": "/motorcycles/classic/scrambler-400-x-2024",
+      "image": "/images/home/scrambler400XLatestModelsCarousell.avif"
     }
   ]
 }
