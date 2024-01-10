@@ -4,6 +4,7 @@ import Image from "next/image";
 
 type MainCarousellItemType = {
   image?: string;
+  imageMobile?: string;
   video?: string;
   title: string;
   desc: string;
@@ -30,7 +31,7 @@ const MainCarousellItem = ({
       style={{
         minWidth: "100%",
         backgroundImage: `url('${image}')`,
-        backgroundPosition: "center top",
+        backgroundPosition: "center center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         height: "auto",

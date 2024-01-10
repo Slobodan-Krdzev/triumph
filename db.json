@@ -11199,6 +11199,7 @@
     {
       "video": null,
       "image": "/images/home/mainCarousell/daytona.avif",
+      "imageMobile": "/images/home/mainCarousell/daytonaMobile.avif",
       "title": "Новaтa Daytona 660",
       "desc": "Динамична ДНК со нов карактер.",
       "link1": {
@@ -11209,6 +11210,7 @@
     {
       "video": "/images/home/mainCarousell/thruxtonCaroVideo.webm",
       "image": "/images/home/mainCarousell/thruxtonCaroImg.avif",
+      "imageMobile": "/images/home/mainCarousell/stealthCaroImageMobile.avif",
       "title": "Новата Thruxton Final Edition",
       "desc": "За крај на една ера - Thruxton Final Edition",
       "link1": {
@@ -11218,6 +11220,7 @@
     },
     {
       "image": "/images/home/mainCarousell/speed400CaroImage.avif",
+      "imageMobile": "/images/home/mainCarousell/speed400CaroImageMobile.avif",
       "title": "Нови Попусти, Нови Цени",
       "desc": "Погледнете ги новите цени за Speed 400 & Scrambler 400 X",
       "link1": {
@@ -11232,6 +11235,7 @@
     {
       "video": "/images/home/mainCarousell/scrambler1200CaroVideo.webm",
       "image": "/images/home/mainCarousell/scrambler1200CaroImage.avif",
+      "imageMobile": "/images/home/mainCarousell/scrambler1200CaroImage.avif",
       "title": "Направени за секој терен",
       "desc": "Новите Scrambler 1200 XE & X",
       "link1": {
@@ -11242,6 +11246,7 @@
     {
       "video": "/images/home/mainCarousell/tigerCaroVideo.webm",
       "image": "/images/home/mainCarousell/tigerCaroImage.avif",
+      "imageMobile": "/images/home/mainCarousell/tigerCaroImageMobile.avif",
       "title": "Tiger 900 Серија",
       "desc": "Новиот Tiger 900 повторно повторно се искачи на врвот и стана репер за останатите мотори од авантуристички карактер. Откријте го новиот Tiger 900.",
       "link1": {
@@ -11256,6 +11261,7 @@
     {
       "video": "/images/home/mainCarousell/stealthEditionsCaroVideo.webm",
       "image": "/images/home/mainCarousell/stealthCaroImage.avif",
+      "imageMobile": "/images/home/mainCarousell/stealthCaroImageMobile.avif",
       "title": "Драматичен Custom Стил",
       "desc": "Новата Triumph Stealth Серија",
       "link1": {
