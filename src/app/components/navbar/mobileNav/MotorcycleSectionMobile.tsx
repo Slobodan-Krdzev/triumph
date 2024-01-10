@@ -70,7 +70,7 @@ const MotorcycleSectionMobile = ({
           {families.map((family) => (
             <li key={family.id}>
               <button
-                className="text-md font-semibold mb-1 uppercase"
+                className="text-lg font-semibold mb-1 uppercase"
                 onClick={() => handleMotorsSection(family)}
               >
                 {family}
