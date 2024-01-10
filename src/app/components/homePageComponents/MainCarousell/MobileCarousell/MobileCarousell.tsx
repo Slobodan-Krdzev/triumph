@@ -18,7 +18,7 @@ const MobileCarousell = ({
   updateIndex,
 }: MobileCarousellProps) => {
   return (
-    <section className="relative overflow-hidden border">
+    <section className="relative overflow-hidden">
         <button
           onClick={() => updateIndex(activeIndex - 1)}
           className="gradient-caro-btn-left-to-right absolute left-0 z-20 bg-white text-black top-0 overlay-carousell-btn w-20 flex flex-col justify-end items-center pb-10"
