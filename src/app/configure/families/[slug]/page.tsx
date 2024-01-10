@@ -35,9 +35,6 @@ const TypeOfFamilyPage = async (data: any, props: Props) => {
     return filteredBikes
   }
 
-  console.log('bikes novi ', bikes);
-  
-
   return (
     <main className="slight-white-bg">
       <HeroSectionCTA
@@ -55,7 +52,7 @@ const TypeOfFamilyPage = async (data: any, props: Props) => {
             items={filterBikesBySumFamilyCategory(subFam.subFamilyName)}
             familyData={{
               title: subFam.title,
-              desc: subFam.shortDesc,
+              desc: subFam.shortDesc ?? "",
               url: '',
             }}
           />

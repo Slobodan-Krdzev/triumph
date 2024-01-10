@@ -89,6 +89,8 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
           <div className="flex flex-col justify-center items-start basis-2/3 pl-5">
             <p className="text-sm">Цена</p>
             {info.price && <p className="text-xl font-medium">€{handlePriceChange(info.price)}.00  </p>}
+            {info.price === null && <p className="text-xl font-medium">Наскоро!!! </p>}
+
             
           </div>
         </div>

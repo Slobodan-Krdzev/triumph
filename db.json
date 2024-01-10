@@ -6061,6 +6061,397 @@
           }
         }
       }
+    },
+    {
+      "id": 5,
+      "type": "sport",
+      "shortDesc": "Мотори кои ги менуваат правилата за 'Naked Bike'. Препознатливите 3-цилиндрични мотори на Triumph се дизајнирани за моќност, вртежен момент и моментален одговор.",
+      "familyPageBannerVideo": "roadsters/roadsterHeroVideo.webm",
+      "configPageInfo": {
+        "link": "/configure/families/sport"
+      },
+      "configFamilyPageInfo": {
+        "image": {
+          "src": "/images/roadsters/configFamilyBanner.avif",
+          "alt": "Adventure Bikes Banner"
+        },
+        "title": "Додајте аксесоари на вашиот мотор",
+        "link": "/configure/bikes"
+      },
+      "audioSection": {
+        "audio": "/images/roadsters/audio.mp3",
+        "title": "Длабок Богат Три-Цилиндричен Звук",
+        "desc": "Speed Triple RS моторциклот, има чист, префинет звук благодарејки на двојниот катализаторски систем и карбонскиот врв на издувната цевка.",
+        "logo": "/images/roadsters/logoAudioSection.png"
+      },
+      "promo": [
+        {
+          "title": "НОВИОТ STREET TRIPLE 765",
+          "subFamilyType": "street-triple-765",
+          "desc": "Подкрепнат од еволуциран Moto2™ тркачки мотор. новата Speed Triple серија е високо перформантна, со висока спецификација и прилагодлива за секого. Цени од: €12,290.00",
+          "image": "/images/roadsters/roadstersPromoSpeedTriple765.avif",
+          "btnBlack": true
+        }
+      ],
+      "subFamilies": {
+        "daytona-660": {
+          "id": 1,
+          "subFamilyName": "daytona-660",
+          "title": "Daytona 660",
+          "price": null,
+          "url": "/motorcycles/sport/daytona-660",
+          "shortDesc": null,
+          "subFamilyPageInfo": {
+            "heroSlogans": [
+              "Перфектен",
+              "спортски моторцикл",
+              "со тркачки мотор"
+            ],
+            "topSection": {
+              "title": "Врвни Перформанси ",
+              "desc": "Подкрепнат од еволуција на Moto2™ тркачки мотор, Speed Triple 765 е мотор со врвни перформанси и висока спецификација.",
+              "subtitle": "Најдобриот “naked“ моторцикл - на пат и на тркачка патека."
+            },
+            "youtubeVideo": "https://www.youtube.com/embed/Hd3QZKRIT0Y",
+            "fullSpecs": {
+              "engineTransmission": [
+                {
+                  "title": "Тип на Мотор",
+                  "desc": "водно ладење, 12 вентили, 2EEK, линиски 3-цилиндри"
+                },
+                {
+                  "title": "капацитет",
+                  "desc": "765 cc"
+                },
+                {
+                  "title": "диаметар",
+                  "desc": "78.0 mm"
+                },
+                {
+                  "title": "рута",
+                  "desc": "53.4 mm"
+                },
+                {
+                  "title": "компресија",
+                  "desc": "13.25:1"
+                },
+                {
+                  "title": "Мах. Коњски Сила",
+                  "desc": "120-130 (130 за Street Triple 765 R & Mото2™ Edition)"
+                },
+                {
+                  "title": "Мах. Обртен Момент",
+                  "desc": "80 Nm @ 9,500 rpm"
+                },
+                {
+                  "title": "Систем за убризгување",
+                  "desc": "Sequential multi-point electronic injection with electronic throttle"
+                },
+                {
+                  "title": "Систем за Издувни гасови",
+                  "desc": "3 во 1 не-раѓосувачки челик"
+                },
+                {
+                  "title": "Финална Трансмисија",
+                  "desc": "X-ring chain"
+                },
+                {
+                  "title": "Квачило",
+                  "desc": "Liquid, multi-disc, assisted glide"
+                },
+                {
+                  "title": "Менувачка Кутија",
+                  "desc": "6 брзини"
+                }
+              ],
+              "frame": [
+                {
+                  "title": "шасија",
+                  "desc": "Double-beam aluminum with 2-piece high-pressure die-cast subframe"
+                },
+                {
+                  "title": "вилушка",
+                  "desc": "алуминиум"
+                },
+                {
+                  "title": "предно тркало",
+                  "desc": "17 x 3.5' леан алуминиум со 5 краци"
+                },
+                {
+                  "title": "задно тркало",
+                  "desc": "17 x 3.5' леан алуминиум со 5 краци"
+                },
+                {
+                  "title": "предна гума",
+                  "desc": "120/70 ZR 17"
+                },
+                {
+                  "title": "задна гума",
+                  "desc": "180/55 ZR 17"
+                },
+                {
+                  "title": "предна суспензија",
+                  "desc": "Showa Big Piston 115мм inverted вилушка со прилагодувања за компресија, враќање и претходно оптоварување"
+                },
+                {
+                  "title": "задна суспензија",
+                  "desc": "Showa piggyback monoshock 133.5mm задна суспензија со систем за прилагодувања за компресија, враќање и претходно оптоварување"
+                },
+                {
+                  "title": "предни сопирачки",
+                  "desc": "Дупли дискови од 310m"
+                },
+                {
+                  "title": "задна сопирачка",
+                  "desc": "Еден диск од 220mm, Brembo клешта со ABS"
+                },
+                {
+                  "title": "инструментна плочка",
+                  "desc": "Мултифункционален TFT екран"
+                }
+              ],
+              "dimension": [
+                {
+                  "title": "ширина на волан",
+                  "desc": "792 mm"
+                },
+                {
+                  "title": "висина без ретровизори",
+                  "desc": "1047 mm"
+                },
+                {
+                  "title": "Solar height",
+                  "desc": "826 mm"
+                },
+                {
+                  "title": "мегу-осовинско растојание ",
+                  "desc": "1402 mm"
+                },
+                {
+                  "title": "Custer Corner",
+                  "desc": "23.7º"
+                },
+                {
+                  "title": "Trace",
+                  "desc": "97.8 mm"
+                },
+                {
+                  "title": "Тежина",
+                  "desc": "192 kg"
+                },
+                {
+                  "title": "капацитет на резервоар",
+                  "desc": "15 L"
+                },
+                {
+                  "title": "Tежина при полн резервозар",
+                  "desc": "189 kg"
+                }
+              ],
+              "fuelConsumption": [
+                {
+                  "title": "Потрошувачка",
+                  "desc": "52.8 mpg (5.4 литри / 100 km)"
+                },
+                {
+                  "title": "CO2 загадување",
+                  "desc": "120g/km - Euro 5 Стандарди измерени според Регулатива 168/2013/EC. Резултатите се добиени во специјални тест средини и се на располагање само за споредба. Вистинските резултат може да варираат врз различни средини."
+                },
+                {
+                  "title": "Сервисен Интервал",
+                  "desc": "10.000km / 12 месеци"
+                }
+              ]
+            },
+            "grayCarousell": [
+              {
+                "id": "carouselItem1",
+                "title": "Најновиот и Првенец во класата на “Streetfighter“ Моторцикли",
+                "desc": "Сега, уште повеќе сила благодарејки на Мото2 моторот со неверојатна агилност, агресивен изглед и електронска технологија која поставува нови стандарди.",
+                "image": "/images/roadsters/streetTriple765/streetTriple765GrayCaro1.avif"
+              },
+              {
+                "id": "carouselItem2",
+                "title": "Новиот Репер Во класата на “naked“ моторцикли",
+                "desc": "ТНови технолошки унапредувања, агилност, највисока запирачка спецификација и новиот репер во смисла на моќност во класата.",
+                "image": "/images/roadsters/streetTriple765/streetTriple765GrayCaro2.avif"
+              },
+              {
+                "id": "carouselItem3",
+                "title": "Нај-моќната серија досега",
+                "desc": "Со голем чекор напред во развивање на Мото2 моторот, Street Triple серијата се закити со уште повеќе обртен момент и сила - 120 РЅ за R верзијата и 130 РЅ за RS Verzijata.",
+                "image": "/images/roadsters/streetTriple765/streetTriple765GrayCaro3.avif"
+              }
+            ],
+            "youtubeVideosCarousellItems": [{
+                "src": "https://www.youtube.com/embed/cDNnqoRB50w",
+                "title": "Triumph Street Triple Launch Valencia 2022"
+              },
+              {
+                "src": "https://www.youtube.com/embed/A6MwjE782iI",
+                "title": "Web | Street Triple R Hero"
+              },
+              {
+                "src": "https://www.youtube.com/embed/Qj9dxotylh0",
+                "title": "Web | Street Triple RS Hero"
+              },
+              {
+              "src": "https://www.youtube.com/embed/--p8YSQxEp0",
+              "title": "Web | Engine In Motion Street Triple 765"
+              },
+              {
+                "src": "https://www.youtube.com/embed/JR-wXQFKG2Q",
+                "title": "Web - DE | Street Triple R | Features and Benefits"
+              },
+              {
+                "src": "https://www.youtube.com/embed/cDNnqoRB50w",
+                "title": "Triumph Street Triple Launch Valencia 2022"
+              },
+              {
+                "src": "https://www.youtube.com/embed/kP7FA3k6Hv8",
+                "title": "New Street Triple 765 RS | Features and Benefits"
+              }
+            ],
+            "audioSection": {
+              "audio": "/images/roadsters/streetTriple765/streetTriple765Sound.mp3",
+              "title": "Три-цилиндречен звук кој го тресе земјиното тло.",
+              "desc": "Новиот издувен систем го испорачува оној препознатлив три-цилиндарски звук на моторот.",
+              "logo": null
+            },
+            "specNumbers": [
+              { "data": "765", "info": "cc Мотор" },
+              { "data": "80", "info": "Nm обртен момент" },
+              { "data": "120-130", "info": "PS - Максимална Сила" },
+              { "data": "10.000", "info": "КМ Сервисен Интервал" }
+            ]
+          },
+          "reasonsToDrive": {
+            "banner": {
+              "image": "/images/roadsters/streetTriple765/streetTriple765ReasonsBanner.avif"
+            },
+            "infoText": {
+              "title": "Причини зошто да ja оберете Street Triple 765 серијата."
+              
+            },
+            "reasons": [
+              {
+                "title": "Мотор",
+              "desc": "Користејќи го знаењето стекнато од програмата за тркачки мотори Moto2™, Street Triple R сега произведува 120 КС при 11.500 вртежи во минута, додека RS и Moto2™ Edition испорачуваат максимални 130 КС при 12.000 вртежи во минута. Овие подобрувања беа направени без да се загрози репутацијата на Street Triple за доверливост, една од многуте причини поради кои организаторите на Moto2™ неодамна го продолжија договорот за користење на трицилиндричен мотор од 765 кубици. до крајот на 2024 година. Повисокиот сооднос на компресија, новите клипови, поврзувачките шипки и игличките на клипот, усогласени со новите оптимизирани комори за согорување нудат зголемено ограничување на притисокот во цилиндарот и на крајот поголема моќност. Новите вентили и брегасти вратила даваат зголемено подигање. Вентил за подобрени перформанси за внесување, согорување и издувни гасови, додека новите соодноси на менувачот носат подобрена ефикасност и одговор, што на крајот обезбедува побрзо забрзување, што значи дека оваа нова генерација е најострата и најживата досега. Значително ревидиран и ажуриран за да произведе повеќе моќ од кога било досега, моторот од 765 кубици. добиен од Moto2™ го испорачува препознатливиот Street Triple звук. Правејќи го тврдото отворање на гасот уште позависно, ревидираниот довод на воздух дава застрашувачки татнеж. А, со зголемена компресија и поефикасно согорување, звукот создаден од новиот издувен систем и послободниот заден дел е чиста Moto2™ магија.",
+                "video": "https://www.youtube.com/embed/QKxDQhOaI0U"
+              },
+              {
+                "title": "Шасија",
+                "desc": "Изграден со одлично управување за сигурно возење во сите сценарија, новиот Street Triple е вистинска радост за возење на патеката. Висококвалитетните сопирачки на Brembo заедно со врвната Showa и Öhlins суспензија и неверојатните Pirelli Supercorsa SP V3* гуми ја обезбедуваат способноста потребна за да се вози блиску до лимитот со сигурност. Брзиот менувач со помош на менувачот за менување на брзини без спојка е стандарден кај сите модели на Street Triple, како и оптимизиран ABS во свиоци и контрола на тракцијата. Во зависност од избраниот возач, овие технолошки напредни системи нудат исклучителни нивоа на помош на возачот за побезбедно возење со помалку наметливи поставки достапни за дополнителна способност за фокусирање на патеката. * само кај изданијата RS и Moto2™, R се одликува со пневматиците Continental ContiRoad кои се повеќе фокусирани на патот. Пластиката, резервоарот за гориво од 15 литри, капаците на ладилникот и финишот на фаровите се редизајнирани за поостар, поагресивен изглед, јасно задржувајќи ја иконската дизајнерска ДНК на Street Triple.nОвој нов, спуштен нос со почисти, поостри линии и тие препознатливи двојни фарови доаѓа рака под рака со целото познато неутрално и неверојатно агилно управување на Street Triple.",
+                "video": "https://www.youtube.com/embed/Ppx4BokT26o"
+
+              },
+              {
+                "title": "Направен за Вас",
+                "desc": "Оптоварена со технологија фокусирана на возачот, дизајнирана да го подобри возењето, најновиот опсег на Street Triple има придобивки од големата надградба на електрониката.Новиот Optimized Cornering ABS и исклучувачкиот Optimized Cornering Traction Control System обезбедуваат оптимални перформанси за сопирање и влечење под кој било агол, и на патот и на патеката, во сите услови на возење. Надградени се и режимите на возење со нови мапи за гас. Лесно може да се избере преку интуитивното мени од 5 инчи TFT и ергономски оптимизираниот Возачите се исто така надградени со нови мапи за гас. Лесно може да се избере преку интуитивното мени со TFT екран од 5' и ергономски оптимизираните прекинувачи, совршената поставка е секогаш на дофат. Функција на Bluetooth како додаток, целосно LED осветлување, со дневни светла на RS и Moto2TM Edition... има дури и практичен USB приклучок под седлото за полнење телефони и периферни уреди.",
+                "video": "https://www.youtube.com/embed/xHNIjTSIRiA"
+              }
+            ]
+          },
+          "accessory": {
+            "banner": {
+              "image": "/images/roadsters/streetTriple765/streetTriple765TopSectionImageBG.avif"
+            },
+            "infoText": {
+              "title": "Додајте ваш белег врз Speed 400",
+              "desc": "На располагање ви е селекција од преку 20 оригинални Triupmh аксесоари за оваа серија на мотори. Аксесоарите кои ќе ги додадете може да бидат додадени на вашиот мотор во фабриката. Aксесоарите се дизајнирани од истиот тим кој го креираше Speed 400 и доаѓаат со две-годишна гаранција."
+            },
+            "accessoryTypes": [
+              {
+                "title": "Технологија",
+                "desc": "Веќе преполна со иновации, најновата генерација Street Triple има неколку полиња за штиклирање во однос на технологијата.Новата контрола на патувањето е совршен додаток за возачите кои поминуваат многу време на автопати и/или возат во области со зголемена брзина. Одржувањето на поставената брзина ја подобрува економичноста на горивото и го намалува заморот, давајќи и на десната рака поголема слобода да се наведнува на долги растојанија.За целосно искористување на способноста за Bluetooth на 5' TFT дисплејот, достапна е единица за целосно поврзување My Triumph. Ова овозможува ракување со телефонот и музиката и нуди навигација чекор-по-сврт.Тркалачките LED индикатори комбинираат стил со технологија и нудат персонализација, како и дополнително подобрување на видливоста на другите учесници во сообраќајот.",
+                "itemsList": [
+                  "Темпомат",
+                  "My Triumph Bluetooth Уред",
+                  "LED Трапкачи"
+                ],
+                "image1": {
+                  "src": "/images/roadsters/streetTriple765/streetТriple765АccessoriesCruiseControl.avif",
+                  "alt": "Street Тriple 765 Cruise Control"
+                },
+                "image2": {
+                  "src": "/images/roadsters/streetTriple765/streetТriple765АccessoriesTFTl.avif",
+                  "alt": "Street Тriple 765 TFT"
+                }
+              },
+              {
+                "title": "Заштита и Комфорт",
+                "desc": "Одржувањето на вашата нова Street Triple безбедна од оштетување, штитниците за рамката и за нишање ги надополнуваат овие карактеристични и агресивни линии, додека штитниците на капакот на моторот, дизајнирани да одговараат совршено, нудат дискретно, но ефективно ублажување на оштетувањето во случај на пад.Достапен е елегантен визир за да се намали ветерот и да се подобри удобноста на долги растојанија, додека возачите за сите временски услови можат да уживаат во зимскиот пат со топли раце без жици да им пречат на рачките, со внатрешно жичените грејни рачки. Достапни се и рачки за држење на патници за дополнителна удобност и безбедност.Завртките за монтирање на тркачки штанд додаваат удобност за задачите за рутинско одржување, а премиум марката Triumph ќе обезбеди вашиот велосипед да остане чист и подготвен за следното возење.",
+                "itemsList": [
+                  "Штитиници на шасија",
+                  "Штитници за вилушки",
+                  "Штитници за мотор",
+                  "Греачи на волан",
+                  "Рачки за држење на совозач",
+                  "Брендирана Triumph Покривка",
+                  "Предна Маска",
+                  "Штрафови за тркачка ногарка"
+                ],
+                "image1": {
+                  "src": "/images/roadsters/streetTriple765/streetТriple765АccessoriesPassengerGrabs.avif",
+                  "alt": "Street Triple 765 Passenger Grabs"
+                }
+              },
+              {
+                "title": "Стил и Детали",
+                "desc": "Иако Street Triple е несомнено прекрасен велосипед, со толку многу различни стилски додатоци достапни, персонализирањето и правењето на вашата Street Triple навистина ваше никогаш не било полесно. Определите вклучуваат долен капак на опашката и бел LED систем за задни светла за почист заден дел. За помалите, но не помалку важни детали се води сметка и со високо обработените компоненти, како што е резервоарот за течност за сопирачките.",
+                "itemsList": [
+                  "Завршен Детал на крајот од моторот (Држач Регистрација)",
+                  "Бели LED задни светла",
+                  "Машинско Изработени Резервоари за Течност за Сопирачки "
+                ],
+                "image1": {
+                  "src": "/images/roadsters/streetTriple765/streetТriple765АccessoriesMask.avif",
+                  "alt": "Street Triple 765 Mask"
+                },
+                "image2": {
+                  "src": "/images/roadsters/streetTriple765/streetТriple765АccessoriesTailKit.avif",
+                  "alt": "Street Triple 765 Tail Kit"
+                }
+              },
+              {
+                "title": "Багаж",
+                "desc": "Забавниот и динамичен карактер на Street Triple го прави секое возење пријатно, од долги рекреативни возења до патувања до работа за сите временски услови. Дополнително на неговата практичност, стилската дополнителна водоотпорна торба со резервоар и опашката торбичка може брзо да се откачат од велосипедот за лесно користење и секојдневна практичност..",
+                "itemsList": [
+                  "Торба за Резервоар",
+                  "Торба за Багажник"
+                ],
+                "image1": {
+                  "src": "/images/roadsters/streetTriple765/streetТriple765АccessoriesTailBag.avif",
+                  "alt": "Street Triple 765 Tail Bag"
+                }
+              }
+            ]
+          },
+          "shortSpecInfo": {
+            "info1": "12,650 SAL",
+            "info2": "Максимална јачина од 95 PS",
+            "info3": "69 NM Максимален Обртен Момент"
+          },
+          "gallery": {
+            "modelImage": {
+              "src": "/images/sport/daytona660/daytona660SnowdoniaWhite.png",
+              "alt": "Daytona 660 Range Model Image"
+            },
+            "subFamilyHeroVideo": {
+              "src": "/images/roadsters/streetTriple765/streetTriple765SubFamHeroVideo.webm",
+              "alt": "Street Triple 765 Video"
+            },
+            "subFamilyTopSectionImage": {
+              "src": "/images/roadsters/streetTriple765/streetTriple765TopSectionImage.avif",
+              "alt": "Street Triple 765 Motorcycle"
+            },
+            "subFamilyTopSectionBGImage": {
+              "src": "/images/roadsters/streetTriple765/streetTriple765TopSectionImageBG.avif",
+              "alt": "Street Triple 765 Motorcycle BG"
+            }
+          }
+        }
+      }
     }
   ],
   "bikes": [
@@ -10695,6 +11086,59 @@
       "subFamilyPromo": {
         "title": "TIGER SPORT 660",
         "desc": "Првиот избор за многу корисници, со три-цилиндарски мотор, неверојатен комфорт, перформантен, искористлив и агилен, стот тоа со најниски трошоци за одржување во класата. Цени од €9,590.00"
+      }
+    },
+    {
+      "id": 60,
+      "title": "Daytona 660",
+      "model": "daytona-660",
+      "category": "sport",
+      "subFamilyCategory": "daytona-660",
+      "edition": "sport",
+      "price": null,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/sport/daytona660/daytona660SnowdoniaWhite.png",
+          "alt": "Daytona 660"
+        }
+      },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/sport/daytona660/daytona660Satin.png",
+        "color1": "/images/sport/daytona660/daytona660Satin.png",
+        "color1Reversed": "/images/sport/daytona660/daytona660SatinReversed.png",
+        "color2": "/images/sport/daytona660/daytona660SnowdoniaWhite.png",
+        "color2Reversed": "/images/sport/daytona660/daytona660SnowdoniaWhiteReversed.png",
+        "color3": "/images/sport/daytona660/daytona660CarnivalRed.png",
+        "color3Reversed": "/images/sport/daytona660/daytona660CarnivalRedReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Satin Granite / Satin Jet Black",
+          "price": null,
+          "image": "/images/custom-collors/satinGraniteSatinJetBlack.png",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Snowdonia White / Sapphire Black",
+          "price": null,
+          "image": "/images/custom-collors/snowdoniaWhiteSapphireBlack.pn",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Carnival Red / Saphire Black",
+          "price": null,
+          "image": "/images/custom-collors/carnivalRedSapphireBlack.jpg",
+          "colorCode": "color3"
+        }
+      ],
+      "shortSpecInfo": {
+        "info1": "Нов 900cc три-цилиндричен мотор",
+        "info2": "Високи спецификации за подобро искуство",
+        "info3": "Врвна технологија фокусирана на возачот"
+      },
+      "subFamilyPromo": {
+        "title": "Новиот Tiger 900 GT",
+        "desc": "Со врвни перформанси и комфорт Tiger 900 GT ве води на долги авантури. Неговата агилност и можности ви доверуваат сигурност и даваат чувство на слобода."
       }
     }
   ],
