@@ -4,11 +4,12 @@ import Image from "next/image";
 
 type HeroSectionProps = {
   video?: string;
-  model: string;
+  model?: string;
   slogans?: any[];
   image?: string;
   desc?: string;
-  logo?: string 
+  logo?: string;
+  bigTitle?: string
 };
 
 const HeroSection = ({
@@ -17,7 +18,8 @@ const HeroSection = ({
   slogans = [],
   image,
   desc,
-  logo
+  logo,
+  bigTitle
 }: HeroSectionProps) => {
   if (video) {
     return (
@@ -41,6 +43,8 @@ const HeroSection = ({
               <FamilySloganAnimation slogans={slogans} />
             </>
           )}
+
+          {bigTitle && <h1 className="xl:text-8xl lg:text-6xl text-4xl font-bold text-center uppercase">{bigTitle}</h1>}
 
           {desc && <>
             <p className="text-2xl md:text-4xl text-center mb-4 font-semibold">{desc}</p>

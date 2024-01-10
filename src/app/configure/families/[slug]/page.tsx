@@ -9,7 +9,6 @@ const TypeOfFamilyPage = async (data: any, props: Props) => {
   // OVDE TREBA DA PREVZEMIMI SUB FAMILIES
 
   let pathname = data.params.slug;
-  console.log(pathname);
 
   const familyRes = await fetch(`${FAMILIES}?type=${pathname}`, {
     cache: "no-store",

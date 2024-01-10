@@ -1,12 +1,11 @@
 "use client";
-import React, { useState } from "react";
-import SectionTitleH2 from "../familiySharedComponents/SectionTitleH2";
-import LatestModelsCarousellItem from "./LatestModelsCarousellItem";
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
+import SectionTitleH2 from "../familiySharedComponents/SectionTitleH2";
 import { useBreakpoint } from "../helpers/useBreakpoint";
+import LatestModelsCarousellItem from "./LatestModelsCarousellItem";
 import LatestModelsMobile from "./LatestModelsMobile";
-import { carousellItems } from "@/app/page";
 
 export type LatestModelsCarousellItemType = {
   title: string,

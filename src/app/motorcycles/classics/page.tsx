@@ -1,5 +1,5 @@
 import GrayBand from "@/app/components/GrayBand";
-import BottomCarousell, { carousellItems } from "@/app/components/classicsPageComp/BottomCarousell";
+import BottomCarousell from "@/app/components/classicsPageComp/BottomCarousell";
 import StelthCarousell from "@/app/components/classicsPageComp/StelthCarousell";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
 import BikeListingNoSlider from "@/app/components/familiySharedComponents/BikeListingNoSlider";
@@ -7,19 +7,21 @@ import PageHeroSection from "@/app/components/familiySharedComponents/PageHeroSe
 import PageParagraph from "@/app/components/familiySharedComponents/PageParagraph";
 import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
 import { getBikesByEdition } from "@/app/components/helpers/getBikesByEdition";
-import { getBikesByFamily } from "@/app/components/helpers/getBikesByFamily";
 import CardLinkItem from "@/app/components/homePageComponents/CardLinkItem";
 import DiscoverThriumphCard from "@/app/components/homePageComponents/DiscoverThriumphCard";
-import { FAMILIES, BIKES } from "@/app/constants/constants";
+import { BIKES, FAMILIES } from "@/app/constants/constants";
 import { PromoDataType } from "@/app/types/HomeTypes/SharedTypes/types";
-import React from "react";
 import { getBikesByCC } from "./helpers/getBikesByCC";
 
 const ClassicPage = async () => {
-  const familyRes = await fetch(`${FAMILIES}?type=classics`, {cache: 'no-store'});
+  const familyRes = await fetch(`${FAMILIES}?type=classics`, {
+    cache: "no-store",
+  });
   const familyData = await familyRes.json();
 
-  const bikesRes = await fetch(`${BIKES}?category=classics`, {cache: 'no-store'});
+  const bikesRes = await fetch(`${BIKES}?category=classics`, {
+    cache: "no-store",
+  });
   const bikes = await bikesRes.json();
 
   const getBikesBySubFamCategory = (cat: string) => {
@@ -61,7 +63,7 @@ const ClassicPage = async () => {
         </div>
       </section>
 
-      <section >
+      <section>
         {/* type treba da e bike */}
         {getBikesByCC("400", bikes).map((bike: any) => (
           <BikeInfoTextImageBtn
@@ -69,7 +71,7 @@ const ClassicPage = async () => {
             title={bike.title}
             desc={bike.desc}
             ctaBtn={{
-              text: 'Детали',
+              text: "Детали",
               link: `/motorcycles/classics/${bike.subFamilyCategory}/${bike.model}`,
             }}
             image={{
@@ -134,7 +136,7 @@ const ClassicPage = async () => {
             title={item.title}
             desc={item.desc}
             ctaBtn={{
-              text: 'Детали',
+              text: "Детали",
               link: `/motorcycles/classics/${item.subFamilyType}`,
             }}
             image={{
@@ -151,7 +153,7 @@ const ClassicPage = async () => {
           <SectionTitleH2 text="Новата Stealth Серија" color="dark" />
         </div>
 
-        <StelthCarousell bikes={getBikesByEdition('stealth', bikes)} />
+        <StelthCarousell bikes={getBikesByEdition("stealth", bikes)} />
       </section>
 
       <section className="my-8">
@@ -170,7 +172,9 @@ const ClassicPage = async () => {
         <BikeListingNoSlider bikes={getBikesByEdition("chrome", bikes)} />
       </section>
 
-      <BottomCarousell items={carousellItems} />
+      {familyData[0].grayCaro && (
+        <BottomCarousell items={familyData[0].grayCaro} />
+      )}
 
       <GrayBand
         itemOne={{

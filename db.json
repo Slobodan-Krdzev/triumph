@@ -2011,10 +2011,40 @@
         "image": {
           "src": "/images/classics/configFamilyBanner.avif",
           "alt": "Classic Bikes Banner"
-        },
-        "title": "Додајте аксесоари на вашиот мотор",
-        "link": "/configure/bikes"
+        }
       },
+      "grayCaro": [
+        {
+          "id": "carouselItem1",
+          "title": "Британски двоцилиндричен мотор",
+          "desc": "Постојат две возбудливи алтернативи - на располагање се два мотора со висок вртежен момент 'HT 900cc' и 'HT 1200cc'. И двата мотора се надградени во 2021 година, со помали емисии и одлична економичност на горивото.",
+          "image": "/images/classics/classicsSlide1.avif"
+        },
+        {
+          "id": "carouselItem2",
+          "title": "Препознатливи Карактеристики",
+          "desc": "Секој мотор има свој автентичен карактер и стил, надграден во 2021 година со уште повисоко ниво на завршница и детали.",
+          "image": "/images/classics/classicsSlide2.avif"
+        },
+        {
+          "id": "carouselItem3",
+          "title": "Неспоредлива Автентичност",
+          "desc": "Денешното 'Triumph Modern Classic' семејство е директен потомок на Bonneville '59, оригиналната британска мотоциклистичка икона и почетокот на генерациите на мотоциклистички субкултури и многуте варијации во денешната модерна класична постава.",
+          "image": "/images/classics/classicsSlide3.avif"
+        },
+        {
+          "id": "carouselItem4",
+          "title": "Сериозни Перформанси",
+          "desc": "Суспензијата и сопирачките со високи спецификации нудат флексибилно и динамично возење, додека најновата генерација електронски програми за возење, ABS и контрола на тракцијата ги носат безбедноста и контролата на највисоко ниво.",
+          "image": "/images/classics/classicsSlide4.avif"
+        },
+        {
+          "id": "carouselItem5",
+          "title": "Безвременски Стил",
+          "desc": "Иконската силуета на Bonneville го зема секој поглед, исто како и секој модел кој е полн со прекрасни детали кои го повторуваат безвременскиот дизајн на оригиналниот мотор.",
+          "image": "/images/classics/classicsSlide5.avif"
+        }
+      ],
       "subFamilies": {
         "speed-400": {
           "id": 1,
@@ -3936,9 +3966,7 @@
         "image": {
           "src": "/images/roadsters/configFamilyBanner.avif",
           "alt": "Adventure Bikes Banner"
-        },
-        "title": "Додајте аксесоари на вашиот мотор",
-        "link": "/configure/bikes"
+        }
       },
       "audioSection": {
         "audio": "/images/roadsters/audio.mp3",
@@ -5692,19 +5720,15 @@
       "id": 4,
       "type": "rocket-3",
       "shortDesc": "Опремен со најголемиот сериски мотор во светот и со најголем вртежен момент, ова е врвниот мускулен родстер со високи перформанси.",
-
       "configPageInfo": {
         "desc": "Опремен со најголемиот сериски мотор во светот и со најголем вртежен момент, ова е врвниот мускулен родстер со високи перформанси.",
         "link": "/configure/families/rocket-3"
       },
-
       "configFamilyPageInfo": {
         "image": {
           "src": "/images/rocket-3/configFamilyBanner.avif",
           "alt": "Adventure Bikes Banner"
-        },
-        "title": "Додајте аксесоари на вашиот мотор",
-        "link": "/configure/bikes"
+        }
       },
       "subFamilies": {
         "rocket-3": {
@@ -6066,31 +6090,60 @@
       "id": 5,
       "type": "sport",
       "shortDesc": "Мотори кои ги менуваат правилата за 'Naked Bike'. Препознатливите 3-цилиндрични мотори на Triumph се дизајнирани за моќност, вртежен момент и моментален одговор.",
-      "familyPageBannerVideo": "roadsters/roadsterHeroVideo.webm",
+      "familyPageBannerVideo": "/images/sport/familyPageBannerVideo.webm",
       "configPageInfo": {
         "link": "/configure/families/sport"
       },
       "configFamilyPageInfo": {
         "image": {
-          "src": "/images/roadsters/configFamilyBanner.avif",
-          "alt": "Adventure Bikes Banner"
-        },
-        "title": "Додајте аксесоари на вашиот мотор",
-        "link": "/configure/bikes"
+          "src": "/images/sport/configPageBannerImage.jpg",
+          "alt": "Sport Bikes Banner Image"
+        }
       },
+      "youtubeVideo": "https://www.youtube.com/embed/PpnixM8wkv4",
+      "grayCaro": [{
+        "id": "carouselItem1",
+        "title": "Три-Цилиндрична Моќност",
+        "desc": "Екслозивен напад на низок обртај, возбудлив среден опсег и импресивен врв со импресивен звук од три-цилиндри мотор на Дејтона, го понудува најдоброто од сите светови.",
+        "image": "/images/sport/grayCaro/caro1.avif"
+      },
+      {
+        "id": "carouselItem2",
+        "title": "Технологија",
+        "desc": "Технологијата фокусирана на возачот овозможува целосна контрола врз моторот. Daytona нуди три режими на возење (спорт, пат и дожд) и притоа ја оптимизираа реакцијата на гас, поседува ABS и контролата на тракцијата за условите, а најсовремените функции за активна безбедност, како што е предупредувањето за итно забавување, овозможуваат да се фокусирате на возењето.",
+        "image": "/images/sport/grayCaro/caro2.avif"
+      },
+      {
+        "id": "carouselItem3",
+        "title": "Фокусирана на Патиштата",
+        "desc": "Лесно управување и интуитивен спортски одговор, совршено избалансираната рамка, суспензијата со врвен квалитет и природната ергономија инспирираат доверба во секое возење.",
+        "image": "/images/sport/grayCaro/caro3.avif"
+      },
+      {
+        "id": "carouselItem4",
+        "title": "Целосен Пакет",
+        "desc": "Водечкиот сервисен интервал од 16.000 километри во класата, двегодишната гаранција за неограничени километри и високата вредност за препродажба нудат најдобра вредност во својата класа.",
+        "image": "/images/sport/grayCaro/caro4.avif"
+      },
+      {
+        "id": "carouselItem5",
+        "title": "Можност за управување со A2 Возачка Категорија",
+        "desc": "Новите и помладите возачи ограничени на А2 лиценца сè уште можат да уживаат во Daytona 660. Вашиот продавач на Triumph може да постави специјален држач за APS и програма за моторот што ја ограничува коњската сила на 35 kW.",
+        "image": "/images/sport/grayCaro/caro5.avif"
+      }],
       "audioSection": {
         "audio": "/images/roadsters/audio.mp3",
-        "title": "Длабок Богат Три-Цилиндричен Звук",
-        "desc": "Speed Triple RS моторциклот, има чист, префинет звук благодарејки на двојниот катализаторски систем и карбонскиот врв на издувната цевка.",
+        "title": "Целосен Пакет",
+        "desc": "Водечкиот сервисен интервал од 16.000 километри во класата, двегодишната гаранција за неограничени километри и високата вредност за препродажба нудат најдобра вредност во својата класа.",
         "logo": "/images/roadsters/logoAudioSection.png"
       },
       "promo": [
         {
-          "title": "НОВИОТ STREET TRIPLE 765",
-          "subFamilyType": "street-triple-765",
+          "title": "НОВАТА DAYTONA 660",
+          "subFamilyType": "daytona-660",
           "desc": "Подкрепнат од еволуциран Moto2™ тркачки мотор. новата Speed Triple серија е високо перформантна, со висока спецификација и прилагодлива за секого. Цени од: €12,290.00",
-          "image": "/images/roadsters/roadstersPromoSpeedTriple765.avif",
-          "btnBlack": true
+          "image": "/images/sport/daytona660/daytona660SnowdoniaWhite.png",
+          "btnBlack": false
         }
       ],
       "subFamilies": {
@@ -10498,7 +10551,7 @@
       "edition": "stealth",
       "price": null,
       "specs": {
-        "cc": 398,
+        "cc": 900,
         "hp": 20,
         "torque": 37.5,
         "horsePower": 40,
@@ -10782,7 +10835,7 @@
       "edition": "chrome",
       "price": 12490,
       "specs": {
-        "cc": 398,
+        "cc": 900,
         "hp": 20,
         "torque": 37.5,
         "horsePower": 40,
