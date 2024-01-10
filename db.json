@@ -3798,7 +3798,7 @@
           },
           "gallery": {
             "modelImage": {
-              "src": "/images/classics/bonnevilleT120.png",
+              "src": "/images/classics/bonnevilleT120/bonnevillieT120Black.png",
               "alt": "Bonneville T120 Speedmaster Range Model Image"
             }
           }
@@ -6478,9 +6478,9 @@
       "category": "adventure",
       "subFamilyCategory": "tiger-1200-gt",
       "edition": "adventure",
-      "price": 20990,
+      "price": 21590,
       "specs": {
-        "cc": 398,
+        "cc": 31200,
         "hp": 20,
         "torque": 37.5,
         "horsePower": 40,
@@ -6657,9 +6657,9 @@
       "category": "adventure",
       "subFamilyCategory": "tiger-1200-gt",
       "edition": "adventure",
-      "price": 22990,
+      "price": 23590,
       "specs": {
-        "cc": 398,
+        "cc": 1200,
         "hp": 20,
         "torque": 37.5,
         "horsePower": 40,
@@ -6694,13 +6694,13 @@
         },
         {
           "colorName": "Saphire Black",
-          "price": 200,
+          "price": 300,
           "image": "/images/custom-collors/sapphireBlack.jpg",
           "colorCode": "color2"
         },
         {
           "colorName": "Lucerne Blue",
-          "price": 300,
+          "price": 400,
           "image": "/images/custom-collors/lucerneBlue.jpg",
           "colorCode": "color3"
         }
@@ -6836,9 +6836,9 @@
       "category": "adventure",
       "subFamilyCategory": "tiger-1200-rally",
       "edition": "adventure",
-      "price": 21990,
+      "price": 22590,
       "specs": {
-        "cc": 398,
+        "cc": 1200,
         "hp": 20,
         "torque": 37.5,
         "horsePower": 40,
@@ -7015,9 +7015,9 @@
       "category": "adventure",
       "subFamilyCategory": "tiger-1200-rally",
       "edition": "adventure",
-      "price": 23990,
+      "price": 24690,
       "specs": {
-        "cc": 398,
+        "cc": 1200,
         "hp": 20,
         "torque": 37.5,
         "horsePower": 40,
@@ -7589,7 +7589,7 @@
       "category": "roadsters",
       "subFamilyCategory": "street-triple-765",
       "edition": "roadsters",
-      "price": 11590,
+      "price": 12590,
       "specs": {
         "cc": 765,
         "hp": 120,
@@ -7759,7 +7759,7 @@
       "category": "roadsters",
       "subFamilyCategory": "street-triple-765",
       "edition": "roadsters",
-      "price": 13990,
+      "price": 14390,
       "specs": {
         "cc": 765,
         "hp": 130,
@@ -7792,7 +7792,7 @@
         },
         {
           "colorName": "Carnival Red",
-          "price": null,
+          "price": 200,
           "image": "/images/custom-collors/carnivalRed.jpg",
           "colorCode": "color2"
         },
@@ -7889,7 +7889,7 @@
       "category": "roadsters",
       "subFamilyCategory": "speed-triple-1200-rs",
       "edition": "roadsters",
-      "price": 18990,
+      "price": 19590,
       "specs": {
         "cc": 1160,
         "hp": 180,
@@ -7906,30 +7906,30 @@
       },
       "bikeCollorPalletteGallery": {
         "default": "/images/roadsters/speedTriple1200RS/speedTriple1200rsCarnivalRed.png",
-        "color1": "/images/roadsters/speedTriple1200RS/speedTriple1200rsCarnivalRed.png",
-        "color1Reversed": "/images/roadsters/speedTriple1200RS/speedTriple1200rsCarnivalRedReversed.png",
-        "color2": "/images/roadsters/speedTriple1200RS/speedTriple1200rsCarnivalBlack.png",
-        "color2Reversed": "/images/roadsters/speedTriple1200RS/speedTriple1200rsCarnivalBlackReversed.png",
-        "color3": "/images/roadsters/speedTriple1200RS/speedTriple1200rsSilverIce.png",
-        "color3Reversed": "/images/roadsters/speedTriple1200RS/speedTriple1200rsSilverIceReversed.png"
+        "color1": "/images/roadsters/speedTriple1200RS/speedTriple1200rsCarnivalBlack.png",
+        "color1Reversed": "/images/roadsters/speedTriple1200RS/speedTriple1200rsCarnivalBlackReversed.png",
+        "color2": "/images/roadsters/speedTriple1200RS/speedTriple1200rsSilverIce.png",
+        "color2Reversed": "/images/roadsters/speedTriple1200RS/speedTriple1200rsSilverIceReversed.png",
+        "color3": "/images/roadsters/speedTriple1200RS/speedTriple1200rsBaja.png",
+        "color3Reversed": "/images/roadsters/speedTriple1200RS/speedTriple1200rsBajaReversed.png"
       },
       "customizationColors": [
-        {
-          "colorName": "Carnival Red",
-          "price": 300,
-          "image": "/images/custom-collors/carnivalRed.jpg",
-          "colorCode": "color1"
-        },
         {
           "colorName": "Saphire Black",
           "price": null,
           "image": "/images/custom-collors/sapphireBlack.jpg",
-          "colorCode": "color2"
+          "colorCode": "color1"
         },
         {
           "colorName": "Matt Silver Ice",
           "price": null,
           "image": "/images/custom-collors/mattSilverIce.jpg",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Matt Baja Orange",
+          "price": 300,
+          "image": "/images/custom-collors/mattBajaOrange.jpg",
           "colorCode": "color3"
         }
       ],
@@ -7950,7 +7950,7 @@
       "category": "roadsters",
       "subFamilyCategory": "speed-triple-1200-rr",
       "edition": "roadsters",
-      "price": 20990,
+      "price": 21590,
       "specs": {
         "cc": 1160,
         "hp": 180,
@@ -8003,9 +8003,9 @@
       "category": "rocket-3",
       "subFamilyCategory": "rocket-3",
       "edition": "rocket-3",
-      "price": 25290,
+      "price": 25990,
       "specs": {
-        "cc": 398,
+        "cc": 2500,
         "hp": 20,
         "torque": 37.5,
         "horsePower": 40,
@@ -8046,7 +8046,7 @@
         },
         {
           "colorName": "Silver Ice Cranberry Red",
-          "price": 600,
+          "price": 700,
           "image": "/images/custom-collors/silverIceCranberryRed.jpg",
           "colorCode": "color3"
         }
@@ -8216,9 +8216,9 @@
       "category": "rocket-3",
       "subFamilyCategory": "rocket-3",
       "edition": "rocket-3",
-      "price": 25990,
+      "price": 26790,
       "specs": {
-        "cc": 398,
+        "cc": 2500,
         "hp": 20,
         "torque": 37.5,
         "horsePower": 40,
@@ -8259,7 +8259,7 @@
         },
         {
           "colorName": "Silver Ice / Storm Gray",
-          "price": 600,
+          "price": 900,
           "image": "/images/custom-collors/silverIceStormGray.jpg",
           "colorCode": "color3"
         }
@@ -9123,7 +9123,7 @@
       "category": "classics",
       "subFamilyCategory": "speed-400",
       "edition": "classics",
-      "price": 5690,
+      "price": 6390,
       "desc": "Со класичниот изглед Speed 400, навистина ја носи онаа modern-classic ДНК во неговата крв.",
       "specs": {
         "cc": 398,
@@ -9284,7 +9284,7 @@
       "subFamilyCategory": "scrambler-400-x",
       "edition": "classics",
       "desc": "Scrambler 400 X - Подготвен за секаков на подлога.",
-      "price": 6390,
+      "price": 6890,
       "specs": {
         "cc": 398,
         "hp": 20,
@@ -9892,7 +9892,7 @@
         "motorType": "TR"
       },
       "bikeCollorPalletteGallery": {
-        "default": "/images/classics/bonnevilleT120/bonnevillieT120AegeanBlue.png",
+        "default": "/images/classics/bonnevilleT120/bonnevillieT120Black.png",
         "color1": "/images/classics/bonnevilleT120/bonnevillieT120Black.png",
         "color1Reversed": "/images/classics/bonnevilleT120/bonnevillieT120BlackReversed.png",
         "color2": "/images/classics/bonnevilleT120/bonnevillieT120Red.png",
@@ -9930,7 +9930,7 @@
       ],
       "gallery": {
         "modelImage": {
-          "src": "images/classics/bonnevilleT120/bonnevillieT120AegeanBlue.png",
+          "src": "/images/classics/bonnevilleT120/bonnevillieT120Red.png",
           "alt": "Bonneville T100"
         }
       },
@@ -10533,7 +10533,7 @@
       "category": "roadsters",
       "subFamilyCategory": "street-triple-moto2",
       "edition": "roadsters",
-      "price": 16990,
+      "price": 17490,
       "specs": {
         "cc": 765,
         "hp": 130,
@@ -10636,6 +10636,55 @@
           "price": 200,
           "image": "/images/custom-collors/mattKhaki.jpg",
           "colorCode": "color3"
+        }
+      ],
+      "shortSpecInfo": {
+        "info1": "660cc Triple Motor",
+        "info2": "Лидер во категоријата",
+        "info3": "Прилагодлива 'Showa' суспензија"
+      },
+      "subFamilyPromo": {
+        "title": "TIGER SPORT 660",
+        "desc": "Првиот избор за многу корисници, со три-цилиндарски мотор, неверојатен комфорт, перформантен, искористлив и агилен, стот тоа со најниски трошоци за одржување во класата. Цени од €9,590.00"
+      }
+    },
+    {
+      "id": 59,
+      "title": "Tiger 1200 GT",
+      "model": "tiger-1200-gt",
+      "category": "adventure",
+      "subFamilyCategory": "tiger-1200",
+      "edition": "adventure",
+      "price": 20390,
+      "specs": {
+        "cc": 1200,
+        "hp": 20,
+        "torque": 37.5,
+        "horsePower": 40,
+        "serviceInterval": "16.000km",
+        "motorType": "TR"
+      },
+      "gallery": {
+        "modelImage": {
+          "src": "/images/adventure/tiger1200GT/tiger1200GTSnowdoniaWhite.png",
+          "alt": "Tiger 1200 GT"
+        },
+        "promoYoutubeVideo": {
+          "src": "https://www.youtube.com/embed/QvVCEk4t8IE",
+          "alt": "Tiger 660 Youtbe Video"
+        }
+      },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/adventure/tiger1200GT/tiger1200GTSnowdoniaWhite.png",
+        "color1": "/images/adventure/tiger1200GT/tiger1200GTSnowdoniaWhite.png",
+        "color1Reversed": "/images/adventure/tiger1200GT/tiger1200GTSnowdoniaWhiteReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Snowdonia White",
+          "price": null,
+          "image": "/images/custom-collors/snowdoniaWhite.jpg",
+          "colorCode": "color1"
         }
       ],
       "shortSpecInfo": {
