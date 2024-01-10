@@ -7,17 +7,17 @@ type MobiCaroItemProps = {
 };
 
 const MobileCaroItem = ({
-  item: { image, title, desc, link1, link2 },
+  item: { imageMobile, title, desc, link1, link2 },
 }: MobiCaroItemProps) => {
   return (
     <div className="flex flex-col min-w-full gray-bg">
       <div
         style={{
-          backgroundImage: `url('${image}')`,
+          backgroundImage: `url('${imageMobile}')`,
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          height: "100vh",
+          height: "50vh"
         }}
       ></div>
       <div className="gray-bg w-full p-8 text-white">

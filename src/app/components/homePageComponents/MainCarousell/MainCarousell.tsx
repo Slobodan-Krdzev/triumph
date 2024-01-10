@@ -8,6 +8,7 @@ import MobileCarousell from "./MobileCarousell/MobileCarousell";
 
 export type CarousellItemType = {
   image?: string;
+  imageMobile? :string
   video?: string;
   title: string;
   desc: string;
