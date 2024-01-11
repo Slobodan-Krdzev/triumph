@@ -120,7 +120,8 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
             </button>
             <div className="flex flex-col justify-center items-start basis-2/3 pl-2">
               <p className="text-xs">Цена</p>
-              <p className="text-md font-medium">€{info.price}.00</p>
+              {info.price && <p className="text-xl font-medium">€{handlePriceChange(info.price)}.00  </p>}
+              {info.price === null && <p className="text-xl font-medium">Наскоро!!! </p>}
             </div>
           </div>
           <button className="basis-5/12 red-bg-color text-white red-bg-hover-color font-semibold py-6">
