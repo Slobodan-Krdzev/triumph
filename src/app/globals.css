@@ -123,6 +123,11 @@ body {
 
 }
 
+.border-thin-right{
+  border-right: 1px solid #d3d4d7
+
+}
+
 .border-thin-gray {
   border-top: 1px solid #d3d4d7
 }
@@ -300,6 +305,7 @@ p {
 
 @media screen and (max-width: 768px) {
   .actions {
+    
     right: 2%;
     bottom: 55%;
     left: unset;
