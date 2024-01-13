@@ -10122,7 +10122,7 @@
     {
       "id": 36,
       "title": "Scrambler 900",
-      "model": "scrambler-900-2023",
+      "model": "scrambler-900",
       "category": "classics",
       "subFamilyCategory": "scrambler-900",
       "edition": "900cc",
@@ -10521,9 +10521,9 @@
     {
       "id": 52,
       "title": "Scrambler 900 Chrome Edition",
-      "model": "scrambler-900-chrome-edition-2023",
+      "model": "scrambler-900",
       "category": "classics",
-      "subFamilyCategory": "bonneville-scrambler-900",
+      "subFamilyCategory": "scrambler-900",
       "edition": "chrome",
       "price": 12490,
       "specs": {
