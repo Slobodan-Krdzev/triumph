@@ -34,14 +34,14 @@ const MainCarousellItem = ({
         backgroundPosition: "center center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        height: "auto",
+        height: "100vh",
       }}
     >
-      <div className="h-full " style={{ width: "100vw" }}>
-        {video && (
+      {video && video !== null && (
+        <div className="h-full " style={{ width: "100vw" }}>
           <>
             <video
-              className="relative object-fill"
+              className="relative object-fill "
               autoPlay
               muted
               loop
@@ -57,60 +57,99 @@ const MainCarousellItem = ({
               />
             </video>
           </>
-        )}
-        <div className="ml-44 absolute" style={{ top: "15%" }}>
-          <h2 className="mb-4 uppercase font-bold text-7xl text-white w-2/4">
-            {title}
-          </h2>
-          <p className="mb-4 w-2/4 text-white text-2xl font-semibold">{desc}</p>
-          <div className="flex gap-4">
-            {link1 && (
-              <MainBtn
-                text={link1.text}
-                bgBlack={false}
-                isLink={true}
-                link={link1.url}
-              />
-            )}
-            {link2 && (
-              <MainBtn
-                text={link2.text}
-                bgBlack={true}
-                isLink={true}
-                link={link2.url}
-              />
-            )}
+
+          <div
+            className="ml-44 absolute"
+            style={{ top: "25%" }}
+          >
+            <h2 className="mb-4 uppercase font-bold text-7xl text-white w-2/4">
+              {title}
+            </h2>
+            <p className="mb-4 w-2/4 text-white text-2xl font-semibold">
+              {desc}
+            </p>
+            <div className="flex gap-4">
+              {link1 && (
+                <MainBtn
+                  text={link1.text}
+                  bgBlack={false}
+                  isLink={true}
+                  link={link1.url}
+                />
+              )}
+              {link2 && (
+                <MainBtn
+                  text={link2.text}
+                  bgBlack={true}
+                  isLink={true}
+                  link={link2.url}
+                />
+              )}
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
-      <div className="overlay-carousell-btn w-full h-full flex justify-start pt-40 text-white">
-        <div className="ml-20">
-          <h2 className="mb-4 uppercase font-bold text-4xl text-white">
-            {title}
-          </h2>
-          <p className="mb-4 w-3/4">{desc}</p>
-
-          <div className="flex gap-4">
-            {link1 && (
-              <MainBtn
-                text={link1.text}
-                bgBlack={false}
-                isLink={true}
-                link={link1.url}
-              />
-            )}
-            {link2 && (
-              <MainBtn
-                text={link2.text}
-                bgBlack={true}
-                isLink={true}
-                link={link2.url}
-              />
-            )}
+      {video === null && (
+          <div
+            className="ml-44 absolute"
+            style={{ top: "25%" }}
+          >
+            <h2 className="mb-4 uppercase font-bold text-7xl text-white w-2/4">
+              {title}
+            </h2>
+            <p className="mb-4 w-2/4 text-white text-2xl font-semibold">
+              {desc}
+            </p>
+            <div className="flex gap-4">
+              {link1 && (
+                <MainBtn
+                  text={link1.text}
+                  bgBlack={false}
+                  isLink={true}
+                  link={link1.url}
+                />
+              )}
+              {link2 && (
+                <MainBtn
+                  text={link2.text}
+                  bgBlack={true}
+                  isLink={true}
+                  link={link2.url}
+                />
+              )}
+            </div>
           </div>
-        </div>
-      </div>
+        )
+
+        // <div className="overlay-carousell-btn w-full h-full flex justify-start pt-40 text-white ">
+        //   <div className="ml-20">
+        //     <h2 className="mb-4 uppercase font-bold text-4xl text-white">
+        //       {title}
+        //     </h2>
+        //     <p className="mb-4 w-3/4">{desc}</p>
+
+        //     <div className="flex gap-4">
+        //       {link1 && (
+        //         <MainBtn
+        //           text={link1.text}
+        //           bgBlack={false}
+        //           isLink={true}
+        //           link={link1.url}
+        //         />
+        //       )}
+        //       {link2 && (
+        //         <MainBtn
+        //           text={link2.text}
+        //           bgBlack={true}
+        //           isLink={true}
+        //           link={link2.url}
+        //         />
+        //       )}
+        //     </div>
+        //   </div>
+        // </div>
+      }
     </div>
   );
 };

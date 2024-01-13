@@ -20,7 +20,7 @@ const MobileCaroItem = ({
           height: "50vh"
         }}
       ></div>
-      <div className="gray-bg w-full pt-8 px-8 text-white">
+      <div className="gray-bg w-full py-8 px-8 text-white">
           <h2 className="uppercase text-3xl font-bold tracking-tighter">{title}</h2>
           <p className="text-lg mb-4 font-medium tracking-tighter">{desc}</p>
           <div className="flex gap-4">

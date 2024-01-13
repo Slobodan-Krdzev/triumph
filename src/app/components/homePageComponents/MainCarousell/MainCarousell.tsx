@@ -23,7 +23,7 @@ export type CarousellItemType = {
 };
 
 type MainCarousellProps = {
-  items: CarousellItemType[];
+  items: CarousellItemType[] | any[];
 };
 
 const MainCarousell = ({ items = [] }: MainCarousellProps) => {
@@ -97,20 +97,6 @@ const MainCarousell = ({ items = [] }: MainCarousellProps) => {
         </button>
 
         <div className="absolute top-0 h-full right-0 flex flex-row">
-
-        {/* <div>
-          <div className="h-2 z-30 rotate-90 border w-full">
-            <div
-              className="red-bg-color h-2"
-              style={{
-                width: `${progress}%`,
-                height: "100%",
-                content: ''
-              }}
-            ></div>
-          </div>
-        </div> */}
-
           <button
             onClick={() => updateIndex(activeIndex + 1)}
             className="gradient-caro-btn-left-to-right bg-transparent h-full z-20 text-black  w-20 flex flex-col justify-end items-center pb-10"
