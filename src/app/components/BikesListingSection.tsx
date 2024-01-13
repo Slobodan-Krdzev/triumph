@@ -15,7 +15,7 @@ const BikesListingSection = ({ bikes }: BikesListingSectionProps) => {
     switch (query) {
       case "nameAsc":
         setBikesToRender(
-          bikes.sort((a, b) => {
+          bikes.slice().sort((a, b) => {
             const nameA = a.title.toUpperCase();
             const nameB = b.title.toUpperCase();
 
@@ -30,7 +30,7 @@ const BikesListingSection = ({ bikes }: BikesListingSectionProps) => {
         break;
       case "nameDsc":
         setBikesToRender(
-          bikes.sort((a, b) => {
+          bikes.slice().sort((a, b) => {
             const nameA = a.title.toUpperCase();
             const nameB = b.title.toUpperCase();
 
@@ -44,10 +44,10 @@ const BikesListingSection = ({ bikes }: BikesListingSectionProps) => {
 
         break;
       case "priceAsc":
-        setBikesToRender(bikes.sort((a, b) => a.price - b.price));
+        setBikesToRender(bikes.slice().sort((a, b) => a.price - b.price));
         break;
       case "priceDsc":
-        setBikesToRender(bikes.sort((a, b) => b.price - a.price));
+        setBikesToRender(bikes.slice().sort((a, b) => b.price - a.price));
 
         break;
       default:

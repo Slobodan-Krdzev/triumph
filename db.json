@@ -63,7 +63,7 @@
           "id": 1,
           "subFamilyName": "tiger-900",
           "title": "Нова Tiger 900 Серија",
-          "price": "Наскоро",
+          "price": 14290,
           "url": "/motorcycles/adventure/tiger-900",
           "subFamilyPageInfo": {
             "heroSlogans": ["НОВИОТ", "TIGER 900"],
@@ -354,7 +354,7 @@
           "id": 2,
           "subFamilyName": "tiger-sport-660",
           "title": "Tiger Sport 660",
-          "price": 9590,
+          "price": 9290,
           "url": "/motorcycles/adventure/tiger-sport-660",
           "shortDesc": "Тројна предност во перформансите, водечка моќ и спецификации во класата и удобна употребливост при возење - сето тоа со одлична вредност.",
           "subFamilyPageInfo": {
@@ -6649,12 +6649,10 @@
       "edition": "adventure",
       "price": 9290,
       "specs": {
-        "cc": 660,
-        "hp": 20,
+        "cc": 6800,
         "torque": 37.5,
         "horsePower": 40,
-        "serviceInterval": "16.000km",
-        "motorType": "TR"
+        "serviceInterval": "16.000km"
       },
       "gallery": {
         "modelImage": {
