@@ -7,18 +7,8 @@
         "url": "adventure/mainBikeLogo.png",
         "alt": "Adventure Main Bike Logo"
       },
-      "shortDesc": "Explore a world of adventure, with motorcycles built to always reach the end of the road, ready to go anywhere and accomplish anything.",
-      "familyPageBannerDesc": "The next generation Tiger has arrived. The state-of-the-art adventure bikes with exciting distinctive three-cylinder engines, pioneering progressive technology and equipment, rider ergonomics for ultimate control, and flexible neutral handling. Every Tiger is built with maximum capabilities to take you anywhere in style, comfort and control. The Triumph Tiger is the ultimate adventure series of adventure bikes that allow you to test every moment.",
+      "familyPageBannerDesc": "Следната Тигер генерација пристигна. Најсовремените авантуристички мотори со возбудливи карактеристични трицилиндрични мотори, пионерска прогресивна технологија и опрема, ергономија на возачот за врвна контрола и флексибилно неутрално управување. Секој Tiger мотор е изграден со максимални способности да ве однесе насекаде со стил, удобност и контрола. Triumph Tiger е врвна авантуристичка серија на авантуристички мотори кои ви овозможуваат да го тестирате секој момент.",
       "familyPageBannerVideo": "adventure/adventureHeroVideo.webm",
-      "topSectionInfo": {
-        "image": {
-          "src": "/images/adventure/firstSectionImage.avif",
-          "alt": "Adventure Bikes"
-        },
-        "title": "Направен за Авантури",
-        "desc1": "Секој моторцикл во 'Tigеr' фамилијата е роден со вистински дух за авантура. 'Triumph Tiger' моторциклот живее во нашата крв од моментот кога првиот 'Triumph Tiger' моторцикл освои три златни медали на '1936 International Six Days Trial' во 1936 година, и со тоа започна првото поглавје од најдолготрајниот авантуристички моторцикл.",
-        "desc2": "Познато по нивното агилно управување, командна позиција на возење, карактеристична силуета и опрема со високи спецификации, секој 'Tiger' моторцикл нуди највисоко ниво на стил, удобност и контрола."
-      },
       "promo": [
         {
           "title": "Tiger 1200 Gt, GT Pro & Gt Explorer",
@@ -606,9 +596,6 @@
             "banner": {
               "image": "/images/adventure/tigerSport660/tigerSport660AccesoryHero.avif"
             },
-            "infoText": {
-              "title": "Персонализирајте го вашиот Tiger Sport 660"
-            },
             "accessoryTypes": [
               {
                 "title": "Додатоци",
@@ -950,10 +937,6 @@
           "accessory": {
             "banner": {
               "image": "/images/classics/speed400/speed400AccessoryBanner.avif"
-            },
-            "infoText": {
-              "title": "Додајте ваш белег врз Speed 400",
-              "desc": "На располагање ви е селекција од преку 20 оригинални Triupmh аксесоари за оваа серија на мотори. Аксесоарите кои ќе ги додадете може да бидат додадени на вашиот мотор во фабриката. Aксесоарите се дизајнирани од истиот тим кој го креираше Speed 400 и доаѓаат со две-годишна гаранција."
             },
             "accessoryTypes": [
               {
@@ -1985,7 +1968,7 @@
     {
       "id": 2,
       "type": "classics",
-      "shortDesc": "Triumph builds ground-breaking motorcycles and incredible three-cylinder engines with an emphasis on power, torque and instant response.",
+      "familyPageBannerDesc": null,
       "familyPageBannerVideo": "adventure/adventureHeroVideo.webm",
       "promo": [
         {
@@ -3956,7 +3939,7 @@
     {
       "id": 3,
       "type": "roadsters",
-      "shortDesc": "Мотори кои ги менуваат правилата за 'Naked Bike'. Препознатливите 3-цилиндрични мотори на Triumph се дизајнирани за моќност, вртежен момент и моментален одговор.",
+      "familyPageBannerDesc": "Мотори кои ги менуваат правилата за 'Naked Bike'. Препознатливите 3-цилиндрични мотори на Triumph се дизајнирани за моќност, вртежен момент и моментален одговор.",
       "familyPageBannerVideo": "roadsters/roadsterHeroVideo.webm",
       "configPageInfo": {
         "desc": "Triumph создава револуционерни мотоцикли и неверојатни трицилиндрични мотори со акцент на моќноста, вртежен момент и моменталната реакција.",
@@ -5719,7 +5702,8 @@
     {
       "id": 4,
       "type": "rocket-3",
-      "shortDesc": "Опремен со најголемиот сериски мотор во светот и со најголем вртежен момент, ова е врвниот мускулен родстер со високи перформанси.",
+      "familyPageBannerDesc": null,
+      "familyPageBannerVideo": null,
       "configPageInfo": {
         "desc": "Опремен со најголемиот сериски мотор во светот и со најголем вртежен момент, ова е врвниот мускулен родстер со високи перформанси.",
         "link": "/configure/families/rocket-3"
@@ -6089,7 +6073,7 @@
     {
       "id": 5,
       "type": "sport",
-      "shortDesc": "Мотори кои ги менуваат правилата за 'Naked Bike'. Препознатливите 3-цилиндрични мотори на Triumph се дизајнирани за моќност, вртежен момент и моментален одговор.",
+      "familyPageBannerDesc": "Мотори кои ги менуваат правилата за 'Naked Bike'. Препознатливите 3-цилиндрични мотори на Triumph се дизајнирани за моќност, вртежен момент и моментален одговор.",
       "familyPageBannerVideo": "/images/sport/familyPageBannerVideo.webm",
       "configPageInfo": {
         "link": "/configure/families/sport"
@@ -6131,12 +6115,6 @@
         "desc": "Новите и помладите возачи ограничени на А2 лиценца сè уште можат да уживаат во Daytona 660. Вашиот продавач на Triumph може да постави специјален држач за APS и програма за моторот што ја ограничува коњската сила на 35 kW.",
         "image": "/images/sport/grayCaro/caro5.avif"
       }],
-      "audioSection": {
-        "audio": "/images/roadsters/audio.mp3",
-        "title": "Целосен Пакет",
-        "desc": "Водечкиот сервисен интервал од 16.000 километри во класата, двегодишната гаранција за неограничени километри и високата вредност за препродажба нудат најдобра вредност во својата класа.",
-        "logo": "/images/roadsters/logoAudioSection.png"
-      },
       "promo": [
         {
           "title": "НОВАТА DAYTONA 660",
@@ -6671,7 +6649,7 @@
       "edition": "adventure",
       "price": 9290,
       "specs": {
-        "cc": 398,
+        "cc": 660,
         "hp": 20,
         "torque": 37.5,
         "horsePower": 40,

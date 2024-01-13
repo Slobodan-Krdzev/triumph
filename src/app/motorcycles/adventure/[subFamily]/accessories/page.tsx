@@ -32,14 +32,14 @@ const SubFamReasonsToRide = async ({params}: any) => {
               <BikeInfoTextImageBtn
                 key={bike.id}
                 title={bike.title}
-                desc={bike.subFamilyPromo.desc}
+                desc={bike.subFamilyPromo.desc ?? ""}
                 ctaBtn={{
-                  text: "КОнфигурација",
+                  text: "Кoнфигурација",
                   link: `/configure/bike/${bike.model}`,
                 }}
                 image={{
-                  src: bike.gallery.modelImage.src,
-                  alt: bike.gallery.modelImage.alt,
+                  src: bike.gallery.modelImage?.src ?? "",
+                  alt: bike.gallery.modelImage?.alt ?? "Bike Image",
                 }}
                 blackBtn={true}
               />

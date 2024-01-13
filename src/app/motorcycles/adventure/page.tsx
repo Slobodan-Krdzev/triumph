@@ -68,10 +68,13 @@ const AdventurePage = async () => {
         </div>
 
         <TextAndImageFlexSection
-          title={familyData[0].topSectionInfo.title}
-          textMain={familyData[0].topSectionInfo.desc1}
-          textSecondary={familyData[0].topSectionInfo.desc2}
-          image={familyData[0].topSectionInfo.image}
+          title={"Направен за Авантури"}
+          textMain={"Секој моторцикл во 'Tigеr' фамилијата е роден со вистински дух за авантура. 'Triumph Tiger' моторциклот живее во нашата крв од моментот кога првиот 'Triumph Tiger' моторцикл освои три златни медали на '1936 International Six Days Trial' во 1936 година, и со тоа започна првото поглавје од најдолготрајниот авантуристички моторцикл."}
+          textSecondary={"Познато по нивното агилно управување, командна позиција на возење, карактеристична силуета и опрема со високи спецификации, секој 'Tiger' моторцикл нуди највисоко ниво на стил, удобност и контрола."}
+          image={{
+            src: "/images/adventure/firstSectionImage.avif",
+            alt: "Adventure Bikes"
+          }}
         />
 
         <section className="py-4 lg:py-10">

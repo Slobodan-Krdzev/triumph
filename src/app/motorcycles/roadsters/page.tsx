@@ -50,8 +50,8 @@ const RoadstersPage = async () => {
 
         <PageHeroSection
           title={"Roadsters"}
-          desc={familyData[0].shortDesc}
-          video={familyData[0].familyPageBannerVideo}
+          desc={familyData[0].familyPageBannerDesc ?? ""}
+          video={familyData[0].familyPageBannerVideo ?? ""}
         />
 
         <main className="p-4 lg:p-28 bg-white">

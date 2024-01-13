@@ -21,7 +21,7 @@ const AccessoryItemWrapper = ({
             <li key={item} className="text-xl">
               {item}
             </li>
-          ))}
+          )) ?? ""}
         </ul>
       </div>
       <div className={`flex ${image2 ? "  flex-col justify-between gap-8 md:flex-row" : 'justify-center'}  mt-4 md:mt-8 lg:mt-20`}>
