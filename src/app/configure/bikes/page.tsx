@@ -9,7 +9,7 @@ const BikesPage = async ({ params, searchParams }: any) => {
 
   try {
 
-    const bikesRes = await fetch(`${BIKES}`, { next: { revalidate: 2000 } });
+    const bikesRes = await fetch(`${BIKES}`, { cache: 'no-store' });
     const bikes = await bikesRes.json();
 
     return (
