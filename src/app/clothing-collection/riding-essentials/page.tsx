@@ -55,19 +55,12 @@ const RidingEssentialsPage = () => {
               "radial-gradient(50% 47%,#b6b6b6af 50%,rgba(34,34,34,0) 100%)",
           }}
         >
-          <h1 className="text-4xl md:text-6x lg:text-8xl font-bold text-center text-white uppercase border-b-4 border-red-600">
+          <h1 className="text-4xl md:text-6x lg:text-8xl font-bold text-center text-white uppercase border-b-4 border-red-600 m-auto w-10/12">
             Есенцијална Облека <br /> за Возење
           </h1>
         </div>
       </section>
       <section className="m-auto lg:gap-8 gap-4 flex flex-col justify-center items-center py-4 md:py-8 lg:py-16 bg-white px-4">
-        <div className="m-auto lg:w-6/12 w-10/12 text-center">
-          <PageParagraph
-            text={
-              "Класичен стил со модерен изглед. Од мини колекции до секојдневни основи, целата наша облека е дизајнирана од наши дизајнери со пасија, внимание на детали."
-            }
-          />
-        </div>
 
         <Image
           src={"/images/clothes/essentialImg1.avif"}

@@ -17,7 +17,7 @@ const MotorcycleCollection = () => {
           height: "100vh",
         }}
       >
-        <h1 className="text-6xl lg:text-8xl font-bold text-white uppercase border-b-4 border-red-600">
+        <h1 className="text-6xl lg:text-8xl font-bold text-white uppercase border-b-4 border-red-600 m-auto w-10/12">
           Motorcycle
         </h1>
       </section>
@@ -25,7 +25,7 @@ const MotorcycleCollection = () => {
         <div className="m-auto lg:w-6/12 w-10/12 text-center">
           <PageParagraph
             text={
-              "Класичен стил со модерен изглед. Од мини колекции до секојдневни основи, целата наша облека е дизајнирана од наши дизајнери со пасија, внимание на детали."
+              "За да обезбедите совршено возење, потребен ви е совршен спокој и комодитет. Имаме се што ви треба. Дизајнирани од возачи, за возачи."
             }
           />
         </div>
