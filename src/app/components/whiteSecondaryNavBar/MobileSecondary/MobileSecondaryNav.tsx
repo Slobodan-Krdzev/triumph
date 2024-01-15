@@ -10,7 +10,7 @@ import MainBtn from "../../MainBtn";
 type MobileSecondaryNavProps = {
   items: SecondaryNavItemsType[];
   title: string | string[];
-  configurationLink: string[] | string;
+  configurationLink?: string[] | string;
 };
 
 const MobileSecondaryNav = ({
@@ -54,8 +54,8 @@ const MobileSecondaryNav = ({
               </li>
             ))}
           </ul>
-
-          <MainBtn text={"КОНФИГУРИРАЈ"} bgBlack={false} isLink={true} link={`${configurationLink.toString()}`}/>
+              {configurationLink && <MainBtn text={"КОНФИГУРИРАЈ"} bgBlack={false} isLink={true} link={`${configurationLink?.toString() ?? ""}`}/>}
+          
         </div>
       )}
     </section>
