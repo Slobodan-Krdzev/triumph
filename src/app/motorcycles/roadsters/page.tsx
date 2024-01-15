@@ -2,6 +2,7 @@ import SecondaryNavFamily from "@/app/components/SecondaryNavFamily";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
 import PageHeroSection from "@/app/components/familiySharedComponents/PageHeroSection";
 import TextAndImageFlexSection from "@/app/components/familiySharedComponents/TextAndImageFlexSection";
+import { formSecondaryNavItems } from "@/app/components/helpers/formSecondaryNavItems";
 import AudioSection from "@/app/components/roadstersUniqueComp/AudioSection";
 import SecondaryNavBar, { SecondaryNavItemsType } from "@/app/components/whiteSecondaryNavBar/SecondaryNavBar";
 import { BIKES, FAMILIES } from "@/app/constants/constants";
@@ -23,30 +24,10 @@ const RoadstersPage = async () => {
     });
     const familyData = await familyRes.json();
 
-    const secondaryNavItems: SecondaryNavItemsType[] = [{
-      text: "Street Triple 765",
-      link: `/motorcycles/roadsters/street-triple-765`,
-    },
-    {
-      text: "STREET TRIPLE 765 MOTO2™ EDITION",
-      link: `/motorcycles/roadsters/street-triple-moto2`,
-    },
-    {
-      text: "speed Triple 1200 RR",
-      link: `/motorcycles/roadsters/speed-triple-1200-rr`,
-    },
-    {
-      text: "speed Triple 1200 RS",
-      link: `/motorcycles/roadsters/speed-triple-1200-rs`,
-    },
-    {
-      text: "Trident 660",
-      link: `/motorcycles/roadsters/trident-660`,
-    }]
 
     return (
       <>
-      <SecondaryNavFamily items={secondaryNavItems} title={"Roadsters"} configLink={"/configure"} />
+      <SecondaryNavFamily items={formSecondaryNavItems(familyData[0].subFamilies, 'roadsters')} title={"Roadsters"} configLink={"/configure"} />
 
         <PageHeroSection
           title={"Roadsters"}

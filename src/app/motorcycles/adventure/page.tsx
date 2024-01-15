@@ -6,6 +6,7 @@ import PageHeroSection from "@/app/components/familiySharedComponents/PageHeroSe
 import PageParagraph from "@/app/components/familiySharedComponents/PageParagraph";
 import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
 import TextAndImageFlexSection from "@/app/components/familiySharedComponents/TextAndImageFlexSection";
+import { formSecondaryNavItems } from "@/app/components/helpers/formSecondaryNavItems";
 import { getBikesBySubfamilyCategory } from "@/app/components/helpers/getBikesBySubfamilyCategory";
 import { SecondaryNavItemsType } from "@/app/components/whiteSecondaryNavBar/SecondaryNavBar";
 import { BIKES, FAMILIES } from "@/app/constants/constants";
@@ -22,31 +23,9 @@ const AdventurePage = async () => {
   });
   const bikes = await bikesRes.json();
 
-  const secondaryNavItems: SecondaryNavItemsType[] = [{
-    text: "Tiger 1200 GT",
-    link: `/motorcycles/adventure/tiger-1200-gt`,
-  },
-  {
-    text: "Tiger 1200 Rally",
-    link: `/motorcycles/adventure/tiger-1200-rally`,
-  },
-  {
-    text: "Tiger Sport 660",
-    link: `/motorcycles/adventure/tiger-sport-660`,
-  },
-  {
-    text: "Tiger 850 Sport",
-    link: `/motorcycles/adventure/tiger-850-sport`,
-  },
-  {
-    text: "Tiger 900",
-    link: `/motorcycles/adventure/tiger-900-2023`,
-  }]
-
   return (
     <main className="relative white-bg">
-      {/* <SecondaryNavBar items={secondaryNavItems} title={"Adventure"} configurationLink={"/configure"} /> */}
-      <SecondaryNavFamily items={secondaryNavItems} title={"Adventure"} configLink={"/configure"} />
+      <SecondaryNavFamily items={formSecondaryNavItems(familyData[0].subFamilies, 'adventure')} title={"Adventure"} configLink={"/configure"} />
       <PageHeroSection
         title={familyData[0].type}
         mainBikeLogo={familyData[0].mainBikeLogoImage}

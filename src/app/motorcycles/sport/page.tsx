@@ -6,12 +6,13 @@ import BottomCarousell from "@/app/components/classicsPageComp/BottomCarousell";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
 import BikeListingNoSlider from "@/app/components/familiySharedComponents/BikeListingNoSlider";
 import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
+import { formSecondaryNavItems } from "@/app/components/helpers/formSecondaryNavItems";
 import { getBikesBySubfamilyCategory } from "@/app/components/helpers/getBikesBySubfamilyCategory";
-import { SecondaryNavItemsType } from "@/app/components/whiteSecondaryNavBar/SecondaryNavBar";
 import { BIKES, FAMILIES } from "@/app/constants/constants";
 import { PromoDataType } from "@/app/types/HomeTypes/SharedTypes/types";
 
-const SportBikePage = async () => {
+const SportBikePage = async ({params}:any) => {
+
   const familyRes = await fetch(`${FAMILIES}?type=sport`, {
     cache: "no-store",
   });
@@ -22,17 +23,10 @@ const SportBikePage = async () => {
   });
   const bikes = await bikesRes.json();
 
-  const secondaryNavItems: SecondaryNavItemsType[] = [
-    {
-      text: "Daytona 660",
-      link: `/motorcycles/sport/daytona-660`,
-    }
-  ];
-
   return (
     <main className="bg-black">
       <SecondaryNavFamily
-        items={secondaryNavItems}
+        items={formSecondaryNavItems(familyData[0].subFamilies, 'sport')}
         title={"Новата Daytona 660"}
         configLink={"/configure"}
       />
