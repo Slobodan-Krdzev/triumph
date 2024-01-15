@@ -17,7 +17,7 @@ const CasualCollection = () => {
           height: "100vh",
         }}
       >
-        <h1 className="text-6xl lg:text-8xl font-bold text-white uppercase border-b-4 border-red-600 m-auto w-10/12">
+        <h1 className="text-6xl lg:text-8xl font-bold text-white uppercase border-b-4 border-red-600">
           Casual
         </h1>
       </section>
