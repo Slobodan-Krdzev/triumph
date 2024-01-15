@@ -1,4 +1,4 @@
-export const BIKES = "https://powerful-separate-marten.glitch.me/bikes";
-export const FAMILIES = "https://powerful-separate-marten.glitch.me/families";
-export const MAINCAROUSELLITEMS = "https://powerful-separate-marten.glitch.me/main-carousell-items"
-export const LATESTCAROUSELLITEMS = "https://powerful-separate-marten.glitch.me/latest-models-carousell-items"
+export const BIKES = "https://http://localhost:8000/bikes";
+export const FAMILIES = "https://http://localhost:8000/families";
+export const MAINCAROUSELLITEMS = "https://http://localhost:8000/main-carousell-items"
+export const LATESTCAROUSELLITEMS = "https://http://localhost:8000/latest-models-carousell-items"
