@@ -36,7 +36,7 @@ const BikeInfoTextImageBtn = ({
   imageOnTheLeft,
   blackBtn,
   mobileTextRight,
-  textWhite
+  textWhite,
 }: BikeInfoTextImageBtnProps) => {
   return (
     <section className="flex flex-col lg:flex-row justify-between gap-4 lg:my-14 my-8">

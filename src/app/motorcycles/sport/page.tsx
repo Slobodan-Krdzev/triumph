@@ -27,13 +27,13 @@ const SportBikePage = async ({params}:any) => {
     <main className="bg-black">
       <SecondaryNavFamily
         items={formSecondaryNavItems(familyData[0].subFamilies, 'sport')}
-        title={"Новата Daytona 660"}
+        title={"Sport"}
         configLink={"/configure"}
       />
 
       <HeroSection
         video={familyData[0].familyPageBannerVideo}
-        bigTitle="Потполно Нова Daytona 660"
+        bigTitle="Sport"
       />
 
       <section className="text-white text-center px-6 py-4 md:py-8 lg:py-16">
@@ -54,12 +54,10 @@ const SportBikePage = async ({params}:any) => {
           </h3>
         </div>
 
-        <YouTubePromo video={familyData[0].youtubeVideo ?? ""} />
+        
       </section>
 
-      {familyData[0].grayCaro && (
-        <BottomCarousell items={familyData[0].grayCaro} />
-      )}
+      
 
       <section className="text-white px-4">
         {familyData[0].promo.map((item: PromoDataType, idx: number) => (

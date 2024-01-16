@@ -25,12 +25,12 @@ const PricePriviewer = ({ bike }: PricePreviewerProps) => {
         return startingPrice + chosenColor.price
     } 
 
-    return startingPrice
+    return startingPrice 
   }
 
   return (
     <p className="text-5xl font-medium tracking-tighter mb-2 lg:mb-4">
-      €{handlePriceChange(bike.price)}
+      {handlePriceChange(bike.price) ? `€${handlePriceChange(bike.price)}.00` : "Наскоро" }
     </p>
   );
 };

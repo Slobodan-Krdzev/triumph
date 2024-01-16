@@ -78,7 +78,7 @@ const RoadstersBikePage = async ({params}: any) => {
             </h2>
             <div className="px-4">
               <SpecTableListi
-                items={[{ title: "Цена", desc: `€ ${bike.price}` }]}
+                items={[{ title: "Цена", desc: `${bike.price ? `€ ${bike.price}.00` : "Наскоро"}` }]}
                 title={"Цена"}
                 isOpen={true}
               />
