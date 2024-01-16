@@ -66,23 +66,7 @@ const SportSubFamilyPage = async ({ params }: any) => {
         )}
 
         <main className="bg-black">
-          {hasTopSection && (
-            <TopSection
-              title={
-                family.subFamilies[query].subFamilyPageInfo.topSection.title
-              }
-              desc={family.subFamilies[query].subFamilyPageInfo.topSection.desc}
-              subtitle={
-                family.subFamilies[query].subFamilyPageInfo.topSection.subtitle
-              }
-              image={
-                family.subFamilies[query].gallery.subFamilyTopSectionImage.src
-              }
-              bgImage={
-                family.subFamilies[query].gallery.subFamilyTopSectionBGImage.src
-              }
-            />
-          )}
+          
 
           <section className="text-white text-center px-6 py-4 md:py-8 lg:py-16">
             <div className="lg:w-5/12 w-10/12 m-auto">
