@@ -1,4 +1,5 @@
 "use client";
+import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
 import { useBreakpoint } from "@/app/components/helpers/useBreakpoint";
 import MobileSecondaryNav from "@/app/components/whiteSecondaryNavBar/MobileSecondary/MobileSecondaryNav";
 import SecondaryNavBar from "@/app/components/whiteSecondaryNavBar/SecondaryNavBar";
@@ -44,7 +45,7 @@ export default function SubFamilyLayout({
       {breakpoint >= 1024 && (
         <SecondaryNavBar
           items={secondaryNavItems}
-          title={params.subFamily}
+          title={formulateSubFamilyTitleOnBanner(params.subFamily.toString())}
           configurationLink={`/configure/bike/${params.subFamily}`}
         />
       )}
@@ -52,7 +53,7 @@ export default function SubFamilyLayout({
       {breakpoint < 1024 && (
         <MobileSecondaryNav
           items={secondaryNavItems}
-          title={params.subFamily}
+          title={formulateSubFamilyTitleOnBanner(params.subFamily.toString())}
           configurationLink={`/configure/bike/${params.subFamily}`}
         />
       )}
