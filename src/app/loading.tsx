@@ -2,8 +2,8 @@ import React from 'react'
 
 const LoadingConfigPage = () => {
   return (
-    <main>
-      
+    <main className='text-center'>
+      <h1>Loading...</h1>
     </main>
   )
 }
