@@ -39,7 +39,7 @@ const BikeInfoTextImageBtn = ({
   textWhite,
 }: BikeInfoTextImageBtnProps) => {
   return (
-    <section className="flex flex-col lg:flex-row justify-between gap-4 lg:my-14 my-8">
+    <section className="flex flex-col lg:flex-row justify-between gap-4 lg:my-14 my-8 lg:px-20 md:px-12 px-0">
       <div
         className={`lg:basis-4/12 flex items-center ${
           mobileTextRight ? "justify-start" : "lg:items-center justify-center"

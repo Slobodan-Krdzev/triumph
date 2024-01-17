@@ -11,8 +11,7 @@ import { getBikesBySubfamilyCategory } from "@/app/components/helpers/getBikesBy
 import { BIKES, FAMILIES } from "@/app/constants/constants";
 import { PromoDataType } from "@/app/types/HomeTypes/SharedTypes/types";
 
-const SportBikePage = async ({params}:any) => {
-
+const SportBikePage = async ({ params }: any) => {
   const familyRes = await fetch(`${FAMILIES}?type=sport`, {
     cache: "no-store",
   });
@@ -26,7 +25,7 @@ const SportBikePage = async ({params}:any) => {
   return (
     <main className="bg-black">
       <SecondaryNavFamily
-        items={formSecondaryNavItems(familyData[0].subFamilies, 'sport')}
+        items={formSecondaryNavItems(familyData[0].subFamilies, "sport")}
         title={"Sport"}
         configLink={"/configure"}
       />
@@ -53,11 +52,7 @@ const SportBikePage = async ({params}:any) => {
             Вооспоставени Нови Правила!
           </h3>
         </div>
-
-        
       </section>
-
-      
 
       <section className="text-white px-4">
         {familyData[0].promo.map((item: PromoDataType, idx: number) => (
@@ -82,11 +77,8 @@ const SportBikePage = async ({params}:any) => {
       </section>
 
       <section className="bg-white py-8 text-center px-4">
-        <SectionTitleH2 text={"Новата Daytona 660"} color={"dark"} />
-        <BikeListingNoSlider
-          bikes={getBikesBySubfamilyCategory("daytona-660", bikes)}
-          configureLink={true}
-        />
+        <SectionTitleH2 text={"Новата Sport Серија"} color={"dark"} />
+        <BikeListingNoSlider bikes={bikes} configureLink={true} />
       </section>
 
       <GrayBand

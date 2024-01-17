@@ -39,6 +39,7 @@ body {
   --primary-color: #000000;
   --secondary-color: #CD192D;
   --tetriary-color: #505050;
+  --quartal-color: #F0FF00;
 
   --primary-hover-color: #505050;
   --secondary-hover-color: #A11D2C;
@@ -96,6 +97,14 @@ body {
 
 .red-bg-hover-color:hover {
   background-color: var(--secondary-hover-color);
+}
+
+.quartal-bg-color{
+  background-color: var(--quartal-color)
+}
+
+.text-quartal {
+  color: var(--quartal-color)
 }
 
 .outline-gray-1px {

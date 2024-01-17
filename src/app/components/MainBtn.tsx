@@ -25,15 +25,18 @@ const MainBtn = ({
   const router = useRouter()
   const pathname = usePathname()
 
+  const isOffRoadRoute = Boolean(pathname.split("/")[2] === 'off-road');
+  
+
   if (isLink && link) {
     return (
       <Link
         href={link}
         className={`${
-          bgBlack ? "bg main-btn-black-hover" : "red-bg-color main-btn-hover"
+          bgBlack ? "bg main-btn-black-hover text-white" : `${isOffRoadRoute ? "quartal-bg-color" : "red-bg-color main-btn-hover"}`
         }  ${
           fullWidth ? "block" : ""
-        } uppercase font-bold px-5 py-3 text-slate-100 text-base leading-7 `}
+        } uppercase font-bold px-5 py-3 ${isOffRoadRoute ? "text-black" : "text-slate-100"} text-base leading-7 `}
         onClick={() => {
           router.push(`${link}?section=${false}`)
         }}

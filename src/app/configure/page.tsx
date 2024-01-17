@@ -38,7 +38,7 @@ const ConfigurePage = async () => {
             familyData={{
               title: family.type,
               desc: family.configPageInfo?.desc ?? "",
-              url: family.configPageInfo?.link ?? "",
+              url: `/configure/families/${family.type}`,
             }}
           />
         ))}

@@ -50,7 +50,7 @@ const HeroSection = ({
             </>
           )}
 
-          {bigTitle && <h1 className="xl:text-8xl lg:text-6xl text-4xl font-bold text-center uppercase">{bigTitle}</h1>}
+          {bigTitle && <h1 className={`${slogans.length > 0 ? "hidden" : "block"} xl:text-8xl lg:text-6xl text-4xl font-bold text-center uppercase`}>{bigTitle}</h1>}
 
           {desc && <>
             <p className="text-2xl md:text-4xl text-center mb-4 font-semibold">{desc}</p>

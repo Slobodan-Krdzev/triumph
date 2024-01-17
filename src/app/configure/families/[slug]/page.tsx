@@ -10,6 +10,8 @@ const TypeOfFamilyPage = async (data: any, props: Props) => {
 
   let pathname = data.params.slug;
 
+  
+
   const familyRes = await fetch(`${FAMILIES}?type=${pathname}`, {
     cache: "no-store",
   });
@@ -25,6 +27,8 @@ const TypeOfFamilyPage = async (data: any, props: Props) => {
 
     return subFamiliesArray;
   };
+
+  console.log(family[0].subFamilies);
 
 
   const filterBikesBySumFamilyCategory = (category: string) => {

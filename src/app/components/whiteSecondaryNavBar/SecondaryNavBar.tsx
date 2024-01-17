@@ -3,6 +3,7 @@ import MainBtn from "../MainBtn";
 import LinkItem from "./LinkItem";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import Title from "./Title";
 
 export type SecondaryNavItemsType = {
   text: string;
@@ -20,6 +21,10 @@ const SecondaryNavBar = ({
   title,
   configurationLink,
 }: SecondaryNavBarProps) => {
+
+  console.log(title, 'IKONKA');
+  
+
   if (items) {
     return (
       <section
@@ -28,9 +33,7 @@ const SecondaryNavBar = ({
       >
         {/* LEFT SIDE */}
         <div className="flex items-center">
-          <p className="text-red text-xl font-bold uppercase italic mr-10 tracking-tighter">
-            {title}
-          </p>
+          <Title text={title.toString()} />
           {items.map((item: SecondaryNavItemsType) => (
             <LinkItem key={item.link} link={item.link} text={item.text} />
           ))}
@@ -46,7 +49,7 @@ const SecondaryNavBar = ({
               <FontAwesomeIcon
                 icon={faChevronRight}
                 size="xs"
-                className="text-red-800 ml-2"
+                className={`${title.toString() === 'Off Road' ? "text-yellow-300" : "text-red-800"} ml-2`}
               />
             </Link>
             <MainBtn

@@ -6,6 +6,7 @@ import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import MainBtn from "../../MainBtn";
+import Title from "../Title";
 
 type MobileSecondaryNavProps = {
   items: SecondaryNavItemsType[];
@@ -31,7 +32,7 @@ const MobileSecondaryNav = ({
   return (
     <section className="px-4 bg-white border-thin-gray-bottom relative shadow-xl" style={{zIndex: 47}}>
       <button
-        className="py-4 text-red text-md font-bold uppercase italic mr-10 tracking-tighter"
+        className={`py-4 ${title.toString() === "Off Road" ? "text-black" : "text-red"} text-md font-bold uppercase italic mr-10 tracking-tighter`}
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
         {isMenuOpen ? "Затвори" : title}
@@ -45,7 +46,7 @@ const MobileSecondaryNav = ({
       {isMenuOpen && (
         <div className=" absolute border-thin-gray border-thin-gray-bottom shadow-lg left-0 bg-white p-4 pb-6" style={{top: "100%", right: 0}}>
           <p className="text-red text-xl font-bold uppercase italic mr-10 tracking-tighter mb-6">
-            {title}
+            <Title text={title.toString()} />
           </p>
           <ul className="mb-6">
             {items.map((link) => (
