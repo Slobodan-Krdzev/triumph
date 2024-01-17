@@ -107,6 +107,10 @@ body {
   color: var(--quartal-color)
 }
 
+.border-quartal {
+  border-color: var(--quartal-color);
+}
+
 .outline-gray-1px {
   outline: 1px #DFDFDF solid;
 }

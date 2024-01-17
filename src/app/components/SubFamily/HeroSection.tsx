@@ -10,7 +10,8 @@ type HeroSectionProps = {
   desc?: string;
   logo?: string;
   bigTitle?: string
-  mobileImage?: string
+  mobileImage?: string;
+  textLeftSide?: boolean
 };
 
 const HeroSection = ({
@@ -21,10 +22,11 @@ const HeroSection = ({
   desc,
   logo,
   bigTitle,
-  mobileImage
+  mobileImage,
+  textLeftSide
 }: HeroSectionProps) => {
 
-  console.log(mobileImage, 'ovdeka');
+  const doesItContainOffRoad = Boolean(image?.split('/').find(item => item === 'offRoad'));
   
 
   if (video) {
@@ -42,7 +44,7 @@ const HeroSection = ({
         >
           {slogans && (
             <>
-              <p className="text-3xl text-center font-medium uppercase border-b-4 border-red-600 pb-4 inline">
+              <p className={`text-5xl text-center font-medium uppercase border-b-4 ${doesItContainOffRoad ? 'border-quartal' : "border-red-600"} pb-4 inline`}>
                 {model}
               </p>
 
@@ -74,7 +76,7 @@ const HeroSection = ({
         }}
       >
         <div
-          className="absolute text-white flex flex-col items-center w-11/12"
+          className={`absolute text-white flex flex-col ${textLeftSide ? "items-start" : "items-center"} w-11/12`}
           style={{
             top: "40%",
             left: "50%",
@@ -82,11 +84,15 @@ const HeroSection = ({
             transform: "translate(-50%, -50%)",
           }}
         >
-          <p className="text-3xl font-medium uppercase border-b-4 border-red-600 pb-4 inline">
+          <p className={` text-3xl font-medium uppercase border-b-4 ${doesItContainOffRoad ? 'border-quartal' : "border-red-600" }  pb-4 inline`}>
             {model}
           </p>
           <FamilySloganAnimation slogans={slogans} />
+
+        {bigTitle && <h1 className={`${slogans.length > 0 ? "hidden" : "block"} xl:text-8xl lg:text-6xl text-4xl font-bold text-center uppercase text-white`}>{bigTitle}</h1>}
+
         </div>
+
       </section>
     );
   }

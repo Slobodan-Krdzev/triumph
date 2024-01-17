@@ -37,11 +37,11 @@ export default function SubFamilyLayout({
     },
     {
       text: "World Class Support",
-      link: `/${path}/${params.subFamily}/world-class-support`,
+      link: `/motorcycles/off-road/world-class-support`,
     },
     {
       text: "Облека",
-      link: `/${path}/${params.subFamily}/competition-clothing`,
+      link: `/motorcycles/off-road/competition-clothing`,
     },
   ];
 

@@ -50,29 +50,7 @@ const OffRoadSubFamilyPage = async ({ params }: any) => {
         />
 
         <main className="bg-black">
-          {/* <section className="text-white text-center px-6 py-4 md:py-8 lg:py-16">
-            <div className="lg:w-5/12 w-10/12 m-auto">
-              <SectionTitleH2 text={"Играта Започнува"} color={"white"} />
-              <p className="md:text-xl text-md mb-2">
-                Динамична ДНК со нов карактер.
-              </p>
-              <p className="md:text-xl text-md mb-6">
-                Агресивни линии, агилност и фокусирано спортско управување,
-                подкрепено со возбудлива моќност од трицилиндричниот мотор
-                доставува чувство на апсолутно уживање - новата Daytona 660
-                серија е спремна за секаков предизвик.
-              </p>
-
-              <h3 className="uppercase font-semibold tracking-tighter text-4xl">
-                Вооспоставени Нови Правила!
-              </h3>
-            </div>
-            {hasYoutubeVid && (
-              <YouTubePromo video={familyData[0].youtubeVideo ?? ""} />
-            )}
-          </section> */}
-
-          {/* {hasGrayCaro && <BottomCarousell items={familyData[0].grayCaro} />} */}
+          
         </main>
         <section className="px-4 lg:px-20 xl:px-40">
           {bikes.map((bike: any) => (
