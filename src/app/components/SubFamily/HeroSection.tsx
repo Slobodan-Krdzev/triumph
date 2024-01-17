@@ -24,7 +24,7 @@ const HeroSection = ({
   if (video) {
     return (
       <section className="relative">
-        <video autoPlay muted loop className="w-full" src={video}></video>
+        <video autoPlay muted loop className="w-full" src={video} playsInline></video>
 
         <div
           className="absolute text-white flex flex-col items-center"
