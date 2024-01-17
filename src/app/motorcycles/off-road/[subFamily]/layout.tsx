@@ -42,7 +42,7 @@ export default function SubFamilyLayout({
     {
       text: "Облека",
       link: `/motorcycles/off-road/competition-clothing`,
-    },
+    }
   ];
 
   return (

@@ -21,10 +21,7 @@ const SecondaryNavBar = ({
   title,
   configurationLink,
 }: SecondaryNavBarProps) => {
-
-  console.log(title, 'IKONKA');
   
-
   if (items) {
     return (
       <section

@@ -87,7 +87,8 @@ const HeroSection = ({
           <p className={` text-3xl font-medium uppercase border-b-4 ${doesItContainOffRoad ? 'border-quartal' : "border-red-600" }  pb-4 inline`}>
             {model}
           </p>
-          <FamilySloganAnimation slogans={slogans} />
+          {slogans && <FamilySloganAnimation slogans={slogans} />}
+          
 
         {bigTitle && <h1 className={`${slogans.length > 0 ? "hidden" : "block"} xl:text-8xl lg:text-6xl text-4xl font-bold text-center uppercase text-white`}>{bigTitle}</h1>}
 

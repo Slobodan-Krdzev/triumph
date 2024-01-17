@@ -23,6 +23,8 @@ const MobileSecondaryNav = ({
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname()
 
+  const isOffRoad = Boolean(pathname.split('/')[2] === 'off-road')
+
   useEffect(() => {
     
     setIsMenuOpen(false)
@@ -35,11 +37,12 @@ const MobileSecondaryNav = ({
         className={`py-4 ${title.toString() === "Off Road" ? "text-black" : "text-red"} text-md font-bold uppercase italic mr-10 tracking-tighter`}
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
-        {isMenuOpen ? "Затвори" : title}
+        {isMenuOpen ? <Title text={"Затвори"} /> : <Title text={title.toString()} />}
         <FontAwesomeIcon
           icon={isMenuOpen ? faChevronUp : faChevronDown}
           size="sm"
           className="ml-2"
+          color={isOffRoad ? "black" : "text-red"}
         />
       </button>
 

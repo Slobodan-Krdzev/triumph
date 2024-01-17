@@ -3,7 +3,6 @@ import HeroSection from "@/app/components/SubFamily/HeroSection";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
 import PageParagraph from "@/app/components/familiySharedComponents/PageParagraph";
 import TextAndImageFlexSection from "@/app/components/familiySharedComponents/TextAndImageFlexSection";
-import CardLinkItem from "@/app/components/homePageComponents/CardLinkItem";
 import DiscoverThriumphCard from "@/app/components/homePageComponents/DiscoverThriumphCard";
 
 const WorldClassSupportPage = () => {
@@ -15,7 +14,7 @@ const WorldClassSupportPage = () => {
         model={"World Class Support"}
         textLeftSide
       />
-      <main className="bg-black text-white py-8 lg:py-16">
+      <main className="bg-black text-white px-4 py-8 lg:py-16">
         <div className="m-auto w-11/12 md:w-8/12 lg:w-6/12 flex flex-col gap-4 text-center">
           <PageParagraph
             text={
@@ -48,9 +47,7 @@ const WorldClassSupportPage = () => {
           mobileTextRight={false}
         />
 
-        
-
-        <div className="py-8 md:py-16 px-4  md:px-12 lg:px-20">
+        <div className="py-8 md:py-16 px-4 md:px-12 lg:px-20">
           <TextAndImageFlexSection
             textWhite
             imageLeft
@@ -77,27 +74,27 @@ const WorldClassSupportPage = () => {
         </div>
       </main>
 
-      <section className="py-8 md:py-16 flex flex-col md:flex-row md:px-8 px-4 md:gap-4 w-full md:w-10/12 m-auto ">
-          <DiscoverThriumphCard
-            title={"Специјализирани Аксесоари"}
-            image={"/images/offRoad/accessoryLinkWorld1.avif"}
-            desc={
-              "Настрана од нашиот екстра брз систем за испорака на резервни делови и сервис, достапна е и целосна палетна на Triumph аксесоари од најголемите светски брендови на мотокрос сцената кои додаваат уште еден степен подобри перформанси и можности."
-            }
-            url={"/motorcycles/off-road/tr-250-x/accessories"}
-            btnText={"Откриј Повеќе"}
-          />
+      <section className="py-8 md:py-16 flex flex-col md:flex-row md:px-8 px-4 gap-4 w-full md:w-10/12 m-auto ">
+        <DiscoverThriumphCard
+          title={"Специјализирани Аксесоари"}
+          image={"/images/offRoad/accessoryLinkWorld1.avif"}
+          desc={
+            "Настрана од нашиот екстра брз систем за испорака на резервни делови и сервис, достапна е и целосна палетна на Triumph аксесоари од најголемите светски брендови на мотокрос сцената кои додаваат уште еден степен подобри перформанси и можности."
+          }
+          url={"/motorcycles/off-road/tr-250-x/accessories"}
+          btnText={"Откриј Повеќе"}
+        />
 
-          <DiscoverThriumphCard
-            btnText={"Откриј Повеќе"}
-            title={"Професионална Опрема за Возење"}
-            image={"/images/offRoad/accessoryLinkWorld2.avif"}
-            desc={
-              "Достапна е целосна палета на екслкузивна Triumph облека за возење, изработена од специјалистите за MX опрема Alpinestars. Откријте го вашиот победнички изглед овде."
-            }
-            url={"/motorcycles/off-road/competition-clothing"}
-          />
-        </section>
+        <DiscoverThriumphCard
+          btnText={"Откриј Повеќе"}
+          title={"Професионална Опрема за Возење"}
+          image={"/images/offRoad/accessoryLinkWorld2.avif"}
+          desc={
+            "Достапна е целосна палета на екслкузивна Triumph облека за возење, изработена од специјалистите за MX опрема Alpinestars. Откријте го вашиот победнички изглед овде."
+          }
+          url={"/motorcycles/off-road/competition-clothing"}
+        />
+      </section>
 
       <section
         style={{
