@@ -1,15 +1,14 @@
-import GrayBand from "@/app/components/GrayBand";
 import MainBtn from "@/app/components/MainBtn";
 import SpecsTable from "@/app/components/SubFamily/Specification/SpecsTable";
 import { FAMILIES } from "@/app/constants/constants";
-import React from "react";
 
 const SpecsSportPage = async ({ params }: any) => {
   try {
-
-    const subFamilyRes = await fetch(`${FAMILIES}?type=off-road`, {cache: 'no-store'})
-    const subFamilyData = await subFamilyRes.json()
-    const subFamily = subFamilyData[0]
+    const subFamilyRes = await fetch(`${FAMILIES}?type=off-road`, {
+      cache: "no-store",
+    });
+    const subFamilyData = await subFamilyRes.json();
+    const subFamily = subFamilyData[0];
 
     return (
       <>
@@ -26,21 +25,13 @@ const SpecsSportPage = async ({ params }: any) => {
             />
           </div>
 
-          <SpecsTable specs={subFamily.subFamilies[params.subFamily].subFamilyPageInfo.fullSpecs}/>
+          <SpecsTable
+            specs={
+              subFamily.subFamilies[params.subFamily].subFamilyPageInfo
+                .fullSpecs
+            }
+          />
         </main>
-
-        <GrayBand
-          itemOne={{
-            text: "Контакт",
-            url: "/dealers/dealer-search",
-            icon: "/pin.svg",
-          }}
-          itemTwo={{
-            text: "КОНФИГУРАЦИЈА",
-            url: `/configure/bike/${params.subFamily}`,
-            icon: "/icon-configurator.svg",
-          }}
-        />
       </>
     );
   } catch (err) {

@@ -1,4 +1,5 @@
 "use client";
+import GrayBand from "@/app/components/GrayBand";
 import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
 import { useBreakpoint } from "@/app/components/helpers/useBreakpoint";
 import MobileSecondaryNav from "@/app/components/whiteSecondaryNavBar/MobileSecondary/MobileSecondaryNav";
@@ -35,13 +36,13 @@ export default function SubFamilyLayout({
       link: `/${path}/${params.subFamily}/accessories`,
     },
     {
-        text: "World Class Support",
-        link: `/${path}/${params.subFamily}/world-class-support`,
+      text: "World Class Support",
+      link: `/${path}/${params.subFamily}/world-class-support`,
     },
     {
-        text: "Облека",
-        link: `/${path}/${params.subFamily}/competition-clothing`,
-    }
+      text: "Облека",
+      link: `/${path}/${params.subFamily}/competition-clothing`,
+    },
   ];
 
   return (
@@ -63,6 +64,37 @@ export default function SubFamilyLayout({
       )}
 
       {children}
+      
+      <div className="m-auto w-11/12 md:w-8/12 lg:w-6/12 py-8 md:py-16 flex flex-col gap-4">
+        <p className="text-sm">
+          Внимание! Видеата и фотографиите се направени од професионалци во
+          контолирана средина. Ве Моливе не побувајте самите. Секогаш возете на
+          затоврена патека. Секогаш носете кацига, очила, и заштитна опрема
+          додека возите.
+        </p>
+        <p className="text-sm">
+          Видеата и фотографиите се креирани само за забава не треба да се
+          користат како инструкции.
+        </p>
+        <p className="text-sm">
+          Ние во Triumph сакаме секој возач да биде сигурен и да ужива. Секојаш
+          возете безбедно и во склоп на вашите можност. Посетете некој курс за
+          возење и никогаш не влегувајте во ризик. Не возете под дејство на
+          алкохол. Секогаш проверете го вашиот Triumph мотор пред да возите.
+        </p>
+      </div>
+      <GrayBand
+            itemOne={{
+              text: "Конфигурација",
+              url: `/configure`,
+              icon: "/icon-configurator.svg",
+            }}
+            itemTwo={{
+              text: "Тест Возење",
+              url: "/",
+              icon: "/bike.svg",
+            }}
+          />
     </section>
   );
 }
