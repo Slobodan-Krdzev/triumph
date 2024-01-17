@@ -4,6 +4,7 @@ import TopSection from "@/app/components/SubFamily/TopSection";
 import YouTubePromo from "@/app/components/SubFamily/YouTubePromo";
 import BottomCarousell from "@/app/components/classicsPageComp/BottomCarousell";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
+import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
 import AudioSection from "@/app/components/roadstersUniqueComp/AudioSection";
 import { BIKES, FAMILIES } from "@/app/constants/constants";
 
@@ -37,28 +38,17 @@ const SubFamilyPage = async ({ params }: any) => {
         "audioSection"
       );
 
-      const hasHeroDesc = family.subFamilies[query].subFamilyPageInfo.hasOwnProperty(
-        "heroDesc"
-      );
-
       const hasTopSection = family.subFamilies[query].subFamilyPageInfo.hasOwnProperty(
         "topSection"
       );
 
     return (
       <>  
-      {hasHeroDesc && <HeroSection
+      <HeroSection
           video={family.subFamilies[query].gallery.subFamilyHeroVideo.src}
-          model={query}
-          desc={family.subFamilies[query].subFamilyPageInfo.heroDesc.desc}
-          logo={family.subFamilies[query].subFamilyPageInfo.heroDesc.logo}
-        />}
-
-        {!hasHeroDesc && <HeroSection
-          video={family.subFamilies[query].gallery.subFamilyHeroVideo.src}
-          model={query}
-          slogans={family.subFamilies[query].subFamilyPageInfo.heroSlogans}
-        />}
+          mobileImage={family.subFamilies[query].gallery.subFamilyHeroImageMobile?.src ?? "/"}
+          model={formulateSubFamilyTitleOnBanner(query)}
+        />
         
 
         <main className="bg-white">

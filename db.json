@@ -340,6 +340,10 @@
               "src": "/images/adventure/tiger900E1/tiger900HeroVideo.webm",
               "alt": "Tiger 900 Hero Video"
             },
+            "subFamilyHeroImageMobile": {
+              "src": "/images/adventure/tiger900/tiger900HeroMobile.avif",
+              "alt": "Tiger Sport 900 Range Hero Image"
+            },
             "subFamilyTopSectionImage": {
               "src": "/images/adventure/tiger900/tiger900TopSectionImage.avif",
               "alt": "Tiger 900 Range Top-Section Image"
@@ -685,6 +689,10 @@
               "src": "/images/adventure/tigerSport660/heroVideo.webm",
               "alt": "Tiger Sport 660 Range Hero Image"
             },
+            "subFamilyHeroImageMobile": {
+              "src": "/images/adventure/tigerSport660/tigerSport660MobileHeroBanner.avif",
+              "alt": "iger Sport 660 Range Hero Image"
+            },
             "subFamilyTopSectionImage": {
               "src": "/images/adventure/tigerSport660/tiger660TopSection.avif",
               "alt": "Tiger Sport 660 Range Top-Section Image"
@@ -1007,6 +1015,10 @@
               "src": "/images/adventure/tigerSport850/tigerSport850HeroVideo.webm",
               "alt": "Tiger Sport 850 Range Hero Image"
             },
+            "subFamilyHeroImageMobile": {
+              "src": "/images/adventure/tigerSport850/tiger850SportMobileHero.avif",
+              "alt": "iger Sport 850 Range Hero Image"
+            },
             "subFamilyTopSectionImage": {
               "src": "/images/adventure/tigerSport850/tiger850TopSection.avif",
               "alt": "Tiger Sport 850 Range Top-Section Image"
@@ -1326,15 +1338,19 @@
             },
             "subFamilyHeroVideo": {
               "src": "/images/adventure/tiger1200GT/tiger1200GTHeroVideo.webm",
-              "alt": "Tiger Sport 850 Range Hero Image"
+              "alt": "Tiger Sport 1200 GT Range Hero Image"
+            },
+            "subFamilyHeroImageMobile": {
+              "src": "/images/adventure/tiger1200GT/tiger1200SubfamilyHeroMobile.avif",
+              "alt": "Tiger Sport 1200 GT Range Hero Image"
             },
             "subFamilyTopSectionImage": {
               "src": "/images/adventure/tiger1200GT/tiger1200GTTopSection.avif",
-              "alt": "Tiger Sport 850 Range Top-Section Image"
+              "alt": "Tiger Sport 1200 GT Range Top-Section Image"
             },
             "subFamilyTopSectionBGImage": {
               "src": "/images/adventure/tiger1200GT/tiger1200GTTopSectionBG.avif",
-              "alt": "Tiger Sport 850 Range Top-Section Image"
+              "alt": "Tiger Sport 1200 GT Range Top-Section Image"
             }
           }
         },
@@ -1649,6 +1665,10 @@
               "src": "/images/adventure/tiger1200Rally/tiger1200RallyHeroVideo.webm",
               "alt": "Tiger 1200 Rally Range Hero Image"
             },
+            "subFamilyHeroImageMobile": {
+              "src": "/images/adventure/tiger1200Rally/tiger1200SubfamilyHeroMobile.avif",
+              "alt": "Tiger Sport 1200 Rally Range Hero Image"
+            },
             "subFamilyTopSectionImage": {
               "src": "/images/adventure/tiger1200Rally/tiger1200Rally.avif",
               "alt": "Tiger 1200 Rally Range Top-Section Image"
@@ -1666,10 +1686,6 @@
           "price": 16290,
           "url": "/motorcycles/adventure/tiger-900-2023",
           "subFamilyPageInfo": {
-            "heroDesc": {
-              "desc": "Голем чекор напред во поглед на можностите, за максимални авантури секој ден.",
-              "logo": "/images/adventure/mainBikeLogo.png"
-            },
             "topSection": {
               "title": "Дефиниција за способност",
               "desc": "Tiger 900 фамилијата претставува огромен скок на-напред во способноста, со две серии што отвораат други погледи за тоа како треба да излгедаат авантурите во урбаното патување и долгите, екстремни off-road рути.",
@@ -4343,6 +4359,10 @@
               "src": "/images/roadsters/streetTriple765/streetTriple765SubFamHeroVideo.webm",
               "alt": "Street Triple 765 Video"
             },
+            "subFamilyHeroImageMobile": {
+              "src": "/images/roadsters/streetTriple765/streetTriple765HeroMobile.avif",
+              "alt": "Street Triple 765"
+            },
             "subFamilyTopSectionImage": {
               "src": "/images/roadsters/streetTriple765/streetTriple765TopSectionImage.avif",
               "alt": "Street Triple 765 Motorcycle"
@@ -4355,8 +4375,8 @@
         },
         "street-triple-moto2": {
           "id": 2,
-          "subFamilyName": "street-triple-765",
-          "title": "Street Triple 765",
+          "subFamilyName": "street-triple-moto2",
+          "title": "Street Triple 765 Moto2",
           "price": 12290,
           "url": "/motorcycles/roadsters/street-triple-765",
           "shortDesc": "Со легендарен карактер, а со големо засилување во перформанси и технологија оваа серија го доби префиксот 'definitive streetfighter'. ",
@@ -4681,6 +4701,10 @@
             "subFamilyHeroVideo": {
               "src": "/images/roadsters/moto2/streetTripleMoto2HeroVideo.mp4",
               "alt": "Street Triple 765 Moto2 image"
+            },
+            "subFamilyHeroImageMobile": {
+              "src": "/images/roadsters/moto2/moto2HeroMobile.avif",
+              "alt": "Street Triple 765"
             },
             "subFamilyTopSectionImage": {
               "src": "/images/roadsters/moto2/streetТriple765TopSectionImage.avif",
@@ -5025,6 +5049,10 @@
               "src": "/images/roadsters/trident660/trident660HeroVideo.webm",
               "alt": "Trident 660 Video"
             },
+            "subFamilyHeroImageMobile": {
+              "src": "/images/roadsters/trident660/trident660HeroMobile.avif",
+              "alt": "Trident 660"
+            },
             "subFamilyTopSectionImage": {
               "src": "/images/roadsters/trident660/trident660TopSectionImage.avif",
               "alt": "Trident 660"
@@ -5356,6 +5384,10 @@
               "src": "/images/roadsters/speedTriple1200RS/speedTripleRSHeroVideo.webm",
               "alt": "Speed Triple 1200RS Video"
             },
+            "subFamilyHeroImageMobile": {
+              "src": "/images/roadsters/speedTriple1200RS/speedTripleRSHeroMobile.avif",
+              "alt": "Speed Triple 1200RS"
+            },
             "subFamilyTopSectionImage": {
               "src": "/images/roadsters/speedTriple1200RS/speedTripleRSTopSectionImage.avif",
               "alt": "Speed Triple 1200RS Motorcycle"
@@ -5686,6 +5718,10 @@
             "subFamilyHeroVideo": {
               "src": "/images/roadsters/speedTriple1200RR/speedTripleRRHeroVideo.webm",
               "alt": "Speed Triple 1200RR Video"
+            },
+            "subFamilyHeroImageMobile": {
+              "src": "/images/roadsters/speedTriple1200RR/speedTriple1200RRHeroImage.avif",
+              "alt": "Speed Triple 1200RR"
             },
             "subFamilyTopSectionImage": {
               "src": "/images/roadsters/speedTriple1200RR/speedTriple1200RRTopSectionImage.avif",
@@ -6057,6 +6093,10 @@
             "subFamilyHeroVideo": {
               "src": "/images/rocket-3/rocket3SubFamHeroVideo.webm",
               "alt": "Rocket 3 "
+            },
+            "subFamilyHeroImageMobile": {
+              "src": "/images/rocket-3/rocket3HeroMobile.avif",
+              "alt": "Rocket 3"
             },
             "subFamilyTopSectionImage": {
               "src": "/images/rocket-3/rocket-3TopSectionImage.avif",
@@ -6497,6 +6537,10 @@
             },
             "subFamilyHeroVideo": {
               "src": "/images/sport/daytona660/familyPageBannerVideo.webm",
+              "alt": "Daytona 660 Серија"
+            },
+            "subFamilyHeroImageMobile": {
+              "src": "/images/sport/daytona660/daytonaSubFamilyHeroImage.avif",
               "alt": "Daytona 660 Серија"
             },
             "subFamilyTopSectionImage": {

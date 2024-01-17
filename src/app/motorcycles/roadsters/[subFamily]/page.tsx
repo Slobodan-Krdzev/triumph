@@ -5,6 +5,7 @@ import YouTubePromo from "@/app/components/SubFamily/YouTubePromo";
 import YoutubeVideoCarousell from "@/app/components/SubFamily/YoutubeVideoCarousell/YoutubeVideoCarousell";
 import BottomCarousell from "@/app/components/classicsPageComp/BottomCarousell";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
+import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
 import AudioSection from "@/app/components/roadstersUniqueComp/AudioSection";
 import { FAMILIES, BIKES } from "@/app/constants/constants";
 import React from "react";
@@ -48,7 +49,8 @@ const RoadstersSubFamilyPage = async ({ params }: any) => {
       
         <HeroSection
           video={family.subFamilies[query].gallery.subFamilyHeroVideo.src}
-          model={query}
+          mobileImage={family.subFamilies[query].gallery.subFamilyHeroImageMobile?.src ?? "/"}
+          model={formulateSubFamilyTitleOnBanner(query)}
           slogans={family.subFamilies[query].subFamilyPageInfo.heroSlogans}
         />
 

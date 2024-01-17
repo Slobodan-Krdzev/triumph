@@ -39,6 +39,7 @@ const Rocket3SubFamPage = async () => {
       <>
         <HeroSection
           video={family.subFamilies["rocket-3"].gallery.subFamilyHeroVideo.src}
+          mobileImage={family.subFamilies['rocket-3'].gallery.subFamilyHeroImageMobile?.src ?? "/"}
           model={"Rocket-3"}
           slogans={family.subFamilies["rocket-3"].subFamilyPageInfo.heroSlogans}
         />

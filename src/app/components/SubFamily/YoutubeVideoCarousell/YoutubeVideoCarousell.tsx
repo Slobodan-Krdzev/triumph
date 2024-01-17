@@ -34,8 +34,8 @@ const YoutubeVideoCarousell = ({ items }: YoutubeVideoCarousellProps) => {
         tag="div"
         className="text-white "
       >
-        {items.map((item) => (
-          <SwiperSlide key={item.title}>
+        {items.map((item, idx:number) => (
+          <SwiperSlide key={`${item.title} + ${idx}`}>
             <iframe
               width={(breakpoint >= 1024) ? 1903 : "100%"}
               height={(breakpoint >= 1024) ? 1070 : 300}

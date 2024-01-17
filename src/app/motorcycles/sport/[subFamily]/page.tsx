@@ -38,36 +38,20 @@ const SportSubFamilyPage = async ({ params }: any) => {
         "audioSection"
       );
 
-    const hasHeroDesc =
-      family.subFamilies[query].subFamilyPageInfo.hasOwnProperty("heroDesc");
-
     const hasTopSection =
       family.subFamilies[query].subFamilyPageInfo.hasOwnProperty("topSection");
 
-    console.log(bikes);
-
     return (
       <>
-        {hasHeroDesc && (
+      
           <HeroSection
             video={family.subFamilies[query].gallery.subFamilyHeroVideo.src}
+            mobileImage={family.subFamilies[query].gallery.subFamilyHeroImageMobile.src}
             model={formulateSubFamilyTitleOnBanner(query)}
-            desc={family.subFamilies[query].subFamilyPageInfo.heroDesc.desc}
-            logo={family.subFamilies[query].subFamilyPageInfo.heroDesc.logo}
           />
-        )}
-
-        {!hasHeroDesc && (
-          <HeroSection
-            video={family.subFamilies[query].gallery.subFamilyHeroVideo.src}
-            model={formulateSubFamilyTitleOnBanner(query)}
-            slogans={family.subFamilies[query].subFamilyPageInfo.heroSlogans}
-          />
-        )}
 
         <main className="bg-black">
           
-
           <section className="text-white text-center px-6 py-4 md:py-8 lg:py-16">
             <div className="lg:w-5/12 w-10/12 m-auto">
               <SectionTitleH2 text={"Играта Започнува"} color={"white"} />
@@ -91,7 +75,6 @@ const SportSubFamilyPage = async ({ params }: any) => {
           </section>
 
           {hasGrayCaro && <BottomCarousell items={familyData[0].grayCaro} />}
-
           
         </main>
         <section className="px-4 lg:px-20 xl:px-40">
