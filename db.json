@@ -2666,7 +2666,7 @@
           },
           "gallery": {
             "modelImage": {
-              "src": "/images/classics/speed400.avif",
+              "src": "/images/classics/scrambler400X/scrambler400XKhakiGreen.png",
               "alt": "Scrambler 400 X Range Model Image"
             },
             "subFamilyHeroImage": {
@@ -4693,12 +4693,12 @@
           },
           "shortSpecInfo": {
             "info1": "765cc мотор",
-            "info2": "Максимална јачина од 120-130 PS",
+            "info2": "130 PS",
             "info3": "10000 км сервисен интервал"
           },
           "gallery": {
             "modelImage": {
-              "src": "/images/roadsters/streetTriple765.png",
+              "src": "/images/roadsters/moto2/streetTripleMoto2Yellow.png",
               "alt": "Street Triple 765 Range Model Image"
             },
             "subFamilyHeroVideo": {
