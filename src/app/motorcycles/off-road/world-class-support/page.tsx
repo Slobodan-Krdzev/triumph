@@ -8,12 +8,23 @@ import DiscoverThriumphCard from "@/app/components/homePageComponents/DiscoverTh
 const WorldClassSupportPage = () => {
   return (
     <>
-      <HeroSection
-        image={"/images/offRoad/worldClassBanner.avif"}
-        mobileImage={"/images/offRoad/worldClassBannerMobile.avif"}
-        model={"World Class Support"}
-        textLeftSide
-      />
+      <section>
+        <HeroSection
+          image={"/images/offRoad/worldClassBanner.avif"}
+          mobileImage={"/images/offRoad/worldClassBannerMobile.avif"}
+          textLeftSide
+        />
+        <h1
+          className="font-bold text-4xl md:text-6xl lg:text-8xl text-center uppercase text-white left-1/4 md:left-1/4 lg:left-44"
+          style={{
+            position: "absolute",
+            top: "45%",
+          }}
+        >
+          Тркачка <br /> Опрема
+        </h1>
+      </section>
+
       <main className="bg-black text-white px-4 py-8 lg:py-16">
         <div className="m-auto w-11/12 md:w-8/12 lg:w-6/12 flex flex-col gap-4 text-center">
           <PageParagraph
@@ -81,7 +92,7 @@ const WorldClassSupportPage = () => {
           desc={
             "Настрана од нашиот екстра брз систем за испорака на резервни делови и сервис, достапна е и целосна палетна на Triumph аксесоари од најголемите светски брендови на мотокрос сцената кои додаваат уште еден степен подобри перформанси и можности."
           }
-          url={"/motorcycles/off-road/tr-250-x/accessories"}
+          url={"/motorcycles/off-road/tf-250-x/accessories"}
           btnText={"Откриј Повеќе"}
         />
 

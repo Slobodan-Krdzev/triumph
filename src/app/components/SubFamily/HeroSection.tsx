@@ -33,7 +33,7 @@ const HeroSection = ({
     return (
       <section className="relative">
         <video autoPlay muted loop className="w-full hidden lg:block " src={video} playsInline></video>
-        <Image className="block lg:hidden " src={mobileImage ?? ""} alt={model!} width={425} height={425} loading="lazy"/>
+        <Image className="block lg:hidden " src={mobileImage ?? ""} alt={model!} width={1000} height={425} loading="lazy"/>
         <div
           className="absolute text-white flex flex-col items-center"
           style={{
