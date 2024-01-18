@@ -92,27 +92,31 @@ const OffRoadBikePage = async ({ params }: any) => {
           <SpecsTable specs={subFam.subFamilyPageInfo.fullSpecs} />
         </section>
 
-        {bike.gallery.promoYoutubeVideo && (
-          <PromoBikeYoutubeVideo
-            video={bike.gallery.promoYoutubeVideo.src ?? ""}
-            alt={bike.gallery.promoYoutubeVideo.alt ?? "Promo Video"}
-          />
-        )}
+        <section className="bg-black">
+          {bike.gallery.promoYoutubeVideo && (
+            <PromoBikeYoutubeVideo
+              bgBlack
+              video={bike.gallery.promoYoutubeVideo.src ?? ""}
+              alt={bike.gallery.promoYoutubeVideo.alt ?? "Promo Video"}
+            />
+          )}
 
-        {bike.features && (
-          <SpecTableListi
-            items={bike.features ?? []}
-            title={"Карактеристики"}
-            isOpen={true}
-          />
-        )}
+          {bike.features && (
+            <SpecTableListi
+              items={bike.features ?? []}
+              title={"Карактеристики"}
+              isOpen={true}
+            />
+          )}
 
-        {subFam.subFamilyPageInfo.specNumbers && <NumbersSection
-          model={formulateSubFamilyTitleOnBanner(bike.model) ?? ""}
-          specNumbers={subFam.subFamilyPageInfo.specNumbers ?? []}
-          bgBlack={true}
-        />}
-        
+          {subFam.subFamilyPageInfo.specNumbers && (
+            <NumbersSection
+              model={formulateSubFamilyTitleOnBanner(bike.model) ?? ""}
+              specNumbers={subFam.subFamilyPageInfo.specNumbers ?? []}
+              bgBlack={true}
+            />
+          )}
+        </section>
 
         {bike.bikePageCarousell && (
           <BikePageCarousell items={bike.bikePageCarousell} />
@@ -134,8 +138,6 @@ const OffRoadBikePage = async ({ params }: any) => {
             ))}
           </section>
         )}
-
-        
       </main>
     );
   } catch (err) {

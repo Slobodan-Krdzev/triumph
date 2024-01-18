@@ -45,7 +45,7 @@ const LatestModelsCarousellSection = ({items, showTitle}: LatesModelsCarousellSe
         
   
         <div className="carousell-indicators z-10 flex justify-between w-1/6 text-xl text-neutral-600">
-          <p>
+          <p className="ml-20">
             {(activeIndex + 1) > 9 ? activeIndex + 1 : `0${activeIndex + 1}`} / {items.length > 9 ? `${items.length}` : `0${items.length}`}
           </p>
           <div className="flex justify-between gap-4">
