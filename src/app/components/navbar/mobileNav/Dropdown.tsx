@@ -188,7 +188,7 @@ const Dropdown = ({
           )}
 
           {sectionType === "accessories" && (
-            <AccesorySectionMobile handler={handleSectionClose} />
+            <AccesorySectionMobile handler={handleSectionClose} bikes={bikes}/>
           )}
           {sectionType === "clothing" && (
             <ClothingSectionMobile handler={handleSectionClose} />

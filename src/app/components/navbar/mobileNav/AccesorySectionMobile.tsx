@@ -13,12 +13,14 @@ import {
 } from "../AccessoriesNavSection";
 import MobileMenuList from "./MobileMenuList";
 import { usePathname, useRouter } from "next/navigation";
+import { createBikeList } from "../../helpers/getLatestBikes";
 
 type AccesorySectionProps = {
   handler: () => void;
+  bikes: any[]
 };
 
-const AccesorySectionMobile = ({ handler}: AccesorySectionProps) => {
+const AccesorySectionMobile = ({ handler, bikes}: AccesorySectionProps) => {
   const [menusVisibility, setMenusVisibility] = useState({
     accessories: false,
     models: false,
@@ -81,7 +83,7 @@ const AccesorySectionMobile = ({ handler}: AccesorySectionProps) => {
           state={menusVisibility.models}
           menuTitle={"модели"}
           menuType={"models"}
-          menuItems={linkItemsModels}
+          menuItems={createBikeList(bikes) ?? []}
         />
 
         <MobileMenuList

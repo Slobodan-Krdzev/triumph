@@ -69,7 +69,7 @@ const SectionContent = ({ families, bikes, bikeToRender }: Props) => {
           bikeToRender={bikeToRender}
         />
       )}
-      {query === "Accessories" && <AccessoriesNavSection />}
+      {query === "Accessories" && <AccessoriesNavSection bikes={bikes}/>}
       {query === "Clothing" && <ClothingNavSection />}
       {query === "Owners" && <OwnersNavSection />}
       {query === "Discover" && <DiscoverNavSection />}

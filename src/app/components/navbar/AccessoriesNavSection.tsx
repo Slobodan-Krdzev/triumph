@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import image from "../../../../public/images/accessoriesNavDropdownImage.avif";
 import NavLinkListing, { NavLinkListingItemsType } from "./NavLinkListing";
+import { createBikeList } from "../helpers/getLatestBikes";
 
 export const linkItemsAccessory: NavLinkListingItemsType[] = [
   {
@@ -73,7 +74,13 @@ export const linkItemsQuickLinks: NavLinkListingItemsType[] = [
   },
 ];
 
-const AccessoriesNavSection = () => {
+type AccessoriesNavProps = {
+  bikes: any[]
+}
+
+const AccessoriesNavSection = ({bikes}: AccessoriesNavProps) => {
+
+
   return (
     <div className="flex justify-between p-8 lg:px-52">
       <NavLinkListing
@@ -84,7 +91,7 @@ const AccessoriesNavSection = () => {
       />
 
       <NavLinkListing
-        items={linkItemsModels}
+        items={createBikeList(bikes) ?? []}
         title={"Најнови Модели"}
         bottomLinkText={"Конфигурација"}
         bottomLinkUrl={"/configure"}

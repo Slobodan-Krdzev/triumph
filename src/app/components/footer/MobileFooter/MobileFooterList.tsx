@@ -12,9 +12,6 @@ type MobileFooterProps = {
 const MobileFooterList = ({ list, title }: MobileFooterProps) => {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
 
-  console.log(list);
-  
-
   return (
     <>
       <button
