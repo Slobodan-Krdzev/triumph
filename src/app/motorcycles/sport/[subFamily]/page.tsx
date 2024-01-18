@@ -1,6 +1,4 @@
-import GrayBand from "@/app/components/GrayBand";
 import HeroSection from "@/app/components/SubFamily/HeroSection";
-import TopSection from "@/app/components/SubFamily/TopSection";
 import YouTubePromo from "@/app/components/SubFamily/YouTubePromo";
 import BottomCarousell from "@/app/components/classicsPageComp/BottomCarousell";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
@@ -43,15 +41,15 @@ const SportSubFamilyPage = async ({ params }: any) => {
 
     return (
       <>
-      
-          <HeroSection
-            video={family.subFamilies[query].gallery.subFamilyHeroVideo.src}
-            mobileImage={family.subFamilies[query].gallery.subFamilyHeroImageMobile.src}
-            model={formulateSubFamilyTitleOnBanner(query)}
-          />
+        <HeroSection
+          video={family.subFamilies[query].gallery.subFamilyHeroVideo.src}
+          mobileImage={
+            family.subFamilies[query].gallery.subFamilyHeroImageMobile.src
+          }
+          model={formulateSubFamilyTitleOnBanner(query)}
+        />
 
         <main className="bg-black">
-          
           <section className="text-white text-center px-6 py-4 md:py-8 lg:py-16">
             <div className="lg:w-5/12 w-10/12 m-auto">
               <SectionTitleH2 text={"Играта Започнува"} color={"white"} />
@@ -75,48 +73,35 @@ const SportSubFamilyPage = async ({ params }: any) => {
           </section>
 
           {hasGrayCaro && <BottomCarousell items={familyData[0].grayCaro} />}
-          
         </main>
         <section className="px-4 lg:px-20 xl:px-40">
-            {bikes.map((bike: any) => (
-              <BikeInfoTextImageBtn
-                key={bike.id}
-                title={bike.subFamilyPromo.title ?? ""}
-                desc={bike.subFamilyPromo.desc ?? ""}
-                ctaBtn={{
-                  text: "Детали",
-                  link: `/motorcycles/${family.type}/${query}/${bike.model}`,
-                }}
-                image={{
-                  src: `${bike.gallery.modelImage.src}`,
-                  alt: `${bike.gallery.modelImage.alt}`,
-                }}
-                blackBtn={true}
-                imageOnTheLeft={false}
-                mobileTextRight={false}
-              />
-            ))}
-          </section>
-
-          <section className="bg-white py-8 text-center px-4">
-            <SectionTitleH2 text={"Новата Daytona 660"} color={"dark"} />
-            <BikeListingNoSlider
-              bikes={getBikesBySubfamilyCategory("daytona-660", bikes)}
-              configureLink={true}
+          {bikes.map((bike: any) => (
+            <BikeInfoTextImageBtn
+              key={bike.id}
+              title={bike.subFamilyPromo.title ?? ""}
+              desc={bike.subFamilyPromo.desc ?? ""}
+              ctaBtn={{
+                text: "Детали",
+                link: `/motorcycles/${family.type}/${query}/${bike.model}`,
+              }}
+              image={{
+                src: `${bike.gallery.modelImage.src}`,
+                alt: `${bike.gallery.modelImage.alt}`,
+              }}
+              blackBtn={true}
+              imageOnTheLeft={false}
+              mobileTextRight={false}
             />
-          </section>
-        <GrayBand
-          itemOne={{
-            text: "Конфигурација",
-            url: `/configure`,
-            icon: "/icon-configurator.svg",
-          }}
-          itemTwo={{
-            text: "Тест Возење",
-            url: "/",
-            icon: "/bike.svg",
-          }}
-        />
+          ))}
+        </section>
+
+        <section className="bg-white py-8 text-center px-4">
+          <SectionTitleH2 text={"Новата Daytona 660"} color={"dark"} />
+          <BikeListingNoSlider
+            bikes={getBikesBySubfamilyCategory("daytona-660", bikes)}
+            configureLink={true}
+          />
+        </section>
       </>
     );
   } catch (error) {

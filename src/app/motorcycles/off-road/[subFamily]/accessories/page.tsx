@@ -24,6 +24,7 @@ const SubFamReasonsToRide = async ({ params }: any) => {
         <SecondaryPagesHeroSection
           bannerImage={subFamily.accessory.banner.image}
           subFamilyTitle={formulateSubFamilyTitleOnBanner(subFam)}
+          subFamily={subFamily}
           text={`Аксесоари`}
         />
 

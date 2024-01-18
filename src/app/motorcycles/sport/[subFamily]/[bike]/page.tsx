@@ -5,14 +5,12 @@ import CustomizationColorsListing from "@/app/components/BikePageComponents/Cust
 import ImagePreview from "@/app/components/BikePageComponents/ImagePreview";
 import PricePriviewer from "@/app/components/BikePageComponents/PricePriviewer";
 import PromoBikeYoutubeVideo from "@/app/components/BikePageComponents/PromoBikeYoutubeVideo";
-import GrayBand from "@/app/components/GrayBand";
 import MainBtn from "@/app/components/MainBtn";
 import NumbersSection from "@/app/components/SubFamily/NumbersSection";
 import SpecTableListi from "@/app/components/SubFamily/Specification/SpecTableListi";
 import SpecsTable from "@/app/components/SubFamily/Specification/SpecsTable";
 import TextAndImageFlexSection from "@/app/components/familiySharedComponents/TextAndImageFlexSection";
 import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
-import LatestModelsCarousellSection from "@/app/components/homePageComponents/LatestModelsCarousellSection";
 import { BIKES, FAMILIES } from "@/app/constants/constants";
 
 type BikePagePromoType = {
@@ -109,12 +107,13 @@ const SportBikePage = async ({ params }: any) => {
           />
         )}
 
-        {subFam.subFamilyPageInfo.specNumbers && <NumbersSection
-          model={formulateSubFamilyTitleOnBanner(bike.model) ?? ""}
-          specNumbers={subFam.subFamilyPageInfo.specNumbers ?? []}
-          bgBlack={false}
-        />}
-        
+        {subFam.subFamilyPageInfo.specNumbers && (
+          <NumbersSection
+            model={formulateSubFamilyTitleOnBanner(bike.model) ?? ""}
+            specNumbers={subFam.subFamilyPageInfo.specNumbers ?? []}
+            bgBlack={false}
+          />
+        )}
 
         {bike.bikePageCarousell && (
           <BikePageCarousell items={bike.bikePageCarousell} />
@@ -136,19 +135,6 @@ const SportBikePage = async ({ params }: any) => {
             ))}
           </section>
         )}
-
-        <GrayBand
-          itemOne={{
-            text: "Контакт",
-            url: "/dealers/dealer-search",
-            icon: "/pin.svg",
-          }}
-          itemTwo={{
-            text: "КОНФИГУРАЦИЈА",
-            url: `/configure/sport/${bike.model}`,
-            icon: "/icon-configurator.svg",
-          }}
-        />
       </main>
     );
   } catch (err) {

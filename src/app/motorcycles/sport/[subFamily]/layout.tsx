@@ -1,4 +1,5 @@
 "use client";
+import GrayBand from "@/app/components/GrayBand";
 import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
 import { useBreakpoint } from "@/app/components/helpers/useBreakpoint";
 import MobileSecondaryNav from "@/app/components/whiteSecondaryNavBar/MobileSecondary/MobileSecondaryNav";
@@ -59,6 +60,18 @@ export default function SubFamilyLayout({
       )}
 
       {children}
+      <GrayBand
+            itemOne={{
+              text: "Конфигурација",
+              url: `/configure`,
+              icon: "/icon-configurator.svg",
+            }}
+            itemTwo={{
+              text: "Тест Возење",
+              url: "/",
+              icon: "/bike.svg",
+            }}
+          />
     </section>
   );
 }
