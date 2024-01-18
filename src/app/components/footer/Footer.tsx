@@ -1,57 +1,24 @@
 "use client"
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useBreakpoint } from '../helpers/useBreakpoint'
 import DesktopFooter from './DesktopFooter'
 import MobileFooter from './MobileFooter/MobileFooter'
+import { FAMILIES } from '@/app/constants/constants'
 
 export const footerLists = [
-  {
-    title: "Моторцикли",
-    items: [
-      {
-        id: 1,
-        url: "/motorcycles/adventure",
-        text: "Adventure",
-      },
-      {
-        id: 2,
-        url: "/motorcycles/classics",
-        text: "Classic",
-      },
-      {
-        id: 3,
-        url: "/motorcycles/roadsters",
-        text: "Roadster",
-      },
-      {
-        id: 4,
-        url: "/motorcycles/rocket-3",
-        text: "Rocket-3",
-      },
-      {
-        id: 5,
-        url: "/latest-offers",
-        text: "Понуди",
-      },
-      {
-        id: 6,
-        url: "/approved-triumph-pre-owned-motorcycles",
-        text: "Користени",
-      },
-    ],
-  },
+  
   {
     title: "Стартувај",
     items: [
       {
         id: 6,
-        url: "/configuration",
+        url: "/configure",
         text: "Конфигурирај",
       },
       {
         id: 7,
         url: "/dealer/dealer-search",
-        text: "Најди Дилер / Контакт",
+        text: "Контакт",
       },
     ],
   },
@@ -60,19 +27,9 @@ export const footerLists = [
     items: [
       {
         id: 8,
-        url: "/for-the-ride",
-        text: "Новости",
-      },
-      {
-        id: 9,
-        url: "/for-the-ride/experiences/factory-visitor-experience",
-        text: "Доживувања",
-      },
-      {
-        id: 10,
-        url: "/carrers",
-        text: "Кариери",
-      },
+        url: "https://triumph-mediakits.com/en/news/news-listing.html",
+        text: "Нoвости",
+      }
     ],
   },
   {
@@ -99,13 +56,36 @@ export const footerLists = [
 
 const Footer = () => {
 
+    const [families, setFamilies] = useState<any[]>([])
+
     const breakpoint = useBreakpoint()
     
-  return (
-    <footer className="px-4 md:px-0 border-t-2 border-thin-gray md:pt-8 pt-4 mt-4 md:mt-0 w-full md:w-10/12 m-auto">
-        {breakpoint > 1024 ? <DesktopFooter/> : <MobileFooter/>}
-    </footer>
-  )
+
+    useEffect(() => {
+
+       fetch(FAMILIES)
+       .then(res => res.json())
+       .then(data => {
+
+
+
+          setFamilies( data.map((family: any) => family.type))
+       })
+
+
+    }, [])
+   
+
+    if(families.length > 0) {
+      return (
+        <footer className="px-4 md:px-0 border-t-2 border-thin-gray md:pt-8 pt-4 mt-4 md:mt-0 w-full md:w-10/12 m-auto">
+            {breakpoint > 1024 ? <DesktopFooter familyItems={families}/> : <MobileFooter familyItems={families}/>}
+        </footer>
+      )
+    } else {
+      return "Loading"
+    }
+  
 }
 
 export default Footer
