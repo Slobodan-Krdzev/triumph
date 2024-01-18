@@ -1,11 +1,24 @@
-import React from 'react'
+'use client'
+import { motion } from "framer-motion";
+import Image from "next/image";
+import React from "react";
 
 const LoadingConfigPage = () => {
   return (
-    <main className='text-center'>
-      <h1>Loading...</h1>
-    </main>
-  )
-}
+    <motion.main
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      className="text-center h-screen flex justify-center items-center"
+    >
+      <Image
+        src={"/images/triumphLogo.png"}
+        alt="Logo"
+        width={500}
+        height={500}
+      />
+    </motion.main>
+  );
+};
 
-export default LoadingConfigPage
+export default LoadingConfigPage;
