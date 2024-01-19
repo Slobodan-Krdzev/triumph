@@ -61,7 +61,7 @@ const MotorcycleCard = ({
             text={"Конфигурирај"}
             bgBlack={false}
             isLink={true}
-            link={`/configure/bike/${bike?.model}`}
+            link={`/configure/bike/${bike?.subFamilyCategory}`}
             // action={closeMainMenu}
           />
           <MainBtn
