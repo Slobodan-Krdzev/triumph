@@ -61,14 +61,14 @@ const MotorcycleCard = ({
             text={"Конфигурирај"}
             bgBlack={false}
             isLink={true}
-            link={`/configure/bike/${bike?.subFamilyCategory}`}
+            link={`/configure/bike/${bike?.model}`}
             // action={closeMainMenu}
           />
           <MainBtn
             text={"Детали"}
             bgBlack={true}
             isLink={true}
-            link={`/motorcycles/${bike?.category}/${bike?.model}`}
+            link={`/motorcycles/${bike?.category}/${bike?.subFamilyCategory}`}
             action={closeMainMenu}
           />
         </motion.div>
