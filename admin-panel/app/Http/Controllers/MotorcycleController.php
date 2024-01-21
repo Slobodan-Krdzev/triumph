@@ -12,18 +12,26 @@ class MotorcycleController extends Controller
 {
     public function create()
     {
-        return view('layouts.create-moto');
+        return view('layouts.create-moto',);
     }
 
-    public function listMoto()
+    public function listMoto(Request $request)
     {
         $data = Motorcycle::get();
         return view('layouts.view-moto', ['data' => $data]);
 
 
-        // $motorcycle = Motorcycle::all();
+        $motorcycle = Motorcycle::all();
 
-        // return response()->json($motorcycle);
+        return response()->json($motorcycle);
+
+        $category = $request->input('category');
+
+        $motorcycles = Motorcycle::when($category, function ($query) use ($category) {
+            return $query->where('category', $category);
+        })->get();
+
+        return response()->json($motorcycles);
     }
 
     public function store(Request $request)
@@ -37,10 +45,23 @@ class MotorcycleController extends Controller
     }
 
 
-    public function edit($id)
+    public function edit($id, $category)
     {
+        // $moto = Motorcycle::findOrFail($id);
+        // return view('layouts.edit-moto', compact('moto'));
+
         $moto = Motorcycle::findOrFail($id);
-        return view('layouts.edit-moto', compact('moto'));
+
+        // Adjust the view based on the category
+        $view = match ($category) {
+            'classics' => 'layouts.edit-classics',
+            'roadster' => 'layouts.edit-roadster',
+            'adventure' => 'layouts.edit-adventure',
+            'rocket-3' => 'layouts.edit-rocket-3',
+            default => 'layouts.edit-default',
+        };
+
+        return view($view, ['moto' => $moto]);
     }
 
 
@@ -52,6 +73,9 @@ class MotorcycleController extends Controller
         'price' => 'required|string|max:255',
         'category' => 'required|string|max:255',
         'subFamilyCategory' => 'required|string|max:255',
+        'specs.cc' => 'nullable|string|max:255',
+        'specs.hp' => 'nullable|string|max:255',
+        'specs.torque' => 'nullable|string|max:255',
     ]);
 
     $moto = Motorcycle::findOrFail($id);
@@ -59,6 +83,7 @@ class MotorcycleController extends Controller
 
     return redirect()->back()->with('success', 'Moto updated successfully');
 }
+
 
 
 

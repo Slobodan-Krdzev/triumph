@@ -5,14 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Families extends Model
+class AdventureFam extends Model
 {
     use HasFactory;
 
-
-
-
-    protected $table = 'families';
+    protected $table = 'adventurefam';
 
     protected $fillable = [
         'mainBikeLogoImage',
@@ -41,7 +38,6 @@ class Families extends Model
         'promo' => 'json',
         'familyPageBannerVideo' => 'json',
     ];
-
 
 
 }
