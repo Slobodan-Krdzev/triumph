@@ -1,182 +1,120 @@
 <x-app-layout>
 
-    <div class="px-8 mt-10">
+    <div class="px-8 mt-10 w-8/12">
 
-        <form action="{{ route('store-moto') }}" method="POST">
+        <form action="{{ route('store-moto') }}" method="POST" class="flex flex-col ">
             @csrf
 
-
-            <form>
-                <div class="grid gap-6 mb-6 md:grid-cols-2">
-                    <div>
-                        <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First
-                            name</label>
-                        <input type="text" id="first_name"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder="John" required>
-                    </div>
-                    <div>
-                        <label for="last_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last
-                            name</label>
-                        <input type="text" id="last_name"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder="Doe" required>
-                    </div>
-                    <div>
-                        <label for="company"
-                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Company</label>
-                        <input type="text" id="company"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder="Flowbite" required>
-                    </div>
-                    <div>
-                        <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone
-                            number</label>
-                        <input type="tel" id="phone"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
-                    </div>
-                    <div>
-                        <label for="website"
-                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Website URL</label>
-                        <input type="url" id="website"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder="flowbite.com" required>
-                    </div>
-                    <div>
-                        <label for="visitors"
-                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Unique visitors (per
-                            month)</label>
-                        <input type="number" id="visitors"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder="" required>
-                    </div>
+            @if (session('success'))
+                <div class="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400"
+                    role="alert">
+                    {{ session('success') }}
                 </div>
-                <div class="mb-6">
-                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email
-                        address</label>
-                    <input type="email" id="email"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                        placeholder="john.doe@company.com" required>
-                </div>
-                <div class="mb-6">
-                    <label for="password"
-                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
-                    <input type="password" id="password"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                        placeholder="•••••••••" required>
-                </div>
-                <div class="mb-6">
-                    <label for="confirm_password"
-                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Confirm password</label>
-                    <input type="password" id="confirm_password"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                        placeholder="•••••••••" required>
-                </div>
-                <div class="flex items-start mb-6">
-                    <div class="flex items-center h-5">
-                        <input id="remember" type="checkbox" value=""
-                            class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800"
-                            required>
-                    </div>
-                    <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with
-                        the <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">terms and
-                            conditions</a>.</label>
-                </div>
-                <button type="submit"
-                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
-            </form>
+            @endif
+            <h1 class="font-bold text-3xl my-2">Base Info</h1>
 
-
-
-
-            {{-- <div class="flex flex-col">
-            <!-- General Information -->
-            <h1 class="text-red-700 font-extrabold bg-red-300 text-center py-3 rounded">General Information</h1>
             <label for="title">Title:</label>
-            <input type="text" name="title" required>
-
-            <label for="type">Type:</label>
-            <input type="text" name="type" required>
+            <input type="text" name="title">
 
             <label for="model">Model:</label>
-            <input type="text" name="model" required>
+            <input type="text" name="model">
 
-            <label for="mainBikeLogoImage">Main Bike Logo Image:</label>
-            <input type="text" name="mainBikeLogoImage" required>
+            <label for="model">Category:</label>
+            <input type="text" name="category">
 
-            <label for="familyPageBannerDesc">Family Page Banner Description:</label>
-            <input type="text" name="familyPageBannerDesc" required>
+            <label for="model">Sub Family Category:</label>
+            <input type="text" name="subFamilyCategory">
 
-            <label for="familyPageBannerVideo">Family Page Banner Video:</label>
-            <input type="text" name="familyPageBannerVideo" required>
+            <label for="model">Price:</label>
+            <input type="text" name="price">
 
-            <label for="topSectionInfo">Top Section Info:</label>
-            <input type="text" name="topSectionInfo" required>
+            <label for="model">Edition</label>
+            <input type="text" name="edition">
 
-            <label for="promo">Promo:</label>
-            <input type="text" name="promo" required>
+            <h1 class="font-bold text-3xl my-2">Specifications</h1>
 
-            <!-- Configuration Information -->
-            <h1 class="text-red-700 font-extrabold bg-red-300 text-center py-3 rounded">Configuration Information</h1>
-            <label for="configPageInfo">configPageInfo:</label>
-            <input type="text" name="configPageInfo" required>
-
-            <label for="configFamilyPageInfo">configFamilyPageInfo:</label>
-            <input type="text" name="configFamilyPageInfo" required>
-
-            <!-- Sub-Family Information -->
-            <h1 class="text-red-700 font-extrabold bg-red-300 text-center py-3 rounded">Sub-Family Information</h1>
-            <label for="subFamilies">Sub Families:</label>
-            <input type="text" name="subFamilies" required>
-
-            <!-- Bike Details -->
-            <h1 class="text-red-700 font-extrabold bg-red-300 text-center py-3 rounded">Bike Details</h1>
-            <label for="shortDesc">Short Description:</label>
-            <input type="text" name="shortDesc" required>
-
-            <label for="category">Category:</label>
-            <input type="text" name="category" required>
-
-            <label for="subFamilyCategory">Sub-Family Category:</label>
-            <input type="text" name="subFamilyCategory" required>
-
-            <label for="edition">Edition:</label>
-            <input type="text" name="edition" required>
-
-            <label for="price">Price:</label>
-            <input type="number" name="price" step="0.01">
-
-            <!-- Bike Specifications -->
-            <h1 class="text-red-700 font-extrabold bg-red-300 text-center py-3 rounded">Bike Specifications</h1>
             <label for="specs[cc]">CC:</label>
-            <input type="number" name="specs[cc]" step="0.01" required>
+            <input type="text" name="specs[cc]">
 
             <label for="specs[hp]">HP:</label>
-            <input type="number" name="specs[hp]" step="0.01" required>
+            <input type="text" name="specs[hp]">
 
             <label for="specs[torque]">Torque:</label>
-            <input type="number" name="specs[torque]" step="0.01" required>
+            <input type="text" name="specs[torque]">
 
-            <label for="specs[horsePower]">Horsepower:</label>
-            <input type="number" name="specs[horsePower]" step="0.01" required>
+            <label for="gallery[modelImage][src]">Model Image Source:</label>
+            <input type="text" name="gallery[modelImage][src]">
 
-            <label for="specs[serviceInterval]">Service Interval:</label>
-            <input type="text" name="specs[serviceInterval]" required>
+            <label for="gallery[modelImage][alt]">Model Image Alt:</label>
+            <input type="text" name="gallery[modelImage][alt]">
 
-            <label for="specs[motorType]">Motor Type:</label>
-            <input type="text" name="specs[motorType]" required>
+            <h1 class="font-bold text-3xl my-2">Bike Collor Pallette Gallery</h1>
 
-            <!-- Image Gallery -->
-            <h1 class="text-red-700 font-extrabold bg-red-300 text-center py-3 rounded">Image Gallery</h1>
-            <label for="gallery[modelImage][src]">Gallery Image Source:</label>
-            <input type="text" name="gallery[modelImage][src]" required>
+            <label for="bikeCollorPalletteGallery[default]">Default Image:</label>
+            <input type="text" name="bikeCollorPalletteGallery[default]" required>
 
-            <label for="gallery[modelImage][alt]">Gallery Image Alt:</label>
-            <input type="text" name="gallery[modelImage][alt]" required>
+            <label for="bikeCollorPalletteGallery[color1]">Color 1 Image:</label>
+            <input type="text" name="bikeCollorPalletteGallery[color1]" required>
 
-            <!-- Short Spec Info -->
-            <h1 class="text-red-700 font-extrabold bg-red-300 text-center py-3 rounded">Short Spec Info</h1>
+            <label for="bikeCollorPalletteGallery[color1Reversed]">Color 1 Reversed Image:</label>
+            <input type="text" name="bikeCollorPalletteGallery[color1Reversed]" required>
+
+            <label for="bikeCollorPalletteGallery[color2]">Color 2 Image:</label>
+            <input type="text" name="bikeCollorPalletteGallery[color2]" required>
+
+            <label for="bikeCollorPalletteGallery[color2Reversed]">Color 2 Reversed Image:</label>
+            <input type="text" name="bikeCollorPalletteGallery[color2Reversed]" required>
+
+            <label for="bikeCollorPalletteGallery[color3]">Color 3 Image:</label>
+            <input type="text" name="bikeCollorPalletteGallery[color3]" required>
+
+            <label for="bikeCollorPalletteGallery[color3Reversed]">Color 3 Reversed Image:</label>
+            <input type="text" name="bikeCollorPalletteGallery[color3Reversed]" required>
+
+
+            <h1 class="font-bold text-3xl my-2">Customization Colors</h1>
+
+            <label for="customizationColors[0][colorName]">Color 1 Name:</label>
+            <input type="text" name="customizationColors[0][colorName]" required>
+
+            <label for="customizationColors[0][price]">Color 1 Price:</label>
+            <input type="text" name="customizationColors[0][price]" required>
+
+            <label for="customizationColors[0][image]">Color 1 Image:</label>
+            <input type="text" name="customizationColors[0][image]" required>
+
+            <label for="customizationColors[0][colorCode]">Color 1 Code:</label>
+            <input type="text" name="customizationColors[0][colorCode]" required>
+
+
+            <label for="customizationColors[1][colorName]">Color 2 Name:</label>
+            <input type="text" name="customizationColors[1][colorName]" required>
+
+            <label for="customizationColors[1][price]">Color 2 Price:</label>
+            <input type="text" name="customizationColors[1][price]" required>
+
+            <label for="customizationColors[1][image]">Color 2 Image:</label>
+            <input type="text" name="customizationColors[1][image]" required>
+
+            <label for="customizationColors[1][colorCode]">Color 2 Code:</label>
+            <input type="text" name="customizationColors[1][colorCode]" required>
+
+
+            <label for="customizationColors[2][colorName]">Color 3 Name:</label>
+            <input type="text" name="customizationColors[2][colorName]" required>
+
+            <label for="customizationColors[2][price]">Color 3 Price:</label>
+            <input type="text" name="customizationColors[2][price]" required>
+
+            <label for="customizationColors[2][image]">Color 3 Image:</label>
+            <input type="text" name="customizationColors[2][image]" required>
+
+            <label for="customizationColors[2][colorCode]">Color 3 Code:</label>
+            <input type="text" name="customizationColors[2][colorCode]" required>
+
+
+            <h1 class="font-bold text-3xl my-2">Short Spec Info</h1>
+
             <label for="shortSpecInfo[info1]">Short Spec Info 1:</label>
             <input type="text" name="shortSpecInfo[info1]" required>
 
@@ -186,9 +124,24 @@
             <label for="shortSpecInfo[info3]">Short Spec Info 3:</label>
             <input type="text" name="shortSpecInfo[info3]" required>
 
-            <button type="button"
-                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 mt-4">Submit</button>
-            </div> --}}
+            <h1 class="font-bold text-3xl my-2">Sub Family Promo</h1>
+
+
+            <label for="subFamilyPromo[title]">Sub Family Promo Title:</label>
+            <input type="text" name="subFamilyPromo[title]" required>
+
+            <label for="subFamilyPromo[desc]">Sub Family Promo Description:</label>
+            <input type="text" name="subFamilyPromo[desc]" required>
+
+
+
+            <input type="submit" class="my-5 bg-lime-200 shadow rounded p-4" value="Submit">
+
+
+
+
+
+
         </form>
 
     </div>

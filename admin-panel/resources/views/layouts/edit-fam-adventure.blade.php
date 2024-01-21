@@ -12,7 +12,7 @@
         <form action="{{ route('update-families', $family->id) }}" method="POST" class="flex flex-col">
             @csrf
             @method('PUT')
-            <h1 class="font-bold text-4xl">Family Page</h1>
+            <h1 class="font-bold text-4xl">Family Page <span class="text-red-600">Adventure</span></h1>
             <hr class="my-3 w-100">
             {{-- ------------------------------------------------------------------- --}}
             <h1 class="font-bold text-3xl my-2">Base Info</h1>
@@ -55,22 +55,62 @@
             <label for="topSectionInfo[desc2]">Top Section Description 2:</label>
             <input type="text" name="topSectionInfo[desc2]"
                 value="{{ old('topSectionInfo.desc2', $family['topSectionInfo']['desc2'] ?? '') }}" required>
-            {{-- ------------------------------------------------------------------- --}}
-            {{-- <h1 class="font-bold text-3xl my-2">Promo Info For Family Page</h1>
+
+            <h1 class="font-bold text-3xl my-2">Promo Info For Family Page</h1>
             <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
                 class="block text-white my-2 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 type="button">
                 Add Promo
-            </button> --}}
-{{--
-                <div class="border-2 border-neutral-500 flex justify-between items-center p-2">
+            </button>
 
+            @foreach ($family['promo'] as $promo)
+                <div class="border-2 border-neutral-500 flex justify-between items-center p-2">
+                    <h2>{{ $promo['title'] ?? '' }}</h2>
                     <div class="flex justify-between items-center">
-                        <button data-modal-target="authentication-modal" data-modal-toggle="edit-modal"
-                            class="mx-2 bg-yellow-400 p-1 rounded text-white">Edit</button>
+                        <a href="{{ route('edit-promo', ['id' => $family->id, 'promoId' => $promo['id'], 'type' => $family->type]) }}"
+                            class="mx-4">Edit</a>
                         <button class="bg-red-500 p-1 rounded text-white">Delete</button>
                     </div>
-                </div> --}}
+                </div>
+            @endforeach
+
+            {{-- <h1 class="font-bold text-3xl my-2">SubFamily Info</h1>
+
+            <label for="subFamilies[tiger-900][title]">SubFamily Title:</label>
+            <input type="text" name="subFamilies[tiger-900][title]"
+                value="{{ old('subFamilies.tiger-900.title', $family['subFamilies']['tiger-900']['title']) }}"
+                required>
+
+
+            <label for="subFamilies[tiger-900][subFamilyName]">SubFamily Name:</label>
+            <input type="text" name="subFamilies[tiger-900][subFamilyName]"
+                value="{{ old('subFamilies.tiger-900.subFamilyName', $family['subFamilies']['tiger-900']['subFamilyName']) }}"
+                required>
+
+
+            <label for="subFamilies[tiger-900][price]">SubFamily Price:</label>
+            <input type="text" name="subFamilies[tiger-900][price]"
+                value="{{ old('subFamilies.tiger-900.price', $family['subFamilies']['tiger-900']['price']) }}"
+                required>
+
+
+                <h1 class="font-bold text-3xl my-2">Specifications</h1>
+            @foreach ($family['subFamilies']['tiger-900']['subFamilyPageInfo']['fullSpecs']['engineTransmission'] as $index => $engineTransmission)
+                <label
+                    for="subFamilies[tiger-900][subFamilyPageInfo][fullSpecs][engineTransmission][{{ $index }}][title]">Title:</label>
+                <input type="text"
+                    name="subFamilies[tiger-900][subFamilyPageInfo][fullSpecs][engineTransmission][{{ $index }}][title]"
+                    value="{{ old("subFamilies.tiger-900.subFamilyPageInfo.fullSpecs.engineTransmission.$index.title", $engineTransmission['title']) }}"
+                    required>
+
+                <label
+                    for="subFamilies[tiger-900][subFamilyPageInfo][fullSpecs][engineTransmission][{{ $index }}][desc]">Description:</label>
+                <textarea name="subFamilies[tiger-900][subFamilyPageInfo][fullSpecs][engineTransmission][{{ $index }}][desc]"
+                    rows="4" required>{{ old("subFamilies.tiger-900.subFamilyPageInfo.fullSpecs.engineTransmission.$index.desc", $engineTransmission['desc']) }}</textarea>
+            @endforeach
+
+
+ --}}
 
 
 
@@ -82,39 +122,6 @@
             <button type="submit" class="my-5 bg-lime-200 shadow rounded p-4">Update</button>
         </form>
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const modalButton = document.querySelector('[data-modal-toggle="authentication-modal"]');
-            const modal = document.getElementById('authentication-modal');
-            const closeButton = modal.querySelector('[data-modal-hide="authentication-modal"]');
 
-            modalButton.addEventListener('click', function() {
-                modal.classList.toggle('hidden');
-                document.body.classList.toggle('overflow-hidden');
-            });
-
-            closeButton.addEventListener('click', function() {
-                modal.classList.add('hidden');
-                document.body.classList.remove('overflow-hidden');
-            });
-        });
-
-
-        document.addEventListener('DOMContentLoaded', function() {
-            const modalButton = document.querySelector('[data-modal-toggle="edit-modal"]');
-            const modal = document.getElementById('edit-modal');
-            const closeButton = modal.querySelector('[data-modal-hide="authentication-modal"]');
-
-            modalButton.addEventListener('click', function() {
-                modal.classList.toggle('hidden');
-                document.body.classList.toggle('overflow-hidden');
-            });
-
-            closeButton.addEventListener('click', function() {
-                modal.classList.add('hidden');
-                document.body.classList.remove('overflow-hidden');
-            });
-        });
-    </script>
 
 </x-app-layout>
