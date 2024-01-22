@@ -44,7 +44,7 @@ const HeroSection = ({
         >
           {slogans && (
             <>
-              <p className={`text-5xl text-center font-medium uppercase border-b-4 ${doesItContainOffRoad ? 'border-quartal' : "border-red-600"} pb-4 inline`}>
+              <p className={`text-2xl md:text-5xl text-center font-medium uppercase border-b-4 ${doesItContainOffRoad ? 'border-quartal' : "border-red-600"} pb-4 inline`}>
                 {model}
               </p>
 

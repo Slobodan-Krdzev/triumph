@@ -720,39 +720,40 @@
               "desc": "Tiger 850 Sport поставува нови стандарди за на патиштата, во градска средина, за патување и за било која голема животна авантура.",
               "subtitle": "перфектен - повеќенамеснки мотор, со одличен баланс помеѓу пристапност и дневното користење"
             },
+            "youtubeVideo": "https://www.youtube.com/embed/GIjm5EcJH30",
             "fullSpecs": {
               "engineTransmission": [
                 {
                   "title": "Тип на Мотор",
-                  "desc": "водно ладење, 12 вентили, DOHC, линиски 3-цилиндри, 240° редослед на есклпозии"
+                  "desc": "линиски три-цилиндричен мотор со водно ладење, 12 вентили, 2 EEK"
                 },
                 {
                   "title": "капацитет",
-                  "desc": "660 cc"
+                  "desc": "888 cc"
                 },
                 {
                   "title": "диаметар",
-                  "desc": "74.04 mm"
+                  "desc": "78.0mm"
                 },
                 {
                   "title": "рута",
-                  "desc": "51.1 mm"
+                  "desc": "61.9mm"
                 },
                 {
                   "title": "компресија",
-                  "desc": "11.95:1"
+                  "desc": "11.27:1"
                 },
                 {
                   "title": "Мах. Коњски Сила",
-                  "desc": "81 PS / 80 bhp (59.6 kW) @ 10,250 rpm"
+                  "desc": "85 PS / 84 bhp (62.5 kW) @ 8,500 rpm"
                 },
                 {
                   "title": "Мах. Обртен Момент",
-                  "desc": "64 Nm @ 6,250 rpm"
+                  "desc": "60 lbft @ 6,500 rpm"
                 },
                 {
                   "title": "Систем за убризгување",
-                  "desc": "Multipoint sequential electronic fuel injection with electronic throttle control"
+                  "desc": "Multipoint sequential electronic fuel injection"
                 },
                 {
                   "title": "Систем за Издувни гасови",
@@ -760,7 +761,7 @@
                 },
                 {
                   "title": "Финална Трансмисија",
-                  "desc": "X-ring chain"
+                  "desc": "O-ring chain"
                 },
                 {
                   "title": "Квачило",
@@ -778,15 +779,15 @@
                 },
                 {
                   "title": "вилушка",
-                  "desc": "алуминиум"
+                  "desc": "лиен алуминиум"
                 },
                 {
                   "title": "предно тркало",
-                  "desc": "19 x 2.5' die-cast легура "
+                  "desc": "19 x 2.5'"
                 },
                 {
                   "title": "задно тркало",
-                  "desc": "17 x 4.25' die-cast легура "
+                  "desc": "17 x 4.25' "
                 },
                 {
                   "title": "предна гума",
@@ -901,47 +902,43 @@
           },
           "reasonsToDrive": {
             "banner": {
-              "image": "/images/adventure/tigerSport660/tiger660ReasonsBanner.avif"
+              "image": "/images/adventure/tigerSport850/tiger850SportReasonsBanner.avif"
             },
             "infoText": {
-              "title": "Дефиницијата за разноликост е да се биде најдобар во се.",
-              "desc": "Време е да се разбудите од досадните соништа со Tiger Sport 660. Ова е најпристапниот мотор од Tiger фамилијата на Triumph и е спремен за секојдневни авантури.Tiger Sport 660 е дизајниран да ги надмине вашите очекувања, од авантуристички тури па се до дневни обврски. Кај нас во Triumph се е во знак на возење, а еве и зошто:"
+              "title": "Tiger 850 Sport - Комфорт и Авантура",
+              "desc": "Новиот Tiger 850 Sport ќе биде ваш партнер во секојдневието, ќе додаде уште повеќе адреналин при вашите дневни патувања, ќе ви помогне да се изборите со урбаната џунгла, ќе ве наполни со самодоверба која ќе ве натера да се впуштите во викенд авантура или просто ќе ви озвозможи да уживате на сите патеки кои ќе му ги поставите. Со моќен три-цилиндричен и карактеристичниот „Triumph Tiger“ стил, ќе уживате во комфортот и флексибилноста која Tiger 850 Sport ја нуди."
             },
             "reasons": [
               {
-                "title": "Перформанси од Tiger Sport Серијата",
-                "desc": "Equipped with the proven 660 three-cylinder engine, it is the lightest and most versatile Tiger yet. Designed to increase rider confidence from the moment you ride it, with an effortless feel on the Tiger 660. Its smooth 6-speed gearbox has been optimized for fun and agility, while the slip and assist clutch provides light engagement that reduces rider fatigue. rider, allowing you to enjoy the bike even more. The 660 delivers usable three-cylinder power with the twist of the wrist. Central to the versatility and exciting performance is the 660cc engine. A three-cylinder Triumph that beats the two-cylinder competition, delivering strong torque from low to high in the rev range, peaking at 64Nm @ 6,250rpm. Power is class-leading and utterly thrilling, peaking at 81PS @ 10,250rpm. It is smooth and linear, sporty and fun, for your daily commute or weekend pleasures.",
-                "image": "/images/adventure/tigerSport660/tiger660ReasonsListImage1.avif"
-              },
-              {
-                "title": "Перфектна Хармонија Помеѓу Моторциклот и Возачот ",
-                "desc": "Harmonizing with Tiger's rhythm comes naturally. It is the ultimate combination of practical performance and top thrills. The Tiger Sport 660 can be limited to an A2 license, opening doors to new adventure experiences, from touring to flexible fun driving. Designed to excite but tamed to build the confidence you need. Whether it's your first bike, your first motorcycle adventure, or a flexible means of transportation you're looking for, the Tiger Sport 660 has the technology and flair to revitalize your riding experience."
+                "title": "Авантуристички мотор фокусиран на патиштата",
+                "desc": "Дизајниран да возбудува но и да инспирира самодоверба во вас, Tiger 850 Sport серијата ќе ве возбуди уште од првото палење на моторот но сепак ќе одржува едно високо ниво на самодоверба кај возачот. Без разлика дали е вашиот прв мотор или сте искусен возач, Tiger 850 Sport серијата е дизајнирана да ве размрда во секоја прилика.",
+                "image": "/images/adventure/tigerSport850/tiger850SportReasons1.avif"
               },
               {
                 "title": "Инспирира Самодоверба",
-                "desc": "Riding confidence is at the forefront of the adventure, setting off for a ride knowing that Tiger Sport's rider-focused technology and premium brakes and suspension are there to support you every moment. The upright stance with the lightweight frame and nimble engine make for a nimble and easy feel, without ever being intimidating. Add in the narrow riding position for easy ground contact, the low 835mm seat height and the excellent ergonomics setup and you have a bike with great agility and handling in any riding scenario.",
-                "image": "/images/adventure/tigerSport660/tiger660ReasonsImage2.avif"
+                "desc": "Самодовербата е едно од најважните чувства за уживање во авантурата. Знаејќи дека високите перформанси на кочниците и суспензијата на Tiger 850 Sport серијата ви помагаат во секој момент, ваше е само да почнете да возите. Tiger 850 Sport е тука за вас и секогаш ќе ве држи сигурни. Со исправената возачка положба и лесната рамка и мотор, Tiger 850 Sport серијата оддава чувство на сигурност, агилност и самодоверба при возењето. Доколку ја додадеме и тенката силуета, одличната ергономија и прилагодливата висина на седлото со опсег од 20 mm, дополнително ќе ги подобрите вашето искуство и комоција при возењето. Tiger 850 Sport серијата се карактеризира со одлична агилност и управување во сите авантуристички сценарија на пат."
               },
               {
-                "title": "Направен за Вас",
-                "desc": "No two riders are the same, so you can personalize your Tiger Sport 660 with a choice of three special colors and graphics and over 40 genuine Triumph accessories. From built-in luggage to a central case that holds 2 helmets, you'll be inspired by the options to suit your adventure. When everyday flexibility is your goal, you shouldn't be left behind. The bike is designed with the rider in mind - make it your own."
+                "title": "Иновативен три-цилиндричен мотор",
+                "desc": "Triple 850 Sport серијата го носи карактеристичниот три-цилиндарски мотор на Triumph, специјално прилагоден за удобно возење во градски средини а сепак доволно експлозивен на патиштата. Се карактеризира со 1-3-2 редослед на запалување на цилиндрите и дава одлични перформанси при ниска апликација на гас и одлична прогресивна сила при додавање на гас. Со максимална моќност од 85PS при 8500rpm и максимален обртен момент од 82Nm при 6500rpm, новата Tiger 850 Sport серија е предвидлива но сепак спортко настроена."
               },
               {
-                "title": "Секој ден, Цел Ден",
-                "desc": "It's the journey that counts, not the destination, but the Tiger Sport 660 is designed to offer the ultimate in road adventure comfort. Featuring premium Showa 41mm separate function forks, Showa monoshock with remote hydraulically adjustable preload, slip and assist clutch, Road and Rain riding programs and the latest Triumph ABS technology and traction control program deactivation. From top to bottom the Tiger is designed to reduce fatigue and enhance your comfort to continue your adventure, with or without a passenger."
+                "title": "Направен за вас",
+                "desc": "Со оглед на индивидуалноста на возачите, Tiger 850 Sport доаѓа со повеќе опции за прилагодување на моторот со кои сигурно ќе ги постигнете посакуваните резулатати. Со можност за прилагодување на воланот, прилагодување на висината на седиштето како и прилагодливата Marzocchi суспензија ви гарантираме дека ќе ја пронајдете вашата идеална возачка позиција и ќе го прилагодите Tiger 850 Sport спрема вашите преференци. За дополнително да ви излеземе во пресрет на вашите побарување, на располагање ви се уште две различни бои како и повеќе од 60 оригинални Triumph аксесоари.",
+                "image": "/images/adventure/tigerSport850/tiger850SportReasons2.avif"
               },
               {
-                "title": "Максимална искористливост",
-                "desc": "With its 17-litre fuel tank and top-of-the-line specification, the new Tiger Sport is ready for any adventure. Whether it's your daily commute, epic journeys with friends or maneuvering in tight urban spaces, the ride is anything but boring. The Tiger Sport's lightweight frame, road adventure setup and sporty feel make it the ultimate companion. Ready for the hard work of your daily commute revitalizing your work week but also fully capable of weekend jaunts and touring fun.",
-                "image": "/images/adventure/tigerSport660/tiger660ReasonsImage3.avif"
+                "title": "Tiger 850 Sport ве мотивира да возите",
+                "desc": "Важна е авантурата - не дестинацијата. Затоа Tiger 850 Sport серијата е спремна да му овозможи на возачот одличен комфорт додека трае неговата авантура. Опремен со Marzocchi 45mm inverted предна суспензија и задна суспензија со можност за подесување, квачило кое ви асистира, два модула на работа (Road & Rain) како и ABS систем на сопирачките, Tiger 850 Sport ќе ви овозможи комодитет и самодоверба на највисоко ниво."
               },
               {
-                "title": "Прекрасна Зделка",
-                "desc": "The Tiger Sport 660's state-of-the-art technology, high-spec brakes, tires and suspension, confidence-inspiring agile handling, thrilling performance from the three-cylinder engine, unique styling and a very competitive price all combine to make it the perfect sporty choice. mid-range adventure - and the perfect entry point to the Triumph range. A leading service interval of 16,000km (or 12 months) and the lowest required service time in the segment also contribute to incredibly low running costs."
+                "title": "Флексибилност",
+                "desc": "Tiger 850 Sport серијата не е направена само за авантури. Напротив Tiger 850 Sport серијата е флексибилна и ќе додаде малку авантура и карактер и на вашите секојдневни возења. Со својот 20 литарски резервоар, ABS систем и систем за пролизгување, Tiger 850 Sport е спремен за секаква патека и авантура, без разлика дали ќе возите до работа или некаква поинтересна авантура. Со неговата лесна силуета, спортски карактер овој мотор е спремен да биде вашиот најверен партнер при вашите авантури."
               },
               {
-                "title": "Уникатен Стил",
-                "desc": "A new generation Tiger Sport in every way, with all the benefits of Triumph's class-redefining 660cc three-cylinder engine. Strong. Versatile. And with its thoughtful design, it embodies the modern Triumph style and character. The upright and imposing adventure stance, the protective gel and refined ergonomics promise comfort and thrills throughout your ride. All-new Tiger Sport 660 color schemes, class-leading premium finish and over 40 accessories will make the bike an absolute eye-catcher. Unmistakably Triumph, and the new perfectly-rounded mid-range adventure sports bike."
+                "title": "Препознатлива Tiger става",
+                "desc": "Tiger 850 Sport серијата дефинитивно го има Tiger карактерот. Но исто така ја дели и неговата силуета и стил. Високата става, високото ветробранско стакло и рефинирана ергономија дава одличен комфорт при вашето возење. Со дополнителните аксесоари и бои Tiger 850 Sport серијата со сигурност ќе мами погледи.",
+                "image": "/images/adventure/tigerSport850/tiger850SportReasons3.avif"
               }
             ]
           },
