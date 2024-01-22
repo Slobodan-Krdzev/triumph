@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('families', function (Blueprint $table) {
+        Schema::create('adventurefam', function (Blueprint $table) {
             $table->id();
             $table->json('type');
             $table->json('mainBikeLogoImage')->nullable();
@@ -32,6 +32,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('families');
+        Schema::dropIfExists('adventurefam');
     }
 };
