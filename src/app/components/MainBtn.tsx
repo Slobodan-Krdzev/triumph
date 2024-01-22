@@ -1,7 +1,6 @@
 "use client"
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import React from "react";
 
 type BtnProps = {
   link?: string;
@@ -22,11 +21,10 @@ const MainBtn = ({
   action,
 }: BtnProps) => {
 
-  const router = useRouter()
-  const pathname = usePathname()
+  const router = useRouter() 
+  const pathname = usePathname() 
 
   const isOffRoadRoute = Boolean(pathname.split("/")[2] === 'off-road');
-  
 
   if (isLink && link) {
     return (

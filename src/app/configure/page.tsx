@@ -1,10 +1,6 @@
-import React from "react";
-import { BIKES, FAMILIES } from "../constants/constants";
-import { filterOutBikesByFamily } from "../helpers/filterBikesByFamily";
-import MainBtn from "../components/MainBtn";
-import HeroSectionCTA from "../components/HeroSectionCTA";
 import BikesByFamilyWithSlider from "../components/BikesByFamilyWithSlider";
-import { getBikesByFamily } from "../components/helpers/getBikesByFamily";
+import HeroSectionCTA from "../components/HeroSectionCTA";
+import { FAMILIES } from "../constants/constants";
 
 const ConfigurePage = async () => {
   // PROMISE.ALL sredi
