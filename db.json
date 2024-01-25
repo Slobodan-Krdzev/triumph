@@ -21,8 +21,7 @@
         },
         "title": "Додајте аксесоари на вашиот мотор",
         "link": "/configure/bikes"
-      },
-      "subFamilies": {}
+      }
     },
     {
       "id": 2,
@@ -71,8 +70,7 @@
           "desc": "Иконската силуета на Bonneville го зема секој поглед, исто како и секој модел кој е полн со прекрасни детали кои го повторуваат безвременскиот дизајн на оригиналниот мотор.",
           "image": "/images/classics/classicsSlide5.avif"
         }
-      ],
-      "subFamilies": {}
+      ]
     },
     {
       "id": 3,
@@ -94,9 +92,7 @@
         "title": "Длабок Богат Три-Цилиндричен Звук",
         "desc": "Speed Triple RS моторциклот, има чист, префинет звук благодарејки на двојниот катализаторски систем и карбонскиот врв на издувната цевка.",
         "logo": "/images/roadsters/logoAudioSection.png"
-      },
-      "promo": [],
-      "subFamilies": {}
+      }
     },
     {
       "id": 4,
@@ -112,8 +108,7 @@
           "src": "/images/rocket-3/configFamilyBanner.avif",
           "alt": "Adventure Bikes Banner"
         }
-      },
-      "subFamilies": {}
+      }
     },
     {
       "id": 5,
@@ -161,9 +156,7 @@
           "desc": "Новите и помладите возачи ограничени на А2 лиценца сè уште можат да уживаат во Daytona 660. Вашиот продавач на Triumph може да постави специјален држач за APS и програма за моторот што ја ограничува коњската сила на 35 kW.",
           "image": "/images/sport/grayCaro/caro5.avif"
         }
-      ],
-      "promo": [],
-      "subFamilies": {}
+      ]
     },
     {
       "id": 6,
@@ -5802,7 +5795,7 @@
       },
       "gallery": {
         "modelImage": {
-          "src": "/images/rocket/rocket3Model.png",
+          "src": "/images/rocket-3/rocket3R/rocket3RSilverIce.png",
           "alt": "Rocket 3 Range Model Image"
         },
         "subFamilyHeroVideo": {

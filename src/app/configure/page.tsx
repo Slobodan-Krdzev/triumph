@@ -1,11 +1,16 @@
 import BikesByFamilyWithSlider from "../components/BikesByFamilyWithSlider";
 import HeroSectionCTA from "../components/HeroSectionCTA";
-import { FAMILIES } from "../constants/constants";
+import { getSufamiliesByFamilyType } from "../components/helpers/getSubfamiliesByFamilyType";
+import { FAMILIES, SUB_FAMILIES } from "../constants/constants";
 
 const ConfigurePage = async () => {
   // PROMISE.ALL sredi
-  const familiesRes = await fetch(`${FAMILIES}`, { cache: "no-store" });
-  const families = await familiesRes.json();
+
+  const familiesRes = await fetch(`${FAMILIES}`, { cache: "no-store" })
+  const families = await familiesRes.json()
+
+  const subFamiliesRes = await fetch(`${SUB_FAMILIES}`, { cache: "no-store" });
+  const subFamilies = await subFamiliesRes.json();
 
   const getSubFamilies = (subFamilyObj: any) => {
     const subFamiliesArray = Object.keys(subFamilyObj).map(
@@ -15,7 +20,7 @@ const ConfigurePage = async () => {
     return subFamiliesArray;
   };
 
-
+  getSufamiliesByFamilyType('adventure', subFamilies)
   return (
     <>
       <HeroSectionCTA
@@ -30,7 +35,7 @@ const ConfigurePage = async () => {
         {families.map((family: any) => (
           <BikesByFamilyWithSlider
             key={family.id}
-            items={getSubFamilies(family.subFamilies)}
+            items={getSufamiliesByFamilyType(family.type, subFamilies)}
             familyData={{
               title: family.type,
               desc: family.configPageInfo?.desc ?? "",
