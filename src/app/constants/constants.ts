@@ -1,7 +1,7 @@
-export const BIKES = "http://localhost:8000/bikes";
-export const FAMILIES = "http://localhost:8000/families";
-export const SUB_FAMILIES = "http://localhost:8000/subFamilies";
-export const MAINCAROUSELLITEMS = "http://localhost:8000/main-carousell-items"
-export const LATESTCAROUSELLITEMS = "http://localhost:8000/latest-models-carousell-items"
-export const PROMOS = "http://localhost:8000/promos"
+export const BIKES = "https://dull-mirage-spy.glitch.me/bikes";
+export const FAMILIES = "https://dull-mirage-spy.glitch.me/families";
+export const SUB_FAMILIES = "https://dull-mirage-spy.glitch.me/subFamilies";
+export const MAINCAROUSELLITEMS = "https://dull-mirage-spy.glitch.me/main-carousell-items"
+export const LATESTCAROUSELLITEMS = "https://dull-mirage-spy.glitch.me/latest-models-carousell-items"
+export const PROMOS = "https://dull-mirage-spy.glitch.me/promos"
 
