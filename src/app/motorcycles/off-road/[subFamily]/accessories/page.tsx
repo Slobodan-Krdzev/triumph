@@ -1,20 +1,18 @@
-import GrayBand from "@/app/components/GrayBand";
 import AccessoriesListing from "@/app/components/SubFamily/ClassicAccesoryPage/AccessoriesListing";
 import SecondaryPagesHeroSection from "@/app/components/SubFamily/SecondaryPagesHeroSection";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
 import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
-import { BIKES, FAMILIES } from "@/app/constants/constants";
-import React from "react";
+import { BIKES, SUB_FAMILIES } from "@/app/constants/constants";
 
 const SubFamReasonsToRide = async ({ params }: any) => {
   const subFam = params.subFamily;
 
   try {
-    const familyRes = await fetch(`${FAMILIES}?type=off-road`, {
+    const subFamilyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=${subFam}`, {
       cache: "no-store",
     });
-    const familyData = await familyRes.json();
-    const subFamily = familyData[0].subFamilies[subFam];
+    const subFamilyData = await subFamilyRes.json();
+    const subFamily = subFamilyData[0];
 
     const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${subFam}`);
     const bikesData = await bikesRes.json();

@@ -6,16 +6,20 @@ import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeI
 import BikeListingNoSlider from "@/app/components/familiySharedComponents/BikeListingNoSlider";
 import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
 import TextAndImageFlexSection from "@/app/components/familiySharedComponents/TextAndImageFlexSection";
-import { formSecondaryNavItems } from "@/app/components/helpers/formSecondaryNavItems";
-import { BIKES, FAMILIES } from "@/app/constants/constants";
+import { createSubFamLinksForSecondary } from "@/app/components/helpers/createSubFamLinksForSecondary";
+import { BIKES, FAMILIES, SUB_FAMILIES } from "@/app/constants/constants";
 import { PromoDataType } from "@/app/types/HomeTypes/SharedTypes/types";
 
-const OffRoadFamilyPage = async ({ params }: any) => {
+const OffRoadFamilyPage = async () => {
+
   const familyRes = await fetch(`${FAMILIES}?type=off-road`, {
     cache: "no-store",
   });
   const familyData = await familyRes.json();
 
+  const subFamiliesRes = await fetch(`${SUB_FAMILIES}?familyType=off-road`)
+  const subFamilies = await subFamiliesRes.json()
+  
   const bikesRes = await fetch(`${BIKES}?category=off-road`, {
     cache: "no-store",
   });
@@ -28,7 +32,7 @@ const OffRoadFamilyPage = async ({ params }: any) => {
   return (
     <main className="bg-black">
       <SecondaryNavFamily
-        items={formSecondaryNavItems(familyData[0].subFamilies, "off-road")}
+        items={createSubFamLinksForSecondary(subFamilies)}
         title={"Off Road"}
         configLink={"/configure"}
       />
