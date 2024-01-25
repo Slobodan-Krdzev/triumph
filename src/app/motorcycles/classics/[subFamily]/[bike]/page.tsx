@@ -10,11 +10,12 @@ import MainBtn from "@/app/components/MainBtn";
 import SpecTableListi from "@/app/components/SubFamily/Specification/SpecTableListi";
 import SpecsTable from "@/app/components/SubFamily/Specification/SpecsTable";
 import TextAndImageFlexSection from "@/app/components/familiySharedComponents/TextAndImageFlexSection";
-import { BIKES, FAMILIES } from "@/app/constants/constants";
+import { BIKES, FAMILIES, SUB_FAMILIES } from "@/app/constants/constants";
 import React from "react";
 
 const ClassicsBikePage = async ({ params }: any) => {
   const bikeModel = params.bike;
+  const subFamQuery = params.subFamily
 
   try {
     const bikeRes = await fetch(`${BIKES}?model=${params.bike}`, {
@@ -23,9 +24,9 @@ const ClassicsBikePage = async ({ params }: any) => {
     const bikeData = await bikeRes.json();
     const bike = bikeData[0];
 
-    const subFamRes = await fetch(`${FAMILIES}?type=classics`);
+    const subFamRes = await fetch(`${SUB_FAMILIES}?subFamilyName=${subFamQuery}`);
     const subFamData = await subFamRes.json();
-    const subFam = subFamData[0].subFamilies[bike.subFamilyCategory];
+    const subFam = subFamData[0];
 
     return (
       <main className="bg-white">
@@ -105,7 +106,7 @@ const ClassicsBikePage = async ({ params }: any) => {
         )}
 
         {bike.bikePagePromo && (
-          <section className="px-4 md:px-24 py-4 md:py-16">
+          <section className="m-auto w-full md:w-10/12 px-4 md:px-24 py-4 md:py-16">
             {bike.bikePagePromo.map((promo: any, idx: number) => (
               <TextAndImageFlexSection
                 key={promo.title}

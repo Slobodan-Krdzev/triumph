@@ -4,7 +4,7 @@ import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formul
 import { useBreakpoint } from "@/app/components/helpers/useBreakpoint";
 import MobileSecondaryNav from "@/app/components/whiteSecondaryNavBar/MobileSecondary/MobileSecondaryNav";
 import SecondaryNavBar from "@/app/components/whiteSecondaryNavBar/SecondaryNavBar";
-import { useParams, usePathname, useRouter } from "next/navigation";
+import { useParams, usePathname } from "next/navigation";
 
 export default function SubFamilyLayout({
   children, // will be a page or nested layout
@@ -38,7 +38,7 @@ export default function SubFamilyLayout({
     {
       text: "Аксесоари",
       link: `/${path}/${params.subFamily}/accessories`,
-    }
+    },
   ];
 
   return (
@@ -61,17 +61,17 @@ export default function SubFamilyLayout({
 
       {children}
       <GrayBand
-            itemOne={{
-              text: "Конфигурации",
-              url: "/configure",
-              icon: "/icon-configurator.svg",
-            }}
-            itemTwo={{
-              text: "Контакт",
-              url: "/dealers/dealer-search",
-              icon: "/pin.svg",
-            }}
-          />
+        itemOne={{
+          text: "Конфигурации",
+          url: "/configure",
+          icon: "/icon-configurator.svg",
+        }}
+        itemTwo={{
+          text: "Контакт",
+          url: "/dealers/dealer-search",
+          icon: "/pin.svg",
+        }}
+      />
     </section>
   );
 }

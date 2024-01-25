@@ -5,7 +5,6 @@ import { BIKES, SUB_FAMILIES } from "@/app/constants/constants";
 
 const Rocket3SubFamPage = async () => {
   try {
-    
     const subFamilyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=rocket-3`, {
       cache: "no-store",
     });
@@ -18,7 +17,6 @@ const Rocket3SubFamPage = async () => {
       }
     );
     const bikes = await bikesRes.json();
-
 
     return (
       <>

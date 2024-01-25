@@ -11,7 +11,8 @@ import SpecTableListi from "@/app/components/SubFamily/Specification/SpecTableLi
 import SpecsTable from "@/app/components/SubFamily/Specification/SpecsTable";
 import TextAndImageFlexSection from "@/app/components/familiySharedComponents/TextAndImageFlexSection";
 import LatestModelsCarousellSection from "@/app/components/homePageComponents/LatestModelsCarousellSection";
-import { BIKES, FAMILIES } from "@/app/constants/constants";
+import { BIKES, FAMILIES, SUB_FAMILIES } from "@/app/constants/constants";
+import { redirect } from "next/navigation";
 
 type BikePagePromoType = {
   title: string;
@@ -20,8 +21,7 @@ type BikePagePromoType = {
 };
 
 const BikePage = async ({ params }: any) => {
-
- 
+  const subFamQuery = params.subFamily;
 
   try {
     const bikeRes = await fetch(`${BIKES}?model=${params.bike}`, {
@@ -30,9 +30,11 @@ const BikePage = async ({ params }: any) => {
     const bikeData = await bikeRes.json();
     const bike = bikeData[0];
 
-    const subFamRes = await fetch(`${FAMILIES}?type=adventure`);
+    const subFamRes = await fetch(
+      `${SUB_FAMILIES}?subFamilyName=${subFamQuery}`
+    );
     const subFamData = await subFamRes.json();
-    const subFam = subFamData[0].subFamilies[bike.subFamilyCategory];
+    const subFam = subFamData[0];
 
     return (
       <main className="bg-white">
@@ -42,11 +44,11 @@ const BikePage = async ({ params }: any) => {
             <div className="flex items-center flex-col md:flex-row gap-4 md:gap-0">
               <div className="flex flex-col w-full md:w-2/12 items-start md:justify-center lg:pl-24 md:pl-16 pl-0 order-3 md:order-1">
                 {bike.customizationColors && <ColorNamePreviewer bike={bike} />}
-                
+
                 <p className="text-sm font-semibold text-neutral-500">
                   Цени од:
                 </p>
-                <PricePriviewer bike={bike}/>
+                <PricePriviewer bike={bike} />
                 <div className="flex flex-col gap-6 text-center">
                   <MainBtn
                     text={"КОНФИГУРАЦИЈА"}
@@ -65,11 +67,13 @@ const BikePage = async ({ params }: any) => {
 
               <div className="md:w-8/12 w-full m-auto order-1 md:order-2">
                 {bike.bikeCollorPalletteGallery && <ImagePreview bike={bike} />}
-                
               </div>
               <div className="md:w-2/12 w-full order-2 md:order-3">
-                {bike.customizationColors && <CustomizationColorsListing colors={bike.customizationColors} />}
-                
+                {bike.customizationColors && (
+                  <CustomizationColorsListing
+                    colors={bike.customizationColors}
+                  />
+                )}
               </div>
             </div>
           </div>
@@ -80,7 +84,12 @@ const BikePage = async ({ params }: any) => {
           </h2>
           <div className="px-4">
             <SpecTableListi
-              items={[{ title: "Цена", desc: `${bike.price ? `€ ${bike.price}.00` : "Наскоро"}` }]}
+              items={[
+                {
+                  title: "Цена",
+                  desc: `${bike.price ? `€ ${bike.price}.00` : "Наскоро"}`,
+                },
+              ]}
               title={"Цена"}
               isOpen={true}
             />
@@ -88,53 +97,59 @@ const BikePage = async ({ params }: any) => {
           <SpecsTable specs={subFam.subFamilyPageInfo.fullSpecs} />
         </section>
 
-        {bike.gallery.promoYoutubeVideo && <PromoBikeYoutubeVideo
-          video={bike.gallery.promoYoutubeVideo.src}
-          alt={bike.gallery.promoYoutubeVideo.alt}
-        />}
-        
+        {bike.gallery.promoYoutubeVideo && (
+          <PromoBikeYoutubeVideo
+            video={bike.gallery.promoYoutubeVideo.src}
+            alt={bike.gallery.promoYoutubeVideo.alt}
+          />
+        )}
 
-        {bike.features && <SpecTableListi
-          items={bike.features}
-          title={"Карактеристики"}
-          isOpen={true}
-        />}
-        
+        {bike.features && (
+          <SpecTableListi
+            items={bike.features}
+            title={"Карактеристики"}
+            isOpen={true}
+          />
+        )}
 
-        {bike.bikePageCarousell && <BikePageCarousell items={bike.bikePageCarousell} />}
-        
+        {bike.bikePageCarousell && (
+          <BikePageCarousell items={bike.bikePageCarousell} />
+        )}
 
+        {bike.bikePagePromo && (
+          <section className="m-auto w-full md:w-10/12 px-4 md:px-24 py-4 md:py-16">
+            {bike.bikePagePromo.map((promo: BikePagePromoType, idx: number) => (
+              <TextAndImageFlexSection
+                key={promo.title}
+                title={promo.title}
+                textMain={promo.desc}
+                imageLeft={idx % 2 !== 0 ? true : false}
+                image={{
+                  src: promo.image,
+                  alt: bike.model,
+                }}
+              />
+            ))}
+          </section>
+        )}
 
-      {bike.bikePagePromo && <section className="px-4 md:px-24 py-4 md:py-16">
-          {bike.bikePagePromo.map((promo: BikePagePromoType, idx:number) => (
-            <TextAndImageFlexSection
-              key={promo.title}
-              title={promo.title}
-              textMain={promo.desc}
-              imageLeft={idx % 2 !== 0 ? true : false}
-              image={{
-                src: promo.image,
-                alt: bike.model,
-              }}
-            />
-          ))}
-        </section>}
-        
-
-        <GrayBand itemOne={{
-          text: "Контакт",
-          url: "/dealers/dealer-search",
-          icon: "/pin.svg"
-        }} itemTwo={{
-          text: "КОНФИГУРАЦИЈА",
-          url: `/configure/families/adventure`,
-          icon: "/icon-configurator.svg"
-        }}/>
+        <GrayBand
+          itemOne={{
+            text: "Контакт",
+            url: "/dealers/dealer-search",
+            icon: "/pin.svg",
+          }}
+          itemTwo={{
+            text: "КОНФИГУРАЦИЈА",
+            url: `/configure/families/adventure`,
+            icon: "/icon-configurator.svg",
+          }}
+        />
       </main>
     );
   } catch (err) {
     console.log(err);
-    return "err";
+    return redirect(`/motorcycles/adventure/${subFamQuery}`);
   }
 };
 
