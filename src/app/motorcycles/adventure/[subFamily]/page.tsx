@@ -6,17 +6,17 @@ import BottomCarousell from "@/app/components/classicsPageComp/BottomCarousell";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
 import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
 import AudioSection from "@/app/components/roadstersUniqueComp/AudioSection";
-import { BIKES, FAMILIES } from "@/app/constants/constants";
+import { BIKES, SUB_FAMILIES } from "@/app/constants/constants";
 
 const SubFamilyPage = async ({ params }: any) => {
   const query = params.subFamily;
 
   try {
-    const familyRes = await fetch(`${FAMILIES}?type=adventure`, {
+    const subFamilyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=${query}`, {
       cache: "no-store",
     });
-    const familyData = await familyRes.json();
-    const family = familyData[0];
+    const subFamilyData = await subFamilyRes.json();
+    const subFamily = subFamilyData[0];
 
     const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${query}`);
     const bikes = await bikesRes.json();
@@ -24,45 +24,45 @@ const SubFamilyPage = async ({ params }: any) => {
    
 
     const hasGrayCaro =
-      family.subFamilies[query].subFamilyPageInfo.hasOwnProperty(
+      subFamily.subFamilyPageInfo.hasOwnProperty(
         "grayCarousell"
       );
 
     const hasYoutubeVid =
-      family.subFamilies[query].subFamilyPageInfo.hasOwnProperty(
+      subFamily.subFamilyPageInfo.hasOwnProperty(
         "youtubeVideo"
       );
 
     const hasAudio =
-      family.subFamilies[query].subFamilyPageInfo.hasOwnProperty(
+      subFamily.subFamilyPageInfo.hasOwnProperty(
         "audioSection"
       );
 
-      const hasTopSection = family.subFamilies[query].subFamilyPageInfo.hasOwnProperty(
+      const hasTopSection = subFamily.subFamilyPageInfo.hasOwnProperty(
         "topSection"
       );
 
     return (
       <>  
       <HeroSection
-          video={family.subFamilies[query].gallery.subFamilyHeroVideo.src}
-          mobileImage={family.subFamilies[query].gallery.subFamilyHeroImageMobile?.src ?? "/"}
+          video={subFamily.gallery.subFamilyHeroVideo.src}
+          mobileImage={subFamily.gallery.subFamilyHeroImageMobile?.src ?? "/"}
           model={formulateSubFamilyTitleOnBanner(query)}
         />
         
 
         <main className="bg-white">
           {hasTopSection && <TopSection
-            title={family.subFamilies[query].subFamilyPageInfo.topSection.title}
-            desc={family.subFamilies[query].subFamilyPageInfo.topSection.desc}
+            title={subFamily.subFamilyPageInfo.topSection.title}
+            desc={subFamily.subFamilyPageInfo.topSection.desc}
             subtitle={
-              family.subFamilies[query].subFamilyPageInfo.topSection.subtitle
+              subFamily.subFamilyPageInfo.topSection.subtitle
             }
             image={
-              family.subFamilies[query].gallery.subFamilyTopSectionImage.src
+              subFamily.gallery.subFamilyTopSectionImage.src
             }
             bgImage={
-              family.subFamilies[query].gallery.subFamilyTopSectionBGImage.src
+              subFamily.gallery.subFamilyTopSectionBGImage.src
             }
           />}
           
@@ -75,7 +75,7 @@ const SubFamilyPage = async ({ params }: any) => {
                 desc={bike.subFamilyPromo.desc}
                 ctaBtn={{
                   text: "Детали",
-                  link: `/motorcycles/${family.type}/${query}/${bike.model}`,
+                  link: `/motorcycles/adventure/${query}/${bike.model}`,
                 }}
                 image={{
                   src: `${bike.gallery.modelImage.src}`,
@@ -91,30 +91,30 @@ const SubFamilyPage = async ({ params }: any) => {
 
         {hasYoutubeVid && (
           <YouTubePromo
-            video={family.subFamilies[query].subFamilyPageInfo.youtubeVideo}
+            video={subFamily.subFamilyPageInfo.youtubeVideo}
           />
         )}
 
         {hasGrayCaro && (
           <BottomCarousell
-            items={family.subFamilies[query].subFamilyPageInfo.grayCarousell}
+            items={subFamily.subFamilyPageInfo.grayCarousell}
           />
         )}
 
         <NumbersSection
           model={query}
-          specNumbers={family.subFamilies[query].subFamilyPageInfo.specNumbers}
+          specNumbers={subFamily.subFamilyPageInfo.specNumbers}
         />
 
         {hasAudio && (
           <AudioSection
             audio={
-              family.subFamilies[query].subFamilyPageInfo.audioSection.audio
+              subFamily.subFamilyPageInfo.audioSection.audio
             }
             title={
-              family.subFamilies[query].subFamilyPageInfo.audioSection.title
+              subFamily.subFamilyPageInfo.audioSection.title
             }
-            desc={family.subFamilies[query].subFamilyPageInfo.audioSection.desc}
+            desc={subFamily.subFamilyPageInfo.audioSection.desc}
             model={query}
           />
         )}

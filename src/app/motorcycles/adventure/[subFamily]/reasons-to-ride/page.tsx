@@ -2,24 +2,20 @@ import ReasonsListin from "@/app/components/SubFamily/Reasons/ReasonsListin";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
 import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
 import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
-import { BIKES, FAMILIES } from "@/app/constants/constants";
-import React from "react";
+import { BIKES, SUB_FAMILIES } from "@/app/constants/constants";
+import { redirect } from "next/navigation";
 
 const SubFamReasonsToRidePage = async ({ params }: any) => {
   const subFam = params.subFamily;
 
   try {
-    const familyRes = await fetch(`${FAMILIES}?type=adventure`, {
-      cache: "no-store",
-    });
-    const familyData = await familyRes.json();
-    const subFamily = familyData[0].subFamilies[subFam];
+    const subFamilyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=${subFam}`)
+    const subFamilyData = await subFamilyRes.json()
+    const subFamily = subFamilyData[0] 
 
     const bikesRes = await fetch(`${BIKES}?model=${subFam}`);
     const bikesData = await bikesRes.json();
 
-    console.log("bikes", bikesData);
-    
     return (
       <>
         <section
@@ -78,7 +74,7 @@ const SubFamReasonsToRidePage = async ({ params }: any) => {
   } catch (err) {
     console.log(err);
 
-    return;
+    return redirect(`/motorcycles/adventure/${subFam}`)
   }
 };
 

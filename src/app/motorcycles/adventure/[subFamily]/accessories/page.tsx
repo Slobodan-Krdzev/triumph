@@ -1,18 +1,19 @@
 import AccessoriesListing from '@/app/components/SubFamily/ClassicAccesoryPage/AccessoriesListing';
 import SecondaryPagesHeroSection from '@/app/components/SubFamily/SecondaryPagesHeroSection';
 import BikeInfoTextImageBtn from '@/app/components/familiySharedComponents/BikeInfoTextImageBtn';
-import { BIKES, FAMILIES } from '@/app/constants/constants';
+import { BIKES, FAMILIES, SUB_FAMILIES } from '@/app/constants/constants';
+import { redirect } from 'next/navigation';
 import React from 'react'
 
 const SubFamReasonsToRide = async ({params}: any) => {
   const subFam = params.subFamily;
 
     try {
-      const familyRes = await fetch(`${FAMILIES}?type=adventure`, {
+      const familyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=${subFam}`, {
         cache: "no-store",
       });
       const familyData = await familyRes.json();
-      const subFamily = familyData[0].subFamilies[subFam];
+      const subFamily = familyData[0];
   
       const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${subFam}`);
       const bikesData = await bikesRes.json();
@@ -50,7 +51,7 @@ const SubFamReasonsToRide = async ({params}: any) => {
     } catch (err) {
       console.log(err);
   
-      return "err";
+      return redirect(`/motorcycles/adventure/${subFam}`)
     }
 }
 
