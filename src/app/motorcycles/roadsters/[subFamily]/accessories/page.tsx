@@ -1,25 +1,20 @@
 import AccessoriesListing from '@/app/components/SubFamily/ClassicAccesoryPage/AccessoriesListing';
 import SecondaryPagesHeroSection from '@/app/components/SubFamily/SecondaryPagesHeroSection';
 import BikeInfoTextImageBtn from '@/app/components/familiySharedComponents/BikeInfoTextImageBtn';
-import { BIKES, FAMILIES } from '@/app/constants/constants';
+import { BIKES, FAMILIES, SUB_FAMILIES } from '@/app/constants/constants';
 import React from 'react'
 
 const AccessoriesPageRoadsters = async ({params}: any) => {
     const subFam = params.subFamily;
 
     try {
-      const familyRes = await fetch(`${FAMILIES}?type=roadsters`, {
-        cache: "no-store",
-      });
-      const familyData = await familyRes.json();
-      const subFamily = familyData[0].subFamilies[subFam];
+      const subFamilyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=${subFam}`, {cache: 'no-store'})
+      const subFamilyData = await subFamilyRes.json()
+      const subFamily = subFamilyData[0]
   
       const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${subFam}`);
       const bikesData = await bikesRes.json();
   
-      console.log(bikesData);
-      
-
       return (
         <>
           <SecondaryPagesHeroSection

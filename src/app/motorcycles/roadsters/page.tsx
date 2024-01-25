@@ -2,21 +2,15 @@ import SecondaryNavFamily from "@/app/components/SecondaryNavFamily";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
 import PageHeroSection from "@/app/components/familiySharedComponents/PageHeroSection";
 import TextAndImageFlexSection from "@/app/components/familiySharedComponents/TextAndImageFlexSection";
+import { createSubFamLinksForSecondary } from "@/app/components/helpers/createSubFamLinksForSecondary";
 import { formSecondaryNavItems } from "@/app/components/helpers/formSecondaryNavItems";
 import AudioSection from "@/app/components/roadstersUniqueComp/AudioSection";
 import SecondaryNavBar, { SecondaryNavItemsType } from "@/app/components/whiteSecondaryNavBar/SecondaryNavBar";
-import { BIKES, FAMILIES } from "@/app/constants/constants";
+import { BIKES, FAMILIES, SUB_FAMILIES } from "@/app/constants/constants";
 import { PromoDataType } from "@/app/types/HomeTypes/SharedTypes/types";
 import React from "react";
 
 const RoadstersPage = async () => {
-  const handleLink = (link: string, query: string) => {
-    if (link.includes(query)) {
-      return true;
-    }
-
-    return false;
-  };
 
   try {
     const familyRes = await fetch(`${FAMILIES}?type=roadsters`, {
@@ -24,10 +18,12 @@ const RoadstersPage = async () => {
     });
     const familyData = await familyRes.json();
 
+    const subFamiliesRes = await fetch(`${SUB_FAMILIES}?familyType=roadsters`)
+    const subFamilies = await subFamiliesRes.json()
 
     return (
       <>
-      <SecondaryNavFamily items={formSecondaryNavItems(familyData[0].subFamilies, 'roadsters')} title={"Roadsters"} configLink={"/configure"} />
+      <SecondaryNavFamily items={createSubFamLinksForSecondary(subFamilies)} title={"Roadsters"} configLink={"/configure"} />
 
         <PageHeroSection
           title={"Roadsters"}
@@ -55,9 +51,7 @@ const RoadstersPage = async () => {
               desc={item.desc}
               ctaBtn={{
                 text: "Детали",
-                link: handleLink(item.subFamilyType, "for-the-ride")
-                  ? item.subFamilyType
-                  : `/motorcycles/roadsters/${item.subFamilyType}`,
+                link: `/motorcycles/roadsters/${item.subFamilyType}`,
               }}
               image={{
                 src: `${item.image}`,
