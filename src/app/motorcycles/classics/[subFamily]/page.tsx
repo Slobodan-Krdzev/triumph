@@ -5,94 +5,61 @@ import YouTubePromo from "@/app/components/SubFamily/YouTubePromo";
 import YoutubeVideoCarousell from "@/app/components/SubFamily/YoutubeVideoCarousell/YoutubeVideoCarousell";
 import BottomCarousell from "@/app/components/classicsPageComp/BottomCarousell";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
+import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
 import AudioSection from "@/app/components/roadstersUniqueComp/AudioSection";
-import SecondaryNavBar from "@/app/components/whiteSecondaryNavBar/SecondaryNavBar";
-import { BIKES, FAMILIES } from "@/app/constants/constants";
-import React from "react";
+import { BIKES, SUB_FAMILIES } from "@/app/constants/constants";
+import { redirect } from "next/navigation";
 
 const ClassicsSubFamilyPage = async ({ params }: any) => {
-  const subFamily = params.subFamily;
+  const subFam = params.subFamily;
+
+  console.log(subFam);
 
   try {
-    const familyRes = await fetch(`${FAMILIES}?type=classics`, {
-      cache: "no-store",
-    });
-    const familyData = await familyRes.json();
-    const family = familyData[0];
-
-    const bikesRes = await fetch(
-      `${BIKES}?category=classics&subFamilyCategory=${subFamily}`,
+    const subFamilyRes = await fetch(
+      `${SUB_FAMILIES}?subFamilyName=${subFam}`,
       {
         cache: "no-store",
       }
     );
+    const subFamilyData = await subFamilyRes.json();
+    const subFamily = subFamilyData[0];
+
+    console.log(subFamily);
+
+    const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${subFam}`, {
+      cache: "no-store",
+    });
     const bikes = await bikesRes.json();
 
-    const hasGrayCaro =
-      family.subFamilies[subFamily].subFamilyPageInfo.hasOwnProperty(
-        "grayCarousell"
-      );
-
-    const hasYoutubeVid =
-      family.subFamilies[subFamily].subFamilyPageInfo.hasOwnProperty(
-        "youtubeVideo"
-      );
-
     const hasImageAsHero =
-      family.subFamilies[subFamily].gallery.hasOwnProperty(
-        "subFamilyHeroImage"
-      );
-
-    const hasAudioSection =
-    family.subFamilies[subFamily].subFamilyPageInfo.hasOwnProperty(
-      "audioSection"
-    );
-
-    const hasYoutubeCaro = family.subFamilies[subFamily].subFamilyPageInfo.hasOwnProperty(
-      "youtubeVideosCarousellItems"
-    );
+      subFamily.gallery.hasOwnProperty("subFamilyHeroImage");
 
     return (
       <>
-        {hasImageAsHero && (
+        {hasImageAsHero ? (
           <HeroSection
-            image={family.subFamilies[subFamily].gallery.subFamilyHeroImage.src}
-            model={subFamily}
-            slogans={
-              family.subFamilies[subFamily].subFamilyPageInfo.heroSlogans
-            }
+            image={subFamily.gallery.subFamilyHeroImage.src ?? ""}
+            mobileImage={subFamily.gallery.subFamilyHeroImageMobile?.src ?? "/"}
+            slogans={subFamily.subFamilyPageInfo.heroSlogans}
+            model={formulateSubFamilyTitleOnBanner(subFam)}
           />
-        )}
-
-        {!hasImageAsHero && (
+        ) : (
           <HeroSection
-            video={family.subFamilies[subFamily].gallery.subFamilyHeroVideo.src}
-            model={subFamily}
-            slogans={
-              family.subFamilies[subFamily].subFamilyPageInfo.heroSlogans
-            }
+            video={subFamily.gallery.subFamilyHeroVideo.src ?? ""}
+            slogans={subFamily.subFamilyPageInfo.heroSlogans}
+            mobileImage={subFamily.gallery.subFamilyHeroImageMobile?.src ?? "/"}
+            model={formulateSubFamilyTitleOnBanner(subFam)}
           />
         )}
 
         <main className="bg-white">
           <TopSection
-            title={
-              family.subFamilies[subFamily].subFamilyPageInfo.topSection.title
-            }
-            desc={
-              family.subFamilies[subFamily].subFamilyPageInfo.topSection.desc
-            }
-            subtitle={
-              family.subFamilies[subFamily].subFamilyPageInfo.topSection
-                .subtitle
-            }
-            image={
-              family.subFamilies[subFamily].gallery.subFamilyTopSectionImage.src
-            }
-            bgImage={
-              family.subFamilies[subFamily].gallery.subFamilyTopSectionBGImage
-                .src
-            }
+            title={subFamily.subFamilyPageInfo.topSection.title ?? ""}
+            desc={subFamily.subFamilyPageInfo.topSection.desc ?? ""}
+            subtitle={subFamily.subFamilyPageInfo.topSection.subtitle ?? ""}
+            image={subFamily.gallery.subFamilyTopSectionImage.src ?? ""}
+            bgImage={subFamily.gallery.subFamilyTopSectionBGImage.src ?? ""}
           />
 
           <section className="px-4 lg:px-20 xl:px-40">
@@ -103,7 +70,7 @@ const ClassicsSubFamilyPage = async ({ params }: any) => {
                 desc={bike.subFamilyPromo.desc}
                 ctaBtn={{
                   text: "Детали",
-                  link: `/motorcycles/${family.type}/${subFamily}/${bike.model}`,
+                  link: `/motorcycles/classics/${subFam}/${bike.model}`,
                 }}
                 image={{
                   src: `${bike.gallery.modelImage.src}`,
@@ -117,39 +84,33 @@ const ClassicsSubFamilyPage = async ({ params }: any) => {
           </section>
         </main>
 
-        {hasYoutubeVid && (
-          <YouTubePromo
-            video={family.subFamilies[subFamily].subFamilyPageInfo.youtubeVideo}
+        {subFamily.subFamilyPageInfo.youtubeVideo && (
+          <YouTubePromo video={subFamily.subFamilyPageInfo.youtubeVideo} />
+        )}
+
+        {subFamily.subFamilyPageInfo.grayCarousell && (
+          <BottomCarousell items={subFamily.subFamilyPageInfo.grayCarousell} />
+        )}
+
+        {subFamily.subFamilyPageInfo.specNumbers && (
+          <NumbersSection
+            model={subFamily}
+            specNumbers={subFamily.subFamilyPageInfo.specNumbers}
           />
         )}
 
-        {hasGrayCaro && (
-          <BottomCarousell
-            items={
-              family.subFamilies[subFamily].subFamilyPageInfo.grayCarousell
-            }
-          />
-        )}
-
-        <NumbersSection
-          model={subFamily}
-          specNumbers={
-            family.subFamilies[subFamily].subFamilyPageInfo.specNumbers
-          }
-        />
-
-        {hasAudioSection && 
+        {subFamily.subFamilyPageInfo.audioSection && (
           <AudioSection
-            audio={family.subFamilies[subFamily].subFamilyPageInfo.audioSection.audio}
-            title={family.subFamilies[subFamily].subFamilyPageInfo.audioSection.title}
-            desc={family.subFamilies[subFamily].subFamilyPageInfo.audioSection.desc}
+            audio={subFamily.subFamilyPageInfo.audioSection.audio}
+            title={subFamily.subFamilyPageInfo.audioSection.title}
+            desc={subFamily.subFamilyPageInfo.audioSection.desc}
             model={subFamily}
           />
-        }
+        )}
 
-        {hasYoutubeCaro && (
+        {subFamily.subFamilyPageInfo.youtubeVideosCarousellItems && (
           <YoutubeVideoCarousell
-            items={family.subFamilies[subFamily].subFamilyPageInfo.youtubeVideosCarousellItems}
+            items={subFamily.subFamilyPageInfo.youtubeVideosCarousellItems}
           />
         )}
       </>
@@ -157,7 +118,7 @@ const ClassicsSubFamilyPage = async ({ params }: any) => {
   } catch (err) {
     console.log(err);
 
-    return "err";
+    return redirect("/motorcycles/classics");
   }
 };
 

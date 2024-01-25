@@ -8,7 +8,7 @@
         "alt": "Adventure Main Bike Logo"
       },
       "familyPageBannerDesc": "Следната Тигер генерација пристигна. Најсовремените авантуристички мотори со возбудливи карактеристични трицилиндрични мотори, пионерска прогресивна технологија и опрема, ергономија на возачот за врвна контрола и флексибилно неутрално управување. Секој Tiger мотор е изграден со максимални способности да ве однесе насекаде со стил, удобност и контрола. Triumph Tiger е врвна авантуристичка серија на авантуристички мотори кои ви овозможуваат да го тестирате секој момент.",
-      "familyPageBannerVideo": "adventure/adventureHeroVideo.webm",
+      "familyPageBannerVideo": "/images/adventure/adventureHeroVideo.webm",
       "promo": [
         {
           "title": "Tiger 1200 Gt, GT Pro & Gt Explorer",
@@ -73,7 +73,7 @@
       "id": 2,
       "type": "classics",
       "familyPageBannerDesc": null,
-      "familyPageBannerVideo": "adventure/adventureHeroVideo.webm",
+      "familyPageBannerVideo": "/images/classics/classicsBannerVideo.webm",
       "promo": [
         {
           "title": "Нова 'Truxton Final-Edition' Серија",
@@ -1987,7 +1987,6 @@
       "id": 7,
       "subFamilyName": "speed-400",
       "familyType": "classics",
-
       "title": "Speed 400",
       "price": 5690,
       "url": "/motorcycles/classics/speed-400",
@@ -2215,7 +2214,7 @@
       },
       "accessory": {
         "banner": {
-          "image": "/images/classics/speed400/speed400AccessoryBanner.avif"
+          "image": "/images/classics/speed400/speed400AccesBanner.avif"
         },
         "infoText": {
           "title": "Додајте ваш белег врз Speed 400",

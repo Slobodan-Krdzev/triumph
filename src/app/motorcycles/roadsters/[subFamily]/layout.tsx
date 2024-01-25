@@ -31,7 +31,7 @@ export default function SubFamilyLayout({
       link: `/${path}/${params.subFamily}/specifications`,
     },
     {
-      text: "Зошто треба да ја одберете!",
+      text: "Детали",
       link: `/${path}/${params.subFamily}/reasons-to-ride`,
     },
     {

@@ -1,32 +1,32 @@
 import AccessoriesListing from "@/app/components/SubFamily/ClassicAccesoryPage/AccessoriesListing";
 import SecondaryPagesHeroSection from "@/app/components/SubFamily/SecondaryPagesHeroSection";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
-import { BIKES, FAMILIES } from "@/app/constants/constants";
-import React from "react";
+import { BIKES, SUB_FAMILIES } from "@/app/constants/constants";
+import { redirect } from "next/navigation";
 
 const ClassicsAccesoriesPage = async ({ params }: any) => {
   const subFam = params.subFamily;
 
   try {
-    const familyRes = await fetch(`${FAMILIES}?type=classics`, {
-      cache: "no-store",
-    });
-    const familyData = await familyRes.json();
-    const subFamily = familyData[0].subFamilies[subFam];
+    const subFamilyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=${subFam}`);
+    const subFamilyData = await subFamilyRes.json();
+    const subFamily = subFamilyData[0];
 
     const bikesRes = await fetch(`${BIKES}?model=${subFam}`);
     const bikesData = await bikesRes.json();
+
+    console.log(subFamily, subFam);
 
     return (
       <>
         <SecondaryPagesHeroSection
           bannerImage={subFamily.accessory.banner.image}
           subFamilyTitle={subFam}
-          text={`Средете го моторот по ваш вкус`}
+          text={`Аксесоари`}
         />
 
         <main className="px-4 md:px-16 lg:px-40">
-          <AccessoriesListing items={subFamily.accessory.accessoryTypes} />
+          <AccessoriesListing items={subFamily.accessory.accessoryTypes ?? []} />
 
           {bikesData.map((bike: any) => (
             <BikeInfoTextImageBtn
@@ -50,7 +50,7 @@ const ClassicsAccesoriesPage = async ({ params }: any) => {
   } catch (err) {
     console.log(err);
 
-    return "err";
+    return redirect(`/motorcycles/classics/${subFam}`)
   }
 };
 

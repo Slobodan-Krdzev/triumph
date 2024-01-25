@@ -41,7 +41,7 @@ const PageHeroSection = ({
 
       <div className="flex lg:basis-1/2 justify-center text-white order-1 lg:order-2">
         <video autoPlay muted loop >
-          <source src={`/images/${video}`} type="video/mp4"/>
+          <source src={video} type="video/mp4"/>
         </video>
       </div>
     </section>
