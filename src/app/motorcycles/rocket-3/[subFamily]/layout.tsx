@@ -1,4 +1,5 @@
 "use client";
+import GrayBand from "@/app/components/GrayBand";
 import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
 import { useBreakpoint } from "@/app/components/helpers/useBreakpoint";
 import MobileSecondaryNav from "@/app/components/whiteSecondaryNavBar/MobileSecondary/MobileSecondaryNav";
@@ -31,7 +32,7 @@ export default function SubFamilyLayout({
       link: `/${path}/${params.subFamily}/specifications`,
     },
     {
-      text: "Зошто треба да ја одберете!",
+      text: "Детали",
       link: `/${path}/${params.subFamily}/reasons-to-ride`,
     },
     {
@@ -59,6 +60,18 @@ export default function SubFamilyLayout({
       )}
 
       {children}
+      <GrayBand
+            itemOne={{
+              text: "Конфигурации",
+              url: "/configure",
+              icon: "/icon-configurator.svg",
+            }}
+            itemTwo={{
+              text: "Контакт",
+              url: "/dealers/dealer-search",
+              icon: "/pin.svg",
+            }}
+          />
     </section>
   );
 }

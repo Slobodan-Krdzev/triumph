@@ -4,16 +4,15 @@ import SecondaryPagesHeroSection from "@/app/components/SubFamily/SecondaryPages
 import YouTubePromo from "@/app/components/SubFamily/YouTubePromo";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
 import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
-import { BIKES, FAMILIES } from "@/app/constants/constants";
-import React from "react";
+import { BIKES, SUB_FAMILIES } from "@/app/constants/constants";
 
 const ReasonsRocketPage = async () => {
   try {
-    const familyRes = await fetch(`${FAMILIES}?type=rocket-3`, {
+    const familyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=rocket-3`, {
       cache: "no-store",
     });
     const familyData = await familyRes.json();
-    const subFamily = familyData[0].subFamilies["rocket-3"];
+    const subFamily = familyData[0];
 
     const bikesRes = await fetch(`${BIKES}?model=${"rocket-3"}`);
     const bikesData = await bikesRes.json();
@@ -23,7 +22,7 @@ const ReasonsRocketPage = async () => {
         <SecondaryPagesHeroSection
           bannerImage={subFamily.reasonsToDrive.banner.image}
           subFamilyTitle={"rocket-3"}
-          text={`Причини зошто да ја одберете серијата`}
+          text={`Детали`}
         />
 
         <main className="px-4">

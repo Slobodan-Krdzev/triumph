@@ -9,7 +9,7 @@ import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitl
 import { getBikesByEdition } from "@/app/components/helpers/getBikesByEdition";
 import CardLinkItem from "@/app/components/homePageComponents/CardLinkItem";
 import DiscoverThriumphCard from "@/app/components/homePageComponents/DiscoverThriumphCard";
-import { BIKES, FAMILIES, SUB_FAMILIES } from "@/app/constants/constants";
+import { BIKES, FAMILIES, PROMOS, SUB_FAMILIES } from "@/app/constants/constants";
 import { PromoDataType } from "@/app/types/HomeTypes/SharedTypes/types";
 import { getBikesByCC } from "./helpers/getBikesByCC";
 import { redirect } from "next/navigation";
@@ -21,13 +21,13 @@ const ClassicPage = async () => {
     });
     const familyData = await familyRes.json();
 
-    // const subFamiliesRes = await fetch(`${SUB_FAMILIES}?familyType=classics`)
-    // const subFamilies = await subFamiliesRes.json()
-
     const bikesRes = await fetch(`${BIKES}?category=classics`, {
       cache: "no-store",
     });
     const bikes = await bikesRes.json();
+
+    const promosRes = await fetch(`${PROMOS}?category=classics`)
+    const promos = await promosRes.json()
 
     const getBikesBySubFamCategory = (cat: string) => {
       const allBikes = bikes;
@@ -136,20 +136,20 @@ const ClassicPage = async () => {
           </section>
 
           <section>
-            {familyData[0].promo.map((item: PromoDataType) => (
+            {promos.map((promo: PromoDataType) => (
               <BikeInfoTextImageBtn
-                key={item.title}
-                title={item.title}
-                desc={item.desc}
+                key={promo.title}
+                title={promo.title}
+                desc={promo.desc}
                 ctaBtn={{
                   text: "Детали",
-                  link: `/motorcycles/classics/${item.subFamilyType}`,
+                  link: `/motorcycles/classics/${promo.subFamilyType}`,
                 }}
                 image={{
-                  src: item.image,
-                  alt: item.title,
+                  src: promo.image,
+                  alt: promo.title,
                 }}
-                blackBtn={item.btnBlack}
+                blackBtn={promo.btnBlack}
               />
             ))}
           </section>

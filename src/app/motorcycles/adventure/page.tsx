@@ -9,7 +9,7 @@ import TextAndImageFlexSection from "@/app/components/familiySharedComponents/Te
 import { createSubFamLinksForSecondary } from "@/app/components/helpers/createSubFamLinksForSecondary";
 import { formSecondaryNavItems } from "@/app/components/helpers/formSecondaryNavItems";
 import { getBikesBySubfamilyCategory } from "@/app/components/helpers/getBikesBySubfamilyCategory";
-import { BIKES, FAMILIES, SUB_FAMILIES } from "@/app/constants/constants";
+import { BIKES, FAMILIES, PROMOS, SUB_FAMILIES } from "@/app/constants/constants";
 import { PromoDataType } from "@/app/types/HomeTypes/SharedTypes/types";
 
 const AdventurePage = async () => {
@@ -25,6 +25,9 @@ const AdventurePage = async () => {
     cache: "no-store",
   });
   const bikes = await bikesRes.json();
+
+  const promosRes = await fetch(`${PROMOS}?category=adventure`)
+  const promos = await promosRes.json()
 
   return (
     <main className="relative white-bg">
@@ -71,20 +74,20 @@ const AdventurePage = async () => {
           />
         </section>
 
-        {familyData[0].promo.map((item: PromoDataType, idx: number) => (
+        {promos.map((promo: PromoDataType, idx: number) => (
           <BikeInfoTextImageBtn
-            key={`${item.title},${idx}`}
-            title={item.title}
-            desc={item.desc}
+            key={promo.id}
+            title={promo.title}
+            desc={promo.desc}
             ctaBtn={{
               text: "Детали",
-              link: `/motorcycles/adventure/${item.subFamilyType}`,
+              link: `/motorcycles/adventure/${promo.subFamilyType}`,
             }}
             image={{
-              src: `${item.image}`,
-              alt: `${item.title}`,
+              src: `${promo.image}`,
+              alt: `${promo.title}`,
             }}
-            blackBtn={item.btnBlack}
+            blackBtn={promo.btnBlack}
             imageOnTheLeft={idx % 2 === 0 ? true : false}
             mobileTextRight={idx % 2 === 0 ? true : false}
           />

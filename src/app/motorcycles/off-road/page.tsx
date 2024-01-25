@@ -7,27 +7,32 @@ import BikeListingNoSlider from "@/app/components/familiySharedComponents/BikeLi
 import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
 import TextAndImageFlexSection from "@/app/components/familiySharedComponents/TextAndImageFlexSection";
 import { createSubFamLinksForSecondary } from "@/app/components/helpers/createSubFamLinksForSecondary";
-import { BIKES, FAMILIES, SUB_FAMILIES } from "@/app/constants/constants";
+import {
+  BIKES,
+  FAMILIES,
+  PROMOS,
+  SUB_FAMILIES,
+} from "@/app/constants/constants";
 import { PromoDataType } from "@/app/types/HomeTypes/SharedTypes/types";
 
 const OffRoadFamilyPage = async () => {
-
   const familyRes = await fetch(`${FAMILIES}?type=off-road`, {
     cache: "no-store",
   });
   const familyData = await familyRes.json();
 
-  const subFamiliesRes = await fetch(`${SUB_FAMILIES}?familyType=off-road`)
-  const subFamilies = await subFamiliesRes.json()
-  
+  const subFamiliesRes = await fetch(`${SUB_FAMILIES}?familyType=off-road`);
+  const subFamilies = await subFamiliesRes.json();
+
   const bikesRes = await fetch(`${BIKES}?category=off-road`, {
     cache: "no-store",
   });
   const bikes = await bikesRes.json();
 
+  const promosRes = await fetch(`${PROMOS}?category=off-road`);
+  const promos = await promosRes.json();
 
-  const hasYoutubeVideo = familyData[0].hasOwnProperty('youtubeVideo')
-  console.log(hasYoutubeVideo, familyData[0].youtubeVideo);
+  const hasYoutubeVideo = familyData[0].hasOwnProperty("youtubeVideo");
 
   return (
     <main className="bg-black">
@@ -60,18 +65,22 @@ const OffRoadFamilyPage = async () => {
           }}
         />
       </div>
-        
-    {familyData[0].youtubeVideo !== null  ? <YouTubePromo video={familyData[0].youtubeVideo ?? ""} /> : ''}
-        
-    <div className="py-8 md:py-16 px-4 md:px-12 lg:px-20">
+
+      {familyData[0].youtubeVideo !== null ? (
+        <YouTubePromo video={familyData[0].youtubeVideo ?? ""} />
+      ) : (
+        ""
+      )}
+
+      <div className="py-8 md:py-16 px-4 md:px-12 lg:px-20">
         <TextAndImageFlexSection
           textWhite
           textCenter
           imageLeft
-          title={"„Оваа серија на мотори е направена за победи...Најдоброто од се вклопено во еден пакет кој ги носи перформансите на повисоко ниво.“"}
-          textMain={
-            " - Рики Кармајкл (The Goat)"
+          title={
+            "„Оваа серија на мотори е направена за победи...Најдоброто од се вклопено во еден пакет кој ги носи перформансите на повисоко ниво.“"
           }
+          textMain={" - Рики Кармајкл (The Goat)"}
           image={{
             src: "/images/offRoad/rickyPromo.avif",
             alt: "Ricky Carmichael",
@@ -80,20 +89,20 @@ const OffRoadFamilyPage = async () => {
       </div>
 
       <section className="text-white px-4">
-        {familyData[0].promo.map((item: PromoDataType, idx: number) => (
+        {promos.map((promo: PromoDataType, idx: number) => (
           <BikeInfoTextImageBtn
-            key={`${item.title},${idx}`}
-            title={item.title}
-            desc={item.desc}
+            key={`${promo.title},${idx}`}
+            title={promo.title}
+            desc={promo.desc}
             ctaBtn={{
               text: "Детали",
-              link: `/motorcycles/off-road/${item.subFamilyType}`,
+              link: `/motorcycles/off-road/${promo.subFamilyType}`,
             }}
             image={{
-              src: `${item.image}`,
-              alt: `${item.title}`,
+              src: `${promo.image}`,
+              alt: `${promo.title}`,
             }}
-            blackBtn={item.btnBlack}
+            blackBtn={promo.btnBlack}
             textWhite={true}
             imageOnTheLeft={idx % 2 !== 0 ? true : false}
             mobileTextRight={idx % 2 !== 0 ? true : false}

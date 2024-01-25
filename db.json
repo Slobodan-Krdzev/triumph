@@ -9,50 +9,7 @@
       },
       "familyPageBannerDesc": "Следната Тигер генерација пристигна. Најсовремените авантуристички мотори со возбудливи карактеристични трицилиндрични мотори, пионерска прогресивна технологија и опрема, ергономија на возачот за врвна контрола и флексибилно неутрално управување. Секој Tiger мотор е изграден со максимални способности да ве однесе насекаде со стил, удобност и контрола. Triumph Tiger е врвна авантуристичка серија на авантуристички мотори кои ви овозможуваат да го тестирате секој момент.",
       "familyPageBannerVideo": "/images/adventure/adventureHeroVideo.webm",
-      "promo": [
-        {
-          "title": "Tiger 1200 Gt, GT Pro & Gt Explorer",
-          "subFamilyType": "tiger-1200-gt",
-          "desc": "Врвни, патничко-авантуристички мотори, спремни и за интерконтинентални патувања.",
-          "image": "/images/adventure/adventurePromoTiger1200Gt.avif",
-          "btnBlack": true
-        },
-        {
-          "title": "TIGER 1200 RALLY PRO AND RALLY EXPLORER",
-          "subFamilyType": "tiger-1200-rally",
-          "desc": "Со уште поголем off-road карактер и способности, најдобрата all-terrain авантуристичка серија.",
-          "image": "/images/adventure/adventurePromoTiger1200Rally.avif",
-          "btnBlack": false
-        },
-        {
-          "title": "TIGER SPORT 660",
-          "subFamilyType": "tiger-sport-660",
-          "desc": "Tiger Sport 660, со ефикасен три-цилиндричен мотор, врвни перформанси, комфорт а сепак агилен и со најниски трошоци за одржување во класата. Сето ова од  €9,590.00.",
-          "image": "/images/adventure/adventurePromoTiger660.avif",
-          "btnBlack": false
-        },
-        {
-          "title": "TIGER 900 GT",
-          "subFamilyType": "tiger-900-gt",
-          "desc": "Дизајниран за авантури по асфалт и комфорт, Tiger 900 GT серијата е фокусирана на возачот и нуди многу опрема и технологија на располагање.",
-          "image": "/images/adventure/adventurePromoTiger900Gt.avif",
-          "btnBlack": false
-        },
-        {
-          "title": "TIGER 900 RALLY",
-          "subFamilyType": "tiger-900-rally",
-          "desc": "Возбудлив Tiger серија, дизајнирана за максимално off-road доживување, комфорт и исклучително врвна контрола врз моторот со погон од најмоќниот три-цилиндричен Triumph мотор.",
-          "image": "/images/adventure/adventurePromoTiger900Rally.avif",
-          "btnBlack": true
-        },
-        {
-          "title": "TIGER 1200",
-          "subFamilyType": "configure/families/adventure",
-          "desc": "All-terrain моторцикли кои го освојуваат светот...",
-          "image": "/images/adventure/adventurePromoTiger1200Gif.gif",
-          "btnBlack": true
-        }
-      ],
+      "promo": [],
       "configPageInfo": {
         "desc": "Истражете го светот на авантурите, со мотоцикли изградени за секогаш да стигнат до крајот на патот, подготвени да одат каде било и да постигнат сè.",
         "link": "/configure/families/adventure"
@@ -65,31 +22,14 @@
         "title": "Додајте аксесоари на вашиот мотор",
         "link": "/configure/bikes"
       },
-      "subFamilies": {
-       
-      }
+      "subFamilies": {}
     },
     {
       "id": 2,
       "type": "classics",
       "familyPageBannerDesc": null,
       "familyPageBannerVideo": "/images/classics/classicsBannerVideo.webm",
-      "promo": [
-        {
-          "title": "Нова 'Truxton Final-Edition' Серија",
-          "subFamilyType": "truxton-final-edition",
-          "desc": "Крајот на една ера - последната продукциска серија на иконата во Triumph серијата. Откријте повеќе за ексклузивното Thruxton Final Edition.",
-          "image": "/images/classics/thruxtonFinalEdition.avif",
-          "btnBlack": true
-        },
-        {
-          "title": "Нова 'Stealth' Серија",
-          "subFamilyType": "stealth-edition",
-          "desc": "Темно и софистицирано, но сепак смело и живо. Достапна само една година, оваа неверојатна колекција се одликува со неверојатен финиш на боја по ваша нарачка.",
-          "image": "/images/classics/stealthEdition.avif",
-          "btnBlack": true
-        }
-      ],
+      "promo": [],
       "configPageInfo": {
         "desc": "Легендарната 'Bonneville' крвна линија е вградена во нашите модерни класици, со неспоредлива историја на изведби, тркачки успех и културно влијание.",
         "link": "/configure/families/classics"
@@ -132,9 +72,7 @@
           "image": "/images/classics/classicsSlide5.avif"
         }
       ],
-      "subFamilies": {
-        
-      }
+      "subFamilies": {}
     },
     {
       "id": 3,
@@ -157,47 +95,8 @@
         "desc": "Speed Triple RS моторциклот, има чист, префинет звук благодарејки на двојниот катализаторски систем и карбонскиот врв на издувната цевка.",
         "logo": "/images/roadsters/logoAudioSection.png"
       },
-      "promo": [
-        {
-          "title": "НОВИОТ STREET TRIPLE 765",
-          "subFamilyType": "street-triple-765",
-          "desc": "Подкрепнат од еволуциран Moto2™ тркачки мотор. новата Speed Triple серија е високо перформантна, со висока спецификација и прилагодлива за секого. Цени од: €12,290.00",
-          "image": "/images/roadsters/roadstersPromoSpeedTriple765.avif",
-          "btnBlack": true
-        },
-
-        {
-          "title": "TRIDENT 660",
-          "subFamilyType": "trident-660",
-          "desc": "Компетативни цени, спорстки, стилски, возбудлив и прилагодлив - новиот Trident 660 може се. Вашата Tri-Reel Advantage ви е на располагање и чека на вас. Цени од €8,690.00.",
-          "image": "/images/roadsters/roadstersPromoTrident660.avif",
-          "btnBlack": false
-        },
-        {
-          "title": "НОВИОТ SPEED TRIPLE 1200 RR",
-          "subFamilyType": "speed-triple-1200-rr/speed-triple-1200-rr",
-          "desc": "Колку повозбудливо изгледа толку е повозбудлив за возење, притоа со највисокото ниво на спецификации. Цени од €20,990.00.",
-          "image": "/images/roadsters/roadstersPromoSpeedRR.avif",
-          "btnBlack": false
-        },
-        {
-          "title": "НАЈНОВИОТ SPEED TRIPLE 1200 RS",
-          "subFamilyType": "speed-triple-1200/speed-triple-1200-rs",
-          "desc": "Најмоќниот, динамичен и технолошки напреден Speed Triple мотор некогаш изработен. Цени од  €18,990.00.",
-          "image": "/images/roadsters/roadstersPromoSpeedRS.avif",
-          "btnBlack": false
-        },
-        {
-          "title": "3-ЦИЛИНДРИЧЕН MOTO2™ МОТОР",
-          "subFamilyType": "/for-the-ride/racing/moto2/engine",
-          "desc": "Потрагата по  подобар квалитет не доведе до изработна на нови 'street' мотори кои се карактеризираат со неверојатна моќност, врвни перформанси и фукнционалност. Резултат на сето ова е нај-напредната серија на 'naked' мотори кои некогаш сме ги изработиле, дизајнирани за забава и на патека и на нормални патишта.",
-          "image": "/images/roadsters/roadstersPromoMoto2.avif",
-          "btnBlack": false
-        }
-      ],
-      "subFamilies": {
-        
-      }
+      "promo": [],
+      "subFamilies": {}
     },
     {
       "id": 4,
@@ -214,9 +113,7 @@
           "alt": "Adventure Bikes Banner"
         }
       },
-      "subFamilies": {
-        
-      }
+      "subFamilies": {}
     },
     {
       "id": 5,
@@ -265,18 +162,8 @@
           "image": "/images/sport/grayCaro/caro5.avif"
         }
       ],
-      "promo": [
-        {
-          "title": "НОВАТА DAYTONA 660",
-          "subFamilyType": "daytona-660",
-          "desc": "Подкрепнат од еволуциран Moto2™ тркачки мотор. новата Speed Triple серија е високо перформантна, со висока спецификација и прилагодлива за секого. Цени од: €12,290.00",
-          "image": "/images/sport/daytona660/daytona660SnowdoniaWhite.png",
-          "btnBlack": false
-        }
-      ],
-      "subFamilies": {
-        
-      }
+      "promo": [],
+      "subFamilies": {}
     },
     {
       "id": 6,
@@ -326,32 +213,8 @@
           "image": "/images/sport/grayCaro/caro5.avif"
         }
       ],
-      "promo": [
-        {
-          "title": "Развиен Без Никаков Компромис",
-          "subFamilyType": "development-team",
-          "desc": "„Off-Road“ серијата е изработена во колаборација со нашиот инжењерски тим и најголемите мотокрос легенди, под едно исто мото - „Без Компромис.“",
-          "image": "/images/offRoad/offRoadPromo3.avif",
-          "btnBlack": false
-        },
-        {
-          "title": "НОВАТА TF 250-X СЕРИЈА",
-          "subFamilyType": "tf-250-x",
-          "desc": "Ако сте зависник од адреналин, новата TF 250-X серија на моторцикли е правилен избор за вас. Цени од: €9,995.00",
-          "image": "/images/offRoad/tf250x/tf250XPromoImage.avif",
-          "btnBlack": false
-        },
-        {
-          "title": "All-In Тим",
-          "subFamilyType": "world-class-support",
-          "desc": "Triumph тимот ви стои на располагање за се што ви е потребно. Од сервис тимови па се до 24/7 on-line продавница за резервни делови и продавница за облека",
-          "image": "/images/offRoad/offRoadPromo3.avif",
-          "btnBlack": false
-        }
-      ],
-      "subFamilies": {
-        
-      }
+      "promo": [],
+      "subFamilies": {}
     }
   ],
   "subFamilies": [
@@ -3909,11 +3772,7 @@
       "url": "/motorcycles/roadsters/street-triple-765",
       "shortDesc": "Со легендарен карактер, а со големо засилување во перформанси и технологија оваа серија го доби префиксот 'definitive streetfighter'. ",
       "subFamilyPageInfo": {
-        "heroSlogans": [
-          "Перфектен",
-          "спортски ",
-          "моторцикл"
-        ],
+        "heroSlogans": ["Перфектен", "спортски ", "моторцикл"],
         "topSection": {
           "title": "Врвни Перформанси ",
           "desc": "Подкрепнат од еволуција на Moto2™ тркачки мотор, Speed Triple 765 е мотор со врвни перформанси и висока спецификација.",
@@ -4268,11 +4127,7 @@
       "url": "/motorcycles/roadsters/street-triple-765",
       "shortDesc": "Со легендарен карактер, а со големо засилување во перформанси и технологија оваа серија го доби префиксот 'definitive streetfighter'. ",
       "subFamilyPageInfo": {
-        "heroSlogans": [
-          "Перфектен",
-          "спортски моторцикл",
-          "со тркачки мотор"
-        ],
+        "heroSlogans": ["Перфектен", "спортски моторцикл", "со тркачки мотор"],
         "topSection": {
           "title": "Врвни Перформанси Во Класата",
           "desc": "Подкрепнат од еволуција на Moto2™ тркачки мотор, ова е нај-версатилниот, најмоќниот Стреет Трипле мотор досега.",
@@ -4614,11 +4469,7 @@
       "url": "/motorcycles/roadsters/trident-660",
       "shortDesc": "И спортски, и стилски, и возбудлив и со конкурентна цена - сето ова го може новиот Trident 660.",
       "subFamilyPageInfo": {
-        "heroSlogans": [
-          "Перфектен",
-          "спортски моторцикл",
-          "со тркачки мотор"
-        ],
+        "heroSlogans": ["Перфектен", "спортски моторцикл", "со тркачки мотор"],
         "topSection": {
           "title": "Забавата е загарантирана",
           "desc": "Три-цилиндарски перформанси, технологија и спецификации кои се лидери во класата - сето ова со компетативна цена.",
@@ -5628,7 +5479,7 @@
       "subFamilyPageInfo": {
         "heroSlogans": ["Лидерски", "Перформанси", "на светско ниво"],
         "topSection": {
-          "title": "Ракета",
+          "title": "Rocket-3",
           "desc": "Опремен со најголемиот мотор некогаш ставен во продукциски мотор, Rockеt 3 серијата со нејзиниот 2500сс мотор, продуцира највисок обртен момент и невидено забрзување во светот и тоа со смиреност и превидливост при апликација на гас. Rocket-3 серијата си седи во посебна класа сам за себе.",
           "subtitle": "Го искусуваме раѓањето на нова ултимативна генерациска Triumph легенда."
         },
@@ -6646,9 +6497,6 @@
         }
       }
     }
-
-
-
   ],
   "bikes": [
     {
@@ -10854,6 +10702,161 @@
       "desc": "Beautifully balanced, effortlessly agile. The Scrambler 400 X is built for all riders and all terrains.",
       "url": "/motorcycles/classic/scrambler-400-x-2024",
       "image": "/images/home/scrambler400XLatestModelsCarousell.avif"
+    }
+  ],
+  "promos": [
+    {
+      "id": 1,
+      "category": "adventure",
+      "title": "Tiger 1200 Gt, GT Pro & Gt Explorer",
+      "subFamilyType": "tiger-1200-gt",
+      "desc": "Врвни, патничко-авантуристички мотори, спремни и за интерконтинентални патувања.",
+      "image": "/images/adventure/adventurePromoTiger1200Gt.avif",
+      "btnBlack": true
+    },
+    {
+      "id": 1,
+      "category": "adventure",
+      "title": "TIGER 1200 RALLY PRO AND RALLY EXPLORER",
+      "subFamilyType": "tiger-1200-rally",
+      "desc": "Со уште поголем off-road карактер и способности, најдобрата all-terrain авантуристичка серија.",
+      "image": "/images/adventure/adventurePromoTiger1200Rally.avif",
+      "btnBlack": false
+    },
+    {
+      "id": 2,
+      "category": "adventure",
+      "title": "TIGER SPORT 660",
+      "subFamilyType": "tiger-sport-660",
+      "desc": "Tiger Sport 660, со ефикасен три-цилиндричен мотор, врвни перформанси, комфорт а сепак агилен и со најниски трошоци за одржување во класата. Сето ова од  €9,590.00.",
+      "image": "/images/adventure/adventurePromoTiger660.avif",
+      "btnBlack": false
+    },
+    {
+      "id": 3,
+      "category": "adventure",
+      "title": "TIGER 900 GT",
+      "subFamilyType": "tiger-900-gt",
+      "desc": "Дизајниран за авантури по асфалт и комфорт, Tiger 900 GT серијата е фокусирана на возачот и нуди многу опрема и технологија на располагање.",
+      "image": "/images/adventure/adventurePromoTiger900Gt.avif",
+      "btnBlack": false
+    },
+    {
+      "id": 4,
+      "category": "adventure",
+      "title": "TIGER 900 RALLY",
+      "subFamilyType": "tiger-900-rally",
+      "desc": "Возбудлив Tiger серија, дизајнирана за максимално off-road доживување, комфорт и исклучително врвна контрола врз моторот со погон од најмоќниот три-цилиндричен Triumph мотор.",
+      "image": "/images/adventure/adventurePromoTiger900Rally.avif",
+      "btnBlack": true
+    },
+    {
+      "id": 5,
+      "category": "adventure",
+      "title": "TIGER 1200",
+      "subFamilyType": "configure/families/adventure",
+      "desc": "All-terrain моторцикли кои го освојуваат светот...",
+      "image": "/images/adventure/adventurePromoTiger1200Gif.gif",
+      "btnBlack": true
+    },
+    {
+      "id": 6,
+      "category": "classics",
+      "title": "Нова 'Truxton Final-Edition' Серија",
+      "subFamilyType": "truxton-final-edition",
+      "desc": "Крајот на една ера - последната продукциска серија на иконата во Triumph серијата. Откријте повеќе за ексклузивното Thruxton Final Edition.",
+      "image": "/images/classics/thruxtonFinalEdition.avif",
+      "btnBlack": true
+    },
+    {
+      "id": 7,
+      "category": "classics",
+      "title": "Нова 'Stealth' Серија",
+      "subFamilyType": "stealth-edition",
+      "desc": "Темно и софистицирано, но сепак смело и живо. Достапна само една година, оваа неверојатна колекција се одликува со неверојатен финиш на боја по ваша нарачка.",
+      "image": "/images/classics/stealthEdition.avif",
+      "btnBlack": true
+    },
+    {
+      "id": 8,
+      "category": "roadsters",
+      "title": "НОВИОТ STREET TRIPLE 765",
+      "subFamilyType": "street-triple-765",
+      "desc": "Подкрепнат од еволуциран Moto2™ тркачки мотор. новата Speed Triple серија е високо перформантна, со висока спецификација и прилагодлива за секого. Цени од: €12,290.00",
+      "image": "/images/roadsters/roadstersPromoSpeedTriple765.avif",
+      "btnBlack": true
+    },
+    {
+      "id": 9,
+      "category": "roadsters",
+      "title": "TRIDENT 660",
+      "subFamilyType": "trident-660",
+      "desc": "Компетативни цени, спорстки, стилски, возбудлив и прилагодлив - новиот Trident 660 може се. Вашата Tri-Reel Advantage ви е на располагање и чека на вас. Цени од €8,690.00.",
+      "image": "/images/roadsters/roadstersPromoTrident660.avif",
+      "btnBlack": false
+    },
+    {
+      "id": 10,
+      "category": "roadsters",
+      "title": "НОВИОТ SPEED TRIPLE 1200 RR",
+      "subFamilyType": "speed-triple-1200-rr/speed-triple-1200-rr",
+      "desc": "Колку повозбудливо изгледа толку е повозбудлив за возење, притоа со највисокото ниво на спецификации. Цени од €20,990.00.",
+      "image": "/images/roadsters/roadstersPromoSpeedRR.avif",
+      "btnBlack": false
+    },
+    {
+      "id": 11,
+      "category": "roadsters",
+      "title": "НАЈНОВИОТ SPEED TRIPLE 1200 RS",
+      "subFamilyType": "speed-triple-1200/speed-triple-1200-rs",
+      "desc": "Најмоќниот, динамичен и технолошки напреден Speed Triple мотор некогаш изработен. Цени од  €18,990.00.",
+      "image": "/images/roadsters/roadstersPromoSpeedRS.avif",
+      "btnBlack": false
+    },
+    {
+      "id": 12,
+      "category": "roadsters",
+      "title": "3-ЦИЛИНДРИЧЕН MOTO2™ МОТОР",
+      "subFamilyType": "/for-the-ride/racing/moto2/engine",
+      "desc": "Потрагата по  подобар квалитет не доведе до изработна на нови 'street' мотори кои се карактеризираат со неверојатна моќност, врвни перформанси и фукнционалност. Резултат на сето ова е нај-напредната серија на 'naked' мотори кои некогаш сме ги изработиле, дизајнирани за забава и на патека и на нормални патишта.",
+      "image": "/images/roadsters/roadstersPromoMoto2.avif",
+      "btnBlack": false
+    },
+    {
+      "id": 13,
+      "category": "sport",
+      "title": "НОВАТА DAYTONA 660",
+      "subFamilyType": "daytona-660",
+      "desc": "Подкрепнат од еволуциран Moto2™ тркачки мотор. новата Speed Triple серија е високо перформантна, со висока спецификација и прилагодлива за секого. Цени од: €12,290.00",
+      "image": "/images/sport/daytona660/daytona660SnowdoniaWhite.png",
+      "btnBlack": false
+    },
+    {
+      "id": 14,
+      "category": "off-road",
+      "title": "Развиен Без Никаков Компромис",
+      "subFamilyType": "development-team",
+      "desc": "„Off-Road“ серијата е изработена во колаборација со нашиот инжењерски тим и најголемите мотокрос легенди, под едно исто мото - „Без Компромис.“",
+      "image": "/images/offRoad/offRoadPromo3.avif",
+      "btnBlack": false
+    },
+    {
+      "id": 15,
+      "category": "off-road",
+      "title": "НОВАТА TF 250-X СЕРИЈА",
+      "subFamilyType": "tf-250-x",
+      "desc": "Ако сте зависник од адреналин, новата TF 250-X серија на моторцикли е правилен избор за вас. Цени од: €9,995.00",
+      "image": "/images/offRoad/tf250x/tf250XPromoImage.avif",
+      "btnBlack": false
+    },
+    {
+      "id": 16,
+      "category": "off-road",
+      "title": "All-In Тим",
+      "subFamilyType": "world-class-support",
+      "desc": "Triumph тимот ви стои на располагање за се што ви е потребно. Од сервис тимови па се до 24/7 on-line продавница за резервни делови и продавница за облека",
+      "image": "/images/offRoad/offRoadPromo3.avif",
+      "btnBlack": false
     }
   ]
 }

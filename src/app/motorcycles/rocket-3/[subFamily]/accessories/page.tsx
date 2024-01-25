@@ -4,24 +4,21 @@ import SecondaryPagesHeroSection from '@/app/components/SubFamily/SecondaryPages
 import BikeInfoTextImageBtn from '@/app/components/familiySharedComponents/BikeInfoTextImageBtn';
 import PageParagraph from '@/app/components/familiySharedComponents/PageParagraph';
 import SectionTitleH2 from '@/app/components/familiySharedComponents/SectionTitleH2';
-import { BIKES, FAMILIES } from '@/app/constants/constants';
+import { BIKES, FAMILIES, SUB_FAMILIES } from '@/app/constants/constants';
 import React from 'react'
 
 const RocketAccessoryPage = async ({params}:any) => {
     const subFam = params.subFamily;
 
     try {
-      const familyRes = await fetch(`${FAMILIES}?type=rocket-3`, {
+      const familyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=rocket-3`, {
         cache: "no-store",
       });
       const familyData = await familyRes.json();
-      const subFamily = familyData[0].subFamilies[subFam];
+      const subFamily = familyData[0];
   
       const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${subFam}`);
       const bikesData = await bikesRes.json();
-  
-      console.log(bikesData);
-      
 
       return (
         <>

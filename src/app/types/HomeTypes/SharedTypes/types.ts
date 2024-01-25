@@ -1,4 +1,6 @@
 export type PromoDataType = {
+  id: number,
+  category: string,
   title: string;
   subFamilyType: string;
   desc: string;

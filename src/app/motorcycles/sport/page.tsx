@@ -5,7 +5,7 @@ import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeI
 import BikeListingNoSlider from "@/app/components/familiySharedComponents/BikeListingNoSlider";
 import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
 import { createSubFamLinksForSecondary } from "@/app/components/helpers/createSubFamLinksForSecondary";
-import { BIKES, FAMILIES, SUB_FAMILIES } from "@/app/constants/constants";
+import { BIKES, FAMILIES, PROMOS, SUB_FAMILIES } from "@/app/constants/constants";
 import { PromoDataType } from "@/app/types/HomeTypes/SharedTypes/types";
 
 const SportBikePage = async ({ params }: any) => {
@@ -21,6 +21,9 @@ const SportBikePage = async ({ params }: any) => {
       cache: "no-store",
     });
     const bikes = await bikesRes.json();
+
+    const promosRes = await fetch(`${PROMOS}?category=sport`);
+    const promos = await promosRes.json();
 
     return (
       <main className="bg-black">
@@ -52,20 +55,20 @@ const SportBikePage = async ({ params }: any) => {
         </section>
 
         <section className="text-white px-4">
-          {family.promo.map((item: PromoDataType, idx: number) => (
+          {promos.map((promo: PromoDataType, idx: number) => (
             <BikeInfoTextImageBtn
-              key={`${item.title},${idx}`}
-              title={item.title}
-              desc={item.desc}
+              key={`${promo.title},${idx}`}
+              title={promo.title}
+              desc={promo.desc}
               ctaBtn={{
                 text: "Детали",
-                link: `/motorcycles/sport/${item.subFamilyType}`,
+                link: `/motorcycles/sport/${promo.subFamilyType}`,
               }}
               image={{
-                src: `${item.image}`,
-                alt: `${item.title}`,
+                src: `${promo.image}`,
+                alt: `${promo.title}`,
               }}
-              blackBtn={item.btnBlack}
+              blackBtn={promo.btnBlack}
               textWhite={true}
               imageOnTheLeft={idx % 2 !== 0 ? true : false}
               mobileTextRight={idx % 2 !== 0 ? true : false}

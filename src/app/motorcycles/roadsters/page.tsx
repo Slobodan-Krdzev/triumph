@@ -6,7 +6,7 @@ import { createSubFamLinksForSecondary } from "@/app/components/helpers/createSu
 import { formSecondaryNavItems } from "@/app/components/helpers/formSecondaryNavItems";
 import AudioSection from "@/app/components/roadstersUniqueComp/AudioSection";
 import SecondaryNavBar, { SecondaryNavItemsType } from "@/app/components/whiteSecondaryNavBar/SecondaryNavBar";
-import { BIKES, FAMILIES, SUB_FAMILIES } from "@/app/constants/constants";
+import { BIKES, FAMILIES, PROMOS, SUB_FAMILIES } from "@/app/constants/constants";
 import { PromoDataType } from "@/app/types/HomeTypes/SharedTypes/types";
 import React from "react";
 
@@ -20,6 +20,9 @@ const RoadstersPage = async () => {
 
     const subFamiliesRes = await fetch(`${SUB_FAMILIES}?familyType=roadsters`)
     const subFamilies = await subFamiliesRes.json()
+
+    const promosRes = await fetch(`${PROMOS}?category=roadsters`);
+    const promos = await promosRes.json();
 
     return (
       <>
@@ -44,20 +47,20 @@ const RoadstersPage = async () => {
             }}
           />
 
-          {familyData[0].promo.map((item: PromoDataType, idx: number) => (
+          {promos.map((promo: PromoDataType, idx: number) => (
             <BikeInfoTextImageBtn
-              key={`${item.title},${idx}`}
-              title={item.title}
-              desc={item.desc}
+              key={`${promo.title},${idx}`}
+              title={promo.title}
+              desc={promo.desc}
               ctaBtn={{
                 text: "Детали",
-                link: `/motorcycles/roadsters/${item.subFamilyType}`,
+                link: `/motorcycles/roadsters/${promo.subFamilyType}`,
               }}
               image={{
-                src: `${item.image}`,
-                alt: `${item.title}`,
+                src: `${promo.image}`,
+                alt: `${promo.title}`,
               }}
-              blackBtn={item.btnBlack}
+              blackBtn={promo.btnBlack}
               imageOnTheLeft={idx % 2 === 0 ? true : false}
               mobileTextRight={idx % 2 === 0 ? true : false}
             />
