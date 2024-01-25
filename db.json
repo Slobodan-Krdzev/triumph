@@ -5791,7 +5791,7 @@
       },
       "gallery": {
         "modelImage": {
-          "src": "/images/rocket/rocket3Model.png",
+          "src": "/images/rocket-3/rocket3R/rocket3RSilverIce.png",
           "alt": "Rocket 3 Range Model Image"
         },
         "subFamilyHeroVideo": {
