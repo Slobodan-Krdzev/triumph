@@ -364,27 +364,75 @@
         "grayCarousell": [
           {
             "id": "carouselItem1",
-            "title": "Инспириран од ARAGÓN",
-            "desc": "Креиран како инспирација од доминантниот победнички перформанса на Tiger 900 Rally Pro на Baja Aragon 2022.",
-            "image": "/images/adventure/tiger900/tiger900GrayCaro1.avif"
+            "title": "Tiger 900 Rally Pro",
+            "desc": "Новиот Tiger 900 Rally Pro комбинира водечки спецификации и врвни способности, со цел да испорача комфорт при долги авантури и фантастично управување. Нуди 6 мода на работа, и тоа: Road, Rain, Sport, Rider Customizable, Off-Road & Off-Road Pro",
+            "image": "/images/adventure/tiger900/tiger900ProGrayCaro1.avif"
           },
           {
             "id": "carouselItem2",
-            "title": "Стандарди",
-            "desc": "Лидер во класата по спецификации од почеток до крај, со квалитетни компоненти оптимизирани и за на пат и за “off-road“ средини.",
-            "image": "/images/adventure/tiger900/tiger900GrayCaro2.avif"
+            "title": "Tiger 900 Серијата е репер во својата класа",
+            "desc": "Уште посилна и агилна, новата Tiger 900 Rally Серија претставува репер во категоријата авантуристички мотори од средна-зафатнина на моторот.",
+            "image": "/images/adventure/tiger900/tiger900ProGrayCaro2.avif"
           },
           {
             "id": "carouselItem3",
-            "title": "Технологија",
-            "desc": "Најновата технологија фокусирана на возачот понудува комфорт, самодоверба, сигурност и перформанси.",
-            "image": "/images/adventure/tiger900/tiger900GrayCaro3.avif"
+            "title": "Референца",
+            "desc": "Со високо-квалитетна Showa суспанзија и специјална off-road геометрија на рамката, новиот Tiger 900 Rally Pro е спремен и за нај екстремните услови.",
+            "image": "/images/adventure/tiger900/tiger900ProGrayCaro3.avif"
           },
           {
             "id": "carouselItem4",
-            "title": "Сервисен Интервал",
-            "desc": "Долгиот сервисен интервал додатно со две годишната гаранција која не истекува по одреден број поминати километри, со сигурност потврдува дека ќе имате безгрижни авантури и мали трошоци за одржување.",
-            "image": "/images/adventure/tiger900/tiger900GrayCaro4.avif"
+            "title": "Карактер",
+            "desc": "Со свеж стил, повеќе моќност и врвни способности Tiger 900 Rally Pro уште повеќе го истакнува својот агресивен карактер..",
+            "image": "/images/adventure/tiger900/tiger900ProGrayCaro4.avif"
+          },
+          {
+            "id": "carouselItem5",
+            "title": "Комфорт и Управување",
+            "desc": "Неутралната, интуитивна возачка позиција и унапредено седиште (можност за висинско прилагодување од 20мм и греење на седиште кај двата Pro модела) гарантираат комфорт на долги релации. За уште повеќе комоција и самодоверба тука е и Showa long-travel суспензијата која ќе го одржува високо ниво на комфорт на сите видови подлоги.",
+            "image": "/images/adventure/tiger900/tiger900ProGrayCaro4.avif"
+          },
+          {
+            "id": "carouselItem6",
+            "title": "Перформанси",
+            "desc": "Перфомансите на Tiger 900 серијата се флексибилни. Се карактеризираат со меки средни и силовити високи. Tiger 900 Rally Pro нуди 13% повеќе сила и додава возбудливи перформани на патиштата и надвор од нив. ",
+            "image": "/images/adventure/tiger900/tiger900ProGrayCaro4.avif"
+          },
+          {
+            "id": "carouselItem7",
+            "title": "TIGER 900 GT & GT PRO",
+            "desc": "Софистициран, со врвни спецификации и способности - новиот Tiger 900 GT Pro е ултимативниот авантуристички мотор од средна зафатнина, ориентиран за на асфалт. 5 мода на работа: (Road, Rain, Sport, Rider Customizable & Off-Road).",
+            "image": "/images/adventure/tiger900/tiger900GTProGrayCaro7.avif"
+          },
+          {
+            "id": "carouselItem8",
+            "title": "Фокусиран на асфалтот",
+            "desc": "Версатилен „T-Plane“ три-цилиндричен мотор, комфортната возачка позиција, лесната лиена алуминиумска рамка и меката суспензија додаваат лидерски перформанси и управување во класата.",
+            "image": "/images/adventure/tiger900/tiger900GTProGrayCaro8.avif"
+          },
+          {
+            "id": "carouselItem9",
+            "title": "Перформани - Tiger 900 GT Pro",
+            "desc": "Со 13% зголемување на моќноста, глатко чувство при средни обртаи и моќни перформанси при низок обртај, три-цилиндричниот мотор на Triumph испорачува 108 коњски сили.",
+            "image": "/images/adventure/tiger900/tiger900GTProGrayCaro9.avif"
+          },
+          {
+            "id": "carouselItem10",
+            "title": "Карактеристики - Tiger 900 GT Pro",
+            "desc": "Од урбани авантури па се до интер-континентални патување и се во средина, новиот Tiger 900 GT Pro е спремен за да покори се пред себе и тоа со абсолутна самодоверба.",
+            "image": "/images/adventure/tiger900/tiger900GTProGrayCaro10.avif"
+          },
+          {
+            "id": "carouselItem11",
+            "title": "Карактер - Tiger 900 GT Pro",
+            "desc": "Новата каросерија со нови бои и графици додаваат агресивност и карактер на силуетата на Tiger 900 GT Pro.",
+            "image": "/images/adventure/tiger900/tiger900GTProGrayCaro11.avif"
+          },
+          {
+            "id": "carouselItem12",
+            "title": "Комфорт и Управување - Tiger 900 GT Pro",
+            "desc": "Подобрената ергономија и системот за ублажување на ударите на воланот, комбинирани со одличното неутрално управување на Tiger 900 GT Pro - гарантираат долги авантури без никаков замор.",
+            "image": "/images/adventure/tiger900/tiger900GTProGrayCaro12.avif"
           }
         ],
         "audioSection": {

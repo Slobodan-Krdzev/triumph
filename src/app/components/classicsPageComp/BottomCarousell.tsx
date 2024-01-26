@@ -42,7 +42,7 @@ const BottomCarousell = ({ items }: BottomCarousellProps) => {
                   className="text-white z-10 absolute lg:w-2/5 md:w-3/5 w-full overflow-visible "
                   style={{ top: "10%", left: "15%" }}
                 >
-                  <h3 className="text-2xl md:text-3xl lg:text-5xl tracking-tighter capitalize font-medium mb-4">
+                  <h3 className="text-2xl md:text-3xl lg:text-5xl tracking-tighter uppercase font-medium mb-4">
                     {item.title}
                   </h3>
                   <p className="text-md leading-5 font-medium md:text-xl lg:text-2xl tracking-tighter w-3/4">
