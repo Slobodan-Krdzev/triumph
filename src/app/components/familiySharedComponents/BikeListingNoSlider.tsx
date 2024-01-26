@@ -11,7 +11,7 @@ const BikeListingNoSlider = ({ bikes = [], configureLink }: BikeListingNoSliderP
 
     if(bikes) {
         return (
-            <section className="lg:px-8 lg:my-8 my-4 px-4 flex flex-wrap">
+            <section className="lg:px-8 lg:py-8 py-4 px-4 flex flex-wrap">
               {bikes.map((bike) => (
                 <BikeListingNoSliderCard
                   key={bike.id}

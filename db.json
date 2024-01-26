@@ -216,12 +216,11 @@
       "url": "/motorcycles/adventure/tiger-900",
       "subFamilyPageInfo": {
         "heroSlogans": ["НОВИОТ", "TIGER 900"],
-        "youtubeVideo": "https://www.youtube.com/embed/-eXK5VwysTA",
         "fullSpecs": {
           "engineTransmission": [
             {
-              "title": "Тип на Мотор",
-              "desc": "водно ладење, 12 вентили, DOHC, линиски 3-цилиндри"
+              "title": "Мотор",
+              "desc": "12 вентили, 2EEK, линиски 3-цилиндри, водно ладење"
             },
             {
               "title": "капацитет",
@@ -237,19 +236,19 @@
             },
             {
               "title": "компресија",
-              "desc": "11.27:1"
+              "desc": "13.0:1"
             },
             {
               "title": "Мах. Коњски Сила",
-              "desc": "95.2 PS / 93.9 bhp (70 kW) @ 8,750 rpm"
+              "desc": "108 PS @ 9,500 rpm"
             },
             {
               "title": "Мах. Обртен Момент",
-              "desc": "87 Nm @ 7,250 rpm"
+              "desc": "90 Nm @ 6,850 rpm"
             },
             {
               "title": "Систем за убризгување",
-              "desc": "Multipoint sequential electronic fuel injection"
+              "desc": "Sequential multi-point electronic injection with electronic throttle"
             },
             {
               "title": "Систем за Издувни гасови",
@@ -261,7 +260,7 @@
             },
             {
               "title": "Квачило",
-              "desc": "Wet, multi-plate"
+              "desc": "Liquid, multi-disc, assisted glide"
             },
             {
               "title": "Менувачка Кутија",
@@ -275,69 +274,73 @@
             },
             {
               "title": "вилушка",
-              "desc": "алуминиум"
+              "desc": "лиен алуминиум"
             },
             {
               "title": "предно тркало",
-              "desc": "Tubeless, 21 x 2.15 in"
+              "desc": "лиен алуминиум, 19 x 2.5 "
             },
             {
               "title": "задно тркало",
-              "desc": "Tubeless, 17 x 4.25 in"
+              "desc": "лиен алуминиум, 17 x 4.25 "
             },
             {
               "title": "предна гума",
-              "desc": "90/90-21"
+              "desc": "Metzeler TouranceTM Next, 100/90-19"
             },
             {
               "title": "задна гума",
-              "desc": "150/70R17"
+              "desc": "Metzeler TouranceTM Next, 150/70R17"
             },
             {
               "title": "предна суспензија",
-              "desc": "Showa превртена 45мм вилушка, мануелно подесување за јачина на одбивање, 240мм опсег на работа"
+              "desc": "Marzocchi 45mm inverted fork, manual rebound and compression damping adjustment, 180mm travel"
             },
             {
               "title": "задна суспензија",
-              "desc": "Showa задна вилушка, мануелно подесување за јачина на одбивање, 230мм опсег на работа"
+              "desc": "Marzocchi rear suspension unit with manual preload and rebound damping adjustment, 170mm rear wheel travel"
             },
             {
               "title": "предни сопирачки",
-              "desc": "Дупли 320мм дискови, Brembo Stylema 4 piston Monoblock клешти. Преден цилиндар за течност, Оптимизиран ABS систем"
+              "desc": "Dual 320mm floating discs, Four-piston monobloc Brembo Stylema 4 calipers. Radial front brake master cylinder, corner-optimized ABS"
             },
             {
               "title": "задна сопирачка",
-              "desc": "Brembo"
+              "desc": "Single disc 255mm. Single piston sliding caliper, optimized angular ABS"
+            },
+            {
+              "title": "инструментна плоча",
+              "desc": "Instrument package with full color 7” TFT with My Triumph connectivity system"
             }
           ],
           "dimension": [
             {
               "title": "ширина на волан",
-              "desc": "935 mm"
+              "desc": "930 mm"
             },
             {
               "title": "висина без ретровизори",
-              "desc": "1452-1502 mm"
+              "desc": "1410 - 1460 mm (adjustable jelly) mm"
             },
             {
               "title": "Висина на Седиште",
-              "desc": "860-880 mm"
+              "desc": "820 - 840 mm (adjustable) mm"
             },
             {
               "title": "мегу-осовинско растојание ",
-              "desc": "1551 mm"
+              "desc": "1556 mm"
             },
             {
               "title": "Custer Corner",
-              "desc": "24.4 º"
+              "desc": "24.6 º"
             },
             {
               "title": "Trace",
-              "desc": "145.8 mm"
+              "desc": "102.7 mm"
             },
             {
               "title": "Тежина",
-              "desc": "201 kg"
+              "desc": "222 kg"
             },
             {
               "title": "капацитет на резервоар",
@@ -347,11 +350,11 @@
           "fuelConsumption": [
             {
               "title": "Потрошувачка",
-              "desc": "5.2l /100km (55.4 MPG)"
+              "desc": "4.7 l/100 km (60.4 mpg))"
             },
             {
               "title": "CO2 загадување",
-              "desc": "Euro 5 Стандарди. (119g /km CO2) измерени според Регулатива 168/2013/EC. Резултатите се добиени во специјални тест средини и се на располагање само за споредба. Вистинските резултат може да варираат врз различни средини."
+              "desc": "Euro 5 Стандарди. (108g /km CO2) измерени според Регулатива 168/2013/EC. Резултатите се добиени во специјални тест средини и се на располагање само за споредба. Вистинските резултат може да варираат врз различни средини."
             }
           ],
           "service": [
@@ -499,35 +502,24 @@
       },
       "accessory": {
         "banner": {
-          "image": "/images/adventure/tiger900/tiger900AccessoriesHeroImage.avif"
+          "image": "/images/adventure/tiger900/tiger900AccessoryBanner.avif"
         },
         "infoText": {
-          "title": "Додајте ваш белег врз Speed 400",
-          "desc": "На располагање ви е селекција од преку 20 оригинални Triupmh аксесоари за оваа серија на мотори. Аксесоарите кои ќе ги додадете може да бидат додадени на вашиот мотор во фабриката. Aксесоарите се дизајнирани од истиот тим кој го креираше Speed 400 и доаѓаат со две-годишна гаранција."
+          "title": "Аксесоари - Tiger 900"
         },
         "accessoryTypes": [
           {
-            "title": "TREKKER PACK",
-            "desc": "Багаж ориентиран за користење на патишта за подолги патувања. Trekker Pack вклучува:.",
-            "itemsList": [
-              "Централен куфер и Рам за Монтирање",
-              "Странични Куфери и Рамови за Монтирање",
-              "Потпирач за патник за задниот куфер",
-              "Заштита за Резервоар",
-              "Додатно заштитно ветробранско стакло"
-            ]
-          },
-          {
-            "title": "EXPEDITION PACK",
-            "desc": "Специјално Дизајниран Багаж за “Off-Road“ Авантури",
-            "itemsList": [
-              "Странични Куфери и Рамови за Монтирање",
-              "Штитници за вилушки",
-              "Протектор за ладник",
-              "Заштита за резервоар",
-              "Штитник за светло",
-              "Торба со капацитет од 40л"
-            ]
+            "title": "Повеќе од 50 оригинални Triupmh аксесоари",
+            "desc": "Со повеќе од 50 оригинални Triupmh аксесоари никоја авантура нема да биде ниту премала ниту преголема. Достапни е голема палета на багаж, како и разни „Inspiration“ сетови како - „Trekker Kit“ кој ви нуди аксесоари и багаж за патни авантури и „Expedition Kit“ кој ви нуди off-road и екстра цврсти аксесоари и багаж. Заштитата за вашиот мотор е исто така многу важен фактор па така на располагање се повеќе аксесоари кои нудат заштита на вашиот мотор.",
+            "image1": {
+              "src": "/images/adventure/tiger900/tiger900AccessImg1.avif",
+              "alt": "Tiger Sport 900 Luggage"
+            },
+            "image2": {
+              "src": "/images/adventure/tiger900/tiger900AccessImg2.avif",
+              "alt": "Tiger Sport 900 Luggage"
+            }
+            
           }
         ]
       },

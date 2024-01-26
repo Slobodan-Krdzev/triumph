@@ -1,5 +1,6 @@
 import React from "react";
 import SectionTitleH2 from "../familiySharedComponents/SectionTitleH2";
+import { formulateSubFamilyTitleOnBanner } from "../helpers/formulateSubFamilyTilteOnBanner";
 
 type ShortSpecType = {
   info: string;
@@ -16,7 +17,7 @@ const NumbersSection = ({ model, specNumbers, bgBlack }: NumbersSectionPropsType
   return (
     <section className={`py-4 md:py-8 lg:py-16 flex flex-col justify-center items-center ${bgBlack ? `bg text-white` : ""}`}>
       <div className="text-center">
-        <SectionTitleH2 text={`${model} во броеви`} color={`${(bgBlack ? "white" : 'dark')}`} />
+        <SectionTitleH2 text={`${formulateSubFamilyTitleOnBanner(model)} во броеви`} color={`${(bgBlack ? "white" : 'dark')}`} />
       </div>
       <div className="flex justify-center px-4 md:gap-28 gap-4 md:mt-8 flex-wrap flex-col md:flex-row">
         {specNumbers.map((spec) => (
