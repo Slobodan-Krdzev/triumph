@@ -25,8 +25,6 @@ const ClassicsSubFamilyPage = async ({ params }: any) => {
     const subFamilyData = await subFamilyRes.json();
     const subFamily = subFamilyData[0];
 
-    console.log(subFamily);
-
     const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${subFam}`, {
       cache: "no-store",
     });
@@ -94,7 +92,7 @@ const ClassicsSubFamilyPage = async ({ params }: any) => {
 
         {subFamily.subFamilyPageInfo.specNumbers && (
           <NumbersSection
-            model={subFamily}
+            model={subFam}
             specNumbers={subFamily.subFamilyPageInfo.specNumbers}
           />
         )}

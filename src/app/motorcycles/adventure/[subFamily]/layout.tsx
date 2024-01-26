@@ -67,7 +67,7 @@ export default function SubFamilyLayout({
         <SecondaryNavBar
           items={tiger900Path ? secondaryNavItemsForTiger900 : secondaryNavItems}
           title={formulateSubFamilyTitleOnBanner(params.subFamily.toString())}
-          configurationLink={`/configure/bike/${params.subFamily}`}
+          configurationLink={`/configure/bikes/${params.subFamily}`}
         />
       )}
 
@@ -75,7 +75,7 @@ export default function SubFamilyLayout({
         <MobileSecondaryNav
           items={tiger900Path ? secondaryNavItemsForTiger900 : secondaryNavItems}
           title={formulateSubFamilyTitleOnBanner(params.subFamily.toString())}
-          configurationLink={`/configure/bike/${params.subFamily}`}
+          configurationLink={`/configure/bikes/${params.subFamily}`}
         />
       )}
 
