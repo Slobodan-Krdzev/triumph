@@ -4,6 +4,7 @@ import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeI
 import BikeListingNoSlider from "@/app/components/familiySharedComponents/BikeListingNoSlider";
 import PageParagraph from "@/app/components/familiySharedComponents/PageParagraph";
 import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
+import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
 import { BIKES, SUB_FAMILIES } from "@/app/constants/constants";
 import { redirect } from "next/navigation";
 
@@ -24,7 +25,7 @@ const SubFamReasonsToRide = async ({ params }: any) => {
       <>
         <SecondaryPagesHeroSection
           bannerImage={subFamily.accessory.banner.image}
-          subFamilyTitle={subFam.toUpperCase()}
+          subFamilyTitle={formulateSubFamilyTitleOnBanner(subFam.toUpperCase())}
           text={`Аксесоари`}
         />
 

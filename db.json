@@ -514,36 +514,36 @@
         "fullSpecs": {
           "engineTransmission": [
             {
-              "title": "Тип на Мотор",
-              "desc": "водно ладење, 12 вентили, DOHC, линиски 3-цилиндри, 240° редослед на есклпозии"
+              "title": "Мотор",
+              "desc": "водно ладење, 12 вентили, 2 EEK, линиски 3-цилиндри"
             },
             {
               "title": "капацитет",
-              "desc": "660 cc"
+              "desc": "888 cc"
             },
             {
               "title": "диаметар",
-              "desc": "74.04 mm"
+              "desc": "78.0 mm"
             },
             {
               "title": "рута",
-              "desc": "51.1 mm"
+              "desc": "61.9 mm"
             },
             {
               "title": "компресија",
-              "desc": "11.95:1"
+              "desc": "11.27:1"
             },
             {
               "title": "Мах. Коњски Сила",
-              "desc": "81 PS / 80 bhp (59.6 kW) @ 10,250 rpm"
+              "desc": "85 PS @ 8,500 rpm"
             },
             {
               "title": "Мах. Обртен Момент",
-              "desc": "64 Nm @ 6,250 rpm"
+              "desc": "82 Nm @ 6,500 rpm"
             },
             {
               "title": "Систем за убризгување",
-              "desc": "Multipoint sequential electronic fuel injection with electronic throttle control"
+              "desc": "Electronic multi-point sequential injection"
             },
             {
               "title": "Систем за Издувни гасови",
@@ -551,11 +551,11 @@
             },
             {
               "title": "Финална Трансмисија",
-              "desc": "X-ring chain"
+              "desc": "O-ring chain"
             },
             {
               "title": "Квачило",
-              "desc": "Wet, multi-plate, slip"
+              "desc": "Liquid, multi-disc, assisted glide"
             },
             {
               "title": "Менувачка Кутија",
@@ -569,7 +569,7 @@
             },
             {
               "title": "вилушка",
-              "desc": "алуминиум"
+              "desc": "лиен алуминиум"
             },
             {
               "title": "предно тркало",
@@ -651,12 +651,6 @@
               "title": "CO2 загадување",
               "desc": "Euro 5 Стандарди измерени според Регулатива 168/2013/EC. Резултатите се добиени во специјални тест средини и се на располагање само за споредба. Вистинските резултат може да варираат врз различни средини."
             }
-          ],
-          "service": [
-            {
-              "title": "Сервисен Интервал",
-              "desc": "16,000 km или 12 месеци"
-            }
           ]
         },
         "grayCarousell": [
@@ -709,39 +703,39 @@
         },
         "reasons": [
           {
-            "title": "Перформанси од Tiger Sport Серијата",
-            "desc": "Equipped with the proven 660 three-cylinder engine, it is the lightest and most versatile Tiger yet. Designed to increase rider confidence from the moment you ride it, with an effortless feel on the Tiger 660. Its smooth 6-speed gearbox has been optimized for fun and agility, while the slip and assist clutch provides light engagement that reduces rider fatigue. rider, allowing you to enjoy the bike even more. The 660 delivers usable three-cylinder power with the twist of the wrist. Central to the versatility and exciting performance is the 660cc engine. A three-cylinder Triumph that beats the two-cylinder competition, delivering strong torque from low to high in the rev range, peaking at 64Nm @ 6,250rpm. Power is class-leading and utterly thrilling, peaking at 81PS @ 10,250rpm. It is smooth and linear, sporty and fun, for your daily commute or weekend pleasures.",
+            "title": "Екстра лесно управлив мотор - Tiger Sport 660",
+            "desc": "Поддржан од препознатливите перформанси на 660 кубниот три-цилиндарски мотор, Tiger Sport 660 е досега најлесната и најприлагодливата Tiger серија досега. Шест брзинскот менувач е оптимизиран за забава и агилност додека „Slip & Assist“ квачилото е тука за да му асистира на возачот при безбројните промени на степенот на пренос со што возачот ќе се чувствува релаксиран и ќе му овозможи по-комфортна авантура од било кога. Три-цилиндарскиот мотор се карактеризира со одличен обртен момент од ниски до највисоки обртаи на моторот. Испорачува 64Nm @ 6,250rpm обртен момент и 81PS @ 10,250rpm максимална јачина на моторот. Со овие перформанси три-цилиндарскиот мотор на Triumph лесно се справува со конкуретните дво-цилиндрични мотори. Истион е многу линеарен, спортски и забавно настроен но сепак со доза на возбуда и авантура во истиот.",
             "image": "/images/adventure/tigerSport660/tiger660ReasonsListImage1.avif"
           },
           {
             "title": "Перфектна Хармонија Помеѓу Моторциклот и Возачот ",
-            "desc": "Harmonizing with Tiger's rhythm comes naturally. It is the ultimate combination of practical performance and top thrills. The Tiger Sport 660 can be limited to an A2 license, opening doors to new adventure experiences, from touring to flexible fun driving. Designed to excite but tamed to build the confidence you need. Whether it's your first bike, your first motorcycle adventure, or a flexible means of transportation you're looking for, the Tiger Sport 660 has the technology and flair to revitalize your riding experience."
+            "desc": "При изработка на Tiger Sport 660 серијата како и кај секој Triumph мотор, хармонијата помеѓу возачот и моторот и многу важен фактор. Tiger Sport 660 серијата е изработена во комбинација од перформанси и возбуда. Tiger Sport 660 серијата е изработена и со новите и неискусни возачи на ум. Серијата мотори може да биде оптимизирана за А2 возачка лиценца. Без разлика дали сте во потрага по башиот прв мотор или барате решение за вашите секојдневни авантури , Tiger Sport 660 е расположен за секое ваше патување."
           },
           {
             "title": "Инспирира Самодоверба",
-            "desc": "Riding confidence is at the forefront of the adventure, setting off for a ride knowing that Tiger Sport's rider-focused technology and premium brakes and suspension are there to support you every moment. The upright stance with the lightweight frame and nimble engine make for a nimble and easy feel, without ever being intimidating. Add in the narrow riding position for easy ground contact, the low 835mm seat height and the excellent ergonomics setup and you have a bike with great agility and handling in any riding scenario.",
+            "desc": "Самодовербата е клучен фактор за уживање во вашите авантури. Затоа Tiger Sport 660 серијата настојува да внесе колку е можно повеќе самодоверба во возачот. Исправената положба при возењето и версатилниот мотор парирани со технологија која е наменета за да помага на возачот и одличните сопирачки се тука за да ви овозможат безгрижни и опуштени патувања. За уште повеќе леснотија и безгржност при возење тука е и тенката силуета и ниското седиште (835мм) кои ќе овозможат лесен контакт на возачот и подлогата за возење при моменти на стоење.",
             "image": "/images/adventure/tigerSport660/tiger660ReasonsImage2.avif"
           },
           {
             "title": "Направен за Вас",
-            "desc": "No two riders are the same, so you can personalize your Tiger Sport 660 with a choice of three special colors and graphics and over 40 genuine Triumph accessories. From built-in luggage to a central case that holds 2 helmets, you'll be inspired by the options to suit your adventure. When everyday flexibility is your goal, you shouldn't be left behind. The bike is designed with the rider in mind - make it your own."
+            "desc": "Мотото на Tiger Sport 660 серијата е дека сите возачи се различни. Затоа оваа серија моторцикли доаѓа со три различни бои и графици и повеќе од 40 оригинални Triumph аксесоари. Од вграден багаж па се до централни куфери кои држат и до две кациги, ќе бидете инспирирани да го конфигурирата вашиот Tiger Sport 660 по ваш вкус."
           },
           {
             "title": "Секој ден, Цел Ден",
-            "desc": "It's the journey that counts, not the destination, but the Tiger Sport 660 is designed to offer the ultimate in road adventure comfort. Featuring premium Showa 41mm separate function forks, Showa monoshock with remote hydraulically adjustable preload, slip and assist clutch, Road and Rain riding programs and the latest Triumph ABS technology and traction control program deactivation. From top to bottom the Tiger is designed to reduce fatigue and enhance your comfort to continue your adventure, with or without a passenger."
+            "desc": "Извонредното ниво на комфорт и комоција кое го нуди Tiger Sport 660 ќе ве натера уште повеќе да го засакате патувањето наместо дестинацијата. Showa суспензијата (41мм напред и „Monoshock hydraulic“ назад), „Slip & Assist“ квцачилото, „Road & Rain“ модулите на работа како и Τriumph ABS системот ќе ви овозможат да уживате во вашите авантури без никаков замор и дис-сатисфакција."
           },
           {
             "title": "Максимална искористливост",
-            "desc": "With its 17-litre fuel tank and top-of-the-line specification, the new Tiger Sport is ready for any adventure. Whether it's your daily commute, epic journeys with friends or maneuvering in tight urban spaces, the ride is anything but boring. The Tiger Sport's lightweight frame, road adventure setup and sporty feel make it the ultimate companion. Ready for the hard work of your daily commute revitalizing your work week but also fully capable of weekend jaunts and touring fun.",
+            "desc": "17 литаркиот резервоар на Tiger Sport 660 серијата обезбедува подлоги авантури со помалку застанување на бензските станици. Без разлика дали сте на вашите секојдневни патувања до работа, авантура со вашите пријатели или маневрирање низ тесните градски површини возењето нема никогаш да биде досадно. Лесната рамка и спорткиот карактер на овој мотор ќе ве придружуваат каде и да одите. Tiger Sport 660 серијата е спремна за било каков предизвик.",
             "image": "/images/adventure/tigerSport660/tiger660ReasonsImage3.avif"
           },
           {
             "title": "Прекрасна Зделка",
-            "desc": "The Tiger Sport 660's state-of-the-art technology, high-spec brakes, tires and suspension, confidence-inspiring agile handling, thrilling performance from the three-cylinder engine, unique styling and a very competitive price all combine to make it the perfect sporty choice. mid-range adventure - and the perfect entry point to the Triumph range. A leading service interval of 16,000km (or 12 months) and the lowest required service time in the segment also contribute to incredibly low running costs."
+            "desc": "Tiger Sport 660 е изработен со врвна опрема, врвни сопирачки, пневматици и суспензија и најважното - три-цилиндарски високо перформантен мотор. Цел овој пакет доаѓа со невиден стил и компетативна цена, па затоа Tiger Sport 660 серијата е одличен избор ако сте во потрага по перфектен, спортско-авантуристички мотор од средна-зафатнина на мотор а притоа и одличен избор доколку влегувате во Triumph фамилијата."
           },
           {
             "title": "Уникатен Стил",
-            "desc": "A new generation Tiger Sport in every way, with all the benefits of Triumph's class-redefining 660cc three-cylinder engine. Strong. Versatile. And with its thoughtful design, it embodies the modern Triumph style and character. The upright and imposing adventure stance, the protective gel and refined ergonomics promise comfort and thrills throughout your ride. All-new Tiger Sport 660 color schemes, class-leading premium finish and over 40 accessories will make the bike an absolute eye-catcher. Unmistakably Triumph, and the new perfectly-rounded mid-range adventure sports bike."
+            "desc": "Новата генерација на Tiger Sport мотори во секој поглед ги нуди сите бенефити на Triumph фамилијата. Од препознатливиот три-цилиндричен мотор до легендарниот Triumph карактер и стил, Tiger Sport 660 серијата е горд носител на Triumph логото. Со својата авантуристичка, исправена става, разни бои и графици како и многуте аксесоари Tiger Sport 660 серијата ќе го измами секој поглед и бргу ќе стане центар на внимание. Tiger Sport 660 серијата и перфектна спортско-авантуристичка серија со мотор од средна зафатнина."
           }
         ]
       },
@@ -862,11 +856,11 @@
       "url": "/motorcycles/adventure/tiger-850-sport",
       "shortDesc": "Прилагодлив на секој предизвик а сепак карактерот, агилноста и перформансите на Tiger, со завидувачки дизајн  и адаптабилност за сите потреби.",
       "subFamilyPageInfo": {
-        "heroSlogans": ["практичен", "неверојатен"],
+        "heroSlogans": ["практичен", "авантурист"],
         "topSection": {
           "title": "ПЕРФОРАМАНСИ КОИ ИНСПИРИРААТ",
-          "desc": "Tiger 850 Sport поставува нови стандарди за на патиштата, во градска средина, за патување и за било која голема животна авантура.",
-          "subtitle": "перфектен - повеќенамеснки мотор, со одличен баланс помеѓу пристапност и дневното користење"
+          "desc": "Tiger 850 Sport поставува нови стандарди на патиштата, во градска средина, на било кое патување и авантура.",
+          "subtitle": "перфектен - повеќенамеснки мотор, со одличен баланс помеѓу авантуризам и секојдневна дискретност"
         },
         "youtubeVideo": "https://www.youtube.com/embed/GIjm5EcJH30",
         "fullSpecs": {
@@ -1092,58 +1086,77 @@
       },
       "accessory": {
         "banner": {
-          "image": "/images/classics/speed400/speed400AccessoryBanner.avif"
+          "image": "/images/adventure/tigerSport850/tiger850AccessoryBanner.avif"
+        },
+        "infoText": {
+          "title": "Дополнителни аксесоари - Tiger 850 Sport",
+          "desc": "Дополнително персонализирајте го вашиот Tiger 850 Sport со повеќе од 60 оригинални Triumph аксесоари кои додаваат уште повеќе стил и сигурност, комфорт и дополнително мамат погледи. Без разлика дали патувате низ урбаната џунгла или ќе тргнете на долга авантура со сигорност ќе најдете дополнителни аксесоари кои ќе ви го олеснат патувањето. Сите оригинални Triumph аксесоари се достапни во секое најблиско Triumph претставништо и чекаат вие да го нконфигурирате вашиот Triumph по ваш вкус."
         },
         "accessoryTypes": [
           {
-            "title": "Стил и Комфорт",
-            "desc": "Choose from a range of parts that will make the Speed ​​400 just the way you want it. Direct replacement bullet turn signals a subtle new look and premium touch with their satin black body and machined aluminum bezels.. Or maybe you want to remodel the tank with different knee pads? A comfortable saddle with a stitched and quilted finish makes a style statement and, together with plug and play heated grips, offers luxury on longer rides..",
+            "title": "Практичност - Багаж",
+            "desc": "Додадете 131 литри и 25кг дополнителен багаж со специјално дизајниран Trekker багаж. Овој сет куфери за багаж ќе ги чува вашите сопствености суви, заштитени и сигурни со помош на бравата на заклучување. Без разлика дали тоа ќе биде вашиот лап-топ, кацига или вреќа за спиење, лесните алуминиумски куфери се лесни за монтажа и де-монтажа и се практични и флексибилни за секојдневно користење. За уште повеќе сигурност и заштита тука е и „Expedition“ сетот кој има алуминиумска конструкција со дебелина од 1.5мм и полимерна зафтита на аглите, брава на заклучување и капацитет од 131 литар.",
             "itemsList": [
-              "Bullet type LED flash",
-              "Штитници за колена",
-              "Комфортно Седло"
+              "Шасии за поставување багаж",
+              "Trekker Багаж",
+              "Expedittion Багаж",
+              "Торби за внатрешна употреба во куфер"
             ],
             "image1": {
-              "src": "/images/classics/speed400/speed400SAccesoryStyleImage1.avif",
-              "alt": "Speed 400 On The Road"
+              "src": "/images/adventure/tigerSport850/tiger850SportAccess3.avif",
+              "alt": "Tiger Sport 850 Luggage"
             },
             "image2": {
-              "src": "/images/classics/speed400/speed400AccessoryStyleImage2.avif",
-              "alt": "Speed 400 PaintJob"
+              "src": "/images/adventure/tigerSport850/tiger850SportAccess1.avif",
+              "alt": "Tiger Sport 850 Luggage"
             }
           },
           {
-            "title": "Багаж",
-            "desc": "A full range of Speed ​​400-specific luggage has been created to add some practicality to the fun. The Speed ​​400 is the perfect touring bike, and outfitting it to handle your load really couldn't be easier. Choose from sturdy side or rigid and semi-rigid panniers, each with their own special mounting system or, for those who prefer to travel light, a simple luggage rack, nylon tank bag or roll-on bag could be the perfect choice .",
+            "title": "Комфорт",
+            "desc": "Tiger 850 Sport серијата е создадена да ги покори сите услови па дури и оние со температури под нулата. За возачот се грижат греачи на рачки и седиште за возачот и патникот на кој на располагање му е и специјална перница за поголема комоција.",
             "itemsList": [
-              "Цврсти Куфери за Багаж",
-              "Држач за Багаж",
-              "Најлонска торба за на резервоар",
-              "Најлонска Торба Roll "
+              "Греачи на Рачки",
+              "Греач на седиште",
+              "Перница - потпирач за сопатникот"
             ],
             "image1": {
-              "src": "/images/classics/speed400/speed400AccessoryLuggageImage.avif",
-              "alt": "Speed 400 Luggage"
+              "src": "/images/adventure/tigerSport850/tiger850SportAccess2.avif",
+              "alt": "Tiger 850 Sport - Comfort"
             }
           },
           {
-            "title": "Заштита ",
-            "desc": "Both your protection from the elements and that of the Speed ​​400 have been taken care of. A visor with a special fitting kit is also available to deflect the wind to reduce rider fatigue on longer rides. Easy to fit and with style to match, it's a must-have addition for distance riders.To keep the Speed ​​400 out of harm's way on rougher roads, there's an aluminum skid plate, a radiator guard and a headlight mask, which comes with its own bezel for easy fitting, and offers excellent protection from rocks and debris. All-weather riders may want to add the mudguard kit which consists of front and rear mudguard extensions and a rear wing. These combine nicely to protect against water spray and extend the life of the rear shock in extreme conditions.Upper and lower engine guards are also available — these provide excellent protection against drops and spills, a must-have addition for city and country driving.",
+            "title": "Заштита од Елементите",
+            "desc": "Целосната серија е фокусирана на комодитет а затоа се грижат - ветробранското стакло и штитниците за дланк.",
             "itemsList": [
-              "Гелатин",
-              "Заштита за ладник",
-              "Решетка за светло",
-              "Алуминиумска заштита",
-              "Заштита од Кал",
-              "Цевки за Заштита на Мотор (Горни и Долни)"
+              "Ветробранско Стакло",
+              "Заштита за Раце"
+            ]
+          },
+          {
+            "title": "Сигурност - Безбедност",
+            "desc": "Стравот од падови не треба да е пречка за повеќе сатисфакција при возењето. На возачот мора му биде обезбедена комоција, сигурност и да биде мотивиран за повеќе авантура со додвање доза на возбуда. Затоа за ваше уживање и опуштеност тука се разните штитници за моторот, штитници за резервоар и радијатор, како и штитници за вилушки, раце и светло кои дополнително додаваат и екстра авантуристички карактер и стил.",
+            "itemsList": [
+              "Штитник за Мотор",
+              "Заштита за Резервоар",
+              "Штитници за Дланки",
+              "Штитник за Ладник",
+              "Штитник на Вилушки", 
+              "Штитник за Светло"
             ],
             "image1": {
-              "src": "/images/classics/speed400/speed400AccessoryProtectionImage1.avif",
-              "alt": "Speed 400 Head"
-            },
-            "image2": {
-              "src": "/images/classics/speed400/speed400AccessoryRadiatorProtection.avif",
-              "alt": "speed 400 Accessory Radiator Protection"
+              "src": "/images/adventure/tigerSport850/tiger850SportAccess4.avif",
+              "alt": "Tiger Sport 850 Protection"
+            }
+          },
+          {
+            "title": "Централна Ногарка",
+            "desc": "Додајте ја оригиналната централна ногарка на Triumph која ќе го оптимизира вашето време додека паркирате. Алтернативно додадена е и оригинален тркачки сталак кој ви обезбедува дад заштедите на тежина и полесно паркирање во вашите гаражи.",
+            "itemsList": [
+              "Централна Ногарка"
+            ],
+            "image1": {
+              "src": "/images/adventure/tigerSport850/tiger850SportAccess5.avif",
+              "alt": "Tiger Sport 850 Stand"
             }
           }
         ]
@@ -6819,17 +6832,17 @@
       ],
       "subFamilyPromo": {
         "title": "TIGER SPORT 660",
-        "desc": "Првиот избор за многу корисници, со три-цилиндарски мотор, неверојатен комфорт, перформантен, искористлив и агилен, стот тоа со најниски трошоци за одржување во класата. Цени од €9,590.00"
+        "desc": "Првиот Triumph мотор за многу корисници, со три-цилиндарски мотор, неверојатен комфорт, перформанси, искористливост и агилност,и тоа со најниски трошоци за одржување во класата. Цени од €9,290.00"
       },
       "bikePagePromo": [
         {
           "title": "Неспоредливо Мали Трошоци за Одржување",
-          "desc": "DA SE DOPISHE DESKRIPCIJA",
+          "desc": "Новиот Tiger Sport 660 се карактеризира со најниски трошоци за одржување во класата, две годишна гаранција без рразлика на поминати километри и сервисен интервал од 16 000 километри и тоа по компетитивна цена.",
           "image": "/images/adventure/tigerSport660/bikePagepPromo1.avif"
         },
         {
         "title": "Компатибилен со A2 Возачка Лиценца",
-        "desc": "DA SE DOPISHE DESKRIPCIJA",
+        "desc": "Tiger Sport 660 е идеален избор за нови и неискусни возачи. Истиот нуди модул за деградирање на моторот во А2 возачка лиценца и истиот може да се вгради или одстрани во најблискиот Triumph центар и тоа за рекордно брзо време.",
         "image": "/images/adventure/tigerSport660/bikePagePromo2.avif"
       }]
     },
