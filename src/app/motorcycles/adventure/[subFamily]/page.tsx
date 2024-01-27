@@ -87,6 +87,44 @@ const SubFamilyPage = async ({ params }: any) => {
             />
           )}
 
+          {Boolean(
+            subFamily.subFamilyName === "tiger-1200-rally" ||
+              subFamily.subFamilyName === "tiger-1200-gt"
+          ) && (
+            <section
+              className={`flex flex-col lg:flex-row justify-between items-center lg:gap-8 gap-4 py-4 md:py-8 lg:py-16`}
+            >
+              <div className={`basis-1/2 `}>
+                <video muted loop>
+                  <source
+                    src="https://www.youtube.com/embed/1_NEKTuBbMQ"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+              <div className="basis-1/2">
+                <div className={`lg:w-5/6 text-center md:text-left`}>
+                  <SectionTitleH2
+                    text={"НОВО - Tiger 1200 Upgrade"}
+                    color={"dark"}
+                  />
+                  <PageParagraph
+                    marginBot={true}
+                    text={
+                      "Новата Tiger 1200 серија доаѓа со уште поунапредена „Showa...Semi-Active“ суспензија која на возачот му понудува уште повеќе самодоверба и леснотија при модифицирање на суспензијата. Нова активна суспензија се грижи тоа како функционира суспензијата на моторите од оваа серија со посебно внимание при кочењето на моторот и наглите нагиби напред при сопирање."
+                    }
+                  />
+
+                  <PageParagraph
+                    text={
+                      "Оваа карактеристика е лесно достапна со лесно држење од 1 секунда на „Home“ копчето на воланот"
+                    }
+                  />
+                </div>
+              </div>
+            </section>
+          )}
+
           {subFamily.subFamilyName !== "tiger-900" && (
             <section className="px-4 lg:px-20 xl:px-40">
               {bikes.map((bike: any) => (
