@@ -92,16 +92,8 @@ const SubFamilyPage = async ({ params }: any) => {
               subFamily.subFamilyName === "tiger-1200-gt"
           ) && (
             <section
-              className={`flex flex-col lg:flex-row justify-between items-center lg:gap-8 gap-4 py-4 md:py-8 lg:py-16`}
+              className={`flex flex-col lg:flex-row justify-between items-center lg:gap-8 gap-4 py-4 md:py-8 lg:py-16 m-auto w-11/12 md:w-8/12 lg:w-9/12`}
             >
-              <div className={`basis-1/2 `}>
-                <video muted loop>
-                  <source
-                    src="https://www.youtube.com/embed/1_NEKTuBbMQ"
-                    type="video/mp4"
-                  />
-                </video>
-              </div>
               <div className="basis-1/2">
                 <div className={`lg:w-5/6 text-center md:text-left`}>
                   <SectionTitleH2
@@ -121,6 +113,10 @@ const SubFamilyPage = async ({ params }: any) => {
                     }
                   />
                 </div>
+              </div>
+
+              <div className={`basis-1/2 rounded-lg`}>
+                <iframe className="m-auto w-full rounded-sm shadow-2xl" width="955" height="537" src="https://www.youtube.com/embed/1_NEKTuBbMQ" title="Web | Tiger 1200 MY24 Suspension" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
               </div>
             </section>
           )}

@@ -1209,48 +1209,48 @@
         "fullSpecs": {
           "engineTransmission": [
             {
-              "title": "Тип на Мотор",
-              "desc": "водно ладење, 12 вентили, DOHC, линиски 3-цилиндри, 240° редослед на есклпозии"
+              "title": "Мотор",
+              "desc": "12 вентили, 2EEK,3-цилиндарски мотор / водно ладењe "
             },
             {
               "title": "капацитет",
-              "desc": "660 cc"
+              "desc": "1160cc"
             },
             {
               "title": "диаметар",
-              "desc": "74.04 mm"
+              "desc": "90.0 mm"
             },
             {
               "title": "рута",
-              "desc": "51.1 mm"
+              "desc": "60.7 mm"
             },
             {
               "title": "компресија",
-              "desc": "11.95:1"
+              "desc": "13.2:1"
             },
             {
               "title": "Мах. Коњски Сила",
-              "desc": "81 PS / 80 bhp (59.6 kW) @ 10,250 rpm"
+              "desc": "150PS @ 9,000rpm (100PS во програм за дожд)"
             },
             {
               "title": "Мах. Обртен Момент",
-              "desc": "64 Nm @ 6,250 rpm"
+              "desc": "130 Nm @ 7,000 rpm"
             },
             {
               "title": "Систем за убризгување",
-              "desc": "Multipoint sequential electronic fuel injection with electronic throttle control"
+              "desc": "Sequential multi-point electronic injection with electronic throttle"
             },
             {
               "title": "Систем за Издувни гасови",
-              "desc": "3 во 1 не-раѓосувачки челик"
+              "desc": "3 во 1 не-раѓосувачки челик - скриен главен катализатор и странично монтиран финален катализатор"
             },
             {
               "title": "Финална Трансмисија",
-              "desc": "X-ring chain"
+              "desc": "Axis"
             },
             {
               "title": "Квачило",
-              "desc": "Wet, multi-plate, slip"
+              "desc": "Hydraulic, wet, multi-disc, sliding"
             },
             {
               "title": "Менувачка Кутија",
@@ -1260,77 +1260,77 @@
           "frame": [
             {
               "title": "шасија",
-              "desc": "тубуларна челична шасија"
+              "desc": "тубуларна челична шасија / страничен заштитен алуминиумски рам со опција за лесно одстранување"
             },
             {
               "title": "вилушка",
-              "desc": "алуминиум"
+              "desc": "тубуларна челична конструкција / страничен заштитен алуминиумски рам со опција за лесно одстранување"
             },
             {
               "title": "предно тркало",
-              "desc": "19 x 2.5' die-cast легура "
+              "desc": "19 x 3.0” алуминиумска легура "
             },
             {
               "title": "задно тркало",
-              "desc": "17 x 4.25' die-cast легура "
+              "desc": "18 x 4.25” алуминиумска легура "
             },
             {
               "title": "предна гума",
-              "desc": "100/90-19"
+              "desc": "Metzeler Tourance, 120/70R19 (M/C 60V TL)"
             },
             {
               "title": "задна гума",
-              "desc": "150/70R17"
+              "desc": "Metzeler Tourance, 150/70R18 (M/C 70V TL)"
             },
             {
               "title": "предна суспензија",
-              "desc": "Marzocchi Inverted Fork 45mm"
+              "desc": "Showa 49mm inverted вилушки со полу-автоматско потискување"
             },
             {
               "title": "задна суспензија",
-              "desc": "Marzocchi задна суспензија со систем за подесување"
+              "desc": "Showa semi-active damping monoshock (200мм)."
             },
             {
               "title": "предни сопирачки",
-              "desc": "Dual 320mm дискови, 4-piston monobloc Brembo Stylema calipers. Front radial pump, ABS"
+              "desc": "„Brembo M4.30 Stylema monobloc radial“ клешта , ABS, 320mm дупли дискови."
             },
             {
               "title": "задна сопирачка",
-              "desc": "Еден 255 mm диск. Brembo single piston floating caliper, ABS"
+              "desc": "„Brembo single piston“ клешта, ABS, 282mm диск. Посебна пумпа со посебен резервоар за задна сопирачка."
             },
             {
               "title": "инструментна плочка",
-              "desc": "5 TFT екран"
+              "desc": "7“ инструментален пакет во боја со My Triumph систем за поврзување"
             }
           ],
           "dimension": [
             {
               "title": "ширина на волан",
-              "desc": "830 mm"
+              "desc": "849 mm"
             },
             {
               "title": "висина без ретровизори",
-              "desc": "1410-1460 mm"
+              "desc": "1436-1497 mm"
             },
             {
               "title": "Висина на Седиште",
-              "desc": "820-840 mm"
+              "desc": "850-870 mm"
             },
             {
               "title": "мегу-осовинско растојание ",
-              "desc": "1556 mm"
+              "desc": "1560 mm"
             },
             {
               "title": "Custer Corner",
-              "desc": "24.6 º"
+              "desc": "24.0 º"
             },
             {
               "title": "Trace",
-              "desc": "133.3 mm"
+              "desc": "120 v mm"
             },
             {
               "title": "Тежина",
-              "desc": "192 kg"
+              "desc": "245 kg"
             },
             {
               "title": "капацитет на резервоар",
@@ -1340,13 +1340,18 @@
           "fuelConsumption": [
             {
               "title": "Потрошувачка",
-              "desc": "5.2l /100km"
+              "desc": "5.1l /100km"
             },
             {
               "title": "CO2 загадување",
-              "desc": "Euro 5 Стандарди измерени според Регулатива 168/2013/EC. Резултатите се добиени во специјални тест средини и се на располагање само за споредба. Вистинските резултат може да варираат врз различни средини."
+              "desc": "119 g/km EURO 5 Regulation (EU) No. 134/2014 Annex VIII"
             }
-          ]
+          ],
+          "service": [
+            {
+              "title": "Сервисен Интервал",
+              "desc": "16 000км или 12 месеци"
+            }]
         },
         "grayCarousell": [
           {
@@ -1389,47 +1394,45 @@
       },
       "reasonsToDrive": {
         "banner": {
-          "image": "/images/adventure/tigerSport660/tiger660ReasonsBanner.avif"
+          "image": "/images/adventure/tiger1200GT/tiger1200GTReasonsBanner.avif"
         },
         "infoText": {
-          "title": "Дефиницијата за разноликост е да се биде најдобар во се.",
-          "desc": "Време е да се разбудите од досадните соништа со Tiger Sport 660. Ова е најпристапниот мотор од Tiger фамилијата на Triumph и е спремен за секојдневни авантури.Tiger Sport 660 е дизајниран да ги надмине вашите очекувања, од авантуристички тури па се до дневни обврски. Кај нас во Triumph се е во знак на возење, а еве и зошто:"
+          "title": "Tiger 1200",
+          "desc": "Triumph фамилијата располага со пет мотори од Tiger 1200 серијата и истите се наменети и изработени со помислата дека сите возачи се разнолики и имаат свои преференци. Па така тука се GT, GT Pro и GT Explorer моделите кои се наменети на асфалтните подлоги наспроти „all-terrain“ моделите како Rally Pro и Rally Explorer кои се за наменети за ентузијасти и сите оние кои ушиваат во авантура надвор од стандардните патишта. Tiger 1200 GT серијата е наменета да биде репер за сите оние кои бараат авантуристички мотор од голема зафатнина на моторот а тоа го постигнуваме со големата доза на технологија, како „Blind Spot Radar“ - технологија која ви го чува грбот во секој момент, со големиот левел на комфорт и лесното управува и на крај силната моќност на три-цилиндарските Triumph мотори."
         },
         "reasons": [
           {
-            "title": "Перформанси од Tiger Sport Серијата",
-            "desc": "Equipped with the proven 660 three-cylinder engine, it is the lightest and most versatile Tiger yet. Designed to increase rider confidence from the moment you ride it, with an effortless feel on the Tiger 660. Its smooth 6-speed gearbox has been optimized for fun and agility, while the slip and assist clutch provides light engagement that reduces rider fatigue. rider, allowing you to enjoy the bike even more. The 660 delivers usable three-cylinder power with the twist of the wrist. Central to the versatility and exciting performance is the 660cc engine. A three-cylinder Triumph that beats the two-cylinder competition, delivering strong torque from low to high in the rev range, peaking at 64Nm @ 6,250rpm. Power is class-leading and utterly thrilling, peaking at 81PS @ 10,250rpm. It is smooth and linear, sporty and fun, for your daily commute or weekend pleasures.",
-            "image": "/images/adventure/tigerSport660/tiger660ReasonsListImage1.avif"
+            "title": "Мотор",
+            "desc": "Уникатниот, лесниот, препознатлив (1160cc) три-цилиндричен мотор на Triumph располага со многу капацитет, карактер и перформанси. Долго-годишните тестови и процеси на развој доведоа до произведување на оптимален три-цилиндарски мотор, кој располага со оние препознатливи предности на дво-цилиндарските мотори на низок обртен момент и богатите перформанси на три-цилиндарските мотори на високи обртаи. Tiger 1200 серијата нуди богат обртен момент и контрола при низок обртај со прецизност и предвидливост при додвање на гаста. Во моментот кога додавате гас и се наоѓате во онов среден обсен на обртаите на моторот три-цилиндарскиот аспект на овој мотор доаѓа до израз и понудава експлозивност и високи перформанси кои растат се до моментот кога стрелката влегува во црвено. Максималната јачина на моторот е 150 PS, 9PS повеќе од неговиот претходник.",
+            "image": "/images/adventure/tiger1200GT/tiger1200GTReasons1.avif"
           },
           {
-            "title": "Перфектна Хармонија Помеѓу Моторциклот и Возачот ",
-            "desc": "Harmonizing with Tiger's rhythm comes naturally. It is the ultimate combination of practical performance and top thrills. The Tiger Sport 660 can be limited to an A2 license, opening doors to new adventure experiences, from touring to flexible fun driving. Designed to excite but tamed to build the confidence you need. Whether it's your first bike, your first motorcycle adventure, or a flexible means of transportation you're looking for, the Tiger Sport 660 has the technology and flair to revitalize your riding experience."
+            "title": "Тежина",
+            "desc": "Со цел да оваа серија се доведе до идеално ниво на агилност, компактност и разноликост оваа серија мораше значително да ја намали својата вкупна тежина, но по цена да не се уништи нивота на комоција и самодоверба. Новиот 1160cc мотор, лесната тубуларна рамка и уникатното „Tri - Link“ раме парирано со суспензијата и сопирачките заштедија дури 25кг од вкупната тежина на моторот, што е 17кг помалку од вкупната тежина на нивниот претходник. На крај на се оваа Tiger серија понудува - врвен авантуристчки моторцикл со голема зафатнина на мотор кој е супериорно избалансиран, лесен за возење и нуди перфектни перформанси без никакво жртвување во поглед на комоција и леснотија за возење.",
+            "image": "/images/adventure/tiger1200GT/tiger1200GTReasons2.avif"
           },
           {
-            "title": "Инспирира Самодоверба",
-            "desc": "Riding confidence is at the forefront of the adventure, setting off for a ride knowing that Tiger Sport's rider-focused technology and premium brakes and suspension are there to support you every moment. The upright stance with the lightweight frame and nimble engine make for a nimble and easy feel, without ever being intimidating. Add in the narrow riding position for easy ground contact, the low 835mm seat height and the excellent ergonomics setup and you have a bike with great agility and handling in any riding scenario.",
-            "image": "/images/adventure/tigerSport660/tiger660ReasonsImage2.avif"
+            "title": "Комфорт и Комоција",
+            "desc": "Најчесто авантурите кои најмногу се паметат се оние кои се нај-исцрпувачки и за моторот и за возачот. Секој мотор од Tiger серијата е наменет за уживање од првиот до последниот километар па така секој мотор доаѓа со 3-годишна гаранција без разлика на поминати километри која ви овозможува повеќе возење и уживање наместо загриженост. Сите тестови направени врз оваа серија се наменети за да оваа серија испорача ултимативно „off-road“ искуство и авантура. Секој можен елемент на Tiger 1200 серијата почнувајки од лесната рамка па се до најситните компоненти се дизајнирани за максимална цврстина на моторот, стабилсност како и комоцијата на возачот.",
+            "image": "/images/adventure/tiger1200GT/tiger1200GTReasons3.avif"
+          },
+          
+          {
+            "title": "„Off-Road“ Специјалист",
+            "desc": "Истражување на неоткриените терени е сон за многуте возачи, аванатуристи. Доколку и вие имате авантуристички и истражувачки аспирации, тогаш Tiger 1200 Rally Pro & Explorer моделите се тука за вас. Карактеристичното високо растојание до земјиното тло како и големите „Off-Road“ тркала и „tubuless“ Metzeler Karoo пневматици (21“ напред & 18“ назад) како и опционалните Michelin Anakee Wild пневматици се тука за да ве охрабрат на уште поголема авантура. Доколку на сето ова ја додадеме и перфектната возачка позиција, мотор кој испорачува извонредна сила и Showa суспензијата вие добивате ултимативен авантурист специјализиран за екстремни подлоги. Доколку вашата идеална авантура најмногу се базира на асфалтните подлоги, но понекогаш сакате и да избегате од нив тогаш Tiger GT Pro & GT Explorer се тука за да ви обезбедат многу возбудливи и безбедни километри.",
+            "image": "/images/adventure/tiger1200GT/tiger1200GTReasons4.avif"
+
           },
           {
-            "title": "Направен за Вас",
-            "desc": "No two riders are the same, so you can personalize your Tiger Sport 660 with a choice of three special colors and graphics and over 40 genuine Triumph accessories. From built-in luggage to a central case that holds 2 helmets, you'll be inspired by the options to suit your adventure. When everyday flexibility is your goal, you shouldn't be left behind. The bike is designed with the rider in mind - make it your own."
+            "title": "Техонологија",
+            "desc": "Tiger 1200 серијата е една од технолошко најнапредните серии на пазарот. Истата е наменета како асистент на возачот и овозможува подолга, покомфортна и најважното најбезбедна авантура. Двата „Explorer“ модели се опремени со иновативната „Blind Spot Radar“ системот кој бурно го следи дејствието зад вас и во опсегот на вашите така наречени слепи точки. Изработен е во соработка со Continental и нуди „Blind Spot Assis“ и „Lane Change Assist“. Новата Showa суспензија автоматски се прилагодува на теживата на возачот, во секој момент е активна и го прави возењето полесно и покомфротно и сето ова на притисок на копче и без никаков алат во рацете. На клик на копче се достапни и 6 возачки мода, систем за пролизгување, ABS и опции за подесување на суспензијата. Целосниот „KEYLESS“ систем обезбедува побрзи застанување за точење на гориво како и ви овозможува да не ги вадите вашите ракавици на секое паркирање. Греачите на рачките и греачите на седиште за возач и сопатник (само кај Explorer моделите) се тука за да се чувствувате комотно и нудат повеќе опции на греење. 7“ TFT full-color дисплеј, адаптивните LED светла, „Hill-Assist“, USB влезовите, системот за мониторинг на притисокот во гумите и квачилото кое ви асистира се уште некои од дополнителните технолошки гаџети кои ви овозможуваат безгржно и комфортно патување и луксуз (некои од опциите не доаѓаат како стандард кај сите Tiger 1200 модели).",
+            "image": "/images/adventure/tiger1200GT/tiger1200GTReasons5.avif"
           },
           {
-            "title": "Секој ден, Цел Ден",
-            "desc": "It's the journey that counts, not the destination, but the Tiger Sport 660 is designed to offer the ultimate in road adventure comfort. Featuring premium Showa 41mm separate function forks, Showa monoshock with remote hydraulically adjustable preload, slip and assist clutch, Road and Rain riding programs and the latest Triumph ABS technology and traction control program deactivation. From top to bottom the Tiger is designed to reduce fatigue and enhance your comfort to continue your adventure, with or without a passenger."
-          },
-          {
-            "title": "Максимална искористливост",
-            "desc": "With its 17-litre fuel tank and top-of-the-line specification, the new Tiger Sport is ready for any adventure. Whether it's your daily commute, epic journeys with friends or maneuvering in tight urban spaces, the ride is anything but boring. The Tiger Sport's lightweight frame, road adventure setup and sporty feel make it the ultimate companion. Ready for the hard work of your daily commute revitalizing your work week but also fully capable of weekend jaunts and touring fun.",
-            "image": "/images/adventure/tigerSport660/tiger660ReasonsImage3.avif"
-          },
-          {
-            "title": "Прекрасна Зделка",
-            "desc": "The Tiger Sport 660's state-of-the-art technology, high-spec brakes, tires and suspension, confidence-inspiring agile handling, thrilling performance from the three-cylinder engine, unique styling and a very competitive price all combine to make it the perfect sporty choice. mid-range adventure - and the perfect entry point to the Triumph range. A leading service interval of 16,000km (or 12 months) and the lowest required service time in the segment also contribute to incredibly low running costs."
-          },
-          {
-            "title": "Уникатен Стил",
-            "desc": "A new generation Tiger Sport in every way, with all the benefits of Triumph's class-redefining 660cc three-cylinder engine. Strong. Versatile. And with its thoughtful design, it embodies the modern Triumph style and character. The upright and imposing adventure stance, the protective gel and refined ergonomics promise comfort and thrills throughout your ride. All-new Tiger Sport 660 color schemes, class-leading premium finish and over 40 accessories will make the bike an absolute eye-catcher. Unmistakably Triumph, and the new perfectly-rounded mid-range adventure sports bike."
+            "title": "Стил",
+            "desc": "Суровиот изглед, цврстата става и „Tiger“ карактерот се тука да го измамат секој поглед и да го направат секој Tiger 1200 модел центар на вниманието. Tiger серијата еволуираше во поглед на ергономијата на возачот, перформансите што овозможи посигурно возење, повеќе самодоверба без губење на познатата комоција и стил на Tiger серијата. Висината до земјинотот тло исто така беше унапредена и ја направи Tiger 1200 серијата „off-road“ специјалист, но и оддаде свој допринос на изгледот и стилот на моторот. Како за крај тука е LED осветлувањето со дополнителни LED дневни светла кои оддаваат свој допир кога е во прашање не само излгедот туку и фукнционалноста.",
+            "image": "/images/adventure/tiger1200GT/tiger1200GTReasons6.avif"
+
           }
         ]
       },
