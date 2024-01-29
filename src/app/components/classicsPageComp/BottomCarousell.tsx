@@ -5,7 +5,7 @@ import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 
-type BottomCarousellItemType = {
+export type BottomCarousellItemType = {
   id: string;
   title: string;
   desc: string;
