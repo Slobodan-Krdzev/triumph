@@ -16,7 +16,7 @@ export const linkItemsAccessory: NavLinkListingItemsType[] = [
   },
   {
     text: "Triumph Connectivity Систем",
-    link: "/motorcycles/my-triumph-connectivity-system",
+    link: "/accessories/my-triumph-connectivity-system",
   },
   {
     text: "Triumph Sena Bluetooth®",
