@@ -90,7 +90,7 @@ export default function SubFamilyLayout({
         }}
         itemTwo={{
           text: "КОНФИГУРАЦИЈА",
-          url: `/configure/families/roadsters`,
+          url: `/configure`,
           icon: "/icon-configurator.svg",
         }}
       />

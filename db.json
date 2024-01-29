@@ -1438,62 +1438,79 @@
       },
       "accessory": {
         "banner": {
-          "image": "/images/classics/speed400/speed400AccessoryBanner.avif"
+          "image": "/images/adventure/tiger1200GT/tiger1200GTAccessBanner.avif"
         },
         "infoText": {
-          "title": "Додајте ваш белег врз Speed 400",
-          "desc": "На располагање ви е селекција од преку 20 оригинални Triupmh аксесоари за оваа серија на мотори. Аксесоарите кои ќе ги додадете може да бидат додадени на вашиот мотор во фабриката. Aксесоарите се дизајнирани од истиот тим кој го креираше Speed 400 и доаѓаат со две-годишна гаранција."
+          "title": "Конфигурирајте го вашиот мотор",
+          "desc": "Tiger 1200 серијата е изработена да ве однесе каде и да посакате. Бидете сигурни дека безразлика на изборот кој ќе го направите и како и да посакате да го конфигурирате вашиот мотор, Triumph дизајнерите веќе го изработиле тоа парче."
         },
         "accessoryTypes": [
           {
-            "title": "Стил и Комфорт",
-            "desc": "Choose from a range of parts that will make the Speed ​​400 just the way you want it. Direct replacement bullet turn signals a subtle new look and premium touch with their satin black body and machined aluminum bezels.. Or maybe you want to remodel the tank with different knee pads? A comfortable saddle with a stitched and quilted finish makes a style statement and, together with plug and play heated grips, offers luxury on longer rides..",
+            "title": "Багаж ",
+            "desc": "Моторите кои се дизајнирани за авантури бараат и соодветен екстра издржлив багаж. Дизајнирани во колаборација со светски познатиот бренд Givi, алуминиумската „Expedition“ серија и синтетичко/алуминиумската серија „Trekker“ нудат екстра издржливи багаж кој може да собере се што ви е потребно за безгрижна авантура. Големината и конфигурацијата на багажот се дизајнирани според силуетата на Tiger серијата (33 литри на десната и 46 литри капацитет на левата страна) заради издувната цевка на десната страна. Централниот багаж исто така варира кога е прашање на големина, па така можете да конфигурирате по ваш вкус и барање ( најголемата величина има доволно место за две кациги ) како и можност за додавање на дополнителен луксуз во форма на потпирач за совозачот. На располагање ви се и повеќето бои како „Stealth Black“ и „Classic Silver“. Дополнителни внатрешни торби за складирање и сортирање се на располагање кои ќе ги чуваат вашите сопствености суви и заштитени.",
             "itemsList": [
-              "Bullet type LED flash",
-              "Штитници за колена",
-              "Комфортно Седло"
+              "Алуминиумски „Expedition“ Паниери",
+              "„Trekker“ Паниери"
             ],
             "image1": {
-              "src": "/images/classics/speed400/speed400SAccesoryStyleImage1.avif",
-              "alt": "Speed 400 On The Road"
+              "src": "/images/adventure/tiger1200GT/tiger1200GTAccess1.avif",
+              "alt": "Tiger 1200 Luggage"
             },
             "image2": {
-              "src": "/images/classics/speed400/speed400AccessoryStyleImage2.avif",
-              "alt": "Speed 400 PaintJob"
+              "src":"/images/adventure/tiger1200GT/tiger1200GTAccess2.avif",
+              "alt": "Tiger 1200 Luggage"
             }
           },
           {
-            "title": "Багаж",
-            "desc": "A full range of Speed ​​400-specific luggage has been created to add some practicality to the fun. The Speed ​​400 is the perfect touring bike, and outfitting it to handle your load really couldn't be easier. Choose from sturdy side or rigid and semi-rigid panniers, each with their own special mounting system or, for those who prefer to travel light, a simple luggage rack, nylon tank bag or roll-on bag could be the perfect choice .",
+            "title": "Заштита",
+            "desc": "Долгите денови поминати на моторот, уморните мускули и деконцентрацијата некогаш доведуваат и до некој несакан пад. Сите сме биле таму. За наша и ваша среќа додавањето дополнителна заштита на вашиот Tiger 1200 никогаш не е била полесна. Секое парче е дизајнирано да комбинира функционалност и стил, додавајки уште повеќе трајност на вашиот Tiger 1200 како и уште посуров изглед. Падовите никако не смеат да бидат крај на вашите авантури напротив само малку одстранување од вашата цел. Рамовите/штитници на моторот додаваат заштита за долниот дел и страничниот дел на моторот и можат да бидат вградени поединечно или најдобро - заедно. Изработени од нераѓосувачки челик со тубуларна шасија штитниците за моторот ќе го заштитат моторот од било каков пад. Секој модел од Tiger 1200 серијата има повисоко растојание помеќу најдолниот дел од моторот и земјиното тло што нуди уште повеќе „Off-Road“ авантури. Со цел да го заштитиме долниот дел од моторот од камења и било какви тврди предмети, дизајниравме алуминиумска заштитна плоча која не само што штити туку и со нејзината мала тежина не додава на вкупната тежина на моторот. Со најголема дебелина од 4мм на клучните места ова е еден аксесоар кој мора да го имате. Претходно спомнатите камења и остри предмети можат многу лесно да наштетат на вашите светла. Дизајнирани претежно за „Off-Road“ услови поликарбонатските штитници за светла се лесни за вградувае и иделна заштита од надворешните услови.",
             "itemsList": [
-              "Цврсти Куфери за Багаж",
-              "Држач за Багаж",
-              "Најлонска торба за на резервоар",
-              "Најлонска Торба Roll "
+              "Заштитен Рам за Мотор",
+              "Заштита за картер (долен дел од мотор)",
+              "Заштита за Светло"
             ],
             "image1": {
-              "src": "/images/classics/speed400/speed400AccessoryLuggageImage.avif",
-              "alt": "Speed 400 Luggage"
+              "src": "/images/adventure/tiger1200GT/tiger1200GTAccess3.avif",
+              "alt": "Tiger 1200 Safety"
+            },
+            "image2": {
+              "src":"/images/adventure/tiger1200GT/tiger1200GTAccess4.avif",
+              "alt": "Tiger 1200 Safety"
             }
           },
           {
-            "title": "Заштита ",
-            "desc": "Both your protection from the elements and that of the Speed ​​400 have been taken care of. A visor with a special fitting kit is also available to deflect the wind to reduce rider fatigue on longer rides. Easy to fit and with style to match, it's a must-have addition for distance riders.To keep the Speed ​​400 out of harm's way on rougher roads, there's an aluminum skid plate, a radiator guard and a headlight mask, which comes with its own bezel for easy fitting, and offers excellent protection from rocks and debris. All-weather riders may want to add the mudguard kit which consists of front and rear mudguard extensions and a rear wing. These combine nicely to protect against water spray and extend the life of the rear shock in extreme conditions.Upper and lower engine guards are also available — these provide excellent protection against drops and spills, a must-have addition for city and country driving.",
+            "title": "Технологија Фокусирана на Возачот",
+            "desc": "Без разлика на моделот, секој мотор од Tiger 1200 серијата е опремен со најновата технологија како стандард. Но на располагање ви се и додатни елементи доколку сакате уште повеќе да го подобрите нивото на технологија која вашиот мотор ќе ја поседува. За авантури во темните длабочини на природата тука е дополнителниот сет светла кои ќе ги осветлат дури и најтемните места кои ќе се најдат пред вас. Компактни и лесни и со одлична ширина и висина на светлосниот зрак овие светла се лесни за монтирање и демонтирање а се огромен чекор напред во осветлувањето на пат. Три-цилиндарскиот Triumph мотор е подкрепнат од одличен менувач кој како додаток го понудува „Shift Assist“ модулот кој обезбедува промена на степен на пренос без употреба на квачило. Тука е и (TPMS) „Tire Pressure Monitoring System“ систем кој одржува постојан мониторинг на притисокот на воздух во вашите пневматици. Овој систем ќе ви обезбеди посигурно возење и ќе ја одстрани потребата за преглед на вашиот мотор пред вашата авантура. Со цел да се обезбеди и позабавна авантура тука е и Sena системот за комуникација „rider-to-rider“ кој ќе овозможи непреќината комуникација ( макс. далечина до 1.9км ) помеѓу двајца или повеќе возачи од една група.",
             "itemsList": [
-              "Гелатин",
-              "Заштита за ладник",
-              "Решетка за светло",
-              "Алуминиумска заштита",
-              "Заштита од Кал",
-              "Цевки за Заштита на Мотор (Горни и Долни)"
+              "Дополнителен Сет Светла",
+              "„Shift Assist“",
+              "Мониторинг на Притисок во Пневматици",
+              "Sena 50S Систем за Комуникација"
             ],
             "image1": {
-              "src": "/images/classics/speed400/speed400AccessoryProtectionImage1.avif",
-              "alt": "Speed 400 Head"
+              "src": "/images/adventure/tiger1200GT/tiger1200GTAccess5.avif",
+              "alt": "Tiger 1200 Technology"
             },
             "image2": {
-              "src": "/images/classics/speed400/speed400AccessoryRadiatorProtection.avif",
-              "alt": "speed 400 Accessory Radiator Protection"
+              "src":"/images/adventure/tiger1200GT/tiger1200GTAccess6.avif",
+              "alt": "Tiger 1200 Technology"
+            }
+          },
+          {
+            "title": "Комфорт",
+            "desc": "Возете подолго без разлика на временските услови. Tiger 1200 серијата уште од продукциката линија е една од најкомфортнине серии на мотори, но дополнително тука се и дополнителни аксесоари кои ќе додадат уште малку луксуз и комфорт додека возите и низ нај екстремните површини. Широката палета на седишта вклучува седишта со греачи, таканаречени ниски седишта (седишта кои се за некој милиметар пониско монтирани од нормалните со цел да овозможат одличен допир на пониските возачи со земјиното тло). Дополнителното мало ветробранско стакло се монтира на врвот на главното ветробранско стакло и го турка турбулентниот воздух подалеку од возачот и е идеален аксесоар за повисоките возачи. Со цел да се овозможи посигурна и полесна возачка позиција Tiger 1200 серијата на мотори е опремена со алуминиумски педали за нозе. Истите се доволно широки и изгравирани со цел да нема несакани лизгања на нозете.",
+            "itemsList": [
+              "Греачи на Седишта",
+              "Дифузер за Ветробранско Стакло",
+              "Алуминиумски Педали за Нозе"
+            ],
+            "image1": {
+              "src": "/images/adventure/tiger1200GT/tiger1200GTAccess7.avif",
+              "alt": "Tiger 1200 Comfort"
+            },
+            "image2": {
+              "src":"/images/adventure/tiger1200GT/tiger1200GTAccess8.avif",
+              "alt": "Tiger 1200 Comfort"
             }
           }
         ]

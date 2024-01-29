@@ -32,7 +32,7 @@ const SubFamReasonsToRide = async ({ params }: any) => {
         <main className="px-4 md:px-16 lg:px-40">
 
           {subFamily.accessory.infoText && 
-            <section className="m-auto w-6/12 pt-4 md:pt-8 lg:pt-16 text-center">
+            <section className="m-auto md:w-6/12 pt-4 md:pt-8 lg:pt-16 text-center">
                 <SectionTitleH2 text={subFamily.accessory.infoText.title ?? ""} color="dark"/>
                 <PageParagraph text={subFamily.accessory.infoText.desc ?? ""}/>
             </section>
