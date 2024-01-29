@@ -3,6 +3,7 @@ import SecondaryPagesHeroSection from "@/app/components/SubFamily/SecondaryPages
 import YouTubePromo from "@/app/components/SubFamily/YouTubePromo";
 import ListAndImageFlexSection from "@/app/components/familiySharedComponents/ListAndImageFlexSection";
 import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
+import LatestModelsCarousellSection, { LatestModelsCarousellItemType } from "@/app/components/homePageComponents/LatestModelsCarousellSection";
 import React from "react";
 
 const phones: string[] = [
@@ -27,6 +28,55 @@ const phones: string[] = [
   "Apple iPhone 14",
   "Apple iPhone 14 Pro",
 ];
+
+const turnByTurnNaviItems: LatestModelsCarousellItemType[] = [{
+  title: "Turn By Turn",
+  desc: 'Овој уред е првенец во оваа класа на аксесоари за Triumph и нуди лесен и иновативен навигациски систем кој се вградува во My Triumph Connectivity системот.',
+  image: "/images/accessories/mytriumphConectivityTopCaro1.avif"
+},
+{
+  title: "Истражувај и Откриј нови Локации",
+  desc: 'Зближи се со безбројте милиони локации и бизниси и додај и до 21 дестинација кои се меѓу вас и вашата финална дестинација.',
+  image: "/images/accessories/mytriumphConectivityTopCaro2.avif"
+},
+{
+  title: "Вашиот Персонален Асистент",
+  desc: 'Уште од моментот на стартување на вашата авантура, „My-Triumph“ апликацијата веднаш се активира на TFT инструментната плоча и дава прецизни показатели за тоа каде треба да се упати возачот.',
+  image: "/images/accessories/mytriumphConectivityTopCaro3.avif"
+},
+{
+  title: "Навигатор",
+  desc: 'Софистицираниот навигациски систем им испорачува на возачите јасни и лесни понуди кои им се на располагање на возачите и ќе им помогнат најбрзо да дојдат до својата дестинација.',
+  image: "/images/accessories/mytriumphConectivityTopCaro4.avif"
+},
+{
+  title: "Гласовни Пораки",
+  desc: 'Покрај јасните пораки на инструментната табла, возачот ќе добива и јасни аудио инстуркции за навигирање преку својот Βluetoot Headset.',
+  image: "/images/accessories/mytriumphConectivityTopCaro5.avif"
+}
+]
+
+const audioNaviItems: LatestModelsCarousellItemType[] = [{
+  title: "Bluetooth Конектирање",
+  desc: 'Со користење на My-Triumph-Connectivity системот секој возач ќе има можност да ги парира својот мотор со својот телефон или Bluetooth слушалките а со тоа ќе му биде овозможено целосна контрола на неговиот телефон за време на возењето.',
+  image: "/images/accessories/mytriumphConectivityBottomCaro1.avif"
+},
+{
+  title: "Примајте и Возвраќајте Повици и Пораки додека возите",
+  desc: 'Возачот може да одговара и да праќа свои повици се додека вози додека TFT екранот ги испорачува SMS пораки кои возачот ги добива додека управува со моторот. Контролирањето на телефонските операции е лесно и се врши преку копчиња на рачките а притоа возачот добива јасни сигнали на инструментната плоча.',
+  image: "/images/accessories/mytriumphConectivityBottomCaro2.avif"
+},
+{
+  title: "Забавувајте се додека возите",
+  desc: 'Возачот исто така може и да ја слуша својата најомилена музика додека вози и лесно да ја промени истата преку командите на рачките на воланот.',
+  image: "/images/accessories/mytriumphConectivityBottomCaro3.avif"
+},
+{
+  title: "Bluetooth Headset",
+  desc: 'За да одговарате на повици или да слушате музика, мора да бидете обезбедени со Bluetooth Headset или слушалки со микрофон.',
+  image: "/images/accessories/mytriumphConectivityBottomCaro4.avif"
+}
+]
 
 const MyTriumphPage = () => {
   return (
@@ -121,7 +171,11 @@ const MyTriumphPage = () => {
               color={"dark"}
             />
             <ul className="list-disc marker:text-red-600 marker:text-2xl">
-              {phones.map((phone, idx:number) => <li key={`${phone}..${idx}`} className="text-lg">{phone}</li>)}
+              {phones.map((phone, idx: number) => (
+                <li key={`${phone}..${idx}`} className="text-lg">
+                  {phone}
+                </li>
+              ))}
             </ul>
           </div>
           <div className="flex flex-col items-center text-center">
@@ -137,7 +191,10 @@ const MyTriumphPage = () => {
             My Triumph App
           </h2>
           <p className="text-xl md:text-1xl font-semibold uppercase mb-8 m-auto w-11/12 md:w-6/12 text-center">
-            My Triumph апликацијата е бесплата и достапна за спуштање и користење на iOS ™ и Android ™ уредите и се тука да ви овозможат да се конектирате со моторот, да ја следите вашата активност и полесно да навигирате при вашата авантура.
+            My Triumph апликацијата е бесплата и достапна за спуштање и
+            користење на iOS ™ и Android ™ уредите и се тука да ви овозможат да
+            се конектирате со моторот, да ја следите вашата активност и полесно
+            да навигирате при вашата авантура.
           </p>
           <MainBtn
             text={"Дознај Повеќе за Апликацијата"}
@@ -145,11 +202,19 @@ const MyTriumphPage = () => {
             isLink={true}
             link={`/owners/my-triumph-app`}
           />
-        </section>
-        <YouTubePromo video={"https://www.youtube.com/embed/sDq0ksRQOtQ"}/>
-        <section>
 
+          <section className="py-4 md:py-8 lg:py-16">
+            <SectionTitleH2 text={"Turn-By-Turn Навигација"} color={"dark"} />
+            <LatestModelsCarousellSection items={turnByTurnNaviItems} showTitle={false} />
+          </section>
+          <section className="py-4 md:py-8 lg:py-16">
+            <SectionTitleH2 text={"Аудио и Мултимедија"} color={"dark"} />
+            <LatestModelsCarousellSection items={audioNaviItems} showTitle={false} />
+          </section>
+          
         </section>
+        <YouTubePromo video={"https://www.youtube.com/embed/sDq0ksRQOtQ"} />
+        <section></section>
       </main>
     </>
   );
