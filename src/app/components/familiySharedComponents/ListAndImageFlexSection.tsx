@@ -4,8 +4,7 @@ import SectionTitleH2 from "./SectionTitleH2";
 
 type TextAndImageProps = {
   title?: string;
-  textMain: string;
-  textSecondary?: string;
+  listItems: string[];
   image: {
     src: string;
     alt: string;
@@ -15,10 +14,9 @@ type TextAndImageProps = {
   textCenter?: boolean
 };
 
-const TextAndImageFlexSection = ({
+const ListAndImageFlexSection = ({
   title,
-  textMain,
-  textSecondary,
+  listItems,
   image,
   imageLeft,
   textWhite,
@@ -32,13 +30,13 @@ const TextAndImageFlexSection = ({
       <div className="basis-1/2">
         <div className={`lg:w-5/6 text-center ${textCenter ? "md:text-center" : "md:text-left"}`}>
           <SectionTitleH2 text={title ?? ''} color={textWhite ? "white" : "dark"} />
-          <PageParagraph marginBot={true} text={textMain} />
-
-          {textSecondary && <PageParagraph text={textSecondary} />}
+          <ul className="list-disc marker:text-red-600 marker:text-2xl">
+            {listItems.map(item => <li className="text-md md:text-xl" key={item}>{item}</li>)}
+          </ul>
         </div>
       </div>
     </section>
   );
 };
 
-export default TextAndImageFlexSection;
+export default ListAndImageFlexSection;
