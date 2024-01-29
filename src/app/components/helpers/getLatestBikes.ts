@@ -8,7 +8,7 @@ export const createBikeList = (bikes: any[]) => {
     newestBikes.map((bike: any) => {
 
       finalBikes.push({
-        link: `/motorcycles/${bike.category}/${bike.subFAmilyCategory}/${bike.model}`,
+        link: `/motorcycles/${bike.category}/${bike.subFamilyCategory}/${bike.model}`,
         text: bike.title
       })
     })
