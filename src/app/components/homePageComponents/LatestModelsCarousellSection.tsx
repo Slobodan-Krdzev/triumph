@@ -14,10 +14,6 @@ export type LatestModelsCarousellItemType = {
   image: string,
 }
 
-
-
-
-
 type LatesModelsCarousellSectionProps = {
   items: LatestModelsCarousellItemType[],
   showTitle: boolean

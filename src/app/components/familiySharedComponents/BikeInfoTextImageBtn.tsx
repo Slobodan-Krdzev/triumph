@@ -5,10 +5,14 @@ import MainBtn from "../MainBtn";
 import Image from "next/image";
 
 type BikeInfoTextImageBtnProps = {
-  title: string;
+  title?: string;
   desc: string;
   price?: string;
   ctaBtn: {
+    text: string;
+    link: string;
+  };
+  ctaBtn2?: {
     text: string;
     link: string;
   };
@@ -23,7 +27,7 @@ type BikeInfoTextImageBtnProps = {
   imageOnTheLeft?: boolean;
   blackBtn: boolean;
   mobileTextRight?: boolean;
-  textWhite? : boolean
+  textWhite?: boolean;
 };
 
 const BikeInfoTextImageBtn = ({
@@ -31,6 +35,7 @@ const BikeInfoTextImageBtn = ({
   desc,
   price,
   ctaBtn,
+  ctaBtn2,
   image,
   video,
   imageOnTheLeft,
@@ -46,7 +51,10 @@ const BikeInfoTextImageBtn = ({
         } text-left ${imageOnTheLeft ? "order-2 lg:pl-8" : ""} my-8 lg:mb-0 `}
       >
         <div className="lg:max-w-xs md: max-w-md">
-          <SectionTitleH2 text={title} color={textWhite ? "white" : "dark"} />
+          <SectionTitleH2
+            text={title ?? ""}
+            color={textWhite ? "white" : "dark"}
+          />
           <PageParagraph marginBot={true} text={desc} />
           {price && (
             <p className="mb-4">
@@ -54,12 +62,23 @@ const BikeInfoTextImageBtn = ({
             </p>
           )}
 
-          <MainBtn
-            text={ctaBtn.text}
-            link={ctaBtn.link}
-            isLink={true}
-            bgBlack={blackBtn}
-          />
+          <div className="flex flex-row md:flex-col  items-start gap-4">
+            <MainBtn
+              text={ctaBtn.text}
+              link={ctaBtn.link}
+              isLink={true}
+              bgBlack={blackBtn}
+            />
+
+            {ctaBtn2 && (
+              <MainBtn
+                text={ctaBtn2.text}
+                link={ctaBtn2.link}
+                isLink={true}
+                bgBlack={true}
+              />
+            )}
+          </div>
         </div>
       </div>
       <div className="flex justify-start items-center ">
