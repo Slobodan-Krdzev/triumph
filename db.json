@@ -501,7 +501,7 @@
       "subFamilyName": "tiger-sport-660",
       "familyType": "adventure",
       "title": "Tiger Sport 660",
-      "price": 9290,
+      "price": 10290,
       "url": "/motorcycles/adventure/tiger-sport-660",
       "shortDesc": "Тројна предност во перформансите, водечка моќ и спецификации во класата и удобна употребливост при возење - сето тоа со одлична вредност.",
       "subFamilyPageInfo": {
@@ -852,7 +852,7 @@
       "familyType": "adventure",
 
       "title": "Tiger 850 Sport",
-      "price": 12890,
+      "price": 13390,
       "url": "/motorcycles/adventure/tiger-850-sport",
       "shortDesc": "Прилагодлив на секој предизвик а сепак карактерот, агилноста и перформансите на Tiger, со завидувачки дизајн  и адаптабилност за сите потреби.",
       "subFamilyPageInfo": {
@@ -1195,7 +1195,7 @@
       "subFamilyName": "tiger-1200-gt",
       "familyType": "adventure",
       "title": "Tiger 1200 GT",
-      "price": 20990,
+      "price": 20390,
       "url": "/motorcycles/adventure/tiger-1200-gt",
       "shortDesc": "Врвен авантуристички мотор фокусиран за асфалтни подлоги. Интер-континентални можности, со висока комоција, перформанси и стил.",
       "subFamilyPageInfo": {
@@ -1547,9 +1547,8 @@
       "id": 5,
       "subFamilyName": "tiger-1200-rally",
       "familyType": "adventure",
-
       "title": "Tiger 1200 Rally",
-      "price": 21990,
+      "price": 22590,
       "url": "/motorcycles/adventure/tiger-1200-gt",
       "shortDesc": "",
       "subFamilyPageInfo": {
@@ -10551,7 +10550,7 @@
       "title": "Tiger 1200 GT",
       "model": "tiger-1200-gt",
       "category": "adventure",
-      "subFamilyCategory": "tiger-1200",
+      "subFamilyCategory": "tiger-1200-gt",
       "edition": "adventure",
       "price": 20390,
       "specs": {
@@ -10591,8 +10590,8 @@
         "info3": "Прилагодлива 'Showa' суспензија"
       },
       "subFamilyPromo": {
-        "title": "TIGER SPORT 660",
-        "desc": "Првиот избор за многу корисници, со три-цилиндарски мотор, неверојатен комфорт, перформантен, искористлив и агилен, стот тоа со најниски трошоци за одржување во класата. Цени од €9,590.00"
+        "title": "TIGER 1200 GT",
+        "desc": "Стартерот но никако не подценетиот мотор од Tiger 1200 GT серијата. Одличен чекор доколку сакате да навлезете во GT моторите од класата на мотори со голема зафатнина на моторот. Цени од €20,390.00"
       }
     },
     {
