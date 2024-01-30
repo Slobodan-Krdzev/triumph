@@ -33,6 +33,9 @@ const ClassicsSubFamilyPage = async ({ params }: any) => {
     const hasImageAsHero =
       subFamily.gallery.hasOwnProperty("subFamilyHeroImage");
 
+
+      console.log(subFamily.subFamilyPageInfo?.audioSection);
+      
     return (
       <>
         {hasImageAsHero ? (
@@ -60,7 +63,7 @@ const ClassicsSubFamilyPage = async ({ params }: any) => {
             bgImage={subFamily.gallery.subFamilyTopSectionBGImage.src ?? ""}
           />
 
-          <section className="px-4 lg:px-20 xl:px-40">
+          {/* <section className="px-4 lg:px-20 xl:px-40">
             {bikes.map((bike: any) => (
               <BikeInfoTextImageBtn
                 key={bike.id}
@@ -79,7 +82,7 @@ const ClassicsSubFamilyPage = async ({ params }: any) => {
                 mobileTextRight={false}
               />
             ))}
-          </section>
+          </section> */}
         </main>
 
         {subFamily.subFamilyPageInfo.youtubeVideo && (
@@ -97,11 +100,11 @@ const ClassicsSubFamilyPage = async ({ params }: any) => {
           />
         )}
 
-        {subFamily.subFamilyPageInfo.audioSection && (
+        {subFamily.subFamilyPageInfo?.audioSection && (
           <AudioSection
-            audio={subFamily.subFamilyPageInfo.audioSection.audio}
-            title={subFamily.subFamilyPageInfo.audioSection.title}
-            desc={subFamily.subFamilyPageInfo.audioSection.desc}
+            audio={subFamily.subFamilyPageInfo.audioSection?.audio ?? ""}
+            title={subFamily.subFamilyPageInfo.audioSection?.title ?? ""}
+            desc={subFamily.subFamilyPageInfo.audioSection?.desc ?? ""}
             model={subFamily}
           />
         )}
@@ -116,7 +119,8 @@ const ClassicsSubFamilyPage = async ({ params }: any) => {
   } catch (err) {
     console.log(err);
 
-    return redirect("/motorcycles/classics");
+    // return redirect("/motorcycles/classics");
+    return err
   }
 };
 

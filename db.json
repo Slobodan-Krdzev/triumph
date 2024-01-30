@@ -2885,7 +2885,224 @@
       "url": "/motorcycles/classics/bonneville-bobber",
       "shortDesc": "Највозбуливиот Bobber, успешно ги краде погледите благодарејки на некговиот мускулест изглед и агилност.",
       "subFamilyPageInfo": {
-        "desc1": ""
+        "heroSlogans": ["Забава", "со", "стил"],
+        "topSection": {
+          "title": "Автентичен Амблем",
+          "desc": "Автентичен, иновативе и возбудлив за возење - сега со уште повеќе перформанси, можности, спецификации и стил.",
+          "subtitle": "Модерни карактеристики парирани со напредни возачки технологии за најдобриот хот-род во класата"
+        },
+        "fullSpecs": {
+          "engineTransmission": [
+            {
+              "title": "Мотор",
+              "desc": "Дво-Цилиндричен „in-line“ 8-вентили, 1ЕЕК, водно ладење"
+            },
+            {
+              "title": "капацитет",
+              "desc": "1200 cc"
+            },
+            {
+              "title": "диаметар",
+              "desc": "97.6 mm"
+            },
+            {
+              "title": "рута",
+              "desc": "80 mm"
+            },
+            {
+              "title": "компресија",
+              "desc": "10.0:1"
+            },
+            {
+              "title": "Мах. Коњски Сила",
+              "desc": "78 PS @ 6100 rpm"
+            },
+            {
+              "title": "Мах. Обртен Момент",
+              "desc": "106 Nm @ 4000 rpm"
+            },
+            {
+              "title": "Систем за убризгување",
+              "desc": "Electronic multi-point injection"
+            },
+            {
+              "title": "Систем за Издувни гасови",
+              "desc": "Brushed Stainless Steel Dual Casing 2 into 2 Exhaust System with Brushed Stainless Steel Tailpipes"
+            },
+            {
+              "title": "Финална Трансмисија",
+              "desc": "Chain"
+            },
+            {
+              "title": "Квачило",
+              "desc": "Fluid, multi-disc, assisted"
+            },
+            {
+              "title": "Менувачка Кутија",
+              "desc": "6 брзини"
+            }
+          ],
+          "frame": [
+            {
+              "title": "шасија",
+              "desc": "тубуларна дупла челична шасија"
+            },
+            {
+              "title": "вилушка",
+              "desc": "Двојна Вилушка"
+            },
+            {
+              "title": "предно тркало",
+              "desc": "16 x 2.5 - жични тркала со 32 жици"
+            },
+            {
+              "title": "задно тркало",
+              "desc": "16 x 3.5 - жични тркала со 32 жици"
+            },
+            {
+              "title": "предна гума",
+              "desc": "MT90B16"
+            },
+            {
+              "title": "задна гума",
+              "desc": "150/80 R16"
+            },
+            {
+              "title": "предна суспензија",
+              "desc": "Showa 47mm"
+            },
+            {
+              "title": "задна суспензија",
+              "desc": "Monoshock"
+            },
+            {
+              "title": "предни сопирачки",
+              "desc": "Dual 310mm дискови, 2-piston monobloc Brembo Floating Axial"
+            },
+            {
+              "title": "задна сопирачка",
+              "desc": "Еден 255 mm диск. Nissin single piston floating axial"
+            },
+            {
+              "title": "инструментна плочка",
+              "desc": "Аналоген брзинометар со мулти функционален LCD дисплеј"
+            }
+          ],
+          "dimension": [
+            {
+              "title": "ширина на волан",
+              "desc": "800 mm"
+            },
+            {
+              "title": "висина без ретровизори",
+              "desc": "1024 - 1055 mm"
+            },
+            {
+              "title": "Висина на Седиште",
+              "desc": "690 - 700 mm"
+            },
+            {
+              "title": "мегу-осовинско растојание ",
+              "desc": "1500 mm"
+            },
+            {
+              "title": "Custer Corner",
+              "desc": "24.5º"
+            },
+            {
+              "title": "Trace",
+              "desc": "92.0 mm"
+            },
+            {
+              "title": "Тежина",
+              "desc": "251 kg"
+            },
+            {
+              "title": "капацитет на резервоар",
+              "desc": "12 L"
+            }
+          ],
+          "fuelConsumption": [
+            {
+              "title": "Потрошувачка",
+              "desc": "4.5 l/100km"
+            },
+            {
+              "title": "CO2 загадување",
+              "desc": "105 g/km EURO 5"
+            }
+          ],
+          "serivce": [
+            {
+              "title": "Сервисен Интервал",
+              "desc": "16 000 км / 12 месеци"
+            }
+          ]
+        },
+        "grayCarousell": [
+          {
+            "id": "carouselItem1",
+            "title": "Нова Генерација Bobber",
+            "desc": "Комбинирано од автентичноста на Bobber и високите спецификации на Bobber Black за најдобро од двата света.",
+            "image": "/images/classics/bonnevilleBobber/bobberCaro1.avif"
+          },
+          {
+            "id": "carouselItem2",
+            "title": "Возбудливи Перформанси",
+            "desc": "Врвен 1200cc мотор со два цилиндри. Висок обртен момент со најновиот Bobber мапинг, со уште повеќе респонзивност и по Euro 5 стандарди.",
+            "image": "/images/classics/bonnevilleBobber/bobberCaro2.avif"
+
+          },
+          {
+            "id": "carouselItem3",
+            "title": "Прекрасни Елементи",
+            "desc": "Bobber искуството е унапредено со комплетни Brembo сопирачки, Showa суспензија, 12 литарски резервоар и 16 инчно предно тркало.",
+            "image": "/images/classics/bonnevilleBobber/bobberCaro3.avif"
+
+          },
+          {
+            "id": "carouselItem4",
+            "title": "Напредна Технологија",
+            "desc": "Комплетно LED осветлување со LED дневни светла и вграден темпомат кој се контролира со притисок на едно копче го прави овој Bobber уште по привлечлив.",
+            "image": "/images/classics/bonnevilleBobber/bobberCaro4.avif"
+
+          },
+          {
+            "id": "carouselItem5",
+            "title": "Автентичност",
+            "desc": "Неспоредлива автентичност со извонредни детали и финиши, сега со уште повеќе перформанси, мускулест изглед и „темен“ стил.",
+            "image": "/images/classics/bonnevilleBobber/bobberCaro5.avif"
+
+          }
+        ],
+        "specNumbers": [
+          { "data": "1200", "info": "cc Мотор" },
+          { "data": "106", "info": "Nm обртен момент" },
+          { "data": "78", "info": "PS - Максимална Сила" },
+          { "data": "16,000", "info": "КМ Сервисен Интервал" }
+        ],
+        "youtubeVideosCarousellItems": [
+          {
+            "src": "https://www.youtube.com/embed/hfo-yqQOAjM",
+            "title": "Bobber Youtube Promo Video"
+          },
+          {
+            "src": "https://www.youtube.com/embed/DFPZcQjEdgI",
+            "title": "Bobber Youtube Promo Video"
+          },
+          {
+            "src": "https://www.youtube.com/embed/W11Zkx35eGg",
+            "title": "Bobber Youtube Promo Video"
+          },
+          {
+            "src": "https://www.youtube.com/embed/samfuFi4GTs",
+            "title": "Bobber Youtube Promo Video"
+          },
+          {
+            "src": "https://www.youtube.com/embed/samfuFi4GTs",
+            "title": "Bobber Youtube Promo Video"
+          }
+        ]
       },
       "reasonsToDrive": {
         "banner": {
@@ -2990,6 +3207,22 @@
         "modelImage": {
           "src": "/images/classics/bonnevilleBobber.avif",
           "alt": "Bonneville Bobber Range Model Image"
+        },
+        "subFamilyHeroVideo": {
+          "src": "/images/classics/bonnevilleBobber/bonnevilleBobberHeroVideo.webm",
+          "alt": "Bonneville Bobber Range Model Image"
+        },
+        "subFamilyHeroImageMobile": {
+          "src": "/images/classics/bonnevilleBobber/bobberHeroMobileImg.avif",
+          "alt": "Tiger Sport 900 Range Hero Image"
+        },
+        "subFamilyTopSectionImage": {
+          "src": "/images/classics/bonnevilleBobber/bobberTopSectionImage.avif",
+          "alt": "Bonneville Bobber Range Model Image Top Section Image"
+        },
+        "subFamilyTopSectionBGImage": {
+          "src": "/images/classics/bonnevilleBobber/bobberTopSectionImageBG.avif",
+          "alt": "Bonneville Bobber Range Model Image Top Section Image BG"
         }
       }
     },

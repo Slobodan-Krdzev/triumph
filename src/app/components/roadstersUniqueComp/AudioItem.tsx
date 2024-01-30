@@ -19,6 +19,10 @@ const AudioItem = ({audio}: AudioItemPropsType) => {
     }
   };
 
+  if(!audio) {
+    return <>Oops...Нема Аудио!</>
+  }
+
   return (
     <div
       className="lg:basis-1/2 basis-1 text-white flex justify-center items-center sm:py-60 bg-contain p-10 "
