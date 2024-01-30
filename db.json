@@ -3581,7 +3581,225 @@
       "url": "/motorcycles/classics/bonneville-speedmaster",
       "shortDesc": "Класичен 'custom' став, со комфортна позиција за возење за крузирање и 'premium' спецификации, сега веќе еволуирани.",
       "subFamilyPageInfo": {
-        "desc1": ""
+        "heroSlogans": ["Моќен", "Комфортен", "Способен"],
+        "topSection": {
+          "title": "Класичен Британски Амблем",
+          "desc": "Автентичен и релаксиран британски стајлинг, со подобрени перформанси и управување, со уште покомфортна возачка позиција.",
+          "subtitle": "Bonneville ДНК, со безвременски стил со модерни перформанси"
+        },
+        "fullSpecs": {
+          "engineTransmission": [
+            {
+              "title": "Мотор",
+              "desc": "Дво-Цилиндричен „in-line“ 8-вентили, водно ладење"
+            },
+            {
+              "title": "капацитет",
+              "desc": "1200 cc"
+            },
+            {
+              "title": "диаметар",
+              "desc": "97.6 mm"
+            },
+            {
+              "title": "рута",
+              "desc": "80 mm"
+            },
+            {
+              "title": "компресија",
+              "desc": "11:1"
+            },
+            {
+              "title": "Мах. Коњски Сила",
+              "desc": "90PS @ 7000 rpm"
+            },
+            {
+              "title": "Мах. Обртен Момент",
+              "desc": "110Nm @ 4250 rpm"
+            },
+            {
+              "title": "Систем за убризгување",
+              "desc": "Ride by wire, multi-point sequential electronic injection"
+            },
+            {
+              "title": "Систем за Издувни гасови",
+              "desc": "Brushed 2-into-2 exhaust system with high-mounted brushed tailpipes."
+            },
+            {
+              "title": "Финална Трансмисија",
+              "desc": "X ring chain"
+            },
+            {
+              "title": "Квачило",
+              "desc": "Wet, multi-plate, assisted clutch"
+            },
+            {
+              "title": "Менувачка Кутија",
+              "desc": "6 брзини"
+            }
+          ],
+          "frame": [
+            {
+              "title": "шасија",
+              "desc": "тубуларна челична шасија"
+            },
+            {
+              "title": "вилушка",
+              "desc": "Двојна Вилушка"
+            },
+            {
+              "title": "предно тркало",
+              "desc": "21 x 2.15 - жични тркала со 36 жици"
+            },
+            {
+              "title": "задно тркало",
+              "desc": "17 x 4.25 - жични тркала со 32 жици"
+            },
+            {
+              "title": "предна гума",
+              "desc": "90/90-21"
+            },
+            {
+              "title": "задна гума",
+              "desc": "150/70 R17"
+            },
+            {
+              "title": "предна суспензија",
+              "desc": "Marzocchi™ 1 1 Inverted Fork Non-Adjustable, 170mm"
+            },
+            {
+              "title": "задна суспензија",
+              "desc": "Double Marzocchi shocks with piggyback canisters, adjustable preload, 170m"
+            },
+            {
+              "title": "предни сопирачки",
+              "desc": "Dual 310mm discs, Nissin, ABS"
+            },
+            {
+              "title": "задна сопирачка",
+              "desc": "255mm single disc, Nissin, ABS "
+            },
+            {
+              "title": "инструментна плочка",
+              "desc": "Мултифункционален TFT екран"
+            }
+          ],
+          "dimension": [
+            {
+              "title": "ширина на волан",
+              "desc": "834 mm"
+            },
+            {
+              "title": "висина без ретровизори",
+              "desc": "1185 mm"
+            },
+            {
+              "title": "Висина на Седиште",
+              "desc": "820 mm"
+            },
+            {
+              "title": "мегу-осовинско растојание ",
+              "desc": "1525 mm"
+            },
+            {
+              "title": "Custer Corner",
+              "desc": "26.2 º"
+            },
+            {
+              "title": "Trace",
+              "desc": "125 mm"
+            },
+            {
+              "title": "Тежина",
+              "desc": "228 kg"
+            },
+            {
+              "title": "капацитет на резервоар",
+              "desc": "15 L"
+            }
+          ],
+          "fuelConsumption": [
+            {
+              "title": "Потрошувачка",
+              "desc": "4.4 l/100km"
+            },
+            {
+              "title": "CO2 загадување",
+              "desc": "105 g/km EURO 5"
+            }
+          ],
+          "serivce": [
+            {
+              "title": "Сервисен Интервал",
+              "desc": "16 000 км / 12 месеци"
+            }
+          ]
+        },
+        "grayCarousell": [
+          {
+            "id": "carouselItem1",
+            "title": "Возбудливи Перформанси",
+            "desc": "Познатиот дво-цилиндарски линиски 1200cc мотор, со огромен обртен момент - сега уште полесен, респонзивен и EURO 5 компитабилен.",
+            "image": "/images/classics/speedmaster/speedmasterCaro1.avif"
+          },
+          {
+            "id": "carouselItem2",
+            "title": "Custom Стил",
+            "desc": "Уникатен и класичен британски стил и карактер, со спуштен волан и педали за нозе монтирани напред.",
+            "image": "/images/classics/speedmaster/speedmasterCaro2.avif"
+
+          },
+          {
+            "id": "carouselItem3",
+            "title": "Одлично Управување",
+            "desc": "Карактеристично Speedmaster управување овозможено од компоненти од високи спецификации и прилично големи заштеди во поглед на тежина.",
+            "image": "/images/classics/speedmaster/speedmasterCaro3.avif"
+
+          },
+          {
+            "id": "carouselItem4",
+            "title": "Цело Дневен Комфорт",
+            "desc": "Отсега со уште по комфортно возачко и совозачко искуство и ниско седиште од 705mm за уште подобро возачко искуство.",
+            "image": "/images/classics/speedmaster/speedmasterCaro4.avif"
+
+          },
+          {
+            "id": "carouselItem5",
+            "title": "Технологија од Високи Стандарди",
+            "desc": "Две возачки програми, темпомат, ABS, систем за пролизгување, лесно квачило и LED осветлување.",
+            "image": "/images/classics/speedmaster/speedmasterCaro5.avif"
+
+          }
+        ],
+        "specNumbers": [
+          { "data": "1200", "info": "cc Мотор" },
+          { "data": "106", "info": "Nm обртен момент" },
+          { "data": "78", "info": "PS - Максимална Сила" },
+          { "data": "16,000", "info": "КМ Сервисен Интервал" }
+        ],
+        "youtubeVideosCarousellItems": [
+          {
+            "src": "https://www.youtube.com/embed/9zpx-OrGLpA",
+            "title": "Speedmaster Youtube Promo Video"
+          },
+          {
+            "src": "https://www.youtube.com/embed/eKmeKK7DjTc",
+            "title": "Speedmaster Youtube Promo Video"
+          },
+          {
+            "src": "https://www.youtube.com/embed/DFPZcQjEdgI",
+            "title": "Speedmaster Youtube Promo Video"
+          },
+          {
+            "src": "https://www.youtube.com/embed/W11Zkx35eGg",
+            "title": "Speedmaster Youtube Promo Video"
+          }
+        ],
+        "audioSection": {
+          "title": "Карактеристичен Speedmaster Звук",
+          "desc": "Препознатлив и карактеристичен Bonneville звук.",
+          "audio": "/images/classics/speedmaster/speedmasterAudio.mp3"
+        }
       },
       "reasonsToDrive": {
         "banner": {
@@ -3686,6 +3904,22 @@
         "modelImage": {
           "src": "/images/classics/bonnevilleSpeedmasterStealth.avif",
           "alt": "Bonneville Speedmaster Range Model Image"
+        },
+        "subFamilyHeroVideo": {
+          "src": "/images/classics/speedmaster/speedmasterHeroVideo.webm",
+          "alt": "Scrambler 1200 Range Model Image"
+        },
+        "subFamilyHeroImageMobile": {
+          "src": "/images/classics/speedmaster/speedmasterMobileHero.avif",
+          "alt": "Scrambler 1200 Range Hero Image"
+        },
+        "subFamilyTopSectionImage": {
+          "src": "/images/classics/speedmaster/speedmasterTopSectionImage.avif",
+          "alt": "Scrambler 1200 Range Model Image Top Section Image"
+        },
+        "subFamilyTopSectionBGImage": {
+          "src": "/images/classics/speedmaster/scrambler1200TopSectionImageBG.avif",
+          "alt": "Scrambler 1200 Range Model Image Top Section Image BG"
         }
       }
     },
@@ -10290,6 +10524,11 @@
       },
       "shortSpecInfo": {
         "info1": "Новата Stealth Edition Серија е Достапна"
+      },
+      "subFamilyPromo": {
+        "title": "Bonneville Speedmaster",
+        "desc": "Класичен „custom“ карактер, комфортна крузерска возачка позиција и високи спецификации. Цени од Є16.690.00",
+        "image": "/images/classics/speedmaster/speedmasterBlack.png"
       }
     },
     {
