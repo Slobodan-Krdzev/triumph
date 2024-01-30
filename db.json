@@ -2458,59 +2458,55 @@
           "image": "/images/classics/scrambler400X/scrambler400XAccessoryBanner.avif"
         },
         "infoText": {
-          "title": "Додајте ваш белег врз Speed 400",
-          "desc": "На располагање ви е селекција од преку 20 оригинални Triupmh аксесоари за оваа серија на мотори. Аксесоарите кои ќе ги додадете може да бидат додадени на вашиот мотор во фабриката. Aксесоарите се дизајнирани од истиот тим кој го креираше Speed 400 и доаѓаат со две-годишна гаранција."
+          "desc": "Scrambler 400 X серијата поседува одлична опрема и спецификации како стандард но сепа на располагање ви се дополнителни 20 оригинлани Triumph аксесоари кои ќе го одделат вашиот мотор од другите. Дизајнирани од истите дизајнери и инжињери како и самиот Scrambler 400 X и подкрепнати со двегодишна гаранција без разлика на поминатите километри, бидете сигурни дека ќе најдете некое парче по ваш вкус."
         },
         "accessoryTypes": [
           {
             "title": "Стил и Комфорт",
-            "desc": "Choose from a range of parts that will make the Speed ​​400 just the way you want it. Direct replacement bullet turn signals a subtle new look and premium touch with their satin black body and machined aluminum bezels.. Or maybe you want to remodel the tank with different knee pads? A comfortable saddle with a stitched and quilted finish makes a style statement and, together with plug and play heated grips, offers luxury on longer rides..",
+            "desc": "Стилизирајте го вашиот Scrambler 400 X со LED трапкачите во форма на куршум. Машински изработени од алуминиум од црна сатенска боја додаваат премиум допир и нов изглед. Штитникот за резервоар додава стил и заштита од гребаници на резервоарот додека возачот и сопатникот патуваат комфортно со луксузните Triumph седишта. ",
             "itemsList": [
-              "Bullet type LED flash",
-              "Штитници за колена",
-              "Комфортно Седло"
+              "LED трепкачи во форма на куршум",
+              "Штитни=к за Резервоар",
+              "Комфортно седиште за возач и сопатник"
             ],
             "image1": {
-              "src": "/images/classics/speed400/speed400SAccesoryStyleImage1.avif",
-              "alt": "Speed 400 On The Road"
+              "src": "/images/classics/scrambler400X/scrambler400ΧAccess1.avif",
+              "alt": "Scrambler 400 X"
             },
             "image2": {
-              "src": "/images/classics/speed400/speed400AccessoryStyleImage2.avif",
-              "alt": "Speed 400 PaintJob"
+              "src": "/images/classics/scrambler400X/scrambler400ΧAccess2.avif",
+              "alt": "Scrambler 400 X"
             }
           },
           {
             "title": "Багаж",
-            "desc": "A full range of Speed ​​400-specific luggage has been created to add some practicality to the fun. The Speed ​​400 is the perfect touring bike, and outfitting it to handle your load really couldn't be easier. Choose from sturdy side or rigid and semi-rigid panniers, each with their own special mounting system or, for those who prefer to travel light, a simple luggage rack, nylon tank bag or roll-on bag could be the perfect choice .",
+            "desc": "Целосна палета на ексклузивен Triumph - Scrambler 400 X е дизајнирна и заработена са секоков вид авантура, од урбано движење до амбициозни авантури. Куфери кои целосно се вклопуваат во стилот и силуетата на Scrambler 400 X - секој од нив со сопствен држач за монтирање. Доколку сакате да патувате без додатна тежина на располагање ви стојат и мали торби за резервоар кои се монтираат за момент.",
             "itemsList": [
               "Цврсти Куфери за Багаж",
               "Држач за Багаж",
               "Најлонска торба за на резервоар",
-              "Најлонска Торба Roll "
+              "Најлонска Торба Roll"
             ],
             "image1": {
-              "src": "/images/classics/speed400/speed400AccessoryLuggageImage.avif",
-              "alt": "Speed 400 Luggage"
+              "src": "/images/classics/scrambler400X/scrambler400ΧAccess3.avif",
+              "alt": "Scrambler 400 X"
             }
           },
           {
-            "title": "Заштита ",
-            "desc": "Both your protection from the elements and that of the Speed ​​400 have been taken care of. A visor with a special fitting kit is also available to deflect the wind to reduce rider fatigue on longer rides. Easy to fit and with style to match, it's a must-have addition for distance riders.To keep the Speed ​​400 out of harm's way on rougher roads, there's an aluminum skid plate, a radiator guard and a headlight mask, which comes with its own bezel for easy fitting, and offers excellent protection from rocks and debris. All-weather riders may want to add the mudguard kit which consists of front and rear mudguard extensions and a rear wing. These combine nicely to protect against water spray and extend the life of the rear shock in extreme conditions.Upper and lower engine guards are also available — these provide excellent protection against drops and spills, a must-have addition for city and country driving.",
+            "title": "Заштита",
+            "desc": "Иако Scrambler 400 X серијата е добро заштитена од надворешните услови при „Off-Road“ авантури, но сепак тука е и палетата аксесоари за дополнителна заштита од надворешните услови. Цврст алуминиумски капак го штити долниот дел на моторот од несакани тврди предмети и дополнително додава „Off-Road“ изглед и стил. Заштитен рам за моторот дополнително го штити моторот од несакани падови.Ветробранско стакло со специјален рам за монтирање стои на располагање доколку ви треба одмор од несаканиот ветар во вашето лице при вашите долги авантури.",
             "itemsList": [
-              "Гелатин",
-              "Заштита за ладник",
-              "Решетка за светло",
               "Алуминиумска заштита",
-              "Заштита од Кал",
-              "Цевки за Заштита на Мотор (Горни и Долни)"
+              "Заштитен Рам за Мотор",
+              "Ветробранско Стакло"
             ],
             "image1": {
-              "src": "/images/classics/speed400/speed400AccessoryProtectionImage1.avif",
-              "alt": "Speed 400 Head"
+              "src": "/images/classics/scrambler400X/scrambler400ΧAccess4.avif",
+              "alt": "Scrambler 400 X"
             },
             "image2": {
-              "src": "/images/classics/speed400/speed400AccessoryRadiatorProtection.avif",
-              "alt": "speed 400 Accessory Radiator Protection"
+              "src": "/images/classics/scrambler400X/scrambler400ΧAccess5.avif",
+              "alt": "Scrambler 400 X"
             }
           }
         ]
