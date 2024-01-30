@@ -31,7 +31,7 @@ const SecondaryPagesHeroSection = ({bannerImage, subFamilyTitle, text, subFamily
               <p className="md:text-7xl text-4xl uppercase font-bold tracking-tighter text-center w-full">
                 {text}
               </p>
-              <p className={`md:text-xl py-4 font-semibold text-md text-center w-full border-t-4 ${isOfRoad ? "border-quartal" : "border-red-600"}`}>
+              <p className={`md:text-xl py-4 font-semibold text-md text-center w-full ${subText ? "border-t-4" : ""} ${isOfRoad ? "border-quartal" : "border-red-600"}`}>
                 {subText}
               </p>
             </div>
