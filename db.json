@@ -2543,58 +2543,57 @@
       "url": "/motorcycles/classics/speed-twin-900",
       "shortDesc": "Возбудливи перформанси и управување што инспирира самодоверба, сега со уште поголема удобност и стил.",
       "subFamilyPageInfo": {
-        "heroSlogans": ["Забава", "со", "стил"],
+        "heroSlogans": ["Забавен", "Способен", "Стилски"],
         "topSection": {
-          "title": "Автентичност",
-          "desc": "Best-seller -от на Triumph, еволуираше во елегантен и луксузен моторцикл",
-          "subtitle": "Направен за возење и за забава, спремен за ваша персонализација, Speed Twin 900 е мотор со голем карактер и можности"
+          "title": "Автентичен Амблем",
+          "desc": "Автентичен, иновативе и возбудлив за возење - сега со уште повеќе перформанси, можности, спецификации и стил.",
+          "subtitle": "Модерни карактеристики парирани со напредни возачки технологии за најдобриот хот-род во класата"
         },
-        "youtubeVideo": "https://www.youtube.com/embed/moLlIk90Ea",
         "fullSpecs": {
           "engineTransmission": [
             {
-              "title": "Тип на Мотор",
-              "desc": "водно ладење, 12 вентили, DOHC, линиски 3-цилиндри, 240° редослед на есклпозии"
+              "title": "Мотор",
+              "desc": "Дво-Цилиндричен „in-line“ 8-вентили, 1ЕЕК, водно ладење"
             },
             {
               "title": "капацитет",
-              "desc": "660 cc"
+              "desc": "900 cc"
             },
             {
               "title": "диаметар",
-              "desc": "74.04 mm"
+              "desc": "84.6 mm"
             },
             {
               "title": "рута",
-              "desc": "51.1 mm"
+              "desc": "80 mm"
             },
             {
               "title": "компресија",
-              "desc": "11.95:1"
+              "desc": "11.0:1"
             },
             {
               "title": "Мах. Коњски Сила",
-              "desc": "81 PS / 80 bhp (59.6 kW) @ 10,250 rpm"
+              "desc": "65 PS @ 7500 rpm"
             },
             {
               "title": "Мах. Обртен Момент",
-              "desc": "64 Nm @ 6,250 rpm"
+              "desc": "80 Nm @ 3800 rpm"
             },
             {
               "title": "Систем за убризгување",
-              "desc": "Multipoint sequential electronic fuel injection with electronic throttle control"
+              "desc": "Electronic multi-point injection"
             },
             {
               "title": "Систем за Издувни гасови",
-              "desc": "3 во 1 не-раѓосувачки челик"
+              "desc": "Brushed Stainless Steel Dual Casing 2 into 2 Exhaust System with Brushed Stainless Steel Tailpipes"
             },
             {
               "title": "Финална Трансмисија",
-              "desc": "X-ring chain"
+              "desc": "Chain"
             },
             {
               "title": "Квачило",
-              "desc": "Wet, multi-plate, slip"
+              "desc": "Fluid, multi-disc, assisted"
             },
             {
               "title": "Менувачка Кутија",
@@ -2604,91 +2603,97 @@
           "frame": [
             {
               "title": "шасија",
-              "desc": "тубуларна челична шасија"
+              "desc": "тубуларна дупла челична шасија"
             },
             {
               "title": "вилушка",
-              "desc": "алуминиум"
+              "desc": "Двојна Вилушка"
             },
             {
               "title": "предно тркало",
-              "desc": "19 x 2.5' die-cast легура "
+              "desc": "18 x 2.75 - лиен алуминиум"
             },
             {
               "title": "задно тркало",
-              "desc": "17 x 4.25' die-cast легура "
+              "desc": "17 x 4.25 - лиен алуминиум"
             },
             {
               "title": "предна гума",
-              "desc": "100/90-19"
+              "desc": "100/90-18"
             },
             {
               "title": "задна гума",
-              "desc": "150/70R17"
+              "desc": "150/70 R17"
             },
             {
               "title": "предна суспензија",
-              "desc": "Marzocchi Inverted Fork 45mm"
+              "desc": "41mm "
             },
             {
               "title": "задна суспензија",
-              "desc": "Marzocchi задна суспензија со систем за подесување"
+              "desc": "Dual shock суспензија"
             },
             {
               "title": "предни сопирачки",
-              "desc": "Dual 320mm дискови, 4-piston monobloc Brembo Stylema calipers. Front radial pump, ABS"
+              "desc": "Dual 310mm дискови, 4-piston Brembo, ABS"
             },
             {
               "title": "задна сопирачка",
-              "desc": "Еден 255 mm диск. Brembo single piston floating caliper, ABS"
+              "desc": "Еден 255 mm диск. Brembo dual piston, ABS"
             },
             {
               "title": "инструментна плочка",
-              "desc": "5 TFT екран"
+              "desc": "Аналоген брзинометар со мулти функционален LCD дисплеј"
             }
           ],
           "dimension": [
             {
               "title": "ширина на волан",
-              "desc": "830 mm"
+              "desc": "780 mm"
             },
             {
               "title": "висина без ретровизори",
-              "desc": "1410-1460 mm"
+              "desc": "1110 mm"
             },
             {
               "title": "Висина на Седиште",
-              "desc": "820-840 mm"
+              "desc": "765 mm"
             },
             {
               "title": "мегу-осовинско растојание ",
-              "desc": "1556 mm"
+              "desc": "1450 mm"
             },
             {
               "title": "Custer Corner",
-              "desc": "24.6 º"
+              "desc": "25.1 º"
             },
             {
               "title": "Trace",
-              "desc": "133.3 mm"
+              "desc": "102.4 mm"
             },
             {
               "title": "Тежина",
-              "desc": "192 kg"
+              "desc": "216 kg"
             },
             {
               "title": "капацитет на резервоар",
-              "desc": "20 L"
+              "desc": "12 L"
             }
           ],
           "fuelConsumption": [
             {
               "title": "Потрошувачка",
-              "desc": "5.2l /100km"
+              "desc": "4.1 l/100km"
             },
             {
               "title": "CO2 загадување",
-              "desc": "Euro 5 Стандарди измерени според Регулатива 168/2013/EC. Резултатите се добиени во специјални тест средини и се на располагање само за споредба. Вистинските резултат може да варираат врз различни средини."
+              "desc": "93 g/km EURO 5"
+            }
+          ],
+          "serivce": [
+            {
+              "title": "Сервисен Интервал",
+              "desc": "16 000 км / 12 месеци"
             }
           ]
         },
@@ -2696,32 +2701,36 @@
           {
             "id": "carouselItem1",
             "title": "Возбудливи Перформанси",
-            "desc": "Двоцилиндричниот мотор Bonneville 900cc. на нивниот Speed ​​​​Twin 900 е познат по својата моќност на вртежен момент и перформанси.",
+            "desc": "Дво-Цилиндарскиот Bonneville (900cc) мотор се карактеризира со моќен обртен момент и одлични перформанси.",
             "image": "/images/classics/speedTwin900/speedTwin900Caro1.avif"
           },
           {
             "id": "carouselItem2",
-            "title": "Модерен “custom“ дизајн",
-            "desc": "Прекрасен современ изглед со безвременски пристап, надграден за 2021 година во луксузен финиш и детали",
+            "title": "Возбудлив Модерен Стил",
+            "desc": "Одличниот безвременски изглед - сега унапреден со луксузни финиши и детали.",
             "image": "/images/classics/speedTwin900/speedTwin900Caro2.avif"
+
           },
           {
             "id": "carouselItem3",
-            "title": "Возачко искуство кое инспирира самодоверба",
-            "desc": "Ниско седло од 765 mm и динамично, лесно ракување и уште поудобно рамно седло.",
+            "title": "Возачко Искуство кои буди самодоверба",
+            "desc": "Ниското седиште (765mm) нуди динамично и лесно управување со моторот и комоција.",
             "image": "/images/classics/speedTwin900/speedTwin900Caro3.avif"
+
           },
           {
             "id": "carouselItem4",
-            "title": "Опрема од високи стандарди",
-            "desc": "Четириклипните предни клешти на Brembo и вилушката со патрон од 41 мм се комбинираат за да обезбедат одлична контрола на возачот и моќ на сопирање.",
+            "title": "Висока Спецификација",
+            "desc": "Brembo (4-клипна клешта напред) сопирачките и одлична предна суспензија (41мм) оддаваат одлично чувство при сопирање и одлична контрола врз моторот.",
             "image": "/images/classics/speedTwin900/speedTwin900Caro4.avif"
+
           },
           {
             "id": "carouselItem5",
             "title": "Високо ниво на технологија",
-            "desc": "Програми за возење на пат и дожд, ABS, деактивирање на контрола на тракцијата, помош на спојката и LED задно светло.",
+            "desc": "Модови за возење на дожд и пар, ABS, систем за пролизгување, лесно квачило и LED осветлување.",
             "image": "/images/classics/speedTwin900/speedTwin900Caro5.avif"
+
           }
         ],
         "specNumbers": [
@@ -2730,130 +2739,118 @@
           { "data": "65", "info": "PS - Максимална Сила" },
           { "data": "16,000", "info": "КМ Сервисен Интервал" }
         ],
-        "audioSection": {
-          "title": "Уживајте во звукот на Speed Twin 900",
-          "desc": "Слушнете го препознатливиот, уникатен звук на моторот со два цилиндри Triumph Bonneville.",
-          "audio": "/images/classics/speedTwin900/speedTwin900Audio.mp3"
-        },
         "youtubeVideosCarousellItems": [
           {
-            "src": "https://www.youtube.com/embed/Yq47k_ZJUz4",
-            "title": "Introducing the ALL-NEW Triumph Speed Twin 900 Green Stealth Edition"
-          },
-          {
-            "src": "https://www.youtube.com/embed/30qKRVyb4OM",
-            "title": "New Bonneville Street Twin Features and Benefits"
-          },
-          {
-            "src": "https://www.youtube.com/embed/zQT9lJKPPNY",
-            "title": "New Bonneville Street Twin Gold Line Features and Benefits"
+            "src": "https://www.youtube.com/embed/hfo-yqQOAjM",
+            "title": "Bobber Youtube Promo Video"
           },
           {
             "src": "https://www.youtube.com/embed/DFPZcQjEdgI",
-            "title": "Bonneville 2021 – Global Reveal"
+            "title": "Bobber Youtube Promo Video"
           },
           {
             "src": "https://www.youtube.com/embed/W11Zkx35eGg",
-            "title": "Bonneville 2021 | British Icons. Beautifully Evolved"
+            "title": "Bobber Youtube Promo Video"
+          },
+          {
+            "src": "https://www.youtube.com/embed/samfuFi4GTs",
+            "title": "Bobber Youtube Promo Video"
+          },
+          {
+            "src": "https://www.youtube.com/embed/samfuFi4GTs",
+            "title": "Bobber Youtube Promo Video"
           }
-        ]
+        ],
+        "audioSection": {
+          "title": "Пуштете Глас",
+          "desc": "Слушнете го препознатливиот, уникатен дво-цилиндарски звук на Triumph Bonneville моторот.",
+          "audio": "/images/classics/speedTwin900/speedTwin900Audio.mp3"
+        }
       },
       "shortSpecInfo": {
         "info2": "Новата Thriumph Stealth Серија е достапна"
       },
       "reasonsToDrive": {
         "banner": {
-          "image": "/images/classics/speed400/speed400ReasonsBanner.avif"
+          "image": "/images/classics/speedTwin900/speedTwin900ReasonsBanner.avif"
         },
         "infoText": {
-          "title": "зошто баш Speed 400 !?",
-          "desc": "Време е да се разбудите од досадните соништа со Tiger Sport 660. Ова е најпристапниот мотор од Tiger фамилијата на Triumph и е спремен за секојдневни авантури.Tiger Sport 660 е дизајниран да ги надмине вашите очекувања, од авантуристички тури па се до дневни обврски. Кај нас во Triumph се е во знак на возење, а еве и зошто:"
+          "desc": "Модерен, забавен и достапен - овие се само три од многуте причини зошто да ја одберете SPeed Twin 900 серијата. Опремен со најновата генерација на Bonneville 900cc мотори, голема испорака на обртен момент со уникатен карактер, звук и минималистички стил дава чувство на безгрижно патување и авантура со леснотија. Новата Speed Twin 900 серија доаѓа со уште повеќе комфорт и стил. Ова е една од нај-надградуваните серии на Triumph, но ајде да видиме зошто вие треба да ја одберете оваа серија!."
         },
         "reasons": [
           {
-            "title": "Безвременски и Автентичен Стил",
-            "desc": "Conceived and designed in Hinckley, UK, the Speed ​​400 has been built with the same meticulous attention to detail as every Triumph model. This stunning motorcycle combines timeless design DNA with modern performance. The unmistakable Triumph roadster silhouette, distinctive sculpted fuel tank and classic engine profile echo legends of the past and with exquisite details such as the distinctive cylinder head with radiators, concealed liquid cooling, traditional exhaust header clamps and modern anode muffler, the dazzling blend of retro and modern styling embodies the unique charm of Triumph's famous Modern Classic range.",
-            "image": "/images/classics/speed400/speed400ReasonsStyle.avif"
+            "title": "Автентичен Triumph Дизајн",
+            "desc": "Speed Twin серијата ја носи онаа препознатлива Triumph ДНК која светот ја запозна уште со оригиналниот Triumph bonneville од 1959 година, која беше репез за тоа како треба да изгледа еден мотор од оваа категорија. Истата оваа ДНК денеска е унапредена со напредни перформанси и карактеристики со цел да парираат на нејзиниот стил и карактер. Со препознатлив Triumph дизајн, звук и перформанси Speed Twin серијата мами погледи каде и да се појави. ",
+            "image": "/images/classics/speedTwin900/speedTwin900Reasons1.avif"
           },
           {
-            "title": "Нов Мотор",
-            "desc": "The brand new 398cc single cylinder engine. fuel-injected combines modern classic Triumph styling with state-of-the-art technology to deliver 40bhp and 37.5Nm of peak torque with a rich, signature exhaust note from the twin-pipe muffler. Technical features include a four-valve, 2EEK cylinder head and a crankshaft that is perfectly weighted and balanced to optimize inertia for low-speed driving. A rocker arm valvetrain with low reciprocating mass and friction-reducing DLC ​​coatings also contribute to the incredible performance of this nimble yet supple engine. The six-speed gearbox offers a light, precise gear selection with ratios perfectly spread out to get the most out of this exciting, characterful and torque-rich engine. ",
-            "image": "/images/classics/speed400/speed400ReasonsMotorImage.avif"
+            "title": "Преубави луксузни детали и финиши",
+            "desc": "Со неверојатно внимание на детали и квалитетни финиши новата Speed Twin серија го понудува оној британски „low-profile“ стил. За да е постигне тоа Triumph на новата серија додаде нови бои, нови тркала изработени од лиен алуминиум, ново рамно седиште како и алуминиумски држачи за светло."
           },
           {
-            "title": "Сериозна Забава",
-            "desc": "The Speed ​​400 is all about having fun. The comfortable and attractive riding position gives the ideal balance of weight between the three points of contact for that 'just right' feel, which has become synonymous with Triumph. Riders of all sizes feel right at home on the Speed ​​400 from the very first ride, thanks to the light and compact 398cc engine. and the slim waist makes the 790mm seat height even more approachable, for a confidence-inspiring ride and easy on-the-spot maneuvering.",
-            "image": "/images/classics/speed400/speed400ReasonsFun.avif"
+            "title": "Возбудливи Перформанси",
+            "desc": "Новиот - водно ладен Bonneville 900cc мотор испорачува силен обртен момент и обезбедува потполно уживање. Моторот испорачува 80Nm обртен момент при 3,800rpm и 65PS максимална сила при 7,500rpm. Управуван од „ride-by-wire“ рачка за гас, лесно квачило кои во комбинација со ниското седиште даваа одлично чувство на контрола при возење а притоа овој мотор претрпи надоградување за да се постигне EURO 5 стандард со што овој мотор помага при одзжување на чиста околината.",
+            "image": "/images/classics/speedTwin900/speedTwin900Reasons2.avif"
+
           },
           {
-            "title": "Направен за Вас",
-            "desc": "No two riders are the same, so you can personalize your Tiger Sport 660 with a choice of three special colors and graphics and over 40 genuine Triumph accessories. From built-in luggage to a central case that holds 2 helmets, you'll be inspired by the options to suit your adventure. When everyday flexibility is your goal, you shouldn't be left behind. The bike is designed with the rider in mind - make it your own."
+            "title": "Комфорт и Безгрижни Патувања",
+            "desc": "Новата генерација Speed Twin мотори се дизајнирани да ја задржат репутацијата на лесно и комфортно патување. Ова го постигнуваат благодарејки на седиштето дебело 10мм кое се обликува околу нозете за подобра ергономија што овозможува повеќе комфрот при долги патувања. Со максимална висина на седиштето од 765мм, тенок струк, високо квалитетна суспензија (41мм напред и традиционални дупли армортизери назад), новата Speed Twin серија е дизајнира да биде комотна и перформатна исто толку колку што е и возбудлива за гледање."
           },
           {
-            "title": "Модерна Технологија",
-            "desc": "The Speed ​​400 is equipped with technology designed to improve every ride. The Torque Assist Clutch is an intelligent system that reduces the force on the clutch lever to improve ease of use and rider comfort when stopping/starting, and reducing travel fatigue. wheel for greater performance and safety.."
+            "title": "Модерна Технологија за Унапредување на Контролата и Сигурноста",
+            "desc": "Наспроти автентичниот историски изглед на Speed Twin серијата се наоѓаат и технолошките гаџети од најнови генерации. Серијата е опремена со два мода на работе - Дожд и Патнички Мод - кои го променуваат дејствувањето на моторот како и на системот за пролизгување со еден клик на воланот. Водното ладење е тука со цел да го намали загадувањето и да обезбеди помала потрошувачка на гориво. Бројни други уреди како систем за пролизгување, ABS, лесното квачило, имобилизатор, USB порти се тука за моментите кога ви требаат. Серијата ја дополнуваат бројните опционални аксесоари како греачи на рачки, систем за мониторинг на притисок во пневматици. Накрај тука е сервисниот интервал од 16 000 километри или 2 години кој обезбедува повеќе авантури наспроти седење и чекање по сервиси."
+          },
+          {
+            "title": "Автентичен Британски Звук",
+            "desc": "Со комплетно британски дво-цилиндарски звук, Speed Twin серијата нуди богат и топол звук во кој веднаш ќе се заљубите. Благодарејки на дизајнот моторот го крие својот катализатор под моторот од кој излегуваат двете финални издувни цефки од различни срани на моторот. Изработени од не-раѓосувачки челик и сместени во нагорна линија оваа е уште еден дизајнерски допир кој придонесува за стилот и елеганцијата на оваа серија.",
+            "image" : "/images/classics/speedTwin900/speedTwin900Reasons3.avif"
+          },
+          {
+            "title": "Спремен за Ваша Персонализација",
+            "desc": "Никогаш досега во Triumph фамилијата не постоел мотор кој има повеќе дополнителни аксесоари на располагање. Со повеќе од 120 оригинални Triump дополнителни парчиња веруваме дека ќе пронајдете нешто со што ќе го направите вашиот Speed Twin подобар од другите. На располагање ви стојат разни елементи како багаж, сигурносни уреди и разни алуминиумски делови како за возачот така и за сопатникот. Секое парче е изработено и тестирано од страна на истите дизајнери и инжињери кои го сработија Speed Twin па така квалитетот и стилот не се на одмет."
+          },
+          {
+            "title": "Достапен и за А2 Возачка Лиценца",
+            "desc": "Speed Twin серијата е достапна за секога, без разлика дали сте нов или искусен возач. Со опцијата за лимитирање на способностите на моторот оваа серија е лесно достапна за возачите со А2 возачка категорија и ќе им помогне на истите да ги достигнат своите цели и да стигнат до потполна моторциклистичка возачка дозвола, а кога ќе стигнат до таму лесно и со само едно патување до најблискиот Triumph центар истиот Speed Twin ќе си го врати својот целосен капацитет."
           }
         ]
       },
       "accessory": {
         "banner": {
-          "image": "/images/classics/speed400/speed400AccessoryBanner.avif"
+          "image": "/images/classics/speedTwin900/speedTwin900TopSectionImageBG.avif"
         },
         "infoText": {
-          "title": "Додајте ваш белег врз Speed 400",
-          "desc": "На располагање ви е селекција од преку 20 оригинални Triupmh аксесоари за оваа серија на мотори. Аксесоарите кои ќе ги додадете може да бидат додадени на вашиот мотор во фабриката. Aксесоарите се дизајнирани од истиот тим кој го креираше Speed 400 и доаѓаат со две-годишна гаранција."
+          "desc": "На располагање ви е селекција од преку 120 оригинални Triupmh аксесоари за оваа серија на мотори. Аксесоарите кои ќе ги додадете може да бидат додадени на вашиот мотор во фабриката. Aксесоарите се дизајнирани од истиот тим кој го креираше Speed Twin и доаѓаат со две-годишна гаранција."
         },
         "accessoryTypes": [
           {
-            "title": "Стил и Комфорт",
-            "desc": "Choose from a range of parts that will make the Speed ​​400 just the way you want it. Direct replacement bullet turn signals a subtle new look and premium touch with their satin black body and machined aluminum bezels.. Or maybe you want to remodel the tank with different knee pads? A comfortable saddle with a stitched and quilted finish makes a style statement and, together with plug and play heated grips, offers luxury on longer rides..",
-            "itemsList": [
-              "Bullet type LED flash",
-              "Штитници за колена",
-              "Комфортно Седло"
-            ],
+            "title": "Персонализација",
+            "desc": "Дополнете го возачкото искуство со „FOX Piggy-Back“ суспензија. Со 20 можни сетинзи сигурно ќе ја најдете вашата преференца. Изработено од светски познатион бренд FOX овој уред се вклопува со вашиот мотор без никакви маки.",
             "image1": {
-              "src": "/images/classics/speed400/speed400SAccesoryStyleImage1.avif",
-              "alt": "Speed 400 On The Road"
-            },
-            "image2": {
-              "src": "/images/classics/speed400/speed400AccessoryStyleImage2.avif",
-              "alt": "Speed 400 PaintJob"
+              "src": "/images/classics/speedTwin900/streetTwinAccess1.avif",
+              "alt": "Speed Twin 900"
             }
           },
           {
-            "title": "Багаж",
-            "desc": "A full range of Speed ​​400-specific luggage has been created to add some practicality to the fun. The Speed ​​400 is the perfect touring bike, and outfitting it to handle your load really couldn't be easier. Choose from sturdy side or rigid and semi-rigid panniers, each with their own special mounting system or, for those who prefer to travel light, a simple luggage rack, nylon tank bag or roll-on bag could be the perfect choice .",
-            "itemsList": [
-              "Цврсти Куфери за Багаж",
-              "Држач за Багаж",
-              "Најлонска торба за на резервоар",
-              "Најлонска Торба Roll "
-            ],
+            "title": "Поголема Заштита од Ветар",
+            "desc": "Намалете го отпорот од ветрот и тоа со стил. Додадете кратко, високо или целосно „touring“ ветробранско стакло со дискретен и минималистички рам за монтирање. Со фокус на комфорт и стил ова ветробранско стакло ќе го намали отпорот на воздух а ќе ја зголеми комоцијата што ќе понуди подолги патувања без ниту трошка замор."
+          },
+          {
+            "title": "Внимание на Детали",
+            "desc": "Не секогаш добриот дизајн доаѓа од големи промени, најчесто најголеми заслужници се малите ситни детали кои го финализираат изгледот. Детали како машинско изгравирани Triumph логоа на капачето на резервоарот, црниот анодизиран финиш го прават Speed Twin тоа што е.",
             "image1": {
-              "src": "/images/classics/speed400/speed400AccessoryLuggageImage.avif",
-              "alt": "Speed 400 Luggage"
+              "src": "/images/classics/speedTwin900/streetTwinAccess2.avif",
+              "alt": "Speed Twin 900"
+            },
+            "image2": {
+              "src": "/images/classics/speedTwin900/streetTwinAccess3.avif",
+              "alt": "Speed Twin 900"
             }
           },
           {
-            "title": "Заштита ",
-            "desc": "Both your protection from the elements and that of the Speed ​​400 have been taken care of. A visor with a special fitting kit is also available to deflect the wind to reduce rider fatigue on longer rides. Easy to fit and with style to match, it's a must-have addition for distance riders.To keep the Speed ​​400 out of harm's way on rougher roads, there's an aluminum skid plate, a radiator guard and a headlight mask, which comes with its own bezel for easy fitting, and offers excellent protection from rocks and debris. All-weather riders may want to add the mudguard kit which consists of front and rear mudguard extensions and a rear wing. These combine nicely to protect against water spray and extend the life of the rear shock in extreme conditions.Upper and lower engine guards are also available — these provide excellent protection against drops and spills, a must-have addition for city and country driving.",
-            "itemsList": [
-              "Гелатин",
-              "Заштита за ладник",
-              "Решетка за светло",
-              "Алуминиумска заштита",
-              "Заштита од Кал",
-              "Цевки за Заштита на Мотор (Горни и Долни)"
-            ],
-            "image1": {
-              "src": "/images/classics/speed400/speed400AccessoryProtectionImage1.avif",
-              "alt": "Speed 400 Head"
-            },
-            "image2": {
-              "src": "/images/classics/speed400/speed400AccessoryRadiatorProtection.avif",
-              "alt": "speed 400 Accessory Radiator Protection"
-            }
+            "title": "„Naked“ Стил",
+            "desc": "Комплетно променете го задниот дел на моторот со „Fender Removal“ сетот, кој целосно ќе го стандрадниот заедн комплет и ќе постави нов „почист“ сет кој вклучува LED светло и простор за поставување на регистарските таблички. Дополнително додадете ги LED трепкачите во форма на куршуми и ќе го постигнете оно „custom“ стил кој секој го посакува."
           }
         ]
       },
@@ -3102,7 +3099,12 @@
             "src": "https://www.youtube.com/embed/samfuFi4GTs",
             "title": "Bobber Youtube Promo Video"
           }
-        ]
+        ],
+        "audioSection": {
+          "title": "Hot-Rod Bobber Звук",
+          "desc": "Почувствувајте го силниот, богат и не-рефиниран Bobber звук.",
+          "audio": "/images/classics/bonnevilleBobber/bobberSound.mp3"
+        }
       },
       "reasonsToDrive": {
         "banner": {
@@ -3205,7 +3207,233 @@
       "url": "/motorcycles/classics/scrambler-1200",
       "shortDesc": "Автентичен Scrambler стајлинг со авантуристички спецификации кои се најдобри во класата. Scrambler 1200 е најдобриот мотор во својата класа.",
       "subFamilyPageInfo": {
-        "desc1": ""
+        "heroSlogans": ["Авантура", "со", "стил"],
+        "topSection": {
+          "title": "Најдобриот Scrambler досега",
+          "desc": "Автентичен Scrabmler стајлинг со лидерски спецификации во класата. Scrambler 1200 е најдобар во својата класа.",
+          "subtitle": "Возбудливи, карактеристични перформанси и безгрижна „Off-Road“ авантура сега со модерни спецификации."
+        },
+        "youtubeVideo": "https://www.youtube.com/embed/Lj-79e9TMh4",
+        "fullSpecs": {
+          "engineTransmission": [
+            {
+              "title": "Мотор",
+              "desc": "Дво-Цилиндричен „in-line“ 8-вентили, водно ладење"
+            },
+            {
+              "title": "капацитет",
+              "desc": "1200 cc"
+            },
+            {
+              "title": "диаметар",
+              "desc": "97.6 mm"
+            },
+            {
+              "title": "рута",
+              "desc": "80 mm"
+            },
+            {
+              "title": "компресија",
+              "desc": "11:1"
+            },
+            {
+              "title": "Мах. Коњски Сила",
+              "desc": "90PS @ 7000 rpm"
+            },
+            {
+              "title": "Мах. Обртен Момент",
+              "desc": "110Nm @ 4250 rpm"
+            },
+            {
+              "title": "Систем за убризгување",
+              "desc": "Ride by wire, multi-point sequential electronic injection"
+            },
+            {
+              "title": "Систем за Издувни гасови",
+              "desc": "Brushed 2-into-2 exhaust system with high-mounted brushed tailpipes."
+            },
+            {
+              "title": "Финална Трансмисија",
+              "desc": "X ring chain"
+            },
+            {
+              "title": "Квачило",
+              "desc": "Wet, multi-plate, assisted clutch"
+            },
+            {
+              "title": "Менувачка Кутија",
+              "desc": "6 брзини"
+            }
+          ],
+          "frame": [
+            {
+              "title": "шасија",
+              "desc": "тубуларна челична шасија"
+            },
+            {
+              "title": "вилушка",
+              "desc": "Двојна Вилушка"
+            },
+            {
+              "title": "предно тркало",
+              "desc": "21 x 2.15 - жични тркала со 36 жици"
+            },
+            {
+              "title": "задно тркало",
+              "desc": "17 x 4.25 - жични тркала со 32 жици"
+            },
+            {
+              "title": "предна гума",
+              "desc": "90/90-21"
+            },
+            {
+              "title": "задна гума",
+              "desc": "150/70 R17"
+            },
+            {
+              "title": "предна суспензија",
+              "desc": "Marzocchi™ 1 1 Inverted Fork Non-Adjustable, 170mm"
+            },
+            {
+              "title": "задна суспензија",
+              "desc": "Double Marzocchi shocks with piggyback canisters, adjustable preload, 170m"
+            },
+            {
+              "title": "предни сопирачки",
+              "desc": "Dual 310mm discs, Nissin, ABS"
+            },
+            {
+              "title": "задна сопирачка",
+              "desc": "255mm single disc, Nissin, ABS "
+            },
+            {
+              "title": "инструментна плочка",
+              "desc": "Мултифункционален TFT екран"
+            }
+          ],
+          "dimension": [
+            {
+              "title": "ширина на волан",
+              "desc": "834 mm"
+            },
+            {
+              "title": "висина без ретровизори",
+              "desc": "1185 mm"
+            },
+            {
+              "title": "Висина на Седиште",
+              "desc": "820 mm"
+            },
+            {
+              "title": "мегу-осовинско растојание ",
+              "desc": "1525 mm"
+            },
+            {
+              "title": "Custer Corner",
+              "desc": "26.2 º"
+            },
+            {
+              "title": "Trace",
+              "desc": "125 mm"
+            },
+            {
+              "title": "Тежина",
+              "desc": "228 kg"
+            },
+            {
+              "title": "капацитет на резервоар",
+              "desc": "15 L"
+            }
+          ],
+          "fuelConsumption": [
+            {
+              "title": "Потрошувачка",
+              "desc": "4.4 l/100km"
+            },
+            {
+              "title": "CO2 загадување",
+              "desc": "105 g/km EURO 5"
+            }
+          ],
+          "serivce": [
+            {
+              "title": "Сервисен Интервал",
+              "desc": "16 000 км / 12 месеци"
+            }
+          ]
+        },
+        "grayCarousell": [
+          {
+            "id": "carouselItem1",
+            "title": "All-Road Моторцикл",
+            "desc": "Модернистичко класичен стил париран со авантуристички способности со цел да се добие перфектен баланс помеѓу најдобрите особини на „Off-Road“ и „On-Road“ моторите.",
+            "image": "/images/classics/scrambler1200/scrambler1200Caro1.avif"
+          },
+          {
+            "id": "carouselItem2",
+            "title": "Оригинална Scrambler Агилност",
+            "desc": "Оптимизирана геометрија на рамка и високо специфираната суспензија нудат одлична контрола во сите екстремни условиж.",
+            "image": "/images/classics/scrambler1200/scrambler1200Caro2.avif"
+
+          },
+          {
+            "id": "carouselItem3",
+            "title": "Дво-Цилиндарски Линиски Bonneville 120cc мотор",
+            "desc": "Екслкузивниот Scrambler мотро комбинира возбудливи тркачки перформнаси и лесно маневривање на пат и надвор од истиот.",
+            "image": "/images/classics/scrambler1200/scrambler1200Caro3.avif"
+
+          },
+          {
+            "id": "carouselItem4",
+            "title": "Врвна Технологија",
+            "desc": "Новиот Scrambler е опремен со најновата технологија во индустријата целосно фокусирана да асистира на возачот а со лист и автентичен дизајн.",
+            "image": "/images/classics/scrambler1200/scrambler1200Caro4.avif"
+
+          },
+          {
+            "id": "carouselItem5",
+            "title": "Уникате Scrambler Стил",
+            "desc": "Седиштето, резервоарот и високо монтираната предна вилушка ја креираат препознатливата Scrambler силуета.",
+            "image": "/images/classics/scrambler1200/scrambler1200Caro5.avif"
+
+          },
+          {
+            "id": "carouselItem6",
+            "title": "Повеќе од 60 Аксесоари на Располагање",
+            "desc": "Одберете од огромната палета на оригинални Triumph аксесоари специјално креирани за Scrambler серијата. Од опциите за багаж па се до ветробрански стакла и штитници инспирирани од Дакар рели серијата.",
+            "image": "/images/classics/scrambler1200/scrambler1200Caro6.avif"
+
+          }
+        ],
+        "specNumbers": [
+          { "data": "1200", "info": "cc Мотор" },
+          { "data": "110", "info": "Nm обртен момент" },
+          { "data": "90", "info": "PS - Максимална Сила" },
+          { "data": "16,000", "info": "КМ Сервисен Интервал" }
+        ],
+        "youtubeVideosCarousellItems": [
+          {
+            "src": "https://www.youtube.com/embed/VGfZx5iHsAk",
+            "title": "Scrambler 1200 Youtube Promo Video"
+          },
+          {
+            "src": "https://www.youtube.com/embed/wBV6E_kE7dc",
+            "title": "Scrambler 1200 Youtube Promo Video"
+          },
+          {
+            "src": "https://www.youtube.com/embed/fXQXfR1U3zU",
+            "title": "Scrambler 1200 Youtube Promo Video"
+          },
+          {
+            "src": "https://www.youtube.com/embed/UQcn1J9D8A8",
+            "title": "Scrambler 1200 Youtube Promo Video"
+          }
+        ],
+        "audioSection": {
+          "title": "Карактеристичен Scrambler Звук",
+          "desc": "Двете високо монтирани издувни цевки го прудуцираат оној препознатилив длабок Triumph Scrambler тон.",
+          "audio": "/images/classics/scrambler1200/scramblerAudio.mp3"
+        }
       },
       "shortSpecInfo": {
         "info1": "1,200cc Bonneville дво-цилинричен мотор",
@@ -3216,101 +3444,130 @@
         "modelImage": {
           "src": "/images/classics/scrambler1200.webp",
           "alt": "Scrambler 1200 Range Model Image"
+        },
+        "subFamilyHeroVideo": {
+          "src": "/images/classics/scrambler1200/scrambler1200HeroVideo.webm",
+          "alt": "Scrambler 1200 Range Model Image"
+        },
+        "subFamilyHeroImageMobile": {
+          "src": "/images/classics/scrambler1200/scrambler1200MobileHero.avif",
+          "alt": "Scrambler 1200 Range Hero Image"
+        },
+        "subFamilyTopSectionImage": {
+          "src": "/images/classics/scrambler1200/scrambler1200TopSectionImage.avif",
+          "alt": "crambler 1200 Range Model Image Top Section Image"
+        },
+        "subFamilyTopSectionBGImage": {
+          "src": "/images/classics/scrambler1200/scrambler1200TopSectionImageBG.avif",
+          "alt": "crambler 1200 Range Model Image Top Section Image BG"
         }
       },
       "accessory": {
         "banner": {
-          "image": "/images/classics/speed400/speed400AccessoryBanner.avif"
+          "image": "/images/classics/scrambler1200/scrambler1200AccessBanner.avif"
         },
         "infoText": {
-          "title": "Додајте ваш белег врз Speed 400",
-          "desc": "На располагање ви е селекција од преку 20 оригинални Triupmh аксесоари за оваа серија на мотори. Аксесоарите кои ќе ги додадете може да бидат додадени на вашиот мотор во фабриката. Aксесоарите се дизајнирани од истиот тим кој го креираше Speed 400 и доаѓаат со две-годишна гаранција."
+          "desc": "На располагање ви е селекција од преку 60 оригинални Triupmh аксесоари за оваа серија на мотори. Аксесоарите кои ќе ги додадете може да бидат додадени на вашиот мотор во фабриката. Aксесоарите се дизајнирани од истиот тим кој го креираше Scrambler 1200 и доаѓаат со две-годишна гаранција."
         },
         "accessoryTypes": [
           {
-            "title": "Стил и Комфорт",
-            "desc": "Choose from a range of parts that will make the Speed ​​400 just the way you want it. Direct replacement bullet turn signals a subtle new look and premium touch with their satin black body and machined aluminum bezels.. Or maybe you want to remodel the tank with different knee pads? A comfortable saddle with a stitched and quilted finish makes a style statement and, together with plug and play heated grips, offers luxury on longer rides..",
-            "itemsList": [
-              "Bullet type LED flash",
-              "Штитници за колена",
-              "Комфортно Седло"
-            ],
+            "title": "Ниско Седиште",
+            "desc": "Нискоте седиште го намалува растојанието помеѓу седиштето и земјиното тло за 25мм што му овозможува на возачот полесно да допре до земјиното тло при моменти на сопирање а со тоа го подобрува комфортот и квалитетот на патувањето. Со истиот дизајн како и нормалното седиште, можете да изберете во две варијанти - црна и кафеава.",
             "image1": {
-              "src": "/images/classics/speed400/speed400SAccesoryStyleImage1.avif",
-              "alt": "Speed 400 On The Road"
+              "src": "/images/classics/scrambler1200/scrambler1200Access1.avif",
+              "alt": "Scrabmler 1200 On The Road"
             },
             "image2": {
-              "src": "/images/classics/speed400/speed400AccessoryStyleImage2.avif",
-              "alt": "Speed 400 PaintJob"
+              "src": "/images/classics/scrambler1200/scrambler1200Access2.avif",
+              "alt": "Scrabmler 1200 PaintJob"
             }
           },
           {
             "title": "Багаж",
-            "desc": "A full range of Speed ​​400-specific luggage has been created to add some practicality to the fun. The Speed ​​400 is the perfect touring bike, and outfitting it to handle your load really couldn't be easier. Choose from sturdy side or rigid and semi-rigid panniers, each with their own special mounting system or, for those who prefer to travel light, a simple luggage rack, nylon tank bag or roll-on bag could be the perfect choice .",
+            "desc": "Перфектен избор доколку планирате авантура. Идеологијата за патување на Scrambler може дополнително да се оптимизира со специјалниот Givi багаж кој нуди: разни торби, торба за резервоар, торба за заден дел - сите целосно изработени специјално за Scrambler 1200 серијата и заедно комбинираат капацитет од 72 литри.Достапен е и рам за монтирање на багаж на задниот дел од моторот и нуди цврста база на која може дополнително да монтирате торби за багаж како водоотпорната витканта торба со капацитет од 30 литри. За повеќе комоција при долгите патувања тука е и високот ветробранско стакло кое ќе ве штите од ветрот. ",
             "itemsList": [
-              "Цврсти Куфери за Багаж",
-              "Држач за Багаж",
-              "Најлонска торба за на резервоар",
-              "Најлонска Торба Roll "
+              "Givi Багаж",
+              "Куфер - 25л",
+              "Торба за Резервоар - 12л",
+              "Торба за заден дел - 35л",
+              "Roll торба - 30л",
+              "Ветробранско Стакло"
+            ]
+          },
+          {
+            "title": "All Road Карактер",
+            "desc": "Иако целокупниот стандарден пакет на Scrambler серијата има доста off-road карактер, сепак на располагање ви се и дополнителни аксесоари кои ќе го подобрат стилот но и нивото на заштита од елементите. Дизајнирани од Triumph и подкрепнати со две-годишна гаранција овие компоненти ќе го однесат SCrambler 1200 на едно повисоко ниво на off-road спремност. Висок преден браник додава вистински off-road карактер како и уште еден степен повеќе заштита од кал. Достапен во алуминиумски финиш или во финишот на вашиот мотор. Алуминиумски браник за радијатор исклучително добро се вклопува во пакет со овој преден браник. CNC изработената ногарка дава одличен детал кон дизајнот на моторот но и одлична функционалност. Заштитниот не-раѓосувачки рам околу моторот служи за заштита на истиот при несакани падови. За вашата тракција се грижат Michelin Anakee Wild® пневматици инспирирани од пневматиците кои се користат на релиот Дакар.",
+            "itemsList": [
+              "Висок Преден Браник",
+              "Алуминиумски Браник за Радијатор",
+              "Мрежа за заштита на светло",
+              "Рачка за Управување (Волан)",
+              "Алуминиумски Грипови",
+              "Заштита за мотор - Не-раѓосувачки Челик",
+              "Странична Ногарка",
+              "Rear Flash Relocation Сет"
             ],
             "image1": {
-              "src": "/images/classics/speed400/speed400AccessoryLuggageImage.avif",
-              "alt": "Speed 400 Luggage"
+              "src": "/images/classics/scrambler1200/scrambler1200Access3.avif",
+              "alt": "Scrambler 1200"
+            },
+            "image2": {
+              "src": "/images/classics/scrambler1200/scrambler1200Access4.avif",
+              "alt": "Scrambler 1200 Accessory Radiator Protection"
             }
           },
           {
-            "title": "Заштита ",
-            "desc": "Both your protection from the elements and that of the Speed ​​400 have been taken care of. A visor with a special fitting kit is also available to deflect the wind to reduce rider fatigue on longer rides. Easy to fit and with style to match, it's a must-have addition for distance riders.To keep the Speed ​​400 out of harm's way on rougher roads, there's an aluminum skid plate, a radiator guard and a headlight mask, which comes with its own bezel for easy fitting, and offers excellent protection from rocks and debris. All-weather riders may want to add the mudguard kit which consists of front and rear mudguard extensions and a rear wing. These combine nicely to protect against water spray and extend the life of the rear shock in extreme conditions.Upper and lower engine guards are also available — these provide excellent protection against drops and spills, a must-have addition for city and country driving.",
+            "title": "Ултра Модерно Поврзување",
+            "desc": "Како и секој модерен Triumph класик, така и Scrambler 1200 ја носи најновата технологија. Иако листата на технолошки уреди на Scrambler 1200 е долга сепак има место за уште повеќе унапредување. triumph Bluetooth Conectivity системот се состои од Bluetooth конекција, „Turn-By-Turn“ навигација, слушање музика и ракување со вашиот телефон. Комуникацијата помеѓу возачот и сопатникот е овозможена од Sena 50S Bluetooth Headset-от. Истиот нуди аудио-команди, мулти канално поврзување, тимско поврзување, примање повици, повикување пријатели и слушање музика преку Harman/Kardon аудио системот. Системот е оптимизиран за користење со секој Triumph мотор и се ракува лесно преку контролите на рачките на воланот.",
             "itemsList": [
-              "Гелатин",
-              "Заштита за ладник",
-              "Решетка за светло",
-              "Алуминиумска заштита",
-              "Заштита од Кал",
-              "Цевки за Заштита на Мотор (Горни и Долни)"
-            ],
-            "image1": {
-              "src": "/images/classics/speed400/speed400AccessoryProtectionImage1.avif",
-              "alt": "Speed 400 Head"
-            },
-            "image2": {
-              "src": "/images/classics/speed400/speed400AccessoryRadiatorProtection.avif",
-              "alt": "speed 400 Accessory Radiator Protection"
-            }
+              "Bluetooth Conectivity",
+              "Triumph Sena 50S Bluetooth Headset"
+            ]
+          },
+          {
+            "title": "Сигурност - Безбедност",
+            "desc": "Оваа палета на производи се состои од аксесоари кои помагаат при заштита на вашиот мотор од кражби. За употреба во домашни услови доволен ви е тешкиот анкор кој се прицврстува во земјата и ланците и катанец, додека за оние кои нивните мотори ги чуваат надвор тука се и прекривките кои се специјализирани за употреба во секакви временски услови. Triumph Protect+ алармот вклучува сензори за вибрации и нагиб кои активираат сирена при нагли промени. Доколку се случи најлошото, Track+ Tracker системот користи GPS сигнали за да ја открие моменталната локација на вашиот Scrambler. Системот автоматски ќе пушти информации до вашиот телефон доколку некој го вознемирува.",
+            "itemsList": [
+              "Анкер за прицврстување во земјата",
+              "Ланец и катанец",
+              "Прекривки за сите временски услови",
+              "Катанци за дискови - U lock",
+              "Triumph Protect+ Аларм",
+              "Triumph Track+ Tracking System"
+            ]
           }
         ]
       },
       "reasonsToDrive": {
         "banner": {
-          "image": "/images/classics/speed400/speed400ReasonsBanner.avif"
+          "image": "/images/classics/scrambler1200/scrambler1200ReasonsBanner.avif"
         },
         "infoText": {
-          "title": "зошто баш Speed 400 !?",
-          "desc": "Време е да се разбудите од досадните соништа со Tiger Sport 660. Ова е најпристапниот мотор од Tiger фамилијата на Triumph и е спремен за секојдневни авантури.Tiger Sport 660 е дизајниран да ги надмине вашите очекувања, од авантуристички тури па се до дневни обврски. Кај нас во Triumph се е во знак на возење, а еве и зошто:"
+          "title": "Scrabmler 1200 - Миленик на Сите Генерации",
+          "desc": "Најновата верзија на Scrambler 1200 серијата е уште подостапна и спремна за секојдневните предизвици, викенд прошетки и оригинални авантури. Најновиот Scrambler 1200 XE сега веќе еволуираше во најдобриот оф-роадер, додека SCrambler 1200 X со своите перформанси, контрола и стил инспирира самодоверба насекаде и на било која подлога."
         },
         "reasons": [
           {
-            "title": "Безвременски и Автентичен Стил",
-            "desc": "Conceived and designed in Hinckley, UK, the Speed ​​400 has been built with the same meticulous attention to detail as every Triumph model. This stunning motorcycle combines timeless design DNA with modern performance. The unmistakable Triumph roadster silhouette, distinctive sculpted fuel tank and classic engine profile echo legends of the past and with exquisite details such as the distinctive cylinder head with radiators, concealed liquid cooling, traditional exhaust header clamps and modern anode muffler, the dazzling blend of retro and modern styling embodies the unique charm of Triumph's famous Modern Classic range.",
-            "image": "/images/classics/speed400/speed400ReasonsStyle.avif"
+            "title": "Нов Мотор - Scrambler Bonneville 1200cc",
+            "desc": "Високо перформантен мотор кој одговара на секоја ваша потреба без разлика дали сте на пат или надвор од него. Осум вентилниот мотор испорачува силен но предвидлив удар. „Ride-By-Wire“ системот овозможува глатка апликација на гаста во секое возачко сценарио. Пет мода на работа се на располагање на возачот (плус Off-Road PRO кај XE моделот) кои ја оптимизираат тракцијата и ABS системот. За потполно прилагодување кон возачот Scrambler 1200 нуди и „Rider-Configurable“ мод кој овозможува да го конфигурирате моторот по ваш вкус.  ",
+            "image": "/images/classics/scrambler1200/scrambler1200Reasons1.avif"
           },
           {
-            "title": "Нов Мотор",
-            "desc": "The brand new 398cc single cylinder engine. fuel-injected combines modern classic Triumph styling with state-of-the-art technology to deliver 40bhp and 37.5Nm of peak torque with a rich, signature exhaust note from the twin-pipe muffler. Technical features include a four-valve, 2EEK cylinder head and a crankshaft that is perfectly weighted and balanced to optimize inertia for low-speed driving. A rocker arm valvetrain with low reciprocating mass and friction-reducing DLC ​​coatings also contribute to the incredible performance of this nimble yet supple engine. The six-speed gearbox offers a light, precise gear selection with ratios perfectly spread out to get the most out of this exciting, characterful and torque-rich engine. ",
-            "image": "/images/classics/speed400/speed400ReasonsMotorImage.avif"
+            "title": "Рамка",
+            "desc": "Дизајнирана за да понуди максимални перформанси кои ќе му парираат на изгледот на моторот. Самата рамка нуди командна позиција и ги поставува рачките на воланот високо со цел да овозможи оптимална контрола врз моторот. Геометријата, ергономијата се дизајнирани за да овозможат максимална самодоверба и контрола за комфортно и флексибилно искуство. Scrambler серијата е подкрепена од Marzocchi™ премиум суспензија. Предната (45mm) и задната „Piggy Back“ вилушка нудат одличен комфорт и контрола врз екстремните подлоги, дупки и избочини. Цврстите жични „tubuless“ тркала се изработе ни од не-раѓосувачки челик и парирани со одличните Brembo™ Stylema® сопирачки со дискови од 320мм напред и 310мм назад.",
+            "image": "/images/classics/scrambler1200/scrambler1200Reasons2.avif"
+
           },
           {
-            "title": "Сериозна Забава",
-            "desc": "The Speed ​​400 is all about having fun. The comfortable and attractive riding position gives the ideal balance of weight between the three points of contact for that 'just right' feel, which has become synonymous with Triumph. Riders of all sizes feel right at home on the Speed ​​400 from the very first ride, thanks to the light and compact 398cc engine. and the slim waist makes the 790mm seat height even more approachable, for a confidence-inspiring ride and easy on-the-spot maneuvering.",
-            "image": "/images/classics/speed400/speed400ReasonsFun.avif"
+            "title": "Технологија",
+            "desc": "Одлично интегрираната технологија го додава финалниот детал за комплетирање на Scrambler 1200. Со себе носи модерни перформанси, комфорт и сигурност при секое возење. Целосно LED осветлување оддава одлична прегледност пред вас а со дневните LED светла и одличен дизајн и стил. Scrambler серијата на себе го носи и (IMU) - Inertial Measurement Unit - систем кој врши мониторинг при забрзување, запирање, го мери аголот на нагиб со цел да го оптимизира ABS и системот за пролизгување. 5 мода на работа (Road, Rain, Sport, Off-Road и Off-Road PRO кај Scrambler 1200 XE) се на располагање на секој Sсrambler возач. Сите овие функции се лесно достапни преку контролите на рачките а одбраните сетинзи се јасно прикажани на TFT екранот во боја. И двата модела на Scrambler се компитабилни со Bluetooth функционалностите на Triumph Connectivity системот." ,
+            "image": "/images/classics/scrambler1200/scrambler1200Reasons3.avif"
+
           },
           {
-            "title": "Направен за Вас",
-            "desc": "No two riders are the same, so you can personalize your Tiger Sport 660 with a choice of three special colors and graphics and over 40 genuine Triumph accessories. From built-in luggage to a central case that holds 2 helmets, you'll be inspired by the options to suit your adventure. When everyday flexibility is your goal, you shouldn't be left behind. The bike is designed with the rider in mind - make it your own."
-          },
-          {
-            "title": "Модерна Технологија",
-            "desc": "The Speed ​​400 is equipped with technology designed to improve every ride. The Torque Assist Clutch is an intelligent system that reduces the force on the clutch lever to improve ease of use and rider comfort when stopping/starting, and reducing travel fatigue. wheel for greater performance and safety.."
+            "title": "Дизајн",
+            "desc": "Со препознатлива силуета и карактер, Scrambler 1200 серијата нуди одличен all-road карактер и ве запознава со Triumph Classic фамилијата која комбинира автентична ДНК со модерни перформанси и стил. Буквално се од внимателно излиениот резервар па се до високо монтираните издувни цевки, неворајтните детали и високо квалитетните материјали па до неверојатно убавите финиши, се е комбинирано за да се извлече оптималниот пакет.",
+            "image": "/images/classics/scrambler1200/scrambler1200Reasons4.avif"
           }
         ]
       }
@@ -9731,7 +9988,7 @@
       "model": "speed-twin-900",
       "category": "classics",
       "subFamilyCategory": "speed-twin-900",
-      "edition": "900cc",
+      "edition": "classics",
       "desc": "Возбудливи перформанси и управување кое инспирира самодоверба, сега со уште повеќе комфорт и стил.",
       "price": 10690,
       "specs": {
@@ -9785,14 +10042,14 @@
         "info1": "Новата Stealth Edition Серија е Достапна"
       },
       "subFamilyPromo": {
-        "title": "Scrambler 400 X",
-        "desc": "Возбудливи перформанси и управување што инспирира самодоверба, сега со уште поголема удобност и стил Цени од: €10,390.00"
+        "title": "Speed Twin 900",
+        "desc": "Возбудливи перформанси и управување што инспирира самодоверба, сега со уште поголема удобност и стил Цени од: €10,690.00"
       }
     },
     {
       "id": 29,
       "title": "Bonneville Bobber",
-      "model": "bobber-2023",
+      "model": "bonneville-bobber",
       "category": "classics",
       "subFamilyCategory": "bonneville-bobber",
       "edition": "classics",
@@ -9850,6 +10107,10 @@
       },
       "shortSpecInfo": {
         "info1": "Новата Stealth Edition Серија е Достапна"
+      },
+      "subFamilyPromo": {
+        "title": "Bonneville Bobber",
+        "desc": "Мускулест изглед со одлични перформанси и управување - Bonneville Bobber. Цена од: 16790.00Є"
       }
     },
     {
@@ -10404,7 +10665,7 @@
     {
       "id": 49,
       "title": "Bonneville Bobber Chrome Edition",
-      "model": "bobber-chrome-edition-2023",
+      "model": "bonneville-bobber-chrome",
       "category": "classics",
       "subFamilyCategory": "bonneville-bobber",
       "edition": "chrome",
@@ -10531,7 +10792,7 @@
       },
       "gallery": {
         "modelImage": {
-          "src": "/images/classics/speedTwin900Chrome.avif",
+          "src": "/images/classics/speedTwin900/speedTwin900Chrome.avif",
           "alt": "Speed Twin 900 Chrome Edition"
         }
       },
