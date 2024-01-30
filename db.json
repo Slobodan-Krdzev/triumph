@@ -1911,44 +1911,44 @@
           "desc": "Speed 400 - иконата на Triumph, перфектен стил, перформанси и лидер во класата по квалитет..",
           "subtitle": "Преубав, агилен, версатилен и изграден со највисоки стандарди, Speed 400 ги поставува границите во својата категорија"
         },
-        "youtubeVideo": "https://www.youtube.com/embed/QvVCEk4t8IE",
+        "youtubeVideo": "https://www.youtube.com/embed/omKdaaynGCg",
         "fullSpecs": {
           "engineTransmission": [
             {
-              "title": "Тип на Мотор",
-              "desc": "водно ладење, 12 вентили, DOHC, линиски 3-цилиндри, 240° редослед на есклпозии"
+              "title": "Мотор",
+              "desc": "4 вентили, 2EEK, еден цилиндар, водно ладење"
             },
             {
               "title": "капацитет",
-              "desc": "660 cc"
+              "desc": "398.15 cc"
             },
             {
               "title": "диаметар",
-              "desc": "74.04 mm"
+              "desc": "89.0 mm"
             },
             {
               "title": "рута",
-              "desc": "51.1 mm"
+              "desc": "64.0 mm"
             },
             {
               "title": "компресија",
-              "desc": "11.95:1"
+              "desc": "12:1"
             },
             {
               "title": "Мах. Коњски Сила",
-              "desc": "81 PS / 80 bhp (59.6 kW) @ 10,250 rpm"
+              "desc": "40 PS @ 8,000 rpm"
             },
             {
               "title": "Мах. Обртен Момент",
-              "desc": "64 Nm @ 6,250 rpm"
+              "desc": "37.5 Nm @ 6,500 rpm"
             },
             {
               "title": "Систем за убризгување",
-              "desc": "Multipoint sequential electronic fuel injection with electronic throttle control"
+              "desc": "Bosch electronic fuel injection with electronic throttle control"
             },
             {
               "title": "Систем за Издувни гасови",
-              "desc": "3 во 1 не-раѓосувачки челик"
+              "desc": "Stainless double shell head system with stainless steel silencer"
             },
             {
               "title": "Финална Трансмисија",
@@ -1956,7 +1956,7 @@
             },
             {
               "title": "Квачило",
-              "desc": "Wet, multi-plate, slip"
+              "desc": "Liquid, multi-disc with glide assist"
             },
             {
               "title": "Менувачка Кутија",
@@ -1966,65 +1966,65 @@
           "frame": [
             {
               "title": "шасија",
-              "desc": "тубуларна челична шасија"
+              "desc": "Spine/perimeter hybrid - тубуларна челична шасија"
             },
             {
               "title": "вилушка",
-              "desc": "алуминиум"
+              "desc": "лиеана алуминиумска легура"
             },
             {
               "title": "предно тркало",
-              "desc": "19 x 2.5' die-cast легура "
+              "desc": "17 x 3‘ (10 краци) - лиен алуминиум"
             },
             {
               "title": "задно тркало",
-              "desc": "17 x 4.25' die-cast легура "
+              "desc": "17 x 3‘ (10 краци) - лиен алуминиум"
             },
             {
               "title": "предна гума",
-              "desc": "100/90-19"
+              "desc": "110/70 R17"
             },
             {
               "title": "задна гума",
-              "desc": "150/70R17"
+              "desc": "150/60 R17"
             },
             {
               "title": "предна суспензија",
-              "desc": "Marzocchi Inverted Fork 45mm"
+              "desc": "Big Piston Inverted Fork 43mm Wheel travel 140 mm"
             },
             {
               "title": "задна суспензија",
-              "desc": "Marzocchi задна суспензија со систем за подесување"
+              "desc": "RSU gas monoshock (со посебен резервоар) - preload adjustment - 130 mm"
             },
             {
               "title": "предни сопирачки",
-              "desc": "Dual 320mm дискови, 4-piston monobloc Brembo Stylema calipers. Front radial pump, ABS"
+              "desc": "300mm диск, 4 клипна клешта, ABS"
             },
             {
               "title": "задна сопирачка",
-              "desc": "Еден 255 mm диск. Brembo single piston floating caliper, ABS"
+              "desc": "230mm диск, ABS"
             },
             {
               "title": "инструментна плочка",
-              "desc": "5 TFT екран"
+              "desc": "Аналоген брзинометар со мулти функционален LED дисплеј"
             }
           ],
           "dimension": [
             {
               "title": "ширина на волан",
-              "desc": "830 mm"
+              "desc": "814 mm"
             },
             {
               "title": "висина без ретровизори",
-              "desc": "1410-1460 mm"
+              "desc": "1084 mm"
             },
             {
               "title": "Висина на Седиште",
-              "desc": "820-840 mm"
+              "desc": "790 mm"
             },
             {
               "title": "мегу-осовинско растојание ",
-              "desc": "1556 mm"
+              "desc": "1377 mm"
             },
             {
               "title": "Custer Corner",
@@ -2032,58 +2032,64 @@
             },
             {
               "title": "Trace",
-              "desc": "133.3 mm"
+              "desc": "102 mm"
             },
             {
               "title": "Тежина",
-              "desc": "192 kg"
+              "desc": "170 kg"
             },
             {
               "title": "капацитет на резервоар",
-              "desc": "20 L"
+              "desc": "13 L"
             }
           ],
           "fuelConsumption": [
             {
               "title": "Потрошувачка",
-              "desc": "5.2l /100km"
+              "desc": "3.5L/100km (80.7mpg)"
             },
             {
               "title": "CO2 загадување",
-              "desc": "Euro 5 Стандарди измерени според Регулатива 168/2013/EC. Резултатите се добиени во специјални тест средини и се на располагање само за споредба. Вистинските резултат може да варираат врз различни средини."
+              "desc": "83.8 g/km EURO 5 CO2"
             }
           ]
         },
         "grayCarousell": [
           {
             "id": "carouselItem1",
-            "title": "Возбудлив Три Цилиндарски Мотор",
-            "desc": "Почувствувајте го карактерот на моторот и чувството на лесно управување со иновативната T-crank радалица и најновиот 850 три-цилиндричен мотор.",
-            "image": "/images/adventure/tigerSport850/tiger850Caro1.avif"
+            "title": "Стил",
+            "desc": "Со безвременската „Triumph roadster“ силуета, рекласиран и минималистички стил и луксузни финиши, Speed 400 серијата поставуа нови стандради во класата.",
+            "image": "/images/classics/speed400/speed400GrayCaro1.avif"
           },
           {
             "id": "carouselItem2",
-            "title": "Технологија фокусирана на возачот",
-            "desc": "Технологија од врвно ниво, сопирачки и одлична суспензија за подобро секојдневно возење со максимално чувство на самодоверба, перформанси и сигурност.",
-            "image": "/images/adventure/tigerSport850/tiger850Caro2.avif"
+            "title": "Максимална Контрола на Пат",
+            "desc": "Лесни, флексибилни и динамични - Speed 400 серијата ги воведува самодоверба кај возачот и со себе носи едно ново ниво на забава.",
+            "image": "/images/classics/speed400/speed400GrayCaro2.avif"
+
           },
           {
             "id": "carouselItem3",
-            "title": "Комбинација помеѓу карактер и перформанси",
-            "desc": "Соилуета по која сите се вртат, со агресивни линии и ексклузивни детали .",
-            "image": "/images/adventure/tigerSport850/tiger850Caro3.avif"
+            "title": "Карактер",
+            "desc": "Автентилна Triumph силуета, управување, перформанси и звук. Speed 400 е се што ви треба.",
+            "image": "/images/classics/speed400/speed400GrayCaro3.avif"
+
           },
           {
             "id": "carouselItem4",
-            "title": "Дизајниран да инспирира самодоверба",
-            "desc": "Лесно прилагодлив за сечиј возачки стил, од височината на седиштето, до воланот па се до ерканот, Tiger 850 е спремен да се прилагоди на вас.",
-            "image": "/images/adventure/tigerSport850/tiger850Caro4.avif"
+            "title": "Квалитет",
+            "desc": "Дизајниран по високи стандарди, Speed 400 серијата комбинира одлични спецификации со премиум завршница.",
+            "image": "/images/classics/speed400/speed400GrayCaro4.avif"
+
+          },
+          {
+            "id": "carouselItem5",
+            "title": "Вредност",
+            "desc": "Високи спецификации, долг сервисен период и мали трошоци за одржување - Speed 400 серијата е од голема вредност.",
+            "image": "/images/classics/speed400/speed400GrayCaro5.avif"
+
           }
         ],
-        "soundSection": {
-          "desc": "Уникатен звук произведен од три-цилиндричниот мотор со T-crank радалица.",
-          "audio": "/images/adventure/tiger850Sport/tigerSound.mp3"
-        },
         "specNumbers": [
           { "data": "398", "info": "cc Мотор" },
           { "data": "37.5", "info": "Nm обртен момент" },
@@ -2096,32 +2102,37 @@
           "image": "/images/classics/speed400/speed400ReasonsBanner.avif"
         },
         "infoText": {
-          "title": "зошто баш Speed 400 !?",
-          "desc": "Време е да се разбудите од досадните соништа со Tiger Sport 660. Ова е најпристапниот мотор од Tiger фамилијата на Triumph и е спремен за секојдневни авантури.Tiger Sport 660 е дизајниран да ги надмине вашите очекувања, од авантуристички тури па се до дневни обврски. Кај нас во Triumph се е во знак на возење, а еве и зошто:"
+          "desc": "Speed 400 серијата го носи она класично/модерно Triumph искуство до уште повеќе возачи отколку било кога. Дизајниран за да ги прави горди неговите Triumph претходници а опремен со најновата технологија, новата TR серија на едно-цилиндрични мотори е дизајнирана да произведе препознатлива сила со цел да се постигнат врвни перформанси. Неутралната а сепак респонзивна возачка позиција со ниското седиште и „roadster“ рамката, врвната суспензија и сопирачки се тука за да ја достават онаа препознатлива инспиративна и самодоверлива агилност, која им овозможува на возачите да се поврзат со подлогата и да уживаат во моментите поминати со Speed 400. Перфектните финиши и деталите се евидентен показател дека Speed 400 серијата дефинитивно припаѓа на Triumph фамилијата."
         },
         "reasons": [
           {
-            "title": "Безвременски и Автентичен Стил",
-            "desc": "Conceived and designed in Hinckley, UK, the Speed ​​400 has been built with the same meticulous attention to detail as every Triumph model. This stunning motorcycle combines timeless design DNA with modern performance. The unmistakable Triumph roadster silhouette, distinctive sculpted fuel tank and classic engine profile echo legends of the past and with exquisite details such as the distinctive cylinder head with radiators, concealed liquid cooling, traditional exhaust header clamps and modern anode muffler, the dazzling blend of retro and modern styling embodies the unique charm of Triumph's famous Modern Classic range.",
-            "image": "/images/classics/speed400/speed400ReasonsStyle.avif"
+            "title": "Автентичен Triumph Стил",
+            "desc": "Дизајниран и изработен во Хинкли, Велика Британија, Speed 400 серијата беше изработена со истата доза на внимание како и секој друг Triumph мотор. Овој мотор комбинира безвременска ДНК со модерни перформанси. Препознатливата Triumph силуета и класичниот профил на моторот ги величи претходниците на Speed 400 серијата кои се веќе Triumph легенди. Speed 400 серијата е бленд помеѓу ретро изгледот, модерни перформанси и уникатниот шарм на Triumph.",
+            "image": "/images/classics/speed400/speed400Reasons1.avif"
           },
           {
-            "title": "Нов Мотор",
-            "desc": "The brand new 398cc single cylinder engine. fuel-injected combines modern classic Triumph styling with state-of-the-art technology to deliver 40bhp and 37.5Nm of peak torque with a rich, signature exhaust note from the twin-pipe muffler. Technical features include a four-valve, 2EEK cylinder head and a crankshaft that is perfectly weighted and balanced to optimize inertia for low-speed driving. A rocker arm valvetrain with low reciprocating mass and friction-reducing DLC ​​coatings also contribute to the incredible performance of this nimble yet supple engine. The six-speed gearbox offers a light, precise gear selection with ratios perfectly spread out to get the most out of this exciting, characterful and torque-rich engine. ",
-            "image": "/images/classics/speed400/speed400ReasonsMotorImage.avif"
+            "title": "Потполно Нов Мотор",
+            "desc": "Потполно новиот (398cc) моно цилиндричен моторт комбинира класичен Triumph изглед и модерна тахнологија и испорачува 40hp максимална јачина и 37.5Nm макссимален обртен момент. Техничките детали набројуваат - 4 вентили, 2EEK глава и радалица која е перфектно балансирана за да се оптимизира балансот на моторот при возење на ниски брзини. Париран со 6 брзински менувач кој нуди брзи и прецизни промени на степенот ја дава перфектната комбинација која заедно испорачува карактер и одлични перформанси.",
+            "image": "/images/classics/speed400/speed400Reasons2.avif"
+
           },
           {
-            "title": "Сериозна Забава",
-            "desc": "The Speed ​​400 is all about having fun. The comfortable and attractive riding position gives the ideal balance of weight between the three points of contact for that 'just right' feel, which has become synonymous with Triumph. Riders of all sizes feel right at home on the Speed ​​400 from the very first ride, thanks to the light and compact 398cc engine. and the slim waist makes the 790mm seat height even more approachable, for a confidence-inspiring ride and easy on-the-spot maneuvering.",
-            "image": "/images/classics/speed400/speed400ReasonsFun.avif"
+            "title": "Направен за Забава",
+            "desc": "Speed 400 серијата и изготвена за забава. Комфортната воачка позиција дава иделен баланс и одлично ја распоредува тежива врз целиот мотор и притоа дава извонредно чувство кога го возите моторот. Speed 400 серијата е наменета за сите возачи без разлика на нивната висина. Благодарејки на ниското седиште (790мм) Speed 400 дополнително се прилагодува кон пониските возачи и дава чувство на самодоверба и лесно маневрирање.",
+            "image": "/images/classics/speed400/speed400Reasons3.avif"
+
           },
           {
-            "title": "Направен за Вас",
-            "desc": "No two riders are the same, so you can personalize your Tiger Sport 660 with a choice of three special colors and graphics and over 40 genuine Triumph accessories. From built-in luggage to a central case that holds 2 helmets, you'll be inspired by the options to suit your adventure. When everyday flexibility is your goal, you shouldn't be left behind. The bike is designed with the rider in mind - make it your own."
+            "title": "Технологија",
+            "desc": "Speed 400 серијата е парирана со технологија направена за го унапреди вашето патување. Паметното квачило е тука да ви асистира при секое запирање и тргнување со што го намалува заморот. ABS системот ви буди самодоверба при сопирање и при влез во свиоците како и системот за пролизгување кој ве чува при излез од свиоците. Speed 400 серијата е опремена со целосно LED осветлување со активни дневни LED светла кои гордо го носат Triumph амблемот. Инструментната плоча се состои од два дела и се контролира преку интуитивни команди и ролери на воланот. ",
+            "image": "/images/classics/speed400/speed400Reasons4.avif"
+
           },
           {
-            "title": "Модерна Технологија",
-            "desc": "The Speed ​​400 is equipped with technology designed to improve every ride. The Torque Assist Clutch is an intelligent system that reduces the force on the clutch lever to improve ease of use and rider comfort when stopping/starting, and reducing travel fatigue. wheel for greater performance and safety.."
+            "title": "Висока Спецификација",
+            "desc": "Speed 400 серијата е опремена со периферни елементи од висок стандард со цел да се комплетира еден одличен пакет комбиниран од сигурност и уживање. Ексклузивните 10 кракни тркала се парирани со одлични пневматици од познати брендови, 43мм суспензија и лесното подесување на задната суспензија гарантира агилност и одлично управување. Дво-клипните сопирачки произведуваат одлична сопирачка сила и одлично чувство, додека ABS системот се грижи за вашата сигурност.",
+            "image": "/images/classics/speed400/speed400Reasons5.avif"
+
           }
         ]
       },
@@ -2130,7 +2141,6 @@
           "image": "/images/classics/speed400/speed400AccesBanner.avif"
         },
         "infoText": {
-          "title": "Додајте ваш белег врз Speed 400",
           "desc": "На располагање ви е селекција од преку 20 оригинални Triupmh аксесоари за оваа серија на мотори. Аксесоарите кои ќе ги додадете може да бидат додадени на вашиот мотор во фабриката. Aксесоарите се дизајнирани од истиот тим кој го креираше Speed 400 и доаѓаат со две-годишна гаранција."
         },
         "accessoryTypes": [
@@ -2230,40 +2240,40 @@
         "fullSpecs": {
           "engineTransmission": [
             {
-              "title": "Тип на Мотор",
-              "desc": "водно ладење, 12 вентили, DOHC, линиски 3-цилиндри, 240° редослед на есклпозии"
+              "title": "Мотор",
+              "desc": "4 вентили, 2EEK, еден цилиндар, водно ладење"
             },
             {
               "title": "капацитет",
-              "desc": "660 cc"
+              "desc": "398.15 cc"
             },
             {
               "title": "диаметар",
-              "desc": "74.04 mm"
+              "desc": "89.0 mm"
             },
             {
               "title": "рута",
-              "desc": "51.1 mm"
+              "desc": "64.0 mm"
             },
             {
               "title": "компресија",
-              "desc": "11.95:1"
+              "desc": "12:1"
             },
             {
               "title": "Мах. Коњски Сила",
-              "desc": "81 PS / 80 bhp (59.6 kW) @ 10,250 rpm"
+              "desc": "40 PS @ 8,000 rpm"
             },
             {
               "title": "Мах. Обртен Момент",
-              "desc": "64 Nm @ 6,250 rpm"
+              "desc": "37.5 Nm @ 6,500 rpm"
             },
             {
               "title": "Систем за убризгување",
-              "desc": "Multipoint sequential electronic fuel injection with electronic throttle control"
+              "desc": "Bosch electronic fuel injection with electronic throttle control"
             },
             {
               "title": "Систем за Издувни гасови",
-              "desc": "3 во 1 не-раѓосувачки челик"
+              "desc": "Stainless double shell head system with stainless steel silencer"
             },
             {
               "title": "Финална Трансмисија",
@@ -2271,7 +2281,7 @@
             },
             {
               "title": "Квачило",
-              "desc": "Wet, multi-plate, slip"
+              "desc": "Liquid, multi-disc with glide assist"
             },
             {
               "title": "Менувачка Кутија",
@@ -2281,19 +2291,19 @@
           "frame": [
             {
               "title": "шасија",
-              "desc": "тубуларна челична шасија"
+              "desc": "Spine/perimeter hybrid - тубуларна челична шасија"
             },
             {
               "title": "вилушка",
-              "desc": "алуминиум"
+              "desc": "лиеана алуминиумска легура"
             },
             {
               "title": "предно тркало",
-              "desc": "19 x 2.5' die-cast легура "
+              "desc": "19 x 2.5‘ (10 краци) - лиен алуминиум"
             },
             {
               "title": "задно тркало",
-              "desc": "17 x 4.25' die-cast легура "
+              "desc": "17 x 3.5‘ (10 краци) - лиен алуминиум"
             },
             {
               "title": "предна гума",
@@ -2301,71 +2311,73 @@
             },
             {
               "title": "задна гума",
-              "desc": "150/70R17"
+              "desc": "140/80-17"
             },
             {
               "title": "предна суспензија",
-              "desc": "Marzocchi Inverted Fork 45mm"
+              "desc": "Big Piston Inverted Fork 43mm Wheel travel 140 mm"
             },
             {
               "title": "задна суспензија",
-              "desc": "Marzocchi задна суспензија со систем за подесување"
+              "desc": "RSU gas monoshock (со посебен резервоар) - preload adjustment - 130 mm"
             },
             {
               "title": "предни сопирачки",
-              "desc": "Dual 320mm дискови, 4-piston monobloc Brembo Stylema calipers. Front radial pump, ABS"
+              "desc": "320mm диск, 4 клипна клешта, ABS"
             },
             {
               "title": "задна сопирачка",
-              "desc": "Еден 255 mm диск. Brembo single piston floating caliper, ABS"
+              "desc": "230mm диск, ABS"
             },
             {
               "title": "инструментна плочка",
-              "desc": "5 TFT екран"
+              "desc": "Аналоген брзинометар со мулти функционален LED дисплеј"
             }
           ],
           "dimension": [
             {
               "title": "ширина на волан",
-              "desc": "830 mm"
+              "desc": "901 mm"
             },
             {
               "title": "висина без ретровизори",
-              "desc": "1410-1460 mm"
+              "desc": "1169 mm"
             },
             {
               "title": "Висина на Седиште",
-              "desc": "820-840 mm"
+              "desc": "835 mm"
             },
             {
               "title": "мегу-осовинско растојание ",
-              "desc": "1556 mm"
+              "desc": "1,418 mm"
             },
             {
               "title": "Custer Corner",
-              "desc": "24.6 º"
+              "desc": "23.2º"
             },
             {
               "title": "Trace",
-              "desc": "133.3 mm"
+              "desc": "108 mm"
             },
             {
               "title": "Тежина",
-              "desc": "192 kg"
+              "desc": "179 kg"
             },
             {
               "title": "капацитет на резервоар",
-              "desc": "20 L"
+              "desc": "13 L"
             }
           ],
           "fuelConsumption": [
             {
-              "title": "Потрошувачка",
-              "desc": "5.2l /100km"
-            },
-            {
               "title": "CO2 загадување",
-              "desc": "Euro 5 Стандарди измерени според Регулатива 168/2013/EC. Резултатите се добиени во специјални тест средини и се на располагање само за споредба. Вистинските резултат може да варираат врз различни средини."
+              "desc": "83.8 g/km EURO 5 CO2"
+            }
+          ],
+          "service": [
+            {
+              "title": "Сервисен Интервал",
+              "desc": "16,000 km / 12 месеци"
             }
           ]
         },
@@ -2401,10 +2413,6 @@
             "image": "/images/classics/scrambler400X/scrambler400XGrayCaro5.avif"
           }
         ],
-        "soundSection": {
-          "desc": "Уникатен звук произведен од три-цилиндричниот мотор со T-crank радалица.",
-          "audio": "/images/adventure/tiger850Sport/tigerSound.mp3"
-        },
         "specNumbers": [
           { "data": "398", "info": "cc Мотор" },
           { "data": "37.5", "info": "Nm обртен момент" },
@@ -2414,35 +2422,34 @@
       },
       "reasonsToDrive": {
         "banner": {
-          "image": "/images/classics/speed400/speed400ReasonsBanner.avif"
+          "image": "/images/classics/scrambler400X/scrambler400XReasonsBanner.avif"
         },
         "infoText": {
-          "title": "зошто баш Speed 400 !?",
-          "desc": "Време е да се разбудите од досадните соништа со Tiger Sport 660. Ова е најпристапниот мотор од Tiger фамилијата на Triumph и е спремен за секојдневни авантури.Tiger Sport 660 е дизајниран да ги надмине вашите очекувања, од авантуристички тури па се до дневни обврски. Кај нас во Triumph се е во знак на возење, а еве и зошто:"
+          "desc": "Најновиот член на класичната Scramlber серија на Triumph е токму Scrambler 400 X, со мисија да го однесе Triumph духот кај новите генерации. Со безвременската Scrambler силуета, Scramler 400 X серијата ја нуди оној безгрешен Triumph стил со премиум финиши и лидерски спецификации во класата. Моно-цилиндричниот мотор произведува класичен Triumph карактер и перформанси. Импозантната возачка позиција со широк волан комбинирано со специфичната Scrambler рамка произведува комфорт на патиштата и надвор од нив. Врвна суспензија (150мм) и сопирачки се тука за да ве охрабрат и да ви изнудат ушта малку повеќе самодоверба знаејки дека ве чуваат во секој момент."
         },
         "reasons": [
           {
-            "title": "Безвременски и Автентичен Стил",
-            "desc": "Conceived and designed in Hinckley, UK, the Speed ​​400 has been built with the same meticulous attention to detail as every Triumph model. This stunning motorcycle combines timeless design DNA with modern performance. The unmistakable Triumph roadster silhouette, distinctive sculpted fuel tank and classic engine profile echo legends of the past and with exquisite details such as the distinctive cylinder head with radiators, concealed liquid cooling, traditional exhaust header clamps and modern anode muffler, the dazzling blend of retro and modern styling embodies the unique charm of Triumph's famous Modern Classic range.",
-            "image": "/images/classics/speed400/speed400ReasonsStyle.avif"
+            "title": "Потполно Нов Мотор",
+            "desc": "Потполно новиот (398cc) моно цилиндричен моторт комбинира класичен Triumph изглед и модерна тахнологија и испорачува 40hp максимална јачина и 37.5Nm макссимален обртен момент. Техничките детали набројуваат - 4 вентили, 2EEK глава и радалица која е перфектно балансирана за да се оптимизира балансот на моторот при возење на ниски брзини. Париран со 6 брзински менувач кој нуди брзи и прецизни промени на степенот ја дава перфектната комбинација која заедно испорачува карактер и одлични перформанси.",
+            "image": "/images/classics/scrambler400X/scrambler400XReasons1.avif"
+
           },
           {
-            "title": "Нов Мотор",
-            "desc": "The brand new 398cc single cylinder engine. fuel-injected combines modern classic Triumph styling with state-of-the-art technology to deliver 40bhp and 37.5Nm of peak torque with a rich, signature exhaust note from the twin-pipe muffler. Technical features include a four-valve, 2EEK cylinder head and a crankshaft that is perfectly weighted and balanced to optimize inertia for low-speed driving. A rocker arm valvetrain with low reciprocating mass and friction-reducing DLC ​​coatings also contribute to the incredible performance of this nimble yet supple engine. The six-speed gearbox offers a light, precise gear selection with ratios perfectly spread out to get the most out of this exciting, characterful and torque-rich engine. ",
-            "image": "/images/classics/speed400/speed400ReasonsMotorImage.avif"
+            "title": "Забава за Сите",
+            "desc": "Лесен и со тенка половина, Scrambler 400 X е извонредно агилен и силен. Седиштето од 835мм висина и тенкиот струк на моторот обезбедува командантна возачка позиција која го намалува растојанието помеѓу земјиното тло и половината на возачот. Со тежина од 178 килограми, Scrambler 400 X е дизајниран за чесно маневрирање било каде. Нежниот мотор, лесната рамка и одличните суспензија и сопирачки доведуваат до агилен и версатилен мотор кој инспирира самодоверба за сите возачи.",
+            "image": "/images/classics/scrambler400X/scrambler400XReasons2.avif"
+
           },
           {
-            "title": "Сериозна Забава",
-            "desc": "The Speed ​​400 is all about having fun. The comfortable and attractive riding position gives the ideal balance of weight between the three points of contact for that 'just right' feel, which has become synonymous with Triumph. Riders of all sizes feel right at home on the Speed ​​400 from the very first ride, thanks to the light and compact 398cc engine. and the slim waist makes the 790mm seat height even more approachable, for a confidence-inspiring ride and easy on-the-spot maneuvering.",
-            "image": "/images/classics/speed400/speed400ReasonsFun.avif"
-          },
-          {
-            "title": "Направен за Вас",
-            "desc": "No two riders are the same, so you can personalize your Tiger Sport 660 with a choice of three special colors and graphics and over 40 genuine Triumph accessories. From built-in luggage to a central case that holds 2 helmets, you'll be inspired by the options to suit your adventure. When everyday flexibility is your goal, you shouldn't be left behind. The bike is designed with the rider in mind - make it your own."
+            "title": "Карактеристики",
+            "desc": "Scrambler 400 X серијата е опремена со лесни алуминиумски тркала, 17 инчи назад и поголемо 19 инчно тркало напред парирани со пневматици од најпознатите брендови. Широкиот волан и исправената става на моторот оддаваат перфектно чувство на контрола при седечка но и при стоечка позиција. Рамни Scrambler педала за нозе со гуми кои лесно се одстрануваат даваат екстра сигурно дека нема да се лизнете од моторот.",
+            "image": "/images/classics/scrambler400X/scrambler400XReasons3.avif"
           },
           {
             "title": "Модерна Технологија",
-            "desc": "The Speed ​​400 is equipped with technology designed to improve every ride. The Torque Assist Clutch is an intelligent system that reduces the force on the clutch lever to improve ease of use and rider comfort when stopping/starting, and reducing travel fatigue. wheel for greater performance and safety.."
+            "desc": "Scrambler 400 X серијата е парирана со технологија наменета да го подобри вашето искуство. Ова вклучува квачило кое ви асистира и ве одмара при многуте промени на степенот на пренос. Квачилото е дизајнирано да ги избегнува оние моменти на подскокну вање на задното тркало при нагло спуптање на степенот на пренос што додава уште повеќе самодоверба и сугурност. Scrambler 400 X серијата е парирано со целосно LED осветлување кое гордо го носи Triumph логото и со дневни LED светла и тенки трепкачи. Беспрекорна инструментна табла поделена во два дела го краси воланот на Scrambler 400 X и без никакви маки ги прикажува сите потребни информации до возачот. На располагање е и USB-C порта за напојување за телефони и навигациски уреди како и за дополнителни аксесоари како греачи на рачките.",
+            "image": "/images/classics/scrambler400X/scrambler400XReasons5.avif"
+
           }
         ]
       },

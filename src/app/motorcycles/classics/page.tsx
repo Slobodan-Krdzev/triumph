@@ -1,4 +1,3 @@
-import GrayBand from "@/app/components/GrayBand";
 import BottomCarousell from "@/app/components/classicsPageComp/BottomCarousell";
 import StelthCarousell from "@/app/components/classicsPageComp/StelthCarousell";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
@@ -9,10 +8,10 @@ import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitl
 import { getBikesByEdition } from "@/app/components/helpers/getBikesByEdition";
 import CardLinkItem from "@/app/components/homePageComponents/CardLinkItem";
 import DiscoverThriumphCard from "@/app/components/homePageComponents/DiscoverThriumphCard";
-import { BIKES, FAMILIES, PROMOS, SUB_FAMILIES } from "@/app/constants/constants";
+import { BIKES, FAMILIES, PROMOS } from "@/app/constants/constants";
 import { PromoDataType } from "@/app/types/HomeTypes/SharedTypes/types";
-import { getBikesByCC } from "./helpers/getBikesByCC";
 import { redirect } from "next/navigation";
+import { getBikesByCC } from "./helpers/getBikesByCC";
 
 const ClassicPage = async () => {
   try {
@@ -183,18 +182,7 @@ const ClassicPage = async () => {
           )}
         </main>
 
-        <GrayBand
-          itemOne={{
-            text: "Контакт",
-            url: "/",
-            icon: "/point.svg",
-          }}
-          itemTwo={{
-            text: "Конфигурација",
-            url: "/configure",
-            icon: "/icon-configurator.svg",
-          }}
-        />
+        
       </>
     );
   } catch (err) {
