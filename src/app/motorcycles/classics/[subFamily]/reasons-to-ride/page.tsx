@@ -46,10 +46,11 @@ const ClassicsReasonsToRide = async ({ params }: any) => {
           )}
 
           {bikesData.map((bike: any) => (
+            
             <BikeInfoTextImageBtn
               key={bike.id}
-              title={bike.title}
-              desc={bike.subFamilyPromo.desc}
+              title={bike.title ?? bike.model}
+              desc={bike.subFamilyPromo?.desc ?? bike.price}
               ctaBtn={{
                 text: "КОнфигурација",
                 link: `/configure/bike/${bike.model}`,
@@ -67,7 +68,8 @@ const ClassicsReasonsToRide = async ({ params }: any) => {
   } catch (err) {
     console.log(err);
 
-    return redirect(`/motorcycles/classics/${subFam}`);
+    // return redirect(`/motorcycles/classics/${subFam}`);
+    return err
   }
 };
 
