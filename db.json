@@ -3591,7 +3591,7 @@
           "engineTransmission": [
             {
               "title": "Мотор",
-              "desc": "Дво-Цилиндричен „in-line“ 8-вентили, водно ладење"
+              "desc": "Дво-Цилиндричен „in-line“, 8-вентили, 1ЕЕК,водно ладење"
             },
             {
               "title": "капацитет",
@@ -3607,31 +3607,31 @@
             },
             {
               "title": "компресија",
-              "desc": "11:1"
+              "desc": "10:1"
             },
             {
               "title": "Мах. Коњски Сила",
-              "desc": "90PS @ 7000 rpm"
+              "desc": "78PS @ 6100 rpm"
             },
             {
               "title": "Мах. Обртен Момент",
-              "desc": "110Nm @ 4250 rpm"
+              "desc": "106Nm @ 4000 rpm"
             },
             {
               "title": "Систем за убризгување",
-              "desc": "Ride by wire, multi-point sequential electronic injection"
+              "desc": "Electronic multi-point injection"
             },
             {
               "title": "Систем за Издувни гасови",
-              "desc": "Brushed 2-into-2 exhaust system with high-mounted brushed tailpipes."
+              "desc": "Brushed Stainless Steel Dual Casing 2 into 2 Exhaust System with Brushed Stainless Steel Tailpipes"
             },
             {
               "title": "Финална Трансмисија",
-              "desc": "X ring chain"
+              "desc": "Chain"
             },
             {
               "title": "Квачило",
-              "desc": "Wet, multi-plate, assisted clutch"
+              "desc": "Fluid, multi-disc, assisted"
             },
             {
               "title": "Менувачка Кутија",
@@ -3649,79 +3649,79 @@
             },
             {
               "title": "предно тркало",
-              "desc": "21 x 2.15 - жични тркала со 36 жици"
+              "desc": "16 x 2.5 - жични тркала со 32 жици"
             },
             {
               "title": "задно тркало",
-              "desc": "17 x 4.25 - жични тркала со 32 жици"
+              "desc": "16 x 3.5 - жични тркала со 32 жици"
             },
             {
               "title": "предна гума",
-              "desc": "90/90-21"
+              "desc": "MT90B16"
             },
             {
               "title": "задна гума",
-              "desc": "150/70 R17"
+              "desc": "150/80 R16"
             },
             {
               "title": "предна суспензија",
-              "desc": "Marzocchi™ 1 1 Inverted Fork Non-Adjustable, 170mm"
+              "desc": "Showa 47mm"
             },
             {
               "title": "задна суспензија",
-              "desc": "Double Marzocchi shocks with piggyback canisters, adjustable preload, 170m"
+              "desc": "Monoshock"
             },
             {
               "title": "предни сопирачки",
-              "desc": "Dual 310mm discs, Nissin, ABS"
+              "desc": "Dual 310mm, Brembo"
             },
             {
               "title": "задна сопирачка",
-              "desc": "255mm single disc, Nissin, ABS "
+              "desc": "255mm single, Nissin"
             },
             {
               "title": "инструментна плочка",
-              "desc": "Мултифункционален TFT екран"
+              "desc": "Аналоген брзинометар со мулти функционален LCD дисплеј"
             }
           ],
           "dimension": [
             {
               "title": "ширина на волан",
-              "desc": "834 mm"
+              "desc": "910 mm"
             },
             {
               "title": "висина без ретровизори",
-              "desc": "1185 mm"
+              "desc": "1055 mm"
             },
             {
               "title": "Висина на Седиште",
-              "desc": "820 mm"
+              "desc": "705 mm"
             },
             {
               "title": "мегу-осовинско растојание ",
-              "desc": "1525 mm"
+              "desc": "1500 mm"
             },
             {
               "title": "Custer Corner",
-              "desc": "26.2 º"
+              "desc": "25.3 º"
             },
             {
               "title": "Trace",
-              "desc": "125 mm"
+              "desc": "94 mm"
             },
             {
               "title": "Тежина",
-              "desc": "228 kg"
+              "desc": "263 kg"
             },
             {
               "title": "капацитет на резервоар",
-              "desc": "15 L"
+              "desc": "12 L"
             }
           ],
           "fuelConsumption": [
             {
               "title": "Потрошувачка",
-              "desc": "4.4 l/100km"
+              "desc": "4.6 l/100km"
             },
             {
               "title": "CO2 загадување",
@@ -3803,96 +3803,66 @@
       },
       "reasonsToDrive": {
         "banner": {
-          "image": "/images/classics/speed400/speed400ReasonsBanner.avif"
+          "image": "/images/classics/speedmaster/speedmasterReasonsBanner.avif"
         },
         "infoText": {
-          "title": "зошто баш Speed 400 !?",
-          "desc": "Време е да се разбудите од досадните соништа со Tiger Sport 660. Ова е најпристапниот мотор од Tiger фамилијата на Triumph и е спремен за секојдневни авантури.Tiger Sport 660 е дизајниран да ги надмине вашите очекувања, од авантуристички тури па се до дневни обврски. Кај нас во Triumph се е во знак на возење, а еве и зошто:"
+          "desc": "Дознајте уште повеќе детали за овој британски laid-back мотор. Горд носител со автентичната британска Bonneville ДНК, со огромен комодитет овој крузер е создаден со комбинирање на автентичниот британски Bonneville стил и врвни перформанси, управување и контрола."
         },
         "reasons": [
           {
-            "title": "Безвременски и Автентичен Стил",
-            "desc": "Conceived and designed in Hinckley, UK, the Speed ​​400 has been built with the same meticulous attention to detail as every Triumph model. This stunning motorcycle combines timeless design DNA with modern performance. The unmistakable Triumph roadster silhouette, distinctive sculpted fuel tank and classic engine profile echo legends of the past and with exquisite details such as the distinctive cylinder head with radiators, concealed liquid cooling, traditional exhaust header clamps and modern anode muffler, the dazzling blend of retro and modern styling embodies the unique charm of Triumph's famous Modern Classic range.",
-            "image": "/images/classics/speed400/speed400ReasonsStyle.avif"
+            "title": "Легендарна Triumph ДНК",
+            "desc": "Дизајниран да биде наследник на легендарната линија на Triumph крузери од 1960 година, Speedmaster серијата ја носи легендарната Bonneville ДНК, со лежерен крузерски карактер и модерни способности како и елегантни финиши. Со класичниот британски стил, опуштената позиција на воланот и 16 инчните жични тркала, Speedmaster серијата нуди крузерска позиција која ги изнудува сите погледи и ве дели од другите. Ситните детали како излиениот 12 литарски резервоар, кукиштата за инџекторите изработени да изгледаат како дупли-карбуратори со цел да се добие оној автентичен Bonneville карактер, класичниот добош изглед на задното тркало како и минималното користење на пластика доведува да помислите дека овој Speedmaster доаѓа од минатото а сепак ќе ве изненади кога ќе дознаете дека е потполно нов. На сите овие ситни детали ги додаваме и хромираниот издувен систем како и традиционалниот метален држач за акумулаторот, традиционалните светла и седиштето кое овозможува да го одстраните сопатничкиот дел додатно придонесуваат да се добие оној Bobber изглед."
           },
           {
-            "title": "Нов Мотор",
-            "desc": "The brand new 398cc single cylinder engine. fuel-injected combines modern classic Triumph styling with state-of-the-art technology to deliver 40bhp and 37.5Nm of peak torque with a rich, signature exhaust note from the twin-pipe muffler. Technical features include a four-valve, 2EEK cylinder head and a crankshaft that is perfectly weighted and balanced to optimize inertia for low-speed driving. A rocker arm valvetrain with low reciprocating mass and friction-reducing DLC ​​coatings also contribute to the incredible performance of this nimble yet supple engine. The six-speed gearbox offers a light, precise gear selection with ratios perfectly spread out to get the most out of this exciting, characterful and torque-rich engine. ",
-            "image": "/images/classics/speed400/speed400ReasonsMotorImage.avif"
+            "title": "Возбудливи Перформанси со многу обртен момент и инстанта респонзивност",
+            "desc": "Bonneville Speedmaster серијата е подкрепена од добро познатиот 1200cc мотор на Triumph, кој претрпе некои промени за да стане полесен и EURO 5 компитабилен. Се карактеризира со мекост и линеарни перформанси, одличен обртен момент при мали брзини (106Nm @ 4,000rpm), и максимална јачина од 78 коњски сили. Некои клучни делови од моторот претрпеа промени со цел да се намали вкупната тежина и добие повеќе респонзивност и острина.",
+            "image": "/images/classics/speedmaster/speedmasterReasons1.avif"
           },
           {
-            "title": "Сериозна Забава",
-            "desc": "The Speed ​​400 is all about having fun. The comfortable and attractive riding position gives the ideal balance of weight between the three points of contact for that 'just right' feel, which has become synonymous with Triumph. Riders of all sizes feel right at home on the Speed ​​400 from the very first ride, thanks to the light and compact 398cc engine. and the slim waist makes the 790mm seat height even more approachable, for a confidence-inspiring ride and easy on-the-spot maneuvering.",
-            "image": "/images/classics/speed400/speed400ReasonsFun.avif"
+            "title": "Карактеристичен британски дво-цилиндричен звук",
+            "desc": "Speedmaster серијата има уникатен, богат, длабок звук кој се издвојува од другите и ќе ве натера да се вљубите во него. Истиот се произведува во иновативниот дизајн на издувниот систем поделен на двете страни од моторот со што се финализира оној карактеристичен Bobber стил и изглед."
           },
           {
-            "title": "Направен за Вас",
-            "desc": "No two riders are the same, so you can personalize your Tiger Sport 660 with a choice of three special colors and graphics and over 40 genuine Triumph accessories. From built-in luggage to a central case that holds 2 helmets, you'll be inspired by the options to suit your adventure. When everyday flexibility is your goal, you shouldn't be left behind. The bike is designed with the rider in mind - make it your own."
+            "title": "Комфорт на Високо Ниво",
+            "desc": "Speedmaster серијата е позаната по својата комфортна и релаксирана возачка позиција која може уште повеќе да се подобри со „Comfort“ седиштата кои нуди дополнителна потпора и комфорт. Управувањето на Speedmaster беше дополнително унапредено во 2021 година со подобрување на суспензијата (Showa 47mm напред), сопирачките (Brembo & Nissin) и намалување на вкупната тежина за 4 килограми. Со својот тенок струк, високи перформанси, сопирачки, пневматици и специјално дизајнираната рамка која дозволува минимална висина на седиштето од 705мм, Speedmaster серијата е лесна за возење и преубава на изглед.",
+            "image": "/images/classics/speedmaster/speedmasterReasons2.avif"
           },
           {
-            "title": "Модерна Технологија",
-            "desc": "The Speed ​​400 is equipped with technology designed to improve every ride. The Torque Assist Clutch is an intelligent system that reduces the force on the clutch lever to improve ease of use and rider comfort when stopping/starting, and reducing travel fatigue. wheel for greater performance and safety.."
+            "title": "Најнова технологија за повеќе сигурност и контрола",
+            "desc": "Speedmaster серијата е многу повеќе од само класичен изглед односно на себе ја носи најновата технологија во индустријата со цел да се подобри сигурноста, контролата и уживањето. Со цел да се подобри сигурноста оваа серија нуди два мода на работа - за дожд и за пат кои го променуваат мапирањето на моторот, го контролираат системот за пролизгување и апликацијата на гас, а за да се овозможи и максимален комфорт тука е и темпоматот кој ќе ја одмори вашата десна дланка. Серијата е опремена со целосна LED расвета и дневни LED светла кои насебе го носат Triumph амблемот. Поновите модели на себе носат и луксузна Triumph рамка која го опколува мултифункционалниот дисплеј чии менија се пристапуваа со допир на копчиња на рачките со што лесно можете да ги промените поставките како и јасно да ги следите сите важни информации."
+          },
+          {
+            "title": "Персонализација",
+            "desc": "Со повеќе од 79 оригинални Triupmh аксесоари на располагање, Bonneville Speedmaster серијата е спремна за персонализирање. Понудата се состои од аксесоари кои ќе го подобрат комфортот, багаж, греачи на рачки, седишта и разни ситни детали кои ќе додадат уште малку стил и персонален допир на вашиот мотор. Кога е во прашање сигурноста од најлошото Triumph ви обезбедува и разни сигурносни уреди кои ќе ве остават спокојни секогаш."
           }
         ]
       },
       "accessory": {
         "banner": {
-          "image": "/images/classics/speed400/speed400AccessoryBanner.avif"
+          "image": "/images/classics/speedmaster/speedmasterTopSectionImageBG.avif"
         },
         "infoText": {
-          "title": "Додајте ваш белег врз Speed 400",
-          "desc": "На располагање ви е селекција од преку 20 оригинални Triupmh аксесоари за оваа серија на мотори. Аксесоарите кои ќе ги додадете може да бидат додадени на вашиот мотор во фабриката. Aксесоарите се дизајнирани од истиот тим кој го креираше Speed 400 и доаѓаат со две-годишна гаранција."
+          "desc": "Дизајниран со многу внимание на детали, Bonneville Speedmaster е спремен за ваша персонализација. На располагање ви е селекција од преку 75 оригинални Triupmh аксесоари за оваа серија на мотори. Аксесоарите кои ќе ги додадете може да бидат додадени на вашиот мотор во фабриката. Aксесоарите се дизајнирани од истиот тим кој го креираше Speedmaster и доаѓаат со две-годишна гаранција."
         },
         "accessoryTypes": [
           {
-            "title": "Стил и Комфорт",
-            "desc": "Choose from a range of parts that will make the Speed ​​400 just the way you want it. Direct replacement bullet turn signals a subtle new look and premium touch with their satin black body and machined aluminum bezels.. Or maybe you want to remodel the tank with different knee pads? A comfortable saddle with a stitched and quilted finish makes a style statement and, together with plug and play heated grips, offers luxury on longer rides..",
-            "itemsList": [
-              "Bullet type LED flash",
-              "Штитници за колена",
-              "Комфортно Седло"
-            ],
+            "title": "Практичност и Стил",
+            "desc": "Speedmaster нуди прекрасно изработен багаж, и нуди можности истиот да го монтирате на десната или на левата страна или најдобро и на двете. Самите торби се изработени од кожа и од памук како и стилизирани метални елементи. Индивидуални лајсни за монтирање се финиширани се хромирани и се дизајнирани перфектно да се вклопат во линиите на моторот. Торбите за багаж додаваат 13.8 литри доплнителен простор за багаж и на двете страни од моторот па затоа не треба да се грижите и треба да понесете се што ви е потребно за безгрижна авантура.",
             "image1": {
-              "src": "/images/classics/speed400/speed400SAccesoryStyleImage1.avif",
-              "alt": "Speed 400 On The Road"
-            },
-            "image2": {
-              "src": "/images/classics/speed400/speed400AccessoryStyleImage2.avif",
-              "alt": "Speed 400 PaintJob"
+              "src": "/images/classics/speedmaster/speedmasterAccess1.avif",
+              "alt": "Speedmaster Luggage"
             }
           },
           {
-            "title": "Багаж",
-            "desc": "A full range of Speed ​​400-specific luggage has been created to add some practicality to the fun. The Speed ​​400 is the perfect touring bike, and outfitting it to handle your load really couldn't be easier. Choose from sturdy side or rigid and semi-rigid panniers, each with their own special mounting system or, for those who prefer to travel light, a simple luggage rack, nylon tank bag or roll-on bag could be the perfect choice .",
-            "itemsList": [
-              "Цврсти Куфери за Багаж",
-              "Држач за Багаж",
-              "Најлонска торба за на резервоар",
-              "Најлонска Торба Roll "
-            ],
+            "title": "Комфорт",
+            "desc": "Надоградете го сопатничкото седиште со додавање перниче за потпирање. Истото ќе изнуди поголема самодоверба, уживање и ќе придонесе за поголемо ниво на комфорт за сопатникот. Дизајнирано за да ја подобри ергономија ова седиште е изработено со оној препознатлив Speedmaster стил на ум. Како темел на целото седеиште е хромираната рамка која потполно се вклопува во дизајнот и силуетата на Speedmaster серијата.",
             "image1": {
-              "src": "/images/classics/speed400/speed400AccessoryLuggageImage.avif",
-              "alt": "Speed 400 Luggage"
-            }
-          },
-          {
-            "title": "Заштита ",
-            "desc": "Both your protection from the elements and that of the Speed ​​400 have been taken care of. A visor with a special fitting kit is also available to deflect the wind to reduce rider fatigue on longer rides. Easy to fit and with style to match, it's a must-have addition for distance riders.To keep the Speed ​​400 out of harm's way on rougher roads, there's an aluminum skid plate, a radiator guard and a headlight mask, which comes with its own bezel for easy fitting, and offers excellent protection from rocks and debris. All-weather riders may want to add the mudguard kit which consists of front and rear mudguard extensions and a rear wing. These combine nicely to protect against water spray and extend the life of the rear shock in extreme conditions.Upper and lower engine guards are also available — these provide excellent protection against drops and spills, a must-have addition for city and country driving.",
-            "itemsList": [
-              "Гелатин",
-              "Заштита за ладник",
-              "Решетка за светло",
-              "Алуминиумска заштита",
-              "Заштита од Кал",
-              "Цевки за Заштита на Мотор (Горни и Долни)"
-            ],
-            "image1": {
-              "src": "/images/classics/speed400/speed400AccessoryProtectionImage1.avif",
-              "alt": "Speed 400 Head"
+              "src": "/images/classics/speedmaster/speedmasterAccess2.avif",
+              "alt": "Speedmaster"
             },
             "image2": {
-              "src": "/images/classics/speed400/speed400AccessoryRadiatorProtection.avif",
-              "alt": "speed 400 Accessory Radiator Protection"
+              "src": "/images/classics/speedmaster/speedmasterAccess3.avif",
+              "alt": "Speedmaster Seat"
             }
           }
         ]
@@ -3907,19 +3877,19 @@
         },
         "subFamilyHeroVideo": {
           "src": "/images/classics/speedmaster/speedmasterHeroVideo.webm",
-          "alt": "Scrambler 1200 Range Model Image"
+          "alt": "SpeedMaster Range Model Image"
         },
         "subFamilyHeroImageMobile": {
           "src": "/images/classics/speedmaster/speedmasterMobileHero.avif",
-          "alt": "Scrambler 1200 Range Hero Image"
+          "alt": "SpeedMaster Range Hero Image"
         },
         "subFamilyTopSectionImage": {
           "src": "/images/classics/speedmaster/speedmasterTopSectionImage.avif",
-          "alt": "Scrambler 1200 Range Model Image Top Section Image"
+          "alt": "SpeedMaster Range Model Image Top Section Image"
         },
         "subFamilyTopSectionBGImage": {
-          "src": "/images/classics/speedmaster/scrambler1200TopSectionImageBG.avif",
-          "alt": "Scrambler 1200 Range Model Image Top Section Image BG"
+          "src": "/images/classics/speedmaster/speedmasterTopSectionImageBG.avif",
+          "alt": "SpeedMaster Range Model Image Top Section Image BG"
         }
       }
     },
