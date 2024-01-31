@@ -76,13 +76,13 @@ const MotorcycleInfo = ({ bike }: MotorcycleInfoProps) => {
                 text={"Конфигурирај"}
                 bgBlack={false}
                 isLink={true}
-                link={`/configure/bike/${bike[0]?.model}`}
+                link={`/configure/bikes/${bike[0]?.subFamilyName}`}
               />
               <MainBtn
                 text={"Детали"}
                 bgBlack={true}
                 isLink={true}
-                link={`/motorcycles/${bike[0]?.category}/${bike[0]?.subFamilyCategory}`}
+                link={`/motorcycles/${bike[0]?.familyType}/${bike[0]?.subFamilyName}`}
               />
             </>
           )}
