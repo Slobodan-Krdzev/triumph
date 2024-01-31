@@ -4476,13 +4476,11 @@
           },
           {
             "title": "Перформанси",
-            "desc": "Bonneville моторот од 900cc произведува возбудлива сила и одличен обртен момент (65 PS @ 7,250 rpm & 80 Nm @ 3,250 rpm) и истите ги пренесува во предвидливи манири. Овој мотор е водно ладен и е почист, поекономичен и EURO 5 компитабилен. Истиот го испорачува оној препознатлив Bonnbeville британски звук.",
-            "image": "/images/classics/speedTwin1200/speedTwin1200Reasons2.avif"
+            "desc": "Bonneville моторот од 900cc произведува возбудлива сила и одличен обртен момент (65 PS @ 7,250 rpm & 80 Nm @ 3,250 rpm) и истите ги пренесува во предвидливи манири. Овој мотор е водно ладен и е почист, поекономичен и EURO 5 компитабилен. Истиот го испорачува оној препознатлив Bonnbeville британски звук."
           },
           {
             "title": "Капацитети",
-            "desc": "Светски реномираните Brembo сопирачки оддаваат одлично чувство при сопирање и будат чувство на самодоверба кај возачот. Одличната суспензија се карактеризира со висока предна вилушка со традиционални гумени заштитни ракави додека задната суспензија е составена од темно сивкаст амортизер кој овозможува еластичност до 120мм на задниот дел на моторот со што обезбедува комфортно патување.",
-            "image": "/images/classics/speedTwin1200/speedTwin1200Reasons3.avif"
+            "desc": "Светски реномираните Brembo сопирачки оддаваат одлично чувство при сопирање и будат чувство на самодоверба кај возачот. Одличната суспензија се карактеризира со висока предна вилушка со традиционални гумени заштитни ракави додека задната суспензија е составена од темно сивкаст амортизер кој овозможува еластичност до 120мм на задниот дел на моторот со што обезбедува комфортно патување."
           },
           {
             "title": "Ергономија и Контрола",
@@ -4490,57 +4488,46 @@
           },
           {
             "title": "Достапност и Забава",
-            "desc": "А2 сетот нуди моѓност вашиот Scrambler да го возите со А2 лиценца односно ги намалува перформансите на моторот и го прави достапен и за возачите - почетници. Сетот може многу лесно да биде вграден и осдтранет во секој Triumph центар. Две годишната (16.000км ) гаранција е тука за да возите спокојно."
+            "desc": "А2 сетот нуди моѓност вашиот Scrambler да го возите со А2 лиценца односно ги намалува перформансите на моторот и го прави достапен и за возачите - почетници. Сетот може многу лесно да биде вграден и осдтранет во секој Triumph центар. Две годишната (16.000км ) гаранција е тука за да возите спокојно.",
+            "image": "/images/classics/scrambler900/scrambler900Reasons2.avif"
           },
           {
             "title": "Технологија",
-            "desc": "."
+            "desc": "Технологија од најновата генерација е тука за да го оптимизира вашето возачко искуство. Одберете помеѓу трите возачки мода - (Road, Dain & Off-Road) со притискање на команди на волан и возете безгрижно бидејки овие модови ги оптимизираат перформансите на моторот. ABS и системот за пролизгување ќе ви дадат дополнителна доза на самодоверба и во нивни раце ќе се чувствувате безбедно."
+          },
+          {
+            "title": "Тркала и Пневматици",
+            "desc": "Како завршен детал на силиетата на Scrambler 900 серијата се наоѓаат тркалата од 19 инчи напред и 17 инчи назад кои носат Metzeler Tourance dual-use пневматици кои даваат одлично ниво на тракција на патиштата и надвор од нив."
+          },
+          {
+            "title": "Аксесоари",
+            "desc": "Со повеќе од 120 оригинални Triupmh аксесоари на располагање, Scrambler 900 серијата е спремна за персонализирање. Понудата се состои од аксесоари кои ќе го подобрат комфортот, сигурноста, заштитата, стилот и ќе додадат уште маллку персонален допир на вашиот мотор. Кога е во прашање сигурноста од најлошото Triumph ви обезбедува и разни сигурносни уреди кои ќе ве остават спокојни секогаш."
           }
         ]
       },
       "accessory": {
         "banner": {
-          "image": "/images/classics/speedTwin1200/speedTwinReasonsBanner.avif"
+          "image": "/images/classics/scrambler900/scrambler900AccessBanner.avif"
+        },
+        "infoText": {
+          "desc": "Со повеќе од 120 оригинални Triupmh аксесоари на располагање, Scrambler 900 серијата е спремна за персонализирање. Понудата се состои од аксесоари кои ќе го подобрат комфортот, сигурноста, заштитата, стилот и ќе додадат уште малку персонален допир на вашиот мотор. Кога е во прашање сигурноста од најлошото Triumph ви обезбедува и разни сигурносни уреди кои ќе ве остават спокојни секогаш."
         },
         "accessoryTypes": [
           {
-            "title": "Заштита",
-            "desc": "Протектор за Мотор - Класичен сил и одлична заштита од несакани предмети и падови, овој челичен рам доаѓа во сјаен или графитно црн или сив финиш. Без разлика на изборот на бојата сигурноста е загарантирана. Дополнителните протектори се инсталираат за помалку од 20 минути и нудат одлична заштита од посилни удари. За вашиот резервоар да не претрпува гребаници од вашите колена тука е и штитниците за резервоар кои се монтираат странично на резервоарот и нудат одлична заштита но додаваат и малку стил.",
-            "image1" : {
-              "src": "/images/classics/speedTwin1200/speedTwinAccess1.avif",
-              "alt": "speed Twin 1200 "
-            },
-            "image2": {
-              "src": "/images/classics/speedTwin1200/speedTwinAccess2.avif",
-              "alt": "speed Twin 1200 "
-            }
+            "title": "Комфорт",
+            "desc": "За највисоко ниво на комфорт и стил тука е рамното седиште. Достапно во црна и кафеава боја, ова традиционално двојно Scrambler седиште се карактеризира со детални шевови и Triumph логоа како и специјално изработена порница за подобра распределба на тежината што оддава поголемо ниво на комфорт за подолги патувања."
           },
           {
-            "title": "Изглед",
-            "desc": "Кружните ретровизори се одлична замена за стандардните. Инсталацијата трае помалку од 30 минути а како резултат ќе добиете импресивен изглед со цврсти, високо-квалитетни елементи. Рачно Шиено Седиште - Додајте класичен Tirumph карактер со ова рачно изработено и прецизно сошиено седиште кое гордо го носи Triumph амблемот. Исто така го подобрува нивото на комфорт. Машински изработен држач за светло - овој дискретен и елегантен детал додава уште малку стил и го дава оној vintage изглед.",
-            "itemsList": [
-              "Кружни Ретровизори",
-              "Рачно Изработено Седиште",
-              "Машиснки изработен држач за светло",
-              "Заштитна плоча на долен дел од мотор"
-            ],
-            "image1": {
-              "src": "/images/classics/speedTwin1200/speedTwinAccess3.avif",
-              "alt": "speed Twin 1200 "
-            },
-            "image2": {
-              "src": "/images/classics/speedTwin1200/speedTwinAccess4.avif",
-              "alt": "speed Twin 1200 "
-            }
+            "title": "Персонализација",
+            "desc": "Дополнително персонализрајте го вашиот Scrambler 900 со „Adjustable Levers“ сетот со кој ги заменувате стандардните полуги за кочници и квачило. Овој сет е CNC изграваран од алуминиум и доаѓа во две бои црна или црвена. Заедно со дополнителниот црн или сив волан оваа е одлична комбинација која мора да ја имате на вашиот Scrambler 900. Друга опција е „Fender Kit“ кој ги одстранува стандардните браници, додава екстра стил на држачите за регистарски таблички и нуди опција за монтирање на мултифункционалниот заден комплет LED светла и LED трепкачи."
           },
           {
-            "title": "Електрика",
-            "desc": "Мултифункционален Светлосен Сет - задниот дел на Speed Twin серијата го краси комплетен сет светла кои додаваат минамилистички стил со стандардна функционалност. Сетот потполно ги заменува стандардните светлосни елемнти на задниот дел од моторот а со посветениот алуминиумски рам за монтирање додава дополнител стил. LED трепкачи - совршен комплет доколку барате уште нешто ситно што ќе додаде малку карактер. Сетот се состои од алуминиумски држач, сјајно црно тело во форма на куршум и сјајни лупи. Истиот е достапен во различни големини може да биде искомбиниран со мултифункционалниот светлосен сет и е лесен за вградување.",
-            "itemsList": [
-              "Мултифункционален Светлосен Сет",
-              "LED трепкачи",
-              "TPMS - Систем за мониторинг на притисок во пневматиците"
-            ]
+            "title": "Суспензија",
+            "desc": "За да добиете уште помоќен off-road карактер на располагање ви стои и FOX задната суспензија која лесно се подесува кон вашите преференци. Ова парче е специјално изработено за Scrambler 900 серијата и се вградува за помалку од 30 минути. Fox сетот нуди 24 опции за подесување на задната суспензија."
+          },
+          {
+            "title": "Off-Road опрема",
+            "desc": "Бидејки Scrambler 900 серијата е наменета и за off-road авантури, тука се и неколкуте специјализирани off-road парчиња, како - штитник за мотор кој ги држи понастрана несканите тврди предмети од моторот и додава off-road изглед Централната ногарка е тука за кога ви е потребно брзо и лесно паркирање како и повеќе опции за багаж."
           }
         ]
       },
@@ -4579,101 +4566,314 @@
       "url": "/motorcycles/classics/bonneville-t100",
       "shortDesc": "T100 е модерен класик. Доаѓа како наследик на Bonneville '59 со сега веќе перфектни финиши и детали.",
       "subFamilyPageInfo": {
-        "desc1": ""
+        "heroSlogans": ["Автентичен", "Моќен", "Преубав"],
+        "topSection": {
+          "title": "Автентичен за Секого",
+          "desc": "Безвремеснки стил, возбудливи перформанси и инспиративен. Т100 серијата е перфектен начин да се запознаете со Bonneville фамилијата.",
+          "subtitle": "Bonneville T100 е модерен класик со уште подобри перформанси, високи спецификации и уште повеќе стил."
+        },
+        "fullSpecs": {
+          "engineTransmission": [
+            {
+              "title": "Мотор",
+              "desc": "Дво-Цилиндричен „in-line“, 8-вентили, 2ЕЕК, водно ладење"
+            },
+            {
+              "title": "капацитет",
+              "desc": "900 cc"
+            },
+            {
+              "title": "диаметар",
+              "desc": "84.6 mm"
+            },
+            {
+              "title": "рута",
+              "desc": "80 mm"
+            },
+            {
+              "title": "компресија",
+              "desc": "11.0:1"
+            },
+            {
+              "title": "Мах. Коњски Сила",
+              "desc": "65 PS @ 7250 rpm"
+            },
+            {
+              "title": "Мах. Обртен Момент",
+              "desc": "80 Nm @ 3250 rpm"
+            },
+            {
+              "title": "Систем за убризгување",
+              "desc": "Electronic multi-point injection"
+            },
+            {
+              "title": "Систем за Издувни гасови",
+              "desc": "Brushed Stainless Steel Dual Casing 2 into 2 Exhaust System with Brushed Stainless Steel Tailpipes"
+            },
+            {
+              "title": "Финална Трансмисија",
+              "desc": "Chain"
+            },
+            {
+              "title": "Квачило",
+              "desc": "Fluid, multi-disc, torque assisted"
+            },
+            {
+              "title": "Менувачка Кутија",
+              "desc": "5 брзини"
+            }
+          ],
+          "frame": [
+            {
+              "title": "шасија",
+              "desc": "тубуларна челична шасија"
+            },
+            {
+              "title": "вилушка",
+              "desc": "Двојна Челична Вилушка"
+            },
+            {
+              "title": "предно тркало",
+              "desc": "18” x 2.75” - 32 жични тркала"
+            },
+            {
+              "title": "задно тркало",
+              "desc": "17 x 4.25‘ - 32 жични тркала"
+            },
+            {
+              "title": "предна гума",
+              "desc": "100/90-18"
+            },
+            {
+              "title": "задна гума",
+              "desc": "150/70 R17"
+            },
+            {
+              "title": "предна суспензија",
+              "desc": "41mm"
+            },
+            {
+              "title": "задна суспензија",
+              "desc": "Double shock absorbers with adjustable preload"
+            },
+            {
+              "title": "предни сопирачки",
+              "desc": "Single 310mm, Brembo, ABS"
+            },
+            {
+              "title": "задна сопирачка",
+              "desc": "255mm single, Nissin, ABS"
+            },
+            {
+              "title": "инструментна плочка",
+              "desc": "Двојни аналогни брзинометар и тахометри со мулти функционален LCD дисплеј"
+            }
+          ],
+          "dimension": [
+            {
+              "title": "ширина на волан",
+              "desc": "780 mm"
+            },
+            {
+              "title": "висина без ретровизори",
+              "desc": "1100 mm"
+            },
+            {
+              "title": "Висина на Седиште",
+              "desc": "790 mm"
+            },
+            {
+              "title": "мегу-осовинско растојание ",
+              "desc": "1450 mm"
+            },
+            {
+              "title": "Custer Corner",
+              "desc": "25.5 º"
+            },
+            {
+              "title": "Trace",
+              "desc": "104 mm"
+            },
+            {
+              "title": "Тежина",
+              "desc": "104 kg"
+            },
+            {
+              "title": "капацитет на резервоар",
+              "desc": "14.5 L"
+            }
+          ],
+          "fuelConsumption": [
+            {
+              "title": "Потрошувачка",
+              "desc": "4.1 l/100km"
+            },
+            {
+              "title": "CO2 загадување",
+              "desc": "95 g/km EURO 5"
+            }
+          ],
+          "serivce": [
+            {
+              "title": "Сервисен Интервал",
+              "desc": "16 000 км / 12 месеци"
+            }
+          ]
+        },
+        "grayCarousell": [
+          {
+            "id": "carouselItem1",
+            "title": "Голема Моќ и Високи Перформанси",
+            "desc": "Подкрепнат од Bonneville HT 900cc (EURO 5) мотор, со одличен обртен момент и со плус 10 коњски сили, респонзивност и помалку загадување.",
+            "image": "/images/classics/bonnevilleT100/bonnevilleT100Caro1.avif"
+          },
+          {
+            "id": "carouselItem2",
+            "title": "Високи Ниво на Опрема",
+            "desc": "Суспензија од високо ниво и Brembo сопирачките даваат одлично чувство при забрзување и сопирање за уште покомфортно патување.",
+            "image": "/images/classics/bonnevilleT100/bonnevilleT100Caro2.avif"
+
+          },
+          {
+            "id": "carouselItem3",
+            "title": "Технологија",
+            "desc": "Најновата технологија, одлично инкорпорирана во класичните линии на Bonneville T100 - ABS, систем за пролизгување и лесно квачило.",
+            "image": "/images/classics/bonnevilleT100/bonnevilleT100Caro3.avif"
+
+          },
+          {
+            "id": "carouselItem4",
+            "title": "Безвременски Стил",
+            "desc": "Носејки го оној безвременски Bonneville стил, Т100 серијата се карактеризира со софистицирани детали со мат црн мотор и нова инструментална табла која одлично се вклопува во стилот на Bonneville T100.",
+            "image": "/images/classics/bonnevilleT100/bonnevilleT100Caro4.avif"
+
+          },
+          {
+            "id": "carouselItem5",
+            "title": "Персонализација",
+            "desc": "Со повеќе од 117 оригинални Triupmh аксесоари на располагање, Т100 серијата е спремна за персонализирање. Понудата се состои од аксесоари кои ќе го подобрат комфортот, сигурноста, заштитата, стилот и ќе додадат уште маллку персонален допир на вашиот мотор. Секое парче доаѓа со 24 месечна гаранција..",
+            "image": "/images/classics/bonnevilleT100/bonnevilleT100Caro5.avif"
+
+          }
+        ],
+        "specNumbers": [
+          { "data": "900", "info": "cc Мотор" },
+          { "data": "80", "info": "Nm обртен момент" },
+          { "data": "65", "info": "PS - Максимална Сила" },
+          { "data": "117", "info": "Дополнителни Аксесоари" }
+        ],
+        "youtubeVideosCarousellItems": [
+          {
+            "src": "https://www.youtube.com/embed/JdxdTu5ejf4",
+            "title": "Bonneville T100 Youtube Promo Video"
+          },
+          {
+            "src": "https://www.youtube.com/embed/uGT-PKMSML4",
+            "title": "Bonneville T100 Youtube Promo Video"
+          },
+          {
+            "src": "https://www.youtube.com/embed/DFPZcQjEdg",
+            "title": "Bonneville T100 Youtube Promo Video"
+          },
+          {
+            "src": "https://www.youtube.com/embed/W11Zkx35eGg",
+            "title": "Bonneville T100"
+          }
+        ],
+        "audioSection": {
+          "title": "Легендарен Bonneville Тон",
+          "desc": "Уникатен длабок дво-цилиндричен Triumph звук.",
+          "audio": "/images/classics/bonnevilleT100/bonT100Audio.mp3"
+        }
       },
       "reasonsToDrive": {
         "banner": {
-          "image": "/images/classics/speed400/speed400ReasonsBanner.avif"
+          "image": "/images/classics/bonnevilleT100/t100ReasonsBanner.avif"
         },
         "infoText": {
-          "title": "зошто баш Speed 400 !?",
-          "desc": "Време е да се разбудите од досадните соништа со Tiger Sport 660. Ова е најпристапниот мотор од Tiger фамилијата на Triumph и е спремен за секојдневни авантури.Tiger Sport 660 е дизајниран да ги надмине вашите очекувања, од авантуристички тури па се до дневни обврски. Кај нас во Triumph се е во знак на возење, а еве и зошто:"
+          "desc": "Сега полесен, со подобри сопирачки и суспензија, повеќе сила и стил - Т100 серијата е перфектен водач кон Bonneville фамилијата. Наменет за искусни и нови возачи, живиот но сепак смирен 900cc мотор испорачува возбуда и препознатлив дво-цилиндарски тон. Модерен со управување кое ви изнудува повеќе самодоверба и со висина на едиште од 790мм, Т100 серијата е спремна да ве однесе било каде ќе посакате и тоа со одлично ниво на комфорт. На располагање ви стојат и дополнителни оригинални Triumph аксесоари."
         },
         "reasons": [
           {
-            "title": "Безвременски и Автентичен Стил",
-            "desc": "Conceived and designed in Hinckley, UK, the Speed ​​400 has been built with the same meticulous attention to detail as every Triumph model. This stunning motorcycle combines timeless design DNA with modern performance. The unmistakable Triumph roadster silhouette, distinctive sculpted fuel tank and classic engine profile echo legends of the past and with exquisite details such as the distinctive cylinder head with radiators, concealed liquid cooling, traditional exhaust header clamps and modern anode muffler, the dazzling blend of retro and modern styling embodies the unique charm of Triumph's famous Modern Classic range.",
-            "image": "/images/classics/speed400/speed400ReasonsStyle.avif"
+            "title": "Bonneville 900cc мотор",
+            "desc": "Популарната Triumph икона, дво-цилиндарскиот Bonneville мотор одлично еволуираше низ години. Сега веќе полесен, со понежно квачило, со нова радалица и со максимална сила од 65PS @ 7,400rpm. Најновата генерација „Ride-By-Wire“ технологија за гас и напредниот систем за вбризгување на гориво го направија овој мотор многу по респонзивен при апликација на гас. Со сервисен интервал од 16 000км и изграден по EURO 5 овој мотор е ефикасен и лесен за одржување."
           },
           {
-            "title": "Нов Мотор",
-            "desc": "The brand new 398cc single cylinder engine. fuel-injected combines modern classic Triumph styling with state-of-the-art technology to deliver 40bhp and 37.5Nm of peak torque with a rich, signature exhaust note from the twin-pipe muffler. Technical features include a four-valve, 2EEK cylinder head and a crankshaft that is perfectly weighted and balanced to optimize inertia for low-speed driving. A rocker arm valvetrain with low reciprocating mass and friction-reducing DLC ​​coatings also contribute to the incredible performance of this nimble yet supple engine. The six-speed gearbox offers a light, precise gear selection with ratios perfectly spread out to get the most out of this exciting, characterful and torque-rich engine. ",
-            "image": "/images/classics/speed400/speed400ReasonsMotorImage.avif"
+            "title": "Одлична контрола врз Моторот",
+            "desc": "Неутралната возачка позиција, агилност, одлично распоредената тежина и со минимална висина на седиштето од 790мм, Т100 серијата е доста лесна за возење, без разлика дали возите на тесни градски средини или отворени патишта. Одличната суспензија нуди извонредно чувство на управување без разлика дали сте сами, со совозач или пак носите багаж. За да се чувствувате уште посигурно тука се Brembo сопирачките и Michelin Road Classic пневматиците создадени специјално за Bonneville сериите.",
+            "image": "/images/classics/bonnevilleT100/bonnevilleT100Reasons1.avif"
           },
           {
-            "title": "Сериозна Забава",
-            "desc": "The Speed ​​400 is all about having fun. The comfortable and attractive riding position gives the ideal balance of weight between the three points of contact for that 'just right' feel, which has become synonymous with Triumph. Riders of all sizes feel right at home on the Speed ​​400 from the very first ride, thanks to the light and compact 398cc engine. and the slim waist makes the 790mm seat height even more approachable, for a confidence-inspiring ride and easy on-the-spot maneuvering.",
-            "image": "/images/classics/speed400/speed400ReasonsFun.avif"
+            "title": "Достапно и за А2 возачка лиценца",
+            "desc": "А2 сетот за деградирање на моторот во А2 категорија е тука за да ги охрабри новите возачи да го изберат Bonneville T100. Истиот сет ги деградира перформансите на моторот и може да биде вграден и одстранет за неколку минути во најблискиот Triumph центар."
           },
           {
-            "title": "Направен за Вас",
-            "desc": "No two riders are the same, so you can personalize your Tiger Sport 660 with a choice of three special colors and graphics and over 40 genuine Triumph accessories. From built-in luggage to a central case that holds 2 helmets, you'll be inspired by the options to suit your adventure. When everyday flexibility is your goal, you shouldn't be left behind. The bike is designed with the rider in mind - make it your own."
+            "title": "Практичност",
+            "desc": "Широката палета на стандардна опрема носи со себе високо ниво на практичност. Лежерната возачка позиција и комфортното седиште на Т100 серијата ќе ве натера да возите подалеку од било кога. Лесното квачило бара помалку напор од страна на возачот со цел да се намали нивото на изтоштеност. За подобрување на сигурноста во клучот е вграден и имобилизатор. USB портата која се наоѓа под седиштето е тука за моментите кога ќе ви затреба но и за дополнителните аксесоари како уреди за навигација и сл. Дополнителни аксесоари се на располагање и се дизајнирани да се вклопат во линиите на Bonneville T100 серијата."
           },
           {
-            "title": "Модерна Технологија",
-            "desc": "The Speed ​​400 is equipped with technology designed to improve every ride. The Torque Assist Clutch is an intelligent system that reduces the force on the clutch lever to improve ease of use and rider comfort when stopping/starting, and reducing travel fatigue. wheel for greater performance and safety.."
+            "title": "Луксузни Финиши и Стил",
+            "desc": "Класичната категорија на мотори на Triumph се карактеризира високо внимание на детали и неверојатно убави финиши. Т100 серијата го носи оној историски стил и дух на Bonneville кој датира од 1595 година. Рефинираните ситни детали се дизајнирани да додадат уште малку стил и да го подобрат изгледот на моторот. Иако ова е класична линија на мотори тоа не значи дека истите не поседуваат модерна технологија. Напротив Т100 серијата на себе носи потполно нова инструмента табла искомбинирана од класични аналогни инструменти и мултифункционален дисплеј кој ве информира за се што ви е потребно. Достапен во повеќе нијанси ( Jet Black, Carnival Red и Lucerne Blue ) и спремен за авантура."
           }
         ]
       },
       "accessory": {
         "banner": {
-          "image": "/images/classics/speed400/speed400AccessoryBanner.avif"
+          "image": "/images/classics/bonnevilleT100/bonnevilleT100AccessBanner.avif"
         },
         "infoText": {
-          "title": "Додајте ваш белег врз Speed 400",
-          "desc": "На располагање ви е селекција од преку 20 оригинални Triupmh аксесоари за оваа серија на мотори. Аксесоарите кои ќе ги додадете може да бидат додадени на вашиот мотор во фабриката. Aксесоарите се дизајнирани од истиот тим кој го креираше Speed 400 и доаѓаат со две-годишна гаранција."
+          "desc": "Со повеќе од 117 оригинални Triupmh аксесоари на располагање, Т100 серијата е спремна за персонализирање. Понудата се состои од аксесоари кои ќе го подобрат комфортот, сигурноста, заштитата, стилот и ќе додадат уште маллку персонален допир на вашиот мотор. Секое парче е изработено од истите дизајнери и инжињери кои го произведуваат Bonneville T100."
         },
         "accessoryTypes": [
           {
-            "title": "Стил и Комфорт",
-            "desc": "Choose from a range of parts that will make the Speed ​​400 just the way you want it. Direct replacement bullet turn signals a subtle new look and premium touch with their satin black body and machined aluminum bezels.. Or maybe you want to remodel the tank with different knee pads? A comfortable saddle with a stitched and quilted finish makes a style statement and, together with plug and play heated grips, offers luxury on longer rides..",
+            "title": "Комфорт и Практичност",
+            "desc": "Одличното управување и релаксирани перформанси ја прават Т100 серијата одличен градски комутер. За уште подобро искуство и со цел да се подигне нивото на практичност додадовме неколку дополнителни аксесоари. Греачите на рачки се есенцијален аксесоар кој ќе ви овозможи повеќе комфорт во секакви временски услови а ималку повеќе луксуз. Дизајнирани специјално за Bonneville серијата, лесно се вклопуваат во мотор и видливо ги претставуваат своите модови на работа на инструментната табла. Централен Куфер - Лесен за монтирање и демонтирање со свое сопствено лежиште за монтирање ова парче е наменето за они кој сакаат да патуваат. Изработено од полипропилен нуди капацитет од 3 литри и штити вашите драгоцени предмети од вода, прашина и сл.",
             "itemsList": [
-              "Bullet type LED flash",
-              "Штитници за колена",
-              "Комфортно Седло"
+              "Греачи на Рачки",
+              "Централен Куфер",
+              "„Horseshoe Lock“ сигурносен уред со лежиште за монтажа"
             ],
             "image1": {
-              "src": "/images/classics/speed400/speed400SAccesoryStyleImage1.avif",
-              "alt": "Speed 400 On The Road"
+              "src": "/images/classics/bonnevilleT100/bonnevilleT100Access1.avif",
+              "alt": "Bonneville 100 On The Road"
             },
             "image2": {
-              "src": "/images/classics/speed400/speed400AccessoryStyleImage2.avif",
-              "alt": "Speed 400 PaintJob"
+              "src": "/images/classics/bonnevilleT100/bonnevilleT100Access2.avif",
+              "alt": "Bonneville 100 PaintJob"
             }
           },
           {
-            "title": "Багаж",
-            "desc": "A full range of Speed ​​400-specific luggage has been created to add some practicality to the fun. The Speed ​​400 is the perfect touring bike, and outfitting it to handle your load really couldn't be easier. Choose from sturdy side or rigid and semi-rigid panniers, each with their own special mounting system or, for those who prefer to travel light, a simple luggage rack, nylon tank bag or roll-on bag could be the perfect choice .",
+            "title": "Сигурност",
+            "desc": "Triumph има своја палета на производи дизајнирани да ве заштитат вас и вашиот Bonneville T100. Анодизираната плоча за заштита на моторот од тврди предмети не само што го прави она за што е наменета туку внесува и трошка стил и го подобрува излгедот на моторциклот. Челичните лајсни го штитат моторот од несакани падови и перфектно се вклопуваат со линиите на моторот. ",
             "itemsList": [
-              "Цврсти Куфери за Багаж",
-              "Држач за Багаж",
-              "Најлонска торба за на резервоар",
-              "Најлонска Торба Roll "
+              "Алуминиумска плочка за мотор",
+              "Engine Protection Kit",
+              "Лајсни за заштита на моторот"
             ],
             "image1": {
-              "src": "/images/classics/speed400/speed400AccessoryLuggageImage.avif",
-              "alt": "Speed 400 Luggage"
+              "src": "/images/classics/bonnevilleT100/bonnevilleT100Access3.avif",
+              "alt": "Bonneville 100 On The Road"
+            },
+            "image2": {
+              "src": "/images/classics/bonnevilleT100/bonnevilleT100Access4.avif",
+              "alt": "Bonneville 100 PaintJob"
             }
           },
           {
-            "title": "Заштита ",
-            "desc": "Both your protection from the elements and that of the Speed ​​400 have been taken care of. A visor with a special fitting kit is also available to deflect the wind to reduce rider fatigue on longer rides. Easy to fit and with style to match, it's a must-have addition for distance riders.To keep the Speed ​​400 out of harm's way on rougher roads, there's an aluminum skid plate, a radiator guard and a headlight mask, which comes with its own bezel for easy fitting, and offers excellent protection from rocks and debris. All-weather riders may want to add the mudguard kit which consists of front and rear mudguard extensions and a rear wing. These combine nicely to protect against water spray and extend the life of the rear shock in extreme conditions.Upper and lower engine guards are also available — these provide excellent protection against drops and spills, a must-have addition for city and country driving.",
+            "title": "Класичен Стил",
+            "desc": "Одлична палета на производи наменети за персонализација и подобрување на изгледот на вашиот мотор Рамното кафеаво седиште го дава класичниот Bonneville изглед и нуди повисоко ниво на комфорт.",
             "itemsList": [
-              "Гелатин",
-              "Заштита за ладник",
-              "Решетка за светло",
-              "Алуминиумска заштита",
-              "Заштита од Кал",
-              "Цевки за Заштита на Мотор (Горни и Долни)"
-            ],
-            "image1": {
-              "src": "/images/classics/speed400/speed400AccessoryProtectionImage1.avif",
-              "alt": "Speed 400 Head"
-            },
-            "image2": {
-              "src": "/images/classics/speed400/speed400AccessoryRadiatorProtection.avif",
-              "alt": "speed 400 Accessory Radiator Protection"
-            }
+              "Рамно Седиште"
+            ]
+          },
+          {
+            "title": "Оджување",
+            "desc": "Т100 серијата не е само мотор туку и одлична инвестиција па така ќе сакате истата да ја одржувате во најдобар ред. Затоа тука е Triumph Battery Optimizer кој се гриѓи за акомулаторот на моторот а вие ќе бидете сигурни дека вашиот мотор е спремен за авантура. Централно монтираната ногарка е тука за да ви помогне полесно да го исчистите вашиот мотор. Кога сме веќе кај чистењето на моторот тука е и специјално дизајниран Care-Kit изработен во соработка со светски познатиот бренд Muc-Off кој доаѓа со брендираната Triumph торбица со капацитет од 15литри.",
+            "itemsList": [
+              "Triumph Battery Optimizer",
+              "Централна Ногарка",
+              "Muc-Off Комплет за Чистење"
+            ]
           }
         ]
       },
@@ -4684,6 +4884,22 @@
         "modelImage": {
           "src": "/images/classics/bonnevilleT100.png",
           "alt": "Bonneville T100 Speedmaster Range Model Image"
+        },
+        "subFamilyHeroVideo": {
+          "src": "/images/classics/bonnevilleT100/bonnevilleT100HeroVideo.webm",
+          "alt": "Speed Twin 1200 Range Model Image"
+        },
+        "subFamilyHeroImageMobile": {
+          "src": "/images/classics/bonnevilleT100/bonnevilleT100HeroMobile.avif",
+          "alt": "Speed Twin 1200 Range Hero Image"
+        },
+        "subFamilyTopSectionImage": {
+          "src": "/images/classics/bonnevilleT100/bonnevilleT100TopSectionImage.avif",
+          "alt": "bonnevilleT100 Range Model Image Top Section Image"
+        },
+        "subFamilyTopSectionBGImage": {
+          "src": "/images/classics/bonnevilleT100/bonnevilleT100TopSectionImageBG.avif",
+          "alt": "Speed Twin 1200 Range Model Image Top Section Image BG"
         }
       }
     },

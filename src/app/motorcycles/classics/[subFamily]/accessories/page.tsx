@@ -40,8 +40,8 @@ const ClassicsAccesoriesPage = async ({ params }: any) => {
           {bikesData.map((bike: any) => (
             <BikeInfoTextImageBtn
               key={bike.id}
-              title={bike.title}
-              desc={bike.subFamilyPromo.desc}
+              title={bike.title ?? bike.model}
+              desc={bike.subFamilyPromo?.desc ?? `Цени од:€ ${bike.price}.00`}
               ctaBtn={{
                 text: "КОнфигурација",
                 link: `/configure/bike/${bike.model}`,

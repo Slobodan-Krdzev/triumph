@@ -50,7 +50,7 @@ const ClassicsReasonsToRide = async ({ params }: any) => {
             <BikeInfoTextImageBtn
               key={bike.id}
               title={bike.title ?? bike.model}
-              desc={bike.subFamilyPromo?.desc ?? bike.price}
+              desc={bike.subFamilyPromo?.desc ?? `Цени од:€ ${bike.price}.00`}
               ctaBtn={{
                 text: "КОнфигурација",
                 link: `/configure/bike/${bike.model}`,
