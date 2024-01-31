@@ -3902,101 +3902,304 @@
       "url": "/motorcycles/classics/speed-twin-1200",
       "shortDesc": "Модерно-класичен приспособен 'roadster' со динамични способности, целосно лесен за управување, многу напредна технологија, возбудлива испорака на вртежен момент со препознатлив британски звук.",
       "subFamilyPageInfo": {
-        "desc1": ""
+        "heroSlogans": ["Репер", "За", "Перформанси"],
+        "topSection": {
+          "title": "Еволуција на Секое Поле",
+          "desc": "Подобри перформанси, подобрено управување, напредна технологија и врвен стил. Извноредната Speed Twin серија е новиот репер во класата.",
+          "subtitle": "Неспоредливата спортска модерно-класична серија со динамично возачко искуство."
+        },
+        "youtubeVideo": "https://www.youtube.com/embed/YbdA9MwBu5o",
+        "fullSpecs": {
+          "engineTransmission": [
+            {
+              "title": "Мотор",
+              "desc": "Дво-Цилиндричен „in-line“, 8-вентили, 1ЕЕК, водно ладење"
+            },
+            {
+              "title": "капацитет",
+              "desc": "1200 cc"
+            },
+            {
+              "title": "диаметар",
+              "desc": "97.6 mm"
+            },
+            {
+              "title": "рута",
+              "desc": "80 mm"
+            },
+            {
+              "title": "компресија",
+              "desc": "12.1:1"
+            },
+            {
+              "title": "Мах. Коњски Сила",
+              "desc": "100 PS @ 7250 rpm"
+            },
+            {
+              "title": "Мах. Обртен Момент",
+              "desc": "112 Nm @ 4250 rpm"
+            },
+            {
+              "title": "Систем за убризгување",
+              "desc": "Electronic multi-point injection"
+            },
+            {
+              "title": "Систем за Издувни гасови",
+              "desc": "Brushed Stainless Steel Dual Casing 2 into 2 Exhaust System with Brushed Stainless Steel Tailpipes"
+            },
+            {
+              "title": "Финална Трансмисија",
+              "desc": "O ring chain"
+            },
+            {
+              "title": "Квачило",
+              "desc": "Liquid, multi-disc, torque assisted"
+            },
+            {
+              "title": "Менувачка Кутија",
+              "desc": "6 брзини"
+            }
+          ],
+          "frame": [
+            {
+              "title": "шасија",
+              "desc": "тубуларна челична шасија"
+            },
+            {
+              "title": "вилушка",
+              "desc": "Двојна Вилушка"
+            },
+            {
+              "title": "предно тркало",
+              "desc": "17” x 3.5” - лиен алуминиум"
+            },
+            {
+              "title": "задно тркало",
+              "desc": "17 x 5.0‘ - лиен алуминиум"
+            },
+            {
+              "title": "предна гума",
+              "desc": "120/70 ZR17"
+            },
+            {
+              "title": "задна гума",
+              "desc": "160/60 ZR17"
+            },
+            {
+              "title": "предна суспензија",
+              "desc": "Marzocchi inverted fork, 120k travel"
+            },
+            {
+              "title": "задна суспензија",
+              "desc": "Double shock absorbers with adjustable preload, 120 mm rear wheel travel"
+            },
+            {
+              "title": "предни сопирачки",
+              "desc": "Dual 320mm, Brembo М50, ABS"
+            },
+            {
+              "title": "задна сопирачка",
+              "desc": "220mm single, Nissin, ABS"
+            },
+            {
+              "title": "инструментна плочка",
+              "desc": "Двојни аналогни брзинометар со мулти функционален LCD дисплеј"
+            }
+          ],
+          "dimension": [
+            {
+              "title": "ширина на волан",
+              "desc": "778 mm"
+            },
+            {
+              "title": "висина без ретровизори",
+              "desc": "1097 mm"
+            },
+            {
+              "title": "Висина на Седиште",
+              "desc": "809 mm"
+            },
+            {
+              "title": "мегу-осовинско растојание ",
+              "desc": "1413 mm"
+            },
+            {
+              "title": "Custer Corner",
+              "desc": "22.3º"
+            },
+            {
+              "title": "Trace",
+              "desc": "91.5 mm"
+            },
+            {
+              "title": "Тежина",
+              "desc": "216 kg"
+            },
+            {
+              "title": "капацитет на резервоар",
+              "desc": "14.5 L"
+            }
+          ],
+          "fuelConsumption": [
+            {
+              "title": "Потрошувачка",
+              "desc": "5.1 l/100km"
+            },
+            {
+              "title": "CO2 загадување",
+              "desc": "116 g/km EURO 5"
+            }
+          ],
+          "serivce": [
+            {
+              "title": "Сервисен Интервал",
+              "desc": "16 000 км / 12 месеци"
+            }
+          ]
+        },
+        "grayCarousell": [
+          {
+            "id": "carouselItem1",
+            "title": "Подобрено Управување",
+            "desc": "Врвна периферна опрема и високо перформатните пневматици нудат врвно управување.",
+            "image": "/images/classics/speedTwin1200/speedTwin1200Caro1.avif"
+          },
+          {
+            "id": "carouselItem2",
+            "title": "Високо Перфромантен Дво-Цилиндричен Мотор",
+            "desc": "Унапредениот сега EURO 5 компитабилен 1200cc мотор сега уште помоќен, респонзивен и повозбудлив.",
+            "image": "/images/classics/speedTwin1200/speedTwin1200Caro2.avif"
+
+          },
+          {
+            "id": "carouselItem3",
+            "title": "Нови Возачки Програми",
+            "desc": "Дискретно интегрираната технологија ја подобрува сигурноста и уживањето на возачот без да го уништи карактерот на Speed Twin 1200 серијата.",
+            "image": "/images/classics/speedTwin1200/speedTwin1200Caro3.avif"
+
+          },
+          {
+            "id": "carouselItem4",
+            "title": "Луксуз и Стил",
+            "desc": "Модерниот „гол до коска“ стил и присуство сега е подобрено со нови тркала и издувни цевки.",
+            "image": "/images/classics/speedTwin1200/speedTwin1200Caro4.avif"
+
+          },
+          {
+            "id": "carouselItem5",
+            "title": "Уште повеќее Луксузни Детали",
+            "desc": "Големото внимание посветено на деталите ја дефинира премиум завршницата на Speed Twin серијата.",
+            "image": "/images/classics/speedTwin1200/speedTwin1200Caro5.avif"
+
+          }
+        ],
+        "specNumbers": [
+          { "data": "1200", "info": "cc Мотор" },
+          { "data": "112", "info": "Nm обртен момент" },
+          { "data": "100", "info": "PS - Максимална Сила" },
+          { "data": "16,000", "info": "КМ Сервисен Интервал" }
+        ],
+        "youtubeVideosCarousellItems": [
+          {
+            "src": "https://www.youtube.com/embed/KC_E0rSlQdQ",
+            "title": "Speed Twin 1200 Youtube Promo Video"
+          },
+          {
+            "src": "https://www.youtube.com/embed/xAKLb7kCShs",
+            "title": "Speed Twin 1200 Youtube Promo Video"
+          },
+          {
+            "src": "https://www.youtube.com/embed/YbdA9MwBu5o",
+            "title": "Speed Twin 1200 Youtube Promo Video"
+          },
+          {
+            "src": "https://www.youtube.com/embed/ykl3VoGrE6g",
+            "title": "Speed Twin 1200 Youtube Promo Video"
+          }
+        ],
+        "audioSection": {
+          "title": "Препознатлив Звук",
+          "desc": "Дупли нагоре извајани издувни цевки го произведуваат оној препознатлив Speed Twin звук.",
+          "audio": "/images/classics/speedTwin1200/speedTwin1200Sound.mp3"
+        }
       },
       "reasonsToDrive": {
         "banner": {
-          "image": "/images/classics/speed400/speed400ReasonsBanner.avif"
+          "image": "/images/classics/speedTwin1200/speedTwinReasonsBanner.avif"
         },
         "infoText": {
-          "title": "зошто баш Speed 400 !?",
-          "desc": "Време е да се разбудите од досадните соништа со Tiger Sport 660. Ова е најпристапниот мотор од Tiger фамилијата на Triumph и е спремен за секојдневни авантури.Tiger Sport 660 е дизајниран да ги надмине вашите очекувања, од авантуристички тури па се до дневни обврски. Кај нас во Triumph се е во знак на возење, а еве и зошто:"
+          "title": "Репер за перформанси. Еволуција од секакви размери",
+          "desc": "Наградуваната Triumph Speed Twin серија на мотори претрпе неколку значајни редизајни со цел уште повеќе да ја затемели својата позиција во класата. Отсега со подобар мотор, суспензија и сопирачки и лесни тркала."
         },
         "reasons": [
           {
-            "title": "Безвременски и Автентичен Стил",
-            "desc": "Conceived and designed in Hinckley, UK, the Speed ​​400 has been built with the same meticulous attention to detail as every Triumph model. This stunning motorcycle combines timeless design DNA with modern performance. The unmistakable Triumph roadster silhouette, distinctive sculpted fuel tank and classic engine profile echo legends of the past and with exquisite details such as the distinctive cylinder head with radiators, concealed liquid cooling, traditional exhaust header clamps and modern anode muffler, the dazzling blend of retro and modern styling embodies the unique charm of Triumph's famous Modern Classic range.",
-            "image": "/images/classics/speed400/speed400ReasonsStyle.avif"
+            "title": "Надграден 1200cc Мотор",
+            "desc": "Големи надградби на моторот придонесоа за повеќе сила и моќност на истиот со зголемување на максималната сила за 3 коњски сили за да се постигне симболичната бројка од 100 коњски сили. Надоградбите донесоа и повеќе коќност кога е во прашање обртниот момент сега зголемен за 30%. Исто така вкупната тежина е намалена а високата компресија во цилиндрите обезбеди поголема респонзивност. И покрај зголемувањето на максималната јачина сепак овој мотор се грижи и за околината и е EURO 5 компитабилен.",
+            "image": "/images/classics/speedTwin1200/speedTwin1200Reasons1.avif"
           },
           {
-            "title": "Нов Мотор",
-            "desc": "The brand new 398cc single cylinder engine. fuel-injected combines modern classic Triumph styling with state-of-the-art technology to deliver 40bhp and 37.5Nm of peak torque with a rich, signature exhaust note from the twin-pipe muffler. Technical features include a four-valve, 2EEK cylinder head and a crankshaft that is perfectly weighted and balanced to optimize inertia for low-speed driving. A rocker arm valvetrain with low reciprocating mass and friction-reducing DLC ​​coatings also contribute to the incredible performance of this nimble yet supple engine. The six-speed gearbox offers a light, precise gear selection with ratios perfectly spread out to get the most out of this exciting, characterful and torque-rich engine. ",
-            "image": "/images/classics/speed400/speed400ReasonsMotorImage.avif"
+            "title": "Одлично Управување",
+            "desc": "Многуте награди и признанија и големите фан бази на оваа серија се темели токму на лесното, интуитивно и спортско управување на моторите. Дизајнерите на оваа серија имаа само една цел - да дизајнираат мотор за потполно уживање и да го пренесат тој дизајн во еден спортки модерно/класичен мотор. Со предна суспензија од Marzocchi (43mm), Speed Twin 1200 има извонредно комфортно возење и агилност. За да се скроти огромната сила на Speed Twin серијата тука се и Brembo M50 сопирачките со двојни 320 милиметарски дискови напред. Лесните алуминиумски тркала го дополнуваат дизајнот на Soeed Twin серијата. Подкрепени со Metzeler Racetec RR пневматици истите се спремни за било како предизвик.",
+            "image": "/images/classics/speedTwin1200/speedTwin1200Reasons2.avif"
           },
           {
-            "title": "Сериозна Забава",
-            "desc": "The Speed ​​400 is all about having fun. The comfortable and attractive riding position gives the ideal balance of weight between the three points of contact for that 'just right' feel, which has become synonymous with Triumph. Riders of all sizes feel right at home on the Speed ​​400 from the very first ride, thanks to the light and compact 398cc engine. and the slim waist makes the 790mm seat height even more approachable, for a confidence-inspiring ride and easy on-the-spot maneuvering.",
-            "image": "/images/classics/speed400/speed400ReasonsFun.avif"
+            "title": "Изглед",
+            "desc": "Започнувајки од лесните 12 кракни алуминиумски тркала па се до системот на бои и графици, Speed Тwin серијата е обвиткана со стил и ситни детали. Носејки ја со себе безвременската Triumph ДНК и модерниот „naked-custom“ стил, Speed Twin серијата ги привлекува сите погледи. Ситните детали како и металните држачи за светло и браници, алуминиумските браници, излиениот 14.5 литарски резервоат само го комплетираат стилот и линијата на Speed Twin серијата.",
+            "image": "/images/classics/speedTwin1200/speedTwin1200Reasons3.avif"
           },
           {
-            "title": "Направен за Вас",
-            "desc": "No two riders are the same, so you can personalize your Tiger Sport 660 with a choice of three special colors and graphics and over 40 genuine Triumph accessories. From built-in luggage to a central case that holds 2 helmets, you'll be inspired by the options to suit your adventure. When everyday flexibility is your goal, you shouldn't be left behind. The bike is designed with the rider in mind - make it your own."
+            "title": "Модерни Способности",
+            "desc": "Напредната сигурносна технологија е дискретно сместена насекаде низ Speed Twin серијата. На располагање ви се три возачки мода - Дожд, Патнички и Спорт кои го променуваат мапирањето на моторот и работата на системот за пролизгување и ABS. Истите можат да бидат променети со само еден клик на рачките. Лесните за читање инструменти нудат голем број на информации како количина на гориво, степен на пренос,, мод на работа, сервисен индикатор исто така лесни на дофат со ролер за контролирање. Поставен е и систем за имобилизација како и USB порта за вашиот телефон."
           },
           {
-            "title": "Модерна Технологија",
-            "desc": "The Speed ​​400 is equipped with technology designed to improve every ride. The Torque Assist Clutch is an intelligent system that reduces the force on the clutch lever to improve ease of use and rider comfort when stopping/starting, and reducing travel fatigue. wheel for greater performance and safety.."
+            "title": "Достапност",
+            "desc": "Возбудлив за искусните возачи и сигурен за новите возачи. Speed Twin серијата е одлично избалансирана и лесна за возење. Со нејзината тенка силуета и висина на седиштето од 809 милиметри, комфортна позиција на педалите за стапала и волан, Speed Twin серијата нуди релаксирана, исправена возачка позиција која буди самодоверба и удобност."
           }
         ]
       },
       "accessory": {
         "banner": {
-          "image": "/images/classics/speed400/speed400AccessoryBanner.avif"
-        },
-        "infoText": {
-          "title": "Додајте ваш белег врз Speed 400",
-          "desc": "На располагање ви е селекција од преку 20 оригинални Triupmh аксесоари за оваа серија на мотори. Аксесоарите кои ќе ги додадете може да бидат додадени на вашиот мотор во фабриката. Aксесоарите се дизајнирани од истиот тим кој го креираше Speed 400 и доаѓаат со две-годишна гаранција."
+          "image": "/images/classics/speedTwin1200/speedTwinReasonsBanner.avif"
         },
         "accessoryTypes": [
           {
-            "title": "Стил и Комфорт",
-            "desc": "Choose from a range of parts that will make the Speed ​​400 just the way you want it. Direct replacement bullet turn signals a subtle new look and premium touch with their satin black body and machined aluminum bezels.. Or maybe you want to remodel the tank with different knee pads? A comfortable saddle with a stitched and quilted finish makes a style statement and, together with plug and play heated grips, offers luxury on longer rides..",
-            "itemsList": [
-              "Bullet type LED flash",
-              "Штитници за колена",
-              "Комфортно Седло"
-            ],
-            "image1": {
-              "src": "/images/classics/speed400/speed400SAccesoryStyleImage1.avif",
-              "alt": "Speed 400 On The Road"
+            "title": "Заштита",
+            "desc": "Протектор за Мотор - Класичен сил и одлична заштита од несакани предмети и падови, овој челичен рам доаѓа во сјаен или графитно црн или сив финиш. Без разлика на изборот на бојата сигурноста е загарантирана. Дополнителните протектори се инсталираат за помалку од 20 минути и нудат одлична заштита од посилни удари. За вашиот резервоар да не претрпува гребаници од вашите колена тука е и штитниците за резервоар кои се монтираат странично на резервоарот и нудат одлична заштита но додаваат и малку стил.",
+            "image1" : {
+              "src": "/images/classics/speedTwin1200/speedTwinAccess1.avif",
+              "alt": "speed Twin 1200 "
             },
             "image2": {
-              "src": "/images/classics/speed400/speed400AccessoryStyleImage2.avif",
-              "alt": "Speed 400 PaintJob"
+              "src": "/images/classics/speedTwin1200/speedTwinAccess2.avif",
+              "alt": "speed Twin 1200 "
             }
           },
           {
-            "title": "Багаж",
-            "desc": "A full range of Speed ​​400-specific luggage has been created to add some practicality to the fun. The Speed ​​400 is the perfect touring bike, and outfitting it to handle your load really couldn't be easier. Choose from sturdy side or rigid and semi-rigid panniers, each with their own special mounting system or, for those who prefer to travel light, a simple luggage rack, nylon tank bag or roll-on bag could be the perfect choice .",
+            "title": "Изглед",
+            "desc": "Кружните ретровизори се одлична замена за стандардните. Инсталацијата трае помалку од 30 минути а како резултат ќе добиете импресивен изглед со цврсти, високо-квалитетни елементи. Рачно Шиено Седиште - Додајте класичен Tirumph карактер со ова рачно изработено и прецизно сошиено седиште кое гордо го носи Triumph амблемот. Исто така го подобрува нивото на комфорт. Машински изработен држач за светло - овој дискретен и елегантен детал додава уште малку стил и го дава оној vintage изглед.",
             "itemsList": [
-              "Цврсти Куфери за Багаж",
-              "Држач за Багаж",
-              "Најлонска торба за на резервоар",
-              "Најлонска Торба Roll "
+              "Кружни Ретровизори",
+              "Рачно Изработено Седиште",
+              "Машиснки изработен држач за светло",
+              "Заштитна плоча на долен дел од мотор"
             ],
             "image1": {
-              "src": "/images/classics/speed400/speed400AccessoryLuggageImage.avif",
-              "alt": "Speed 400 Luggage"
+              "src": "/images/classics/speedTwin1200/speedTwinAccess3.avif",
+              "alt": "speed Twin 1200 "
+            },
+            "image2": {
+              "src": "/images/classics/speedTwin1200/speedTwinAccess4.avif",
+              "alt": "speed Twin 1200 "
             }
           },
           {
-            "title": "Заштита ",
-            "desc": "Both your protection from the elements and that of the Speed ​​400 have been taken care of. A visor with a special fitting kit is also available to deflect the wind to reduce rider fatigue on longer rides. Easy to fit and with style to match, it's a must-have addition for distance riders.To keep the Speed ​​400 out of harm's way on rougher roads, there's an aluminum skid plate, a radiator guard and a headlight mask, which comes with its own bezel for easy fitting, and offers excellent protection from rocks and debris. All-weather riders may want to add the mudguard kit which consists of front and rear mudguard extensions and a rear wing. These combine nicely to protect against water spray and extend the life of the rear shock in extreme conditions.Upper and lower engine guards are also available — these provide excellent protection against drops and spills, a must-have addition for city and country driving.",
+            "title": "Електрика",
+            "desc": "Мултифункционален Светлосен Сет - задниот дел на Speed Twin серијата го краси комплетен сет светла кои додаваат минамилистички стил со стандардна функционалност. Сетот потполно ги заменува стандардните светлосни елемнти на задниот дел од моторот а со посветениот алуминиумски рам за монтирање додава дополнител стил. LED трепкачи - совршен комплет доколку барате уште нешто ситно што ќе додаде малку карактер. Сетот се состои од алуминиумски држач, сјајно црно тело во форма на куршум и сјајни лупи. Истиот е достапен во различни големини може да биде искомбиниран со мултифункционалниот светлосен сет и е лесен за вградување.",
             "itemsList": [
-              "Гелатин",
-              "Заштита за ладник",
-              "Решетка за светло",
-              "Алуминиумска заштита",
-              "Заштита од Кал",
-              "Цевки за Заштита на Мотор (Горни и Долни)"
-            ],
-            "image1": {
-              "src": "/images/classics/speed400/speed400AccessoryProtectionImage1.avif",
-              "alt": "Speed 400 Head"
-            },
-            "image2": {
-              "src": "/images/classics/speed400/speed400AccessoryRadiatorProtection.avif",
-              "alt": "speed 400 Accessory Radiator Protection"
-            }
+              "Мултифункционален Светлосен Сет",
+              "LED трепкачи",
+              "TPMS - Систем за мониторинг на притисок во пневматиците"
+            ]
           }
         ]
       },
@@ -4007,6 +4210,22 @@
         "modelImage": {
           "src": "/images/classics/speedTwin1200.png",
           "alt": "Speed Twin 1200 Speedmaster Range Model Image"
+        },
+        "subFamilyHeroVideo": {
+          "src": "/images/classics/speedTwin1200/speedTwin1200HeroVideo.webm",
+          "alt": "Speed Twin 1200 Range Model Image"
+        },
+        "subFamilyHeroImageMobile": {
+          "src": "/images/classics/speedTwin1200/speedTwin1200HeroMobile.avif",
+          "alt": "Speed Twin 1200 Range Hero Image"
+        },
+        "subFamilyTopSectionImage": {
+          "src": "/images/classics/speedTwin1200/speedTwin1200TopSectionImage.avif",
+          "alt": "speedTwin1200 Range Model Image Top Section Image"
+        },
+        "subFamilyTopSectionBGImage": {
+          "src": "/images/classics/speedTwin1200/speedTwin1200TopSectionImageBG.avif",
+          "alt": "Speed Twin 1200 Range Model Image Top Section Image BG"
         }
       }
     },
