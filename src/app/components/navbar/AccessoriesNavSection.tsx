@@ -8,7 +8,7 @@ import { createBikeList } from "../helpers/getLatestBikes";
 export const linkItemsAccessory: NavLinkListingItemsType[] = [
   {
     text: "Конфигурација",
-    link: "/configuration",
+    link: "/configure",
   },
   {
     text: "Оригинален Triumph Багаж",
