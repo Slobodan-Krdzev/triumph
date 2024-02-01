@@ -91,7 +91,7 @@ const AccessoriesNavSection = ({bikes}: AccessoriesNavProps) => {
       />
 
       <NavLinkListing
-        items={createBikeList(bikes) ?? ['Loading...']}
+        items={createBikeList(bikes) ?? []}
         title={"Најнови Модели"}
         bottomLinkText={"Конфигурација"}
         bottomLinkUrl={"/configure"}

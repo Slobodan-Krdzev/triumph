@@ -47,8 +47,8 @@ export const footerLists = [
       },
       {
         id: 13,
-        url: "/owners",
-        text: 'Tvojot "Triumph"',
+        url: "/owners/your-triumph",
+        text: 'Вашиот "Triumph"',
       },
     ],
   },

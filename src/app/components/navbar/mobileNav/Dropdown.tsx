@@ -60,7 +60,7 @@ const Dropdown = ({
   return (
     <>
       <motion.div
-        className="fixed bg top-16 right-0 left-0 z-50 h-screen text-white overflow-y-auto"
+        className="fixed bg top-16 right-0 left-0 z-50 h-screen text-white overflow-y-scroll border"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -20 }}
