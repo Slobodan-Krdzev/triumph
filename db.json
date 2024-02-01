@@ -4912,101 +4912,320 @@
       "url": "/motorcycles/classics/bonneville-t120",
       "shortDesc": "Т120 и Т120 Black се вистински потомци на Bonneville моторите но со модерни перформанси, технологија и можности кои сепак го поседуваат оној автентичен Британски стил и карактер.",
       "subFamilyPageInfo": {
-        "desc1": ""
+        "heroSlogans": ["Автентичен", "Британски", "Амблем"],
+        "topSection": {
+          "title": "Bonneville T120",
+          "desc": "Подобрени перформанси, управување, безвременски дизајн и Bonneville ДНК. Врната британска моторциклистичка легенда сега со уште повеќе Bonneville карактер.",
+          "subtitle": "Врвна Британска Моторциклистичка Легенда."
+        },
+        "fullSpecs": {
+          "engineTransmission": [
+            {
+              "title": "Мотор",
+              "desc": "Дво-Цилиндричен „in-line“, 8-вентили, 1ЕЕК, водно ладење"
+            },
+            {
+              "title": "капацитет",
+              "desc": "1200 cc"
+            },
+            {
+              "title": "диаметар",
+              "desc": "97.6 mm"
+            },
+            {
+              "title": "рута",
+              "desc": "80 mm"
+            },
+            {
+              "title": "компресија",
+              "desc": "10.0:1"
+            },
+            {
+              "title": "Мах. Коњски Сила",
+              "desc": "80 PS @ 6550 rpm"
+            },
+            {
+              "title": "Мах. Обртен Момент",
+              "desc": "105 Nm @ 3500 rpm"
+            },
+            {
+              "title": "Систем за убризгување",
+              "desc": "Electronic multi-point injection"
+            },
+            {
+              "title": "Систем за Издувни гасови",
+              "desc": "Chrome 2-into-2 exhaust system with dual chrome tailpipes"
+            },
+            {
+              "title": "Финална Трансмисија",
+              "desc": "Chain"
+            },
+            {
+              "title": "Квачило",
+              "desc": "Wet, multi-disc, torque assisted"
+            },
+            {
+              "title": "Менувачка Кутија",
+              "desc": "6 брзини"
+            }
+          ],
+          "frame": [
+            {
+              "title": "шасија",
+              "desc": "тубуларна челична шасија"
+            },
+            {
+              "title": "вилушка",
+              "desc": "Двојна Вилушка"
+            },
+            {
+              "title": "предно тркало",
+              "desc": "18” x 2.75” - 32 жични тркала"
+            },
+            {
+              "title": "задно тркало",
+              "desc": "17 x 4.25‘ - 32 жични тркала"
+            },
+            {
+              "title": "предна гума",
+              "desc": "100/90-18"
+            },
+            {
+              "title": "задна гума",
+              "desc": "150/70 R17"
+            },
+            {
+              "title": "предна суспензија",
+              "desc": "41mm"
+            },
+            {
+              "title": "задна суспензија",
+              "desc": "Double shock absorbers with adjustable preload"
+            },
+            {
+              "title": "предни сопирачки",
+              "desc": "Single 310mm, Brembo, ABS"
+            },
+            {
+              "title": "задна сопирачка",
+              "desc": "255mm single, Nissin, ABS"
+            },
+            {
+              "title": "инструментна плочка",
+              "desc": "Двојни аналогни брзинометар и тахометри со мулти функционален LCD дисплеј"
+            }
+          ],
+          "dimension": [
+            {
+              "title": "ширина на волан",
+              "desc": "780 mm"
+            },
+            {
+              "title": "висина без ретровизори",
+              "desc": "1100 mm"
+            },
+            {
+              "title": "Висина на Седиште",
+              "desc": "790 mm"
+            },
+            {
+              "title": "мегу-осовинско растојание ",
+              "desc": "1450 mm"
+            },
+            {
+              "title": "Custer Corner",
+              "desc": "25.5 º"
+            },
+            {
+              "title": "Trace",
+              "desc": "105.2 mm"
+            },
+            {
+              "title": "Тежина",
+              "desc": "236 kg"
+            },
+            {
+              "title": "капацитет на резервоар",
+              "desc": "14.5 L"
+            }
+          ],
+          "fuelConsumption": [
+            {
+              "title": "Потрошувачка",
+              "desc": "4.7 l/100km"
+            },
+            {
+              "title": "CO2 загадување",
+              "desc": "107 g/km EURO 5"
+            }
+          ],
+          "serivce": [
+            {
+              "title": "Сервисен Интервал",
+              "desc": "16 000 км / 12 месеци"
+            }
+          ]
+        },
+        "grayCarousell": [
+          {
+            "id": "carouselItem1",
+            "title": "Безвременска Bonneville ДНК ",
+            "desc": "Еволуирани за новите генерации, денешникте Т120 и Т120 Black модели се модерни икони, со духот на оргининалниот Bonneville од 1959 година.",
+            "image": "/images/classics/bonnevilleT120/bonnevilleT120Caro1.avif"
+          },
+          {
+            "id": "carouselItem2",
+            "title": "Мотор - HT 1200 KEK",
+            "desc": "Препознатливиот Bonneville мотор отсега со нова полесна радалица за повеќе респонзивност и EURO 5 компатибилност.",
+            "image": "/images/classics/bonnevilleT120/bonnevilleT120Caro2.avif"
+
+          },
+          {
+            "id": "carouselItem3",
+            "title": "Контрола",
+            "desc": "Со вкупна тежина 7 килограми пониска од претходната генерација, лесни тркала и Brembo сопирачки, Т120 серијата се карактеризира како агилна и серија која развива самодоверба.",
+            "image": "/images/classics/bonnevilleT120/bonnevilleT120Caro3.avif"
+
+          },
+          {
+            "id": "carouselItem4",
+            "title": "Современа Технологија",
+            "desc": "Одлично вметнатата технологија нуди повеќе возачки мода, софистициран ABS систем и систем за пролизгување како стандард.",
+            "image": "/images/classics/bonnevilleT120/bonnevilleT120Caro4.avif"
+
+          },
+          {
+            "id": "carouselItem5",
+            "title": "Препознатлив Стил",
+            "desc": "Луксузни финиши и додатни финеси како разни алуминиумси беџови и логоа нудат завршница од светски размери",
+            "image": "/images/classics/bonnevilleT120/bonnevilleT120Caro5.avif"
+
+          }
+        ],
+        "specNumbers": [
+          { "data": "1959 год", "info": "Традиција" },
+          { "data": "1200cc", "info": "Κ.ΕΚ мотор" },
+          { "data": "105", "info": "Nm Максимален Обртен Момент" },
+          { "data": "116", "info": "Дополнителни Аксесоари" }
+        ],
+        "youtubeVideosCarousellItems": [
+          {
+            "src": "https://www.youtube.com/embed/3uIUddIayug",
+            "title": "Bonneville T100 Youtube Promo Video"
+          },
+          {
+            "src": "https://www.youtube.com/embed/8UnwjQO-RN0",
+            "title": "Bonneville T100 Youtube Promo Video"
+          },
+          {
+            "src": "https://www.youtube.com/embed/iUb0lNf9t5M",
+            "title": "Bonneville T100 Youtube Promo Video"
+          },
+          {
+            "src": "https://www.youtube.com/embed/DFPZcQjEdgI",
+            "title": "Bonneville T100"
+          },
+          {
+            "src": "https://www.youtube.com/embed/W11Zkx35eGg",
+            "title": "Bonneville T100"
+          }
+        ],
+        "audioSection": {
+          "title": "Легендарен Bonneville Тон",
+          "desc": "Уникатен длабок дво-цилиндричен Triumph звук.",
+          "audio": "/images/classics/bonnevilleT120/bonnevilleT120Audio.mp3"
+        }
       },
       "reasonsToDrive": {
         "banner": {
-          "image": "/images/classics/speed400/speed400ReasonsBanner.avif"
+          "image": "/images/classics/bonnevilleT120/t120ReasonsBanner.avif"
         },
         "infoText": {
-          "title": "зошто баш Speed 400 !?",
-          "desc": "Време е да се разбудите од досадните соништа со Tiger Sport 660. Ова е најпристапниот мотор од Tiger фамилијата на Triumph и е спремен за секојдневни авантури.Tiger Sport 660 е дизајниран да ги надмине вашите очекувања, од авантуристички тури па се до дневни обврски. Кај нас во Triumph се е во знак на возење, а еве и зошто:"
+          "desc": "Безразлика дали сакате да додадете малку динамика во секојдневниот живот или да отпатувате некаде, Bonneville Т120 серијата е тука да ве натера да возите подалеку од вашата дестинација. Легендарната ДНК, премиум и луксузни финиши и детали со модерни перформанси, оваа генерација Bonneville T120 е изработена за максимално возачко искуство."
         },
         "reasons": [
           {
-            "title": "Безвременски и Автентичен Стил",
-            "desc": "Conceived and designed in Hinckley, UK, the Speed ​​400 has been built with the same meticulous attention to detail as every Triumph model. This stunning motorcycle combines timeless design DNA with modern performance. The unmistakable Triumph roadster silhouette, distinctive sculpted fuel tank and classic engine profile echo legends of the past and with exquisite details such as the distinctive cylinder head with radiators, concealed liquid cooling, traditional exhaust header clamps and modern anode muffler, the dazzling blend of retro and modern styling embodies the unique charm of Triumph's famous Modern Classic range.",
-            "image": "/images/classics/speed400/speed400ReasonsStyle.avif"
+            "title": "Bonneville 1200cc мотор",
+            "desc": "Најреспонзивниот Bonneville T120 досега. Редуцирањето на вкупната тежина доведе до одлична респонзивност и острина на Bonneville моторот. Со силен обртен момент овој мотор испорачува 105Nm при само 3,500rpm, со максимална јачина од 80 коњски сили при 6,500Rpm. Моторот е париран со најновата технологија на Ride-By-Wire ситем и нуди одлична комуникација помеѓу дланката на возачот и моторот, што значи дека нуди предвидливи перформанси при секој степен на пренос."
           },
           {
-            "title": "Нов Мотор",
-            "desc": "The brand new 398cc single cylinder engine. fuel-injected combines modern classic Triumph styling with state-of-the-art technology to deliver 40bhp and 37.5Nm of peak torque with a rich, signature exhaust note from the twin-pipe muffler. Technical features include a four-valve, 2EEK cylinder head and a crankshaft that is perfectly weighted and balanced to optimize inertia for low-speed driving. A rocker arm valvetrain with low reciprocating mass and friction-reducing DLC ​​coatings also contribute to the incredible performance of this nimble yet supple engine. The six-speed gearbox offers a light, precise gear selection with ratios perfectly spread out to get the most out of this exciting, characterful and torque-rich engine. ",
-            "image": "/images/classics/speed400/speed400ReasonsMotorImage.avif"
+            "title": "Контрола",
+            "desc": "Препознатливото Triumph искуство сега стана уште подобро. Со намалување на вкупната тежина, Т120 серијата е уште полесна за контролирање и позабавна за возење. Вкупната тежина се намали благодарејки и на лесните 32 жични тркала кои ја прават оваа серија уште поагилна. Со дијаметар од 41мм предната суспензија има слободен пад од 120милиметри. Дуплата суспензија на задниот крај е одлична доколку патувате сами, со сопатник или пак носите багаж. Целокупно, суспензијата го дава оној препознатливо Triumph чувство на контрола врз моторот. За ваша сигурност и сопирање на моторот се грижат Brembo сопирачките (диск од 310 милиметри напред) со вграден ABS систем. На крајот за да се залепите за подлогата тука се Michelin Road Classiс пневматиците специјално изработени за Bonneville фамилијата.",
+            "image": "/images/classics/bonnevilleT120/bonnevilleT120Reasons1.avif"
           },
           {
-            "title": "Сериозна Забава",
-            "desc": "The Speed ​​400 is all about having fun. The comfortable and attractive riding position gives the ideal balance of weight between the three points of contact for that 'just right' feel, which has become synonymous with Triumph. Riders of all sizes feel right at home on the Speed ​​400 from the very first ride, thanks to the light and compact 398cc engine. and the slim waist makes the 790mm seat height even more approachable, for a confidence-inspiring ride and easy on-the-spot maneuvering.",
-            "image": "/images/classics/speed400/speed400ReasonsFun.avif"
+            "title": "Технологија",
+            "desc": "Палета од технолошки направи го прави овој класичен мотор модерен и софистициран. На располагање се повеќе возачки модови, систем за пролизгување, темпомат, ABS систем и истите лесно се ракуваат со контроли на воланот кои се лесно достапни за палецот на возачот. Истите се одлично инкорпорирани во силуетата на Т120."
           },
           {
-            "title": "Направен за Вас",
-            "desc": "No two riders are the same, so you can personalize your Tiger Sport 660 with a choice of three special colors and graphics and over 40 genuine Triumph accessories. From built-in luggage to a central case that holds 2 helmets, you'll be inspired by the options to suit your adventure. When everyday flexibility is your goal, you shouldn't be left behind. The bike is designed with the rider in mind - make it your own."
+            "title": "Практичност",
+            "desc": "Опрема од висок стандард и врвните спецификации го прават овој Triumph мотор екстремно практичен. Комфортното седиште со висина од 790 милиметри и релаксираната возачка позиција, го претвараат секојдневното возење во момент за уживање. Лесното квачило е тука да ви помага при многуте промени на преносот а за дополнителна сигурност вграден е имобилизатор во клучот. Дополнителни елементи како централна ногарка, греачи на рачките, USB порта како и држачи за сопатникот го подобруваат Triumph искуството како за возачот така и за сопатникот"
           },
           {
-            "title": "Модерна Технологија",
-            "desc": "The Speed ​​400 is equipped with technology designed to improve every ride. The Torque Assist Clutch is an intelligent system that reduces the force on the clutch lever to improve ease of use and rider comfort when stopping/starting, and reducing travel fatigue. wheel for greater performance and safety.."
+            "title": "Стил и Луксуз",
+            "desc": "Целата Т120 серија е изработена со неверојатно внимание на детали и луксузни финиши. Сјајните бои и хромирани делови јасно ги истакнуваат сите линии и детали на Т120 серијата. Темно кафеавото седиште и мат црн поклопец на моторот додаваат свој допир кон силуетата и излгедот на Т120 серијата. Финалниот допир го додаваат двете издувни цевки офарбани во црна боја. Кај Black моделот истакнати се темни и софистицирани бои кои даваат потполно смел изглед."
           }
         ]
       },
       "accessory": {
         "banner": {
-          "image": "/images/classics/speed400/speed400AccessoryBanner.avif"
+          "image": "/images/classics/bonnevilleT120/bonnevilleT120AccessBanner.avif"
         },
         "infoText": {
-          "title": "Додајте ваш белег врз Speed 400",
-          "desc": "На располагање ви е селекција од преку 20 оригинални Triupmh аксесоари за оваа серија на мотори. Аксесоарите кои ќе ги додадете може да бидат додадени на вашиот мотор во фабриката. Aксесоарите се дизајнирани од истиот тим кој го креираше Speed 400 и доаѓаат со две-годишна гаранција."
+          "desc": "Иако сите ние ја имаме истата пасија за мотори, сите сме различни во поглед на стил и возачки амбиции. Со широка палета на Triumph аксесоари секогаш ќе најдете некое парче кое дополнително ќе го подобри вашето Triumph искуство. Без разлика дали барате багаж, елементи за надградба на суспензија или пак нешто што ќе го чува вашиот мотор сигурен, сигурни сме дека ќе најдете нешто што ќе го направи вашиот Bonneville само ваш. На располагање се 116 оригинални Triumph аксесоари."
         },
         "accessoryTypes": [
           {
             "title": "Стил и Комфорт",
-            "desc": "Choose from a range of parts that will make the Speed ​​400 just the way you want it. Direct replacement bullet turn signals a subtle new look and premium touch with their satin black body and machined aluminum bezels.. Or maybe you want to remodel the tank with different knee pads? A comfortable saddle with a stitched and quilted finish makes a style statement and, together with plug and play heated grips, offers luxury on longer rides..",
+            "desc": "Комфорт и искористливост се едни од особините на Bonneville, па затоа на располагање се уште неколку аксесоари кои ќе ја направат вашата авантура да биде подолга и незаморувачка. Ветробранско стакло кое се инсталира за минута и го заштитува возачот од силниот ветер на автопатот. Кожните куфери и торбата за резервоар комбинираат стил од шеесетите со модерна практичност. Со вкупен капацитет од 23.8 литри (13.8 странични куфери и 10 литаркса торба за резервоар.) ќе имате доволно простор за сите ваши потреби. Доколку сте ентузијаст кој сака да вози и во екстремни услови тука се греачите за рачките. Истите се инсталираат за момент и нивните функции се прикажуваат на мултифункционалниот дисплеј.",
             "itemsList": [
-              "Bullet type LED flash",
-              "Штитници за колена",
-              "Комфортно Седло"
+              "Ветробранско Стакло",
+              "Багаж",
+              "Греачи за Рачки"
             ],
             "image1": {
-              "src": "/images/classics/speed400/speed400SAccesoryStyleImage1.avif",
-              "alt": "Speed 400 On The Road"
+              "src": "/images/classics/bonnevilleT120/bonnevilleT120Access1.avif",
+              "alt": "Bonneville T120 On The Road"
             },
             "image2": {
-              "src": "/images/classics/speed400/speed400AccessoryStyleImage2.avif",
-              "alt": "Speed 400 PaintJob"
+              "src": "/images/classics/bonnevilleT120/bonnevilleT120Access2.avif",
+              "alt": "Bonneville T120 PaintJob"
             }
           },
           {
-            "title": "Багаж",
-            "desc": "A full range of Speed ​​400-specific luggage has been created to add some practicality to the fun. The Speed ​​400 is the perfect touring bike, and outfitting it to handle your load really couldn't be easier. Choose from sturdy side or rigid and semi-rigid panniers, each with their own special mounting system or, for those who prefer to travel light, a simple luggage rack, nylon tank bag or roll-on bag could be the perfect choice .",
+            "title": "Заштитете ја вашата инвестиција",
+            "desc": "За да обезбедиме максимална сигурност не значи дека треба да го компромитираме стилот и карактерот на Bonneville T120. Алуминиумскиот долен поклопец на моторот е дизајниран за да биде издржлив но и да донесе малку стил со неговата сива или црна боја. Ова е одлична идеа како да го заштитите вашиот Bonneville од тврди предмети. Чиличните лајсни кои се тука за да го заштитат моторот воведуваат чувство на носталгија. Дизајнирани да се спојат со силуетите и стилот на Т120 и Т120 Black, ова парче додава стил но и заштита. За оние кои сакаат дискретност изработивме заштитни налепници изработени од тврд најлонски материјал кој го штити долниот дел на моторот.",
             "itemsList": [
-              "Цврсти Куфери за Багаж",
-              "Држач за Багаж",
-              "Најлонска торба за на резервоар",
-              "Најлонска Торба Roll "
+              "Долен поклопен - алуминиум",
+              "Заштита за Мотор",
+              "Engine Protection Kit",
+              "Протектори на моторот - CNC гравирани"
             ],
             "image1": {
-              "src": "/images/classics/speed400/speed400AccessoryLuggageImage.avif",
-              "alt": "Speed 400 Luggage"
+              "src": "/images/classics/bonnevilleT120/bonnevilleT120Access3.avif",
+              "alt": "Bonneville T120 Luggage"
             }
           },
           {
-            "title": "Заштита ",
-            "desc": "Both your protection from the elements and that of the Speed ​​400 have been taken care of. A visor with a special fitting kit is also available to deflect the wind to reduce rider fatigue on longer rides. Easy to fit and with style to match, it's a must-have addition for distance riders.To keep the Speed ​​400 out of harm's way on rougher roads, there's an aluminum skid plate, a radiator guard and a headlight mask, which comes with its own bezel for easy fitting, and offers excellent protection from rocks and debris. All-weather riders may want to add the mudguard kit which consists of front and rear mudguard extensions and a rear wing. These combine nicely to protect against water spray and extend the life of the rear shock in extreme conditions.Upper and lower engine guards are also available — these provide excellent protection against drops and spills, a must-have addition for city and country driving.",
+            "title": "Сигурност",
+            "desc": "Со цел да се заштитите од најлошото, ние во Triumph изработивме палета на сигурносни уреди и брави кои ќе го чуваат вашиот мотор сигурен. Таканаречената „Horseshoe Lock“ е брава која би ја користели низ градот. Истата стои помеѓу вбризгувачите на гориво и радалицата коа не е во употреба а кога ви е потребна таа е лесно достапна. Thatcham Approved Alarm сетот нуди екстремно ниво на сигурност и прегласна сирена. Дизајниран од сигурносни експерти во Datatool, овој уред одлично се вклопува со електрониката на моторите. Тешките Triumph ланци и катанци се тука за да го обезбедат вашиот мотор во вашата гаража или паркинг место.",
             "itemsList": [
-              "Гелатин",
-              "Заштита за ладник",
-              "Решетка за светло",
-              "Алуминиумска заштита",
-              "Заштита од Кал",
-              "Цевки за Заштита на Мотор (Горни и Долни)"
+              "Horseshoe Lock",
+              "Thatcham Approved Alarm",
+              "Ланци и Катанец"
             ],
             "image1": {
-              "src": "/images/classics/speed400/speed400AccessoryProtectionImage1.avif",
-              "alt": "Speed 400 Head"
-            },
-            "image2": {
-              "src": "/images/classics/speed400/speed400AccessoryRadiatorProtection.avif",
-              "alt": "speed 400 Accessory Radiator Protection"
+              "src": "/images/classics/bonnevilleT120/bonnevilleT120Access3.avif",
+              "alt": "Bonneville T120 Head"
             }
+          },
+          {
+            "title": "Практичност",
+            "desc": "Практичноста е клучен елемент при дизајнирање на самата серија на мотори и аксесоари. Без разлика на причината заради која возите, Т120 серијата треба да биде оптимизирана според вас. Централната ногарка помага при сервисирање на задниот дел од моторот додека централниот багаж е фантастично место за складирање на вашите најпотребни предмети. Лесен за монтажа и демотажа и со лимит до 3 килограми овој цврст, водоотпорен куфер е идеален за чување на вашите предмети суви и сигурни..",
+            "itemsList": [
+              "Централна Ногарка",
+              "Централен Куфер"
+            ]
           }
         ]
       },
@@ -5017,6 +5236,22 @@
         "modelImage": {
           "src": "/images/classics/bonnevilleT120/bonnevillieT120Black.png",
           "alt": "Bonneville T120 Speedmaster Range Model Image"
+        },
+        "subFamilyHeroVideo": {
+          "src": "/images/classics/bonnevilleT120/t120HeroVideo.webm",
+          "alt": "Speed Twin 1200 Range Model Image"
+        },
+        "subFamilyHeroImageMobile": {
+          "src": "/images/classics/bonnevilleT120/bonnevilleT120HeroMobile.avif",
+          "alt": "Speed Twin 1200 Range Hero Image"
+        },
+        "subFamilyTopSectionImage": {
+          "src": "/images/classics/bonnevilleT120/bonnevilleT120TopSectionImage.avif",
+          "alt": "bonnevilleT120 Range Model Image Top Section Image"
+        },
+        "subFamilyTopSectionBGImage": {
+          "src": "/images/classics/bonnevilleT120/bonnevilleT120TopSectionImageBG.avif",
+          "alt": "Speed Twin 1200 Range Model Image Top Section Image BG"
         }
       }
     },
@@ -5029,101 +5264,256 @@
       "url": "/motorcycles/classics/thruxton-rs",
       "shortDesc": "Новиот Thruxton RS комбинира оригинален стил и напредни перформанси со автентичен 'cafe-racer' дизајн.",
       "subFamilyPageInfo": {
-        "desc1": ""
+        "heroSlogans": ["Модерен", "Cafe-Racer"],
+        "topSection": {
+          "title": "Thruxton RS",
+          "desc": "Името Thruxton доаѓа од светски реномираната тркачка легенда која својот успех го претрпе на Thruxton 500 и Isle of Man трките и инсиприраше безброј млади генерации.",
+          "subtitle": "Автентичен, модерен „Cafe-Racer“"
+        },
+        "fullSpecs": {
+          "engineTransmission": [
+            {
+              "title": "Мотор",
+              "desc": "8-вентили, SOHC, водно ладење"
+            },
+            {
+              "title": "капацитет",
+              "desc": "1200 cc"
+            },
+            {
+              "title": "диаметар",
+              "desc": "97.6 mm"
+            },
+            {
+              "title": "рута",
+              "desc": "80 mm"
+            },
+            {
+              "title": "компресија",
+              "desc": "12.1:1"
+            },
+            {
+              "title": "Мах. Коњски Сила",
+              "desc": "105 PS/103 bhp (77 kW) @ 7,500 rpm"
+            },
+            {
+              "title": "Мах. Обртен Момент",
+              "desc": "112 Nm @ 4,250 rpm"
+            },
+            {
+              "title": "Систем за убризгување",
+              "desc": "Multipoint sequential electronic fuel injection"
+            },
+            {
+              "title": "Систем за Издувни гасови",
+              "desc": "Brushed 2 into 2 exhaust system with twin brushed silencers"
+            },
+            {
+              "title": "Финална Трансмисија",
+              "desc": "O-ring chain"
+            },
+            {
+              "title": "Квачило",
+              "desc": "Wet, multi-disc, torque assisted"
+            },
+            {
+              "title": "Менувачка Кутија",
+              "desc": "6 брзини"
+            }
+          ],
+          "frame": [
+            {
+              "title": "шасија",
+              "desc": "тубуларна челична шасија"
+            },
+            {
+              "title": "вилушка",
+              "desc": "Алуминиумска Вилушка"
+            },
+            {
+              "title": "предно тркало",
+              "desc": "17” x 3.5” - 32 жични тркала"
+            },
+            {
+              "title": "задно тркало",
+              "desc": "17 x 5‘ - 32 жични тркала"
+            },
+            {
+              "title": "предна гума",
+              "desc": "120/70 ZR17"
+            },
+            {
+              "title": "задна гума",
+              "desc": "150/70 R17"
+            },
+            {
+              "title": "предна суспензија",
+              "desc": "160/60 ZR17"
+            },
+            {
+              "title": "задна суспензија",
+              "desc": "Fully adjustable Öhlins twin shocks with Piggyback reservoir, 120 mm rear wheel travel"
+            },
+            {
+              "title": "предни сопирачки",
+              "desc": "Single 310mm, Brembo М50, ABS"
+            },
+            {
+              "title": "задна сопирачка",
+              "desc": "220mm single, Nissin, ABS"
+            },
+            {
+              "title": "инструментна плочка",
+              "desc": "LCD мултифункционален дисплеј"
+            }
+          ],
+          "dimension": [
+            {
+              "title": "ширина на волан",
+              "desc": "745 mm"
+            },
+            {
+              "title": "висина без ретровизори",
+              "desc": "1,030 mm"
+            },
+            {
+              "title": "Висина на Седиште",
+              "desc": "810 mm"
+            },
+            {
+              "title": "мегу-осовинско растојание ",
+              "desc": "1.415 mm"
+            },
+            {
+              "title": "Custer Corner",
+              "desc": "22.8º"
+            },
+            {
+              "title": "Trace",
+              "desc": "92 mm"
+            },
+            {
+              "title": "Тежина",
+              "desc": "197 kg"
+            },
+            {
+              "title": "капацитет на резервоар",
+              "desc": "14.5 L"
+            }
+          ],
+          "serivce": [
+            {
+              "title": "Сервисен Интервал",
+              "desc": "16 000 км / 12 месеци"
+            }
+          ]
+        },
+        "specNumbers": [
+          { "data": "1200cc", "info": "Κ.ΕΚ мотор" },
+          { "data": "112", "info": "Nm Максимален Обртен Момент" },
+          { "data": "105", "info": "PS - Максимална Сила" },
+          { "data": "80", "info": "Дополнителни Аксесоари" }
+        ]
       },
       "reasonsToDrive": {
         "banner": {
-          "image": "/images/classics/speed400/speed400ReasonsBanner.avif"
+          "image": "/images/classics/thruxtonRS/thruxtonReasonsBanner.avif"
         },
         "infoText": {
-          "title": "зошто баш Speed 400 !?",
-          "desc": "Време е да се разбудите од досадните соништа со Tiger Sport 660. Ова е најпристапниот мотор од Tiger фамилијата на Triumph и е спремен за секојдневни авантури.Tiger Sport 660 е дизајниран да ги надмине вашите очекувања, од авантуристички тури па се до дневни обврски. Кај нас во Triumph се е во знак на возење, а еве и зошто:"
+          "title": "Зошто Thruxton RS?!",
+          "desc": "Легендарниот Thruxton. Историскиот тркач кој ги руши сите рекорди. „Cafe-Racer“. Да точно прочитавте - ThruxtonRS е оној оригинален cafe-racer со фокусиран спортски карактер. Денеска со модерни перформанси и сите други модерни бенефити како и секој Triumph."
         },
         "reasons": [
           {
-            "title": "Безвременски и Автентичен Стил",
-            "desc": "Conceived and designed in Hinckley, UK, the Speed ​​400 has been built with the same meticulous attention to detail as every Triumph model. This stunning motorcycle combines timeless design DNA with modern performance. The unmistakable Triumph roadster silhouette, distinctive sculpted fuel tank and classic engine profile echo legends of the past and with exquisite details such as the distinctive cylinder head with radiators, concealed liquid cooling, traditional exhaust header clamps and modern anode muffler, the dazzling blend of retro and modern styling embodies the unique charm of Triumph's famous Modern Classic range.",
-            "image": "/images/classics/speed400/speed400ReasonsStyle.avif"
+            "title": "Историско Потомство",
+            "desc": "Тркачкиот успех на Triumph Bonneville T120 Thruxton одигра голема улога во развивањето на сите други спортки моторцикли за време на пеесетите и шеесетите години, кога овој извонреден тркач се докажа на првата Thruxton 500 трка како и земајки ја титулата за прв продукциски мотор кој постигнал просечна брзина над 100 милји на час на трката Isle ofMan TT во 1969 година. Во шеесетите години од минатиот век, дистинктивната поза на Bonneville T120 и урбаните перформанси и управување го направи овој мотор многу популарен помеѓу младата генерација на возачи кои беа во потрага по рецептот за најдобар Thruxton cafe-racer, но без успех се до 2004-тата година кога Triumph реши да ја обнови својата Classics серија. Thruxton RS серијата го започна својот живот каде што заврши Thruxton R и го еволвираше популарниот cafe-racer на ново ниво, со повеќе перформанси и спецификации.",
+            "image": "/images/classics/thruxtonRS/thruxtonReasosn1.avif"
           },
           {
-            "title": "Нов Мотор",
-            "desc": "The brand new 398cc single cylinder engine. fuel-injected combines modern classic Triumph styling with state-of-the-art technology to deliver 40bhp and 37.5Nm of peak torque with a rich, signature exhaust note from the twin-pipe muffler. Technical features include a four-valve, 2EEK cylinder head and a crankshaft that is perfectly weighted and balanced to optimize inertia for low-speed driving. A rocker arm valvetrain with low reciprocating mass and friction-reducing DLC ​​coatings also contribute to the incredible performance of this nimble yet supple engine. The six-speed gearbox offers a light, precise gear selection with ratios perfectly spread out to get the most out of this exciting, characterful and torque-rich engine. ",
-            "image": "/images/classics/speed400/speed400ReasonsMotorImage.avif"
+            "title": "Thruxton Мотор со високи перформанси",
+            "desc": "ThruxtonRS серијата е подкрепната од добро познатион 1200cc Bonneville мотор но со додатни надоградувања во поглед на перформанси и повеќе Triumph карактер и поистакнат британски дво-цилиндричен звук. Максималната сила на моторот е 105 PS @ 7,500 rpm со обртен момент од 112Nm при 4,250rpm. Со намалување на вкупната тежина на моторот, лесна радалица, квачило, поклопец од магнезиум, и висока компресија во цилиндрите ThruxtonRS серијата испорачува 20% повеќе моќ и за 500Rpm повеќе од стандардниот 1200cc Bonneville мотор."
           },
           {
-            "title": "Сериозна Забава",
-            "desc": "The Speed ​​400 is all about having fun. The comfortable and attractive riding position gives the ideal balance of weight between the three points of contact for that 'just right' feel, which has become synonymous with Triumph. Riders of all sizes feel right at home on the Speed ​​400 from the very first ride, thanks to the light and compact 398cc engine. and the slim waist makes the 790mm seat height even more approachable, for a confidence-inspiring ride and easy on-the-spot maneuvering.",
-            "image": "/images/classics/speed400/speed400ReasonsFun.avif"
+            "title": "Технологија и Можности",
+            "desc": "Ова мотоцикл e создаден со сета напредна технологија со цел да се постигне возачко искуство кое ќе одговара на неговиот безвременски тркачки изглед. Постојат три режими за возење - Road, Rain и Sport - секој со посебно мапирање на моторот и посебна поставка за контрола на тракцијат. ThruxtonRS серијата има уникатно LED осветлување кое троши многу помалку енергија од стандардот. Ситен детал дава и LED дневното светло. Дополнителни стандардни елементи како USB порта, имобилизатор. "
           },
           {
             "title": "Направен за Вас",
             "desc": "No two riders are the same, so you can personalize your Tiger Sport 660 with a choice of three special colors and graphics and over 40 genuine Triumph accessories. From built-in luggage to a central case that holds 2 helmets, you'll be inspired by the options to suit your adventure. When everyday flexibility is your goal, you shouldn't be left behind. The bike is designed with the rider in mind - make it your own."
           },
           {
-            "title": "Модерна Технологија",
-            "desc": "The Speed ​​400 is equipped with technology designed to improve every ride. The Torque Assist Clutch is an intelligent system that reduces the force on the clutch lever to improve ease of use and rider comfort when stopping/starting, and reducing travel fatigue. wheel for greater performance and safety.."
+            "title": "Возбудлив Британски Звук",
+            "desc": "Издувниот систем RS дава возбудлив британско-тркачки дво-цилиндарски звук со богата сурова нота што одговара на неговото легендарно име. Издувниот систем се финализира со две цевки од двете страни на моторот малку исправени нагоре за уште малку повеќе да се слушне препознатливиот звук.",
+            "image": "/images/classics/thruxtonRS/thruxtonReasosn2.avif"
+          },
+          {
+            "title": "Агилност и Контрола",
+            "desc": "Легендарниот тркач на Triumph се карактеризира со  динамична управливост, агилност и респонзивност со цел да се сервира она тркачко искуство. ThruxtonRS серијата е за 6 килограми полесна од претходникот и е перфектен избор за возачите кои сакаат спортска возбуда и перформанси на cafe-racer. Brembo M50 системот за сопирање, Showa вилушки и потполно прилагодливата Öhlins суспензија комбинирана со Metzeler Racetec RR пневматиците даваат одлично возачко искуство и агилност.",
+            "image": "/images/classics/thruxtonRS/thruxtonReasosn3.avif"
+
+          },
+          {
+            "title": "Cafe-Racer Стил",
+            "desc": "Никој не го енкапсулира оној класичен британски cafe-racer изглед подобро отколку Triumph Thruxton серијата. Чистата безвременска силуета и  препознатливата форма на резервоарот се само некои од деталите кои се дирекнто инспирирани од оригиналната Thruxton линија."
+          },
+          {
+            "title": "80 оригинални аксесоари",
+            "desc": "Палета од 80 оригинални Triumph акасесоари се достапни во секој Triumph центар. Аксесоари кои додаваат стил, заштита, комфорт, безбедност. Доколку сакате веднаш да го имате оној перфектен Triumph тркачки изглед тука е Track Racer Inspiration сетот кој комплетно ќе го претвори вашиот Thruxton во прав тркач."
           }
         ]
       },
       "accessory": {
         "banner": {
-          "image": "/images/classics/speed400/speed400AccessoryBanner.avif"
+          "image": "/images/classics/thruxtonRS/thruxtonRSAccessBanner.avif"
         },
         "infoText": {
-          "title": "Додајте ваш белег врз Speed 400",
-          "desc": "На располагање ви е селекција од преку 20 оригинални Triupmh аксесоари за оваа серија на мотори. Аксесоарите кои ќе ги додадете може да бидат додадени на вашиот мотор во фабриката. Aксесоарите се дизајнирани од истиот тим кој го креираше Speed 400 и доаѓаат со две-годишна гаранција."
+          "desc": "Заедно со моќниот Thruxton RS доаѓа и целосна палета на аксесоари наменета за подобрување и персонализирање на серијата по ваш вкус. Исто така го имаме и TRACK RACER INSPIRATION сетот кој нуди целосен комплет од претходно селектирани парчиња за брзо конфигурирање на вапиот мотор."
         },
         "accessoryTypes": [
           {
-            "title": "Стил и Комфорт",
-            "desc": "Choose from a range of parts that will make the Speed ​​400 just the way you want it. Direct replacement bullet turn signals a subtle new look and premium touch with their satin black body and machined aluminum bezels.. Or maybe you want to remodel the tank with different knee pads? A comfortable saddle with a stitched and quilted finish makes a style statement and, together with plug and play heated grips, offers luxury on longer rides..",
+            "title": "Track Racer Inspiration сет",
+            "desc": "Додадете спортки финиш на вашиот Thruxton RS веднаш.",
             "itemsList": [
-              "Bullet type LED flash",
-              "Штитници за колена",
-              "Комфортно Седло"
+              "Dolphin fairing",
+              "Rear mudguard removal kit",
+              "Компактни LED трепкачи"
             ],
             "image1": {
-              "src": "/images/classics/speed400/speed400SAccesoryStyleImage1.avif",
-              "alt": "Speed 400 On The Road"
+              "src": "/images/classics/thruxtonRS/thruxtonAccess1.avif",
+              "alt": "Thruxton On The Road"
+            }
+          },
+          {
+            "title": "Стил",
+            "desc": "Додадете ваш белег врз вашиот омилен cafe-racer.",
+            "itemsList": [
+              "Dolphin Fairing",
+              "Прекривка за сопатничкото седиштето ",
+              "Полирани Детали на Резервоар",
+              "Алуминиумска замена за заден дел од мотор",
+              "LED Трепкачи"
+            ],
+            "image1": {
+              "src": "/images/classics/thruxtonRS/thruxtonRSAccess2.avif",
+              "alt": "Thruxton Luggage"
             },
             "image2": {
-              "src": "/images/classics/speed400/speed400AccessoryStyleImage2.avif",
-              "alt": "Speed 400 PaintJob"
+              "src": "/images/classics/thruxtonRS/thruxtonRSAccess3.avif",
+              "alt": "Thruxton Luggage"
             }
           },
           {
             "title": "Багаж",
-            "desc": "A full range of Speed ​​400-specific luggage has been created to add some practicality to the fun. The Speed ​​400 is the perfect touring bike, and outfitting it to handle your load really couldn't be easier. Choose from sturdy side or rigid and semi-rigid panniers, each with their own special mounting system or, for those who prefer to travel light, a simple luggage rack, nylon tank bag or roll-on bag could be the perfect choice .",
-            "itemsList": [
-              "Цврсти Куфери за Багаж",
-              "Држач за Багаж",
-              "Најлонска торба за на резервоар",
-              "Најлонска Торба Roll "
-            ],
-            "image1": {
-              "src": "/images/classics/speed400/speed400AccessoryLuggageImage.avif",
-              "alt": "Speed 400 Luggage"
-            }
+            "desc": "Практични елементи за багаж, куфери и торби за резервоар изработени од кожа, памук и синтетички најлон кој ќе ги чува вашите вредни предмети сигурни."
           },
           {
-            "title": "Заштита ",
-            "desc": "Both your protection from the elements and that of the Speed ​​400 have been taken care of. A visor with a special fitting kit is also available to deflect the wind to reduce rider fatigue on longer rides. Easy to fit and with style to match, it's a must-have addition for distance riders.To keep the Speed ​​400 out of harm's way on rougher roads, there's an aluminum skid plate, a radiator guard and a headlight mask, which comes with its own bezel for easy fitting, and offers excellent protection from rocks and debris. All-weather riders may want to add the mudguard kit which consists of front and rear mudguard extensions and a rear wing. These combine nicely to protect against water spray and extend the life of the rear shock in extreme conditions.Upper and lower engine guards are also available — these provide excellent protection against drops and spills, a must-have addition for city and country driving.",
+            "title": "Комфорт",
+            "desc": "Подобрете го комфортот со дадавање на овие аксесоари наменети да го претворат вашето во уживање.",
             "itemsList": [
-              "Гелатин",
-              "Заштита за ладник",
-              "Решетка за светло",
-              "Алуминиумска заштита",
-              "Заштита од Кал",
-              "Цевки за Заштита на Мотор (Горни и Долни)"
-            ],
-            "image1": {
-              "src": "/images/classics/speed400/speed400AccessoryProtectionImage1.avif",
-              "alt": "Speed 400 Head"
-            },
-            "image2": {
-              "src": "/images/classics/speed400/speed400AccessoryRadiatorProtection.avif",
-              "alt": "speed 400 Accessory Radiator Protection"
-            }
+              "Комфортно Седиште",
+              "Греачи на Рачки",
+              "Стилизирани Рачки"
+            ]
           }
         ]
       },
@@ -5136,6 +5526,22 @@
         "modelImage": {
           "src": "/images/classics/truxtonRs.avif",
           "alt": "Thruxton RS Speedmaster Range Model Image"
+        },
+        "subFamilyHeroVideo": {
+          "src": "/images/classics/thruxtonRS/truxtonHeroVideo.webm",
+          "alt": "ThruxtonRS Range Model Video"
+        },
+        "subFamilyHeroImageMobile": {
+          "src": "/images/classics/thruxtonRS/thruxtonRSHeroMobile.avif",
+          "alt": "ThruxtonRS Range Hero Image"
+        },
+        "subFamilyTopSectionImage": {
+          "src": "/images/classics/thruxtonRS/thruxtonRSTopSectionImage.avif",
+          "alt": "thruxtonRS Range Model Image Top Section Image"
+        },
+        "subFamilyTopSectionBGImage": {
+          "src": "/images/classics/thruxtonRS/thruxtonRSTopSectionImageBack.jpg",
+          "alt": "TruxtonRS Range Model Image Top Section Image BG"
         }
       }
     },
