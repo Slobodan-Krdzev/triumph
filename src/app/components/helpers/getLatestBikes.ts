@@ -7,11 +7,17 @@ export const createBikeList = (bikes: any[]) => {
 
     newestBikes.map((bike: any) => {
 
+      console.log(bike);
+      
+
       finalBikes.push({
-        link: `/motorcycles/${bike.category}/${bike.subFamilyCategory}/${bike.model}`,
+        link: `/motorcycles/${bike.familyType}/${bike.subFamilyName}`,
         text: bike.title
       })
     })
+
+    console.log(finalBikes, 'ZA NAV LINKOVI');
+    
 
     return finalBikes ?? []
   }

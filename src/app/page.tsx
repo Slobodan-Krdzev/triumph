@@ -23,8 +23,8 @@ const linkCardsSection: HomeCardLinkType[] = [
   {
     title: 'Со "Thriumph" до тотален душевен спокој',
     image: "/images/home/totalPeaceImg.avif",
-    text: "Понуди и Финансирање",
-    url: "/owners/total-care",
+    text: "За Сопственици",
+    url: "/owners",
   },
 ];
 
