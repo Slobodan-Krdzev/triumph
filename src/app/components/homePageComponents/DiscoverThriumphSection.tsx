@@ -6,13 +6,13 @@ const items = [
   {
     title: "Прочитајте ги најновите вести",
     image: "/images/home/latestNews.avif",
-    url: "/for-the-ride/news",
+    url: "https://triumph-mediakits.com/en/news/news-listing.html",
     btnText: "Најнови Вести",
   },
   {
     title: "Рушење рекорди. пишување историја ",
     image: "/images/home/races.avif",
-    url: "/for-the-ride/racing",
+    url: "https://media.triumphracing.com/en/",
     btnText: "трки",
   },
   {
@@ -36,7 +36,7 @@ const DiscoverThriumphSection = () => {
         <SectionTitleH2 text={'Откријте го "Thriumph"'} color={"dark"} />
       </div>
 
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap ">
         {items.map((item) => (
           <DiscoverThriumphCard
             key={item.title}
