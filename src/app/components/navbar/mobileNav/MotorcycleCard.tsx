@@ -24,7 +24,7 @@ const MotorcycleCard = ({
 
   return (
     <div
-      className={`p-2 border-thin-gray-bottom ${
+      className={`px-2 py-4 border-thin-gray-bottom ${
         idx === bikeToFocus ? "slight-white-bg" : ""
       }`}
     >
@@ -55,20 +55,20 @@ const MotorcycleCard = ({
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          className="flex justify-center gap-4"
+          className="flex justify-center gap-4 my-2"
         >
           <MainBtn
             text={"Конфигурирај"}
             bgBlack={false}
             isLink={true}
-            link={`/configure/bike/${bike?.model}`}
+            link={`/configure/bikes/${bike?.subFamilyName}`}
             // action={closeMainMenu}
           />
           <MainBtn
             text={"Детали"}
             bgBlack={true}
             isLink={true}
-            link={`/motorcycles/${bike?.category}/${bike?.subFamilyCategory}`}
+            link={`/motorcycles/${bike[0]?.familyType}/${bike[0]?.subFamilyName}`}
             action={closeMainMenu}
           />
         </motion.div>
