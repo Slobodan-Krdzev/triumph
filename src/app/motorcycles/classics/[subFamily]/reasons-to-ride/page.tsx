@@ -49,7 +49,7 @@ const ClassicsReasonsToRide = async ({ params }: any) => {
             
             <BikeInfoTextImageBtn
               key={bike.id}
-              title={bike.title ?? bike.model}
+              title={bike.title ?? bike.title}
               desc={bike.subFamilyPromo?.desc ?? `Цени од:€ ${bike.price}.00`}
               ctaBtn={{
                 text: "КОнфигурација",
@@ -68,8 +68,7 @@ const ClassicsReasonsToRide = async ({ params }: any) => {
   } catch (err) {
     console.log(err);
 
-    // return redirect(`/motorcycles/classics/${subFam}`);
-    return err
+    return redirect(`/motorcycles/classics/${subFam}`);
   }
 };
 
