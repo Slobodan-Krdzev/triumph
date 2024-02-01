@@ -68,7 +68,7 @@ const MotorcycleCard = ({
             text={"Детали"}
             bgBlack={true}
             isLink={true}
-            link={`/motorcycles/${bike[0]?.familyType}/${bike[0]?.subFamilyName}`}
+            link={`/motorcycles/${bike?.familyType}/${bike?.subFamilyName}`}
             action={closeMainMenu}
           />
         </motion.div>
