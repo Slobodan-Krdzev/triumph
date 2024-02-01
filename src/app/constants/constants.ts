@@ -1,7 +1,7 @@
-export const BIKES = "https://youthful-alike-squirrel.glitch.me/bikes";
-export const FAMILIES = "https://youthful-alike-squirrel.glitch.me/families";
-export const SUB_FAMILIES = "https://youthful-alike-squirrel.glitch.me/subFamilies";
-export const MAINCAROUSELLITEMS = "https://youthful-alike-squirrel.glitch.me/main-carousell-items"
-export const LATESTCAROUSELLITEMS = "https://youthful-alike-squirrel.glitch.me/latest-models-carousell-items"
-export const PROMOS = "https://youthful-alike-squirrel.glitch.me/promos"
+export const BIKES = "https://triumph-latest.glitch.me/bikes";
+export const FAMILIES = "https://triumph-latest.glitch.me/families";
+export const SUB_FAMILIES = "https://triumph-latest.glitch.me/subFamilies";
+export const MAINCAROUSELLITEMS = "https://triumph-latest.glitch.me/main-carousell-items"
+export const LATESTCAROUSELLITEMS = "https://triumph-latest.glitch.me/latest-models-carousell-items"
+export const PROMOS = "https://triumph-latest.glitch.me/promos"
 
