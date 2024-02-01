@@ -214,6 +214,21 @@
       "title": "Нова Tiger 900 Серија",
       "price": 14290,
       "url": "/motorcycles/adventure/tiger-900",
+      "specs": [{
+        "desc": "cc Мотор",
+        "data": 900
+      },
+      {
+        "desc": "PS Коњски Сили",
+        "data": 106.5
+      },{
+        "desc": "NM. Обртен Момент",
+        "data": 90
+      },{
+        "desc": "Аксесоари",
+        "data": "50+"
+      }]
+      ,
       "subFamilyPageInfo": {
         "heroSlogans": ["НОВИОТ", "TIGER 900"],
         "fullSpecs": {
@@ -503,6 +518,20 @@
       "title": "Tiger Sport 660",
       "price": 10290,
       "url": "/motorcycles/adventure/tiger-sport-660",
+      "specs": [{
+        "desc": "cc Мотор",
+        "data": 660
+      },
+      {
+        "desc": "PS Коњски Сили",
+        "data": 81
+      },{
+        "desc": "NM. Обртен Момент",
+        "data": 64
+      },{
+        "desc": "Сервисен Интервал",
+        "data": "16,000km"
+      }],
       "shortDesc": "Тројна предност во перформансите, водечка моќ и спецификации во класата и удобна употребливост при возење - сето тоа со одлична вредност.",
       "subFamilyPageInfo": {
         "heroSlogans": ["Автентичност", "Версатилен", "3-цилиндричен"],
@@ -850,10 +879,23 @@
       "id": 3,
       "subFamilyName": "tiger-850-sport",
       "familyType": "adventure",
-
       "title": "Tiger 850 Sport",
       "price": 13390,
       "url": "/motorcycles/adventure/tiger-850-sport",
+      "specs": [{
+        "desc": "К.ЕК Мотор",
+        "data": 888
+      },
+      {
+        "desc": "PS Коњски Сили",
+        "data": 85
+      },{
+        "desc": "NM. Обртен Момент",
+        "data": 82
+      },{
+        "desc": "Аксесоари",
+        "data": "60+"
+      }],
       "shortDesc": "Прилагодлив на секој предизвик а сепак карактерот, агилноста и перформансите на Tiger, со завидувачки дизајн  и адаптабилност за сите потреби.",
       "subFamilyPageInfo": {
         "heroSlogans": ["практичен", "авантурист"],
@@ -1197,6 +1239,20 @@
       "title": "Tiger 1200 GT",
       "price": 20390,
       "url": "/motorcycles/adventure/tiger-1200-gt",
+      "specs": [{
+        "desc": "К.ЕК Мотор",
+        "data": 1160
+      },
+      {
+        "desc": "PS Коњски Сили",
+        "data": 150
+      },{
+        "desc": "NM. Обртен Момент",
+        "data": 130
+      },{
+        "desc": "Години Гаранција",
+        "data": "3"
+      }],
       "shortDesc": "Врвен авантуристички мотор фокусиран за асфалтни подлоги. Интер-континентални можности, со висока комоција, перформанси и стил.",
       "subFamilyPageInfo": {
         "heroSlogans": ["Вие ја ", "креирате", "авантурата"],
@@ -1550,6 +1606,20 @@
       "title": "Tiger 1200 Rally",
       "price": 22590,
       "url": "/motorcycles/adventure/tiger-1200-gt",
+      "specs": [{
+        "desc": "К.ЕК Мотор",
+        "data": 1160
+      },
+      {
+        "desc": "PS Коњски Сили",
+        "data": 150
+      },{
+        "desc": "NM. Обртен Момент",
+        "data": 130
+      },{
+        "desc": "Години Гаранција",
+        "data": "3"
+      }],
       "shortDesc": "",
       "subFamilyPageInfo": {
         "heroSlogans": ["оживеј", "ја", "авантурата"],
@@ -8457,12 +8527,6 @@
       "subFamilyCategory": "tiger-sport-660",
       "edition": "adventure",
       "price": 9290,
-      "specs": {
-        "cc": 6800,
-        "torque": 37.5,
-        "horsePower": 40,
-        "serviceInterval": "16.000km"
-      },
       "gallery": {
         "modelImage": {
           "src": "/images/adventure/tigerSport660/tiger660ModelImage.avif",

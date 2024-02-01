@@ -66,6 +66,9 @@ const YourTriumphPage = () => {
       />
 
       <main className="bg-white">
+        <section>
+          
+        </section>
         <BikeInfoTextImageBtn
           title="Грижа за вашиот мотор"
           desc={

@@ -21,11 +21,9 @@ type Props = {
 const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
   const [family, setFamily] = useState("adventure");
 
-  console.log(bikes, "SUBFAMILII");
-
   return (
-    <div className="flex ">
-      <div className=" flex flex-col gap-6 basis-3/12 pt-8">
+    <div className="flex">
+      <div className=" flex flex-col gap-6 basis-2/12 pt-8">
         <ul>
           {families?.map((filter: any) => (
             <li key={filter}>
@@ -127,7 +125,7 @@ const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
           </div>
         )}
       </div>
-      <div className="basis-5/12 py-8">
+      <div className="basis-6/12 py-8">
         <MotorcycleInfo bike={bikeToRender} bikes={bikes} />
       </div>
     </div>
