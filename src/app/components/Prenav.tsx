@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import React from 'react'
@@ -25,7 +26,7 @@ function Prenav () {
         <li><Link href={"/dealers/dealer-search"} className='text-white'>Контакт</Link></li>
         <li><Link href={"/configuration"} className='text-white'></Link>Конфигурација</li>
         <li><Link href={"/latest-offers"} className='text-white uppercase'></Link>ПОНУДИ</li>
-        <li > <button onClick={handleLocationSection}>LOCATIONS</button></li>
+        <li className='flex justify-between items-center'> <Image src={"pin icon-01.svg"} alt='Pin' width={30} height={30}/> <button onClick={handleLocationSection}>Macedonia</button></li>
       </ul>
     </div>
   )

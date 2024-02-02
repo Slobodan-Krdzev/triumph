@@ -25,7 +25,7 @@ const DiscoverSectionMobile = ({ handler}: DiscoverSectionMobile) => {
     news: false,
     races: false,
     brand: false,
-    expirinces: false,
+    expirinces: false
   });
 
   const handleVisibleMenu = (
@@ -37,7 +37,7 @@ const DiscoverSectionMobile = ({ handler}: DiscoverSectionMobile) => {
           news: !menusVisibility.news,
           races: false,
           brand: false,
-          expirinces: false,
+          expirinces: false
         });
         break;
       case "races":
@@ -45,7 +45,7 @@ const DiscoverSectionMobile = ({ handler}: DiscoverSectionMobile) => {
           news: false,
           races: !menusVisibility.races,
           brand: false,
-          expirinces: false,
+          expirinces: false
         });
         break;
       case "brand":
@@ -53,7 +53,7 @@ const DiscoverSectionMobile = ({ handler}: DiscoverSectionMobile) => {
           news: false,
           races: false,
           brand: !menusVisibility.brand,
-          expirinces: false,
+          expirinces: false
         });
         break;
       case "expiriences":
@@ -61,7 +61,7 @@ const DiscoverSectionMobile = ({ handler}: DiscoverSectionMobile) => {
           news: false,
           races: false,
           brand: false,
-          expirinces: !menusVisibility.expirinces,
+          expirinces: !menusVisibility.expirinces
         });
         break;
       default:
@@ -71,7 +71,7 @@ const DiscoverSectionMobile = ({ handler}: DiscoverSectionMobile) => {
 
   return (
     <div>
-      <div className="flex justify-start items-center px-8 py-4 gray-bg">
+      <div className="flex justify-start items-center px-8 py-4 gray-bg border">
         <button className="basis-1/12" onClick={handler}>
           <FontAwesomeIcon icon={faChevronLeft} />
         </button>
