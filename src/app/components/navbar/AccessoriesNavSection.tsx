@@ -101,7 +101,7 @@ const AccessoriesNavSection = ({bikes}: AccessoriesNavProps) => {
         items={linkItemsQuickLinks}
         title={"Барани Линкови"}
         bottomLinkText={"Koнтакт"}
-        bottomLinkUrl={"/dealers/dealer-search"}
+        bottomLinkUrl={"/dealer"}
       />
 
       <Link href={"/configure"}>

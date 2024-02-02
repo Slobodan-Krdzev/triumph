@@ -7,6 +7,10 @@ type MotorcycleInfoProps = {
 };
 
 const MotorcycleInfo = ({ bike }: MotorcycleInfoProps) => {
+
+  console.log(bike);
+  
+
   return (
     <div className="px-8 relative">
       <h2 className="text-7xl text-light-color font-bold uppercase">
@@ -56,38 +60,6 @@ const MotorcycleInfo = ({ bike }: MotorcycleInfoProps) => {
                   );
                 }
               )}
-              {/* <li className="flex justify-between items-center gap-4 w-full">
-                <p className="font-semibold text-md tracking-tighter text-black text-right basis-1/2">
-                  {bike[0].specs[0].data ?? ""}{" "}
-                </p>
-                <p className="text-neutral-300 font-semibold uppercase text-sm basis-1/2 text-left">
-                  {bike[0].specs[0].desc ?? ""}
-                </p>
-              </li>
-              <li className="flex justify-between items-center gap-4 w-full">
-                <p className="font-semibold text-md tracking-tighter text-black text-right basis-1/2">
-                  {bike[0].specs[1].data ?? ""}
-                </p>
-                <p className="text-neutral-300 font-semibold uppercase text-sm basis-1/2 text-left">
-                  {bike[0].specs[1].data ?? ""}
-                </p>
-              </li>
-              <li className="flex justify-between items-center gap-4 w-full">
-                <p className="font-semibold text-md tracking-tighter text-black text-right basis-1/2">
-                  {bike[0].specs.torque}
-                </p>
-                <p className="text-neutral-300 font-semibold uppercase text-sm basis-1/2 text-left">
-                  NmT
-                </p>
-              </li>
-              <li className="flex justify-between items-center gap-4 w-full">
-                <p className="font-semibold text-md tracking-tighter text-black text-right basis-1/2">
-                  {bike[0].specs.serviceInterval}
-                </p>
-                <p className="text-neutral-300 font-semibold uppercase text-sm basis-1/2 text-left">
-                  сервисен интервал
-                </p>
-              </li> */}
             </ul>
           )}
 

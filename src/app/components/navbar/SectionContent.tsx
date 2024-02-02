@@ -8,6 +8,7 @@ import ClothingNavSection from "./ClothingNavSection";
 import OwnersNavSection from "./OwnersNavSection";
 import DiscoverNavSection from "./DiscoverNavSection";
 import { handleBodyScrollWhenMenuIsOpen } from "../helpers/handleBodyScrollWhenMenuOpens";
+import Locations from "./Locations";
 
 type Props = {
   families: any[];
@@ -73,6 +74,7 @@ const SectionContent = ({ families, bikes, bikeToRender }: Props) => {
       {query === "Clothing" && <ClothingNavSection />}
       {query === "Owners" && <OwnersNavSection />}
       {query === "Discover" && <DiscoverNavSection />}
+      {query === "Locations" && <Locations />}
     </motion.section>
   );
 };
