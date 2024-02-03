@@ -1,9 +1,10 @@
 "use client";
+import GrayBand from "@/app/components/GrayBand";
 import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
 import { useBreakpoint } from "@/app/components/helpers/useBreakpoint";
 import MobileSecondaryNav from "@/app/components/whiteSecondaryNavBar/MobileSecondary/MobileSecondaryNav";
 import SecondaryNavBar from "@/app/components/whiteSecondaryNavBar/SecondaryNavBar";
-import { useParams, usePathname, useRouter } from "next/navigation";
+import { useParams, usePathname } from "next/navigation";
 
 export default function SubFamilyLayout({
   children, // will be a page or nested layout
@@ -31,13 +32,13 @@ export default function SubFamilyLayout({
       link: `/${path}/${params.subFamily}/specifications`,
     },
     {
-      text: "Зошто треба да ја одберете!",
+      text: "Детали",
       link: `/${path}/${params.subFamily}/reasons-to-ride`,
     },
     {
       text: "Аксесоари",
       link: `/${path}/${params.subFamily}/accessories`,
-    }
+    },
   ];
 
   return (
@@ -46,7 +47,7 @@ export default function SubFamilyLayout({
         <SecondaryNavBar
           items={secondaryNavItems}
           title={formulateSubFamilyTitleOnBanner(params.subFamily.toString())}
-          configurationLink={`/configure/bike/${params.subFamily}`}
+          configurationLink={`/configure/bikes/${params.subFamily}`}
         />
       )}
 
@@ -54,11 +55,23 @@ export default function SubFamilyLayout({
         <MobileSecondaryNav
           items={secondaryNavItems}
           title={formulateSubFamilyTitleOnBanner(params.subFamily.toString())}
-          configurationLink={`/configure/bike/${params.subFamily}`}
+          configurationLink={`/configure/bikes/${params.subFamily}`}
         />
       )}
 
       {children}
+      <GrayBand
+        itemOne={{
+          text: "Конфигурации",
+          url: "/configure",
+          icon: "/icon-configurator.svg",
+        }}
+        itemTwo={{
+          text: "Контакт",
+          url: "/dealers/dealer-search",
+          icon: "/pin.svg",
+        }}
+      />
     </section>
   );
 }

@@ -5,7 +5,7 @@ import React from "react";
 const BottomFoot = () => {
   return (
     <>
-      <div className="py-4 border-b-4 border-b-zinc-900 flex items-center gap-4">
+      <div className="py-4 border-thin-gray-top flex items-center gap-4">
         {/* NEMAT FB */}
 
         <Link
@@ -42,7 +42,7 @@ const BottomFoot = () => {
 
       <div className="pt-4 pb-4 flex justify-between text-neutral-400 font-normal">
         <div className="flex gap-4">
-          <Link href={"/global-content/contact-us"} className="text-sm">
+          <Link href={"/dealer"} className="text-sm">
             Контакт
           </Link>
           <Link
@@ -52,7 +52,7 @@ const BottomFoot = () => {
             Легалност
           </Link>
         </div>
-        <p className="text-sm">Ⓒ 2023 Thriumph Motorcycles</p>
+        <p className="text-sm">Ⓒ 2024 Thriumph Motorcycles</p>
       </div>
     </>
   );

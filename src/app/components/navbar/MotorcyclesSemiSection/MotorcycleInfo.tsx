@@ -7,6 +7,10 @@ type MotorcycleInfoProps = {
 };
 
 const MotorcycleInfo = ({ bike }: MotorcycleInfoProps) => {
+
+  console.log(bike);
+  
+
   return (
     <div className="px-8 relative">
       <h2 className="text-7xl text-light-color font-bold uppercase">
@@ -31,42 +35,31 @@ const MotorcycleInfo = ({ bike }: MotorcycleInfoProps) => {
           alt={bike[0]?.gallery.modelImage.src}
           width={422}
           height={241}
+          className="basis-1/2"
         />
-        <div className="flex flex-col gap-2 text-center">
+        <div className="flex flex-col gap-2 text-center basis-1/2">
           {bike[0]?.specs! && (
             <ul className="mb-4 flex flex-col gap-2 items-start">
-              <li className="flex justify-between items-center gap-4 w-full">
-                <p className="font-semibold text-md tracking-tighter text-black text-right basis-1/2">
-                  {bike[0].specs.cc}{" "}
-                </p>
-                <p className="text-neutral-300 font-semibold uppercase text-sm basis-1/2 text-left">
-                  cc
-                </p>
-              </li>
-              <li className="flex justify-between items-center gap-4 w-full">
-                <p className="font-semibold text-md tracking-tighter text-black text-right basis-1/2">
-                  {bike[0].specs.horsePower}
-                </p>
-                <p className="text-neutral-300 font-semibold uppercase text-sm basis-1/2 text-left">
-                  PS
-                </p>
-              </li>
-              <li className="flex justify-between items-center gap-4 w-full">
-                <p className="font-semibold text-md tracking-tighter text-black text-right basis-1/2">
-                  {bike[0].specs.torque}
-                </p>
-                <p className="text-neutral-300 font-semibold uppercase text-sm basis-1/2 text-left">
-                  NmT
-                </p>
-              </li>
-              <li className="flex justify-between items-center gap-4 w-full">
-                <p className="font-semibold text-md tracking-tighter text-black text-right basis-1/2">
-                  {bike[0].specs.serviceInterval}
-                </p>
-                <p className="text-neutral-300 font-semibold uppercase text-sm basis-1/2 text-left">
-                  сервисен интервал
-                </p>
-              </li>
+              {bike[0].specs?.map(
+                (
+                  spec: { desc: string; data: number | string },
+                  idx: number
+                ) => {
+                  return (
+                    <li
+                      key={`${spec.data} -- ${idx}`}
+                      className="flex justify-start items-center gap-4 w-full"
+                    >
+                      <p className=" font-semibold text-md tracking-tighter text-black basis-1/6">
+                        {spec.data ?? ""}
+                      </p>
+                      <p className="text-neutral-300 font-semibold uppercase text-sm  text-left basis-5/6">
+                        {spec.desc ?? ""}
+                      </p>
+                    </li>
+                  );
+                }
+              )}
             </ul>
           )}
 
@@ -76,13 +69,13 @@ const MotorcycleInfo = ({ bike }: MotorcycleInfoProps) => {
                 text={"Конфигурирај"}
                 bgBlack={false}
                 isLink={true}
-                link={`/configure/bike/${bike[0]?.model}`}
+                link={`/configure/bikes/${bike[0]?.subFamilyName}`}
               />
               <MainBtn
                 text={"Детали"}
                 bgBlack={true}
                 isLink={true}
-                link={`/motorcycles/${bike[0]?.category}/${bike[0]?.subFamilyCategory}`}
+                link={`/motorcycles/${bike[0]?.familyType}/${bike[0]?.subFamilyName}`}
               />
             </>
           )}

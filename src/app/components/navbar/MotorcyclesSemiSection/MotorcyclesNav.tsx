@@ -22,8 +22,8 @@ const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
   const [family, setFamily] = useState("adventure");
 
   return (
-    <div className="flex ">
-      <div className=" flex flex-col gap-6 basis-3/12 pt-8">
+    <div className="flex">
+      <div className=" flex flex-col gap-6 basis-2/12 pt-8">
         <ul>
           {families?.map((filter: any) => (
             <li key={filter}>
@@ -39,7 +39,7 @@ const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
           ))}
         </ul>
         <Link href={"/"} className="text-sm text-black">
-          Проверени Second-Hand Мотори 
+          Проверени Second-Hand Мотори
         </Link>
         <ul className="flex flex-col gap-2">
           <li>
@@ -47,7 +47,12 @@ const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
               href={"/configure/bikes"}
               className="text-black flex justify-start gap-4 items-center text-sm"
             >
-              <FontAwesomeIcon icon={faBars} color="black" size="lg" className="basis-1/12"/>
+              <FontAwesomeIcon
+                icon={faBars}
+                color="black"
+                size="lg"
+                className="basis-1/12"
+              />
               Модели
             </Link>
           </li>
@@ -56,7 +61,12 @@ const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
               href={"/configure"}
               className="text-black flex justify-start gap-4 items-center text-sm"
             >
-              <FontAwesomeIcon icon={faSlidersH} color="black" size="lg" className="basis-1/12"/>
+              <FontAwesomeIcon
+                icon={faSlidersH}
+                color="black"
+                size="lg"
+                className="basis-1/12"
+              />
               Конфигурација
             </Link>
           </li>
@@ -65,7 +75,12 @@ const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
               href={"/dealers/dealers-search"}
               className="text-black flex justify-start gap-4 items-center text-sm"
             >
-              <FontAwesomeIcon icon={faLocationPin} color="black" size="lg" className="basis-1/12"/>
+              <FontAwesomeIcon
+                icon={faLocationPin}
+                color="black"
+                size="lg"
+                className="basis-1/12"
+              />
               Продавница
             </Link>
           </li>
@@ -75,19 +90,22 @@ const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
         <div className="flex justify-between px-2">
           <p className="text-black text-lg font-semibold uppercase">{family}</p>
 
-          {(family !== "special" && family !== "stealth" && family !== "chrome") && <Link
-            href={`/motorcycles/${family}`}
-            className="text-black text-sm font-semibold uppercase"
-          >
-            Истражи
-            <FontAwesomeIcon
-              icon={faChevronRight}
-              color="#CD192D"
-              size="xs"
-              className="pl-2"
-            />
-          </Link>}
-          
+          {family !== "special" &&
+            family !== "stealth" &&
+            family !== "chrome" && (
+              <Link
+                href={`/motorcycles/${family}`}
+                className="text-black text-sm font-semibold uppercase"
+              >
+                Истражи
+                <FontAwesomeIcon
+                  icon={faChevronRight}
+                  color="#CD192D"
+                  size="xs"
+                  className="pl-2"
+                />
+              </Link>
+            )}
         </div>
 
         {getBikesByEdition(family, bikes).length >= 5 && (
@@ -107,7 +125,7 @@ const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
           </div>
         )}
       </div>
-      <div className="basis-5/12 py-8">
+      <div className="basis-6/12 py-8">
         <MotorcycleInfo bike={bikeToRender} bikes={bikes} />
       </div>
     </div>

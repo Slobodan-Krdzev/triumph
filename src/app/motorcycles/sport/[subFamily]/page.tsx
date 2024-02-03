@@ -6,45 +6,50 @@ import BikeListingNoSlider from "@/app/components/familiySharedComponents/BikeLi
 import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
 import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
 import { getBikesBySubfamilyCategory } from "@/app/components/helpers/getBikesBySubfamilyCategory";
-import { BIKES, FAMILIES } from "@/app/constants/constants";
+import { BIKES, FAMILIES, SUB_FAMILIES } from "@/app/constants/constants";
 
 const SportSubFamilyPage = async ({ params }: any) => {
   const query = params.subFamily;
 
   try {
-    const familyRes = await fetch(`${FAMILIES}?type=sport`, {
+    const subFamilyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=${query}`, {
       cache: "no-store",
     });
-    const familyData = await familyRes.json();
-    const family = familyData[0];
+    const subfamilyData = await subFamilyRes.json();
+    const subFamily = subfamilyData[0];
+
+    
 
     const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${query}`);
     const bikes = await bikesRes.json();
 
     const hasGrayCaro =
-      family.subFamilies[query].subFamilyPageInfo.hasOwnProperty(
+      subFamily.subFamilyPageInfo.hasOwnProperty(
         "grayCarousell"
       );
 
     const hasYoutubeVid =
-      family.subFamilies[query].subFamilyPageInfo.hasOwnProperty(
+      subFamily.subFamilyPageInfo.hasOwnProperty(
         "youtubeVideo"
       );
 
     const hasAudio =
-      family.subFamilies[query].subFamilyPageInfo.hasOwnProperty(
+      subFamily.subFamilyPageInfo.hasOwnProperty(
         "audioSection"
       );
 
     const hasTopSection =
-      family.subFamilies[query].subFamilyPageInfo.hasOwnProperty("topSection");
+      subFamily.subFamilyPageInfo.hasOwnProperty("topSection");
 
+
+      console.log('you', hasYoutubeVid);
+      
     return (
       <>
         <HeroSection
-          video={family.subFamilies[query].gallery.subFamilyHeroVideo.src}
+          video={subFamily.gallery.subFamilyHeroVideo.src}
           mobileImage={
-            family.subFamilies[query].gallery.subFamilyHeroImageMobile.src
+            subFamily.gallery.subFamilyHeroImageMobile.src
           }
           model={formulateSubFamilyTitleOnBanner(query)}
         />
@@ -68,11 +73,11 @@ const SportSubFamilyPage = async ({ params }: any) => {
               </h3>
             </div>
             {hasYoutubeVid && (
-              <YouTubePromo video={familyData[0].youtubeVideo ?? ""} />
+              <YouTubePromo video={subFamily.subFamilyPageInfo.youtubeVideo ?? ""} />
             )}
           </section>
 
-          {hasGrayCaro && <BottomCarousell items={familyData[0].grayCaro} />}
+          {hasGrayCaro && <BottomCarousell items={subFamily.subFamilyPageInfo.grayCarousell} />}
         </main>
         <section className="px-4 lg:px-20 xl:px-40">
           {bikes.map((bike: any) => (
@@ -82,7 +87,7 @@ const SportSubFamilyPage = async ({ params }: any) => {
               desc={bike.subFamilyPromo.desc ?? ""}
               ctaBtn={{
                 text: "Детали",
-                link: `/motorcycles/${family.type}/${query}/${bike.model}`,
+                link: `/motorcycles/${subFamily.familyType}/${query}/${bike.model}`,
               }}
               image={{
                 src: `${bike.gallery.modelImage.src}`,

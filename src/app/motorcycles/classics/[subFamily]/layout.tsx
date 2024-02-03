@@ -31,7 +31,7 @@ export default function SubFamilyLayout({
       link: `/${path}/${params.subFamily}/specifications`,
     },
     {
-      text: "Зошто треба да ја одберете!",
+      text: "Детали",
       link: `/${path}/${params.subFamily}/reasons-to-ride`,
     },
     {
@@ -46,7 +46,7 @@ export default function SubFamilyLayout({
         <SecondaryNavBar
           items={secondaryNavItems}
           title={formulateSubFamilyTitleOnBanner(params.subFamily.toString())}
-          configurationLink={`/configure/bike/${params.subFamily}`}
+          configurationLink={`/configure/bikes/${params.subFamily}`}
         />
       )}
 
@@ -54,7 +54,7 @@ export default function SubFamilyLayout({
         <MobileSecondaryNav
           items={secondaryNavItems}
           title={formulateSubFamilyTitleOnBanner(params.subFamily.toString())}
-          configurationLink={`/configure/bike/${params.subFamily}`}
+          configurationLink={`/configure/bikes/${params.subFamily}`}
         />
       )}
 

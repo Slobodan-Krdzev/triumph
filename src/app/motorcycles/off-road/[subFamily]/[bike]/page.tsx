@@ -10,11 +10,8 @@ import MainBtn from "@/app/components/MainBtn";
 import NumbersSection from "@/app/components/SubFamily/NumbersSection";
 import SpecTableListi from "@/app/components/SubFamily/Specification/SpecTableListi";
 import SpecsTable from "@/app/components/SubFamily/Specification/SpecsTable";
-import BikeListingNoSlider from "@/app/components/familiySharedComponents/BikeListingNoSlider";
-import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
-import TextAndImageFlexSection from "@/app/components/familiySharedComponents/TextAndImageFlexSection";
 import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
-import { BIKES, FAMILIES } from "@/app/constants/constants";
+import { BIKES, FAMILIES, SUB_FAMILIES } from "@/app/constants/constants";
 
 type BikePagePromoType = {
   title: string;
@@ -23,6 +20,9 @@ type BikePagePromoType = {
 };
 
 const OffRoadBikePage = async ({ params }: any) => {
+
+  const subFamQuery = params.subFamily
+
   try {
     const bikeRes = await fetch(`${BIKES}?model=${params.bike}`, {
       cache: "no-store",
@@ -30,9 +30,9 @@ const OffRoadBikePage = async ({ params }: any) => {
     const bikeData = await bikeRes.json();
     const bike = bikeData[0];
 
-    const subFamRes = await fetch(`${FAMILIES}?type=off-road`);
+    const subFamRes = await fetch(`${SUB_FAMILIES}?subFamilyName=${subFamQuery}`);
     const subFamData = await subFamRes.json();
-    const subFam = subFamData[0].subFamilies[bike.subFamilyCategory];
+    const subFam = subFamData[0];
 
     return (
       <main className="bg-white">

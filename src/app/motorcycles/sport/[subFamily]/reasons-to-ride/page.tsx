@@ -1,20 +1,18 @@
 import ReasonsListin from "@/app/components/SubFamily/Reasons/ReasonsListin";
-import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
 import BikeListingNoSlider from "@/app/components/familiySharedComponents/BikeListingNoSlider";
 import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
 import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
-import { BIKES, FAMILIES } from "@/app/constants/constants";
-import React from "react";
+import { BIKES, SUB_FAMILIES } from "@/app/constants/constants";
 
 const SubFamReasonsToRidePage = async ({ params }: any) => {
   const subFam = params.subFamily;
 
   try {
-    const familyRes = await fetch(`${FAMILIES}?type=sport`, {
+    const subFamilyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=${subFam}`, {
       cache: "no-store",
     });
-    const familyData = await familyRes.json();
-    const subFamily = familyData[0].subFamilies[subFam];
+    const subFamilyData = await subFamilyRes.json();
+    const subFamily = subFamilyData[0];
 
     const bikesRes = await fetch(`${BIKES}?model=${subFam}`);
     const bikesData = await bikesRes.json();

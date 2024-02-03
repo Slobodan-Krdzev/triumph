@@ -3,7 +3,7 @@ import PageParagraph from "./PageParagraph";
 import SectionTitleH2 from "./SectionTitleH2";
 
 type TextAndImageProps = {
-  title: string;
+  title?: string;
   textMain: string;
   textSecondary?: string;
   image: {
@@ -31,7 +31,7 @@ const TextAndImageFlexSection = ({
       </div>
       <div className="basis-1/2">
         <div className={`lg:w-5/6 text-center ${textCenter ? "md:text-center" : "md:text-left"}`}>
-          <SectionTitleH2 text={title} color={textWhite ? "white" : "dark"} />
+          <SectionTitleH2 text={title ?? ''} color={textWhite ? "white" : "dark"} />
           <PageParagraph marginBot={true} text={textMain} />
 
           {textSecondary && <PageParagraph text={textSecondary} />}

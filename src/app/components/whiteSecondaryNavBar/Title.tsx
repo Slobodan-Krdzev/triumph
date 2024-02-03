@@ -12,7 +12,7 @@ const Title = ({ text }: TitleProps) => {
   const isOffRoadRoute = Boolean(pathname.split("/")[2] === "off-road");
 
   return (
-    <span className={`${isOffRoadRoute ? "text-black" : "text-red"} text-xl font-bold uppercase italic mr-10 tracking-tighter`}>
+    <span className={`${isOffRoadRoute ? "text-black" : "text-red"} text-xl font-bold uppercase italic tracking-tighter`}>
       {text}
     </span>
   );

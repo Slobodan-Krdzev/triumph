@@ -15,6 +15,7 @@ const BikesByFamilyWithSlider = ({
   items,
   familyData,
 }: BikesByFamilyWithSliderProps) => {
+
   return (
     <div className="flex lg:flex-row flex-col md:mb-24 mb-16 gap-8">
       <div className="lg:basis-1/3 basis-1 md:border-r-2 border-gray-300 md:pt-12">

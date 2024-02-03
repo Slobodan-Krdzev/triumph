@@ -1,17 +1,15 @@
 import HeroSection from "@/app/components/SubFamily/HeroSection";
 import TopSection from "@/app/components/SubFamily/TopSection";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
-import { FAMILIES, BIKES } from "@/app/constants/constants";
-import React from "react";
+import { BIKES, SUB_FAMILIES } from "@/app/constants/constants";
 
 const Rocket3SubFamPage = async () => {
   try {
-    const familyRes = await fetch(`${FAMILIES}?type=rocket-3`, {
+    const subFamilyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=rocket-3`, {
       cache: "no-store",
     });
-    const familyData = await familyRes.json();
-    const family = familyData[0];
-
+    const subFamilyData = await subFamilyRes.json();
+    const subFamily = subFamilyData[0];
     const bikesRes = await fetch(
       `${BIKES}?category=rocket-3&subFamilyCategory=rocket-3`,
       {
@@ -20,50 +18,22 @@ const Rocket3SubFamPage = async () => {
     );
     const bikes = await bikesRes.json();
 
-    console.log(
-      "FAMILIJA OD CLASSICS SUBFAMILY",
-      family.subFamilies["rocket-3"].gallery.subFamilyHeroVideo.src
-    );
-
-    //   const hasGrayCaro =
-    //     family.subFamilies.subFamilyPageInfo.hasOwnProperty(
-    //       "grayCarousell"
-    //     );
-
-    //   const hasYoutubeVid =
-    //     family.subFamilies.subFamilyPageInfo.hasOwnProperty(
-    //       "youtubeVideo"
-    //     );
-
     return (
       <>
         <HeroSection
-          video={family.subFamilies["rocket-3"].gallery.subFamilyHeroVideo.src}
-          mobileImage={family.subFamilies['rocket-3'].gallery.subFamilyHeroImageMobile?.src ?? "/"}
+          video={subFamily.gallery.subFamilyHeroVideo.src}
+          mobileImage={subFamily.gallery.subFamilyHeroImageMobile?.src ?? "/"}
           model={"Rocket-3"}
-          slogans={family.subFamilies["rocket-3"].subFamilyPageInfo.heroSlogans}
+          slogans={subFamily.subFamilyPageInfo.heroSlogans}
         />
 
         <main className="bg-white">
           <TopSection
-            title={
-              family.subFamilies["rocket-3"].subFamilyPageInfo.topSection.title
-            }
-            desc={
-              family.subFamilies["rocket-3"].subFamilyPageInfo.topSection.desc
-            }
-            subtitle={
-              family.subFamilies["rocket-3"].subFamilyPageInfo.topSection
-                .subtitle
-            }
-            image={
-              family.subFamilies["rocket-3"].gallery.subFamilyTopSectionImage
-                .src
-            }
-            bgImage={
-              family.subFamilies["rocket-3"].gallery.subFamilyTopSectionBGImage
-                .src
-            }
+            title={subFamily.subFamilyPageInfo.topSection.title}
+            desc={subFamily.subFamilyPageInfo.topSection.desc}
+            subtitle={subFamily.subFamilyPageInfo.topSection.subtitle}
+            image={subFamily.gallery.subFamilyTopSectionImage.src}
+            bgImage={subFamily.gallery.subFamilyTopSectionBGImage.src}
           />
 
           <section className="px-4 lg:px-20 xl:px-40">
@@ -74,7 +44,7 @@ const Rocket3SubFamPage = async () => {
                 desc={bike.subFamilyPromo.desc}
                 ctaBtn={{
                   text: "Детали",
-                  link: `/motorcycles/${family.type}/rocket-3/${bike.model}`,
+                  link: `/motorcycles/rocket-3/rocket-3/${bike.model}`,
                 }}
                 image={{
                   src: `${bike.gallery.modelImage.src}`,

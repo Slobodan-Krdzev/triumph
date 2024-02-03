@@ -2,12 +2,13 @@ import React from 'react'
 
 type SecondaryPagesHeroSectionProps = {
     bannerImage:string,
-    subFamilyTitle: string,
+    subFamilyTitle?: string,
     text: string,
-    subFamily?: any
+    subFamily?: any,
+    subText?: string
 }
 
-const SecondaryPagesHeroSection = ({bannerImage, subFamilyTitle, text, subFamily}: SecondaryPagesHeroSectionProps) => {
+const SecondaryPagesHeroSection = ({bannerImage, subFamilyTitle, text, subFamily, subText}: SecondaryPagesHeroSectionProps) => {
 
   const isOfRoad = Boolean(subFamily?.url.split('/')[2] ?? "")  
 
@@ -29,6 +30,9 @@ const SecondaryPagesHeroSection = ({bannerImage, subFamilyTitle, text, subFamily
               </h1>
               <p className="md:text-7xl text-4xl uppercase font-bold tracking-tighter text-center w-full">
                 {text}
+              </p>
+              <p className={`md:text-xl py-4 font-semibold text-md text-center w-full ${subText ? "border-t-4" : ""} ${isOfRoad ? "border-quartal" : "border-red-600"}`}>
+                {subText}
               </p>
             </div>
           </div>

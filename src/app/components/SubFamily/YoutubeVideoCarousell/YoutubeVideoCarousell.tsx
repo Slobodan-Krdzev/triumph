@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { useBreakpoint } from "../../helpers/useBreakpoint";
 import SectionTitleH2 from "../../familiySharedComponents/SectionTitleH2";
 
-type YoutubeVideoCarousellItemType = {
+export type YoutubeVideoCarousellItemType = {
   src: string;
   title: string;
 };

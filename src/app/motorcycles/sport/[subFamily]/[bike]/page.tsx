@@ -11,7 +11,7 @@ import SpecTableListi from "@/app/components/SubFamily/Specification/SpecTableLi
 import SpecsTable from "@/app/components/SubFamily/Specification/SpecsTable";
 import TextAndImageFlexSection from "@/app/components/familiySharedComponents/TextAndImageFlexSection";
 import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
-import { BIKES, FAMILIES } from "@/app/constants/constants";
+import { BIKES, FAMILIES, SUB_FAMILIES } from "@/app/constants/constants";
 
 type BikePagePromoType = {
   title: string;
@@ -20,6 +20,12 @@ type BikePagePromoType = {
 };
 
 const SportBikePage = async ({ params }: any) => {
+
+  const subFamilyType = params.subFamily
+
+  console.log(subFamilyType, 'SUB FAMILIJA');
+  
+
   try {
     const bikeRes = await fetch(`${BIKES}?model=${params.bike}`, {
       cache: "no-store",
@@ -27,9 +33,9 @@ const SportBikePage = async ({ params }: any) => {
     const bikeData = await bikeRes.json();
     const bike = bikeData[0];
 
-    const subFamRes = await fetch(`${FAMILIES}?type=sport`);
+    const subFamRes = await fetch(`${SUB_FAMILIES}?subFamilyName=${subFamilyType}`);
     const subFamData = await subFamRes.json();
-    const subFam = subFamData[0].subFamilies[bike.subFamilyCategory];
+    const subFam = subFamData[0]
 
     return (
       <main className="bg-white">

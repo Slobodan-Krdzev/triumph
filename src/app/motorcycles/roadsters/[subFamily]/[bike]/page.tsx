@@ -10,14 +10,11 @@ import MainBtn from '@/app/components/MainBtn';
 import SpecTableListi from '@/app/components/SubFamily/Specification/SpecTableListi';
 import SpecsTable from '@/app/components/SubFamily/Specification/SpecsTable';
 import TextAndImageFlexSection from '@/app/components/familiySharedComponents/TextAndImageFlexSection';
-import { BIKES, FAMILIES } from '@/app/constants/constants';
-import React from 'react'
+import { BIKES, SUB_FAMILIES } from '@/app/constants/constants';
 
 const RoadstersBikePage = async ({params}: any) => {
     const bikeModel = params.bike;
-
-    console.log("bike model", bikeModel);
-    
+    const subFamQuery = params.subFamily
 
     try {
       const bikeRes = await fetch(`${BIKES}?model=${params.bike}`, {
@@ -26,9 +23,9 @@ const RoadstersBikePage = async ({params}: any) => {
       const bikeData = await bikeRes.json();
       const bike = bikeData[0];
   
-      const subFamRes = await fetch(`${FAMILIES}?type=roadsters`);
+      const subFamRes = await fetch(`${SUB_FAMILIES}?subFamilyName=${subFamQuery}`);
       const subFamData = await subFamRes.json();
-      const subFam = subFamData[0].subFamilies[bike.subFamilyCategory];
+      const subFam = subFamData[0];
   
       return (
         <main className="bg-white">

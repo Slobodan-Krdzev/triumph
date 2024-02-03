@@ -6,10 +6,10 @@ import PageHeroSection from "@/app/components/familiySharedComponents/PageHeroSe
 import PageParagraph from "@/app/components/familiySharedComponents/PageParagraph";
 import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
 import TextAndImageFlexSection from "@/app/components/familiySharedComponents/TextAndImageFlexSection";
+import { createSubFamLinksForSecondary } from "@/app/components/helpers/createSubFamLinksForSecondary";
 import { formSecondaryNavItems } from "@/app/components/helpers/formSecondaryNavItems";
 import { getBikesBySubfamilyCategory } from "@/app/components/helpers/getBikesBySubfamilyCategory";
-import { SecondaryNavItemsType } from "@/app/components/whiteSecondaryNavBar/SecondaryNavBar";
-import { BIKES, FAMILIES } from "@/app/constants/constants";
+import { BIKES, FAMILIES, PROMOS, SUB_FAMILIES } from "@/app/constants/constants";
 import { PromoDataType } from "@/app/types/HomeTypes/SharedTypes/types";
 
 const AdventurePage = async () => {
@@ -18,14 +18,20 @@ const AdventurePage = async () => {
   });
   const familyData = await familyRes.json();
 
+  const subFamiliesRes = await fetch(`${SUB_FAMILIES}?familyType=adventure`, {cache: 'no-store'})
+  const subFamilies = await subFamiliesRes.json()
+
   const bikesRes = await fetch(`${BIKES}?category=adventure`, {
     cache: "no-store",
   });
   const bikes = await bikesRes.json();
 
+  const promosRes = await fetch(`${PROMOS}?category=adventure`)
+  const promos = await promosRes.json()
+
   return (
     <main className="relative white-bg">
-      <SecondaryNavFamily items={formSecondaryNavItems(familyData[0].subFamilies, 'adventure')} title={"Adventure"} configLink={"/configure"} />
+      <SecondaryNavFamily items={createSubFamLinksForSecondary(subFamilies)} title={"Adventure"} configLink={"/configure"} />
       <PageHeroSection
         title={familyData[0].type}
         mainBikeLogo={familyData[0].mainBikeLogoImage}
@@ -63,45 +69,29 @@ const AdventurePage = async () => {
           </div>
 
           <BikeListingNoSlider
-            bikes={getBikesBySubfamilyCategory("tiger-900-range", bikes)}
+            bikes={getBikesBySubfamilyCategory("tiger-900", bikes)}
             configureLink={true}
           />
         </section>
 
-        {familyData[0].promo.map((item: PromoDataType, idx: number) => (
+        {promos.map((promo: PromoDataType, idx: number) => (
           <BikeInfoTextImageBtn
-            key={`${item.title},${idx}`}
-            title={item.title}
-            desc={item.desc}
+            key={promo.id}
+            title={promo.title}
+            desc={promo.desc}
             ctaBtn={{
               text: "Детали",
-              link: `/motorcycles/adventure/${item.subFamilyType}`,
+              link: `/motorcycles/adventure/${promo.subFamilyType}`,
             }}
             image={{
-              src: `${item.image}`,
-              alt: `${item.title}`,
+              src: `${promo.image}`,
+              alt: `${promo.title}`,
             }}
-            blackBtn={item.btnBlack}
+            blackBtn={promo.btnBlack}
             imageOnTheLeft={idx % 2 === 0 ? true : false}
             mobileTextRight={idx % 2 === 0 ? true : false}
           />
         ))}
-
-        <BikeInfoTextImageBtn
-          title={"TIGER 1200"}
-          desc={"All-terrain моторцикли кои го освојуваат светот..."}
-          ctaBtn={{
-            text: "Детали",
-            link: "/configure/families/adventure",
-          }}
-          image={{
-            src: "/images/adventure/adventurePromoTiger1200Gif.gif",
-            alt: "slika",
-          }}
-          blackBtn={true}
-          imageOnTheLeft={false}
-          mobileTextRight={false}
-        />
       </section>
       <GrayBand
         itemOne={{

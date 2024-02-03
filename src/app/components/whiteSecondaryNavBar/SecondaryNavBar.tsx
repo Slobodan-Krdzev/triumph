@@ -29,7 +29,7 @@ const SecondaryNavBar = ({
         style={{ zIndex: 40 }}
       >
         {/* LEFT SIDE */}
-        <div className="flex items-center">
+        <div className="flex items-center gap-8">
           <Title text={title.toString()} />
           {items.map((item: SecondaryNavItemsType) => (
             <LinkItem key={item.link} link={item.link} text={item.text} />

@@ -1,24 +1,21 @@
 import ReasonsListin from "@/app/components/SubFamily/Reasons/ReasonsListin";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
 import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
-import { BIKES, FAMILIES } from "@/app/constants/constants";
-import React from "react";
+import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
+import { BIKES, SUB_FAMILIES } from "@/app/constants/constants";
+import { redirect } from "next/navigation";
 
 const SubFamReasonsToRidePage = async ({ params }: any) => {
   const subFam = params.subFamily;
 
   try {
-    const familyRes = await fetch(`${FAMILIES}?type=adventure`, {
-      cache: "no-store",
-    });
-    const familyData = await familyRes.json();
-    const subFamily = familyData[0].subFamilies[subFam];
+    const subFamilyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=${subFam}`, {cache: 'no-store'});
+    const subFamilyData = await subFamilyRes.json();
+    const subFamily = subFamilyData[0];
 
     const bikesRes = await fetch(`${BIKES}?model=${subFam}`);
     const bikesData = await bikesRes.json();
 
-    console.log("bikes", bikesData);
-    
     return (
       <>
         <section
@@ -33,28 +30,31 @@ const SubFamReasonsToRidePage = async ({ params }: any) => {
         >
           <div className="flex justify-center items-center w-full h-full overlay">
             <div className="w-6/12 m-auto flex flex-col justify-center items-center text-white gap-6">
-              <h1 className="md:text-xl text-sm border-b-4 border-white capitalize pb-2">
-                {subFam}
+              <h1 className="md:text-3xl text-sm border-b-4 border-white font-semibold capitalize pb-2">
+                {formulateSubFamilyTitleOnBanner(subFam)}
               </h1>
               <p className="md:text-5xl text-xl uppercase font-semibold tracking-tighter text-center">
-                Причини зошто да ја одберете серијата
+                Детали
               </p>
             </div>
           </div>
         </section>
         <main className="px-4">
-          <div className="md:w-10/12 lg:w-6/12 m-auto md:py-16 py-8">
-            <SectionTitleH2
-              text={subFamily.reasonsToDrive.infoText.title}
-              color={"dark"}
-            />
-            <p className="font-normal md:text-lg text-md">
-              {subFamily.reasonsToDrive.infoText.desc}
-            </p>
-          </div>
+          {subFamily.reasonsToDrive.infoText && (
+            <div className="md:w-10/12 lg:w-6/12 m-auto md:py-16 py-8 text-center">
+              <SectionTitleH2
+                text={subFamily.reasonsToDrive.infoText?.title ?? ""}
+                color={"dark"}
+              />
+              <p className="font-normal md:text-lg text-md">
+                {subFamily.reasonsToDrive.infoText?.desc ?? ""}
+              </p>
+            </div>
+          )}
 
-          <ReasonsListin reasons={subFamily.reasonsToDrive.reasons} />
+          {subFamily.reasonsToDrive.reasons && <ReasonsListin reasons={subFamily.reasonsToDrive.reasons ?? []} />}
           
+
           {bikesData.map((bike: any) => (
             <BikeInfoTextImageBtn
               key={bike.id}
@@ -77,7 +77,7 @@ const SubFamReasonsToRidePage = async ({ params }: any) => {
   } catch (err) {
     console.log(err);
 
-    return;
+    return redirect(`/motorcycles/adventure/${subFam}`);
   }
 };
 

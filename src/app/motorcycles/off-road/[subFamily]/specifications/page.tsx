@@ -1,10 +1,13 @@
 import MainBtn from "@/app/components/MainBtn";
 import SpecsTable from "@/app/components/SubFamily/Specification/SpecsTable";
-import { FAMILIES } from "@/app/constants/constants";
+import { SUB_FAMILIES } from "@/app/constants/constants";
 
 const SpecsSportPage = async ({ params }: any) => {
+
+  const subFam = params.subFamily
+
   try {
-    const subFamilyRes = await fetch(`${FAMILIES}?type=off-road`, {
+    const subFamilyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=${subFam}`, {
       cache: "no-store",
     });
     const subFamilyData = await subFamilyRes.json();
@@ -21,16 +24,12 @@ const SpecsSportPage = async ({ params }: any) => {
               text={"Види ги Моделите"}
               bgBlack={false}
               isLink={true}
-              link={`/motorcycles/off-road/${params.subFamily}/models`}
+              link={`/motorcycles/off-road/${subFam}/models`}
             />
           </div>
 
-          <SpecsTable
-            specs={
-              subFamily.subFamilies[params.subFamily].subFamilyPageInfo
-                .fullSpecs
-            }
-          />
+          {subFamily.subFamilyPageInfo.fullSpecs && <SpecsTable specs={subFamily.subFamilyPageInfo.fullSpecs ?? []} />}
+          
         </main>
       </>
     );

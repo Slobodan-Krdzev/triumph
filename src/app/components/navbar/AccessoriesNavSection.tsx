@@ -8,7 +8,7 @@ import { createBikeList } from "../helpers/getLatestBikes";
 export const linkItemsAccessory: NavLinkListingItemsType[] = [
   {
     text: "Конфигурација",
-    link: "/configuration",
+    link: "/configure",
   },
   {
     text: "Оригинален Triumph Багаж",
@@ -16,7 +16,7 @@ export const linkItemsAccessory: NavLinkListingItemsType[] = [
   },
   {
     text: "Triumph Connectivity Систем",
-    link: "/motorcycles/my-triumph-connectivity-system",
+    link: "/accessories/my-triumph-connectivity-system",
   },
   {
     text: "Triumph Sena Bluetooth®",
@@ -101,7 +101,7 @@ const AccessoriesNavSection = ({bikes}: AccessoriesNavProps) => {
         items={linkItemsQuickLinks}
         title={"Барани Линкови"}
         bottomLinkText={"Koнтакт"}
-        bottomLinkUrl={"/dealers/dealer-search"}
+        bottomLinkUrl={"/dealer"}
       />
 
       <Link href={"/configure"}>

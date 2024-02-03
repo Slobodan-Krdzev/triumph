@@ -33,7 +33,7 @@ const HeroSection = ({
     return (
       <section className="relative">
         <video autoPlay muted loop className="w-full hidden lg:block " src={video} playsInline></video>
-        <Image className="block lg:hidden " src={mobileImage ?? ""} alt={model!} width={1000} height={425} loading="lazy"/>
+        <Image className="block lg:hidden " src={mobileImage ?? ""} alt={model ?? "Hero Image" } width={1000} height={425} loading="lazy"/>
         <div
           className="absolute text-white flex flex-col items-center"
           style={{
@@ -44,7 +44,7 @@ const HeroSection = ({
         >
           {slogans && (
             <>
-              <p className={`text-5xl text-center font-medium uppercase border-b-4 ${doesItContainOffRoad ? 'border-quartal' : "border-red-600"} pb-4 inline`}>
+              <p className={`text-2xl md:text-5xl text-center font-medium uppercase border-b-4 ${doesItContainOffRoad ? 'border-quartal' : "border-red-600"} pb-4 inline`}>
                 {model}
               </p>
 

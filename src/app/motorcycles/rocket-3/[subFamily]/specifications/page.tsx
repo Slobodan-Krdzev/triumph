@@ -2,11 +2,11 @@ import MainBtn from "@/app/components/MainBtn";
 import SpecsTable from "@/app/components/SubFamily/Specification/SpecsTable";
 import BikeListingNoSlider from "@/app/components/familiySharedComponents/BikeListingNoSlider";
 import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
-import { BIKES, FAMILIES } from "@/app/constants/constants";
+import { BIKES, FAMILIES, SUB_FAMILIES } from "@/app/constants/constants";
 
 const Rocket3SpecsPage = async () => {
   try {
-    const subFamilyRes = await fetch(`${FAMILIES}?type=rocket-3`, {
+    const subFamilyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=rocket-3`, {
       cache: "no-store",
     });
     const subFamilyData = await subFamilyRes.json();
@@ -32,18 +32,12 @@ const Rocket3SpecsPage = async () => {
             />
           </div>
 
-          <SpecsTable
-            specs={
-              subFamily.subFamilies["rocket-3"].subFamilyPageInfo.fullSpecs
-            }
-          />
+          <SpecsTable specs={subFamily.subFamilyPageInfo.fullSpecs ?? []} />
 
           <section className="py-4 md:py-16 my-4 md:my-16 text-center border-thin-gray">
             <SectionTitleH2 text={"Rocket-3 Модели"} color={"dark"} />
             <BikeListingNoSlider bikes={bikesData} configureLink={true} />
           </section>
-
-          
         </main>
       </>
     );

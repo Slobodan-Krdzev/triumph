@@ -15,6 +15,8 @@ import MotorcycleSectionMobile from "./MotorcycleSectionMobile";
 import OwnersSectionMobile from "./OwnersSectionMobile";
 import OffersSectionMobile from "./OffersSectionMobile";
 import Link from "next/link";
+import Image from "next/image";
+import LocationsMobile from "./LocationsMobile";
 
 type SectionTypeType =
   | ""
@@ -23,7 +25,8 @@ type SectionTypeType =
   | "owners"
   | "clothing"
   | "discover"
-  | "moto-offers";
+  | "moto-offers"
+  | "locations"
 
 type DropdownProps = {
   visibility: boolean;
@@ -60,7 +63,7 @@ const Dropdown = ({
   return (
     <>
       <motion.div
-        className="fixed bg top-16 right-0 left-0 z-50 h-screen text-white overflow-y-auto"
+        className="fixed bg top-16 right-0 left-0 z-50 h-screen text-white overflow-y-scroll border"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -20 }}
@@ -156,15 +159,17 @@ const Dropdown = ({
           </li>
         </ul>
         <ul className="px-8 pt-8 text-xs h-48">
-          <li className="mt-2">
+          <li className="mt-4">
             <Link href={"/dealers/dealer-search"}>Контакт</Link>
           </li>
-          <li className="mt-2">
+          <li className="mt-4">
             <Link href={"/configuration"}>Конфигурација</Link>
           </li>
-          <li className="uppercase mt-2">
+          <li className="uppercase my-4">
             <Link href={"/latest-offers"}>Понуди</Link>
           </li>
+        <li className='flex justify-start items-center'> <Image src={"pin icon-01.svg"} alt='Pin' width={30} height={30}/> <button onClick={() => handleSectionOpen("locations")}>Macedonia</button></li>
+
         </ul>
       </motion.div>
 
@@ -198,6 +203,9 @@ const Dropdown = ({
           )}
           {sectionType === "discover" && (
             <DiscoverSectionMobile handler={handleSectionClose} />
+          )}
+          {sectionType === "locations" && (
+            <LocationsMobile handler={handleSectionClose} />
           )}
         </motion.div>
       )}

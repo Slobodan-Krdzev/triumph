@@ -36,7 +36,7 @@ const DiscoverThriumphSection = () => {
         <SectionTitleH2 text={'Откријте го "Thriumph"'} color={"dark"} />
       </div>
 
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap ">
         {items.map((item) => (
           <DiscoverThriumphCard
             key={item.title}

@@ -18,7 +18,7 @@ const ReasonsListin = ({ reasons = [], textWhite }: ReasonsListinProps) => {
       {reasons.map((reason) => (
         <li key={reason.title} className={`md:mb-16 mb-8 last:mb-0 ${textWhite ? "text-white" : ""}`}>
           <div className="md:w-7/12 m-auto">
-            <h3 className="font-medium text-3xl lg:text-5xl mb-2">
+            <h3 className="font-medium text-3xl lg:text-5xl mb-4 md:mb-8">
               {(reasons.indexOf(reason) + 1).toString() + '. '}{reason.title}
             </h3>
             <p className="font-normal md:text-lg text-md">{reason.desc}</p>

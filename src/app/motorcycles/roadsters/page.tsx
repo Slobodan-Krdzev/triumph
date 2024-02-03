@@ -2,21 +2,15 @@ import SecondaryNavFamily from "@/app/components/SecondaryNavFamily";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
 import PageHeroSection from "@/app/components/familiySharedComponents/PageHeroSection";
 import TextAndImageFlexSection from "@/app/components/familiySharedComponents/TextAndImageFlexSection";
+import { createSubFamLinksForSecondary } from "@/app/components/helpers/createSubFamLinksForSecondary";
 import { formSecondaryNavItems } from "@/app/components/helpers/formSecondaryNavItems";
 import AudioSection from "@/app/components/roadstersUniqueComp/AudioSection";
 import SecondaryNavBar, { SecondaryNavItemsType } from "@/app/components/whiteSecondaryNavBar/SecondaryNavBar";
-import { BIKES, FAMILIES } from "@/app/constants/constants";
+import { BIKES, FAMILIES, PROMOS, SUB_FAMILIES } from "@/app/constants/constants";
 import { PromoDataType } from "@/app/types/HomeTypes/SharedTypes/types";
 import React from "react";
 
 const RoadstersPage = async () => {
-  const handleLink = (link: string, query: string) => {
-    if (link.includes(query)) {
-      return true;
-    }
-
-    return false;
-  };
 
   try {
     const familyRes = await fetch(`${FAMILIES}?type=roadsters`, {
@@ -24,10 +18,15 @@ const RoadstersPage = async () => {
     });
     const familyData = await familyRes.json();
 
+    const subFamiliesRes = await fetch(`${SUB_FAMILIES}?familyType=roadsters`)
+    const subFamilies = await subFamiliesRes.json()
+
+    const promosRes = await fetch(`${PROMOS}?category=roadsters`);
+    const promos = await promosRes.json();
 
     return (
       <>
-      <SecondaryNavFamily items={formSecondaryNavItems(familyData[0].subFamilies, 'roadsters')} title={"Roadsters"} configLink={"/configure"} />
+      <SecondaryNavFamily items={createSubFamLinksForSecondary(subFamilies)} title={"Roadsters"} configLink={"/configure"} />
 
         <PageHeroSection
           title={"Roadsters"}
@@ -48,22 +47,20 @@ const RoadstersPage = async () => {
             }}
           />
 
-          {familyData[0].promo.map((item: PromoDataType, idx: number) => (
+          {promos.map((promo: PromoDataType, idx: number) => (
             <BikeInfoTextImageBtn
-              key={`${item.title},${idx}`}
-              title={item.title}
-              desc={item.desc}
+              key={`${promo.title},${idx}`}
+              title={promo.title}
+              desc={promo.desc}
               ctaBtn={{
                 text: "Детали",
-                link: handleLink(item.subFamilyType, "for-the-ride")
-                  ? item.subFamilyType
-                  : `/motorcycles/roadsters/${item.subFamilyType}`,
+                link: `/motorcycles/roadsters/${promo.subFamilyType}`,
               }}
               image={{
-                src: `${item.image}`,
-                alt: `${item.title}`,
+                src: `${promo.image}`,
+                alt: `${promo.title}`,
               }}
-              blackBtn={item.btnBlack}
+              blackBtn={promo.btnBlack}
               imageOnTheLeft={idx % 2 === 0 ? true : false}
               mobileTextRight={idx % 2 === 0 ? true : false}
             />

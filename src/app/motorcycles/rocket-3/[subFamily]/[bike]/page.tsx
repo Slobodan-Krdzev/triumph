@@ -10,12 +10,8 @@ import GrayBand from "@/app/components/GrayBand";
 import MainBtn from "@/app/components/MainBtn";
 import NumbersSection from "@/app/components/SubFamily/NumbersSection";
 import SpecTableListi from "@/app/components/SubFamily/Specification/SpecTableListi";
-import SpecsTable from "@/app/components/SubFamily/Specification/SpecsTable";
-import BikeListingNoSlider from "@/app/components/familiySharedComponents/BikeListingNoSlider";
 import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
-import TextAndImageFlexSection from "@/app/components/familiySharedComponents/TextAndImageFlexSection";
-import { BIKES, FAMILIES } from "@/app/constants/constants";
-import React from "react";
+import { BIKES, SUB_FAMILIES } from "@/app/constants/constants";
 
 const RocketBikePage = async ({ params }: any) => {
   const bikeModel = params.bike;
@@ -27,11 +23,11 @@ const RocketBikePage = async ({ params }: any) => {
     const bikeData = await bikeRes.json();
     const bike = bikeData[0];
 
-    const subFamRes = await fetch(`${FAMILIES}?type=rocket-3`, {
+    const subFamRes = await fetch(`${SUB_FAMILIES}?subFamilyName=rocket-3`, {
       cache: "no-store",
     });
     const subFamData = await subFamRes.json();
-    const subFam = subFamData[0].subFamilies["rocket-3"];
+    const subFam = subFamData[0];
 
     return (
       <main className="bg-white">
@@ -80,11 +76,13 @@ const RocketBikePage = async ({ params }: any) => {
           <Rocket3TopDesc info={bike.bikePageInfo.topDesc} />
         )}
 
-        <NumbersSection
-          model={bikeModel}
-          specNumbers={subFam.subFamilyPageInfo.specNumbers}
-          bgBlack={true}
-        />
+        {subFam.subFamilyPageInfo.specNumbers && (
+          <NumbersSection
+            model={bikeModel}
+            specNumbers={subFam.subFamilyPageInfo.specNumbers}
+            bgBlack={true}
+          />
+        )}
 
         {bike.gallery.promoYoutubeVideo && (
           <PromoBikeYoutubeVideo

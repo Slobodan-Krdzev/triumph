@@ -23,7 +23,7 @@ const ConfigTypeOfFamPage = async ({ params }: any) => {
             url: "/configure/bikes",
           }}
         />
-        <section className="flex flex-wrap justify-center sm:justify-between md:justify-start gap-8 px-4 md:px-28 md:pt-16 md:pb-10">
+        <section className="flex flex-wrap justify-center sm:justify-between md:justify-start gap-8 px-4 md:px-28 py-4 md:py-8 lg:py-16">
           {bikes.map((bike: any) => (
             <Card key={bike.id} item={bike} />
           ))}
