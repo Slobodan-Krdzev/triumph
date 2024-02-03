@@ -2,37 +2,75 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Families;
+use App\Models\Promo;
 use Illuminate\Http\Request;
 
 class PromoController extends Controller
 {
-    public function editPromo($id)
+    public function create()
+    {
+        return view('layouts.add-promo');
+    }
+
+    public function store(Request $request)
     {
 
-        // $promo = Families::find($id);
+        $promoData = $request->input('promo_data', []);
+
+        $promo = new Promo();
+        $promo->promo_data = json_encode($promoData);
+        $promo->save();
+
+        return redirect()->route('add-promo')->with('success', 'Promo data stored successfully');
+    }
+
+    public function delete($id)
+    {
+        $promo = Promo::findOrFail($id);
+        $promo->delete();
+
+        return back()->with('success', 'Promo item deleted successfully.');
+    }
 
 
-        // return view('layouts.edit-promo', ['promo' => $promo]);
 
-        $promo = Families::findOrFail($id);
-
+    public function edit($id)
+    {
+        $promo = Promo::findOrFail($id);
+        $promo->promo_data = json_decode($promo->promo_data, true);
         return view('layouts.edit-promo', compact('promo'));
     }
 
-    public function updatePromo(Request $request, $id, $promoId)
+
+    public function update(Request $request, $id)
     {
-        $validatedData = $request->validate([
-            'title' => 'required|string',
-            'desc' => 'required|string',
+        $request->validate([
+            'promo.*.title' => 'required',
+            'promo.*.subFamilyType' => 'required',
+            'promo.*.desc' => 'required',
+            'promo.*.image' => 'required',
+            'promo.*.btnBlack' => 'required|boolean',
         ]);
 
-        $family = Families::find($id);
+        $promo = Promo::findOrFail($id);
 
-        $promo = $family->promo()->find($promoId);
+        // Decode the existing promo data
+        $promoData = json_decode($promo->promo_data, true);
 
-        $promo->update($validatedData);
+        // Update the promo data with the new values from the request
+        foreach ($request->promo as $key => $promoItem) {
+            $promoData[$key]['title'] = $promoItem['title'];
+            $promoData[$key]['subFamilyType'] = $promoItem['subFamilyType'];
+            $promoData[$key]['desc'] = $promoItem['desc'];
+            $promoData[$key]['image'] = $promoItem['image'];
+            $promoData[$key]['btnBlack'] = $promoItem['btnBlack'];
+        }
 
-        return redirect()->route('your.route.name')->with('success', 'Promo updated successfully');
+        // Encode and update the promo data
+        $promo->promo_data = json_encode($promoData);
+        $promo->save();
+
+        // Redirect back with a success message
+        return redirect()->back()->with('success', 'Promo updated successfully.');
     }
 }

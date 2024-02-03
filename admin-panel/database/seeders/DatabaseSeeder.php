@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+use App\Models\SubFamAdventure;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -12,11 +14,13 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // \App\Models\User::factory(10)->create();
+        $this->call(FamAdventureTableSeeder::class);
+        $this->call(MotoFamiliesTableSeeder::class);
+        $this->call(MotorcyclesTableSeeder::class);
+        $this->call(PromoTableSeeder::class);
+        $this->call(SubFamAdventureTableSeeder::class);
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+
+
     }
 }

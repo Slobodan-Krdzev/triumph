@@ -22,6 +22,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
-Route::get('/main-carousell-items', [MainCarousellItemController::class, 'index']);
-Route::get('/motorcycle', [MotorcycleController::class, 'listMotorcycle']);
+
 

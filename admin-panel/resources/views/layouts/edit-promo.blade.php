@@ -1,5 +1,4 @@
 <x-app-layout>
-
     <div class="px-8 mt-10 w-8/12">
         @if (session('success'))
             <div class="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400"
@@ -8,50 +7,39 @@
             </div>
         @endif
 
-        <form method="post" action="{{ route('update-promo', ['id' => $promo]) }}" class="flex flex-col">
+            <div class="flex">
+                <h1 class="bg-blue-400 text-white rounded py-3 px-6 mb-5"><a href="{{route('view-families')}}">Back</a></h1>
+            </div>
+        <form method="post" action="{{ route('update-promo', ['id' => $promo->id]) }}" class="flex flex-col">
             @csrf
             @method('PUT')
 
-            <!-- Display input fields for each promo item -->
-            @foreach ($promo->promo as $key => $promoItem)
-                <label for="promo[{{ $key }}][title]">Title:</label>
+            @foreach ($promo->promo_data as $key => $promoItem)
+                <label>Title:</label>
                 <input type="text" name="promo[{{ $key }}][title]"
                     value="{{ old("promo.$key.title", $promoItem['title']) }}" required>
+
+                <label for="promo[{{ $key }}][subFamilyType]">Sub Family Type:</label>
+                <input type="text" name="promo[{{ $key }}][subFamilyType]"
+                    value="{{ old("promo.$key.subFamilyType", $promoItem['subFamilyType']) }}" required>
 
                 <label for="promo[{{ $key }}][desc]">Description:</label>
                 <input type="text" name="promo[{{ $key }}][desc]"
                     value="{{ old("promo.$key.desc", $promoItem['desc']) }}" required>
 
-                <!-- Add other fields as needed for each promo item -->
+                <label for="promo[{{ $key }}][image]">Images:</label>
+                <input type="text" name="promo[{{ $key }}][image]"
+                    value="{{ old("promo.$key.image", $promoItem['image']) }}" required>
+
+
+                    <label for="promo[{{ $key }}][btnBlack]">Black button:</label>
+                    <select name="promo[{{ $key }}][btnBlack]" required>
+                        <option value="1" {{ old("promo.$key.btnBlack", $promoItem['btnBlack']) == 1 ? 'selected' : '' }}>Yes</option>
+                        <option value="0" {{ old("promo.$key.btnBlack", $promoItem['btnBlack']) == 0 ? 'selected' : '' }}>No</option>
+                    </select>
             @endforeach
 
-            {{-- <label for="title">Title:</label>
-            <input type="text" name="promo[0][title]" value="{{ old('promo.0.title', $promo->promo[0]['title']) }}"
-                required>
-
-            <label for="title">Description:</label>
-            <input type="text" name="promo[0][desc]" value="{{ old('promo.0.desc', $promo->promo[0]['desc']) }}"
-                required>
-
-
-            <label for="title">Sub-Family-Type:</label>
-            <input type="text" name="promo[0][subFamilyType]" value="{{ old('promo.0.subFamilyType', $promo->promo[0]['subFamilyType']) }}"
-                required>
-
-            <label for="title">Image:</label>
-            <input type="text" name="promo[0][image]" value="{{ old('promo.0.image', $promo->promo[0]['image']) }}"
-                required>
-
-
-                <label for="btnBlack">Button Black:</label>
-                <select id="btnBlack" name="promo[0][btnBlack]" required>
-                    <option value="1" {{ $promo->promo[0]['btnBlack'] ? 'selected' : '' }}>Yes</option>
-                    <option value="0" {{ !$promo->promo[0]['btnBlack'] ? 'selected' : '' }}>No</option>
-                </select> --}}
-
-
+            <button type="submit" class="my-5 bg-lime-200 shadow rounded p-4">Update</button>
         </form>
-
-
     </div>
 </x-app-layout>

@@ -9,7 +9,7 @@
             </div>
         @endif
 
-        <form action="{{ route('update-families', $family->id) }}" method="POST" class="flex flex-col">
+        <form action="{{ route('update-fam-adventure', $family->id) }}" method="POST" class="flex flex-col">
             @csrf
             @method('PUT')
             <h1 class="font-bold text-4xl">Family Page <span class="text-red-600">Adventure</span></h1>
@@ -60,57 +60,29 @@
             <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
                 class="block text-white my-2 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 type="button">
-                Add Promo
+                <a href="{{route('add-promo')}}">Add Promo</a>
             </button>
 
-            @foreach ($family['promo'] as $promo)
+
+
+            @foreach ($promos as $promo)
+            @foreach ($promo->promo_data as $data)
                 <div class="border-2 border-neutral-500 flex justify-between items-center p-2">
-                    <h2>{{ $promo['title'] ?? '' }}</h2>
+                    <h2>{{ $data['title'] }}</h2>
                     <div class="flex justify-between items-center">
-                        <a href="{{ route('edit-promo', ['id' => $family->id, 'promoId' => $promo['id'], 'type' => $family->type]) }}"
-                            class="mx-4">Edit</a>
-                        <button class="bg-red-500 p-1 rounded text-white">Delete</button>
+                        <a href="{{ route('edit-promo', ['id' => $promo->id]) }}" class="bg-yellow-300 p-1 mr-3 rounded">Edit</a>
+                        <!-- Updated delete link below -->
+                        <a href="{{ route('promo-delete', ['id' => $promo->id]) }}" class="bg-red-500 p-1 rounded text-white" onclick="event.preventDefault(); if(confirm('Are you sure you want to delete this item?')) document.getElementById('delete-form-{{ $promo->id }}').submit();">Delete</a>
+
+                        <!-- Delete form -->
+                        <form id="delete-form-{{ $promo->id }}" action="{{ route('promo-delete', ['id' => $promo->id]) }}" method="POST" style="display: none;">
+                            @csrf
+                            @method('DELETE')
+                        </form>
                     </div>
                 </div>
             @endforeach
-
-            {{-- <h1 class="font-bold text-3xl my-2">SubFamily Info</h1>
-
-            <label for="subFamilies[tiger-900][title]">SubFamily Title:</label>
-            <input type="text" name="subFamilies[tiger-900][title]"
-                value="{{ old('subFamilies.tiger-900.title', $family['subFamilies']['tiger-900']['title']) }}"
-                required>
-
-
-            <label for="subFamilies[tiger-900][subFamilyName]">SubFamily Name:</label>
-            <input type="text" name="subFamilies[tiger-900][subFamilyName]"
-                value="{{ old('subFamilies.tiger-900.subFamilyName', $family['subFamilies']['tiger-900']['subFamilyName']) }}"
-                required>
-
-
-            <label for="subFamilies[tiger-900][price]">SubFamily Price:</label>
-            <input type="text" name="subFamilies[tiger-900][price]"
-                value="{{ old('subFamilies.tiger-900.price', $family['subFamilies']['tiger-900']['price']) }}"
-                required>
-
-
-                <h1 class="font-bold text-3xl my-2">Specifications</h1>
-            @foreach ($family['subFamilies']['tiger-900']['subFamilyPageInfo']['fullSpecs']['engineTransmission'] as $index => $engineTransmission)
-                <label
-                    for="subFamilies[tiger-900][subFamilyPageInfo][fullSpecs][engineTransmission][{{ $index }}][title]">Title:</label>
-                <input type="text"
-                    name="subFamilies[tiger-900][subFamilyPageInfo][fullSpecs][engineTransmission][{{ $index }}][title]"
-                    value="{{ old("subFamilies.tiger-900.subFamilyPageInfo.fullSpecs.engineTransmission.$index.title", $engineTransmission['title']) }}"
-                    required>
-
-                <label
-                    for="subFamilies[tiger-900][subFamilyPageInfo][fullSpecs][engineTransmission][{{ $index }}][desc]">Description:</label>
-                <textarea name="subFamilies[tiger-900][subFamilyPageInfo][fullSpecs][engineTransmission][{{ $index }}][desc]"
-                    rows="4" required>{{ old("subFamilies.tiger-900.subFamilyPageInfo.fullSpecs.engineTransmission.$index.desc", $engineTransmission['desc']) }}</textarea>
-            @endforeach
-
-
- --}}
+        @endforeach
 
 
 

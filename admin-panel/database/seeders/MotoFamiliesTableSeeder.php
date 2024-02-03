@@ -93,153 +93,153 @@ class MotoFamiliesTableSeeder extends Seeder
                     'title' => 'Нова Tiger 900 Серија',
                     'price' => 'Наскоро',
                     'url' => '/motorcycles/adventure/tiger-900',
+                    'heroSlogans' => ["НОВИОТ", "TIGER 900"],
+                    'youtubeVideo' => 'https://www.youtube.com/embed/-eXK5VwysTA',
                     'subFamilyPageInfo' => [
-                        'heroSlogans' => ["НОВИОТ", "TIGER 900"],
-                        'youtubeVideo' => 'https://www.youtube.com/embed/-eXK5VwysTA',
-                        'fullSpecs' => [
-                            'engineTransmission' => [
-                                [
-                                    'title' => 'Тип на Мотор',
-                                    'desc' => 'водно ладење, 12 вентили, DOHC, линиски 3-цилиндри'
-                                ],
-                                [
-                                    'title' => 'капацитет',
-                                    'desc' => '888 cc'
-                                ],
-                                [
-                                    'title' => 'диаметар',
-                                    'desc' => '78 mm'
-                                ],
-                                [
-                                    'title' => 'рута',
-                                    'desc' => '61.9 mm'
-                                ],
-                                [
-                                    'title' => 'компресија',
-                                    'desc' => '11.27:1'
-                                ],
-                                [
-                                    'title' => 'Мах. Коњски Сила',
-                                    'desc' => '95.2 PS / 93.9 bhp (70 kW) @ 8,750 rpm'
-                                ],
-                                [
-                                    'title' => 'Мах. Обртен Момент',
-                                    'desc' => '87 Nm @ 7,250 rpm'
-                                ],
-                                [
-                                    'title' => 'Систем за убризгување',
-                                    'desc' => 'Multipoint sequential electronic fuel injection'
-                                ],
-                                [
-                                    'title' => 'Систем за Издувни гасови',
-                                    'desc' => '3 во 1 не-раѓосувачки челик'
-                                ],
-                                [
-                                    'title' => 'Финална Трансмисија',
-                                    'desc' => 'O-ring chain'
-                                ],
-                                [
-                                    'title' => 'Квачило',
-                                    'desc' => 'Multipoint sequential electronic fuel injection'
-                                ],
-                                [
-                                    'title' => 'Менувачка Кутија',
-                                    'desc' => '6 брзини'
-                                ],
+
+                        'engineTransmission' => [
+                            [
+                                'title' => 'Тип на Мотор',
+                                'desc' => 'водно ладење, 12 вентили, DOHC, линиски 3-цилиндри'
                             ],
-                            'frame' => [
-                                [
-                                    'title' => 'шасија',
-                                    'desc' => 'тубуларна челична шасија'
-                                ],
-                                [
-                                    'title' => 'вилушка',
-                                    'desc' => 'алуминиум'
-                                ],
-                                [
-                                    'title' => 'предно тркало',
-                                    'desc' => 'Tubeless, 21 x 2.15 in'
-                                ],
-                                [
-                                    'title' => 'задно тркало',
-                                    'desc' => 'Tubeless, 17 x 4.25 in'
-                                ],
-                                [
-                                    'title' => '"предна гума',
-                                    'desc' => '90/90-21'
-                                ],
-                                [
-                                    'title' => 'задна гума',
-                                    'desc' => '150/70R17'
-                                ],
-                                [
-                                    'title' => 'предна суспензија',
-                                    'desc' => 'Showa превртена 45мм вилушка, мануелно подесување за јачина на одбивање, 240мм опсег на работа'
-                                ],
-                                [
-                                    'title' => 'задна суспензија',
-                                    'desc' => 'Showa задна вилушка, мануелно подесување за јачина на одбивање, 230мм опсег на работа'
-                                ],
-                                [
-                                    'title' => 'предни сопирачки',
-                                    'desc' => 'Дупли 320мм дискови, Brembo Stylema 4 piston Monoblock клешти. Преден цилиндар за течност, Оптимизиран ABS систем'
-                                ],
-                                [
-                                    'title' => 'задна сопирачка',
-                                    'desc' => 'Brembo'
-                                ],
+                            [
+                                'title' => 'капацитет',
+                                'desc' => '888 cc'
                             ],
-                            'dimension' => [
-                                [
-                                    'title' => 'ширина на волан',
-                                    'desc' => '935 mm'
-                                ],
-                                [
-                                    'title' => 'висина без ретровизори',
-                                    'desc' => '1452-1502 mm'
-                                ],
-                                [
-                                    'title' => 'Solar height',
-                                    'desc' => '860-880 mm'
-                                ],
-                                [
-                                    'title' => 'мегу-осовинско растојание ',
-                                    'desc' => '1551 mm'
-                                ],
-                                [
-                                    'title' => 'Custer Corner',
-                                    'desc' => '24.4 º'
-                                ],
-                                [
-                                    'title' => 'Trace',
-                                    'desc' => '145.8 mm'
-                                ],
-                                [
-                                    'title' => 'Тежина',
-                                    'desc' => '201 kg'
-                                ],
-                                [
-                                    'title' => 'капацитет на резервоар',
-                                    'desc' => '20 L'
-                                ],
+                            [
+                                'title' => 'диаметар',
+                                'desc' => '78 mm'
                             ],
-                            'fuelConsumption' => [
-                                [
-                                    'title' => 'Потрошувачка',
-                                    'desc' => '5.2l /100km (55.4 MPG)'
-                                ],
-                                [
-                                    'title' => 'CO2 загадување',
-                                    'desc' => 'Euro 5 Стандарди. (119g /km CO2) измерени според Регулатива 168/2013/EC. Резултатите се добиени во специјални тест средини и се на располагање само за споредба. Вистинските резултат може да варираат врз различни средини.'
-                                ]
+                            [
+                                'title' => 'рута',
+                                'desc' => '61.9 mm'
                             ],
-                            'service' => [
-                                [
-                                    'title' => 'Сервисен Интервал',
-                                    'desc' => '10,000 km или 12 месеци'
-                                ]
+                            [
+                                'title' => 'компресија',
+                                'desc' => '11.27:1'
+                            ],
+                            [
+                                'title' => 'Мах. Коњски Сила',
+                                'desc' => '95.2 PS / 93.9 bhp (70 kW) @ 8,750 rpm'
+                            ],
+                            [
+                                'title' => 'Мах. Обртен Момент',
+                                'desc' => '87 Nm @ 7,250 rpm'
+                            ],
+                            [
+                                'title' => 'Систем за убризгување',
+                                'desc' => 'Multipoint sequential electronic fuel injection'
+                            ],
+                            [
+                                'title' => 'Систем за Издувни гасови',
+                                'desc' => '3 во 1 не-раѓосувачки челик'
+                            ],
+                            [
+                                'title' => 'Финална Трансмисија',
+                                'desc' => 'O-ring chain'
+                            ],
+                            [
+                                'title' => 'Квачило',
+                                'desc' => 'Multipoint sequential electronic fuel injection'
+                            ],
+                            [
+                                'title' => 'Менувачка Кутија',
+                                'desc' => '6 брзини'
+                            ],
+                        ],
+                        'frame' => [
+                            [
+                                'title' => 'шасија',
+                                'desc' => 'тубуларна челична шасија'
+                            ],
+                            [
+                                'title' => 'вилушка',
+                                'desc' => 'алуминиум'
+                            ],
+                            [
+                                'title' => 'предно тркало',
+                                'desc' => 'Tubeless, 21 x 2.15 in'
+                            ],
+                            [
+                                'title' => 'задно тркало',
+                                'desc' => 'Tubeless, 17 x 4.25 in'
+                            ],
+                            [
+                                'title' => '"предна гума',
+                                'desc' => '90/90-21'
+                            ],
+                            [
+                                'title' => 'задна гума',
+                                'desc' => '150/70R17'
+                            ],
+                            [
+                                'title' => 'предна суспензија',
+                                'desc' => 'Showa превртена 45мм вилушка, мануелно подесување за јачина на одбивање, 240мм опсег на работа'
+                            ],
+                            [
+                                'title' => 'задна суспензија',
+                                'desc' => 'Showa задна вилушка, мануелно подесување за јачина на одбивање, 230мм опсег на работа'
+                            ],
+                            [
+                                'title' => 'предни сопирачки',
+                                'desc' => 'Дупли 320мм дискови, Brembo Stylema 4 piston Monoblock клешти. Преден цилиндар за течност, Оптимизиран ABS систем'
+                            ],
+                            [
+                                'title' => 'задна сопирачка',
+                                'desc' => 'Brembo'
+                            ],
+                        ],
+                        'dimension' => [
+                            [
+                                'title' => 'ширина на волан',
+                                'desc' => '935 mm'
+                            ],
+                            [
+                                'title' => 'висина без ретровизори',
+                                'desc' => '1452-1502 mm'
+                            ],
+                            [
+                                'title' => 'Solar height',
+                                'desc' => '860-880 mm'
+                            ],
+                            [
+                                'title' => 'мегу-осовинско растојание ',
+                                'desc' => '1551 mm'
+                            ],
+                            [
+                                'title' => 'Custer Corner',
+                                'desc' => '24.4 º'
+                            ],
+                            [
+                                'title' => 'Trace',
+                                'desc' => '145.8 mm'
+                            ],
+                            [
+                                'title' => 'Тежина',
+                                'desc' => '201 kg'
+                            ],
+                            [
+                                'title' => 'капацитет на резервоар',
+                                'desc' => '20 L'
+                            ],
+                        ],
+                        'fuelConsumption' => [
+                            [
+                                'title' => 'Потрошувачка',
+                                'desc' => '5.2l /100km (55.4 MPG)'
+                            ],
+                            [
+                                'title' => 'CO2 загадување',
+                                'desc' => 'Euro 5 Стандарди. (119g /km CO2) измерени според Регулатива 168/2013/EC. Резултатите се добиени во специјални тест средини и се на располагање само за споредба. Вистинските резултат може да варираат врз различни средини.'
                             ]
                         ],
+                        'service' => [
+                            [
+                                'title' => 'Сервисен Интервал',
+                                'desc' => '10,000 km или 12 месеци'
+                            ]
+                        ],
+
                         'grayCarousell' => [
                             [
                                 'id' => 'carouselItem1',
@@ -390,195 +390,194 @@ class MotoFamiliesTableSeeder extends Seeder
                     'title' => 'Tiger Sport 660',
                     'price' => '9590',
                     'url' => '/motorcycles/adventure/tiger-sport-660',
+                    'youtubeVideo' => 'https://www.youtube.com/embed/QvVCEk4t8IE',
 
+                    'heroSlogans' => ['Автентичност', 'Версатилен', '3-цилиндричен'],
                     'subFamilyPageInfo' => [
-                        'heroSlogans' => ['Автентичност', 'Версатилен', '3-цилиндричен'],
                         'topSection' => [
                             'title' => 'АВТЕНТИЧНА ВИТАЛНОСТ НА ТРИ ЦИЛИНДРИ',
                             'desc' => 'Перформансна предност, класно лидерство во моќност, спецификации и удобно возење - сè тоа на одлична вредност',
                             'subtitle' => 'Дизајниран како перфектен секојдневен, градски мотор но и за уживање за време на викенд'
                         ],
-                        'fullSpecs' => [
-                            'engineTransmission' => [
-                                [
-                                    'title' => 'Тип на Мотор',
-                                    'desc' => 'водно ладење, 12 вентили, DOHC, линиски 3-цилиндри, 240° редослед на есклпозии'
-                                ],
-                                [
-                                    'title' => 'капацитет',
-                                    'desc' => '660 cc'
-                                ],
-                                [
-                                    'title' => 'диаметар',
-                                    'desc' => '74.04 mm'
-                                ],
-                                [
-                                    'title' => 'рута',
-                                    'desc' => '51.1 mm'
-                                ],
-                                [
-                                    'title' => 'компресија',
-                                    'desc' => '11.95:1'
-                                ],
-                                [
-                                    'title' => 'Мах. Коњски Сила',
-                                    'desc' => '81 PS / 80 bhp (59.6 kW) @ 10,250 rpm'
-                                ],
-                                [
-                                    'title' => 'Мах. Обртен Момент',
-                                    'desc' => '64 Nm @ 6,250 rpm'
-                                ],
-                                [
-                                    'title' => 'Систем за убризгување',
-                                    'desc' => 'Multipoint sequential electronic fuel injection with electronic throttle control'
-                                ],
-                                [
-                                    'title' => 'Систем за Издувни гасови',
-                                    'desc' => '3 во 1 не-раѓосувачки челик'
-                                ],
-                                [
-                                    'title' => 'Финална Трансмисија',
-                                    'desc' => 'X-ring chain'
-                                ],
-                                [
-                                    'title' => 'Квачило',
-                                    'desc' => 'Wet, multi-plate, slip'
-                                ],
-                                [
-                                    'title' => 'Менувачка Кутија',
-                                    'desc' => '6 брзини'
-                                ]
+                        'engineTransmission' => [
+                            [
+                                'title' => 'Тип на Мотор',
+                                'desc' => 'водно ладење, 12 вентили, DOHC, линиски 3-цилиндри, 240° редослед на есклпозии'
                             ],
-                            'frame' => [
-                                [
-                                    'title' => 'шасија',
-                                    'desc' => 'тубуларна челична шасија'
-                                ],
-                                [
-                                    'title' => 'вилушка',
-                                    'desc' => 'алуминиум'
-                                ],
-                                [
-                                    'title' => 'предно тркало',
-                                    'desc' => '19 x 2.5 die-cast легура '
-                                ],
-                                [
-                                    'title' => 'задно тркало',
-                                    'desc' => '17 x 4.25 die-cast легура '
-                                ],
-                                [
-                                    'title' => 'предна гума',
-                                    'desc' => '100/90-19'
-                                ],
-                                [
-                                    'title' => 'задна гума',
-                                    'desc' => '150/70R17'
-                                ],
-                                [
-                                    'title' => 'предна суспензија',
-                                    'desc' => 'Marzocchi Inverted Fork 45mm'
-                                ],
-                                [
-                                    'title' => 'задна суспензија',
-                                    'desc' => 'Marzocchi задна суспензија со систем за подесување'
-                                ],
-                                [
-                                    'title' => 'предни сопирачки',
-                                    'desc' => 'Dual 320mm дискови, 4-piston monobloc Brembo Stylema calipers. Front radial pump, ABS'
-                                ],
-                                [
-                                    'title' => 'задна сопирачка',
-                                    'desc' => 'Еден 255 mm диск. Brembo single piston floating caliper, ABS'
-                                ],
-                                [
-                                    'title' => 'инструментна плочка',
-                                    'desc' => '5 TFT екран'
-                                ]
+                            [
+                                'title' => 'капацитет',
+                                'desc' => '660 cc'
                             ],
-                            'dimension' => [
-                                [
-                                    'title' => 'ширина на волан',
-                                    'desc' => '830 mm'
-                                ],
-                                [
-                                    'title' => 'висина без ретровизори',
-                                    'desc' => '1410-1460 mm'
-                                ],
-                                [
-                                    'title' => 'Solar height',
-                                    'desc' => '820-840 mm'
-                                ],
-                                [
-                                    'title' => 'мегу-осовинско растојание ',
-                                    'desc' => '1556 mm'
-                                ],
-                                [
-                                    'title' => 'Custer Corner',
-                                    'desc' => '24.6 º'
-                                ],
-                                [
-                                    'title' => 'Trace',
-                                    'desc' => '133.3 mm'
-                                ],
-                                [
-                                    'title' => 'Тежина',
-                                    'desc' => '192 kg'
-                                ],
-                                [
-                                    'title' => 'капацитет на резервоар',
-                                    'desc' => '20 L'
-                                ]
+                            [
+                                'title' => 'диаметар',
+                                'desc' => '74.04 mm'
                             ],
-                            'fuelConsumption' => [
-                                [
-                                    'title' => 'Потрошувачка',
-                                    'desc' => '5.2l /100km'
-                                ],
-                                [
-                                    'title' => 'CO2 загадување',
-                                    'desc' => 'Euro 5 Стандарди измерени според Регулатива 168/2013/EC. Резултатите се добиени во специјални тест средини и се на располагање само за споредба. Вистинските резултат може да варираат врз различни средини.'
-                                ]
+                            [
+                                'title' => 'рута',
+                                'desc' => '51.1 mm'
                             ],
-                            'grayCarousell' => [
-                                [
-                                    'id' => 'carouselItem1',
-                                    'title' => 'Три-цилиндрични перформанси',
-                                    'desc' => 'Располага со спортски карактер произведен од три-цилиндричниот мотор со перфектен баланс помеѓу обртен момент при мала апликација на гас и возбудлива моќност при висока апликација на гас.',
-                                    'image' => '/images/adventure/tigerSport850/tiger850Caro1.avif'
-                                ],
-                                [
-                                    'id' => 'carouselItem2',
-                                    'title' => 'Технологија фокусирана на возачот',
-                                    'desc' => 'Технологија од врвно ниво, сопирачки и одлична суспензија за подобро секојдневно возење со максимално чувство на самодоверба, перформанси и сигурност.',
-                                    'image' => '/images/adventure/tigerSport850/tiger850Caro2.avif'
-                                ],
-                                [
-                                    'id' => 'carouselItem3',
-                                    'title' => 'Комбинација помеѓу карактер и перформанси',
-                                    'desc' => 'Соилуета по која сите се вртат, со агресивни линии и ексклузивни детали .',
-                                    'image' => '/images/adventure/tigerSport850/tiger850Caro3.avif'
-                                ],
-                                [
-                                    'id' => 'carouselItem4',
-                                    'title' => 'Дизајниран да инспирира самодоверба',
-                                    'desc' => 'Лесно прилагодлив за сечиј возачки стил, од височината на седиштето, до воланот па се до ерканот, Tiger 850 е спремен да се прилагоди на вас.',
-                                    'image' => '/images/adventure/tigerSport850/tiger850Caro4.avif'
-                                ]
+                            [
+                                'title' => 'компресија',
+                                'desc' => '11.95:1'
                             ],
-                            'specNumbers' => [
-                                ['data' => '660', 'info' => 'cc Мотор'],
-                                ['data' => '81', 'info' => 'РЅ Коњски сили'],
-                                ['data' => '64', 'info' => 'Nm Максимален Обртен Момент'],
-                                ['data' => '16,000', 'info' => 'KM СЕРВИСЕН ИНТЕРВАЛ'],
+                            [
+                                'title' => 'Мах. Коњски Сила',
+                                'desc' => '81 PS / 80 bhp (59.6 kW) @ 10,250 rpm'
                             ],
-                            'youtubeVideo' => 'https://www.youtube.com/embed/QvVCEk4t8IE',
-                            'audioSection' => [
-                                'audio' => '/images/adventure/tigerSport660/tiger660Audio.mp3',
-                                'title' => 'Богато Три-Цилиндрично Грмење',
-                                'desc' => 'Звукот е снимен во живо на реален пат.',
-                                'logo' => null
+                            [
+                                'title' => 'Мах. Обртен Момент',
+                                'desc' => '64 Nm @ 6,250 rpm'
+                            ],
+                            [
+                                'title' => 'Систем за убризгување',
+                                'desc' => 'Multipoint sequential electronic fuel injection with electronic throttle control'
+                            ],
+                            [
+                                'title' => 'Систем за Издувни гасови',
+                                'desc' => '3 во 1 не-раѓосувачки челик'
+                            ],
+                            [
+                                'title' => 'Финална Трансмисија',
+                                'desc' => 'X-ring chain'
+                            ],
+                            [
+                                'title' => 'Квачило',
+                                'desc' => 'Wet, multi-plate, slip'
+                            ],
+                            [
+                                'title' => 'Менувачка Кутија',
+                                'desc' => '6 брзини'
                             ]
+                        ],
+                        'frame' => [
+                            [
+                                'title' => 'шасија',
+                                'desc' => 'тубуларна челична шасија'
+                            ],
+                            [
+                                'title' => 'вилушка',
+                                'desc' => 'алуминиум'
+                            ],
+                            [
+                                'title' => 'предно тркало',
+                                'desc' => '19 x 2.5 die-cast легура '
+                            ],
+                            [
+                                'title' => 'задно тркало',
+                                'desc' => '17 x 4.25 die-cast легура '
+                            ],
+                            [
+                                'title' => 'предна гума',
+                                'desc' => '100/90-19'
+                            ],
+                            [
+                                'title' => 'задна гума',
+                                'desc' => '150/70R17'
+                            ],
+                            [
+                                'title' => 'предна суспензија',
+                                'desc' => 'Marzocchi Inverted Fork 45mm'
+                            ],
+                            [
+                                'title' => 'задна суспензија',
+                                'desc' => 'Marzocchi задна суспензија со систем за подесување'
+                            ],
+                            [
+                                'title' => 'предни сопирачки',
+                                'desc' => 'Dual 320mm дискови, 4-piston monobloc Brembo Stylema calipers. Front radial pump, ABS'
+                            ],
+                            [
+                                'title' => 'задна сопирачка',
+                                'desc' => 'Еден 255 mm диск. Brembo single piston floating caliper, ABS'
+                            ],
+                            [
+                                'title' => 'инструментна плочка',
+                                'desc' => '5 TFT екран'
+                            ]
+                        ],
+                        'dimension' => [
+                            [
+                                'title' => 'ширина на волан',
+                                'desc' => '830 mm'
+                            ],
+                            [
+                                'title' => 'висина без ретровизори',
+                                'desc' => '1410-1460 mm'
+                            ],
+                            [
+                                'title' => 'Solar height',
+                                'desc' => '820-840 mm'
+                            ],
+                            [
+                                'title' => 'мегу-осовинско растојание ',
+                                'desc' => '1556 mm'
+                            ],
+                            [
+                                'title' => 'Custer Corner',
+                                'desc' => '24.6 º'
+                            ],
+                            [
+                                'title' => 'Trace',
+                                'desc' => '133.3 mm'
+                            ],
+                            [
+                                'title' => 'Тежина',
+                                'desc' => '192 kg'
+                            ],
+                            [
+                                'title' => 'капацитет на резервоар',
+                                'desc' => '20 L'
+                            ]
+                        ],
+                        'fuelConsumption' => [
+                            [
+                                'title' => 'Потрошувачка',
+                                'desc' => '5.2l /100km'
+                            ],
+                            [
+                                'title' => 'CO2 загадување',
+                                'desc' => 'Euro 5 Стандарди измерени според Регулатива 168/2013/EC. Резултатите се добиени во специјални тест средини и се на располагање само за споредба. Вистинските резултат може да варираат врз различни средини.'
+                            ]
+                        ],
+                        'grayCarousell' => [
+                            [
+                                'id' => 'carouselItem1',
+                                'title' => 'Три-цилиндрични перформанси',
+                                'desc' => 'Располага со спортски карактер произведен од три-цилиндричниот мотор со перфектен баланс помеѓу обртен момент при мала апликација на гас и возбудлива моќност при висока апликација на гас.',
+                                'image' => '/images/adventure/tigerSport850/tiger850Caro1.avif'
+                            ],
+                            [
+                                'id' => 'carouselItem2',
+                                'title' => 'Технологија фокусирана на возачот',
+                                'desc' => 'Технологија од врвно ниво, сопирачки и одлична суспензија за подобро секојдневно возење со максимално чувство на самодоверба, перформанси и сигурност.',
+                                'image' => '/images/adventure/tigerSport850/tiger850Caro2.avif'
+                            ],
+                            [
+                                'id' => 'carouselItem3',
+                                'title' => 'Комбинација помеѓу карактер и перформанси',
+                                'desc' => 'Соилуета по која сите се вртат, со агресивни линии и ексклузивни детали .',
+                                'image' => '/images/adventure/tigerSport850/tiger850Caro3.avif'
+                            ],
+                            [
+                                'id' => 'carouselItem4',
+                                'title' => 'Дизајниран да инспирира самодоверба',
+                                'desc' => 'Лесно прилагодлив за сечиј возачки стил, од височината на седиштето, до воланот па се до ерканот, Tiger 850 е спремен да се прилагоди на вас.',
+                                'image' => '/images/adventure/tigerSport850/tiger850Caro4.avif'
+                            ]
+                        ],
+                        'specNumbers' => [
+                            ['data' => '660', 'info' => 'cc Мотор'],
+                            ['data' => '81', 'info' => 'РЅ Коњски сили'],
+                            ['data' => '64', 'info' => 'Nm Максимален Обртен Момент'],
+                            ['data' => '16,000', 'info' => 'KM СЕРВИСЕН ИНТЕРВАЛ'],
+                        ],
+                        'audioSection' => [
+                            'audio' => '/images/adventure/tigerSport660/tiger660Audio.mp3',
+                            'title' => 'Богато Три-Цилиндрично Грмење',
+                            'desc' => 'Звукот е снимен во живо на реален пат.',
+                            'logo' => null
                         ]
+
                     ],
                     'reasonsToDrive' => [
                         'banner' => [
@@ -739,154 +738,153 @@ class MotoFamiliesTableSeeder extends Seeder
                     "title" => "Speed Twin 900",
                     "price" => 10390,
                     "url" => "/motorcycles/classics/speed-twin-900",
+                    "heroSlogans" => ["Забава", "со", "стил"],
+                    "youtubeVideo" => "https://www.youtube.com/embed/moLlIk90Ea",
                     "subFamilyPageInfo" => [
-                        "heroSlogans" => ["Забава", "со", "стил"],
                         "topSection" => [
                             "title" => "Автентичност",
                             "desc" => "Best-seller -от на Triumph, еволуираше во елегантен и луксузен моторцикл",
                             "subtitle" => "Направен за возење и за забава, спремен за ваша персонализација, Speed Twin 900 е мотор со голем карактер и можности"
                         ],
-                        "youtubeVideo" => "https://www.youtube.com/embed/moLlIk90Ea",
-                        "fullSpecs" => [
-                            "engineTransmission" => [
-                                [
-                                    "title" => "Тип на Мотор",
-                                    "desc" => "водно ладење, 12 вентили, DOHC, линиски 3-цилиндри, 240° редослед на есклпозии"
-                                ],
-                                [
-                                    "title" => "капацитет",
-                                    "desc" => "660 cc"
-                                ],
-                                [
-                                    "title" => "диаметар",
-                                    "desc" => "74.04 mm"
-                                ],
-                                [
-                                    "title" => "рута",
-                                    "desc" => "51.1 mm"
-                                ],
-                                [
-                                    "title" => "компресија",
-                                    "desc" => "11.95 =>1"
-                                ],
-                                [
-                                    "title" => "Мах. Коњски Сила",
-                                    "desc" => "81 PS / 80 bhp (59.6 kW) @ 10,250 rpm"
-                                ],
-                                [
-                                    "title" => "Мах. Обртен Момент",
-                                    "desc" => "64 Nm @ 6,250 rpm"
-                                ],
-                                [
-                                    "title" => "Систем за убризгување",
-                                    "desc" => "Multipoint sequential electronic fuel injection with electronic throttle control"
-                                ],
-                                [
-                                    "title" => "Систем за Издувни гасови",
-                                    "desc" => "3 во 1 не-раѓосувачки челик"
-                                ],
-                                [
-                                    "title" => "Финална Трансмисија",
-                                    "desc" => "X-ring chain"
-                                ],
-                                [
-                                    "title" => "Квачило",
-                                    "desc" => "Wet, multi-plate, slip"
-                                ],
-                                [
-                                    "title" => "Менувачка Кутија",
-                                    "desc" => "6 брзини"
-                                ]
+
+                        "engineTransmission" => [
+                            [
+                                "title" => "Тип на Мотор",
+                                "desc" => "водно ладење, 12 вентили, DOHC, линиски 3-цилиндри, 240° редослед на есклпозии"
                             ],
-                            "frame" => [
-                                [
-                                    "title" => "шасија",
-                                    "desc" => "тубуларна челична шасија"
-                                ],
-                                [
-                                    "title" => "вилушка",
-                                    "desc" => "алуминиум"
-                                ],
-                                [
-                                    "title" => "предно тркало",
-                                    "desc" => "19 x 2.5' die-cast легура "
-                                ],
-                                [
-                                    "title" => "задно тркало",
-                                    "desc" => "17 x 4.25' die-cast легура "
-                                ],
-                                [
-                                    "title" => "предна гума",
-                                    "desc" => "100/90-19"
-                                ],
-                                [
-                                    "title" => "задна гума",
-                                    "desc" => "150/70R17"
-                                ],
-                                [
-                                    "title" => "предна суспензија",
-                                    "desc" => "Marzocchi Inverted Fork 45mm"
-                                ],
-                                [
-                                    "title" => "задна суспензија",
-                                    "desc" => "Marzocchi задна суспензија со систем за подесување"
-                                ],
-                                [
-                                    "title" => "предни сопирачки",
-                                    "desc" => "Dual 320mm дискови, 4-piston monobloc Brembo Stylema calipers. Front radial pump, ABS"
-                                ],
-                                [
-                                    "title" => "задна сопирачка",
-                                    "desc" => "Еден 255 mm диск. Brembo single piston floating caliper, ABS"
-                                ],
-                                [
-                                    "title" => "инструментна плочка",
-                                    "desc" => "5 TFT екран"
-                                ]
+                            [
+                                "title" => "капацитет",
+                                "desc" => "660 cc"
                             ],
-                            "dimension" => [
-                                [
-                                    "title" => "ширина на волан",
-                                    "desc" => "830 mm"
-                                ],
-                                [
-                                    "title" => "висина без ретровизори",
-                                    "desc" => "1410-1460 mm"
-                                ],
-                                [
-                                    "title" => "Solar height",
-                                    "desc" => "820-840 mm"
-                                ],
-                                [
-                                    "title" => "мегу-осовинско растојание ",
-                                    "desc" => "1556 mm"
-                                ],
-                                [
-                                    "title" => "Custer Corner",
-                                    "desc" => "24.6 º"
-                                ],
-                                [
-                                    "title" => "Trace",
-                                    "desc" => "133.3 mm"
-                                ],
-                                [
-                                    "title" => "Тежина",
-                                    "desc" => "192 kg"
-                                ],
-                                [
-                                    "title" => "капацитет на резервоар",
-                                    "desc" => "20 L"
-                                ]
+                            [
+                                "title" => "диаметар",
+                                "desc" => "74.04 mm"
                             ],
-                            "fuelConsumption" => [
-                                [
-                                    "title" => "Потрошувачка",
-                                    "desc" => "5.2l /100km"
-                                ],
-                                [
-                                    "title" => "CO2 загадување",
-                                    "desc" => "Euro 5 Стандарди измерени според Регулатива 168/2013/EC. Резултатите се добиени во специјални тест средини и се на располагање само за споредба. Вистинските резултат може да варираат врз различни средини."
-                                ]
+                            [
+                                "title" => "рута",
+                                "desc" => "51.1 mm"
+                            ],
+                            [
+                                "title" => "компресија",
+                                "desc" => "11.95 =>1"
+                            ],
+                            [
+                                "title" => "Мах. Коњски Сила",
+                                "desc" => "81 PS / 80 bhp (59.6 kW) @ 10,250 rpm"
+                            ],
+                            [
+                                "title" => "Мах. Обртен Момент",
+                                "desc" => "64 Nm @ 6,250 rpm"
+                            ],
+                            [
+                                "title" => "Систем за убризгување",
+                                "desc" => "Multipoint sequential electronic fuel injection with electronic throttle control"
+                            ],
+                            [
+                                "title" => "Систем за Издувни гасови",
+                                "desc" => "3 во 1 не-раѓосувачки челик"
+                            ],
+                            [
+                                "title" => "Финална Трансмисија",
+                                "desc" => "X-ring chain"
+                            ],
+                            [
+                                "title" => "Квачило",
+                                "desc" => "Wet, multi-plate, slip"
+                            ],
+                            [
+                                "title" => "Менувачка Кутија",
+                                "desc" => "6 брзини"
+                            ]
+                        ],
+                        "frame" => [
+                            [
+                                "title" => "шасија",
+                                "desc" => "тубуларна челична шасија"
+                            ],
+                            [
+                                "title" => "вилушка",
+                                "desc" => "алуминиум"
+                            ],
+                            [
+                                "title" => "предно тркало",
+                                "desc" => "19 x 2.5' die-cast легура "
+                            ],
+                            [
+                                "title" => "задно тркало",
+                                "desc" => "17 x 4.25' die-cast легура "
+                            ],
+                            [
+                                "title" => "предна гума",
+                                "desc" => "100/90-19"
+                            ],
+                            [
+                                "title" => "задна гума",
+                                "desc" => "150/70R17"
+                            ],
+                            [
+                                "title" => "предна суспензија",
+                                "desc" => "Marzocchi Inverted Fork 45mm"
+                            ],
+                            [
+                                "title" => "задна суспензија",
+                                "desc" => "Marzocchi задна суспензија со систем за подесување"
+                            ],
+                            [
+                                "title" => "предни сопирачки",
+                                "desc" => "Dual 320mm дискови, 4-piston monobloc Brembo Stylema calipers. Front radial pump, ABS"
+                            ],
+                            [
+                                "title" => "задна сопирачка",
+                                "desc" => "Еден 255 mm диск. Brembo single piston floating caliper, ABS"
+                            ],
+                            [
+                                "title" => "инструментна плочка",
+                                "desc" => "5 TFT екран"
+                            ]
+                        ],
+                        "dimension" => [
+                            [
+                                "title" => "ширина на волан",
+                                "desc" => "830 mm"
+                            ],
+                            [
+                                "title" => "висина без ретровизори",
+                                "desc" => "1410-1460 mm"
+                            ],
+                            [
+                                "title" => "Solar height",
+                                "desc" => "820-840 mm"
+                            ],
+                            [
+                                "title" => "мегу-осовинско растојание ",
+                                "desc" => "1556 mm"
+                            ],
+                            [
+                                "title" => "Custer Corner",
+                                "desc" => "24.6 º"
+                            ],
+                            [
+                                "title" => "Trace",
+                                "desc" => "133.3 mm"
+                            ],
+                            [
+                                "title" => "Тежина",
+                                "desc" => "192 kg"
+                            ],
+                            [
+                                "title" => "капацитет на резервоар",
+                                "desc" => "20 L"
+                            ]
+                        ],
+                        "fuelConsumption" => [
+                            [
+                                "title" => "Потрошувачка",
+                                "desc" => "5.2l /100km"
+                            ],
+                            [
+                                "title" => "CO2 загадување",
+                                "desc" => "Euro 5 Стандарди измерени според Регулатива 168/2013/EC. Резултатите се добиени во специјални тест средини и се на располагање само за споредба. Вистинските резултат може да варираат врз различни средини."
                             ]
                         ],
                         "grayCarousell" => [
@@ -1080,188 +1078,187 @@ class MotoFamiliesTableSeeder extends Seeder
                     "title" => "Tiger 1200 GT",
                     "price" => 20990,
                     "url" => "/motorcycles/adventure/tiger-1200-gt",
+                    "heroSlogans" => ["Вие ја ", "креирате", "авантурата"],
                     "subFamilyPageInfo" => [
-                        "heroSlogans" => ["Вие ја ", "креирате", "авантурата"],
                         "topSection" => [
                             "title" => "ТРАНСФОРМИРАЈТЕ ЈА ВАШАТА АВАНТУРА",
                             "desc" => "Ултимативниот авантуристички моторцикл фокусиран на асфалтот. Интерконтинентални можности, неверојатен комфорт, перформанси и стил.",
                             "subtitle" => "Нај-способниот, нај-версатилниот, и агилен мотор, со најголемата зафатнина на мотор во целиот свет"
                         ],
-                        "fullSpecs" => [
-                            "engineTransmission" => [
-                                [
-                                    "title" => "Тип на Мотор",
-                                    "desc" => "водно ладење, 12 вентили, DOHC, линиски 3-цилиндри, 240° редослед на есклпозии"
-                                ],
-                                [
-                                    "title" => "капацитет",
-                                    "desc" => "660 cc"
-                                ],
-                                [
-                                    "title" => "диаметар",
-                                    "desc" => "74.04 mm"
-                                ],
-                                [
-                                    "title" => "рута",
-                                    "desc" => "51.1 mm"
-                                ],
-                                [
-                                    "title" => "компресија",
-                                    "desc" => "11.95 =>1"
-                                ],
-                                [
-                                    "title" => "Мах. Коњски Сила",
-                                    "desc" => "81 PS / 80 bhp (59.6 kW) @ 10,250 rpm"
-                                ],
-                                [
-                                    "title" => "Мах. Обртен Момент",
-                                    "desc" => "64 Nm @ 6,250 rpm"
-                                ],
-                                [
-                                    "title" => "Систем за убризгување",
-                                    "desc" => "Multipoint sequential electronic fuel injection with electronic throttle control"
-                                ],
-                                [
-                                    "title" => "Систем за Издувни гасови",
-                                    "desc" => "3 во 1 не-раѓосувачки челик"
-                                ],
-                                [
-                                    "title" => "Финална Трансмисија",
-                                    "desc" => "X-ring chain"
-                                ],
-                                [
-                                    "title" => "Квачило",
-                                    "desc" => "Wet, multi-plate, slip"
-                                ],
-                                [
-                                    "title" => "Менувачка Кутија",
-                                    "desc" => "6 брзини"
-                                ]
-                            ],
-                            "frame" => [
-                                [
-                                    "title" => "шасија",
-                                    "desc" => "тубуларна челична шасија"
-                                ],
-                                [
-                                    "title" => "вилушка",
-                                    "desc" => "алуминиум"
-                                ],
-                                [
-                                    "title" => "предно тркало",
-                                    "desc" => "19 x 2.5' die-cast легура "
-                                ],
-                                [
-                                    "title" => "задно тркало",
-                                    "desc" => "17 x 4.25' die-cast легура "
-                                ],
-                                [
-                                    "title" => "предна гума",
-                                    "desc" => "100/90-19"
-                                ],
-                                [
-                                    "title" => "задна гума",
-                                    "desc" => "150/70R17"
-                                ],
-                                [
-                                    "title" => "предна суспензија",
-                                    "desc" => "Marzocchi Inverted Fork 45mm"
-                                ],
-                                [
-                                    "title" => "задна суспензија",
-                                    "desc" => "Marzocchi задна суспензија со систем за подесување"
-                                ],
-                                [
-                                    "title" => "предни сопирачки",
-                                    "desc" => "Dual 320mm дискови, 4-piston monobloc Brembo Stylema calipers. Front radial pump, ABS"
-                                ],
-                                [
-                                    "title" => "задна сопирачка",
-                                    "desc" => "Еден 255 mm диск. Brembo single piston floating caliper, ABS"
-                                ],
-                                [
-                                    "title" => "инструментна плочка",
-                                    "desc" => "5 TFT екран"
-                                ]
-                            ],
-                            "dimension" => [
-                                [
-                                    "title" => "ширина на волан",
-                                    "desc" => "830 mm"
-                                ],
-                                [
-                                    "title" => "висина без ретровизори",
-                                    "desc" => "1410-1460 mm"
-                                ],
-                                [
-                                    "title" => "Solar height",
-                                    "desc" => "820-840 mm"
-                                ],
-                                [
-                                    "title" => "мегу-осовинско растојание ",
-                                    "desc" => "1556 mm"
-                                ],
-                                [
-                                    "title" => "Custer Corner",
-                                    "desc" => "24.6 º"
-                                ],
-                                [
-                                    "title" => "Trace",
-                                    "desc" => "133.3 mm"
-                                ],
-                                [
-                                    "title" => "Тежина",
-                                    "desc" => "192 kg"
-                                ],
-                                [
-                                    "title" => "капацитет на резервоар",
-                                    "desc" => "20 L"
-                                ]
-                            ],
-                            "fuelConsumption" => [
-                                [
-                                    "title" => "Потрошувачка",
-                                    "desc" => "5.2l /100km"
-                                ],
-                                [
-                                    "title" => "CO2 загадување",
-                                    "desc" => "Euro 5 Стандарди измерени според Регулатива 168/2013/EC. Резултатите се добиени во специјални тест средини и се на располагање само за споредба. Вистинските резултат може да варираат врз различни средини."
-                                ]
-                            ]
+                    ],
+                    "engineTransmission" => [
+                        [
+                            "title" => "Тип на Мотор",
+                            "desc" => "водно ладење, 12 вентили, DOHC, линиски 3-цилиндри, 240° редослед на есклпозии"
                         ],
-                        "grayCarousell" => [
-                            [
-                                "id" => "carouselItem1",
-                                "title" => "Возбудлив Три Цилиндарски Мотор",
-                                "desc" => "Почувствувајте го карактерот на моторот и чувството на лесно управување со иновативната T-crank радалица и најновиот 850 три-цилиндричен мотор.",
-                                "image" => "/images/adventure/tigerSport850/tiger850Caro1.avif"
-                            ],
-                            [
-                                "id" => "carouselItem2",
-                                "title" => "Технологија фокусирана на возачот",
-                                "desc" => "Технологија од врвно ниво, сопирачки и одлична суспензија за подобро секојдневно возење со максимално чувство на самодоверба, перформанси и сигурност.",
-                                "image" => "/images/adventure/tigerSport850/tiger850Caro2.avif"
-                            ],
-                            [
-                                "id" => "carouselItem3",
-                                "title" => "Комбинација помеѓу карактер и перформанси",
-                                "desc" => "Соилуета по која сите се вртат, со агресивни линии и ексклузивни детали .",
-                                "image" => "/images/adventure/tigerSport850/tiger850Caro3.avif"
-                            ],
-                            [
-                                "id" => "carouselItem4",
-                                "title" => "Дизајниран да инспирира самодоверба",
-                                "desc" => "Лесно прилагодлив за сечиј возачки стил, од височината на седиштето, до воланот па се до ерканот, Tiger 850 е спремен да се прилагоди на вас.",
-                                "image" => "/images/adventure/tigerSport850/tiger850Caro4.avif"
-                            ]
+                        [
+                            "title" => "капацитет",
+                            "desc" => "660 cc"
                         ],
-                        "specNumbers" => [
-                            ["data" => "888", "info" => "cc Мотор"],
-                            ["data" => "85", "info" => "РЅ Коњски сили"],
-                            ["data" => "82", "info" => "Nm Максимален Обртен Момент"],
-                            ["data" => "60+", "info" => "Аксесоари"]
+                        [
+                            "title" => "диаметар",
+                            "desc" => "74.04 mm"
+                        ],
+                        [
+                            "title" => "рута",
+                            "desc" => "51.1 mm"
+                        ],
+                        [
+                            "title" => "компресија",
+                            "desc" => "11.95 =>1"
+                        ],
+                        [
+                            "title" => "Мах. Коњски Сила",
+                            "desc" => "81 PS / 80 bhp (59.6 kW) @ 10,250 rpm"
+                        ],
+                        [
+                            "title" => "Мах. Обртен Момент",
+                            "desc" => "64 Nm @ 6,250 rpm"
+                        ],
+                        [
+                            "title" => "Систем за убризгување",
+                            "desc" => "Multipoint sequential electronic fuel injection with electronic throttle control"
+                        ],
+                        [
+                            "title" => "Систем за Издувни гасови",
+                            "desc" => "3 во 1 не-раѓосувачки челик"
+                        ],
+                        [
+                            "title" => "Финална Трансмисија",
+                            "desc" => "X-ring chain"
+                        ],
+                        [
+                            "title" => "Квачило",
+                            "desc" => "Wet, multi-plate, slip"
+                        ],
+                        [
+                            "title" => "Менувачка Кутија",
+                            "desc" => "6 брзини"
                         ]
                     ],
+                    "frame" => [
+                        [
+                            "title" => "шасија",
+                            "desc" => "тубуларна челична шасија"
+                        ],
+                        [
+                            "title" => "вилушка",
+                            "desc" => "алуминиум"
+                        ],
+                        [
+                            "title" => "предно тркало",
+                            "desc" => "19 x 2.5' die-cast легура "
+                        ],
+                        [
+                            "title" => "задно тркало",
+                            "desc" => "17 x 4.25' die-cast легура "
+                        ],
+                        [
+                            "title" => "предна гума",
+                            "desc" => "100/90-19"
+                        ],
+                        [
+                            "title" => "задна гума",
+                            "desc" => "150/70R17"
+                        ],
+                        [
+                            "title" => "предна суспензија",
+                            "desc" => "Marzocchi Inverted Fork 45mm"
+                        ],
+                        [
+                            "title" => "задна суспензија",
+                            "desc" => "Marzocchi задна суспензија со систем за подесување"
+                        ],
+                        [
+                            "title" => "предни сопирачки",
+                            "desc" => "Dual 320mm дискови, 4-piston monobloc Brembo Stylema calipers. Front radial pump, ABS"
+                        ],
+                        [
+                            "title" => "задна сопирачка",
+                            "desc" => "Еден 255 mm диск. Brembo single piston floating caliper, ABS"
+                        ],
+                        [
+                            "title" => "инструментна плочка",
+                            "desc" => "5 TFT екран"
+                        ]
+                    ],
+                    "dimension" => [
+                        [
+                            "title" => "ширина на волан",
+                            "desc" => "830 mm"
+                        ],
+                        [
+                            "title" => "висина без ретровизори",
+                            "desc" => "1410-1460 mm"
+                        ],
+                        [
+                            "title" => "Solar height",
+                            "desc" => "820-840 mm"
+                        ],
+                        [
+                            "title" => "мегу-осовинско растојание ",
+                            "desc" => "1556 mm"
+                        ],
+                        [
+                            "title" => "Custer Corner",
+                            "desc" => "24.6 º"
+                        ],
+                        [
+                            "title" => "Trace",
+                            "desc" => "133.3 mm"
+                        ],
+                        [
+                            "title" => "Тежина",
+                            "desc" => "192 kg"
+                        ],
+                        [
+                            "title" => "капацитет на резервоар",
+                            "desc" => "20 L"
+                        ]
+                    ],
+                    "fuelConsumption" => [
+                        [
+                            "title" => "Потрошувачка",
+                            "desc" => "5.2l /100km"
+                        ],
+                        [
+                            "title" => "CO2 загадување",
+                            "desc" => "Euro 5 Стандарди измерени според Регулатива 168/2013/EC. Резултатите се добиени во специјални тест средини и се на располагање само за споредба. Вистинските резултат може да варираат врз различни средини."
+                        ]
+                    ],
+                    "grayCarousell" => [
+                        [
+                            "id" => "carouselItem1",
+                            "title" => "Возбудлив Три Цилиндарски Мотор",
+                            "desc" => "Почувствувајте го карактерот на моторот и чувството на лесно управување со иновативната T-crank радалица и најновиот 850 три-цилиндричен мотор.",
+                            "image" => "/images/adventure/tigerSport850/tiger850Caro1.avif"
+                        ],
+                        [
+                            "id" => "carouselItem2",
+                            "title" => "Технологија фокусирана на возачот",
+                            "desc" => "Технологија од врвно ниво, сопирачки и одлична суспензија за подобро секојдневно возење со максимално чувство на самодоверба, перформанси и сигурност.",
+                            "image" => "/images/adventure/tigerSport850/tiger850Caro2.avif"
+                        ],
+                        [
+                            "id" => "carouselItem3",
+                            "title" => "Комбинација помеѓу карактер и перформанси",
+                            "desc" => "Соилуета по која сите се вртат, со агресивни линии и ексклузивни детали .",
+                            "image" => "/images/adventure/tigerSport850/tiger850Caro3.avif"
+                        ],
+                        [
+                            "id" => "carouselItem4",
+                            "title" => "Дизајниран да инспирира самодоверба",
+                            "desc" => "Лесно прилагодлив за сечиј возачки стил, од височината на седиштето, до воланот па се до ерканот, Tiger 850 е спремен да се прилагоди на вас.",
+                            "image" => "/images/adventure/tigerSport850/tiger850Caro4.avif"
+                        ]
+                    ],
+                    "specNumbers" => [
+                        ["data" => "888", "info" => "cc Мотор"],
+                        ["data" => "85", "info" => "РЅ Коњски сили"],
+                        ["data" => "82", "info" => "Nm Максимален Обртен Момент"],
+                        ["data" => "60+", "info" => "Аксесоари"]
+                    ],
+
                     "reasonsToDrive" => [
                         "banner" => [
                             "image" => "/images/adventure/tigerSport660/tiger660ReasonsBanner.avif"
@@ -1400,188 +1397,189 @@ class MotoFamiliesTableSeeder extends Seeder
                     "title" => "Tiger 1200 Rally",
                     "price" => 21990,
                     "url" => "/motorcycles/adventure/tiger-1200-gt",
+                    "heroSlogans" => ["оживеј", "ја", "авантурата"],
                     "subFamilyPageInfo" => [
-                        "heroSlogans" => ["оживеј", "ја", "авантурата"],
                         "topSection" => [
                             "title" => "Откриј ја Авантурата",
                             "desc" => "Изграден за секаков пат. Најновиот авантуристички шампион ве води низе светот, низ пустина и совладува планини.",
                             "subtitle" => "Новиот репер за авантури. Нај-возбудливиот нај-способниот, комфортен и версатилен Tiger 1200 мотор досега."
                         ],
-                        "fullSpecs" => [
-                            "engineTransmission" => [
-                                [
-                                    "title" => "Тип на Мотор",
-                                    "desc" => "водно ладење, 12 вентили, DOHC, линиски 3-цилиндри, 240° редослед на есклпозии"
-                                ],
-                                [
-                                    "title" => "капацитет",
-                                    "desc" => "660 cc"
-                                ],
-                                [
-                                    "title" => "диаметар",
-                                    "desc" => "74.04 mm"
-                                ],
-                                [
-                                    "title" => "рута",
-                                    "desc" => "51.1 mm"
-                                ],
-                                [
-                                    "title" => "компресија",
-                                    "desc" => "11.95 =>1"
-                                ],
-                                [
-                                    "title" => "Мах. Коњски Сила",
-                                    "desc" => "81 PS / 80 bhp (59.6 kW) @ 10,250 rpm"
-                                ],
-                                [
-                                    "title" => "Мах. Обртен Момент",
-                                    "desc" => "64 Nm @ 6,250 rpm"
-                                ],
-                                [
-                                    "title" => "Систем за убризгување",
-                                    "desc" => "Multipoint sequential electronic fuel injection with electronic throttle control"
-                                ],
-                                [
-                                    "title" => "Систем за Издувни гасови",
-                                    "desc" => "3 во 1 не-раѓосувачки челик"
-                                ],
-                                [
-                                    "title" => "Финална Трансмисија",
-                                    "desc" => "X-ring chain"
-                                ],
-                                [
-                                    "title" => "Квачило",
-                                    "desc" => "Wet, multi-plate, slip"
-                                ],
-                                [
-                                    "title" => "Менувачка Кутија",
-                                    "desc" => "6 брзини"
-                                ]
-                            ],
-                            "frame" => [
-                                [
-                                    "title" => "шасија",
-                                    "desc" => "тубуларна челична шасија"
-                                ],
-                                [
-                                    "title" => "вилушка",
-                                    "desc" => "алуминиум"
-                                ],
-                                [
-                                    "title" => "предно тркало",
-                                    "desc" => "19 x 2.5' die-cast легура "
-                                ],
-                                [
-                                    "title" => "задно тркало",
-                                    "desc" => "17 x 4.25' die-cast легура "
-                                ],
-                                [
-                                    "title" => "предна гума",
-                                    "desc" => "100/90-19"
-                                ],
-                                [
-                                    "title" => "задна гума",
-                                    "desc" => "150/70R17"
-                                ],
-                                [
-                                    "title" => "предна суспензија",
-                                    "desc" => "Marzocchi Inverted Fork 45mm"
-                                ],
-                                [
-                                    "title" => "задна суспензија",
-                                    "desc" => "Marzocchi задна суспензија со систем за подесување"
-                                ],
-                                [
-                                    "title" => "предни сопирачки",
-                                    "desc" => "Dual 320mm дискови, 4-piston monobloc Brembo Stylema calipers. Front radial pump, ABS"
-                                ],
-                                [
-                                    "title" => "задна сопирачка",
-                                    "desc" => "Еден 255 mm диск. Brembo single piston floating caliper, ABS"
-                                ],
-                                [
-                                    "title" => "инструментна плочка",
-                                    "desc" => "5 TFT екран"
-                                ]
-                            ],
-                            "dimension" => [
-                                [
-                                    "title" => "ширина на волан",
-                                    "desc" => "830 mm"
-                                ],
-                                [
-                                    "title" => "висина без ретровизори",
-                                    "desc" => "1410-1460 mm"
-                                ],
-                                [
-                                    "title" => "Solar height",
-                                    "desc" => "820-840 mm"
-                                ],
-                                [
-                                    "title" => "мегу-осовинско растојание ",
-                                    "desc" => "1556 mm"
-                                ],
-                                [
-                                    "title" => "Custer Corner",
-                                    "desc" => "24.6 º"
-                                ],
-                                [
-                                    "title" => "Trace",
-                                    "desc" => "133.3 mm"
-                                ],
-                                [
-                                    "title" => "Тежина",
-                                    "desc" => "192 kg"
-                                ],
-                                [
-                                    "title" => "капацитет на резервоар",
-                                    "desc" => "20 L"
-                                ]
-                            ],
-                            "fuelConsumption" => [
-                                [
-                                    "title" => "Потрошувачка",
-                                    "desc" => "5.2l /100km"
-                                ],
-                                [
-                                    "title" => "CO2 загадување",
-                                    "desc" => "Euro 5 Стандарди измерени според Регулатива 168/2013/EC. Резултатите се добиени во специјални тест средини и се на располагање само за споредба. Вистинските резултат може да варираат врз различни средини."
-                                ]
-                            ]
+                    ],
+
+                    "engineTransmission" => [
+                        [
+                            "title" => "Тип на Мотор",
+                            "desc" => "водно ладење, 12 вентили, DOHC, линиски 3-цилиндри, 240° редослед на есклпозии"
                         ],
-                        "grayCarousell" => [
-                            [
-                                "id" => "carouselItem1",
-                                "title" => "Возбудлив Три Цилиндарски Мотор",
-                                "desc" => "Почувствувајте го карактерот на моторот и чувството на лесно управување со иновативната T-crank радалица и најновиот 850 три-цилиндричен мотор.",
-                                "image" => "/images/adventure/tigerSport850/tiger850Caro1.avif"
-                            ],
-                            [
-                                "id" => "carouselItem2",
-                                "title" => "Технологија фокусирана на возачот",
-                                "desc" => "Технологија од врвно ниво, сопирачки и одлична суспензија за подобро секојдневно возење со максимално чувство на самодоверба, перформанси и сигурност.",
-                                "image" => "/images/adventure/tigerSport850/tiger850Caro2.avif"
-                            ],
-                            [
-                                "id" => "carouselItem3",
-                                "title" => "Комбинација помеѓу карактер и перформанси",
-                                "desc" => "Соилуета по која сите се вртат, со агресивни линии и ексклузивни детали .",
-                                "image" => "/images/adventure/tigerSport850/tiger850Caro3.avif"
-                            ],
-                            [
-                                "id" => "carouselItem4",
-                                "title" => "Дизајниран да инспирира самодоверба",
-                                "desc" => "Лесно прилагодлив за сечиј возачки стил, од височината на седиштето, до воланот па се до ерканот, Tiger 850 е спремен да се прилагоди на вас.",
-                                "image" => "/images/adventure/tigerSport850/tiger850Caro4.avif"
-                            ]
+                        [
+                            "title" => "капацитет",
+                            "desc" => "660 cc"
                         ],
-                        "specNumbers" => [
-                            ["data" => "888", "info" => "cc Мотор"],
-                            ["data" => "85", "info" => "РЅ Коњски сили"],
-                            ["data" => "82", "info" => "Nm Максимален Обртен Момент"],
-                            ["data" => "60+", "info" => "Аксесоари"]
+                        [
+                            "title" => "диаметар",
+                            "desc" => "74.04 mm"
+                        ],
+                        [
+                            "title" => "рута",
+                            "desc" => "51.1 mm"
+                        ],
+                        [
+                            "title" => "компресија",
+                            "desc" => "11.95 =>1"
+                        ],
+                        [
+                            "title" => "Мах. Коњски Сила",
+                            "desc" => "81 PS / 80 bhp (59.6 kW) @ 10,250 rpm"
+                        ],
+                        [
+                            "title" => "Мах. Обртен Момент",
+                            "desc" => "64 Nm @ 6,250 rpm"
+                        ],
+                        [
+                            "title" => "Систем за убризгување",
+                            "desc" => "Multipoint sequential electronic fuel injection with electronic throttle control"
+                        ],
+                        [
+                            "title" => "Систем за Издувни гасови",
+                            "desc" => "3 во 1 не-раѓосувачки челик"
+                        ],
+                        [
+                            "title" => "Финална Трансмисија",
+                            "desc" => "X-ring chain"
+                        ],
+                        [
+                            "title" => "Квачило",
+                            "desc" => "Wet, multi-plate, slip"
+                        ],
+                        [
+                            "title" => "Менувачка Кутија",
+                            "desc" => "6 брзини"
                         ]
                     ],
+                    "frame" => [
+                        [
+                            "title" => "шасија",
+                            "desc" => "тубуларна челична шасија"
+                        ],
+                        [
+                            "title" => "вилушка",
+                            "desc" => "алуминиум"
+                        ],
+                        [
+                            "title" => "предно тркало",
+                            "desc" => "19 x 2.5' die-cast легура "
+                        ],
+                        [
+                            "title" => "задно тркало",
+                            "desc" => "17 x 4.25' die-cast легура "
+                        ],
+                        [
+                            "title" => "предна гума",
+                            "desc" => "100/90-19"
+                        ],
+                        [
+                            "title" => "задна гума",
+                            "desc" => "150/70R17"
+                        ],
+                        [
+                            "title" => "предна суспензија",
+                            "desc" => "Marzocchi Inverted Fork 45mm"
+                        ],
+                        [
+                            "title" => "задна суспензија",
+                            "desc" => "Marzocchi задна суспензија со систем за подесување"
+                        ],
+                        [
+                            "title" => "предни сопирачки",
+                            "desc" => "Dual 320mm дискови, 4-piston monobloc Brembo Stylema calipers. Front radial pump, ABS"
+                        ],
+                        [
+                            "title" => "задна сопирачка",
+                            "desc" => "Еден 255 mm диск. Brembo single piston floating caliper, ABS"
+                        ],
+                        [
+                            "title" => "инструментна плочка",
+                            "desc" => "5 TFT екран"
+                        ]
+                    ],
+                    "dimension" => [
+                        [
+                            "title" => "ширина на волан",
+                            "desc" => "830 mm"
+                        ],
+                        [
+                            "title" => "висина без ретровизори",
+                            "desc" => "1410-1460 mm"
+                        ],
+                        [
+                            "title" => "Solar height",
+                            "desc" => "820-840 mm"
+                        ],
+                        [
+                            "title" => "мегу-осовинско растојание ",
+                            "desc" => "1556 mm"
+                        ],
+                        [
+                            "title" => "Custer Corner",
+                            "desc" => "24.6 º"
+                        ],
+                        [
+                            "title" => "Trace",
+                            "desc" => "133.3 mm"
+                        ],
+                        [
+                            "title" => "Тежина",
+                            "desc" => "192 kg"
+                        ],
+                        [
+                            "title" => "капацитет на резервоар",
+                            "desc" => "20 L"
+                        ]
+                    ],
+                    "fuelConsumption" => [
+                        [
+                            "title" => "Потрошувачка",
+                            "desc" => "5.2l /100km"
+                        ],
+                        [
+                            "title" => "CO2 загадување",
+                            "desc" => "Euro 5 Стандарди измерени според Регулатива 168/2013/EC. Резултатите се добиени во специјални тест средини и се на располагање само за споредба. Вистинските резултат може да варираат врз различни средини."
+                        ]
+                    ],
+
+                    "grayCarousell" => [
+                        [
+                            "id" => "carouselItem1",
+                            "title" => "Возбудлив Три Цилиндарски Мотор",
+                            "desc" => "Почувствувајте го карактерот на моторот и чувството на лесно управување со иновативната T-crank радалица и најновиот 850 три-цилиндричен мотор.",
+                            "image" => "/images/adventure/tigerSport850/tiger850Caro1.avif"
+                        ],
+                        [
+                            "id" => "carouselItem2",
+                            "title" => "Технологија фокусирана на возачот",
+                            "desc" => "Технологија од врвно ниво, сопирачки и одлична суспензија за подобро секојдневно возење со максимално чувство на самодоверба, перформанси и сигурност.",
+                            "image" => "/images/adventure/tigerSport850/tiger850Caro2.avif"
+                        ],
+                        [
+                            "id" => "carouselItem3",
+                            "title" => "Комбинација помеѓу карактер и перформанси",
+                            "desc" => "Соилуета по која сите се вртат, со агресивни линии и ексклузивни детали .",
+                            "image" => "/images/adventure/tigerSport850/tiger850Caro3.avif"
+                        ],
+                        [
+                            "id" => "carouselItem4",
+                            "title" => "Дизајниран да инспирира самодоверба",
+                            "desc" => "Лесно прилагодлив за сечиј возачки стил, од височината на седиштето, до воланот па се до ерканот, Tiger 850 е спремен да се прилагоди на вас.",
+                            "image" => "/images/adventure/tigerSport850/tiger850Caro4.avif"
+                        ]
+                    ],
+                    "specNumbers" => [
+                        ["data" => "888", "info" => "cc Мотор"],
+                        ["data" => "85", "info" => "РЅ Коњски сили"],
+                        ["data" => "82", "info" => "Nm Максимален Обртен Момент"],
+                        ["data" => "60+", "info" => "Аксесоари"]
+                    ],
+
                     "reasonsToDrive" => [
                         "banner" => [
                             "image" => "/images/adventure/tigerSport660/tiger660ReasonsBanner.avif"
@@ -1722,6 +1720,7 @@ class MotoFamiliesTableSeeder extends Seeder
                     "title" => "Tiger 900 - MY23",
                     "price" => 16290,
                     "url" => "/motorcycles/adventure/tiger-900-2023",
+                    "youtubeVideo" => "https://www.youtube.com/embed/-eXK5VwysTA",
                     "subFamilyPageInfo" => [
                         "heroDesc" => [
                             "desc" => "Голем чекор напред во поглед на можностите, за максимални авантури секој ден.",
@@ -1732,184 +1731,189 @@ class MotoFamiliesTableSeeder extends Seeder
                             "desc" => "Tiger 900 фамилијата претставува огромен скок на-напред во способноста, со две серии што отвораат други погледи за тоа како треба да излгедаат авантурите во урбаното патување и долгите, екстремни off-road рути.",
                             "subtitle" => "Tiger 900 ги носи способностите на моторите на повисоко ниво, се со цел за максимално уживање во авантурите."
                         ],
-                        "youtubeVideo" => "https://www.youtube.com/embed/-eXK5VwysTA",
-                        "fullSpecs" => [
-                            "engineTransmission" => [
-                                [
-                                    "title" => "Тип на Мотор",
-                                    "desc" => "водно ладење, 12 вентили, DOHC, линиски 3-цилиндри"
-                                ],
-                                [
-                                    "title" => "капацитет",
-                                    "desc" => "888 cc"
-                                ],
-                                [
-                                    "title" => "диаметар",
-                                    "desc" => "78 mm"
-                                ],
-                                [
-                                    "title" => "рута",
-                                    "desc" => "61.9 mm"
-                                ],
-                                [
-                                    "title" => "компресија",
-                                    "desc" => "11.27 =>1"
-                                ],
-                                [
-                                    "title" => "Мах. Коњски Сила",
-                                    "desc" => "95.2 PS / 93.9 bhp (70 kW) @ 8,750 rpm"
-                                ],
-                                [
-                                    "title" => "Мах. Обртен Момент",
-                                    "desc" => "87 Nm @ 7,250 rpm"
-                                ],
-                                [
-                                    "title" => "Систем за убризгување",
-                                    "desc" => "Multipoint sequential electronic fuel injection"
-                                ],
-                                [
-                                    "title" => "Систем за Издувни гасови",
-                                    "desc" => "3 во 1 не-раѓосувачки челик"
-                                ],
-                                [
-                                    "title" => "Финална Трансмисија",
-                                    "desc" => "O-ring chain"
-                                ],
-                                [
-                                    "title" => "Квачило",
-                                    "desc" => "Wet, multi-plate"
-                                ],
-                                [
-                                    "title" => "Менувачка Кутија",
-                                    "desc" => "6 брзини"
-                                ]
-                            ],
-                            "frame" => [
-                                [
-                                    "title" => "шасија",
-                                    "desc" => "тубуларна челична шасија"
-                                ],
-                                [
-                                    "title" => "вилушка",
-                                    "desc" => "алуминиум"
-                                ],
-                                [
-                                    "title" => "предно тркало",
-                                    "desc" => "Tubeless, 21 x 2.15 in"
-                                ],
-                                [
-                                    "title" => "задно тркало",
-                                    "desc" => "Tubeless, 17 x 4.25 in"
-                                ],
-                                [
-                                    "title" => "предна гума",
-                                    "desc" => "90/90-21"
-                                ],
-                                [
-                                    "title" => "задна гума",
-                                    "desc" => "150/70R17"
-                                ],
-                                [
-                                    "title" => "предна суспензија",
-                                    "desc" => "Showa превртена 45мм вилушка, мануелно подесување за јачина на одбивање, 240мм опсег на работа"
-                                ],
-                                [
-                                    "title" => "задна суспензија",
-                                    "desc" => "Showa задна вилушка, мануелно подесување за јачина на одбивање, 230мм опсег на работа"
-                                ],
-                                [
-                                    "title" => "предни сопирачки",
-                                    "desc" => "Дупли 320мм дискови, Brembo Stylema 4 piston Monoblock клешти. Преден цилиндар за течност, Оптимизиран ABS систем"
-                                ],
-                                [
-                                    "title" => "задна сопирачка",
-                                    "desc" => "Brembo"
-                                ]
-                            ],
-                            "dimension" => [
-                                [
-                                    "title" => "ширина на волан",
-                                    "desc" => "935 mm"
-                                ],
-                                [
-                                    "title" => "висина без ретровизори",
-                                    "desc" => "1452-1502 mm"
-                                ],
-                                [
-                                    "title" => "Solar height",
-                                    "desc" => "860-880 mm"
-                                ],
-                                [
-                                    "title" => "мегу-осовинско растојание ",
-                                    "desc" => "1551 mm"
-                                ],
-                                [
-                                    "title" => "Custer Corner",
-                                    "desc" => "24.4 º"
-                                ],
-                                [
-                                    "title" => "Trace",
-                                    "desc" => "145.8 mm"
-                                ],
-                                [
-                                    "title" => "Тежина",
-                                    "desc" => "201 kg"
-                                ],
-                                [
-                                    "title" => "капацитет на резервоар",
-                                    "desc" => "20 L"
-                                ]
-                            ],
-                            "fuelConsumption" => [
-                                [
-                                    "title" => "Потрошувачка",
-                                    "desc" => "5.2l /100km (55.4 MPG)"
-                                ],
-                                [
-                                    "title" => "CO2 загадување",
-                                    "desc" => "Euro 5 Стандарди. (119g /km CO2) измерени според Регулатива 168/2013/EC. Резултатите се добиени во специјални тест средини и се на располагање само за споредба. Вистинските резултат може да варираат врз различни средини."
-                                ]
-                            ],
-                            "service" => [["title" => "Сервисен Интервал", "desc" => "10,000 km или 12 месеци"]]
-                        ],
-                        "grayCarousell" => [
+                        "service" => [
                             [
-                                "id" => "carouselItem1",
-                                "title" => "Инспириран од ARAGÓN",
-                                "desc" => "Креиран како инспирација од доминантниот победнички перформанса на Tiger 900 Rally Pro на Baja Aragon 2022.",
-                                "image" => "/images/adventure/tiger900/tiger900GrayCaro1.avif"
-                            ],
-                            [
-                                "id" => "carouselItem2",
-                                "title" => "Стандарди",
-                                "desc" => "Лидер во класата по спецификации од почеток до крај, со квалитетни компоненти оптимизирани и за на пат и за “off-road“ средини.",
-                                "image" => "/images/adventure/tiger900/tiger900GrayCaro2.avif"
-                            ],
-                            [
-                                "id" => "carouselItem3",
-                                "title" => "Технологија",
-                                "desc" => "Најновата технологија фокусирана на возачот понудува комфорт, самодоверба, сигурност и перформанси.",
-                                "image" => "/images/adventure/tiger900/tiger900GrayCaro3.avif"
-                            ],
-                            [
-                                "id" => "carouselItem4",
                                 "title" => "Сервисен Интервал",
-                                "desc" => "Долгиот сервисен интервал додатно со две годишната гаранција која не истекува по одреден број поминати километри, со сигурност потврдува дека ќе имате безгрижни авантури и мали трошоци за одржување.",
-                                "image" => "/images/adventure/tiger900/tiger900GrayCaro4.avif"
+                                "desc" => "10,000 km или 12 месеци"
                             ]
                         ],
+
                         "audioSection" => [
                             "title" => "Уникатни Перформанси и Звук.",
                             "desc" => "Новиот 900сс три-цилиндричен мотор на Tiger 900 испорачува препознатлив длабок звук и длабок виок, со возбудливи вибрации при средни фреквенции и прекрасни звуци при финиш.",
                             "audio" => "/images/adventure/tiger900/tiger900Sound.mp3"
                         ],
-                        "specNumbers" => [
-                            ["data" => "900", "info" => "cc Мотор"],
-                            ["data" => "87", "info" => "Nm обртен момент"],
-                            ["data" => "95", "info" => "PS - Максимална Сила"],
-                            ["data" => "+65", "info" => "Аксесоари"]
+                    ],
+                    "engineTransmission" => [
+                        [
+                            "title" => "Тип на Мотор",
+                            "desc" => "водно ладење, 12 вентили, DOHC, линиски 3-цилиндри"
+                        ],
+                        [
+                            "title" => "капацитет",
+                            "desc" => "888 cc"
+                        ],
+                        [
+                            "title" => "диаметар",
+                            "desc" => "78 mm"
+                        ],
+                        [
+                            "title" => "рута",
+                            "desc" => "61.9 mm"
+                        ],
+                        [
+                            "title" => "компресија",
+                            "desc" => "11.27 =>1"
+                        ],
+                        [
+                            "title" => "Мах. Коњски Сила",
+                            "desc" => "95.2 PS / 93.9 bhp (70 kW) @ 8,750 rpm"
+                        ],
+                        [
+                            "title" => "Мах. Обртен Момент",
+                            "desc" => "87 Nm @ 7,250 rpm"
+                        ],
+                        [
+                            "title" => "Систем за убризгување",
+                            "desc" => "Multipoint sequential electronic fuel injection"
+                        ],
+                        [
+                            "title" => "Систем за Издувни гасови",
+                            "desc" => "3 во 1 не-раѓосувачки челик"
+                        ],
+                        [
+                            "title" => "Финална Трансмисија",
+                            "desc" => "O-ring chain"
+                        ],
+                        [
+                            "title" => "Квачило",
+                            "desc" => "Wet, multi-plate"
+                        ],
+                        [
+                            "title" => "Менувачка Кутија",
+                            "desc" => "6 брзини"
                         ]
                     ],
+                    "frame" => [
+                        [
+                            "title" => "шасија",
+                            "desc" => "тубуларна челична шасија"
+                        ],
+                        [
+                            "title" => "вилушка",
+                            "desc" => "алуминиум"
+                        ],
+                        [
+                            "title" => "предно тркало",
+                            "desc" => "Tubeless, 21 x 2.15 in"
+                        ],
+                        [
+                            "title" => "задно тркало",
+                            "desc" => "Tubeless, 17 x 4.25 in"
+                        ],
+                        [
+                            "title" => "предна гума",
+                            "desc" => "90/90-21"
+                        ],
+                        [
+                            "title" => "задна гума",
+                            "desc" => "150/70R17"
+                        ],
+                        [
+                            "title" => "предна суспензија",
+                            "desc" => "Showa превртена 45мм вилушка, мануелно подесување за јачина на одбивање, 240мм опсег на работа"
+                        ],
+                        [
+                            "title" => "задна суспензија",
+                            "desc" => "Showa задна вилушка, мануелно подесување за јачина на одбивање, 230мм опсег на работа"
+                        ],
+                        [
+                            "title" => "предни сопирачки",
+                            "desc" => "Дупли 320мм дискови, Brembo Stylema 4 piston Monoblock клешти. Преден цилиндар за течност, Оптимизиран ABS систем"
+                        ],
+                        [
+                            "title" => "задна сопирачка",
+                            "desc" => "Brembo"
+                        ]
+                    ],
+                    "dimension" => [
+                        [
+                            "title" => "ширина на волан",
+                            "desc" => "935 mm"
+                        ],
+                        [
+                            "title" => "висина без ретровизори",
+                            "desc" => "1452-1502 mm"
+                        ],
+                        [
+                            "title" => "Solar height",
+                            "desc" => "860-880 mm"
+                        ],
+                        [
+                            "title" => "мегу-осовинско растојание ",
+                            "desc" => "1551 mm"
+                        ],
+                        [
+                            "title" => "Custer Corner",
+                            "desc" => "24.4 º"
+                        ],
+                        [
+                            "title" => "Trace",
+                            "desc" => "145.8 mm"
+                        ],
+                        [
+                            "title" => "Тежина",
+                            "desc" => "201 kg"
+                        ],
+                        [
+                            "title" => "капацитет на резервоар",
+                            "desc" => "20 L"
+                        ]
+                    ],
+                    "fuelConsumption" => [
+                        [
+                            "title" => "Потрошувачка",
+                            "desc" => "5.2l /100km (55.4 MPG)"
+                        ],
+                        [
+                            "title" => "CO2 загадување",
+                            "desc" => "Euro 5 Стандарди. (119g /km CO2) измерени според Регулатива 168/2013/EC. Резултатите се добиени во специјални тест средини и се на располагање само за споредба. Вистинските резултат може да варираат врз различни средини."
+                        ]
+                    ],
+                    "grayCarousell" => [
+                        [
+                            "id" => "carouselItem1",
+                            "title" => "Инспириран од ARAGÓN",
+                            "desc" => "Креиран како инспирација од доминантниот победнички перформанса на Tiger 900 Rally Pro на Baja Aragon 2022.",
+                            "image" => "/images/adventure/tiger900/tiger900GrayCaro1.avif"
+                        ],
+                        [
+                            "id" => "carouselItem2",
+                            "title" => "Стандарди",
+                            "desc" => "Лидер во класата по спецификации од почеток до крај, со квалитетни компоненти оптимизирани и за на пат и за “off-road“ средини.",
+                            "image" => "/images/adventure/tiger900/tiger900GrayCaro2.avif"
+                        ],
+                        [
+                            "id" => "carouselItem3",
+                            "title" => "Технологија",
+                            "desc" => "Најновата технологија фокусирана на возачот понудува комфорт, самодоверба, сигурност и перформанси.",
+                            "image" => "/images/adventure/tiger900/tiger900GrayCaro3.avif"
+                        ],
+                        [
+                            "id" => "carouselItem4",
+                            "title" => "Сервисен Интервал",
+                            "desc" => "Долгиот сервисен интервал додатно со две годишната гаранција која не истекува по одреден број поминати километри, со сигурност потврдува дека ќе имате безгрижни авантури и мали трошоци за одржување.",
+                            "image" => "/images/adventure/tiger900/tiger900GrayCaro4.avif"
+                        ]
+                    ],
+
+                    "specNumbers" => [
+                        ["data" => "900", "info" => "cc Мотор"],
+                        ["data" => "87", "info" => "Nm обртен момент"],
+                        ["data" => "95", "info" => "PS - Максимална Сила"],
+                        ["data" => "+65", "info" => "Аксесоари"]
+                    ],
+
                     "reasonsToDrive" => [
                         "banner" => [
                             "image" => "/images/adventure/tiger900/tiger900GrayCaro2.avif"
@@ -2029,24 +2033,6 @@ class MotoFamiliesTableSeeder extends Seeder
             "id" => 2,
             "type" => "classics",
             "familyPageBannerVideo" => "adventure/adventureHeroVideo.webm",
-            "promo" => [
-                [
-                    "id" => 1,
-                    "title" => "Нова 'Truxton Final-Edition' Серија",
-                    "subFamilyType" => "truxton-final-edition",
-                    "desc" => "Крајот на една ера - последната продукциска серија на иконата во Triumph серијата. Откријте повеќе за ексклузивното Thruxton Final Edition.",
-                    "image" => "/images/classics/thruxtonFinalEdition.avif",
-                    "btnBlack" => true
-                ],
-                [
-                    "id" => 2,
-                    "title" => "Нова 'Stealth' Серија",
-                    "subFamilyType" => "stealth-edition",
-                    "desc" => "Темно и софистицирано, но сепак смело и живо. Достапна само една година, оваа неверојатна колекција се одликува со неверојатен финиш на боја по ваша нарачка.",
-                    "image" => "/images/classics/stealthEdition.avif",
-                    "btnBlack" => true
-                ]
-            ],
             "configPageInfo" => [
                 "desc" => "Легендарната 'Bonneville' крвна линија е вградена во нашите модерни класици, со неспоредлива историја на изведби, тркачки успех и културно влијание.",
                 "link" => "/configure/families/classics"
@@ -2066,8 +2052,8 @@ class MotoFamiliesTableSeeder extends Seeder
                     "title" => "Speed 400",
                     "price" => 5690,
                     "url" => "/motorcycles/classics/speed-400",
+                    "heroSlogans" => ["Пронајдете ја", "вашата", "слобода"],
                     "subFamilyPageInfo" => [
-                        "heroSlogans" => ["Пронајдете ја", "вашата", "слобода"],
                         "topSection" => [
                             "title" => "Автентичност",
                             "desc" => "Speed 400 - иконата на Triumph, перфектен стил, перформанси и лидер во класата по квалитет..",
@@ -2247,10 +2233,22 @@ class MotoFamiliesTableSeeder extends Seeder
                             "audio" => "/images/adventure/tiger850Sport/tigerSound.mp3"
                         ],
                         "specNumbers" => [
-                            ["data" => "398", "info" => "cc Мотор"],
-                            ["data" => "37.5", "info" => "Nm обртен момент"],
-                            ["data" => "TR", "info" => "Мотор Серија"],
-                            ["data" => "20+", "info" => "Аксесоари"]
+                            [
+                                "data" => "398",
+                                "info" => "cc Мотор"
+                            ],
+                            [
+                                "data" => "37.5",
+                                "info" => "Nm обртен момент"
+                            ],
+                            [
+                                "data" => "TR",
+                                "info" => "Мотор Серија"
+                            ],
+                            [
+                                "data" => "20+",
+                                "info" => "Аксесоари"
+                            ]
                         ]
                     ],
                     "reasonsToDrive" => [

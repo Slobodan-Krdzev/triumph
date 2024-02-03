@@ -52,11 +52,10 @@ class MotorcycleController extends Controller
 
         $moto = Motorcycle::findOrFail($id);
 
-        // Adjust the view based on the category
         $view = match ($category) {
             'classics' => 'layouts.edit-classics',
             'roadster' => 'layouts.edit-roadster',
-            'adventure' => 'layouts.edit-adventure',
+            'adventure' => 'layouts.edit-moto-default',
             'rocket-3' => 'layouts.edit-rocket-3',
             default => 'layouts.edit-default',
         };

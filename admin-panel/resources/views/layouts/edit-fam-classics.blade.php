@@ -69,7 +69,7 @@
             <div class="border-2 border-neutral-500 flex justify-between items-center p-2">
                     <h2>{{ $promo['title'] ?? '' }}</h2>
                     <div class="flex justify-between items-center">
-                        <a href="{{ route('edit-promo', ['id' => $family->id, 'type' => $family->type]) }}" class="mx-4">Edit</a>
+                        <a href="{{ route('edit-promo', ['id' => $family->id, 'promoId' => $promo['id'], 'type' => $family->type]) }}" class="mx-4">Edit</a>
 
                         <button class="bg-red-500 p-1 rounded text-white">Delete</button>
                     </div>
