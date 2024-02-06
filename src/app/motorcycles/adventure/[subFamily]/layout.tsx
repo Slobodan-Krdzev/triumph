@@ -17,7 +17,6 @@ export default function SubFamilyLayout({
   const params = useParams();
 
   const path = pathname.split("/").slice(1, 3).join("/");
-  const tiger900Path = Boolean(pathname.split("/")[3] === 'tiger-900')
   const tiger1200Path = Boolean(pathname.split("/")[3] === 'tiger-1200-gt' || pathname.split("/")[3] === 'tiger-1200-rally')
 
   const secondaryNavItems = [
@@ -43,31 +42,12 @@ export default function SubFamilyLayout({
     },
   ];
 
-  const secondaryNavItemsForTiger900 = [
-    {
-      text: "Преглед",
-      link: `/${path}/${params.subFamily}`,
-    },
-    {
-      text: "Модели",
-      link: `/${path}/${params.subFamily}/models`,
-    },
-    {
-      text: "Спецификации",
-      link: `/${path}/${params.subFamily}/specifications`,
-    },
-    {
-      text: "Аксесоари",
-      link: `/${path}/${params.subFamily}/accessories`,
-    },
-  ];
-  
 
   return (
     <section>
       {breakpoint >= 1024 && (
         <SecondaryNavBar
-          items={tiger900Path ? secondaryNavItemsForTiger900 : secondaryNavItems}
+          items={secondaryNavItems}
           title={formulateSubFamilyTitleOnBanner(tiger1200Path ? 'Tiger 1200' : params.subFamily.toString())}
           configurationLink={`/configure/bikes/${params.subFamily}`}
         />
@@ -75,7 +55,7 @@ export default function SubFamilyLayout({
 
       {breakpoint < 1024 && (
         <MobileSecondaryNav
-          items={tiger900Path ? secondaryNavItemsForTiger900 : secondaryNavItems}
+          items={secondaryNavItems}
           title={formulateSubFamilyTitleOnBanner(formulateSubFamilyTitleOnBanner(tiger1200Path ? 'Tiger 1200' : params.subFamily.toString()))}
           configurationLink={`/configure/bikes/${params.subFamily}`}
         />

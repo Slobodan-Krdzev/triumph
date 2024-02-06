@@ -7,7 +7,6 @@ import PageParagraph from "@/app/components/familiySharedComponents/PageParagrap
 import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
 import TextAndImageFlexSection from "@/app/components/familiySharedComponents/TextAndImageFlexSection";
 import { createSubFamLinksForSecondary } from "@/app/components/helpers/createSubFamLinksForSecondary";
-import { formSecondaryNavItems } from "@/app/components/helpers/formSecondaryNavItems";
 import { getBikesBySubfamilyCategory } from "@/app/components/helpers/getBikesBySubfamilyCategory";
 import { BIKES, FAMILIES, PROMOS, SUB_FAMILIES } from "@/app/constants/constants";
 import { PromoDataType } from "@/app/types/HomeTypes/SharedTypes/types";
