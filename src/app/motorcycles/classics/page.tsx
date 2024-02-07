@@ -70,7 +70,7 @@ const ClassicPage = async () => {
 
           <section className="m-auto w-11/12 md:w-9/12">
             {/* type treba da e bike */}
-            {getBikesByCC("400", bikes).map((bike: any) => (
+            {getBikesByCC(400, bikes).map((bike: any) => (
               <BikeInfoTextImageBtn
                 key={bike.id}
                 title={bike.title ?? ""}
@@ -99,13 +99,13 @@ const ClassicPage = async () => {
           </section>
 
           <section className="flex flex-col md:flex-row md:px-8 px-4 md:gap-4">
-            {getBikesByCC("900", bikes).map((bike: any) => (
+            {getBikesByCC(900, bikes).map((bike: any) => (
               <CardLinkItem
                 key={bike.id}
                 title={bike.title ?? ""}
                 image={bike.gallery.modelImage.src ?? ""}
                 text={"Детали"}
-                url={`/motorcycles/classic/${bike.subFamilyName}`}
+                url={`/motorcycles/classics/${bike.subFamilyName}`}
                 desc={bike.shortDesc ?? ""}
               />
             ))}
@@ -122,20 +122,20 @@ const ClassicPage = async () => {
           </section>
 
           <section className="flex flex-wrap px-8">
-            {getBikesBySubFamCategory("1200cc").map((bike: any) => (
+            {getBikesByCC(1200, bikes).map((bike: any) => (
               <DiscoverThriumphCard
                 key={bike.bikeId}
-                desc={bike.familyPageInfo.desc}
-                image={bike.familyPageInfo.image.src}
-                title={bike.familyPageInfo.title}
-                url={bike.familyPageInfo.link.url}
+                desc={bike.shortDesc ?? ""}
+                image={bike.gallery.modelImage.src ?? ""}
+                title={bike.title ?? ''}
+                url={`/motorcycles/${bike.familyType}/${bike.subFamilyName}`}
                 btnText={"Детали"}
               />
             ))}
           </section>
 
-          <section>
-            {promos.map((promo: PromoDataType) => (
+          <section className="m-auto w-11/12 md:w-10/12">
+            {promos.map((promo: PromoDataType, idx: number) => (
               <BikeInfoTextImageBtn
                 key={promo.title}
                 title={promo.title}
@@ -149,6 +149,7 @@ const ClassicPage = async () => {
                   alt: promo.title,
                 }}
                 blackBtn={promo.btnBlack}
+                imageOnTheLeft={idx % 2 === 0 ? true : false}
               />
             ))}
           </section>

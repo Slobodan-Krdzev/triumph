@@ -2005,6 +2005,7 @@
       "title": "Speed 400",
       "price": 5690,
       "url": "/motorcycles/classics/speed-400",
+      "cc": 400,
       "specs": [{
         "desc": "ML",
         "data": 389
@@ -2343,6 +2344,7 @@
       "title": "Scrambler 400 X",
       "price": 6390,
       "url": "/motorcycles/classics/scrambler-400-x",
+      "cc": 400,
       "specs": [{
         "desc": "ML",
         "data": 389
@@ -2669,7 +2671,9 @@
       "familyType": "classics",
       "title": "Speed Twin 900",
       "price": 10390,
-      "url": "/motorcycles/classics/speed-twin-900","specs": [{
+      "url": "/motorcycles/classics/speed-twin-900",
+      "cc": 900
+      ,"specs": [{
         "desc": "К.ЕК Мотор",
         "data": 900
       },
@@ -3022,6 +3026,7 @@
       "title": "Bonneville Bobber",
       "price": 16290,
       "url": "/motorcycles/classics/bonneville-bobber",
+      "cc": 1200,
       "specs": [{
         "desc": "К.ЕК Мотор",
         "data": 1200
@@ -3361,6 +3366,7 @@
       "title": "Scrambler 1200",
       "price": 15990,
       "url": "/motorcycles/classics/scrambler-1200",
+      "cc": 1200,
       "specs": [{
         "desc": "К.ЕК Мотор",
         "data": 1200
@@ -3749,6 +3755,7 @@
       "title": "Bonneville Speedmaster",
       "price": 16290,
       "url": "/motorcycles/classics/bonneville-speedmaster",
+      "cc": 1200,
       "specs": [{
         "desc": "К.ЕК Мотор",
         "data": 1200
@@ -4084,6 +4091,7 @@
       "title": "Speed Twin 1200",
       "price": 14190,
       "url": "/motorcycles/classics/speed-twin-1200",
+      "cc": 1200,
       "specs": [{
         "desc": "К.ЕК Мотор",
         "data": 1200
@@ -4434,6 +4442,7 @@
       "title": "Scrambler 900",
       "price": 11890,
       "url": "/motorcycles/classics/scrambler-900",
+      "cc": 900,
       "specs": [{
         "desc": "К.ЕК Мотор",
         "data": 900
@@ -4776,6 +4785,7 @@
       "title": "Bonneville T100",
       "price": 11690,
       "url": "/motorcycles/classics/bonneville-t100",
+      "cc": 900,
       "specs": [{
         "desc": "К.ЕК Мотор",
         "data": 900
@@ -5136,6 +5146,7 @@
       "title": "Bonneville T120",
       "price": 14290,
       "url": "/motorcycles/classics/bonneville-t120",
+      "cc": 1200,
       "specs": [{
         "desc": "година",
         "data": 1959
@@ -5502,6 +5513,7 @@
       "title": "Thruxton RS",
       "price": 14290,
       "url": "/motorcycles/classics/thruxton-rs",
+      "cc": 1200,
       "specs": [{
         "desc": "ML Мотор",
         "data": 1200
