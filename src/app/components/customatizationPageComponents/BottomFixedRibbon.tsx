@@ -15,6 +15,7 @@ import { useBreakpoint } from "../helpers/useBreakpoint";
 import { useRouter, useSearchParams } from "next/navigation";
 import { handleBodyScrollWhenMenuIsOpen } from "../helpers/handleBodyScrollWhenMenuOpens";
 import { CustomizationColorType } from "@/app/types/HomeTypes/SharedTypes/types";
+import Link from "next/link";
 
 type BottomFixedRibbonProps = {
   info: any;
@@ -25,35 +26,33 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
 
   const breakpoint = useBreakpoint();
   const router = useRouter();
-  const colorQuery = useSearchParams().get('color') ?? 'color1'
+  const colorQuery = useSearchParams().get("color") ?? "color1";
 
-  const colorPrice = info.customizationColors.find((color: CustomizationColorType) => color.colorCode === colorQuery).price 
+  const colorPrice = info.customizationColors.find(
+    (color: CustomizationColorType) => color.colorCode === colorQuery
+  ).price;
 
   useEffect(() => {
-    
-    if(breakpoint > 768) {
-      setIsMobileMenuShown(false)
+    if (breakpoint > 768) {
+      setIsMobileMenuShown(false);
     }
-  }, [breakpoint])
-  
+  }, [breakpoint]);
 
   const handlePreviousBtn = () => router.back();
 
   const handleMenu = () => {
     setIsMobileMenuShown(!isMobileMenuShown);
 
-    handleBodyScrollWhenMenuIsOpen(isMobileMenuShown)
+    handleBodyScrollWhenMenuIsOpen(isMobileMenuShown);
   };
 
-
   const handlePriceChange = (startingPrice: number) => {
-
-    if(colorQuery !== null) {
-      return startingPrice + colorPrice
+    if (colorQuery !== null) {
+      return startingPrice + colorPrice;
     }
 
-    return startingPrice
-  }
+    return startingPrice;
+  };
 
   if (breakpoint > 768) {
     return (
@@ -88,21 +87,30 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
           </button>
           <div className="flex flex-col justify-center items-start basis-2/3 pl-5">
             <p className="text-sm">Цена</p>
-            {info.price && <p className="text-xl font-medium">€{handlePriceChange(info.price)}.00  </p>}
-            {info.price === null && <p className="text-xl font-medium">Наскоро!!! </p>}
-
-            
+            {info.price && (
+              <p className="text-xl font-medium">
+                €{handlePriceChange(info.price)}.00{" "}
+              </p>
+            )}
+            {info.price === null && (
+              <p className="text-xl font-medium">Наскоро!!! </p>
+            )}
           </div>
         </div>
-        <button className="basis-3/12 red-bg-color text-white red-bg-hover-color font-semibold">
-          СЛЕДНО
-          <FontAwesomeIcon
-            icon={faChevronRight}
-            color="white"
-            size="2xs"
-            className="pl-2"
-          />
-        </button>
+        <Link
+          className="basis-3/12 red-bg-color text-white red-bg-hover-color font-semibold flex"
+          href={`/motorcycles/${info.category}/${info.subFamilyCategory}/${info.model}`}
+        >
+          <div className="flex justify-center items-center w-full h-full">
+            <span>ДЕТАЛИ</span>
+            <FontAwesomeIcon
+              icon={faChevronRight}
+              color="white"
+              size="2xs"
+              className="pl-2"
+            />{" "}
+          </div>
+        </Link>
       </section>
     );
   }
@@ -114,25 +122,36 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
           <button className="basis-2/12 light-gray-bg" onClick={handleMenu}>
             <FontAwesomeIcon icon={faBars} color="black" size="xl" />
           </button>
-          <div className="basis-5/12 bg text-white justify-between items-center flex">
-            <button className="flex justify-end items-center basis-1/3">
+          <div className="basis-5/12 bg text-white justify-start items-center flex">
+            <button className="flex justify-end items-center basis-1/5">
               <FontAwesomeIcon icon={faInfoCircle} />
             </button>
-            <div className="flex flex-col justify-center items-start basis-2/3 pl-2">
+            <div className="flex flex-col justify-center items-start basis-3/5 pl-2">
               <p className="text-xs">Цена</p>
-              {info.price && <p className="text-xl font-medium">€{handlePriceChange(info.price)}.00  </p>}
-              {info.price === null && <p className="text-xl font-medium">Наскоро!!! </p>}
+              {info.price && (
+                <p className="text-xl font-medium">
+                  €{handlePriceChange(info.price)}.00{" "}
+                </p>
+              )}
+              {info.price === null && (
+                <p className="text-xl font-medium">Наскоро!!! </p>
+              )}
             </div>
           </div>
-          <button className="basis-5/12 red-bg-color text-white red-bg-hover-color font-semibold py-6">
-            СЛЕДНО
-            <FontAwesomeIcon
-              icon={faChevronRight}
-              color="white"
-              size="2xs"
-              className="pl-2"
-            />
-          </button>
+          <Link
+            className="basis-5/12 red-bg-color text-white red-bg-hover-color font-semibold py-6"
+            href={`/motorcycles/${info.category}/${info.subFamilyCategory}/${info.model}`}
+          >
+            <div className="flex justify-center items-center w-full h-full">
+              <span>ДЕТАЛИ</span>
+              <FontAwesomeIcon
+                icon={faChevronRight}
+                color="white"
+                size="2xs"
+                className="pl-2"
+              />{" "}
+            </div>
+          </Link>
         </section>
 
         {isMobileMenuShown && (
@@ -174,8 +193,10 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
                 />
               </button>
             </div>
-            <button className="red-bg-color py-4 text-white uppercase font-semibold " 
-            onClick={() => setIsMobileMenuShown(false)}>
+            <button
+              className="red-bg-color py-4 text-white uppercase font-semibold "
+              onClick={() => setIsMobileMenuShown(false)}
+            >
               НАЗАД
             </button>
           </section>

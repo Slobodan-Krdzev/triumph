@@ -119,8 +119,7 @@ const ClassicsSubFamilyPage = async ({ params }: any) => {
   } catch (err) {
     console.log(err);
 
-    // return redirect("/motorcycles/classics");
-    return err
+    return redirect("/motorcycles/classics");
   }
 };
 

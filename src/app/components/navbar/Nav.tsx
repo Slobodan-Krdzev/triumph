@@ -2,12 +2,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
+import { useEffect, useState } from "react";
 import logo1 from "../../../../public/logo.svg";
+import Prenav from "../Prenav";
 import NavbarLinkList from "./NavbarLinkList";
 import SectionContent from "./SectionContent";
-import { FAMILIES, BIKES } from "@/app/constants/constants";
-import { useState, useEffect } from "react";
-import Prenav from "../Prenav";
 
 type NavProps = {
   fams: any[];

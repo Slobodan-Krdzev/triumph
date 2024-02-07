@@ -17,7 +17,7 @@ export const footerLists = [
       },
       {
         id: 7,
-        url: "/dealer/dealer-search",
+        url: "/dealer",
         text: "Контакт",
       },
     ],
