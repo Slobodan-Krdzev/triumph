@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 import logo1 from "../../../../public/logo.svg";
 import { useFetchFamilies } from "../CustomHooks/useFetchFamilies";
 import { useFetchSubFams } from "../CustomHooks/useFetchSubFams";
@@ -11,8 +10,6 @@ import Nav from "./Nav";
 import MobileNav from "./mobileNav/MobileNav";
 
 const Navbar = () => {
-  const [families, setFamilies] = useState<any[]>([]);
-  const [bikes, setBikes] = useState<any[]>([]);
   const breakpoint = useBreakpoint();
 
   const { statusFams, fams } = useFetchFamilies();
