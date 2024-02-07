@@ -467,7 +467,7 @@ const Locations = () => {
             href={location.link}
             target="_blank"
           >
-            <Image src={"pin icon-01.svg"} alt="pin" width={32} height={32} />
+            <Image src={"/images/pinIcon-01.svg"} alt="pin" width={32} height={32} />
             {location.country}
           </Link>
         ))}
