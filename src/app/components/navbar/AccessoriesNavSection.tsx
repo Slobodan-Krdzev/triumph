@@ -61,7 +61,7 @@ export const linkItemsModels: NavLinkListingItemsType[] = [
 
 export const linkItemsQuickLinks: NavLinkListingItemsType[] = [
   {
-    text: "Orizondas Оригинални Аксесоари",
+    text: "Triumph Оригинални Аксесоари",
     link: "/accessories/why-buy-genuine",
   },
   {
