@@ -2340,7 +2340,6 @@
       "id": 8,
       "subFamilyName": "scrambler-400-x",
       "familyType": "classics",
-
       "title": "Scrambler 400 X",
       "price": 6390,
       "url": "/motorcycles/classics/scrambler-400-x",
@@ -11207,10 +11206,9 @@
       "model": "speed-400",
       "category": "classics",
       "subFamilyCategory": "speed-400",
-      "edition": "classics",
+      "edition": "400cc",
       "price": 6390,
       "desc": "Со класичниот изглед Speed 400, навистина ја носи онаа modern-classic ДНК во неговата крв.",
-      
       "gallery": {
         "modelImage": {
           "src": "/images/classics/speed400CarnivalRed.png",
@@ -11367,7 +11365,7 @@
       "model": "scrambler-400-x",
       "category": "classics",
       "subFamilyCategory": "scrambler-400-x",
-      "edition": "classics",
+      "edition": "400cc",
       "desc": "Scrambler 400 X - Подготвен за секаков на подлога.",
       "price": 6890,
       
@@ -11422,7 +11420,7 @@
       "model": "speed-twin-900",
       "category": "classics",
       "subFamilyCategory": "speed-twin-900",
-      "edition": "classics",
+      "edition": "900cc",
       "desc": "Возбудливи перформанси и управување кое инспирира самодоверба, сега со уште повеќе комфорт и стил.",
       "price": 10690,
       "bikeCollorPalletteGallery": {
@@ -11794,7 +11792,7 @@
       "model": "t100-2023",
       "category": "classics",
       "subFamilyCategory": "bonneville-t100",
-      "edition": "classics",
+      "edition": "900cc",
       "desc": "Bonneville T100 - еволуција на иконичен мотор сега уште полесен и посиле.",
       "price": 11990,
       "bikeCollorPalletteGallery": {
@@ -12686,8 +12684,8 @@
     {
       "id": 6,
       "category": "classics",
-      "title": "Нова 'Truxton Final-Edition' Серија",
-      "subFamilyType": "truxton-final-edition",
+      "title": "Нова 'Truxton' Серија",
+      "subFamilyType": "thruxton-rs",
       "desc": "Крајот на една ера - последната продукциска серија на иконата во Triumph серијата. Откријте повеќе за ексклузивното Thruxton Final Edition.",
       "image": "/images/classics/thruxtonFinalEdition.avif",
       "btnBlack": true

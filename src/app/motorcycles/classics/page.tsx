@@ -8,7 +8,7 @@ import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitl
 import { getBikesByEdition } from "@/app/components/helpers/getBikesByEdition";
 import CardLinkItem from "@/app/components/homePageComponents/CardLinkItem";
 import DiscoverThriumphCard from "@/app/components/homePageComponents/DiscoverThriumphCard";
-import { BIKES, FAMILIES, PROMOS } from "@/app/constants/constants";
+import { BIKES, FAMILIES, PROMOS, SUB_FAMILIES } from "@/app/constants/constants";
 import { PromoDataType } from "@/app/types/HomeTypes/SharedTypes/types";
 import { redirect } from "next/navigation";
 import { getBikesByCC } from "./helpers/getBikesByCC";
@@ -20,7 +20,7 @@ const ClassicPage = async () => {
     });
     const familyData = await familyRes.json();
 
-    const bikesRes = await fetch(`${BIKES}?category=classics`, {
+    const bikesRes = await fetch(`${SUB_FAMILIES}?familyType=classics`, {
       cache: "no-store",
     });
     const bikes = await bikesRes.json();
@@ -68,20 +68,20 @@ const ClassicPage = async () => {
             </div>
           </section>
 
-          <section>
+          <section className="m-auto w-11/12 md:w-9/12">
             {/* type treba da e bike */}
             {getBikesByCC("400", bikes).map((bike: any) => (
               <BikeInfoTextImageBtn
                 key={bike.id}
-                title={bike.title}
-                desc={bike.desc}
+                title={bike.title ?? ""}
+                desc={bike.shortDesc ?? ""}
                 ctaBtn={{
                   text: "Детали",
-                  link: `/motorcycles/classics/${bike.subFamilyCategory}/${bike.model}`,
+                  link: `/motorcycles/classics/${bike.subFamilyName}`,
                 }}
                 image={{
-                  src: bike.gallery.modelImage.src,
-                  alt: bike.gallery.modelImage.alt,
+                  src: bike.gallery.modelImage.src ?? "",
+                  alt: bike.gallery.modelImage.alt ?? "",
                 }}
                 blackBtn={true}
               />
@@ -99,14 +99,14 @@ const ClassicPage = async () => {
           </section>
 
           <section className="flex flex-col md:flex-row md:px-8 px-4 md:gap-4">
-            {getBikesByEdition("900cc", bikes).map((bike: any) => (
+            {getBikesByCC("900", bikes).map((bike: any) => (
               <CardLinkItem
                 key={bike.id}
-                title={bike.title}
-                image={bike.gallery.modelImage.src}
+                title={bike.title ?? ""}
+                image={bike.gallery.modelImage.src ?? ""}
                 text={"Детали"}
-                url={`/motorcycles/classic/${bike.subFamilyCategory}/${bike.model}`}
-                desc={bike.desc}
+                url={`/motorcycles/classic/${bike.subFamilyName}`}
+                desc={bike.shortDesc ?? ""}
               />
             ))}
           </section>
