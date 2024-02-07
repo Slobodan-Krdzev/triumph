@@ -23,19 +23,19 @@ function Prenav() {
       className="flex py-2 px-10 justify-end text-white text-xs"
       onMouseEnter={handleSectionClose}
     >
-      <ul className="flex gap-4 items-center">
+      <ul className="flex gap-4 items-center text-md font-semibold">
         <li>
-          <Link href={"/dealers/dealer-search"} className="text-white">
+          <Link href={"/dealer"} className="text-white">
             Контакт
           </Link>
         </li>
         <li>
-          <Link href={"/configuration"} className="text-white"></Link>
+          <Link href={"/configure"} className="text-white"></Link>
           Конфигурација
         </li>
         <li>
           <Link href={"/latest-offers"} className="text-white uppercase"></Link>
-          ПОНУДИ
+          Понуди
         </li>
         <li >
           <button onClick={handleLocationSection} className="flex justify-between items-center gap-2">

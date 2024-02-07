@@ -8,7 +8,7 @@ import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitl
 import { getBikesByEdition } from "@/app/components/helpers/getBikesByEdition";
 import CardLinkItem from "@/app/components/homePageComponents/CardLinkItem";
 import DiscoverThriumphCard from "@/app/components/homePageComponents/DiscoverThriumphCard";
-import { BIKES, FAMILIES, PROMOS, SUB_FAMILIES } from "@/app/constants/constants";
+import { FAMILIES, PROMOS, SUB_FAMILIES } from "@/app/constants/constants";
 import { PromoDataType } from "@/app/types/HomeTypes/SharedTypes/types";
 import { redirect } from "next/navigation";
 import { getBikesByCC } from "./helpers/getBikesByCC";
@@ -27,28 +27,6 @@ const ClassicPage = async () => {
 
     const promosRes = await fetch(`${PROMOS}?category=classics`)
     const promos = await promosRes.json()
-
-    const getBikesBySubFamCategory = (cat: string) => {
-      const allBikes = bikes;
-
-      // type treba da e bike
-      const filteredBikes = allBikes.filter(
-        (bike: any) => bike.subFamilyCategory === cat
-      );
-
-      return filteredBikes;
-    };
-
-    const getBikesBySpecialEdition = (edition: string) => {
-      const allBikes = bikes;
-
-      // type treba da e bike
-      const filteredBikes = allBikes.filter(
-        (bike: any) => bike.specialEdition === edition
-      );
-
-      return filteredBikes;
-    };
 
     return (
       <>
@@ -69,7 +47,7 @@ const ClassicPage = async () => {
           </section>
 
           <section className="m-auto w-11/12 md:w-9/12">
-            {/* type treba da e bike */}
+            {/* type treba da e subFamily */}
             {getBikesByCC(400, bikes).map((bike: any) => (
               <BikeInfoTextImageBtn
                 key={bike.id}
@@ -158,7 +136,7 @@ const ClassicPage = async () => {
             <div className="text-center">
               <SectionTitleH2 text="Новата Stealth Серија" color="dark" />
             </div>
-
+            
             <StelthCarousell bikes={getBikesByEdition("stealth", bikes)} />
           </section>
 

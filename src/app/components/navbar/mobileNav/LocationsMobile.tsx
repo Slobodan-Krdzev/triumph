@@ -1,11 +1,10 @@
 "use client";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useState } from "react";
-import MobileMenuList from "./MobileMenuList";
-import { locations } from "../Locations";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
+import { locations } from "../Locations";
 
 type LocationsMobileProps = {
   handler: () => void;
@@ -23,61 +22,6 @@ const LocationsMobile = ({ handler }: LocationsMobileProps) => {
   const filteredLocations = locations
     .slice()
     .filter((location) => location.region === activeRegion);
-
-
-//   const handleVisibleMenu = (
-//     menu: "Africa" | "America" | "Middle East" | "Asia" | "Europe"
-//   ) => {
-//     switch (menu) {
-//       case "Africa":
-//         setMenusVisibility({
-//             africa: !menusVisibility.africa,
-//             america: false,
-//             middleEast: false,
-//             asia: false,
-//             europe: false
-//         });
-//         break;
-//       case "America":
-//         setMenusVisibility({
-//             africa: false,
-//             america: !menusVisibility.america,
-//             middleEast: false,
-//             asia: false,
-//             europe: false
-//         });
-//         break;
-//       case "Middle East":
-//         setMenusVisibility({
-//             africa: false,
-//             america: false,
-//             middleEast: !menusVisibility.middleEast,
-//             asia: false,
-//             europe: false
-//         });
-//         break;
-//       case "Asia":
-//         setMenusVisibility({
-//             africa: false,
-//             america: false,
-//             middleEast: false,
-//             asia: !menusVisibility.asia,
-//             europe: false
-//         });
-//         break;
-//       case "Europe":
-//         setMenusVisibility({
-//             africa: false,
-//             america: false,
-//             middleEast: false,
-//             asia: false,
-//             europe: !menusVisibility.europe
-//         });
-//         break;
-//       default:
-//         break;
-//     }
-//   };
 
   return (
     <div>
@@ -106,7 +50,7 @@ const LocationsMobile = ({ handler }: LocationsMobileProps) => {
             href={location.link}
             target="_blank"
           >
-            <Image src={"pin icon-01.svg"} alt="pin" width={32} height={32} />
+            <Image src={"/images/pinIcon-01.svg"} alt="pin" width={32} height={32} />
             {location.country}
           </Link>)}
         </div>   
