@@ -39,7 +39,7 @@ const SecondaryNavBar = ({
         {configurationLink && (
           <div className="flex items-center py-1">
             <Link
-              href={"/dealer/dealers-search"}
+              href={"/dealer"}
               className="mr-10 upercase font-semibold text-neutral-800 text-sm"
             >
               КОНТАКТ
