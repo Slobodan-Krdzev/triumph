@@ -1,8 +1,21 @@
 import Image from "next/image";
 import logo1 from "../../../public/logoBlack.png";
 import Link from "next/link";
+import Map from "../components/Map/Map";
+import dynamic from "next/dynamic";
+import { useMemo } from "react";
 
 const DealerPage = () => {
+
+  const Map = useMemo(() => dynamic(
+    () => import('../components/Map/Map'),
+    { 
+      loading: () => <p>A map is loading</p>,
+      ssr: false
+    }
+  ), [])
+
+
   return (
     <section
       className="w-full bg-white flex justify-center items-center"
@@ -14,12 +27,10 @@ const DealerPage = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div
-        className="bg-white m-auto w-6/12 rounded-lg flex flex-col justify-between items-start"
-        style={{ height: "60vh" }}
-      >
-        <div className="flex justify-center items-center w-full h-full basis-1/5 pt-12">
+      <div className="bg-white m-auto w-6/12 rounded-lg flex flex-col justify-between items-start">
+        <div className="flex flex-col justify-center items-center w-full h-full basis-1/5 p-10">
           <Image src={logo1} alt={"Logo"} height={100} width={228} />
+          <h1 className="text-4xl font-semibold">Македонија</h1>
         </div>
         <div className="basis-4/5 w-full flex justify-between">
           <div className="flex flex-col justify-center items-start basis-1/2 p-20">
@@ -92,7 +103,7 @@ const DealerPage = () => {
           </div>
 
           <div className="flex flex-col justify-center items-center basis-1/2">
-            mapta
+            <Map />
           </div>
         </div>
       </div>

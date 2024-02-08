@@ -45,7 +45,7 @@ export const linkItemsQuickLinksOwners: NavLinkListingItemsType[] = [
   },
   {
     text: "Контакт",
-    link: "/global-content/contact-us",
+    link: "/dealer",
   },
 ];
 

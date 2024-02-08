@@ -30,15 +30,20 @@ function Prenav() {
           </Link>
         </li>
         <li>
-          <Link href={"/configure"} className="text-white"></Link>
-          Конфигурација
+          <Link href={"/configure"} className="text-white">
+            Конфигурација
+          </Link>
         </li>
         <li>
-          <Link href={"/latest-offers"} className="text-white uppercase"></Link>
-          Понуди
+          <Link href={"/latest-offers"} className="text-white">
+            Понуди
+          </Link>
         </li>
-        <li >
-          <button onClick={handleLocationSection} className="flex justify-between items-center gap-2">
+        <li>
+          <button
+            onClick={handleLocationSection}
+            className="flex justify-between items-center gap-2"
+          >
             <Image
               src={"/images/pinIcon-01.svg"}
               alt="Pin"
