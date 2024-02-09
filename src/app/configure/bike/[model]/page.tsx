@@ -9,9 +9,6 @@ import BottomFixedRibbon from "@/app/components/customatizationPageComponents/Bo
 import ImageActions from "@/app/components/customatizationPageComponents/ImageActions";
 
 const BikeConfigPage = async ({ params }: any) => {
-  // ovde treba fallback da se sredi ako nema toj bike da mani 404
-  // try / catch
-
   try {
     const bikeRes = await fetch(`${BIKES}?model=${params.model}`, {
       cache: "no-store",
@@ -19,8 +16,8 @@ const BikeConfigPage = async ({ params }: any) => {
     const bike = await bikeRes.json();
 
     return (
-      <main className="relative h-screen">
-        <section className="flex lg:flex-row flex-col">
+      <main className="relative pb-4 md:pb-8 lg:pb-16">
+        <section className="flex lg:flex-row flex-col ">
           <div className="flex flex-col md:basis-8/12  bg-white shadow-2xl">
             <div className="flex uppercase text-sm font-medium slight-white-bg">
               <div className="grow flex justify-center items-center py-3 px-10 border-b-2 border-gray-300">

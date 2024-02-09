@@ -95,7 +95,9 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
           </button>
           <div className="basis-3/12 bg text-white justify-between items-center flex">
             <button className="flex justify-end items-center basis-1/3">
-              <FontAwesomeIcon icon={faInfoCircle} />
+              <Link href={"/dealer"}>
+                <FontAwesomeIcon icon={faInfoCircle} />
+              </Link>
             </button>
             <div className="flex flex-col justify-center items-start basis-2/3 pl-5">
               <p className="text-sm">Цена</p>
@@ -126,25 +128,32 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
         </section>
 
         {isModalShown && (
-          <div className="absolute h-screen w-full top-0 left-0 flex flex-col gap-8 justify-center items-center bg-neutral-100">
-            <Image
-              src={"/images/triumphLogo.png"}
-              alt="Logo"
-              width={300}
-              height={300}
-            />
-            <p className="font-bold text-2xl text-center">
-              Копирајте го овој линк <br /> и споделете го со вашите пријатели
-            </p>
-            <p className="border p-2 bg-white shado">{getLinkForSharing()}</p>
-            <MainBtn
-              text={"Затвори"}
-              bgBlack={false}
-              action={() => {
-                handleBodyScrollWhenMenuIsOpen(isModalShown);
-                setIsModalShown(false);
-              }}
-            />
+          <div
+            className="absolute h-screen w-full top-0 left-0 flex justify-center items-center modal-blur"
+            onClick={() => {
+              setIsModalShown(false);
+            }}
+          >
+            <div className="bg-neutral-200 flex flex-col justify-center gap-8 items-center p-20 rounded-md">
+              <Image
+                src={"/images/triumphLogo.png"}
+                alt="Logo"
+                width={300}
+                height={300}
+              />
+              <p className="font-bold text-2xl text-center">
+                Копирајте го овој линк <br /> и споделете го со вашите пријатели
+              </p>
+              <p className="border p-2 bg-white shado">{getLinkForSharing()}</p>
+              <MainBtn
+                text={"Затвори"}
+                bgBlack={false}
+                action={() => {
+                  handleBodyScrollWhenMenuIsOpen(isModalShown);
+                  setIsModalShown(false);
+                }}
+              />
+            </div>
           </div>
         )}
       </>
@@ -245,25 +254,29 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
         )}
 
         {isModalShown && (
-          <div className="absolute h-screen w-full top-0 left-0 flex flex-col gap-4 justify-start items-center bg-neutral-100 py-8">
-            <Image
-              src={"/images/triumphLogo.png"}
-              alt="Logo"
-              width={300}
-              height={300}
-            />
-            <p className="font-bold text-2xl text-center">
-              Копирајте го овој линк <br /> и споделете го со вашите пријатели
-            </p>
-            <p className="border p-2 bg-white shadow-md w-11/12 ">{getLinkForSharing()}</p>
-            <MainBtn
-              text={"Затвори"}
-              bgBlack={false}
-              action={() => {
-                handleBodyScrollWhenMenuIsOpen(isModalShown);
-                setIsModalShown(false);
-              }}
-            />
+          <div className="absolute h-full w-full top-0 left-0 flex flex-col gap-4 justify-center items-center bg-neutral-100 px-4 py-8" style={{zIndex: 80}}>
+            <div className="flex gap-8 flex-col justify-center items-center">
+              <Image
+                src={"/images/triumphLogo.png"}
+                alt="Logo"
+                width={300}
+                height={300}
+              />
+              <p className="font-bold text-2xl text-center">
+                Копирајте го овој линк <br /> и споделете го со вашите пријатели
+              </p>
+              <p className="border p-2 bg-white shadow-md w-11/12 ">
+                {getLinkForSharing()}
+              </p>
+              <MainBtn
+                text={"Затвори"}
+                bgBlack={false}
+                action={() => {
+                  handleBodyScrollWhenMenuIsOpen(isModalShown);
+                  setIsModalShown(false);
+                }}
+              />
+            </div>
           </div>
         )}
       </>
