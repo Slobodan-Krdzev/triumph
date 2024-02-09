@@ -12,8 +12,8 @@ const Map = () => {
       zoom={14}
       className="shadow-xl"
       style={{
-        height: 350,
-        width: 350,
+        height: 330,
+        width: 330,
       }}
     >
       <TileLayer

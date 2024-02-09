@@ -119,7 +119,7 @@
       "configFamilyPageInfo": {
         "image": {
           "src": "/images/sport/configPageBannerImage.jpg",
-          "alt": "Sport Bikes Banner Image"
+          "alt": "OFf Road Bikes Banner Image"
         }
       },
       "youtubeVideo": "https://www.youtube.com/embed/PpnixM8wkv4",
@@ -12537,6 +12537,17 @@
     }
   ],
   "main-carousell-items": [
+    {
+    "video": "/images/home/mainCarousell/offRoadCaroVideo.webm",
+    "image": null,
+    "imageMobile": "/images/home/mainCarousell/offRoadMainCaroMobile.avif",
+    "title": "All In - All Out",
+    "desc": "Новата TF 250-X е тука. Triumph влегува во мотокрос светот.",
+    "link1": {
+      "url": "/motorcycles/off-road/tf-250-x",
+      "text": "Погледни ја Серијата"
+    }
+    },
     {
       "video": null,
       "image": "/images/home/mainCarousell/daytona.avif",

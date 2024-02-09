@@ -10,13 +10,13 @@ const ConfigTypeOfFamPage = async ({ params }: any) => {
   );
   const bikes = await bikesRes.json();
 
-  console.log("bikes od subfamily page", bikes[0].category);
+  console.log("bikes od subfamily page", params.typeOfSubFamily);
 
   if (bikes) {
     return (
       <>
         <HeroSectionCTA
-          image={`/images/${bikes[0].category}/configSubFamilyBanner.avif`}
+          image={`/images/${bikes[0].category === 'off-road' ? "offRoad" : bikes[0].category}/configSubFamilyBanner.avif`}
           title={"Додајте Аксесоари на вашиот мотор"}
           link={{
             text: "Види ги Сите",
