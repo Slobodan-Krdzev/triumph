@@ -72,7 +72,7 @@ const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
           </li>
           <li>
             <Link
-              href={"/dealers/dealers-search"}
+              href={"/dealer"}
               className="text-black flex justify-start gap-4 items-center text-sm"
             >
               <FontAwesomeIcon

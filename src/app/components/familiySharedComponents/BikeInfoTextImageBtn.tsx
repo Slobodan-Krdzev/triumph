@@ -7,6 +7,7 @@ import Image from "next/image";
 type BikeInfoTextImageBtnProps = {
   title?: string;
   desc: string;
+  desc2?: string;
   price?: string;
   ctaBtn: {
     text: string;
@@ -33,6 +34,7 @@ type BikeInfoTextImageBtnProps = {
 const BikeInfoTextImageBtn = ({
   title,
   desc,
+  desc2,
   price,
   ctaBtn,
   ctaBtn2,
@@ -56,6 +58,7 @@ const BikeInfoTextImageBtn = ({
             color={textWhite ? "white" : "dark"}
           />
           <PageParagraph marginBot={true} text={desc} />
+          {desc2 && <PageParagraph marginBot={true} text={desc2} />}
           {price && (
             <p className="mb-4">
               Цени од <b>€ {price}.</b>

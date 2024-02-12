@@ -40,8 +40,9 @@ const Rocket3SubFamPage = async () => {
             {bikes.map((bike: any) => (
               <BikeInfoTextImageBtn
                 key={bike.id}
-                title={bike.subFamilyPromo.title}
-                desc={bike.subFamilyPromo.desc}
+                title={bike.subFamilyPromo.title ?? bike.title}
+                desc={bike.subFamilyPromo?.desc ?? ""}
+                desc2={bike.price && `Цени од: €${bike.price}.00`}
                 ctaBtn={{
                   text: "Детали",
                   link: `/motorcycles/rocket-3/rocket-3/${bike.model}`,

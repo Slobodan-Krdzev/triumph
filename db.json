@@ -8651,7 +8651,59 @@
       "subFamilyPromo": {
         "title": "Новиот Tiger 900 GT",
         "desc": "Со врвни перформанси и комфорт Tiger 900 GT ве води на долги авантури. Неговата агилност и можности ви доверуваат сигурност и даваат чувство на слобода."
-      }
+      },
+      "bikePageCarousell": [
+        {
+          "title": "Мотор",
+          "desc": "Целиот обртен момент и тракција карактеристична за дво-цилиндарските мотори со одличната сила на средни и високи револуции на моторот карактеристични за три-цилиндарските мотори.",
+          "image": "/images/adventure/tiger900GT/tiger900GTBikeCaro1.avif"
+        },
+        {
+          "title": "Сигурносни Системи",
+          "desc": "Унапредениот систем за сопирање со оптимизиран ABS и систем за пролизгување заедно со светлосениот систем за алармирање на другите возачи при нагло сопирање ветуваат самодоберба и високо ниво на сигурност.",
+          "image": "/images/adventure/tiger900GT/tiger900GTBikeCaro2.avif"
+        },
+        {
+          "title": "Технологија",
+          "desc": "Целокупната Tiger 900 серија е опремена со високо ниво на технологија фокусирана на возачот. На располагање се 5 мода за возење а преку новиот 7 инчен TFT екран лесно можете да се поврзете со вашиот мотор преку Bluetooth.",
+          "image": "/images/adventure/tiger900GT/tiger900GTBikeCaro3.avif"
+        },
+        {
+          "title": "Комфорт",
+          "desc": "Ергономијата на моторот е дизајнирана за максимално искуство при долгите авантури со манимална доза на замор. Новото седиште како и воланот кој ги абсорбира сите несакани вибрации и удари му овозможуваат на возачот максимален комфорт и ушивање во авантурата.",
+          "image": "/images/adventure/tiger900GT/tiger900GTBikeCaro4.avif"
+        },
+        {
+          "title": "Brembo Сопирачки",
+          "desc": "Tiger 900 серијата на себе го носи најдобриот систем за сопирање во класата - Brembo Stylema со двојни 320 милиметарски дискови за поголема сопирачка моќ и повеќе контрола.",
+          "image": "/images/adventure/tiger900GT/tiger900GTBikeCaro5.avif"
+        },
+        {
+          "title": "Суспензија",
+          "desc": "Изработена исклучиво за Tiger 900 серијата, одличната Marzocchi прилагодлива суспензија нуди големо ниво на комфорт и контрола на моторциклот.",
+          "image": "/images/adventure/tiger900GT/tiger900GTBikeCaro6.avif"
+        },
+        {
+          "title": "Квачило - Assisted Slip",
+          "desc": "Дизајнирано за подобра контрола на задниот крај при агресивни спустови или лизгави коловози - Slip Assist квачилото ви асистира со полесен притисок на дланката.",
+          "image": "/images/adventure/tiger900GT/tiger900GTBikeCaro7.avif"
+        },
+        {
+          "title": "Резервоар",
+          "desc": "Дизајниран за долги патувања но и за максимална удобдност на возачот, резервоарот има капацитет од 20 литри и нуди одлична возачка позиција.",
+          "image": "/images/adventure/tiger900GT/tiger900GTBikeCaro8.avif"
+        },
+        {
+          "title": "Светло",
+          "desc": "Моќна LED расвета е насекаде низ Tiger 900 серијата со одлично главно светло и препознатливо LED дневно светло.",
+          "image": "/images/adventure/tiger900GT/tiger900GTBikeCaro9.avif"
+        },
+        {
+          "title": "Bluetooth Конекција",
+          "desc": "Стандардниот My Triumph систем за поврзување нуди „Turn-By-Turn“ навигација и целосна контрола на вашиот смарт телефонт (повици, музика).",
+          "image": "/images/adventure/tiger900GT/tiger900GTBikeCaro10.avif"
+        }
+      ]
     },
     {
       "id": 2,
@@ -8765,8 +8817,6 @@
         "image": "/images/adventure/tigerSport660/bikePagePromo2.avif"
       }
       ]
-
-      
     },
     {
       "id": 5,
@@ -8929,7 +8979,7 @@
       ],
       "subFamilyPromo": {
         "title": "TIGER SPORT 660",
-        "desc": "Првиот Triumph мотор за многу корисници, со три-цилиндарски мотор, неверојатен комфорт, перформанси, искористливост и агилност,и тоа со најниски трошоци за одржување во класата. Цени од €9,290.00"
+        "desc": "Првиот Triumph мотор за многу корисници, со три-цилиндарски мотор, неверојатен комфорт, перформанси, искористливост и агилност,и тоа со најниски трошоци за одржување во класата."
       },
       "bikePagePromo": [
         {
@@ -9113,7 +9163,7 @@
       ],
       "subFamilyPromo": {
         "title": "TIGER 850 SPORT",
-        "desc": "Изработен за секој предизвик - со целиот можен карактер, перформанси и агилност на еден Tiger мотор, и силуета по која сите се вртат и адаптабилност за сечии потреби. Цени од €12,890.00"
+        "desc": "Изработен за секој предизвик - со целиот можен карактер, перформанси и агилност на еден Tiger мотор, и силуета по која сите се вртат и адаптабилност за сечии потреби."
       },
       "bikePagePromo": [
         {
@@ -9284,7 +9334,7 @@
       ],
       "subFamilyPromo": {
         "title": "Tiger 1200 GT PRO",
-        "desc": "Најдобриот во класата, GT Pro ги носи технологијата, возењето и спецификациите за оваа серија на ново ниво. Сега доаѓа и со новиот Active Preload Reduction мод кој овозможува прилагодлива суспензија.Цени од: €20,990.00"
+        "desc": "Најдобриот во класата, GT Pro ги носи технологијата, возењето и спецификациите за оваа серија на ново ниво. Сега доаѓа и со новиот Active Preload Reduction мод кој овозможува прилагодлива суспензија."
       },
       "bikePagePromo": [
         {
@@ -9455,7 +9505,7 @@
       ],
       "subFamilyPromo": {
         "title": "Tiger 1200 GT Explorer",
-        "desc": "GT Explorer има 30 литарски резервоар и ги поставува стандардите за транс-континентални авантури, притоа ги понудува најдобрите спецификации во оваа серија на мотори. Сега доаѓа и со новиот Active Preload Reduction мод кој овозможува прилагодлива суспензија. Цени од: €22,990.00"
+        "desc": "GT Explorer има 30 литарски резервоар и ги поставува стандардите за транс-континентални авантури, притоа ги понудува најдобрите спецификации во оваа серија на мотори. Сега доаѓа и со новиот Active Preload Reduction мод кој овозможува прилагодлива суспензија."
       },
       "bikePagePromo": [
         {
@@ -9626,7 +9676,7 @@
       ],
       "subFamilyPromo": {
         "title": "TIGER 1200 Rally PRo",
-        "desc": "On dirt or tarmac, the Rally Pro combines capability, comfort and performance for the ultimate off-road adventure.Now including a new Active Preload Reduction Mode for advanced suspension preload adjustment.Price From €21,990.00"
+        "desc": "Без разлика на подлогата, Rally PRO серијата комбинира одлични способности, комфорт и перформанси со цел да понуди врвна авантура на патишта а пред се и надвор од нив. Отсега со новата активна суспензија за уште поголеми можности за персонализирање на моторот."
       },
       "bikePagePromo": [
         {
@@ -9797,7 +9847,7 @@
       ],
       "subFamilyPromo": {
         "title": "Tiger 1200 Rally Explorer",
-        "desc": "Refinement with endurance. Setting a new standard, the new Rally Explorer with its 30 liter fuel tank is built for the big adventure.Now including a new Active Preload Reduction Mode for advanced suspension preload adjustment.Price From €23,990.00"
+        "desc": "Изработен за максимална издржливост и со цел да постави нови стандарди во класата. Отсега опремен со 30 литарски резервоар за уште подолго патување и со нова активна суспензија за уште поголем степен на персонализирање на моторот според вашите потреби."
       },
       "bikePagePromo": [
         {
@@ -9852,10 +9902,9 @@
         "info3": "10000 км сервисен интервал"
       },
       "subFamilyPromo": {
-        "title": "НОВИОТ STREET TIRPLE 765",
-        "desc": "Со значаен чекор напред во перформанси, можности и технолошки напредок подкрепнат од легендарниот три-цилиндричен мотор - овој моторцикл е најдобриот “streetfighter“ во класата. Цени од €12,290.00"
+        "title": "НОВИОТ STREET TIRPLE 765 R",
+        "desc": "Street Triple 765 R серијата е комбинација помеѓу врвни перформанси, одлични способности и високо технолошко ниво во соработка со легендарниот три-цилиндричен карактер."
       },
-      "bikePagePromo": [],
       "features": [
         {
           "title": "Мотор",
@@ -10018,7 +10067,7 @@
       },
       "subFamilyPromo": {
         "title": "НОВИОТ STREET TIRPLE 765 RS",
-        "desc": "Лидерски перформанси во класата на “naked-sportsbike“, највисока спецификација на сопирачки и технолошки напредок во комплет со исклучителна агилност. Цени од €13,990.00."
+        "desc": "Лидерски перформанси во “naked-sportsbike“ класата, највисока спецификација на сопирачки и технолошки напредок во комплет со исклучителна агилност. Street Triple 765 RS е репер за сите други во класата."
       }
     },
     {
@@ -10078,8 +10127,8 @@
         "info3": "10000км / 12 месеци сервисен интервал"
       },
       "subFamilyPromo": {
-        "title": "НОВИОТ STREET TIRPLE 765",
-        "desc": "Со значаен чекор напред во перформанси, можности и технолошки напредок подкрепнат од легендарниот три-цилиндричен мотор - овој моторцикл е најдобриот “streetfighter“ во класата. Цени од €12,290.00"
+        "title": "Trident 660",
+        "desc": "Спортски настроен, воздудлив и лесно прилагодлив мотор со одличен стил и уште подобра цена - сето ова го поседува новата Trident 660 серија."
       }
     },
     {
@@ -10132,7 +10181,7 @@
       },
       "subFamilyPromo": {
         "title": "Speed Triple 1200 RS",
-        "desc": "Најмоќниот, нај-динамичниот и технолошки нај-напредниот Speed Triple моторцикл досега. Цени од €12,290.00"
+        "desc": "Најмоќниот, нај-динамичниот и технолошки нај-напредниот Speed Triple моторцикл досега."
       }
     },
     {
@@ -10177,7 +10226,7 @@
       },
       "subFamilyPromo": {
         "title": "Speed Triple 1200 RR",
-        "desc": "Колку повозбудлив за гледање толку повозбудлив за возење - отсега со највисоко ниво на спецификација. Цени од €20,990.00"
+        "desc": "Колку повозбудлив за гледање толку повозбудлив за возење - отсега со највисоко ниво на спецификација."
       }
     },
     {
@@ -10234,7 +10283,7 @@
       },
       "subFamilyPromo": {
         "title": "Rocket 3 R",
-        "desc": "Врвниот мускулест “Roadster“ кој испорачува инстанта сила и обртен момент, како и извонредна контрола и способност. Цени од €25,290.00."
+        "desc": "Врвниот мускулест “Roadster“ кој испорачува инстанта сила и обртен момент, како и извонредна контрола и способност."
       },
       "bikePageInfo": {
         "topDesc": {
@@ -10429,7 +10478,7 @@
       },
       "subFamilyPromo": {
         "title": "Rocket 3 GT",
-        "desc": "Врвни перформанси и изглед, неверојатен комфорт со релаксирана возачка позиција која дозволува авантури со долги дистанци. Цени од €25,990.00."
+        "desc": "Врвни перформанси и изглед, неверојатен комфорт со релаксирана возачка позиција која дозволува авантури со долги дистанци."
       },
       "bikePageInfo": {
         "topDesc": {
@@ -10621,7 +10670,7 @@
       },
       "subFamilyPromo": {
         "title": "Rocket 3 r 221 special edition",
-        "desc": "Rocket 3 специјално издание, кое го слави и го добива името по тоа што е првиот мотор кој испорача обртен момент од 221 Nm. Цени од €26,190.00."
+        "desc": "Rocket 3 специјално издание, кое го слави и го добива името по тоа што е првиот мотор кој испорача обртен момент од 221 Nm."
       },
       "bikePageInfo": {
         "topDesc": {
@@ -10778,7 +10827,7 @@
       },
       "subFamilyPromo": {
         "title": "НОВИОТ ROCKET 3 GT CHROME EDITION",
-        "desc": "Врвни перформанси и релаксирана возачка позиција. Цени од €16,990.00."
+        "desc": "Врвни перформанси и релаксирана возачка позиција."
       },
       "bikePageInfo": {
         "topDesc": {
@@ -10936,7 +10985,7 @@
       },
       "subFamilyPromo": {
         "title": "НОВиот Rocket 3 GT Chrome Edition",
-        "desc": "Врвни перформанси со релаксиран крузерски карактер отсега со нов специјализиран хромиран дизајн. Импресивен, дискретен - достапен само една година. Цени од €26,890.00."
+        "desc": "Врвни перформанси со релаксиран крузерски карактер отсега со нов специјализиран хромиран дизајн. Импресивен, дискретен - достапен само една година."
       },
       "bikePageInfo": {
         "topDesc": {
@@ -11094,7 +11143,7 @@
       },
       "subFamilyPromo": {
         "title": "НОВиот Rocket 3 r Chrome Edition",
-        "desc": "Врвниот “roadster“ сега со хромирани детали врз Jet Black боја.Достапен само една година. Цени од €26,190.00."
+        "desc": "Врвниот “roadster“ сега со хромирани детали врз Jet Black боја.Достапен само една година."
       },
       "bikePageInfo": {
         "topDesc": {
@@ -11589,6 +11638,10 @@
         "info1": "1,200cc Bonneville дво-цилинричен мотор",
         "info2": "Максимална јачина - 90 PS и вртежен момент - 110 Nm.",
         "info3": "Динамичен и многу способен мотор."
+      },
+      "subFamilyPromo": {
+        "title": "Scrambler 1200 XC",
+        "desc": "Одличните перформанси, можности и стил на Scrambler 1200 серијата но уште по достапна. Со мала висина на седиштето и одлична ергономија, Scrambler 1200 XC нуди самодоверба на патиштата и надвор од нив."
       }
     },
     {
@@ -11646,7 +11699,12 @@
         "info1": "1,200cc Bonneville дво-цилинричен мотор",
         "info2": "Максимална јачина - 90 PS и вртежен момент - 110 Nm.",
         "info3": "Scrambler наменет за секого."
+      },
+      "subFamilyPromo": {
+        "title": "Scrambler 1200 XE",
+        "desc": "Извонредно off-road искуство со одлични перформанси и на патиштата, новиот Scrambler 1200 XE е најдобриот Scrambler."
       }
+
     },
     {
       "id": 34,
@@ -11699,14 +11757,13 @@
       },
       "subFamilyPromo": {
         "title": "Bonneville Speedmaster",
-        "desc": "Класичен „custom“ карактер, комфортна крузерска возачка позиција и високи спецификации. Цени од Є16.690.00",
-        "image": "/images/classics/speedmaster/speedmasterBlack.png"
+        "desc": "Класичен „custom“ карактер, комфортна крузерска возачка позиција и високи спецификации."
       }
     },
     {
       "id": 35,
       "title": "Speed Twin 1200",
-      "model": "speed-twin-1200-2023",
+      "model": "speed-twin-1200",
       "category": "classics",
       "subFamilyCategory": "speed-twin-1200",
       "edition": "classics",
@@ -11748,6 +11805,10 @@
       },
       "shortSpecInfo": {
         "info1": "Новата Stealth Edition Серија е Достапна"
+      },
+      "subFamilyPromo": {
+        "title": "Speed Twin 1200",
+        "desc": "Новите стандарди во класата на модерни „roadster“ класици - оригиналниот перформантен амблем евелоуираше во уште помеќен мотор."
       }
     },
     {
@@ -11796,6 +11857,10 @@
       },
       "shortSpecInfo": {
         "info1": "Новата Stealth Edition Серија е Достапна"
+      },
+      "subFamilyPromo": {
+        "title": "Scrambler 900",
+        "desc": "Пропознатлив стил и off-road карактер со одлични перфоманси и можности за уште поголема off-road забава."
       }
     },
     {
@@ -11852,6 +11917,10 @@
       },
       "shortSpecInfo": {
         "info1": "Новата Stealth Edition Серија е Достапна"
+      },
+      "subFamilyPromo": {
+        "title": "Bonneville T100",
+        "desc": "Со препознатливите линии на легендарната Triumph classics фамилија, Т100 серијата нуди препознатлив стил, одлично управување и одлични перформанси."
       }
     },
     {
@@ -11907,6 +11976,10 @@
       },
       "shortSpecInfo": {
         "info1": "Новата Stealth Edition Серија е Достапна"
+      },
+      "subFamilyPromo": {
+        "title": "Bonneville T120",
+        "desc": "Оригиналната силуета и стил на легендардниот Bonneville - со луксузен и модерен финиш, унапредени перформанси и препознатлив Bonneville карактер."
       }
     },
     {
@@ -11946,27 +12019,10 @@
       },
       "shortSpecInfo": {
         "info1": "Новата Stealth Edition Серија е Достапна"
-      }
-    },
-    {
-      "id": 40,
-      "title": "Thruxton Final Edition",
-      "model": "thruxton-final-edition-2024",
-      "category": "classics",
-      "subFamilyCategory": "thruxton-rs",
-      "edition": "classics",
-      "price": 19690,
-      
-      "gallery": {
-        "modelImage": {
-          "src": "/images/classics/thruxtonRsFinalEditionModel.png",
-          "alt": "Thruxton Final Edition"
-        }
       },
-      "shortSpecInfo": {
-        "info1": "1,200cc Thruxton тунинг мотор",
-        "info2": "Повеќе сила, со подобра агилност.",
-        "info3": "Неверојатни финиши на боја и стил."
+      "subFamilyPromo": {
+        "title": "Bonneville T120 Black",
+        "desc": "Целокупно подив и потемен карактер. Со истите перформанси како и Т120, Bonneville Black нуди уште поможен стил и карактер."
       }
     },
     {
@@ -12017,177 +12073,10 @@
         "info1": "1,200cc Thruxton тунинг мотор",
         "info2": "Повеќе сила, со подобра агилност во склоп со автентичната ДНК на 'Cafe-Racer' моторите.",
         "info3": "Неверојатни финиши на боја и стил."
-      }
-    },
-    {
-      "id": 49,
-      "title": "Bonneville Bobber Chrome Edition",
-      "model": "bonneville-bobber-chrome",
-      "category": "classics",
-      "subFamilyCategory": "bonneville-bobber",
-      "edition": "chrome",
-      "price": 17090,
-      
-      "gallery": {
-        "modelImage": {
-          "src": "/images/classics/bonnevilleBobberChrome.avif",
-          "alt": "Bonneville Bobber Chrome Edition"
-        }
-      },
-      "shortSpecInfo": {
-        "info1": "1,200cc Thruxton тунинг мотор",
-        "info2": "Повеќе сила, со подобра агилност во склоп со автентичната ДНК на 'Cafe-Racer' моторите.",
-        "info3": "Неверојатни финиши на боја и стил."
-      }
-    },
-    {
-      "id": 50,
-      "title": "Bonneville Speedmaster Chrome Edition",
-      "model": "speedmaster-chrome-edition-2023",
-      "category": "classics",
-      "subFamilyCategory": "bonneville-speedmaster",
-      "edition": "chrome",
-      "price": 17090,
-      
-      "gallery": {
-        "modelImage": {
-          "src": "/images/classics/speedmasterChrome.avif",
-          "alt": "Bonneville Speedmaster Chrome Edition"
-        }
-      },
-      "shortSpecInfo": {
-        "info1": "1,200cc Thruxton тунинг мотор",
-        "info2": "Повеќе сила, со подобра агилност во склоп со автентичната ДНК на 'Cafe-Racer' моторите.",
-        "info3": "Неверојатни финиши на боја и стил."
-      }
-    },
-    {
-      "id": 51,
-      "title": "Scrambler 1200 XE Chrome Edition",
-      "model": "scrambler-1200-xe-chrome-edition-2023",
-      "category": "classics",
-      "subFamilyCategory": "bonneville-scrambler-1200",
-      "edition": "chrome",
-      "price": 17090,
-      
-      "gallery": {
-        "modelImage": {
-          "src": "/images/classics/scrambler1200XeChrome.avif",
-          "alt": "Scrambler 1200 XE Chrome Edition"
-        }
-      },
-      "shortSpecInfo": {
-        "info1": "1,200cc Thruxton тунинг мотор",
-        "info2": "Повеќе сила, со подобра агилност во склоп со автентичната ДНК на 'Cafe-Racer' моторите.",
-        "info3": "Неверојатни финиши на боја и стил."
-      }
-    },
-    {
-      "id": 52,
-      "title": "Scrambler 900 Chrome Edition",
-      "model": "scrambler-900",
-      "category": "classics",
-      "subFamilyCategory": "scrambler-900",
-      "edition": "chrome",
-      "price": 12490,
-      "gallery": {
-        "modelImage": {
-          "src": "/images/classics/scrambler900Chrome.png",
-          "alt": "Scrambler 900 Chrome Edition"
-        }
-      },
-      "shortSpecInfo": {
-        "info1": "1,200cc Thruxton тунинг мотор",
-        "info2": "Повеќе сила, со подобра агилност во склоп со автентичната ДНК на 'Cafe-Racer' моторите.",
-        "info3": "Неверојатни финиши на боја и стил."
-      }
-    },
-    {
-      "id": 53,
-      "title": "Speed Twin 900 Chrome Edition",
-      "model": "speed-twin-900-chrome-edition-2023",
-      "category": "classics",
-      "subFamilyCategory": "speed-twin-900",
-      "edition": "chrome",
-      "price": 10990,
-      
-      "gallery": {
-        "modelImage": {
-          "src": "/images/classics/speedTwin900/speedTwin900Chrome.avif",
-          "alt": "Speed Twin 900 Chrome Edition"
-        }
-      },
-      "shortSpecInfo": {
-        "info1": "1,200cc Thruxton тунинг мотор",
-        "info2": "Повеќе сила, со подобра агилност во склоп со автентичната ДНК на 'Cafe-Racer' моторите.",
-        "info3": "Неверојатни финиши на боја и стил."
       },
       "subFamilyPromo": {
-        "title": "Новиот Speed Twin 900 Chrome Edition",
-        "desc": "Достапен само една година, овој Speed Twin 900 доаѓа со повеќе стил и хром елементи. Цени од: €10,990.00"
-      }
-    },
-    {
-      "id": 54,
-      "title": "Bonneville T100 Chrome Edition",
-      "model": "t100-chrome-edition-2023",
-      "category": "classics",
-      "subFamilyCategory": "bonneville-t100",
-      "edition": "chrome",
-      "price": 12290,
-      
-      "gallery": {
-        "modelImage": {
-          "src": "/images/classics/t100Chrome.avif",
-          "alt": "Bonneville T100 Chrome Edition"
-        }
-      },
-      "shortSpecInfo": {
-        "info1": "1,200cc Thruxton тунинг мотор",
-        "info2": "Повеќе сила, со подобра агилност во склоп со автентичната ДНК на 'Cafe-Racer' моторите.",
-        "info3": "Неверојатни финиши на боја и стил."
-      }
-    },
-    {
-      "id": 55,
-      "title": "Bonneville T120 Chrome Edition",
-      "model": "t120-chrome-edition-2023",
-      "category": "classics",
-      "subFamilyCategory": "bonneville-t120",
-      "edition": "chrome",
-      "price": 15090,
-      
-      "gallery": {
-        "modelImage": {
-          "src": "/images/classics/t120Chrome.avif",
-          "alt": "Bonneville T120 Chrome Edition"
-        }
-      },
-      "shortSpecInfo": {
-        "info1": "1,200cc Thruxton тунинг мотор",
-        "info2": "Повеќе сила, со подобра агилност во склоп со автентичната ДНК на 'Cafe-Racer' моторите.",
-        "info3": "Неверојатни финиши на боја и стил."
-      }
-    },
-    {
-      "id": 56,
-      "title": "Thruxton RS Chrome Edition",
-      "model": "thruxton-rs-chrome-edition-2023",
-      "category": "classics",
-      "subFamilyCategory": "thruxton-rs",
-      "edition": "chrome",
-      "price": 18790,
-      
-      "gallery": {
-        "modelImage": {
-          "src": "/images/classics/thruxtonRsChrome.avif",
-          "alt": "Thruxton RS Chrome Edition"
-        }
-      },
-      "shortSpecInfo": {
-        "info1": "1,200cc Thruxton тунинг мотор",
-        "info2": "Повеќе сила, со подобра агилност во склоп со автентичната ДНК на 'Cafe-Racer' моторите.",
-        "info3": "Неверојатни финиши на боја и стил."
+        "title": "Thruxton RS",
+        "desc": "Целосниот пакет и квалитет од популарната Triumph Thruxton R серија отсега го лидерски перформанси во класата, со уште помоќен „Cafe-Racer“ стил, управување, одлични финиши и детали."
       }
     },
     {
@@ -12236,7 +12125,7 @@
       },
       "subFamilyPromo": {
         "title": "НОВАТА STREET TIRPLE 765 MOTO2™ СЕРИЈА",
-        "desc": "Најдобриот Street Triple моторцикл кој може да се купи. Ве носи најблиску до Moto2™ моторите но е спремен за патишта. Сосема ексклузивен и најопремен и нај-агилен. Цени од €16,990.00."
+        "desc": "Најдобриот Street Triple моторцикл кој може да се купи! MOTO2™ серијата ве носи најблиску до Moto2™ моторите без да прави компромиси околу комфортот кога сте на нормалните патишта. Сосема ексклузивен, агилен и со врвно ниво на технологија во себе."
       }
     },
     {
@@ -12293,8 +12182,8 @@
         "info3": "Прилагодлива 'Showa' суспензија"
       },
       "subFamilyPromo": {
-        "title": "TIGER SPORT 660",
-        "desc": "Првиот избор за многу корисници, со три-цилиндарски мотор, неверојатен комфорт, перформантен, искористлив и агилен, стот тоа со најниски трошоци за одржување во класата. Цени од €9,590.00"
+        "title": "TIGER 900 Rally",
+        "desc": "Софистициран, со одлични перформанси и способност да ве однесе каде и да посакате. "
       }
     },
     {
@@ -12335,7 +12224,7 @@
       },
       "subFamilyPromo": {
         "title": "TIGER 1200 GT",
-        "desc": "Стартерот но никако не подценетиот мотор од Tiger 1200 GT серијата. Одличен чекор доколку сакате да навлезете во GT моторите од класата на мотори со голема зафатнина на моторот. Цени од €20,390.00"
+        "desc": "Стартерот но никако не подценетиот мотор од Tiger 1200 GT серијата. Одличен чекор доколку сакате да навлезете во GT моторите од класата на мотори со голема зафатнина на моторот."
       }
     },
     {
@@ -12626,26 +12515,26 @@
   "latest-models-carousell-items": [
     {
       "title": "SCRAMBLER 1200",
-      "desc": "Authentic Scrambler style with class-defining adventure ready capability; the Scrambler 1200 is the real deal. The latest editions are even more accessible and ready for the everyday, weekend escapism and pure adventure.",
-      "url": "/motorcycles/classic/bonneville-scrambler-1200",
+      "desc": "Автентичен Scrambler стил и врвни авантуристички перформанси. Scrambler 1200 е најмоќната Scrambler серија. Најновата верзија е уште подостапна и спремна за секојдневните препреки, викенд прошетки и долги авантури.",
+      "url": "/motorcycles/classics/scrambler-1200",
       "image": "/images/home/scrambler1200LatestModelsCarousell.avif"
     },
     {
-      "title": "TIGER 900 ARAGON EDITIONS",
-      "desc": "Inspired by the dominant, race-winning performance of the Tiger 900 Rally Pro at the 2022 Baja Aragón rally.",
+      "title": "TIGER 900",
+      "desc": "Нови Tiger 900 модели инспирирани од Baja Aragon 2022 базирани на Tiger 900 Rally Pro моторите.",
       "url": "/motorcycles/adventure/tiger-900",
       "image": "/images/home/tiger900AragonLatestModelsCarousell.avif"
     },
     {
       "title": "SPEED 400",
-      "desc": "Born into a peerless bloodline, the Speed 400 has Triumph’s unique Modern Classic roadster design in its DNA.",
-      "url": "/motorcycles/classic/speed-400",
+      "desc": "Новата Speed 400 серија во себе ја носи онаа уникатна Triumph - Modern Classic ДНК.",
+      "url": "/motorcycles/classics/speed-400",
       "image": "/images/home/speed400LatestModelsCarousell.avif"
     },
     {
       "title": "SCRAMBLER 400 X",
-      "desc": "Beautifully balanced, effortlessly agile. The Scrambler 400 X is built for all riders and all terrains.",
-      "url": "/motorcycles/classic/scrambler-400-x-2024",
+      "desc": "Перфектно избалансиран и флексибилен, новиот Scrambler 400 X е спремна за сите видови на возачи и терени.",
+      "url": "/motorcycles/classics/scrambler-400-x",
       "image": "/images/home/scrambler400XLatestModelsCarousell.avif"
     }
   ],

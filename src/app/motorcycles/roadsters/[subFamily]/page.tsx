@@ -25,25 +25,19 @@ const RoadstersSubFamilyPage = async ({ params }: any) => {
     const bikes = await bikesRes.json();
 
     const hasGrayCaro =
-      subFamily.subFamilyPageInfo.hasOwnProperty(
-        "grayCarousell"
-      );
+      subFamily.subFamilyPageInfo.hasOwnProperty("grayCarousell");
 
     const hasYoutubeVid =
-      subFamily.subFamilyPageInfo.hasOwnProperty(
-        "youtubeVideo"
-      );
+      subFamily.subFamilyPageInfo.hasOwnProperty("youtubeVideo");
 
-    const hasAudio =
-      subFamily.subFamilyPageInfo.hasOwnProperty(
-        "audioSection"
-      );
+    const hasAudio = subFamily.subFamilyPageInfo.hasOwnProperty("audioSection");
 
-    const hasYoutubeCaro = subFamily.subFamilyPageInfo.hasOwnProperty("youtubeVideosCarousellItems");
+    const hasYoutubeCaro = subFamily.subFamilyPageInfo.hasOwnProperty(
+      "youtubeVideosCarousellItems"
+    );
 
     return (
       <>
-      
         <HeroSection
           video={subFamily.gallery.subFamilyHeroVideo.src}
           mobileImage={subFamily.gallery.subFamilyHeroImageMobile?.src ?? "/"}
@@ -55,23 +49,18 @@ const RoadstersSubFamilyPage = async ({ params }: any) => {
           <TopSection
             title={subFamily.subFamilyPageInfo.topSection.title}
             desc={subFamily.subFamilyPageInfo.topSection.desc}
-            subtitle={
-              subFamily.subFamilyPageInfo.topSection.subtitle
-            }
-            image={
-              subFamily.gallery.subFamilyTopSectionImage.src
-            }
-            bgImage={
-              subFamily.gallery.subFamilyTopSectionBGImage.src
-            }
+            subtitle={subFamily.subFamilyPageInfo.topSection.subtitle}
+            image={subFamily.gallery.subFamilyTopSectionImage.src}
+            bgImage={subFamily.gallery.subFamilyTopSectionBGImage.src}
           />
 
           <section className="px-4 lg:px-20 xl:px-40">
             {bikes.map((bike: any) => (
               <BikeInfoTextImageBtn
                 key={bike.id}
-                title={bike.subFamilyPromo.title}
-                desc={bike.subFamilyPromo.desc}
+                title={bike.subFamilyPromo.title ?? bike.title}
+                desc={bike.subFamilyPromo?.desc ?? ""}
+                desc2={bike.price && `Цени од: €${bike.price}.00`}
                 ctaBtn={{
                   text: "Детали",
                   link: `/motorcycles/roadsters/${query}/${bike.model}`,
@@ -89,15 +78,11 @@ const RoadstersSubFamilyPage = async ({ params }: any) => {
         </main>
 
         {hasYoutubeVid && (
-          <YouTubePromo
-            video={subFamily.subFamilyPageInfo.youtubeVideo}
-          />
+          <YouTubePromo video={subFamily.subFamilyPageInfo.youtubeVideo} />
         )}
 
         {hasGrayCaro && (
-          <BottomCarousell
-            items={subFamily.subFamilyPageInfo.grayCarousell}
-          />
+          <BottomCarousell items={subFamily.subFamilyPageInfo.grayCarousell} />
         )}
 
         <NumbersSection
@@ -107,12 +92,8 @@ const RoadstersSubFamilyPage = async ({ params }: any) => {
 
         {hasAudio && (
           <AudioSection
-            audio={
-              subFamily.subFamilyPageInfo.audioSection.audio
-            }
-            title={
-              subFamily.subFamilyPageInfo.audioSection.title
-            }
+            audio={subFamily.subFamilyPageInfo.audioSection.audio}
+            title={subFamily.subFamilyPageInfo.audioSection.title}
             desc={subFamily.subFamilyPageInfo.audioSection.desc}
             model={query}
           />
