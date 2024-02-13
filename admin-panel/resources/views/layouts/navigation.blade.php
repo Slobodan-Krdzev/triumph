@@ -4,7 +4,7 @@
         <div class="flex justify-between h-16">
             <div class="flex">
                 <!-- Logo -->
-                <div class="shrink-0 flex items-center">
+                <div class="shrink-0` flex items-center">
                     <a href="{{ route('dashboard') }}">
                         <x-application-logo class="block h-8 w-auto"/>
                     </a>
@@ -33,9 +33,19 @@
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('add-families')" :active="request()->routeIs('add-families')">
-                        {{ __('Add Families') }}
+                        {{ __('Add Sub-Family') }}
                     </x-nav-link>
                 </div>
+                {{-- <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('add-families')" :active="request()->routeIs('add-families')">
+                        {{ __('Carousels') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('add-families')" :active="request()->routeIs('add-families')">
+                        {{ __('View Carousels') }}
+                    </x-nav-link>
+                </div> --}}
             </div>
 
             <!-- Settings Dropdown -->

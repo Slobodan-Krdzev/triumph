@@ -54,10 +54,8 @@ class PromoController extends Controller
 
         $promo = Promo::findOrFail($id);
 
-        // Decode the existing promo data
         $promoData = json_decode($promo->promo_data, true);
 
-        // Update the promo data with the new values from the request
         foreach ($request->promo as $key => $promoItem) {
             $promoData[$key]['title'] = $promoItem['title'];
             $promoData[$key]['subFamilyType'] = $promoItem['subFamilyType'];
@@ -66,11 +64,9 @@ class PromoController extends Controller
             $promoData[$key]['btnBlack'] = $promoItem['btnBlack'];
         }
 
-        // Encode and update the promo data
         $promo->promo_data = json_encode($promoData);
         $promo->save();
 
-        // Redirect back with a success message
         return redirect()->back()->with('success', 'Promo updated successfully.');
     }
 }

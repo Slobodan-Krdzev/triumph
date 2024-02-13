@@ -15,16 +15,28 @@ class MotorcycleController extends Controller
         return view('layouts.create-moto',);
     }
 
-    public function listMoto(Request $request)
+    // public function listMoto(Request $request)
+    // {
+    //     $data = Motorcycle::get();
+    //     // return view('layouts.view-moto', ['data' => $data]);
+
+
+    //     $motorcycle = Motorcycle::all();
+
+    //     return response()->json($motorcycle);
+
+    //     $category = $request->input('category');
+
+    //     $motorcycles = Motorcycle::when($category, function ($query) use ($category) {
+    //         return $query->where('category', $category);
+    //     })->get();
+
+    //     return response()->json($motorcycles);
+    // }
+
+
+    public function indexApi(Request $request)
     {
-        $data = Motorcycle::get();
-        return view('layouts.view-moto', ['data' => $data]);
-
-
-        $motorcycle = Motorcycle::all();
-
-        return response()->json($motorcycle);
-
         $category = $request->input('category');
 
         $motorcycles = Motorcycle::when($category, function ($query) use ($category) {
@@ -34,13 +46,13 @@ class MotorcycleController extends Controller
         return response()->json($motorcycles);
     }
 
+
     public function store(Request $request)
     {
         $data = $request->all();
         Motorcycle::create($data);
 
         return redirect()->route('create-moto')->with('success', 'Motorcycle data stored successfully');
-
 
     }
 

@@ -14,7 +14,7 @@ class SubFamAdventure extends Model
         'family_id', 'price', 'title', 'model_name', 'subFamilyName', 'url',
         'subFamilyPageInfo', 'heroSlogans', 'youtubeVideo', 'engineTransmission',
         'frame', 'dimension', 'fuelConsumption', 'grayCarousell', 'specNumbers',
-        'reasonsToDrive', 'gallery', 'shortSpecInfo', 'accessory'
+        'reasonsToDrive', 'gallery', 'shortSpecInfo', 'accessory', 'specs', 'service','familyType','youtubeVideosCarousellItems'
     ];
 
     protected $casts = [
@@ -27,9 +27,12 @@ class SubFamAdventure extends Model
         'grayCarousell' => 'json',
         'specNumbers' => 'json',
         'reasonsToDrive' => 'json',
-        'gallery' => 'array',
+        'gallery' => 'json',
         'shortSpecInfo' => 'json',
-        'accessory' => 'json'
+        'accessory' => 'json',
+        'specs' => 'json',
+        'service' => 'json',
+        'youtubeVideosCarousellItems' => 'json'
     ];
 
 

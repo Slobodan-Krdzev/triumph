@@ -9,73 +9,86 @@
             </div>
         @endif
 
-        <form action="{{ route('update-families', $family->id) }}" method="POST" class="flex flex-col">
+        <form action="{{ route('update-fam-classics', $famClassic->id) }}" method="POST" class="flex flex-col">
             @csrf
             @method('PUT')
-            <h1 class="font-bold text-4xl">Family Page</h1>
+            <h1 class="font-bold text-4xl">Family Page of <span
+                    class="capitalize text-red-500">{{ $famClassic->type }}</span></h1>
             <hr class="my-3 w-100">
             {{-- ------------------------------------------------------------------- --}}
             <h1 class="font-bold text-3xl my-2">Base Info</h1>
             <label for="type">Type:</label>
-            <input type="text" name="type" value="{{ old('type', $family['type']) }}" required>
+            <input type="text" name="type" value="{{ old('type', $famClassic['type']) }}" required>
 
-            <label for="mainBikeLogoImage[url]">Main Bike Logo Image URL:</label>
-            <input type="text" name="mainBikeLogoImage[url]"
-                value="{{ old('mainBikeLogoImage.url', optional($family['mainBikeLogoImage'])['url']) }}">
+            @if(isset($famClassic->familyPageBannerDesc))
+            <label for="">Family Page Banner Description:</label>
+            <textarea name="familyPageBannerDesc" rows="4">{{ old('familyPageBannerDesc', $famClassic['familyPageBannerDesc']) }}</textarea>
+            @endif
 
-            <label for="mainBikeLogoImage[alt]">Main Bike Logo Image Alt:</label>
-            <input type="text" name="mainBikeLogoImage[alt]"
-                value="{{ old('mainBikeLogoImage.alt', optional($family['mainBikeLogoImage'])['alt']) }}">
 
-            <label for="familyPageBannerDesc[0]">Family Page Banner Description:</label>
-            <textarea rows="8" name="familyPageBannerDesc" required>{{ old('familyPageBannerDesc', $family['familyPageBannerDesc'] ?? '') }}</textarea>
+            <label for="">Family Page Banner Video:</label>
+            <input type="text" name="familyPageBannerVideo" value="{{ old('familyPageBannerVideo', $famClassic['familyPageBannerVideo']) }}" required>
 
-            <label for="familyPageBannerVideo[0]">Family Page Banner Video:</label>
-            <input type="text" name="familyPageBannerVideo"
-                value="{{ old('familyPageBannerVideo', $family['familyPageBannerVideo'] ?? '') }}" required>
+            <label for="">Config Page Description:</label>
+            <textarea name="configPageInfo[desc]" rows="4">{{ old('configPageInfo.desc', $famClassic['configPageInfo']['desc']) }}</textarea>
 
-            {{-- ------------------------------------------------------------------- --}}
-            <h1 class="font-bold text-3xl my-2">Top Section Info</h1>
-            <label for="topSectionInfo[image][src]">Top Section Image Source:</label>
-            <input type="text" name="topSectionInfo[image][src]"
-                value="{{ old('topSectionInfo.image.src', $family['topSectionInfo']['image']['src'] ?? '') }}" required>
+            <h1 class="font-bold text-3xl my-2">Config Page Info</h1>
 
-            <label for="topSectionInfo[image][alt]">Top Section Image Alt:</label>
-            <input type="text" name="topSectionInfo[image][alt]"
-                value="{{ old('topSectionInfo.image.alt', $family['topSectionInfo']['image']['alt'] ?? '') }}" required>
+            <label for="">Config Page Link:</label>
+            <input type="text" name="configPageInfo[link]" value="{{ old('configPageInfo.link', $famClassic['configPageInfo']['link']) }}" required>
 
-            <label for="topSectionInfo[title]">Top Section Title:</label>
-            <input type="text" name="topSectionInfo[title]"
-                value="{{ old('topSectionInfo.title', $family['topSectionInfo']['title'] ?? '') }}" required>
+            <label for="">Config Family Page Info Source:</label>
+            <input type="text" name="configFamilyPageInfo[image][src]" value="{{ old('configFamilyPageInfo.image.src', $famClassic['configFamilyPageInfo']['image']['src']) }}" required>
 
-            <label for="topSectionInfo[desc1]">Top Section Description 1:</label>
-            <input type="text" name="topSectionInfo[desc1]"
-                value="{{ old('topSectionInfo.desc1', $family['topSectionInfo']['desc1'] ?? '') }}" required>
+            <label for="">Config Family Page Info Alt:</label>
+            <input type="text" name="configFamilyPageInfo[image][alt]" value="{{ old('configFamilyPageInfo.image.alt', $famClassic['configFamilyPageInfo']['image']['alt']) }}" required>
 
-            <label for="topSectionInfo[desc2]">Top Section Description 2:</label>
-            <input type="text" name="topSectionInfo[desc2]"
-                value="{{ old('topSectionInfo.desc2', $family['topSectionInfo']['desc2'] ?? '') }}" required>
-            {{-- ------------------------------------------------------------------- --}}
+
+            <h1 class="font-bold text-3xl my-2">Gray Carousel Info</h1>
+
+            @foreach($famClassic['grayCaro'] as $index => $carouselItem)
+                <label for="">Title:</label>
+                <input type="text" name="grayCaro[{{ $index }}][title]" value="{{ old('grayCaro.'.$index.'.title', $carouselItem['title']) }}" required>
+
+                <label for="">Description:</label>
+                <textarea name="grayCaro[{{ $index }}][desc]" rows="4">{{ old('grayCaro.'.$index.'.desc', $carouselItem['desc']) }}</textarea>
+
+                <label for="">Image:</label>
+                <input type="text" name="grayCaro[{{ $index }}][image]" value="{{ old('grayCaro.'.$index.'.image', $carouselItem['image']) }}" required>
+
+        @endforeach
+
+
             <h1 class="font-bold text-3xl my-2">Promo Info For Family Page</h1>
             <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
                 class="block text-white my-2 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 type="button">
-                Add Promo
+                <a href="{{ route('add-promo-classics') }}">Add Promo</a>
             </button>
 
 
-            @foreach ($family['promo'] as $promo)
-            @if ($family->type == 'classics')
-            <div class="border-2 border-neutral-500 flex justify-between items-center p-2">
-                    <h2>{{ $promo['title'] ?? '' }}</h2>
-                    <div class="flex justify-between items-center">
-                        <a href="{{ route('edit-promo', ['id' => $family->id, 'promoId' => $promo['id'], 'type' => $family->type]) }}" class="mx-4">Edit</a>
 
-                        <button class="bg-red-500 p-1 rounded text-white">Delete</button>
+            @foreach ($promos as $promo)
+                @foreach ($promo->promo_data as $data)
+                    <div class="border-2 border-neutral-500 flex justify-between items-center p-2">
+                        <h2>{{ $data['title'] }}</h2>
+                        <div class="flex justify-between items-center">
+                            <a href="{{ route('edit-promo-classics', ['id' => $promo->id]) }}"
+                                class="bg-yellow-300 p-1 mr-3 rounded">Edit</a>
+                            <a href="{{ route('promo-delete', ['id' => $promo->id]) }}"
+                                class="bg-red-500 p-1 rounded text-white"
+                                onclick="event.preventDefault(); if(confirm('Are you sure you want to delete this item?')) document.getElementById('delete-form-{{ $promo->id }}').submit();">Delete</a>
+                            <form id="delete-form-{{ $promo->id }}"
+                                action="{{ route('promo-classics-delete', ['id' => $promo->id]) }}" method="POST"
+                                style="display: none;">
+                                @csrf
+                                @method('DELETE')
+                            </form>
+                        </div>
                     </div>
-                </div>
-            @endif
-        @endforeach
+                @endforeach
+            @endforeach
+
 
 
 

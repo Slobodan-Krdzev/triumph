@@ -13,7 +13,6 @@ return new class extends Migration
     {
         Schema::create('sub_fam_adventure', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('family_id')->constrained('fam_adventure')->default('1');
             $table->string('price');
             $table->string('title');
             $table->string('model_name');

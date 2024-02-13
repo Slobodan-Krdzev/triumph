@@ -56,7 +56,6 @@ class PromoTableSeeder extends Seeder
         ];
 
         $promoDataArrayFive = [
-
             [
                 'title' => 'TIGER 900 RALLY',
                 'subFamilyType' => 'tiger-900-rally',

@@ -5,11 +5,11 @@
                 role="alert">
                 {{ session('success') }}
             </div>
-        @endif
-
             <div class="flex">
                 <h1 class="bg-blue-400 text-white rounded py-3 px-6 mb-5"><a href="{{route('view-families')}}">Back</a></h1>
             </div>
+        @endif
+
         <form method="post" action="{{ route('update-promo', ['id' => $promo->id]) }}" class="flex flex-col">
             @csrf
             @method('PUT')
