@@ -15,7 +15,7 @@ import React from "react";
 
 const ClassicsBikePage = async ({ params }: any) => {
   const bikeModel = params.bike;
-  const subFamQuery = params.subFamily
+  const subFamQuery = params.subFamily;
 
   try {
     const bikeRes = await fetch(`${BIKES}?model=${params.bike}`, {
@@ -24,7 +24,9 @@ const ClassicsBikePage = async ({ params }: any) => {
     const bikeData = await bikeRes.json();
     const bike = bikeData[0];
 
-    const subFamRes = await fetch(`${SUB_FAMILIES}?subFamilyName=${subFamQuery}`);
+    const subFamRes = await fetch(
+      `${SUB_FAMILIES}?subFamilyName=${subFamQuery}`
+    );
     const subFamData = await subFamRes.json();
     const subFam = subFamData[0];
 
@@ -76,7 +78,12 @@ const ClassicsBikePage = async ({ params }: any) => {
           </h2>
           <div className="px-4">
             <SpecTableListi
-              items={[{ title: "Цена", desc: `${bike.price ? `€ ${bike.price}.00` : "Наскоро"}` }]}
+              items={[
+                {
+                  title: "Цена",
+                  desc: `${bike.price ? `€ ${bike.price}.00` : "Наскоро"}`,
+                },
+              ]}
               title={"Цена"}
               isOpen={true}
             />
@@ -106,12 +113,12 @@ const ClassicsBikePage = async ({ params }: any) => {
         )}
 
         {bike.bikePagePromo && (
-          <section className="m-auto w-full md:w-10/12 px-4 md:px-24 py-4 md:py-16">
+          <section className="m-auto w-full md:w-10/12 lg:w-9/12 px-4 md:px-24 py-4 md:py-16">
             {bike.bikePagePromo.map((promo: any, idx: number) => (
               <TextAndImageFlexSection
                 key={promo.title}
-                title={promo.title}
-                textMain={promo.desc}
+                title={promo.title ?? bike.title}
+                textMain={promo.desc ?? ""}
                 imageLeft={idx % 2 !== 0 ? true : false}
                 image={{
                   src: promo.image,
@@ -121,19 +128,6 @@ const ClassicsBikePage = async ({ params }: any) => {
             ))}
           </section>
         )}
-
-        <GrayBand
-          itemOne={{
-            text: "Контакт",
-            url: "/dealers/dealer-search",
-            icon: "/pin.svg",
-          }}
-          itemTwo={{
-            text: "КОНФИГУРАЦИЈА",
-            url: `/configure/families/classics`,
-            icon: "/icon-configurator.svg",
-          }}
-        />
       </main>
     );
   } catch (err) {

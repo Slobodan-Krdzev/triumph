@@ -11521,8 +11521,7 @@
       ],
       "shortSpecInfo": {
         "info1": "398cc TR Мотор",
-        "info2": "16 000 km сервисен интервал",
-        "info3": "Достапен од Јануари 2024."
+        "info2": "16 000 km сервисен интервал"
       },
       "features": [
         {
@@ -11554,7 +11553,7 @@
           "desc": "300мм дискови и клешти со АВЅ"
         },
         {
-          "title": "ИНструментна Плоча",
+          "title": "Инструментна Плоча",
           "desc": "LCD дисплеј со аналоген мерач на брзина"
         },
         {
@@ -11563,7 +11562,7 @@
         },
         {
           "title": "Сервисен Интервал",
-          "desc": "Лидер во класата со 16,000км сервисен интервал"
+          "desc": "16,000км сервисен интервал"
         }
       ],
       "bikePageCarousell": [
@@ -11589,7 +11588,7 @@
         },
         {
           "title": "Ергономија",
-          "desc": "Speed 400 е наменет за секого, па така на него комотно ќе се чувствуваат возачи од секакви димензии. Благодарејки на неговата тенка половина, атрактивна и природна возачка позиција комбинира комфорт и самодоверба при возење на моторот.",
+          "desc": "Speed 400 е наменет за секого и е направен за комоција која ќе ја чувствуваат возачи од секакви димензии. Благодарејки на неговата тенка половина, атрактивна и природна возачка позиција комбинира комфорт и самодоверба при возење на моторот.",
           "image": "/images/classics/speed400/speed400BikePageCaro5.avif"
         },
         {
@@ -11625,7 +11624,7 @@
       "bikePagePromo": [
         {
           "title": "Икона",
-          "desc": "да се допише дескрипција",
+          "desc": "Идна легенда, амблем во изработка. Изработен за потполно нова генерација на Triumph возачи.",
           "image": "/images/classics/speed400/speed400BikePromo1.avif"
         }
       ]
@@ -11638,8 +11637,7 @@
       "subFamilyCategory": "scrambler-400-x",
       "edition": "400cc",
       "desc": "Scrambler 400 X - Подготвен за секаков на подлога.",
-      "price": 6890,
-      
+      "price": 6890,      
       "bikeCollorPalletteGallery": {
         "default": "/images/classics/scrambler400X/scrambler400XKhakiGreen.png",
         "color1": "/images/classics/scrambler400X/scrambler400XKhakiGreen.png",
@@ -11673,17 +11671,116 @@
         "modelImage": {
           "src": "/images/classics/scrambler400X/scrambler400XKhakiGreen.png",
           "alt": "Scrambler 400 x"
+        },
+        "promoYoutubeVideo": {
+          "src": "https://www.youtube.com/embed/_LIgYq4eYag",
+          "alt": "Scrambler 400 X"
         }
       },
       "shortSpecInfo": {
         "info1": "398cc TR Мотор",
-        "info2": "16 000 km сервисен интервал",
-        "info3": "Достапен од Јануари 2024."
+        "info2": "16 000 km сервисен интервал"
       },
       "subFamilyPromo": {
         "title": "Scrambler 400 X",
         "desc": "Уникатен Модерен Класик кој го поседува уникатниот 'roadster' дизајн на Triumph во својата ДНК. Пристигнува во Јануари 2024. Цени од: €5,690.00"
-      }
+      },
+      "features": [
+        {
+          "title": "Мотор",
+          "desc": "TR series мотор (Euro 5 compliant))"
+        },
+        {
+          "title": "Менувач",
+          "desc": "6-брзински менувач со асистенција на квачило"
+        },
+        {
+          "title": "Систем за Пролизгување",
+          "desc": "Ride-by-wire со автоматски систем за пролизгување"
+        },
+        {
+          "title": "Ергономија",
+          "desc": "Висина на седиште 835мм, тенка половица и возбудлива ергономија"
+        },
+        {
+          "title": "Шасија",
+          "desc": "Лесна шасија со задна вилушка на штрафови и алуминиумска предна вилушка"
+        },
+        {
+          "title": "Суспензија",
+          "desc": "43мм предна суспензија и заден амортизер со подесување"
+        },
+        {
+          "title": "Сопирачки",
+          "desc": "320мм дискови и клешти со АВЅ"
+        },
+        {
+          "title": "Инструментна Плоча",
+          "desc": "LCD дисплеј со аналоген мерач на брзина"
+        },
+        {
+          "title": "Светло",
+          "desc": "LED главни и дневни светла"
+        },
+        {
+          "title": "Сервисен Интервал",
+          "desc": "16,000км сервисен интервал"
+        }
+      ],
+      "bikePageCarousell": [
+        {
+          "title": "Автентичен Scrambler Карактер",
+          "desc": "Off-Road Setup, безвременска Scrambler силуета и класичен Triumph профил на моторот. Од глава до петици, Scrambler 400 X серијата ја носи онаа автентична Triumph Scrambler ДНК.",
+          "image": "/images/classics/scrambler400X/scrambler400XBikeCaro1.avif"
+        },
+        {
+          "title": "Луксузни финиши и Детали",
+          "desc": "Препознатливиот црн капак на моторот, златни анодизирани вилушки, високо квалитетни бои и екслузивни ддетали како многуте машински гравирани Triumph логоа оставаат луксузни детали на овој Triumph.",
+          "image": "/images/classics/scrambler400X/scrambler400XBikeCaro2.avif"
+        },
+        {
+          "title": "All-Road Способности",
+          "desc": "Заштита за моторот и возачот, заштитата за LED светла, ладник и рачки се дел од оние ситени детали кои ја праваат оваа серија на мотори способна за секаков терен.",
+          "image": "/images/classics/scrambler400X/scrambler400XBikeCaro3.avif"
+        },
+        {
+          "title": "Ергономија",
+          "desc": "Scrambler 400 X се карактеризира со командна возачка позиција со широк и прилагодлив волан, алуминиумски стапки за нозе со гумена подлога за спречување на лизагање од истите. Исто така тенката силуета нуди одличен комфорт но и одличен изглед на самата серија.",
+          "image": "/images/classics/scrambler400X/scrambler400XBikeCaro4.avif"
+        },
+        {
+          "title": "Рамка и Суспензија",
+          "desc": "Специјализираната Scrambler рамка и суспензија нудат одлична агилност и самодоеверба на сите подлоги.",
+          "image": "/images/classics/scrambler400X/scrambler400XBikeCaro5.avif"
+        },
+        {
+          "title": "Тркала и Пневматици",
+          "desc": "Одличните пневматици кои ги опколуваат предното 19 инчно и задно 17 инчно тркало нудат одлична тракција на сите подлоги без разлика на временски те прилики.",
+          "image": "/images/classics/scrambler400X/scrambler400XBikeCaro6.avif"
+        },
+        {
+          "title": "Сопирачки",
+          "desc": "Дво клипните клешти со метални доводи за течност за сопирачки нудат прогресивно и предливи запирање на моторот додека ABS системот ве штити од несакани случаи.",
+          "image": "/images/classics/scrambler400X/scrambler400XBikeCaro7.avif"
+        },
+        {
+          "title": "Технологија",
+          "desc": "SCrambler 400 X серијата како инструментна плоча нуди аналоген брзиномер и целосен LED дисплеј кои ги прикажува основните информации околу моторот како и степенот на пренос. Системот за пролизгување лесно се деактивира во случаи кога сакате повеќе забава.",
+          "image": "/images/classics/scrambler400X/scrambler400XBikeCaro8.avif"
+        },
+        {
+          "title": "Сигурносни Системи",
+          "desc": "Srcambler 400 X серијата на себе носи имобилизатор кој го штити вачиот мотор од кражби како и волан кој се заклучува. Сигурносниот чип вграден во клучот обезбедува уште поголема сигурност со што дозволува моторот да биде активиран само со тој клуч.",
+          "image": "/images/classics/scrambler400X/scrambler400XBikeCaro9.avif"
+        }
+      ],
+      "bikePagePromo": [
+        {
+          "title": "Икона",
+          "desc": "Идна легенда, амблем во изработка. Изработен за потполно нова генерација на Triumph возачи.",
+          "image": "/images/classics/scrambler400X/scrambler400XBikePromo1.avif"
+        }
+      ]
     },
     {
       "id": 28,
@@ -11729,17 +11826,100 @@
           "alt": "Speed Twin 900"
         },
         "promoYoutubeVideo": {
-          "src": "https://www.youtube.com/embed/dGfqpR5bwyM",
-          "alt": "Speed 400 Youtube Video"
+          "src": "https://www.youtube.com/embed/30qKRVyb4OM",
+          "alt": "Speed Twin 900 Youtube Video"
         }
       },
       "shortSpecInfo": {
-        "info1": "Новата Stealth Edition Серија е Достапна"
+        "info1": "Легендарна Bonneville ДНК"
       },
       "subFamilyPromo": {
         "title": "Speed Twin 900",
         "desc": "Возбудливи перформанси и управување што инспирира самодоверба, сега со уште поголема удобност и стил Цени од: €10,690.00"
-      }
+      },
+      "features": [
+        {
+          "title": "Возачка Категорија",
+          "desc": "А2 сет - компитабилен со А2 возачка категорија"
+        },
+        {
+          "title": "Возачки Модови",
+          "desc": "2 - Road & Rain"
+        },
+        {
+          "title": "Систем за Пролизгување",
+          "desc": "Ride-by-wire со автоматски систем за пролизгување"
+        },
+        {
+          "title": "Инструментна Плоча",
+          "desc": "LCD дисплеј со аналоген мерач на брзина"
+        },
+        {
+          "title": "Светло",
+          "desc": "LED задни светла"
+        },
+        {
+          "title": "USB",
+          "desc": "Под Седиште"
+        },
+        {
+          "title": "Имобилизатор",
+          "desc": "Стандард"
+        },
+        {
+          "title": "Сервисен Интервал",
+          "desc": "16,000км / 12 месеци сервисен интервал"
+        }
+      ],
+      "bikePageCarousell": [
+        {
+          "title": "Дво-Цилиндричен Мотор",
+          "desc": "Надградуваниот дво-цилиндричен 900cc мотор произведува максимални перфоманси од 80Nm обртен моемент и 65 максимални коњски сили. Отсега истиот мотор спаѓа во Euro 5 категоријата со ниски загадувања и со карактеристичен британски дво-цилиндричен звук.",
+          "image": "/images/classics/speedTwin900/speedTwin900BikeCaro1.avif"
+        },
+        {
+          "title": "Автентична ДНК",
+          "desc": "Започнувачки од самата силуета па се до дуплите издувни цевки Speed Twin 900 потполно го носи оној Bonneville карактер кој потекнува од 1959 година.",
+          "image": "/images/classics/speedTwin900/speedTwin900BikeCaro2.avif"
+        },
+        {
+          "title": "Луксузни Дизајнерски Детали",
+          "desc": "Дел од овие детали се новите машински изработени лиени тркала, рамно седиште, нови странични панели и луксузни финиши и бои и големо внимание на детали.",
+          "image": "/images/classics/speedTwin900/speedTwin900BikeCaro3.avif"
+        },
+        {
+          "title": "Комфорт",
+          "desc": "Комотната и командна возачка позиција на Speed Twin 900 доаѓа како резулатат на ниското седиште (765mm) и одличната ергономија и силуета на моторот.",
+          "image": "/images/classics/speedTwin900/speedTwin900BikeCaro4.avif"
+        },
+        {
+          "title": "Мотор кој инспирира самодоверба",
+          "desc": "Високо перформантни сопирачки, суспензија и пневматици во комбинација со лесното квачило, технологијата и комфортот го подигаат нивото на самодоверба кај возачите на Speed Twin 900 серијата.",
+          "image": "/images/classics/speedTwin900/speedTwin900BikeCaro5.avif"
+        },
+        {
+          "title": "Сопирачки",
+          "desc": "Високо перформантни Brembo четири клипни клешти и 310 милиметарски клип оддаваат одлично чувство и контрола кога ги употребуват сопирачките.",
+          "image": "/images/classics/speedTwin900/speedTwin900BikeCaro6.avif"
+        },
+        {
+          "title": "Суспензија",
+          "desc": "Предната (41мм) вилушка во комплет со задните двојни амортизери (120мм) даваат одлично ниво на комфорт без разлика на теренот по кој возите.",
+          "image": "/images/classics/speedTwin900/speedTwin900BikeCaro7.avif"
+        },
+        {
+          "title": "Технологија",
+          "desc": "На располагање се два мода на работа. Нормален и мод за дожд. Заедно со системите за пролизгување и системот за асистенција при апликација на гас се грижат за сигурна авантура.",
+          "image": "/images/classics/speedTwin900/speedTwin900BikeCaro8.avif"
+        }
+      ],
+      "bikePagePromo": [
+        {
+          "title": "Компатибилен со A2 Возачка Лиценца",
+          "desc": "Со сетот за деградирање на моторциклот Speed Twin 900 е лесно прилагодлив за возачи А2 возачка лиценца. Истиот може лесно да биде вграден и одстранет во било кој Triumph сервис а ја прави оваа серија на мотори достапна и за возачите почетници.",
+          "image": "/images/classics/speedTwin900/speedTwin900BikePromo1.avif"
+        }
+      ]
     },
     {
       "id": 29,
@@ -11748,8 +11928,7 @@
       "category": "classics",
       "subFamilyCategory": "bonneville-bobber",
       "edition": "classics",
-      "price": 16790,
-      
+      "price": 16790,  
       "bikeCollorPalletteGallery": {
         "default": "/images/classics/bonnevilleBobber/bonnevilleBobberRedHopper.png",
         "color1": "/images/classics/bonnevilleBobber/bonnevilleBobberBlack.png",
@@ -11791,20 +11970,208 @@
         "modelImage": {
           "src": "/images/classics/bonnevilleBobber/bonnevilleBobberRedHopper.png",
           "alt": "Bonneville Bobber"
+        },
+        "promoYoutubeVideo":{
+          "src": "https://www.youtube.com/embed/hfo-yqQOAjM",
+          "alt": "Bonneville Bobber"
         }
       },
       "shortSpecInfo": {
-        "info1": "Новата Stealth Edition Серија е Достапна"
+        "info1": "Легендарна Bonneville ДНК"
       },
       "subFamilyPromo": {
         "title": "Bonneville Bobber",
         "desc": "Мускулест изглед со одлични перформанси и управување - Bonneville Bobber. Цена од: 16790.00Є"
-      }
+      },
+      "features": [
+        {
+          "title": "Возачки Модови",
+          "desc": "2 - Road & Rain"
+        },
+        {
+          "title": "Систем за Пролизгување",
+          "desc": "Ride-by-wire со автоматски систем за пролизгување"
+        },
+        {
+          "title": "Инструментна Плоча",
+          "desc": "LCD дисплеј со аналоген мерач на брзина"
+        },
+        {
+          "title": "Светло",
+          "desc": "LED"
+        },
+        {
+          "title": "Имобилизатор",
+          "desc": "Стандард"
+        },
+        {
+          "title": "Сервисен Интервал",
+          "desc": "16,000км / 12 месеци сервисен интервал"
+        }
+      ],
+      "bikePageCarousell": [
+        {
+          "title": "Мотор од одличен обртен момент",
+          "desc": "Дво-Цилиндарскиот „In-Line“ 1200cc мотор испорачува одлично забрзување со одличен и возбудлив обртен момент и произведува препознатлив Bobber звук и сето тоа со мали емисии.",
+          "image": "/images/classics/BonnevilleBobber/BonnevilleBobberBikeCaro1.avif"
+        },
+        {
+          "title": "Препознатлив Звук",
+          "desc": "Иновативниот двоен издувен систем и уникатните двојни филтри за воздух произведуваат препознатлив „Hot-Rod“ звук.",
+          "image": "/images/classics/BonnevilleBobber/BonnevilleBobberBikeCaro2.avif"
+        },
+        {
+          "title": "Автентичност",
+          "desc": "Со својата прекрасна дизајнерска линија и стил како и жичните тркала, широкиот волан, нискиот профил и црниот реп, Bobber серијата е вистинска модерна икона.",
+          "image": "/images/classics/BonnevilleBobber/BonnevilleBobberBikeCaro3.avif"
+        },
+        {
+          "title": "Перформанси",
+          "desc": "Во 2021 година, Bobber серијата беше редизајнирана и со тоа беа додадени 12 литарски резервоар, 16 инчно предно тркало со 47мм предна вилушка и со тоа се додаде уште помускулест изглед и командна става.",
+          "image": "/images/classics/BonnevilleBobber/BonnevilleBobberBikeCaro4.avif"
+        },
+        {
+          "title": "Самостојно Седиште",
+          "desc": "Препознатливото самостојно седиште на Bobber дава одлични линии и уште повеќе комоција. Со можност за прилагодување по ваши преференци и минимална висина од 690mm од земајта како и тенкиот профил секој кој што ќе седна на овој мотор ќе ја почувствува онаа моќ која ја нуди Bobber серијата.",
+          "image": "/images/classics/BonnevilleBobber/BonnevilleBobberBikeCaro5.avif"
+        },
+        {
+          "title": "Стил",
+          "desc": "Како додаток на одлично изведените финиши на моторот, Bobber серијата со себе го носи оној темен и див изглед. За да се испорача ова дизајнерите , Βοbber го облекоа во црно пескарен финиш на моторот, кардан и менувачот.",
+          "image": "/images/classics/BonnevilleBobber/BonnevilleBobberBikeCaro6.avif"
+        },
+        {
+          "title": "Сопирачки",
+          "desc": "Новите дупли предни Brembo сопирачки како и задната Nissin сопирачка доаѓаат како стандард на Bobber серијата и со себе го носат најновиот ABS систем за уште повеќе сигурност и контрола кога возите.",
+          "image": "/images/classics/BonnevilleBobber/BonnevilleBobberBikeCaro7.avif"
+        },
+        {
+          "title": "Суспензија",
+          "desc": "Showa 47mm предна вилушка и сокриениот иновативен monoshock заден систем се грижат за максимален комфорт и перформанси.",
+          "image": "/images/classics/BonnevilleBobber/BonnevilleBobberBikeCaro8.avif"
+        },
+        {
+          "title": "Технологија",
+          "desc": "На секој возач на располагање му се два мода на работа, систем за пролизгување, ABS, имобилизатор, темпомат, LED дневни светла.",
+          "image": "/images/classics/BonnevilleBobber/BonnevilleBobberBikeCaro9.avif"
+        }
+      ],
+      "bikePagePromo": [
+        {
+          "title": "Само ваш - Bonneville Bobber",
+          "desc": "Од уникатното и прилагодливо седиште па се до трите различни бои и 77 дополнителни оригинални аксесоари, Bobber серијата е изработена за да ја персонализирате по ваш вкус.",
+          "image": "/images/classics/speedTwin900/speedTwin900BikePromo1.avif"
+        }
+      ]
     },
     {
       "id": 32,
+      "title": "Scrambler 1200 X",
+      "model": "scrambler-1200-x",
+      "category": "classics",
+      "subFamilyCategory": "scrambler-1200",
+      "edition": "classics",
+      "price": 16490,
+      "bikeCollorPalletteGallery": {
+        "default": "/images/classics/scrambler1200X/scrambler1200XSapphireBlack.png",
+        "color1": "/images/classics/scrambler1200X/scrambler1200XSapphireBlack.png",
+        "color1Reversed": "/images/classics/scrambler1200X/scrambler1200XSapphireBlackreversed.png",
+        "color2": "/images/classics/scrambler1200X/scrambler1200XSapphireGray.png",
+        "color2Reversed": "/images/classics/scrambler1200X/scrambler1200XSapphireGrayReversed.png",
+        "color3": "/images/classics/scrambler1200X/scrambler1200XSapphireRed.png",
+        "color3Reversed": "/images/classics/scrambler1200X/scrambler1200XSapphireRedReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Saphire Black",
+          "price": null,
+          "image": "/images/custom-collors/sapphireBlack.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Ash Gray",
+          "price": 200,
+          "image": "/images/custom-collors/ashGrey.jpg",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Carnival Red",
+          "price": 200,
+          "image": "/images/custom-collors/carnivalRed.jpg",
+          "colorCode": "color3"
+        }
+      ],
+      "gallery": {
+        "modelImage": {
+          "src": "/images/classics/scrambler1200XcMy23Model.png",
+          "alt": "Scrambler 1200 XC (MY23)"
+        },
+        "promoYoutubeVideo": {
+          "src": "https://www.youtube.com/embed/VGfZx5iHsAk",
+          "alt": "Scrambler 1200 X"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "1,200cc Bonneville дво-цилинричен мотор",
+        "info2": "Максимална Сила - 90 PS",
+        "info3": "Максимален Вртежен Момент - 110 Nm"
+      },
+      "subFamilyPromo": {
+        "title": "Scrambler 1200 XC",
+        "desc": "Одличните перформанси, можности и стил на Scrambler 1200 серијата но уште по достапна. Со мала висина на седиштето и одлична ергономија, Scrambler 1200 XC нуди самодоверба на патиштата и надвор од нив."
+      },
+      "bikePageCarousell": [
+        {
+          "title": "Комфортна Возачка Позиција",
+          "desc": "Со предно тркало од 21 инчи и ниско седиште, 1200 X нуди одлична и командна возачка позиција која инспирира самодоверба за уште повеќе забава при вашите off-road авантури.",
+          "image": "/images/classics/scrambler1200X/scrambler1200XCBikeCaro1.avif"
+        },
+        {
+          "title": "ABS / Систем за Пролизгување",
+          "desc": "Најновиот оптимизиран ABS систем и системот за пролизгување доаѓаат како стандардна на новиот 1200 Х и нудат уште повисоко ниво на контрола, самодоверба и сигурност во сите временски прилики.",
+          "image": "/images/classics/scrambler1200X/scrambler1200XCBikeCaro2.avif"
+        },
+        {
+          "title": "Аксесоари",
+          "desc": "Повеќе од 60 оригинални Triumph аксесоари се достапни за персонализирање на вашиот мотор. Од парчиња кои ќе додадат уште малку повеќе стил па се до оригинален багаж.",
+          "image": "/images/classics/scrambler1200X/scrambler1200XCBikeCaro3.avif"
+        },
+        {
+          "title": "Мотор",
+          "desc": "Дво-цилиндарскиот Bonneville 1200cc мотор нуди многу сила и одлична респонзивност која се карактеризира со силен обртен момент и со предвидливо забрзување.",
+          "image": "/images/classics/scrambler1200X/scrambler1200XCBikeCaro4.avif"
+        },
+        {
+          "title": "Квалитет и Завршница",
+          "desc": "Одлично изработени, со прекрасни завршници и одлични бои и графици и алуминиумските детали и акценти - тоа се зборовите на многу возачи сопственици на 1200 X серијата.",
+          "image": "/images/classics/scrambler1200X/scrambler1200XCBikeCaro5.avif"
+        },
+        {
+          "title": "Висина на Седиште",
+          "desc": "Со само 830mm растојание од седиштето до земјиното тло, 1200 Х серијата има 50mm пониско седиште од ХЕ сееријата и нуди одлично ниво на комоција. Дополнително седиште за намалување на висината за уште 25mm е достапно како аксесоар.",
+          "image": "/images/classics/scrambler1200X/scrambler1200XCBikeCaro6.avif"
+        },
+        {
+          "title": "Суспензија",
+          "desc": "Marzocchi суспензијата која е изработена специјално за Scrambler серијата испорачува високо ниво на комодитет.",
+          "image": "/images/classics/scrambler1200X/scrambler1200XCBikeCaro7.avif"
+        },
+        {
+          "title": "Технологија",
+          "desc": " На роспалагање на возачите им се 5 мода на работа како и најновите и оптимизирани ABS и систем за пролизгување. За целосно контрола и сигурност мултифункционалниот дисплеј на воланот ги испорачува сите потребни информации за безбедна авантура.",
+          "image": "/images/classics/scrambler1200X/scrambler1200XCBikeCaro8.avif"
+        },
+        {
+          "title": "Вредност",
+          "desc": "Со високи перформанси и одлична стандардна опрема и лесната одржливост на моторот и долг сервисен интервал, Scrambler 1200 X е правилен избор за секој ентузијаст и одлична вредност да се има во своја сопственост.",
+          "image": "/images/classics/scrambler1200X/scrambler1200XCBikeCaro9.avif"
+        }
+      ]
+    },
+    {
+      "id": 180,
       "title": "Scrambler 1200 XC",
-      "model": "scrambler-1200-xc-2023",
+      "model": "scrambler-1200-xc",
       "category": "classics",
       "subFamilyCategory": "scrambler-1200",
       "edition": "classics",
@@ -11827,13 +12194,13 @@
         },
         {
           "colorName": "Matt Khaki Green / Matt Jet Black",
-          "price": 400,
+          "price": 300,
           "image": "/images/custom-collors/mattKhakiGreeenMattJetBlack.jpg",
           "colorCode": "color2"
         },
         {
           "colorName": "Carnival Red / Jet Black",
-          "price": 400,
+          "price": 300,
           "image": "/images/custom-collors/carnivalRedSapphireBlack.jpg",
           "colorCode": "color3"
         }
@@ -11842,17 +12209,73 @@
         "modelImage": {
           "src": "/images/classics/scrambler1200XcMy23Model.png",
           "alt": "Scrambler 1200 XC (MY23)"
+        },
+        "promoYoutubeVideo": {
+          "src": "https://www.youtube.com/embed/o94-LGnQpc8",
+          "alt": "Scrambler 1200 XC"
         }
       },
       "shortSpecInfo": {
         "info1": "1,200cc Bonneville дво-цилинричен мотор",
-        "info2": "Максимална јачина - 90 PS и вртежен момент - 110 Nm.",
-        "info3": "Динамичен и многу способен мотор."
+        "info2": "Максимална Сила - 90 PS",
+        "info3": "Максимален Вртежен Момент - 110 Nm"
       },
       "subFamilyPromo": {
         "title": "Scrambler 1200 XC",
         "desc": "Одличните перформанси, можности и стил на Scrambler 1200 серијата но уште по достапна. Со мала висина на седиштето и одлична ергономија, Scrambler 1200 XC нуди самодоверба на патиштата и надвор од нив."
-      }
+      },
+      "bikePageCarousell": [
+        {
+          "title": "1200cc Мотор",
+          "desc": "1200cc дво-цилиндичниот Bonneville мотор испорачува одличен обртен момент и препознатлив Scrambler звук.",
+          "image": "/images/classics/scrambler1200XC/scrambler1200XCBikeCaro1.avif"
+        },
+        {
+          "title": "Издувен Систем",
+          "desc": "Издувниот систем на Scrambler 1200 XS се состои од две издувни цевки кои се високо монтирани за уште повеќе стил и уште погласен звук.",
+          "image": "/images/classics/scrambler1200XC/scrambler1200XCBikeCaro2.avif"
+        },
+        {
+          "title": "технологија",
+          "desc": "Темпомат, „Ride-By-Wire“, Разни модови на работа, ABS и TFT инструментната табла се само дел неколкуте технолошки елементи кои се вградени во SCrambler 1200 XC.",
+          "image": "/images/classics/scrambler1200XC/scrambler1200XCBikeCaro3.avif"
+        },
+        {
+          "title": "Мод на работа",
+          "desc": "На располагање се 5 модови на работа: Road, Rain, Sport, Off-Road & Rider Cunfigurable.",
+          "image": "/images/classics/scrambler1200XC/scrambler1200XCBikeCaro4.avif"
+        },
+        {
+          "title": "TFT Екран",
+          "desc": "Лесен за користење и со одличен дисплеј овој систем ги обезбедува сите потребни информации кои ви се потребни како возач.",
+          "image": "/images/classics/scrambler1200XC/scrambler1200XCBikeCaro5.avif"
+        },
+        {
+          "title": "Осветлени Копчиња",
+          "desc": "Инутитивни и осветлени команди на рачките се присутни на воланот на Scrambler 1200 XC серијата и преку нив можете лесно да ја конфигурирате инструментната табла и да пристапите до сите функции на моторот.",
+          "image": "/images/classics/scrambler1200XC/scrambler1200XCBikeCaro6.avif"
+        },
+        {
+          "title": "Спецификации",
+          "desc": "Одличните спецификации и опрема од висока технологија овозможуваа одлични all-road можности.",
+          "image": "/images/classics/scrambler1200XC/scrambler1200XCBikeCaro7.avif"
+        },
+        {
+          "title": "Scrambler Рамка",
+          "desc": "Специјално дизајнираната рамка е дизајнирана за сите екстремни подлоги и екстремни авантури.",
+          "image": "/images/classics/scrambler1200XC/scrambler1200XCBikeCaro8.avif"
+        },
+        {
+          "title": "Суспензија",
+          "desc": "Одличната Showa суспензија и двојните Ohlins RSU задни амортизери даваат одлично ниво на комоција и контрола.",
+          "image": "/images/classics/scrambler1200XC/scrambler1200XCBikeCaro9.avif"
+        },
+        {
+          "title": "Сопирачки",
+          "desc": "Одличните Brembo Monobloc М50 предни клешти и диск од 320mm дваат одлични перформанси кога е во прашање запирањето.",
+          "image": "/images/classics/scrambler1200XC/scrambler1200XCBikeCaro10.avif"
+        }
+      ]
     },
     {
       "id": 33,
