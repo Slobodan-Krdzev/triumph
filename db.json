@@ -8612,6 +8612,10 @@
         "modelImage": {
           "src": "/images/adventure/tiger900GT/tiger900GTGraphiteBlack.png",
           "alt": "Tiger 900 GT"
+        },
+        "promoYoutubeVideo":{
+          "src": "https://www.youtube.com/embed/8a7AiabjRaM",
+          "alt": "Tiger 900 GT PRomo YouTube"
         }
       },
       "bikeCollorPalletteGallery": {
@@ -8717,6 +8721,10 @@
         "modelImage": {
           "src": "/images/adventure/tiger900GTPRO/tiger900GTPROGraphite.png",
           "alt": "Tiger 900 GT"
+        },
+        "promoYoutubeVideo": {
+          "src": "https://www.youtube.com/embed/8a7AiabjRaM",
+          "alt": "Promo Youtube Video Tiger 900 GT PRo"
         }
       },
       "bikeCollorPalletteGallery": {
@@ -8817,6 +8825,10 @@
         "modelImage": {
           "src": "/images/adventure/tiger900RallyPro/tiger900RallyProCarbonBlack.png",
           "alt": "Tiger 900 Rally Pro"
+        },
+        "promoYoutubeVideo": {
+          "src": "https://www.youtube.com/embed/8x9rtiLVFQU",
+          "alt": "Promo Youtube Video Tiger 900"
         }
       },
       "bikeCollorPalletteGallery": {
@@ -8857,18 +8869,6 @@
         "title": "НОВИОТ Tiger 900 Rally PRO",
         "desc": "Одлични “off-road“ способности со исто така исклучително добри перформанси на нормални патишта, новиот Tiger 900 Rally Pro е спремен за секаков терен и авантура."
       },
-      "bikePagePromo": [
-        {
-          "title": "Неспоредливо Мали Трошоци за Одржување",
-          "desc": "Slip & assist clutch",
-          "image": "/images/adventure/tigerSport660/bikePagepPromo1.avif"
-        },
-        {
-        "title": "Компатибилен со A2 Возачка Лиценца",
-        "desc": "Slip & assist clutch",
-        "image": "/images/adventure/tigerSport660/bikePagePromo2.avif"
-      }
-      ],
       "bikePageCarousell": [
         {
           "title": "Мотор",
@@ -9291,8 +9291,8 @@
           "alt": "Tiger 1200 GT PRO"
         },
         "promoYoutubeVideo": {
-          "src": "https://www.youtube.com/embed/dGfqpR5bwyM",
-          "alt": "Tiger 850 Youtbe Video"
+          "src": "https://www.youtube.com/embed/63NpxVoXyNg",
+          "alt": "Tiger 1200 GT PRO Youtube Video"
         }
       },
       "bikeCollorPalletteGallery": {
@@ -9434,14 +9434,7 @@
       "subFamilyPromo": {
         "title": "Tiger 1200 GT PRO",
         "desc": "Најдобриот во класата, GT Pro ги носи технологијата, возењето и спецификациите за оваа серија на ново ниво. Сега доаѓа и со новиот Active Preload Reduction мод кој овозможува прилагодлива суспензија."
-      },
-      "bikePagePromo": [
-        {
-          "title": "Ергономија која инспирира самодоверба",
-          "desc": "Тенката силуета на Tiger 850 Sport, овозможува лесен контакт со површината на која возите. Лесната шасија, прилагодливите седло и волан, го подобруваат комодитетот и самодовербата.",
-          "image": "/images/adventure/tigerSport850/tiger850BikePagePromo1.avif"
-        }
-      ]
+      }
     },
     {
       "id": 8,
@@ -9457,8 +9450,8 @@
           "alt": "Tiger 1200 GT Explorer"
         },
         "promoYoutubeVideo": {
-          "src": "https://www.youtube.com/embed/dGfqpR5bwyM",
-          "alt": "Tiger 850 Youtbe Video"
+          "src": "https://www.youtube.com/embed/OeubtUmrNbQ",
+          "alt": "Tiger 1200 GT Explorer Youtube Video"
         }
       },
       "bikeCollorPalletteGallery": {
@@ -9547,72 +9540,60 @@
       ],
       "bikePageCarousell": [
         {
-          "title": "Нов три-цилиндричен мотор со Т-Радалица",
-          "desc": "Силен карактер и сила на низок обртај и уште поголема моќ од новиот иновативен мотор на Triumph со Т-радалица и уникатна 1, 3, 2 секвенца на палење. Моторот на Tiger 850 испорачува 85РЅ при 8500rpm и 85Nm обртен момент при 6500rpm. .",
-          "image": "/images/adventure/tigerSport850/tiger850LatestCaro1.avif"
+          "title": "30 литарски резервоар",
+          "desc": "30 литарскиот резервоар на GT Explorer серијата ја продолжува вашата авантура во просек за 30% повеќе од GT & GT PRO моделите што ја прави оваа серија идеална за долги тури.",
+          "image": "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerBikeCaro1.avif"
         },
         {
-          "title": "Мотор кој инспирира самодоверба",
-          "desc": "Витка силуета, со седло на подесување од 810мм до 830мм и волан кој се прилагодува според вашите потреби, комбинирано со Brembo Stylema системот за сопирање, Marzocchi суспензија и сета можна технологија која е фокусирана на возачот и на тоа да му овозможи на возачот максимална самодоверба и контрола врз моторот.",
-          "image": "/images/adventure/tigerSport850/tiger850LatesrCaro2.avif"
+          "title": "Мотор",
+          "desc": "Уникатен „Т-Plane“ три-цилиндричен мотор со сите бенефити при ниски револуции на моторот како кај сите дво-цилиндраши и одлични високи перформанси карактеристични за три-цилиндарските мотор.",
+          "image": "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerBikeCaro2.png"
         },
         {
-          "title": "Технологија фокусирана на возачот",
-          "desc": "Внесете се во секое возење со самодоверба со одлизни перформанси и чувство на сигурност благодарејки на Tiger 850 Sport сигурносна технологија, како најновиот ABS систем и систем за пролизгување кој се прилагодува според вашите потреби. Моќен а сепак лабав авантуристички мотор.",
-          "image": "/images/adventure/tigerSport850/tiger850LatestCaro3.avif"
+          "title": "Blind Spot Радар",
+          "desc": "Од колаборацијата помеѓу Continental и Triumph, GT Explorer серијата бенифитираше со најновата радар технологија која ги наблудува слепите агли на возачот и го известува за ситуацијата околку возачот.",
+          "image": "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerBikeCaro3.png"
         },
         {
-          "title": "TFT Екран",
-          "desc": "5' инчен екран во боја со минималистички стил кои ви ги дава на дофат сите потребни информации, доволно брзо за да немора да го тргнете погледот од патот.",
-          "image": "/images/adventure/tigerSport850/tiger850LatestCaro4.avif"
+          "title": "Систем за мониторинт на притисок во пневматици",
+          "desc": "Системот за контрола на притисокот во пневматицити доаѓа како стандард кај GT Explorer серијата и го известува возачот за помемталните притисоци во неговите пневматици а со тоа и ја подобрува сигурноста и нивото на самодоверба кај возачот.",
+          "image": "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerBikeCaro4.avif"
         },
         {
-          "title": "2 мода на работа",
-          "desc": "На располагање се два мода на работа. Нормален и мод за дожд. Заедно со системите за пролизгување и системот за асистенција при апликација на гас се грижат за сигурна авантура.",
-          "image": "/images/adventure/tigerSport850/tiger850LatestCarо5.avif"
+          "title": "Auto-Hold систем",
+          "desc": "Лесен за активација и користење, овој систем ги активира сопирачките и не дозволува вашиот мотор да се истркала назад по острите угорници. Истиот лесно се активира преку менито на инструментната табла.",
+          "image": "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerBikeCaro5.avif"
         },
         {
-          "title": "LED светла насекаде",
-          "desc": "Прекрасно лесно-одржувачко LED светло го краси предниот крај на Tiger 850 Sport.Истото дава префинет изглед и ви овозможува чиста визија за тоа што ќе се најде пред вас. Нуди максимално осветлување на патиштата како и прекрасни LED дневни светла.",
-          "image": "/images/adventure/tigerSport850/tiger850LatestCaro6.avif"
+          "title": "Греачи на седиште за возач и сопатник",
+          "desc": "GT Explorer серијата е опремена со греачи на седиште за возач но и за сопатник и истот доаѓа како стандард и овозможува комфорт при секој тип на годишно време и временска непогода.",
+          "image": "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerBikeCaro6.avif"
         },
         {
-          "title": "Квачило кое работи за вас",
-          "desc": "Квачилото ви асистира при возењето на Tiger 850 Sport. Ви го олеснува стисокот што овозможува за подолга и по лесна авантура, дури и во градските средини каде запирањето е честа случка.",
-          "image": "/images/adventure/tigerSport850/tiger850LatestCaro7.avif"
+          "title": "Рам за заштита на моторот",
+          "desc": "Овој заштитен рам нуди одлична заштита со модерен дизајн и авантуристички стил и перфектно ја комплиментирата лесната тубуларна рамка на моторот.",
+          "image": "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerBikeCaro7.avif"
         },
         {
-          "title": "Подесувачко Ветробранско Стакло",
-          "desc": "Скријте се од ветрот со помош на Ветробранското Стакло кое се прилагодува според вашите потреби со помош на една-рака и при возење.",
-          "image": "/images/adventure/tigerSport850/tiger850LatestCaro8.avif"
+          "title": "Адаптивни Светла",
+          "desc": "Иновативна адаптивна LED расвета е насекаде околу GT Explorer серијата. Од главни светла кои ги следат патиштата па се до LED дневни светла и LED трепкачи.",
+          "image": "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerBikeCaro8.avif"
         },
         {
-          "title": "Систем за сопирање на Brembo",
-          "desc": "Нај-добрата, лесна, и компактна серија на Brembo Stylema клешти за сопирање со 320мм дискови ви дава самодоверба каде и да помислите.",
-          "image": "/images/adventure/tigerSport850/tiger850LatestCaro9.avif"
+          "title": "пет работни програми",
+          "desc": "Секој од петте работни модови си има своја карактеристика и дополнително ги програмира сетинзите за апликација на гас, систем за пролизгување, ABS систем и суспензијата и го прилагодува вашиот мотор за било каква подлога. На располагање се: Road, Rain, Sport & Off-Road.",
+          "image": "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerBikeCaro9.avif"
         },
         {
-          "title": "Авантуристички Стил",
-          "desc": "Off-road перформанси кои импресионираат споени со авантуристичка силуета со агресивни линии, детали и Tiger 850 Sport палетата на бои, дава рефиниран но сепак спортски, издржлив карактер кој е спремен за авантура.",
-          "image": "/images/adventure/tigerSport850/tiger850LatestCaro10.avif"
-        },
-        {
-          "title": "20 литарски резервоар",
-          "desc": "20 литарскиот резервоар ви овозможува повеќе возење а помалку време изгубено на бензиските станици.",
-          "image": "/images/adventure/tigerSport850/tiger850LatestCaro11.avif"
+          "title": "Ергономија",
+          "desc": "Агилноста на GT Explorer серијата не се раскажува туку мора да се проба. Тенкиот струк и седиште нудат повисоко ниво на контрола врз моторот и кај возачот будач чувство на самодоверба, додека стапките за нозе се сместени точно на позициите кои нудат најголемо ниво на комфорт за вашите нозе.",
+          "image": "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerBikeCaro10.avif"
         }
       ],
       "subFamilyPromo": {
         "title": "Tiger 1200 GT Explorer",
         "desc": "GT Explorer има 30 литарски резервоар и ги поставува стандардите за транс-континентални авантури, притоа ги понудува најдобрите спецификации во оваа серија на мотори. Сега доаѓа и со новиот Active Preload Reduction мод кој овозможува прилагодлива суспензија."
-      },
-      "bikePagePromo": [
-        {
-          "title": "Ергономија која инспирира самодоверба",
-          "desc": "Тенката силуета на Tiger 850 Sport, овозможува лесен контакт со површината на која возите. Лесната шасија, прилагодливите седло и волан, го подобруваат комодитетот и самодовербата.",
-          "image": "/images/adventure/tigerSport850/tiger850BikePagePromo1.avif"
-        }
-      ]
+      }
     },
     {
       "id": 9,
@@ -9628,8 +9609,8 @@
           "alt": "Tiger 1200 Rally Pro"
         },
         "promoYoutubeVideo": {
-          "src": "https://www.youtube.com/embed/dGfqpR5bwyM",
-          "alt": "Tiger 850 Youtbe Video"
+          "src": "https://www.youtube.com/embed/TVyryTRhZG0",
+          "alt": "Tiger 1200 Rally PRO Youtube Video"
         }
       },
       "bikeCollorPalletteGallery": {
@@ -9718,72 +9699,60 @@
       ],
       "bikePageCarousell": [
         {
-          "title": "Нов три-цилиндричен мотор со Т-Радалица",
-          "desc": "Силен карактер и сила на низок обртај и уште поголема моќ од новиот иновативен мотор на Triumph со Т-радалица и уникатна 1, 3, 2 секвенца на палење. Моторот на Tiger 850 испорачува 85РЅ при 8500rpm и 85Nm обртен момент при 6500rpm. .",
-          "image": "/images/adventure/tigerSport850/tiger850LatestCaro1.avif"
+          "title": "Мотор",
+          "desc": "Уникатен „Т-Plane“ три-цилиндричен мотор со сите бенефити при ниски револуции на моторот како кај сите дво-цилиндраши и одлични високи перформанси карактеристични за три-цилиндарските мотор.",
+          "image": "/images/adventure/tiger1200RallyPro/tiger1200RallyProBikeCaro1.png"
         },
         {
-          "title": "Мотор кој инспирира самодоверба",
-          "desc": "Витка силуета, со седло на подесување од 810мм до 830мм и волан кој се прилагодува според вашите потреби, комбинирано со Brembo Stylema системот за сопирање, Marzocchi суспензија и сета можна технологија која е фокусирана на возачот и на тоа да му овозможи на возачот максимална самодоверба и контрола врз моторот.",
-          "image": "/images/adventure/tigerSport850/tiger850LatesrCaro2.avif"
+          "title": "Semi-Active Post Showa Вилушка",
+          "desc": "За екстремно off-road искуство потребна ви е одлична суспензија. Showa semi-active задната вилушка (220mm) нуди подесување на тврдината и цврстината на суспензијата со цел да се овозможи најдобар сетап кога пристапувате кон тешките терени.",
+          "image": "/images/adventure/tiger1200RallyPro/tiger1200RallyProBikeCaro2.avif"
         },
         {
-          "title": "Технологија фокусирана на возачот",
-          "desc": "Внесете се во секое возење со самодоверба со одлизни перформанси и чувство на сигурност благодарејки на Tiger 850 Sport сигурносна технологија, како најновиот ABS систем и систем за пролизгување кој се прилагодува според вашите потреби. Моќен а сепак лабав авантуристички мотор.",
-          "image": "/images/adventure/tigerSport850/tiger850LatestCaro3.avif"
+          "title": "Пневматици и Тркала",
+          "desc": "21 инчното предно тркало нуди повисоко растојание помеѓу долниот дел на моторот и подлогата на која возите ос цел да овозможи пристап и до најтешко пристапните терени.",
+          "image": "/images/adventure/tiger1200RallyPro/tiger1200RallyProBikeCaro3.png"
         },
         {
-          "title": "TFT Екран",
-          "desc": "5' инчен екран во боја со минималистички стил кои ви ги дава на дофат сите потребни информации, доволно брзо за да немора да го тргнете погледот од патот.",
-          "image": "/images/adventure/tigerSport850/tiger850LatestCaro4.avif"
+          "title": "Tri-Link Задна Вилушка",
+          "desc": "Уникатната „TRI-LINK“ задна вилушка комбинира цврстина и издржливост со лесно одржување и нуди одлично чувство и контрола при возење, сето тоа со мала тежина на самата компонента.",
+          "image": "/images/adventure/tiger1200RallyPro/tiger1200RallyProBikeCaro4.avif"
         },
         {
-          "title": "2 мода на работа",
-          "desc": "На располагање се два мода на работа. Нормален и мод за дожд. Заедно со системите за пролизгување и системот за асистенција при апликација на гас се грижат за сигурна авантура.",
-          "image": "/images/adventure/tigerSport850/tiger850LatestCarо5.avif"
+          "title": "Triumph Shift Assist",
+          "desc": "Лесни, прецизни промени на степенот на пренос овозможени од паметното квачило кое овозможува промените да ги направите без употреба на рачката на квачилото.",
+          "image": "/images/adventure/tiger1200RallyPro/tiger1200RallyProBikeCaro5.avif"
         },
         {
-          "title": "LED светла насекаде",
-          "desc": "Прекрасно лесно-одржувачко LED светло го краси предниот крај на Tiger 850 Sport.Истото дава префинет изглед и ви овозможува чиста визија за тоа што ќе се најде пред вас. Нуди максимално осветлување на патиштата како и прекрасни LED дневни светла.",
-          "image": "/images/adventure/tigerSport850/tiger850LatestCaro6.avif"
+          "title": "Целосен Keyless Систем",
+          "desc": "Tiger 1200 серијата доаѓа со систем за палење и гасење на моторот, заклучување на воланот и капачето на резервоарот без употреба на клуч. Дополнително тука е и далечинскиот имобилизатор кој овозможува уште повисоко ниво на сигурност од кражби.",
+          "image": "/images/adventure/tiger1200RallyPro/tiger1200RallyProBikeCaro6.avif"
         },
         {
-          "title": "Квачило кое работи за вас",
-          "desc": "Квачилото ви асистира при возењето на Tiger 850 Sport. Ви го олеснува стисокот што овозможува за подолга и по лесна авантура, дури и во градските средини каде запирањето е честа случка.",
-          "image": "/images/adventure/tigerSport850/tiger850LatestCaro7.avif"
+          "title": "Редизајниран Волан и позиција на рачки",
+          "desc": "Комфортен на патиштата и доминантен надвор од нив. Ергономијата на оваа серија е дизајнирана за да се постигне идеална исправена off-road возачка позиција и комфорт при долги патувања.",
+          "image": "/images/adventure/tiger1200RallyPro/tiger1200RallyProBikeCaro7.avif"
         },
         {
-          "title": "Подесувачко Ветробранско Стакло",
-          "desc": "Скријте се од ветрот со помош на Ветробранското Стакло кое се прилагодува според вашите потреби со помош на една-рака и при возење.",
-          "image": "/images/adventure/tigerSport850/tiger850LatestCaro8.avif"
+          "title": "Луксузни Финиши",
+          "desc": "Луксузните финиши и детали се тука не само да изгледаат добро туку и да продолжат животниот век на моторот.",
+          "image": "/images/adventure/tiger1200RallyPro/tiger1200RallyProBikeCaro8.avif"
         },
         {
-          "title": "Систем за сопирање на Brembo",
-          "desc": "Нај-добрата, лесна, и компактна серија на Brembo Stylema клешти за сопирање со 320мм дискови ви дава самодоверба каде и да помислите.",
-          "image": "/images/adventure/tigerSport850/tiger850LatestCaro9.avif"
+          "title": "Off-Road мод за возење",
+          "desc": "Како додаток на стандардните возачки модови кои доаѓаат кај сите модели од Tiger 1200 серијата, Rally Pro моделот со себе го носи и Off-Road PRO програмот на работа кој комплетно го исклучува ABS системот и системот за пролизгување.",
+          "image": "/images/adventure/tiger1200RallyPro/tiger1200RallyProBikeCaro9.png"
         },
         {
-          "title": "Авантуристички Стил",
-          "desc": "Off-road перформанси кои импресионираат споени со авантуристичка силуета со агресивни линии, детали и Tiger 850 Sport палетата на бои, дава рефиниран но сепак спортски, издржлив карактер кој е спремен за авантура.",
-          "image": "/images/adventure/tigerSport850/tiger850LatestCaro10.avif"
-        },
-        {
-          "title": "20 литарски резервоар",
-          "desc": "20 литарскиот резервоар ви овозможува повеќе возење а помалку време изгубено на бензиските станици.",
-          "image": "/images/adventure/tigerSport850/tiger850LatestCaro11.avif"
+          "title": "7‘ TFT Дисплеј",
+          "desc": "Овој „user-friendly“ 7 инчен TFT екран ги понудува сите функционалност на овој мотор и видливи ги презентира пред својот возач. Опремен со My Triumph системот за поврзување на моторот со вашиот телефон, GoPro и „Turn-By-Turn“ навигација.",
+          "image": "/images/adventure/tiger1200RallyPro/tiger1200RallyProBikeCaro10.avif"
         }
       ],
       "subFamilyPromo": {
         "title": "TIGER 1200 Rally PRo",
         "desc": "Без разлика на подлогата, Rally PRO серијата комбинира одлични способности, комфорт и перформанси со цел да понуди врвна авантура на патишта а пред се и надвор од нив. Отсега со новата активна суспензија за уште поголеми можности за персонализирање на моторот."
-      },
-      "bikePagePromo": [
-        {
-          "title": "Ергономија која инспирира самодоверба",
-          "desc": "Тенката силуета на Tiger 850 Sport, овозможува лесен контакт со површината на која возите. Лесната шасија, прилагодливите седло и волан, го подобруваат комодитетот и самодовербата.",
-          "image": "/images/adventure/tigerSport850/tiger850BikePagePromo1.avif"
-        }
-      ]
+      }
     },
     {
       "id": 10,
@@ -9799,8 +9768,8 @@
           "alt": "Tiger 1200 Rally Explorer"
         },
         "promoYoutubeVideo": {
-          "src": "https://www.youtube.com/embed/dGfqpR5bwyM",
-          "alt": "Tiger 850 Youtbe Video"
+          "src": "https://www.youtube.com/embed/FPJLF70YlsA",
+          "alt": "Tiger 1200 Rally Explorer Youtbe Video"
         }
       },
       "bikeCollorPalletteGallery": {
@@ -9889,72 +9858,60 @@
       ],
       "bikePageCarousell": [
         {
-          "title": "Нов три-цилиндричен мотор со Т-Радалица",
-          "desc": "Силен карактер и сила на низок обртај и уште поголема моќ од новиот иновативен мотор на Triumph со Т-радалица и уникатна 1, 3, 2 секвенца на палење. Моторот на Tiger 850 испорачува 85РЅ при 8500rpm и 85Nm обртен момент при 6500rpm. .",
-          "image": "/images/adventure/tigerSport850/tiger850LatestCaro1.avif"
+          "title": "Blind Spot Радар",
+          "desc": "Од колаборацијата помеѓу Continental и Triumph, Rally Explorer серијата бенифитираше со најновата радар технологија која ги наблудува слепите агли на возачот и го известува за ситуацијата околку возачот.",
+          "image": "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerBikeCaro1.png"
         },
         {
-          "title": "Мотор кој инспирира самодоверба",
-          "desc": "Витка силуета, со седло на подесување од 810мм до 830мм и волан кој се прилагодува според вашите потреби, комбинирано со Brembo Stylema системот за сопирање, Marzocchi суспензија и сета можна технологија која е фокусирана на возачот и на тоа да му овозможи на возачот максимална самодоверба и контрола врз моторот.",
-          "image": "/images/adventure/tigerSport850/tiger850LatesrCaro2.avif"
+          "title": "Мотор",
+          "desc": "Уникатен „Т-Plane“ три-цилиндричен мотор со сите бенефити при ниски револуции на моторот како кај сите дво-цилиндраши и одлични високи перформанси карактеристични за три-цилиндарските мотор.",
+          "image": "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerBikeCaro2.png"
         },
         {
-          "title": "Технологија фокусирана на возачот",
-          "desc": "Внесете се во секое возење со самодоверба со одлизни перформанси и чувство на сигурност благодарејки на Tiger 850 Sport сигурносна технологија, како најновиот ABS систем и систем за пролизгување кој се прилагодува според вашите потреби. Моќен а сепак лабав авантуристички мотор.",
-          "image": "/images/adventure/tigerSport850/tiger850LatestCaro3.avif"
+          "title": "30 литарски резервоар",
+          "desc": "30 литарскиот резервоар на Rally Explorer серијата ја продолжува вашата авантура во просек за 50% повеќе од Rally PRO моделите што ја прави оваа серија идеална за долги тури.",
+          "image": "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerBikeCaro3.avif"
         },
         {
-          "title": "TFT Екран",
-          "desc": "5' инчен екран во боја со минималистички стил кои ви ги дава на дофат сите потребни информации, доволно брзо за да немора да го тргнете погледот од патот.",
-          "image": "/images/adventure/tigerSport850/tiger850LatestCaro4.avif"
+          "title": "Off-Road Пневматици и Тркала",
+          "desc": "21 инчното предно тркало нуди повисоко растојание помеѓу долниот дел на моторот и подлогата на која возите ос цел да овозможи пристап и до најтешко пристапните терени.",
+          "image": "/images/adventure/tiger1200RallyPro/tiger1200RallyProBikeCaro4.avif"
         },
         {
-          "title": "2 мода на работа",
-          "desc": "На располагање се два мода на работа. Нормален и мод за дожд. Заедно со системите за пролизгување и системот за асистенција при апликација на гас се грижат за сигурна авантура.",
-          "image": "/images/adventure/tigerSport850/tiger850LatestCarо5.avif"
+          "title": "Греачи на седиште за возач и сопатник",
+          "desc": "Rally Explorer серијата е опремена со греачи на седиште за возач но и за сопатник и истот доаѓа како стандард и овозможува комфорт при секој тип на годишно време и временска непогода.",
+          "image": "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerBikeCaro5.avif"
         },
         {
-          "title": "LED светла насекаде",
-          "desc": "Прекрасно лесно-одржувачко LED светло го краси предниот крај на Tiger 850 Sport.Истото дава префинет изглед и ви овозможува чиста визија за тоа што ќе се најде пред вас. Нуди максимално осветлување на патиштата како и прекрасни LED дневни светла.",
-          "image": "/images/adventure/tigerSport850/tiger850LatestCaro6.avif"
+          "title": "Систем за мониторинт на притисок во пневматици",
+          "desc": "Системот за контрола на притисокот во пневматицити доаѓа како стандард кај Rally Explorer серијата и го известува возачот за помемталните притисоци во неговите пневматици а со тоа и ја подобрува сигурноста и нивото на самодоверба кај возачот.",
+          "image": "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerBikeCaro6.avif"
         },
         {
-          "title": "Квачило кое работи за вас",
-          "desc": "Квачилото ви асистира при возењето на Tiger 850 Sport. Ви го олеснува стисокот што овозможува за подолга и по лесна авантура, дури и во градските средини каде запирањето е честа случка.",
-          "image": "/images/adventure/tigerSport850/tiger850LatestCaro7.avif"
+          "title": "Auto-Hold систем",
+          "desc": "Лесен за активација и користење, овој систем ги активира сопирачките и не дозволува вашиот мотор да се истркала назад по острите угорници. Истиот лесно се активира преку менито на инструментната табла.",
+          "image": "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerBikeCaro7.avif"
         },
         {
-          "title": "Подесувачко Ветробранско Стакло",
-          "desc": "Скријте се од ветрот со помош на Ветробранското Стакло кое се прилагодува според вашите потреби со помош на една-рака и при возење.",
-          "image": "/images/adventure/tigerSport850/tiger850LatestCaro8.avif"
+          "title": "Оптимизиран ABS и Систем за Пролизгување",
+          "desc": "Контролирани од софистициран (IMU) Inertial Measurement Unit кој го следи нагибот и тракцијата на моторциклот, овие два системи се оптимизирани за целосна сигурно и уживање на разни подлоги.",
+          "image": "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerBikeCaro8.avif"
         },
         {
-          "title": "Систем за сопирање на Brembo",
-          "desc": "Нај-добрата, лесна, и компактна серија на Brembo Stylema клешти за сопирање со 320мм дискови ви дава самодоверба каде и да помислите.",
-          "image": "/images/adventure/tigerSport850/tiger850LatestCaro9.avif"
+          "title": "Високо Перформантни Сопирачки",
+          "desc": "Brembo Stylema клештите и Magura пумпата за течност за сопирање го комплетираат системот за сoпирање кој нуди висока сопирачка моќ и сигурност со оптимизираниот ABS систем.",
+          "image": "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerBikeCaro9.avif"
         },
         {
-          "title": "Авантуристички Стил",
-          "desc": "Off-road перформанси кои импресионираат споени со авантуристичка силуета со агресивни линии, детали и Tiger 850 Sport палетата на бои, дава рефиниран но сепак спортски, издржлив карактер кој е спремен за авантура.",
-          "image": "/images/adventure/tigerSport850/tiger850LatestCaro10.avif"
-        },
-        {
-          "title": "20 литарски резервоар",
-          "desc": "20 литарскиот резервоар ви овозможува повеќе возење а помалку време изгубено на бензиските станици.",
-          "image": "/images/adventure/tigerSport850/tiger850LatestCaro11.avif"
+          "title": "Комфорт",
+          "desc": "Rally Explorer серијата е подкрепена со технологија наменета за целосно уживање на возачот. Некои од елементите кои го подобруваат нивото на комоција се греачи на рачките, темпомат, USB порта под седиште и слично.",
+          "image": "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerBikeCaro10.avif"
         }
       ],
       "subFamilyPromo": {
         "title": "Tiger 1200 Rally Explorer",
         "desc": "Изработен за максимална издржливост и со цел да постави нови стандарди во класата. Отсега опремен со 30 литарски резервоар за уште подолго патување и со нова активна суспензија за уште поголем степен на персонализирање на моторот според вашите потреби."
-      },
-      "bikePagePromo": [
-        {
-          "title": "Ергономија која инспирира самодоверба",
-          "desc": "Тенката силуета на Tiger 850 Sport, овозможува лесен контакт со површината на која возите. Лесната шасија, прилагодливите седло и волан, го подобруваат комодитетот и самодовербата.",
-          "image": "/images/adventure/tigerSport850/tiger850BikePagePromo1.avif"
-        }
-      ]
+      }
     },
     {
       "id": 15,
@@ -12240,10 +12197,6 @@
         "modelImage": {
           "src": "/images/adventure/tiger900Rally/tiger900RallyWhite.png",
           "alt": "Tiger 900 Rally"
-        },
-        "promoYoutubeVideo": {
-          "src": "https://www.youtube.com/embed/QvVCEk4t8IE",
-          "alt": "Tiger 900 Rally Youtube Video"
         }
       },
       "bikeCollorPalletteGallery": {
@@ -12273,6 +12226,63 @@
           "price": 200,
           "image": "/images/custom-collors/mattKhaki.jpg",
           "colorCode": "color3"
+        }
+      ],
+      "bikePageCarousell": [
+        {
+          "title": "7‘ Full-Color TFT Дисплеј",
+          "desc": "Овој „user-friendly“ 7 инчен TFT екран ги понудува сите функционалност на овој мотор и видливи ги презентира пред својот возач.",
+          "image": "/images/adventure/tiger900Rally/tiger900RallyBikeCaro1.jpg"
+        },
+        {
+          "title": "Премиум Showa Суспензија",
+          "desc": "Напред: Showa 45mm USD Cartridge вилушка (244mm travel). Назад: Showa gas 230mm.",
+          "image": "/images/adventure/tiger900Rally/tiger900RallyBikeCaro2.avif"
+        },
+        {
+          "title": "Оптимизиран ABS и Систем за Пролизгување",
+          "desc": "Оптимизираниот систем за контрола на тракцијата за исклучување постојано го пресметува аголот на нагиб на моторот за да обезбеди оптимална брзина на лизгање и контрола на вртежниот момент. Може да се вклучи или исклучи во секој момент.",
+          "image": "/images/adventure/tiger900Rally/tiger900RallyBikeCaro3.avif"
+        },
+        {
+          "title": "Brembo Stylema Сопирачки",
+          "desc": "Brembo Stylema сопирачките се лесни и компактни и се парирани со високо перформатни клешти.",
+          "image": "/images/adventure/tiger900Rally/tiger900RallyBikeCaro4.avif"
+        },
+        {
+          "title": "Жични Tubuless Тркала",
+          "desc": "Жичните тркала со жичи монтирани странично се одличен избор за off-road авантури.",
+          "image": "/images/adventure/tiger900Rally/tiger900RallyBikeCaro5.avif"
+        },
+        {
+          "title": "LED - насекаде",
+          "desc": "Препознатлива LED расвета со LED предно, задно светло и трепкачи.",
+          "image": "/images/adventure/tiger900Rally/tiger900RallyBikeCaro6.avif"
+        },
+        {
+          "title": "Греачи на Рачки",
+          "desc": "Перфектени за возење во секакви времеснски услови и дистанци. Уживајте во топлината, комоцијата и контролата со овие греачи кои лесно се вклучуваат и исклучуваат со допир на компче на воланот.",
+          "image": "/images/adventure/tiger900Rally/tiger900RallyBikeCaro7.avif"
+        },
+        {
+          "title": "20 литарски резервоар",
+          "desc": "20 литарскиот резервоар на Tiger 900 Rally дозволува уште повеќе време поминато на моторот отколку на бензиските станици.",
+          "image": "/images/adventure/tiger900Rally/tiger900RallyBikeCaro8.avif"
+        },
+        {
+          "title": "Четири Возачки Програми",
+          "desc": "Персонализирајте ја агресивноста на гаста, ABS системот и системот за пролизгување по ваши преференци со модифицирање на неколкуте модови на работа на моторот - Rain, Road, Sport & Off-Road.",
+          "image": "/images/adventure/tiger900Rally/tiger900RallyBikeCaro9.avif"
+        },
+        {
+          "title": "Квачило - Assisted Slip",
+          "desc": "Памаетното квачило ви овозможува лесно, прецизно и брзо менување на степенот на пренос без користење на квачилото.",
+          "image": "/images/adventure/tiger900Rally/tiger900RallyBikeCaro10.avif"
+        },
+        {
+          "title": "Темпомат",
+          "desc": "Електронскиот темпомат овозможува одмор на вашата дланка и уште повисоко ниво на комфорт и помала потрошувачка.",
+          "image": "/images/adventure/tiger900Rally/tiger900RallyBikeCaro11.avif"
         }
       ],
       "shortSpecInfo": {
