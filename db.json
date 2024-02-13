@@ -12409,8 +12409,7 @@
       "category": "classics",
       "subFamilyCategory": "bonneville-speedmaster",
       "edition": "classics",
-      "price": 16690,
-      
+      "price": 16690,    
       "bikeCollorPalletteGallery": {
         "default": "/images/classics/speedmaster/speedmasterBlack.png",
         "color1": "/images/classics/speedmaster/speedmasterBlack.png",
@@ -12446,6 +12445,10 @@
         "modelImage": {
           "src": "/images/classics/bonnevilleSpeedmasterModel.png",
           "alt": "Bonneville Speedmaster"
+        },
+        "promoYoutubeVideo": {
+          "src": "https://www.youtube.com/embed/eKmeKK7DjTc",
+          "alt": "Bonneville Speedmaster"
         }
       },
       "shortSpecInfo": {
@@ -12454,7 +12457,61 @@
       "subFamilyPromo": {
         "title": "Bonneville Speedmaster",
         "desc": "Класичен „custom“ карактер, комфортна крузерска возачка позиција и високи спецификации."
-      }
+      },
+      "bikePageCarousell": [
+        {
+          "title": "Мотор со одличен Обртен момент",
+          "desc": "1200cc дво-цилиндичниот Bonneville мотор испорачува одличен обртен момент и предвидлива сила. Истиот е Euro 5 компитабилен.",
+          "image": "/images/classics/speedmaster/speedmasterBikeCaro1.avif"
+        },
+        {
+          "title": "Звук кој се издвојува од другите",
+          "desc": "Уникатнното и иновативно решение околу филтрите за воздух и издувните цевки ко произведуваат оно богат, длабок и препознатлив Bonneville звук.",
+          "image": "/images/classics/speedmaster/speedmasterBikeCaro2.avif"
+        },
+        {
+          "title": "Пропознатлив Custom Стил",
+          "desc": "Наведнат волан, предно монтирани стапки за нозе, 16 инчните шичани тркала и луксузните финиши и детали го презентираат оној препознатлив Bonneville британски стил и карактер.",
+          "image": "/images/classics/speedmaster/speedmasterBikeCaro3.avif"
+        },
+        {
+          "title": "Подобрено Седиште",
+          "desc": "Со 11 милиметри повеќе сунгер и подобра потпора за половината, седиштето на Speedmaster нуди одличен комодотет за возачот и за сопатникот.",
+          "image": "/images/classics/speedmaster/speedmasterBikeCaro4.avif"
+        },
+        {
+          "title": "Подобро Контрола",
+          "desc": "Одличната агилност, комфорт и управување на Speedmaster е уште малку повеќе подобрено благодарејки на одличната Showa суспензија.",
+          "image": "/images/classics/speedmaster/speedmasterBikeCaro5.avif"
+        },
+        {
+          "title": "Сопирачки",
+          "desc": "Двојни 310mm предни дискови и дво-клипни Brembo клешти и самостојна Nissin клешта позади се одговорни за одличната сопирачка моќ на Speedmaster моторите. ABS системот доаѓа како стандард со секој мотор.",
+          "image": "/images/classics/speedmaster/speedmasterBikeCaro6.avif"
+        },
+        {
+          "title": "Технологија",
+          "desc": "ABS, системот за пролизгување, модовите за работа, LED осветлувањето се само некои од технолошките системи кои ви стојат на располагање со секој Speedmaster.",
+          "image": "/images/classics/speedmaster/speedmasterBikeCaro7.avif"
+        },
+        {
+          "title": "Мулти-функционален Дисплеј",
+          "desc": "Сите претходно наброени сигурносни системи и информации се лесно прикажани на мулти функционалниот дисплеј на Speedmaster. Со истиот лесно се ракува преку команди на рачките и истиот додава уште малку стил на предниот дел од моторот.",
+          "image": "/images/classics/speedmaster/speedmasterBikeCaro8.avif"
+        },
+        {
+          "title": "Препознатливи Speedmaster Карактеристики",
+          "desc": "Секој детал на моторот допринесува за да се изгради онаа препознатлива Speedmaster силуета и стил. Мотото на овој мотор е да се минимализира користењето на пластични елементи и да се доведе овој класик по модерни спецификации.",
+          "image": "/images/classics/speedmaster/speedmasterBikeCaro9.avif"
+        }
+      ],
+      "bikePagePromo": [
+        {
+          "title": "Спремен за Персонализација",
+          "desc": "На располагање ви стои палета од 79 оригинални Triumph аксесоари и 3 различни бои кои ви овозможуваат максимално персонализирање на вашиот Speedmaster. Достапни се парчиња кои нудат повеќе стил, сигурност како и елементи за багаж.",
+          "image": "/images/classics/speedmaster/speedmasterBikePromo1.avif"
+        }
+      ]
     },
     {
       "id": 35,
