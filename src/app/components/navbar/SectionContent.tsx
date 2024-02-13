@@ -52,7 +52,7 @@ const SectionContent = ({ families, bikes, bikeToRender }: Props) => {
       initial={{ y: -1000 }}
       animate={controls}
       exit={{ y: -1000 }}
-      transition={{ type: "spring", duration: 0.9}}
+      transition={{ type: "spring", duration: 0.8}}
       className=" slight-white-bg shadow-2xl"
       onMouseLeave={handleSectionClose}
       style={{
