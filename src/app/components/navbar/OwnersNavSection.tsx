@@ -14,7 +14,7 @@ export const linkItemsTriumph: NavLinkListingItemsType[] = [
   },
   {
     text: "Сигурносна Проверка",
-    link: "/owners/your-triumph/safety-checks",
+    link: "/owners/safety-checks",
   },
   {
     text: "Препорачани масла",
@@ -45,7 +45,7 @@ export const linkItemsQuickLinksOwners: NavLinkListingItemsType[] = [
   },
   {
     text: "Контакт",
-    link: "/global-content/contact-us",
+    link: "/dealer",
   },
 ];
 

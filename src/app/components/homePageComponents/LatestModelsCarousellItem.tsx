@@ -21,7 +21,7 @@ const LatestModelsCarousellItem = ({
   return (
     <div className="flex flex-row" style={{ minWidth: width }}>
       <div className="basis-1/2 overflow-hidden flex justify-end items-center" style={{height: '691px'}}>
-        <Image src={image} alt={title} width={955} height={691}/>
+        <Image src={image} alt={title} width={955} height={691} loading="lazy"/>
         
       </div>
       <div className="basis-1/2 flex flex-col px-16 justify-center items-start">

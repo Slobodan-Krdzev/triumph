@@ -6,8 +6,8 @@ type TitleWithLineProps = {
 
 const TitleWithLineThrough = ({ text }: TitleWithLineProps) => {
   return (
-    <div className="relative bg-inherit">
-      <h2 className="bg-inherit text-4xl md:text-8xl uppercase font-bold text-center relative z-10 text-black w-5/12 m-auto bg-white">
+    <div className="relative bg-inherit pt-4 md:pt-8">
+      <h2 className="bg-inherit text-2xl md:text-4xl lg:text-7xl xl:text;-8xl uppercase font-bold text-center relative z-10 text-black w-5/12 m-auto bg-white">
         {text}
       </h2>
       <div

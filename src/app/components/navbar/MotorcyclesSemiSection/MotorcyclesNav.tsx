@@ -21,11 +21,9 @@ type Props = {
 const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
   const [family, setFamily] = useState("adventure");
 
-  console.log(bikes, "SUBFAMILII");
-
   return (
-    <div className="flex ">
-      <div className=" flex flex-col gap-6 basis-3/12 pt-8">
+    <div className="flex">
+      <div className=" flex flex-col gap-6 basis-2/12 pt-8">
         <ul>
           {families?.map((filter: any) => (
             <li key={filter}>
@@ -74,7 +72,7 @@ const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
           </li>
           <li>
             <Link
-              href={"/dealers/dealers-search"}
+              href={"/dealer"}
               className="text-black flex justify-start gap-4 items-center text-sm"
             >
               <FontAwesomeIcon
@@ -88,8 +86,8 @@ const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
           </li>
         </ul>
       </div>
-      <div className="basis-4/12 lighter-white-bg py-8 ">
-        <div className="flex justify-between px-2">
+      <div className="basis-4/12 lighter-white-bg pt-8 ">
+        <div className="flex justify-between px-4">
           <p className="text-black text-lg font-semibold uppercase">{family}</p>
 
           {family !== "special" &&
@@ -111,7 +109,7 @@ const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
         </div>
 
         {getBikesByEdition(family, bikes).length >= 5 && (
-          <div className="overflow-y-scroll h-96">
+          <div className="overflow-y-scroll" style={{height: 480}}>
             {getBikesByEdition(family, bikes).map((bike: any) => (
               <SingleMotorcycleCard key={bike.id} bike={bike} />
             ))}
@@ -120,14 +118,14 @@ const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
 
         {/* za da ne kreira scroll */}
         {getBikesByEdition(family, bikes).length < 5 && (
-          <div className="h-96">
+          <div className="" style={{height: 480}}>
             {getBikesByEdition(family, bikes).map((bike: any) => (
               <SingleMotorcycleCard key={bike.id} bike={bike} />
             ))}
           </div>
         )}
       </div>
-      <div className="basis-5/12 py-8">
+      <div className="basis-6/12 py-8">
         <MotorcycleInfo bike={bikeToRender} bikes={bikes} />
       </div>
     </div>

@@ -1,6 +1,6 @@
-export const getBikesByCC = (cc:string, bikes: any[]) => {
+export const getBikesByCC = (cc:number, bikes: any[]) => {
 
     const allBikes = bikes
 
-    return allBikes.filter(bike => bike.subFamilyCategory.includes(cc))
+    return allBikes.filter(bike => bike.cc === cc)
 }

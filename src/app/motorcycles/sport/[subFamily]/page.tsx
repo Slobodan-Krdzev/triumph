@@ -18,39 +18,27 @@ const SportSubFamilyPage = async ({ params }: any) => {
     const subfamilyData = await subFamilyRes.json();
     const subFamily = subfamilyData[0];
 
-    
-
     const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${query}`);
     const bikes = await bikesRes.json();
 
     const hasGrayCaro =
-      subFamily.subFamilyPageInfo.hasOwnProperty(
-        "grayCarousell"
-      );
+      subFamily.subFamilyPageInfo.hasOwnProperty("grayCarousell");
 
     const hasYoutubeVid =
-      subFamily.subFamilyPageInfo.hasOwnProperty(
-        "youtubeVideo"
-      );
+      subFamily.subFamilyPageInfo.hasOwnProperty("youtubeVideo");
 
-    const hasAudio =
-      subFamily.subFamilyPageInfo.hasOwnProperty(
-        "audioSection"
-      );
+    const hasAudio = subFamily.subFamilyPageInfo.hasOwnProperty("audioSection");
 
     const hasTopSection =
       subFamily.subFamilyPageInfo.hasOwnProperty("topSection");
 
+    console.log("you", hasYoutubeVid);
 
-      console.log('you', hasYoutubeVid);
-      
     return (
       <>
         <HeroSection
           video={subFamily.gallery.subFamilyHeroVideo.src}
-          mobileImage={
-            subFamily.gallery.subFamilyHeroImageMobile.src
-          }
+          mobileImage={subFamily.gallery.subFamilyHeroImageMobile.src}
           model={formulateSubFamilyTitleOnBanner(query)}
         />
 
@@ -73,18 +61,26 @@ const SportSubFamilyPage = async ({ params }: any) => {
               </h3>
             </div>
             {hasYoutubeVid && (
-              <YouTubePromo video={subFamily.subFamilyPageInfo.youtubeVideo ?? ""} />
+              <YouTubePromo
+                video={subFamily.subFamilyPageInfo.youtubeVideo ?? ""}
+              />
             )}
           </section>
 
-          {hasGrayCaro && <BottomCarousell items={subFamily.subFamilyPageInfo.grayCarousell} />}
+          {hasGrayCaro && (
+            <BottomCarousell
+              items={subFamily.subFamilyPageInfo.grayCarousell}
+            />
+          )}
         </main>
         <section className="px-4 lg:px-20 xl:px-40">
           {bikes.map((bike: any) => (
             <BikeInfoTextImageBtn
               key={bike.id}
-              title={bike.subFamilyPromo.title ?? ""}
-              desc={bike.subFamilyPromo.desc ?? ""}
+              title={bike.subFamilyPromo.title ?? bike.title}
+              desc={bike.subFamilyPromo?.desc ?? ""}
+              desc2={bike.price && `Цени од: €${bike.price}.00`}
+
               ctaBtn={{
                 text: "Детали",
                 link: `/motorcycles/${subFamily.familyType}/${query}/${bike.model}`,

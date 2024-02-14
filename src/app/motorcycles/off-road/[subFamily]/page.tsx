@@ -17,29 +17,24 @@ const OffRoadSubFamilyPage = async ({ params }: any) => {
 
     const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${query}`);
     const bikes = await bikesRes.json();
-    
+
     return (
       <>
         <HeroSection
           video={subFamily.gallery.subFamilyHeroVideo.src}
-          mobileImage={
-            subFamily.gallery.subFamilyHeroImageMobile.src
-          }
+          mobileImage={subFamily.gallery.subFamilyHeroImageMobile.src}
           model={formulateSubFamilyTitleOnBanner(query)}
-          slogans={
-            subFamily.subFamilyPageInfo.heroSlogans ?? []
-          }
+          slogans={subFamily.subFamilyPageInfo.heroSlogans ?? []}
         />
 
-        <main className="bg-black">
-          
-        </main>
+        <main className="bg-black"></main>
         <section className="px-4 lg:px-20 xl:px-40">
           {bikes.map((bike: any) => (
             <BikeInfoTextImageBtn
               key={bike.id}
-              title={bike.subFamilyPromo.title ?? ""}
-              desc={bike.subFamilyPromo.desc ?? ""}
+              title={bike.subFamilyPromo.title ?? bike.title}
+              desc={bike.subFamilyPromo?.desc ?? ""}
+              desc2={bike.price && `Цени од: €${bike.price}.00`}
               ctaBtn={{
                 text: "Детали",
                 link: `/motorcycles/off-road/${query}/${bike.model}`,

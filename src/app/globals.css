@@ -123,8 +123,16 @@ body {
   background-color: var(--primary-hover-color);
 }
 
+.modal-blur{
+  background-color: rgba(88, 88, 88, 0.537);
+}
+
 .border {
-  border: 2px solid red;
+  border: px solid red;
+}
+
+.border-bottom {
+  border-bottom: 3px solid var(--secondary-color);
 }
 
 .border-thin{

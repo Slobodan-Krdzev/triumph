@@ -8,7 +8,7 @@ import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitl
 import { getBikesByEdition } from "@/app/components/helpers/getBikesByEdition";
 import CardLinkItem from "@/app/components/homePageComponents/CardLinkItem";
 import DiscoverThriumphCard from "@/app/components/homePageComponents/DiscoverThriumphCard";
-import { BIKES, FAMILIES, PROMOS } from "@/app/constants/constants";
+import { FAMILIES, PROMOS, SUB_FAMILIES } from "@/app/constants/constants";
 import { PromoDataType } from "@/app/types/HomeTypes/SharedTypes/types";
 import { redirect } from "next/navigation";
 import { getBikesByCC } from "./helpers/getBikesByCC";
@@ -20,35 +20,13 @@ const ClassicPage = async () => {
     });
     const familyData = await familyRes.json();
 
-    const bikesRes = await fetch(`${BIKES}?category=classics`, {
+    const bikesRes = await fetch(`${SUB_FAMILIES}?familyType=classics`, {
       cache: "no-store",
     });
     const bikes = await bikesRes.json();
 
     const promosRes = await fetch(`${PROMOS}?category=classics`)
     const promos = await promosRes.json()
-
-    const getBikesBySubFamCategory = (cat: string) => {
-      const allBikes = bikes;
-
-      // type treba da e bike
-      const filteredBikes = allBikes.filter(
-        (bike: any) => bike.subFamilyCategory === cat
-      );
-
-      return filteredBikes;
-    };
-
-    const getBikesBySpecialEdition = (edition: string) => {
-      const allBikes = bikes;
-
-      // type treba da e bike
-      const filteredBikes = allBikes.filter(
-        (bike: any) => bike.specialEdition === edition
-      );
-
-      return filteredBikes;
-    };
 
     return (
       <>
@@ -68,20 +46,20 @@ const ClassicPage = async () => {
             </div>
           </section>
 
-          <section>
-            {/* type treba da e bike */}
-            {getBikesByCC("400", bikes).map((bike: any) => (
+          <section className="m-auto w-11/12 md:w-9/12">
+            {/* type treba da e subFamily */}
+            {getBikesByCC(400, bikes).map((bike: any) => (
               <BikeInfoTextImageBtn
                 key={bike.id}
-                title={bike.title}
-                desc={bike.desc}
+                title={bike.title ?? ""}
+                desc={bike.shortDesc ?? ""}
                 ctaBtn={{
                   text: "Детали",
-                  link: `/motorcycles/classics/${bike.subFamilyCategory}/${bike.model}`,
+                  link: `/motorcycles/classics/${bike.subFamilyName}`,
                 }}
                 image={{
-                  src: bike.gallery.modelImage.src,
-                  alt: bike.gallery.modelImage.alt,
+                  src: bike.gallery.modelImage.src ?? "",
+                  alt: bike.gallery.modelImage.alt ?? "",
                 }}
                 blackBtn={true}
               />
@@ -99,14 +77,14 @@ const ClassicPage = async () => {
           </section>
 
           <section className="flex flex-col md:flex-row md:px-8 px-4 md:gap-4">
-            {getBikesByEdition("900cc", bikes).map((bike: any) => (
+            {getBikesByCC(900, bikes).map((bike: any) => (
               <CardLinkItem
                 key={bike.id}
-                title={bike.title}
-                image={bike.gallery.modelImage.src}
+                title={bike.title ?? ""}
+                image={bike.gallery.modelImage.src ?? ""}
                 text={"Детали"}
-                url={`/motorcycles/classic/${bike.subFamilyCategory}/${bike.model}`}
-                desc={bike.desc}
+                url={`/motorcycles/classics/${bike.subFamilyName}`}
+                desc={bike.shortDesc ?? ""}
               />
             ))}
           </section>
@@ -122,20 +100,20 @@ const ClassicPage = async () => {
           </section>
 
           <section className="flex flex-wrap px-8">
-            {getBikesBySubFamCategory("1200cc").map((bike: any) => (
+            {getBikesByCC(1200, bikes).map((bike: any) => (
               <DiscoverThriumphCard
                 key={bike.bikeId}
-                desc={bike.familyPageInfo.desc}
-                image={bike.familyPageInfo.image.src}
-                title={bike.familyPageInfo.title}
-                url={bike.familyPageInfo.link.url}
+                desc={bike.shortDesc ?? ""}
+                image={bike.gallery.modelImage.src ?? ""}
+                title={bike.title ?? ''}
+                url={`/motorcycles/${bike.familyType}/${bike.subFamilyName}`}
                 btnText={"Детали"}
               />
             ))}
           </section>
 
-          <section>
-            {promos.map((promo: PromoDataType) => (
+          <section className="m-auto w-11/12 md:w-10/12">
+            {promos.map((promo: PromoDataType, idx: number) => (
               <BikeInfoTextImageBtn
                 key={promo.title}
                 title={promo.title}
@@ -149,6 +127,7 @@ const ClassicPage = async () => {
                   alt: promo.title,
                 }}
                 blackBtn={promo.btnBlack}
+                imageOnTheLeft={idx % 2 === 0 ? true : false}
               />
             ))}
           </section>
@@ -157,7 +136,7 @@ const ClassicPage = async () => {
             <div className="text-center">
               <SectionTitleH2 text="Новата Stealth Серија" color="dark" />
             </div>
-
+            
             <StelthCarousell bikes={getBikesByEdition("stealth", bikes)} />
           </section>
 

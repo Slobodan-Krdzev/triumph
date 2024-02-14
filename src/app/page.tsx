@@ -48,7 +48,7 @@ export default async function Home() {
             }}
             itemTwo={{
               text: "Контакт",
-              url: "/dealers/dealer-search",
+              url: "/dealer",
               icon: "/pin.svg",
             }}
           />

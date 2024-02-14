@@ -126,8 +126,9 @@ const SubFamilyPage = async ({ params }: any) => {
               {bikes.map((bike: any) => (
                 <BikeInfoTextImageBtn
                   key={bike.id}
-                  title={bike.subFamilyPromo.title}
-                  desc={bike.subFamilyPromo.desc}
+                  title={bike.subFamilyPromo.title ?? bike.title}
+                  desc={bike.subFamilyPromo.desc ?? ""}
+                  desc2={bike.price && `Цени од: €${bike.price}.00`}
                   ctaBtn={{
                     text: "Детали",
                     link: `/motorcycles/adventure/${query}/${bike.model}`,

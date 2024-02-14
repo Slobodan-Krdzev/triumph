@@ -15,6 +15,8 @@ import MotorcycleSectionMobile from "./MotorcycleSectionMobile";
 import OwnersSectionMobile from "./OwnersSectionMobile";
 import OffersSectionMobile from "./OffersSectionMobile";
 import Link from "next/link";
+import Image from "next/image";
+import LocationsMobile from "./LocationsMobile";
 
 type SectionTypeType =
   | ""
@@ -23,7 +25,8 @@ type SectionTypeType =
   | "owners"
   | "clothing"
   | "discover"
-  | "moto-offers";
+  | "moto-offers"
+  | "locations";
 
 type DropdownProps = {
   visibility: boolean;
@@ -60,7 +63,7 @@ const Dropdown = ({
   return (
     <>
       <motion.div
-        className="fixed bg top-16 right-0 left-0 z-50 h-screen text-white overflow-y-scroll border"
+        className="fixed bg top-16 right-0 left-0 z-50 h-screen text-white overflow-y-scroll"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -20 }}
@@ -146,24 +149,37 @@ const Dropdown = ({
             </button>
           </li>
           <li className="min-w-100">
-            <button
-              className="flex justify-between items-center w-full py-4 px-8"
-              onClick={() => handleSectionOpen("discover")}
+            <Link
+              href={"https://triumph-mediakits.com/en/news/news-listing.html"}
+              className="flex justify-between items-center text-md uppercase font-semibold w-full py-4 px-8"
+              target="_blank"
             >
-              <span className="text-md uppercase font-semibold">Новости</span>
-              <FontAwesomeIcon icon={faChevronDown} size="lg" />
-            </button>
+              Новости
+              <FontAwesomeIcon icon={faChevronRight} size="lg" />
+            </Link>
           </li>
         </ul>
-        <ul className="px-8 pt-8 text-xs h-48">
-          <li className="mt-2">
-            <Link href={"/dealers/dealer-search"}>Контакт</Link>
+        <ul className="px-8 pt-8 text-sm font-semibold h-48">
+          <li className="mt-4">
+            <Link href={"/dealer"}>Контакт</Link>
           </li>
-          <li className="mt-2">
-            <Link href={"/configuration"}>Конфигурација</Link>
+          <li className="mt-4">
+            <Link href={"/configure"}>Конфигурација</Link>
           </li>
-          <li className="uppercase mt-2">
+          <li className="uppercase my-4">
             <Link href={"/latest-offers"}>Понуди</Link>
+          </li>
+          <li className="flex justify-start items-center gap-2">
+            <button onClick={() => handleSectionOpen("locations")} className="flex justify-start items-center gap-2">
+              <Image
+                src={"/images/pinIcon-01.svg"}
+                alt="Pin"
+                width={30}
+                height={30}
+              />{" "}
+              Macedonia
+              <FontAwesomeIcon icon={faChevronRight} size="lg" />
+            </button>
           </li>
         </ul>
       </motion.div>
@@ -171,6 +187,7 @@ const Dropdown = ({
       {query.get("section") === "true" && (
         <motion.div
           className="fixed top-16 right-0 left-0 h-screen bg-white z-50 text-white overflow-y-auto"
+          style={{height:" calc(100vh - 64px)"}}
           initial={{ x: "100vw" }}
           animate={{ x: 0 }}
           exit={{ x: "100vw" }}
@@ -188,7 +205,7 @@ const Dropdown = ({
           )}
 
           {sectionType === "accessories" && (
-            <AccesorySectionMobile handler={handleSectionClose} bikes={bikes}/>
+            <AccesorySectionMobile handler={handleSectionClose} bikes={bikes} />
           )}
           {sectionType === "clothing" && (
             <ClothingSectionMobile handler={handleSectionClose} />
@@ -198,6 +215,9 @@ const Dropdown = ({
           )}
           {sectionType === "discover" && (
             <DiscoverSectionMobile handler={handleSectionClose} />
+          )}
+          {sectionType === "locations" && (
+            <LocationsMobile handler={handleSectionClose} />
           )}
         </motion.div>
       )}

@@ -8,6 +8,7 @@ import ClothingNavSection from "./ClothingNavSection";
 import OwnersNavSection from "./OwnersNavSection";
 import DiscoverNavSection from "./DiscoverNavSection";
 import { handleBodyScrollWhenMenuIsOpen } from "../helpers/handleBodyScrollWhenMenuOpens";
+import Locations from "./Locations";
 
 type Props = {
   families: any[];
@@ -51,7 +52,7 @@ const SectionContent = ({ families, bikes, bikeToRender }: Props) => {
       initial={{ y: -1000 }}
       animate={controls}
       exit={{ y: -1000 }}
-      transition={{ type: "spring", duration: 0.5 }}
+      transition={{ type: "spring", duration: 0.8}}
       className=" slight-white-bg shadow-2xl"
       onMouseLeave={handleSectionClose}
       style={{
@@ -73,6 +74,7 @@ const SectionContent = ({ families, bikes, bikeToRender }: Props) => {
       {query === "Clothing" && <ClothingNavSection />}
       {query === "Owners" && <OwnersNavSection />}
       {query === "Discover" && <DiscoverNavSection />}
+      {query === "Locations" && <Locations />}
     </motion.section>
   );
 };

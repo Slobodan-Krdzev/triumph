@@ -66,22 +66,23 @@ const YourTriumphPage = () => {
       />
 
       <main className="bg-white">
-        <BikeInfoTextImageBtn
-          title="Грижа за вашиот мотор"
-          desc={
-            "Кога дизајнираме мотор паралелно ги дизајнираме и креираме сите потребни аксесоари за сервисирање на моторот, пакети кој ќе ви помогнат при сервисирање и ќе се грижат за вашиот мотор."
-          }
-          ctaBtn={{
-            text: "Проверка на Моторот",
-            link: "/owners/your-triumph/safety-checks",
-          }}
-          image={{
-            src: "/images/owners/yourtriumphPromo1.avif",
-            alt: "Your Triumph Service",
-          }}
-          blackBtn={true}
-        />
-
+        <section className="m-auto w-11/12">
+          <BikeInfoTextImageBtn
+            title="Грижа за вашиот мотор"
+            desc={
+              "Кога дизајнираме мотор паралелно ги дизајнираме и креираме сите потребни аксесоари за сервисирање на моторот, пакети кој ќе ви помогнат при сервисирање и ќе се грижат за вашиот мотор."
+            }
+            ctaBtn={{
+              text: "Проверка на Моторот",
+              link: "/owners/your-triumph/safety-checks",
+            }}
+            image={{
+              src: "/images/owners/yourtriumphPromo1.avif",
+              alt: "Your Triumph Service",
+            }}
+            blackBtn={true}
+          />
+        </section>
         <div className="m-auto w-11/12 md:w-6/12 text-center flex flex-col gap-4 pb-4 md:pb-8 lg:pb-16">
           <SectionTitleH2 text={"Muc-Off"} color={"dark"} />
           <PageParagraph

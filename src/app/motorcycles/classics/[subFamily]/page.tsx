@@ -67,14 +67,15 @@ const ClassicsSubFamilyPage = async ({ params }: any) => {
             {bikes.map((bike: any) => (
               <BikeInfoTextImageBtn
                 key={bike.id}
-                title={bike.subFamilyPromo?.title ?? "Triumph"}
-                desc={bike.subFamilyPromo?.desc ?? "Triumph"}
+                title={bike.title}
+                desc={bike.subFamilyPromo?.desc ?? ""}
+                desc2={bike.price && `Цени од: €${bike.price}.00`}
                 ctaBtn={{
                   text: "Детали",
                   link: `/motorcycles/classics/${subFam}/${bike.model}`,
                 }}
                 image={{
-                  src: `${bike.gallery.modelImage.src}`,
+                  src: `${bike.subFamilyPromo?.image ?? bike.gallery.modelImage.src}`,
                   alt: `${bike.gallery.modelImage.alt}`,
                 }}
                 blackBtn={true}
@@ -119,8 +120,7 @@ const ClassicsSubFamilyPage = async ({ params }: any) => {
   } catch (err) {
     console.log(err);
 
-    // return redirect("/motorcycles/classics");
-    return err
+    return redirect("/motorcycles/classics");
   }
 };
 

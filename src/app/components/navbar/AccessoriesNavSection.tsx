@@ -61,7 +61,7 @@ export const linkItemsModels: NavLinkListingItemsType[] = [
 
 export const linkItemsQuickLinks: NavLinkListingItemsType[] = [
   {
-    text: "Orizondas Оригинални Аксесоари",
+    text: "Triumph Оригинални Аксесоари",
     link: "/accessories/why-buy-genuine",
   },
   {
@@ -101,7 +101,7 @@ const AccessoriesNavSection = ({bikes}: AccessoriesNavProps) => {
         items={linkItemsQuickLinks}
         title={"Барани Линкови"}
         bottomLinkText={"Koнтакт"}
-        bottomLinkUrl={"/dealers/dealer-search"}
+        bottomLinkUrl={"/dealer"}
       />
 
       <Link href={"/configure"}>

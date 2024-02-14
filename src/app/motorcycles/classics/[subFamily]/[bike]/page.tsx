@@ -9,13 +9,14 @@ import GrayBand from "@/app/components/GrayBand";
 import MainBtn from "@/app/components/MainBtn";
 import SpecTableListi from "@/app/components/SubFamily/Specification/SpecTableListi";
 import SpecsTable from "@/app/components/SubFamily/Specification/SpecsTable";
+import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
 import TextAndImageFlexSection from "@/app/components/familiySharedComponents/TextAndImageFlexSection";
 import { BIKES, FAMILIES, SUB_FAMILIES } from "@/app/constants/constants";
 import React from "react";
 
 const ClassicsBikePage = async ({ params }: any) => {
   const bikeModel = params.bike;
-  const subFamQuery = params.subFamily
+  const subFamQuery = params.subFamily;
 
   try {
     const bikeRes = await fetch(`${BIKES}?model=${params.bike}`, {
@@ -24,7 +25,9 @@ const ClassicsBikePage = async ({ params }: any) => {
     const bikeData = await bikeRes.json();
     const bike = bikeData[0];
 
-    const subFamRes = await fetch(`${SUB_FAMILIES}?subFamilyName=${subFamQuery}`);
+    const subFamRes = await fetch(
+      `${SUB_FAMILIES}?subFamilyName=${subFamQuery}`
+    );
     const subFamData = await subFamRes.json();
     const subFam = subFamData[0];
 
@@ -76,7 +79,12 @@ const ClassicsBikePage = async ({ params }: any) => {
           </h2>
           <div className="px-4">
             <SpecTableListi
-              items={[{ title: "Цена", desc: `${bike.price ? `€ ${bike.price}.00` : "Наскоро"}` }]}
+              items={[
+                {
+                  title: "Цена",
+                  desc: `${bike.price ? `€ ${bike.price}.00` : "Наскоро"}`,
+                },
+              ]}
               title={"Цена"}
               isOpen={true}
             />
@@ -106,12 +114,12 @@ const ClassicsBikePage = async ({ params }: any) => {
         )}
 
         {bike.bikePagePromo && (
-          <section className="m-auto w-full md:w-10/12 px-4 md:px-24 py-4 md:py-16">
+          <section className="m-auto w-full md:w-10/12 lg:w-9/12 px-4 md:px-24 py-4 md:py-16">
             {bike.bikePagePromo.map((promo: any, idx: number) => (
               <TextAndImageFlexSection
                 key={promo.title}
-                title={promo.title}
-                textMain={promo.desc}
+                title={promo.title ?? bike.title}
+                textMain={promo.desc ?? ""}
                 imageLeft={idx % 2 !== 0 ? true : false}
                 image={{
                   src: promo.image,
@@ -122,18 +130,54 @@ const ClassicsBikePage = async ({ params }: any) => {
           </section>
         )}
 
-        <GrayBand
-          itemOne={{
-            text: "Контакт",
-            url: "/dealers/dealer-search",
-            icon: "/pin.svg",
-          }}
-          itemTwo={{
-            text: "КОНФИГУРАЦИЈА",
-            url: `/configure/families/classics`,
-            icon: "/icon-configurator.svg",
-          }}
-        />
+        {subFamQuery === "thruxton-rs" && (
+          <section className="m-auto w-full md:w-10/12 px-4 md:px-24 py-4 md:py-16">
+            <BikeInfoTextImageBtn
+              title="Thruxton RS - Перформанси"
+              desc="Новите надграби донесоа уште повеќе јачина на моторот со максимални 105PS при 7,500 rpm и максимален обртен момент од 112 Nm."
+              desc2="Така ние во Triumph изработува еден мотор. Си модерни „roadster“ спецификации со автентичен „Cafe-Racer“ стил."
+              ctaBtn={{
+                text: "Откриј Повеќе",
+                link: "/motorcycles/classic/thruxton-rs/engine",
+              }}
+              image={{
+                src: "/images/classics/thruxtonRS/thruxtonRSBikePromo1.avif",
+                alt: "Thruxton RS - Перформанси",
+              }}
+              blackBtn={false}
+              imageOnTheLeft
+            />
+            <BikeInfoTextImageBtn
+              title="Thruxton RS - Контрола и Управување"
+              desc="Новиот Thruxton RS е полесен за 6 килограми смо многу карактер и е идеален мотор за оние кој бараат спортски карактер со оригинален „Cafe-Racer“ стил."
+              desc2="Напредната технологија е фокусирана на возачот и го подигнува нивото на самодоверба кај возачот и го подобрува возачкото искуство."
+              ctaBtn={{
+                text: "Откриј Повеќе",
+                link: "/motorcycles/classic/thruxton-rs/chassis-and-tech",
+              }}
+              image={{
+                src: "/images/classics/thruxtonRS/thruxtonRSBikePromo2.avif",
+                alt: "Thruxton RS - Контрола и Управување",
+              }}
+              blackBtn={false}
+            />
+            <BikeInfoTextImageBtn
+              title="Thruxton RS - Стил"
+              desc="Thruxton RS потполна репрезентација како би изгледал оној оригинален cafe-racer со модерни детали и технологија."
+              desc2="Новиот „Jet-Black“ изглед и широката палета на стилски и есклузивни детали одлично го презентираат „Cafe-Racer“ изгледот на Thruxton RS серијата."
+              ctaBtn={{
+                text: "Откриј Повеќе",
+                link: "/motorcycles/classic/thruxton-rs/the-original",
+              }}
+              image={{
+                src: "/images/classics/thruxtonRS/thruxtonRSBikePromo3.avif",
+                alt: "Thruxton RS - Стил",
+              }}
+              blackBtn={false}
+              imageOnTheLeft
+            />
+          </section>
+        )}
       </main>
     );
   } catch (err) {
