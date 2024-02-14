@@ -9,6 +9,7 @@ import GrayBand from "@/app/components/GrayBand";
 import MainBtn from "@/app/components/MainBtn";
 import SpecTableListi from "@/app/components/SubFamily/Specification/SpecTableListi";
 import SpecsTable from "@/app/components/SubFamily/Specification/SpecsTable";
+import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
 import TextAndImageFlexSection from "@/app/components/familiySharedComponents/TextAndImageFlexSection";
 import { BIKES, FAMILIES, SUB_FAMILIES } from "@/app/constants/constants";
 import React from "react";
@@ -126,6 +127,55 @@ const ClassicsBikePage = async ({ params }: any) => {
                 }}
               />
             ))}
+          </section>
+        )}
+
+        {subFamQuery === "thruxton-rs" && (
+          <section className="m-auto w-full md:w-10/12 px-4 md:px-24 py-4 md:py-16">
+            <BikeInfoTextImageBtn
+              title="Thruxton RS - Перформанси"
+              desc="Новите надграби донесоа уште повеќе јачина на моторот со максимални 105PS при 7,500 rpm и максимален обртен момент од 112 Nm."
+              desc2="Така ние во Triumph изработува еден мотор. Си модерни „roadster“ спецификации со автентичен „Cafe-Racer“ стил."
+              ctaBtn={{
+                text: "Откриј Повеќе",
+                link: "/motorcycles/classic/thruxton-rs/engine",
+              }}
+              image={{
+                src: "/images/classics/thruxtonRS/thruxtonRSBikePromo1.avif",
+                alt: "Thruxton RS - Перформанси",
+              }}
+              blackBtn={false}
+              imageOnTheLeft
+            />
+            <BikeInfoTextImageBtn
+              title="Thruxton RS - Контрола и Управување"
+              desc="Новиот Thruxton RS е полесен за 6 килограми смо многу карактер и е идеален мотор за оние кој бараат спортски карактер со оригинален „Cafe-Racer“ стил."
+              desc2="Напредната технологија е фокусирана на возачот и го подигнува нивото на самодоверба кај возачот и го подобрува возачкото искуство."
+              ctaBtn={{
+                text: "Откриј Повеќе",
+                link: "/motorcycles/classic/thruxton-rs/chassis-and-tech",
+              }}
+              image={{
+                src: "/images/classics/thruxtonRS/thruxtonRSBikePromo2.avif",
+                alt: "Thruxton RS - Контрола и Управување",
+              }}
+              blackBtn={false}
+            />
+            <BikeInfoTextImageBtn
+              title="Thruxton RS - Стил"
+              desc="Thruxton RS потполна репрезентација како би изгледал оној оригинален cafe-racer со модерни детали и технологија."
+              desc2="Новиот „Jet-Black“ изглед и широката палета на стилски и есклузивни детали одлично го презентираат „Cafe-Racer“ изгледот на Thruxton RS серијата."
+              ctaBtn={{
+                text: "Откриј Повеќе",
+                link: "/motorcycles/classic/thruxton-rs/the-original",
+              }}
+              image={{
+                src: "/images/classics/thruxtonRS/thruxtonRSBikePromo3.avif",
+                alt: "Thruxton RS - Стил",
+              }}
+              blackBtn={false}
+              imageOnTheLeft
+            />
           </section>
         )}
       </main>
