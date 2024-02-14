@@ -86,8 +86,8 @@ const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
           </li>
         </ul>
       </div>
-      <div className="basis-4/12 lighter-white-bg py-8 ">
-        <div className="flex justify-between px-2">
+      <div className="basis-4/12 lighter-white-bg pt-8 ">
+        <div className="flex justify-between px-4">
           <p className="text-black text-lg font-semibold uppercase">{family}</p>
 
           {family !== "special" &&
@@ -109,7 +109,7 @@ const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
         </div>
 
         {getBikesByEdition(family, bikes).length >= 5 && (
-          <div className="overflow-y-scroll h-96">
+          <div className="overflow-y-scroll" style={{height: 480}}>
             {getBikesByEdition(family, bikes).map((bike: any) => (
               <SingleMotorcycleCard key={bike.id} bike={bike} />
             ))}
@@ -118,7 +118,7 @@ const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
 
         {/* za da ne kreira scroll */}
         {getBikesByEdition(family, bikes).length < 5 && (
-          <div className="h-96">
+          <div className="" style={{height: 480}}>
             {getBikesByEdition(family, bikes).map((bike: any) => (
               <SingleMotorcycleCard key={bike.id} bike={bike} />
             ))}
