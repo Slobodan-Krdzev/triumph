@@ -1,3 +1,4 @@
+import BikeGalleyCarousell from "@/app/components/BikePageComponents/BikeGalleyCarousell";
 import BikeTitle from "@/app/components/BikePageComponents/BikeTitle";
 import BikePageCarousell from "@/app/components/BikePageComponents/Carousell/BikePageCarousell";
 import ColorNamePreviewer from "@/app/components/BikePageComponents/ColorNamePreviewer";
@@ -102,6 +103,10 @@ const RocketBikePage = async ({ params }: any) => {
               isOpen={true}
             />
           </section>
+        )}
+
+        {bike.bikePageImageGallery && (
+          <BikeGalleyCarousell images={bike.bikePageImageGallery} />
         )}
 
         {bike.bikePageCarousell && (

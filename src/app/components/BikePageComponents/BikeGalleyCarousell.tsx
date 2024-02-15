@@ -1,13 +1,10 @@
 "use client";
-import React from "react";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 // import 'swiper/css/navigation';
-import "swiper/swiper-bundle.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { YoutubeVideoCarousellItemType } from "../SubFamily/YoutubeVideoCarousell/YoutubeVideoCarousell";
+import "swiper/swiper-bundle.css";
 import SectionTitleH2 from "../familiySharedComponents/SectionTitleH2";
-import { useBreakpoint } from "../helpers/useBreakpoint";
 
 
 type YoutubeVideoCarousellProps = {
@@ -15,10 +12,6 @@ type YoutubeVideoCarousellProps = {
 };
 
 const BikeGalleyCarousell = ({ images }: YoutubeVideoCarousellProps) => {
-  const breakpoint = useBreakpoint();
-
-  console.log(images);
-
   const swiperParams = {
     slidesPerView: 1,
     spaceBetween: 10,
@@ -31,7 +24,7 @@ const BikeGalleyCarousell = ({ images }: YoutubeVideoCarousellProps) => {
     },
     autoplay: {
       delay: 3000,
-      disableOnInteraction: false, // Allow manual navigation to stop autoplay
+      disableOnInteraction: false
     },
   };
   
