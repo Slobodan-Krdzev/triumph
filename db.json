@@ -10547,6 +10547,13 @@
           "desc": "Персонализирајте го вашиот Trident 660 со целосната палета на оригинални Triumph аксесоари како багаж и одредени парчиња кои го подобруваат стилот и сигурноста на овој мотор.",
           "image": "/images/roadsters/trident660/trident660BikeCaro9.avif"
         }
+      ],
+      "bikePagePromo":[
+        {
+          "title": "16,000км - сервисен интервал",
+          "desc": "Со лидерски сервисен интервал од 16,000 километри и со одлична цена, Trident 660 е одличен избор за секој возач.",
+          "image": "/images/roadsters/trident660/trident660BikePromo1.avif"
+        }
       ]
     },
     {
@@ -14015,6 +14022,17 @@
           "desc": "Street Triple Мото2 серијата насебе ја носи најновата технологија која му асистира на возачот во секој момент. Целосната LED расвета со дневни LED светла како и Shift-Assist квачилото во пар со ABS системот и имобилизатор само го потврдуваат фактот дека Street Triple RS доаѓа со најновата опрема за заштита и сигурно но и за гарантирана забава.",
           "image": "/images/roadsters/moto2/moto2BikeCaro12.avif"
         }
+      ],
+      "bikePageImageGallery": [
+        "/images/roadsters/moto2/moto2BikeGalleryCaro1.avif",
+        "/images/roadsters/moto2/moto2BikeGalleryCaro2.avif",
+        "/images/roadsters/moto2/moto2BikeGalleryCaro3.avif",
+        "/images/roadsters/moto2/moto2BikeGalleryCaro4.avif",
+        "/images/roadsters/moto2/moto2BikeGalleryCaro5.avif",
+        "/images/roadsters/moto2/moto2BikeGalleryCaro6.avif",
+        "/images/roadsters/moto2/moto2BikeGalleryCaro7.avif",
+        "/images/roadsters/moto2/moto2BikeGalleryCaro8.avif",
+        "/images/roadsters/moto2/moto2BikeGalleryCaro9.avif"
       ]
     },
     {
