@@ -11935,6 +11935,9 @@
           "desc": "Од уникатното и прилагодливо седиште па се до трите различни бои и 77 дополнителни оригинални аксесоари, Bobber серијата е изработена за да ја персонализирате по ваш вкус.",
           "image": "/images/classics/speedTwin900/speedTwin900BikePromo1.avif"
         }
+      ],
+      "bikePageImageGallery":[
+        "/images/classics/bonnevilleBobber/bonnevilleBobberBikeGalleryCaro1.avif"
       ]
     },
     {
@@ -12412,6 +12415,9 @@
           "title": "Сервисен Интервал",
           "desc": "16,000км / 12 месеци сервисен интервал"
         }
+      ],
+      "bikePageImageGallery":[
+        "/images/classics/speedmaster/speedmasterBikeGalleryCaro1.avif"
       ]
     },
     {
@@ -12524,7 +12530,7 @@
         {
           "title": "Стил и Дизајн",
           "desc": "Специјална палета на бои и луксузни финиши во комбинација на луксузни детали го направија најубавиот Speed Twin досега. Перфектно избалансиран со одличен стил.",
-          "image": "/images/classics/speedmaster/speedmasterBikePromo1.avif"
+          "image": "/images/classics/speedTwin1200/speedTwin1200BikePromo1.avif"
         }
       ],
       "features": [
@@ -12718,6 +12724,9 @@
           "title": "Сервисен Интервал",
           "desc": "16,000км / 12 месеци сервисен интервал"
         }
+      ],
+      "bikePageImageGallery": [
+        "/images/classics/scrambler900/scrambler900BikeGalleyCaro1.avif"
       ]
     },
     {
@@ -12875,6 +12884,9 @@
           "title": "Сервисен Интервал",
           "desc": "16,000км / 12 месеци сервисен интервал"
         }
+      ],
+      "bikePageImageGallery":[
+        "/images/classics/bonnevillet100/t120BikeGalleryCaro1.avif"
       ]
     },
     {
@@ -13044,6 +13056,9 @@
           "title": "Сервисен Интервал",
           "desc": "16,000км / 12 месеци сервисен интервал"
         }
+      ],
+      "bikePageImageGallery":[
+        "/images/classics/bonnevillet100/t120BikeGalleryCaro1.avif"
       ]
     },
     {
@@ -13197,6 +13212,9 @@
           "title": "Сервисен Интервал",
           "desc": "16,000км / 12 месеци сервисен интервал"
         }
+      ],
+      "bikePageImageGallery":[
+        "/images/classics/bonnevillet120Black/t120BlackBikeGalleryCaro1.avif"
       ]
     },
     {
