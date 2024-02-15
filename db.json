@@ -10351,7 +10351,7 @@
         },
         {
           "title": "Сопирачки - Brembo Stylema",
-          "desc": "ДНОвите Brembo Stylema сопирачки со четири клипни клешти и 310m дискови испорачуваа одлична сопирачка мож а во комбинација со ABS системот и одлична контрола на моторот.",
+          "desc": "Новите Brembo Stylema сопирачки со четири клипни клешти и 310m дискови испорачуваа одлична сопирачка мож а во комбинација со ABS системот и одлична контрола на моторот.",
           "image": "/images/roadsters/streetTriple765RS/streetTriple765RSBikeCaro5.avif"
         },
         {
@@ -10440,17 +10440,114 @@
         "modelImage": {
           "src": "/images/roadsters/trident660/tridentMattBajaOrange.png",
           "alt": "Trident 660"
+        },
+        "promoYoutubeVideo": {
+          "src": "https://www.youtube.com/embed/lLNvbwE0rfo",
+          "alt": "Trident 660"
         }
       },
       "shortSpecInfo": {
         "info1": "660cc мотор",
         "info2": "2 мода на работа (Road & Rain)",
-        "info3": "10000км / 12 месеци сервисен интервал"
+        "info3": "16000км / 12 месеци сервисен интервал"
       },
       "subFamilyPromo": {
         "title": "Trident 660",
         "desc": "Спортски настроен, воздудлив и лесно прилагодлив мотор со одличен стил и уште подобра цена - сето ова го поседува новата Trident 660 серија."
-      }
+      },
+      "features": [
+        {
+          "title": "Мотор",
+          "desc": "660 Три-Цилиндарски Мотор - (EURO 5)"
+        },
+        {
+          "title": "Возачка Категорија",
+          "desc": "А2 сет - компитабилен со А2 возачка категорија"
+        },
+        {
+          "title": "Суспензија",
+          "desc": "Showa"
+        },
+        {
+          "title": "Сопирачки",
+          "desc": "Nissin - ABS"
+        },
+        {
+          "title": "Електроника",
+          "desc": "АВЅ, Систем за Пролизгување"
+        },
+        {
+          "title": "Мод на работа",
+          "desc": "2 програми (Road, Rain)"
+        },
+        {
+          "title": "Квачило",
+          "desc": "Triumph Shift Assist - ОПЦИОНАЛНО"
+        },
+        {
+          "title": "Инструментна Плоча",
+          "desc": "Мултифункционален TFT екран"
+        },
+        {
+          "title": "Bluetooth Конекција",
+          "desc": "Опционален My Triumph пакет"
+        },
+        {
+          "title": "Светло",
+          "desc": "LED"
+        },
+        {
+          "title": "Сервисен Интервал",
+          "desc": "16,000 km / 12 месеци"
+        }
+      ],
+      "bikePageCarousell": [
+        {
+          "title": "Три-Цилиндричен 660cc Мотор",
+          "desc": "Потполн карактер и перформанси како и секој три-цилиндречен мотор со богат обртен момент при ниски револуции на моторот.",
+          "image": "/images/roadsters/trident660/trident660BikeCaro1.avif"
+        },
+        {
+          "title": "Врвна Контрола",
+          "desc": "Одличната контрола и агилност на Trident 660 серијата доаѓа од одличната рамка како и Showa суспензијата и Nissin сопирачките.",
+          "image": "/images/roadsters/trident660/trident660BikeCaro2.avif"
+        },
+        {
+          "title": "TRT Екран",
+          "desc": "Новата генерација TFT екрани ги испорачуваат сите витални информации јасно на своите дисплеи. My Triumph системот (ОПЦИОНАЛЕН) со себе носи можности за конектирање со моторот како и навигација, GoPro поврзаност и манипулирање со вашиот телефон.",
+          "image": "/images/roadsters/trident660/trident660BikeCaro3.avif"
+        },
+        {
+          "title": "Технологија",
+          "desc": "За максимална сигурност и уживање, Trident 660 серијата е опремена со најновите технологии како ABS, Систем за пролизгување и два возечки програми.",
+          "image": "/images/roadsters/trident660/trident660BikeCaro4.avif"
+        },
+        {
+          "title": "LED - насекаде",
+          "desc": "За уште повеќе сигурност Trident 660 серијата насекаде носи LED светла и само елиминирачки LED трепкачи.",
+          "image": "/images/roadsters/trident660/trident660BikeCaro5.avif"
+        },
+        {
+          "title": "Стил",
+          "desc": "Препознатливиот Trident стил се истакнува во перфектните линии и силуетата на Trident надградена со извајан резервоар и минималистичен дизајн на задниот крај.",
+          "image": "/images/roadsters/trident660/trident660BikeCaro6.avif"
+        },
+        {
+          "title": "Ергономија и Комфорт",
+          "desc": "Со тесен профил на ширина, одлично поставени стапки за нозе и висина на седиштетот од само 805 милиметри Trident нуди одличен комодитет и возачка позиција. На сево ова додајте го и лесното квачило и спремни се за авантура од секакво времетраење без никаков замор.",
+          "image": "/images/roadsters/trident660/trident660BikeCaro7.avif"
+        },
+        {
+          "title": "Компитабилен за А2 возачка лиценца",
+          "desc": "А2 сетот за деградирање на моторот во А2 категорија е тука за да ги охрабри новите возачи да го изберат Trident 660. Истиот сет ги деградира перформансите на моторот и може да биде вграден и одстранет за неколку минути во најблискиот Triumph центар.",
+          "image": "/images/roadsters/trident660/trident660BikeCaro9.avif"
+        },
+        {
+          "title": "Аксесоари",
+          "desc": "Персонализирајте го вашиот Trident 660 со целосната палета на оригинални Triumph аксесоари како багаж и одредени парчиња кои го подобруваат стилот и сигурноста на овој мотор.",
+          "image": "/images/roadsters/trident660/trident660BikeCaro9.avif"
+        }
+      ]
     },
     {
       "id": 18,
@@ -10462,12 +10559,16 @@
       "price": 19590,
       "gallery": {
         "modelImage": {
-          "src": "/images/roadsters/speedTriple1200RsModel.png",
-          "alt": "Speed Triple 1200 Rs"
+          "src": "/images/roadsters/speedTriple1200RS/speedTriple1200rsCarnivalBlack.png",
+          "alt": "Speed Triple 1200 RS"
+        },
+        "promoYoutubeVideo":{
+          "src": "https://www.youtube.com/embed/VczRFwgIYgo",
+          "alt": "Speed Triple 1200 RS"
         }
       },
       "bikeCollorPalletteGallery": {
-        "default": "/images/roadsters/speedTriple1200RS/speedTriple1200rsCarnivalRed.png",
+        "default": "/images/roadsters/speedTriple1200RS/speedTriple1200rsCarnivalBlack.png",
         "color1": "/images/roadsters/speedTriple1200RS/speedTriple1200rsCarnivalBlack.png",
         "color1Reversed": "/images/roadsters/speedTriple1200RS/speedTriple1200rsCarnivalBlackReversed.png",
         "color2": "/images/roadsters/speedTriple1200RS/speedTriple1200rsSilverIce.png",
@@ -10496,14 +10597,127 @@
         }
       ],
       "shortSpecInfo": {
-        "info1": "660cc мотор",
-        "info2": "2 мода на работа (Road & Rain)",
-        "info3": "10000км / 12 месеци сервисен интервал"
+        "info1": "1160cc мотор",
+        "info2": "198kg тежина и спремен за на патека",
+        "info3": "Врвна Технологија"
       },
       "subFamilyPromo": {
         "title": "Speed Triple 1200 RS",
         "desc": "Најмоќниот, нај-динамичниот и технолошки нај-напредниот Speed Triple моторцикл досега."
-      }
+      },
+      "features": [
+        {
+          "title": "Мотор",
+          "desc": "1160cc Три-Цилиндарски Мотор"
+        },
+        {
+          "title": "Сила и обртен Момент",
+          "desc": "180PS & 125Nm"
+        },
+        {
+          "title": "Тежина",
+          "desc": "198 kg - полн резервоар и други течности"
+        },
+        {
+          "title": "Суспензија",
+          "desc": "Ohlins"
+        },
+        {
+          "title": "Сопирачки",
+          "desc": "Brembo Stylema 320mm двојни дискови напред"
+        },
+        {
+          "title": "Пневматици",
+          "desc": "Pirelli Diablo Supercorsa V3 Пневматици"
+        },
+        {
+          "title": "Електроника",
+          "desc": "АВЅ, Систем за Пролизгување и Систем за Контрола на Предна Осовина (Подигање), Темпомат"
+        },
+        {
+          "title": "Инструментна Плоча",
+          "desc": "Мултифункционален TFT екран 5‘"
+        },
+        {
+          "title": "Мод на работа",
+          "desc": "5 програми (Road, Rain, Sport, Track, Rider)"
+        },
+        {
+          "title": "Квачило",
+          "desc": "Triumph Shift Assist"
+        },
+        {
+          "title": "Светло",
+          "desc": "LED"
+        },
+        {
+          "title": "Keyless",
+          "desc": "Стандардно"
+        },
+        {
+          "title": "Сервисен Интервал",
+          "desc": "16,000 km / 12 месеци"
+        }
+      ],
+      "bikePageCarousell": [
+        {
+          "title": "Потполно нов Три-Цилиндричен мотор",
+          "desc": "Новиот 1160cc три-цилиндричен мотор изработен по Moto2 стандарди е значително полесен покомпактен, пореспонзивен и нуди одлично возачко искуство.",
+          "image": "/images/roadsters/speedTriple1200RS/speedTriple1200RSBikeCaro1.avif"
+        },
+        {
+          "title": "три-Цилиндрична Моќност",
+          "desc": "Со максимална јачина од 180 коњски сили, оваа генерација на три-цилиндрични мотори испорачува 30 коњски сили повеќе од својот претходник. Како дополнување на ова е и одличниот обртен момент кој беше измерен со максимални 125Nm.",
+          "image": "/images/roadsters/speedTriple1200RS/speedTriple1200RSBikeCaro2.avif"
+        },
+        {
+          "title": "Нов 5‘ TFT екран",
+          "desc": "Новиот 5 инчен TFT екран многу лесно ги прикажува сите потребни информации и параметри додека возите, како и сите други дополнителни информации како повици, мултимедиа и штоперицата.",
+          "image": "/images/roadsters/speedTriple1200RS/speedTriple1200RSBikeCaro3.avif"
+        },
+        {
+          "title": "Флексибилен и Прецизен",
+          "desc": "Со ултра лесната рамка и одлична ергономија и возачка позиција, оваа Speed Triple серија е најагилна, најпрецизна и најдинамична Speed Triple серија досега.",
+          "image": "/images/roadsters/speedTriple1200RS/speedTriple1200RSBikeCaro5.avif"
+        },
+        {
+          "title": "Најлесниот Speed Triple досега",
+          "desc": "Со тежина од 198 килограми, максималната тежина на серијата беше намалена за 10 килограми благодарекни на ултра лесната шасија и значително лесниот мотор, се со цел да се обезбеди агилност и динамика и одлично возачко искуство.",
+          "image": "/images/roadsters/speedTriple1200RS/speedTriple1200RSBikeCaro4.avif"
+        },
+        {
+          "title": "Високо Квалитетни Периферни Елементи",
+          "desc": "Целосно прилагодливата Ohlins суспензија и Brembo Stylema сопирачките во пар со Metzeler Racetec RR пневматиците се одлична комбинација за добивање одлични перформансни резултати.",
+          "image": "/images/roadsters/speedTriple1200RS/speedTriple1200RSBikeCaro6.avif"
+        },
+        {
+          "title": "Возачка Позиција",
+          "desc": "Широкиот волан, и сосема новото седиште обезбедуваат динамична и природна возачка позиција, а благодарејки и на репозиционирањето на стапките за нозе се овозможи и поголема дистанца помеѓу површината на која возите и вашите нозе додека влегувате во свиоците.",
+          "image": "/images/roadsters/speedTriple1200RS/speedTriple1200RSBikeCaro7.avif"
+        },
+        {
+          "title": "Технологија Фокусирана на Возачот",
+          "desc": "Најнова генерација на Optimised Corner Traction системот и ABS системот овозможуваат одлична контрола при свиоци и при апликација на гас, додека системот за контрола на предниот крај ви помага и автоматски го спушта предниот крај за вас. Квачилото овозможува промена на степенот на пренос без употреба на рачката за квачилото додека 5-те возачки програми се тука за секаква забава или сигурност кога и да посакате.",
+          "image": "/images/roadsters/speedTriple1200RS/speedTriple1200RSBikeCaro8.avif"
+        },
+        {
+          "title": "My Triumph Connectivity System",
+          "desc": "Вграден како стандардна опрема, My Triumph Connectivity системот ќе ви овозможи да се конектирате со вашиот мотор преку вашиот телефон. Исто така на располагање ви ја нуди и „Turn-By-Turn“ навигацијата, GoPro контрола и примање повици како си слушање музика преку вашиот Headset.",
+          "image": "/images/roadsters/speedTriple1200RS/speedTriple1200RSBikeCaro9.avif"
+        },
+        {
+          "title": "LED - насекаде",
+          "desc": "Импресивниот нов изглед на двете предни светла како и LED задното светло не само што ќе донесе одличен стил на вашиот мотор тука ќе ја зголеми безбедноста и видливоста додека возите.",
+          "image": "/images/roadsters/speedTriple1200RS/speedTriple1200RSBikeCaro10.avif"
+        }
+      ],
+      "bikePagePromo":[
+        {
+          "title": "Фокусиран на патиштата - но спремен за тркање",
+          "desc": "Премиум и тркачки спремните елементи како Brembo Stylema®, Pirelli Diablo Supercorsa V3 и Öhlins суспензијата ја прават Speed triple 1200 RS серијата возбудлива на патиштата и спремна за тркање. Испробајте го Track програмот кога сте на патеката и почувствувајте го полниот потенцијал на Speed Triple 1200 RS.",
+          "image": "/images/roadsters/speedTriple1200RS/speedTriple1200RSBikePromo1.avif"
+        }
+      ]
     },
     {
       "id": 19,
@@ -10516,6 +10730,10 @@
       "gallery": {
         "modelImage": {
           "src": "/images/roadsters/speedTriple1200Rr2Model.png",
+          "alt": "Speed Triple 1200 RR"
+        },
+        "promoYoutubeVideo":{
+          "src": "https://www.youtube.com/embed/Wkl9OAfK5XQ",
           "alt": "Speed Triple 1200 RR"
         }
       },
@@ -10542,13 +10760,108 @@
       ],
       "shortSpecInfo": {
         "info1": "Нов 1160cc мотор со 180 коњски сили ",
-        "info2": "Нов кокпит и едно предно светло",
-        "info3": "Најново технологија фокусирана на возачот"
+        "info2": "Нов кокпит со едно предно светло",
+        "info3": "Најнова технологија фокусирана на возачот"
       },
       "subFamilyPromo": {
         "title": "Speed Triple 1200 RR",
         "desc": "Колку повозбудлив за гледање толку повозбудлив за возење - отсега со највисоко ниво на спецификација."
-      }
+      },
+      "features": [
+        {
+          "title": "Мотор",
+          "desc": "1160cc Три-Цилиндарски Мотор"
+        },
+        {
+          "title": "Сила и обртен Момент",
+          "desc": "180PS & 125Nm"
+        },
+        {
+          "title": "Тежина",
+          "desc": "198 kg - полн резервоар и други течности"
+        },
+        {
+          "title": "Суспензија",
+          "desc": "Ohlins Smart EC 2.0 electronically adjustable semi-active suspension"
+        },
+        {
+          "title": "Сопирачки",
+          "desc": "Brembo Stylema 320mm двојни дискови напред"
+        },
+        {
+          "title": "Електроника",
+          "desc": "АВЅ, Систем за Пролизгување и Систем за Контрола на Предна Осовина (Подигање), Темпомат"
+        },
+        {
+          "title": "Инструментна Плоча",
+          "desc": "Мултифункционален TFT екран 5‘"
+        },
+        {
+          "title": "Мод на работа",
+          "desc": "5 програми (Road, Rain, Sport, Track, Rider)"
+        },
+        {
+          "title": "Квачило",
+          "desc": "Triumph Shift Assist"
+        },
+        {
+          "title": "Светло",
+          "desc": "LED"
+        },
+        {
+          "title": "Keyless",
+          "desc": "Стандардно"
+        }
+      ],
+      "bikePageCarousell": [
+        {
+          "title": "Мотор - 1160cc",
+          "desc": "Новиот 1160cc три-цилиндричен мотор изработен по Moto2 стандарди е значително полесен покомпактен, пореспонзивен и нуди одлично возачко искуство. Со максимална јачина од 180 коњски сили, оваа генерација на три-цилиндрични мотори испорачува 30 коњски сили повеќе од својот претходник. Како дополнување на ова е и одличниот обртен момент кој беше измерен со максимални 125Nm.",
+          "image": "/images/roadsters/speedTriple1200RR/speedTriple1200RRBikeCaro1.avif"
+        },
+        {
+          "title": "Нова ÖHLINS SEMI-ACTIVE суспензија",
+          "desc": "Просто кажано Street Triple 1200 RR на себе ја носи најнапредната Öhlins суспензија која може да се вгради. Истата е целосно електронси прилагодлива со цел да се обезбеди саканиот перформанс од истата.",
+          "image": "/images/roadsters/speedTriple1200RR/speedTriple1200RRBikeCaro2.avif"
+        },
+        {
+          "title": "Потполно Фокусирана Ергономија",
+          "desc": "Новите рачки на воланот се за 135 милиметри пониски и за 50 милиметри понапред од оние на RR серијата, додека стапките за нозе се исто така одлично позиционирани со цел да се добие фокусирана возачка позиција без да се компромитира комфортот.",
+          "image": "/images/roadsters/speedTriple1200RR/speedTriple1200RRBikeCaro3.avif"
+        },
+        {
+          "title": "Редизајн на Предниот Дел",
+          "desc": "Новиот дизајна на предната маска и LED светло, го прават Street Triple RS веднаш препознатлив меѓу останатите.",
+          "image": "/images/roadsters/speedTriple1200RR/speedTriple1200RRBikeCaro4.avif"
+        },
+        {
+          "title": "Нови спортски Pirelli пневматици",
+          "desc": "Со цел да се обезбедни одлична контрола, тракција и урпавување, Street Triple 1200 RR серијата на себе ги носи новите Pirreli Diablo Supercorsa V3 пневматици кои нудат одлични перформанси на патиштата и на патеките.",
+          "image": "/images/roadsters/speedTriple1200RR/speedTriple1200RRBikeCaro5.avif"
+        },
+        {
+          "title": "Оптимизиран ABS и Систем за Пролизгување",
+          "desc": "Со помош на IMU системот кој во секој момент врши мониторинг на аголот на нагиб и подлогата, новиот ABS и системот за пролизгување ви помагаат при нагли апликации на гас како и при влез и излез од свиоците.",
+          "image": "/images/roadsters/speedTriple1200RR/speedTriple1200RRBikeCaro6.avif"
+        },
+        {
+          "title": "Brembo Stylema Сопирачки",
+          "desc": "Премиум Brembo Stylema системот за сопирање нуди лесни 320 милиметарски двојни дискови кои нудат извонредна сопирачка моќ и контрола за повеќе уживање и безгрижни авантури.",
+          "image": "/images/roadsters/speedTriple1200RR/speedTriple1200RRBikeCaro7.avif"
+        },
+        {
+          "title": "Пет Возачки Програми",
+          "desc": "Rain, Road, Sport, Track & Rider Configurable - Секоја од овие програми на работа нуди свои специфични поставки за апликација на гас, сетинзи за ABS и систем за пролизгување, додека истите се прилагодливи според вашите преференци.",
+          "image": "/images/roadsters/speedTriple1200RR/speedTriple1200RRBikeCaro8.avif"
+        }
+      ],
+      "bikePagePromo":[
+        {
+          "title": "Технологија спремна за патека",
+          "desc": "Triumph Shift Assist квачилото нуди брзи и прецизни промени на степенот на пренос без употреба на рачката за активирање на квачилото.",
+          "image": "/images/roadsters/speedTriple1200RR/speedTriple1200RRBikePromo1.avif"
+        }
+      ]
     },
     {
       "id": 20,
@@ -13669,7 +13982,7 @@
         },
         {
           "title": "Сопирачки - Brembo Stylema",
-          "desc": "ДНОвите Brembo Stylema сопирачки со четири клипни клешти и 310m дискови испорачуваа одлична сопирачка мож а во комбинација со ABS системот и одлична контрола на моторот.",
+          "desc": "Новите Brembo Stylema сопирачки со четири клипни клешти и 310m дискови испорачуваа одлична сопирачка мож а во комбинација со ABS системот и одлична контрола на моторот.",
           "image": "/images/roadsters/moto2/moto2BikeCaro6.avif"
         },
         {
