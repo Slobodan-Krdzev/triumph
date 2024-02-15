@@ -23,16 +23,17 @@ const MobileCaroItem = ({
       <div className="gray-bg w-full py-8 px-8 text-white">
           <h2 className="uppercase text-3xl font-bold tracking-tighter">{title}</h2>
           <p className="text-lg mb-4 font-medium tracking-tighter">{desc}</p>
-          <div className="flex gap-4">
-            <MainBtn
-              text={link1.text}
+          <div className="flex flex-col items-start gap-4">
+            {link1 && <MainBtn
+              text={link1.text ?? 'Откриј Повеќе'}
               bgBlack={false}
               isLink={true}
               link={link1.url}
-            />
+            />}
+            
             {link2 && (
               <MainBtn
-                text={link1.text}
+                text={link2.text ?? "Откриј Повеќе"}
                 bgBlack={true}
                 isLink={true}
                 link={link2.url}
