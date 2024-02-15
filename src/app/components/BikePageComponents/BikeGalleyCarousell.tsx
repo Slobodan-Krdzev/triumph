@@ -27,6 +27,21 @@ const BikeGalleyCarousell = ({ images }: YoutubeVideoCarousellProps) => {
       disableOnInteraction: false
     },
   };
+
+  if(images.length === 1) {
+
+    return images.map(image => <section 
+        key={image}
+            style={{
+            backgroundImage: `url("${image}")`,
+            backgroundPosition: 'center center',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            height: '100vh',
+            marginTop:'5rem'
+        }}> </section>
+    )
+  }
   
 
   return (
