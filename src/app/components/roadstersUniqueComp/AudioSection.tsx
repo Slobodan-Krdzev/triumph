@@ -1,8 +1,6 @@
-import React from "react";
-import SectionTitleH2 from "../familiySharedComponents/SectionTitleH2";
-import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVolumeHigh } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Image from "next/image";
 import AudioItem from "./AudioItem";
 
 type AudioSectionProps = {
@@ -15,6 +13,7 @@ type AudioSectionProps = {
 
 const AudioSection = ({audio, title, desc, logo, model}:AudioSectionProps) => {
 
+  console.log(logo, "LOGO");
   
   return (
     <section className="lg:px-8 px-4 md:py-12 flex flex-col lg:flex-row justify-between bg">
@@ -27,7 +26,7 @@ const AudioSection = ({audio, title, desc, logo, model}:AudioSectionProps) => {
         </p>
         <p className="mb-4 md:text-xl text-sm capitalize">{model}</p>
         {logo && <Image
-          src={"/images/roadsters/logoAudioSection.png"}
+          src={`${logo}`}
           alt={"Logo"}
           width={160}
           height={44}

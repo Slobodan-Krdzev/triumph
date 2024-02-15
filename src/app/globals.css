@@ -308,7 +308,7 @@ p {
 
 .swiper-pagination span {
   width: 80px; /* Adjust the width as needed */
-  height: 10px; 
+  height: 3px; 
   background-color: var(--secondary-color);
   margin: 0 5px; 
   border-radius: 5px; 
