@@ -13726,7 +13726,15 @@
       "subFamilyPromo": {
         "title": "Н0вата DAytona 660",
         "desc": "Интуитивна, агилна, спортска серија оптимизирана за секојдневен комфорт но со моќен и возбудлив три-цилиндречен погон. Новата Daytona 660 серија е спремна за секаков предизвик. "
-      }
+      },
+      "bikePageImageGallery": [
+        "/images/sport/daytona660/daytona660BikeGalleryCaro1.avif",
+        "/images/sport/daytona660/daytona660BikeGalleryCaro2.avif",
+        "/images/sport/daytona660/daytona660BikeGalleryCaro3.avif",
+        "/images/sport/daytona660/daytona660BikeGalleryCaro4.avif",
+        "/images/sport/daytona660/daytona660BikeGalleryCaro5.avif",
+        "/images/sport/daytona660/daytona660BikeGalleryCaro6.avif"
+      ]
     },
     {
       "id": 61,
@@ -13824,7 +13832,15 @@
       "subFamilyPromo": {
         "title": "НОВАТА TF 250-X СЕРИЈА",
         "desc": "Сосема нова тркачка серија дизајнирана за победи на патеката. Дизајнирана како колаборација со најдобрите Triumph MX инжињери и светски шампиони како Рики Карлмајкл ваа серија е спремна за предизниците кои ќе и ги претставите."
-      }
+      },
+      "bikePageImageGallery": [
+        "/images/offRoad/tf250X/tf250XBikeGalleryCaro1.avif",
+        "/images/offRoad/tf250X/tf250XBikeGalleryCaro2.avif",
+        "/images/offRoad/tf250X/tf250XBikeGalleryCaro3.avif",
+        "/images/offRoad/tf250X/tf250XBikeGalleryCaro4.avif",
+        "/images/offRoad/tf250X/tf250XBikeGalleryCaro5.avif",
+        "/images/offRoad/tf250X/tf250XBikeGalleryCaro6.avif"
+      ]
     }
   ],
   "main-carousell-items": [
