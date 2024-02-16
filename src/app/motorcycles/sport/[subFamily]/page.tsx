@@ -31,9 +31,6 @@ const SportSubFamilyPage = async ({ params }: any) => {
 
     const hasTopSection =
       subFamily.subFamilyPageInfo.hasOwnProperty("topSection");
-
-    console.log("you", hasYoutubeVid);
-
     return (
       <>
         <HeroSection

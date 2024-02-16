@@ -1,3 +1,4 @@
+import BikeGalleyCarousell from "@/app/components/BikePageComponents/BikeGalleyCarousell";
 import BikeTitle from "@/app/components/BikePageComponents/BikeTitle";
 import BikePageCarousell from "@/app/components/BikePageComponents/Carousell/BikePageCarousell";
 import ColorNamePreviewer from "@/app/components/BikePageComponents/ColorNamePreviewer";
@@ -20,11 +21,9 @@ type BikePagePromoType = {
 };
 
 const SportBikePage = async ({ params }: any) => {
+  const subFamilyType = params.subFamily;
 
-  const subFamilyType = params.subFamily
-
-  console.log(subFamilyType, 'SUB FAMILIJA');
-  
+  console.log(subFamilyType, "SUB FAMILIJA");
 
   try {
     const bikeRes = await fetch(`${BIKES}?model=${params.bike}`, {
@@ -33,9 +32,11 @@ const SportBikePage = async ({ params }: any) => {
     const bikeData = await bikeRes.json();
     const bike = bikeData[0];
 
-    const subFamRes = await fetch(`${SUB_FAMILIES}?subFamilyName=${subFamilyType}`);
+    const subFamRes = await fetch(
+      `${SUB_FAMILIES}?subFamilyName=${subFamilyType}`
+    );
     const subFamData = await subFamRes.json();
-    const subFam = subFamData[0]
+    const subFam = subFamData[0];
 
     return (
       <main className="bg-white">
@@ -119,6 +120,10 @@ const SportBikePage = async ({ params }: any) => {
             specNumbers={subFam.subFamilyPageInfo.specNumbers ?? []}
             bgBlack={false}
           />
+        )}
+
+        {bike.bikePageImageGallery && (
+          <BikeGalleyCarousell images={bike.bikePageImageGallery} />
         )}
 
         {bike.bikePageCarousell && (

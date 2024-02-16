@@ -1,3 +1,4 @@
+import BikeGalleyCarousell from "@/app/components/BikePageComponents/BikeGalleyCarousell";
 import BikeTitle from "@/app/components/BikePageComponents/BikeTitle";
 import BikePageCarousell from "@/app/components/BikePageComponents/Carousell/BikePageCarousell";
 import ColorNamePreviewer from "@/app/components/BikePageComponents/ColorNamePreviewer";
@@ -109,6 +110,10 @@ const ClassicsBikePage = async ({ params }: any) => {
           </section>
         )}
 
+        {bike.bikePageImageGallery && (
+          <BikeGalleyCarousell images={bike.bikePageImageGallery} />
+        )}
+
         {bike.bikePageCarousell && (
           <BikePageCarousell items={bike.bikePageCarousell} />
         )}
@@ -138,7 +143,7 @@ const ClassicsBikePage = async ({ params }: any) => {
               desc2="Така ние во Triumph изработува еден мотор. Си модерни „roadster“ спецификации со автентичен „Cafe-Racer“ стил."
               ctaBtn={{
                 text: "Откриј Повеќе",
-                link: "/motorcycles/classic/thruxton-rs/engine",
+                link: "/motorcycles/classics/thruxton-rs/engine",
               }}
               image={{
                 src: "/images/classics/thruxtonRS/thruxtonRSBikePromo1.avif",
@@ -153,7 +158,7 @@ const ClassicsBikePage = async ({ params }: any) => {
               desc2="Напредната технологија е фокусирана на возачот и го подигнува нивото на самодоверба кај возачот и го подобрува возачкото искуство."
               ctaBtn={{
                 text: "Откриј Повеќе",
-                link: "/motorcycles/classic/thruxton-rs/chassis-and-tech",
+                link: "/motorcycles/classics/thruxton-rs/chassis-and-tech",
               }}
               image={{
                 src: "/images/classics/thruxtonRS/thruxtonRSBikePromo2.avif",

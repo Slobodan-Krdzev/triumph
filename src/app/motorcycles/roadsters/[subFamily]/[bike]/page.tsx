@@ -1,3 +1,4 @@
+import BikeGalleyCarousell from '@/app/components/BikePageComponents/BikeGalleyCarousell';
 import BikeTitle from '@/app/components/BikePageComponents/BikeTitle';
 import BikePageCarousell from '@/app/components/BikePageComponents/Carousell/BikePageCarousell';
 import ColorNamePreviewer from '@/app/components/BikePageComponents/ColorNamePreviewer';
@@ -11,6 +12,7 @@ import SpecTableListi from '@/app/components/SubFamily/Specification/SpecTableLi
 import SpecsTable from '@/app/components/SubFamily/Specification/SpecsTable';
 import TextAndImageFlexSection from '@/app/components/familiySharedComponents/TextAndImageFlexSection';
 import { BIKES, SUB_FAMILIES } from '@/app/constants/constants';
+import { redirect } from 'next/navigation';
 
 const RoadstersBikePage = async ({params}: any) => {
     const bikeModel = params.bike;
@@ -99,13 +101,17 @@ const RoadstersBikePage = async ({params}: any) => {
               />
             </section>
           )}
+
+          {bike.bikePageImageGallery && 
+            <BikeGalleyCarousell images={bike.bikePageImageGallery} />
+          }
   
           {bike.bikePageCarousell && (
             <BikePageCarousell items={bike.bikePageCarousell} />
           )}
   
           {bike.bikePagePromo && (
-            <section className="px-4 md:px-24 py-4 md:py-16">
+            <section className="px-4 md:px-24 py-4 md:py-16 m-auto w-11/12 md:w-9/12">
               {bike.bikePagePromo.map((promo: any, idx: number) => (
                 <TextAndImageFlexSection
                   key={promo.title}
@@ -136,8 +142,7 @@ const RoadstersBikePage = async ({params}: any) => {
         </main>
       );
     } catch (err) {
-      console.log(err);
-      return "err";
+      return redirect(`/motorcycles/roadsters/${subFamQuery}`);
     }
 }
 
