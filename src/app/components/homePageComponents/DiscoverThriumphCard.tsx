@@ -20,7 +20,7 @@ const DiscoverThriumphCard = ({
 }: DiscoverThriumphCardProps) => {
   return (
     <div className="basis-full lg:basis-1/2 mb-8 last:mb-0 lg:px-4">
-      <Link href={url}>
+      <Link href={url} target="_blank">
         <div
           className="p-20 md:p-48"
           style={{

@@ -12,19 +12,19 @@ const items = [
   {
     title: "Рушење рекорди. пишување историја ",
     image: "/images/home/races.avif",
-    url: "https://media.triumphracing.com/en/",
+    url: "https://triumph-mediakits.com/en/news/news-listing.html?newstags=tagger-motorsport",
     btnText: "трки",
   },
   {
     title: "Интерактивни искуства",
     image: "/images/home/experience.avif",
-    url: "/for-the-ride/experiences",
+    url: "https://triumph-mediakits.com/en/contacts.html",
     btnText: "искуства",
   },
   {
     title: 'Независни "Thriumph" искуства',
     image: "/images/home/reviews.avif",
-    url: "/for-the-ride/experiences",
+    url: "https://triumph-mediakits.com/en/contacts.html",
     btnText: "искуства",
   },
 ];
