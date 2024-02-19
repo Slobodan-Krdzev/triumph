@@ -15,16 +15,28 @@ class MotorcycleController extends Controller
         return view('layouts.create-moto',);
     }
 
-    // public function listMoto(Request $request)
+    public function listMoto(Request $request)
+    {
+        $data = Motorcycle::get();
+        return view('layouts.view-moto', ['data' => $data]);
+
+
+        $motorcycle = Motorcycle::all();
+
+        return response()->json($motorcycle);
+
+        $category = $request->input('category');
+
+        $motorcycles = Motorcycle::when($category, function ($query) use ($category) {
+            return $query->where('category', $category);
+        })->get();
+
+        // return response()->json($motorcycles);
+    }
+
+
+    // public function indexApi(Request $request)
     // {
-    //     $data = Motorcycle::get();
-    //     // return view('layouts.view-moto', ['data' => $data]);
-
-
-    //     $motorcycle = Motorcycle::all();
-
-    //     return response()->json($motorcycle);
-
     //     $category = $request->input('category');
 
     //     $motorcycles = Motorcycle::when($category, function ($query) use ($category) {
@@ -33,18 +45,6 @@ class MotorcycleController extends Controller
 
     //     return response()->json($motorcycles);
     // }
-
-
-    public function indexApi(Request $request)
-    {
-        $category = $request->input('category');
-
-        $motorcycles = Motorcycle::when($category, function ($query) use ($category) {
-            return $query->where('category', $category);
-        })->get();
-
-        return response()->json($motorcycles);
-    }
 
 
     public function store(Request $request)
@@ -66,7 +66,7 @@ class MotorcycleController extends Controller
 
         $view = match ($category) {
             'classics' => 'layouts.edit-classics',
-            'roadster' => 'layouts.edit-roadster',
+            'roadsters' => 'layouts.edit-roadster',
             'adventure' => 'layouts.edit-moto-default',
             'rocket-3' => 'layouts.edit-rocket-3',
             default => 'layouts.edit-default',
