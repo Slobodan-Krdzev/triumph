@@ -41,7 +41,7 @@ const ClassicsSubFamilyPage = async ({ params }: any) => {
         {hasImageAsHero ? (
           <HeroSection
             image={subFamily.gallery.subFamilyHeroImage.src ?? ""}
-            mobileImage={subFamily.gallery.subFamilyHeroImageMobile?.src ?? "/"}
+            mobileImage={subFamily.gallery.subFamilyHeroImageMobile?.src }
             slogans={subFamily.subFamilyPageInfo.heroSlogans}
             model={formulateSubFamilyTitleOnBanner(subFam)}
           />
@@ -49,7 +49,7 @@ const ClassicsSubFamilyPage = async ({ params }: any) => {
           <HeroSection
             video={subFamily.gallery.subFamilyHeroVideo.src ?? ""}
             slogans={subFamily.subFamilyPageInfo.heroSlogans}
-            mobileImage={subFamily.gallery.subFamilyHeroImageMobile?.src ?? "/"}
+            mobileImage={subFamily.gallery.subFamilyHeroImageMobile?.src }
             model={formulateSubFamilyTitleOnBanner(subFam)}
           />
         )}

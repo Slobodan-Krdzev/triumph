@@ -27,13 +27,13 @@ const HeroSection = ({
 }: HeroSectionProps) => {
 
   const doesItContainOffRoad = Boolean(image?.split('/').find(item => item === 'offRoad'));
-  
-
+ 
   if (video) {
     return (
       <section className="relative">
         <video autoPlay muted loop className="w-full hidden lg:block " src={video} playsInline></video>
-        <Image className="block lg:hidden " src={mobileImage ?? ""} alt={model ?? "Hero Image" } width={1000} height={425} loading="lazy"/>
+        
+        <Image className="block lg:hidden " src={mobileImage ?? "/images/triumphLogo.png"} alt={model ?? "Hero Image" } width={1000} height={425} loading="lazy"/>
         <div
           className="absolute text-white flex flex-col items-center"
           style={{

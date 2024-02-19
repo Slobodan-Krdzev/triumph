@@ -9,7 +9,7 @@ import { useSearchParams } from "next/navigation";
 
 export type CarousellItemType = {
   image?: string;
-  imageMobile? :string
+  imageMobile?: string;
   video?: string;
   title: string;
   desc: string;
@@ -55,13 +55,13 @@ const MainCarousell = ({ items = [] }: MainCarousellProps) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setProgress((prevProgress) => {
-        const newProgress = prevProgress + 1;
+        const newProgress = prevProgress + 0.125;
         if (newProgress >= 100) {
           clearInterval(interval);
         }
         return newProgress;
       });
-    }, 85);
+    }, 10.5);
 
     return () => {
       setProgress(0);
@@ -72,7 +72,6 @@ const MainCarousell = ({ items = [] }: MainCarousellProps) => {
   if (breakpoint >= 1024) {
     return (
       <div className="relative overflow-hidden" style={{ height: "90vh" }}>
-        
         <div
           style={{ transform: `translate(-${activeIndex * 100}%)` }}
           className="transition-transform delay-300 ease-in-out flex"
@@ -100,9 +99,20 @@ const MainCarousell = ({ items = [] }: MainCarousellProps) => {
         <div className="absolute top-0 h-full right-0 flex flex-row">
           <button
             onClick={() => updateIndex(activeIndex + 1)}
-            className="gradient-caro-btn-left-to-right bg-transparent h-full z-20 text-black  w-20 flex flex-col justify-end items-center pb-10"
+            className="gradient-caro-btn-left-to-right bg-transparent h-full z-20 text-black  w-20 flex flex-col justify-end items-center pb-10 relative"
             style={{ right: "0%" }}
           >
+            <div
+              className="red-bg-color h-2  absolute"
+              style={{
+                width: `5%`,
+
+                height: `${progress + 2}%`,
+                transform: 'rotate(180deg)',
+                left: 0,
+                bottom: 0
+              }}
+            ></div>
             <p className="rotate-90 text-white font-semibold uppercase font-xl mb-5">
               {"Следно"}
             </p>

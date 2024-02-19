@@ -3,19 +3,20 @@ import { CarousellItemType } from "../MainCarousell";
 import MobileCaroItem from "./MobileCaroItem";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import LoadingBar from "react-top-loading-bar";
 
 type MobileCarousellProps = {
   items: CarousellItemType[];
   progress: number;
   activeIndex: number;
-  updateIndex: (index: number) => void;
+  updateIndex: (index: number) => void
 };
 
 const MobileCarousell = ({
   items = [],
   progress,
   activeIndex,
-  updateIndex,
+  updateIndex
 }: MobileCarousellProps) => {
   return (
     <section className="relative overflow-hidden">
@@ -50,7 +51,7 @@ const MobileCarousell = ({
         <div
           className="red-bg-color h-2"
           style={{
-            width: `${progress}%`,
+            width: `${progress + 2}%`,
             height: "100%",
           }}
         ></div>
