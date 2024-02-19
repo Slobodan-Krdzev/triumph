@@ -132,15 +132,15 @@ const ClassicPage = async () => {
             ))}
           </section>
 
-          <section className="lg:py-16 lg:px-8 flex flex-col ">
+          {/* <section className="lg:py-16 lg:px-8 flex flex-col ">
             <div className="text-center">
               <SectionTitleH2 text="Новата Stealth Серија" color="dark" />
             </div>
             
             <StelthCarousell bikes={getBikesByEdition("stealth", bikes)} />
-          </section>
+          </section> */}
 
-          <section className="my-8">
+          {/* <section className="my-8">
             <div className="text-center lg:w-2/4 w-full px-4 lg:px-0 m-auto">
               <SectionTitleH2 text="Chrome Колекција" color="dark" />
               <PageParagraph
@@ -154,7 +154,7 @@ const ClassicPage = async () => {
             </div>
 
             <BikeListingNoSlider bikes={getBikesByEdition("chrome", bikes)} />
-          </section>
+          </section> */}
 
           {familyData[0].grayCaro && (
             <BottomCarousell items={familyData[0].grayCaro} />

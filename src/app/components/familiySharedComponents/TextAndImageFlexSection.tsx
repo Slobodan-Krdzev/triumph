@@ -34,7 +34,7 @@ const TextAndImageFlexSection = ({
           <SectionTitleH2 text={title ?? ''} color={textWhite ? "white" : "dark"} />
           <PageParagraph marginBot={true} text={textMain} />
 
-          {textSecondary && <PageParagraph text={textSecondary} />}
+          {textSecondary && <PageParagraph text={textSecondary} marginBot={false}/>}
         </div>
       </div>
     </section>

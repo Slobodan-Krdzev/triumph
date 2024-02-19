@@ -54,7 +54,7 @@ const ClassicsSubFamilyPage = async ({ params }: any) => {
           />
         )}
 
-        <main className="bg-white">
+        <main className="bg-white ">
           <TopSection
             title={subFamily.subFamilyPageInfo.topSection.title ?? ""}
             desc={subFamily.subFamilyPageInfo.topSection.desc ?? ""}

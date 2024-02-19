@@ -315,6 +315,7 @@ p {
   cursor: pointer;
 }
 
+
 /* CUSTOMIZATION PAGE ACTIONS POSITIONING */
 
 .actions {
@@ -332,6 +333,41 @@ p {
   margin-right: 4rem;
 }
 
+.subFamilyTopSectionBackgroundImage{
+  background-size: cover;
+  height: 100vh;
+
+}
+
+.bikeGalleryCarousell{
+  background-size: cover;
+  height: 100vh;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .swiper-button-prev {
+    margin-left: 1rem;
+    visibility: hidden;
+  }
+  
+  .swiper-button-next {
+    margin-right: 1rem;
+    visibility: hidden;
+
+  }
+
+  .subFamilyTopSectionBackgroundImage{
+    background-size: contain;
+    height: 90vh;
+  }
+
+  .bikeGalleryCarousell{
+    height: 90vh;
+    background-size: contain;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .actions {
     
@@ -340,16 +376,18 @@ p {
     left: unset;
   }
 
-  .swiper-button-prev {
-    margin-left: 1rem;
-  }
-  
-  .swiper-button-next {
-    margin-right: 1rem;
-  }
-
   .swiper-pagination span{
     display: none;
+  }
+
+  .subFamilyTopSectionBackgroundImage{
+    background-size: contain;
+    height: 50vh;
+  }
+
+  .bikeGalleryCarousell{
+    height: 50vh;
+    background-size: contain;
   }
 }
 

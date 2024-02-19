@@ -46,10 +46,10 @@ const LatestModelsCarousellSection = ({items, showTitle}: LatesModelsCarousellSe
           </p>
           <div className="flex justify-between gap-4">
             <button onClick={() => updateIndex(activeIndex - 1)}>
-              <FontAwesomeIcon icon={faArrowLeft} />
+              <FontAwesomeIcon icon={faArrowLeft} size="lg"/>
             </button>
             <button onClick={() => updateIndex(activeIndex + 1)}>
-              <FontAwesomeIcon icon={faArrowRight} />
+              <FontAwesomeIcon icon={faArrowRight} size="lg"/>
             </button>
           </div>
         </div>

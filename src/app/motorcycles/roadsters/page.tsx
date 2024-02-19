@@ -3,12 +3,9 @@ import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeI
 import PageHeroSection from "@/app/components/familiySharedComponents/PageHeroSection";
 import TextAndImageFlexSection from "@/app/components/familiySharedComponents/TextAndImageFlexSection";
 import { createSubFamLinksForSecondary } from "@/app/components/helpers/createSubFamLinksForSecondary";
-import { formSecondaryNavItems } from "@/app/components/helpers/formSecondaryNavItems";
 import AudioSection from "@/app/components/roadstersUniqueComp/AudioSection";
-import SecondaryNavBar, { SecondaryNavItemsType } from "@/app/components/whiteSecondaryNavBar/SecondaryNavBar";
-import { BIKES, FAMILIES, PROMOS, SUB_FAMILIES } from "@/app/constants/constants";
+import { FAMILIES, PROMOS, SUB_FAMILIES } from "@/app/constants/constants";
 import { PromoDataType } from "@/app/types/HomeTypes/SharedTypes/types";
-import React from "react";
 
 const RoadstersPage = async () => {
 
@@ -34,7 +31,7 @@ const RoadstersPage = async () => {
           video={familyData[0].familyPageBannerVideo ?? ""}
         />
 
-        <main className="p-4 lg:p-28 bg-white">
+        <main className="py-4 md:py-8 lg:py-16 m-auto w-11/12 md:w-9/12">
           <TextAndImageFlexSection
             imageLeft={false}
             title={"Генерацискиот Трицилиндричен Мотор"}

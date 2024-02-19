@@ -77,7 +77,7 @@ const BikePage = async ({ params }: any) => {
             </div>
           </div>
         </section>
-        <section className="py-4 md:py-1">
+        <section className="py-4 md:py-8 lg:py-16">
           <h2 className="uppercase text-2xl md:text-5xl font-semibold text-center mb-4 md:mb-8">
             Спецификација
           </h2>
@@ -104,11 +104,13 @@ const BikePage = async ({ params }: any) => {
         )}
 
         {bike.features && (
-          <SpecTableListi
-            items={bike.features}
-            title={"Карактеристики"}
-            isOpen={true}
-          />
+          <section className="w-11/12 m-auto md:w-8/12 py-4 md:py-8 lg:py-16">
+            <SpecTableListi
+              items={bike.features}
+              title={"Карактеристики"}
+              isOpen={true}
+            />
+          </section>
         )}
 
         {bike.bikePageImageGallery && (
