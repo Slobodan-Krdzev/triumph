@@ -25,15 +25,15 @@ const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
     <div className="flex">
       <div className=" flex flex-col gap-6 basis-2/12 pt-8">
         <ul>
-          {families?.map((filter: any) => (
-            <li key={filter}>
+          {families?.map((filter: any, idx:number) => (
+            <li key={idx}>
               <button
                 className={`${
-                  family === filter ? "text-red-600" : "text-black"
+                  family === filter.type ? "text-red-600" : "text-black"
                 } uppercase font-semibold text-lg  focus:text-red-700`}
-                onClick={() => setFamily(filter)}
+                onClick={() => setFamily(filter.type)}
               >
-                {filter}
+                {filter.type}
               </button>
             </li>
           ))}
@@ -126,7 +126,7 @@ const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
         )}
       </div>
       <div className="basis-6/12 py-8">
-        <MotorcycleInfo bike={bikeToRender} bikes={bikes} />
+        <MotorcycleInfo bike={bikeToRender}/>
       </div>
     </div>
   );

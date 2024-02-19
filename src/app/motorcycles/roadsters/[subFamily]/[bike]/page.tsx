@@ -6,7 +6,6 @@ import CustomizationColorsListing from '@/app/components/BikePageComponents/Cust
 import ImagePreview from '@/app/components/BikePageComponents/ImagePreview';
 import PricePriviewer from '@/app/components/BikePageComponents/PricePriviewer';
 import PromoBikeYoutubeVideo from '@/app/components/BikePageComponents/PromoBikeYoutubeVideo';
-import GrayBand from '@/app/components/GrayBand';
 import MainBtn from '@/app/components/MainBtn';
 import SpecTableListi from '@/app/components/SubFamily/Specification/SpecTableListi';
 import SpecsTable from '@/app/components/SubFamily/Specification/SpecsTable';
@@ -127,18 +126,7 @@ const RoadstersBikePage = async ({params}: any) => {
             </section>
           )}
   
-          <GrayBand
-            itemOne={{
-              text: "Контакт",
-              url: "/dealers/dealer-search",
-              icon: "/pin.svg",
-            }}
-            itemTwo={{
-              text: "КОНФИГУРАЦИЈА",
-              url: `/configure/families/roadsters`,
-              icon: "/icon-configurator.svg",
-            }}
-          />
+          
         </main>
       );
     } catch (err) {

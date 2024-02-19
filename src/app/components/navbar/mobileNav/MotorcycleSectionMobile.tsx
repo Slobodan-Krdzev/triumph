@@ -71,9 +71,9 @@ const MotorcycleSectionMobile = ({
             <li key={`${family.id} + ${idx}`}>
               <button
                 className="text-lg font-semibold mb-1 uppercase"
-                onClick={() => handleMotorsSection(family)}
+                onClick={() => handleMotorsSection(family.type)}
               >
-                {family}
+                {family.type}
               </button>
             </li>
           ))}

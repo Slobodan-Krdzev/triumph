@@ -3,12 +3,11 @@ import { motion, useAnimation } from "framer-motion";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useEffect } from "react";
 import AccessoriesNavSection from "./AccessoriesNavSection";
-import MotorcyclesNavSection from "./MotorcyclesNavSection";
 import ClothingNavSection from "./ClothingNavSection";
-import OwnersNavSection from "./OwnersNavSection";
 import DiscoverNavSection from "./DiscoverNavSection";
-import { handleBodyScrollWhenMenuIsOpen } from "../helpers/handleBodyScrollWhenMenuOpens";
 import Locations from "./Locations";
+import MotorcyclesNavSection from "./MotorcyclesNavSection";
+import OwnersNavSection from "./OwnersNavSection";
 
 type Props = {
   families: any[];
@@ -46,6 +45,8 @@ const SectionContent = ({ families, bikes, bikeToRender }: Props) => {
   useEffect(() => {
     router.push(`${pathname}?navItem=${query}&bikeID=1`, {scroll: false});
   }, []);
+
+  
 
   return (
     <motion.section

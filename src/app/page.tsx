@@ -31,10 +31,10 @@ const linkCardsSection: HomeCardLinkType[] = [
 export default async function Home() {
 
     try {
-      const mainCarousellItemsRes = await fetch(`${MAINCAROUSELLITEMS}`, {cache: 'no-store'})
+      const mainCarousellItemsRes = await fetch(`${MAINCAROUSELLITEMS}`, {next: {revalidate: 3000}})
       const mainCarousellItems = await mainCarousellItemsRes.json()
 
-      const latestCarousellItemsRes = await fetch(`${LATESTCAROUSELLITEMS}`, {cache: "no-store"})
+      const latestCarousellItemsRes = await fetch(`${LATESTCAROUSELLITEMS}`, {next: {revalidate: 3000}})
       const latestCarousellitems = await latestCarousellItemsRes.json()
 
       return (

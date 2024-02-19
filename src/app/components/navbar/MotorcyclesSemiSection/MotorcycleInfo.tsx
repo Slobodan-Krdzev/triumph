@@ -3,7 +3,6 @@ import MainBtn from "../../MainBtn";
 
 type MotorcycleInfoProps = {
   bike: any;
-  bikes: any[];
 };
 
 const MotorcycleInfo = ({ bike }: MotorcycleInfoProps) => {
@@ -32,7 +31,7 @@ const MotorcycleInfo = ({ bike }: MotorcycleInfoProps) => {
       <div className="flex justify-between items-end">
         <Image
           src={bike[0]?.gallery.modelImage.src ?? "/images/triumphLogo.png"}
-          alt={bike[0]?.gallery.modelImage.src}
+          alt={bike[0]?.gallery.modelImage.src ?? "Triumph"}
           width={422}
           height={241}
           className="basis-1/2"
