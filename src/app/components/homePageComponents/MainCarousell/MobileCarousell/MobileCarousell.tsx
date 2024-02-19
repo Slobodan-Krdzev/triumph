@@ -1,9 +1,7 @@
-import React from "react";
-import { CarousellItemType } from "../MainCarousell";
-import MobileCaroItem from "./MobileCaroItem";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import LoadingBar from "react-top-loading-bar";
+import { CarousellItemType } from "../MainCarousell";
+import MobileCaroItem from "./MobileCaroItem";
 
 type MobileCarousellProps = {
   items: CarousellItemType[];

@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 import { useBreakpoint } from "../../helpers/useBreakpoint";
 import MainCarousellItem from "./MainCarousellItem";
 import MobileCarousell from "./MobileCarousell/MobileCarousell";
-import { useSearchParams } from "next/navigation";
 
 export type CarousellItemType = {
   image?: string;
