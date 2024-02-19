@@ -54,26 +54,30 @@ export const footerLists = [
   },
 ];
 
-const Footer = () => {
+type FooterProps = {
+  families: any[]
+}
 
-    const [families, setFamilies] = useState<any[]>([])
+const Footer = ({families}: FooterProps) => {
+
+    // const [families, setFamilies] = useState<any[]>([])
 
     const breakpoint = useBreakpoint()
     
 
-    useEffect(() => {
+    // useEffect(() => {
 
-       fetch(FAMILIES)
-       .then(res => res.json())
-       .then(data => {
-
-
-
-          setFamilies( data.map((family: any) => family.type))
-       })
+    //    fetch(FAMILIES)
+    //    .then(res => res.json())
+    //    .then(data => {
 
 
-    }, [])
+
+    //       setFamilies( data.map((family: any) => family.type))
+    //    })
+
+
+    // }, [])
    
 
     if(families.length > 0) {

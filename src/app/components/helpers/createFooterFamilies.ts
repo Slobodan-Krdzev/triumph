@@ -6,8 +6,8 @@ export const createFamilies = (familyItems: string[]) => {
 
       finalFamilies.push({
         id: idx,
-        url: `/motorcycles/${family}`,
-        text: family
+        url: `/motorcycles/${family.type}`,
+        text: family.type
       })
     })
 
