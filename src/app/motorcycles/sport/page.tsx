@@ -33,7 +33,7 @@ const SportBikePage = async ({ params }: any) => {
           configLink={"/configure"}
         />
 
-        <HeroSection video={family.familyPageBannerVideo} bigTitle="Sport" />
+        <HeroSection video={family.familyPageBannerVideo} bigTitle="Sport" mobileImage="/images/sport/famPageVideoPoster.avif"/>
 
         <section className="text-white text-center px-6 py-4 md:py-8 lg:py-16">
           <div className="lg:w-5/12 w-10/12 m-auto">
