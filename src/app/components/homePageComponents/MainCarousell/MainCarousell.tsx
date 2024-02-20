@@ -79,7 +79,8 @@ const MainCarousell = ({ items = [] }: MainCarousellProps) => {
             <MainCarousellItem key={idx} item={item} />
           ))}
         </div>
-        <button
+        {activeIndex >= 1 && 
+          <button
           onClick={() => updateIndex(activeIndex - 1)}
           className="gradient-caro-btn-right-to-left absolute z-20 bg-transparent text-black top-0 h-full  w-18 flex flex-col justify-end items-center pb-10"
           style={{ right: "80px" }}
@@ -94,35 +95,39 @@ const MainCarousell = ({ items = [] }: MainCarousellProps) => {
             className="mt-5"
           />
         </button>
-
+        }
+        
+        {(activeIndex + 1) !== items.length && 
         <div className="absolute top-0 h-full right-0 flex flex-row">
-          <button
-            onClick={() => updateIndex(activeIndex + 1)}
-            className="gradient-caro-btn-left-to-right bg-transparent h-full z-20 text-black  w-20 flex flex-col justify-end items-center pb-10 relative"
-            style={{ right: "0%" }}
-          >
-            <div
-              className="red-bg-color h-2  absolute"
-              style={{
-                width: `5%`,
+        <button
+          onClick={() => updateIndex(activeIndex + 1)}
+          className="gradient-caro-btn-left-to-right bg-transparent h-full z-20 text-black  w-20 flex flex-col justify-end items-center pb-10 relative"
+          style={{ right: "0%" }}
+        >
+          <div
+            className="red-bg-color h-2  absolute"
+            style={{
+              width: `5%`,
 
-                height: `${progress + 2}%`,
-                transform: 'rotate(180deg)',
-                left: 0,
-                bottom: 0
-              }}
-            ></div>
-            <p className="rotate-90 text-white font-semibold uppercase font-xl mb-5">
-              {"Следно"}
-            </p>
-            <FontAwesomeIcon
-              icon={faArrowRight}
-              color="white"
-              size="lg"
-              className="mt-5"
-            />
-          </button>
-        </div>
+              height: `${progress + 2}%`,
+              transform: 'rotate(180deg)',
+              left: 0,
+              bottom: 0
+            }}
+          ></div>
+          <p className="rotate-90 text-white font-semibold uppercase font-xl mb-5">
+            {"Следно"}
+          </p>
+          <FontAwesomeIcon
+            icon={faArrowRight}
+            color="white"
+            size="lg"
+            className="mt-5"
+          />
+        </button>
+      </div>
+        }
+        
       </div>
     );
   }

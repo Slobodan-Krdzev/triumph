@@ -8,7 +8,7 @@ const MotorcyclesNavSection = ({families, bikes, bikeToRender}: any) => {
 
   return (
     <>
-      <div className="lg:px-48">
+      <div className="lg:px-16 2xl:px-48">
         <ul className="flex font-bold text-md gap-6 mt-4">
           <li>
             <button className="uppercase py-3 px-4 rounded-t-md text-neutral-500 focus:text-black hover:text-black" onClick={() => setAreMotorsShown(true)}
@@ -32,7 +32,7 @@ const MotorcyclesNavSection = ({families, bikes, bikeToRender}: any) => {
         </ul>
       </div>
 
-      <div className="bg-white px-52">
+      <div className="bg-white lg:px-20 2xl:px-52">
         {areMotorsShown ? (
           <>
             <MotorcyclesNav families={families} bikes={bikes} bikeToRender={bikeToRender}/>

@@ -61,7 +61,7 @@ const SectionContent = ({ families, bikes, bikeToRender }: Props) => {
         top: 64,
         left: 0,
         width: "100%",
-        zIndex: 9999,
+        zIndex: 9999
       }}
     >
       {query === "Motorcycles" && (

@@ -22,7 +22,7 @@ const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
   const [family, setFamily] = useState("adventure");
 
   return (
-    <div className="flex">
+    <div className="flex ">
       <div className=" flex flex-col gap-6 basis-2/12 pt-8">
         <ul>
           {families?.map((filter: any, idx:number) => (

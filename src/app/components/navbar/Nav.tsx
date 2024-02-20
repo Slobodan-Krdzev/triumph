@@ -59,7 +59,7 @@ const Nav = ({ fams, allBikes }: NavProps) => {
       </>
     );
   } catch {
-    <>err</>;
+   return <>err</>;
   }
 };
 
