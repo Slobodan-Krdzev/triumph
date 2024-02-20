@@ -32,7 +32,7 @@ const PageHeroSection = ({
               height={35}
             />
           )}
-          <p className="lg:text-lg mb-20 lg:w-3/4">{desc}</p>
+          <p className="lg:text-lg mb-20 lg:w-3/4 font-medium ">{desc}</p>
           <div className="text-white pb-10">
             <p className="text-xs lg:font-semibold">DISCOVER MORE</p>
           </div>

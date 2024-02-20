@@ -59,12 +59,12 @@ const BikeGalleyCarousell = ({ images }: YoutubeVideoCarousellProps) => {
       >
         {images.map((item, idx:number) => (
           <SwiperSlide key={`${item} + ${idx}`}>
-            <section style={{
+            <section
+            className="bikeGalleryCarousell"
+            style={{
                 backgroundImage: `url("${item}")`,
                 backgroundPosition: 'center center',
-                backgroundSize: 'cover',
-                backgroundRepeat: 'no-repeat',
-                height: '100vh'
+                backgroundRepeat: 'no-repeat'
             }}>
 
             </section>

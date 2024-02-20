@@ -1,6 +1,6 @@
 "use client";
 import "swiper/css";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 // import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
@@ -19,33 +19,37 @@ type BottomCarousellProps = {
 const BottomCarousell = ({ items }: BottomCarousellProps) => {
   if (items.length > 0) {
     return (
-      <section className="py-20 gray-bg">
+      <section className="py-8 md:py-20 gray-bg">
         <Swiper
           navigation={true}
-          modules={[Navigation]}
+          modules={[Navigation, Autoplay]}
           tag="div"
-          className="text-white "
+          className="text-white bottomCaroSwiper"
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: true
+          }}
         >
           {items.map((item) => (
             <SwiperSlide key={item.id}>
               <div
-                className="carousell-classics relative"
+                className="carousell-classics relative flex flex-col "
                 style={{
                   backgroundImage: `url('${item.image}')`,
                   backgroundSize: "cover",
                   backgroundRepeat: "no-repeat",
                   backgroundPosition: "center center",
-                  minHeight: "80vh",
+                  height: "80vh",
                 }}
               >
                 <div
-                  className="text-white z-10 absolute lg:w-2/5 md:w-3/5 w-full overflow-visible "
-                  style={{ top: "10%", left: "15%" }}
+                  className="text-white z-10 flex flex-col justify-center items-center w-full ml-0 md:ml-20 lg:ml-40 md:w-6/12 lg:w-4/12"
+                  // style={{ top: "10%", left: "15%" }}
                 >
-                  <h3 className="text-2xl md:text-3xl lg:text-5xl tracking-tighter uppercase font-medium mb-4">
+                  <h3 className="text-2xl md:text-3xl lg:text-5xl tracking-tighter uppercase font-medium mb-4 w-11/12">
                     {item.title}
                   </h3>
-                  <p className="text-md leading-5 font-medium md:text-xl lg:text-2xl tracking-tighter w-3/4">
+                  <p className="text-md leading-5 font-medium md:text-xl lg:text-2xl tracking-tighter w-11/12">
                     {item.desc}
                   </p>
                 </div>

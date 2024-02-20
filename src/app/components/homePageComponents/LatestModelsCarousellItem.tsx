@@ -25,9 +25,9 @@ const LatestModelsCarousellItem = ({
         
       </div>
       <div className="basis-1/2 flex flex-col px-16 justify-center items-start">
-        <div className="w-4/12">
+        <div className="w-8/12">
         <SectionTitleH2 text={title} color={"dark"} />
-        <p className="mb-8">{desc}</p>
+        <p className="mb-8 text-xl">{desc}</p>
         {url && <MainBtn
           text={"Детали"}
           bgBlack={true}

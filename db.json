@@ -14115,15 +14115,6 @@
       "btnBlack": true
     },
     {
-      "id": 7,
-      "category": "classics",
-      "title": "Нова 'Stealth' Серија",
-      "subFamilyType": "stealth-edition",
-      "desc": "Темно и софистицирано, но сепак смело и живо. Достапна само една година, оваа неверојатна колекција се одликува со неверојатен финиш на боја по ваша нарачка.",
-      "image": "/images/classics/stealthEdition.avif",
-      "btnBlack": true
-    },
-    {
       "id": 8,
       "category": "roadsters",
       "title": "НОВИОТ STREET TRIPLE 765",
@@ -14154,18 +14145,9 @@
       "id": 11,
       "category": "roadsters",
       "title": "НАЈНОВИОТ SPEED TRIPLE 1200 RS",
-      "subFamilyType": "speed-triple-1200/speed-triple-1200-rs",
+      "subFamilyType": "speed-triple-1200-rs/speed-triple-1200-rs",
       "desc": "Најмоќниот, динамичен и технолошки напреден Speed Triple мотор некогаш изработен. Цени од  €18,990.00.",
       "image": "/images/roadsters/roadstersPromoSpeedRS.avif",
-      "btnBlack": false
-    },
-    {
-      "id": 12,
-      "category": "roadsters",
-      "title": "3-ЦИЛИНДРИЧЕН MOTO2™ МОТОР",
-      "subFamilyType": "/for-the-ride/racing/moto2/engine",
-      "desc": "Потрагата по  подобар квалитет не доведе до изработна на нови 'street' мотори кои се карактеризираат со неверојатна моќност, врвни перформанси и фукнционалност. Резултат на сето ова е нај-напредната серија на 'naked' мотори кои некогаш сме ги изработиле, дизајнирани за забава и на патека и на нормални патишта.",
-      "image": "/images/roadsters/roadstersPromoMoto2.avif",
       "btnBlack": false
     },
     {
