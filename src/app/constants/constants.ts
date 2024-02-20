@@ -1,7 +1,7 @@
-export const BIKES = "https://eminent-savory-tarp.glitch.me/bikes";
-export const FAMILIES = "https://eminent-savory-tarp.glitch.me/families";
-export const SUB_FAMILIES = "https://eminent-savory-tarp.glitch.me/subFamilies";
-export const MAINCAROUSELLITEMS = "https://eminent-savory-tarp.glitch.me/main-carousell-items"
-export const LATESTCAROUSELLITEMS = "https://eminent-savory-tarp.glitch.me/latest-models-carousell-items"
-export const PROMOS = "https://eminent-savory-tarp.glitch.me/promos"
+export const BIKES = "hammerhead-shade-bagpipe.glitch.me/bikes";
+export const FAMILIES = "hammerhead-shade-bagpipe.glitch.me/families";
+export const SUB_FAMILIES = "hammerhead-shade-bagpipe.glitch.me/subFamilies";
+export const MAINCAROUSELLITEMS = "hammerhead-shade-bagpipe.glitch.me/main-carousell-items"
+export const LATESTCAROUSELLITEMS = "hammerhead-shade-bagpipe.glitch.me/latest-models-carousell-items"
+export const PROMOS = "hammerhead-shade-bagpipe.glitch.me/promos"
 
