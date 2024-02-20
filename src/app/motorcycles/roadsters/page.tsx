@@ -26,7 +26,7 @@ const RoadstersPage = async () => {
       <SecondaryNavFamily items={createSubFamLinksForSecondary(subFamilies)} title={"Roadsters"} configLink={"/configure"} />
 
         <PageHeroSection
-          title={"Roadsters"}
+          title={"roadsters"}
           desc={familyData[0].familyPageBannerDesc ?? ""}
           video={familyData[0].familyPageBannerVideo ?? ""}
         />

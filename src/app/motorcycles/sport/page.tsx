@@ -29,7 +29,7 @@ const SportBikePage = async ({ params }: any) => {
       <main className="bg-black">
         <SecondaryNavFamily
           items={createSubFamLinksForSecondary(subFamilies)}
-          title={"Sport"}
+          title={"sport"}
           configLink={"/configure"}
         />
 

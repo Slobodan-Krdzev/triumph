@@ -31,7 +31,7 @@ const ClassicPage = async () => {
     return (
       <>
         <PageHeroSection
-          title={`modern  ${familyData[0].type}`}
+          title={`${familyData[0].type}`}
           video={familyData[0].familyPageBannerVideo}
         />
 
