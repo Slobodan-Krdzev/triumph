@@ -35,7 +35,7 @@ const HeroSection = ({
           filter: 'brightness(65%)'
         }}></video>
         
-        <Image className="block lg:hidden " src={mobileImage ?? "/images/triumphLogo.png"} alt={model ?? "Hero Image" } width={1000} height={425} loading="lazy"/>
+        <Image className="block lg:hidden" src={mobileImage ?? "/images/triumphLogo.png"} alt={model ?? "Hero Image" } width={1000} height={425} loading="lazy"/>
         <div
           className="absolute text-white flex flex-col items-center"
           style={{

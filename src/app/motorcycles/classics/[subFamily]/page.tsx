@@ -13,8 +13,6 @@ import { redirect } from "next/navigation";
 const ClassicsSubFamilyPage = async ({ params }: any) => {
   const subFam = params.subFamily;
 
-  console.log(subFam);
-
   try {
     const subFamilyRes = await fetch(
       `${SUB_FAMILIES}?subFamilyName=${subFam}`,
@@ -33,9 +31,6 @@ const ClassicsSubFamilyPage = async ({ params }: any) => {
     const hasImageAsHero =
       subFamily.gallery.hasOwnProperty("subFamilyHeroImage");
 
-
-      console.log(bikes);
-      
     return (
       <>
         {hasImageAsHero ? (

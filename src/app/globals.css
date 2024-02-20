@@ -350,6 +350,12 @@ p {
   padding: 30px 20px;
 }
 
+.bikeGallerySinglePic {
+  margin-top: 4rem;
+  background-size: cover;
+  height: 100vh;
+}
+
 
 @media screen and (max-width: 1200px) {
 
@@ -370,6 +376,12 @@ p {
   }
 
   .bikeGalleryCarousell{
+    height: 90vh;
+    background-size: contain;
+  }
+
+  .bikeGallerySinglePic {
+    margin-top: 2rem;
     height: 90vh;
     background-size: contain;
   }
@@ -394,6 +406,12 @@ p {
   }
 
   .bikeGalleryCarousell{
+    height: 50vh;
+    background-size: contain;
+  }
+
+  .bikeGallerySinglePic {
+    margin-top:1rem;
     height: 50vh;
     background-size: contain;
   }

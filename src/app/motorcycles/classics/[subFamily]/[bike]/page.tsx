@@ -6,28 +6,27 @@ import CustomizationColorsListing from "@/app/components/BikePageComponents/Cust
 import ImagePreview from "@/app/components/BikePageComponents/ImagePreview";
 import PricePriviewer from "@/app/components/BikePageComponents/PricePriviewer";
 import PromoBikeYoutubeVideo from "@/app/components/BikePageComponents/PromoBikeYoutubeVideo";
-import GrayBand from "@/app/components/GrayBand";
 import MainBtn from "@/app/components/MainBtn";
 import SpecTableListi from "@/app/components/SubFamily/Specification/SpecTableListi";
 import SpecsTable from "@/app/components/SubFamily/Specification/SpecsTable";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
 import TextAndImageFlexSection from "@/app/components/familiySharedComponents/TextAndImageFlexSection";
-import { BIKES, FAMILIES, SUB_FAMILIES } from "@/app/constants/constants";
-import React from "react";
+import { BIKES, SUB_FAMILIES } from "@/app/constants/constants";
 
 const ClassicsBikePage = async ({ params }: any) => {
   const bikeModel = params.bike;
   const subFamQuery = params.subFamily;
 
   try {
-    const bikeRes = await fetch(`${BIKES}?model=${params.bike}`, {
+    const bikeRes = await fetch(`${BIKES}?model=${bikeModel}`, {
       cache: "no-store",
     });
     const bikeData = await bikeRes.json();
     const bike = bikeData[0];
 
     const subFamRes = await fetch(
-      `${SUB_FAMILIES}?subFamilyName=${subFamQuery}`
+      `${SUB_FAMILIES}?subFamilyName=${subFamQuery}`,
+      { cache: "no-store" }
     );
     const subFamData = await subFamRes.json();
     const subFam = subFamData[0];
@@ -74,7 +73,7 @@ const ClassicsBikePage = async ({ params }: any) => {
             </div>
           </div>
         </section>
-        <section className="py-4 md:py-1">
+        <section className="py-8 md:pb-8 lg:py-16">
           <h2 className="uppercase text-2xl md:text-5xl font-semibold text-center mb-4 md:mb-8">
             Спецификација
           </h2>
@@ -119,7 +118,7 @@ const ClassicsBikePage = async ({ params }: any) => {
         )}
 
         {bike.bikePagePromo && (
-          <section className="m-auto w-full md:w-10/12 lg:w-9/12 px-4 md:px-24 py-4 md:py-16">
+          <section className="m-auto w-full md:w-10/12 lg:w-9/12 px-4 md:px-24 py-4 md:py-16 flex flex-col gap-6 md:gap-0">
             {bike.bikePagePromo.map((promo: any, idx: number) => (
               <TextAndImageFlexSection
                 key={promo.title}

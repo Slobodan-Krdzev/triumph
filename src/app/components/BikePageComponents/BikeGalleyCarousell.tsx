@@ -30,15 +30,12 @@ const BikeGalleyCarousell = ({ images }: YoutubeVideoCarousellProps) => {
 
   if(images.length === 1) {
 
-    return images.map(image => <section 
+    return images.map(image => <section  className="bikeGallerySinglePic"
         key={image}
             style={{
             backgroundImage: `url("${image}")`,
             backgroundPosition: 'center center',
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat',
-            height: '100vh',
-            marginTop:'5rem'
+            backgroundRepeat: 'no-repeat'
         }}> </section>
     )
   }
