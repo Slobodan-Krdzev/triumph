@@ -1,28 +1,14 @@
-import SecondaryNavBar from "@/app/components/whiteSecondaryNavBar/SecondaryNavBar";
 import Link from "next/link";
-import React from "react";
-
-const termsSedondaryItems = [
-    {
-        text: "Site Terms and Conditions",
-        link: "/global-content/terms-and-conditions"
-    },
-    {
-        text: "Privacy Policy",
-        link: "/global-content/privacy-policies"
-    }
-]
 
 const TermsPage = () => {
   return (
     <>
-    <SecondaryNavBar items={termsSedondaryItems} title={"Легалност"} />
-      <section className="gray-bg text-white flex justify-center items-center py-52">
-        <h1 className="text-3xl md:text-5xl lg:text-8xl font-bold uppercase">
-          WEBSITE TERMS & CONDITIONS
+      <section className="gray-bg text-white flex justify-center items-center py-20 md:py-32 lg:py-52">
+        <h1 className="text-3xl md:text-5xl lg:text-8xl font-bold uppercase text-center">
+          WEBSITE TERMS AND CONDITIONS
         </h1>
       </section>
-      <section className="m-auto w-11/12 md:w-6/12 flex flex-col gap-4 py-4 md:py-8 lg:py-16">
+      <section className="m-auto w-11/12 md:w-6/12 flex flex-col gap-4 py-4 md:py-8 lg:py-16 overflow-hidden">
         <h2 className="text-1xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-8">
           TERMS AND CONDITIONS OF USE OF TRIUMPH ONLINE TOOLS WEBSITE &
           APPLICATION
@@ -49,29 +35,29 @@ const TermsPage = () => {
         </p>
 
         <p className="text-lg md:text-xl">
-          To contact us about these terms and conditions, you can email{" "}
+          To contact us about these terms and conditions, you can email
           <a
             href="mailto:TriumphDataProtection@Triumph.co.uk"
             className="text-red-500 underline font-semibold"
           >
             TriumphDataProtection@Triumph.co.uk
           </a>
-          or call{" "}
+          or call
           <a
             href="tel:+44(0) 1455 251700"
             className="text-red-500 underline font-semibold"
           >
             +44 0 1455 251700
           </a>
-        </p>
+        </p> 
         <p className="text-lg md:text-xl">
-          Our privacy policy, available at{" "}
+          Our privacy policy, available at
           <Link
             href={"global-content/privacy-policies"}
             className="text-red-500 underline font-semibold"
           >
             HERE
-          </Link>{" "}
+          </Link>
           , also applies to your use of our Sites.
         </p>
         <p className="text-lg md:text-xl">
@@ -110,7 +96,7 @@ const TermsPage = () => {
           only. It is not intended to constitute advice on which you should
           rely. You should obtain professional or expert advice before taking or
           refusing to take any action based on the content of our Sites.
-        </p>
+        </p> 
 
         <p className="text-lg md:text-xl">
           Although we make reasonable efforts to update the information on our
@@ -122,7 +108,7 @@ const TermsPage = () => {
         </p>
 
         <p className="text-lg md:text-xl">
-          {" "}
+          
           Please note that this Website contains images of motorcycles equipped
           with accessories and this may not be stated. We take no responsibility
           for any misunderstanding of any standard specification that this may
@@ -138,14 +124,14 @@ const TermsPage = () => {
           relevant rules and policies of the online application store appstore
           which may be from Google or Apple `App Store Rules`. In particular, it
           should be noted that your use of the map tool in our Application will
-          be subject to: Googles Privacy Policy at{" "}
+          be subject to: Googles Privacy Policy at
           <a
             className="text-red-500 underline font-semibold"
             href="ttps://www.google.com/policies/privacy/"
           >
             ttps://www.google.com/policies/privacy/
           </a>
-          and the Add-ons Terms of Service for Google Maps and Google Earth at{" "}
+          and the Add-ons Terms of Service for Google Maps and Google Earth at 
           <a
             href="https://maps.google.com/help/terms_maps.html"
             className="text-red-500 underline font-semibold"
@@ -156,16 +142,16 @@ const TermsPage = () => {
         <p className="text-lg md:text-xl">
           In the event of any conflict or inconsistency between these terms of
           use and the App Store Rules, the App Store Rules shall prevail.
-        </p>
+        </p> 
 
         <p className="text-lg md:text-xl">
-          Please see the relevant pages on our Website available at{" "}
+          Please see the relevant pages on our Website available at
           <a
             className="text-red-500 underline font-semibold"
             href="https://www.triumphmotorcycles.co.uk/motorcycles/my-triumph-connectivity-system"
           >
             https://www.triumphmotorcycles.co.uk/motorcycles/my-triumph-connectivity-system
-          </a>{" "}
+          </a>
           for further information about the App, including its functionality and
           compatible devices which have been tested for basic functionality with
           the My Triumph Connectivity system.
@@ -201,15 +187,15 @@ const TermsPage = () => {
           Application and related software, hardware and peripherals for the
           purpose of improving our products and providing any services to you.
           To the extent that we collect and use personal data, please refer to
-          our privacy policy available{" "}
+          our privacy policy available
           <Link
             className="text-red-500 underline font-semibold"
             href={"global-content/privacy-policies"}
           >
             HERE
-          </Link>{" "}
+          </Link>
           .
-        </p>
+        </p> 
 
         <h2 className="font-bold text-2xl md:text-3xl">
           License restrictionss
@@ -242,7 +228,7 @@ const TermsPage = () => {
             derivative works based on all or part of the Sites, and you will not
             attempt to do so, except to the extent which they cannot be
             prohibited under sections 50B and 296A of the Intellectual Property,
-            Designs and Patents Act 1988 (UK).
+            Designs and Patents Act 1988 UK.
           </li>
         </ul>
 
@@ -259,11 +245,11 @@ const TermsPage = () => {
           We have the right to disable any username or password, whether chosen
           by you or assigned by us, at any time if in our reasonable opinion you
           have not complied with any of the provisions of these terms of use.
-        </p>
+        </p> 
 
         <p className="text-lg md:text-xl">
           If you know or suspect that any other person knows your username or
-          password, you must notify us immediately by email at{" "}
+          password, you must notify us immediately by email at
           <a
             className="text-1xl md:text-1xl lg:text-2xl"
             href="mailto:TriumphDataProtection@Triumph.co.uk"
@@ -315,8 +301,8 @@ const TermsPage = () => {
           home page. We reserve the right to withdraw linking permission without
           notice. The website to which you are linking must comply in all
           respects with the standards set out below for content.
-        </p>
-
+        </p> 
+        
         <h2 className="font-bold text-2xl md:text-3xl">
           User Generated Content
         </h2>
@@ -418,7 +404,7 @@ const TermsPage = () => {
           consequences of your driving in a manner that does not comply with any
           of the provisions of this section Driving Safely.
         </p>
-
+         
         <h2 className="font-bold text-2xl md:text-3xl">
           Our liability for any loss or damage you may suffer
         </h2>
@@ -449,12 +435,12 @@ const TermsPage = () => {
           ordinary care and skill, but we are not liable for any loss or damage
           that is not foreseeable. A loss or damage is foreseeable if it is
           either obvious that it will happen or if, at the time you accepted
-          these terms, both we and you knew it was likely to happen.{" "}
+          these terms, both we and you knew it was likely to happen.
         </p>
 
         <h2 className="font-bold text-2xl md:text-3xl">Area</h2>
         <p className="text-lg md:text-xl">
-          {" "}
+          
           All information on our Sites relates to the UK market. They can be
           accessed by users worldwide, but users should be aware that certain
           products, programs, and services may not be available in their country
@@ -466,8 +452,8 @@ const TermsPage = () => {
           manufactured in accordance with the laws of the respective country.
           Consult your local dealer for model, accessory and apparel
           availability.
-        </p>
-
+        </p> 
+        
         <h2 className="font-bold text-2xl md:text-3xl">Security</h2>
         <p className="text-lg md:text-xl">
           We do not warrant that our Sites will be secure or free of software
@@ -479,9 +465,9 @@ const TermsPage = () => {
           not attempt to gain unauthorized access to our Sites, the server on
           which our Sites are stored, or any server, computer or database
           connected to our Sites. You must not attack our Sites through a Denial
-          of Service (DoS) or Distributed Denial of Service (DDoS) attack.
+          of Service DoS or Distributed Denial of Service DDoS attack.
           Breach of this provision is a criminal offense under the Computer
-          Misuse Act 1990 (UK). We will report any such breach to the
+          Misuse Act 1990 UK. We will report any such breach to the
           appropriate law enforcement authorities and cooperate with those
           authorities by sharing your identity with them. In the event of such a
           breach, your right to use our Sites will immediately terminate. You
@@ -509,18 +495,66 @@ const TermsPage = () => {
         </p>
 
         <h2 className="font-bold text-2xl md:text-3xl">Termination</h2>
-        <p className="text-lg md:text-xl">If we terminate your rights to use the Sites: </p>
-        <ul className="marker:text-red-500 list-disc text-xl"> 
-            <li>You must cease all activities authorized by these terms, including your use of the Sites.</li>
-            <li>You must delete or remove the Application from all devices in your possession and immediately destroy all copies of the Application in your possession and confirm to us that this has been done</li>
-            <li>We may remotely access your devices and remove the Application from them, as well as stop providing you with access to the services available through the Application.</li>
+        <p className="text-lg md:text-xl">
+          If we terminate your rights to use the Sites:
+        </p>
+        <ul className="marker:text-red-500 list-disc text-xl">
+          <li>
+            You must cease all activities authorized by these terms, including
+            your use of the Sites.
+          </li>
+          <li>
+            You must delete or remove the Application from all devices in your
+            possession and immediately destroy all copies of the Application in
+            your possession and confirm to us that this has been done
+          </li>
+          <li>
+            We may remotely access your devices and remove the Application from
+            them, as well as stop providing you with access to the services
+            available through the Application.
+          </li>
         </ul>
 
-        <h2 className="font-bold text-2xl md:text-3xl">Applicable Law and Jurisdiction</h2>
-        <p className="text-lg md:text-xl">These terms of use, their subject matter and their formation (and any non-contractual disputes or claims) are governed by English law. Both parties, you and us, agree that the courts of England and Wales shall have exclusive jurisdiction, except that if you are a resident of Northern Ireland you may also transfer proceedings to Northern Ireland, and if you are a resident of Scotland you may also transfer proceedings in Scotland.</p>
+        <h2 className="font-bold text-2xl md:text-3xl">
+          Applicable Law and Jurisdiction
+        </h2>
+        <p className="text-lg md:text-xl">
+          These terms of use, their subject matter and their formation and any
+          non-contractual disputes or claims are governed by English law. Both
+          parties, you and us, agree that the courts of England and Wales shall
+          have exclusive jurisdiction, except that if you are a resident of
+          Northern Ireland you may also transfer proceedings to Northern
+          Ireland, and if you are a resident of Scotland you may also transfer
+          proceedings in Scotland.
+        </p>
 
-        <h2 className="font-bold text-2xl md:text-3xl">Alternative Dispute Resolution</h2>
-        <p className="text-lg md:text-xl">Alternative dispute resolution is a process where an independent body looks at the facts of a dispute and seeks to resolve it, without you having to go to court. If you are not satisfied with the way we have handled a complaint, you can contact Trading Standards Services in your area via <a className="text-red-500 underline font-semibold" href="https://www.tradingstandards.uk/consumers/support-advice">https://www.tradingstandards.uk/consumers/support-advice</a>. In addition, it should be noted that disputes can also be submitted for online resolution on the European Commission s Electronic Dispute Resolution platform, available at <a className="text-red-500 underline font-semibold" href="https :// ec . Europe . eu / consumers / odr / main /? event = main . home 2. show">https :// ec . Europe . eu / consumers / odr / main /? event = main . home 2. show</a>.</p>
+        <h2 className="font-bold text-2xl md:text-3xl">
+          Alternative Dispute Resolution
+        </h2>
+        <p className="text-lg md:text-xl">
+          Alternative dispute resolution is a process where an independent body
+          looks at the facts of a dispute and seeks to resolve it, without you
+          having to go to court. If you are not satisfied with the way we have
+          handled a complaint, you can contact Trading Standards Services in
+          your area via
+          <a
+            className="text-red-500 underline font-semibold"
+            href="https://www.tradingstandards.uk/consumers/support-advice"
+          >
+            https://www.tradingstandards.uk/consumers/support-advice
+          </a>
+          . In addition, it should be noted that disputes can also be submitted
+          for online resolution on the European Commission s Electronic Dispute
+          Resolution platform, available at
+          <a
+            className="text-red-500 underline font-semibold"
+            href="https :// ec . Europe . eu / consumers / odr / main /? event = main . home 2. show"
+          >
+            https :// ec . Europe . eu / consumers / odr / main /? event = main
+            . home 2. show
+          </a>
+          .
+        </p>
       </section>
     </>
   );

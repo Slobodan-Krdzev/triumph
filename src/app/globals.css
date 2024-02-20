@@ -344,6 +344,12 @@ p {
   height: 100vh;
 }
 
+.privacyTable thead, th,td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 30px 20px;
+}
+
 @media screen and (max-width: 1200px) {
 
   .swiper-button-prev {
