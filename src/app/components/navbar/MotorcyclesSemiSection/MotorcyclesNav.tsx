@@ -11,6 +11,7 @@ import { useState } from "react";
 import { getBikesByEdition } from "../../helpers/getBikesByEdition";
 import MotorcycleInfo from "./MotorcycleInfo";
 import SingleMotorcycleCard from "./SingleMotorcycleCard";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 type Props = {
   families: any[];
@@ -21,17 +22,44 @@ type Props = {
 const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
   const [family, setFamily] = useState("adventure");
 
+  const router = useRouter();
+  const pathname = usePathname();
+  const navQuery = useSearchParams().get("navItem");
+  const colorQuery = useSearchParams().get("color");
+  const reversQuery = useSearchParams().get("reversed");
+
+  const handleFamilyClick = (family: string) => {
+    setFamily(family);
+
+    const bikesFromActiveFamily = bikes.filter(
+      (bike) => bike.familyType === family
+    );
+
+    const idOfFirstBike = bikesFromActiveFamily[0].id;
+
+    if (Boolean(colorQuery) || Boolean(reversQuery)) {
+      router.push(
+        `${pathname}?navItem=${navQuery}&bikeID=${idOfFirstBike}&color=${colorQuery}&reversed=${reversQuery}`,
+        { scroll: false }
+      );
+    } else {
+      router.push(`${pathname}?navItem=${navQuery}&bikeID=${idOfFirstBike}`, {
+        scroll: false,
+      });
+    }
+  };
+
   return (
     <div className="flex ">
       <div className=" flex flex-col gap-6 basis-2/12 pt-8">
         <ul>
-          {families?.map((filter: any, idx:number) => (
+          {families?.map((filter: any, idx: number) => (
             <li key={idx}>
               <button
                 className={`${
                   family === filter.type ? "text-red-600" : "text-black"
                 } uppercase font-semibold text-lg  focus:text-red-700`}
-                onClick={() => setFamily(filter.type)}
+                onClick={() => handleFamilyClick(filter.type)}
               >
                 {filter.type}
               </button>
@@ -109,7 +137,7 @@ const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
         </div>
 
         {getBikesByEdition(family, bikes).length >= 5 && (
-          <div className="overflow-y-scroll" style={{height: 480}}>
+          <div className="overflow-y-scroll" style={{ height: 480 }}>
             {getBikesByEdition(family, bikes).map((bike: any) => (
               <SingleMotorcycleCard key={bike.id} bike={bike} />
             ))}
@@ -118,7 +146,7 @@ const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
 
         {/* za da ne kreira scroll */}
         {getBikesByEdition(family, bikes).length < 5 && (
-          <div className="" style={{height: 480}}>
+          <div className="" style={{ height: 480 }}>
             {getBikesByEdition(family, bikes).map((bike: any) => (
               <SingleMotorcycleCard key={bike.id} bike={bike} />
             ))}
@@ -126,7 +154,7 @@ const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
         )}
       </div>
       <div className="basis-6/12 py-8">
-        <MotorcycleInfo bike={bikeToRender}/>
+        <MotorcycleInfo bike={bikeToRender} />
       </div>
     </div>
   );

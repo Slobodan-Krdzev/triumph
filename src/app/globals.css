@@ -350,6 +350,7 @@ p {
   padding: 30px 20px;
 }
 
+
 @media screen and (max-width: 1200px) {
 
   .swiper-button-prev {
@@ -375,6 +376,7 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+
   .actions {
     
     right: 2%;

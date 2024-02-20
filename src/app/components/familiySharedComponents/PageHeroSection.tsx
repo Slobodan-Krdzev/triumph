@@ -21,7 +21,7 @@ const PageHeroSection = ({
   return (
     <section className="bg-neutral-800 flex flex-col lg:flex-row justify-between lg:pl-8">
       <div className="flex flex-col justify-center items-center py-10 text-white lg:basis-1/2 order-2 lg:order-1 px-4 lg:px-0">
-        <div className="w-9/12 m-auto">
+        <div className="w-full md:w-9/12  m-auto">
           <PageTitle text={title} />
           {mainBikeLogo && (
             <Image
@@ -32,15 +32,15 @@ const PageHeroSection = ({
               height={35}
             />
           )}
-          <p className="lg:text-lg mb-20 lg:w-3/4 font-medium ">{desc}</p>
-          <div className="text-white pb-10">
+          <p className="lg:text-lg w-full lg:w-3/4 font-medium ">{desc}</p>
+          {/* <div className="text-white pb-10">
             <p className="text-xs lg:font-semibold">DISCOVER MORE</p>
-          </div>
+          </div> */}
         </div>
       </div>
 
       <div className="flex lg:basis-1/2 justify-center text-white order-1 lg:order-2">
-        <video autoPlay muted loop >
+        <video autoPlay muted loop playsInline>
           <source src={video} type="video/mp4"/>
         </video>
       </div>

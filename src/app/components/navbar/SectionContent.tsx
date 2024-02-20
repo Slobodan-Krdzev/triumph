@@ -43,7 +43,15 @@ const SectionContent = ({ families, bikes, bikeToRender }: Props) => {
   }, [controls]);
 
   useEffect(() => {
-    router.push(`${pathname}?navItem=${query}&bikeID=1`, {scroll: false});
+
+    if(Boolean(colorQuery) || Boolean(reversQuery)){
+      router.push(`${pathname}?navItem=${query}&bikeID=1&color=${colorQuery}&reversed=${reversQuery}`, {scroll: false});
+
+    }else {
+      router.push(`${pathname}?navItem=${query}&bikeID=1`, {scroll: false});
+
+    }
+
   }, []);
 
   

@@ -29,6 +29,24 @@ export const clothingItems: ClothingCardProps[] = [
       alt: "Motor Riding Gear",
     },
   },
+  {
+    title: "Каталог - 2023",
+    desc: "Погледнете ја нашата колекција - Дизајнирана од возачи за возачи.",
+    link: "https://media.triumphmotorcycles.co.uk/image/upload/f_auto/q_auto/sitecoremedialibrary/media-library/files/ecom/catalogues/2023/ss23%20catalogues/tml%20clothing%20customer%20catalogue%202023%20english.pdf?_gl=1*1740tn7*_ga*Mjk5MzMyMjE0LjE2OTYzNTc2MTE.*_ga_2YJFH6KBX6*MTcwODQzMjY4OC4yNDQuMS4xNzA4NDMyNzcwLjQwLjAuMA..",
+    image: {
+      src: "/images/catalogue2023Image.avif",
+      alt: "Каталог - 2023",
+    },
+  },
+  {
+    title: "Чизми и Ракавици - Каталог 2023",
+    desc: "Погледнете ја нашата колекција за чизми и ракавици - Дизајнирана од возачи за возачи..",
+    link: "https://media.triumphmotorcycles.co.uk/image/upload/f_auto/q_auto/sitecoremedialibrary/media-library/files/ecom/catalogues/2023/boots%20and%20gloves/technical%20gloves%20%20rider%20footwear%20catalogue%20%20english.pdf?_gl=1*1740tn7*_ga*Mjk5MzMyMjE0LjE2OTYzNTc2MTE.*_ga_2YJFH6KBX6*MTcwODQzMjY4OC4yNDQuMS4xNzA4NDMyNzcwLjQwLjAuMA..",
+    image: {
+      src: "/images/bootsCatalogue2023.avif",
+      alt: "Motor Riding Gear",
+    },
+  },
 ];
 
 const ClothingNavSection = () => {
