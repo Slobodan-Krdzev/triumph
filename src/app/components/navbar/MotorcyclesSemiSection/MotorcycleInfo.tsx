@@ -7,20 +7,17 @@ type MotorcycleInfoProps = {
 
 const MotorcycleInfo = ({ bike }: MotorcycleInfoProps) => {
 
-  console.log(bike);
-  
-
   return (
     <div className="px-8 relative">
       <h2 className="text-7xl text-light-color font-bold uppercase">
         {bike[0]?.title ?? "Triumph"}
       </h2>
       {bike[0]?.gallery.modelImage.src && (
-        <p className="text-neutral-700 text-lg font-semibold">
+        <p className="text-neutral-500 text-xl font-medium mt-4">
           {bike[0]?.price ? (
             <>
               Цена <br />
-              <span>{bike[0]?.price}.00 €</span>
+              <span className="text-neutral-700 font-bold">{bike[0]?.price}.00 €</span>
             </>
           ) : (
             "Цена Наскоро"

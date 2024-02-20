@@ -39,7 +39,7 @@ const Nav = ({ fams, allBikes }: NavProps) => {
           <div className="flex justify-between items-center">
             <div className="flex px-8 xl:gap-8 gap-5 items-center">
               <Link href={"/"}>
-                <Image src={logo1} alt={"Logo"} height={70} width={128} />
+                <Image src={logo1} alt={"Logo"} height={60} width={98} />
               </Link>
 
               <NavbarLinkList />

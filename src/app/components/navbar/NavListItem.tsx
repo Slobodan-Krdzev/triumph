@@ -13,15 +13,19 @@ const NavListItem = ({ text, filter }: NavListItemProps) => {
   const query = useSearchParams().get('navItem')
   const colorQuery = useSearchParams().get('color')
   const reversQuery = useSearchParams().get('reversed')
+  
 
   const handleHover = () => {
 
+    console.log(colorQuery, reversQuery);
+    
+
     if(Boolean(colorQuery) || Boolean(reversQuery)) {
 
-      router.push(`${pathname}/?navItem=${filter}&color=${colorQuery}&reversed=${reversQuery}`, {scroll: false})
+      router.push(`${pathname}?navItem=${filter}&color=${colorQuery}&reversed=${reversQuery}`, {scroll: false})
       
     }else {
-      router.push(`${pathname}/?navItem=${filter}`, {scroll: false})
+      router.push(`${pathname}?navItem=${filter}`, {scroll: false})
     }
 
   };
@@ -29,7 +33,7 @@ const NavListItem = ({ text, filter }: NavListItemProps) => {
   return (
     <>
       <li
-        className={`px-4 text-base uppercase font-medium flex items-center cursor-pointer h-16 gray-btn-hover ${query === filter ? 'gray-btn' : ''}`}
+        className={`px-4 text-sm uppercase font-semibold flex items-center cursor-pointer h-16 gray-btn-hover ${query === filter ? 'gray-btn' : ''}`}
         onMouseEnter={handleHover}
       >
         {text}
