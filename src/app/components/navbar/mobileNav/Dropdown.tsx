@@ -6,17 +6,17 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
 import AccesorySectionMobile from "./AccesorySectionMobile";
 import ClothingSectionMobile from "./ClothingSectionMobile";
 import DiscoverSectionMobile from "./DiscoverSectionMobile";
-import MotorcycleSectionMobile from "./MotorcycleSectionMobile";
-import OwnersSectionMobile from "./OwnersSectionMobile";
-import OffersSectionMobile from "./OffersSectionMobile";
-import Link from "next/link";
-import Image from "next/image";
 import LocationsMobile from "./LocationsMobile";
+import MotorcycleSectionMobile from "./MotorcycleSectionMobile";
+import OffersSectionMobile from "./OffersSectionMobile";
+import OwnersSectionMobile from "./OwnersSectionMobile";
 
 type SectionTypeType =
   | ""
@@ -50,15 +50,17 @@ const Dropdown = ({
 
   const handleSectionOpen = (type?: SectionTypeType) => {
     if (query.get("section") && query.get("section") === "true") {
-      router.push(`${pathname}?section=${false}`);
+      router.push(`${pathname}?section=${false}`, { scroll: false });
     } else {
-      router.push(`${pathname}?section=${true}`);
+      router.push(`${pathname}?section=${true}`, { scroll: false });
     }
 
     setSectionType(type ? type : "");
   };
 
-  const handleSectionClose = () => router.push(`${pathname}?section=false`);
+  const handleSectionClose = () => {
+    router.push(`${pathname}?section=false`);
+  };
 
   return (
     <>
@@ -170,7 +172,10 @@ const Dropdown = ({
             <Link href={"/latest-offers"}>Понуди</Link>
           </li>
           <li className="flex justify-start items-center gap-2">
-            <button onClick={() => handleSectionOpen("locations")} className="flex justify-start items-center gap-2">
+            <button
+              onClick={() => handleSectionOpen("locations")}
+              className="flex justify-start items-center gap-2"
+            >
               <Image
                 src={"/images/pinIcon-01.svg"}
                 alt="Pin"
@@ -187,7 +192,7 @@ const Dropdown = ({
       {query.get("section") === "true" && (
         <motion.div
           className="fixed top-16 right-0 left-0 h-screen bg-white z-50 text-white overflow-y-auto"
-          style={{height:" calc(100vh - 64px)"}}
+          style={{ height: " calc(100vh - 64px)" }}
           initial={{ x: "100vw" }}
           animate={{ x: 0 }}
           exit={{ x: "100vw" }}
