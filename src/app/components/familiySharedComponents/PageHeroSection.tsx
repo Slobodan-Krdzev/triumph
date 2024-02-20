@@ -40,7 +40,7 @@ const PageHeroSection = ({
       </div>
 
       <div className="flex lg:basis-1/2 justify-center text-white order-1 lg:order-2">
-        <video autoPlay muted loop playsInline poster="/images/classics/classicsSlide1.avif">
+        <video autoPlay muted loop playsInline poster={`/images/${title}/famPageVideoPoster.avif`}>
           <source src={video} type="video/mp4"/>
         </video>
       </div>
