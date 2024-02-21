@@ -116,9 +116,9 @@ const ClassicsBikePage = async ({ params }: any) => {
           <BikeGalleyCarousell images={bike.bikePageImageGallery} />
         )}
 
-        {/* {bike.bikePageCarousell && (
+        {bike.bikePageCarousell && (
           <BikePageCarousell items={bike.bikePageCarousell} />
-        )} */}
+        )}
 
         {bike.bikePagePromo && (
           <section className="m-auto w-full md:w-10/12 lg:w-9/12 px-4 md:px-24 py-4 md:py-16 flex flex-col gap-6 md:gap-0">
