@@ -58,7 +58,7 @@ const ClassicsBikePage = async ({ params }: any) => {
                     text={"КОНТАКТ"}
                     bgBlack={true}
                     isLink={true}
-                    link={"/dealers/dealer-search"}
+                    link={"/dealer"}
                   />
                 </div>
               </div>

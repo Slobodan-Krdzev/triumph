@@ -26,6 +26,7 @@ type BottomFixedRibbonProps = {
 const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
   const [isMobileMenuShown, setIsMobileMenuShown] = useState(false);
   const [isModalShown, setIsModalShown] = useState(false);
+  const [isTextCopied, setIsTextCopied] = useState(false);
 
   const breakpoint = useBreakpoint();
   const router = useRouter();
@@ -128,12 +129,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
         </section>
 
         {isModalShown && (
-          <div
-            className="absolute h-screen w-full top-0 left-0 flex justify-center items-center modal-blur"
-            onClick={() => {
-              setIsModalShown(false);
-            }}
-          >
+          <div className="absolute h-screen w-full top-0 left-0 flex justify-center items-center modal-blur">
             <div className="bg-neutral-200 flex flex-col justify-center gap-8 items-center p-20 rounded-md">
               <Image
                 src={"/images/triumphLogo.png"}
@@ -144,15 +140,36 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
               <p className="font-bold text-2xl text-center">
                 Копирајте го овој линк <br /> и споделете го со вашите пријатели
               </p>
-              <p className="border p-2 bg-white shado">{getLinkForSharing()}</p>
-              <MainBtn
-                text={"Затвори"}
-                bgBlack={false}
-                action={() => {
-                  handleBodyScrollWhenMenuIsOpen(isModalShown);
-                  setIsModalShown(false);
+
+              
+                <p className={`font-bold text-sm text-center ${isTextCopied ? "text-red-500" : "text-black" }`}>
+                  {isTextCopied ? "Успешно го ископиравте линкот!" : "Кликнете на линкот за да го ископирате."} 
+                </p>
+            
+
+              <input
+                type="text"
+                value={getLinkForSharing()}
+                className="border p-2 bg-white shadow rounded-md w-full"
+                onClick={(e) => {
+                  navigator.clipboard.writeText(e.currentTarget.value);
+                  setIsTextCopied(true);
                 }}
               />
+
+              {/* <p className="border p-2 bg-white shadow">{getLinkForSharing()}</p> */}
+              {/* <MainBtn text={"Затвори"} bgBlack={false} action={() => {}} /> */}
+              <button
+                className={`red-bg-color main-btn-hover uppercase font-bold px-5 py-3 text-slate-100 text-base `}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handleBodyScrollWhenMenuIsOpen(isModalShown);
+                  setIsModalShown(false);
+                  setIsTextCopied(false)
+                }}
+              >
+                Затвори
+              </button>
             </div>
           </div>
         )}
@@ -254,7 +271,10 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
         )}
 
         {isModalShown && (
-          <div className="absolute h-full w-full top-0 left-0 flex flex-col gap-4 justify-center items-center bg-neutral-100 px-4 py-8" style={{zIndex: 80}}>
+          <div
+            className="absolute h-screen w-full top-0 left-0 flex flex-col gap-4 justify-center items-center bg-neutral-100 px-4 py-8"
+            style={{ zIndex: 80 }}
+          >
             <div className="flex gap-8 flex-col justify-center items-center">
               <Image
                 src={"/images/triumphLogo.png"}
@@ -265,15 +285,27 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
               <p className="font-bold text-2xl text-center">
                 Копирајте го овој линк <br /> и споделете го со вашите пријатели
               </p>
-              <p className="border p-2 bg-white shadow-md w-11/12 ">
-                {getLinkForSharing()}
-              </p>
+              <p className={`font-bold text-sm text-center ${isTextCopied ? "text-red-500" : "text-black" }`}>
+                  {isTextCopied ? "Успешно го ископиравте линкот!" : "Кликнете на линкот за да го ископирате."} 
+                </p>
+            
+
+              <input
+                type="text"
+                value={getLinkForSharing()}
+                className="border p-2 bg-white shadow rounded-md w-full"
+                onClick={(e) => {
+                  navigator.clipboard.writeText(e.currentTarget.value);
+                  setIsTextCopied(true);
+                }}
+              />
               <MainBtn
                 text={"Затвори"}
                 bgBlack={false}
                 action={() => {
                   handleBodyScrollWhenMenuIsOpen(isModalShown);
                   setIsModalShown(false);
+                  setIsTextCopied(false)
                 }}
               />
             </div>

@@ -6,8 +6,7 @@ const LatestOffersPage = () => {
   return (
     <>
       <section
-        className="flex flex-col justify-center items-center gap-4"
-        style={{ height: "80vh" }}
+        className="flex flex-col justify-center items-center py-4 md:py-8 lg:py-16 gap-4"
       >
         <Image
           src={"/images/triumphLogo.png"}
@@ -15,7 +14,7 @@ const LatestOffersPage = () => {
           width={422}
           height={241}
         />
-        <h1 className="font-semibold text-2xl md:text-3xl">
+        <h1 className="font-semibold text-2xl md:text-3xl text-center">
           Извинете, моментално немаме никакви специјални понуди!
         </h1>
         <MainBtn
