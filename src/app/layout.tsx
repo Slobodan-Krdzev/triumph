@@ -1,11 +1,11 @@
-import "./globals.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Navbar from "./components/navbar/Navbar";
-import "@fortawesome/fontawesome-svg-core/styles.css";
-import { config } from "@fortawesome/fontawesome-svg-core";
 import Footer from "./components/footer/Footer";
+import Navbar from "./components/navbar/Navbar";
 import { FAMILIES, SUB_FAMILIES } from "./constants/constants";
+import "./globals.css";
 config.autoAddCss = false;
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,7 +33,6 @@ export default async function RootLayout({
         <html lang="en">
           <body className={inter.className}>
             <Navbar families={families} subFamilies={subFamilies}/>
-    
             {children}
             <Footer families={families}/>
           </body>

@@ -7,6 +7,7 @@ import ImagePreview from "@/app/components/BikePageComponents/ImagePreview";
 import PricePriviewer from "@/app/components/BikePageComponents/PricePriviewer";
 import PromoBikeYoutubeVideo from "@/app/components/BikePageComponents/PromoBikeYoutubeVideo";
 import Rocket3TopDesc from "@/app/components/BikePageComponents/Rocket3Components/Rocket3TopDesc";
+import Breadcrumbs from "@/app/components/Breadcrumbs/Breadcrumbs";
 import GrayBand from "@/app/components/GrayBand";
 import MainBtn from "@/app/components/MainBtn";
 import NumbersSection from "@/app/components/SubFamily/NumbersSection";
@@ -33,7 +34,9 @@ const RocketBikePage = async ({ params }: any) => {
     const subFam = subFamData[0];
 
     return (
-      <main className="bg-white">
+      <main className="bg-white relative">
+          <Breadcrumbs dark />
+
         <section>
           <div className="flex flex-col justify-end pt-8 md:pt-16 px-4 md:px-8 lg:px-16">
             <BikeTitle text={bike.title} />

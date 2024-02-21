@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useMemo } from "react";
 import logo1 from "../../../public/logoBlack.png";
+import Breadcrumbs from "../components/Breadcrumbs/Breadcrumbs";
 
 const DealerPage = () => {
   const Map = useMemo(
@@ -23,7 +24,7 @@ const DealerPage = () => {
 
   return (
     <section
-      className="w-full bg-white flex justify-center items-center py-8 md:py-16"
+      className="w-full bg-white flex justify-center items-center py-8 md:py-16 relative"
       style={{
         backgroundImage: 'url("/images/dealer/dealerBanner.jpg")',
         backgroundSize: "cover",
@@ -31,6 +32,8 @@ const DealerPage = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
+          <Breadcrumbs/>
+
       <div className="bg-white m-auto w-11/12 lg:w-10/12 xl:w-7/12 rounded-lg flex flex-col justify-between items-start">
         <div className="flex flex-col justify-center items-center w-full h-full basis-1/5 p-5 md:p-10">
           <Image src={logo1} alt={"Logo"} height={100} width={228} />

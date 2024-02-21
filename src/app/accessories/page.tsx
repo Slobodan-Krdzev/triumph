@@ -1,9 +1,6 @@
-import React from 'react'
+import { redirect } from 'next/navigation'
 
-const AccessoriesPage = () => {
-  return (
-    <div>paage</div>
-  )
-}
+const AccessoriesPage = () => redirect('/accessories/why-buy-genuine')
+
 
 export default AccessoriesPage

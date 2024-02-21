@@ -1,3 +1,4 @@
+import Breadcrumbs from "@/app/components/Breadcrumbs/Breadcrumbs";
 import PageParagraph from "@/app/components/familiySharedComponents/PageParagraph";
 import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
 import TextAndImageFlexSection from "@/app/components/familiySharedComponents/TextAndImageFlexSection";
@@ -7,9 +8,11 @@ const OilRecommendationsPage = () => {
   return (
     <>
       <section
-        className="w-full bg-white flex justify-center items-center"
+        className="w-full bg-white flex justify-center items-center relative"
         style={{ height: "80vh" }}
       >
+          <Breadcrumbs dark />
+
         <div className="m-auto w-11/12 md:w-8/12 text-center">
           <h1 className="md:text-8xl text-xl border-b-4 border-red-600 font-bold uppercase pb-2 text-center mb-4 ">
             Препораки за Масла

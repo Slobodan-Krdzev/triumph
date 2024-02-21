@@ -1,3 +1,4 @@
+import Breadcrumbs from "@/app/components/Breadcrumbs/Breadcrumbs";
 import ReasonsListin from "@/app/components/SubFamily/Reasons/ReasonsListin";
 import BikeListingNoSlider from "@/app/components/familiySharedComponents/BikeListingNoSlider";
 import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
@@ -21,6 +22,7 @@ const SubFamReasonsToRidePage = async ({ params }: any) => {
     return (
       <>
         <section
+        className="relative"
           style={{
             backgroundImage: `url("${subFamily.reasonsToDrive.banner.image}")`,
             backgroundSize: "cover",
@@ -30,6 +32,8 @@ const SubFamReasonsToRidePage = async ({ params }: any) => {
             overflow: "hidden",
           }}
         >
+          <Breadcrumbs />
+
           <div className="flex justify-center items-center w-full h-full overlay">
             <div className="w-6/12 m-auto flex flex-col justify-center items-center text-white gap-6">
               <h1 className="md:text-xl lg:text-2xl text-sm border-b-4 border-white capitalize pb-2">

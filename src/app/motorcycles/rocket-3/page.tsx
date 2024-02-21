@@ -1,3 +1,4 @@
+import Breadcrumbs from "@/app/components/Breadcrumbs/Breadcrumbs";
 import MainBtn from "@/app/components/MainBtn";
 import PageParagraph from "@/app/components/familiySharedComponents/PageParagraph";
 import PageTitle from "@/app/components/familiySharedComponents/PageTitle";
@@ -8,6 +9,7 @@ const Rocket3Page = () => {
   return (
     <>
       <section
+        className="relative"
         style={{
           backgroundImage: `url('/images/rocket-3/heroBanner.avif')`,
           backgroundPosition: "center",
@@ -16,6 +18,8 @@ const Rocket3Page = () => {
           height: "80vh",
         }}
       >
+        <Breadcrumbs />
+
         <div
           className="min-w-full lg:py-32 py-12 lg:px-20 px-4 flex items-center h-full"
           style={{

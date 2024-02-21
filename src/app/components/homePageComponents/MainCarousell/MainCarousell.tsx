@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { useBreakpoint } from "../../helpers/useBreakpoint";
 import MainCarousellItem from "./MainCarousellItem";
 import MobileCarousell from "./MobileCarousell/MobileCarousell";
+import Breadcrumbs from "../../Breadcrumbs/Breadcrumbs";
 
 export type CarousellItemType = {
   image?: string;
@@ -71,6 +72,8 @@ const MainCarousell = ({ items = [] }: MainCarousellProps) => {
   if (breakpoint >= 1024) {
     return (
       <div className="relative overflow-hidden" style={{ height: "90vh" }}>
+        <Breadcrumbs />
+
         <div
           style={{ transform: `translate(-${activeIndex * 100}%)` }}
           className="transition-transform delay-300 ease-in-out flex"

@@ -1,3 +1,4 @@
+import Breadcrumbs from "@/app/components/Breadcrumbs/Breadcrumbs";
 import ImageCarousell from "@/app/components/ClothingComponents/ImageCarousell";
 import MainBtn from "@/app/components/MainBtn";
 import PageParagraph from "@/app/components/familiySharedComponents/PageParagraph";
@@ -39,7 +40,7 @@ const RidingEssentialsPage = () => {
   return (
     <>
       <section
-        className="flex justify-center items-center"
+        className="flex justify-center items-center relative"
         style={{
           backgroundImage: 'url("/images/clothes/esentialWearBanner.avif")',
           backgroundPosition: "center center",
@@ -48,6 +49,8 @@ const RidingEssentialsPage = () => {
           height: "100vh",
         }}
       >
+          <Breadcrumbs/>
+
         <div
           className="flex justify-center items-center h-full w-full"
           style={{
