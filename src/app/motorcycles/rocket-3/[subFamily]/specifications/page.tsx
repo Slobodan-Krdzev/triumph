@@ -1,3 +1,4 @@
+import Breadcrumbs from "@/app/components/Breadcrumbs/Breadcrumbs";
 import MainBtn from "@/app/components/MainBtn";
 import SpecsTable from "@/app/components/SubFamily/Specification/SpecsTable";
 import BikeListingNoSlider from "@/app/components/familiySharedComponents/BikeListingNoSlider";
@@ -19,7 +20,9 @@ const Rocket3SpecsPage = async () => {
 
     return (
       <>
-        <main className="py-4 md:py-8 lg:py-16 bg-white">
+        <main className="py-4 md:py-8 lg:py-16 bg-white relative">
+        <Breadcrumbs dark />
+
           <h1 className="uppercase text-4xl lg:text-6xl text-black text-center font-semibold">
             Спецификации
           </h1>

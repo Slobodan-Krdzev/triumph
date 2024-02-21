@@ -1,6 +1,7 @@
 import React from "react";
 import FamilySloganAnimation from "./FamilySloganAnimation";
 import Image from "next/image";
+import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
 
 type HeroSectionProps = {
   video?: string;
@@ -31,6 +32,7 @@ const HeroSection = ({
   if (video) {
     return (
       <section className="relative">
+        <Breadcrumbs />
         <video autoPlay muted loop className="w-full hidden lg:block" src={video} playsInline style={{
           filter: 'brightness(65%)'
         }}></video>
@@ -68,7 +70,7 @@ const HeroSection = ({
   if (image) {
     return (
       <section
-        className="flex justify-center items-center subFamilyHeroBannerImage"
+        className="flex justify-center items-center subFamilyHeroBannerImage relative"
         style={{
           backgroundImage: `url("${image}")`,
           backgroundPosition: "center",
@@ -78,6 +80,8 @@ const HeroSection = ({
 
         }}
       >
+        <Breadcrumbs />
+
         <div
           className={` text-white flex flex-col ${textLeftSide ? "items-start" : "items-center"} w-11/12`}>
           <p className={` text-3xl font-medium uppercase border-b-4 ${doesItContainOffRoad ? 'border-quartal' : "border-red-600" }  pb-4 inline`}>

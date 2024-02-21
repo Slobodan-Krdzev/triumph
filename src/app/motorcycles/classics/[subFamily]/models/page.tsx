@@ -1,3 +1,4 @@
+import Breadcrumbs from '@/app/components/Breadcrumbs/Breadcrumbs'
 import BikeListingNoSlider from '@/app/components/familiySharedComponents/BikeListingNoSlider'
 import { BIKES } from '@/app/constants/constants'
 import React from 'react'
@@ -11,7 +12,9 @@ const ClassicsModelsPage = async ({params}: any) => {
     const bikesData = await bikesRes.json()
 
     return (
-      <main className='bg-white md:py-16 py-4'>
+      <main className='bg-white md:py-16 py-4 relative'>
+          <Breadcrumbs dark />
+
         <h1 className='uppercase text-4xl font-semibold text-center md:mb-16 mb-4'>{model}</h1>
         <BikeListingNoSlider
             bikes={bikesData}

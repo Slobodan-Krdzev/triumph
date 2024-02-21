@@ -1,3 +1,4 @@
+import Breadcrumbs from "@/app/components/Breadcrumbs/Breadcrumbs";
 import MainBtn from "@/app/components/MainBtn";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
 import PageParagraph from "@/app/components/familiySharedComponents/PageParagraph";
@@ -8,7 +9,7 @@ const CasualCollection = () => {
   return (
     <>
       <section
-        className="flex justify-center items-center"
+        className="flex justify-center items-center relative"
         style={{
           backgroundImage: 'url("/images/clothes/casualClothingBanner.avif")',
           backgroundPosition: "center center",
@@ -17,6 +18,8 @@ const CasualCollection = () => {
           height: "100vh",
         }}
       >
+          <Breadcrumbs />
+
         <h1 className="text-5xl lg:text-8xl font-bold text-white uppercase border-b-4 border-red-600">
           Casual
         </h1>

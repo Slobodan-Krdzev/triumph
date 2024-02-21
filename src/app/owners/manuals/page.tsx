@@ -1,3 +1,4 @@
+import Breadcrumbs from "@/app/components/Breadcrumbs/Breadcrumbs";
 import MainBtn from "@/app/components/MainBtn";
 import TitleWithLineThrough from "@/app/components/TitleWithLineThrough";
 import PageParagraph from "@/app/components/familiySharedComponents/PageParagraph";
@@ -6,7 +7,9 @@ import React from "react";
 
 const ManualsPage = () => {
   return (
-    <main className="bg-white">
+    <main className="bg-white relative">
+          <Breadcrumbs dark />
+
       <TitleWithLineThrough text={"Упатство за Сопственици"} />
       <div className="m-auto w-11/12 md:w-8/12 lg:w-6/12 py-4 md:py-8 lg:py-16 text-center flex flex-col justify-center items-center gap-8">
         <PageParagraph

@@ -1,3 +1,4 @@
+import Breadcrumbs from "@/app/components/Breadcrumbs/Breadcrumbs";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
 import PageParagraph from "@/app/components/familiySharedComponents/PageParagraph";
 import MainBtn from "@/app/components/MainBtn";
@@ -8,7 +9,7 @@ const MotorcycleCollection = () => {
   return (
     <>
       <section
-        className="flex justify-center items-center"
+        className="flex justify-center items-center relative"
         style={{
           backgroundImage: 'url("/images/clothes/motoClothingBanner.avif")',
           backgroundPosition: "center center",
@@ -17,6 +18,8 @@ const MotorcycleCollection = () => {
           height: "100vh",
         }}
       >
+          <Breadcrumbs dark />
+
         <h1 className="text-4xl lg:text-8xl font-bold text-white uppercase border-b-4 border-red-600 ">
           Motorcycle
         </h1>
