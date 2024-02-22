@@ -18,7 +18,19 @@ import { useEffect, useState } from "react";
 import MainBtn from "../MainBtn";
 import { handleBodyScrollWhenMenuIsOpen } from "../helpers/handleBodyScrollWhenMenuOpens";
 import { useBreakpoint } from "../helpers/useBreakpoint";
-import { FacebookIcon, FacebookShareButton } from "react-share";
+import {
+  EmailIcon,
+  EmailShareButton,
+  FacebookIcon,
+  FacebookShareButton,
+  TwitterIcon,
+  TwitterShareButton,
+  ViberIcon,
+  ViberShareButton,
+  WhatsappIcon,
+  WhatsappShareButton,
+  XIcon,
+} from "react-share";
 
 type BottomFixedRibbonProps = {
   info: any;
@@ -139,20 +151,56 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
                 height={300}
               />
 
-            <FacebookShareButton url={getLinkForSharing()} > 
-                <FacebookIcon className="rounded-full" style={{width: 40, height: 40}}/>
-             </FacebookShareButton>
-              
+              <div className="flex justify-between gap-2">
+                <FacebookShareButton url={getLinkForSharing()}>
+                  <FacebookIcon
+                    className="rounded-full"
+                    style={{ width: 40, height: 40 }}
+                  />
+                </FacebookShareButton>
+
+                <TwitterShareButton url={getLinkForSharing()}>
+                  <XIcon
+                    className="rounded-full"
+                    style={{ width: 40, height: 40 }}
+                  />
+                </TwitterShareButton>
+
+                <ViberShareButton url={getLinkForSharing()}>
+                  <ViberIcon
+                    className="rounded-full"
+                    style={{ width: 40, height: 40 }}
+                  />
+                </ViberShareButton>
+
+                <WhatsappShareButton url={getLinkForSharing()}>
+                  <WhatsappIcon
+                    className="rounded-full"
+                    style={{ width: 40, height: 40 }}
+                  />
+                </WhatsappShareButton>
+
+                <EmailShareButton url={getLinkForSharing()}>
+                  <EmailIcon
+                    className="rounded-full"
+                    style={{ width: 40, height: 40 }}
+                  />
+                </EmailShareButton>
+              </div>
 
               <p className="font-bold text-2xl text-center">
-                Копирајте го овој линк <br /> и споделете го со вашите пријатели
+                Или копирајте го следниот линк.
               </p>
 
-              
-                <p className={`font-bold text-sm text-center ${isTextCopied ? "text-red-500" : "text-black" }`}>
-                  {isTextCopied ? "Успешно го ископиравте линкот!" : "Кликнете на линкот за да го ископирате."} 
-                </p>
-            
+              <p
+                className={`font-bold text-sm text-center italic ${
+                  isTextCopied ? "text-red-500" : "text-black"
+                }`}
+              >
+                {isTextCopied
+                  ? "Успешно го ископиравте линкот!"
+                  : "Кликнете на линкот за да го ископирате."}
+              </p>
 
               <input
                 type="text"
@@ -172,7 +220,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
                   e.stopPropagation();
                   handleBodyScrollWhenMenuIsOpen(isModalShown);
                   setIsModalShown(false);
-                  setIsTextCopied(false)
+                  setIsTextCopied(false);
                 }}
               >
                 Затвори
@@ -289,14 +337,56 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
                 width={300}
                 height={300}
               />
-              
+
+              <div className="flex justify-between gap-2">
+                <FacebookShareButton url={getLinkForSharing()}>
+                  <FacebookIcon
+                    className="rounded-full"
+                    style={{ width: 40, height: 40 }}
+                  />
+                </FacebookShareButton>
+
+                <TwitterShareButton url={getLinkForSharing()}>
+                  <XIcon
+                    className="rounded-full"
+                    style={{ width: 40, height: 40 }}
+                  />
+                </TwitterShareButton>
+
+                <ViberShareButton url={getLinkForSharing()}>
+                  <ViberIcon
+                    className="rounded-full"
+                    style={{ width: 40, height: 40 }}
+                  />
+                </ViberShareButton>
+
+                <WhatsappShareButton url={getLinkForSharing()}>
+                  <WhatsappIcon
+                    className="rounded-full"
+                    style={{ width: 40, height: 40 }}
+                  />
+                </WhatsappShareButton>
+
+                <EmailShareButton url={getLinkForSharing()}>
+                  <EmailIcon
+                    className="rounded-full"
+                    style={{ width: 40, height: 40 }}
+                  />
+                </EmailShareButton>
+              </div>
+
               <p className="font-bold text-2xl text-center">
-                Копирајте го овој линк <br /> и споделете го со вашите пријатели
+                Или ископирајте го овој линк.
               </p>
-              <p className={`font-bold text-sm text-center ${isTextCopied ? "text-red-500" : "text-black" }`}>
-                  {isTextCopied ? "Успешно го ископиравте линкот!" : "Кликнете на линкот за да го ископирате."} 
-                </p>
-            
+              <p
+                className={`font-bold text-sm text-center ${
+                  isTextCopied ? "text-red-500" : "text-black"
+                }`}
+              >
+                {isTextCopied
+                  ? "Успешно го ископиравте линкот!"
+                  : "Кликнете на линкот за да го ископирате."}
+              </p>
 
               <input
                 type="text"
@@ -313,7 +403,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
                 action={() => {
                   handleBodyScrollWhenMenuIsOpen(isModalShown);
                   setIsModalShown(false);
-                  setIsTextCopied(false)
+                  setIsTextCopied(false);
                 }}
               />
             </div>
