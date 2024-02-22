@@ -205,15 +205,13 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
               <input
                 type="text"
                 value={getLinkForSharing()}
-                className="border p-2 bg-white shadow rounded-md w-full"
+                className="border-2 border-neutral-500 p-2 bg-white shadow rounded-md w-full"
                 onClick={(e) => {
                   navigator.clipboard.writeText(e.currentTarget.value);
                   setIsTextCopied(true);
                 }}
               />
 
-              {/* <p className="border p-2 bg-white shadow">{getLinkForSharing()}</p> */}
-              {/* <MainBtn text={"Затвори"} bgBlack={false} action={() => {}} /> */}
               <button
                 className={`red-bg-color main-btn-hover uppercase font-bold px-5 py-3 text-slate-100 text-base `}
                 onClick={(e) => {
@@ -391,7 +389,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
               <input
                 type="text"
                 value={getLinkForSharing()}
-                className="border p-2 bg-white shadow rounded-md w-full"
+                className="border-2 border-neutral-500 p-2 bg-white shadow rounded-md w-full"
                 onClick={(e) => {
                   navigator.clipboard.writeText(e.currentTarget.value);
                   setIsTextCopied(true);
