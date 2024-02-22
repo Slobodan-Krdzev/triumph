@@ -1,4 +1,5 @@
 "use client";
+import { CustomizationColorType } from "@/app/types/HomeTypes/SharedTypes/types";
 import {
   faBars,
   faChevronLeft,
@@ -10,14 +11,14 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faInfoCircle } from "@fortawesome/free-solid-svg-icons/faInfoCircle";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useEffect, useState } from "react";
-import { useBreakpoint } from "../helpers/useBreakpoint";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { handleBodyScrollWhenMenuIsOpen } from "../helpers/handleBodyScrollWhenMenuOpens";
-import { CustomizationColorType } from "@/app/types/HomeTypes/SharedTypes/types";
-import Link from "next/link";
-import MainBtn from "../MainBtn";
 import Image from "next/image";
+import Link from "next/link";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { useEffect, useState } from "react";
+import MainBtn from "../MainBtn";
+import { handleBodyScrollWhenMenuIsOpen } from "../helpers/handleBodyScrollWhenMenuOpens";
+import { useBreakpoint } from "../helpers/useBreakpoint";
+import { FacebookIcon, FacebookShareButton } from "react-share";
 
 type BottomFixedRibbonProps = {
   info: any;
@@ -137,6 +138,12 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
                 width={300}
                 height={300}
               />
+
+            <FacebookShareButton url={getLinkForSharing()} > 
+                <FacebookIcon className="rounded-full" style={{width: 40, height: 40}}/>
+             </FacebookShareButton>
+              
+
               <p className="font-bold text-2xl text-center">
                 Копирајте го овој линк <br /> и споделете го со вашите пријатели
               </p>
@@ -282,6 +289,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
                 width={300}
                 height={300}
               />
+              
               <p className="font-bold text-2xl text-center">
                 Копирајте го овој линк <br /> и споделете го со вашите пријатели
               </p>
