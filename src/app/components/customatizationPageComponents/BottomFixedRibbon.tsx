@@ -25,11 +25,12 @@ import {
   ViberShareButton,
   WhatsappIcon,
   WhatsappShareButton,
-  XIcon
+  XIcon,
 } from "react-share";
 import MainBtn from "../MainBtn";
 import { handleBodyScrollWhenMenuIsOpen } from "../helpers/handleBodyScrollWhenMenuOpens";
 import { useBreakpoint } from "../helpers/useBreakpoint";
+import Garage from "./Garage";
 
 type BottomFixedRibbonProps = {
   info: any;
@@ -42,6 +43,8 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
 
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
+
+  const [isGarageVisible, setIsGarageVisible] = useState(false);
 
   const breakpoint = useBreakpoint();
   const router = useRouter();
@@ -61,7 +64,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
-      
+
       if (prevScrollPos > currentScrollPos) {
         setVisible(true);
       } else {
@@ -71,10 +74,10 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
       setPrevScrollPos(currentScrollPos);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [prevScrollPos]);
 
@@ -95,13 +98,48 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
 
   const getLinkForSharing = () => window?.location.href;
 
+  const handleSaveBike = (bike: any) => {
+    if (localStorage.getItem("garage") === null) {
+      const createdGarage = [bike];
+
+      localStorage.setItem("garage", JSON.stringify(createdGarage));
+    } else {
+      const garage = JSON.parse(localStorage.getItem("garage")!);
+
+      const bikeIsFound = garage
+        .slice()
+        .find((bikeFromGarage: any) => bikeFromGarage.id === bike.id);
+
+      if (Boolean(bikeIsFound)) {
+        alert("Веќе го имате овој мотор во вашата гаража!");
+      } else {
+        garage.push(bike);
+      }
+
+      localStorage.setItem("garage", JSON.stringify(garage));
+    }
+  };
+
+  const getGarage = () => {
+    if (localStorage.getItem("garage") === null) {
+      return []
+    }
+
+    return JSON.parse(localStorage.getItem("garage")!);
+  };
+
+  const closeGarage = () => setIsGarageVisible(false);
+
   if (breakpoint > 768) {
     return (
       <>
-        <section className="fixed bottom-0 left-0 right-0 flex justify-between border-t-2 gray-300" style={{
-          transition: "transform 0.3s ease-in-out",
-          transform: visible ? "" : 'translateY(100%)'
-        }}>
+        <section
+          className="fixed bottom-0 left-0 right-0 flex justify-between border-t-2 gray-300"
+          style={{
+            transition: "transform 0.3s ease-in-out",
+            transform: visible ? "" : "translateY(100%)",
+          }}
+        >
           <button
             className="py-8 px-4 font-semibold text-neutral-800 light-gray-bg hover:bg-neutral-600 hover:text-neutral-900 transition-colors ease-in-out delay-50 basis-3/12"
             onClick={handlePreviousBtn}
@@ -114,11 +152,17 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
             />
             НАЗАД
           </button>
-          <button className="bg-white basis-2/12 flex flex-col items-center justify-center text-lg text-neutral-600">
+          <button
+            className="bg-white basis-2/12 flex flex-col items-center justify-center text-lg text-neutral-600"
+            onClick={() => handleSaveBike(info)}
+          >
             <FontAwesomeIcon icon={faFloppyDisk} color="black" size="lg" />
             Зачувај
           </button>
-          <button className="bg-white basis-2/12 flex flex-col items-center justify-center text-lg border-x-2 border-gray-300 text-neutral-600">
+          <button
+            className={`bg-white basis-2/12 flex flex-col items-center justify-center text-lg border-x-2 border-gray-300 text-neutral-600`}
+            onClick={() => setIsGarageVisible(!isGarageVisible)}
+          >
             <FontAwesomeIcon icon={faWarehouse} color="black" size="lg" />
             Моја Гаража
           </button>
@@ -229,6 +273,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
 
               <input
                 type="text"
+                readOnly
                 value={getLinkForSharing()}
                 className="border-2 border-neutral-500 p-2 bg-white shadow rounded-md w-full"
                 onClick={(e) => {
@@ -251,6 +296,10 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
             </div>
           </div>
         )}
+
+        {isGarageVisible && (
+          <Garage bikes={getGarage()} handleClose={closeGarage} />
+        )}
       </>
     );
   }
@@ -258,10 +307,13 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
   if (breakpoint <= 768) {
     return (
       <>
-        <section className="fixed bottom-0 left-0 right-0 flex justify-between border-t-2 gray-300" style={{
-          transition: "transform 0.3s ease-in-out",
-          transform: visible ? "" : 'translateY(100%)'
-        }}>
+        <section
+          className="fixed bottom-0 left-0 right-0 flex justify-between border-t-2 gray-300"
+          style={{
+            transition: "transform 0.3s ease-in-out",
+            transform: visible ? "" : "translateY(100%)",
+          }}
+        >
           <button className="basis-2/12 light-gray-bg" onClick={handleMenu}>
             <FontAwesomeIcon icon={faBars} color="black" size="xl" />
           </button>
@@ -415,6 +467,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
               </p>
 
               <input
+                readOnly
                 type="text"
                 value={getLinkForSharing()}
                 className="border-2 border-neutral-500 p-2 bg-white shadow rounded-md w-full"
