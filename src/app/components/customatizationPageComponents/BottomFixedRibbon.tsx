@@ -353,7 +353,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
 
         {isModalShown && (
           <div
-            className="absolute h-screen w-full top-0 left-0 flex flex-col gap-4 justify-center items-center bg-neutral-100 px-4 py-8"
+            className="absolute h-screen w-full top-0 left-0 bg-neutral-100 px-4 py-4"
             style={{ zIndex: 80 }}
           >
             <div className="flex gap-8 flex-col justify-center items-center">
