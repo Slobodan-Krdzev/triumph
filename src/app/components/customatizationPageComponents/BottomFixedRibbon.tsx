@@ -15,22 +15,21 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import MainBtn from "../MainBtn";
-import { handleBodyScrollWhenMenuIsOpen } from "../helpers/handleBodyScrollWhenMenuOpens";
-import { useBreakpoint } from "../helpers/useBreakpoint";
 import {
   EmailIcon,
   EmailShareButton,
   FacebookIcon,
   FacebookShareButton,
-  TwitterIcon,
   TwitterShareButton,
   ViberIcon,
   ViberShareButton,
   WhatsappIcon,
   WhatsappShareButton,
-  XIcon,
+  XIcon
 } from "react-share";
+import MainBtn from "../MainBtn";
+import { handleBodyScrollWhenMenuIsOpen } from "../helpers/handleBodyScrollWhenMenuOpens";
+import { useBreakpoint } from "../helpers/useBreakpoint";
 
 type BottomFixedRibbonProps = {
   info: any;
@@ -40,6 +39,9 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
   const [isMobileMenuShown, setIsMobileMenuShown] = useState(false);
   const [isModalShown, setIsModalShown] = useState(false);
   const [isTextCopied, setIsTextCopied] = useState(false);
+
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
 
   const breakpoint = useBreakpoint();
   const router = useRouter();
@@ -55,6 +57,26 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
       setIsMobileMenuShown(false);
     }
   }, [breakpoint]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      
+      if (prevScrollPos > currentScrollPos) {
+        setVisible(true);
+      } else {
+        setVisible(false);
+      }
+
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [prevScrollPos]);
 
   const handlePreviousBtn = () => router.back();
 
@@ -76,7 +98,10 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
   if (breakpoint > 768) {
     return (
       <>
-        <section className="fixed bottom-0 left-0 right-0 flex justify-between border-t-2 gray-300">
+        <section className="fixed bottom-0 left-0 right-0 flex justify-between border-t-2 gray-300" style={{
+          transition: "transform 0.3s ease-in-out",
+          transform: visible ? "" : 'translateY(100%)'
+        }}>
           <button
             className="py-8 px-4 font-semibold text-neutral-800 light-gray-bg hover:bg-neutral-600 hover:text-neutral-900 transition-colors ease-in-out delay-50 basis-3/12"
             onClick={handlePreviousBtn}
@@ -233,7 +258,10 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
   if (breakpoint <= 768) {
     return (
       <>
-        <section className="fixed bottom-0 left-0 right-0 flex justify-between border-t-2 gray-300">
+        <section className="fixed bottom-0 left-0 right-0 flex justify-between border-t-2 gray-300" style={{
+          transition: "transform 0.3s ease-in-out",
+          transform: visible ? "" : 'translateY(100%)'
+        }}>
           <button className="basis-2/12 light-gray-bg" onClick={handleMenu}>
             <FontAwesomeIcon icon={faBars} color="black" size="xl" />
           </button>
