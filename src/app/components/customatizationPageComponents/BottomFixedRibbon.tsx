@@ -99,6 +99,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
   const getLinkForSharing = () => window?.location.href;
 
   const handleSaveBike = (bike: any) => {
+
     if (localStorage.getItem("garage") === null) {
       const createdGarage = [bike];
 
@@ -154,7 +155,18 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
           </button>
           <button
             className="bg-white basis-2/12 flex flex-col items-center justify-center text-lg text-neutral-600"
-            onClick={() => handleSaveBike(info)}
+            onClick={(e) => {
+
+              e.currentTarget.innerText = 'Зачувано'
+              
+              setTimeout(() => {
+                e.currentTarget.innerHTML = `
+                Зачувај`
+
+              }, 3000)
+
+              handleSaveBike(info)
+            } }
           >
             <FontAwesomeIcon icon={faFloppyDisk} color="black" size="lg" />
             Зачувај
