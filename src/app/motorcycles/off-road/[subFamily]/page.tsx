@@ -24,7 +24,7 @@ const OffRoadSubFamilyPage = async ({ params }: any) => {
           video={subFamily.gallery.subFamilyHeroVideo.src}
           mobileImage={subFamily.gallery.subFamilyHeroImageMobile.src}
           model={formulateSubFamilyTitleOnBanner(query)}
-          slogans={subFamily.subFamilyPageInfo.heroSlogans ?? []}
+          slogans={subFamily.heroSlogans ?? []}
         />
 
         <main className="bg-black"></main>

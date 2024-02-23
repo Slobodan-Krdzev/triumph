@@ -23,10 +23,10 @@ export default async function RootLayout({
 
   try {
 
-      const   familiesRes = await fetch(`${FAMILIES}`, {next: {revalidate: 3000}})
+      const   familiesRes = await fetch(`${FAMILIES}`, {cache: 'no-cache'})
       const families = await familiesRes.json()
 
-      const subFamiliesRes = await fetch(`${SUB_FAMILIES}`, {next: {revalidate: 3000}})
+      const subFamiliesRes = await fetch(`${SUB_FAMILIES}`, {cache: 'no-cache'})
       const subFamilies = await subFamiliesRes.json()
 
       return (

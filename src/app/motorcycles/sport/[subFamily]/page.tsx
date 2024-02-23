@@ -22,15 +22,11 @@ const SportSubFamilyPage = async ({ params }: any) => {
     const bikes = await bikesRes.json();
 
     const hasGrayCaro =
-      subFamily.subFamilyPageInfo.hasOwnProperty("grayCarousell");
+      subFamily.hasOwnProperty("grayCarousell");
 
     const hasYoutubeVid =
-      subFamily.subFamilyPageInfo.hasOwnProperty("youtubeVideo");
+      subFamily.hasOwnProperty("youtubeVideo");
 
-    const hasAudio = subFamily.subFamilyPageInfo.hasOwnProperty("audioSection");
-
-    const hasTopSection =
-      subFamily.subFamilyPageInfo.hasOwnProperty("topSection");
     return (
       <>
         <HeroSection
@@ -59,14 +55,14 @@ const SportSubFamilyPage = async ({ params }: any) => {
             </div>
             {hasYoutubeVid && (
               <YouTubePromo
-                video={subFamily.subFamilyPageInfo.youtubeVideo ?? ""}
+                video={subFamily.youtubeVideo ?? ""}
               />
             )}
           </section>
 
           {hasGrayCaro && (
             <BottomCarousell
-              items={subFamily.subFamilyPageInfo.grayCarousell}
+              items={subFamily.grayCarousell}
             />
           )}
         </main>

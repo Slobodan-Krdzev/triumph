@@ -25,14 +25,14 @@ const RoadstersSubFamilyPage = async ({ params }: any) => {
     const bikes = await bikesRes.json();
 
     const hasGrayCaro =
-      subFamily.subFamilyPageInfo.hasOwnProperty("grayCarousell");
+      subFamily.hasOwnProperty("grayCarousell");
 
     const hasYoutubeVid =
-      subFamily.subFamilyPageInfo.hasOwnProperty("youtubeVideo");
+      subFamily.hasOwnProperty("youtubeVideo");
 
     const hasAudio = subFamily.subFamilyPageInfo.hasOwnProperty("audioSection");
 
-    const hasYoutubeCaro = subFamily.subFamilyPageInfo.hasOwnProperty(
+    const hasYoutubeCaro = subFamily.hasOwnProperty(
       "youtubeVideosCarousellItems"
     );
 
@@ -42,14 +42,14 @@ const RoadstersSubFamilyPage = async ({ params }: any) => {
           video={subFamily.gallery.subFamilyHeroVideo.src}
           mobileImage={subFamily.gallery.subFamilyHeroImageMobile?.src ?? "/"}
           model={formulateSubFamilyTitleOnBanner(query)}
-          slogans={subFamily.subFamilyPageInfo.heroSlogans}
+          slogans={subFamily.heroSlogans}
         />
 
         <main className="bg-white">
           <TopSection
-            title={subFamily.subFamilyPageInfo.topSection.title}
-            desc={subFamily.subFamilyPageInfo.topSection.desc}
-            subtitle={subFamily.subFamilyPageInfo.topSection.subtitle}
+            title={subFamily.topSection.title}
+            desc={subFamily.topSection.desc}
+            subtitle={subFamily.topSection.subtitle}
             image={subFamily.gallery.subFamilyTopSectionImage.src}
             bgImage={subFamily.gallery.subFamilyTopSectionBGImage.src}
           />
@@ -78,16 +78,16 @@ const RoadstersSubFamilyPage = async ({ params }: any) => {
         </main>
 
         {hasYoutubeVid && (
-          <YouTubePromo video={subFamily.subFamilyPageInfo.youtubeVideo} />
+          <YouTubePromo video={subFamily.youtubeVideo} />
         )}
 
         {hasGrayCaro && (
-          <BottomCarousell items={subFamily.subFamilyPageInfo.grayCarousell} />
+          <BottomCarousell items={subFamily.grayCarousell} />
         )}
 
         <NumbersSection
           model={query}
-          specNumbers={subFamily.subFamilyPageInfo.specNumbers}
+          specNumbers={subFamily.specNumbers}
         />
 
         {hasAudio && (
@@ -101,7 +101,7 @@ const RoadstersSubFamilyPage = async ({ params }: any) => {
 
         {hasYoutubeCaro && (
           <YoutubeVideoCarousell
-            items={subFamily.subFamilyPageInfo.youtubeVideosCarousellItems}
+            items={subFamily.youtubeVideosCarousellItems}
           />
         )}
       </>

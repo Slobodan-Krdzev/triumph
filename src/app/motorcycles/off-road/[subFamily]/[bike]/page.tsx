@@ -96,7 +96,7 @@ const OffRoadBikePage = async ({ params }: any) => {
               isOpen={true}
             />
           </div>
-          <SpecsTable specs={subFam.subFamilyPageInfo.fullSpecs} />
+          <SpecsTable specs={subFam ?? []} />
         </section>
 
         <section className="bg-black">
@@ -123,10 +123,10 @@ const OffRoadBikePage = async ({ params }: any) => {
             />
           )}
 
-          {subFam.subFamilyPageInfo.specNumbers && (
+          {subFam.specNumbers && (
             <NumbersSection
               model={formulateSubFamilyTitleOnBanner(bike.model) ?? ""}
-              specNumbers={subFam.subFamilyPageInfo.specNumbers ?? []}
+              specNumbers={subFam.specNumbers ?? []}
               bgBlack={true}
             />
           )}

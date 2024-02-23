@@ -24,14 +24,14 @@ const Rocket3SubFamPage = async () => {
           video={subFamily.gallery.subFamilyHeroVideo.src}
           mobileImage={subFamily.gallery.subFamilyHeroImageMobile?.src ?? "/"}
           model={"Rocket-3"}
-          slogans={subFamily.subFamilyPageInfo.heroSlogans}
+          slogans={subFamily.heroSlogans}
         />
 
         <main className="bg-white">
           <TopSection
-            title={subFamily.subFamilyPageInfo.topSection.title}
-            desc={subFamily.subFamilyPageInfo.topSection.desc}
-            subtitle={subFamily.subFamilyPageInfo.topSection.subtitle}
+            title={subFamily.topSection.title}
+            desc={subFamily.topSection.desc}
+            subtitle={subFamily.topSection.subtitle}
             image={subFamily.gallery.subFamilyTopSectionImage.src}
             bgImage={subFamily.gallery.subFamilyTopSectionBGImage.src}
           />

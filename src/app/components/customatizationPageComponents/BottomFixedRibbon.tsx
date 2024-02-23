@@ -155,18 +155,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
           </button>
           <button
             className="bg-white basis-2/12 flex flex-col items-center justify-center text-lg text-neutral-600"
-            onClick={(e) => {
-
-              e.currentTarget.innerText = 'Зачувано'
-              
-              setTimeout(() => {
-                e.currentTarget.innerHTML = `
-                Зачувај`
-
-              }, 3000)
-
-              handleSaveBike(info)
-            } }
+            onClick={(e) => handleSaveBike(info)}
           >
             <FontAwesomeIcon icon={faFloppyDisk} color="black" size="lg" />
             Зачувај

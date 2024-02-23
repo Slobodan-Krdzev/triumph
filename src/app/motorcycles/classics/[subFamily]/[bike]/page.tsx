@@ -92,7 +92,7 @@ const ClassicsBikePage = async ({ params }: any) => {
               isOpen={true}
             />
           </div>
-          <SpecsTable specs={subFam.subFamilyPageInfo.fullSpecs} />
+          <SpecsTable specs={subFam} />
         </section>
 
         {bike.gallery.promoYoutubeVideo && (
@@ -105,7 +105,7 @@ const ClassicsBikePage = async ({ params }: any) => {
         {bike.features && (
           <section className="px-4">
             <SpecTableListi
-              items={bike.features}
+              items={bike.features ?? []}
               title={"Карактеристики"}
               isOpen={true}
             />

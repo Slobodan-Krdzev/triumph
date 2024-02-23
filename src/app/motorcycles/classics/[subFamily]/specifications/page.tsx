@@ -32,12 +32,14 @@ const ClassicsSpecsPage = async ({ params }: any) => {
             />
           </div>
 
-          <SpecsTable specs={subFamily.subFamilyPageInfo.fullSpecs ?? []} />
+          <SpecsTable specs={subFamily} />
         </main>
       </>
     );
   } catch (err) {
-    return redirect(`/motorcycles/classics/${subFam}`);
+    // return redirect(`/motorcycles/classics/${subFam}`);
+    console.log(err);
+    
   }
 };
 

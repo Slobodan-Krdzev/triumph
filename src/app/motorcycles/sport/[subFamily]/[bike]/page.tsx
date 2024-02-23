@@ -99,7 +99,7 @@ const SportBikePage = async ({ params }: any) => {
               isOpen={true}
             />
           </div>
-          <SpecsTable specs={subFam.subFamilyPageInfo.fullSpecs} />
+          <SpecsTable specs={subFam} />
         </section>
 
         {bike.gallery.promoYoutubeVideo && (
@@ -117,10 +117,10 @@ const SportBikePage = async ({ params }: any) => {
           />
         )}
 
-        {subFam.subFamilyPageInfo.specNumbers && (
+        {subFam.specNumbers && (
           <NumbersSection
             model={formulateSubFamilyTitleOnBanner(bike.model) ?? ""}
-            specNumbers={subFam.subFamilyPageInfo.specNumbers ?? []}
+            specNumbers={subFam.specNumbers ?? []}
             bgBlack={false}
           />
         )}

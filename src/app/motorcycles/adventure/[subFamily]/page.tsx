@@ -42,7 +42,7 @@ const SubFamilyPage = async ({ params }: any) => {
           video={subFamily.gallery.subFamilyHeroVideo.src}
           mobileImage={subFamily.gallery.subFamilyHeroImageMobile?.src ?? "/"}
           model={formulateSubFamilyTitleOnBanner(query)}
-          slogans={subFamily.subFamilyPageInfo.heroSlogans ?? []}
+          slogans={subFamily.heroSlogans ?? []}
         />
 
         <main className="bg-white">
@@ -79,9 +79,9 @@ const SubFamilyPage = async ({ params }: any) => {
 
           {hasTopSection && (
             <TopSection
-              title={subFamily.subFamilyPageInfo.topSection.title}
-              desc={subFamily.subFamilyPageInfo.topSection.desc}
-              subtitle={subFamily.subFamilyPageInfo.topSection.subtitle}
+              title={subFamily.topSection.title}
+              desc={subFamily.topSection.desc}
+              subtitle={subFamily.topSection.subtitle}
               image={subFamily.gallery.subFamilyTopSectionImage.src}
               bgImage={subFamily.gallery.subFamilyTopSectionBGImage.src}
             />
@@ -147,11 +147,11 @@ const SubFamilyPage = async ({ params }: any) => {
         </main>
 
         {hasYoutubeVid && (
-          <YouTubePromo video={subFamily.subFamilyPageInfo.youtubeVideo} />
+          <YouTubePromo video={subFamily.youtubeVideo} />
         )}
 
         {hasGrayCaro && (
-          <BottomCarousell items={subFamily.subFamilyPageInfo.grayCarousell} />
+          <BottomCarousell items={subFamily.grayCarousell} />
         )}
 
         {subFamily.subFamilyName === "tiger-900" && (
@@ -182,7 +182,7 @@ const SubFamilyPage = async ({ params }: any) => {
 
         <NumbersSection
           model={query}
-          specNumbers={subFamily.subFamilyPageInfo.specNumbers}
+          specNumbers={subFamily.specNumbers}
         />
 
         {hasAudio && (

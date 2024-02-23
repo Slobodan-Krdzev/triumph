@@ -82,10 +82,10 @@ const RocketBikePage = async ({ params }: any) => {
           <Rocket3TopDesc info={bike.bikePageInfo.topDesc} />
         )}
 
-        {subFam.subFamilyPageInfo.specNumbers && (
+        {subFam.specNumbers && (
           <NumbersSection
             model={bikeModel}
-            specNumbers={subFam.subFamilyPageInfo.specNumbers}
+            specNumbers={subFam.specNumbers}
             bgBlack={true}
           />
         )}

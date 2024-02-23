@@ -37,13 +37,13 @@ const ClassicsSubFamilyPage = async ({ params }: any) => {
           <HeroSection
             image={subFamily.gallery.subFamilyHeroImage.src ?? ""}
             mobileImage={subFamily.gallery.subFamilyHeroImageMobile?.src }
-            slogans={subFamily.subFamilyPageInfo.heroSlogans}
+            slogans={subFamily.heroSlogans}
             model={formulateSubFamilyTitleOnBanner(subFam)}
           />
         ) : (
           <HeroSection
             video={subFamily.gallery.subFamilyHeroVideo.src ?? ""}
-            slogans={subFamily.subFamilyPageInfo.heroSlogans}
+            slogans={subFamily.heroSlogans}
             mobileImage={subFamily.gallery.subFamilyHeroImageMobile?.src }
             model={formulateSubFamilyTitleOnBanner(subFam)}
           />
@@ -51,9 +51,9 @@ const ClassicsSubFamilyPage = async ({ params }: any) => {
 
         <main className="bg-white ">
           <TopSection
-            title={subFamily.subFamilyPageInfo.topSection.title ?? ""}
-            desc={subFamily.subFamilyPageInfo.topSection.desc ?? ""}
-            subtitle={subFamily.subFamilyPageInfo.topSection.subtitle ?? ""}
+            title={subFamily.topSection.title ?? ""}
+            desc={subFamily.topSection.desc ?? ""}
+            subtitle={subFamily.topSection.subtitle ?? ""}
             image={subFamily.gallery.subFamilyTopSectionImage.src ?? ""}
             bgImage={subFamily.gallery.subFamilyTopSectionBGImage.src ?? ""}
           />
@@ -81,18 +81,18 @@ const ClassicsSubFamilyPage = async ({ params }: any) => {
           </section>
         </main>
 
-        {subFamily.subFamilyPageInfo.youtubeVideo && (
-          <YouTubePromo video={subFamily.subFamilyPageInfo.youtubeVideo} />
+        {subFamily.youtubeVideo && (
+          <YouTubePromo video={subFamily.youtubeVideo} />
         )}
 
-        {subFamily.subFamilyPageInfo.grayCarousell && (
-          <BottomCarousell items={subFamily.subFamilyPageInfo.grayCarousell} />
+        {subFamily.grayCarousell && (
+          <BottomCarousell items={subFamily.grayCarousell} />
         )}
 
-        {subFamily.subFamilyPageInfo.specNumbers && (
+        {subFamily.specNumbers && (
           <NumbersSection
             model={subFam}
-            specNumbers={subFamily.subFamilyPageInfo.specNumbers}
+            specNumbers={subFamily.specNumbers}
           />
         )}
 
@@ -105,9 +105,9 @@ const ClassicsSubFamilyPage = async ({ params }: any) => {
           />
         )}
 
-        {subFamily.subFamilyPageInfo.youtubeVideosCarousellItems && (
+        {subFamily.youtubeVideosCarousellItems && (
           <YoutubeVideoCarousell
-            items={subFamily.subFamilyPageInfo.youtubeVideosCarousellItems}
+            items={subFamily.youtubeVideosCarousellItems}
           />
         )}
       </>
@@ -116,6 +116,7 @@ const ClassicsSubFamilyPage = async ({ params }: any) => {
     console.log(err);
 
     return redirect("/motorcycles/classics");
+    // return <>err</>
   }
 };
 
