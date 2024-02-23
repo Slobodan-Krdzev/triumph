@@ -9,11 +9,9 @@ type BikeModalProps = {
 };
 
 const BikeModal = ({ bike, handleClose }: BikeModalProps) => {
-  console.log(bike.title);
-
   return (
     <section
-      className="bikeModal fixed left-0 right-0 bottom-0 bg-white z-50 flex justify-center items-center "
+      className="fixed left-0 right-0 bg-white z-50 flex justify-center items-center "
       style={{
         top: "64px",
       }}
@@ -22,7 +20,7 @@ const BikeModal = ({ bike, handleClose }: BikeModalProps) => {
         <div className="flex justify-end items-center basis-2/12 gap-8">
           <div className="basis-1/12"></div>
           <h2 className="basis-10/12 text-center m-auto text-2xl font-semibold uppercase">
-            {bike.title ?? ""}
+            {bike.title ?? ""}  HWLLO
           </h2>
 
           <div className="basis-1/12 flex justify-center">

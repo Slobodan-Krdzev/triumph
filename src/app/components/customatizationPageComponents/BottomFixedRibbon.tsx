@@ -99,7 +99,6 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
   const getLinkForSharing = () => window?.location.href;
 
   const handleSaveBike = (bike: any) => {
-
     if (localStorage.getItem("garage") === null) {
       const createdGarage = [bike];
 
@@ -113,6 +112,8 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
 
       if (Boolean(bikeIsFound)) {
         alert("Веќе го имате овој мотор во вашата гаража!");
+
+
       } else {
         garage.push(bike);
       }
@@ -123,7 +124,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
 
   const getGarage = () => {
     if (localStorage.getItem("garage") === null) {
-      return []
+      return [];
     }
 
     return JSON.parse(localStorage.getItem("garage")!);
@@ -154,7 +155,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
             НАЗАД
           </button>
           <button
-            className="bg-white basis-2/12 flex flex-col items-center justify-center text-lg text-neutral-600"
+            className={`bg-white basis-2/12 flex flex-col items-center justify-center text-lg text-neutral-600`}
             onClick={(e) => handleSaveBike(info)}
           >
             <FontAwesomeIcon icon={faFloppyDisk} color="black" size="lg" />
@@ -212,8 +213,8 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
         </section>
 
         {isModalShown && (
-          <div className="absolute h-screen w-full top-0 left-0 flex justify-center items-center modal-blur">
-            <div className="bg-neutral-200 flex flex-col justify-center gap-8 items-center p-20 rounded-md">
+          <div className="absolute w-full top-0 left-0 flex justify-center items-center modal-blur">
+            <div className="bg-neutral-200 flex flex-col justify-center gap-8 items-center p-8">
               <Image
                 src={"/images/triumphLogo.png"}
                 alt="Logo"
@@ -406,7 +407,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
 
         {isModalShown && (
           <div
-            className="absolute h-screen w-full top-0 left-0 bg-neutral-100 px-4 py-4"
+            className="absolute w-full top-0 left-0 bg-neutral-100 px-4 py-4"
             style={{ zIndex: 80 }}
           >
             <div className="flex gap-8 flex-col justify-center items-center">

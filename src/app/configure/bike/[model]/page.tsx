@@ -19,7 +19,7 @@ const BikeConfigPage = async ({ params }: any) => {
       <>
         <main className="relative pb-4 md:pb-8 lg:pb-16">
           <section className="flex lg:flex-row flex-col ">
-            <div className="flex flex-col md:basis-8/12  bg-white shadow-2xl">
+            <div className="flex flex-col md:basis-8/12 bg-white shadow-2xl">
               <div className="flex uppercase text-sm font-medium slight-white-bg">
                 <div className="grow flex justify-center items-center py-3 px-10 border-b-2 border-gray-300">
                   <p>
@@ -45,14 +45,14 @@ const BikeConfigPage = async ({ params }: any) => {
               </div>
             </div>
             <div className="flex justify-center lg:justify-start items-start md:px-8 px-4 lg:py-10 py-8 md:basis-4/12">
-              <div className="md:w-10/12 w-full">
+              <div className="w-full m-auto">
                 <h2 className="text-xl text-center font-bold uppercase mb-2 tracking-wider">
                   Одберете Боја
                 </h2>
                 <p className="text-sm mb-2 hidden md:block">
                   Боите кои се на располагање се прикажани долу.
                 </p>
-                <div className="flex flex-wrap gap-4">
+                <div className="grid grid-rows-2 grid-cols-2 gap-4">
                   {bike[0].customizationColors.map((color: any) => (
                     <ColorCard key={color.colorName} color={color} />
                   ))}
