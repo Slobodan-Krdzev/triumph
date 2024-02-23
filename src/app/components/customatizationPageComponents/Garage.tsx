@@ -56,13 +56,13 @@ const Garage = ({ bikes, handleClose }: GarageProps) => {
 
   return (
     <section
-      className="fixed left-0 right-0 bottom-0 slight-white-bg border-2  py-16 px-24"
+      className="fixed left-0 right-0 bottom-0 slight-white-bg border-2 py-12 px-8 lg:py-16 lg:px-24"
       style={{ top: "64px" }}
     >
-      <div className="relative">
-        <button className="absolute top-5 right-5" onClick={handleClose}>
-          <FontAwesomeIcon icon={faX} size="xl" />
-        </button>
+      <button className="absolute top-3 right-3 lg:top-16 lg:right-16" onClick={handleClose}>
+        <FontAwesomeIcon icon={faX} size="xl" />
+      </button>
+      <div>
         <div className="flex flex-col gap-8">
           <div className="flex justify-center items-center gap-6">
             <Image
@@ -83,7 +83,7 @@ const Garage = ({ bikes, handleClose }: GarageProps) => {
           </div>
           <FamilyBikesSlider itemsToRender={bikes} />
         </div>
-        <div className="flex mt-6 justify-center gap-6">
+        <div className="flex flex-col lg;flex-row mt-6 items-center justify-center gap-6">
           <MainBtn text={"Контакт"} bgBlack={false} isLink link="/dealer" />
           <MainBtn
             text={"Види ги сите"}

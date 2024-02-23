@@ -31,7 +31,7 @@ const BikeConfigPage = async ({ params }: any) => {
                   <p>2. Бои</p>
                 </div>
               </div>
-              <div className="relative md:px-32 md:py-10">
+              <div className="relative md:px-32 md:py-5">
                 <h1
                   style={{ top: "10%", left: "10%" }}
                   className="absolute font-bold text-2xl md:text-6xl text-neutral-200 uppercase tracking-tighter"

@@ -9,7 +9,7 @@ type FamilyBikesSliderProps = {
 const FamilyBikesSlider = ({ itemsToRender = [] }: FamilyBikesSliderProps) => {
 
 
-  if (itemsToRender && itemsToRender.length >= 3) {
+  if (itemsToRender && itemsToRender.length >= 1) {
     return (
       <div className="flex justify-start gap-8 overflow-x-scroll bg-white rounded-sm slight-white-bg ">
         {itemsToRender.map((item: any) => (
@@ -19,7 +19,7 @@ const FamilyBikesSlider = ({ itemsToRender = [] }: FamilyBikesSliderProps) => {
     );
   }
 
-  if (itemsToRender && itemsToRender.length < 3) {
+  if (itemsToRender && itemsToRender.length < 1) {
     return (
       <div className="flex justify-start gap-8">
         {itemsToRender.map((item: any) => (

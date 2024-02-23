@@ -5,6 +5,7 @@ import {
   faChevronLeft,
   faChevronRight,
   faFloppyDisk,
+  faPlus,
   faShareNodes,
   faWarehouse,
   faX,
@@ -112,8 +113,6 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
 
       if (Boolean(bikeIsFound)) {
         alert("Веќе го имате овој мотор во вашата гаража!");
-
-
       } else {
         garage.push(bike);
       }
@@ -143,7 +142,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
           }}
         >
           <button
-            className="py-8 px-4 font-semibold text-neutral-800 light-gray-bg hover:bg-neutral-600 hover:text-neutral-900 transition-colors ease-in-out delay-50 basis-3/12"
+            className="py-6 px-4 font-semibold text-neutral-800 light-gray-bg hover:bg-neutral-600 hover:text-neutral-900 transition-colors ease-in-out delay-50 basis-3/12"
             onClick={handlePreviousBtn}
           >
             <FontAwesomeIcon
@@ -352,7 +351,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
         </section>
 
         {isMobileMenuShown && (
-          <section className="fixed z-100 top-0 left-0 right-0 w-screen h-full bg-white flex flex-col justify-between">
+          <section className="fixed z-100 top-0 left-0 right-0 h-screen w-screen bg-white flex flex-col justify-between">
             <div className="light-gray-bg py-4 flex justify-between px-6 items-center">
               <p className="uppercase font-semibold">МОДУЛАТОР</p>
               <button onClick={handleMenu}>
@@ -360,17 +359,21 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
               </button>
             </div>
             <div className="px-10 flex flex-col">
-              <button className="flex items-center justify-between text-lg text-neutral-600  py-3">
+              <button
+                className="flex items-center justify-between text-lg text-neutral-600  py-3"
+                onClick={(e) => handleSaveBike(info)}
+              >
                 <FontAwesomeIcon icon={faFloppyDisk} color="black" size="lg" />
                 <p className="basic-8/12 grow">Зачувај</p>
 
-                <FontAwesomeIcon
-                  icon={faChevronRight}
-                  color="black"
-                  size="lg"
-                />
+                <FontAwesomeIcon icon={faPlus} color="black" size="lg" />
               </button>
-              <button className=" flex  justify-between text-lg border-y-2 border-gray-300 text-neutral-600 py-3">
+              <button
+                className=" flex  justify-between text-lg border-y-2 border-gray-300 text-neutral-600 py-3"
+                onClick={() => {
+                  setIsGarageVisible(true);
+                }}
+              >
                 <FontAwesomeIcon icon={faWarehouse} color="black" size="lg" />
                 <p className="basic-8/12">Гаража</p>
 
@@ -489,6 +492,10 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
               />
             </div>
           </div>
+        )}
+
+        {isGarageVisible && (
+          <Garage bikes={getGarage()} handleClose={closeGarage} />
         )}
       </>
     );
