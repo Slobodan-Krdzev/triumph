@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('fam_classics', function (Blueprint $table) {
             $table->id();
             $table->string('type');
-            $table->string('familyPageBannerDesc');
+            $table->string('familyPageBannerDesc')->nullable();
             $table->string('familyPageBannerVideo');
             $table->json('configPageInfo');
             $table->json('configFamilyPageInfo');

@@ -6,7 +6,7 @@
                 {{ session('success') }}
             </div>
         @endif
-        <h1 class="font-bold text-4xl">You are editing <span class="uppercase text-red-500">{{$moto->model}}</span></h1>
+        <h1 class="font-bold text-4xl">You are editing model:<span class="uppercase text-red-500">{{$moto->model}}</span></h1>
         <form action="{{ route('update-moto', $moto->id) }}" method="POST" class="flex flex-col">
             @csrf
             @method('PUT')

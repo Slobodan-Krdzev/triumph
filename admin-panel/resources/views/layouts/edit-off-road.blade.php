@@ -6,7 +6,7 @@
                 {{ session('success') }}
             </div>
         @endif
-        <h1 class="font-bold text-4xl">You are editing <span class="uppercase text-red-500">{{$moto->model}}</span></h1>
+        <h1 class="font-bold text-4xl">You are editing model:<span class="uppercase text-red-500">{{$moto->model}}</span></h1>
         <form action="{{ route('update-moto', $moto->id) }}" method="POST" class="flex flex-col">
             @csrf
             @method('PUT')
@@ -55,12 +55,12 @@
 
             <label for="bikeCollorPalletteGallery[color2]">Color 2:</label>
             <input type="text" name="bikeCollorPalletteGallery[color2]"
-                value="{{ old('bikeCollorPalletteGallery.color2', isset($moto) ? $moto->bikeCollorPalletteGallery['color2'] : '') }}"
+                value="{{ old('bikeCollorPalletteGallery.color2', isset($moto->bikeCollorPalletteGallery['color2']) ? $moto->bikeCollorPalletteGallery['color2'] : '') }}"
                 required>
 
             <label for="bikeCollorPalletteGallery[color2Reversed]">Color 2 Reversed:</label>
             <input type="text" name="bikeCollorPalletteGallery[color2Reversed]"
-                value="{{ old('bikeCollorPalletteGallery.color2Reversed', isset($moto) ? $moto->bikeCollorPalletteGallery['color2Reversed'] : '') }}"
+                value="{{ old('bikeCollorPalletteGallery.color2Reversed', isset($moto->bikeCollorPalletteGallery['color2Reversed']) ? $moto->bikeCollorPalletteGallery['color2Reversed'] : '') }}"
                 required>
 
             <label for="bikeCollorPalletteGallery[color3]">Color 3:</label>

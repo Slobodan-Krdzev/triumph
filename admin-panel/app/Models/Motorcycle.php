@@ -29,7 +29,8 @@ class Motorcycle extends Model
         'bikePageCarousell',
         'features',
         'subFamilyPromo',
-        'bikePagePromo'
+        'bikePagePromo',
+        'bikePageImageGallery',
     ];
 
     protected $casts = [
@@ -42,7 +43,8 @@ class Motorcycle extends Model
         'features' => 'json',
         'subFamilyPromo' => 'json',
         'bikePageInfo' => 'json',
-        'bikePagePromo' => 'json'
+        'bikePagePromo' => 'json',
+        'bikePageImageGallery' => 'json',
     ];
 
 

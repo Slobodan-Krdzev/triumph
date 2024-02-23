@@ -13,7 +13,6 @@ return new class extends Migration
     {
         Schema::create('promo', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('fam_adventure_id')->constrained('fam_adventure')->default('1');
             $table->json('promo_data');
             $table->timestamps();
         });

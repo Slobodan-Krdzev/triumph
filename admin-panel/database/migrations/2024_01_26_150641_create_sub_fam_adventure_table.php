@@ -13,23 +13,22 @@ return new class extends Migration
     {
         Schema::create('sub_fam_adventure', function (Blueprint $table) {
             $table->id();
-            $table->string('price');
+            $table->string('price')->nullable();
             $table->string('title');
-            $table->string('model_name');
             $table->string('subFamilyName');
-            $table->string('url');
-            $table->json('subFamilyPageInfo');
-            $table->json('heroSlogans');
-            $table->string('youtubeVideo');
-            $table->json('engineTransmission');
-            $table->json('frame');
-            $table->json('dimension');
-            $table->json('fuelConsumption');
-            $table->json('grayCarousell');
-            $table->json('specNumbers');
-            $table->json('reasonsToDrive');
-            $table->json('gallery');
-            $table->json('accessory');
+            $table->string('url')->nullable();
+            $table->json('subFamilyPageInfo')->nullable();
+            $table->json('heroSlogans')->nullable();
+            $table->string('youtubeVideo')->nullable();
+            $table->json('engineTransmission')->nullable();
+            $table->json('frame')->nullable();
+            $table->json('dimension')->nullable();
+            $table->json('fuelConsumption')->nullable();
+            $table->json('grayCarousell')->nullable();
+            $table->json('specNumbers')->nullable();
+            $table->json('reasonsToDrive')->nullable();
+            $table->json('gallery')->nullable();
+            $table->json('accessory')->nullable();
             $table->timestamps();
         });
     }

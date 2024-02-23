@@ -12,7 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('sub_fam_adventure', function (Blueprint $table) {
-            $table->json('specs')->after('url')->nullable();
+            $table->string('cc')->after('url')->nullable();
+
         });
     }
 
@@ -22,8 +23,7 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table('sub_fam_adventure', function (Blueprint $table) {
-            $table->dropColumn('specs');
-
+            $table->dropColumn('cc');
         });
     }
 };

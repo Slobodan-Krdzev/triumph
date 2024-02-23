@@ -35,17 +35,6 @@ class MotorcycleController extends Controller
     }
 
 
-    // public function indexApi(Request $request)
-    // {
-    //     $category = $request->input('category');
-
-    //     $motorcycles = Motorcycle::when($category, function ($query) use ($category) {
-    //         return $query->where('category', $category);
-    //     })->get();
-
-    //     return response()->json($motorcycles);
-    // }
-
 
     public function store(Request $request)
     {
@@ -69,6 +58,8 @@ class MotorcycleController extends Controller
             'roadsters' => 'layouts.edit-roadster',
             'adventure' => 'layouts.edit-moto-default',
             'rocket-3' => 'layouts.edit-rocket-3',
+            'sport' => 'layouts.edit-sport',
+            'off-road' => 'layouts.edit-off-road',
             default => 'layouts.edit-default',
         };
 

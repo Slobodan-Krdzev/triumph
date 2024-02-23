@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('sub_fam_adventure', function (Blueprint $table) {
-            $table->json('youtubeVideosCarousellItems')->after('specNumbers');
+            $table->json('youtubeVideosCarousellItems')->after('specNumbers')->nullable();
         });
     }
 

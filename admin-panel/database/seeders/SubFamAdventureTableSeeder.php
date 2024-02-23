@@ -1798,6 +1798,7 @@ class SubFamAdventureTableSeeder extends Seeder
             "title" => "Speed 400",
             "price" => 5690,
             "url" => "/motorcycles/classics/speed-400",
+            "cc" => 400,
             "specs" => [
                 [
                     "desc" => "ML",
@@ -2139,6 +2140,7 @@ class SubFamAdventureTableSeeder extends Seeder
             "title" => "Scrambler 400 X",
             "price" => 6390,
             "url" => "/motorcycles/classics/scrambler-400-x",
+            "cc" => 400,
             "youtubeVideo" => "https:://www.youtube.com/embed/moLlIk90Ea",
             "shortDesc" => "Со агилно управување, водечки перформанси во класата и луксузна завршница, Scrambler 400 X е „кул“ и способен за секаков предизвик.",
             "heroSlogans" => ["Стартувајте ја", "вашата", "Авантура"],
@@ -2468,6 +2470,7 @@ class SubFamAdventureTableSeeder extends Seeder
             "title" => "Speed Twin 900",
             "price" => 10390,
             "url" => "/motorcycles/classics/speed-twin-900",
+            "cc" => 900,
             "specs" => [
                 [
               "desc" => "К.ЕК Мотор",
@@ -2823,6 +2826,7 @@ class SubFamAdventureTableSeeder extends Seeder
             "title" => "Bonneville Bobber",
             "price" => 16290,
             "url" => "/motorcycles/classics/bonneville-bobber",
+            "cc" => 1200,
             "specs" => [
               [
               "desc" => "К.ЕК Мотор",
@@ -3168,6 +3172,7 @@ class SubFamAdventureTableSeeder extends Seeder
             "title" => "Scrambler 1200",
             "price" => 15990,
             "url" => "/motorcycles/classics/scrambler-1200",
+            "cc" => 1200,
             "youtubeVideo" => "https:://www.youtube.com/embed/Lj-79e9TMh4",
             "specs" => [
                 [
@@ -3559,6 +3564,7 @@ class SubFamAdventureTableSeeder extends Seeder
             "title" => "Bonneville Speedmaster",
             "price" => 16290,
             "url" => "/motorcycles/classics/bonneville-speedmaster",
+            "cc" => 1200,
             "shortDesc" => "Класичен 'custom' став, со комфортна позиција за возење за крузирање и 'premium' спецификации, сега веќе еволуирани.",
             "heroSlogans" => ["Моќен", "Комфортен", "Способен"],
             "specs" => [
@@ -3898,6 +3904,7 @@ class SubFamAdventureTableSeeder extends Seeder
             "title" => "Speed Twin 1200",
             "price" => 14190,
             "url" => "/motorcycles/classics/speed-twin-1200",
+            "cc" => 1200,
             "youtubeVideo" => "https:://www.youtube.com/embed/YbdA9MwBu5o",
             "heroSlogans" => ["Репер", "За", "Перформанси"],
             "shortDesc" => "Модерно-класичен приспособен 'roadster' со динамични способности, целосно лесен за управување, многу напредна технологија, возбудлива испорака на вртежен момент со препознатлив британски звук.",
@@ -4250,6 +4257,7 @@ class SubFamAdventureTableSeeder extends Seeder
             "title" => "Scrambler 900",
             "price" => 11890,
             "url" => "/motorcycles/classics/scrambler-900",
+            "cc" => 900,
             "specs" => [
                 [
               "desc" => "К.ЕК Мотор",
@@ -4595,6 +4603,7 @@ class SubFamAdventureTableSeeder extends Seeder
             "title" => "Bonneville T100",
             "price" => 11690,
             "url" => "/motorcycles/classics/bonneville-t100",
+            "cc" => 900,
             "specs" => [
                 [
               "desc" => "К.ЕК Мотор",
@@ -4957,6 +4966,7 @@ class SubFamAdventureTableSeeder extends Seeder
             "title" => "Bonneville T120",
             "price" => 14290,
             "url" => "/motorcycles/classics/bonneville-t120",
+            "cc" => 1200,
             "specs" => [
                 [
               "desc" => "година",
@@ -5326,6 +5336,7 @@ class SubFamAdventureTableSeeder extends Seeder
             "title" => "Thruxton RS",
             "price" => 14290,
             "url" => "/motorcycles/classics/thruxton-rs",
+            "cc" => 1200,
             "specs" => [
               [
               "desc" => "ML Мотор",

@@ -11,9 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('fam_classics', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+        Schema::table('motorcycles', function (Blueprint $table) {
+            $table->json('bikePageImageGallery')->after('features')->nullable();
         });
     }
 
@@ -22,6 +21,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('fam_classics');
+        Schema::table('motorcycles', function (Blueprint $table) {
+            $table->dropColumn('bikePageImageGallery');
+        });
     }
 };
