@@ -11,8 +11,8 @@ const AccessoryItemWrapper = ({
   item: { title, desc, image1, image2, itemsList = [] },
 }: AccesoryItemWrapperProps) => {
   return (
-    <div className="py-4 md:py-8 lg:py-16 border-2 border-red-500">
-      <div className="w-full md:w-2/4 m-auto ">
+    <div className="py-4 md:py-8 lg:py-16">
+      <div className="w-full md:w-2/4 m-auto mb-8 md:mb-16">
         <SectionTitleH2 text={title} color={"dark"} />
 
         <p className="font-normal md:text-lg text-md">{desc}</p>
@@ -24,7 +24,7 @@ const AccessoryItemWrapper = ({
           )) ?? ""}
         </ul>
       </div>
-      <div className={`w-full m-auto flex flex-col md:flex-row mt-4 md:mt-8 lg:mt-20 border-2 border-green-500`}>
+      <div className="flex flex-col lg:flex-row justify-center gap-4">
         {image1 && (
           <Image src={image1.src} alt={image1.alt} width={image2 ? 739 : 1410 } height={image2 ? 462 : 793} />
         )}

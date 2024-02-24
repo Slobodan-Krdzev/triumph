@@ -96,7 +96,7 @@ const BikePage = async ({ params }: any) => {
               isOpen={true}
             />
           </div>
-          <SpecsTable specs={subFam.subFamilyPageInfo.fullSpecs} />
+          <SpecsTable specs={subFam} />
         </section>
 
         {bike.gallery.promoYoutubeVideo && (

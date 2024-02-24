@@ -131,7 +131,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
 
   const closeGarage = () => setIsGarageVisible(false);
 
-  if (breakpoint > 768) {
+  if (breakpoint > 1000) {
     return (
       <>
         <section
@@ -305,7 +305,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
     );
   }
 
-  if (breakpoint <= 768) {
+  if (breakpoint <= 1000) {
     return (
       <>
         <section
@@ -410,10 +410,10 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
 
         {isModalShown && (
           <div
-            className="absolute w-full top-0 left-0 bg-neutral-100 px-4 py-4"
+            className="absolute w-full top-0 left-0 h-screen bg-neutral-100 px-4 py-4"
             style={{ zIndex: 80 }}
           >
-            <div className="flex gap-8 flex-col justify-center items-center">
+            <div className="flex gap-4 flex-col justify-center items-center">
               <Image
                 src={"/images/triumphLogo.png"}
                 alt="Logo"

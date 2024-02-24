@@ -1,11 +1,8 @@
-import React from "react";
-import Card from "../Card";
-import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faX } from "@fortawesome/free-solid-svg-icons";
-import MainBtn from "../MainBtn";
-import BikesByFamilyWithSlider from "../BikesByFamilyWithSlider";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Image from "next/image";
 import FamilyBikesSlider from "../FamilyBikesSlider";
+import MainBtn from "../MainBtn";
 
 type GarageProps = {
   bikes: any[];
@@ -13,10 +10,11 @@ type GarageProps = {
 };
 
 const Garage = ({ bikes, handleClose }: GarageProps) => {
+
   if (bikes.length === 0) {
     return (
       <section
-        className="fixed left-0 right-0 bottom-0 slight-white-bg border-2  py-16 px-24"
+        className="fixed left-0 right-0 bottom-0 slight-white-bg border-2 py-16 px-24"
         style={{ top: "64px" }}
       >
         <div className="relative flex flex-col justify-center items-center h-full w-full">

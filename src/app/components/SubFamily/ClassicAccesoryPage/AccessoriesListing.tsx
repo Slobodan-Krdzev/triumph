@@ -21,11 +21,11 @@ type AccessoriesListingProps = {
 
 const AccessoriesListing = ({ items = [] }: AccessoriesListingProps) => {
   return (
-    <>
+    <section>
       {items.map((item, idx: number) => (
         <AccessoryItemWrapper key={`${item.title} + ${idx}`} item={item} />
       ))}
-    </>
+    </section>
   );
 };
 

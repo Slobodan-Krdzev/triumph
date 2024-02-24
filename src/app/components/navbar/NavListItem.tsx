@@ -17,9 +17,6 @@ const NavListItem = ({ text, filter }: NavListItemProps) => {
 
   const handleHover = () => {
 
-    console.log(colorQuery, reversQuery);
-    
-
     if(Boolean(colorQuery) || Boolean(reversQuery)) {
 
       router.push(`${pathname}?navItem=${filter}&color=${colorQuery}&reversed=${reversQuery}`, {scroll: false})
