@@ -25,20 +25,9 @@ const SubFamilyPage = async ({ params }: any) => {
     const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${query}`);
     const bikes = await bikesRes.json();
 
-    const hasGrayCaro =
-      subFamily.subFamilyPageInfo.hasOwnProperty("grayCarousell");
-
-    const hasYoutubeVid =
-      subFamily.subFamilyPageInfo.hasOwnProperty("youtubeVideo");
-
-    const hasAudio = subFamily.subFamilyPageInfo.hasOwnProperty("audioSection");
-
-    const hasTopSection =
-      subFamily.subFamilyPageInfo.hasOwnProperty("topSection");
-
     return (
       <>
-        <HeroSection
+         <HeroSection
           video={subFamily.gallery.subFamilyHeroVideo.src}
           mobileImage={subFamily.gallery.subFamilyHeroImageMobile?.src ?? "/"}
           model={formulateSubFamilyTitleOnBanner(query)}
@@ -46,6 +35,7 @@ const SubFamilyPage = async ({ params }: any) => {
         />
 
         <main className="bg-white">
+          
           {subFamily.subFamilyName === "tiger-900" && (
             <section className="bg-secondary m-auto w-11/12 md:w-10/12 lg:w-7/12 py-4 md:py-8 lg:py-16 text-center">
               <h1 className="text-3xl md:text-6xl font-semibold uppercase mb-4 md:mb-8">
@@ -77,7 +67,8 @@ const SubFamilyPage = async ({ params }: any) => {
             </section>
           )}
 
-          {hasTopSection && (
+          
+          {subFamily.topSection && (
             <TopSection
               title={subFamily.topSection.title}
               desc={subFamily.topSection.desc}
@@ -146,11 +137,11 @@ const SubFamilyPage = async ({ params }: any) => {
           )}
         </main>
 
-        {hasYoutubeVid && (
+        {subFamily.youtubeVideo && (
           <YouTubePromo video={subFamily.youtubeVideo} />
         )}
 
-        {hasGrayCaro && (
+        {subFamily.grayCarousell && (
           <BottomCarousell items={subFamily.grayCarousell} />
         )}
 
@@ -180,19 +171,22 @@ const SubFamilyPage = async ({ params }: any) => {
           </section>
         )}
 
+      {subFamily.specNumbers && 
         <NumbersSection
-          model={query}
-          specNumbers={subFamily.specNumbers}
-        />
+        model={query}
+        specNumbers={subFamily.specNumbers}
+      />
+      }
+        
 
-        {hasAudio && (
+        {subFamily.subFamilyPageInfo?.audioSection && (
           <AudioSection
             audio={subFamily.subFamilyPageInfo.audioSection.audio}
             title={subFamily.subFamilyPageInfo.audioSection.title}
             desc={subFamily.subFamilyPageInfo.audioSection.desc}
             model={formulateSubFamilyTitleOnBanner(query)}
           />
-        )}
+        )} 
       </>
     );
   } catch (error) {

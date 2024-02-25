@@ -30,7 +30,7 @@ const Breadcrumbs = ({dark}: BreadcrumbsProps) => {
 
         {pathsToArr.map((path: string, idx: number) => {
           if (idx + 1 === pathsToArr.length) {
-            return <span key={`${path}`}>{path}</span>;
+            return <span key={idx}>{path}</span>;
           }
 
           return (

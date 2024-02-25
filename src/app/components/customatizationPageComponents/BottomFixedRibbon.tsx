@@ -113,6 +113,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
 
       if (Boolean(bikeIsFound)) {
         alert("Веќе го имате овој мотор во вашата гаража!");
+        
       } else {
         garage.push(bike);
       }

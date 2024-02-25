@@ -30,7 +30,7 @@ const LatestModelsCarousellItem = ({
         />
       </div>
       <div className="basis-1/2 flex flex-col justify-center items-start lg:pl-16">
-        <div className="w-7/12">
+        <div className="w-6/12">
           <SectionTitleH2 text={title} color={"dark"} />
           <p className="mb-8 text-xl">{desc}</p>
           {url && (

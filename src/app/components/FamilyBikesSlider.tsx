@@ -6,14 +6,14 @@ type FamilyBikesSliderProps = {
   itemsToRender: any[];
 };
 
-const FamilyBikesSlider = ({ itemsToRender = [] }: FamilyBikesSliderProps) => {
+const FamilyBikesSlider = ({ itemsToRender = []}: FamilyBikesSliderProps) => {
 
-
+  
   if (itemsToRender && itemsToRender.length >= 1) {
     return (
       <div className="flex justify-start gap-8 overflow-x-scroll bg-white rounded-sm slight-white-bg ">
         {itemsToRender.map((item: any) => (
-          <Card key={item.id} item={item} />
+          <Card key={item.id} item={item}/>
         ))}
       </div>
     );
@@ -23,7 +23,7 @@ const FamilyBikesSlider = ({ itemsToRender = [] }: FamilyBikesSliderProps) => {
     return (
       <div className="flex justify-start gap-8">
         {itemsToRender.map((item: any) => (
-          <Card key={item.id} item={item} />
+          <Card key={item.id} item={item}/>
         ))}
       </div>
     );

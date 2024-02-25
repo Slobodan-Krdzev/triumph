@@ -8,11 +8,11 @@ type CardProps = {
   item: any;
 };
 
-const Card = ({ item }: CardProps) => {
+const Card = ({ item}: CardProps) => {
   return (
     <div
       key={item.id}
-      className="bg-white shadow-xl lg:mb-8 flex flex-col justify-between rounded-md"
+      className="bg-white shadow-xl lg:mb-8 flex flex-col justify-between rounded-md relative"
     >
       <div className="basis-2/6 border-thin-gray-bottom">
         
