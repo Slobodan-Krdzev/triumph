@@ -20,6 +20,7 @@
     "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18",
+    "react-hot-toast": "^2.4.1",
     "react-leaflet": "^4.2.1",
     "react-medium-image-zoom": "^5.1.10",
     "react-multi-carousel": "^2.8.4",

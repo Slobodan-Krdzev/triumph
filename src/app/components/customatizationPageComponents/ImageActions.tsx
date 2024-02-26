@@ -49,7 +49,6 @@ const ImageActions = ({ bike, modalVersion }: ImageActionsProps) => {
           <p className="invisible group-hover:visible text-xs text-center">
             Сврти
           </p>
-          {/* <p className="absolute -bottom-5 left-1 hidden group-hover:block text-xs">Сврти</p> */}
         </div>
       </>
     );

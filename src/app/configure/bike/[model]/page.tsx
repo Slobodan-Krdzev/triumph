@@ -1,12 +1,11 @@
 import { BIKES } from "@/app/constants/constants";
-import Image from "next/image";
 
-import ColorCard from "@/app/components/customatizationPageComponents/ColorCard";
-import { faCheck } from "@fortawesome/free-solid-svg-icons/faCheck";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import BikeModelImage from "@/app/components/customatizationPageComponents/BikeModelImage";
 import BottomFixedRibbon from "@/app/components/customatizationPageComponents/BottomFixedRibbon";
+import ColorCard from "@/app/components/customatizationPageComponents/ColorCard";
 import ImageActions from "@/app/components/customatizationPageComponents/ImageActions";
+import { faCheck } from "@fortawesome/free-solid-svg-icons/faCheck";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const BikeConfigPage = async ({ params }: any) => {
   try {

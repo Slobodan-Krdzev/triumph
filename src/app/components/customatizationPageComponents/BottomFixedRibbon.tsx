@@ -32,6 +32,7 @@ import MainBtn from "../MainBtn";
 import { handleBodyScrollWhenMenuIsOpen } from "../helpers/handleBodyScrollWhenMenuOpens";
 import { useBreakpoint } from "../helpers/useBreakpoint";
 import Garage from "./Garage";
+import toast, { Toaster, useToaster } from "react-hot-toast";
 
 type BottomFixedRibbonProps = {
   info: any;
@@ -47,6 +48,10 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
 
   const [garage, setGarage] = useState<any[]>([]);
   const [isGarageVisible, setIsGarageVisible] = useState(false);
+
+  const [bikeSaved, setIsBikeSaved] = useState(false);
+
+  const toaster = useToaster();
 
   const breakpoint = useBreakpoint();
   const router = useRouter();
@@ -113,13 +118,13 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
         .find((bikeFromGarage: any) => bikeFromGarage.id === bike.id);
 
       if (Boolean(bikeIsFound)) {
-        alert("Веќе го имате овој мотор во вашата гаража!");
-        
+        toast("Hello World");
       } else {
         garage.push(bike);
 
         const updatedGarage = [...garage, bike];
         setGarage(updatedGarage);
+        toast.success("Моторот е зачуван во вашата гаража.");
       }
 
       localStorage.setItem("garage", JSON.stringify(garage));
@@ -127,7 +132,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
   };
 
   useEffect(() => {
-    const storedGarage = JSON.parse(localStorage.getItem('garage')!) || [];
+    const storedGarage = JSON.parse(localStorage.getItem("garage")!) || [];
     setGarage(storedGarage);
   }, []);
 
@@ -141,11 +146,22 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
 
   const closeGarage = () => setIsGarageVisible(false);
 
-  const isBikeInGarage = Boolean(garage.find(bike => bike.id === info.id));
+  const isBikeInGarage = Boolean(garage.find((bike) => bike.id === info.id));
+
+  if (bikeSaved) {
+    return <></>;
+  }
 
   if (breakpoint > 1000) {
     return (
       <>
+        <Toaster
+          containerStyle={{
+            position: "absolute",
+            top: 70,
+            left: 70,
+          }}
+        />
         <section
           className="fixed bottom-0 left-0 right-0 flex justify-between border-t-2 gray-300"
           style={{
@@ -167,12 +183,13 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
           </button>
           <button
             disabled={isBikeInGarage}
-            className={`${isBikeInGarage ? "bg-neutral-200" : "bg-white"} basis-2/12 flex flex-col items-center justify-center text-lg text-neutral-600`}
+            className={`${
+              isBikeInGarage ? "bg-neutral-200" : "bg-white"
+            } basis-2/12 flex flex-col items-center justify-center text-lg text-neutral-600`}
             onClick={(e) => handleSaveBike(info)}
           >
             <FontAwesomeIcon icon={faFloppyDisk} color="black" size="lg" />
             {isBikeInGarage ? "Зачувано" : "Зачувај"}
-            
           </button>
           <button
             className={`bg-white basis-2/12 flex flex-col items-center justify-center text-lg border-x-2 border-gray-300 text-neutral-600`}
@@ -319,201 +336,195 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
     );
   }
 
-    return (
-      <>
-        <section
-          className="fixed bottom-0 left-0 right-0 flex justify-between border-t-2 gray-300"
-          style={{
-            transition: "transform 0.3s ease-in-out",
-            transform: visible ? "" : "translateY(100%)",
-          }}
-        >
-          <button className="basis-2/12 light-gray-bg" onClick={handleMenu}>
-            <FontAwesomeIcon icon={faBars} color="black" size="xl" />
+  return (
+    <>
+      <section
+        className="fixed bottom-0 left-0 right-0 flex justify-between border-t-2 gray-300"
+        style={{
+          transition: "transform 0.3s ease-in-out",
+          transform: visible ? "" : "translateY(100%)",
+        }}
+      >
+        <button className="basis-2/12 light-gray-bg" onClick={handleMenu}>
+          <FontAwesomeIcon icon={faBars} color="black" size="xl" />
+        </button>
+        <div className="basis-5/12 bg text-white justify-start items-center flex">
+          <button className="flex justify-end items-center basis-1/5">
+            <FontAwesomeIcon icon={faInfoCircle} />
           </button>
-          <div className="basis-5/12 bg text-white justify-start items-center flex">
-            <button className="flex justify-end items-center basis-1/5">
-              <FontAwesomeIcon icon={faInfoCircle} />
-            </button>
-            <div className="flex flex-col justify-center items-start basis-3/5 pl-2">
-              <p className="text-xs">Цена</p>
-              {info.price && (
-                <p className="text-xl font-medium">
-                  €{handlePriceChange(info.price)}.00{" "}
-                </p>
-              )}
-              {info.price === null && (
-                <p className="text-xl font-medium">Наскоро!!! </p>
-              )}
-            </div>
+          <div className="flex flex-col justify-center items-start basis-3/5 pl-2">
+            <p className="text-xs">Цена</p>
+            {info.price && (
+              <p className="text-xl font-medium">
+                €{handlePriceChange(info.price)}.00{" "}
+              </p>
+            )}
+            {info.price === null && (
+              <p className="text-xl font-medium">Наскоро!!! </p>
+            )}
           </div>
-          <Link
-            className="basis-5/12 red-bg-color text-white red-bg-hover-color font-semibold py-6"
-            href={`/motorcycles/${info.category}/${info.subFamilyCategory}/${info.model}`}
-          >
-            <div className="flex justify-center items-center w-full h-full">
-              <span>ДЕТАЛИ</span>
-              <FontAwesomeIcon
-                icon={faChevronRight}
-                color="white"
-                size="2xs"
-                className="pl-2"
-              />{" "}
-            </div>
-          </Link>
-        </section>
+        </div>
+        <Link
+          className="basis-5/12 red-bg-color text-white red-bg-hover-color font-semibold py-6"
+          href={`/motorcycles/${info.category}/${info.subFamilyCategory}/${info.model}`}
+        >
+          <div className="flex justify-center items-center w-full h-full">
+            <span>ДЕТАЛИ</span>
+            <FontAwesomeIcon
+              icon={faChevronRight}
+              color="white"
+              size="2xs"
+              className="pl-2"
+            />{" "}
+          </div>
+        </Link>
+      </section>
 
-        {isMobileMenuShown && (
-          <section className="fixed z-100 top-0 left-0 right-0 h-screen w-screen bg-white flex flex-col justify-between">
-            <div className="light-gray-bg py-4 flex justify-between px-6 items-center">
-              <p className="uppercase font-semibold">МОДУЛАТОР</p>
-              <button onClick={handleMenu}>
-                <FontAwesomeIcon icon={faX} color="black" />
-              </button>
-            </div>
-            <div className="px-10 flex flex-col">
-              <button
-              disabled={isBikeInGarage}
-                className={`flex items-center justify-between text-lg text-neutral-600 py-3`}
-                onClick={(e) => handleSaveBike(info)}
-              >
-                <FontAwesomeIcon icon={faFloppyDisk} color="black" size="lg" />
-                <p className="basic-8/12 grow"> {isBikeInGarage ? "Зачувано" : " Зачувај"}</p>
-
-                <FontAwesomeIcon icon={faPlus} color="black" size="lg" />
-              </button>
-              <button
-                className=" flex  justify-between text-lg border-y-2 border-gray-300 text-neutral-600 py-3"
-                onClick={() => {
-                  setIsGarageVisible(true);
-                }}
-              >
-                <FontAwesomeIcon icon={faWarehouse} color="black" size="lg" />
-                <p className="basic-8/12">Гаража</p>
-
-                <FontAwesomeIcon
-                  icon={faChevronRight}
-                  color="black"
-                  size="lg"
-                />
-              </button>
-              <button
-                className=" flex  justify-between text-lg text-neutral-600 py-3"
-                onClick={() => {
-                  setIsModalShown(true);
-                  handleBodyScrollWhenMenuIsOpen(isModalShown);
-                }}
-              >
-                <FontAwesomeIcon icon={faShareNodes} color="black" size="lg" />
-                Сподели
-                <FontAwesomeIcon
-                  icon={faChevronRight}
-                  color="black"
-                  size="lg"
-                />
-              </button>
-            </div>
+      {isMobileMenuShown && (
+        <section className="fixed z-100 top-0 left-0 right-0 h-screen w-screen bg-white flex flex-col justify-between">
+          <div className="light-gray-bg py-4 flex justify-between px-6 items-center">
+            <p className="uppercase font-semibold">МОДУЛАТОР</p>
+            <button onClick={handleMenu}>
+              <FontAwesomeIcon icon={faX} color="black" />
+            </button>
+          </div>
+          <div className="px-10 flex flex-col">
             <button
-              className="red-bg-color py-4 text-white uppercase font-semibold "
-              onClick={() => setIsMobileMenuShown(false)}
+              disabled={isBikeInGarage}
+              className={`flex items-center justify-between text-lg text-neutral-600 py-3`}
+              onClick={(e) => handleSaveBike(info)}
             >
-              НАЗАД
+              <FontAwesomeIcon icon={faFloppyDisk} color="black" size="lg" />
+              <p className="basic-8/12 grow">
+                {" "}
+                {isBikeInGarage ? "Зачувано" : " Зачувај"}
+              </p>
+
+              <FontAwesomeIcon icon={faPlus} color="black" size="lg" />
             </button>
-          </section>
-        )}
+            <button
+              className=" flex  justify-between text-lg border-y-2 border-gray-300 text-neutral-600 py-3"
+              onClick={() => {
+                setIsGarageVisible(true);
+              }}
+            >
+              <FontAwesomeIcon icon={faWarehouse} color="black" size="lg" />
+              <p className="basic-8/12">Гаража</p>
 
-        {isModalShown && (
-          <div
-            className="absolute w-full top-0 left-0 h-screen bg-neutral-100 px-4 py-4"
-            style={{ zIndex: 80 }}
-          >
-            <div className="flex gap-4 flex-col justify-center items-center">
-              <Image
-                src={"/images/triumphLogo.png"}
-                alt="Logo"
-                width={300}
-                height={300}
-              />
-
-              <div className="flex justify-between gap-2">
-                <FacebookShareButton url={getLinkForSharing()}>
-                  <FacebookIcon
-                    className="rounded-full"
-                    style={{ width: 40, height: 40 }}
-                  />
-                </FacebookShareButton>
-
-                <TwitterShareButton url={getLinkForSharing()}>
-                  <XIcon
-                    className="rounded-full"
-                    style={{ width: 40, height: 40 }}
-                  />
-                </TwitterShareButton>
-
-                <ViberShareButton url={getLinkForSharing()}>
-                  <ViberIcon
-                    className="rounded-full"
-                    style={{ width: 40, height: 40 }}
-                  />
-                </ViberShareButton>
-
-                <WhatsappShareButton url={getLinkForSharing()}>
-                  <WhatsappIcon
-                    className="rounded-full"
-                    style={{ width: 40, height: 40 }}
-                  />
-                </WhatsappShareButton>
-
-                <EmailShareButton url={getLinkForSharing()}>
-                  <EmailIcon
-                    className="rounded-full"
-                    style={{ width: 40, height: 40 }}
-                  />
-                </EmailShareButton>
-              </div>
-
-              <p className="font-bold text-2xl text-center">
-                Или ископирајте го овој линк.
-              </p>
-              <p
-                className={`font-bold text-sm text-center ${
-                  isTextCopied ? "text-red-500" : "text-black"
-                }`}
-              >
-                {isTextCopied
-                  ? "Успешно го ископиравте линкот!"
-                  : "Кликнете на линкот за да го ископирате."}
-              </p>
-
-              <input
-                readOnly
-                type="text"
-                value={getLinkForSharing()}
-                className="border-2 border-neutral-500 p-2 bg-white shadow rounded-md w-full"
-                onClick={(e) => {
-                  navigator.clipboard.writeText(e.currentTarget.value);
-                  setIsTextCopied(true);
-                }}
-              />
-              <MainBtn
-                text={"Затвори"}
-                bgBlack={false}
-                action={() => {
-                  handleBodyScrollWhenMenuIsOpen(isModalShown);
-                  setIsModalShown(false);
-                  setIsTextCopied(false);
-                }}
-              />
-            </div>
+              <FontAwesomeIcon icon={faChevronRight} color="black" size="lg" />
+            </button>
+            <button
+              className=" flex  justify-between text-lg text-neutral-600 py-3"
+              onClick={() => {
+                setIsModalShown(true);
+                handleBodyScrollWhenMenuIsOpen(isModalShown);
+              }}
+            >
+              <FontAwesomeIcon icon={faShareNodes} color="black" size="lg" />
+              Сподели
+              <FontAwesomeIcon icon={faChevronRight} color="black" size="lg" />
+            </button>
           </div>
-        )}
+          <button
+            className="red-bg-color py-4 text-white uppercase font-semibold "
+            onClick={() => setIsMobileMenuShown(false)}
+          >
+            НАЗАД
+          </button>
+        </section>
+      )}
 
-        {isGarageVisible && (
-          <Garage bikes={getGarage()} handleClose={closeGarage} />
-        )}
-      </>
-    );
-  
+      {isModalShown && (
+        <div
+          className="absolute w-full top-0 left-0 h-screen bg-neutral-100 px-4 py-4"
+          style={{ zIndex: 80 }}
+        >
+          <div className="flex gap-4 flex-col justify-center items-center">
+            <Image
+              src={"/images/triumphLogo.png"}
+              alt="Logo"
+              width={300}
+              height={300}
+            />
+
+            <div className="flex justify-between gap-2">
+              <FacebookShareButton url={getLinkForSharing()}>
+                <FacebookIcon
+                  className="rounded-full"
+                  style={{ width: 40, height: 40 }}
+                />
+              </FacebookShareButton>
+
+              <TwitterShareButton url={getLinkForSharing()}>
+                <XIcon
+                  className="rounded-full"
+                  style={{ width: 40, height: 40 }}
+                />
+              </TwitterShareButton>
+
+              <ViberShareButton url={getLinkForSharing()}>
+                <ViberIcon
+                  className="rounded-full"
+                  style={{ width: 40, height: 40 }}
+                />
+              </ViberShareButton>
+
+              <WhatsappShareButton url={getLinkForSharing()}>
+                <WhatsappIcon
+                  className="rounded-full"
+                  style={{ width: 40, height: 40 }}
+                />
+              </WhatsappShareButton>
+
+              <EmailShareButton url={getLinkForSharing()}>
+                <EmailIcon
+                  className="rounded-full"
+                  style={{ width: 40, height: 40 }}
+                />
+              </EmailShareButton>
+            </div>
+
+            <p className="font-bold text-2xl text-center">
+              Или ископирајте го овој линк.
+            </p>
+            <p
+              className={`font-bold text-sm text-center ${
+                isTextCopied ? "text-red-500" : "text-black"
+              }`}
+            >
+              {isTextCopied
+                ? "Успешно го ископиравте линкот!"
+                : "Кликнете на линкот за да го ископирате."}
+            </p>
+
+            <input
+              readOnly
+              type="text"
+              value={getLinkForSharing()}
+              className="border-2 border-neutral-500 p-2 bg-white shadow rounded-md w-full"
+              onClick={(e) => {
+                navigator.clipboard.writeText(e.currentTarget.value);
+                setIsTextCopied(true);
+              }}
+            />
+            <MainBtn
+              text={"Затвори"}
+              bgBlack={false}
+              action={() => {
+                handleBodyScrollWhenMenuIsOpen(isModalShown);
+                setIsModalShown(false);
+                setIsTextCopied(false);
+              }}
+            />
+          </div>
+        </div>
+      )}
+
+      {isGarageVisible && (
+        <Garage bikes={getGarage()} handleClose={closeGarage} />
+      )}
+    </>
+  );
 };
 
 export default BottomFixedRibbon;
