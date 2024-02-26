@@ -11667,7 +11667,7 @@
         "color1Reversed": "/images/classics/speedTwin900/speedTwin900BlackReversed.png",
         "color2": "/images/classics/speedTwin900/speedTwin900Ironstone.png",
         "color2Reversed": "/images/classics/speedTwin900/speedTwin900IronstoneReversed.png",
-        "color3": "/images/classics/speedTwin900/speedTwin900SilverICe.png",
+        "color3": "/images/classics/speedTwin900/speedTwin900SilverIce.png",
         "color3Reversed": "/images/classics/speedTwin900/speedTwin900SilverICeReversed.png"
       },
       "customizationColors": [
@@ -11684,7 +11684,7 @@
           "colorCode": "color2"
         },
         {
-          "colorName": "Carnival Red / Saphire Black",
+          "colorName": "Matt Silver Ice",
           "price": 200,
           "image": "/images/custom-collors/mattSilverice.jpg",
           "colorCode": "color3"

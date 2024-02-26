@@ -17,7 +17,7 @@ const LatestCaroV2 = ({ items }: LatestCaroV2Props) => {
       <Swiper
         navigation={true}
         modules={[Navigation, Autoplay]}
-        className="mySwiper"
+        className="latestSwiper"
         autoplay={{
             delay: 2500,
             disableOnInteraction: false,
