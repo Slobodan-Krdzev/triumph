@@ -431,7 +431,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
               className="px-4 rounded-xl flex  justify-between text-lg text-neutral-600 py-3"
               onClick={() => {
                 setIsModalShown(true);
-                handleBodyScrollWhenMenuIsOpen(isModalShown);
+                handleBodyScrollWhenMenuIsOpen(false);
               }}
             >
               <FontAwesomeIcon icon={faShareNodes} color="black" size="lg" />
@@ -450,7 +450,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
 
       {isModalShown && (
         <div
-          className="absolute w-full top-0 left-0 h-screen bg-neutral-100 px-4 py-4"
+          className="absolute w-full top-0 left-0 h-screen bg-neutral-100 px-4 py-4 flex items-center justify-center"
           style={{ zIndex: 80 }}
         >
           <div className="flex gap-4 flex-col justify-center items-center">
@@ -525,7 +525,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
               text={"Затвори"}
               bgBlack={false}
               action={() => {
-                handleBodyScrollWhenMenuIsOpen(isModalShown);
+                handleBodyScrollWhenMenuIsOpen(true);
                 setIsModalShown(false);
                 setIsTextCopied(false);
               }}
