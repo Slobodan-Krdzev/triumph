@@ -36,16 +36,12 @@
                         {{ __('Add Sub-Family') }}
                     </x-nav-link>
                 </div>
-                {{-- <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('add-families')" :active="request()->routeIs('add-families')">
-                        {{ __('Carousels') }}
-                    </x-nav-link>
-                </div>
+
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('add-families')" :active="request()->routeIs('add-families')">
+                    <x-nav-link :href="route('view-carousels')" :active="request()->routeIs('view-carousels')">
                         {{ __('View Carousels') }}
                     </x-nav-link>
-                </div> --}}
+                </div>
             </div>
 
             <!-- Settings Dropdown -->

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AddFamiliesController;
+use App\Http\Controllers\CarouselsController;
 use App\Http\Controllers\FamAdventureController;
 use App\Http\Controllers\FamClassicsController;
 use App\Http\Controllers\FamiliesController;
@@ -8,6 +9,7 @@ use App\Http\Controllers\FamilyController;
 use App\Http\Controllers\FamOffroadController;
 use App\Http\Controllers\FamRoadstersController;
 use App\Http\Controllers\FamSportController;
+use App\Http\Controllers\MainCarouselsController;
 use App\Http\Controllers\MotorcycleController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PromoClassicsController;
@@ -126,6 +128,20 @@ Route::put('/promo-off-road/{id}', [PromoOffRoadController::class, 'update'])->n
 Route::get('/edit-sub-fam/{id}', [SubFamAdventureController::class, 'edit'])->name('edit-sub-fam');
 Route::put('/update-sub-adventure/{id}', [SubFamAdventureController::class, 'update'])->name('update-sub-adventure');
 
+
+// LATEST CAROUSELS
+Route::get('/add-carousels', [CarouselsController::class, 'index'])->name('add-caro');
+Route::post('/add-carousels', [CarouselsController::class, 'store'])->name('add-carousels');
+Route::get('/view-carousels', [CarouselsController::class, 'listCarousels'])->name('view-carousels');
+Route::get('/edit-latest-carousell/{id}', [CarouselsController::class, 'edit'])->name('edit-latest-carousell');
+Route::put('/update-carousell/{id}', [CarouselsController::class, 'update'])->name('update-carousell');
+
+
+// MAIN CAROUSELS
+Route::get('/add-main-carousels', [MainCarouselsController::class, 'index'])->name('add-main-caro');
+Route::post('/add-main-carousels', [MainCarouselsController::class, 'store'])->name('add-main-carousels');
+Route::get('/edit-main-carousels/{id}', [MainCarouselsController::class, 'edit'])->name('edit-main-carousels');
+Route::put('/update-main-carousell/{id}', [MainCarouselsController::class, 'update'])->name('update-main-carousell');
 
 
 

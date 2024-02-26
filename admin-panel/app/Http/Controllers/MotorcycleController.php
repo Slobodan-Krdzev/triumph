@@ -67,12 +67,29 @@ class MotorcycleController extends Controller
     }
 
 
+    public function updateImage(Request $request, Motorcycle $motorcycle)
+    {
+        $request->validate([
+            'image' => 'required|image|max:2048', // Example validation rules for image upload
+        ]);
+
+        $imagePath = $request->file('image')->store('images', 'public');
+
+        // Update the image path in the database
+        $motorcycle->image = '/public/' . $imagePath;
+        $motorcycle->save();
+
+        return redirect()->route('view-moto')->with('success', 'Image updated successfully.');
+    }
+
+
     public function update(Request $request, $id)
 {
     $validatedData = $request->validate([
         'title' => 'required|string|max:255',
         'model' => 'required|string|max:255',
         'price' => 'required|string|max:255',
+        'image' => 'required|image|max:2048',
         'category' => 'required|string|max:255',
         'subFamilyCategory' => 'required|string|max:255',
         'specs.cc' => 'nullable|string|max:255',
@@ -80,11 +97,15 @@ class MotorcycleController extends Controller
         'specs.torque' => 'nullable|string|max:255',
     ]);
 
+
+
+    $imagePath = $request->file('image')->store('images', 'public');
     $moto = Motorcycle::findOrFail($id);
+    $moto->image = '/public/' . $imagePath;
     $moto->update($validatedData);
 
     return redirect()->back()->with('success', 'Moto updated successfully');
-}
+    }
 
 
 

@@ -6,7 +6,8 @@
                 {{ session('success') }}
             </div>
         @endif
-        <h1 class="font-bold text-4xl">You are editing model:<span class="uppercase text-red-500">{{$moto->model}}</span></h1>
+        <h1 class="font-bold text-4xl">You are editing model:<span
+                class="uppercase text-red-500">{{ $moto->model }}</span></h1>
         <form action="{{ route('update-moto', $moto->id) }}" method="POST" class="flex flex-col">
             @csrf
             @method('PUT')
@@ -31,10 +32,20 @@
             <label for="price">Price:</label>
             <input type="text" name="price" value="{{ old('price', $moto->price) }}" required>
 
+
+
+
+
+
             <label for="gallery[modelImage][src]">Gallery Image Source:</label>
-            <input type="text" name="gallery[modelImage][src]"
+            <input type="file" name="gallery[modelImage][src]"
                 value="{{ old('gallery.modelImage.src', isset($moto) ? $moto->gallery['modelImage']['src'] : '') }}"
                 required>
+
+                <img src="{{asset('../../../../public/images/adventure/tiger1200GT/tiger1200GTSnowdoniaWhite.png')}}" class="w-full h-full" alt="">
+                <img src="{{ old('gallery.modelImage.src', isset($moto) ? $moto->gallery['modelImage']['src'] : '') }}" alt="{{ $moto->gallery['modelImage']['alt'] ?? 'Model Image' }}">
+
+
 
             <label for="gallery[modelImage][alt]">Gallery Image Alt:</label>
             <input type="text" name="gallery[modelImage][alt]"
@@ -65,14 +76,13 @@
 
             <label for="bikeCollorPalletteGallery[color3]">Color 3:</label>
             <input type="text" name="bikeCollorPalletteGallery[color3]"
-            value="{{ old('bikeCollorPalletteGallery.color3', isset($moto->bikeCollorPalletteGallery['color3']) ? $moto->bikeCollorPalletteGallery['color3'] : '') }}"
-            required>
+                value="{{ old('bikeCollorPalletteGallery.color3', isset($moto->bikeCollorPalletteGallery['color3']) ? $moto->bikeCollorPalletteGallery['color3'] : '') }}"
+                required>
 
             <label for="bikeCollorPalletteGallery[color3Reversed]">Color 3 Reversed:</label>
             <input type="text" name="bikeCollorPalletteGallery[color3Reversed]"
-            value="{{ old('bikeCollorPalletteGallery.color3Reversed', $moto->bikeCollorPalletteGallery['color3Reversed'] ?? '') }}"
-            required>
-
+                value="{{ old('bikeCollorPalletteGallery.color3Reversed', $moto->bikeCollorPalletteGallery['color3Reversed'] ?? '') }}"
+                required>
 
 
 

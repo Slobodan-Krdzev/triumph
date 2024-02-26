@@ -134,6 +134,11 @@
             <input type="text" name="subFamilyPromo[desc]" required>
 
 
+            <label for="">Test</label>
+            <input type="file" name="gallery[modelImage][src]">
+
+
+
 
             <input type="submit" class="my-5 bg-lime-200 shadow rounded p-4" value="Submit">
 
