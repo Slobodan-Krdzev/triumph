@@ -54,7 +54,7 @@ const Garage = ({ bikes, handleClose }: GarageProps) => {
 
   return (
     <section
-      className="fixed left-0 right-0 slight-white-bg py-12 px-8 lg:py-16 lg:px-24 "
+      className="fixed left-0 right-0 h-screen slight-white-bg py-12 px-8 lg:py-16 lg:px-24 overflow-y-scroll lg:overflow-y-auto"
       style={{ top: "64px" }}
     >
       <button className="absolute top-3 right-3 lg:top-16 lg:right-16" onClick={handleClose}>

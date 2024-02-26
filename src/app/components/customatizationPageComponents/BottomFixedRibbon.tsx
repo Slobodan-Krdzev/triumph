@@ -51,7 +51,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
 
   const [bikeSaved, setIsBikeSaved] = useState(false);
 
-  const mobileSaveBtn = useRef<HTMLSpanElement>(null)
+  const mobileSaveBtn = useRef<HTMLSpanElement>(null);
 
   const toaster = useToaster();
 
@@ -339,11 +339,13 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
 
   return (
     <>
-    <Toaster containerStyle={{
+      <Toaster
+        containerStyle={{
           position: "absolute",
           zIndex: 9999,
-          top: 50
-        }} />
+          top: 50,
+        }}
+      />
       <section
         className="fixed bottom-0 left-0 right-0 flex justify-between border-t-2 gray-300"
         style={{
@@ -351,7 +353,6 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
           transform: visible ? "" : "translateY(100%)",
         }}
       >
-        
         <button className="basis-2/12 light-gray-bg" onClick={handleMenu}>
           <FontAwesomeIcon icon={faBars} color="black" size="xl" />
         </button>
@@ -388,31 +389,31 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
       </section>
 
       {isMobileMenuShown && (
-        <section className="fixed z-100 top-0 left-0 right-0 h-screen w-screen bg-white flex flex-col justify-between">
-          <div className="light-gray-bg py-4 flex justify-between px-6 items-center">
+        <section className="fixed z-100 top-0 left-0 right-0 h-screen w-screen bg-white flex flex-col justify-center">
+          {/* <div className="light-gray-bg py-4 flex justify-between px-6 items-center">
             <p className="uppercase font-semibold border-2 text-white">
               МОДУЛАТОР
             </p>
             <button onClick={handleMenu}>
               <FontAwesomeIcon icon={faX} color="black" />
             </button>
-          </div>
-          <div className="px-10 flex flex-col gap-2">
+          </div> */}
+          <div className="px-10 flex flex-col justify-start items gap-2">
             <button
               disabled={isBikeInGarage}
               className={`px-4 rounded-xl flex items-center justify-between text-lg text-neutral-600 py-3 ${
                 isBikeInGarage ? "bg-neutral-300" : ""
               }`}
               onClick={(e) => {
-
-                mobileSaveBtn.current!.innerText = 'Зачувано'
-                handleSaveBike(info)
+                mobileSaveBtn.current!.innerText = "Зачувано";
+                handleSaveBike(info);
               }}
             >
               <FontAwesomeIcon icon={faFloppyDisk} color="black" size="lg" />
 
-              <span ref={mobileSaveBtn}>{isBikeInGarage ? "Зачувано" : " Зачувај"}</span>
-              
+              <span ref={mobileSaveBtn}>
+                {isBikeInGarage ? "Зачувано" : " Зачувај"}
+              </span>
 
               <FontAwesomeIcon icon={faPlus} color="black" size="lg" />
             </button>
@@ -438,13 +439,13 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
               Сподели
               <FontAwesomeIcon icon={faChevronRight} color="black" size="lg" />
             </button>
+            <button
+              className="red-bg-color py-4 text-white uppercase font-semibold rounded-xl"
+              onClick={() => setIsMobileMenuShown(false)}
+            >
+              НАЗАД
+            </button>
           </div>
-          <button
-            className="red-bg-color py-4 text-white uppercase font-semibold "
-            onClick={() => setIsMobileMenuShown(false)}
-          >
-            НАЗАД
-          </button>
         </section>
       )}
 
