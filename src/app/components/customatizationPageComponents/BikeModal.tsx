@@ -16,7 +16,7 @@ const BikeModal = ({ bike, handleClose }: BikeModalProps) => {
         top: "64px",
       }}
     >
-      <div className="w-10/12 h-full relative border-2 border-red-500 hidden">
+      <div className="w-10/12 h-full relative hidden lg:block">
         <button onClick={handleClose} style={{
           position: 'absolute',
           top: '5%',
@@ -38,7 +38,7 @@ const BikeModal = ({ bike, handleClose }: BikeModalProps) => {
         </div>
       </div>
 
-      <div className="w-10/12 h-full relative flex flex-col justify-start pt-16">
+      <div className="w-10/12 h-full relative flex flex-col justify-start pt-16 lg:hidden">
         <button onClick={handleClose} style={{
           position: 'absolute',
           top: '2%',
