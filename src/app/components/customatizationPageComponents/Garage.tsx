@@ -10,7 +10,6 @@ type GarageProps = {
 };
 
 const Garage = ({ bikes, handleClose }: GarageProps) => {
-
   if (bikes.length === 0) {
     return (
       <section
@@ -54,42 +53,47 @@ const Garage = ({ bikes, handleClose }: GarageProps) => {
 
   return (
     <section
-      className="fixed left-0 right-0 h-screen slight-white-bg py-12 px-8 lg:py-16 lg:px-24 overflow-y-scroll lg:overflow-y-auto"
+      className="fixed left-0 right-0 h-screen slight-white-bg  lg:py-16 lg:px-24 overflow-y-scroll lg:overflow-y-auto"
       style={{ top: "64px" }}
     >
-      <button className="absolute top-3 right-3 lg:top-16 lg:right-16" onClick={handleClose}>
-        <FontAwesomeIcon icon={faX} size="xl" />
-      </button>
-      <div>
-        <div className="flex flex-col gap-8">
-          <div className="flex justify-center items-center gap-6">
-            <Image
-              src={"/images/triumphLogo.png"}
-              alt="Logo"
-              width={50}
-              height={50}
-            />
-            <h2 className="text-center text-3xl md:text-4xl lg:text-7xl uppercase font-bold tracking-tighter">
-              Моја Гаража
-            </h2>
-            <Image
-              src={"/images/triumphLogo.png"}
-              alt="Logo"
-              width={50}
-              height={50}
-            />
-          </div>
-          <FamilyBikesSlider itemsToRender={bikes}/>
-        </div>
-        <div className="hidden lg:flex flex-col lg;flex-row mt-6 items-center justify-center gap-6">
-          <MainBtn text={"Контакт"} bgBlack={false} isLink link="/dealer" />
-          <MainBtn
-            text={"Види ги сите"}
-            bgBlack={true}
-            isLink
-            link="/configure/bikes"
+      <div className="lg:hidden flex justify-between py-4 px-8 gray-bg text-white mb-4">
+        <p className="uppercase font-semibold font-xl">Моја Гаража</p>
+        <button
+          className=" top-3 right-3 lg:top-16 lg:right-16"
+          onClick={handleClose}
+        >
+          <FontAwesomeIcon icon={faX} size="xl" />
+        </button>
+      </div>
+
+      <div className="flex flex-col gap-8 px-8 ">
+        <div className="justify-center items-center gap-6 hidden lg:flex ">
+          <Image
+            src={"/images/triumphLogo.png"}
+            alt="Logo"
+            width={50}
+            height={50}
+          />
+          <h2 className=" text-center text-3xl md:text-4xl lg:text-7xl uppercase font-bold tracking-tighter">
+            Моја Гаража
+          </h2>
+          <Image
+            src={"/images/triumphLogo.png"}
+            alt="Logo"
+            width={50}
+            height={50}
           />
         </div>
+        <FamilyBikesSlider itemsToRender={bikes} />
+      </div>
+      <div className="hidden lg:flex flex-col lg;flex-row mt-6 items-center justify-center gap-6">
+        <MainBtn text={"Контакт"} bgBlack={false} isLink link="/dealer" />
+        <MainBtn
+          text={"Види ги сите"}
+          bgBlack={true}
+          isLink
+          link="/configure/bikes"
+        />
       </div>
     </section>
   );

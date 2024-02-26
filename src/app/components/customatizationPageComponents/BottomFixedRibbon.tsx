@@ -94,7 +94,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
 
   const handleMenu = () => {
     setIsMobileMenuShown(!isMobileMenuShown);
-    handleBodyScrollWhenMenuIsOpen(!isMobileMenuShown);
+    handleBodyScrollWhenMenuIsOpen(isMobileMenuShown);
   };
 
   const handlePriceChange = (startingPrice: number) => {
@@ -353,7 +353,9 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
           transform: visible ? "" : "translateY(100%)",
         }}
       >
-        <button className="basis-2/12 light-gray-bg" onClick={handleMenu}>
+        <button className="basis-2/12 light-gray-bg" onClick={ () => {
+          handleMenu()
+        }}>
           <FontAwesomeIcon icon={faBars} color="black" size="xl" />
         </button>
         <div className="basis-5/12 bg text-white justify-start items-center flex">
@@ -389,7 +391,9 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
       </section>
 
       {isMobileMenuShown && (
-        <section className="fixed z-100 top-0 left-0 right-0 h-screen w-screen bg-white flex flex-col justify-center">
+        <section className="fixed z-100 bottom-0 left-0 right-0 h-screen w-screen bg-white flex flex-col justify-center overflow-hidden" style={{
+          top:64
+        }}>
           <div className="px-10 flex flex-col justify-start items gap-2">
             <button
               disabled={isBikeInGarage}
@@ -413,7 +417,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
               className="px-4 rounded-xl flex  justify-between text-lg text-neutral-600 py-3"
               onClick={() => {
                 setIsGarageVisible(true);
-                // handleBodyScrollWhenMenuIsOpen(isModalShown)
+                handleBodyScrollWhenMenuIsOpen(isGarageVisible)
               }}
             >
               <FontAwesomeIcon icon={faWarehouse} color="black" size="lg" />
@@ -443,8 +447,8 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
 
       {isModalShown && (
         <div
-          className="absolute w-full top-0 left-0 h-screen bg-neutral-100 px-4 py-4 flex items-center justify-center"
-          style={{ zIndex: 80 }}
+          className="absolute w-full top-0 left-0 bg-neutral-100 px-4 py-16 flex items-start justify-center"
+          style={{ zIndex: 80, height: "100%" }}
         >
           <div className="flex gap-4 flex-col justify-center items-center">
             <Image
