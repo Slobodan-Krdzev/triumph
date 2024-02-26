@@ -120,7 +120,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
         .find((bikeFromGarage: any) => bikeFromGarage.id === bike.id);
 
       if (Boolean(bikeIsFound)) {
-        toast("Hello World");
+        toast.error("Веќе го имате овој мотор во гаража.");
       } else {
         garage.push(bike);
 
