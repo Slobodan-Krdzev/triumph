@@ -1,12 +1,8 @@
 "use client";
-import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
-import SectionTitleH2 from "../familiySharedComponents/SectionTitleH2";
 import { useBreakpoint } from "../helpers/useBreakpoint";
-import LatestModelsCarousellItem from "./LatestModelsCarousellItem";
-import LatestModelsMobile from "./LatestModelsMobile";
 import LatestCaroV2 from "./LatestCaroV2";
+import LatestModelsMobile from "./LatestModelsMobile";
 
 export type LatestModelsCarousellItemType = {
   title: string;
@@ -39,9 +35,6 @@ const LatestModelsCarousellSection = ({
 
   if (breakpoint >= 1024) {
     return (
-      // <section className="flex items-center flex-col overflow-hidden relative pt-16 basis-1/2">
-      //   {showTitle && <SectionTitleH2 text={"Најнови Модели"} color={"dark"} />}
-
       //   {/* controls   */}
       //   <div className="carousell-indicators z-10 flex justify-between w-1/6 text-xl text-neutral-600">
       //     <p className="ml-20">
@@ -57,23 +50,6 @@ const LatestModelsCarousellSection = ({
       //       </button>
       //     </div>
       //   </div>
-
-      //   <div
-      //     style={{ transform: `translate(-${activeIndex * 100}%)` }}
-      //     className="transition-transform delay-300 ease-in-out flex mt-16"
-      //   >
-      //     {items.map((item) => (
-      //       <LatestModelsCarousellItem
-      //         key={item.image}
-      //         width={"100%"}
-      //         title={item.title}
-      //         image={item.image}
-      //         desc={item.desc}
-      //         url={item.url}
-      //       />
-      //     ))}
-      //   </div>
-      // </section>
       <section className="py-8 lg:my-16">
         <LatestCaroV2 items={items} />
       </section>

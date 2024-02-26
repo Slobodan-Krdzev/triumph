@@ -45,6 +45,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
 
+  const [garage, setGarage] = useState<any[]>([]);
   const [isGarageVisible, setIsGarageVisible] = useState(false);
 
   const breakpoint = useBreakpoint();
@@ -116,11 +117,19 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
         
       } else {
         garage.push(bike);
+
+        const updatedGarage = [...garage, bike];
+        setGarage(updatedGarage);
       }
 
       localStorage.setItem("garage", JSON.stringify(garage));
     }
   };
+
+  useEffect(() => {
+    const storedGarage = JSON.parse(localStorage.getItem('garage')!) || [];
+    setGarage(storedGarage);
+  }, []);
 
   const getGarage = () => {
     if (localStorage.getItem("garage") === null) {
@@ -131,6 +140,8 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
   };
 
   const closeGarage = () => setIsGarageVisible(false);
+
+  const isBikeInGarage = Boolean(garage.find(bike => bike.id === info.id));
 
   if (breakpoint > 1000) {
     return (
@@ -155,11 +166,13 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
             НАЗАД
           </button>
           <button
-            className={`bg-white basis-2/12 flex flex-col items-center justify-center text-lg text-neutral-600`}
+            disabled={isBikeInGarage}
+            className={`${isBikeInGarage ? "bg-neutral-200" : "bg-white"} basis-2/12 flex flex-col items-center justify-center text-lg text-neutral-600`}
             onClick={(e) => handleSaveBike(info)}
           >
             <FontAwesomeIcon icon={faFloppyDisk} color="black" size="lg" />
-            Зачувај
+            {isBikeInGarage ? "Зачувано" : "Зачувај"}
+            
           </button>
           <button
             className={`bg-white basis-2/12 flex flex-col items-center justify-center text-lg border-x-2 border-gray-300 text-neutral-600`}
@@ -213,7 +226,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
         </section>
 
         {isModalShown && (
-          <div className="absolute w-full top-0 left-0 flex justify-center items-center modal-blur">
+          <div className="absolute w-full top-0 left-0 h-screen flex justify-center items-center modal-blur">
             <div className="bg-neutral-200 flex flex-col justify-center gap-8 items-center p-8">
               <Image
                 src={"/images/triumphLogo.png"}
@@ -306,7 +319,6 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
     );
   }
 
-  if (breakpoint <= 1000) {
     return (
       <>
         <section
@@ -361,11 +373,12 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
             </div>
             <div className="px-10 flex flex-col">
               <button
-                className="flex items-center justify-between text-lg text-neutral-600  py-3"
+              disabled={isBikeInGarage}
+                className={`flex items-center justify-between text-lg text-neutral-600 py-3`}
                 onClick={(e) => handleSaveBike(info)}
               >
                 <FontAwesomeIcon icon={faFloppyDisk} color="black" size="lg" />
-                <p className="basic-8/12 grow">Зачувај</p>
+                <p className="basic-8/12 grow"> {isBikeInGarage ? "Зачувано" : " Зачувај"}</p>
 
                 <FontAwesomeIcon icon={faPlus} color="black" size="lg" />
               </button>
@@ -500,7 +513,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
         )}
       </>
     );
-  }
+  
 };
 
 export default BottomFixedRibbon;
