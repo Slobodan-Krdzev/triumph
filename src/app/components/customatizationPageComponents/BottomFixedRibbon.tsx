@@ -342,7 +342,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
       <Toaster
         containerStyle={{
           position: "absolute",
-          zIndex: 9999,
+          zIndex: 99999,
           top: 50,
         }}
       />
@@ -390,14 +390,6 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
 
       {isMobileMenuShown && (
         <section className="fixed z-100 top-0 left-0 right-0 h-screen w-screen bg-white flex flex-col justify-center">
-          {/* <div className="light-gray-bg py-4 flex justify-between px-6 items-center">
-            <p className="uppercase font-semibold border-2 text-white">
-              МОДУЛАТОР
-            </p>
-            <button onClick={handleMenu}>
-              <FontAwesomeIcon icon={faX} color="black" />
-            </button>
-          </div> */}
           <div className="px-10 flex flex-col justify-start items gap-2">
             <button
               disabled={isBikeInGarage}
