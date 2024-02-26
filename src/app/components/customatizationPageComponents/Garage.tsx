@@ -81,7 +81,7 @@ const Garage = ({ bikes, handleClose }: GarageProps) => {
           </div>
           <FamilyBikesSlider itemsToRender={bikes}/>
         </div>
-        <div className="flex flex-col lg;flex-row mt-6 items-center justify-center gap-6">
+        <div className="hidden lg:flex flex-col lg;flex-row mt-6 items-center justify-center gap-6">
           <MainBtn text={"Контакт"} bgBlack={false} isLink link="/dealer" />
           <MainBtn
             text={"Види ги сите"}
