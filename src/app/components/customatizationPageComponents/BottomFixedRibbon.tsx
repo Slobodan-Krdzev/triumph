@@ -15,7 +15,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   EmailIcon,
   EmailShareButton,
@@ -50,6 +50,8 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
   const [isGarageVisible, setIsGarageVisible] = useState(false);
 
   const [bikeSaved, setIsBikeSaved] = useState(false);
+
+  const mobileSaveBtn = useRef<HTMLSpanElement>(null)
 
   const toaster = useToaster();
 
@@ -92,7 +94,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
 
   const handleMenu = () => {
     setIsMobileMenuShown(!isMobileMenuShown);
-    handleBodyScrollWhenMenuIsOpen(isMobileMenuShown);
+    handleBodyScrollWhenMenuIsOpen(!isMobileMenuShown);
   };
 
   const handlePriceChange = (startingPrice: number) => {
@@ -148,10 +150,6 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
 
   const isBikeInGarage = Boolean(garage.find((bike) => bike.id === info.id));
 
-  if (bikeSaved) {
-    return <></>;
-  }
-
   if (breakpoint > 1000) {
     return (
       <>
@@ -186,7 +184,10 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
             className={`${
               isBikeInGarage ? "bg-neutral-200" : "bg-white"
             } basis-2/12 flex flex-col items-center justify-center text-lg text-neutral-600`}
-            onClick={(e) => handleSaveBike(info)}
+            onClick={(e) => {
+              handleSaveBike(info);
+              e.currentTarget.innerText = "Зачувано";
+            }}
           >
             <FontAwesomeIcon icon={faFloppyDisk} color="black" size="lg" />
             {isBikeInGarage ? "Зачувано" : "Зачувај"}
@@ -248,8 +249,8 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
               <Image
                 src={"/images/triumphLogo.png"}
                 alt="Logo"
-                width={300}
-                height={300}
+                width={100}
+                height={100}
               />
 
               <div className="flex justify-between gap-2">
@@ -338,6 +339,11 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
 
   return (
     <>
+    <Toaster containerStyle={{
+          position: "absolute",
+          zIndex: 9999,
+          top: 50
+        }} />
       <section
         className="fixed bottom-0 left-0 right-0 flex justify-between border-t-2 gray-300"
         style={{
@@ -345,6 +351,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
           transform: visible ? "" : "translateY(100%)",
         }}
       >
+        
         <button className="basis-2/12 light-gray-bg" onClick={handleMenu}>
           <FontAwesomeIcon icon={faBars} color="black" size="xl" />
         </button>
@@ -383,38 +390,45 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
       {isMobileMenuShown && (
         <section className="fixed z-100 top-0 left-0 right-0 h-screen w-screen bg-white flex flex-col justify-between">
           <div className="light-gray-bg py-4 flex justify-between px-6 items-center">
-            <p className="uppercase font-semibold">МОДУЛАТОР</p>
+            <p className="uppercase font-semibold border-2 text-white">
+              МОДУЛАТОР
+            </p>
             <button onClick={handleMenu}>
               <FontAwesomeIcon icon={faX} color="black" />
             </button>
           </div>
-          <div className="px-10 flex flex-col">
+          <div className="px-10 flex flex-col gap-2">
             <button
               disabled={isBikeInGarage}
-              className={`flex items-center justify-between text-lg text-neutral-600 py-3`}
-              onClick={(e) => handleSaveBike(info)}
+              className={`px-4 rounded-xl flex items-center justify-between text-lg text-neutral-600 py-3 ${
+                isBikeInGarage ? "bg-neutral-300" : ""
+              }`}
+              onClick={(e) => {
+
+                mobileSaveBtn.current!.innerText = 'Зачувано'
+                handleSaveBike(info)
+              }}
             >
               <FontAwesomeIcon icon={faFloppyDisk} color="black" size="lg" />
-              <p className="basic-8/12 grow">
-                {" "}
-                {isBikeInGarage ? "Зачувано" : " Зачувај"}
-              </p>
+
+              <span ref={mobileSaveBtn}>{isBikeInGarage ? "Зачувано" : " Зачувај"}</span>
+              
 
               <FontAwesomeIcon icon={faPlus} color="black" size="lg" />
             </button>
             <button
-              className=" flex  justify-between text-lg border-y-2 border-gray-300 text-neutral-600 py-3"
+              className="px-4 rounded-xl flex  justify-between text-lg text-neutral-600 py-3"
               onClick={() => {
                 setIsGarageVisible(true);
+                // handleBodyScrollWhenMenuIsOpen(isModalShown)
               }}
             >
               <FontAwesomeIcon icon={faWarehouse} color="black" size="lg" />
-              <p className="basic-8/12">Гаража</p>
-
+              Гаража
               <FontAwesomeIcon icon={faChevronRight} color="black" size="lg" />
             </button>
             <button
-              className=" flex  justify-between text-lg text-neutral-600 py-3"
+              className="px-4 rounded-xl flex  justify-between text-lg text-neutral-600 py-3"
               onClick={() => {
                 setIsModalShown(true);
                 handleBodyScrollWhenMenuIsOpen(isModalShown);
@@ -443,8 +457,8 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
             <Image
               src={"/images/triumphLogo.png"}
               alt="Logo"
-              width={300}
-              height={300}
+              width={100}
+              height={100}
             />
 
             <div className="flex justify-between gap-2">

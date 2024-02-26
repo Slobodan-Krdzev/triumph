@@ -61,6 +61,8 @@ const ImageActions = ({ bike, modalVersion }: ImageActionsProps) => {
           className="p-3 bg rounded-full"
           onClick={() => {
             setIsModalShown(modalVersion ? false : !isModalShown)
+            handleBodyScrollWhenMenuIsOpen(true);
+
           }}
         >
           <FontAwesomeIcon icon={modalVersion ? faMinimize : faMaximize} size="xl" color="white" />
