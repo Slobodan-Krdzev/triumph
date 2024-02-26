@@ -40,7 +40,7 @@ const BikesByFamilyWithSlider = ({
         </div>
       </div>
       <div className="lg:basis-2/3 grow-0  overflow-hidden">
-        <FamilyBikesSlider itemsToRender={items} deleteBtn={true}/>
+        <FamilyBikesSlider itemsToRender={items}/>
       </div>
     </div>
   );
