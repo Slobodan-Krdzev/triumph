@@ -146,7 +146,10 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
     return JSON.parse(localStorage.getItem("garage")!);
   };
 
-  const closeGarage = () => setIsGarageVisible(false);
+  const closeGarage = () => {
+    setIsGarageVisible(false)
+    handleBodyScrollWhenMenuIsOpen(isGarageVisible)
+  }
 
   const isBikeInGarage = Boolean(garage.find((bike) => bike.id === info.id));
 
