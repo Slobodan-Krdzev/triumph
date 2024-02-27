@@ -8,14 +8,14 @@ import {
   faPlus,
   faShareNodes,
   faWarehouse,
-  faX,
 } from "@fortawesome/free-solid-svg-icons";
 import { faInfoCircle } from "@fortawesome/free-solid-svg-icons/faInfoCircle";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 import {
   EmailIcon,
   EmailShareButton,
@@ -32,7 +32,6 @@ import MainBtn from "../MainBtn";
 import { handleBodyScrollWhenMenuIsOpen } from "../helpers/handleBodyScrollWhenMenuOpens";
 import { useBreakpoint } from "../helpers/useBreakpoint";
 import Garage from "./Garage";
-import toast, { Toaster, useToaster } from "react-hot-toast";
 
 type BottomFixedRibbonProps = {
   info: any;
@@ -49,15 +48,10 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
   const [garage, setGarage] = useState<any[]>([]);
   const [isGarageVisible, setIsGarageVisible] = useState(false);
 
-  const [bikeSaved, setIsBikeSaved] = useState(false);
-
   const mobileSaveBtn = useRef<HTMLSpanElement>(null);
-
-  const toaster = useToaster();
 
   const breakpoint = useBreakpoint();
   const router = useRouter();
-  const pathname = usePathname();
   const colorQuery = useSearchParams().get("color") ?? "color1";
 
   const colorPrice = info.customizationColors.find(
@@ -147,9 +141,9 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
   };
 
   const closeGarage = () => {
-    setIsGarageVisible(false)
-    handleBodyScrollWhenMenuIsOpen(isGarageVisible)
-  }
+    setIsGarageVisible(false);
+    handleBodyScrollWhenMenuIsOpen(isGarageVisible);
+  };
 
   const isBikeInGarage = Boolean(garage.find((bike) => bike.id === info.id));
 
@@ -356,9 +350,12 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
           transform: visible ? "" : "translateY(100%)",
         }}
       >
-        <button className="basis-2/12 light-gray-bg" onClick={ () => {
-          handleMenu()
-        }}>
+        <button
+          className="basis-2/12 light-gray-bg"
+          onClick={() => {
+            handleMenu();
+          }}
+        >
           <FontAwesomeIcon icon={faBars} color="black" size="xl" />
         </button>
         <div className="basis-5/12 bg text-white justify-start items-center flex">
@@ -394,9 +391,12 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
       </section>
 
       {isMobileMenuShown && (
-        <section className="fixed z-100 bottom-0 left-0 right-0 h-screen w-screen bg-white flex flex-col justify-center overflow-hidden" style={{
-          top:64
-        }}>
+        <section
+          className="fixed z-100 bottom-0 left-0 right-0 h-screen w-screen bg-white flex flex-col justify-center overflow-hidden"
+          style={{
+            top: 64,
+          }}
+        >
           <div className="px-10 flex flex-col justify-start items gap-2">
             <button
               disabled={isBikeInGarage}
@@ -420,7 +420,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
               className="px-4 rounded-xl flex  justify-between text-lg text-neutral-600 py-3"
               onClick={() => {
                 setIsGarageVisible(true);
-                handleBodyScrollWhenMenuIsOpen(isGarageVisible)
+                handleBodyScrollWhenMenuIsOpen(isGarageVisible);
               }}
             >
               <FontAwesomeIcon icon={faWarehouse} color="black" size="lg" />
@@ -441,8 +441,8 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
             <button
               className="red-bg-color py-4 text-white uppercase font-semibold rounded-xl"
               onClick={() => {
-                setIsMobileMenuShown(false)
-                handleBodyScrollWhenMenuIsOpen(isMobileMenuShown)
+                setIsMobileMenuShown(false);
+                handleBodyScrollWhenMenuIsOpen(isMobileMenuShown);
               }}
             >
               НАЗАД
