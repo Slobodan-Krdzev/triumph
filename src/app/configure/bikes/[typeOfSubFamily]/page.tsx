@@ -1,6 +1,7 @@
 import Card from "@/app/components/Card";
 import HeroSectionCTA from "@/app/components/HeroSectionCTA";
 import { BIKES } from "@/app/constants/constants";
+import { redirect } from "next/navigation";
 import React from "react";
 
 const ConfigTypeOfFamPage = async ({ params }: any) => {
@@ -35,7 +36,7 @@ const ConfigTypeOfFamPage = async ({ params }: any) => {
 
     return <>Err</>
   }catch(e){
-    return 
+    return redirect("/configure/bikes")
   }
  
 };

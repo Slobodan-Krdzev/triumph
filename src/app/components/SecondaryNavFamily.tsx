@@ -1,4 +1,3 @@
-"use client";
 import MobileSecondaryNav from "./whiteSecondaryNavBar/MobileSecondary/MobileSecondaryNav";
 import SecondaryNavBar, {
   SecondaryNavItemsType,
@@ -7,7 +6,7 @@ import SecondaryNavBar, {
 type SecondaryNavFamily = {
   items: SecondaryNavItemsType[];
   title: string | string[];
-  configLink: string[] | string;
+  configLink?: string[] | string;
 };
 
 const SecondaryNavFamily = ({

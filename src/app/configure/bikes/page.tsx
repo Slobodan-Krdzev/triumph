@@ -4,6 +4,7 @@ import Card from "@/app/components/Card";
 import HeroSectionCTA from "@/app/components/HeroSectionCTA";
 import PaginationBtn from "@/app/components/PaginationBtn";
 import { BIKES } from "@/app/constants/constants";
+import { redirect } from "next/navigation";
 
 const BikesPage = async ({ params, searchParams }: any) => {
 
@@ -28,12 +29,10 @@ const BikesPage = async ({ params, searchParams }: any) => {
           <BikesSorter />
           <BikesListingSection bikes={bikes} />
         </section>
-
-        {/* <PaginationBtn /> */}
       </>
     );
   } catch {
-    return "Error ";
+    return redirect('/configure');
   }
 };
 

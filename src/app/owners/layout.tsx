@@ -1,19 +1,11 @@
-
-"use client";
 import GrayBand from "@/app/components/GrayBand";
-import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
-import { useBreakpoint } from "@/app/components/helpers/useBreakpoint";
-import MobileSecondaryNav from "@/app/components/whiteSecondaryNavBar/MobileSecondary/MobileSecondaryNav";
-import SecondaryNavBar from "@/app/components/whiteSecondaryNavBar/SecondaryNavBar";
-import { useParams, usePathname, useRouter } from "next/navigation";
+import SecondaryNavFamily from "../components/SecondaryNavFamily";
 
 export default function SubFamilyLayout({
   children, // will be a page or nested layout
 }: {
   children: React.ReactNode;
 }) {
-  const breakpoint = useBreakpoint();
-
   const secondaryNavItems = [
     {
       text: "Преглед",
@@ -26,21 +18,11 @@ export default function SubFamilyLayout({
 
   return (
     <section>
-      {breakpoint >= 1024 && (
-        <SecondaryNavBar
-          items={secondaryNavItems}
-          title={'Сопственици'}
-          configurationLink={`/configure`}
-        />
-      )}
-
-      {breakpoint < 1024 && (
-        <MobileSecondaryNav
-          items={secondaryNavItems}
-          title={'Сопственици'}
-          configurationLink={`/configure`}
-        />
-      )}
+      <SecondaryNavFamily
+        items={secondaryNavItems}
+        title={'Сопственици'}
+        configLink={`/configure`}
+      />
 
       {children}
       <GrayBand

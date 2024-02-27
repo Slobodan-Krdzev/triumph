@@ -42,23 +42,6 @@ export default function SubFamilyLayout({
 
   return (
     <section>
-
-      {
-      /* {breakpoint >= 1024 && (
-        <SecondaryNavBar
-          items={secondaryNavItems}
-          title={formulateSubFamilyTitleOnBanner(tiger1200Path ? 'Tiger 1200' : params.subFamily.toString())}
-          configurationLink={`/configure/bikes/${params.subFamily}`}
-        />
-      )}
-
-      {breakpoint < 1024 && (
-        <MobileSecondaryNav
-          items={secondaryNavItems}
-          title={formulateSubFamilyTitleOnBanner(formulateSubFamilyTitleOnBanner(tiger1200Path ? 'Tiger 1200' : params.subFamily.toString()))}
-          configurationLink={`/configure/bikes/${params.subFamily}`}
-        />
-      )} */}
       <SecondaryNavFamily items={secondaryNavItems} title={formulateSubFamilyTitleOnBanner(formulateSubFamilyTitleOnBanner(tiger1200Path ? 'Tiger 1200' : params.subFamily.toString()))} configLink={`/configure/bikes/${params.subFamily}`} />
 
       {children}
