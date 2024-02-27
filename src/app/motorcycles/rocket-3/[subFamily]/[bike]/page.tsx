@@ -16,6 +16,7 @@ import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitl
 import TextAndImageFlexSection from "@/app/components/familiySharedComponents/TextAndImageFlexSection";
 import AudioSection from "@/app/components/roadstersUniqueComp/AudioSection";
 import { BIKES, SUB_FAMILIES } from "@/app/constants/constants";
+import { redirect } from "next/navigation";
 
 const RocketBikePage = async ({ params }: any) => {
   const bikeModel = params.bike;
@@ -162,8 +163,7 @@ const RocketBikePage = async ({ params }: any) => {
       </main>
     );
   } catch (err) {
-    console.log(err);
-    return "err";
+    return redirect(`/motorcycles/rocket-3/${bikeModel}`)
   }
 };
 

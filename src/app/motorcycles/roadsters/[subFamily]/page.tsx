@@ -8,6 +8,7 @@ import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeI
 import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
 import AudioSection from "@/app/components/roadstersUniqueComp/AudioSection";
 import { BIKES, SUB_FAMILIES } from "@/app/constants/constants";
+import { redirect } from "next/navigation";
 
 const RoadstersSubFamilyPage = async ({ params }: any) => {
   const query = params.subFamily;
@@ -107,9 +108,7 @@ const RoadstersSubFamilyPage = async ({ params }: any) => {
       </>
     );
   } catch (error) {
-    console.log(error);
-
-    return "err";
+    return redirect(`/motorcycles/roadsters`)
   }
 };
 

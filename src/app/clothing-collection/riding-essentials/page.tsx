@@ -1,7 +1,6 @@
 import Breadcrumbs from "@/app/components/Breadcrumbs/Breadcrumbs";
 import ImageCarousell from "@/app/components/ClothingComponents/ImageCarousell";
 import MainBtn from "@/app/components/MainBtn";
-import PageParagraph from "@/app/components/familiySharedComponents/PageParagraph";
 import Image from "next/image";
 
 const caroItems = [{

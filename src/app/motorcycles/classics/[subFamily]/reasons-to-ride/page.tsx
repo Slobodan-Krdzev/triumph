@@ -66,7 +66,6 @@ const ClassicsReasonsToRide = async ({ params }: any) => {
       </>
     );
   } catch (err) {
-    console.log(err);
 
     return redirect(`/motorcycles/classics/${subFam}`);
   }

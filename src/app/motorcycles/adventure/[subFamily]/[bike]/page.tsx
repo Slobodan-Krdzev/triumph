@@ -143,7 +143,6 @@ const BikePage = async ({ params }: any) => {
       </main>
     );
   } catch (err) {
-    console.log(err);
     return redirect(`/motorcycles/adventure/${subFamQuery}`);
   }
 };

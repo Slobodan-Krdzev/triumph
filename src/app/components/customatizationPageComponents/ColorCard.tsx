@@ -44,7 +44,7 @@ const ColorCard = ({ color }: ColorCardProps) => {
         >
           <p className="absolute -top-1 right-0 p-1">
             <FontAwesomeIcon
-              icon={query === color.colorCode ? faCheck : faPlus}
+              icon={(query === null ? "color1" : query) === color.colorCode ? faCheck : faPlus}
               color="white"
               className="hover:text-white transition-colors ease-in-out delay-100"
             />

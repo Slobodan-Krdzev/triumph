@@ -14,6 +14,7 @@ import SpecsTable from "@/app/components/SubFamily/Specification/SpecsTable";
 import TextAndImageFlexSection from "@/app/components/familiySharedComponents/TextAndImageFlexSection";
 import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
 import { BIKES, FAMILIES, SUB_FAMILIES } from "@/app/constants/constants";
+import { redirect } from "next/navigation";
 
 type BikePagePromoType = {
   title: string;
@@ -23,8 +24,6 @@ type BikePagePromoType = {
 
 const SportBikePage = async ({ params }: any) => {
   const subFamilyType = params.subFamily;
-
-  console.log(subFamilyType, "SUB FAMILIJA");
 
   try {
     const bikeRes = await fetch(`${BIKES}?model=${params.bike}`, {
@@ -152,8 +151,7 @@ const SportBikePage = async ({ params }: any) => {
       </main>
     );
   } catch (err) {
-    console.log(err);
-    return "err";
+    return redirect(`/motorcycles/sport/${subFamilyType}`)
   }
 };
 

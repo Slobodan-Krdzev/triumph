@@ -4,6 +4,7 @@ import BikeListingNoSlider from "@/app/components/familiySharedComponents/BikeLi
 import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
 import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
 import { BIKES, SUB_FAMILIES } from "@/app/constants/constants";
+import { redirect } from "next/navigation";
 
 const OffRoadSubFamilyPage = async ({ params }: any) => {
   const query = params.subFamily;
@@ -59,7 +60,7 @@ const OffRoadSubFamilyPage = async ({ params }: any) => {
   } catch (error) {
     console.log(error);
 
-    return "err";
+    return redirect(`/motorcycles/off-road`)
   }
 };
 

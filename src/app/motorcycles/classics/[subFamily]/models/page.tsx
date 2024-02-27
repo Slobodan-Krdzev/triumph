@@ -1,6 +1,7 @@
 import Breadcrumbs from '@/app/components/Breadcrumbs/Breadcrumbs'
 import BikeListingNoSlider from '@/app/components/familiySharedComponents/BikeListingNoSlider'
 import { BIKES } from '@/app/constants/constants'
+import { redirect } from 'next/navigation'
 import React from 'react'
 
 const ClassicsModelsPage = async ({params}: any) => {
@@ -22,8 +23,7 @@ const ClassicsModelsPage = async ({params}: any) => {
       </main>
     )
   }catch(err) {
-    console.log(err);
-    return 
+    return redirect(`/motorcycles/classics/${model}`)
     
   }
 }

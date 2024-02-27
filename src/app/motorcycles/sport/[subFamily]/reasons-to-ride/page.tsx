@@ -4,6 +4,7 @@ import BikeListingNoSlider from "@/app/components/familiySharedComponents/BikeLi
 import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
 import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
 import { BIKES, SUB_FAMILIES } from "@/app/constants/constants";
+import { redirect } from "next/navigation";
 
 const SubFamReasonsToRidePage = async ({ params }: any) => {
   const subFam = params.subFamily;
@@ -78,9 +79,8 @@ const SubFamReasonsToRidePage = async ({ params }: any) => {
       </>
     );
   } catch (err) {
-    console.log(err);
 
-    return;
+    return redirect(`/motorcycles/sport/${subFam}`)
   }
 };
 

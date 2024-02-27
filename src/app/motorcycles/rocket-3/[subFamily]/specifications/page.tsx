@@ -4,6 +4,7 @@ import SpecsTable from "@/app/components/SubFamily/Specification/SpecsTable";
 import BikeListingNoSlider from "@/app/components/familiySharedComponents/BikeListingNoSlider";
 import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
 import { BIKES, FAMILIES, SUB_FAMILIES } from "@/app/constants/constants";
+import { redirect } from "next/navigation";
 
 const Rocket3SpecsPage = async () => {
   try {
@@ -45,8 +46,8 @@ const Rocket3SpecsPage = async () => {
       </>
     );
   } catch (err) {
-    console.log(err);
-    return;
+    return redirect(`/motorcycles/rocket-3`)
+
   }
 };
 

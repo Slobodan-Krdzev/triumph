@@ -3,6 +3,7 @@ import SecondaryPagesHeroSection from "@/app/components/SubFamily/SecondaryPages
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
 import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
 import { BIKES, FAMILIES, SUB_FAMILIES } from "@/app/constants/constants";
+import { redirect } from "next/navigation";
 import React from "react";
 
 const AccessoriesPageRoadsters = async ({ params }: any) => {
@@ -62,9 +63,7 @@ const AccessoriesPageRoadsters = async ({ params }: any) => {
       </>
     );
   } catch (err) {
-    console.log(err);
-
-    return "err";
+    return redirect(`/motorcycles/roadsters/${subFam}`)
   }
 };
 

@@ -1,37 +1,33 @@
-import Breadcrumbs from '@/app/components/Breadcrumbs/Breadcrumbs'
-import BikeListingNoSlider from '@/app/components/familiySharedComponents/BikeListingNoSlider'
-import { formulateSubFamilyTitleOnBanner } from '@/app/components/helpers/formulateSubFamilyTilteOnBanner'
-import { BIKES } from '@/app/constants/constants'
-import React from 'react'
+import Breadcrumbs from "@/app/components/Breadcrumbs/Breadcrumbs";
+import BikeListingNoSlider from "@/app/components/familiySharedComponents/BikeListingNoSlider";
+import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
+import { BIKES } from "@/app/constants/constants";
+import { redirect } from "next/navigation";
+import React from "react";
 
-const RoadstersModelPage = async ({params}: any) => {
+const RoadstersModelPage = async ({ params }: any) => {
+  const model = params.subFamily;
 
-    const model = params.subFamily
-
-    console.log(model, 'MODEL');
-    
-
-    try{
-        const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${model}`, {cache: 'no-store'})
-        const bikesData = await bikesRes.json()
+  try {
+    const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${model}`, {
+      cache: "no-store",
+    });
+    const bikesData = await bikesRes.json();
 
     return (
-      <main className='bg-white md:py-16 py-4 relative'>
-          <Breadcrumbs dark />
+      <main className="bg-white md:py-16 py-4 relative">
+        <Breadcrumbs dark />
 
-        <h1 className='uppercase text-4xl font-semibold text-center md:mb-16 mb-4'>{formulateSubFamilyTitleOnBanner(model) }</h1>
-        <BikeListingNoSlider
-            bikes={bikesData}
-            configureLink={true}/>
+        <h1 className="uppercase text-4xl font-semibold text-center md:mb-16 mb-4">
+          {formulateSubFamilyTitleOnBanner(model)}
+        </h1>
+        <BikeListingNoSlider bikes={bikesData} configureLink={true} />
       </main>
-    )
-    }catch(err){
-        console.log(err);
+    );
+  } catch (err) {
 
-        return "ERR"
-        
-    }
-  
-}
+    return redirect(`/motorcycles/roadsters/${model}`)
+  }
+};
 
-export default RoadstersModelPage
+export default RoadstersModelPage;

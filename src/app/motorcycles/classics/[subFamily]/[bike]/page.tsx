@@ -13,6 +13,7 @@ import SpecsTable from "@/app/components/SubFamily/Specification/SpecsTable";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
 import TextAndImageFlexSection from "@/app/components/familiySharedComponents/TextAndImageFlexSection";
 import { BIKES, SUB_FAMILIES } from "@/app/constants/constants";
+import { redirect } from "next/navigation";
 
 const ClassicsBikePage = async ({ params }: any) => {
   const bikeModel = params.bike;
@@ -188,8 +189,7 @@ const ClassicsBikePage = async ({ params }: any) => {
       </main>
     );
   } catch (err) {
-    console.log(err);
-    return "err";
+    return redirect(`/motorcycles/classics/${subFamQuery}`);
   }
 };
 

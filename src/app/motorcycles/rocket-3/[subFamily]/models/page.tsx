@@ -1,6 +1,7 @@
 import Breadcrumbs from '@/app/components/Breadcrumbs/Breadcrumbs'
 import BikeListingNoSlider from '@/app/components/familiySharedComponents/BikeListingNoSlider'
 import { BIKES } from '@/app/constants/constants'
+import { redirect } from 'next/navigation'
 import React from 'react'
 
 const Rocket3ModelsPage = async () => {
@@ -21,8 +22,7 @@ const Rocket3ModelsPage = async () => {
         </main>
       )
     }catch(err) {
-      console.log(err);
-      return 
+      return redirect(`/motorcycles/rocket-3`)
       
     }
 }
