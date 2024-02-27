@@ -45,7 +45,7 @@ const MobileNav = ({ fams, allBikes }: MobileNavProps) => {
 
   return (
     <>
-      <nav className="flex bg justify-start items-center px-8 xl:gap-8 gap-5 z-50 h-16">
+      <nav className="flex lg:hidden bg justify-start items-center px-8 xl:gap-8 gap-5 z-50 h-16">
         <button className="basis-1/12" onClick={handleMenuVisibility}>
           <FontAwesomeIcon
             icon={isMainDropdownShown ? faX : faBars}

@@ -35,7 +35,7 @@ const Nav = ({ fams, allBikes }: NavProps) => {
   try {
     return (
       <>
-        <nav className="bg z-50 hidden xl:block">
+        <nav className="bg z-50 hidden lg:block">
           <div className="flex justify-between items-center">
             <div className="flex px-8 xl:gap-8 gap-5 items-center">
               <Link href={"/"}>

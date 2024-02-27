@@ -1,17 +1,14 @@
 "use client";
 import GrayBand from "@/app/components/GrayBand";
+import SecondaryNavFamily from "@/app/components/SecondaryNavFamily";
 import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
-import { useBreakpoint } from "@/app/components/helpers/useBreakpoint";
-import MobileSecondaryNav from "@/app/components/whiteSecondaryNavBar/MobileSecondary/MobileSecondaryNav";
-import SecondaryNavBar from "@/app/components/whiteSecondaryNavBar/SecondaryNavBar";
-import { useParams, usePathname, useRouter } from "next/navigation";
+import { useParams, usePathname } from "next/navigation";
 
 export default function SubFamilyLayout({
-  children, // will be a page or nested layout
+  children, 
 }: {
   children: React.ReactNode;
 }) {
-  const breakpoint = useBreakpoint();
 
   const pathname = usePathname();
   const params = useParams();
@@ -45,7 +42,9 @@ export default function SubFamilyLayout({
 
   return (
     <section>
-      {breakpoint >= 1024 && (
+
+      {
+      /* {breakpoint >= 1024 && (
         <SecondaryNavBar
           items={secondaryNavItems}
           title={formulateSubFamilyTitleOnBanner(tiger1200Path ? 'Tiger 1200' : params.subFamily.toString())}
@@ -59,7 +58,8 @@ export default function SubFamilyLayout({
           title={formulateSubFamilyTitleOnBanner(formulateSubFamilyTitleOnBanner(tiger1200Path ? 'Tiger 1200' : params.subFamily.toString()))}
           configurationLink={`/configure/bikes/${params.subFamily}`}
         />
-      )}
+      )} */}
+      <SecondaryNavFamily items={secondaryNavItems} title={formulateSubFamilyTitleOnBanner(formulateSubFamilyTitleOnBanner(tiger1200Path ? 'Tiger 1200' : params.subFamily.toString()))} configLink={`/configure/bikes/${params.subFamily}`} />
 
       {children}
       <GrayBand

@@ -1,10 +1,8 @@
 "use client";
-import React from "react";
-import { useBreakpoint } from "./helpers/useBreakpoint";
+import MobileSecondaryNav from "./whiteSecondaryNavBar/MobileSecondary/MobileSecondaryNav";
 import SecondaryNavBar, {
   SecondaryNavItemsType,
 } from "./whiteSecondaryNavBar/SecondaryNavBar";
-import MobileSecondaryNav from "./whiteSecondaryNavBar/MobileSecondary/MobileSecondaryNav";
 
 type SecondaryNavFamily = {
   items: SecondaryNavItemsType[];
@@ -17,27 +15,21 @@ const SecondaryNavFamily = ({
   title,
   configLink,
 }: SecondaryNavFamily) => {
-  const breakpoint = useBreakpoint();
 
-  if (breakpoint >= 1024) {
     return (
+      <>
       <SecondaryNavBar
         items={items}
         title={title}
         configurationLink={configLink}
       />
-    );
-  }
-
-  if(breakpoint < 1024){
-    return (
-        <MobileSecondaryNav
+      <MobileSecondaryNav
           items={items}
           title={title}
           configurationLink={configLink}
         />
+      </>
     )
-  }
 };
 
 export default SecondaryNavFamily;

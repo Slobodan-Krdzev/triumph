@@ -32,7 +32,7 @@ const MobileSecondaryNav = ({
   
 
   return (
-    <section className="px-4 bg-white border-thin-gray-bottom relative shadow-xl" style={{zIndex: 47}}>
+    <section className="block xl:hidden px-4 bg-white border-thin-gray-bottom relative shadow-xl" style={{zIndex: 47}}>
       <button
         className={`py-4 ${title.toString() === "Off Road" ? "text-black" : "text-red"} text-md font-bold uppercase italic mr-10 tracking-tighter`}
         onClick={() => setIsMenuOpen(!isMenuOpen)}

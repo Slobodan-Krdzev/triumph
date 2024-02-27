@@ -25,7 +25,7 @@ const SecondaryNavBar = ({
   if (items) {
     return (
       <section
-        className="flex justify-between px-8 outline-gray-1px sticky top-0 bg-white "
+        className="hidden xl:flex justify-between px-8 outline-gray-1px sticky top-0 bg-white "
         style={{ zIndex: 40 }}
       >
         {/* LEFT SIDE */}

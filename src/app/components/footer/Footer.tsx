@@ -60,26 +60,8 @@ type FooterProps = {
 
 const Footer = ({families}: FooterProps) => {
 
-    // const [families, setFamilies] = useState<any[]>([])
-
     const breakpoint = useBreakpoint()
-    
-
-    // useEffect(() => {
-
-    //    fetch(FAMILIES)
-    //    .then(res => res.json())
-    //    .then(data => {
-
-
-
-    //       setFamilies( data.map((family: any) => family.type))
-    //    })
-
-
-    // }, [])
    
-
     if(families.length > 0) {
       return (
         <footer className="px-4 md:px-0 border-t-2 border-thin-gray md:pt-8 pt-4 mt-4 md:mt-0 w-full md:w-10/12 m-auto">
