@@ -17,7 +17,7 @@ const MobileCarousell = ({
   updateIndex,
 }: MobileCarousellProps) => {
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden lg:hidden block">
       {activeIndex >= 1 && (
         <button
           onClick={() => updateIndex(activeIndex - 1)}

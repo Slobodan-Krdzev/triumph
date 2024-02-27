@@ -25,7 +25,7 @@ const LatestModelsMobile = ({items = [], showTitle}: LatesModelsMObileProps) => 
   };
 
   return (
-    <section className="flex flex-col items-center overflow-hidden relative p-4 gap-4">
+    <section className="lg:hidden flex flex-col items-center overflow-hidden relative p-4 gap-4">
       
       {showTitle && <SectionTitleH2 text={"Најнови Модели"} color={"dark"} />}
 

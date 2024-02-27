@@ -2,10 +2,9 @@
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
-import { useBreakpoint } from "../../helpers/useBreakpoint";
+import Breadcrumbs from "../../Breadcrumbs/Breadcrumbs";
 import MainCarousellItem from "./MainCarousellItem";
 import MobileCarousell from "./MobileCarousell/MobileCarousell";
-import Breadcrumbs from "../../Breadcrumbs/Breadcrumbs";
 
 export type CarousellItemType = {
   image?: string;
@@ -30,7 +29,6 @@ type MainCarousellProps = {
 const MainCarousell = ({ items = [] }: MainCarousellProps) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [progress, setProgress] = useState(0);
-  const breakpoint = useBreakpoint();
 
   const updateIndex = (newIndex: number) => {
     if (newIndex < 0) {
@@ -69,9 +67,12 @@ const MainCarousell = ({ items = [] }: MainCarousellProps) => {
     };
   }, [activeIndex]);
 
-  if (breakpoint >= 1024) {
-    return (
-      <div className="relative overflow-hidden" style={{ height: "90vh" }}>
+  return (
+    <>
+      <div
+        className="relative overflow-hidden lg:block hidden"
+        style={{ height: "90vh" }}
+      >
         <Breadcrumbs />
 
         <div
@@ -82,69 +83,64 @@ const MainCarousell = ({ items = [] }: MainCarousellProps) => {
             <MainCarousellItem key={idx} item={item} />
           ))}
         </div>
-        {activeIndex >= 1 && 
+        {activeIndex >= 1 && (
           <button
-          onClick={() => updateIndex(activeIndex - 1)}
-          className="gradient-caro-btn-right-to-left absolute z-20 bg-transparent text-black top-0 h-full  w-18 flex flex-col justify-end items-center pb-10"
-          style={{ right: "80px" }}
-        >
-          <p className="rotate-90 text-white font-semibold uppercase font-xl mb-5">
-            {"Претходно"}
-          </p>
-          <FontAwesomeIcon
-            icon={faArrowLeft}
-            color="white"
-            size="lg"
-            className="mt-5"
-          />
-        </button>
-        }
-        
-        {(activeIndex + 1) !== items.length && 
-        <div className="absolute top-0 h-full right-0 flex flex-row">
-        <button
-          onClick={() => updateIndex(activeIndex + 1)}
-          className="gradient-caro-btn-left-to-right bg-transparent h-full z-20 text-black  w-20 flex flex-col justify-end items-center pb-10 relative"
-          style={{ right: "0%" }}
-        >
-          <div
-            className="red-bg-color h-2  absolute"
-            style={{
-              width: `5%`,
+            onClick={() => updateIndex(activeIndex - 1)}
+            className="gradient-caro-btn-right-to-left absolute z-20 bg-transparent text-black top-0 h-full  w-18 flex flex-col justify-end items-center pb-10"
+            style={{ right: "80px" }}
+          >
+            <p className="rotate-90 text-white font-semibold uppercase font-xl mb-5">
+              {"Претходно"}
+            </p>
+            <FontAwesomeIcon
+              icon={faArrowLeft}
+              color="white"
+              size="lg"
+              className="mt-5"
+            />
+          </button>
+        )}
 
-              height: `${progress + 2}%`,
-              transform: 'rotate(180deg)',
-              left: 0,
-              bottom: 0
-            }}
-          ></div>
-          <p className="rotate-90 text-white font-semibold uppercase font-xl mb-5">
-            {"Следно"}
-          </p>
-          <FontAwesomeIcon
-            icon={faArrowRight}
-            color="white"
-            size="lg"
-            className="mt-5"
-          />
-        </button>
-      </div>
-        }
-        
-      </div>
-    );
-  }
+        {activeIndex + 1 !== items.length && (
+          <div className="absolute top-0 h-full right-0 flex flex-row">
+            <button
+              onClick={() => updateIndex(activeIndex + 1)}
+              className="gradient-caro-btn-left-to-right bg-transparent h-full z-20 text-black  w-20 flex flex-col justify-end items-center pb-10 relative"
+              style={{ right: "0%" }}
+            >
+              <div
+                className="red-bg-color h-2  absolute"
+                style={{
+                  width: `5%`,
 
-  if (breakpoint < 1024) {
-    return (
+                  height: `${progress + 2}%`,
+                  transform: "rotate(180deg)",
+                  left: 0,
+                  bottom: 0,
+                }}
+              ></div>
+              <p className="rotate-90 text-white font-semibold uppercase font-xl mb-5">
+                {"Следно"}
+              </p>
+              <FontAwesomeIcon
+                icon={faArrowRight}
+                color="white"
+                size="lg"
+                className="mt-5"
+              />
+            </button>
+          </div>
+        )}
+      </div>
+
       <MobileCarousell
         items={items}
         progress={progress}
         activeIndex={activeIndex}
         updateIndex={updateIndex}
       />
-    );
-  }
+    </>
+  );
 };
 
 export default MainCarousell;

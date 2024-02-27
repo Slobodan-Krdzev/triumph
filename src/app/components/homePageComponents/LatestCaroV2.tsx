@@ -13,7 +13,7 @@ type LatestCaroV2Props = {
 
 const LatestCaroV2 = ({ items }: LatestCaroV2Props) => {
   return (
-    <>
+    <section className="hidden lg:block py-8 lg:my-16">
       <Swiper
         navigation={true}
         modules={[Navigation, Autoplay]}
@@ -56,7 +56,7 @@ const LatestCaroV2 = ({ items }: LatestCaroV2Props) => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </>
+      </section>
   );
 };
 

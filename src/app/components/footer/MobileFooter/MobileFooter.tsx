@@ -1,24 +1,23 @@
-import React from "react";
-import MobileFooterList from "./MobileFooterList";
-import BottomFoot from "../BottomFoot";
-import { footerLists } from "../Footer";
 import { createFamilies } from "../../helpers/createFooterFamilies";
+import { footerLists } from "../Footer";
+import MobileFooterList from "./MobileFooterList";
 
 type MobileFooterProps = {
-  familyItems: any[]
-}
+  familyItems: any[];
+};
 
-const MobileFooter = ({familyItems}: MobileFooterProps) => {
+const MobileFooter = ({ familyItems }: MobileFooterProps) => {
   return (
     <>
-      <div className="flex flex-col items-start">
-        <MobileFooterList list={{title: 'Мoторцикли', items: createFamilies(familyItems)}}/>
+      <div className="flex flex-col items-start xl:hidden">
+        <MobileFooterList
+          list={{ title: "Мoторцикли", items: createFamilies(familyItems) }}
+        />
 
         {footerLists.map((list, idx) => (
-          <MobileFooterList key={idx} list={list}/>
+          <MobileFooterList key={idx} list={list} />
         ))}
       </div>
-      <BottomFoot />
     </>
   );
 };
