@@ -6,6 +6,7 @@ import ColorCard from "@/app/components/customatizationPageComponents/ColorCard"
 import ImageActions from "@/app/components/customatizationPageComponents/ImageActions";
 import { faCheck } from "@fortawesome/free-solid-svg-icons/faCheck";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { redirect } from "next/navigation";
 
 const BikeConfigPage = async ({ params }: any) => {
   try {
@@ -66,7 +67,7 @@ const BikeConfigPage = async ({ params }: any) => {
       </>
     );
   } catch {
-    return "err";
+    return redirect(`/configure/bikes`);
   }
 };
 
