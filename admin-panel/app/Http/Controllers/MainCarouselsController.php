@@ -68,24 +68,22 @@ class MainCarouselsController extends Controller
         $urls = [];
 
         if ($request->file('image')) {
-            $imagePath = $request->file('image')->store('', 'public');
-            $imageUrl = asset('/images/' . basename($imagePath));
+            $imagePath = $request->file('image')->store('images', 'public');
+            $imageUrl = '/storage/' . $imagePath;
             $urls['image'] = $imageUrl;
-
         }
 
         if ($request->file('imageMobile')) {
-            $imageMobilePath = $request->file('imageMobile')->store('mobile', 'public');
-            $imageMobileUrl = asset('/images/' . basename($imageMobilePath));
+            $imageMobilePath = $request->file('imageMobile')->store('images/mobile', 'public');
+            $imageMobileUrl = '/storage/' . $imageMobilePath;
             $urls['imageMobile'] = $imageMobileUrl;
         }
 
         if ($request->file('video')) {
             $videoPath = $request->file('video')->store('videos', 'public');
-            $videoUrl = asset('/images/' . basename($videoPath));
+            $videoUrl = '/storage/' . $videoPath;
             $urls['video'] = $videoUrl;
         }
-
 
         $carousel = new MainCarousell;
         $carousel->title = $request->title;

@@ -44,8 +44,19 @@
             </div>
 
 
-            <label for="video">Video Path:</label>
-            <input type="text" name="video" id="video" value="{{ old('video', $mainCarousels->video) }}">
+            <!-- Video Preview -->
+            @if ($mainCarousels->video)
+
+                <div>
+                    <img src="{{ $mainCarousels->video }}" alt="Video"
+                        style="max-width: 200px; max-height: 200px;">
+                </div>
+            @endif
+
+            <div>
+                <label for="image">Video</label>
+                <input type="file" name="video" id="image">
+            </div>
 
 
             <label for="image">Image Path:</label>
