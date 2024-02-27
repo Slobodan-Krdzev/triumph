@@ -37,8 +37,7 @@ const ClassicsSpecsPage = async ({ params }: any) => {
       </>
     );
   } catch (err) {
-    // return redirect(`/motorcycles/classics/${subFam}`);
-    console.log(err);
+    return redirect(`/motorcycles/classics/${subFam}`);
     
   }
 };

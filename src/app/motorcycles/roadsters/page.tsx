@@ -6,6 +6,7 @@ import { createSubFamLinksForSecondary } from "@/app/components/helpers/createSu
 import AudioSection from "@/app/components/roadstersUniqueComp/AudioSection";
 import { FAMILIES, PROMOS, SUB_FAMILIES } from "@/app/constants/constants";
 import { PromoDataType } from "@/app/types/HomeTypes/SharedTypes/types";
+import { redirect } from "next/navigation";
 
 const RoadstersPage = async () => {
 
@@ -87,15 +88,8 @@ const RoadstersPage = async () => {
       </>
     );
   } catch {}
-  return "err";
+  return redirect(`/configure`)
 };
 
 export default RoadstersPage;
 
-// {
-//   "title": "ТРЕТА ГЕНЕРАЦИЈА 3-ЦИЛИНДРИЧНИ МОТОРИ",
-//   "subFamilyType": "tiger-1200-rally",
-//   "desc": "Погонските единици на Speed Triple ја менуваат играта и се лидери во класата, благодарејки на својот специфичен карактер и перформанси кои во 1994 година ги поставија темелите на 'streetfighter' моторите како и 'naked sportsbike' моторите. Сето ова резултира во тоа да во денешно време Triumph ги изработува најдобрите 3-цилиндрични мотори, со експлозивен обртен момент од старт па се до црвено со притоа инстантна респонзивност и одлично забрзување",
-//   "image": "/images/roadsters/roadstersPromoTiger1200Rally.avif",
-//   "btnBlack": false
-// },

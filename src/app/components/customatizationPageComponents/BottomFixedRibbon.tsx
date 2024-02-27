@@ -102,15 +102,12 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
   const getLinkForSharing = () => window?.location.href;
 
   const handleSaveBike = (bike: any) => {
-
     if (localStorage.getItem("garage") === null) {
       const createdGarage = [bike];
 
       localStorage.setItem("garage", JSON.stringify(createdGarage));
       toast.success("Моторот е зачуван во вашата гаража.");
       setGarage(createdGarage);
-
-
     } else {
       const garage = JSON.parse(localStorage.getItem("garage")!);
 
@@ -129,11 +126,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
       }
 
       localStorage.setItem("garage", JSON.stringify(garage));
-
     }
-
-    console.log(garage, 'GARAGE od FUNKCIJA');
-
   };
 
   useEffect(() => {
@@ -155,9 +148,6 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
   };
 
   const isBikeInGarage = Boolean(garage.find((bike) => bike.id === info.id));
-
-  console.log(garage, 'GARAGE');
-  
 
   if (breakpoint > 1000) {
     return (
@@ -219,10 +209,11 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
             Сподели
           </button>
           <div className="basis-3/12 bg text-white justify-between items-center flex">
-            <button className="flex justify-end items-center basis-1/3">
-              <Link href={"/dealer"}>
+            <button className="flex justify-end items-center basis-1/3 group relative">
+              <span className="hidden group-hover:inline absolute -top-20 py-2 text-xs gray-bg rounded-md font-medium">
+                Цените може да варираат.
+              </span>
                 <FontAwesomeIcon icon={faInfoCircle} />
-              </Link>
             </button>
             <div className="flex flex-col justify-center items-start basis-2/3 pl-5">
               <p className="text-sm">Цена</p>
@@ -371,7 +362,10 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
           <FontAwesomeIcon icon={faBars} color="black" size="xl" />
         </button>
         <div className="basis-5/12 bg text-white justify-start items-center flex">
-          <button className="flex justify-end items-center basis-1/5">
+          <button className="flex justify-end items-center basis-1/5 group">
+            <span className="hidden group-hover:inline absolute -top-14 py-2 px-4 text-xs gray-bg rounded-md font-medium w-36" style={{left: '18%'}}>
+              Цените може да варираат.
+            </span>
             <FontAwesomeIcon icon={faInfoCircle} />
           </button>
           <div className="flex flex-col justify-center items-start basis-3/5 pl-2">

@@ -14,6 +14,7 @@ import SpecTableListi from "@/app/components/SubFamily/Specification/SpecTableLi
 import SpecsTable from "@/app/components/SubFamily/Specification/SpecsTable";
 import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
 import { BIKES, FAMILIES, SUB_FAMILIES } from "@/app/constants/constants";
+import { redirect } from "next/navigation";
 
 type BikePagePromoType = {
   title: string;
@@ -164,8 +165,7 @@ const OffRoadBikePage = async ({ params }: any) => {
       </main>
     );
   } catch (err) {
-    console.log(err);
-    return "err";
+    return redirect(`/motorcycles/off-road/${subFamQuery}`)
   }
 };
 

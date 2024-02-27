@@ -3,6 +3,7 @@ import SecondaryPagesHeroSection from "@/app/components/SubFamily/SecondaryPages
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
 import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
 import { BIKES, SUB_FAMILIES } from "@/app/constants/constants";
+import { redirect } from "next/navigation";
 
 const SubFamReasonsToRide = async ({ params }: any) => {
   const subFam = params.subFamily;
@@ -50,9 +51,7 @@ const SubFamReasonsToRide = async ({ params }: any) => {
       </>
     );
   } catch (err) {
-    console.log(err);
-
-    return "err";
+    return redirect(`/motorcycles/off-road/${subFam}`)
   }
 };
 

@@ -2,6 +2,7 @@ import Breadcrumbs from "@/app/components/Breadcrumbs/Breadcrumbs";
 import MainBtn from "@/app/components/MainBtn";
 import SpecsTable from "@/app/components/SubFamily/Specification/SpecsTable";
 import { FAMILIES, SUB_FAMILIES } from "@/app/constants/constants";
+import { redirect } from "next/navigation";
 import React from "react";
 
 const SpecsSportPage = async ({ params }: any) => {
@@ -36,8 +37,7 @@ const SpecsSportPage = async ({ params }: any) => {
       </>
     );
   } catch (err) {
-    console.log(err);
-    return;
+    return redirect(`/motorcycles/sport/${query}`)
   }
 };
 

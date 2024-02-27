@@ -2,6 +2,7 @@ import HeroSection from "@/app/components/SubFamily/HeroSection";
 import TopSection from "@/app/components/SubFamily/TopSection";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
 import { BIKES, SUB_FAMILIES } from "@/app/constants/constants";
+import { redirect } from "next/navigation";
 
 const Rocket3SubFamPage = async () => {
   try {
@@ -61,9 +62,8 @@ const Rocket3SubFamPage = async () => {
       </>
     );
   } catch (err) {
-    console.log(err);
 
-    return "ERR";
+    return redirect('/motorcycles/rocket-3')
   }
 };
 

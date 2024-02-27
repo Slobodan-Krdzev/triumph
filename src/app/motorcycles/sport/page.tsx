@@ -7,6 +7,7 @@ import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitl
 import { createSubFamLinksForSecondary } from "@/app/components/helpers/createSubFamLinksForSecondary";
 import { BIKES, FAMILIES, PROMOS, SUB_FAMILIES } from "@/app/constants/constants";
 import { PromoDataType } from "@/app/types/HomeTypes/SharedTypes/types";
+import { redirect } from "next/navigation";
 
 const SportBikePage = async ({ params }: any) => {
   try {
@@ -98,7 +99,7 @@ const SportBikePage = async ({ params }: any) => {
   } catch (err) {
     console.log(err);
 
-    return "ERR";
+    return redirect('/configure')
   }
 };
 

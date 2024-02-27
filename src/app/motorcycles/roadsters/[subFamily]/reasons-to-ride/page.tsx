@@ -3,6 +3,7 @@ import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeI
 import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
 import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
 import { BIKES, SUB_FAMILIES } from "@/app/constants/constants";
+import { redirect } from "next/navigation";
 
 const ReasonsRoadstersPage = async ({ params }: any) => {
   const subFam = params.subFamily;
@@ -83,9 +84,7 @@ const ReasonsRoadstersPage = async ({ params }: any) => {
       </>
     );
   } catch (err) {
-    console.log(err);
-
-    return;
+    return redirect(`/motorcycles/roadsters/${subFam}`)
   }
 };
 

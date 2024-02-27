@@ -1,7 +1,8 @@
 import Breadcrumbs from "@/app/components/Breadcrumbs/Breadcrumbs";
 import MainBtn from "@/app/components/MainBtn";
 import SpecsTable from "@/app/components/SubFamily/Specification/SpecsTable";
-import { FAMILIES, SUB_FAMILIES } from "@/app/constants/constants";
+import { SUB_FAMILIES } from "@/app/constants/constants";
+import { redirect } from "next/navigation";
 import React from "react";
 
 const SubFamilyStandardsPage = async ({ params }: any) => {
@@ -9,12 +10,9 @@ const SubFamilyStandardsPage = async ({ params }: any) => {
   const subFam = params.subFamily
 
   try {
-
     const subFamilyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=${subFam}`, {cache: 'no-store'})
     const subFamilyData = await subFamilyRes.json()
     const subFamily = subFamilyData[0]
-
-  
 
     return (
       <>
@@ -37,8 +35,7 @@ const SubFamilyStandardsPage = async ({ params }: any) => {
       </>
     );
   } catch (err) {
-    console.log(err);
-    return;
+    return redirect(`/motorcycles/adventure/${subFam}`)
   }
 };
 

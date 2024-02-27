@@ -5,6 +5,7 @@ import YouTubePromo from "@/app/components/SubFamily/YouTubePromo";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
 import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
 import { BIKES, SUB_FAMILIES } from "@/app/constants/constants";
+import { redirect } from "next/navigation";
 
 const ReasonsRocketPage = async () => {
   try {
@@ -69,9 +70,8 @@ const ReasonsRocketPage = async () => {
       </>
     );
   } catch (err) {
-    console.log(err);
+    return redirect(`/motorcycles/rocket-3`)
 
-    return "err";
   }
 };
 

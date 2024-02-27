@@ -1,5 +1,6 @@
 import Card from "@/app/components/Card";
 import HeroSectionCTA from "@/app/components/HeroSectionCTA";
+import LoadingState from "@/app/components/LoadingState";
 import { BIKES } from "@/app/constants/constants";
 import { redirect } from "next/navigation";
 import React from "react";
@@ -34,7 +35,7 @@ const ConfigTypeOfFamPage = async ({ params }: any) => {
       );
     }
 
-    return <>Err</>
+    return <LoadingState />
   }catch(e){
     return redirect("/configure/bikes")
   }

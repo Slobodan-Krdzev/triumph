@@ -11,6 +11,7 @@ import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitl
 import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
 import AudioSection from "@/app/components/roadstersUniqueComp/AudioSection";
 import { BIKES, SUB_FAMILIES } from "@/app/constants/constants";
+import { redirect } from "next/navigation";
 
 const SubFamilyPage = async ({ params }: any) => {
   const query = params.subFamily;
@@ -190,9 +191,7 @@ const SubFamilyPage = async ({ params }: any) => {
       </>
     );
   } catch (error) {
-    console.log(error);
-
-    return "err";
+    return redirect('/motorcycles/adventure');
   }
 };
 

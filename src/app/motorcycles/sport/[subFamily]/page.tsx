@@ -7,6 +7,7 @@ import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitl
 import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
 import { getBikesBySubfamilyCategory } from "@/app/components/helpers/getBikesBySubfamilyCategory";
 import { BIKES, FAMILIES, SUB_FAMILIES } from "@/app/constants/constants";
+import { redirect } from "next/navigation";
 
 const SportSubFamilyPage = async ({ params }: any) => {
   const query = params.subFamily;
@@ -99,9 +100,7 @@ const SportSubFamilyPage = async ({ params }: any) => {
       </>
     );
   } catch (error) {
-    console.log(error);
-
-    return "err";
+    return redirect('/motorcycles/sport')
   }
 };
 

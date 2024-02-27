@@ -165,7 +165,7 @@ const ClassicPage = async () => {
       </>
     );
   } catch (err) {
-    return redirect("/");
+    return redirect("/configure");
   }
 };
 

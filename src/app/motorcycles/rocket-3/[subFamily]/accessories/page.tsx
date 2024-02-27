@@ -4,6 +4,7 @@ import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeI
 import PageParagraph from "@/app/components/familiySharedComponents/PageParagraph";
 import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
 import { BIKES, SUB_FAMILIES } from "@/app/constants/constants";
+import { redirect } from "next/navigation";
 
 const RocketAccessoryPage = async ({ params }: any) => {
   const subFam = params.subFamily;
@@ -65,9 +66,8 @@ const RocketAccessoryPage = async ({ params }: any) => {
       </>
     );
   } catch (err) {
-    console.log(err);
 
-    return "err";
+    return redirect(`/motorcycles/rocket-3/${subFam}`)
   }
 };
 
