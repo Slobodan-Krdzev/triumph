@@ -102,10 +102,15 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
   const getLinkForSharing = () => window?.location.href;
 
   const handleSaveBike = (bike: any) => {
+
     if (localStorage.getItem("garage") === null) {
       const createdGarage = [bike];
 
       localStorage.setItem("garage", JSON.stringify(createdGarage));
+      toast.success("Моторот е зачуван во вашата гаража.");
+      setGarage(createdGarage);
+
+
     } else {
       const garage = JSON.parse(localStorage.getItem("garage")!);
 
@@ -124,7 +129,11 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
       }
 
       localStorage.setItem("garage", JSON.stringify(garage));
+
     }
+
+    console.log(garage, 'GARAGE od FUNKCIJA');
+
   };
 
   useEffect(() => {
@@ -146,6 +155,9 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
   };
 
   const isBikeInGarage = Boolean(garage.find((bike) => bike.id === info.id));
+
+  console.log(garage, 'GARAGE');
+  
 
   if (breakpoint > 1000) {
     return (

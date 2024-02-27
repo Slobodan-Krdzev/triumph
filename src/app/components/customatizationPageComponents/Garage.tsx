@@ -13,7 +13,7 @@ const Garage = ({ bikes, handleClose }: GarageProps) => {
   if (bikes.length === 0) {
     return (
       <section
-        className="fixed left-0 right-0 bottom-0 slight-white-bg border-2 py-16 px-24"
+        className="fixed left-0 right-0 bottom-0 slight-white-bg border-2 py-4 px-4 lg:py-16 lg:px-24"
         style={{ top: "64px" }}
       >
         <div className="relative flex flex-col justify-center items-center h-full w-full">
@@ -37,7 +37,7 @@ const Garage = ({ bikes, handleClose }: GarageProps) => {
               height={50}
             />
           </div>
-          <div className="flex mt-6 justify-center gap-6">
+          <div className="flex flex-col lg:flex-row text-center mt-6 justify-center gap-6">
             <MainBtn text={"Контакт"} bgBlack={false} isLink link="/dealer" />
             <MainBtn
               text={"Види ги сите"}
@@ -66,7 +66,10 @@ const Garage = ({ bikes, handleClose }: GarageProps) => {
         </button>
       </div>
 
-      <div className="flex flex-col gap-8 px-8 ">
+      <div className="flex flex-col gap-8 px-8 relative">
+          <button className="hidden lg:block absolute top-5 right-5" onClick={handleClose}>
+            <FontAwesomeIcon icon={faX} size="xl" />
+          </button>
         <div className="justify-center items-center gap-6 hidden lg:flex ">
           <Image
             src={"/images/triumphLogo.png"}
