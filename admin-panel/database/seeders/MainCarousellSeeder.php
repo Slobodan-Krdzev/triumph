@@ -14,9 +14,9 @@ class MainCarousellSeeder extends Seeder
     public function run(): void
     {
         $mainCarousell = [
-            "video" => "/images/home/mainCarousell/tiger1200CaroVideo.webm",
+            "video" => "/storage/images/home/mainCarousell/tiger1200CaroVideo.webm",
             "image" => null,
-            "imageMobile" => "/images/home/mainCarousell/tiger1200CaroImageMobile.avif",
+            "imageMobile" => "/storage/images/home/mainCarousell/tiger1200CaroImageMobile.avif",
             "title" => "Новата Tiger 1200 Серија",
             "desc" => "Возвишете ја вашата авантура на повисоко ниво.",
             "link1" => [
@@ -31,9 +31,9 @@ class MainCarousellSeeder extends Seeder
 
 
         $mainCarousellTwo = [
-            "video" => "/images/home/mainCarousell/offRoadCaroVideo.webm",
+            "video" => "/storage/images/home/mainCarousell/offRoadCaroVideo.webm",
             "image" => null,
-            "imageMobile" => "/images/home/mainCarousell/offRoadMainCaroMobile.avif",
+            "imageMobile" => "/storage/images/home/mainCarousell/offRoadMainCaroMobile.avif",
             "title" => "All In - All Out",
             "desc" => "Новата TF 250-X е тука. Triumph влегува во мотокрос светот.",
             "link1" => [
@@ -44,8 +44,8 @@ class MainCarousellSeeder extends Seeder
 
         $mainCarousellThree = [
             "video" => null,
-            "image" => "/images/home/mainCarousell/daytona.avif",
-            "imageMobile" => "/images/home/mainCarousell/daytonaMobile.avif",
+            "image" => "/storage/images/home/mainCarousell/daytona.avif",
+            "imageMobile" => "/storage/images/home/mainCarousell/daytonaMobile.avif",
             "title" => "Новaтa Daytona 660",
             "desc" => "Динамична ДНК со нов карактер.",
             "link1" => [
@@ -55,9 +55,9 @@ class MainCarousellSeeder extends Seeder
         ];
 
         $mainCarousellFour = [
-            "video" => "/images/home/mainCarousell/thruxtonCaroVideo.webm",
-            "image" => "/images/home/mainCarousell/thruxtonCaroImg.avif",
-            "imageMobile" => "/images/home/mainCarousell/stealthCaroImageMobile.avif",
+            "video" => "/storage/images/home/mainCarousell/thruxtonCaroVideo.webm",
+            "image" => "/storage/images/home/mainCarousell/thruxtonCaroImg.avif",
+            "imageMobile" => "/storage/images/home/mainCarousell/stealthCaroImageMobile.avif",
             "title" => "Новата Thruxton Final Edition",
             "desc" => "За крај на една ера - Thruxton Final Edition",
             "link1" => [
@@ -69,8 +69,8 @@ class MainCarousellSeeder extends Seeder
 
         $mainCarousellFive = [
             "video" => null,
-            "image" => "/images/home/mainCarousell/speed400CaroImage.avif",
-            "imageMobile" => "/images/home/mainCarousell/speed400CaroImageMobile.avif",
+            "image" => "/storage/images/home/mainCarousell/speed400CaroImage.avif",
+            "imageMobile" => "/storage/images/home/mainCarousell/speed400CaroImageMobile.avif",
             "title" => "Нови Попусти, Нови Цени",
             "desc" => "Погледнете ги новите цени за Speed 400 & Scrambler 400 X",
             "link1" => [
@@ -84,9 +84,9 @@ class MainCarousellSeeder extends Seeder
         ];
 
         $mainCarousellSix = [
-                "video" => "/images/home/mainCarousell/scrambler1200CaroVideo.webm",
-                "image" => "/images/home/mainCarousell/scrambler1200CaroImage.avif",
-                "imageMobile" => "/images/home/mainCarousell/scrambler1200CaroImage.avif",
+                "video" => "/storage/images/home/mainCarousell/scrambler1200CaroVideo.webm",
+                "image" => "/storage/images/home/mainCarousell/scrambler1200CaroImage.avif",
+                "imageMobile" => "/storage/images/home/mainCarousell/scrambler1200CaroImage.avif",
                 "title" => "Направени за секој терен",
                 "desc" => "Новите Scrambler 1200 XE & X",
                 "link1" => [
@@ -97,9 +97,9 @@ class MainCarousellSeeder extends Seeder
 
 
         $mainCarousellSeven = [
-                "video" => "/images/home/mainCarousell/tigerCaroVideo.webm",
-                "image" => "/images/home/mainCarousell/tigerCaroImage.avif",
-                "imageMobile" => "/images/home/mainCarousell/tigerCaroImageMobile.avif",
+                "video" => "/storage/images/home/mainCarousell/tigerCaroVideo.webm",
+                "image" => "/storage/images/home/mainCarousell/tigerCaroImage.avif",
+                "imageMobile" => "/storage/images/home/mainCarousell/tigerCaroImageMobile.avif",
                 "title" => "Tiger 900 Серија",
                 "desc" => "Новиот Tiger 900 повторно повторно се искачи на врвот и стана репер за останатите мотори од авантуристички карактер. Откријте го новиот Tiger 900.",
                 "link1" => [
@@ -113,9 +113,9 @@ class MainCarousellSeeder extends Seeder
         ];
 
         $mainCarousellEight = [
-                "video" => "/images/home/mainCarousell/stealthEditionsCaroVideo.webm",
-                "image" => "/images/home/mainCarousell/stealthCaroImage.avif",
-                "imageMobile" => "/images/home/mainCarousell/stealthCaroImageMobile.avif",
+                "video" => "/storage/images/home/mainCarousell/stealthEditionsCaroVideo.webm",
+                "image" => "/storage/images/home/mainCarousell/stealthCaroImage.avif",
+                "imageMobile" => "/storage/images/home/mainCarousell/stealthCaroImageMobile.avif",
                 "title" => "Драматичен Custom Стил",
                 "desc" => "Новата Triumph Stealth Серија",
                 "link1" => [

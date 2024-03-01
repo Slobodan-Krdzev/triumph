@@ -48,8 +48,7 @@
             @if ($mainCarousels->video)
 
                 <div>
-                    <img src="{{ $mainCarousels->video }}" alt="Video"
-                        style="max-width: 200px; max-height: 200px;">
+                    <video src="{{$mainCarousels->video}}" loop class="w-6/12"></video>
                 </div>
             @endif
 
@@ -59,13 +58,13 @@
             </div>
 
 
-            <label for="image">Image Path:</label>
-            <input type="text" name="image" id="image" value="{{ old('image', $mainCarousels->image) }}">
+            <label for="image">Image Mobile:</label>
+            <div>
+                <img src="{{ $mainCarousels->imageMobile }}" alt="Video"
+                    style="max-width: 200px; max-height: 200px;">
+            </div>
 
 
-            <label for="imageMobile">Image Mobile Path:</label>
-            <input type="text" name="imageMobile" id="imageMobile"
-                value="{{ old('imageMobile', $mainCarousels->imageMobile) }}">
 
 
             <label for="title">Title:</label>

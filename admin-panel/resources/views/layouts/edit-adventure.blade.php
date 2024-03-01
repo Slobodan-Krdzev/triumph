@@ -24,21 +24,20 @@
 
             <h2 class="font-bold text-3xl">Basic Info</h2>
             <label for="title">Title:</label>
-            <input type="text" name="title" value="{{ old('title', $subFamData->title) }}" >
+            <input type="text" name="title" value="{{ old('title', $subFamData->title) }}">
 
 
 
 
             <label for="category">Sub-Family Name:</label>
-            <input type="text" name="subFamilyName" value="{{ old('subFamilyName', $subFamData->subFamilyName) }}"
-                >
+            <input type="text" name="subFamilyName" value="{{ old('subFamilyName', $subFamData->subFamilyName) }}">
 
             <label for="category">Url:</label>
-            <input type="text" name="url" value="{{ old('url', $subFamData->url) }}" >
+            <input type="text" name="url" value="{{ old('url', $subFamData->url) }}">
 
 
             <label for="category">Price:</label>
-            <input type="text" name="price" value="{{ old('price', $subFamData->price) }}" >
+            <input type="text" name="price" value="{{ old('price', $subFamData->price) }}">
 
 
 
@@ -74,8 +73,7 @@
                     <label for="subFamilyPageInfo_service_{{ $index }}_title">Service Title:</label>
                     <input type="text" id="subFamilyPageInfo_service_{{ $index }}_title"
                         name="subFamilyPageInfo[service][{{ $index }}][title]"
-                        value="{{ old('subFamilyPageInfo.service.' . $index . '.title', $service['title']) }}"
-                        >
+                        value="{{ old('subFamilyPageInfo.service.' . $index . '.title', $service['title']) }}">
 
                     <label for="subFamilyPageInfo_service_{{ $index }}_desc">Service Description:</label>
                     <textarea id="subFamilyPageInfo_service_{{ $index }}_desc"
@@ -88,16 +86,14 @@
                 <h1 class="font-bold my-2 text-red-600">Audio Section</h1>
                 <label for="audioSection_title">Audio Section Title:</label>
                 <input type="text" id="audioSection_title" name="subFamilyPageInfo[audioSection][title]"
-                    value="{{ old('subFamilyPageInfo.audioSection.title', $subFamData->subFamilyPageInfo['audioSection']['title'] ?? '') }}"
-                    >
+                    value="{{ old('subFamilyPageInfo.audioSection.title', $subFamData->subFamilyPageInfo['audioSection']['title'] ?? '') }}">
 
                 <label for="audioSection_desc">Audio Section Description:</label>
                 <textarea id="audioSection_desc" name="subFamilyPageInfo[audioSection][desc]">{{ old('subFamilyPageInfo.audioSection.desc', $subFamData->subFamilyPageInfo['audioSection']['desc'] ?? '') }}</textarea>
 
                 <label for="audioSection_audio">Audio Section Audio File:</label>
                 <input type="text" id="audioSection_audio" name="subFamilyPageInfo[audioSection][audio]"
-                    value="{{ old('subFamilyPageInfo.audioSection.audio', $subFamData->subFamilyPageInfo['audioSection']['audio'] ?? '') }}"
-                    >
+                    value="{{ old('subFamilyPageInfo.audioSection.audio', $subFamData->subFamilyPageInfo['audioSection']['audio'] ?? '') }}">
             @endif
 
             <h1 class="font-bold my-2 text-red-600">Top Section</h1>
@@ -105,16 +101,14 @@
             @if (isset($subFamData->subFamilyPageInfo['topSection']))
                 <label for="topSection_title">Top Section Title:</label>
                 <input type="text" id="topSection_title" name="subFamilyPageInfo[topSection][title]"
-                    value="{{ old('subFamilyPageInfo.topSection.title', $subFamData->subFamilyPageInfo['topSection']['title'] ?? '') }}"
-                    >
+                    value="{{ old('subFamilyPageInfo.topSection.title', $subFamData->subFamilyPageInfo['topSection']['title'] ?? '') }}">
 
                 <label for="topSection_desc">Top Section Description:</label>
                 <textarea id="topSection_desc" name="subFamilyPageInfo[topSection][desc]">{{ old('subFamilyPageInfo.topSection.desc', $subFamData->subFamilyPageInfo['topSection']['desc'] ?? '') }}</textarea>
 
                 <label for="topSection_subtitle">Top Section Subtitle:</label>
                 <input type="text" id="topSection_subtitle" name="subFamilyPageInfo[topSection][subtitle]"
-                    value="{{ old('subFamilyPageInfo.topSection.subtitle', $subFamData->subFamilyPageInfo['topSection']['subtitle'] ?? '') }}"
-                    >
+                    value="{{ old('subFamilyPageInfo.topSection.subtitle', $subFamData->subFamilyPageInfo['topSection']['subtitle'] ?? '') }}">
             @endif
 
 
@@ -123,7 +117,7 @@
             @foreach ($subFamData['heroSlogans'] as $index => $slogan)
                 <label for="heroSlogans_{{ $index }}">Hero Slogan {{ $index + 1 }}:</label>
                 <input type="text" id="heroSlogans_{{ $index }}" name="heroSlogans[{{ $index }}]"
-                    value="{{ old('heroSlogans.' . $index, $slogan) }}" >
+                    value="{{ old('heroSlogans.' . $index, $slogan) }}">
             @endforeach
 
 
@@ -156,7 +150,7 @@
             @endforeach
 
 
-                        <h1 class="font-bold text-3xl my-2">Fuel Consumption</h1>
+            <h1 class="font-bold text-3xl my-2">Fuel Consumption</h1>
 
             {{-- Assuming $subFamData->fuelConsumption might not be set or is empty --}}
             @php
@@ -178,10 +172,10 @@
 
             @php
                 // Check if there's existing data, otherwise create a default entry
-                $grayCarousellData = $subFamData->grayCarousell ?? [];
-                if (empty($grayCarousellData)) {
-                    // Initialize with a default structure for one entry
-                    $grayCarousellData = [['title' => '', 'desc' => '', 'image' => '']];
+$grayCarousellData = $subFamData->grayCarousell ?? [];
+if (empty($grayCarousellData)) {
+    // Initialize with a default structure for one entry
+    $grayCarousellData = [['id' => '', 'title' => '', 'desc' => '', 'image' => '']];
                 }
             @endphp
 
@@ -197,6 +191,12 @@
                 <label>Image:</label>
                 <input type="text" name="grayCarousell[{{ $index }}][image]"
                     value="{{ old('grayCarousell.' . $index . '.image', $grayCarousell['image'] ?? '') }}">
+
+                <x-form.input labelText="Image URL:" imageId="{{ $grayCarousell['id'] }}"
+                    name="gallery[subFamilyTopSectionImage][src]">
+                    <img id='{{ $grayCarousell['id'] }}' src="/storage/{{ $grayCarousell['image'] }}"
+                        width="200" height="150" class="object-cover border m-3 border-gray-200" />
+                </x-form.input>
             @endforeach
 
 
@@ -217,23 +217,23 @@
 
             @php
                 $reasonsToDrive = $subFamData->reasonsToDrive ?? [];
-                @endphp
+            @endphp
 
             {{-- Banner Image --}}
             @if (!empty(old('reasonsToDrive.banner.image', $reasonsToDrive['banner']['image'] ?? '')))
-            <h1 class="font-bold text-3xl my-2">Reasons to Ride</h1>
-                <label for="banner_image">Banner Image:</label>
-                <input type="text" id="banner_image" name="reasonsToDrive[banner][image]"
-                    value="{{ old('reasonsToDrive.banner.image', $reasonsToDrive['banner']['image'] ?? '') }}"
-                    >
+                <h1 class="font-bold text-3xl my-2">Reasons to Ride</h1>
+                <x-form.input labelText="Banner Image:" imageId="reasonsToDriveImage"
+                    name="reasonsToDrive[banner][image]">
+                    <img id='reasonsToDriveImage' src="/storage/{{ $reasonsToDrive['banner']['image'] }}"
+                        width="200" height="150" class="object-cover border m-3 border-gray-200" />
+                </x-form.input>
             @endif
 
             {{-- InfoText Title --}}
             @if (!empty(old('reasonsToDrive.infoText.title', $reasonsToDrive['infoText']['title'] ?? '')))
                 <label for="infoText_title">InfoText Title:</label>
                 <input type="text" id="infoText_title" name="reasonsToDrive[infoText][title]"
-                    value="{{ old('reasonsToDrive.infoText.title', $reasonsToDrive['infoText']['title'] ?? '') }}"
-                    >
+                    value="{{ old('reasonsToDrive.infoText.title', $reasonsToDrive['infoText']['title'] ?? '') }}">
             @endif
 
             {{-- InfoText Description --}}
@@ -248,7 +248,6 @@
             @endphp
 
             @foreach ($reasons as $index => $reason)
-                {{-- Check if $reason is an array to prevent further "access array offset" errors --}}
                 @if (is_array($reason))
                     <label for="reasons_{{ $index }}_title">Reason {{ $index + 1 }} Title:</label>
                     <input type="text" id="reasons_{{ $index }}_title"
@@ -259,26 +258,31 @@
                     <textarea rows="10" cols="50" id="reasons_{{ $index }}_desc"
                         name="reasonsToDrive[reasons][{{ $index }}][desc]">{{ $reason['desc'] ?? '' }}</textarea>
 
-                    <label for="reasons_{{ $index }}_image">Image:</label>
-                    <input type="text" id="reasons_{{ $index }}_image"
-                        name="reasonsToDrive[reasons][{{ $index }}][image]"
-                        value="{{ $reason['image'] ?? '' }}">
+
+                    <x-form.input labelText="Image:" imageId="reasonsImage{{ $index }}"
+                        name="reasonsToDrive[reasons][{{ $index }}][image]">
+                        <img id='reasonsImage{{ $index }}'
+                            @if (isset($reason['image'])) src="/storage/{{ $reason['image'] ?? '' }}" @endif
+                            width="200" height="150" class="object-cover border m-3 border-gray-200" />
+                    </x-form.input>
                 @endif
             @endforeach
 
 
             <h1 class="font-bold text-3xl my-2">Accesories</h1>
 
-            {{-- Accessory Banner Image --}}
-            <label for="accessory_banner_image">Accessory Banner Image:</label>
-            <input type="text" id="accessory_banner_image" name="accessory[banner][image]"
-                value="{{ old('accessory.banner.image', $subFamData->accessory['banner']['image'] ?? '') }}" >
+            <x-form.input labelText="Accessory Banner Image:" imageId="accessoryBannerImage"
+                name="accessory[banner][image]">
+                <img id='accessoryBannerImage' src="/storage/{{ $subFamData->accessory['banner']['image'] }}"
+                    width="200" height="150" class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
+
+
 
             {{-- Accessory InfoText Title --}}
             <label for="accessory_infoText_title">InfoText Title:</label>
             <input type="text" id="accessory_infoText_title" name="accessory[infoText][title]"
-                value="{{ old('accessory.infoText.title', $subFamData->accessory['infoText']['title'] ?? '') }}"
-                >
+                value="{{ old('accessory.infoText.title', $subFamData->accessory['infoText']['title'] ?? '') }}">
 
             {{-- Accessory InfoText Description --}}
             <label for="accessory_infoText_desc">InfoText Description:</label>
@@ -288,18 +292,16 @@
             @foreach ($subFamData->accessory['accessoryTypes'] ?? [] as $index => $type)
                 <label for="accessory_type_{{ $index }}_title">Type Title:</label>
                 <input type="text" id="accessory_type_{{ $index }}_title"
-                    name="accessory[accessoryTypes][{{ $index }}][title]" value="{{ $type['title'] ?? '' }}"
-                    >
+                    name="accessory[accessoryTypes][{{ $index }}][title]" value="{{ $type['title'] ?? '' }}">
 
                 <label for="accessory_type_{{ $index }}_desc">Type Description:</label>
-                <textarea id="accessory_type_{{ $index }}_desc" name="accessory[accessoryTypes][{{ $index }}][desc]"
-                    >{{ $type['desc'] ?? '' }}</textarea>
+                <textarea id="accessory_type_{{ $index }}_desc" name="accessory[accessoryTypes][{{ $index }}][desc]">{{ $type['desc'] ?? '' }}</textarea>
 
                 @foreach ($type['itemsList'] ?? [] as $itemIndex => $item)
                     <label for="accessory_type_{{ $index }}_item_{{ $itemIndex }}">Item:</label>
                     <input type="text" id="accessory_type_{{ $index }}_item_{{ $itemIndex }}"
                         name="accessory[accessoryTypes][{{ $index }}][itemsList][{{ $itemIndex }}]"
-                        value="{{ $item ?? '' }}" >
+                        value="{{ $item ?? '' }}">
                 @endforeach
             @endforeach
 
@@ -322,9 +324,14 @@
             <h1 class="font-bold text-3xl my-2">Gallery</h1>
 
 
-            <label>Model Image Source:</label>
-            <input type="text" name="gallery[modelImage][src]"
-                value="{{ old('gallery.modelImage.src', $subFamData->gallery['modelImage']['src']) }}">
+
+
+            <x-form.input labelText="Model Image Source:" imageId="modelImageSource"
+                name="reasonsToDrive[banner][image]">
+                <img id='modelImageSource' src="/storage/{{ $subFamData->gallery['modelImage']['src'] }}"
+                    width="200" height="150" class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
+
             <label>Model Image Alt Text:</label>
             <input type="text" name="gallery[modelImage][alt]"
                 value="{{ old('gallery.modelImage.alt', $subFamData->gallery['modelImage']['alt']) }}">
@@ -333,6 +340,19 @@
             <label>Model Video Source:</label>
             <input type="text" name="gallery[subFamilyHeroVideo][src]"
                 value="{{ old('gallery.subFamilyHeroVideo.src', $subFamData->gallery['subFamilyHeroVideo']['src'] ?? '') }}">
+
+
+
+            <x-form.input labelText="Model Video Source:" imageId="modelVideoSource"
+                name="gallery[subFamilyHeroVideo][src]">
+                <video src="/storage/{{ $subFamData->gallery['subFamilyHeroVideo']['src'] }}" controls autoplay
+                    id='modelVideoSource' width="200" height="150"
+                    class="object-cover border m-3 border-gray-200">
+            </x-form.input>
+
+
+
+
             <label>Model Video Alt Text:</label>
             <input type="text" name="gallery[subFamilyHeroVideo][alt]"
                 value="{{ old('gallery.subFamilyHeroVideo.alt', $subFamData->gallery['subFamilyHeroVideo']['alt'] ?? '') }}">
@@ -341,6 +361,15 @@
             <label>Model Image Source:</label>
             <input type="text" name="gallery[subFamilyTopSectionImage][src]"
                 value="{{ old('gallery.subFamilyTopSectionImage.src', $subFamData->gallery['subFamilyTopSectionImage']['src']) }}">
+
+
+            <x-form.input labelText="Model Image Source:" imageId="modelImageSource"
+                name="gallery[subFamilyTopSectionImage][src]">
+                <img id='modelImageSource' src="/storage/{{ $subFamData->gallery['subFamilyTopSectionImage']['src'] }}"
+                    width="200" height="150" class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
+
+
             <label>Model Image Alt Text:</label>
             <input type="text" name="gallery[subFamilyTopSectionImage][alt]"
                 value="{{ old('gallery.subFamilyTopSectionImage.alt', $subFamData->gallery['subFamilyTopSectionImage']['alt']) }}">
@@ -350,6 +379,14 @@
             <label>Model Image Source:</label>
             <input type="text" name="gallery[subFamilyTopSectionBGImage][src]"
                 value="{{ old('gallery.subFamilyTopSectionBGImage.src', $subFamData->gallery['subFamilyTopSectionBGImage']['src']) }}">
+
+
+                <x-form.input labelText="Model Image Source:" imageId="modelImageSourceTwo"
+                name="gallery[subFamilyTopSectionImage][src]">
+                <img id='modelImageSourceTwo' src="/storage/{{ $subFamData->gallery['subFamilyTopSectionBGImage']['src'] }}"
+                    width="200" height="150" class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
+
             <label>Model Image Alt Text:</label>
             <input type="text" name="gallery[subFamilyTopSectionBGImage][alt]"
                 value="{{ old('gallery.subFamilyTopSectionBGImage.alt', $subFamData->gallery['subFamilyTopSectionBGImage']['alt']) }}">
@@ -363,4 +400,23 @@
             <button type="submit" class="my-5 bg-lime-200 shadow rounded p-4">Update</button>
         </form>
     </div>
+
+    <script>
+        var loadFile = function(event, imageId) {
+
+            var input = event.target;
+            var file = input.files[0];
+            var type = file.type;
+
+            console.log(imageId);
+
+            var output = document.getElementById(imageId);
+
+
+            output.src = URL.createObjectURL(event.target.files[0]);
+            output.onload = function() {
+                URL.revokeObjectURL(output.src) // free memory
+            }
+        };
+    </script>
 </x-app-layout>

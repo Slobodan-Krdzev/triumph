@@ -9,7 +9,6 @@ class SubFamAdventureController extends Controller
 {
     public function edit($id)
     {
-
         $subFamData = SubFamAdventure::findOrFail($id);
         return view('layouts.edit-adventure', compact('subFamData'));
         // return response()->json($subFamData);

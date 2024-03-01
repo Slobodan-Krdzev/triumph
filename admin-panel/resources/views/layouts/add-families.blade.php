@@ -42,18 +42,20 @@
 
             <h1 class="font-bold text-3xl my-2">Service</h1>
 
-                <label for="service_title">Service Title:</label>
-                <input type="text" id="service_title" name="service[0][title]" placeholder="Enter Service Title" value="{{ old('service.0.title') }}">
-                @error('service.0.title')
-                    <div class="alert alert-danger">{{ $message }}</div>
-                @enderror
+            <label for="service_title">Service Title:</label>
+            <input type="text" id="service_title" name="service[0][title]" placeholder="Enter Service Title"
+                value="{{ old('service.0.title') }}">
+            @error('service.0.title')
+                <div class="alert alert-danger">{{ $message }}</div>
+            @enderror
 
 
-                <label for="service_desc">Description:</label>
-                <input type="text" id="service_desc" name="service[0][desc]" placeholder="Enter Description" value="{{ old('service.0.desc') }}">
-                @error('service.0.desc')
-                    <div class="alert alert-danger">{{ $message }}</div>
-                @enderror
+            <label for="service_desc">Description:</label>
+            <input type="text" id="service_desc" name="service[0][desc]" placeholder="Enter Description"
+                value="{{ old('service.0.desc') }}">
+            @error('service.0.desc')
+                <div class="alert alert-danger">{{ $message }}</div>
+            @enderror
 
             {{-- Hero Slogans --}}
 
@@ -98,9 +100,11 @@
             <label for="audioSection_desc">Description:</label>
             <textarea id="audioSection_desc" name="subFamilyPageInfo[audioSection][desc]">{{ old('subFamilyPageInfo.audioSection.desc') }}</textarea>
 
-            {{-- Logo (optional, assuming it's an upload) --}}
-            <label for="audioSection_logo">Logo:</label>
-            <input type="file" id="audioSection_logo" name="subFamilyPageInfo[audioSection][logo]">
+            <x-form.input labelText="Logo URL:" imageId="imageId_{{ $i }}"
+                name="subFamilyPageInfo[audioSection][logo]">
+                <img id='imageId_{{ $i }}' width="200" height="150"
+                    class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
 
 
 
@@ -162,9 +166,13 @@
                 <textarea id="grayCarousell_{{ $i }}_desc" name="grayCarousell[{{ $i }}][desc]"
                     placeholder="Enter Description"></textarea>
 
-                <label for="grayCarousell_{{ $i }}_image">Image URL:</label>
-                <input type="text" id="grayCarousell_{{ $i }}_image"
-                    name="grayCarousell[{{ $i }}][image]" placeholder="Enter Image URL">
+
+
+                <x-form.input labelText="Image URL:" imageId="imageId_{{ $i }}"
+                    name="grayCarousell[{{ $i }}][image]">
+                    <img id='imageId_{{ $i }}' width="200" height="150"
+                        class="object-cover border m-3 border-gray-200" />
+                </x-form.input>
             @endfor
 
             <h1 class="font-bold text-3xl my-2">YouTube Videos Carousel</h1 class="font-bold text-3xl my-2">
@@ -191,14 +199,17 @@
 
 
             <h1 class="font-bold text-3xl my-2">Reasons to Drive Banner</h1 class="font-bold text-3xl my-2">
-            <label for="reasonsToDrive_banner_image">Banner Image URL:</label>
-            <input type="text" id="reasonsToDrive_banner_image" name="reasonsToDrive[banner][image]"
-                placeholder="Enter Banner Image URL">
+            <x-form.input labelText="Banner Image URL:" imageId="imageId_{{ $i }}"
+                name="reasonsToDrive[banner][image]">
+                <img id='imageId_{{ $i }}' width="200" height="150"
+                    class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
 
             <h1 class="font-bold text-3xl my-2">Reasons to Drive Info Text</h1 class="font-bold text-3xl my-2">
             <label for="reasonsToDrive_infoText_title">Info Text Title:</label>
             <input type="text" id="reasonsToDrive_infoText_title" name="reasonsToDrive[infoText][title]"
                 placeholder="Enter Info Text Title">
+
 
             <h1 class="font-bold text-3xl my-2">Reasons</h1 class="font-bold text-3xl my-2">
             @for ($i = 0; $i < 3; $i++)
@@ -226,9 +237,11 @@
             <input type="text" id="shortSpecInfo_info3" name="shortSpecInfo[info3]" placeholder="Info 3">
 
             <h1 class="font-bold text-3xl my-2">Gallery</h1 class="font-bold text-3xl my-2">
-            <label for="gallery_modelImage_src">Model Image URL:</label>
-            <input type="text" id="gallery_modelImage_src" name="gallery[modelImage][src]"
-                placeholder="Enter Model Image URL">
+            <x-form.input labelText="Model Image URL:" imageId="modelImageUrl" name="gallery[modelImage][src]">
+                <img id='modelImageUrl' width="200" height="150"
+                    class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
+
             <label for="gallery_modelImage_alt">Model Image Alt Text:</label>
             <input type="text" id="gallery_modelImage_alt" name="gallery[modelImage][alt]"
                 placeholder="Enter Model Image Alt Text">
@@ -236,36 +249,60 @@
             <label for="gallery_subFamilyHeroVideo_src">Sub Family Hero Video URL:</label>
             <input type="text" id="gallery_subFamilyHeroVideo_src" name="gallery[subFamilyHeroVideo][src]"
                 placeholder="Enter Video URL">
-            <label for="gallery_subFamilyHeroVideo_alt">Sub Family Hero Video Alt Text:</label>
-            <input type="text" id="gallery_subFamilyHeroVideo_alt" name="gallery[subFamilyHeroVideo][alt]"
-                placeholder="Enter Video Alt Text">
 
-            <label for="gallery_subFamilyHeroImageMobile_src">Sub Family Hero Image Mobile URL:</label>
-            <input type="text" id="gallery_subFamilyHeroImageMobile_src"
-                name="gallery[subFamilyHeroImageMobile][src]" placeholder="Enter Mobile Image URL">
+            <x-form.input labelText="Sub Family Hero Video URL:" imageId="subFamVideo"
+                name="gallery[subFamilyHeroVideo][src]">
+                <video controls autoplay id='subFamVideo' width="200" height="150"
+                    class="object-cover border m-3 border-gray-200">
+            </x-form.input>
+
+            <label for="gallery_subFamilyHeroVideo_alt">Sub Family Hero Video Alt Text:</label>
+            <input type="text" class="my-3" id="gallery_subFamilyHeroVideo_alt"
+                name="gallery[subFamilyHeroVideo][alt]" placeholder="Enter Video Alt Text">
+
+
+            <x-form.input labelText="Sub Family Hero Image Mobile URL:" imageId="subFamHeroImage"
+                name="gallery[subFamilyHeroImageMobile][src]">
+                <img id='subFamHeroImage' width="200" height="150"
+                    class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
+
+
             <label for="gallery_subFamilyHeroImageMobile_alt">Sub Family Hero Image Mobile Alt Text:</label>
             <input type="text" id="gallery_subFamilyHeroImageMobile_alt"
                 name="gallery[subFamilyHeroImageMobile][alt]" placeholder="Enter Mobile Image Alt Text">
 
-            <label for="gallery_subFamilyTopSectionImage_src">Sub Family Top Section Image URL:</label>
-            <input type="text" id="gallery_subFamilyTopSectionImage_src"
-                name="gallery[subFamilyTopSectionImage][src]" placeholder="Enter Top Section Image URL">
+
+            <x-form.input labelText="Sub Family Top Section Image URL:" imageId="subFamTopSectionImg"
+                name="gallery[subFamilyTopSectionImage][src]">
+                <img id='subFamTopSectionImg' width="200" height="150"
+                    class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
+
             <label for="gallery_subFamilyTopSectionImage_alt">Sub Family Top Section Image Alt Text:</label>
             <input type="text" id="gallery_subFamilyTopSectionImage_alt"
                 name="gallery[subFamilyTopSectionImage][alt]" placeholder="Enter Top Section Image Alt Text">
 
-            <label for="gallery_subFamilyTopSectionBGImage_src">Sub Family Top Section BG Image URL:</label>
-            <input type="text" id="gallery_subFamilyTopSectionBGImage_src"
-                name="gallery[subFamilyTopSectionBGImage][src]" placeholder="Enter Top Section BG Image URL">
+
+
+            <x-form.input labelText="Sub Family Top Section BG Image URL:" imageId="subFamTopSectionImage"
+                name="gallery[subFamilyTopSectionBGImage][src]">
+                <img id='subFamTopSectionImage' width="200" height="150"
+                    class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
+
+
             <label for="gallery_subFamilyTopSectionBGImage_alt">Sub Family Top Section BG Image Alt Text:</label>
             <input type="text" id="gallery_subFamilyTopSectionBGImage_alt"
                 name="gallery[subFamilyTopSectionBGImage][alt]" placeholder="Enter Top Section BG Image Alt Text">
 
 
             <h1 class="font-bold text-3xl my-2">Accessory Banner</h1>
-            <label for="accessory_banner_image">Banner Image URL:</label>
-            <input type="text" id="accessory_banner_image" name="accessory[banner][image]"
-                placeholder="Enter Banner Image URL">
+
+            <x-form.input labelText="Banner Image URL:" imageId="bannerImageUrl" name="accessory[banner][image]">
+                <img id='bannerImageUrl' width="200" height="150"
+                    class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
 
             <h1 class="font-bold text-3xl my-2">Accessory Info Text</h1>
             <label for="accessory_infoText_title">Title:</label>
@@ -278,31 +315,45 @@
             <h1 class="font-bold text-3xl my-2">Accessory Types</h1>
             <!-- Repeat this section for each accessory type -->
 
-                <label for="accessory_type_title">Title:</label>
-                <input type="text" id="accessory_type_title" name="accessory[accessoryTypes][][title]"
-                    placeholder="Enter Accessory Type Title">
+            <label for="accessory_type_title">Title:</label>
+            <input type="text" id="accessory_type_title" name="accessory[accessoryTypes][][title]"
+                placeholder="Enter Accessory Type Title">
 
-                <label for="accessory_type_desc">Description:</label>
-                <textarea id="accessory_type_desc" name="accessory[accessoryTypes][][desc]" placeholder="Enter Description"></textarea>
+            <label for="accessory_type_desc">Description:</label>
+            <textarea id="accessory_type_desc" name="accessory[accessoryTypes][][desc]" placeholder="Enter Description"></textarea>
 
-                <h3>Items List</h3>
-                <!-- Repeat for each item in the list -->
-                <input type="text" name="accessory[accessoryTypes][][itemsList][]" placeholder="Enter Item">
+            <h3>Items List</h3>
+            <!-- Repeat for each item in the list -->
+            <input type="text" name="accessory[accessoryTypes][][itemsList][]" placeholder="Enter Item">
 
-                <h3>Images</h3>
-                <label for="accessory_type_image1_src">Image 1 URL:</label>
-                <input type="text" id="accessory_type_image1_src" name="accessory[accessoryTypes][][image1][src]"
-                    placeholder="Enter Image 1 URL">
-                <label for="accessory_type_image1_alt">Image 1 Alt Text:</label>
-                <input type="text" id="accessory_type_image1_alt" name="accessory[accessoryTypes][][image1][alt]"
-                    placeholder="Enter Image 1 Alt Text">
 
-                <label for="accessory_type_image2_src">Image 2 URL (if applicable):</label>
-                <input type="text" id="accessory_type_image2_src" name="accessory[accessoryTypes][][image2][src]"
-                    placeholder="Optional Image 2 URL">
-                <label for="accessory_type_image2_alt">Image 2 Alt Text (if applicable):</label>
-                <input type="text" id="accessory_type_image2_alt" name="accessory[accessoryTypes][][image2][alt]"
-                    placeholder="Optional Image 2 Alt Text">
+
+            <x-form.input labelText="Image 1 URL:" imageId="imageOneUrl"
+                name="accessory[accessoryTypes][][image1][src]">
+                <img id='imageOneUrl' width="200" height="150"
+                    class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
+
+            <label for="accessory_type_image1_alt">Image 1 Alt Text:</label>
+            <input type="text" id="accessory_type_image1_alt" name="accessory[accessoryTypes][][image1][alt]"
+                placeholder="Enter Image 1 Alt Text">
+
+            <label for="accessory_type_image2_src">Image 2 URL:</label>
+            <input type="file" class="my-3" id="accessory_type_image2_src"
+                name="accessory[accessoryTypes][][image2][src]" placeholder="Optional Image 2 URL">
+
+            <x-form.input labelText="Image 2 URL:" imageId="imageTwoUrl"
+                name="accessory[accessoryTypes][][image2][src]">
+                <img id='imageTwoUrl' width="200" height="150"
+                    class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
+
+
+
+
+            <label for="accessory_type_image2_alt">Image 2 Alt Text:</label>
+            <input type="text" id="accessory_type_image2_alt" name="accessory[accessoryTypes][][image2][alt]"
+                placeholder="Optional Image 2 Alt Text">
 
 
             <button type="submit" class="my-5 bg-lime-200 shadow rounded p-4">Submit</button>
@@ -316,6 +367,26 @@
 
         </form>
 
-    </div>
 
+
+
+    </div>
+    <script>
+        var loadFile = function(event, imageId) {
+
+            var input = event.target;
+            var file = input.files[0];
+            var type = file.type;
+
+            console.log(imageId);
+
+            var output = document.getElementById(imageId);
+
+
+            output.src = URL.createObjectURL(event.target.files[0]);
+            output.onload = function() {
+                URL.revokeObjectURL(output.src) // free memory
+            }
+        };
+    </script>
 </x-app-layout>

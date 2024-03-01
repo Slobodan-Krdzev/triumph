@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\MainCarousell;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 class MainCarouselsController extends Controller
 {
@@ -12,44 +14,6 @@ class MainCarouselsController extends Controller
         return view('layouts.add-main-carousels');
     }
 
-    // public function store(Request $request)
-    // {
-    //     $request->validate([
-    //         'video' => 'required|string|max:255',
-    //         'image' => 'required|string|max:255',
-    //         'imageMobile' => 'required|string|max:255',
-    //         'title' => 'required|string|max:255',
-    //         'desc' => 'required|string',
-    //         'link1.url' => 'required|string|max:255',
-    //         'link1.text' => 'required|string|max:255',
-    //         'link2.url' => 'required|string|max:255',
-    //         'link2.text' => 'required|string|max:255',
-    //     ]);
-
-    //     $videoPath = $request->input('video');
-    //     $imagePath = $request->input('image');
-    //     $imageMobilePath = $request->input('imageMobile');
-
-    //     $carouselItem = MainCarousell::create([
-    //         'video' => $videoPath,
-    //         'image' => $imagePath,
-    //         'imageMobile' => $imageMobilePath,
-    //         'title' => $request->input('title'),
-    //         'desc' => $request->input('desc'),
-    //         'link1' => [
-    //             'url' => $request->input('link1.url'),
-    //             'text' => $request->input('link1.text'),
-    //         ],
-    //         'link2' => [
-    //             'url' => $request->input('link2.url'),
-    //             'text' => $request->input('link2.text'),
-    //         ],
-    //     ]);
-
-
-
-    //     return redirect()->route('add-main-carousels')->with('success', 'Your data has been stored successfully.');
-    // }
 
 
     public function store(Request $request)
@@ -64,38 +28,41 @@ class MainCarouselsController extends Controller
             'video' => 'required|mimes:mp4,mov,ogg,qt|max:20000',
         ]);
 
-
-        $urls = [];
-
-        if ($request->file('image')) {
-            $imagePath = $request->file('image')->store('images', 'public');
-            $imageUrl = '/storage/' . $imagePath;
-            $urls['image'] = $imageUrl;
-        }
-
-        if ($request->file('imageMobile')) {
-            $imageMobilePath = $request->file('imageMobile')->store('images/mobile', 'public');
-            $imageMobileUrl = '/storage/' . $imageMobilePath;
-            $urls['imageMobile'] = $imageMobileUrl;
-        }
-
-        if ($request->file('video')) {
-            $videoPath = $request->file('video')->store('videos', 'public');
-            $videoUrl = '/storage/' . $videoPath;
-            $urls['video'] = $videoUrl;
-        }
-
-        $carousel = new MainCarousell;
+        // Prepare the carousel instance
+        $carousel = new MainCarousell();
         $carousel->title = $request->title;
         $carousel->desc = $request->desc;
         $carousel->link1 = $request->link1;
         $carousel->link2 = $request->link2;
-        $carousel->image = $urls['image'] ?? null;
-        $carousel->imageMobile = $urls['imageMobile'] ?? null;
-        $carousel->video = $urls['video'] ?? null;
+
+        // Sanitize the title to create a directory name
+        $sanitizedTitle = Str::slug($request->title);
+
+        // Process main image
+        if ($request->hasFile('image')) {
+            $directoryPath = 'images/' . $sanitizedTitle;
+            $fileName = $request->file('image')->getClientOriginalName();
+            $imagePath = $request->file('image')->storeAs($directoryPath, $fileName, 'public');
+            $carousel->image = Storage::url($imagePath);
+        }
+
+        // Process mobile image
+        if ($request->hasFile('imageMobile')) {
+            $imageMobilePath = $request->file('imageMobile')->store('images/mobile', 'public');
+            $carousel->imageMobile = Storage::url($imageMobilePath);
+        }
+
+        // Process video
+        if ($request->hasFile('video')) {
+            $videoPath = $request->file('video')->store('videos', 'public');
+            $carousel->video = Storage::url($videoPath);
+        }
+
+        // Save the carousel instance
         $carousel->save();
 
-        return back()->with('success', 'Files and details uploaded successfully')->with('files', $urls);
+        // Redirect back with success message
+        return back()->with('success', 'MainCarousel item created successfully.');
     }
 
 
@@ -113,15 +80,15 @@ class MainCarouselsController extends Controller
     public function update(Request $request, $id)
     {
         $validatedData = $request->validate([
-            'video' => 'required|string',
+            'video' => 'string',
             'image' => 'nullable',
             'imageMobile' => 'string',
-            'title' => 'required|string|max:255',
-            'desc' => 'required|string',
-            'link1.url' => 'required|url',
-            'link1.text' => 'required|string',
-            'link2.url' => 'required|url',
-            'link2.text' => 'required|string',
+            'title' => 'string|max:255',
+            'desc' => 'string',
+            'link1.url' => 'url',
+            'link1.text' => 'string',
+            'link2.url' => 'url',
+            'link2.text' => 'string',
         ]);
 
         $mainCarousels = MainCarousell::findOrFail($id);
