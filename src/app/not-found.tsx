@@ -6,10 +6,7 @@ const ErrorPage = () => {
   const router = useRouter();
 
   useEffect(() => {
-    console.log("useEff");
-
     const timer = setTimeout(() => {
-      console.log("trigered");
 
       router.push("/");
     }, 2000);

@@ -41,7 +41,7 @@ function Prenav() {
         </li>
         <li>
           <button
-            onClick={handleLocationSection}
+            onMouseOver={handleLocationSection}
             className="flex justify-between items-center gap-2"
           >
             <Image

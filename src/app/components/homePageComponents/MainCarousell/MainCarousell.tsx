@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Breadcrumbs from "../../Breadcrumbs/Breadcrumbs";
 import MainCarousellItem from "./MainCarousellItem";
 import MobileCarousell from "./MobileCarousell/MobileCarousell";
+import ProgressBar from "./ProgressBar";
 
 export type CarousellItemType = {
   image?: string;
@@ -50,26 +51,26 @@ const MainCarousell = ({ items = [] }: MainCarousellProps) => {
   }, [activeIndex, items.length]);
 
   //   PROGRESS BAR
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setProgress((prevProgress) => {
-        const newProgress = prevProgress + 0.125;
-        if (newProgress >= 100) {
-          clearInterval(interval);
-        }
-        return newProgress;
-      });
-    }, 10.5);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setProgress((prevProgress) => {
+  //       const newProgress = prevProgress + 0.125;
+  //       if (newProgress >= 100) {
+  //         clearInterval(interval);
+  //       }
+  //       return newProgress;
+  //     });
+  //   }, 10.5);
 
-    return () => {
-      setProgress(0);
-      clearInterval(interval);
-    };
-  }, [activeIndex]);
+  //   return () => {
+  //     setProgress(0);
+  //     clearInterval(interval);
+  //   };
+  // }, [activeIndex]);
 
   return (
     <>
-      <div
+       <div
         className="relative overflow-hidden lg:block hidden"
         style={{ height: "90vh" }}
       >
@@ -108,7 +109,7 @@ const MainCarousell = ({ items = [] }: MainCarousellProps) => {
               className="gradient-caro-btn-left-to-right bg-transparent h-full z-20 text-black  w-20 flex flex-col justify-end items-center pb-10 relative"
               style={{ right: "0%" }}
             >
-              <div
+               <div
                 className="red-bg-color h-2  absolute"
                 style={{
                   width: `5%`,
@@ -118,7 +119,8 @@ const MainCarousell = ({ items = [] }: MainCarousellProps) => {
                   left: 0,
                   bottom: 0,
                 }}
-              ></div>
+              ></div> 
+              <ProgressBar activeIndex={activeIndex}/>
               <p className="rotate-90 text-white font-semibold uppercase font-xl mb-5">
                 {"Следно"}
               </p>
@@ -131,7 +133,7 @@ const MainCarousell = ({ items = [] }: MainCarousellProps) => {
             </button>
           </div>
         )}
-      </div>
+      </div> 
 
       <MobileCarousell
         items={items}

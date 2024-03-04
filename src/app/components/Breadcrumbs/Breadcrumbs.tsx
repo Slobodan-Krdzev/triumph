@@ -16,6 +16,9 @@ const Breadcrumbs = ({dark}: BreadcrumbsProps) => {
 
   const getLink = (index: number) => pathsToArr.slice(0, index + 1).join("/");
 
+console.log(pathsToArr.slice(0, pathsToArr.length - 1), "PATHS TO ARR");
+
+
   return (
     <div
       className={`hidden lg:block absolute top-7 left-7 font-medium uppercase text-sm ${dark ? "text-neutral-600" : "text-white"}`}
@@ -28,18 +31,18 @@ const Breadcrumbs = ({dark}: BreadcrumbsProps) => {
           <FontAwesomeIcon icon={faHome} size="sm" />
         </Link>
 
-        {pathsToArr.map((path: string, idx: number) => {
-          if (idx + 1 === pathsToArr.length) {
-            return <span key={idx}>{path}</span>;
+        {pathsToArr.slice(1, pathsToArr.length).map((path: string, idx: number) => {
+          if (idx + 2 === pathsToArr.length) {
+            return <span key={path}>{path}</span>;
           }
 
           return (
-            <>
-              <Link key={idx} href={`${getLink(idx)}`}>
+            <div key={path} className="flex gap-x-2 items-center">
+              <Link href={`${getLink(idx + 1)}`}>
                 {path}
               </Link>
               <FontAwesomeIcon icon={faChevronRight} size="xs" />
-            </>
+            </div>
           );
         })}
       </div>
