@@ -13,7 +13,7 @@ import { faInfoCircle } from "@fortawesome/free-solid-svg-icons/faInfoCircle";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter, useSearchParams } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import {
@@ -48,10 +48,13 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
   const [garage, setGarage] = useState<any[]>([]);
   const [isGarageVisible, setIsGarageVisible] = useState(false);
 
+  const [isBikeInGarage, setIsBikeInGarage] = useState(Boolean(garage.find((bike) => bike.id === info.id)));
+
   const mobileSaveBtn = useRef<HTMLSpanElement>(null);
 
   const breakpoint = useBreakpoint();
   const router = useRouter();
+  const pathname = usePathname()
   const colorQuery = useSearchParams().get("color") ?? "color1";
 
   const colorPrice = info.customizationColors.find(
@@ -132,22 +135,26 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
   useEffect(() => {
     const storedGarage = JSON.parse(localStorage.getItem("garage")!) || [];
     setGarage(storedGarage);
+    
   }, []);
 
-  const getGarage = () => {
-    if (localStorage.getItem("garage") === null) {
-      return [];
-    }
+  useEffect(() => {
+    setIsBikeInGarage(Boolean(garage.find((bike) => bike.id === info.id)))
+  },[garage, info])
 
-    return JSON.parse(localStorage.getItem("garage")!);
-  };
+  // const getGarage = () => {
+  //   if (localStorage.getItem("garage") === null) {
+  //     return [];
+  //   }
+
+  //   return JSON.parse(localStorage.getItem("garage")!);
+  // };
 
   const closeGarage = () => {
     setIsGarageVisible(false);
     handleBodyScrollWhenMenuIsOpen(isGarageVisible);
   };
 
-  const isBikeInGarage = Boolean(garage.find((bike) => bike.id === info.id));
 
   if (breakpoint > 1000) {
     return (
@@ -331,7 +338,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
         )}
 
         {isGarageVisible && (
-          <Garage bikes={getGarage()} handleClose={closeGarage} />
+          <Garage handleClose={closeGarage} />
         )}
       </>
     );
@@ -544,7 +551,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
       )}
 
       {isGarageVisible && (
-        <Garage bikes={getGarage()} handleClose={closeGarage} />
+        <Garage handleClose={closeGarage} />
       )}
     </>
   );

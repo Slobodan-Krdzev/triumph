@@ -1,3 +1,5 @@
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -6,14 +8,30 @@ import React from "react";
 
 type CardProps = {
   item: any;
+  deleteBtn?: boolean
 };
 
-const Card = ({ item}: CardProps) => {
+const Card = ({ item, deleteBtn}: CardProps) => {
+
+  const handleDeleteBike = () => {
+
+    const garage = JSON.parse(localStorage.getItem('garage')!)
+    const filteredBikes = garage.filter((bike: any) => bike.id !== item.id)
+    localStorage.setItem('garage', JSON.stringify(filteredBikes))
+  }
+
   return (
     <div
       key={item.id}
       className="bg-white shadow-xl lg:mb-8 flex flex-col justify-between rounded-md relative"
     >
+      {deleteBtn && <button className="absolute top-2 right-2  hover:scale-12 group" style={{
+        transition: 'all 0.2s ease-in-out'
+      }}
+      onClick={handleDeleteBike}>
+        <span className="hidden group-hover:inline text-sm text-red-500 mr-2">Избриши</span>
+          <FontAwesomeIcon icon={faTrash} size="sm" className="text-red-500"/>
+        </button>}
       <div className="basis-2/6 border-thin-gray-bottom">
         
         {item.gallery.modelImage && <Image

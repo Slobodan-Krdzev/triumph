@@ -1,20 +1,30 @@
+"use client"
 import { faX } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import FamilyBikesSlider from "../FamilyBikesSlider";
 import MainBtn from "../MainBtn";
+import { useEffect, useState } from "react";
 
 type GarageProps = {
-  bikes: any[];
   handleClose: () => void;
 };
 
-const Garage = ({ bikes, handleClose }: GarageProps) => {
-  if (bikes.length === 0) {
+const Garage = ({ handleClose }: GarageProps) => {
+
+  const [bikesForGarage, setBikesForGarage] = useState<any[]>(JSON.parse(localStorage.getItem("garage")!))
+
+  const garage = JSON.parse(localStorage.getItem("garage")!)
+
+  // useEffect(() => {
+  //   setBikesForGarage(JSON.parse(localStorage.getItem("garage")!))
+  // },[])
+  
+  if (bikesForGarage.length === 0) {
     return (
       <section
         className="fixed left-0 right-0 bottom-0 slight-white-bg border-2 py-4 px-4 lg:py-16 lg:px-24"
-        style={{ top: "64px" }}
+        style={{ top: "64px" , zIndex: 5}}
       >
         <div className="relative flex flex-col justify-center items-center h-full w-full">
           <button className="absolute top-5 right-5" onClick={handleClose}>
@@ -87,7 +97,7 @@ const Garage = ({ bikes, handleClose }: GarageProps) => {
             height={50}
           />
         </div>
-        <FamilyBikesSlider itemsToRender={bikes} />
+        <FamilyBikesSlider itemsToRender={bikesForGarage} deleteBtn={true}/>
       </div>
       <div className="hidden lg:flex flex-col lg;flex-row mt-6 items-center justify-center gap-6">
         <MainBtn text={"Контакт"} bgBlack={false} isLink link="/dealer" />
