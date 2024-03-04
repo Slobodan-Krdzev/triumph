@@ -50,24 +50,6 @@ const MainCarousell = ({ items = [] }: MainCarousellProps) => {
     return () => clearInterval(interval);
   }, [activeIndex, items.length]);
 
-  //   PROGRESS BAR
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setProgress((prevProgress) => {
-  //       const newProgress = prevProgress + 0.125;
-  //       if (newProgress >= 100) {
-  //         clearInterval(interval);
-  //       }
-  //       return newProgress;
-  //     });
-  //   }, 10.5);
-
-  //   return () => {
-  //     setProgress(0);
-  //     clearInterval(interval);
-  //   };
-  // }, [activeIndex]);
-
   return (
     <>
        <div
