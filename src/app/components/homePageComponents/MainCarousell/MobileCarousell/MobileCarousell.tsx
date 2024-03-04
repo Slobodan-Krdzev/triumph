@@ -2,6 +2,7 @@ import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { CarousellItemType } from "../MainCarousell";
 import MobileCaroItem from "./MobileCaroItem";
+import ProgressBar from "../ProgressBar";
 
 type MobileCarousellProps = {
   items: CarousellItemType[];
@@ -47,16 +48,7 @@ const MobileCarousell = ({
         </button>
       )}
 
-      <div className="h-1 z-30 w-screen absolute top-0 left-0">
-        <div
-          className="red-bg-color h-2"
-          style={{
-            width: `${progress + 2}%`,
-            height: "100%",
-          }}
-        ></div>
-      </div>
-
+      <ProgressBar activeIndex={activeIndex} />
       <div
         style={{ transform: `translate(-${activeIndex * 100}%)` }}
         className="transition-transform delay-300 ease-in-out flex"
