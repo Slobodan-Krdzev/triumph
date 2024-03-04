@@ -2995,6 +2995,10 @@
           "src": "/images/classics/speedTwin900/speedTwin900HeroVideo.webm",
           "alt": "Speed Twin 900"
         },
+        "subFamilyHeroImageMobile": {
+          "src": "/images/classics/speedTwin900/speedTwin900SubFamHeroMobile.avif",
+          "alt": "Speed Twin 900 Range Hero Image"
+        },
         "subFamilyTopSectionImage": {
           "src": "/images/classics/speedTwin900/speedTwin900TopSectionImage.avif",
           "alt": "Speed Twin 900 Top Section Image"
@@ -11696,7 +11700,7 @@
         {
           "colorName": "Matt Silver Ice",
           "price": 200,
-          "image": "/images/custom-collors/mattSilverice.jpg",
+          "image": "/images/custom-collors/mattSilverIce.jpg",
           "colorCode": "color3"
         }
       ],
