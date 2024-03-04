@@ -31,15 +31,15 @@ const linkCardsSection: HomeCardLinkType[] = [
 export default async function Home() {
 
     try {
-      const mainCarousellItemsRes = await fetch(`${MAINCAROUSELLITEMS}`, {next: {revalidate: 3000}})
-      const mainCarousellItems = await mainCarousellItemsRes.json()
+      // const mainCarousellItemsRes = await fetch(`${MAINCAROUSELLITEMS}`, {next: {revalidate: 3000}})
+      // const mainCarousellItems = await mainCarousellItemsRes.json()
 
-      const latestCarousellItemsRes = await fetch(`${LATESTCAROUSELLITEMS}`, {next: {revalidate: 3000}})
-      const latestCarousellitems = await latestCarousellItemsRes.json()
+      // const latestCarousellItemsRes = await fetch(`${LATESTCAROUSELLITEMS}`, {next: {revalidate: 3000}})
+      // const latestCarousellitems = await latestCarousellItemsRes.json()
 
       return (
         <>
-        <MainCarousell items={mainCarousellItems}/>
+        <MainCarousell items={[]}/>
           <GrayBand
             itemOne={{
               text: "Конфигурации",
@@ -80,7 +80,7 @@ export default async function Home() {
             link={"/configure"}
             btnText={"Конфигурирај"}
           />
-          <LatestModelsCarousellSection items={latestCarousellitems} showTitle={true}/>
+          <LatestModelsCarousellSection items={[]} showTitle={true}/>
           <DiscoverThriumphSection />
         </>
       );
