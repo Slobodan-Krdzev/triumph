@@ -27,17 +27,29 @@ const ProgressBar = ({ activeIndex }: ProgressProps) => {
   }, [activeIndex]);
 
   return (
-    <div
-      className="red-bg-color h-2  absolute"
-      style={{
-        width: `5%`,
+    <>
+      <div
+        className="red-bg-color h-2 absolute hidden lg:block"
+        style={{
+          width: `5%`,
 
-        height: `${progress + 2}%`,
-        transform: "rotate(180deg)",
-        left: 0,
-        bottom: 0,
-      }}
-    ></div>
+          height: `${progress + 2}%`,
+          transform: "rotate(180deg)",
+          left: 0,
+          bottom: 0,
+        }}
+      ></div>
+
+      <div className="h-1 z-30 w-screen absolute top-0 left-0 block lg:hidden">
+        <div
+          className="red-bg-color h-2"
+          style={{
+            width: `${progress + 2}%`,
+            height: "100%",
+          }}
+        ></div>
+      </div>
+    </>
   );
 };
 
