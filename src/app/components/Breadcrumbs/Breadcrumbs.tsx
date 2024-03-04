@@ -30,11 +30,11 @@ const Breadcrumbs = ({dark}: BreadcrumbsProps) => {
 
         {pathsToArr.slice(1, pathsToArr.length).map((path: string, idx: number) => {
           if (idx + 2 === pathsToArr.length) {
-            return <span key={path}>{path}</span>;
+            return <span key={idx}>{path}</span>;
           }
 
           return (
-            <div key={path} className="flex gap-x-2 items-center">
+            <div key={idx} className="flex gap-x-2 items-center">
               <Link href={`${getLink(idx + 1)}`}>
                 {path}
               </Link>
