@@ -39,7 +39,7 @@ export default async function Home() {
 
       return (
         <>
-        <MainCarousell items={[]}/>
+        {/* <MainCarousell items={mainCarousellItems}/> */}
           <GrayBand
             itemOne={{
               text: "Конфигурации",
@@ -80,7 +80,7 @@ export default async function Home() {
             link={"/configure"}
             btnText={"Конфигурирај"}
           />
-          <LatestModelsCarousellSection items={[]} showTitle={true}/>
+          {/* <LatestModelsCarousellSection items={latestCarousellitems} showTitle={true}/> */}
           <DiscoverThriumphSection />
         </>
       );
