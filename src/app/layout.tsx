@@ -11,7 +11,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Triumph Motorcycles Macedonia",
-  description: "Triumph Motorcycles Macedonia, Триумф Моторцикли Македонија, Триумф, Мотори, Triumph",
+  description:
+    "Triumph Motorcycles Macedonia, Триумф Моторцикли Македонија, Триумф, Мотори, Triumph",
 };
 
 export default async function RootLayout({
@@ -19,30 +20,29 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-
-
   try {
+    const familiesRes = await fetch(`${FAMILIES}`, {
+      next: { revalidate: 3000 },
+    });
+    const families = await familiesRes.json();
 
-      const   familiesRes = await fetch(`${FAMILIES}`, {cache: 'no-cache'})
-      const families = await familiesRes.json()
+    const subFamiliesRes = await fetch(`${SUB_FAMILIES}`, {
+      next: { revalidate: 3000 },
+    });
+    const subFamilies = await subFamiliesRes.json();
 
-      const subFamiliesRes = await fetch(`${SUB_FAMILIES}`, {cache: 'no-cache'})
-      const subFamilies = await subFamiliesRes.json()
-
-      return (
-        <html lang="en">
-          <body className={inter.className}>
-            <Navbar families={families} subFamilies={subFamilies}/>
-            {children}
-            <Footer families={families}/>
-          </body>
-        </html>
-      );
-
-  }catch(e){
+    return (
+      <html lang="en">
+        <body className={inter.className}>
+          <Navbar families={families} subFamilies={subFamilies} />
+          {children}
+          <Footer families={families} />
+        </body>
+      </html>
+    );
+  } catch (e) {
     console.error(e);
-    
-    return <>Err</>
+
+    return <>Err</>;
   }
-  
 }

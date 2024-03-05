@@ -1,10 +1,7 @@
 "use client"
-import React, { useEffect, useState } from 'react'
-import { useBreakpoint } from '../helpers/useBreakpoint'
+import BottomFoot from './BottomFoot'
 import DesktopFooter from './DesktopFooter'
 import MobileFooter from './MobileFooter/MobileFooter'
-import { FAMILIES } from '@/app/constants/constants'
-import BottomFoot from './BottomFoot'
 
 export const footerLists = [
   
@@ -61,7 +58,6 @@ type FooterProps = {
 
 const Footer = ({families}: FooterProps) => {
 
-    const breakpoint = useBreakpoint()
    
     if(families.length > 0) {
       return (
