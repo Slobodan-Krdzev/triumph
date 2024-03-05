@@ -3,37 +3,38 @@ import ImageCarousell from "@/app/components/ClothingComponents/ImageCarousell";
 import MainBtn from "@/app/components/MainBtn";
 import Image from "next/image";
 
-const caroItems = [{
+const caroItems = [
+  {
     id: 1,
     src: "/images/clothes/esentialCaro1.avif",
-    alt: "Облека за Возење (Есенцијално парче)"
-},
-{
+    alt: "Облека за Возење (Есенцијално парче)",
+  },
+  {
     id: 2,
     src: "/images/clothes/esentialCaro2.avif",
-    alt: "Облека за Возење (Есенцијално парче)"
-},
-{
+    alt: "Облека за Возење (Есенцијално парче)",
+  },
+  {
     id: 3,
     src: "/images/clothes/esentialCaro3.avif",
-    alt: "Облека за Возење (Есенцијално парче)"
-},
-{
+    alt: "Облека за Возење (Есенцијално парче)",
+  },
+  {
     id: 4,
     src: "/images/clothes/esentialCaro4.avif",
-    alt: "Облека за Возење (Есенцијално парче)"
-},
-{
+    alt: "Облека за Возење (Есенцијално парче)",
+  },
+  {
     id: 5,
     src: "/images/clothes/esentialCaro5.avif",
-    alt: "Облека за Возење (Есенцијално парче)"
-},
-{
+    alt: "Облека за Возење (Есенцијално парче)",
+  },
+  {
     id: 6,
     src: "/images/clothes/esentialCaro6.avif",
-    alt: "Облека за Возење (Есенцијално парче)"
-}]
-
+    alt: "Облека за Возење (Есенцијално парче)",
+  },
+];
 
 const RidingEssentialsPage = () => {
   return (
@@ -48,7 +49,7 @@ const RidingEssentialsPage = () => {
           height: "100vh",
         }}
       >
-          <Breadcrumbs/>
+        <Breadcrumbs />
 
         <div
           className="flex justify-center items-center h-full w-full"
@@ -63,14 +64,12 @@ const RidingEssentialsPage = () => {
         </div>
       </section>
       <section className="m-auto lg:gap-8 gap-4 flex flex-col justify-center items-center py-4 md:py-8 lg:py-16 bg-white px-4">
-
         <Image
           src={"/images/clothes/essentialImg1.avif"}
           alt="Облека за Возење Слика 1"
           height={793}
           width={1410}
         />
-
 
         <Image
           src={"/images/clothes/essentialImg2.avif"}
@@ -81,10 +80,8 @@ const RidingEssentialsPage = () => {
       </section>
 
       <section className="m-auto px-4 md:px-8 bg-white">
-      <ImageCarousell items={caroItems} />
-
+        <ImageCarousell items={caroItems} />
       </section>
-
 
       <section className="text-center pb-4 md:pb-8 lg:pb-16 bg-white">
         <h2 className="text-2xl md:text-5xl font-bold uppercase border-b-4 border-red-600 w-3/4 m-auto pb-4 mb-4">
@@ -94,10 +91,10 @@ const RidingEssentialsPage = () => {
           Лоцирајте ја нашата најблиска продавница.
         </p>
         <MainBtn
-          text={"Најди Продавница"}
+          text={"Контакт"}
           bgBlack={true}
           isLink={true}
-          link={`/`}
+          link={`/dealer`}
         />
       </section>
     </>
