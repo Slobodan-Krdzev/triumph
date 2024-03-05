@@ -8,17 +8,22 @@ import { useEffect, useState } from "react";
 
 type GarageProps = {
   handleClose: () => void;
+  handleBtn?: () => void
 };
 
-const Garage = ({ handleClose }: GarageProps) => {
+const Garage = ({ handleClose, handleBtn }: GarageProps) => {
 
   const [bikesForGarage, setBikesForGarage] = useState<any[]>(JSON.parse(localStorage.getItem("garage")!))
 
   const garage = JSON.parse(localStorage.getItem("garage")!)
 
-  // useEffect(() => {
-  //   setBikesForGarage(JSON.parse(localStorage.getItem("garage")!))
-  // },[])
+  const updateBikes = (bike: any) => {
+
+    const updatedGarage:any[] = bikesForGarage.filter(bikeFromGarage => bikeFromGarage.id !== bike.id)
+
+    localStorage.setItem('garage', JSON.stringify(updatedGarage))
+    setBikesForGarage(updatedGarage)
+  }
   
   if (bikesForGarage.length === 0) {
     return (
@@ -97,7 +102,7 @@ const Garage = ({ handleClose }: GarageProps) => {
             height={50}
           />
         </div>
-        <FamilyBikesSlider itemsToRender={bikesForGarage} deleteBtn={true}/>
+        <FamilyBikesSlider itemsToRender={bikesForGarage} deleteBtn={true} updateGrg={updateBikes} handleBtn={handleBtn}/>
       </div>
       <div className="hidden lg:flex flex-col lg;flex-row mt-6 items-center justify-center gap-6">
         <MainBtn text={"Контакт"} bgBlack={false} isLink link="/dealer" />

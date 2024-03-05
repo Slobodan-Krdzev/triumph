@@ -155,6 +155,10 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
     handleBodyScrollWhenMenuIsOpen(isGarageVisible);
   };
 
+  const handleDeleteBikeBtn = () => {
+    setIsBikeInGarage(false)
+  }
+
 
   if (breakpoint > 1000) {
     return (
@@ -192,7 +196,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
             } basis-2/12 flex flex-col items-center justify-center text-lg text-neutral-600`}
             onClick={(e) => {
               handleSaveBike(info);
-              e.currentTarget.innerText = "Зачувано";
+              // e.currentTarget.innerText = "Зачувано";
             }}
           >
             <FontAwesomeIcon icon={faFloppyDisk} color="black" size="lg" />
@@ -338,7 +342,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
         )}
 
         {isGarageVisible && (
-          <Garage handleClose={closeGarage} />
+          <Garage handleClose={closeGarage} handleBtn={handleDeleteBikeBtn}/>
         )}
       </>
     );
@@ -417,7 +421,6 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
                 isBikeInGarage ? "bg-neutral-300" : ""
               }`}
               onClick={(e) => {
-                mobileSaveBtn.current!.innerText = "Зачувано";
                 handleSaveBike(info);
               }}
             >
@@ -551,7 +554,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
       )}
 
       {isGarageVisible && (
-        <Garage handleClose={closeGarage} />
+        <Garage handleClose={closeGarage} handleBtn={handleDeleteBikeBtn}/>
       )}
     </>
   );

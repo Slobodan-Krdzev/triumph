@@ -1,13 +1,9 @@
-"use client"
-import React, { useEffect, useState } from 'react'
-import { useBreakpoint } from '../helpers/useBreakpoint'
-import DesktopFooter from './DesktopFooter'
-import MobileFooter from './MobileFooter/MobileFooter'
-import { FAMILIES } from '@/app/constants/constants'
-import BottomFoot from './BottomFoot'
+"use client";
+import BottomFoot from "./BottomFoot";
+import DesktopFooter from "./DesktopFooter";
+import MobileFooter from "./MobileFooter/MobileFooter";
 
 export const footerLists = [
-  
   {
     title: "Стартувај",
     items: [
@@ -30,7 +26,7 @@ export const footerLists = [
         id: 8,
         url: "https://triumph-mediakits.com/en/news/news-listing.html",
         text: "Нoвости",
-      }
+      },
     ],
   },
   {
@@ -56,25 +52,23 @@ export const footerLists = [
 ];
 
 type FooterProps = {
-  families: any[]
-}
+  families: any[];
+};
 
-const Footer = ({families}: FooterProps) => {
+const Footer = ({ families }: FooterProps) => {
+  if (families.length > 0) {
+    return (
+      <footer className="md:px-0 border-thin-gray md:pt-8 mt-8 md:mt-0 w-full md:w-10/12 m-auto">
+        <div className="px-4 py-4">
+          <DesktopFooter familyItems={families} />
+          <MobileFooter familyItems={families} />
+          <BottomFoot />
+        </div>
+      </footer>
+    );
+  } else {
+    return "Loading";
+  }
+};
 
-    const breakpoint = useBreakpoint()
-   
-    if(families.length > 0) {
-      return (
-        <footer className="px-4 md:px-0 border-t-2 border-thin-gray md:pt-8 pt-4 mt-4 md:mt-0 w-full md:w-10/12 m-auto">
-            <DesktopFooter familyItems={families}/>
-            <MobileFooter familyItems={families}/>
-            <BottomFoot />
-        </footer>
-      )
-    } else {
-      return "Loading"
-    }
-  
-}
-
-export default Footer
+export default Footer;

@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://db.onlinewebfonts.com/c/1dd1c7d8df011c2266f33ebd5927c0ab?family=DIN+2014+Demi');
 
 @font-face {
   font-family: "DIN 2014 Demi";
@@ -25,13 +24,13 @@ img {
 
 body {
   background-color: var(--tetriary-bg-color);
-  /* overflow: hidden; */
   padding-top: 64px;
 }
 
+
+
 .menu-visible {
   overflow: hidden;
-  /* height: 150vh; */
 }
 
 :root {
