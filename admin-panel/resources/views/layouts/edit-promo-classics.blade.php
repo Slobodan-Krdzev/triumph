@@ -7,9 +7,9 @@
             </div>
         @endif
 
-            <div class="flex">
-                <h1 class="bg-blue-400 text-white rounded py-3 px-6 mb-5"><a href="{{route('view-families')}}">Back</a></h1>
-            </div>
+        <div class="flex">
+            <h1 class="bg-blue-400 text-white rounded py-3 px-6 mb-5"><a href="{{ route('view-families') }}">Back</a></h1>
+        </div>
         <form method="post" action="{{ route('update-promo-classics', ['id' => $promo->id]) }}" class="flex flex-col">
             @csrf
             @method('PUT')
@@ -27,16 +27,24 @@
                 <input type="text" name="promo[{{ $key }}][desc]"
                     value="{{ old("promo.$key.desc", $promoItem['desc']) }}" required>
 
-                <label for="promo[{{ $key }}][image]">Images:</label>
-                <input type="text" name="promo[{{ $key }}][image]"
-                    value="{{ old("promo.$key.image", $promoItem['image']) }}" required>
 
 
-                    <label for="promo[{{ $key }}][btnBlack]">Black button:</label>
-                    <select name="promo[{{ $key }}][btnBlack]" required>
-                        <option value="1" {{ old("promo.$key.btnBlack", $promoItem['btnBlack']) == 1 ? 'selected' : '' }}>Yes</option>
-                        <option value="0" {{ old("promo.$key.btnBlack", $promoItem['btnBlack']) == 0 ? 'selected' : '' }}>No</option>
-                    </select>
+
+                <x-form.input labelText="Image:" imageId="promoImageClassics"
+                    name="gallery[subFamilyTopSectionImage][src]">
+                    <img id='promoImageClassics'
+                        src="/storage/{{ $promoItem['image'] }}" width="200"
+                        height="150" class="object-cover border m-3 border-gray-200" />
+                </x-form.input>
+
+
+                <label for="promo[{{ $key }}][btnBlack]">Black button:</label>
+                <select name="promo[{{ $key }}][btnBlack]" required>
+                    <option value="1"
+                        {{ old("promo.$key.btnBlack", $promoItem['btnBlack']) == 1 ? 'selected' : '' }}>Yes</option>
+                    <option value="0"
+                        {{ old("promo.$key.btnBlack", $promoItem['btnBlack']) == 0 ? 'selected' : '' }}>No</option>
+                </select>
             @endforeach
 
             <button type="submit" class="my-5 bg-lime-200 shadow rounded p-4">Update</button>

@@ -28,6 +28,13 @@
                 <label for="familyPageBannerVideo">Family Page Banner Video:</label>
                 <input type="text" id="familyPageBannerVideo" name="familyPageBannerVideo" value="{{ $famRoadsters['familyPageBannerVideo'] }}">
 
+                <x-form.input labelText="Family Page Banner Video:" imageId="familyPageBannerVideo"
+                name="familyPageBannerVideo">
+                <video src="/storage/{{$famRoadsters['familyPageBannerVideo'] }}" muted controls autoplay
+                    id='familyPageBannerVideo' width="400" height="350"
+                    class="object-cover border m-3 border-gray-200">
+            </x-form.input>
+
 
                 <label for="configPageDesc">Config Page Description:</label>
                 <textarea id="configPageDesc" name="configPageDesc">{{ $famRoadsters['configPageInfo']['desc'] }}</textarea>
@@ -42,15 +49,26 @@
                 <label for="configFamilyPageImageSrc">Config Family Page Image Source:</label>
                 <input type="text" id="configFamilyPageImageSrc" name="configFamilyPageImageSrc" value="{{ $famRoadsters['configFamilyPageInfo']['image']['src'] }}">
 
+                <x-form.input labelText="Config Family Page Image:" imageId="configFamilyPageImageSrc"
+                name="configFamilyPageImageSrc">
+                <img id='configFamilyPageImageSrc'
+                    src="/storage/{{ $famRoadsters['configFamilyPageInfo']['image']['src']  }}" width="200"
+                    height="150" class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
+
 
                 <label for="configFamilyPageImageAlt">Config Family Page Image Alt:</label>
                 <input type="text" id="configFamilyPageImageAlt" name="configFamilyPageImageAlt" value="{{ $famRoadsters['configFamilyPageInfo']['image']['alt'] }}">
 
                 <h1 class="font-bold text-3xl my-2">Audio Section</h1>
 
-
-                <label for="audioSectionAudio">Audio Section Audio:</label>
-                <input type="text" id="audioSectionAudio" name="audioSectionAudio" value="{{ $famRoadsters['audioSection']['audio'] }}">
+                {{-- AUDIO SECTION TRY --}}
+                  <x-form.input  labelText="Choose Audio" imageId="audioSectionAudio"
+                  name="audioSectionAudio">
+                  <audio controls autoplay muted>
+                    <source src="/storage/{{ $famRoadsters['audioSection']['audio'] }}" type="audio/ogg">
+                  </audio>
+              </x-form.input>
 
 
                 <label for="audioSectionTitle">Audio Section Title:</label>
@@ -63,6 +81,13 @@
 
                 <label for="audioSectionLogo">Audio Section Logo:</label>
                 <input type="text" id="audioSectionLogo" name="audioSectionLogo" value="{{ $famRoadsters['audioSection']['logo'] }}">
+
+                <x-form.input labelText="Config Family Page Image:" imageId="audioSectionLogo"
+                name="audioSectionLogo">
+                <img id='audioSectionLogo'
+                    src="/storage{{$famRoadsters['audioSection']['logo']}}" width="400"
+                    height="350" class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
 
                 <h1 class="font-bold text-3xl my-2">Promo Info For Family Page</h1>
                 <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"

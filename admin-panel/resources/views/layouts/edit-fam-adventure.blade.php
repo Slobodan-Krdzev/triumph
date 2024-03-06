@@ -20,9 +20,16 @@
             <label for="type">Type:</label>
             <input type="text" name="type" value="{{ old('type', $family['type']) }}" required>
 
-            <label for="mainBikeLogoImage[url]">Main Bike Logo Image URL:</label>
+            {{-- <label for="mainBikeLogoImage[url]">Main Bike Logo Image URL:</label>
             <input type="text" name="mainBikeLogoImage[url]"
-                value="{{ old('mainBikeLogoImage.url', optional($family['mainBikeLogoImage'])['url']) }}">
+                value="{{ old('mainBikeLogoImage.url', optional($family['mainBikeLogoImage'])['url']) }}"> --}}
+
+
+            <x-form.input labelText="Main Bike Logo Image URL:" imageId="mainBikeLogoImg"
+                name="gallery[subFamilyTopSectionImage][src]">
+                <img id='mainBikeLogoImg' src="/storage/{{ $family['mainBikeLogoImage']['url'] }}" width="200"
+                    height="150" class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
 
             <label for="mainBikeLogoImage[alt]">Main Bike Logo Image Alt:</label>
             <input type="text" name="mainBikeLogoImage[alt]"
@@ -31,19 +38,35 @@
             <label for="familyPageBannerDesc[0]">Family Page Banner Description:</label>
             <textarea rows="8" name="familyPageBannerDesc" required>{{ old('familyPageBannerDesc', $family['familyPageBannerDesc'] ?? '') }}</textarea>
 
-            <label for="familyPageBannerVideo[0]">Family Page Banner Video:</label>
+            {{-- <label for="familyPageBannerVideo[0]">Family Page Banner Video:</label>
             <input type="text" name="familyPageBannerVideo"
-                value="{{ old('familyPageBannerVideo', $family['familyPageBannerVideo'] ?? '') }}" required>
+                value="{{ old('familyPageBannerVideo', $family['familyPageBannerVideo'] ?? '') }}" required> --}}
+
+            <x-form.input labelText="Family Page Banner Video:" imageId="familyPageBannerVideo"
+                name="gallery[subFamilyHeroVideo][src]">
+                <video src="/storage/{{$family['familyPageBannerVideo']}}" muted controls autoplay
+                    id='familyPageBannerVideo' width="200" height="150"
+                    class="object-cover border m-3 border-gray-200">
+            </x-form.input>
 
             {{-- ------------------------------------------------------------------- --}}
             <h1 class="font-bold text-3xl my-2">Top Section Info</h1>
             <label for="topSectionInfo[image][src]">Top Section Image Source:</label>
             <input type="text" name="topSectionInfo[image][src]"
-                value="{{ old('topSectionInfo.image.src', $family['topSectionInfo']['image']['src'] ?? '') }}" required>
+                value="{{ old('topSectionInfo.image.src', $family['topSectionInfo']['image']['src'] ?? '') }}"
+                required>
+
+
+                <x-form.input labelText="Top Section Info:" imageId="mainBikeLogoImg"
+                name="topSectionInfo[image][src]">
+                <img id='mainBikeLogoImg' src="/storage/{{$family['topSectionInfo']['image']['src'] }}" width="200"
+                    height="150" class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
 
             <label for="topSectionInfo[image][alt]">Top Section Image Alt:</label>
             <input type="text" name="topSectionInfo[image][alt]"
-                value="{{ old('topSectionInfo.image.alt', $family['topSectionInfo']['image']['alt'] ?? '') }}" required>
+                value="{{ old('topSectionInfo.image.alt', $family['topSectionInfo']['image']['alt'] ?? '') }}"
+                required>
 
             <label for="topSectionInfo[title]">Top Section Title:</label>
             <input type="text" name="topSectionInfo[title]"

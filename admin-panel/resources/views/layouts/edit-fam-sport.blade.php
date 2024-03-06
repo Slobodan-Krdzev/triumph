@@ -32,14 +32,29 @@
                 value="{{ $famSport['familyPageBannerVideo'] }}">
 
 
+
+                <x-form.input labelText="Family Page Banner Video:" imageId="familyPageBannerVideo"
+                name="familyPageBannerVideo">
+                <video src="/storage/{{$famSport['familyPageBannerVideo'] }}" muted controls autoplay
+                    id='familyPageBannerVideo' width="400" height="350"
+                    class="object-cover border m-3 border-gray-200">
+            </x-form.input>
+
+
             <label for="configPageLink">Config Page Link:</label>
             <input type="text" id="configPageLink" name="configPageLink"
                 value="{{ $famSport['configPageInfo']['link'] }}">
 
 
-            <label for="configFamilyPageImageSrc">Config Family Page Image Source:</label>
-            <input type="text" id="configFamilyPageImageSrc" name="configFamilyPageImageSrc"
-                value="{{ $famSport['configFamilyPageInfo']['image']['src'] }}">
+
+
+
+                <x-form.input labelText="Config Family Page Image:" imageId="configFamilyPageImageSrc"
+                name="configFamilyPageImageSrc">
+                <img id='configFamilyPageImageSrc'
+                    src="/storage/{{ $famSport['configFamilyPageInfo']['image']['src']  }}" width="400"
+                    height="300" class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
 
 
             <label for="configFamilyPageImageAlt">Config Family Page Image Alt:</label>
@@ -68,6 +83,13 @@
                 <label for="carouselItems[{{ $index }}][image]">Image:</label>
                 <input type="text" id="carouselItems[{{ $index }}][image]"
                     name="carouselItems[{{ $index }}][image]" value="{{ $caroItem['image'] }}">
+
+                    <x-form.input labelText="Config Family Page Image:" imageId="carouselItems[{{ $index }}][image]"
+                    name="carouselItems[{{ $index }}][image]">
+                    <img id='configFamilyPageImageSrc'
+                        src="/storage/{{ $caroItem['image']}}" width="400"
+                        height="300" class="object-cover border m-3 border-gray-200" />
+                </x-form.input>
             @endforeach
 
 

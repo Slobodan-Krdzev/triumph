@@ -27,9 +27,12 @@
                 <input type="text" name="promo[{{ $key }}][desc]"
                     value="{{ old("promo.$key.desc", $promoItem['desc']) }}" required>
 
-                <label for="promo[{{ $key }}][image]">Images:</label>
-                <input type="text" name="promo[{{ $key }}][image]"
-                    value="{{ old("promo.$key.image", $promoItem['image']) }}" required>
+
+                    <x-form.input labelText="Image:" imageId="image"
+                    name="gallery[subFamilyTopSectionImage][src]">
+                    <img id='image' src="/storage/{{ $promoItem['image']}}" width="200"
+                        height="150" class="object-cover border m-3 border-gray-200" />
+                </x-form.input>
 
 
                     <label for="promo[{{ $key }}][btnBlack]">Black button:</label>

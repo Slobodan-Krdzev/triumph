@@ -20,14 +20,21 @@
             <label for="type">Type:</label>
             <input type="text" name="type" value="{{ old('type', $famClassic['type']) }}" required>
 
-            @if(isset($famClassic->familyPageBannerDesc))
-            <label for="">Family Page Banner Description:</label>
-            <textarea name="familyPageBannerDesc" rows="4">{{ old('familyPageBannerDesc', $famClassic['familyPageBannerDesc']) }}</textarea>
+            @if (isset($famClassic->familyPageBannerDesc))
+                <label for="">Family Page Banner Description:</label>
+                <textarea name="familyPageBannerDesc" rows="4">{{ old('familyPageBannerDesc', $famClassic['familyPageBannerDesc']) }}</textarea>
             @endif
 
 
-            <label for="">Family Page Banner Video:</label>
-            <input type="text" name="familyPageBannerVideo" value="{{ old('familyPageBannerVideo', $famClassic['familyPageBannerVideo']) }}" required>
+
+
+            <x-form.input labelText="Family Page Banner Video:" imageId="familyPageBannerVideo"
+                name="gallery[subFamilyHeroVideo][src]">
+                <video src="/storage/{{ $famClassic['familyPageBannerVideo'] }}" muted controls autoplay
+                    id='familyPageBannerVideo' width="400" height="350"
+                    class="object-cover border m-3 border-gray-200">
+            </x-form.input>
+
 
             <label for="">Config Page Description:</label>
             <textarea name="configPageInfo[desc]" rows="4">{{ old('configPageInfo.desc', $famClassic['configPageInfo']['desc']) }}</textarea>
@@ -35,28 +42,49 @@
             <h1 class="font-bold text-3xl my-2">Config Page Info</h1>
 
             <label for="">Config Page Link:</label>
-            <input type="text" name="configPageInfo[link]" value="{{ old('configPageInfo.link', $famClassic['configPageInfo']['link']) }}" required>
+            <input type="text" name="configPageInfo[link]"
+                value="{{ old('configPageInfo.link', $famClassic['configPageInfo']['link']) }}" required>
 
-            <label for="">Config Family Page Info Source:</label>
-            <input type="text" name="configFamilyPageInfo[image][src]" value="{{ old('configFamilyPageInfo.image.src', $famClassic['configFamilyPageInfo']['image']['src']) }}" required>
+            <label for="">Config Family Page Image:</label>
+            <input type="text" name="configFamilyPageInfo[image][src]"
+                value="{{ old('configFamilyPageInfo.image.src', $famClassic['configFamilyPageInfo']['image']['src']) }}"
+                required>
+
+
+            <x-form.input labelText="Config Family Page Image:" imageId="configFamilyPageImageSrc"
+                name="gallery[subFamilyTopSectionImage][src]">
+                <img id='configFamilyPageImageSrc'
+                    src="/storage{{ $famClassic['configFamilyPageInfo']['image']['src'] }}" width="200"
+                    height="150" class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
 
             <label for="">Config Family Page Info Alt:</label>
-            <input type="text" name="configFamilyPageInfo[image][alt]" value="{{ old('configFamilyPageInfo.image.alt', $famClassic['configFamilyPageInfo']['image']['alt']) }}" required>
+            <input type="text" name="configFamilyPageInfo[image][alt]"
+                value="{{ old('configFamilyPageInfo.image.alt', $famClassic['configFamilyPageInfo']['image']['alt']) }}"
+                required>
 
 
-            <h1 class="font-bold text-3xl my-2">Gray Carousel Info</h1>
+            <h1 class="font-bold text-3xl my-2">Gray Carousell Info</h1>
 
-            @foreach($famClassic['grayCaro'] as $index => $carouselItem)
+            @foreach ($famClassic['grayCaro'] as $index => $carouselItem)
                 <label for="">Title:</label>
-                <input type="text" name="grayCaro[{{ $index }}][title]" value="{{ old('grayCaro.'.$index.'.title', $carouselItem['title']) }}" required>
+                <input type="text" name="grayCaro[{{ $index }}][title]"
+                    value="{{ old('grayCaro.' . $index . '.title', $carouselItem['title']) }}" required>
 
                 <label for="">Description:</label>
-                <textarea name="grayCaro[{{ $index }}][desc]" rows="4">{{ old('grayCaro.'.$index.'.desc', $carouselItem['desc']) }}</textarea>
-
+                <textarea name="grayCaro[{{ $index }}][desc]" rows="4">{{ old('grayCaro.' . $index . '.desc', $carouselItem['desc']) }}</textarea>
+{{--
                 <label for="">Image:</label>
-                <input type="text" name="grayCaro[{{ $index }}][image]" value="{{ old('grayCaro.'.$index.'.image', $carouselItem['image']) }}" required>
+                <input type="text" name="grayCaro[{{ $index }}][image]"
+                    value="{{ old('grayCaro.' . $index . '.image', $carouselItem['image']) }}" required> --}}
 
-        @endforeach
+
+                <x-form.input labelText="Gray Carousell Image:" imageId="configFamilyPageImageSrc"
+                    name="gallery[subFamilyTopSectionImage][src]">
+                    <img id='configFamilyPageImageSrc' src="/storage/{{ $carouselItem['image'] }}" width="200"
+                        height="150" class="object-cover border m-3 border-gray-200" />
+                </x-form.input>
+            @endforeach
 
 
             <h1 class="font-bold text-3xl my-2">Promo Info For Family Page</h1>
