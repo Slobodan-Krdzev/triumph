@@ -80,9 +80,9 @@ class MainCarouselsController extends Controller
     public function update(Request $request, $id)
     {
         $validatedData = $request->validate([
-            'video' => 'string',
-            'image' => 'nullable',
-            'imageMobile' => 'string',
+            'video' => 'nullable|mimes:mp4,mov,ogg,qt|max:20000',
+            'image' => 'nullable|image|max:2048',
+            'imageMobile' => 'nullable|image|max:2048',
             'title' => 'string|max:255',
             'desc' => 'string',
             'link1.url' => 'url',
@@ -91,9 +91,32 @@ class MainCarouselsController extends Controller
             'link2.text' => 'string',
         ]);
 
-        $mainCarousels = MainCarousell::findOrFail($id);
-        $mainCarousels->update($validatedData);
+        $mainCarousel = MainCarousell::findOrFail($id);
+
+        // Process main image update
+        if ($request->hasFile('image')) {
+            $directoryPath = 'images/' . Str::slug($mainCarousel->title);
+            $fileName = $request->file('image')->getClientOriginalName();
+            $imagePath = $request->file('image')->storeAs($directoryPath, $fileName, 'public');
+            $mainCarousel->image = Storage::url($imagePath);
+        }
+
+        // Process mobile image update
+        if ($request->hasFile('imageMobile')) {
+            $imageMobilePath = $request->file('imageMobile')->store('images/mobile', 'public');
+            $mainCarousel->imageMobile = Storage::url($imageMobilePath);
+        }
+
+        // Process video update
+        if ($request->hasFile('video')) {
+            $videoPath = $request->file('video')->store('videos', 'public');
+            $mainCarousel->video = Storage::url($videoPath);
+        }
+
+        // Update other attributes
+        $mainCarousel->update($validatedData);
 
         return redirect()->route('edit-main-carousels', ['id' => $id])->with('success', 'Your data has been updated successfully.');
     }
+
 }

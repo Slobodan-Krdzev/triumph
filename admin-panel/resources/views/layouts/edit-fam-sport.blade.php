@@ -27,9 +27,9 @@
             <textarea id="familyPageBannerDesc" name="familyPageBannerDesc">{{ $famSport['familyPageBannerDesc'] }}</textarea>
 
 
-            <label for="familyPageBannerVideo">Family Page Banner Video:</label>
-            <input type="text" id="familyPageBannerVideo" name="familyPageBannerVideo"
-                value="{{ $famSport['familyPageBannerVideo'] }}">
+{{--            <label for="familyPageBannerVideo">Family Page Banner Video:</label>--}}
+{{--            <input type="text" id="familyPageBannerVideo" name="familyPageBannerVideo"--}}
+{{--                value="{{ $famSport['familyPageBannerVideo'] }}">--}}
 
 
 
@@ -37,13 +37,13 @@
                 name="familyPageBannerVideo">
                 <video src="/storage/{{$famSport['familyPageBannerVideo'] }}" muted controls autoplay
                     id='familyPageBannerVideo' width="400" height="350"
-                    class="object-cover border m-3 border-gray-200">
+                    class="object-cover border m-3 border-gray-200" />
             </x-form.input>
 
 
-            <label for="configPageLink">Config Page Link:</label>
-            <input type="text" id="configPageLink" name="configPageLink"
-                value="{{ $famSport['configPageInfo']['link'] }}">
+{{--            <label for="configPageLink">Config Page Link:</label>--}}
+{{--            <input type="text" id="configPageLink" name="configPageLink"--}}
+{{--                value="{{ $famSport['configPageInfo']['link'] }}">--}}
 
 
 
@@ -80,9 +80,9 @@
                 <textarea id="carouselItems[{{ $index }}][desc]" name="carouselItems[{{ $index }}][desc]">{{ $caroItem['desc'] }}</textarea>
 
 
-                <label for="carouselItems[{{ $index }}][image]">Image:</label>
-                <input type="text" id="carouselItems[{{ $index }}][image]"
-                    name="carouselItems[{{ $index }}][image]" value="{{ $caroItem['image'] }}">
+{{--                <label for="carouselItems[{{ $index }}][image]">Image:</label>--}}
+{{--                <input type="text" id="carouselItems[{{ $index }}][image]"--}}
+{{--                    name="carouselItems[{{ $index }}][image]" value="{{ $caroItem['image'] }}">--}}
 
                     <x-form.input labelText="Config Family Page Image:" imageId="carouselItems[{{ $index }}][image]"
                     name="carouselItems[{{ $index }}][image]">

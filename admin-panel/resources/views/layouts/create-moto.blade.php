@@ -42,34 +42,42 @@
             <label for="specs[torque]">Torque:</label>
             <input type="text" name="specs[torque]">
 
-            <label for="gallery[modelImage][src]">Model Image Source:</label>
-            <input type="text" name="gallery[modelImage][src]">
+            <x-form.input labelText="Model Image Source:" imageId="gallery[modelImage][src]" name="gallery[modelImage][src]">
+                <img id='gallery[modelImage][src]' width="400" height="150" class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
 
             <label for="gallery[modelImage][alt]">Model Image Alt:</label>
             <input type="text" name="gallery[modelImage][alt]">
 
             <h1 class="font-bold text-3xl my-2">Bike Collor Pallette Gallery</h1>
 
-            <label for="bikeCollorPalletteGallery[default]">Default Image:</label>
-            <input type="text" name="bikeCollorPalletteGallery[default]" required>
+            <x-form.input labelText="Default Image:" imageId="bikeCollorPalletteGallery[default]" name="bikeCollorPalletteGallery[default]">
+                <img id='bikeCollorPalletteGallery[default]' width="400" height="150" class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
 
-            <label for="bikeCollorPalletteGallery[color1]">Color 1 Image:</label>
-            <input type="text" name="bikeCollorPalletteGallery[color1]" required>
+            <x-form.input labelText="Color 1 Image:" imageId="bikeCollorPalletteGallery[color1]" name="bikeCollorPalletteGallery[color1]">
+                <img id='bikeCollorPalletteGallery[color1]' width="400" height="150" class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
 
-            <label for="bikeCollorPalletteGallery[color1Reversed]">Color 1 Reversed Image:</label>
-            <input type="text" name="bikeCollorPalletteGallery[color1Reversed]" required>
+            <x-form.input labelText="Color 1 Reversed Image:" imageId="bikeCollorPalletteGallery[color1Reversed]" name="bikeCollorPalletteGallery[color1Reversed]">
+                <img id='bikeCollorPalletteGallery[color1Reversed]' width="400" height="150" class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
 
-            <label for="bikeCollorPalletteGallery[color2]">Color 2 Image:</label>
-            <input type="text" name="bikeCollorPalletteGallery[color2]" required>
+            <x-form.input labelText="Color 2 Image:" imageId="bikeCollorPalletteGallery[color2]" name="bikeCollorPalletteGallery[color2]">
+                <img id='bikeCollorPalletteGallery[color2]' width="400" height="150" class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
 
-            <label for="bikeCollorPalletteGallery[color2Reversed]">Color 2 Reversed Image:</label>
-            <input type="text" name="bikeCollorPalletteGallery[color2Reversed]" required>
+            <x-form.input labelText="Color 2 Reversed Image:" imageId="bikeCollorPalletteGallery[color2Reversed]" name="bikeCollorPalletteGallery[color2Reversed]">
+                <img id='bikeCollorPalletteGallery[color2Reversed]' width="400" height="150" class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
 
-            <label for="bikeCollorPalletteGallery[color3]">Color 3 Image:</label>
-            <input type="text" name="bikeCollorPalletteGallery[color3]" required>
+            <x-form.input labelText="Color 3 Image:" imageId="bikeCollorPalletteGallery[color3]" name="bikeCollorPalletteGallery[color3]">
+                <img id='bikeCollorPalletteGallery[color3]' width="400" height="150" class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
 
-            <label for="bikeCollorPalletteGallery[color3Reversed]">Color 3 Reversed Image:</label>
-            <input type="text" name="bikeCollorPalletteGallery[color3Reversed]" required>
+            <x-form.input labelText="Color 3 Reversed Image:" imageId="bikeCollorPalletteGallery[color3Reversed]" name="bikeCollorPalletteGallery[color3Reversed]">
+                <img id='bikeCollorPalletteGallery[color3Reversed]' width="400" height="150" class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
 
 
             <h1 class="font-bold text-3xl my-2">Customization Colors</h1>
@@ -80,8 +88,9 @@
             <label for="customizationColors[0][price]">Color 1 Price:</label>
             <input type="text" name="customizationColors[0][price]" required>
 
-            <label for="customizationColors[0][image]">Color 1 Image:</label>
-            <input type="text" name="customizationColors[0][image]" required>
+            <x-form.input labelText="Color 1 Image:" imageId="customizationColors[0][image]" name="customizationColors[0][image]">
+                <img id='customizationColors[0][image]' width="400" height="150" class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
 
             <label for="customizationColors[0][colorCode]">Color 1 Code:</label>
             <input type="text" name="customizationColors[0][colorCode]" required>
@@ -93,8 +102,9 @@
             <label for="customizationColors[1][price]">Color 2 Price:</label>
             <input type="text" name="customizationColors[1][price]" required>
 
-            <label for="customizationColors[1][image]">Color 2 Image:</label>
-            <input type="text" name="customizationColors[1][image]" required>
+            <x-form.input labelText="Color 2 Image:" imageId="customizationColors[1][image]" name="customizationColors[1][image]">
+                <img id='customizationColors[1][image]' width="400" height="150" class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
 
             <label for="customizationColors[1][colorCode]">Color 2 Code:</label>
             <input type="text" name="customizationColors[1][colorCode]" required>
@@ -106,8 +116,9 @@
             <label for="customizationColors[2][price]">Color 3 Price:</label>
             <input type="text" name="customizationColors[2][price]" required>
 
-            <label for="customizationColors[2][image]">Color 3 Image:</label>
-            <input type="text" name="customizationColors[2][image]" required>
+            <x-form.input labelText="Color 3 Image:" imageId="customizationColors[2][image]" name="customizationColors[2][image]">
+                <img id='customizationColors[2][image]' width="400" height="150" class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
 
             <label for="customizationColors[2][colorCode]">Color 3 Code:</label>
             <input type="text" name="customizationColors[2][colorCode]" required>

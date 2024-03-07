@@ -22,16 +22,19 @@
             @endif
 
 
-            <label for="video">Video Path</label>
-            <input class="" type="file" name="video">
+            <x-form.input labelText="VideoPath:" imageId="video" name="video">
+                <video id='video' muted controls autoplay width="400" height="150" class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
 
+            <x-form.input labelText="Choose image to upload:" imageId="image"
+                          name="image">
+                <img id='image' width="400" height="150" class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
 
-
-            <label class="mt-5" for="image">Choose image to upload:</label>
-            <input class="mb-5" type="file" name="image">
-
-            <label class="mt-5" for="image">Choose image to upload: IMAGE MOBILE</label>
-            <input class="mb-5" type="file" name="imageMobile">
+            <x-form.input labelText="Choose image to upload: IMAGE MOBILE" imageId="imageMobile"
+                          name="imageMobile">
+                <img id='imageMobile' width="400" height="150" class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
 
             <label for="title">Title</label>
             <input type="text" name="title" id="title" value="{{ old('title') }}" >
@@ -56,4 +59,22 @@
             <button type="submit" class="my-5 bg-lime-200 shadow rounded p-4">Add Carousel</button>
         </form>
     </div>
+    <script>
+        var loadFile = function(event, imageId) {
+
+            var input = event.target;
+            var file = input.files[0];
+            var type = file.type;
+
+            console.log(imageId);
+
+            var output = document.getElementById(imageId);
+
+
+            output.src = URL.createObjectURL(event.target.files[0]);
+            output.onload = function() {
+                URL.revokeObjectURL(output.src) // free memory
+            }
+        };
+    </script>
 </x-app-layout>

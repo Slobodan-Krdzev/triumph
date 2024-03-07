@@ -27,7 +27,7 @@
 
             <x-form.input labelText="Main Bike Logo Image URL:" imageId="mainBikeLogoImg"
                 name="gallery[subFamilyTopSectionImage][src]">
-                <img id='mainBikeLogoImg' src="/storage/{{ $family['mainBikeLogoImage']['url'] }}" width="200"
+                <img id='mainBikeLogoImg' src="/storage{{ $family['mainBikeLogoImage']['url'] }}" width="200"
                     height="150" class="object-cover border m-3 border-gray-200" />
             </x-form.input>
 
@@ -44,9 +44,9 @@
 
             <x-form.input labelText="Family Page Banner Video:" imageId="familyPageBannerVideo"
                 name="gallery[subFamilyHeroVideo][src]">
-                <video src="/storage/{{$family['familyPageBannerVideo']}}" muted controls autoplay
+                <video src="/storage{{$family['familyPageBannerVideo']}}" muted controls autoplay
                     id='familyPageBannerVideo' width="200" height="150"
-                    class="object-cover border m-3 border-gray-200">
+                    class="object-cover border m-3 border-gray-200" />
             </x-form.input>
 
             {{-- ------------------------------------------------------------------- --}}
@@ -59,7 +59,7 @@
 
                 <x-form.input labelText="Top Section Info:" imageId="mainBikeLogoImg"
                 name="topSectionInfo[image][src]">
-                <img id='mainBikeLogoImg' src="/storage/{{$family['topSectionInfo']['image']['src'] }}" width="200"
+                <img id='mainBikeLogoImg' src="/storage{{$family['topSectionInfo']['image']['src'] }}" width="200"
                     height="150" class="object-cover border m-3 border-gray-200" />
             </x-form.input>
 
