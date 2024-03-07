@@ -31,10 +31,15 @@
             <label for="price">Price:</label>
             <input type="text" name="price" value="{{ old('price', $moto->price) }}" required>
 
-            <label for="gallery[modelImage][src]">Gallery Image Source:</label>
-            <input type="text" name="gallery[modelImage][src]"
-                value="{{ old('gallery.modelImage.src', isset($moto) ? $moto->gallery['modelImage']['src'] : '') }}"
-                required>
+{{--            <label for="gallery[modelImage][src]">Gallery Image Source:</label>--}}
+{{--            <input type="text" name="gallery[modelImage][src]"--}}
+{{--                value="{{ old('gallery.modelImage.src', isset($moto) ? $moto->gallery['modelImage']['src'] : '') }}"--}}
+{{--                required>--}}
+
+            <x-form.input labelText="Gallery Image Source:" imageId="gallery[modelImage][src]" name="gallery[modelImage][src]">
+                <img src="{{ isset($moto) ?? $moto->gallery['modelImage']['src'] }}" id='gallery[modelImage][src]' width="400" height="150" class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
+
 
             <label for="gallery[modelImage][alt]">Gallery Image Alt:</label>
             <input type="text" name="gallery[modelImage][alt]"
@@ -43,35 +48,59 @@
 
 
 
-            <label for="bikeCollorPalletteGallery[color1]">Color 1:</label>
-            <input type="text" name="bikeCollorPalletteGallery[color1]"
-                value="{{ old('bikeCollorPalletteGallery.color1', isset($moto) ? $moto->bikeCollorPalletteGallery['color1'] : '') }}"
-                required>
+{{--            <label for="bikeCollorPalletteGallery[color1]">Color 1:</label>--}}
+{{--            <input type="text" name="bikeCollorPalletteGallery[color1]"--}}
+{{--                value="{{ old('bikeCollorPalletteGallery.color1', isset($moto) ? $moto->bikeCollorPalletteGallery['color1'] : '') }}"--}}
+{{--                required>--}}
 
-            <label for="bikeCollorPalletteGallery[color1Reversed]">Color 1 Reversed:</label>
-            <input type="text" name="bikeCollorPalletteGallery[color1Reversed]"
-                value="{{ old('bikeCollorPalletteGallery.color1Reversed', isset($moto) ? $moto->bikeCollorPalletteGallery['color1Reversed'] : '') }}"
-                required>
+{{--            <label for="bikeCollorPalletteGallery[color1Reversed]">Color 1 Reversed:</label>--}}
+{{--            <input type="text" name="bikeCollorPalletteGallery[color1Reversed]"--}}
+{{--                value="{{ old('bikeCollorPalletteGallery.color1Reversed', isset($moto) ? $moto->bikeCollorPalletteGallery['color1Reversed'] : '') }}"--}}
+{{--                required>--}}
 
-            <label for="bikeCollorPalletteGallery[color2]">Color 2:</label>
-            <input type="text" name="bikeCollorPalletteGallery[color2]"
-                value="{{ old('bikeCollorPalletteGallery.color2', isset($moto) ? $moto->bikeCollorPalletteGallery['color2'] : '') }}"
-                required>
+            <x-form.input labelText="Color 1:" imageId="bikeCollorPalletteGallery[color1]" name="bikeCollorPalletteGallery[color1]">
+                <img src="{{ isset($moto) ?? $moto->bikeCollorPalletteGallery['color1'] }}" id='bikeCollorPalletteGallery[color1]' width="400" height="150" class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
 
-            <label for="bikeCollorPalletteGallery[color2Reversed]">Color 2 Reversed:</label>
-            <input type="text" name="bikeCollorPalletteGallery[color2Reversed]"
-                value="{{ old('bikeCollorPalletteGallery.color2Reversed', isset($moto) ? $moto->bikeCollorPalletteGallery['color2Reversed'] : '') }}"
-                required>
+            <x-form.input labelText="Color 1 Reversed:" imageId="bikeCollorPalletteGallery[color1Reversed]" name="bikeCollorPalletteGallery[color3Reversed]">
+                <img src="{{ isset($moto) ?? $moto->bikeCollorPalletteGallery['color1Reversed'] }}" id='bikeCollorPalletteGallery[color1Reversed]' width="400" height="150" class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
 
-            <label for="bikeCollorPalletteGallery[color3]">Color 3:</label>
-            <input type="text" name="bikeCollorPalletteGallery[color3]"
-            value="{{ old('bikeCollorPalletteGallery.color3', isset($moto->bikeCollorPalletteGallery['color3']) ? $moto->bikeCollorPalletteGallery['color3'] : '') }}"
-            required>
+            {{--            <label for="bikeCollorPalletteGallery[color2]">Color 2:</label>--}}
+            {{--            <input type="text" name="bikeCollorPalletteGallery[color2]"--}}
+            {{--                value="{{ old('bikeCollorPalletteGallery.color2', isset($moto) ? $moto->bikeCollorPalletteGallery['color2'] : '') }}"--}}
+            {{--                required>--}}
 
-            <label for="bikeCollorPalletteGallery[color3Reversed]">Color 3 Reversed:</label>
-            <input type="text" name="bikeCollorPalletteGallery[color3Reversed]"
-            value="{{ old('bikeCollorPalletteGallery.color3Reversed', $moto->bikeCollorPalletteGallery['color3Reversed'] ?? '') }}"
-            required>
+            {{--            <label for="bikeCollorPalletteGallery[color2Reversed]">Color 2 Reversed:</label>--}}
+            {{--            <input type="text" name="bikeCollorPalletteGallery[color2Reversed]"--}}
+            {{--                value="{{ old('bikeCollorPalletteGallery.color2Reversed', isset($moto) ? $moto->bikeCollorPalletteGallery['color2Reversed'] : '') }}"--}}
+            {{--                required>--}}
+
+            <x-form.input labelText="Color 2:" imageId="bikeCollorPalletteGallery[color2]" name="bikeCollorPalletteGallery[color2]">
+                <img src="{{ isset($moto) ?? $moto->bikeCollorPalletteGallery['color2'] }}" id='bikeCollorPalletteGallery[color2]' width="400" height="150" class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
+
+            <x-form.input labelText="Color 2 Reversed:" imageId="bikeCollorPalletteGallery[color2Reversed]" name="bikeCollorPalletteGallery[color2Reversed]">
+                <img src="{{ isset($moto) ?? $moto->bikeCollorPalletteGallery['color2Reversed'] }}" id='bikeCollorPalletteGallery[color2Reversed]' width="400" height="150" class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
+
+            {{--            <label for="bikeCollorPalletteGallery[color3]">Color 3:</label>--}}
+            {{--            <input type="text" name="bikeCollorPalletteGallery[color3]"--}}
+            {{--                value="{{ old('bikeCollorPalletteGallery.color3', isset($moto) ? $moto->bikeCollorPalletteGallery['color3'] : '') }}"--}}
+            {{--                required>--}}
+
+            {{--            <label for="bikeCollorPalletteGallery[color3Reversed]">Color 3 Reversed:</label>--}}
+            {{--            <input type="text" name="bikeCollorPalletteGallery[color3Reversed]"--}}
+            {{--                value="{{ old('bikeCollorPalletteGallery.color3Reversed', isset($moto) ? $moto->bikeCollorPalletteGallery['color3Reversed'] : '') }}"--}}
+            {{--                required>--}}
+
+            <x-form.input labelText="Color 3:" imageId="bikeCollorPalletteGallery[color3]" name="bikeCollorPalletteGallery[color3]">
+                <img src="{{ isset($moto) ?? $moto->bikeCollorPalletteGallery['color3']  }}" id='bikeCollorPalletteGallery[color3]' width="400" height="150" class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
+
+            <x-form.input labelText="Color 3 Reversed:" imageId="bikeCollorPalletteGallery[color3Reversed]" name="bikeCollorPalletteGallery[color3Reversed]">
+                <img src="{{ isset($moto) ?? $moto->bikeCollorPalletteGallery['color3Reversed']  }}" id='bikeCollorPalletteGallery[color3Reversed]' width="400" height="150" class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
 
 
 

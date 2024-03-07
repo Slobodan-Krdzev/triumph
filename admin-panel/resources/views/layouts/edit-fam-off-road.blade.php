@@ -31,7 +31,7 @@
                 name="familyPageBannerVideo">
                 <video src="/storage/{{ $famOffRoad['familyPageBannerVideo'] }}" muted controls autoplay
                     id='familyPageBannerVideo' width="400" height="350"
-                    class="object-cover border m-3 border-gray-200">
+                    class="object-cover border m-3 border-gray-200" />
             </x-form.input>
 
 
@@ -73,9 +73,9 @@
                 <textarea id="carouselItems[{{ $index }}][desc]" name="carouselItems[{{ $index }}][desc]">{{ $caroItem['desc'] }}</textarea>
 
 
-                <label for="carouselItems[{{ $index }}][image]">Image:</label>
-                <input type="text" id="carouselItems[{{ $index }}][image]"
-                    name="carouselItems[{{ $index }}][image]" value="{{ $caroItem['image'] }}">
+{{--                <label for="carouselItems[{{ $index }}][image]">Image:</label>--}}
+{{--                <input type="text" id="carouselItems[{{ $index }}][image]"--}}
+{{--                    name="carouselItems[{{ $index }}][image]" value="{{ $caroItem['image'] }}">--}}
 
                     <x-form.input labelText="Image:" imageId="carouselItems[{{ $index }}][image]"
                     name="carouselItems[{{ $index }}][image]">

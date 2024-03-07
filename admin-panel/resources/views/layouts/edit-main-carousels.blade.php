@@ -29,40 +29,20 @@
 
 
 
-            <!-- Image Preview -->
-            @if ($mainCarousels->image)
-
-                <div>
-                    <img src="{{ $mainCarousels->image }}" alt="Profile Image"
-                        style="max-width: 200px; max-height: 200px;">
-                </div>
-            @endif
-
-            <div>
-                <label for="image">Profile Image</label>
-                <input type="file" name="image" id="image">
-            </div>
+            <x-form.input labelText="Profile image to edit:" imageId="image"
+                          name="image">
+                <img id='image' src="{{ $mainCarousels->image }}" width="400" height="150" class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
 
 
-            <!-- Video Preview -->
-            @if ($mainCarousels->video)
+            <x-form.input labelText="Video to edit:" imageId="video" name="video">
+                <video id='video' src="{{$mainCarousels->video}}" muted controls autoplay width="400" height="150" class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
 
-                <div>
-                    <video src="{{$mainCarousels->video}}" loop class="w-6/12"></video>
-                </div>
-            @endif
-
-            <div>
-                <label for="image">Video</label>
-                <input type="file" name="video" id="image">
-            </div>
-
-
-            <label for="image">Image Mobile:</label>
-            <div>
-                <img src="{{ $mainCarousels->imageMobile }}" alt="Video"
-                    style="max-width: 200px; max-height: 200px;">
-            </div>
+            <x-form.input labelText="Mobile image to edit:" imageId="imageMobile"
+                          name="imageMobile">
+                <img id='imageMobile' src="{{ $mainCarousels->imageMobile }}" width="400" height="150" class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
 
 
 

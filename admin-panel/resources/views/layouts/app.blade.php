@@ -35,4 +35,22 @@
             </main>
         </div>
     </body>
+    <script>
+        var loadFile = function(event, imageId) {
+
+            var input = event.target;
+            var file = input.files[0];
+            var type = file.type;
+
+            console.log(imageId);
+
+            var output = document.getElementById(imageId);
+
+
+            output.src = URL.createObjectURL(event.target.files[0]);
+            output.onload = function() {
+                URL.revokeObjectURL(output.src) // free memory
+            }
+        };
+    </script>
 </html>

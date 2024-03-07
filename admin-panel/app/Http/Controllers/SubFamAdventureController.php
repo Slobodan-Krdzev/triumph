@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\SubFamAdventure;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class SubFamAdventureController extends Controller
 {
@@ -56,18 +57,17 @@ class SubFamAdventureController extends Controller
         'fuelConsumption.*.desc' => 'nullable|string|max:255',
         'grayCarousell.*.title' => 'nullable|string|max:255',
         'grayCarousell.*.desc' => 'nullable|string',
-        'grayCarousell.*.image' => 'nullable|string|max:255',
+        'grayCarousell.*.image' => 'nullable|image|max:2048',
         'specNumbers.*.data' => 'nullable|string|max:255',
         'specNumbers.*.info' => 'nullable|string',
-        'reasonsToDrive.banner.image' => 'nullable|string|max:255',
+        'reasonsToDrive.banner.image' => 'nullable|image|max:2048',
         'reasonsToDrive.infoText.title' => 'nullable|string|max:255',
         'reasonsToDrive.infoText.desc' => 'nullable|string',
         'reasonsToDrive.reasons.*.title' => 'nullable|string|max:255',
         'reasonsToDrive.reasons.*.desc' => 'nullable|string',
         'reasonsToDrive.reasons.*.image' => 'nullable|string|max:255',
-
          // Accessory section
-         'accessory.banner.image' => 'nullable|string|max:255',
+         'accessory.banner.image' => 'nullable|image|max:2048',
          'accessory.infoText.title' => 'nullable|string|max:255',
          'accessory.infoText.desc' => 'nullable|string',
          'accessory.accessoryTypes.*.title' => 'nullable|string|max:255',
@@ -80,13 +80,13 @@ class SubFamAdventureController extends Controller
          'shortSpecInfo.info3' => 'nullable|string|max:255',
 
          // Gallery section
-         'gallery.modelImage.src' => 'nullable|string|max:255',
+         'gallery.modelImage.src' => 'nullable||image|max:2048',
          'gallery.modelImage.alt' => 'nullable|string|max:255',
          'gallery.subFamilyHeroVideo.src' => 'nullable|string|max:255',
          'gallery.subFamilyHeroVideo.alt' => 'nullable|string|max:255',
-         'gallery.subFamilyTopSectionImage.src' => 'nullable|string|max:255',
+         'gallery.subFamilyTopSectionImage.src' => 'nullable|image|max:2048',
          'gallery.subFamilyTopSectionImage.alt' => 'nullable|string|max:255',
-         'gallery.subFamilyTopSectionBGImage.src' => 'nullable|string|max:255',
+         'gallery.subFamilyTopSectionBGImage.src' => 'nullable|image|max:2048',
          'gallery.subFamilyTopSectionBGImage.alt' => 'nullable|string|max:255',
 
         //  Service Section
@@ -99,6 +99,48 @@ class SubFamAdventureController extends Controller
         // $validatedData['gallery'] = json_encode($request->input('gallery'));
 
         $subFamAdventure = SubFamAdventure::findOrFail($id);
+
+        // Process image uploads for the gallery section
+        if ($request->hasFile('gallery.modelImage.src')) {
+            $modelImagePath = $request->file('gallery.modelImage.src')->store('images/gallery', 'public');
+            $validatedData['gallery']['modelImage']['src'] = Storage::url($modelImagePath);
+        }
+
+        if ($request->hasFile('gallery.subFamilyTopSectionImage.src')) {
+            $topSectionImagePath = $request->file('gallery.subFamilyTopSectionImage.src')->store('images/gallery', 'public');
+            $validatedData['gallery']['subFamilyTopSectionImage']['src'] = Storage::url($topSectionImagePath);
+        }
+
+        if ($request->hasFile('gallery.subFamilyTopSectionBGImage.src')) {
+            $topSectionBGImagePath = $request->file('gallery.subFamilyTopSectionBGImage.src')->store('images/gallery', 'public');
+            $validatedData['gallery']['subFamilyTopSectionBGImage']['src'] = Storage::url($topSectionBGImagePath);
+        }
+
+        // Process image uploads for the grayCarousell section
+        if ($request->hasFile('grayCarousell')) {
+            foreach ($request->file('grayCarousell') as $key => $file) {
+                if ($file->isValid()) {
+                    $imagePath = $file->store('images/gray_carousell', 'public');
+                    $validatedData['grayCarousell'][$key]['image'] = Storage::url($imagePath);
+                }
+            }
+        }
+
+        // Process image upload for the reasonsToDrive section
+        if ($request->hasFile('reasonsToDrive.banner.image')) {
+            $bannerImagePath = $request->file('reasonsToDrive.banner.image')->store('images/reasons_to_drive', 'public');
+            $validatedData['reasonsToDrive']['banner']['image'] = Storage::url($bannerImagePath);
+        }
+
+        // Process the accessory banner image if uploaded
+        if ($request->hasFile('accessory.banner.image')) {
+            // Store the uploaded image and update the path in the database
+            $bannerImagePath = $request->file('accessory.banner.image')->store('images/accessory', 'public');
+            $subFamAdventure->accessory->banner->image = Storage::url($bannerImagePath);
+            $subFamAdventure->accessory->banner->save();
+        }
+
+
         $subFamAdventure->update($validatedData);
 
         return redirect()->route('edit-sub-fam', ['id' => $id])->with('success', 'Your data has been updated successfully.');

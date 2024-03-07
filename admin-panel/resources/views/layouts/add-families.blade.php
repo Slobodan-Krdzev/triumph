@@ -108,7 +108,7 @@
 
 
 
-            <h1 class="font-bold text-3xl my-2">Engine & Transmission</h1 class="font-bold text-3xl my-2">
+            <h1 class="font-bold text-3xl my-2">Engine & Transmission</h1>
             {{-- Engine & Transmission Fields --}}
             @for ($i = 0; $i < 12; $i++)
                 <label for="engineTransmission_{{ $i }}_title">Title:</label>
@@ -120,7 +120,7 @@
                     placeholder="Enter Description"></textarea>
             @endfor
 
-            <h1 class="font-bold text-3xl my-2">Frame</h1 class="font-bold text-3xl my-2">
+            <h1 class="font-bold text-3xl my-2">Frame</h1>
             {{-- Frame Fields --}}
             @for ($i = 0; $i < 11; $i++)
                 <label for="frame_{{ $i }}_title">Title:</label>
@@ -132,7 +132,7 @@
                     placeholder="Enter Description"></textarea>
             @endfor
 
-            <h1 class="font-bold text-3xl my-2">Dimension</h1 class="font-bold text-3xl my-2">
+            <h1 class="font-bold text-3xl my-2">Dimension</h1>
             {{-- Dimension Fields --}}
             @for ($i = 0; $i < 9; $i++)
                 <label for="dimension_{{ $i }}_title">Title:</label>
@@ -144,7 +144,7 @@
                     placeholder="Enter Description"></textarea>
             @endfor
 
-            <h1 class="font-bold text-3xl my-2">Fuel Consumption</h1 class="font-bold text-3xl my-2">
+            <h1 class="font-bold text-3xl my-2">Fuel Consumption</h1>
             {{-- Fuel Consumption & Emissions Fields --}}
             @for ($i = 0; $i < 3; $i++)
                 <label for="fuelConsumption_{{ $i }}_title">Title:</label>
@@ -156,7 +156,7 @@
                     placeholder="Enter Description"></textarea>
             @endfor
 
-            <h1 class="font-bold text-3xl my-2">Gray Carousel</h1 class="font-bold text-3xl my-2">
+            <h1 class="font-bold text-3xl my-2">Gray Carousel</h1>
             @for ($i = 0; $i < 3; $i++)
                 <label for="grayCarousell_{{ $i }}_title">Title:</label>
                 <input type="text" id="grayCarousell_{{ $i }}_title"
@@ -175,7 +175,7 @@
                 </x-form.input>
             @endfor
 
-            <h1 class="font-bold text-3xl my-2">YouTube Videos Carousel</h1 class="font-bold text-3xl my-2">
+            <h1 class="font-bold text-3xl my-2">YouTube Videos Carousel</h1>
             @for ($i = 0; $i < 7; $i++)
                 <label for="youtubeVideosCarousellItems_{{ $i }}_src">Video Source:</label>
                 <input type="text" id="youtubeVideosCarousellItems_{{ $i }}_src"
@@ -186,7 +186,7 @@
                     name="youtubeVideosCarousellItems[{{ $i }}][title]" placeholder="Enter Video Title">
             @endfor
 
-            <h1 class="font-bold text-3xl my-2">Spec Numbers</h1 class="font-bold text-3xl my-2">
+            <h1 class="font-bold text-3xl my-2">Spec Numbers</h1>
             @for ($i = 0; $i < 4; $i++)
                 <label for="specNumbers_{{ $i }}_data">Data:</label>
                 <input type="text" id="specNumbers_{{ $i }}_data"
@@ -198,20 +198,20 @@
             @endfor
 
 
-            <h1 class="font-bold text-3xl my-2">Reasons to Drive Banner</h1 class="font-bold text-3xl my-2">
+            <h1 class="font-bold text-3xl my-2">ReasonsReasons to Drive Banner</h1>
             <x-form.input labelText="Banner Image URL:" imageId="imageId_{{ $i }}"
                 name="reasonsToDrive[banner][image]">
                 <img id='imageId_{{ $i }}' width="200" height="150"
                     class="object-cover border m-3 border-gray-200" />
             </x-form.input>
 
-            <h1 class="font-bold text-3xl my-2">Reasons to Drive Info Text</h1 class="font-bold text-3xl my-2">
+            <h1 class="font-bold text-3xl my-2">Reasons to Drive Info Text</h1>
             <label for="reasonsToDrive_infoText_title">Info Text Title:</label>
             <input type="text" id="reasonsToDrive_infoText_title" name="reasonsToDrive[infoText][title]"
                 placeholder="Enter Info Text Title">
 
 
-            <h1 class="font-bold text-3xl my-2">Reasons</h1 class="font-bold text-3xl my-2">
+            <h1 class="font-bold text-3xl my-2">Reasons</h1>
             @for ($i = 0; $i < 3; $i++)
                 <label for="reasonsToDrive_reasons_{{ $i }}_title">Title:</label>
                 <input type="text" id="reasonsToDrive_reasons_{{ $i }}_title"
@@ -226,7 +226,7 @@
                     name="reasonsToDrive[reasons][{{ $i }}][video]" placeholder="Enter Video URL">
             @endfor
 
-            <h1 class="font-bold text-3xl my-2">Short Spec Info</h1 class="font-bold text-3xl my-2">
+            <h1 class="font-bold text-3xl my-2">Short Spec Info</h1>
             <label for="shortSpecInfo_info1">Info 1:</label>
             <input type="text" id="shortSpecInfo_info1" name="shortSpecInfo[info1]" placeholder="Info 1">
 
@@ -236,7 +236,7 @@
             <label for="shortSpecInfo_info3">Info 3:</label>
             <input type="text" id="shortSpecInfo_info3" name="shortSpecInfo[info3]" placeholder="Info 3">
 
-            <h1 class="font-bold text-3xl my-2">Gallery</h1 class="font-bold text-3xl my-2">
+            <h1 class="font-bold text-3xl my-2">Gallery</h1>
             <x-form.input labelText="Model Image URL:" imageId="modelImageUrl" name="gallery[modelImage][src]">
                 <img id='modelImageUrl' width="200" height="150"
                     class="object-cover border m-3 border-gray-200" />
@@ -253,7 +253,7 @@
             <x-form.input labelText="Sub Family Hero Video URL:" imageId="subFamVideo"
                 name="gallery[subFamilyHeroVideo][src]">
                 <video controls autoplay id='subFamVideo' width="200" height="150"
-                    class="object-cover border m-3 border-gray-200">
+                    class="object-cover border m-3 border-gray-200" />
             </x-form.input>
 
             <label for="gallery_subFamilyHeroVideo_alt">Sub Family Hero Video Alt Text:</label>

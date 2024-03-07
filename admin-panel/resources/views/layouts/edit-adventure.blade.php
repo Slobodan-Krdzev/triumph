@@ -277,8 +277,9 @@
             <h1 class="font-bold text-3xl my-2">Accesories</h1>
 
             <x-form.input labelText="Model Video Source:" imageId="modelVideoSource" name="gallery[subFamilyHeroVideo][src]">
-                <video src="/storage/{{ $subFamData->gallery['subFamilyHeroVideo']['src'] ?? '' }}" muted controls autoplay id='modelVideoSource' width="400" height="150" class="object-cover border m-3 border-gray-200">
+                <video src="/storage/{{ $subFamData->gallery['subFamilyHeroVideo']['src'] ?? '' }}" muted controls autoplay id='modelVideoSource' width="400" height="150" class="object-cover border m-3 border-gray-200" />
             </x-form.input>
+
 
 
 
@@ -352,7 +353,7 @@
                     $videoSrc = "/storage/" . $subFamData->gallery['subFamilyHeroVideo']['src'];
                 }
                 @endphp
-                <video src="{{ $videoSrc }}" muted controls autoplay id='modelVideoSource' width="400" height="150" class="object-cover border m-3 border-gray-200">
+                <video src="{{ $videoSrc }}" muted controls autoplay id='modelVideoSource' width="400" height="150" class="object-cover border m-3 border-gray-200" />
             </x-form.input>
 
 
