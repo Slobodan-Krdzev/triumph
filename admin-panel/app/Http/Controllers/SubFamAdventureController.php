@@ -65,6 +65,7 @@ class SubFamAdventureController extends Controller
         'reasonsToDrive.reasons.*.title' => 'nullable|string|max:255',
         'reasonsToDrive.reasons.*.desc' => 'nullable|string',
         'reasonsToDrive.reasons.*.image' => 'nullable|string|max:255',
+
          // Accessory section
          'accessory.banner.image' => 'nullable|string|max:255',
          'accessory.infoText.title' => 'nullable|string|max:255',
