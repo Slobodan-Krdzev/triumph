@@ -97,12 +97,14 @@
 
                 {{-- AUDIO SECTION TRY --}}
                 <section class="my-7 font-bold text-red-600">
-                <x-form.input  labelText="Choose Audio" imageId="audioSection_audio" name="subFamilyPageInfo[audioSection][audio]">
-                    <audio controls autoplay muted>
-                        <source src="/storage{{$subFamData->subFamilyPageInfo['audioSection']['audio'] }}" type="audio/ogg">
-                    </audio>
-                </x-form.input>
-            </section>
+                    <x-form.input labelText="Choose Audio" imageId="audioSection_audio"
+                        name="subFamilyPageInfo[audioSection][audio]">
+                        <audio controls autoplay muted>
+                            <source src="/storage{{ $subFamData->subFamilyPageInfo['audioSection']['audio'] }}"
+                                type="audio/ogg">
+                        </audio>
+                    </x-form.input>
+                </section>
             @endif
 
             <h1 class="font-bold my-2 text-red-600">Top Section</h1>
@@ -187,22 +189,27 @@
             @endphp
 
             @foreach ($grayCarousellData as $index => $grayCarousell)
-                <label>Title:</label>
-                <input type="text" name="grayCarousell[{{ $index }}][title]"
-                    value="{{ old('grayCarousell.' . $index . '.title', $grayCarousell['title'] ?? '') }}">
+                <div class="mb-4">
+                    <label>Title:</label>
+                    <input type="text" name="grayCarousell[{{ $index }}][title]"
+                        value="{{ old('grayCarousell.' . $index . '.title', $grayCarousell['title'] ?? '') }}"
+                        class="block w-full mt-1">
 
-                <label>Description:</label>
-                <input type="text" name="grayCarousell[{{ $index }}][desc]"
-                    value="{{ old('grayCarousell.' . $index . '.desc', $grayCarousell['desc'] ?? '') }}">
+                    <label>Description:</label>
+                    <input type="text" name="grayCarousell[{{ $index }}][desc]"
+                        value="{{ old('grayCarousell.' . $index . '.desc', $grayCarousell['desc'] ?? '') }}"
+                        class="block w-full mt-1">
 
 
 
-                <x-form.input labelText="Image URL:" imageId="{{ $grayCarousell['id'] }}"
-                    name="gallery[subFamilyTopSectionImage][src]">
-                    <img id='{{ $grayCarousell['id'] }}'  @if (isset($reason['image'])) src="/storage/{{ $grayCarousell['image'] ?? '' }}" @endif
-                        width="600" height="300" class="object-cover border m-3 border-gray-200" />
-                </x-form.input>
+                    @if (isset($grayCarousell['image']) && !empty($grayCarousell['image']))
+                        <img id='grayCarousellImage{{ $index }}'
+                            src="{{ asset('storage/' . $grayCarousell['image']) }}" width="600" height="300"
+                            class="object-cover border m-3 border-gray-200" />
+                    @endif
+                </div>
             @endforeach
+
 
 
 
@@ -276,24 +283,85 @@
 
             <h1 class="font-bold text-3xl my-2">Accesories</h1>
 
-            <x-form.input labelText="Model Video Source:" imageId="modelVideoSource" name="gallery[subFamilyHeroVideo][src]">
-                <video src="/storage/{{ $subFamData->gallery['subFamilyHeroVideo']['src'] ?? '' }}" muted controls autoplay id='modelVideoSource' width="400" height="150" class="object-cover border m-3 border-gray-200" />
+            {{-- <x-form.input labelText="Model Video Source:" imageId="modelVideoSource"
+                name="gallery[subFamilyHeroVideo][src]">
+                <video src="/storage/{{ $subFamData->gallery['subFamilyHeroVideo']['src'] ?? '' }}" muted controls
+                    autoplay id='modelVideoSource' width="400" height="150"
+                    class="object-cover border m-3 border-gray-200">
+            </x-form.input> --}}
+
+            {{-- <x-form.input labelText="Image Accessory:" imageId="imageAccessory"
+                name="reasonsToDrive[reasons][{{ $index }}][image]">
+                <img id='imageAccessory'
+                    @if (isset($reason['image'])) src="/storage/{{ $reason['image'] ?? '' }}" @endif
+                    width="600" height="150" class="object-cover border m-3 border-gray-200" />
+            </x-form.input> --}}
+
+
+
+            {{-- Accessory Banner Image --}}
+            <x-form.input labelText="Banner Image:" imageId="accessoryBannerImage" name="accessory[banner][image]">
+                <img id='accessoryBannerImage' src="/storage{{ $subFamData['accessory']['banner']['image'] ?? '' }}"
+                    width="600" height="300" class="object-cover border m-3 border-gray-200" />
             </x-form.input>
 
-
-
-
-
             {{-- Accessory InfoText Title --}}
-            <label for="accessory_infoText_title">InfoText Title:</label>
+            <div class="mb-4">
+                <label for="infoTextTitle" class="block text-gray-700 text-sm font-bold mb-2">Accessory Info Text
+                    Title:</label>
+                <input type="text" id="infoTextTitle" name="accessory[infoText][title]"
+                    value="{{ old('accessory.infoText.title', $subFamData['accessory']['infoText']['title'] ?? '') }}"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+
+            @foreach ($subFamData->accessory['accessoryTypes'] as $index => $type)
+                <div class="mb-4">
+                    <label for="accessoryTypes_{{ $index }}_title"
+                        class="block text-gray-700 text-sm font-bold mb-2">Title:</label>
+                    <input type="text" id="accessoryTypes_{{ $index }}_title"
+                        name="accessory[accessoryTypes][{{ $index }}][title]"
+                        value="{{ old('accessory.accessoryTypes.' . $index . '.title', $type['title'] ?? '') }}"
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+
+                    <label for="accessoryTypes_{{ $index }}_desc"
+                        class="block text-gray-700 text-sm font-bold mb-2">Description:</label>
+                    <textarea id="accessoryTypes_{{ $index }}_desc" name="accessory[accessoryTypes][{{ $index }}][desc]"
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">{{ old('accessory.accessoryTypes.' . $index . '.desc', $type['desc'] ?? '') }}</textarea>
+
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2">Items List:</label>
+                        @foreach ($type['itemsList'] as $itemIndex => $item)
+                            <input type="text"
+                                name="accessory[accessoryTypes][{{ $index }}][itemsList][{{ $itemIndex }}]"
+                                value="{{ old('accessory.accessoryTypes.' . $index . '.itemsList.' . $itemIndex, $item) }}"
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-2 leading-tight focus:outline-none focus:shadow-outline">
+                        @endforeach
+                    </div>
+
+
+                    {{-- Images for each accessoryType --}}
+                    @for ($i = 1; $i <= 2; $i++)
+                        <x-form.input labelText="Image {{ $i }}:"
+                            imageId="accessoryTypeImage{{ $index }}_{{ $i }}"
+                            name="accessory[accessoryTypes][{{ $index }}][image{{ $i }}][src]">
+                            <img id='accessoryTypeImage{{ $index }}_{{ $i }}'
+                                src="/storage{{ $type['image' . $i]['src'] ?? '' }}"
+                                alt="{{ $type['image' . $i]['alt'] ?? '' }}" width="600" height="300"
+                                class="object-cover border m-3 border-gray-200" />
+                        </x-form.input>
+                    @endfor
+                </div>
+            @endforeach
+
+
+            {{-- <label for="accessory_infoText_title">InfoText Title:</label>
             <input type="text" id="accessory_infoText_title" name="accessory[infoText][title]"
                 value="{{ old('accessory.infoText.title', $subFamData->accessory['infoText']['title'] ?? '') }}">
 
-            {{-- Accessory InfoText Description --}}
             <label for="accessory_infoText_desc">InfoText Description:</label>
             <textarea id="accessory_infoText_desc" name="accessory[infoText][desc]">{{ old('accessory.infoText.desc', $subFamData->accessory['infoText']['desc'] ?? '') }}</textarea>
 
-            {{-- Iterating over Accessory Types --}}
             @foreach ($subFamData->accessory['accessoryTypes'] ?? [] as $index => $type)
                 <label for="accessory_type_{{ $index }}_title">Type Title:</label>
                 <input type="text" id="accessory_type_{{ $index }}_title"
@@ -308,20 +376,20 @@
                         name="accessory[accessoryTypes][{{ $index }}][itemsList][{{ $itemIndex }}]"
                         value="{{ $item ?? '' }}">
                 @endforeach
-            @endforeach
+            @endforeach --}}
 
 
             <h1 class="font-bold text-3xl my-2">Short Specs Info</h1>
             <label for="">Info 1:</label>
             <input type="text" name="shortSpecInfo[info1]"
-                value="{{ old('shortSpecInfo.info1', $motorcycle->shortSpecInfo['info1'] ?? '') }}">
+                value="{{ old('shortSpecInfo.info1', $subFamData->shortSpecInfo['info1'] ?? '') }}">
             <label for="">Info 2:</label>
             <input type="text" name="shortSpecInfo[info2]"
-                value="{{ old('shortSpecInfo.info2', $motorcycle->shortSpecInfo['info2'] ?? '') }}">
+                value="{{ old('shortSpecInfo.info2', $subFamData->shortSpecInfo['info2'] ?? '') }}">
             <label for="">Info 3:</label>
 
             <input type="text" name="shortSpecInfo[info3]"
-                value="{{ old('shortSpecInfo.info3', $motorcycle->shortSpecInfo['info3'] ?? '') }}">
+                value="{{ old('shortSpecInfo.info3', $subFamData->shortSpecInfo['info3'] ?? '') }}">
 
             <h1 class="font-bold text-3xl my-2">Gallery</h1>
 
@@ -330,30 +398,43 @@
 
             <x-form.input labelText="Model Image Source:" imageId="modelImageSource"
                 name="reasonsToDrive[banner][image]">
-                <img id='modelImageSource' src="/storage/{{ $subFamData->gallery['modelImage']['src'] }}"
-                    width="400" height="150" class="object-cover border m-3 border-gray-200" />
+                @isset($subFamData->gallery['modelImage']['src'])
+                    <img id='modelImageSource' src="/storage/{{ $subFamData->gallery['modelImage']['src'] }}"
+                        width="400" height="150" class="object-cover border m-3 border-gray-200" />
+                @endisset
+
             </x-form.input>
 
-            <label>Model Image Alt Text:</label>
+            {{-- <label>Model Image Alt Text:</label>
             <input type="text" name="gallery[modelImage][alt]"
-                value="{{ old('gallery.modelImage.alt', $subFamData->gallery['modelImage']['alt']) }}">
+                value="{{ old('gallery.modelImage.alt', $subFamData->gallery['modelImage']['alt']) }}"> --}}
+
+            <div class="form-group">
+                <label for="modelImageAlt">Model Image Alt Text:</label>
+                <input type="text" class="form-control" id="modelImageAlt" name="gallery[modelImage][alt]"
+                    value="{{ $subFamData->gallery['modelImage']['alt'] }}">
+            </div>
 
 
 
 
 
 
-                <x-form.input labelText="Model Video Source:" imageId="modelVideoSource"
+            <x-form.input labelText="Model Video Source:" imageId="modelVideoSource"
                 name="gallery[subFamilyHeroVideo][src]">
                 @php
-                // Initialize videoSrc with an empty string in case 'subFamilyHeroVideo' or 'src' is not defined
-                $videoSrc = '';
-                // Check if 'subFamilyHeroVideo' and 'src' are set before using them
-                if (isset($subFamData->gallery['subFamilyHeroVideo']) && isset($subFamData->gallery['subFamilyHeroVideo']['src'])) {
-                    $videoSrc = "/storage/" . $subFamData->gallery['subFamilyHeroVideo']['src'];
-                }
+                    // Initialize videoSrc with an empty string in case 'subFamilyHeroVideo' or 'src' is not defined
+                    $videoSrc = '';
+                    // Check if 'subFamilyHeroVideo' and 'src' are set before using them
+                    if (
+                        isset($subFamData->gallery['subFamilyHeroVideo']) &&
+                        isset($subFamData->gallery['subFamilyHeroVideo']['src'])
+                    ) {
+                        $videoSrc = '/storage/' . $subFamData->gallery['subFamilyHeroVideo']['src'];
+                    }
                 @endphp
-                <video src="{{ $videoSrc }}" muted controls autoplay id='modelVideoSource' width="400" height="150" class="object-cover border m-3 border-gray-200" />
+                <video src="{{ $videoSrc }}" muted controls autoplay id='modelVideoSource' width="400"
+                    height="150" class="object-cover border m-3 border-gray-200" />
             </x-form.input>
 
 
@@ -383,13 +464,15 @@
 
 
 
-
             <x-form.input labelText="Model Image Source:" imageId="modelImageSourceTwo"
                 name="gallery[subFamilyTopSectionImage][src]">
-                <img id='modelImageSourceTwo'
-                    src="/storage/{{ $subFamData->gallery['subFamilyTopSectionBGImage']['src'] }}" width="400"
-                    height="150" class="object-cover border m-3 border-gray-200" />
+                @isset($subFamData->gallery['subFamilyTopSectionBGImage']['src'])
+                    <img id='modelImageSourceTwo'
+                        src="/storage/{{ $subFamData->gallery['subFamilyTopSectionBGImage']['src'] }}" width="400"
+                        height="150" class="object-cover border m-3 border-gray-200" />
+                @endisset
             </x-form.input>
+
 
             <label>Model Image Alt Text:</label>
             <input type="text" name="gallery[subFamilyTopSectionBGImage][alt]"

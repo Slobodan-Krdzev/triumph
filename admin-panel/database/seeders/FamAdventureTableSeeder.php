@@ -16,12 +16,12 @@ class FamAdventureTableSeeder extends Seeder
         $familyData = [
             'type' => "adventure",
             'mainBikeLogoImage' => [
-                'url' => 'adventure/mainBikeLogo.png',
+                'url' => 'images/adventure/mainBikeLogo.png',
                 'alt' => 'Adventure Main Bike Logo',
             ],
             'familyPageBannerDesc' => 'The next generation Tiger has arrived. The state-of-the-art adventure bikes with exciting distinctive three-cylinder engines, pioneering progressive technology and equipment, rider ergonomics for ultimate control, and flexible neutral handling. Every Tiger is built with maximum capabilities to take you anywhere in style, comfort and control. The Triumph Tiger is the ultimate adventure series of adventure bikes that allow you to test every moment.',
 
-            'familyPageBannerVideo' => 'adventure/adventureHeroVideo.webm',
+            'familyPageBannerVideo' => 'images/adventure/adventureHeroVideo.webm',
             'topSectionInfo' => [
                 'image' => [
                     'src' => '/images/adventure/firstSectionImage.avif',

@@ -16,7 +16,7 @@ class FamRoadstersTableSeeder extends Seeder
         $roadsterData = [
             "type" => "roadsters",
             "familyPageBannerDesc" => "Мотори кои ги менуваат правилата за 'Naked Bike'. Препознатливите 3-цилиндрични мотори на Triumph се дизајнирани за моќност, вртежен момент и моментален одговор.",
-            "familyPageBannerVideo" => "roadsters/roadsterHeroVideo.webm",
+            "familyPageBannerVideo" => "images/roadsters/roadsterHeroVideo.webm",
             "configPageInfo" => [
               "desc" => "Triumph создава револуционерни мотоцикли и неверојатни трицилиндрични мотори со акцент на моќноста, вртежен момент и моменталната реакција.",
               "link" => "/configure/families/roadsters"
