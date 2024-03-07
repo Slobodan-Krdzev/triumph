@@ -214,7 +214,8 @@
       "title": "Нова Tiger 900 Серија",
       "price": 14290,
       "url": "/motorcycles/adventure/tiger-900",
-      "specs": [{
+      "specs": [
+        {
         "desc": "cc Мотор",
         "data": 900
       },
@@ -227,8 +228,8 @@
       },{
         "desc": "Аксесоари",
         "data": "50+"
-      }]
-      ,
+      }
+    ],
       "subFamilyPageInfo": {
         "heroSlogans": ["НОВИОТ", "TIGER 900"],
         "fullSpecs": {
@@ -518,7 +519,9 @@
       "title": "Tiger Sport 660",
       "price": 10290,
       "url": "/motorcycles/adventure/tiger-sport-660",
-      "specs": [{
+      "shortDesc": "Тројна предност во перформансите, водечка моќ и спецификации во класата и удобна употребливост при возење - сето тоа со одлична вредност.",
+      "specs": [
+        {
         "desc": "cc Мотор",
         "data": 660
       },
@@ -531,190 +534,188 @@
       },{
         "desc": "Сервисен Интервал",
         "data": "16,000km"
-      }],
-      "shortDesc": "Тројна предност во перформансите, водечка моќ и спецификации во класата и удобна употребливост при возење - сето тоа со одлична вредност.",
+      }
+    ],
+    "heroSlogans": ["Автентичност", "Версатилен", "3-цилиндричен"],
+    "youtubeVideo": "https://www.youtube.com/embed/QvVCEk4t8IE",
+      "engineTransmission": [
+        {
+          "title": "Мотор",
+          "desc": "водно ладење, 12 вентили, 2 EEK, линиски 3-цилиндри"
+        },
+        {
+          "title": "капацитет",
+          "desc": "888 cc"
+        },
+        {
+          "title": "диаметар",
+          "desc": "78.0 mm"
+        },
+        {
+          "title": "рута",
+          "desc": "61.9 mm"
+        },
+        {
+          "title": "компресија",
+          "desc": "11.27:1"
+        },
+        {
+          "title": "Мах. Коњски Сила",
+          "desc": "85 PS @ 8,500 rpm"
+        },
+        {
+          "title": "Мах. Обртен Момент",
+          "desc": "82 Nm @ 6,500 rpm"
+        },
+        {
+          "title": "Систем за убризгување",
+          "desc": "Electronic multi-point sequential injection"
+        },
+        {
+          "title": "Систем за Издувни гасови",
+          "desc": "3 во 1 не-раѓосувачки челик"
+        },
+        {
+          "title": "Финална Трансмисија",
+          "desc": "O-ring chain"
+        },
+        {
+          "title": "Квачило",
+          "desc": "Liquid, multi-disc, assisted glide"
+        },
+        {
+          "title": "Менувачка Кутија",
+          "desc": "6 брзини"
+        }
+      ],
+      "frame": [
+        {
+          "title": "шасија",
+          "desc": "тубуларна челична шасија"
+        },
+        {
+          "title": "вилушка",
+          "desc": "лиен алуминиум"
+        },
+        {
+          "title": "предно тркало",
+          "desc": "19 x 2.5' die-cast легура "
+        },
+        {
+          "title": "задно тркало",
+          "desc": "17 x 4.25' die-cast легура "
+        },
+        {
+          "title": "предна гума",
+          "desc": "100/90-19"
+        },
+        {
+          "title": "задна гума",
+          "desc": "150/70R17"
+        },
+        {
+          "title": "предна суспензија",
+          "desc": "Marzocchi Inverted Fork 45mm"
+        },
+        {
+          "title": "задна суспензија",
+          "desc": "Marzocchi задна суспензија со систем за подесување"
+        },
+        {
+          "title": "предни сопирачки",
+          "desc": "Dual 320mm дискови, 4-piston monobloc Brembo Stylema calipers. Front radial pump, ABS"
+        },
+        {
+          "title": "задна сопирачка",
+          "desc": "Еден 255 mm диск. Brembo single piston floating caliper, ABS"
+        },
+        {
+          "title": "инструментна плочка",
+          "desc": "5 TFT екран"
+        }
+      ],
+      "dimension": [
+        {
+          "title": "ширина на волан",
+          "desc": "830 mm"
+        },
+        {
+          "title": "висина без ретровизори",
+          "desc": "1410-1460 mm"
+        },
+        {
+          "title": "Висина на Седиште",
+          "desc": "820-840 mm"
+        },
+        {
+          "title": "мегу-осовинско растојание ",
+          "desc": "1556 mm"
+        },
+        {
+          "title": "Custer Corner",
+          "desc": "24.6 º"
+        },
+        {
+          "title": "Trace",
+          "desc": "133.3 mm"
+        },
+        {
+          "title": "Тежина",
+          "desc": "192 kg"
+        },
+        {
+          "title": "капацитет на резервоар",
+          "desc": "20 L"
+        }
+      ],
+      "fuelConsumption": [
+        {
+          "title": "Потрошувачка",
+          "desc": "5.2l /100km"
+        },
+        {
+          "title": "CO2 загадување",
+          "desc": "Euro 5 Стандарди измерени според Регулатива 168/2013/EC. Резултатите се добиени во специјални тест средини и се на располагање само за споредба. Вистинските резултат може да варираат врз различни средини."
+        }
+      ],
+      "grayCarousell": [
+        {
+          "id": "carouselItem1",
+          "title": "Три-цилиндрични перформанси",
+          "desc": "Располага со спортски карактер произведен од три-цилиндричниот мотор со перфектен баланс помеѓу обртен момент при мала апликација на гас и возбудлива моќност при висока апликација на гас.",
+          "image": "/images/adventure/tigerSport850/tiger850Caro1.avif"
+        },
+        {
+          "id": "carouselItem2",
+          "title": "Технологија фокусирана на возачот",
+          "desc": "Технологија од врвно ниво, сопирачки и одлична суспензија за подобро секојдневно возење со максимално чувство на самодоверба, перформанси и сигурност.",
+          "image": "/images/adventure/tigerSport850/tiger850Caro2.avif"
+        },
+        {
+          "id": "carouselItem3",
+          "title": "Комбинација помеѓу карактер и перформанси",
+          "desc": "Соилуета по која сите се вртат, со агресивни линии и ексклузивни детали .",
+          "image": "/images/adventure/tigerSport850/tiger850Caro3.avif"
+        },
+        {
+          "id": "carouselItem4",
+          "title": "Дизајниран да инспирира самодоверба",
+          "desc": "Лесно прилагодлив за сечиј возачки стил, од височината на седиштето, до воланот па се до ерканот, Tiger 850 е спремен да се прилагоди на вас.",
+          "image": "/images/adventure/tigerSport850/tiger850Caro4.avif"
+        }
+      ],
+      "specNumbers": [
+        { "data": "660", "info": "cc Мотор" },
+        { "data": "81", "info": "РЅ Коњски сили" },
+        { "data": "64", "info": "Nm Максимален Обртен Момент" },
+        { "data": "16,000", "info": "KM СЕРВИСЕН ИНТЕРВАЛ" }
+      ],
       "subFamilyPageInfo": {
-        "heroSlogans": ["Автентичност", "Версатилен", "3-цилиндричен"],
         "topSection": {
           "title": "АВТЕНТИЧНА ВИТАЛНОСТ НА ТРИ ЦИЛИНДРИ",
           "desc": "Перформансна предност, класно лидерство во моќност, спецификации и удобно возење - сè тоа на одлична вредност",
           "subtitle": "Дизајниран како перфектен секојдневен, градски мотор но и за уживање за време на викенд"
         },
-        "fullSpecs": {
-          "engineTransmission": [
-            {
-              "title": "Мотор",
-              "desc": "водно ладење, 12 вентили, 2 EEK, линиски 3-цилиндри"
-            },
-            {
-              "title": "капацитет",
-              "desc": "888 cc"
-            },
-            {
-              "title": "диаметар",
-              "desc": "78.0 mm"
-            },
-            {
-              "title": "рута",
-              "desc": "61.9 mm"
-            },
-            {
-              "title": "компресија",
-              "desc": "11.27:1"
-            },
-            {
-              "title": "Мах. Коњски Сила",
-              "desc": "85 PS @ 8,500 rpm"
-            },
-            {
-              "title": "Мах. Обртен Момент",
-              "desc": "82 Nm @ 6,500 rpm"
-            },
-            {
-              "title": "Систем за убризгување",
-              "desc": "Electronic multi-point sequential injection"
-            },
-            {
-              "title": "Систем за Издувни гасови",
-              "desc": "3 во 1 не-раѓосувачки челик"
-            },
-            {
-              "title": "Финална Трансмисија",
-              "desc": "O-ring chain"
-            },
-            {
-              "title": "Квачило",
-              "desc": "Liquid, multi-disc, assisted glide"
-            },
-            {
-              "title": "Менувачка Кутија",
-              "desc": "6 брзини"
-            }
-          ],
-          "frame": [
-            {
-              "title": "шасија",
-              "desc": "тубуларна челична шасија"
-            },
-            {
-              "title": "вилушка",
-              "desc": "лиен алуминиум"
-            },
-            {
-              "title": "предно тркало",
-              "desc": "19 x 2.5' die-cast легура "
-            },
-            {
-              "title": "задно тркало",
-              "desc": "17 x 4.25' die-cast легура "
-            },
-            {
-              "title": "предна гума",
-              "desc": "100/90-19"
-            },
-            {
-              "title": "задна гума",
-              "desc": "150/70R17"
-            },
-            {
-              "title": "предна суспензија",
-              "desc": "Marzocchi Inverted Fork 45mm"
-            },
-            {
-              "title": "задна суспензија",
-              "desc": "Marzocchi задна суспензија со систем за подесување"
-            },
-            {
-              "title": "предни сопирачки",
-              "desc": "Dual 320mm дискови, 4-piston monobloc Brembo Stylema calipers. Front radial pump, ABS"
-            },
-            {
-              "title": "задна сопирачка",
-              "desc": "Еден 255 mm диск. Brembo single piston floating caliper, ABS"
-            },
-            {
-              "title": "инструментна плочка",
-              "desc": "5 TFT екран"
-            }
-          ],
-          "dimension": [
-            {
-              "title": "ширина на волан",
-              "desc": "830 mm"
-            },
-            {
-              "title": "висина без ретровизори",
-              "desc": "1410-1460 mm"
-            },
-            {
-              "title": "Висина на Седиште",
-              "desc": "820-840 mm"
-            },
-            {
-              "title": "мегу-осовинско растојание ",
-              "desc": "1556 mm"
-            },
-            {
-              "title": "Custer Corner",
-              "desc": "24.6 º"
-            },
-            {
-              "title": "Trace",
-              "desc": "133.3 mm"
-            },
-            {
-              "title": "Тежина",
-              "desc": "192 kg"
-            },
-            {
-              "title": "капацитет на резервоар",
-              "desc": "20 L"
-            }
-          ],
-          "fuelConsumption": [
-            {
-              "title": "Потрошувачка",
-              "desc": "5.2l /100km"
-            },
-            {
-              "title": "CO2 загадување",
-              "desc": "Euro 5 Стандарди измерени според Регулатива 168/2013/EC. Резултатите се добиени во специјални тест средини и се на располагање само за споредба. Вистинските резултат може да варираат врз различни средини."
-            }
-          ]
-        },
-        "grayCarousell": [
-          {
-            "id": "carouselItem1",
-            "title": "Три-цилиндрични перформанси",
-            "desc": "Располага со спортски карактер произведен од три-цилиндричниот мотор со перфектен баланс помеѓу обртен момент при мала апликација на гас и возбудлива моќност при висока апликација на гас.",
-            "image": "/images/adventure/tigerSport850/tiger850Caro1.avif"
-          },
-          {
-            "id": "carouselItem2",
-            "title": "Технологија фокусирана на возачот",
-            "desc": "Технологија од врвно ниво, сопирачки и одлична суспензија за подобро секојдневно возење со максимално чувство на самодоверба, перформанси и сигурност.",
-            "image": "/images/adventure/tigerSport850/tiger850Caro2.avif"
-          },
-          {
-            "id": "carouselItem3",
-            "title": "Комбинација помеѓу карактер и перформанси",
-            "desc": "Соилуета по која сите се вртат, со агресивни линии и ексклузивни детали .",
-            "image": "/images/adventure/tigerSport850/tiger850Caro3.avif"
-          },
-          {
-            "id": "carouselItem4",
-            "title": "Дизајниран да инспирира самодоверба",
-            "desc": "Лесно прилагодлив за сечиј возачки стил, од височината на седиштето, до воланот па се до ерканот, Tiger 850 е спремен да се прилагоди на вас.",
-            "image": "/images/adventure/tigerSport850/tiger850Caro4.avif"
-          }
-        ],
-        "specNumbers": [
-          { "data": "660", "info": "cc Мотор" },
-          { "data": "81", "info": "РЅ Коњски сили" },
-          { "data": "64", "info": "Nm Максимален Обртен Момент" },
-          { "data": "16,000", "info": "KM СЕРВИСЕН ИНТЕРВАЛ" }
-        ],
-        "youtubeVideo": "https://www.youtube.com/embed/QvVCEk4t8IE",
         "audioSection": {
           "audio": "/images/adventure/tigerSport660/tiger660Audio.mp3",
           "title": "Богато Три-Цилиндрично Грмење",
@@ -882,20 +883,23 @@
       "title": "Tiger 850 Sport",
       "price": 13390,
       "url": "/motorcycles/adventure/tiger-850-sport",
-      "specs": [{
+      "specs": [
+        {
         "desc": "К.ЕК Мотор",
         "data": 888
-      },
+        },
       {
         "desc": "PS Коњски Сили",
         "data": 85
       },{
         "desc": "NM. Обртен Момент",
         "data": 82
-      },{
+      },
+      {
         "desc": "Аксесоари",
         "data": "60+"
-      }],
+      }
+    ],
       "shortDesc": "Прилагодлив на секој предизвик а сепак карактерот, агилноста и перформансите на Tiger, со завидувачки дизајн  и адаптабилност за сите потреби.",
       "subFamilyPageInfo": {
         "heroSlogans": ["практичен", "авантурист"],
@@ -1239,20 +1243,24 @@
       "title": "Tiger 1200 GT",
       "price": 20390,
       "url": "/motorcycles/adventure/tiger-1200-gt",
-      "specs": [{
+      "specs": [
+        {
         "desc": "К.ЕК Мотор",
         "data": 1160
-      },
-      {
+        },
+        {
         "desc": "PS Коњски Сили",
         "data": 150
-      },{
+        },
+        {
         "desc": "NM. Обртен Момент",
         "data": 130
-      },{
+       },
+        {
         "desc": "Години Гаранција",
         "data": "3"
-      }],
+      }
+    ],
       "shortDesc": "Врвен авантуристички мотор фокусиран за асфалтни подлоги. Интер-континентални можности, со висока комоција, перформанси и стил.",
       "subFamilyPageInfo": {
         "heroSlogans": ["Вие ја ", "креирате", "авантурата"],
@@ -1606,20 +1614,24 @@
       "title": "Tiger 1200 Rally",
       "price": 22590,
       "url": "/motorcycles/adventure/tiger-1200-gt",
-      "specs": [{
+      "specs": [
+        {
         "desc": "К.ЕК Мотор",
         "data": 1160
-      },
-      {
+        },
+        {
         "desc": "PS Коњски Сили",
         "data": 150
-      },{
+        },
+        {
         "desc": "NM. Обртен Момент",
         "data": 130
-      },{
+        },
+        {
         "desc": "Години Гаранција",
         "data": "3"
-      }],
+      }
+    ],
       "shortDesc": "",
       "subFamilyPageInfo": {
         "heroSlogans": ["оживеј", "ја", "авантурата"],
@@ -1973,20 +1985,24 @@
       "title": "Speed 400",
       "price": 5690,
       "url": "/motorcycles/classics/speed-400",
-      "specs": [{
+      "specs": [
+        {
         "desc": "ML",
         "data": 389
-      },
-      {
+        },
+        {
         "desc": "Сериски Мотор",
         "data": "TR"
-      },{
+        },
+        {
         "desc": "NM. Обртен Момент",
         "data": 37.5
-      },{
+        },
+        {
         "desc": "Аксесоари",
-        "data": "20+"
-      }],
+          "data": "20+"
+        }
+    ],
       "shortDesc": "Граден по скици од неговите предци, Speed 400 во својата ДНК го поседува уникатниот 'roadster' дизајн на Triumph.",
       "subFamilyPageInfo": {
         "heroSlogans": ["Пронајдете ја", "вашата", "слобода"],
@@ -2308,24 +2324,27 @@
       "id": 8,
       "subFamilyName": "scrambler-400-x",
       "familyType": "classics",
-
       "title": "Scrambler 400 X",
       "price": 6390,
       "url": "/motorcycles/classics/scrambler-400-x",
-      "specs": [{
+      "specs": [
+        {
         "desc": "ML",
         "data": 389
-      },
-      {
+        },
+        {
         "desc": "Сериски Мотор",
         "data": "TR"
-      },{
+        },
+        {
         "desc": "NM. Обртен Момент",
         "data": 37.5
-      },{
+        },
+        {
         "desc": "Аксесоари",
         "data": "20+"
-      }],
+        }
+      ],
       "shortDesc": "Со агилно управување, водечки перформанси во класата и луксузна завршница, Scrambler 400 X е „кул“ и способен за секаков предизвик.",
       "subFamilyPageInfo": {
         "heroSlogans": ["Стартувајте ја", "вашата", "Авантура"],
@@ -2991,20 +3010,24 @@
       "title": "Bonneville Bobber",
       "price": 16290,
       "url": "/motorcycles/classics/bonneville-bobber",
-      "specs": [{
+      "specs": [
+        {
         "desc": "К.ЕК Мотор",
         "data": 1200
-      },
-      {
+        },
+        {
         "desc": "PS Коњски Сили",
         "data": 78
-      },{
+        },
+        {
         "desc": "NM. Обртен Момент",
         "data": 106
-      },{
+        },
+        {
         "desc": "Сервисен Интервал",
         "data": "16,000"
-      }],
+        }
+    ],
       "shortDesc": "Највозбуливиот Bobber, успешно ги краде погледите благодарејки на некговиот мускулест изглед и агилност.",
       "subFamilyPageInfo": {
         "heroSlogans": ["Забава", "со", "стил"],
@@ -4403,20 +4426,24 @@
       "title": "Scrambler 900",
       "price": 11890,
       "url": "/motorcycles/classics/scrambler-900",
-      "specs": [{
+      "specs": [
+        {
         "desc": "К.ЕК Мотор",
         "data": 900
-      },
+        },
       {
         "desc": "PS Коњски Сили",
         "data": 65
-      },{
+      },
+      {
         "desc": "NM. Обртен Момент",
         "data": 80
-      },{
+      },
+      {
         "desc": "Сервисен Интервал",
         "data": "16,000"
-      }],
+      }
+    ],
       "shortDesc": "Еден од најприфатените мотори на Triumph, кој благодарејки на преубавиот стајлинг и 'off-road' карактер, си доби висока репутација без никаков преседан.",
       "subFamilyPageInfo": {
         "heroSlogans": ["Забавен", "Моќен", "Преубав"],
@@ -5471,20 +5498,24 @@
       "title": "Thruxton RS",
       "price": 14290,
       "url": "/motorcycles/classics/thruxton-rs",
-      "specs": [{
+      "specs": [
+        {
         "desc": "ML Мотор",
         "data": 1200
-      },
-      {
+        },
+        {
         "desc": "PS Коњски Сили",
         "data": 105
-      },{
+        },
+        {
         "desc": "NM. Обртен Момент",
         "data": 112
-      },{
+        },
+        {
         "desc": "Аксесоари",
         "data": "80"
-      }],
+      }
+    ],
       "shortDesc": "Новиот Thruxton RS комбинира оригинален стил и напредни перформанси со автентичен 'cafe-racer' дизајн.",
       "subFamilyPageInfo": {
         "heroSlogans": ["Модерен", "Cafe-Racer"],
@@ -5775,20 +5806,24 @@
       "title": "Street Triple 765",
       "price": 12290,
       "url": "/motorcycles/roadsters/street-triple-765",
-      "specs": [{
+      "specs": [
+        {
         "desc": "К.ЕК Мотор",
         "data": 765
-      },
-      {
-        "desc": "PS Коњски Сили",
-        "data": "12-130"
-      },{
-        "desc": "NM. Обртен Момент",
-        "data": 80
-      },{
-        "desc": "Сервисен Интервал",
-        "data": "10,000"
-      }],
+        },
+        {
+          "desc": "PS Коњски Сили",
+          "data": "12-130"
+        },
+        {
+          "desc": "NM. Обртен Момент",
+          "data": 80
+        },
+        {
+          "desc": "Сервисен Интервал",
+          "data": "10,000"
+        }
+    ],
       "shortDesc": "Со легендарен карактер, а со големо засилување во перформанси и технологија оваа серија го доби префиксот 'definitive streetfighter'. ",
       "subFamilyPageInfo": {
         "heroSlogans": ["Перфектен", "спортски ", "моторцикл"],
@@ -6496,7 +6531,6 @@
       "id": 20,
       "subFamilyName": "trident-660",
       "familyType": "roadsters",
-
       "title": "Trident 660",
       "price": 8690,
       "url": "/motorcycles/roadsters/trident-660",
@@ -6854,11 +6888,11 @@
       "id": 21,
       "subFamilyName": "speed-triple-1200-rs",
       "familyType": "roadsters",
-
       "title": "Speed Triple 1200 RS",
       "price": 18990,
       "url": "/motorcycles/roadsters/speed-triple-1200-rs",
-      "specs": [{
+      "specs": [
+        {
         "desc": "К.ЕК Мотор",
         "data": 1160
       },
@@ -6871,7 +6905,8 @@
       },{
         "desc": "Тежина",
         "data": "198кг"
-      }],
+      }
+    ],
       "shortDesc": "Најмоќниот, најдинамичниот и технолошки најнапредниот Speed Triple некогаш направен.",
       "subFamilyPageInfo": {
         "heroSlogans": ["Автентична", "Три-Цилиндарска", "Перфекција"],
@@ -7200,24 +7235,28 @@
       "id": 22,
       "subFamilyName": "speed-triple-1200-rr",
       "familyType": "roadsters",
-
       "title": "Speed Triple 1200 RR",
       "price": 20990,
       "url": "/motorcycles/roadsters/speed-triple-1200-rr",
-      "specs": [{
+      "specs": [
+        {
         "desc": "К.ЕК Мотор",
         "data": 1160
-      },
-      {
-        "desc": "PS Коњски Сили",
-        "data": 180
-      },{
-        "desc": "NM. Обртен Момент",
-        "data": 125
-      },{
-        "desc": "Сервисен Интервал",
-        "data": "15,000"
-      }],
+        },
+        {
+          "desc": "PS Коњски Сили",
+          "data": 180
+        },
+        {
+          "desc": "NM. Обртен Момент",
+          "data": 125
+        },
+        {
+          "desc": "Сервисен Интервал",
+          "data": "15,000"
+        }
+      ],
+    "youtubeVideo": "https://www.youtube.com/embed/DmPPgMjUD1o",
       "shortDesc": "Колку повозбудливо изгледа толку повозбудлив е за возење. Најновиот Speed Triple 1200 RR со досега најдобрата спецификација.",
       "subFamilyPageInfo": {
         "heroSlogans": ["Автентична", "Три-Цилиндарска", "Перфекција"],
@@ -7226,7 +7265,6 @@
           "desc": "Нај-фокусираниот Speed Triple досега. Преубав дизајн, одлично чувство на поврзаност помеѓу возачот и моторот.",
           "subtitle": "Нов репер за убавина, софистицирано инжињерство и фокусиран карактер и врвот на Speed Triple перформанси и управување."
         },
-        "youtubeVideo": "https://www.youtube.com/embed/DmPPgMjUD1o",
         "fullSpecs": {
           "engineTransmission": [
             {
@@ -7919,7 +7957,8 @@
       "title": "Daytona 660",
       "price": null,
       "url": "/motorcycles/sport/daytona-660",
-      "specs": [{
+      "specs": [
+        {
         "desc": "Цилиндри",
         "data": 3
       },
@@ -7932,7 +7971,8 @@
       },{
         "desc": "SAL",
         "data": "12,650"
-      }],
+      }
+    ],
       "shortDesc": null,
       "subFamilyPageInfo": {
         "heroSlogans": ["Новата", "Daytona 660", "Пристигна"],
@@ -8262,20 +8302,24 @@
       "title": "TF 250-X",
       "price": 9995,
       "url": "/motorcycles/off-road/tf-250-x",
-      "specs": [{
+      "specs": [
+        {
         "desc": "cc Мотор",
         "data": 250
-      },
-      {
-        "desc": "Рамка",
-        "data": "Алуминиумска"
-      },{
-        "desc": "Компоненти",
-        "data": "Врвни"
-      },{
-        "desc": "Серија",
-        "data": "Потполно Нова"
-      }],
+        },
+        {
+          "desc": "Рамка",
+          "data": "Алуминиумска"
+        },
+        {
+          "desc": "Компоненти",
+          "data": "Врвни"
+        },
+        {
+          "desc": "Серија",
+          "data": "Потполно Нова"
+        }
+    ],
       "shortDesc": null,
       "subFamilyPageInfo": {
         "heroSlogans": ["Фокусиран", "Тркачки", "Мотор"],
@@ -12518,7 +12562,7 @@
       "video": null,
       "image": "/images/home/mainCarousell/daytona.avif",
       "imageMobile": "/images/home/mainCarousell/daytonaMobile.avif",
-      "title": "Новaтa Daytona 660",
+      "title": "Новaтa Daytona 660", 
       "desc": "Динамична ДНК со нов карактер.",
       "link1": {
         "url": "/motorcycles/sport/daytona-660",
