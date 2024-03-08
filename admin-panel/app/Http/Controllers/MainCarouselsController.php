@@ -98,7 +98,7 @@ class MainCarouselsController extends Controller
             'video' => 'required|file',
         ]);
 
-        // Check if the title has been changed
+
         if ($request->title !== $carousel->title) {
             $exists =  Storage::disk('public')
                 ->exists('public/mainCarousel/' . Str::slug($carousel->title));
