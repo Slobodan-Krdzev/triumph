@@ -93,22 +93,25 @@ class MainCarouselsController extends Controller
             'link1.text' => 'required|string',
             'link2.url' => 'required|string',
             'link2.text' => 'required|string',
-            'image' => 'required|file',
-            'imageMobile' => 'required|file',
-            'video' => 'required|file',
+            'image' => 'nullable',
+            'imageMobile' => 'nullable',
+            'video' => 'nullable|file',
         ]);
 
 
-        if ($request->title !== $carousel->title) {
+        // Check if the title has been changed
+        if (Str::slug($request->title) !== Str::slug($carousel->title)) {
             $exists =  Storage::disk('public')
-                ->exists('public/mainCarousel/' . Str::slug($carousel->title));
-            if ($exists)
-                Storage::disk('public/mainCarousel')->move(Str::slug($carousel->title), Str::slug($request->title));
+                ->exists('mainCarousel/' . Str::slug($carousel->title));
+            if ($exists) {
+                //ddd('mainCarousel/' . Str::slug($carousel->title), 'mainCarousel/' . Str::slug($request->title));
+                ddd(Storage::disk('public')->move('mainCarousel/images/3990348808_2_4_8.jpg', 'mainCarousel/images/slikaupdate.jpg'));
+
+                Storage::disk('public')->move('mainCarousel/' . Str::slug($carousel->title) . '/', 'mainCarousel/' . Str::slug($request->title));
+            }
         }
 
         $title = $request->title;
-
-        ddd($request->all());
 
         // Process main image
         if ($request->hasFile('image')) {

@@ -13,7 +13,7 @@
         <h1 class="font-bold text-4xl">You are editing carousell:<span
                 class="uppercase text-red-500">{{ $mainCarousels->title }}</span></h1>
 
-        <form action="{{ route('update-main-carousell', $mainCarousels->id) }}" method="POST" class="flex flex-col">
+        <form action="{{ route('update-main-carousell', $mainCarousels->id) }}" method="POST" class="flex flex-col" enctype="multipart/form-data">
             @csrf
             @method('PUT')
 
