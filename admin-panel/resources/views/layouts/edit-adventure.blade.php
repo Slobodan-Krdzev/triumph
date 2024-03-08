@@ -328,7 +328,7 @@
                     <textarea id="accessoryTypes_{{ $index }}_desc" name="accessory[accessoryTypes][{{ $index }}][desc]"
                         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">{{ old('accessory.accessoryTypes.' . $index . '.desc', $type['desc'] ?? '') }}</textarea>
 
-
+                    @if(isset($type['itemsList']))
                     <div class="mb-4">
                         <label class="block text-gray-700 text-sm font-bold mb-2">Items List:</label>
                         @foreach ($type['itemsList'] as $itemIndex => $item)
@@ -338,6 +338,7 @@
                                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-2 leading-tight focus:outline-none focus:shadow-outline">
                         @endforeach
                     </div>
+                    @endif
 
 
                     {{-- Images for each accessoryType --}}

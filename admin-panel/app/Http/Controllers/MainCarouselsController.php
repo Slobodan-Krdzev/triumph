@@ -6,6 +6,7 @@ use App\Models\MainCarousell;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
+use Illuminate\Validation\Rule;
 
 class MainCarouselsController extends Controller
 {
@@ -19,10 +20,12 @@ class MainCarouselsController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'title' => 'required|string|max:255',
+            'title' => 'required|string|max:255|unique:main-carousell-items,title,',
             'desc' => 'required|string',
-            'link1' => 'required',
-            'link2' => 'required',
+            'link1.url' => 'required|string',
+            'link1.text' => 'required|string',
+            'link2.url' => 'required|string',
+            'link2.text' => 'required|string',
             'image' => 'required|image|max:2048',
             'imageMobile' => 'required|image|max:2048',
             'video' => 'required|mimes:mp4,mov,ogg,qt|max:20000',
@@ -40,21 +43,22 @@ class MainCarouselsController extends Controller
 
         // Process main image
         if ($request->hasFile('image')) {
-            $directoryPath = 'images/' . $sanitizedTitle;
-            $fileName = $request->file('image')->getClientOriginalName();
-            $imagePath = $request->file('image')->storeAs($directoryPath, $fileName, 'public');
+            $image = $request->file('image')->getClientOriginalName();
+            $imagePath = $request->file('image')->storeAs('mainCarousel/' . $sanitizedTitle . '/images', $image, 'public');
             $carousel->image = Storage::url($imagePath);
         }
 
         // Process mobile image
         if ($request->hasFile('imageMobile')) {
-            $imageMobilePath = $request->file('imageMobile')->store('images/mobile', 'public');
+            $imageMobile = $request->file('imageMobile')->getClientOriginalName();
+            $imageMobilePath = $request->file('imageMobile')->storeAs('mainCarousel/' . $sanitizedTitle . '/mobileImages', $imageMobile, 'public');
             $carousel->imageMobile = Storage::url($imageMobilePath);
         }
 
         // Process video
         if ($request->hasFile('video')) {
-            $videoPath = $request->file('video')->store('videos', 'public');
+            $video = $request->file('video')->getClientOriginalName();
+            $videoPath = $request->file('video')->storeAs('mainCarousel/' . $sanitizedTitle . '/videos', $video, 'public');
             $carousel->video = Storage::url($videoPath);
         }
 
@@ -64,6 +68,7 @@ class MainCarouselsController extends Controller
         // Redirect back with success message
         return back()->with('success', 'MainCarousel item created successfully.');
     }
+
 
 
 
@@ -79,44 +84,65 @@ class MainCarouselsController extends Controller
 
     public function update(Request $request, $id)
     {
+        $carousel = MainCarousell::findOrFail($id);
+
         $validatedData = $request->validate([
-            'video' => 'nullable|mimes:mp4,mov,ogg,qt|max:20000',
-            'image' => 'nullable|image|max:2048',
-            'imageMobile' => 'nullable|image|max:2048',
-            'title' => 'string|max:255',
-            'desc' => 'string',
-            'link1.url' => 'url',
-            'link1.text' => 'string',
-            'link2.url' => 'url',
-            'link2.text' => 'string',
+            'title' => ['required', Rule::unique('main-carousell-items','title')->ignore($carousel)],
+            'desc' => 'required|string',
+            'link1.url' => 'required|string',
+            'link1.text' => 'required|string',
+            'link2.url' => 'required|string',
+            'link2.text' => 'required|string',
+            'image' => 'required|file',
+            'imageMobile' => 'required|file',
+            'video' => 'required|file',
         ]);
 
-        $mainCarousel = MainCarousell::findOrFail($id);
+        // Check if the title has been changed
+        if ($request->title !== $carousel->title) {
+            $exists =  Storage::disk('public')
+                ->exists('public/mainCarousel/' . Str::slug($carousel->title));
+            if ($exists)
+                Storage::disk('public/mainCarousel')->move(Str::slug($carousel->title), Str::slug($request->title));
+        }
 
-        // Process main image update
+        $title = $request->title;
+
+        ddd($request->all());
+
+        // Process main image
         if ($request->hasFile('image')) {
-            $directoryPath = 'images/' . Str::slug($mainCarousel->title);
-            $fileName = $request->file('image')->getClientOriginalName();
-            $imagePath = $request->file('image')->storeAs($directoryPath, $fileName, 'public');
-            $mainCarousel->image = Storage::url($imagePath);
+            $this->deleteFileIfExists($carousel->image);
+            $imagePath = $request->file('image')->storeAs('mainCarousel/' . $title . '/images', $request->file('image')->getClientOriginalName(), 'public');
+            $validatedData['image'] = Storage::url($imagePath);
         }
 
-        // Process mobile image update
+        // Process mobile image
         if ($request->hasFile('imageMobile')) {
-            $imageMobilePath = $request->file('imageMobile')->store('images/mobile', 'public');
-            $mainCarousel->imageMobile = Storage::url($imageMobilePath);
+            $this->deleteFileIfExists($carousel->imageMobile);
+            $imageMobilePath = $request->file('imageMobile')->storeAs('mainCarousel/' . $title . '/mobileImages', $request->file('imageMobile')->getClientOriginalName(), 'public');
+            $validatedData['imageMobile'] = Storage::url($imageMobilePath);
         }
 
-        // Process video update
+        // Process video
         if ($request->hasFile('video')) {
-            $videoPath = $request->file('video')->store('videos', 'public');
-            $mainCarousel->video = Storage::url($videoPath);
+            $this->deleteFileIfExists($carousel->video);
+            $videoPath = $request->file('video')->storeAs('mainCarousel/' . $title . '/videos', $request->file('video')->getClientOriginalName(), 'public');
+            $validatedData['video'] = Storage::url($videoPath);
         }
 
         // Update other attributes
-        $mainCarousel->update($validatedData);
+        $carousel->update($validatedData);
 
         return redirect()->route('edit-main-carousels', ['id' => $id])->with('success', 'Your data has been updated successfully.');
     }
+
+    private function deleteFileIfExists($file)
+    {
+        if ($file && Storage::exists($file)) {
+            Storage::delete($file);
+        }
+    }
+
 
 }
