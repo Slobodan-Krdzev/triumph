@@ -2,8 +2,9 @@
 
     <div class="px-8 mt-10 w-8/12">
 
-        <form action="{{ route('store-families') }}" method="POST" class="flex flex-col ">
-            @csrf
+        <form action="{{ route('store-families') }}" method="POST" class="flex flex-col" enctype="multipart/form-data">
+
+        @csrf
             <h1 class="font-bold text-3xl my-2">Base Info</h1>
             {{-- Sub Family Name --}}
             <label for="subFamilyName">Sub Family Name:</label>
@@ -100,9 +101,9 @@
             <label for="audioSection_desc">Description:</label>
             <textarea id="audioSection_desc" name="subFamilyPageInfo[audioSection][desc]">{{ old('subFamilyPageInfo.audioSection.desc') }}</textarea>
 
-            <x-form.input labelText="Logo URL:" imageId="imageId_{{ $i }}"
+            <x-form.input labelText="Logo URL:" imageId="imageLogo"
                 name="subFamilyPageInfo[audioSection][logo]">
-                <img id='imageId_{{ $i }}' width="200" height="150"
+                <img id='imageLogo' width="200" height="150"
                     class="object-cover border m-3 border-gray-200" />
             </x-form.input>
 
@@ -338,9 +339,6 @@
             <input type="text" id="accessory_type_image1_alt" name="accessory[accessoryTypes][][image1][alt]"
                 placeholder="Enter Image 1 Alt Text">
 
-            <label for="accessory_type_image2_src">Image 2 URL:</label>
-            <input type="file" class="my-3" id="accessory_type_image2_src"
-                name="accessory[accessoryTypes][][image2][src]" placeholder="Optional Image 2 URL">
 
             <x-form.input labelText="Image 2 URL:" imageId="imageTwoUrl"
                 name="accessory[accessoryTypes][][image2][src]">
