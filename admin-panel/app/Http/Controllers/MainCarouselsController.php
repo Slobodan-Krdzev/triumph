@@ -106,7 +106,7 @@ class MainCarouselsController extends Controller
             $imagePath = $request->file('image')->storeAs('mainCarousel/' . $title . '/images', $request->file('image')->getClientOriginalName(), 'public');
             $validatedData['image'] = str_starts_with($imagePath, '/storage/') ? $imagePath : '/storage/' . $imagePath;
         } else {
-            $newImagePath = str_replace($carousel->title, $title, $carousel->image);
+            $newImagePath = str_replace(Str::slug($carousel->title), $title, $carousel->image);
             $validatedData['image'] = str_starts_with($newImagePath, '/storage/') ? $newImagePath : '/storage/' . $newImagePath;
         }
 
@@ -116,7 +116,7 @@ class MainCarouselsController extends Controller
             $imageMobilePath = $request->file('imageMobile')->storeAs('mainCarousel/' . $title . '/mobileImages', $request->file('imageMobile')->getClientOriginalName(), 'public');
             $validatedData['imageMobile'] = str_starts_with($imageMobilePath, '/storage/') ? $imageMobilePath : '/storage/' . $imageMobilePath;
         } else {
-            $newImageMobilePath = str_replace($carousel->title, $title, $carousel->imageMobile);
+            $newImageMobilePath = str_replace(Str::slug($carousel->title), $title, $carousel->imageMobile);
             $validatedData['imageMobile'] = str_starts_with($newImageMobilePath, '/storage/') ? $newImageMobilePath : '/storage/' . $newImageMobilePath;
         }
 
@@ -127,46 +127,45 @@ class MainCarouselsController extends Controller
             $videoPath = $request->file('video')->storeAs('mainCarousel/' . $title . '/videos', $request->file('video')->getClientOriginalName(), 'public');
             $validatedData['video'] = str_starts_with($videoPath, '/storage/') ? $videoPath : '/storage/' . $videoPath;
         } else {
-            $newVideoPath = (str_replace($carousel->title, $title, $carousel->video));
+            $newVideoPath = (str_replace(Str::slug($carousel->title), $title, $carousel->video));
             $validatedData['video'] = str_starts_with($newVideoPath, '/storage/') ? $newVideoPath : '/storage/' . $newVideoPath;
         }
 
 
         // Check if the title has been changed
         if (Str::slug($request->title) != Str::slug($carousel->title)) {
-            $originalDirectory = 'mainCarousel/' . Str::slug($carousel->title);
-            $newDirectory = 'mainCarousel/' . Str::slug($request->title);
-
-            if (Storage::disk('public')->exists($originalDirectory)) {
-                if (!Storage::disk('public')->exists($newDirectory)) {
-                    // Create the new directory
-                    Storage::disk('public')->makeDirectory($newDirectory);
-
-                    // Define subdirectories
-                    $subdirectories = ['images', 'mobileImages', 'videos'];
+            $images = 'mainCarousel/' . Str::slug($carousel->title) . '/images';
+            $imagesMobile = 'mainCarousel/' . Str::slug($carousel->title) . '/mobileImages';
+            $videos = 'mainCarousel/' . Str::slug($carousel->title) . '/videos';
+            $newImages = 'mainCarousel/' . Str::slug($request->title) . '/images';
+            $newImagesMobile = 'mainCarousel/' . Str::slug($request->title) . '/mobileImages';
+            $newVideos = 'mainCarousel/' . Str::slug($request->title) . '/videos';
+            Storage::disk('public')->makeDirectory('mainCarousel/' . Str::slug($request->title));
 
 
-                    // Move files from original subdirectories to new subdirectories
-                    foreach ($subdirectories as $subdirectory) {
-                        $originalSubdirectory = $originalDirectory . '/' . $subdirectory;
-                        $newSubdirectory = $newDirectory . '/' . $subdirectory;
-
-                        Log::info('Original subdirectory exists: ' . Storage::disk('public')->exists($originalSubdirectory));
-                        // Check if the original subdirectory exists
-                        if (Storage::disk('public')->exists($originalSubdirectory)) {
-                            // Move files from the original subdirectory to the new subdirectory
-                            $files = Storage::disk('public')->files($originalSubdirectory);
-                            foreach ($files as $file) {
-                                $filename = pathinfo($file, PATHINFO_BASENAME);
-                                Storage::disk('public')->move($originalSubdirectory . '/' . $filename, $newSubdirectory . '/' . $filename);
-                            }
-                        }
-                    }
-                    // After moving files, delete the original directory
-                    Storage::disk('public')->deleteDirectory($originalDirectory);
-                }
+            $file = Storage::disk('public')->files($images);
+            if (!empty($file)) {
+                $filename = pathinfo($file[0], PATHINFO_BASENAME);
+                Storage::disk('public')->move($images . '/' . $filename, $newImages . '/' . $filename);
             }
+
+            $file = Storage::disk('public')->files($imagesMobile);
+            if (!empty($file)) {
+                $filename = pathinfo($file[0], PATHINFO_BASENAME);
+                Storage::disk('public')->move($imagesMobile . '/' . $filename, $newImagesMobile . '/' . $filename);
+            }
+
+            $file = Storage::disk('public')->files($videos);
+            if (!empty($file)) {
+                $filename = pathinfo($file[0], PATHINFO_BASENAME);
+                Storage::disk('public')->move($videos . '/' . $filename, $newVideos . '/' . $filename);
+            }
+
+
+            // After moving files, delete the original directory
+            Storage::disk('public')->deleteDirectory('mainCarousel/' . Str::slug($carousel->title));
         }
+
 
         // Update other attributes
         $carousel->update($validatedData);
