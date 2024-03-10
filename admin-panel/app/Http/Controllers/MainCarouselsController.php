@@ -161,7 +161,7 @@ class MainCarouselsController extends Controller
                 Storage::disk('public')->move($videos . '/' . $filename, $newVideos . '/' . $filename);
             }
 
-
+            // ddd(Storage::disk('public')->deleteDirectory('mainCarousel/' . Str::slug($carousel->title)));
             // After moving files, delete the original directory
             Storage::disk('public')->deleteDirectory('mainCarousel/' . Str::slug($carousel->title));
         }

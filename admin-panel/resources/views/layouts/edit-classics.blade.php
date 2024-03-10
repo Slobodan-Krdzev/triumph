@@ -31,13 +31,12 @@
             <label for="price">Price:</label>
             <input type="text" name="price" value="{{ old('price', $moto->price) }}" required>
 
-{{--            <label for="gallery[modelImage][src]">Gallery Image Source:</label>--}}
-{{--            <input type="text" name="gallery[modelImage][src]"--}}
-{{--                value="{{ old('gallery.modelImage.src', isset($moto) ? $moto->gallery['modelImage']['src'] : '') }}"--}}
-{{--                required>--}}
-            <x-form.input labelText="Gallery Image Source:" imageId="gallery[modelImage][src]" name="gallery[modelImage][src]">
-                <img src="{{isset($moto) ?? $moto->gallery['modelImage']['src']}}" id='gallery[modelImage][src]' width="400" height="150" class="object-cover border m-3 border-gray-200" />
-            </x-form.input>
+
+            <x-form.input labelText="Gallery Image:" imageId="galleryModelImage"
+            name="gallery[subFamilyTopSectionImage][src]">
+            <img id='galleryModelImage'  @if (isset($moto->gallery['modelImage']['src'])) src="/storage/{{ $moto->gallery['modelImage']['src'] ?? '' }}" @endif
+                width="600" height="300" class="object-cover border m-3 border-gray-200" />
+        </x-form.input>
 
             <label for="gallery[modelImage][alt]">Gallery Image Alt:</label>
             <input type="text" name="gallery[modelImage][alt]"
@@ -45,18 +44,10 @@
                 required>
 
 
-
-{{--            <label for="bikeCollorPalletteGallery[color1]">Color 1:</label>--}}
-{{--            <input type="text" name="bikeCollorPalletteGallery[color1]"--}}
-{{--                value="{{ old('bikeCollorPalletteGallery.color1', isset($moto) ? $moto->bikeCollorPalletteGallery['color1'] : '') }}"--}}
-{{--                required>--}}
-{{--            <label for="bikeCollorPalletteGallery[color1Reversed]">Color 1 Reversed:</label>--}}
-{{--            <input type="text" name="bikeCollorPalletteGallery[color1Reversed]"--}}
-{{--                   value="{{ old('bikeCollorPalletteGallery.color1Reversed', isset($moto) ? $moto->bikeCollorPalletteGallery['color1Reversed'] : '') }}"--}}
-{{--                   required>--}}
             <x-form.input labelText="Color 1:" imageId="bikeCollorPalletteGallery[color1]" name="bikeCollorPalletteGallery[color1]">
                 <img src="{{ isset($moto) ?? $moto->bikeCollorPalletteGallery['color1'] }}" id='bikeCollorPalletteGallery[color1]' width="400" height="150" class="object-cover border m-3 border-gray-200" />
             </x-form.input>
+
 
             <x-form.input labelText="Color 1 Reversed:" imageId="bikeCollorPalletteGallery[color1Reversed]" name="bikeCollorPalletteGallery[color1Reversed]">
                 <img src="{{ isset($moto) ?? $moto->bikeCollorPalletteGallery['color1Reversed'] }}" id='bikeCollorPalletteGallery[color1Reversed]' width="400" height="150" class="object-cover border m-3 border-gray-200" />

@@ -39,7 +39,7 @@
                 <!-- Display gallery images -->
                 <h3>Gallery</h3>
                 <!-- Add your code to display gallery images here -->
-
+                <img src="{{$subFamData['subFamilyPageInfo']['audioSection']['logo']}}" width="200px" alt="">
             </div>
 
 
