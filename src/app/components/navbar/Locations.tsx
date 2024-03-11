@@ -444,7 +444,7 @@ const Locations = () => {
         height: "auto",
       }}
     >
-      <div className="flex flex-col justify-start gap-8 items-start basis-full md:basis-5/6 px-0 md:px-16 border-thin-right">
+      <div className="flex flex-col justify-start gap-8 items-start basis-full md:basis-2/6 px-0 md:px-16 border-thin-right">
         {regions.map((region) => (
           <button
             key={region}
