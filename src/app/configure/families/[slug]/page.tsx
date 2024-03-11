@@ -14,7 +14,7 @@ const TypeOfFamilyPage = async (data: any, props: Props) => {
 
   try {
     const familyRes = await fetch(`${FAMILIES}?type=${familyType}`, {
-      cache: "no-store",
+      next: { revalidate: 3000 },
     });
     const familyData = await familyRes.json();
     const family = familyData[0];
@@ -22,7 +22,7 @@ const TypeOfFamilyPage = async (data: any, props: Props) => {
     const subFamiliesRes = await fetch(
       `${SUB_FAMILIES}?familyType=${familyType}`,
       {
-        cache: "no-store",
+        next: { revalidate: 3000 },
       }
     );
     const subFamilies = await subFamiliesRes.json();

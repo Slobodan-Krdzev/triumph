@@ -8,7 +8,8 @@ type DiscoverThriumphCardProps = {
   title: string;
   url: string;
   btnText: string;
-  desc?: string
+  desc?: string;
+  targetBlank?: boolean
 };
 
 const DiscoverThriumphCard = ({
@@ -16,11 +17,12 @@ const DiscoverThriumphCard = ({
   title,
   url,
   btnText,
-  desc
+  desc,
+  targetBlank
 }: DiscoverThriumphCardProps) => {
   return (
     <div className="basis-full lg:basis-1/2 mb-8 last:mb-0 lg:px-4">
-      <Link href={url} target="_blank">
+      <Link href={url} target={targetBlank ? "_blank" : "_self"}>
         <div
           className="p-20 md:p-48"
           style={{

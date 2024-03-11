@@ -11,7 +11,9 @@ const SpecsPageRoadsters = async ({ params }: any) => {
   try {
     const subFamilyRes = await fetch(
       `${SUB_FAMILIES}?subFamilyName=${subFam}`,
-      { cache: "no-store" }
+      {
+        next: { revalidate: 3000 },
+      }
     );
     const subFamilyData = await subFamilyRes.json();
     const subFamily = subFamilyData[0];

@@ -16,16 +16,18 @@ import { getBikesByCC } from "./helpers/getBikesByCC";
 const ClassicPage = async () => {
   try {
     const familyRes = await fetch(`${FAMILIES}?type=classics`, {
-      cache: "no-store",
+      next: { revalidate: 3000 },
     });
     const familyData = await familyRes.json();
 
     const bikesRes = await fetch(`${SUB_FAMILIES}?familyType=classics`, {
-      cache: "no-store",
+      next: { revalidate: 3000 },
     });
     const bikes = await bikesRes.json();
 
-    const promosRes = await fetch(`${PROMOS}?category=classics`)
+    const promosRes = await fetch(`${PROMOS}?category=classics`, {
+      next: { revalidate: 3000 },
+    })
     const promos = await promosRes.json()
 
     return (

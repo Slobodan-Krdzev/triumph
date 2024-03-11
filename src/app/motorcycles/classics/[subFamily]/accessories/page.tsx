@@ -10,11 +10,15 @@ const ClassicsAccesoriesPage = async ({ params }: any) => {
   const subFam = params.subFamily;
 
   try {
-    const subFamilyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=${subFam}`, {cache: 'no-store'});
+    const subFamilyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=${subFam}`, {
+      next: { revalidate: 3000 },
+    });
     const subFamilyData = await subFamilyRes.json();
     const subFamily = subFamilyData[0];
 
-    const bikesRes = await fetch(`${BIKES}?model=${subFam}`);
+    const bikesRes = await fetch(`${BIKES}?model=${subFam}`, {
+      next: { revalidate: 3000 },
+    });
     const bikesData = await bikesRes.json();
 
     console.log(subFamily, subFam);

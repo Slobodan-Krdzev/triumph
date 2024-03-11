@@ -10,7 +10,7 @@ const RoadstersModelPage = async ({ params }: any) => {
 
   try {
     const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${model}`, {
-      cache: "no-store",
+      next: { revalidate: 3000 },
     });
     const bikesData = await bikesRes.json();
 

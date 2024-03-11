@@ -10,7 +10,7 @@ const items = [
     btnText: "Најнови Вести",
   },
   {
-    title: "Рушење рекорди. пишување историја ",
+    title: "Рушење рекорди - пишување историја ",
     image: "/images/home/races.avif",
     url: "https://triumph-mediakits.com/en/news/news-listing.html?newstags=tagger-motorsport",
     btnText: "трки",
@@ -22,7 +22,7 @@ const items = [
     btnText: "искуства",
   },
   {
-    title: 'Независни "Thriumph" искуства',
+    title: 'Независни Thriumph искуства',
     image: "/images/home/reviews.avif",
     url: "https://triumph-mediakits.com/en/contacts.html",
     btnText: "искуства",
@@ -44,6 +44,7 @@ const DiscoverThriumphSection = () => {
             title={item.title}
             url={item.url}
             btnText={item.btnText}
+            targetBlank
           />
         ))}
       </div>

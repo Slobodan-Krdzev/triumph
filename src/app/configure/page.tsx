@@ -8,11 +8,13 @@ const ConfigurePage = async () => {
   // PROMISE.ALL sredi
 
   try {
-    const familiesRes = await fetch(`${FAMILIES}`, { cache: "no-store" });
+    const familiesRes = await fetch(`${FAMILIES}`, {
+      next: { revalidate: 3000 },
+    });
     const families = await familiesRes.json();
 
     const subFamiliesRes = await fetch(`${SUB_FAMILIES}`, {
-      cache: "no-store",
+      next: { revalidate: 3000 },
     });
     const subFamilies = await subFamiliesRes.json();
 

@@ -20,12 +20,12 @@ import { redirect } from "next/navigation";
 const AdventurePage = async () => {
   try {
     const familyRes = await fetch(`${FAMILIES}?type=adventure`, {
-      cache: "no-store",
+      next: { revalidate: 3000 },
     });
     const familyData = await familyRes.json();
 
     const subFamiliesRes = await fetch(`${SUB_FAMILIES}?familyType=adventure`, {
-      cache: "no-store",
+      next: { revalidate: 3000 },
     });
     const subFamilies = await subFamiliesRes.json();
 
@@ -34,7 +34,9 @@ const AdventurePage = async () => {
     });
     const bikes = await bikesRes.json();
 
-    const promosRes = await fetch(`${PROMOS}?category=adventure`);
+    const promosRes = await fetch(`${PROMOS}?category=adventure`, {
+      next: { revalidate: 3000 },
+    });
     const promos = await promosRes.json();
 
     return (

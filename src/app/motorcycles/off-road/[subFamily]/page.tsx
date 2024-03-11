@@ -11,12 +11,14 @@ const OffRoadSubFamilyPage = async ({ params }: any) => {
 
   try {
     const subFamilyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=${query}`, {
-      cache: "no-store",
+      next: { revalidate: 3000 },
     });
     const subFamilyData = await subFamilyRes.json();
     const subFamily = subFamilyData[0];
 
-    const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${query}`);
+    const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${query}`, {
+      next: { revalidate: 3000 },
+    });
     const bikes = await bikesRes.json();
 
     return (

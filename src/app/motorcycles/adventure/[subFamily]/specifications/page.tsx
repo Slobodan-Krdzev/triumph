@@ -10,7 +10,9 @@ const SubFamilyStandardsPage = async ({ params }: any) => {
   const subFam = params.subFamily
 
   try {
-    const subFamilyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=${subFam}`, {cache: 'no-store'})
+    const subFamilyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=${subFam}`, {
+      next: { revalidate: 3000 },
+    })
     const subFamilyData = await subFamilyRes.json()
     const subFamily = subFamilyData[0]
 

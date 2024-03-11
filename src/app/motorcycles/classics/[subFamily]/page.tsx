@@ -17,14 +17,14 @@ const ClassicsSubFamilyPage = async ({ params }: any) => {
     const subFamilyRes = await fetch(
       `${SUB_FAMILIES}?subFamilyName=${subFam}`,
       {
-        cache: "no-store",
+        next: { revalidate: 3000 },
       }
     );
     const subFamilyData = await subFamilyRes.json();
     const subFamily = subFamilyData[0];
 
     const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${subFam}`, {
-      cache: "no-store",
+      next: { revalidate: 3000 },
     });
     const bikes = await bikesRes.json();
 

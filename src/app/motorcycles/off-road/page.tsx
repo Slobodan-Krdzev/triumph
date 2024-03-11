@@ -19,19 +19,23 @@ import { redirect } from "next/navigation";
 const OffRoadFamilyPage = async () => {
   try {
     const familyRes = await fetch(`${FAMILIES}?type=off-road`, {
-      cache: "no-store",
+      next: { revalidate: 3000 },
     });
     const familyData = await familyRes.json();
 
-    const subFamiliesRes = await fetch(`${SUB_FAMILIES}?familyType=off-road`);
+    const subFamiliesRes = await fetch(`${SUB_FAMILIES}?familyType=off-road`, {
+      next: { revalidate: 3000 },
+    });
     const subFamilies = await subFamiliesRes.json();
 
     const bikesRes = await fetch(`${BIKES}?category=off-road`, {
-      cache: "no-store",
+      next: { revalidate: 3000 },
     });
     const bikes = await bikesRes.json();
 
-    const promosRes = await fetch(`${PROMOS}?category=off-road`);
+    const promosRes = await fetch(`${PROMOS}?category=off-road`, {
+      next: { revalidate: 3000 },
+    });
     const promos = await promosRes.json();
 
     return (

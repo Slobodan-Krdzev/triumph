@@ -8,7 +8,9 @@ const Rocket3ModelsPage = async () => {
 
     try{
   
-      const bikesRes = await fetch(`${BIKES}?subFamilyCategory=rocket-3`, {cache: 'no-store'})
+      const bikesRes = await fetch(`${BIKES}?subFamilyCategory=rocket-3`, {
+        next: { revalidate: 3000 },
+      })
       const bikesData = await bikesRes.json()
   
       return (
