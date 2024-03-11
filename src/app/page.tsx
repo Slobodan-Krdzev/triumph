@@ -134,6 +134,9 @@ const linkCardsSection: HomeCardLinkType[] = [
 
 export default async function Home() {
 
+  console.log(process.env.API_ENPOINT, 'TUKA ENDPOINT');
+  
+
     try {
       const mainCarousellItemsRes = await fetch(`${MAINCAROUSELLITEMS}`, {next: {revalidate: 3000}})
       const mainCarousellItems = await mainCarousellItemsRes.json()
