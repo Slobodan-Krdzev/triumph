@@ -1,7 +1,7 @@
-export const BIKES = `${process.env.API_ENDPOINT}/bikes`;
-export const FAMILIES = `${process.env.API_ENDPOINT}/families`;
-export const SUB_FAMILIES = `${process.env.API_ENDPOINT}/subFamilies`;
-export const MAINCAROUSELLITEMS = `${process.env.API_ENDPOINT}/main-carousell-items`
-export const LATESTCAROUSELLITEMS = `${process.env.API_ENDPOINT}/latest-models-carousell-items`
-export const PROMOS = `${process.env.API_ENDPOINT}/promos`
+export const BIKES = `https://amber-island-sousaphone.glitch.me/bikes`;
+export const FAMILIES = `https://amber-island-sousaphone.glitch.me/families`;
+export const SUB_FAMILIES = `https://amber-island-sousaphone.glitch.me/subFamilies`;
+export const MAINCAROUSELLITEMS = `https://amber-island-sousaphone.glitch.me/main-carousell-items`
+export const LATESTCAROUSELLITEMS = `https://amber-island-sousaphone.glitch.me/latest-models-carousell-items`
+export const PROMOS = `https://amber-island-sousaphone.glitch.me/promos`
 
