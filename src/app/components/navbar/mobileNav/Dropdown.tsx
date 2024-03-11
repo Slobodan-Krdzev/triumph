@@ -191,8 +191,8 @@ const Dropdown = ({
 
       {query.get("section") === "true" && (
         <motion.div
-          className="fixed top-16 right-0 left-0 h-screen bg-white z-50 text-white overflow-y-auto"
-          style={{ height: " calc(100vh - 64px)" }}
+          className="fixed top-16 right-0 left-0 bg-white z-50 text-white overflow-y-auto"
+          style={{ height: " calc(100vh - 120px)" }}
           initial={{ x: "100vw" }}
           animate={{ x: 0 }}
           exit={{ x: "100vw" }}
