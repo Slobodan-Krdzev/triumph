@@ -105,7 +105,7 @@ const OffRoadFamilyPage = async () => {
                 link: `/motorcycles/off-road/${promo.subFamilyType}`,
               }}
               image={{
-                src: `${promo.image}`,
+                src: `${promo.image ?? "/images/triumphLogo.png"}`,
                 alt: `${promo.title}`,
               }}
               blackBtn={promo.btnBlack}
