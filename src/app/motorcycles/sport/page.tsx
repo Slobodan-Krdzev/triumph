@@ -91,7 +91,7 @@ const SportBikePage = async ({ params }: any) => {
         <GrayBand
           itemOne={{
             text: "Контакт",
-            url: "/",
+            url: "/dealer",
             icon: "/point.svg",
           }}
           itemTwo={{
