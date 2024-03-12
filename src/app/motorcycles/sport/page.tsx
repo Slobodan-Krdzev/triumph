@@ -95,9 +95,9 @@ const SportBikePage = async ({ params }: any) => {
             icon: "/point.svg",
           }}
           itemTwo={{
-            text: "Тест Возење",
-            url: "/",
-            icon: "/bike.svg",
+            text: "КОНФИГУРАЦИЈА",
+            url: `/configure`,
+            icon: "/icon-configurator.svg",
           }}
         />
       </main>

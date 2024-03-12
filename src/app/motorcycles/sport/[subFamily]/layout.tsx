@@ -53,9 +53,9 @@ export default function SubFamilyLayout({
           icon: "/icon-configurator.svg",
         }}
         itemTwo={{
-          text: "Тест Возење",
-          url: "/",
-          icon: "/bike.svg",
+          text: "Контакт",
+          url: "/dealer",
+          icon: "/pin.svg",
         }}
       />
     </section>
