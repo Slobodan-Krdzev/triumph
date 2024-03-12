@@ -25,7 +25,7 @@ const Garage = ({ handleClose, handleBtn }: GarageProps) => {
     setBikesForGarage(updatedGarage)
   }
   
-  if (localStorage.getItem("garage") === null) {
+  if (localStorage.getItem("garage") === null || bikesForGarage.length === 0) {
     return (
       <section
         className="fixed left-0 right-0 bottom-0 slight-white-bg border-2 py-4 px-4 lg:py-16 lg:px-24"
