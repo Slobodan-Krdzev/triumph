@@ -6,28 +6,28 @@
 
         @csrf
             <h1 class="font-bold text-3xl my-2">Base Info</h1>
-            {{-- Sub Family Name --}}
+
             <label for="subFamilyName">Sub Family Name:</label>
             <input type="text" id="subFamilyName" name="subFamilyName" value="{{ old('subFamilyName') }}">
 
 
-            {{-- Family Type --}}
+
             <label for="familyType">Family Type:</label>
             <input type="text" id="familyType" name="familyType" value="{{ old('familyType') }}">
 
-            {{-- Title --}}
+
             <label for="title">Title:</label>
             <input type="text" id="title" name="title" value="{{ old('title') }}">
 
-            {{-- Price --}}
+
             <label for="price">Price:</label>
             <input type="text" id="price" name="price" value="{{ old('price') }}">
 
-            {{-- URL --}}
+
             <label for="url">URL:</label>
             <input type="text" id="url" name="url" value="{{ old('url') }}">
 
-            {{-- Specs --}}
+
 
             <h1 class="font-bold text-3xl my-2">Specs</h1>
 
@@ -58,7 +58,6 @@
                 <div class="alert alert-danger">{{ $message }}</div>
             @enderror
 
-            {{-- Hero Slogans --}}
 
             <h1 class="font-bold text-3xl my-2">Hero Slogans</h1>
             @for ($i = 0; $i < 3; $i++)
