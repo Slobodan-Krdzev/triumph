@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\SubFamAdventure;
+use App\Service\ImageStorage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
@@ -16,198 +17,47 @@ class AddFamiliesController extends Controller
 
     public function store(Request $request)
     {
+        $validatedData = $request->validate([
+            'subFamilyName' => 'required|string|max:255|unique:sub_fam_adventure,subFamilyName,',
+        ]);
 
-//         $validatedData = $request->validate([
-//             'subFamilyName' => 'required|string',
-//             'familyType' => 'required|string',
-//             'title' => 'required|string',
-//             'price' => 'nullable|numeric',
-//             'url' => 'nullable|string',
-//             'specs' => 'nullable|array',
-//             'specs.*.desc' => 'nullable|string',
-//             'specs.*.data' => 'nullable|string',
-//             'subFamilyPageInfo' => 'nullable|array',
-//             'subFamilyPageInfo.heroSlogans' => 'nullable|array',
-//             'subFamilyPageInfo.fullSpecs' => 'nullable|array',
-//             'subFamilyPageInfo.fullSpecs.engineTransmission' => 'nullable|array',
-//             'subFamilyPageInfo.fullSpecs.engineTransmission.*.title' => 'nullable|string',
-//             'subFamilyPageInfo.fullSpecs.engineTransmission.*.desc' => 'nullable|string',
-//             'subFamilyPageInfo.fullSpecs.frame' => 'nullable|array',
-//             'subFamilyPageInfo.fullSpecs.frame.*.title' => 'nullable|string',
-//             'subFamilyPageInfo.fullSpecs.frame.*.desc' => 'nullable|string',
-//             'subFamilyPageInfo.fullSpecs.dimension' => 'nullable|array',
-//             'subFamilyPageInfo.fullSpecs.dimension.*.title' => 'nullable|string',
-//             'subFamilyPageInfo.fullSpecs.dimension.*.desc' => 'nullable|string',
-//             'subFamilyPageInfo.fullSpecs.fuelConsumption' => 'nullable|array',
-//             'subFamilyPageInfo.fullSpecs.fuelConsumption.*.title' => 'nullable|string',
-//             'subFamilyPageInfo.fullSpecs.fuelConsumption.*.desc' => 'nullable|string',
-//             'subFamilyPageInfo.fullSpecs.service' => 'nullable|array',
-//             'subFamilyPageInfo.fullSpecs.service.*.title' => 'nullable|string',
-//             'subFamilyPageInfo.fullSpecs.service.*.desc' => 'nullable|string',
-//             'subFamilyPageInfo.grayCarousell' => 'nullable|array',
-//             'subFamilyPageInfo.grayCarousell.*.id' => 'nullable|string',
-//             'subFamilyPageInfo.grayCarousell.*.title' => 'nullable|string',
-//             'subFamilyPageInfo.grayCarousell.*.desc' => 'nullable|string',
-//             'subFamilyPageInfo.grayCarousell.*.image' => 'nullable|image|max:2048',
-//             'subFamilyPageInfo.audioSection' => 'nullable|array',
-//             'subFamilyPageInfo.audioSection.title' => 'nullable|string',
-//             'subFamilyPageInfo.audioSection.desc' => 'nullable|string',
-//             'subFamilyPageInfo.audioSection.audio' => 'nullable|string',
-//             'subFamilyPageInfo.audioSection.logo' => 'nullable|image|max:2048',
-//             'subFamilyPageInfo.specNumbers' => 'nullable|array',
-//             'subFamilyPageInfo.specNumbers.*.data' => 'nullable|string',
-//             'subFamilyPageInfo.specNumbers.*.info' => 'nullable|string',
-//             'accessory' => 'nullable|array',
-//             'accessory.banner.image' => 'nullable|image|max:2048',
-//             'accessory.infoText.title' => 'nullable|string',
-//             'accessory.accessoryTypes' => 'nullable|array',
-//             'accessory.accessoryTypes.*.title' => 'nullable|string',
-//             'accessory.accessoryTypes.*.desc' => 'nullable|string',
-//             'accessory.accessoryTypes.*.image1.src' => 'nullable|image|max:2048',
-//             'accessory.accessoryTypes.*.image1.alt' => 'nullable|string',
-//             'accessory.accessoryTypes.*.image2.src' => 'nullable|image|max:2048',
-//             'accessory.accessoryTypes.*.image2.alt' => 'nullable|string',
-//             'gallery' => 'nullable|array',
-//             'gallery.modelImage.src' => 'nullable|image|max:2048',
-//             'gallery.modelImage.alt' => 'nullable|string',
-//             'gallery.subFamilyHeroVideo.src' => 'nullable|mimes:mp4,mov,ogg,qt|max:20000',
-//             'gallery.subFamilyHeroVideo.alt' => 'nullable|string',
-//             'gallery.subFamilyHeroImageMobile.src' => 'nullable|image|max:2048',
-//             'gallery.subFamilyHeroImageMobile.alt' => 'nullable|string',
-//             'gallery.subFamilyTopSectionImage.src' => 'nullable|image|max:2048',
-//             'gallery.subFamilyTopSectionImage.alt' => 'nullable|string',
-//             'gallery.subFamilyTopSectionBGImage.src' => 'nullable|image|max:2048',
-//             'gallery.subFamilyTopSectionBGImage.alt' => 'nullable|string',
-//         ]);
+        $data = array_merge($request->except('subFamilyName'), $validatedData);
 
-        //ddd($validatedData);
-
-//        // Define an array to hold the paths of all uploaded images
-        $title = Str::slug($request->subFamilyName);
-//
-//        $subFamily = new SubFamAdventure();
-//
-//        $subFamily->subFamilyName = $request->subFamilyName;
-//        $subFamily->familyType = $request->familyType;
-//        $subFamily->price = $request->price;
-//        $subFamily->url = $request->url;
-//
-//        $specs = [];
-//
-//        for ($i = 0; $i < count($request->specs); $i++) {
-//            $specs[] = [
-//                'desc' => $request->specs[$i]['desc'],
-//                'data' => $request->specs[$i]['data']
-//            ];
-//        }
-//
-//        $subFamily->specs = $specs;
+        $title = Str::slug($validatedData['subFamilyName']);
 
 
-        // ddd($request->hasFile('subFamilyPageInfo.audioSection.logo'));
-        $data = $request->all();
-        if ($request->hasFile('subFamilyPageInfo.audioSection.logo')) {
-            $image = $request->file('subFamilyPageInfo.audioSection.logo')->getClientOriginalName();
-            $imagePath = $request->file('subFamilyPageInfo.audioSection.logo')->storeAs('subFamilies/' . $title . '/logo', $image, 'public');
-            $data['subFamilyPageInfo']['audioSection']['logo'] = Storage::url($imagePath);
-
-            // ddd($data);
-        }
+        $data['subFamilyPageInfo']['audioSection']['logo'] = ImageStorage::storeFile($request, 'subFamilyPageInfo.audioSection.logo', 'subFamilies/', $title, '/logo');
 
         for ($i = 0; $i < 3; $i++) {
-            if ($request->hasFile('grayCarousell.' . $i . '.image')) {
-                $image = $request->file('grayCarousell.' . $i . '.image')->getClientOriginalName();
-                $imagePath = $request->file('grayCarousell.' . $i . '.image')->storeAs('subFamilies/' . $title . '/grayCarousell', $image, 'public');
-                $data['grayCarousell'][$i]['image'] = Storage::url($imagePath);
-            }
+            $data['grayCarousell'][$i]['image'] = ImageStorage::storeFile($request, 'grayCarousell.' . $i . '.image', 'subFamilies/', $title, '/grayCarousell');
         }
 
-        if ($request->hasFile('reasonsToDrive.banner.image')) {
-            $image = $request->file('reasonsToDrive.banner.image')->getClientOriginalName();
-            $imagePath = $request->file('reasonsToDrive.banner.image')->storeAs('subFamilies/' . $title . '/reasonsToDriveBanner', $image, 'public');
-            $data['reasonsToDrive']['banner']['image'] = Storage::url($imagePath);
-        }
+        $data['reasonsToDrive']['banner']['image'] = ImageStorage::storeFile($request, 'reasonsToDrive.banner.image', 'subFamilies/', $title, '/reasonsToDriveBanner');
 
-        if ($request->hasFile('gallery.modelImage.src')) {
-            $image = $request->file('gallery.modelImage.src')->getClientOriginalName();
-            $imagePath = $request->file('gallery.modelImage.src')->storeAs('subFamilies/' . $title . '/galleryModelImage', $image, 'public');
-            $data['gallery']['modelImage']['src'] = Storage::url($imagePath);
-        }
+        $data['gallery']['modelImage']['src'] = ImageStorage::storeFile($request, 'gallery.modelImage.src', 'subFamilies/', $title, '/galleryModelImage');
 
-        if ($request->hasFile('gallery.subFamilyHeroImageMobile.src')) {
-            $image = $request->file('gallery.subFamilyHeroImageMobile.src')->getClientOriginalName();
-            $imagePath = $request->file('gallery.subFamilyHeroImageMobile.src')->storeAs('subFamilies/' . $title . '/galleryMobileImage', $image, 'public');
-            $data['gallery']['subFamilyHeroImageMobile']['src'] = Storage::url($imagePath);
-        }
+        $data['gallery']['subFamilyHeroImageMobile']['src'] = ImageStorage::storeFile($request, 'gallery.subFamilyHeroImageMobile.src', 'subFamilies/', $title, '/galleryMobileImage');
 
-        if ($request->hasFile('gallery.subFamilyTopSectionImage.src')) {
-            $image = $request->file('gallery.subFamilyTopSectionImage.src')->getClientOriginalName();
-            $imagePath = $request->file('gallery.subFamilyTopSectionImage.src')->storeAs('subFamilies/' . $title . '/galleryTopSectionImage', $image, 'public');
-            $data['gallery']['subFamilyTopSectionImage']['src'] = Storage::url($imagePath);
-        }
+        $data['gallery']['subFamilyTopSectionImage']['src'] = ImageStorage::storeFile($request, 'gallery.subFamilyTopSectionImage.src', 'subFamilies/', $title, '/galleryTopSectionImage');
 
-        if ($request->hasFile('gallery.subFamilyTopSectionBGImage.src')) {
-            $image = $request->file('gallery.subFamilyTopSectionBGImage.src')->getClientOriginalName();
-            $imagePath = $request->file('gallery.subFamilyTopSectionBGImage.src')->storeAs('subFamilies/' . $title . '/galleryTopSectionBGImage', $image, 'public');
-            $data['gallery']['subFamilyTopSectionBGImage']['src'] = Storage::url($imagePath);
-        }
+        $data['gallery']['subFamilyTopSectionBGImage']['src'] = ImageStorage::storeFile($request, 'gallery.subFamilyTopSectionBGImage.src', 'subFamilies/', $title, '/galleryTopSectionBGImage');
 
-        if ($request->hasFile('accessory.banner.image')) {
-            $image = $request->file('accessory.banner.image')->getClientOriginalName();
-            $imagePath = $request->file('accessory.banner.image')->storeAs('subFamilies/' . $title . '/accessoryBannerImage', $image, 'public');
-            $data['accessory']['banner']['image'] = Storage::url($imagePath);
-        }
+        $data['accessory']['banner']['image'] = ImageStorage::storeFile($request, 'accessory.banner.image', 'subFamilies/', $title, '/accessoryBannerImage');
+
 
         foreach ($request->accessory['accessoryTypes'] as $key => $accessoryType) {
-            if ($request->hasFile('accessory.accessoryTypes.' . $key . '.image1.src')) {
-                $image1 = $request->file('accessory.accessoryTypes.' . $key . '.image1.src');
-                $image1Name = $image1->getClientOriginalName();
-                $image1Path = $image1->storeAs('subFamilies/' . $title . '/accessoryTypesImages', $image1Name, 'public');
-                $data['accessory']['accessoryTypes'][$key]['image1']['src'] = Storage::url($image1Path);
-            }
 
-            if ($request->hasFile('accessory.accessoryTypes.' . $key . '.image2.src')) {
-                $image2 = $request->file('accessory.accessoryTypes.' . $key . '.image2.src');
-                $image2Name = $image2->getClientOriginalName();
-                $image2Path = $image2->storeAs('subFamilies/' . $title . '/accessoryTypesImages', $image2Name, 'public');
-                $data['accessory']['accessoryTypes'][$key]['image2']['src'] = Storage::url($image2Path);
-            }
+            $data['accessory']['accessoryTypes'][$key]['image1']['src'] = ImageStorage::storeFile($request, 'accessory.accessoryTypes.' . $key . '.image1.src', 'subFamilies/', $title, '/accessoryTypesImages');
+
+            $data['accessory']['accessoryTypes'][$key]['image2']['src'] = ImageStorage::storeFile($request, 'accessory.accessoryTypes.' . $key . '.image2.src', 'subFamilies/', $title, '/accessoryTypesImages');
+
         }
 
+        $data['gallery']['subFamilyHeroVideo']['src'] = ImageStorage::storeFile($request, 'gallery.subFamilyHeroVideo.src', 'subFamilies/', $title, '/galleryVideo');
 
-        if ($request->hasFile('gallery.subFamilyHeroVideo.src')) {
-            $video = $request->file('gallery.subFamilyHeroVideo.src')->getClientOriginalName();
-            $videoPath = $request->file('gallery.subFamilyHeroVideo.src')->storeAs('subFamilies/' . $title . '/galleryVideo', $video, 'public');
-            $data['gallery']['subFamilyHeroVideo']['src'] = Storage::url($videoPath);
-        }
-
-        //ddd($validatedData);
 
         SubFamAdventure::create($data);
 
-
-//        $subFamily = new SubFamAdventure();
-//
-//        foreach ($validatedData as $key => $value) {
-//            if (is_array($value)) {
-//                foreach ($value as $index => $element) {
-//                    if (is_array($element)) {
-//                        foreach ($element as $subKey => $subValue) {
-//                            $subFamily->setAttribute("{$key}.{$index}.{$subKey}", $subValue);
-//                        }
-//                    } else {
-//                        $subFamily->setAttribute("{$key}.{$index}", $element);
-//                    }
-//                }
-//            } else {
-//                $subFamily->setAttribute($key, $value);
-//            }
-//        }
-//
-//        //ddd($subFamily);
-//
-//
-//        $subFamily->save();
 
         return back()->with('success', 'Sub-Family data stored successfully');
     }

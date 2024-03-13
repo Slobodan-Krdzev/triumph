@@ -32,7 +32,7 @@
                 </ul>
 
                 <h3>Sub Family Page Info</h3>
-                <p>Title: {{ $subFamData['subFamilyPageInfo']['audioSection']['title'] }}</p>
+                <p>Title: {{ $subFamData['subFamilyPageInfo']['audioSection']['title']}}</p>
                 <p>Description: {{ $subFamData['subFamilyPageInfo']['audioSection']['desc'] }}</p>
                 <!-- Continue accessing other properties -->
 
@@ -43,7 +43,7 @@
             </div>
 
 
-            <form action="{{ route('update-sub-adventure', $subFamData->id) }}" method="POST" class="flex flex-col">
+            <form action="{{ route('update-sub-adventure', $subFamData->id) }}" method="POST" class="flex flex-col" enctype="multipart/form-data">
             @csrf
             @method('PUT')
 
@@ -116,6 +116,13 @@
 
                 <label for="audioSection_desc">Audio Section Description:</label>
                 <textarea id="audioSection_desc" name="subFamilyPageInfo[audioSection][desc]">{{ old('subFamilyPageInfo.audioSection.desc', $subFamData->subFamilyPageInfo['audioSection']['desc'] ?? '') }}</textarea>
+
+                    <x-form.input labelText="Page Info Logo:" imageId="subFamilyPageInfoLogo"
+                                  name="subFamilyPageInfo[audioSection][logo]">
+
+                            <img width="600" height="300" id="subFamilyPageInfoLogo" src="{{ $subFamData->subFamilyPageInfo['audioSection']['logo'] }}"
+                                    type="audio/ogg">
+                    </x-form.input>
 
                 {{-- <label for="audioSection_audio">Audio Section Audio File:</label>
                 <input type="text" id="audioSection_audio" name="subFamilyPageInfo[audioSection][audio]"

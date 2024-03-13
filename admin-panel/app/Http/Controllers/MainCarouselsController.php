@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\MainCarousell;
+use App\Service\ImageStorage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
@@ -42,26 +43,11 @@ class MainCarouselsController extends Controller
         // Sanitize the title to create a directory name
         $sanitizedTitle = Str::slug($request->title);
 
-        // Process main image
-        if ($request->hasFile('image')) {
-            $image = $request->file('image')->getClientOriginalName();
-            $imagePath = $request->file('image')->storeAs('mainCarousel/' . $sanitizedTitle . '/images', $image, 'public');
-            $carousel->image = Storage::url($imagePath);
-        }
+        $carousel->image = ImageStorage::storeFile($request, 'image', 'mainCarousel/',$sanitizedTitle, '/images');
 
-        // Process mobile image
-        if ($request->hasFile('imageMobile')) {
-            $imageMobile = $request->file('imageMobile')->getClientOriginalName();
-            $imageMobilePath = $request->file('imageMobile')->storeAs('mainCarousel/' . $sanitizedTitle . '/mobileImages', $imageMobile, 'public');
-            $carousel->imageMobile = Storage::url($imageMobilePath);
-        }
+        $carousel->imageMobile = ImageStorage::storeFile($request, 'imageMobile', 'mainCarousel/',$sanitizedTitle, '/mobileImages');
 
-        // Process video
-        if ($request->hasFile('video')) {
-            $video = $request->file('video')->getClientOriginalName();
-            $videoPath = $request->file('video')->storeAs('mainCarousel/' . $sanitizedTitle . '/videos', $video, 'public');
-            $carousel->video = Storage::url($videoPath);
-        }
+        $carousel->video = ImageStorage::storeFile($request, 'video', 'mainCarousel/',$sanitizedTitle, '/videos');
 
         // Save the carousel instance
         $carousel->save();
