@@ -17,7 +17,7 @@
         @endif
         <h1 class="font-bold text-4xl text-end">Edit Sub-Family of <span
                 class="text-red-500 capitalize">{{ $subFamData->subFamilyName }}</span></h1>
-        <div>
+        {{-- <div>
             <h2>{{ $subFamData['subFamilyName'] }}</h2>
             <p>Family Type: {{ $subFamData['familyType'] }}</p>
             <p>Price: {{ $subFamData['price'] }}</p>
@@ -32,22 +32,22 @@
             </ul>
 
             <h3>Sub Family Page Info</h3>
-            {{-- <p>Description: {{ $subFamData['subFamilyPageInfo']['audioSection']['desc'] }}</p> --}}
+            <p>Description: {{ $subFamData['subFamilyPageInfo']['audioSection']['desc'] }}</p>
             <!-- Continue accessing other properties -->
 
             <!-- Display gallery images -->
             <h3>Gallery</h3>
             <!-- Add your code to display gallery images here -->
-            {{-- <img src="{{ $subFamData['subFamilyPageInfo']['audioSection']['logo'] }}" width="200px" alt=""> --}}
+            <img src="{{ $subFamData['subFamilyPageInfo']['audioSection']['logo'] }}" width="200px" alt="">
             @isset($subFamData['subFamilyPageInfo']['audioSection']['logo'])
-                {{-- <img src="{{ $subFamData['subFamilyPageInfo']['audioSection']['logo'] }}" width="200px" alt=""> --}}
+                <img src="{{ $subFamData['subFamilyPageInfo']['audioSection']['logo'] }}" width="200px" alt="">
                 <img src="/storage{{ $subFamData['subFamilyPageInfo']['audioSection']['logo'] }}" width="200px"
                     alt="">
             @else
                 <img src="{{ asset('images/logo.png') }}" width="200px" alt="">
             @endisset
 
-        </div>
+        </div> --}}
 
 
         <form action="{{ route('update-sub-adventure', $subFamData->id) }}" method="POST" class="flex flex-col"
@@ -125,31 +125,12 @@
                 <label for="audioSection_desc">Audio Section Description:</label>
                 <textarea id="audioSection_desc" name="subFamilyPageInfo[audioSection][desc]">{{ old('subFamilyPageInfo.audioSection.desc', $subFamData->subFamilyPageInfo['audioSection']['desc'] ?? '') }}</textarea>
 
-                <x-form.input labelText="Page Info Logo:" imageId="subFamilyPageInfoLogo"
-                    name="subFamilyPageInfo[audioSection][logo]">
 
-                    {{-- <img width="600" height="300" id="subFamilyPageInfoLogo" src="{{ $subFamData->subFamilyPageInfo['audioSection']['logo'] }}" type="audio/ogg"> --}}
-                    @isset($subFamData->subFamilyPageInfo['audioSection']['logo'])
-                        <img width="600" height="300" id="subFamilyPageInfoLogo"
-                            src="/storage{{ $subFamData->subFamilyPageInfo['audioSection']['logo'] }}" type="audio/ogg">
-                    @else
-                        <!-- Provide an alternative content or image if the 'logo' is not set -->
-                        <img width="600" height="300" id="subFamilyPageInfoLogo" src="path_to_default_image.jpg"
-                            type="audio/ogg">
-                    @endisset
-
-                </x-form.input>
-
-                {{-- <label for="audioSection_audio">Audio Section Audio File:</label>
-                <input type="text" id="audioSection_audio" name="subFamilyPageInfo[audioSection][audio]"
-                    value="{{ old('subFamilyPageInfo.audioSection.audio', $subFamData->subFamilyPageInfo['audioSection']['audio'] ?? '') }}"> --}}
-
-                {{-- AUDIO SECTION TRY --}}
                 <section class="my-7 font-bold text-red-600">
                     <x-form.input labelText="Choose Audio" imageId="audioSection_audio"
                         name="subFamilyPageInfo[audioSection][audio]">
                         <audio controls autoplay muted>
-                            <source src="{ $subFamData->subFamilyPageInfo['audioSection']['audio'] }}" type="audio/ogg">
+                            <source src="/storage{{$subFamData->subFamilyPageInfo['audioSection']['audio'] }}" type="audio/ogg">
                         </audio>
                     </x-form.input>
                 </section>
@@ -254,10 +235,10 @@
 
 
                     @if (isset($grayCarousell['image']) && !empty($grayCarousell['image']))
-                        <x-form.input labelText="Banner Image:" imageId="grayCarousellImage{{ $index }}"
+                        <x-form.input labelText="Banner Image:" imageId="grayCaroImage"
                             name="reasonsToDrive[banner][image]">
-                            <img id='grayCarousellImage{{ $index }}'
-                                src="/storage{{ $grayCarousell['image'] }}" width="600" height="300"
+                            <img id='grayCaroImage'
+                                src="/storage/{{ $grayCarousell['image'] }}" width="600" height="300"
                                 class="object-cover border m-3 border-gray-200" />
                         </x-form.input>
 
@@ -471,14 +452,12 @@
             <input type="text" name="gallery[modelImage][alt]"
                 value="{{ old('gallery.modelImage.alt', $subFamData->gallery['modelImage']['alt']) }}"> --}}
 
-            <div class="form-group">
                 <label for="modelImageAlt">Model Image Alt Text:</label>
                 {{-- <input type="text" class="form-control" id="modelImageAlt" name="gallery[modelImage][alt]"
                     value="{{ $subFamData->gallery['modelImage']['alt'] }}"> --}}
                 <input type="text" class="form-control" id="modelImageAlt" name="gallery[modelImage][alt]"
                     value="{{ $subFamData->gallery['modelImage']['alt'] ?? '' }}">
 
-            </div>
 
 
 
