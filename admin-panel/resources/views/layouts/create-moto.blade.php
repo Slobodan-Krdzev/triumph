@@ -2,7 +2,7 @@
 
     <div class="px-8 mt-10 w-8/12">
 
-        <form action="{{ route('store-moto') }}" method="POST" class="flex flex-col ">
+        <form action="{{ route('store-moto') }}" method="POST" class="flex flex-col" enctype="multipart/form-data">
             @csrf
 
             @if (session('success'))
@@ -143,11 +143,6 @@
 
             <label for="subFamilyPromo[desc]">Sub Family Promo Description:</label>
             <input type="text" name="subFamilyPromo[desc]" required>
-
-
-            <label for="">Test</label>
-            <input type="file" name="gallery[modelImage][src]">
-
 
 
 
