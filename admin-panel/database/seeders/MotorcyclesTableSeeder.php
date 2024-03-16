@@ -165,171 +165,7 @@ class MotorcyclesTableSeeder extends Seeder
             ],
         ];
 
-        $motorcycleDataTwo = [
-            [
-                "title" => "Tiger 900 GT PRO",
-                "model" => "tiger-900-gt-pro",
-                "category" => "adventure",
-                "subFamilyCategory" => "tiger-900",
-                "edition" => "adventure",
-                "price" => 16790,
-                "gallery" => [
-                    "modelImage" => [
-                        "src" => "/images/adventure/tiger900GTPRO/tiger900GTPROGraphite.png",
-                        "alt" => "Tiger 900 GT"
-                    ],
-                    "promoYoutubeVideo" => [
-                        "src" => "https://www.youtube.com/embed/8a7AiabjRaM",
-                        "alt" => "Promo Youtube Video Tiger 900 GT PRo"
-                    ]
-                ],
-                "bikeCollorPalletteGallery" => [
-                    "default" => "/images/adventure/tiger900GTPRO/tiger900GTPROWhite.png",
-                    "color1" => "/images/adventure/tiger900GTPRO/tiger900GTPROWhite.png",
-                    "color1Reversed" => "/images/adventure/tiger900GTPRO/tiger900GTPROWhiteReversed.png",
-                    "color2" => "/images/adventure/tiger900GTPRO/tiger900GTPROBlack.png",
-                    "color2Reversed" => "/images/adventure/tiger900GTPRO/tiger900GTPROBlackReversed.png",
-                    "color3" => "/images/adventure/tiger900GTPRO/tiger900GTPROBlue.png",
-                    "color3Reversed" => "/images/adventure/tiger900GTPRO/tiger900GTPROBlueReversed.png"
-                ],
-                "customizationColors" => [
-                    [
-                        "colorName" => "Pure White",
-                        "price" => null,
-                        "image" => "/images/custom-collors/pureWhite.jpg",
-                        "colorCode" => "color1"
-                    ],
-                    [
-                        "colorName" => "Saphire Black",
-                        "price" => 200,
-                        "image" => "/images/custom-collors/sapphireBlack.jpg",
-                        "colorCode" => "color2"
-                    ],
-                    [
-                        "colorName" => "Caspian Blue",
-                        "price" => 200,
-                        "image" => "/images/custom-collors/caspianBlue.jpg",
-                        "colorCode" => "color3"
-                    ]
-                ],
-                "subFamilyPromo" => [
-                    "title" => "Новиот Tiger 900 GT PRO",
-                    "desc" => "Високи перформанси, комфорт, можности и управување. Новата Tiger 900 GT фамилија е родена за авантури од епски размери."
-                ],
-                "bikePageCarousell" => [
-                    [
-                        "title" => "Мотор",
-                        "desc" => "Целиот обртен момент и тракција карактеристична за дво-цилиндарските мотори со одличната сила на средни и високи револуции на моторот карактеристични за три-цилиндарските мотори. Флексибилен, интуитивен со 13% повеќе моќ од својот претходник.",
-                        "image" => "/images/adventure/tiger900GTPRO/tiger900GTPROBikeCaro1.avif"
-                    ],
-                    [
-                        "title" => "Сигурносни Системи",
-                        "desc" => "Унапредениот систем за сопирање со оптимизиран ABS и систем за пролизгување заедно со светлосениот систем за алармирање на другите возачи при нагло сопирање ветуваат самодоберба и високо ниво на сигурност.",
-                        "image" => "/images/adventure/tiger900GTPRO/tiger900GTPROBikeCaro2.avif"
-                    ],
-                    [
-                        "title" => "Технологија",
-                        "desc" => "Целокупната Tiger 900 серија е опремена со високо ниво на технологија фокусирана на возачот. На располагање се 5 мода за возење а преку новиот 7 инчен TFT екран лесно можете да се поврзете со вашиот мотор преку Bluetooth.",
-                        "image" => "/images/adventure/tiger900GTPRO/tiger900GTPROBikeCaro3.avif"
-                    ],
-                    [
-                        "title" => "Комфорт",
-                        "desc" => "Ергономијата на моторот е дизајнирана за максимално искуство при долгите авантури со манимална доза на замор. Новото седиште со 20мм понизок профил од стандардот како и воланот кој ги абсорбира сите несакани вибрации и удари му овозможуваат на возачот максимален комфорт и ушивање во авантурата.",
-                        "image" => "/images/adventure/tiger900GTPRO/tiger900GTPROBikeCaro4.avif"
-                    ],
-                    [
-                        "title" => "Brembo Сопирачки",
-                        "desc" => "Tiger 900 серијата на себе го носи најдобриот систем за сопирање во класата - Brembo Stylema со двојни 320 милиметарски дискови за поголема сопирачка моќ и повеќе контрола.",
-                        "image" => "/images/adventure/tiger900GTPRO/tiger900GTPROBikeCaro5.avif"
-                    ],
-                    [
-                        "title" => "Суспензија",
-                        "desc" => "Изработена исклучиво за Triumph, одличната Marzocchi прилагодлива суспензија нуди големо ниво на комфорт и контрола на моторциклот.",
-                        "image" => "/images/adventure/tiger900GTPRO/tiger900GTPROBikeCaro6.avif"
-                    ],
-                    [
-                        "title" => "Квачило - Assisted Slip",
-                        "desc" => "Дизајнирано за подобра контрола на задниот крај при агресивни спустови или лизгави коловози - Slip Assist квачилото ви асистира со полесен притисок на дланката.",
-                        "image" => "/images/adventure/tiger900GTPRO/tiger900GTPROBikeCaro7.avif"
-                    ],
-                    [
-                        "title" => "Резервоар",
-                        "desc" => "Дизајниран за долги патувања но и за максимална удобдност на возачот, резервоарот има капацитет од 20 литри и нуди одлична возачка позиција.",
-                        "image" => "/images/adventure/tiger900GTPRO/tiger900GTPROBikeCaro8.avif"
-                    ],
-                    [
-                        "title" => "Светло",
-                        "desc" => "Моќна LED расвета е насекаде низ Tiger 900 серијата со одлично главно светло и препознатливо LED дневно светло.",
-                        "image" => "/images/adventure/tiger900GTPRO/tiger900GTPROBikeCaro9.avif"
-                    ],
-                    [
-                        "title" => "Bluetooth Конекција",
-                        "desc" => "Стандардниот My Triumph систем за поврзување нуди „Turn-By-Turn“ навигација и целосна контрола на вашиот смарт телефонт (повици, музика).",
-                        "image" => "/images/adventure/tiger900GTPRO/tiger900GTPROBikeCaro10.avif"
-                    ]
-                ],
-                "features" => [
-                    [
-                        "title" => "Модови за возење",
-                        "desc" => "5 - Road, Rain, Sport, Rider Customizable & Off-Road"
-                    ],
-                    [
-                        "title" => "Поврзување",
-                        "desc" => "Triump Connectivity System"
-                    ],
-                    [
-                        "title" => "Светло",
-                        "desc" => "Full LED"
-                    ],
-                    [
-                        "title" => "USB",
-                        "desc" => "2 порти - Кокпит и под седиште"
-                    ],
-                    [
-                        "title" => "Ветробранско Стакло",
-                        "desc" => "Подесување до 50mm"
-                    ],
-                    [
-                        "title" => "Греачи",
-                        "desc" => "Рачки и Седишта"
-                    ],
-                    [
-                        "title" => "Темпомат",
-                        "desc" => "Доаѓа како стандард"
-                    ],
-                    [
-                        "title" => "Систем за контрола на притисок во пневматици",
-                        "desc" => "Опционален Пакет"
-                    ],
-                    [
-                        "title" => "ABS - Ситем за Пролизгување",
-                        "desc" => "Доаѓа како стандард"
-                    ],
-                    [
-                        "title" => "Triumph Shift Assist",
-                        "desc" => "Доаѓа како стандард"
-                    ],
-                    [
-                        "title" => "Систем за алармирање при нагло запирање",
-                        "desc" => "Доаѓа како стандард"
-                    ],
-                    [
-                        "title" => "Заштитни Рамови",
-                        "desc" => "Опционален Пакет"
-                    ],
-                    [
-                        "title" => "Централна Ногарка",
-                        "desc" => "Доаѓа како Стандард"
-                    ]
-                ],
-                "bikePageImageGallery" => [
-                    "/images/adventure/tiger900GTPRO/tiger900GTPROBikeGalleryCaro1.avif",
-                    "/images/adventure/tiger900GTPRO/tiger900GTPROBikeGalleryCaro2.avif",
-                    "/images/adventure/tiger900GTPRO/tiger900GTPROBikeGalleryCaro3.avif",
-                    "/images/adventure/tiger900GTPRO/tiger900GTPROBikeGalleryCaro4.avif"
-                ]
-            ],
-        ];
+
 
         $motorcycleDataThree = [
             [
@@ -1526,408 +1362,10 @@ class MotorcyclesTableSeeder extends Seeder
         ];
 
 
-        $motorcycleDataEleven = [
-            [
-                "title" => "Tiger 900 GT Aragon Edition",
-                "model" => "gt-aragon-edition-2024",
-                "category" => "adventure",
-                "subFamilyCategory" => "tiger-900-2023",
-                "edition" => "special",
-                "price" => 16290,
-                "specs" => [
-                    "cc" => 398,
-                    "hp" => 20,
-                    "torque" => 37.5,
-                    "horsePower" => 40,
-                    "serviceInterval" => "16.000km",
-                    "motorType" => "TR"
-                ],
-                "gallery" => [
-                    "modelImage" => [
-                        "src" => "/images/adventure/tiger900GtAragonModel.png",
-                        "alt" => "Tiger 1200 GT Aragon"
-                    ],
-                    "promoYoutubeVideo" => [
-                        "src" => "https =>//www.youtube.com/embed/dGfqpR5bwyM",
-                        "alt" => "Tiger 850 Youtbe Video"
-                    ]
-                ],
-                "bikeCollorPalletteGallery" => [
-                    "default" => "/images/adventure/tiger1200GTPRO/tigerSport850ModelImage.png",
-                    "color1" => "/images/adventure/tiger1200GTPRO/tigerSport850ModelImage.png",
-                    "color1Reversed" => "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor1Reversed.png",
-                    "color2" => "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor2.png",
-                    "color2Reversed" => "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor2Reversed.png",
-                    "color3" => "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor3.png",
-                    "color3Reversed" => "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor3Reversed.png"
-                ],
-                "customizationColors" => [
-                    [
-                        "colorName" => "Snowdonia White",
-                        "price" => null,
-                        "image" => "/images/custom-collors/snowdoniaWhite.jpg",
-                        "colorCode" => "color1"
-                    ],
-                    [
-                        "colorName" => "Saphire Black",
-                        "price" => 200,
-                        "image" => "/images/custom-collors/sapphireBlack.jpg",
-                        "colorCode" => "color2"
-                    ],
-                    [
-                        "colorName" => "Lucerne Blue",
-                        "price" => 200,
-                        "image" => "/images/custom-collors/lucerneBlue.jpg",
-                        "colorCode" => "color3"
-                    ]
-                ],
-                "shortSpecInfo" => [
-                    "info1" => "Нов 900cc три-цилиндричен мотор",
-                    "info2" => "Високи спецификации за подобро искуство",
-                    "info3" => "Врвна технологија фокусирана на возачот"
-                ],
-                "features" => [
-                    [
-                        "title" => "Мотор",
-                        "desc" => "850сс triple мотор со иновативна Т-радалица (EURO 5 Стандарди)"
-                    ],
-                    [
-                        "title" => "Compliance",
-                        "desc" => "A2 compliant (Accessory fit conversion kit)"
-                    ],
-                    [
-                        "title" => "Квачило",
-                        "desc" => "Slip & assist квачило"
-                    ],
-                    [
-                        "title" => "Систем за Пролизгување",
-                        "desc" => "Ride-by-wire со автоматски систем за пролизгување"
-                    ],
-                    [
-                        "title" => "Мод на работа",
-                        "desc" => "2 модуса на работа (нормално и за дожд)"
-                    ],
-                    [
-                        "title" => "Суспензија",
-                        "desc" => "Marzocchi Гасна Суспензија, со можност за прилагодување"
-                    ],
-                    [
-                        "title" => "Сопирачки",
-                        "desc" => "Brembo Stylema сопирачки систем со двојни 320мм дискови"
-                    ],
-                    [
-                        "title" => "ИНструментна Плоча",
-                        "desc" => "5” TFТ инструментна плоча"
-                    ],
-                    [
-                        "title" => "Светло",
-                        "desc" => "LED главни и дневни светла"
-                    ],
-                    [
-                        "title" => "Ветробранско Стакло",
-                        "desc" => "Заштитно стакло, лесно прилагодливо"
-                    ],
-                    [
-                        "title" => "Гаранција",
-                        "desc" => "2 Години"
-                    ],
-                    [
-                        "title" => "Сервисен Интервал",
-                        "desc" => "2 Години"
-                    ]
-                ],
-                "bikePageCarousell" => [
-                    [
-                        "title" => "Нов три-цилиндричен мотор со Т-Радалица",
-                        "desc" => "Силен карактер и сила на низок обртај и уште поголема моќ од новиот иновативен мотор на Triumph со Т-радалица и уникатна 1, 3, 2 секвенца на палење. Моторот на Tiger 850 испорачува 85РЅ при 8500rpm и 85Nm обртен момент при 6500rpm. .",
-                        "image" => "/images/adventure/tigerSport850/tiger850LatestCaro1.avif"
-                    ],
-                    [
-                        "title" => "Мотор кој инспирира самодоверба",
-                        "desc" => "Витка силуета, со седло на подесување од 810мм до 830мм и волан кој се прилагодува според вашите потреби, комбинирано со Brembo Stylema системот за сопирање, Marzocchi суспензија и сета можна технологија која е фокусирана на возачот и на тоа да му овозможи на возачот максимална самодоверба и контрола врз моторот.",
-                        "image" => "/images/adventure/tigerSport850/tiger850LatesrCaro2.avif"
-                    ],
-                    [
-                        "title" => "Технологија фокусирана на возачот",
-                        "desc" => "Внесете се во секое возење со самодоверба со одлизни перформанси и чувство на сигурност благодарејки на Tiger 850 Sport сигурносна технологија, како најновиот ABS систем и систем за пролизгување кој се прилагодува според вашите потреби. Моќен а сепак лабав авантуристички мотор.",
-                        "image" => "/images/adventure/tigerSport850/tiger850LatestCaro3.avif"
-                    ],
-                    [
-                        "title" => "TFT Екран",
-                        "desc" => "5' инчен екран во боја со минималистички стил кои ви ги дава на дофат сите потребни информации, доволно брзо за да немора да го тргнете погледот од патот.",
-                        "image" => "/images/adventure/tigerSport850/tiger850LatestCaro4.avif"
-                    ],
-                    [
-                        "title" => "2 мода на работа",
-                        "desc" => "На располагање се два мода на работа. Нормален и мод за дожд. Заедно со системите за пролизгување и системот за асистенција при апликација на гас се грижат за сигурна авантура.",
-                        "image" => "/images/adventure/tigerSport850/tiger850LatestCarо5.avif"
-                    ],
-                    [
-                        "title" => "LED светла насекаде",
-                        "desc" => "Прекрасно лесно-одржувачко LED светло го краси предниот крај на Tiger 850 Sport.Истото дава префинет изглед и ви овозможува чиста визија за тоа што ќе се најде пред вас. Нуди максимално осветлување на патиштата како и прекрасни LED дневни светла.",
-                        "image" => "/images/adventure/tigerSport850/tiger850LatestCaro6.avif"
-                    ],
-                    [
-                        "title" => "Квачило кое работи за вас",
-                        "desc" => "Квачилото ви асистира при возењето на Tiger 850 Sport. Ви го олеснува стисокот што овозможува за подолга и по лесна авантура, дури и во градските средини каде запирањето е честа случка.",
-                        "image" => "/images/adventure/tigerSport850/tiger850LatestCaro7.avif"
-                    ],
-                    [
-                        "title" => "Подесувачко Ветробранско Стакло",
-                        "desc" => "Скријте се од ветрот со помош на Ветробранското Стакло кое се прилагодува според вашите потреби со помош на една-рака и при возење.",
-                        "image" => "/images/adventure/tigerSport850/tiger850LatestCaro8.avif"
-                    ],
-                    [
-                        "title" => "Систем за сопирање на Brembo",
-                        "desc" => "Нај-добрата, лесна, и компактна серија на Brembo Stylema клешти за сопирање со 320мм дискови ви дава самодоверба каде и да помислите.",
-                        "image" => "/images/adventure/tigerSport850/tiger850LatestCaro9.avif"
-                    ],
-                    [
-                        "title" => "Авантуристички Стил",
-                        "desc" => "Off-road перформанси кои импресионираат споени со авантуристичка силуета со агресивни линии, детали и Tiger 850 Sport палетата на бои, дава рефиниран но сепак спортски, издржлив карактер кој е спремен за авантура.",
-                        "image" => "/images/adventure/tigerSport850/tiger850LatestCaro10.avif"
-                    ],
-                    [
-                        "title" => "20 литарски резервоар",
-                        "desc" => "20 литарскиот резервоар ви овозможува повеќе возење а помалку време изгубено на бензиските станици.",
-                        "image" => "/images/adventure/tigerSport850/tiger850LatestCaro11.avif"
-                    ]
-                ],
-                "subFamilyPromo" => [
-                    "title" => "НОВИОТ TIGER 900 GT ARAGON EDITION",
-                    "desc" => "Врвниот авантуристички моторцикл од средна зафатнина но фокусиран за патишта. Врвни перформанси, стил и спецификации спремни и за на трка."
-                ],
-                "bikePagePromo" => [
-                    [
-                        "title" => "Ергономија која инспирира самодоверба",
-                        "desc" => "Тенката силуета на Tiger 850 Sport, овозможува лесен контакт со површината на која возите. Лесната шасија, прилагодливите седло и волан, го подобруваат комодитетот и самодовербата.",
-                        "image" => "/images/adventure/tigerSport850/tiger850BikePagePromo1.avif"
-                    ]
-                ]
-            ]
-        ];
 
-        $motorcycleDataTwelve = [
-            [
-                "title" => "Tiger 900 Rally Aragon Edition",
-                "model" => "rally-aragon-edition-2024",
-                "category" => "adventure",
-                "subFamilyCategory" => "tiger-900-2023",
-                "edition" => "special",
-                "price" => 16990,
-                "specs" => [
-                    "cc" => 398,
-                    "hp" => 20,
-                    "torque" => 37.5,
-                    "horsePower" => 40,
-                    "serviceInterval" => "16.000km",
-                    "motorType" => "TR"
-                ],
-                "gallery" => [
-                    "modelImage" => [
-                        "src" => "/images/adventure/tiger900RallyAragonModel.png",
-                        "alt" => "iger 900 Rally Aragon Edition"
-                    ],
-                    "promoYoutubeVideo" => [
-                        "src" => "https =>//www.youtube.com/embed/dGfqpR5bwyM",
-                        "alt" => "Tiger 850 Youtbe Video"
-                    ]
-                ],
-                "bikeCollorPalletteGallery" => [
-                    "default" => "/images/adventure/tiger1200GTPRO/tigerSport850ModelImage.png",
-                    "color1" => "/images/adventure/tiger1200GTPRO/tigerSport850ModelImage.png",
-                    "color1Reversed" => "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor1Reversed.png",
-                    "color2" => "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor2.png",
-                    "color2Reversed" => "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor2Reversed.png",
-                    "color3" => "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor3.png",
-                    "color3Reversed" => "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor3Reversed.png"
-                ],
-                "customizationColors" => [
-                    [
-                        "colorName" => "Snowdonia White",
-                        "price" => null,
-                        "image" => "/images/custom-collors/snowdoniaWhite.jpg",
-                        "colorCode" => "color1"
-                    ],
-                    [
-                        "colorName" => "Saphire Black",
-                        "price" => 200,
-                        "image" => "/images/custom-collors/sapphireBlack.jpg",
-                        "colorCode" => "color2"
-                    ],
-                    [
-                        "colorName" => "Lucerne Blue",
-                        "price" => 200,
-                        "image" => "/images/custom-collors/lucerneBlue.jpg",
-                        "colorCode" => "color3"
-                    ]
-                ],
-                "shortSpecInfo" => [
-                    "info1" => "Нов 900cc три-цилиндричен мотор",
-                    "info2" => "Врвна спецификација за екстремни off-road можности",
-                    "info3" => "Врвни перформанси и агилност"
-                ],
-                "subFamilyPromo" => [
-                    "title" => "НОВИОТ TIGER 900 RALLY ARAGON EDITION",
-                    "desc" => "лидер во класата по спецификации со тркачки перформанси. Tiger 900 Rally Aragon ја ре-дефинира авантурата."
-                ],
-                "bikePagePromo" => [
-                    [
-                        "title" => "Ергономија која инспирира самодоверба",
-                        "desc" => "Тенката силуета на Tiger 850 Sport, овозможува лесен контакт со површината на која возите. Лесната шасија, прилагодливите седло и волан, го подобруваат комодитетот и самодовербата.",
-                        "image" => "/images/adventure/tigerSport850/tiger850BikePagePromo1.avif"
-                    ]
-                ]
-            ]
-        ];
 
-        $motorcycleDataThirteen = [
-            [
-                "title" => "Tiger 900 GT Pro (MY23)",
-                "model" => "gt-pro",
-                "category" => "adventure",
-                "subFamilyCategory" => "tiger-900",
-                "edition" => "adventure",
-                "price" => 16290,
-                "specs" => [
-                    "cc" => 398,
-                    "hp" => 20,
-                    "torque" => 37.5,
-                    "horsePower" => 40,
-                    "serviceInterval" => "16.000km",
-                    "motorType" => "TR"
-                ],
-                "gallery" => [
-                    "modelImage" => [
-                        "src" => "/images/adventure/tiger900GtProModel.png",
-                        "alt" => "Tiger 900 GT PRo (MY23)"
-                    ],
-                    "promoYoutubeVideo" => [
-                        "src" => "https =>//www.youtube.com/embed/dGfqpR5bwyM",
-                        "alt" => "Tiger 850 Youtbe Video"
-                    ]
-                ],
-                "bikeCollorPalletteGallery" => [
-                    "default" => "/images/adventure/tiger1200GTPRO/tigerSport850ModelImage.png",
-                    "color1" => "/images/adventure/tiger1200GTPRO/tigerSport850ModelImage.png",
-                    "color1Reversed" => "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor1Reversed.png",
-                    "color2" => "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor2.png",
-                    "color2Reversed" => "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor2Reversed.png",
-                    "color3" => "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor3.png",
-                    "color3Reversed" => "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor3Reversed.png"
-                ],
-                "customizationColors" => [
-                    [
-                        "colorName" => "Snowdonia White",
-                        "price" => null,
-                        "image" => "/images/custom-collors/snowdoniaWhite.jpg",
-                        "colorCode" => "color1"
-                    ],
-                    [
-                        "colorName" => "Saphire Black",
-                        "price" => 200,
-                        "image" => "/images/custom-collors/sapphireBlack.jpg",
-                        "colorCode" => "color2"
-                    ],
-                    [
-                        "colorName" => "Lucerne Blue",
-                        "price" => 200,
-                        "image" => "/images/custom-collors/lucerneBlue.jpg",
-                        "colorCode" => "color3"
-                    ]
-                ],
-                "shortSpecInfo" => [
-                    "info1" => "Потполно нов 900сс три-цилиндарски мотор",
-                    "info2" => "GT спецификација за долги дистанци",
-                    "info3" => "Врвна технологија фокусирана на возачот"
-                ],
-                "subFamilyPromo" => [
-                    "title" => "TIGER SPORT 660",
-                    "desc" => "Првиот избор за многу корисници, со три-цилиндарски мотор, неверојатен комфорт, перформантен, искористлив и агилен, стот тоа со најниски трошоци за одржување во класата. Цени од €9,590.00"
-                ],
-                "bikePagePromo" => [
-                    [
-                        "title" => "Ергономија која инспирира самодоверба",
-                        "desc" => "Тенката силуета на Tiger 850 Sport, овозможува лесен контакт со површината на која возите. Лесната шасија, прилагодливите седло и волан, го подобруваат комодитетот и самодовербата.",
-                        "image" => "/images/adventure/tigerSport850/tiger850BikePagePromo1.avif"
-                    ]
-                ]
-            ]
-        ];
 
-        $motorcycleDataFourteen = [
-            [
-                "title" => "Tiger 900 Rally Pro (MY23)",
-                "model" => "rally-pro",
-                "category" => "adventure",
-                "subFamilyCategory" => "tiger-900-my23",
-                "edition" => "adventure",
-                "price" => 16990,
-                "specs" => [
-                    "cc" => 398,
-                    "hp" => 20,
-                    "torque" => 37.5,
-                    "horsePower" => 40,
-                    "serviceInterval" => "16.000km",
-                    "motorType" => "TR"
-                ],
-                "gallery" => [
-                    "modelImage" => [
-                        "src" => "/images/adventure/tiger900RallyProModel.png",
-                        "alt" => "Tiger 900 Rally Pro Edition"
-                    ],
-                    "promoYoutubeVideo" => [
-                        "src" => "https =>//www.youtube.com/embed/dGfqpR5bwyM",
-                        "alt" => "Tiger 850 Youtbe Video"
-                    ]
-                ],
-                "bikeCollorPalletteGallery" => [
-                    "default" => "/images/adventure/tiger1200GTPRO/tigerSport850ModelImage.png",
-                    "color1" => "/images/adventure/tiger1200GTPRO/tigerSport850ModelImage.png",
-                    "color1Reversed" => "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor1Reversed.png",
-                    "color2" => "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor2.png",
-                    "color2Reversed" => "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor2Reversed.png",
-                    "color3" => "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor3.png",
-                    "color3Reversed" => "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor3Reversed.png"
-                ],
-                "customizationColors" => [
-                    [
-                        "colorName" => "Snowdonia White",
-                        "price" => null,
-                        "image" => "/images/custom-collors/snowdoniaWhite.jpg",
-                        "colorCode" => "color1"
-                    ],
-                    [
-                        "colorName" => "Saphire Black",
-                        "price" => 200,
-                        "image" => "/images/custom-collors/sapphireBlack.jpg",
-                        "colorCode" => "color2"
-                    ],
-                    [
-                        "colorName" => "Lucerne Blue",
-                        "price" => 200,
-                        "image" => "/images/custom-collors/lucerneBlue.jpg",
-                        "colorCode" => "color3"
-                    ]
-                ],
-                "shortSpecInfo" => [
-                    "info1" => "Потполно нов 900сс три-цилиндарски мотор",
-                    "info2" => "Врвна спецификација за екстремни off-road можности",
-                    "info3" => "Врвни перформанси и агилност"
-                ],
-                "subFamilyPromo" => [
-                    "title" => "TIGER SPORT 660",
-                    "desc" => "Првиот избор за многу корисници, со три-цилиндарски мотор, неверојатен комфорт, перформантен, искористлив и агилен, стот тоа со најниски трошоци за одржување во класата. Цени од €9,590.00"
-                ],
-                "bikePagePromo" => [
-                    [
-                        "title" => "Ергономија која инспирира самодоверба",
-                        "desc" => "Тенката силуета на Tiger 850 Sport, овозможува лесен контакт со површината на која возите. Лесната шасија, прилагодливите седло и волан, го подобруваат комодитетот и самодовербата.",
-                        "image" => "/images/adventure/tigerSport850/tiger850BikePagePromo1.avif"
-                    ]
-                ]
-            ]
-        ];
+
 
         $motorcycleDataFifteen = [
             [
@@ -5697,30 +5135,135 @@ class MotorcyclesTableSeeder extends Seeder
             ],
         ];
 
+        $motorcycleDataSixty = [
+            [
+                "title" => "Scrambler 1200 X",
+                "model" => "scrambler-1200-x",
+                "category" => "classics",
+                "subFamilyCategory" => "scrambler-1200",
+                "edition" => "classics",
+                "price" => 16490,
+                "bikeCollorPalletteGallery" => [
+                    "default" => "/images/classics/scrambler1200X/scrambler1200XSapphireBlack.png",
+                    "color1" => "/images/classics/scrambler1200X/scrambler1200XSapphireBlack.png",
+                    "color1Reversed" => "/images/classics/scrambler1200X/scrambler1200XSapphireBlackreversed.png",
+                    "color2" => "/images/classics/scrambler1200X/scrambler1200XSapphireGray.png",
+                    "color2Reversed" => "/images/classics/scrambler1200X/scrambler1200XSapphireGrayReversed.png",
+                    "color3" => "/images/classics/scrambler1200X/scrambler1200XSapphireRed.png",
+                    "color3Reversed" => "/images/classics/scrambler1200X/scrambler1200XSapphireRedReversed.png"
+                ],
+                "customizationColors" => [
+                    [
+                        "colorName" => "Saphire Black",
+                        "price" => null,
+                        "image" => "/images/custom-collors/sapphireBlack.jpg",
+                        "colorCode" => "color1"
+                    ],
+                    [
+                        "colorName" => "Ash Gray",
+                        "price" => 200,
+                        "image" => "/images/custom-collors/ashGrey.jpg",
+                        "colorCode" => "color2"
+                    ],
+                    [
+                        "colorName" => "Carnival Red",
+                        "price" => 200,
+                        "image" => "/images/custom-collors/carnivalRed.jpg",
+                        "colorCode" => "color3"
+                    ]
+                ],
+                "gallery" => [
+                    "modelImage" => [
+                        "src" => "/images/classics/scrambler1200XcMy23Model.png",
+                        "alt" => "Scrambler 1200 XC (MY23)"
+                    ],
+                    "promoYoutubeVideo" => [
+                        "src" => "https://www.youtube.com/embed/VGfZx5iHsAk",
+                        "alt" => "Scrambler 1200 X"
+                    ]
+                ],
+                "shortSpecInfo" => [
+                    "info1" => "1,200cc Bonneville дво-цилинричен мотор",
+                    "info2" => "Максимална Сила - 90 PS",
+                    "info3" => "Максимален Вртежен Момент - 110 Nm"
+                ],
+                "subFamilyPromo" => [
+                    "title" => "Scrambler 1200 X",
+                    "desc" => "Со мала висина на седиштето и одлична ергономија, Scrambler 1200 X нуди самодоверба на патиштата и надвор од нив."
+                ],
+                "bikePageCarousell" => [
+                    [
+                        "title" => "Комфортна Возачка Позиција",
+                        "desc" => "Со предно тркало од 21 инчи и ниско седиште, 1200 X нуди одлична и командна возачка позиција која инспирира самодоверба за уште повеќе забава при вашите off-road авантури.",
+                        "image" => "/images/classics/scrambler1200X/scrambler1200XCBikeCaro1.avif"
+                    ],
+                    [
+                        "title" => "ABS / Систем за Пролизгување",
+                        "desc" => "Најновиот оптимизиран ABS систем и системот за пролизгување доаѓаат како стандардна на новиот 1200 Х и нудат уште повисоко ниво на контрола, самодоверба и сигурност во сите временски прилики.",
+                        "image" => "/images/classics/scrambler1200X/scrambler1200XCBikeCaro2.avif"
+                    ],
+                    [
+                        "title" => "Аксесоари",
+                        "desc" => "Повеќе од 60 оригинални Triumph аксесоари се достапни за персонализирање на вашиот мотор. Од парчиња кои ќе додадат уште малку повеќе стил па се до оригинален багаж.",
+                        "image" => "/images/classics/scrambler1200X/scrambler1200XCBikeCaro3.avif"
+                    ],
+                    [
+                        "title" => "Мотор",
+                        "desc" => "Дво-цилиндарскиот Bonneville 1200cc мотор нуди многу сила и одлична респонзивност која се карактеризира со силен обртен момент и со предвидливо забрзување.",
+                        "image" => "/images/classics/scrambler1200X/scrambler1200XCBikeCaro4.avif"
+                    ],
+                    [
+                        "title" => "Квалитет и Завршница",
+                        "desc" => "Одлично изработени, со прекрасни завршници и одлични бои и графици и алуминиумските детали и акценти - тоа се зборовите на многу возачи сопственици на 1200 X серијата.",
+                        "image" => "/images/classics/scrambler1200X/scrambler1200XCBikeCaro5.avif"
+                    ],
+                    [
+                        "title" => "Висина на Седиште",
+                        "desc" => "Со само 830mm растојание од седиштето до земјиното тло, 1200 Х серијата има 50mm пониско седиште од ХЕ сееријата и нуди одлично ниво на комоција. Дополнително седиште за намалување на висината за уште 25mm е достапно како аксесоар.",
+                        "image" => "/images/classics/scrambler1200X/scrambler1200XCBikeCaro6.avif"
+                    ],
+                    [
+                        "title" => "Суспензија",
+                        "desc" => "Marzocchi суспензијата која е изработена специјално за Scrambler серијата испорачува високо ниво на комодитет.",
+                        "image" => "/images/classics/scrambler1200X/scrambler1200XCBikeCaro7.avif"
+                    ],
+                    [
+                        "title" => "Технологија",
+                        "desc" => " На роспалагање на возачите им се 5 мода на работа како и најновите и оптимизирани ABS и систем за пролизгување. За целосно контрола и сигурност мултифункционалниот дисплеј на воланот ги испорачува сите потребни информации за безбедна авантура.",
+                        "image" => "/images/classics/scrambler1200X/scrambler1200XCBikeCaro8.avif"
+                    ],
+                    [
+                        "title" => "Вредност",
+                        "desc" => "Со високи перформанси и одлична стандардна опрема и лесната одржливост на моторот и долг сервисен интервал, Scrambler 1200 X е правилен избор за секој ентузијаст и одлична вредност да се има во своја сопственост.",
+                        "image" => "/images/classics/scrambler1200X/scrambler1200XCBikeCaro9.avif"
+                    ]
+                ]
+            ],
+        ];
 
 
+        foreach ($motorcycleDataSixty as &$data) {
+            foreach (['gallery','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell', 'subFamilyPromo', 'bikePageInfo', 'bikePagePromo', 'bikePageImageGallery'] as $field) {
+                if (isset($data[$field])) {
+                    $data[$field] = json_encode($data[$field]);
+                }
+            }
+        }
 
 
 
 
         foreach ($motorcycleData as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
+            foreach (['gallery', 'specs', 'bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell', 'features', 'subFamilyPromo', 'bikePageInfo', 'bikePagePromo', 'bikePageImageGallery'] as $field) {
                 if (isset($data[$field])) {
                     $data[$field] = json_encode($data[$field]);
                 }
             }
         }
 
-        foreach ($motorcycleDataTwo as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
-                if (isset($data[$field])) {
-                    $data[$field] = json_encode($data[$field]);
-                }
-            }
-        }
 
         foreach ($motorcycleDataThree as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
+            foreach (['gallery', 'specs', 'bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell', 'features', 'subFamilyPromo', 'bikePageInfo', 'bikePagePromo', 'bikePageImageGallery'] as $field) {
                 if (isset($data[$field])) {
                     $data[$field] = json_encode($data[$field]);
                 }
@@ -5728,7 +5271,7 @@ class MotorcyclesTableSeeder extends Seeder
         }
 
         foreach ($motorcycleDataFive as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
+            foreach (['gallery', 'specs', 'bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell', 'features', 'subFamilyPromo', 'bikePageInfo', 'bikePagePromo', 'bikePageImageGallery'] as $field) {
                 if (isset($data[$field])) {
                     $data[$field] = json_encode($data[$field]);
                 }
@@ -5736,7 +5279,7 @@ class MotorcyclesTableSeeder extends Seeder
         }
 
         foreach ($motorcycleDataSix as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
+            foreach (['gallery', 'specs', 'bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell', 'features', 'subFamilyPromo', 'bikePageInfo', 'bikePagePromo', 'bikePageImageGallery'] as $field) {
                 if (isset($data[$field])) {
                     $data[$field] = json_encode($data[$field]);
                 }
@@ -5744,7 +5287,7 @@ class MotorcyclesTableSeeder extends Seeder
         }
 
         foreach ($motorcycleDataSeven as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
+            foreach (['gallery', 'specs', 'bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell', 'features', 'subFamilyPromo', 'bikePageInfo', 'bikePagePromo', 'bikePageImageGallery'] as $field) {
                 if (isset($data[$field])) {
                     $data[$field] = json_encode($data[$field]);
                 }
@@ -5752,7 +5295,7 @@ class MotorcyclesTableSeeder extends Seeder
         }
 
         foreach ($motorcycleDataEight as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
+            foreach (['gallery', 'specs', 'bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell', 'features', 'subFamilyPromo', 'bikePageInfo', 'bikePagePromo', 'bikePageImageGallery'] as $field) {
                 if (isset($data[$field])) {
                     $data[$field] = json_encode($data[$field]);
                 }
@@ -5760,7 +5303,7 @@ class MotorcyclesTableSeeder extends Seeder
         }
 
         foreach ($motorcycleDataNine as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
+            foreach (['gallery', 'specs', 'bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell', 'features', 'subFamilyPromo', 'bikePageInfo', 'bikePagePromo', 'bikePageImageGallery'] as $field) {
                 if (isset($data[$field])) {
                     $data[$field] = json_encode($data[$field]);
                 }
@@ -5768,47 +5311,17 @@ class MotorcyclesTableSeeder extends Seeder
         }
 
         foreach ($motorcycleDataTen as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
+            foreach (['gallery', 'specs', 'bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell', 'features', 'subFamilyPromo', 'bikePageInfo', 'bikePagePromo', 'bikePageImageGallery'] as $field) {
                 if (isset($data[$field])) {
                     $data[$field] = json_encode($data[$field]);
                 }
             }
         }
 
-        foreach ($motorcycleDataEleven as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
-                if (isset($data[$field])) {
-                    $data[$field] = json_encode($data[$field]);
-                }
-            }
-        }
 
-        foreach ($motorcycleDataTwelve as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
-                if (isset($data[$field])) {
-                    $data[$field] = json_encode($data[$field]);
-                }
-            }
-        }
-
-        foreach ($motorcycleDataThirteen as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
-                if (isset($data[$field])) {
-                    $data[$field] = json_encode($data[$field]);
-                }
-            }
-        }
-
-        foreach ($motorcycleDataFourteen as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
-                if (isset($data[$field])) {
-                    $data[$field] = json_encode($data[$field]);
-                }
-            }
-        }
 
         foreach ($motorcycleDataFifteen as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
+            foreach (['gallery', 'specs', 'bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell', 'features', 'subFamilyPromo', 'bikePageInfo', 'bikePagePromo', 'bikePageImageGallery'] as $field) {
                 if (isset($data[$field])) {
                     $data[$field] = json_encode($data[$field]);
                 }
@@ -5817,7 +5330,7 @@ class MotorcyclesTableSeeder extends Seeder
 
 
         foreach ($motorcycleDataSixteen as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
+            foreach (['gallery', 'specs', 'bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell', 'features', 'subFamilyPromo', 'bikePageInfo', 'bikePagePromo', 'bikePageImageGallery'] as $field) {
                 if (isset($data[$field])) {
                     $data[$field] = json_encode($data[$field]);
                 }
@@ -5825,7 +5338,7 @@ class MotorcyclesTableSeeder extends Seeder
         }
 
         foreach ($motorcycleDataSeventeen as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
+            foreach (['gallery', 'specs', 'bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell', 'features', 'subFamilyPromo', 'bikePageInfo', 'bikePagePromo', 'bikePageImageGallery'] as $field) {
                 if (isset($data[$field])) {
                     $data[$field] = json_encode($data[$field]);
                 }
@@ -5833,7 +5346,7 @@ class MotorcyclesTableSeeder extends Seeder
         }
 
         foreach ($motorcycleDataEightteen as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
+            foreach (['gallery', 'specs', 'bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell', 'features', 'subFamilyPromo', 'bikePageInfo', 'bikePagePromo', 'bikePageImageGallery'] as $field) {
                 if (isset($data[$field])) {
                     $data[$field] = json_encode($data[$field]);
                 }
@@ -5841,7 +5354,7 @@ class MotorcyclesTableSeeder extends Seeder
         }
 
         foreach ($motorcycleDataNineteen as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
+            foreach (['gallery', 'specs', 'bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell', 'features', 'subFamilyPromo', 'bikePageInfo', 'bikePagePromo', 'bikePageImageGallery'] as $field) {
                 if (isset($data[$field])) {
                     $data[$field] = json_encode($data[$field]);
                 }
@@ -5849,7 +5362,7 @@ class MotorcyclesTableSeeder extends Seeder
         }
 
         foreach ($motorcycleDataTwenty as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
+            foreach (['gallery', 'specs', 'bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell', 'features', 'subFamilyPromo', 'bikePageInfo', 'bikePagePromo', 'bikePageImageGallery'] as $field) {
                 if (isset($data[$field])) {
                     $data[$field] = json_encode($data[$field]);
                 }
@@ -5857,7 +5370,7 @@ class MotorcyclesTableSeeder extends Seeder
         }
 
         foreach ($motorcycleDataTwentyOne as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
+            foreach (['gallery', 'specs', 'bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell', 'features', 'subFamilyPromo', 'bikePageInfo', 'bikePagePromo', 'bikePageImageGallery'] as $field) {
                 if (isset($data[$field])) {
                     $data[$field] = json_encode($data[$field]);
                 }
@@ -5867,7 +5380,7 @@ class MotorcyclesTableSeeder extends Seeder
 
 
         foreach ($motorcycleDataTwentySix as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
+            foreach (['gallery', 'specs', 'bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell', 'features', 'subFamilyPromo', 'bikePageInfo', 'bikePagePromo', 'bikePageImageGallery'] as $field) {
                 if (isset($data[$field])) {
                     $data[$field] = json_encode($data[$field]);
                 }
@@ -5875,7 +5388,7 @@ class MotorcyclesTableSeeder extends Seeder
         }
 
         foreach ($motorcycleDataTwentySeven as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
+            foreach (['gallery', 'specs', 'bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell', 'features', 'subFamilyPromo', 'bikePageInfo', 'bikePagePromo', 'bikePageImageGallery'] as $field) {
                 if (isset($data[$field])) {
                     $data[$field] = json_encode($data[$field]);
                 }
@@ -5883,7 +5396,7 @@ class MotorcyclesTableSeeder extends Seeder
         }
 
         foreach ($motorcycleDataTwentyEight as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
+            foreach (['gallery', 'specs', 'bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell', 'features', 'subFamilyPromo', 'bikePageInfo', 'bikePagePromo', 'bikePageImageGallery'] as $field) {
                 if (isset($data[$field])) {
                     $data[$field] = json_encode($data[$field]);
                 }
@@ -5891,7 +5404,7 @@ class MotorcyclesTableSeeder extends Seeder
         }
 
         foreach ($motorcycleDataTwentyNine as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
+            foreach (['gallery', 'specs', 'bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell', 'features', 'subFamilyPromo', 'bikePageInfo', 'bikePagePromo', 'bikePageImageGallery'] as $field) {
                 if (isset($data[$field])) {
                     $data[$field] = json_encode($data[$field]);
                 }
@@ -5902,7 +5415,7 @@ class MotorcyclesTableSeeder extends Seeder
 
 
         foreach ($motorcycleDataThirtyTwo as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
+            foreach (['gallery', 'specs', 'bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell', 'features', 'subFamilyPromo', 'bikePageInfo', 'bikePagePromo', 'bikePageImageGallery'] as $field) {
                 if (isset($data[$field])) {
                     $data[$field] = json_encode($data[$field]);
                 }
@@ -5910,7 +5423,7 @@ class MotorcyclesTableSeeder extends Seeder
         }
 
         foreach ($motorcycleDataThirtyThree as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
+            foreach (['gallery', 'specs', 'bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell', 'features', 'subFamilyPromo', 'bikePageInfo', 'bikePagePromo', 'bikePageImageGallery'] as $field) {
                 if (isset($data[$field])) {
                     $data[$field] = json_encode($data[$field]);
                 }
@@ -5918,7 +5431,7 @@ class MotorcyclesTableSeeder extends Seeder
         }
 
         foreach ($motorcycleDataThirtyFour as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
+            foreach (['gallery', 'specs', 'bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell', 'features', 'subFamilyPromo', 'bikePageInfo', 'bikePagePromo', 'bikePageImageGallery'] as $field) {
                 if (isset($data[$field])) {
                     $data[$field] = json_encode($data[$field]);
                 }
@@ -5927,7 +5440,7 @@ class MotorcyclesTableSeeder extends Seeder
 
 
         foreach ($motorcycleDataThirtyFive as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
+            foreach (['gallery', 'specs', 'bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell', 'features', 'subFamilyPromo', 'bikePageInfo', 'bikePagePromo', 'bikePageImageGallery'] as $field) {
                 if (isset($data[$field])) {
                     $data[$field] = json_encode($data[$field]);
                 }
@@ -5936,7 +5449,7 @@ class MotorcyclesTableSeeder extends Seeder
 
 
         foreach ($motorcycleDataThirtySix as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
+            foreach (['gallery', 'specs', 'bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell', 'features', 'subFamilyPromo', 'bikePageInfo', 'bikePagePromo', 'bikePageImageGallery'] as $field) {
                 if (isset($data[$field])) {
                     $data[$field] = json_encode($data[$field]);
                 }
@@ -5945,7 +5458,7 @@ class MotorcyclesTableSeeder extends Seeder
 
 
         foreach ($motorcycleDataThirtySeven as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
+            foreach (['gallery', 'specs', 'bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell', 'features', 'subFamilyPromo', 'bikePageInfo', 'bikePagePromo', 'bikePageImageGallery'] as $field) {
                 if (isset($data[$field])) {
                     $data[$field] = json_encode($data[$field]);
                 }
@@ -5954,7 +5467,7 @@ class MotorcyclesTableSeeder extends Seeder
 
 
         foreach ($motorcycleDataThirtyEight as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
+            foreach (['gallery', 'specs', 'bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell', 'features', 'subFamilyPromo', 'bikePageInfo', 'bikePagePromo', 'bikePageImageGallery'] as $field) {
                 if (isset($data[$field])) {
                     $data[$field] = json_encode($data[$field]);
                 }
@@ -5962,7 +5475,7 @@ class MotorcyclesTableSeeder extends Seeder
         }
 
         foreach ($motorcycleDataThirtyNine as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
+            foreach (['gallery', 'specs', 'bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell', 'features', 'subFamilyPromo', 'bikePageInfo', 'bikePagePromo', 'bikePageImageGallery'] as $field) {
                 if (isset($data[$field])) {
                     $data[$field] = json_encode($data[$field]);
                 }
@@ -5972,7 +5485,7 @@ class MotorcyclesTableSeeder extends Seeder
 
 
         foreach ($motorcycleDataFourtyOne as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
+            foreach (['gallery', 'specs', 'bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell', 'features', 'subFamilyPromo', 'bikePageInfo', 'bikePagePromo', 'bikePageImageGallery'] as $field) {
                 if (isset($data[$field])) {
                     $data[$field] = json_encode($data[$field]);
                 }
@@ -5982,7 +5495,7 @@ class MotorcyclesTableSeeder extends Seeder
 
 
         foreach ($motorcycleDataFiftyFive as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
+            foreach (['gallery', 'specs', 'bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell', 'features', 'subFamilyPromo', 'bikePageInfo', 'bikePagePromo', 'bikePageImageGallery'] as $field) {
                 if (isset($data[$field])) {
                     $data[$field] = json_encode($data[$field]);
                 }
@@ -5991,7 +5504,7 @@ class MotorcyclesTableSeeder extends Seeder
 
 
         foreach ($motorcycleDataFiftySix as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
+            foreach (['gallery', 'specs', 'bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell', 'features', 'subFamilyPromo', 'bikePageInfo', 'bikePagePromo', 'bikePageImageGallery'] as $field) {
                 if (isset($data[$field])) {
                     $data[$field] = json_encode($data[$field]);
                 }
@@ -5999,7 +5512,7 @@ class MotorcyclesTableSeeder extends Seeder
         }
 
         foreach ($motorcycleDataFiftySeven as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
+            foreach (['gallery', 'specs', 'bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell', 'features', 'subFamilyPromo', 'bikePageInfo', 'bikePagePromo', 'bikePageImageGallery'] as $field) {
                 if (isset($data[$field])) {
                     $data[$field] = json_encode($data[$field]);
                 }
@@ -6007,7 +5520,7 @@ class MotorcyclesTableSeeder extends Seeder
         }
 
         foreach ($motorcycleDataFiftyEight as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
+            foreach (['gallery', 'specs', 'bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell', 'features', 'subFamilyPromo', 'bikePageInfo', 'bikePagePromo', 'bikePageImageGallery'] as $field) {
                 if (isset($data[$field])) {
                     $data[$field] = json_encode($data[$field]);
                 }
@@ -6015,7 +5528,7 @@ class MotorcyclesTableSeeder extends Seeder
         }
 
         foreach ($motorcycleDataFiftyNine as &$data) {
-            foreach (['gallery','specs','bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell','features','subFamilyPromo','bikePageInfo', 'bikePagePromo','bikePageImageGallery'] as $field) {
+            foreach (['gallery', 'specs', 'bikeCollorPalletteGallery', 'customizationColors', 'shortSpecInfo', 'bikePageCarousell', 'features', 'subFamilyPromo', 'bikePageInfo', 'bikePagePromo', 'bikePageImageGallery'] as $field) {
                 if (isset($data[$field])) {
                     $data[$field] = json_encode($data[$field]);
                 }
@@ -6024,7 +5537,6 @@ class MotorcyclesTableSeeder extends Seeder
 
 
         Motorcycle::insert($motorcycleData);
-        Motorcycle::insert($motorcycleDataTwo);
         Motorcycle::insert($motorcycleDataThree);
         Motorcycle::insert($motorcycleDataFive);
         Motorcycle::insert($motorcycleDataSix);
@@ -6032,10 +5544,6 @@ class MotorcyclesTableSeeder extends Seeder
         Motorcycle::insert($motorcycleDataEight);
         Motorcycle::insert($motorcycleDataNine);
         Motorcycle::insert($motorcycleDataTen);
-        Motorcycle::insert($motorcycleDataEleven);
-        Motorcycle::insert($motorcycleDataTwelve);
-        Motorcycle::insert($motorcycleDataThirteen);
-        Motorcycle::insert($motorcycleDataFourteen);
         Motorcycle::insert($motorcycleDataFifteen);
         Motorcycle::insert($motorcycleDataSixteen);
         Motorcycle::insert($motorcycleDataSeventeen);
@@ -6043,7 +5551,6 @@ class MotorcyclesTableSeeder extends Seeder
         Motorcycle::insert($motorcycleDataNineteen);
         Motorcycle::insert($motorcycleDataTwenty);
         Motorcycle::insert($motorcycleDataTwentyOne);
-
         Motorcycle::insert($motorcycleDataTwentySix);
         Motorcycle::insert($motorcycleDataTwentySeven);
         Motorcycle::insert($motorcycleDataTwentyEight);
@@ -6062,5 +5569,7 @@ class MotorcyclesTableSeeder extends Seeder
         Motorcycle::insert($motorcycleDataFiftySeven);
         Motorcycle::insert($motorcycleDataFiftyEight);
         Motorcycle::insert($motorcycleDataFiftyNine);
+        Motorcycle::insert($motorcycleDataSixty);
+
     }
 }

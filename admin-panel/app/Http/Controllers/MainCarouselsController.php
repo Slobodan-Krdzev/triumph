@@ -33,14 +33,12 @@ class MainCarouselsController extends Controller
             'video' => 'required|mimes:mp4,mov,ogg,qt|max:20000',
         ]);
 
-        // Prepare the carousel instance
         $carousel = new MainCarousell();
         $carousel->title = $request->title;
         $carousel->desc = $request->desc;
         $carousel->link1 = $request->link1;
         $carousel->link2 = $request->link2;
 
-        // Sanitize the title to create a directory name
         $sanitizedTitle = Str::slug($request->title);
 
         $carousel->image = ImageStorage::storeFile($request, 'image', 'mainCarousel/',$sanitizedTitle, '/images');

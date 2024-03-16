@@ -74,6 +74,8 @@ class MotorcycleController extends Controller
         // $moto = Motorcycle::findOrFail($id);
         // return view('layouts.edit-moto', compact('moto'));
 
+
+
         $moto = Motorcycle::findOrFail($id);
 
         $view = match ($category) {
@@ -86,6 +88,14 @@ class MotorcycleController extends Controller
             default => 'layouts.edit-default',
         };
 
+        if (is_null($moto->bikePageCarousell)) {
+            $moto->bikePageCarousell = [];
+        }
+
+        if (is_null($moto->bikePageImageGallery)) {
+            $moto->bikePageImageGallery = [];
+        }
+
         return view($view, ['moto' => $moto]);
     }
 
@@ -93,7 +103,7 @@ class MotorcycleController extends Controller
     public function updateImage(Request $request, Motorcycle $motorcycle)
     {
         $request->validate([
-            'image' => 'required|image|max:2048', // Example validation rules for image upload
+            'image' => 'required|image|max:2048',
         ]);
 
         $imagePath = $request->file('image')->store('images', 'public');

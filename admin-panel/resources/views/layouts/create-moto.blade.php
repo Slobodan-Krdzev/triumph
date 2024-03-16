@@ -14,40 +14,40 @@
             <h1 class="font-bold text-3xl my-2">Base Info</h1>
 
             <label for="title">Title:</label>
-            <input type="text" name="title">
+            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="title">
 
             <label for="model">Model:</label>
-            <input type="text" name="model">
+            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="model">
 
             <label for="model">Category:</label>
-            <input type="text" name="category">
+            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="category">
 
             <label for="model">Sub Family Category:</label>
-            <input type="text" name="subFamilyCategory">
+            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="subFamilyCategory">
 
             <label for="model">Price:</label>
-            <input type="text" name="price">
+            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="price">
 
             <label for="model">Edition</label>
-            <input type="text" name="edition">
+            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="edition">
 
             <h1 class="font-bold text-3xl my-2">Specifications</h1>
 
             <label for="specs[cc]">CC:</label>
-            <input type="text" name="specs[cc]">
+            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="specs[cc]">
 
             <label for="specs[hp]">HP:</label>
-            <input type="text" name="specs[hp]">
+            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="specs[hp]">
 
             <label for="specs[torque]">Torque:</label>
-            <input type="text" name="specs[torque]">
+            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="specs[torque]">
 
             <x-form.input labelText="Model Image Source:" imageId="gallery[modelImage][src]" name="gallery[modelImage][src]">
                 <img id='gallery[modelImage][src]' width="400" height="150" class="object-cover border m-3 border-gray-200" />
             </x-form.input>
 
             <label for="gallery[modelImage][alt]">Model Image Alt:</label>
-            <input type="text" name="gallery[modelImage][alt]">
+            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="gallery[modelImage][alt]">
 
             <h1 class="font-bold text-3xl my-2">Bike Collor Pallette Gallery</h1>
 
@@ -83,72 +83,90 @@
             <h1 class="font-bold text-3xl my-2">Customization Colors</h1>
 
             <label for="customizationColors[0][colorName]">Color 1 Name:</label>
-            <input type="text" name="customizationColors[0][colorName]" required>
+            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="customizationColors[0][colorName]" required>
 
             <label for="customizationColors[0][price]">Color 1 Price:</label>
-            <input type="text" name="customizationColors[0][price]" required>
+            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="customizationColors[0][price]" required>
 
             <x-form.input labelText="Color 1 Image:" imageId="customizationColors[0][image]" name="customizationColors[0][image]">
                 <img id='customizationColors[0][image]' width="400" height="150" class="object-cover border m-3 border-gray-200" />
             </x-form.input>
 
             <label for="customizationColors[0][colorCode]">Color 1 Code:</label>
-            <input type="text" name="customizationColors[0][colorCode]" required>
+            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="customizationColors[0][colorCode]" required>
 
 
             <label for="customizationColors[1][colorName]">Color 2 Name:</label>
-            <input type="text" name="customizationColors[1][colorName]" required>
+            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="customizationColors[1][colorName]" required>
 
             <label for="customizationColors[1][price]">Color 2 Price:</label>
-            <input type="text" name="customizationColors[1][price]" required>
+            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="customizationColors[1][price]" required>
 
             <x-form.input labelText="Color 2 Image:" imageId="customizationColors[1][image]" name="customizationColors[1][image]">
                 <img id='customizationColors[1][image]' width="400" height="150" class="object-cover border m-3 border-gray-200" />
             </x-form.input>
 
             <label for="customizationColors[1][colorCode]">Color 2 Code:</label>
-            <input type="text" name="customizationColors[1][colorCode]" required>
+            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="customizationColors[1][colorCode]" required>
 
 
             <label for="customizationColors[2][colorName]">Color 3 Name:</label>
-            <input type="text" name="customizationColors[2][colorName]" required>
+            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="customizationColors[2][colorName]" required>
 
             <label for="customizationColors[2][price]">Color 3 Price:</label>
-            <input type="text" name="customizationColors[2][price]" required>
+            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="customizationColors[2][price]" required>
 
             <x-form.input labelText="Color 3 Image:" imageId="customizationColors[2][image]" name="customizationColors[2][image]">
                 <img id='customizationColors[2][image]' width="400" height="150" class="object-cover border m-3 border-gray-200" />
             </x-form.input>
 
             <label for="customizationColors[2][colorCode]">Color 3 Code:</label>
-            <input type="text" name="customizationColors[2][colorCode]" required>
+            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="customizationColors[2][colorCode]" required>
 
 
             <h1 class="font-bold text-3xl my-2">Short Spec Info</h1>
 
             <label for="shortSpecInfo[info1]">Short Spec Info 1:</label>
-            <input type="text" name="shortSpecInfo[info1]" required>
+            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="shortSpecInfo[info1]" required>
 
             <label for="shortSpecInfo[info2]">Short Spec Info 2:</label>
-            <input type="text" name="shortSpecInfo[info2]" required>
+            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="shortSpecInfo[info2]" required>
 
             <label for="shortSpecInfo[info3]">Short Spec Info 3:</label>
-            <input type="text" name="shortSpecInfo[info3]" required>
+            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="shortSpecInfo[info3]" required>
 
             <h1 class="font-bold text-3xl my-2">Sub Family Promo</h1>
 
 
             <label for="subFamilyPromo[title]">Sub Family Promo Title:</label>
-            <input type="text" name="subFamilyPromo[title]" required>
+            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="subFamilyPromo[title]" required>
 
             <label for="subFamilyPromo[desc]">Sub Family Promo Description:</label>
-            <input type="text" name="subFamilyPromo[desc]" required>
+            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="subFamilyPromo[desc]" required>
+
+
 
 
 
             <input type="submit" class="my-5 bg-lime-200 shadow rounded p-4" value="Submit">
 
+            <h1 class="font-bold text-3xl my-2">Bike Page Carousell</h1>
+            @for ($i = 0; $i < 8; $i++)
+            <div class="mb-4">
+                <label for="title-{{ $i }}" class="block text-sm font-medium text-gray-700">Title:</label>
+                <input type="text" id="title-{{ $i }}" name="bikePageCarousell[{{ $i }}][title]" value="{{ $bikePageCarousell[$i]['title'] ?? '' }}" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
 
+                <label for="desc-{{ $i }}" class="block text-sm font-medium text-gray-700">Description:</label>
+                <textarea id="desc-{{ $i }}" name="bikePageCarousell[{{ $i }}][desc]" rows="3" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">{{ $bikePageCarousell[$i]['desc'] ?? '' }}</textarea>
+
+                {{-- <label for="image-{{ $i }}" class="block text-sm font-medium text-gray-700">Image URL:</label>
+                <input type="text" id="image-{{ $i }}" name="bikePageCarousell[{{ $i }}][image]" value="{{ $bikePageCarousell[$i]['image'] ?? '' }}" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm"> --}}
+
+                <x-form.input labelText="Image:" imageId="image-{{ $i }}" name="bikePageCarousell[{{ $i }}][image]">
+                    <img id='image-{{ $i }}' width="400" height="150" class="object-cover border m-3 border-gray-200" />
+                </x-form.input>
+            </div>
+        @endfor
 
 
 
