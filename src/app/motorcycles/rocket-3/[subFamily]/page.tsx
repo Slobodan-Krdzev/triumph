@@ -61,6 +61,7 @@ const Rocket3SubFamPage = async () => {
 
           {subFamily.youtubeVideo && (
             <video
+              className="hidden lg:block"
               controls
               autoPlay
               loop
@@ -97,7 +98,9 @@ const Rocket3SubFamPage = async () => {
             ))}
           </section>
 
-          {subFamily.grayCarousell && <BottomCarousell items={subFamily.grayCarousell} />}
+          {subFamily.grayCarousell && (
+            <BottomCarousell items={subFamily.grayCarousell} />
+          )}
         </main>
       </>
     );
