@@ -11,7 +11,7 @@ const RocketAccessoryPage = async ({ params }: any) => {
 
   try {
     const familyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=rocket-3`, {
-      next: { revalidate: 3000 },
+      cache:'no-store',
     });
     const familyData = await familyRes.json();
     const subFamily = familyData[0];
