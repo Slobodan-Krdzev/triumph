@@ -1,13 +1,15 @@
 import HeroSection from "@/app/components/SubFamily/HeroSection";
 import TopSection from "@/app/components/SubFamily/TopSection";
+import BottomCarousell from "@/app/components/classicsPageComp/BottomCarousell";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
+import PageParagraph from "@/app/components/familiySharedComponents/PageParagraph";
 import { BIKES, SUB_FAMILIES } from "@/app/constants/constants";
 import { redirect } from "next/navigation";
 
 const Rocket3SubFamPage = async () => {
   try {
     const subFamilyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=rocket-3`, {
-      next: { revalidate: 3000 },
+      cache: "no-store",
     });
     const subFamilyData = await subFamilyRes.json();
     const subFamily = subFamilyData[0];
@@ -29,13 +31,49 @@ const Rocket3SubFamPage = async () => {
         />
 
         <main className="bg-white">
-          <TopSection
-            title={subFamily.topSection.title}
-            desc={subFamily.topSection.desc}
-            subtitle={subFamily.topSection.subtitle}
-            image={subFamily.gallery.subFamilyTopSectionImage.src}
-            bgImage={subFamily.gallery.subFamilyTopSectionBGImage.src}
-          />
+          {subFamily.topSection && (
+            <TopSection
+              title={subFamily.topSection.title}
+              desc={subFamily.topSection.desc}
+              subtitle={subFamily.topSection.subtitle}
+              image={subFamily.gallery.subFamilyTopSectionImage.src}
+              bgImage={subFamily.gallery.subFamilyTopSectionBGImage.src}
+            />
+          )}
+
+          {subFamily.subFamilyName === "rocket-3" && (
+            <section className="py-4 md:py-8 lg:py-16 text-center w-11/12 lg:w-7/12 m-auto">
+              <h1 className="text-4xl lg:text-6xl font-semibold uppercase mb-4 md:mb-8">
+                Перфектна Бура...Perfect Storm
+              </h1>
+              <PageParagraph
+                text={
+                  "Дополнителен карактер и перформанси кои рушат рекорди - Врвен Мускулест Роадстер."
+                }
+              />
+              <PageParagraph
+                text={
+                  "Мускулесто присуство со извонреден и неспоредлив стил комбинирано со перформанси од епски размери произведени од првиот продукциски мотор со најголема зафатнина. "
+                }
+              />
+            </section>
+          )}
+
+          {subFamily.youtubeVideo && (
+            <video
+              controls
+              autoPlay
+              loop
+              muted
+              width={"70%"}
+              style={{
+                margin: "0 auto",
+                padding: "2rem",
+              }}
+            >
+              <source src={subFamily.youtubeVideo} type="video/webm" />
+            </video>
+          )}
 
           <section className="px-4 lg:px-20 xl:px-40">
             {bikes.map((bike: any) => (
@@ -58,12 +96,13 @@ const Rocket3SubFamPage = async () => {
               />
             ))}
           </section>
+
+          {subFamily.grayCarousell && <BottomCarousell items={subFamily.grayCarousell} />}
         </main>
       </>
     );
   } catch (err) {
-
-    return redirect('/motorcycles/rocket-3')
+    return redirect("/motorcycles/rocket-3");
   }
 };
 
