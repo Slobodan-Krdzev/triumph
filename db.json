@@ -8604,31 +8604,31 @@
         }
       },
       "bikeCollorPalletteGallery": {
-        "default": "/images/adventure/tiger900GT/tiger900PureWhite.png",
-        "color1": "/images/adventure/tiger900GT/tiger900PureWhite.png",
-        "color1Reversed": "/images/adventure/tiger900GT/tiger900PureWhiteReversed.png",
-        "color2": "/images/adventure/tiger900GT/tiger900GTBlack.png",
-        "color2Reversed": "/images/adventure/tiger900GT/tiger900GTBlackReversed.png",
-        "color3": "/images/adventure/tiger900GT/tiger900GTBlue.png",
-        "color3Reversed": "/images/adventure/tiger900GT/tiger900GTBlueReversed.png"
+        "default": "/images/adventure/tiger900GT/tiger900GTGraphiteBlack.png",
+        "color1": "/images/adventure/tiger900GT/tiger900GTGraphiteBlack.png",
+        "color1Reversed": "/images/adventure/tiger900GT/tiger900GTGraphiteBlackReversed.png",
+        "color2": "/images/adventure/tiger900GT/tiger900GTSnowdonia.png",
+        "color2Reversed": "/images/adventure/tiger900GT/tiger900GTSnowdoniaReversed.png",
+        "color3": "/images/adventure/tiger900GT/tiger900GTRed.png",
+        "color3Reversed": "/images/adventure/tiger900GT/tiger900GTRedReversed.png"
       },
       "customizationColors": [
         {
-          "colorName": "Pure White",
-          "price": null,
-          "image": "/images/custom-collors/pureWhite.jpg",
+          "colorName": "Graphite / Sapphire Black",
+          "price": 200,
+          "image": "/images/custom-collors/graphiteJetBlack.jpg",
           "colorCode": "color1"
         },
         {
-          "colorName": "Saphire Black",
-          "price": 200,
-          "image": "/images/custom-collors/sapphireBlack.jpg",
+          "colorName": "Snowdonia White / Sapphire Black",
+          "price": null,
+          "image": "/images/custom-collors/snowdoniaWhiteSapphireBlack.pn",
           "colorCode": "color2"
         },
         {
-          "colorName": "Caspian Blue",
+          "colorName": "Carnival Red / Saphire Black",
           "price": 200,
-          "image": "/images/custom-collors/caspianBlue.jpg",
+          "image": "/images/custom-collors/carnivalRedSapphireBlack.jpg",
           "colorCode": "color3"
         }
       ],
@@ -8754,31 +8754,31 @@
         }
       },
       "bikeCollorPalletteGallery": {
-        "default": "/images/adventure/tiger900GTPRO/tiger900GTPROWhite.png",
-        "color1": "/images/adventure/tiger900GTPRO/tiger900GTPROWhite.png",
-        "color1Reversed": "/images/adventure/tiger900GTPRO/tiger900GTPROWhiteReversed.png",
-        "color2": "/images/adventure/tiger900GTPRO/tiger900GTPROBlack.png",
-        "color2Reversed": "/images/adventure/tiger900GTPRO/tiger900GTPROBlackReversed.png",
-        "color3": "/images/adventure/tiger900GTPRO/tiger900GTPROBlue.png",
-        "color3Reversed": "/images/adventure/tiger900GTPRO/tiger900GTPROBlueReversed.png"
+        "default": "/images/adventure/tiger900GTPRO/tiger900GTPROGraphite.png",
+        "color1": "/images/adventure/tiger900GTPRO/tiger900GTPROGraphite.png",
+        "color1Reversed": "/images/adventure/tiger900GTPRO/tiger900GTPROGraphiteReversed.png",
+        "color2": "/images/adventure/tiger900GTPRO/tiger900GTPRORed.png",
+        "color2Reversed": "/images/adventure/tiger900GTPRO/tiger900GTPRORedReversed.png",
+        "color3": "/images/adventure/tiger900GTPRO/tiger900GTPROWhite.png",
+        "color3Reversed": "/images/adventure/tiger900GTPRO/tiger900GTPROWhiteReversed.png"
       },
       "customizationColors": [
         {
-          "colorName": "Pure White",
-          "price": null,
-          "image": "/images/custom-collors/pureWhite.jpg",
+          "colorName": "Graphite / Sapphire Black",
+          "price": 110,
+          "image": "/images/custom-collors/graphiteJetBlack.jpg",
           "colorCode": "color1"
         },
         {
-          "colorName": "Saphire Black",
-          "price": 200,
-          "image": "/images/custom-collors/sapphireBlack.jpg",
+          "colorName": "Carnival Red / Saphire Black",
+          "price": 110,
+          "image": "/images/custom-collors/carnivalRedSapphireBlack.jpg",
           "colorCode": "color2"
         },
         {
-          "colorName": "Caspian Blue",
-          "price": 200,
-          "image": "/images/custom-collors/caspianBlue.jpg",
+          "colorName": "Snowdonia White / Sapphire Black",
+          "price": null,
+          "image": "/images/custom-collors/snowdoniaWhiteSapphireBlack.pn",
           "colorCode": "color3"
         }
       ],
@@ -8918,31 +8918,31 @@
         }
       },
       "bikeCollorPalletteGallery": {
-        "default": "/images/adventure/tiger900RallyPro/tiger900RallyProWhite.png",
-        "color1": "/images/adventure/tiger900RallyPro/tiger900RallyProWhite.png",
-        "color1Reversed": "/images/adventure/tiger900RallyPro/tiger900RallyProWhiteReversed.png",
-        "color2": "/images/adventure/tiger900RallyPro/tiger900RallyProSandstorm.png",
-        "color2Reversed": "/images/adventure/tiger900RallyPro/tiger900RallyProSandstormReversed.png",
+        "default": "/images/adventure/tiger900RallyPro/tiger900RallyProOrange.png",
+        "color1": "/images/adventure/tiger900RallyPro/tiger900RallyProOrange.png",
+        "color1Reversed": "/images/adventure/tiger900RallyPro/tiger900RallyProOrangeReversed.png",
+        "color2": "/images/adventure/tiger900RallyPro/tiger900RallyProCarbonBlack.png",
+        "color2Reversed": "/images/adventure/tiger900RallyPro/tiger900RallyProCarbonBlackReversed.png",
         "color3": "/images/adventure/tiger900RallyPro/tiger900RallyProKhaki.png",
         "color3Reversed": "/images/adventure/tiger900RallyPro/tiger900RallyProKhakiReversed.png"
       },
       "customizationColors": [
         {
-          "colorName": "Pure White",
-          "price": null,
-          "image": "/images/custom-collors/pureWhite.jpg",
+          "colorName": "Ash Gray / Intense Orange",
+          "price": 200,
+          "image": "/images/custom-collors/ashGreyIntenseOrange.png",
           "colorCode": "color1"
         },
         {
-          "colorName": "Sandstorm",
-          "price": 200,
-          "image": "/images/custom-collors/sandstorm.jpg",
+          "colorName": "Carbon Black / Sapphire Black",
+          "price": null,
+          "image": "/images/custom-collors/carbonBlack.png",
           "colorCode": "color2"
         },
         {
-          "colorName": "Matt Khaki",
+          "colorName": "Matt Khaki / Matt Phantom Black",
           "price": 300,
-          "image": "/images/custom-collors/mattKhaki.jpg",
+          "image": "/images/custom-collors/mattKahkiGreenMattPhantomBlack.png",
           "colorCode": "color3"
         }
       ],
@@ -9070,7 +9070,7 @@
       "category": "adventure",
       "subFamilyCategory": "tiger-sport-660",
       "edition": "adventure",
-      "price": 9290,
+      "price": 10290,
       "gallery": {
         "modelImage": {
           "src": "/images/adventure/tigerSport660/tiger660ModelImage.avif",
@@ -9083,30 +9083,30 @@
       },
       "bikeCollorPalletteGallery": {
         "default": "/images/adventure/tigerSport660/tiger660ModelImage.avif",
-        "color1": "/images/adventure/tigerSport660/tiger660ModelImage.avif",
-        "color1Reversed": "/images/adventure/tigerSport660/tigerSport660ModelImageReversed.png",
-        "color2": "/images/adventure/tigerSport660/tiger660LucerneBlue.avif",
-        "color2Reversed": "/images/adventure/tigerSport660/tigerSport660LucerneBlueReversed.avif",
-        "color3": "/images/adventure/tigerSport660/tiger660JetBlackGraphite.avif",
-        "color3Reversed": "/images/adventure/tigerSport660/tigerSport660JetBlackGraphiteReversed.png"
+        "color1": "/images/adventure/tigerSport660/tiger660JetBlackGraphite.avif",
+        "color1Reversed": "/images/adventure/tigerSport660/tigerSport660JetBlackGraphiteReversed.png",
+        "color2": "/images/adventure/tigerSport660/tigerSport660SnowdoniaWhiteJetBlack.png",
+        "color2Reversed": "/images/adventure/tigerSport660/tigerSport660SnowdoniaWhiteJetBlackReversed.png",
+        "color3": "/images/adventure/tigerSport660/tiger660ModelImage.avif",
+        "color3Reversed": "/images/adventure/tigerSport660/tigerSport660ModelImageReversed.png"
       },
       "customizationColors": [
-        {
-          "colorName": "Korosi Red / Graphite",
-          "price": 200,
-          "image": "/images/custom-collors/korosiRedSapphireBlack.jpg",
-          "colorCode": "color1"
-        },
-        {
-          "colorName": "Lucerne Blue / Sapphire Black",
-          "price": null,
-          "image": "/images/custom-collors/lucerneBlueSapphireBlack.jpg",
-          "colorCode": "color2"
-        },
         {
           "colorName": "Graphite / Jet Black",
           "price": null,
           "image": "/images/custom-collors/jetBlackGraphite.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Snowdonia White / Jett Black",
+          "price": 200,
+          "image": "/images/custom-collors/crystalWhiteJetBlack.jpg",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Korosi Red / Graphite",
+          "price": 200,
+          "image": "/images/custom-collors/korosiRedSapphireBlack.jpg",
           "colorCode": "color3"
         }
       ],
@@ -9262,11 +9262,7 @@
         "color1": "/images/adventure/tigerSport850/tigerSport850DiabloRed.png",
         "color1Reversed": "/images/adventure/tigerSport850/tigerSport850DiabloRedReversed.png",
         "color2": "/images/adventure/tigerSport850/tigerSport850GraphiteJetBlack.png",
-        "color2Reversed": "/images/adventure/tigerSport850/tigerSport850GraphiteJetBlackReversed.png",
-        "color3": "/images/adventure/tigerSport850/tigerSport850CaspianBlue.png",
-        "color3Reversed": "/images/adventure/tigerSport850/tigerSport850CaspianBlueReversed.png",
-        "color4": "/images/adventure/tigerSport850/tigerSport850Baja.png",
-        "color4Reversed": "/images/adventure/tigerSport850/tigerSport850BajaReversed.png"
+        "color2Reversed": "/images/adventure/tigerSport850/tigerSport850GraphiteJetBlackReversed.png"
       },
       "customizationColors": [
         {
@@ -9280,18 +9276,6 @@
           "price": null,
           "image": "/images/custom-collors/graphiteJetBlack.jpg",
           "colorCode": "color2"
-        },
-        {
-          "colorName": "Graphite / Caspian Blue",
-          "price": null,
-          "image": "/images/custom-collors/caspianBluePhantomBlack.jpg",
-          "colorCode": "color3"
-        },
-        {
-          "colorName": "Graphite / Baja Orange",
-          "price": null,
-          "image": "/images/custom-collors/graphiteBajaOrange.jpg",
-          "colorCode": "color4"
         }
       ],
       "shortSpecInfo": {
@@ -9445,8 +9429,8 @@
         "color1Reversed": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor1Reversed.png",
         "color2": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor2.png",
         "color2Reversed": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor2Reversed.png",
-        "color3": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor3.png",
-        "color3Reversed": "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor3Reversed.png"
+        "color3": "/images/adventure/tiger1200GTPRO/tiger1200GTPRORed.png",
+        "color3Reversed": "/images/adventure/tiger1200GTPRO/tiger1200GTPRORedReversed.png"
       },
       "customizationColors": [
         {
@@ -9462,9 +9446,9 @@
           "colorCode": "color2"
         },
         {
-          "colorName": "Lucerne Blue",
+          "colorName": "Carnival Red",
           "price": 200,
-          "image": "/images/custom-collors/lucerneBlue.jpg",
+          "image": "/images/custom-collors/carnivalRed.jpg",
           "colorCode": "color3"
         }
       ],
@@ -9607,8 +9591,8 @@
         "color1Reversed": "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerSnowdoniaWhiteReversed.png",
         "color2": "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerSaphireBlack.png",
         "color2Reversed": "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerSaphireBlackReversed.png",
-        "color3": "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerLucerneBlue.png",
-        "color3Reversed": "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerLucerneBlueReversed.png"
+        "color3": "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerRed.png",
+        "color3Reversed": "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerRedReversed.png"
       },
       "customizationColors": [
         {
@@ -9624,9 +9608,9 @@
           "colorCode": "color2"
         },
         {
-          "colorName": "Lucerne Blue",
+          "colorName": "Carnival Red",
           "price": 400,
-          "image": "/images/custom-collors/lucerneBlue.jpg",
+          "image": "/images/custom-collors/carnivalRed.jpg",
           "colorCode": "color3"
         }
       ],
@@ -9757,7 +9741,7 @@
       "category": "adventure",
       "subFamilyCategory": "tiger-1200-rally",
       "edition": "adventure",
-      "price": 22590,
+      "price": 22790,
       "gallery": {
         "modelImage": {
           "src": "/images/adventure/tiger1200GTPRO/tiger1200GTPROModelImage.png",
@@ -9769,9 +9753,9 @@
         }
       },
       "bikeCollorPalletteGallery": {
-        "default": "/images/adventure/tiger1200RallyPro/tiger1200RallyProSnowdoniaWhite.png",
-        "color1": "/images/adventure/tiger1200RallyPro/tiger1200RallyProSnowdoniaWhite.png",
-        "color1Reversed": "/images/adventure/tiger1200RallyPro/tiger1200RallyProSnowdoniaWhiteReversed.png",
+        "default": "/images/adventure/tiger1200RallyPro/tiger1200RallyProSandstorm.png",
+        "color1": "/images/adventure/tiger1200RallyPro/tiger1200RallyProSandstorm.png",
+        "color1Reversed": "/images/adventure/tiger1200RallyPro/tiger1200RallyProSandstormReversed.png",
         "color2": "/images/adventure/tiger1200RallyPro/tiger1200RallyProBlack.png",
         "color2Reversed": "/images/adventure/tiger1200RallyPro/tiger1200RallyProBlackReversed.png",
         "color3": "/images/adventure/tiger1200RallyPro/tiger1200RallyProMattKhaki.png",
@@ -9779,20 +9763,20 @@
       },
       "customizationColors": [
         {
-          "colorName": "Snowdonia White",
-          "price": null,
-          "image": "/images/custom-collors/snowdoniaWhite.jpg",
+          "colorName": "Matt Sandstorm",
+          "price": 100,
+          "image": "/images/custom-collors/sandstorm.jpg",
           "colorCode": "color1"
         },
         {
-          "colorName": "Saphire Black",
-          "price": 200,
+          "colorName": "Jett Black",
+          "price": null,
           "image": "/images/custom-collors/sapphireBlack.jpg",
           "colorCode": "color2"
         },
         {
           "colorName": "Matt Khaki",
-          "price": 300,
+          "price": 100,
           "image": "/images/custom-collors/mattKhaki.jpg",
           "colorCode": "color3"
         }
@@ -9920,7 +9904,7 @@
       "category": "adventure",
       "subFamilyCategory": "tiger-1200-rally",
       "edition": "adventure",
-      "price": 24690,
+      "price": 24790,
       "gallery": {
         "modelImage": {
           "src": "/images/adventure/tiger1200RallyExplorerModelImage.avif",
@@ -9932,9 +9916,9 @@
         }
       },
       "bikeCollorPalletteGallery": {
-        "default": "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerSnowdonia.png",
-        "color1": "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerSnowdonia.png",
-        "color1Reversed": "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerSnowdoniaReversed.png",
+        "default": "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerSandstorm.png",
+        "color1": "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerSandstorm.png",
+        "color1Reversed": "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerSandstormReversed.png",
         "color2": "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerBlack.png",
         "color2Reversed": "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerBlackReversed.png",
         "color3": "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerKhaki.png",
@@ -9942,20 +9926,20 @@
       },
       "customizationColors": [
         {
-          "colorName": "Snowdonia White",
-          "price": null,
-          "image": "/images/custom-collors/snowdoniaWhite.jpg",
+          "colorName": "Matt Sandstorm",
+          "price": 100,
+          "image": "/images/custom-collors/sandstorm.jpg",
           "colorCode": "color1"
         },
         {
           "colorName": "Saphire Black",
-          "price": 200,
+          "price": null,
           "image": "/images/custom-collors/sapphireBlack.jpg",
           "colorCode": "color2"
         },
         {
           "colorName": "Matt Khaki",
-          "price": 300,
+          "price": 200,
           "image": "/images/custom-collors/mattKhaki.jpg",
           "colorCode": "color3"
         }
@@ -10439,8 +10423,8 @@
         "default": "/images/roadsters/trident660/tridentMattBajaOrange.png",
         "color1": "/images/roadsters/trident660/trident660SapphireBlack.png",
         "color1Reversed": "/images/roadsters/trident660/trident660SapphireBlackReversed.png",
-        "color2": "/images/roadsters/trident660/tridentMattBajaOrange.png",
-        "color2Reversed": "/images/roadsters/trident660/tridentMattBajaOrangeReversed.png",
+        "color2": "/images/roadsters/trident660/trident660TriumphYellow.png",
+        "color2Reversed": "/images/roadsters/trident660/trident660TriumphYellowReversed.png",
         "color3": "/images/roadsters/trident660/trident660MattBlack.png",
         "color3Reversed": "/images/roadsters/trident660/trident660MattBlackReversed.png",
         "color4": "/images/roadsters/trident660/tridentIceRed.png",
@@ -10454,9 +10438,9 @@
           "colorCode": "color1"
         },
         {
-          "colorName": "Matt Baja Orange / Matt Storm Gray",
+          "colorName": "Jett Black / Triumph Racing Yellow",
           "price": 200,
-          "image": "/images/custom-collors/mattBajaOrangeMattStormGrey.jpg",
+          "image": "/images/custom-collors/jetBlackTriumphRacingYellow.jpg",
           "colorCode": "color2"
         },
         {
@@ -10619,8 +10603,8 @@
         "color1Reversed": "/images/roadsters/speedTriple1200RS/speedTriple1200rsCarnivalBlackReversed.png",
         "color2": "/images/roadsters/speedTriple1200RS/speedTriple1200rsSilverIce.png",
         "color2Reversed": "/images/roadsters/speedTriple1200RS/speedTriple1200rsSilverIceReversed.png",
-        "color3": "/images/roadsters/speedTriple1200RS/speedTriple1200rsBaja.png",
-        "color3Reversed": "/images/roadsters/speedTriple1200RS/speedTriple1200rsBajaReversed.png"
+        "color3": "/images/roadsters/speedTriple1200RS/speedTriple1200rsCarnivalRed.png",
+        "color3Reversed": "/images/roadsters/speedTriple1200RS/speedTriple1200rsCarnivalRedReversed.png"
       },
       "customizationColors": [
         {
@@ -10636,9 +10620,9 @@
           "colorCode": "color2"
         },
         {
-          "colorName": "Matt Baja Orange",
+          "colorName": "Carnival Red",
           "price": 300,
-          "image": "/images/custom-collors/mattBajaOrange.jpg",
+          "image": "/images/custom-collors/carnivalRed.jpg",
           "colorCode": "color3"
         }
       ],
@@ -10933,8 +10917,10 @@
         "color1Reversed": "/images/rocket-3/rocket3R/rocket3RSilverIceReversed.png",
         "color2": "/images/rocket-3/rocket3R/rocket3RSaphireBlack.png",
         "color2Reversed": "/images/rocket-3/rocket3R/rocket3RSaphireBlackReversed.png",
-        "color3": "/images/rocket-3/rocket3R/rocket3RSilverRed.png",
-        "color3Reversed": "/images/rocket-3/rocket3R/rocket3RSilverRedReversed.png"
+        "color3": "/images/rocket-3/rocket3R/rocket3RSilverRedBlack.png",
+        "color3Reversed": "/images/rocket-3/rocket3R/rocket3RSilverRedBlackReversed.png",
+        "color4": "/images/rocket-3/rocket3R/rocket3RSaphireChrome.png",
+        "color4Reversed": "/images/rocket-3/rocket3R/rocket3RSaphireChromeReversed.png"
       },
       "customizationColors": [
         {
@@ -10950,10 +10936,16 @@
           "colorCode": "color2"
         },
         {
-          "colorName": "Silver Ice Cranberry Red",
+          "colorName": "Sapphire Black / Carnival Red / Silver Ice",
           "price": 700,
-          "image": "/images/custom-collors/silverIceCranberryRed.jpg",
+          "image": "/images/custom-collors/carnivalRedSapphireBlack.jpg",
           "colorCode": "color3"
+        },
+        {
+          "colorName": "Chrome Edition / Jet Black",
+          "price": 1000,
+          "image": "/images/custom-collors/chromeJetBlack.jpg",
+          "colorCode": "color4"
         }
       ],
       "shortSpecInfo": {
@@ -11152,8 +11144,8 @@
         "color1Reversed": "/images/rocket-3/rocket3GT/rocket3GTSaphireBlackReversed.png",
         "color2": "/images/rocket-3/rocket3GT/rocket3GTCarnivalRedSaphireBlack.png",
         "color2Reversed": "/images/rocket-3/rocket3GT/rocket3GTCarnivalRedSaphireBlackReversed.png",
-        "color3": "/images/rocket-3/rocket3GT/rocket3GTSilverIceStormGray.png",
-        "color3Reversed": "/images/rocket-3/rocket3GT/rocket3GTSilverIceStormGrayReversed.png"
+        "color3": "/images/rocket-3/rocket3GT/rocket3GTChrome.png",
+        "color3Reversed": "/images/rocket-3/rocket3GT/rocket3GTChromeReversed.png"
       },
       "customizationColors": [
         {
@@ -11163,15 +11155,15 @@
           "colorCode": "color1"
         },
         {
-          "colorName": "Carnival Red / Saphire Black",
+          "colorName": "Saphire Black / Carnival Red / Silver Ice",
           "price": null,
           "image": "/images/custom-collors/carnivalRedSapphireBlack.jpg",
           "colorCode": "color2"
         },
         {
-          "colorName": "Silver Ice / Storm Gray",
+          "colorName": "Chrome Edition / Diablo Red",
           "price": 900,
-          "image": "/images/custom-collors/silverIceStormGray.jpg",
+          "image": "/images/custom-collors/chromeDiabloRed.jpg",
           "colorCode": "color3"
         }
       ],
@@ -11679,10 +11671,12 @@
         "default": "/images/classics/speedTwin900/speedTwin900Ironstone.png",
         "color1": "/images/classics/speedTwin900/speedTwin900Black.png",
         "color1Reversed": "/images/classics/speedTwin900/speedTwin900BlackReversed.png",
-        "color2": "/images/classics/speedTwin900/speedTwin900Ironstone.png",
-        "color2Reversed": "/images/classics/speedTwin900/speedTwin900IronstoneReversed.png",
-        "color3": "/images/classics/speedTwin900/speedTwin900SilverIce.png",
-        "color3Reversed": "/images/classics/speedTwin900/speedTwin900SilverICeReversed.png"
+        "color2": "/images/classics/speedTwin900/speedTwin900CarnivalRed.png",
+        "color2Reversed": "/images/classics/speedTwin900/speedTwin900CarnivalRedReversed.png",
+        "color3": "/images/classics/speedTwin900/speedTwin900Competition.png",
+        "color3Reversed": "/images/classics/speedTwin900/speedTwin900CompetitionReversed.png",
+        "color4": "/images/classics/speedTwin900/speedTwin900StealthGreen.png",
+        "color4Reversed": "/images/classics/speedTwin900/speedTwin900StealthGreenReversed.png"
       },
       "customizationColors": [
         {
@@ -11692,17 +11686,25 @@
           "colorCode": "color1"
         },
         {
-          "colorName": "Matt Ironstone",
+          "colorName": "Carnival Red / Phantom Black",
           "price": 200,
-          "image": "/images/custom-collors/ironStoneGrey.jpg",
+          "image": "/images/custom-collors/carnivalRedSapphireBlack.jpg",
           "colorCode": "color2"
         },
         {
-          "colorName": "Matt Silver Ice",
+          "colorName": "Competition green / Phantom Black",
           "price": 200,
-          "image": "/images/custom-collors/mattSilverIce.jpg",
+          "image": "/images/custom-collors/competitionGreenPhantomBlack.jpg",
           "colorCode": "color3"
+        },
+        {
+          "colorName": "Phantom Green / Silver Green",
+          "price": 600,
+          "image": "/images/custom-collors/phantomGreenSilverGreen.png",
+          "colorCode": "color4"
         }
+
+        
       ],
       "gallery": {
         "modelImage": {
@@ -11812,17 +11814,19 @@
       "category": "classics",
       "subFamilyCategory": "bonneville-bobber",
       "edition": "classics",
-      "price": 16790,
+      "price": 16990,
       "bikeCollorPalletteGallery": {
         "default": "/images/classics/bonnevilleBobber/bonnevilleBobberRedHopper.png",
         "color1": "/images/classics/bonnevilleBobber/bonnevilleBobberBlack.png",
         "color1Reversed": "/images/classics/bonnevilleBobber/bonnevilleBobberBlackReversed.png",
         "color2": "/images/classics/bonnevilleBobber/bonnevilleBobberRedHopper.png",
         "color2Reversed": "/images/classics/bonnevilleBobber/bonnevilleBobberRedHopperReversed.png",
-        "color3": "/images/classics/bonnevilleBobber/bonnevilleBobberIronStone.png",
-        "color3Reversed": "/images/classics/bonnevilleBobber/bonnevilleBobberIronStoneReversed.png",
+        "color3": "/images/classics/bonnevilleBobber/bonnevilleBobberBlackGray.png",
+        "color3Reversed": "/images/classics/bonnevilleBobber/bonnevilleBobberBlackGrayReversed.png",
         "color4": "/images/classics/bonnevilleBobber/bonnevilleBobberChrome.png",
-        "color4Reversed": "/images/classics/bonnevilleBobber/bonnevilleBobberChromeReversed.png"
+        "color4Reversed": "/images/classics/bonnevilleBobber/bonnevilleBobberChromeReversed.png",
+        "color5": "/images/classics/bonnevilleBobber/bonnevilleBobberPurple.png",
+        "color5Reversed": "/images/classics/bonnevilleBobber/bonnevilleBobberPurpleReversed.png"
       },
       "customizationColors": [
         {
@@ -11833,22 +11837,29 @@
         },
         {
           "colorName": "Red Hopper",
-          "price": 200,
+          "price": null,
           "image": "/images/custom-collors/redHopper.jpg",
           "colorCode": "color2"
         },
         {
-          "colorName": "Matt Storm Gray / Matt Ironstone",
-          "price": 200,
-          "image": "/images/custom-collors/ironStoneGrey.jpg",
+          "colorName": "Jett Black / Ash Gray",
+          "price": 400,
+          "image": "/images/custom-collors/graphiteJetBlack.jpg",
           "colorCode": "color3"
         },
         {
-          "colorName": "Chrome / Jet Black",
-          "price": 800,
+          "colorName": "Chrome Edition / Jet Black",
+          "price": 600,
           "image": "/images/custom-collors/jetBlackChrome.jpg",
           "colorCode": "color4"
+        },
+        {
+          "colorName": "Phantom Purple / Silver Purple",
+          "price": 600,
+          "image": "/images/custom-collors/phantomPurpleSilverPurple.png",
+          "colorCode": "color5"
         }
+        
       ],
       "gallery": {
         "modelImage": {
@@ -11977,13 +11988,13 @@
         },
         {
           "colorName": "Ash Gray",
-          "price": 200,
+          "price": 300,
           "image": "/images/custom-collors/ashGrey.jpg",
           "colorCode": "color2"
         },
         {
           "colorName": "Carnival Red",
-          "price": 200,
+          "price": 300,
           "image": "/images/custom-collors/carnivalRed.jpg",
           "colorCode": "color3"
         }
@@ -12081,7 +12092,7 @@
         },
         {
           "colorName": "Matt Khaki Green / Matt Jet Black",
-          "price": 300,
+          "price": 400,
           "image": "/images/custom-collors/mattKhakiGreeenMattJetBlack.jpg",
           "colorCode": "color2"
         },
@@ -12188,12 +12199,10 @@
         "default": "/images/classics/scrambler1200XE/scrambler1200XEBlack.png",
         "color1": "/images/classics/scrambler1200XE/scrambler1200XEBlack.png",
         "color1Reversed": "/images/classics/scrambler1200XE/scrambler1200XEBlackReversed.png",
-        "color2": "/images/classics/scrambler1200XE/scrambler1200XEKhaki.png",
-        "color2Reversed": "/images/classics/scrambler1200XE/scrambler1200XEKhakiReversed.png",
-        "color3": "/images/classics/scrambler1200XE/scrambler1200XERed.png",
-        "color3Reversed": "/images/classics/scrambler1200XE/scrambler1200XERedReversed.png",
-        "color4": "/images/classics/scrambler1200XE/scrambler1200XEChromeEdition.avif",
-        "color4Reversed": "/images/classics/scrambler1200XE/scrambler1200XEChromeEdition.avif"
+        "color2": "/images/classics/scrambler1200XE/scrambler1200XEBlackGray.png",
+        "color2Reversed": "/images/classics/scrambler1200XE/scrambler1200XEBlackGrayReversed.png",
+        "color3": "/images/classics/scrambler1200XE/scrambler1200XEOrange.png",
+        "color3Reversed": "/images/classics/scrambler1200XE/scrambler1200XEOrangeReversed.png"
       },
       "customizationColors": [
         {
@@ -12203,22 +12212,16 @@
           "colorCode": "color1"
         },
         {
-          "colorName": "Matt Khaki Green / Matt Jet Black",
+          "colorName": "Phantom Black / Storm Gray",
           "price": 400,
-          "image": "/images/custom-collors/mattKhakiGreeenMattJetBlack.jpg",
+          "image": "/images/custom-collors/phantomBlackStormGrey.jpg",
           "colorCode": "color2"
         },
         {
-          "colorName": "Carnival Red / Jet Black",
+          "colorName": "Baja Orange / Phantom Black",
           "price": 400,
-          "image": "/images/custom-collors/carnivalRedSapphireBlack.jpg",
+          "image": "/images/custom-collors/bajaOrangePhantomBlack.jpg",
           "colorCode": "color3"
-        },
-        {
-          "colorName": "Chrome / Brooklands Green",
-          "price": 800,
-          "image": "/images/custom-collors/chromeBrooklandsGreen.avif",
-          "colorCode": "color4"
         }
       ],
       "gallery": {
@@ -12302,10 +12305,10 @@
         "color1Reversed": "/images/classics/speedmaster/speedmasterBlackReversed.png",
         "color2": "/images/classics/speedmaster/speedmasterRed.png",
         "color2Reversed": "/images/classics/speedmaster/speedmasterRedReversed.png",
-        "color3": "/images/classics/speedmaster/speedmasterBlackWhite.png",
-        "color3Reversed": "/images/classics/speedmaster/speedmasterBlackWhiteReversed.png",
-        "color4": "/images/classics/speedmaster/speedmasterChromeEdition.avif",
-        "color4Reversed": "/images/classics/speedmaster/speedmasterChromeEdition.avif"
+        "color3": "/images/classics/speedmaster/speedmasterBlackBlue.png",
+        "color3Reversed": "/images/classics/speedmaster/speedmasterBlackBlueReversed.png",
+        "color4": "/images/classics/speedmaster/speedmasterPhantomRed.png",
+        "color4Reversed": "/images/classics/speedmaster/speedmasterPhantomRedReversed.png"
       },
       "customizationColors": [
         {
@@ -12321,10 +12324,16 @@
           "colorCode": "color2"
         },
         {
-          "colorName": "Sapphire Black / Fusion White",
-          "price": 100,
-          "image": "/images/custom-collors/sapphireBlackFussionWhite.jpg",
+          "colorName": "Pacific Blue / Silver Ice",
+          "price": 500,
+          "image": "/images/custom-collors/pacificBlueSilverIce.jpg",
           "colorCode": "color3"
+        },
+        {
+          "colorName": "Phantom Red / Silver Red",
+          "price": 900,
+          "image": "/images/custom-collors/phantomRedSilverRed.png",
+          "colorCode": "color4"
         }
       ],
       "gallery": {
@@ -12442,10 +12451,12 @@
         "default": "/images/classics/speedTwin1200/speedTwin1200Black.png",
         "color1": "/images/classics/speedTwin1200/speedTwin1200Black.png",
         "color1Reversed": "/images/classics/speedTwin1200/speedTwin1200BlackReversed.png",
-        "color2": "/images/classics/speedTwin1200/speedTwin1200RedHopper.png",
-        "color2Reversed": "/images/classics/speedTwin1200/speedTwin1200RedHopperReversed.png",
-        "color3": "/images/classics/speedTwin1200/speedTwin1200Baja.png",
-        "color3Reversed": "/images/classics/speedTwin1200/speedTwin1200BajaReversed.png"
+        "color2": "/images/classics/speedTwin1200/speedTwin1200MattSilver.png",
+        "color2Reversed": "/images/classics/speedTwin1200/speedTwin1200MattSilverReversed.png",
+        "color3": "/images/classics/speedTwin1200/speedTwin1200CarnivalRed.png",
+        "color3Reversed": "/images/classics/speedTwin1200/speedTwin1200CarnivalRedReversed.png",
+        "color4": "/images/classics/speedTwin1200/speedTwin1200PhantomRed.png",
+        "color4Reversed": "/images/classics/speedTwin1200/speedTwin1200PhantomRedReversed.png"
       },
       "customizationColors": [
         {
@@ -12455,16 +12466,22 @@
           "colorCode": "color1"
         },
         {
-          "colorName": "Red Hopper",
+          "colorName": "Matt Ironstone / Matt Storm Gray",
           "price": 200,
-          "image": "/images/custom-collors/redHopper.jpg",
+          "image": "/images/custom-collors/mattIronstoneMattStormGrey.jpg",
           "colorCode": "color2"
         },
         {
-          "colorName": "Matt Baja Orange",
+          "colorName": "Carnival Red / Storm Gray",
           "price": 200,
-          "image": "/images/custom-collors/mattBajaOrange.jpg",
+          "image": "/images/custom-collors/carnivalRedStormGrey.jpg",
           "colorCode": "color3"
+        },
+        {
+          "colorName": "Phantom Red / Silver Red",
+          "price": 400,
+          "image": "/images/custom-collors/phantomRedSilverRed.png",
+          "colorCode": "color4"
         }
       ],
       "gallery": {
@@ -12583,12 +12600,16 @@
         "default": "/images/classics/scrambler900/scrambler900Black.png",
         "color1": "/images/classics/scrambler900/scrambler900Black.png",
         "color1Reversed": "/images/classics/scrambler900/scrambler900BlackReversed.png",
-        "color2": "/images/classics/scrambler900/scrambler900Red.png",
-        "color2Reversed": "/images/classics/scrambler900/scrambler900RedReversed.png",
+        "color2": "/images/classics/scrambler900/scrambler900Yellow.png",
+        "color2Reversed": "/images/classics/scrambler900/scrambler900YellowReversed.png",
         "color3": "/images/classics/scrambler900/scrambler900Khaki.png",
-        "color3Reversed": "/images/classics/scrambler900/scrambler900KhakiReversed.png"
+        "color3Reversed": "/images/classics/scrambler900/scrambler900KhakiReversed.png",
+        "color4": "/images/classics/scrambler900/scrambler900PhantomOrange.png",
+        "color4Reversed": "/images/classics/scrambler900/scrambler900PhantomOrangeReversed.png"
       },
       "customizationColors": [
+
+        
         {
           "colorName": "Jet Black",
           "price": null,
@@ -12596,9 +12617,9 @@
           "colorCode": "color1"
         },
         {
-          "colorName": "Carnival Red / Jet Black",
-          "price": 300,
-          "image": "/images/custom-collors/carnivalRedSapphireBlack.jpg",
+          "colorName": "Cosmic Yellow / Graphite",
+          "price": 200,
+          "image": "/images/custom-collors/cosmicYellowGraphite.jpg",
           "colorCode": "color2"
         },
         {
@@ -12606,7 +12627,15 @@
           "price": 200,
           "image": "/images/custom-collors/mattKhaki.jpg",
           "colorCode": "color3"
+        },
+        {
+          "colorName": "Phantom Orange / Silver Orange",
+          "price": 600,
+          "image": "/images/custom-collors/phamtomOrangeSilverOrange.png",
+          "colorCode": "color4"
         }
+
+        
       ],
       "gallery": {
         "modelImage": {
@@ -12753,8 +12782,8 @@
         "color1Reversed": "/images/classics/bonnevilleT100/t100BlackReversed.png",
         "color2": "/images/classics/bonnevilleT100/t100RedWhite.png",
         "color2Reversed": "/images/classics/bonnevilleT100/t100RedWhiteReversed.png",
-        "color3": "/images/classics/bonnevilleT100/t100Tangerine.png",
-        "color3Reversed": "/images/classics/bonnevilleT100/t100TangerineReversed.png",
+        "color3": "/images/classics/bonnevilleT100/t10CompGreen.png", 
+        "color3Reversed": "/images/classics/bonnevilleT100/t10CompGreenReversed.png",
         "color4": "/images/classics/bonnevilleT100/t100CobaltBlue.png",
         "color4Reversed": "/images/classics/bonnevilleT100/t100CobaltBlueReversed.png"
       },
@@ -12772,14 +12801,14 @@
           "colorCode": "color2"
         },
         {
-          "colorName": "Meriden Blue / Tangerine",
+          "colorName": "Competition green / Ironstone",
           "price": 400,
-          "image": "/images/custom-collors/meridenBlueTangerine.jpg",
+          "image": "/images/custom-collors/competitionGreenIronstone.jpg",
           "colorCode": "color3"
         },
         {
           "colorName": "Cobalt Blue",
-          "price": 700,
+          "price": 400,
           "image": "/images/custom-collors/phantomBlueSilverBlue.png",
           "colorCode": "color4"
         }
@@ -12912,10 +12941,12 @@
         "color1Reversed": "/images/classics/bonnevilleT120/bonnevillieT120BlackReversed.png",
         "color2": "/images/classics/bonnevilleT120/bonnevillieT120Red.png",
         "color2Reversed": "/images/classics/bonnevilleT120/bonnevillieT120RedReversed.png",
-        "color3": "/images/classics/bonnevilleT120/bonnevillieT120AegeanBlue.png",
-        "color3Reversed": "/images/classics/bonnevilleT120/bonnevillieT120AegeanBlueReversed.png",
+        "color3": "/images/classics/bonnevilleT120/bonnevillieT120WhiteJetBlack.png",
+        "color3Reversed": "/images/classics/bonnevilleT120/bonnevillieT120WhiteJetBlackReversed.png",
         "color4": "/images/classics/bonnevilleT120/t120ChromeEdition-MeridenBlueChrome.avif",
-        "color4Reversed": "/images/classics/bonnevilleT120/t120ChromeEdition-MeridenBlueChrome.avif"
+        "color4Reversed": "/images/classics/bonnevilleT120/t120ChromeEdition-MeridenBlueChrome.avif",
+        "color5": "/images/classics/bonnevilleT120/bonnevillieT120PhantomBlue.png",
+        "color5Reversed": "/images/classics/bonnevilleT120/bonnevillieT120PhantomBlueReversed.png"
       },
       "customizationColors": [
         {
@@ -12931,9 +12962,9 @@
           "colorCode": "color2"
         },
         {
-          "colorName": "Aegean Blue / Fusion White",
+          "colorName": "Jet Black / Fusion White",
           "price": 300,
-          "image": "/images/custom-collors/aegeanBlueFusionWhite.jpg",
+          "image": "/images/custom-collors/whiteJetBlack.jpg",
           "colorCode": "color3"
         },
         {
@@ -12941,6 +12972,12 @@
           "price": 800,
           "image": "/images/custom-collors/chromeMeridianBlue.avif",
           "colorCode": "color4"
+        },
+        {
+          "colorName": "Phantom Blue / Silver Blue",
+          "price": 800,
+          "image": "/images/custom-collors/phantomBlueSilverBlue.png",
+          "colorCode": "color5"
         }
       ],
       "gallery": {
@@ -13082,9 +13119,13 @@
         "default": "/images/classics/bonnevilleT120Black/t120BlackJetBlack.png",
         "color1": "/images/classics/bonnevilleT120Black/t120BlackJetBlack.png",
         "color1Reversed": "/images/classics/bonnevilleT120Black/t120BlackJetBlackReversed.png",
-        "color2": "/images/classics/bonnevilleT120Black/t120BlackMattBlack.png",
-        "color2Reversed": "/images/classics/bonnevilleT120Black/t120BlackMattBlackReversed.png"
+        "color2": "/images/classics/bonnevilleT120Black/t120Graphite.png",
+        "color2Reversed": "/images/classics/bonnevilleT120Black/t120GraphiteReversed.png",
+        "color3": "/images/classics/bonnevilleT120Black/t120Ice.png",
+        "color3Reversed": "/images/classics/bonnevilleT120Black/t120IceReversed.png"
       },
+
+      
       "customizationColors": [
         {
           "colorName": "Jet Black",
@@ -13093,10 +13134,16 @@
           "colorCode": "color1"
         },
         {
-          "colorName": "Sapphire Black / Matt Saphire",
+          "colorName": "Graphite / Matt Graphite",
           "price": 300,
-          "image": "/images/custom-collors/sapphireBlackSapphireBlack.jpg",
+          "image": "/images/custom-collors/graphiteMattGraphite.jpg",
           "colorCode": "color2"
+        },
+        {
+          "colorName": "Silver Ice / Phantom Black",
+          "price": 800,
+          "image": "/images/custom-collors/silverIcePhantomBlack.png",
+          "colorCode": "color3"
         }
       ],
       "gallery": {
@@ -13241,7 +13288,9 @@
         "color2": "/images/classics/thruxtonRS/thruxtonRSCompetitionGreen.png",
         "color2Reversed": "/images/classics/thruxtonRS/thruxtonRSCompetitionGreenReversed.png",
         "color3": "/images/classics/thruxtonRS/thruxtonRSBlackSilver.png",
-        "color3Reversed": "/images/classics/thruxtonRS/thruxtonRSBlackSilverReversed.png"
+        "color3Reversed": "/images/classics/thruxtonRS/thruxtonRSBlackSilverReversed.png",
+        "color4": "/images/classics/thruxtonRS/thruxtonRSJetBlack.png",
+        "color4Reversed": "/images/classics/thruxtonRS/thruxtonRSJetBlackReversed.png"
       },
       "customizationColors": [
         {
@@ -13252,7 +13301,7 @@
         },
         {
           "colorName": "Competition green / Silver Ice",
-          "price": 400,
+          "price": 200,
           "image": "/images/custom-collors/competitionGreenStorGrey.jpg",
           "colorCode": "color2"
         },
@@ -13261,6 +13310,12 @@
           "price": 800,
           "image": "/images/custom-collors/chromeJetBlack.jpg",
           "colorCode": "color3"
+        },
+        {
+          "colorName": "Jet Black / Sillver Ice",
+          "price": 400,
+          "image": "/images/custom-collors/jetBlackSilverIce.jpg",
+          "colorCode": "color4"
         }
       ],
       "gallery": {
@@ -13675,7 +13730,7 @@
       "category": "sport",
       "subFamilyCategory": "daytona-660",
       "edition": "sport",
-      "price": null,
+      "price": 10790,
       "gallery": {
         "modelImage": {
           "src": "/images/sport/daytona660/daytona660SnowdoniaWhite.png",
@@ -13698,7 +13753,7 @@
       "customizationColors": [
         {
           "colorName": "Satin Granite / Satin Jet Black",
-          "price": null,
+          "price": 200,
           "image": "/images/custom-collors/satinGraniteSatinJetBlack.png",
           "colorCode": "color1"
         },
@@ -13710,7 +13765,7 @@
         },
         {
           "colorName": "Carnival Red / Saphire Black",
-          "price": null,
+          "price": 200,
           "image": "/images/custom-collors/carnivalRedSapphireBlack.jpg",
           "colorCode": "color3"
         }
