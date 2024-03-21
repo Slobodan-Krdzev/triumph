@@ -166,7 +166,6 @@ class MotorcyclesTableSeeder extends Seeder
         ];
 
 
-
         $motorcycleDataThree = [
             [
                 "title" => "Tiger 900 Rally PRO",
