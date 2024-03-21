@@ -25,7 +25,7 @@ const SecondaryNavBar = ({
   if (items) {
     return (
       <section
-        className="flex justify-between px-8 outline-gray-1px sticky top-0 bg-white "
+        className="hidden xl:flex justify-between px-8 outline-gray-1px sticky top-0 bg-white "
         style={{ zIndex: 40 }}
       >
         {/* LEFT SIDE */}
@@ -39,7 +39,7 @@ const SecondaryNavBar = ({
         {configurationLink && (
           <div className="flex items-center py-1">
             <Link
-              href={"/dealer/dealers-search"}
+              href={"/dealer"}
               className="mr-10 upercase font-semibold text-neutral-800 text-sm"
             >
               КОНТАКТ

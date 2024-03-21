@@ -6,9 +6,10 @@ import LoadingState from "../LoadingState";
 
 type BikeModelImageProps = {
   bike: any;
+  modalImage?: boolean
 };
 
-const BikeModelImage = ({ bike }: BikeModelImageProps) => {
+const BikeModelImage = ({ bike, modalImage }: BikeModelImageProps) => {
   const query = useSearchParams();
 
   if (query.get("color") && query.get("reversed") === "true") {
@@ -20,12 +21,10 @@ const BikeModelImage = ({ bike }: BikeModelImageProps) => {
       >
         <Image
           src={
-            bike.bikeCollorPalletteGallery[
-              (query.get("color") as string) + "Reversed"
-            ]
+            bike.bikeCollorPalletteGallery[(query.get("color") as string) + "Reversed"]
           }
           alt={bike.title}
-          width={1124}
+          width={modalImage ? 850 : 1124}
           height={76}
         />
       </Suspense>
@@ -39,7 +38,7 @@ const BikeModelImage = ({ bike }: BikeModelImageProps) => {
             : bike.bikeCollorPalletteGallery.color1
         }
         alt={bike.title}
-        width={1124}
+        width={modalImage ? 850 : 1124}
         height={376}
       />
     );

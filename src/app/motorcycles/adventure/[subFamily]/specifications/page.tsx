@@ -1,6 +1,8 @@
+import Breadcrumbs from "@/app/components/Breadcrumbs/Breadcrumbs";
 import MainBtn from "@/app/components/MainBtn";
 import SpecsTable from "@/app/components/SubFamily/Specification/SpecsTable";
-import { FAMILIES, SUB_FAMILIES } from "@/app/constants/constants";
+import { SUB_FAMILIES } from "@/app/constants/constants";
+import { redirect } from "next/navigation";
 import React from "react";
 
 const SubFamilyStandardsPage = async ({ params }: any) => {
@@ -8,16 +10,16 @@ const SubFamilyStandardsPage = async ({ params }: any) => {
   const subFam = params.subFamily
 
   try {
-
-    const subFamilyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=${subFam}`, {cache: 'no-store'})
+    const subFamilyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=${subFam}`, {
+      next: { revalidate: 3000 },
+    })
     const subFamilyData = await subFamilyRes.json()
     const subFamily = subFamilyData[0]
 
-  
-
     return (
       <>
-        <main className="py-4 md:py-8 lg:py-16 bg-white">
+        <main className="py-4 md:py-8 lg:py-16 bg-white relative">
+          <Breadcrumbs dark />
           <h1 className="uppercase text-4xl lg:text-6xl text-black text-center font-semibold">
             Спецификации
           </h1>
@@ -30,13 +32,12 @@ const SubFamilyStandardsPage = async ({ params }: any) => {
             />
           </div>
 
-          <SpecsTable specs={subFamily.subFamilyPageInfo.fullSpecs}/>
+          <SpecsTable specs={subFamily}/>
         </main>
       </>
     );
   } catch (err) {
-    console.log(err);
-    return;
+    return redirect(`/motorcycles/adventure/${subFam}`)
   }
 };
 

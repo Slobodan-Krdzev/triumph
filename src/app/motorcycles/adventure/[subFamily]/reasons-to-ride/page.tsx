@@ -1,3 +1,4 @@
+import Breadcrumbs from "@/app/components/Breadcrumbs/Breadcrumbs";
 import ReasonsListin from "@/app/components/SubFamily/Reasons/ReasonsListin";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
 import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
@@ -9,16 +10,21 @@ const SubFamReasonsToRidePage = async ({ params }: any) => {
   const subFam = params.subFamily;
 
   try {
-    const subFamilyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=${subFam}`, {cache: 'no-store'});
+    const subFamilyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=${subFam}`, {
+      next: { revalidate: 3000 },
+    });
     const subFamilyData = await subFamilyRes.json();
     const subFamily = subFamilyData[0];
 
-    const bikesRes = await fetch(`${BIKES}?model=${subFam}`);
+    const bikesRes = await fetch(`${BIKES}?model=${subFam}`,{
+      next: { revalidate: 3000 },
+    });
     const bikesData = await bikesRes.json();
 
     return (
       <>
         <section
+        className="relative"
           style={{
             backgroundImage: `url("${subFamily.reasonsToDrive.banner.image}")`,
             backgroundSize: "cover",
@@ -28,6 +34,7 @@ const SubFamReasonsToRidePage = async ({ params }: any) => {
             overflow: "hidden",
           }}
         >
+          <Breadcrumbs />
           <div className="flex justify-center items-center w-full h-full overlay">
             <div className="w-6/12 m-auto flex flex-col justify-center items-center text-white gap-6">
               <h1 className="md:text-3xl text-sm border-b-4 border-white font-semibold capitalize pb-2">
@@ -75,8 +82,6 @@ const SubFamReasonsToRidePage = async ({ params }: any) => {
       </>
     );
   } catch (err) {
-    console.log(err);
-
     return redirect(`/motorcycles/adventure/${subFam}`);
   }
 };

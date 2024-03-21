@@ -444,7 +444,7 @@ const Locations = () => {
         height: "auto",
       }}
     >
-      <div className="flex flex-col justify-start gap-8 items-start basis-full md:basis-1/6 px-0 md:px-16 border-thin-right">
+      <div className="flex flex-col justify-start gap-8 items-start basis-full md:basis-2/6 px-0 md:px-16 border-thin-right">
         {regions.map((region) => (
           <button
             key={region}
@@ -459,7 +459,7 @@ const Locations = () => {
           </button>
         ))}
       </div>
-      <div className="basis-full md:basis-5/6 px-0 md:px-16 flex flex-wrap justify-between gap-6">
+      <div className="basis-full md:basis-4/6 px-0 md:px-16 flex flex-wrap justify-between gap-6">
         {filteredLocations.map((location) => (
           <Link
             className="w-1/5 flex justify-content items-center uppercase text-neutral-500 gap-2"
@@ -467,7 +467,7 @@ const Locations = () => {
             href={location.link}
             target="_blank"
           >
-            <Image src={"pin icon-01.svg"} alt="pin" width={32} height={32} />
+            <Image src={"/images/pinIcon-01.svg"} alt="pin" width={32} height={32} />
             {location.country}
           </Link>
         ))}

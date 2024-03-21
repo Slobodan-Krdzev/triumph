@@ -1,3 +1,4 @@
+import Breadcrumbs from "@/app/components/Breadcrumbs/Breadcrumbs";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
 import PageParagraph from "@/app/components/familiySharedComponents/PageParagraph";
 import MainBtn from "@/app/components/MainBtn";
@@ -8,7 +9,7 @@ const MotorcycleCollection = () => {
   return (
     <>
       <section
-        className="flex justify-center items-center"
+        className="flex justify-center items-center relative"
         style={{
           backgroundImage: 'url("/images/clothes/motoClothingBanner.avif")',
           backgroundPosition: "center center",
@@ -17,6 +18,8 @@ const MotorcycleCollection = () => {
           height: "100vh",
         }}
       >
+          <Breadcrumbs dark />
+
         <h1 className="text-4xl lg:text-8xl font-bold text-white uppercase border-b-4 border-red-600 ">
           Motorcycle
         </h1>
@@ -50,7 +53,7 @@ const MotorcycleCollection = () => {
         />
 
         <BikeInfoTextImageBtn
-          title={"„Casual“ Колекција"}
+          title={"Casual Колекција"}
           desc={
             "Имаме репутација на класични креации, па така и нашата „Casual“ колекција не е исклучок. Дизајнирана од истите креатори како и другите колекции, „Casual“ колекцијата располага со модерна облека која е изработена со вештина и бнимание на детали. Јакните и дуксерите заедно со печатените поло и маици со кратки ракави ви дадат автентичен стил што се издвојува од толпата."
           }
@@ -75,11 +78,11 @@ const MotorcycleCollection = () => {
           Лоцирајте ја нашата најблиска продавница.
         </p>
         <MainBtn
-          text={"Најди Продавница"}
-          bgBlack={true}
-          isLink={true}
-          link={`/`}
-        />
+              text={"Контакт"}
+              bgBlack={true}
+              isLink={true}
+              link={`/dealer`}
+            />
       </section>
     </>
   );

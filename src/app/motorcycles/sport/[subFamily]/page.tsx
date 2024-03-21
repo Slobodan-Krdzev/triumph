@@ -7,50 +7,34 @@ import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitl
 import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
 import { getBikesBySubfamilyCategory } from "@/app/components/helpers/getBikesBySubfamilyCategory";
 import { BIKES, FAMILIES, SUB_FAMILIES } from "@/app/constants/constants";
+import { redirect } from "next/navigation";
 
 const SportSubFamilyPage = async ({ params }: any) => {
   const query = params.subFamily;
 
   try {
     const subFamilyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=${query}`, {
-      cache: "no-store",
+      next: { revalidate: 3000 },
     });
     const subfamilyData = await subFamilyRes.json();
     const subFamily = subfamilyData[0];
 
-    
-
-    const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${query}`);
+    const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${query}`, {
+      next: { revalidate: 3000 },
+    });
     const bikes = await bikesRes.json();
 
     const hasGrayCaro =
-      subFamily.subFamilyPageInfo.hasOwnProperty(
-        "grayCarousell"
-      );
+      subFamily.hasOwnProperty("grayCarousell");
 
     const hasYoutubeVid =
-      subFamily.subFamilyPageInfo.hasOwnProperty(
-        "youtubeVideo"
-      );
+      subFamily.hasOwnProperty("youtubeVideo");
 
-    const hasAudio =
-      subFamily.subFamilyPageInfo.hasOwnProperty(
-        "audioSection"
-      );
-
-    const hasTopSection =
-      subFamily.subFamilyPageInfo.hasOwnProperty("topSection");
-
-
-      console.log('you', hasYoutubeVid);
-      
     return (
       <>
         <HeroSection
           video={subFamily.gallery.subFamilyHeroVideo.src}
-          mobileImage={
-            subFamily.gallery.subFamilyHeroImageMobile.src
-          }
+          mobileImage={subFamily.gallery.subFamilyHeroImageMobile.src}
           model={formulateSubFamilyTitleOnBanner(query)}
         />
 
@@ -73,18 +57,26 @@ const SportSubFamilyPage = async ({ params }: any) => {
               </h3>
             </div>
             {hasYoutubeVid && (
-              <YouTubePromo video={subFamily.subFamilyPageInfo.youtubeVideo ?? ""} />
+              <YouTubePromo
+                video={subFamily.youtubeVideo ?? ""}
+              />
             )}
           </section>
 
-          {hasGrayCaro && <BottomCarousell items={subFamily.subFamilyPageInfo.grayCarousell} />}
+          {hasGrayCaro && (
+            <BottomCarousell
+              items={subFamily.grayCarousell}
+            />
+          )}
         </main>
         <section className="px-4 lg:px-20 xl:px-40">
           {bikes.map((bike: any) => (
             <BikeInfoTextImageBtn
               key={bike.id}
-              title={bike.subFamilyPromo.title ?? ""}
-              desc={bike.subFamilyPromo.desc ?? ""}
+              title={bike.subFamilyPromo.title ?? bike.title}
+              desc={bike.subFamilyPromo?.desc ?? ""}
+              desc2={bike.price && `Цени од: €${bike.price}.00`}
+
               ctaBtn={{
                 text: "Детали",
                 link: `/motorcycles/${subFamily.familyType}/${query}/${bike.model}`,
@@ -110,9 +102,7 @@ const SportSubFamilyPage = async ({ params }: any) => {
       </>
     );
   } catch (error) {
-    console.log(error);
-
-    return "err";
+    return redirect('/motorcycles/sport')
   }
 };
 

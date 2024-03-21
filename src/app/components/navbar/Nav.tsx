@@ -2,12 +2,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
+import { useEffect, useState } from "react";
 import logo1 from "../../../../public/logo.svg";
+import Prenav from "../Prenav";
 import NavbarLinkList from "./NavbarLinkList";
 import SectionContent from "./SectionContent";
-import { FAMILIES, BIKES } from "@/app/constants/constants";
-import { useState, useEffect } from "react";
-import Prenav from "../Prenav";
 
 type NavProps = {
   fams: any[];
@@ -18,55 +17,49 @@ const Nav = ({ fams, allBikes }: NavProps) => {
   const query = useSearchParams();
 
   const getQueryParam = () => query.get("navItem");
-  const [families, setFamilies] = useState<any[]>(fams);
-  const [bikes, setBikes] = useState<any[]>(allBikes);
-
 
   const [bikeToRender, setBikeToRender] = useState<any>(
-    bikes.filter((bike) => bike.id === +query.get("bikeID")!)
+    allBikes.filter((bike: any) => bike.id === +query.get("bikeID")!)
   );
 
   useEffect(() => {
-    setFamilies(fams);
-    setBikes(allBikes);
-
     if (query.get("bikeID")) {
       setBikeToRender(
-        bikes.filter((bike) => bike.id === +query.get("bikeID")!)
+        allBikes.filter((bike) => bike.id === +query.get("bikeID")!)
       );
     } else {
-      setBikeToRender(bikes.filter((bike) => bike.id === 1));
+      setBikeToRender(allBikes.filter((bike) => bike.id === 1));
     }
   }, [query.get("bikeID")]);
-
-  
 
   try {
     return (
       <>
-        <nav className="flex justify-between bg items-center  z-50">
-          <div className="flex px-8 xl:gap-8 gap-5 items-center">
-            <Link href={"/"}>
-              <Image src={logo1} alt={"Logo"} height={70} width={128} />
-            </Link>
+        <nav className="bg z-50 hidden lg:block">
+          <div className="flex justify-between items-center">
+            <div className="flex px-8 xl:gap-8 gap-5 items-center">
+              <Link href={"/"}>
+                <Image src={logo1} alt={"Logo"} height={60} width={98} />
+              </Link>
 
-            <NavbarLinkList />
+              <NavbarLinkList />
+            </div>
+
+            <Prenav />
           </div>
-
-          <Prenav />
         </nav>
 
         {getQueryParam() && (
           <SectionContent
-            families={families}
-            bikes={bikes}
+            families={fams}
+            bikes={allBikes}
             bikeToRender={bikeToRender}
           />
         )}
       </>
     );
   } catch {
-    <>err</>;
+   return <>err</>;
   }
 };
 

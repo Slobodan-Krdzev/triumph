@@ -52,8 +52,40 @@ const BottomFoot = () => {
             Легалност
           </Link>
         </div>
+
+        <div className="hidden md:block ">
+          <Link
+            href={"https://zicgroupbpo.com/"}
+            className="flex justify-between gap-x-2"
+            target="_blank"
+          >
+            <span>Powered By:</span>
+            <Image
+              src={"/zicLogo.png"}
+              alt="Изработка ZIC-Group"
+              width={110}
+              height={20}
+            />
+          </Link>
+        </div>
+
         <p className="text-sm">Ⓒ 2024 Thriumph Motorcycles</p>
       </div>
+      <div className="md:hidden text-neutral-400 font-normal">
+          <Link
+            href={"https://zicgroupbpo.com/"}
+            className="flex justify-center gap-x-2"
+            target="_blank"
+          >
+            <span>Powered By:</span>
+            <Image
+              src={"/zicLogo.png"}
+              alt="Изработка ZIC-Group"
+              width={110}
+              height={20}
+            />
+          </Link>
+        </div>
     </>
   );
 };

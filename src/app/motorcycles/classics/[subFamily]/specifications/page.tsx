@@ -1,22 +1,27 @@
-import MainBtn from '@/app/components/MainBtn'
-import SpecsTable from '@/app/components/SubFamily/Specification/SpecsTable'
-import { SUB_FAMILIES } from '@/app/constants/constants'
+import Breadcrumbs from "@/app/components/Breadcrumbs/Breadcrumbs";
+import MainBtn from "@/app/components/MainBtn";
+import SpecsTable from "@/app/components/SubFamily/Specification/SpecsTable";
+import { SUB_FAMILIES } from "@/app/constants/constants";
 import { redirect } from "next/navigation";
 
-
-const ClassicsSpecsPage = async ({params}: any) => {
-
-  const subFam = params.subFamily
+const ClassicsSpecsPage = async ({ params }: any) => {
+  const subFam = params.subFamily;
 
   try {
-
-    const subFamilyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=${subFam}`, {cache: 'no-store'})
-    const subFamilyData = await subFamilyRes.json()
-    const subFamily = subFamilyData[0]
+    const subFamilyRes = await fetch(
+      `${SUB_FAMILIES}?subFamilyName=${subFam}`,
+      {
+        next: { revalidate: 3000 },
+      }
+    );
+    const subFamilyData = await subFamilyRes.json();
+    const subFamily = subFamilyData[0];
 
     return (
       <>
-        <main className="py-4 md:py-8 lg:py-16 bg-white">
+        <main className="py-4 md:py-8 lg:py-16 bg-white relative">
+          <Breadcrumbs dark />
+
           <h1 className="uppercase text-4xl lg:text-6xl text-black text-center font-semibold">
             Спецификации
           </h1>
@@ -29,14 +34,14 @@ const ClassicsSpecsPage = async ({params}: any) => {
             />
           </div>
 
-          <SpecsTable specs={subFamily.subFamilyPageInfo.fullSpecs ?? []}/>
+          <SpecsTable specs={subFamily} />
         </main>
       </>
     );
   } catch (err) {
+    return redirect(`/motorcycles/classics/${subFam}`);
     
-    return redirect(`/motorcycles/classics/${subFam}`)
   }
-}
+};
 
-export default ClassicsSpecsPage
+export default ClassicsSpecsPage;

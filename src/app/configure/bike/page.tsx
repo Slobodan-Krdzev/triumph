@@ -1,9 +1,7 @@
-import React from 'react'
+import { redirect } from 'next/navigation'
 
 const BikePage = () => {
-  return (
-    <>bike page</>
-  )
+  return redirect('/configure/bikes')
 }
 
 export default BikePage

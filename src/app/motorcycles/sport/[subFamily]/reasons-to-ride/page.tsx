@@ -1,26 +1,31 @@
+import Breadcrumbs from "@/app/components/Breadcrumbs/Breadcrumbs";
 import ReasonsListin from "@/app/components/SubFamily/Reasons/ReasonsListin";
 import BikeListingNoSlider from "@/app/components/familiySharedComponents/BikeListingNoSlider";
 import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
 import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
 import { BIKES, SUB_FAMILIES } from "@/app/constants/constants";
+import { redirect } from "next/navigation";
 
 const SubFamReasonsToRidePage = async ({ params }: any) => {
   const subFam = params.subFamily;
 
   try {
     const subFamilyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=${subFam}`, {
-      cache: "no-store",
+      next: { revalidate: 3000 },
     });
     const subFamilyData = await subFamilyRes.json();
     const subFamily = subFamilyData[0];
 
-    const bikesRes = await fetch(`${BIKES}?model=${subFam}`);
+    const bikesRes = await fetch(`${BIKES}?model=${subFam}`, {
+      next: { revalidate: 3000 },
+    });
     const bikesData = await bikesRes.json();
 
 
     return (
       <>
         <section
+        className="relative"
           style={{
             backgroundImage: `url("${subFamily.reasonsToDrive.banner.image}")`,
             backgroundSize: "cover",
@@ -30,6 +35,8 @@ const SubFamReasonsToRidePage = async ({ params }: any) => {
             overflow: "hidden",
           }}
         >
+          <Breadcrumbs />
+
           <div className="flex justify-center items-center w-full h-full overlay">
             <div className="w-6/12 m-auto flex flex-col justify-center items-center text-white gap-6">
               <h1 className="md:text-xl lg:text-2xl text-sm border-b-4 border-white capitalize pb-2">
@@ -74,9 +81,8 @@ const SubFamReasonsToRidePage = async ({ params }: any) => {
       </>
     );
   } catch (err) {
-    console.log(err);
 
-    return;
+    return redirect(`/motorcycles/sport/${subFam}`)
   }
 };
 

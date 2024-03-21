@@ -4,42 +4,40 @@ import BikeListingNoSlider from "@/app/components/familiySharedComponents/BikeLi
 import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
 import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
 import { BIKES, SUB_FAMILIES } from "@/app/constants/constants";
+import { redirect } from "next/navigation";
 
 const OffRoadSubFamilyPage = async ({ params }: any) => {
   const query = params.subFamily;
 
   try {
     const subFamilyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=${query}`, {
-      cache: "no-store",
+      next: { revalidate: 3000 },
     });
     const subFamilyData = await subFamilyRes.json();
     const subFamily = subFamilyData[0];
 
-    const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${query}`);
+    const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${query}`, {
+      next: { revalidate: 3000 },
+    });
     const bikes = await bikesRes.json();
-    
+
     return (
       <>
         <HeroSection
           video={subFamily.gallery.subFamilyHeroVideo.src}
-          mobileImage={
-            subFamily.gallery.subFamilyHeroImageMobile.src
-          }
+          mobileImage={subFamily.gallery.subFamilyHeroImageMobile.src}
           model={formulateSubFamilyTitleOnBanner(query)}
-          slogans={
-            subFamily.subFamilyPageInfo.heroSlogans ?? []
-          }
+          slogans={subFamily.heroSlogans ?? []}
         />
 
-        <main className="bg-black">
-          
-        </main>
+        <main className="bg-black"></main>
         <section className="px-4 lg:px-20 xl:px-40">
           {bikes.map((bike: any) => (
             <BikeInfoTextImageBtn
               key={bike.id}
-              title={bike.subFamilyPromo.title ?? ""}
-              desc={bike.subFamilyPromo.desc ?? ""}
+              title={bike.subFamilyPromo.title ?? bike.title}
+              desc={bike.subFamilyPromo?.desc ?? ""}
+              desc2={bike.price && `Цени од: €${bike.price}.00`}
               ctaBtn={{
                 text: "Детали",
                 link: `/motorcycles/off-road/${query}/${bike.model}`,
@@ -64,7 +62,7 @@ const OffRoadSubFamilyPage = async ({ params }: any) => {
   } catch (error) {
     console.log(error);
 
-    return "err";
+    return redirect(`/motorcycles/off-road`)
   }
 };
 

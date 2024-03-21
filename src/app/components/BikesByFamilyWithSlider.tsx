@@ -14,6 +14,7 @@ type BikesByFamilyWithSliderProps = {
 const BikesByFamilyWithSlider = ({
   items,
   familyData,
+  
 }: BikesByFamilyWithSliderProps) => {
 
   return (
@@ -39,7 +40,7 @@ const BikesByFamilyWithSlider = ({
         </div>
       </div>
       <div className="lg:basis-2/3 grow-0  overflow-hidden">
-        <FamilyBikesSlider itemsToRender={items} />
+        <FamilyBikesSlider itemsToRender={items}/>
       </div>
     </div>
   );

@@ -1,5 +1,7 @@
+import Breadcrumbs from '@/app/components/Breadcrumbs/Breadcrumbs'
 import BikeListingNoSlider from '@/app/components/familiySharedComponents/BikeListingNoSlider'
 import { BIKES } from '@/app/constants/constants'
+import { redirect } from 'next/navigation'
 import React from 'react'
 
 const ClassicsModelsPage = async ({params}: any) => {
@@ -7,11 +9,15 @@ const ClassicsModelsPage = async ({params}: any) => {
 
   try{
 
-    const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${model}`, {cache: 'no-store'})
+    const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${model}`, {
+      next: { revalidate: 3000 },
+    })
     const bikesData = await bikesRes.json()
 
     return (
-      <main className='bg-white md:py-16 py-4'>
+      <main className='bg-white md:py-16 py-4 relative'>
+          <Breadcrumbs dark />
+
         <h1 className='uppercase text-4xl font-semibold text-center md:mb-16 mb-4'>{model}</h1>
         <BikeListingNoSlider
             bikes={bikesData}
@@ -19,8 +25,7 @@ const ClassicsModelsPage = async ({params}: any) => {
       </main>
     )
   }catch(err) {
-    console.log(err);
-    return 
+    return redirect(`/motorcycles/classics/${model}`)
     
   }
 }

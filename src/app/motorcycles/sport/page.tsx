@@ -7,33 +7,40 @@ import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitl
 import { createSubFamLinksForSecondary } from "@/app/components/helpers/createSubFamLinksForSecondary";
 import { BIKES, FAMILIES, PROMOS, SUB_FAMILIES } from "@/app/constants/constants";
 import { PromoDataType } from "@/app/types/HomeTypes/SharedTypes/types";
+import { redirect } from "next/navigation";
 
 const SportBikePage = async ({ params }: any) => {
   try {
-    const familyRes = await fetch(`${FAMILIES}?type=sport`);
+    const familyRes = await fetch(`${FAMILIES}?type=sport`, {
+      next: { revalidate: 3000 },
+    });
     const familyData = await familyRes.json();
     const family = familyData[0];
 
-    const subFamiliesRes = await fetch(`${SUB_FAMILIES}?familyType=sport`);
+    const subFamiliesRes = await fetch(`${SUB_FAMILIES}?familyType=sport`, {
+      next: { revalidate: 3000 },
+    });
     const subFamilies = await subFamiliesRes.json();
 
     const bikesRes = await fetch(`${BIKES}?category=sport`, {
-      cache: "no-store",
+      next: { revalidate: 3000 },
     });
     const bikes = await bikesRes.json();
 
-    const promosRes = await fetch(`${PROMOS}?category=sport`);
+    const promosRes = await fetch(`${PROMOS}?category=sport`, {
+      next: { revalidate: 3000 },
+    });
     const promos = await promosRes.json();
 
     return (
       <main className="bg-black">
         <SecondaryNavFamily
           items={createSubFamLinksForSecondary(subFamilies)}
-          title={"Sport"}
+          title={"sport"}
           configLink={"/configure"}
         />
 
-        <HeroSection video={family.familyPageBannerVideo} bigTitle="Sport" />
+        <HeroSection video={family.familyPageBannerVideo} bigTitle="Sport" mobileImage="/images/sport/famPageVideoPoster.avif"/>
 
         <section className="text-white text-center px-6 py-4 md:py-8 lg:py-16">
           <div className="lg:w-5/12 w-10/12 m-auto">
@@ -84,13 +91,13 @@ const SportBikePage = async ({ params }: any) => {
         <GrayBand
           itemOne={{
             text: "Контакт",
-            url: "/",
+            url: "/dealer",
             icon: "/point.svg",
           }}
           itemTwo={{
-            text: "Тест Возење",
-            url: "/",
-            icon: "/bike.svg",
+            text: "КОНФИГУРАЦИЈА",
+            url: `/configure`,
+            icon: "/icon-configurator.svg",
           }}
         />
       </main>
@@ -98,7 +105,7 @@ const SportBikePage = async ({ params }: any) => {
   } catch (err) {
     console.log(err);
 
-    return "ERR";
+    return redirect('/configure')
   }
 };
 

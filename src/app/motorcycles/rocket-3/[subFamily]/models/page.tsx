@@ -1,5 +1,7 @@
+import Breadcrumbs from '@/app/components/Breadcrumbs/Breadcrumbs'
 import BikeListingNoSlider from '@/app/components/familiySharedComponents/BikeListingNoSlider'
 import { BIKES } from '@/app/constants/constants'
+import { redirect } from 'next/navigation'
 import React from 'react'
 
 const Rocket3ModelsPage = async () => {
@@ -10,7 +12,9 @@ const Rocket3ModelsPage = async () => {
       const bikesData = await bikesRes.json()
   
       return (
-        <main className='bg-white md:py-16 py-4'>
+        <main className='bg-white md:py-16 py-4 relative'>
+          <Breadcrumbs dark />
+          
           <h1 className='uppercase text-4xl font-semibold text-center md:mb-16 mb-4'>Rocket 3</h1>
           <BikeListingNoSlider
               bikes={bikesData}
@@ -18,8 +22,7 @@ const Rocket3ModelsPage = async () => {
         </main>
       )
     }catch(err) {
-      console.log(err);
-      return 
+      return redirect(`/motorcycles/rocket-3`)
       
     }
 }

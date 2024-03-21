@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://db.onlinewebfonts.com/c/1dd1c7d8df011c2266f33ebd5927c0ab?family=DIN+2014+Demi');
 
 @font-face {
   font-family: "DIN 2014 Demi";
@@ -12,7 +11,6 @@
     url("https://db.onlinewebfonts.com/t/1dd1c7d8df011c2266f33ebd5927c0ab.ttf")format("truetype"),
     url("https://db.onlinewebfonts.com/t/1dd1c7d8df011c2266f33ebd5927c0ab.svg#DIN 2014 Demi")format("svg");
 }
-
 
 * {
   margin: 0;
@@ -26,13 +24,13 @@ img {
 
 body {
   background-color: var(--tetriary-bg-color);
-  /* overflow: hidden; */
   padding-top: 64px;
 }
 
+
+
 .menu-visible {
   overflow: hidden;
-  /* height: 150vh; */
 }
 
 :root {
@@ -123,6 +121,10 @@ body {
   background-color: var(--primary-hover-color);
 }
 
+.modal-blur{
+  background-color: rgba(88, 88, 88, 0.537);
+}
+
 .border {
   border: px solid red;
 }
@@ -170,6 +172,44 @@ body {
 .red-border-bottom {
   border-bottom:4px solid var(--secondary-color);
 }
+
+/* 
+.mainCaroSwiper > .swiper-button-next{
+  border:2px solid blue;
+  background-color: transparent;
+  background-position: center bottom;
+  top: 0;
+  right: 0;
+  padding: 2rem 2rem;
+  height: 100%;
+  margin: 0;
+  border-radius: 0%;
+}
+
+.mainCaroSwiper > .swiper-button-prev{
+  border:2px solid yellow;
+  background-color: transparent;
+  background-position: center bottom;
+
+  top: 0;
+  left: 92.9%;
+  padding: 0 2rem;
+  height: 100%;
+  margin: 0;
+  border-radius: 0%;
+}
+
+.mainCaroSwiper > .swiper-button-next:hover{
+  background: rgb(227,227,227);
+  background: linear-gradient(270deg, rgba(12, 12, 12, 0.021) 0%, rgba(31, 31, 31, 0.267) 28%, rgba(15, 15, 15, 0.616) 56%, rgba(0,0,0,0.7567401960784313) 84%);
+  
+}
+
+.mainCaroSwiper > .swiper-button-prev:hover {
+  background: rgb(227,227,227);
+  background: linear-gradient(90deg, rgba(22, 22, 22, 0) 0%, rgba(27, 27, 27, 0.178) 28%, rgba(15, 15, 15, 0.664) 56%, rgba(0, 0, 0, 0.781) 84%);
+
+} */
 
 /* GRADIENT CAROUSELL BTNS */
 .gradient-caro-btn-right-to-left:hover {
@@ -303,6 +343,16 @@ p {
   width: 100%;
 }
 
+.swiper-pagination span {
+  width: 80px; /* Adjust the width as needed */
+  height: 3px; 
+  background-color: var(--secondary-color);
+  margin: 0 5px; 
+  border-radius: 5px; 
+  cursor: pointer;
+}
+
+
 /* CUSTOMIZATION PAGE ACTIONS POSITIONING */
 
 .actions {
@@ -320,7 +370,62 @@ p {
   margin-right: 4rem;
 }
 
+.subFamilyTopSectionBackgroundImage{
+  background-size: cover;
+  height: 100vh;
+
+}
+
+.bikeGalleryCarousell{
+  background-size: cover;
+  height: 100vh;
+}
+
+.privacyTable thead, th,td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 30px 20px;
+}
+
+.bikeGallerySinglePic {
+  margin-top: 4rem;
+  background-size: cover;
+  height: 100vh;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+  .swiper-button-prev {
+    margin-left: 1rem;
+    visibility: hidden;
+  }
+  
+  .swiper-button-next {
+    margin-right: 1rem;
+    visibility: hidden;
+
+  }
+
+  .subFamilyTopSectionBackgroundImage{
+    background-size: contain;
+    height: 90vh;
+  }
+
+  .bikeGalleryCarousell{
+    height: 90vh;
+    background-size: contain;
+  }
+
+  .bikeGallerySinglePic {
+    margin-top: 2rem;
+    height: 90vh;
+    background-size: contain;
+  }
+}
+
 @media screen and (max-width: 768px) {
+
   .actions {
     
     right: 2%;
@@ -328,12 +433,24 @@ p {
     left: unset;
   }
 
-  .swiper-button-prev {
-    margin-left: 1rem;
+  .swiper-pagination span{
+    display: none;
   }
-  
-  .swiper-button-next {
-    margin-right: 1rem;
+
+  .subFamilyTopSectionBackgroundImage{
+    background-size: contain;
+    height: 50vh;
+  }
+
+  .bikeGalleryCarousell{
+    height: 50vh;
+    background-size: contain;
+  }
+
+  .bikeGallerySinglePic {
+    margin-top:1rem;
+    height: 50vh;
+    background-size: contain;
   }
 }
 

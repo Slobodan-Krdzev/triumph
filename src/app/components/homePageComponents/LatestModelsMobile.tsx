@@ -25,7 +25,7 @@ const LatestModelsMobile = ({items = [], showTitle}: LatesModelsMObileProps) => 
   };
 
   return (
-    <section className="flex flex-col items-center overflow-hidden relative p-4">
+    <section className="lg:hidden flex flex-col items-center overflow-hidden relative p-4 gap-4">
       
       {showTitle && <SectionTitleH2 text={"Најнови Модели"} color={"dark"} />}
 
@@ -35,10 +35,10 @@ const LatestModelsMobile = ({items = [], showTitle}: LatesModelsMObileProps) => 
         </p>
         <div className="flex justify-between gap-4">
           <button onClick={() => updateIndex(activeIndex - 1)}>
-            <FontAwesomeIcon icon={faArrowLeft} />
+            <FontAwesomeIcon icon={faArrowLeft} size="lg"/>
           </button>
           <button onClick={() => updateIndex(activeIndex + 1)}>
-            <FontAwesomeIcon icon={faArrowRight} />
+            <FontAwesomeIcon icon={faArrowRight} size="lg"/>
           </button>
         </div>
       </div>

@@ -71,9 +71,9 @@ const MotorcycleSectionMobile = ({
             <li key={`${family.id} + ${idx}`}>
               <button
                 className="text-lg font-semibold mb-1 uppercase"
-                onClick={() => handleMotorsSection(family)}
+                onClick={() => handleMotorsSection(family.type)}
               >
-                {family}
+                {family.type}
               </button>
             </li>
           ))}
@@ -134,10 +134,12 @@ const MotorcycleSectionMobile = ({
 
       {areMotorsShown && (
         <motion.div
-          className="fixed top-0 right-0 left-0 h-screen bg-white z-50 text-black overflow-y-auto"
+          className="fixed top-0 right-0 left-0 bg-white z-50 text-black overflow-y-auto"
           initial={{ x: "100vw" }}
           animate={{ x: 0 }}
           exit={{ x: "100vw" }}
+          style={{ height: " calc(100vh - 120px)" }}
+
         >
           <div className="px-8 py-4 gray-bg text-white items-center flex justify-between" >
             <button

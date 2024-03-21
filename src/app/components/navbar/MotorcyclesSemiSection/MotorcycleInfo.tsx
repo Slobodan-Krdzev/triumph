@@ -3,13 +3,9 @@ import MainBtn from "../../MainBtn";
 
 type MotorcycleInfoProps = {
   bike: any;
-  bikes: any[];
 };
 
 const MotorcycleInfo = ({ bike }: MotorcycleInfoProps) => {
-
-  console.log(bike);
-  
 
   return (
     <div className="px-8 relative">
@@ -17,11 +13,11 @@ const MotorcycleInfo = ({ bike }: MotorcycleInfoProps) => {
         {bike[0]?.title ?? "Triumph"}
       </h2>
       {bike[0]?.gallery.modelImage.src && (
-        <p className="text-neutral-700 text-lg font-semibold">
+        <p className="text-neutral-500 text-xl font-medium mt-4">
           {bike[0]?.price ? (
             <>
               Цена <br />
-              <span>{bike[0]?.price}.00 €</span>
+              <span className="text-neutral-700 font-bold">{bike[0]?.price}.00 €</span>
             </>
           ) : (
             "Цена Наскоро"
@@ -32,7 +28,7 @@ const MotorcycleInfo = ({ bike }: MotorcycleInfoProps) => {
       <div className="flex justify-between items-end">
         <Image
           src={bike[0]?.gallery.modelImage.src ?? "/images/triumphLogo.png"}
-          alt={bike[0]?.gallery.modelImage.src}
+          alt={bike[0]?.gallery.modelImage.src ?? "Triumph"}
           width={422}
           height={241}
           className="basis-1/2"

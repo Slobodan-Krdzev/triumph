@@ -1,3 +1,4 @@
+import BikeGalleyCarousell from "@/app/components/BikePageComponents/BikeGalleyCarousell";
 import BikeTitle from "@/app/components/BikePageComponents/BikeTitle";
 import BikePageCarousell from "@/app/components/BikePageComponents/Carousell/BikePageCarousell";
 import ColorNamePreviewer from "@/app/components/BikePageComponents/ColorNamePreviewer";
@@ -5,6 +6,7 @@ import CustomizationColorsListing from "@/app/components/BikePageComponents/Cust
 import ImagePreview from "@/app/components/BikePageComponents/ImagePreview";
 import PricePriviewer from "@/app/components/BikePageComponents/PricePriviewer";
 import PromoBikeYoutubeVideo from "@/app/components/BikePageComponents/PromoBikeYoutubeVideo";
+import Breadcrumbs from "@/app/components/Breadcrumbs/Breadcrumbs";
 import MainBtn from "@/app/components/MainBtn";
 import SpecTableListi from "@/app/components/SubFamily/Specification/SpecTableListi";
 import SpecsTable from "@/app/components/SubFamily/Specification/SpecsTable";
@@ -35,7 +37,9 @@ const BikePage = async ({ params }: any) => {
     const subFam = subFamData[0];
 
     return (
-      <main className="bg-white">
+      <main className="bg-white relative">
+        <Breadcrumbs dark />
+
         <section>
           <div className="flex flex-col justify-end pt-8 md:pt-16 px-4 md:px-8 lg:px-16">
             <BikeTitle text={bike.title} />
@@ -76,7 +80,7 @@ const BikePage = async ({ params }: any) => {
             </div>
           </div>
         </section>
-        <section className="py-4 md:py-1">
+        <section className="py-4 md:py-8 lg:py-16">
           <h2 className="uppercase text-2xl md:text-5xl font-semibold text-center mb-4 md:mb-8">
             Спецификација
           </h2>
@@ -92,7 +96,7 @@ const BikePage = async ({ params }: any) => {
               isOpen={true}
             />
           </div>
-          <SpecsTable specs={subFam.subFamilyPageInfo.fullSpecs} />
+          <SpecsTable specs={subFam} />
         </section>
 
         {bike.gallery.promoYoutubeVideo && (
@@ -103,11 +107,17 @@ const BikePage = async ({ params }: any) => {
         )}
 
         {bike.features && (
-          <SpecTableListi
-            items={bike.features}
-            title={"Карактеристики"}
-            isOpen={true}
-          />
+          <section className="w-11/12 m-auto md:w-full py-4 md:py-8 lg:py-16">
+            <SpecTableListi
+              items={bike.features}
+              title={"Карактеристики"}
+              isOpen={true}
+            />
+          </section>
+        )}
+
+        {bike.bikePageImageGallery && (
+          <BikeGalleyCarousell images={bike.bikePageImageGallery} />
         )}
 
         {bike.bikePageCarousell && (
@@ -130,11 +140,9 @@ const BikePage = async ({ params }: any) => {
             ))}
           </section>
         )}
-
       </main>
     );
   } catch (err) {
-    console.log(err);
     return redirect(`/motorcycles/adventure/${subFamQuery}`);
   }
 };

@@ -8,70 +8,60 @@ import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeI
 import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
 import AudioSection from "@/app/components/roadstersUniqueComp/AudioSection";
 import { BIKES, SUB_FAMILIES } from "@/app/constants/constants";
+import { redirect } from "next/navigation";
 
 const RoadstersSubFamilyPage = async ({ params }: any) => {
   const query = params.subFamily;
 
   try {
     const subFamilyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=${query}`, {
-      cache: "no-store",
+      next: { revalidate: 3000 },
     });
     const subFamilyData = await subFamilyRes.json();
     const subFamily = subFamilyData[0];
 
     const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${query}`, {
-      cache: "no-store",
+      next: { revalidate: 3000 },
     });
     const bikes = await bikesRes.json();
 
     const hasGrayCaro =
-      subFamily.subFamilyPageInfo.hasOwnProperty(
-        "grayCarousell"
-      );
+      subFamily.hasOwnProperty("grayCarousell");
 
     const hasYoutubeVid =
-      subFamily.subFamilyPageInfo.hasOwnProperty(
-        "youtubeVideo"
-      );
+      subFamily.hasOwnProperty("youtubeVideo");
 
-    const hasAudio =
-      subFamily.subFamilyPageInfo.hasOwnProperty(
-        "audioSection"
-      );
+    const hasAudio = subFamily.subFamilyPageInfo.hasOwnProperty("audioSection");
 
-    const hasYoutubeCaro = subFamily.subFamilyPageInfo.hasOwnProperty("youtubeVideosCarousellItems");
+    const hasYoutubeCaro = subFamily.hasOwnProperty(
+      "youtubeVideosCarousellItems"
+    );
 
     return (
       <>
-      
         <HeroSection
           video={subFamily.gallery.subFamilyHeroVideo.src}
           mobileImage={subFamily.gallery.subFamilyHeroImageMobile?.src ?? "/"}
           model={formulateSubFamilyTitleOnBanner(query)}
-          slogans={subFamily.subFamilyPageInfo.heroSlogans}
+          slogans={subFamily.heroSlogans}
         />
 
         <main className="bg-white">
           <TopSection
-            title={subFamily.subFamilyPageInfo.topSection.title}
-            desc={subFamily.subFamilyPageInfo.topSection.desc}
-            subtitle={
-              subFamily.subFamilyPageInfo.topSection.subtitle
-            }
-            image={
-              subFamily.gallery.subFamilyTopSectionImage.src
-            }
-            bgImage={
-              subFamily.gallery.subFamilyTopSectionBGImage.src
-            }
+            title={subFamily.topSection.title}
+            desc={subFamily.topSection.desc}
+            subtitle={subFamily.topSection.subtitle}
+            image={subFamily.gallery.subFamilyTopSectionImage.src}
+            bgImage={subFamily.gallery.subFamilyTopSectionBGImage.src}
           />
 
-          <section className="px-4 lg:px-20 xl:px-40">
+          <section className="px-4 lg:px-20 xl:px-40 pb-16">
             {bikes.map((bike: any) => (
               <BikeInfoTextImageBtn
                 key={bike.id}
-                title={bike.subFamilyPromo.title}
-                desc={bike.subFamilyPromo.desc}
+                title={bike.subFamilyPromo.title ?? bike.title}
+                desc={bike.subFamilyPromo?.desc ?? ""}
+                desc2={bike.price && `Цени од: €${bike.price}.00`}
                 ctaBtn={{
                   text: "Детали",
                   link: `/motorcycles/roadsters/${query}/${bike.model}`,
@@ -89,30 +79,22 @@ const RoadstersSubFamilyPage = async ({ params }: any) => {
         </main>
 
         {hasYoutubeVid && (
-          <YouTubePromo
-            video={subFamily.subFamilyPageInfo.youtubeVideo}
-          />
+          <YouTubePromo video={subFamily.youtubeVideo} />
         )}
 
         {hasGrayCaro && (
-          <BottomCarousell
-            items={subFamily.subFamilyPageInfo.grayCarousell}
-          />
+          <BottomCarousell items={subFamily.grayCarousell} />
         )}
 
         <NumbersSection
           model={query}
-          specNumbers={subFamily.subFamilyPageInfo.specNumbers}
+          specNumbers={subFamily.specNumbers}
         />
 
         {hasAudio && (
           <AudioSection
-            audio={
-              subFamily.subFamilyPageInfo.audioSection.audio
-            }
-            title={
-              subFamily.subFamilyPageInfo.audioSection.title
-            }
+            audio={subFamily.subFamilyPageInfo.audioSection.audio}
+            title={subFamily.subFamilyPageInfo.audioSection.title}
             desc={subFamily.subFamilyPageInfo.audioSection.desc}
             model={query}
           />
@@ -120,15 +102,13 @@ const RoadstersSubFamilyPage = async ({ params }: any) => {
 
         {hasYoutubeCaro && (
           <YoutubeVideoCarousell
-            items={subFamily.subFamilyPageInfo.youtubeVideosCarousellItems}
+            items={subFamily.youtubeVideosCarousellItems}
           />
         )}
       </>
     );
   } catch (error) {
-    console.log(error);
-
-    return "err";
+    return redirect(`/motorcycles/roadsters`)
   }
 };
 

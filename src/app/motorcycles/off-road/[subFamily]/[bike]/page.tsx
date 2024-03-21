@@ -1,4 +1,5 @@
 import BanerAndCTASection from "@/app/components/BanerAndCTASection";
+import BikeGalleyCarousell from "@/app/components/BikePageComponents/BikeGalleyCarousell";
 import BikeTitle from "@/app/components/BikePageComponents/BikeTitle";
 import BikePageCarousell from "@/app/components/BikePageComponents/Carousell/BikePageCarousell";
 import ColorNamePreviewer from "@/app/components/BikePageComponents/ColorNamePreviewer";
@@ -6,12 +7,14 @@ import CustomizationColorsListing from "@/app/components/BikePageComponents/Cust
 import ImagePreview from "@/app/components/BikePageComponents/ImagePreview";
 import PricePriviewer from "@/app/components/BikePageComponents/PricePriviewer";
 import PromoBikeYoutubeVideo from "@/app/components/BikePageComponents/PromoBikeYoutubeVideo";
+import Breadcrumbs from "@/app/components/Breadcrumbs/Breadcrumbs";
 import MainBtn from "@/app/components/MainBtn";
 import NumbersSection from "@/app/components/SubFamily/NumbersSection";
 import SpecTableListi from "@/app/components/SubFamily/Specification/SpecTableListi";
 import SpecsTable from "@/app/components/SubFamily/Specification/SpecsTable";
 import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
 import { BIKES, FAMILIES, SUB_FAMILIES } from "@/app/constants/constants";
+import { redirect } from "next/navigation";
 
 type BikePagePromoType = {
   title: string;
@@ -35,7 +38,9 @@ const OffRoadBikePage = async ({ params }: any) => {
     const subFam = subFamData[0];
 
     return (
-      <main className="bg-white">
+      <main className="bg-white relative">
+          <Breadcrumbs dark />
+
         <section>
           <div className="flex flex-col justify-end pt-8 md:pt-16 px-4 md:px-8 lg:px-16">
             <BikeTitle text={bike.title} />
@@ -92,7 +97,7 @@ const OffRoadBikePage = async ({ params }: any) => {
               isOpen={true}
             />
           </div>
-          <SpecsTable specs={subFam.subFamilyPageInfo.fullSpecs} />
+          <SpecsTable specs={subFam ?? []} />
         </section>
 
         <section className="bg-black">
@@ -119,14 +124,18 @@ const OffRoadBikePage = async ({ params }: any) => {
             />
           )}
 
-          {subFam.subFamilyPageInfo.specNumbers && (
+          {subFam.specNumbers && (
             <NumbersSection
               model={formulateSubFamilyTitleOnBanner(bike.model) ?? ""}
-              specNumbers={subFam.subFamilyPageInfo.specNumbers ?? []}
+              specNumbers={subFam.specNumbers ?? []}
               bgBlack={true}
             />
           )}
         </section>
+
+        {bike.bikePageImageGallery && 
+            <BikeGalleyCarousell images={bike.bikePageImageGallery} />
+          }
 
         <section
           style={{
@@ -156,8 +165,7 @@ const OffRoadBikePage = async ({ params }: any) => {
       </main>
     );
   } catch (err) {
-    console.log(err);
-    return "err";
+    return redirect(`/motorcycles/off-road/${subFamQuery}`)
   }
 };
 

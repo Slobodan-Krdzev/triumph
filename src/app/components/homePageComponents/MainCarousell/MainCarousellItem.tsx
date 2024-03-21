@@ -45,9 +45,11 @@ const MainCarousellItem = ({
               autoPlay
               muted
               loop
+              
               style={{
                 height: "auto",
                 minWidth: "92%",
+                filter: 'brightness(80%)'
               }}
             >
               <source
@@ -57,7 +59,7 @@ const MainCarousellItem = ({
               />
             </video>
           </>
-
+              
           <div
             className="ml-44 absolute"
             style={{ top: "15%" }}
@@ -122,33 +124,6 @@ const MainCarousellItem = ({
           </div>
         )
 
-        // <div className="overlay-carousell-btn w-full h-full flex justify-start pt-40 text-white ">
-        //   <div className="ml-20">
-        //     <h2 className="mb-4 uppercase font-bold text-4xl text-white">
-        //       {title}
-        //     </h2>
-        //     <p className="mb-4 w-3/4">{desc}</p>
-
-        //     <div className="flex gap-4">
-        //       {link1 && (
-        //         <MainBtn
-        //           text={link1.text}
-        //           bgBlack={false}
-        //           isLink={true}
-        //           link={link1.url}
-        //         />
-        //       )}
-        //       {link2 && (
-        //         <MainBtn
-        //           text={link2.text}
-        //           bgBlack={true}
-        //           isLink={true}
-        //           link={link2.url}
-        //         />
-        //       )}
-        //     </div>
-        //   </div>
-        // </div>
       }
     </div>
   );

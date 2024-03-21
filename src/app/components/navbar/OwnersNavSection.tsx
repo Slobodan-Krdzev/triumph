@@ -9,12 +9,8 @@ export const linkItemsTriumph: NavLinkListingItemsType[] = [
     link: "/owners/your-triumph",
   },
   {
-    text: "Избор на Гуми",
-    link: "/owners/your-triumph",
-  },
-  {
     text: "Сигурносна Проверка",
-    link: "/owners/your-triumph/safety-checks",
+    link: "/owners/safety-checks",
   },
   {
     text: "Препорачани масла",
@@ -40,12 +36,8 @@ export const linkItemsTriumph: NavLinkListingItemsType[] = [
 
 export const linkItemsQuickLinksOwners: NavLinkListingItemsType[] = [
   {
-    text: "Повлекување",
-    link: "/owners/recalls",
-  },
-  {
     text: "Контакт",
-    link: "/global-content/contact-us",
+    link: "/dealer",
   },
 ];
 
@@ -63,7 +55,7 @@ const OwnersNavSection = () => {
         items={linkItemsQuickLinksOwners}
         title={"Најнови Модели"}
         bottomLinkText={"Конфигурација"}
-        bottomLinkUrl={"/dealers/dealers-search"}
+        bottomLinkUrl={"/configure"}
       />
 
       <Image src={image} alt="Triumph Bike" />

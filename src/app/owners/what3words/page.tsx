@@ -1,3 +1,4 @@
+import MainBtn from "@/app/components/MainBtn";
 import SecondaryPagesHeroSection from "@/app/components/SubFamily/SecondaryPagesHeroSection";
 import YouTubePromo from "@/app/components/SubFamily/YouTubePromo";
 import PageParagraph from "@/app/components/familiySharedComponents/PageParagraph";
@@ -13,7 +14,7 @@ const What3WordsPage = () => {
         text={"What3Words"}
       />
       <main>
-        <section className="m-auto w-11/12 md:w-6/12">
+        <section className="m-auto w-11/12 md:w-6/12 py-4 md:py-8 lg:py-16">
           <PageParagraph
             text={
               "Запознајте се со Triumph what3words апликацијата. Апликацијата која ја мапираше целата земијина повржина и ја подели на површини од три квадратни метри и истите ги преименува со три збора. Благодарение на ова можете да внесете само три збора во апликацијата за да дефинирате одредена дестинација или локација."
@@ -62,7 +63,7 @@ const What3WordsPage = () => {
           </video>
         </section>
 
-        <section>
+        <section className="m-auto w-11/12 md:w-8/12 py-4 md:py-8 lg:py-16">
           <TextAndImageFlexSection
             title="Зошто е важно да поседувате What3Words?"
             textMain={
@@ -77,12 +78,43 @@ const What3WordsPage = () => {
 
           <TextAndImageFlexSection
             title="Како да пронајдете What3Words адреса?"
-            textMain={""}
+            textMain={
+              "Можете да поставите било која What3Words адреса едноставно преку кликање на иконата на апликацијата и со влечење и пуштање на иконката кон правилниот квадрат (најлесно се работи преку Саталискиот поглед). Алтернативно можете и лесно да ја пронајдете било која What3Words адреса користејки ја мапата."
+            }
             image={{
               src: "/images/owners/w3wordsPromo1.avif",
               alt: "W3Words",
             }}
           />
+        </section>
+
+        <section
+          className="flex justify-center items-center"
+          style={{
+            backgroundImage: "url('/images/owners/w3wBottomBanner.avif')",
+            backgroundSize: "cover",
+            backgroundPosition: "center center",
+            backgroundRepeat: "no-repeat",
+            height: "50vh",
+          }}
+        >
+          <div className="m-auto w-11/12 md:w-5/12 text-center">
+            <SectionTitleH2 text={"Спуштете ја Triumph апликацијата"} color={"white"} />
+            <div className="flex flex-col md:flex-row justify-between m-auto w-8/12 gap-4">
+              <MainBtn
+                text={"Triumph App - Android"}
+                bgBlack={false}
+                isLink
+                link="https://play.google.com/store/apps/details?id=uk.co.triumphmotorcycles.mytriumph"
+              />
+              <MainBtn
+                text={"Triumph App - iOS"}
+                bgBlack={false}
+                isLink
+                link="https://apps.apple.com/us/app/my-triumph/id1470040586"
+              />
+            </div>
+          </div>
         </section>
       </main>
     </>

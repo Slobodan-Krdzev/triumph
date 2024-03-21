@@ -11,41 +11,34 @@ import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitl
 import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
 import AudioSection from "@/app/components/roadstersUniqueComp/AudioSection";
 import { BIKES, SUB_FAMILIES } from "@/app/constants/constants";
+import { redirect } from "next/navigation";
 
 const SubFamilyPage = async ({ params }: any) => {
   const query = params.subFamily;
 
   try {
     const subFamilyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=${query}`, {
-      cache: "no-store",
+      next: { revalidate: 3000 },
     });
     const subFamilyData = await subFamilyRes.json();
     const subFamily = subFamilyData[0];
 
-    const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${query}`);
+    const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${query}`,{
+      next: { revalidate: 3000 },
+    });
     const bikes = await bikesRes.json();
-
-    const hasGrayCaro =
-      subFamily.subFamilyPageInfo.hasOwnProperty("grayCarousell");
-
-    const hasYoutubeVid =
-      subFamily.subFamilyPageInfo.hasOwnProperty("youtubeVideo");
-
-    const hasAudio = subFamily.subFamilyPageInfo.hasOwnProperty("audioSection");
-
-    const hasTopSection =
-      subFamily.subFamilyPageInfo.hasOwnProperty("topSection");
 
     return (
       <>
-        <HeroSection
+         <HeroSection
           video={subFamily.gallery.subFamilyHeroVideo.src}
           mobileImage={subFamily.gallery.subFamilyHeroImageMobile?.src ?? "/"}
           model={formulateSubFamilyTitleOnBanner(query)}
-          slogans={subFamily.subFamilyPageInfo.heroSlogans ?? []}
+          slogans={subFamily.heroSlogans ?? []}
         />
 
         <main className="bg-white">
+          
           {subFamily.subFamilyName === "tiger-900" && (
             <section className="bg-secondary m-auto w-11/12 md:w-10/12 lg:w-7/12 py-4 md:py-8 lg:py-16 text-center">
               <h1 className="text-3xl md:text-6xl font-semibold uppercase mb-4 md:mb-8">
@@ -77,11 +70,12 @@ const SubFamilyPage = async ({ params }: any) => {
             </section>
           )}
 
-          {hasTopSection && (
+          
+          {subFamily.topSection && (
             <TopSection
-              title={subFamily.subFamilyPageInfo.topSection.title}
-              desc={subFamily.subFamilyPageInfo.topSection.desc}
-              subtitle={subFamily.subFamilyPageInfo.topSection.subtitle}
+              title={subFamily.topSection.title}
+              desc={subFamily.topSection.desc}
+              subtitle={subFamily.topSection.subtitle}
               image={subFamily.gallery.subFamilyTopSectionImage.src}
               bgImage={subFamily.gallery.subFamilyTopSectionBGImage.src}
             />
@@ -126,8 +120,9 @@ const SubFamilyPage = async ({ params }: any) => {
               {bikes.map((bike: any) => (
                 <BikeInfoTextImageBtn
                   key={bike.id}
-                  title={bike.subFamilyPromo.title}
-                  desc={bike.subFamilyPromo.desc}
+                  title={bike.subFamilyPromo.title ?? bike.title}
+                  desc={bike.subFamilyPromo.desc ?? ""}
+                  desc2={bike.price && `Цени од: €${bike.price}.00`}
                   ctaBtn={{
                     text: "Детали",
                     link: `/motorcycles/adventure/${query}/${bike.model}`,
@@ -145,12 +140,12 @@ const SubFamilyPage = async ({ params }: any) => {
           )}
         </main>
 
-        {hasYoutubeVid && (
-          <YouTubePromo video={subFamily.subFamilyPageInfo.youtubeVideo} />
+        {subFamily.youtubeVideo && (
+          <YouTubePromo video={subFamily.youtubeVideo} />
         )}
 
-        {hasGrayCaro && (
-          <BottomCarousell items={subFamily.subFamilyPageInfo.grayCarousell} />
+        {subFamily.grayCarousell && (
+          <BottomCarousell items={subFamily.grayCarousell} />
         )}
 
         {subFamily.subFamilyName === "tiger-900" && (
@@ -179,25 +174,26 @@ const SubFamilyPage = async ({ params }: any) => {
           </section>
         )}
 
+      {subFamily.specNumbers && 
         <NumbersSection
-          model={query}
-          specNumbers={subFamily.subFamilyPageInfo.specNumbers}
-        />
+        model={query}
+        specNumbers={subFamily.specNumbers}
+      />
+      }
+        
 
-        {hasAudio && (
+        {subFamily.subFamilyPageInfo?.audioSection && (
           <AudioSection
             audio={subFamily.subFamilyPageInfo.audioSection.audio}
             title={subFamily.subFamilyPageInfo.audioSection.title}
             desc={subFamily.subFamilyPageInfo.audioSection.desc}
             model={formulateSubFamilyTitleOnBanner(query)}
           />
-        )}
+        )} 
       </>
     );
   } catch (error) {
-    console.log(error);
-
-    return "err";
+    return redirect('/motorcycles/adventure');
   }
 };
 

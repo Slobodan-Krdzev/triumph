@@ -4,18 +4,21 @@ import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeI
 import PageParagraph from "@/app/components/familiySharedComponents/PageParagraph";
 import SectionTitleH2 from "@/app/components/familiySharedComponents/SectionTitleH2";
 import { BIKES, SUB_FAMILIES } from "@/app/constants/constants";
+import { redirect } from "next/navigation";
 
 const RocketAccessoryPage = async ({ params }: any) => {
   const subFam = params.subFamily;
 
   try {
     const familyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=rocket-3`, {
-      cache: "no-store",
+      cache:'no-store',
     });
     const familyData = await familyRes.json();
     const subFamily = familyData[0];
 
-    const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${subFam}`);
+    const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${subFam}`, {
+      next: { revalidate: 3000 },
+    });
     const bikesData = await bikesRes.json();
 
     return (
@@ -65,9 +68,8 @@ const RocketAccessoryPage = async ({ params }: any) => {
       </>
     );
   } catch (err) {
-    console.log(err);
 
-    return "err";
+    return redirect(`/motorcycles/rocket-3/${subFam}`)
   }
 };
 

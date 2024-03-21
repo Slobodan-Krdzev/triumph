@@ -98,10 +98,10 @@ const ClothingCollection = () => {
               Лоцирајте ја нашата најблиска продавница.
             </p>
             <MainBtn
-              text={"Најди Продавница"}
+              text={"Контакт"}
               bgBlack={true}
               isLink={true}
-              link={`/`}
+              link={`/dealer`}
             />
           </section>
         </section>

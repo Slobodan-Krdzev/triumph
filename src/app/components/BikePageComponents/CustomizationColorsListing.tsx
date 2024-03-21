@@ -21,7 +21,7 @@ const CustomizationColorsListing = ({colors}: CustomizationColorsListingProps) =
 
 
   return (
-    <ul className="flex flex-col gap-4">
+    <ul className="flex flex-row md:flex-col gap-4">
       {colors.map((color: CustomizationColorType) => (
         <CustomizationColorBtn key={color.colorName} color={color}/>
       ))}

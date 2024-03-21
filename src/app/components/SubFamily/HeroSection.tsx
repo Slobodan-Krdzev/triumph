@@ -1,6 +1,7 @@
 import React from "react";
 import FamilySloganAnimation from "./FamilySloganAnimation";
 import Image from "next/image";
+import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
 
 type HeroSectionProps = {
   video?: string;
@@ -27,13 +28,16 @@ const HeroSection = ({
 }: HeroSectionProps) => {
 
   const doesItContainOffRoad = Boolean(image?.split('/').find(item => item === 'offRoad'));
-  
-
+ 
   if (video) {
     return (
       <section className="relative">
-        <video autoPlay muted loop className="w-full hidden lg:block " src={video} playsInline></video>
-        <Image className="block lg:hidden " src={mobileImage ?? ""} alt={model ?? "Hero Image" } width={1000} height={425} loading="lazy"/>
+        <Breadcrumbs />
+        <video autoPlay muted loop className="w-full hidden lg:block" src={video} playsInline style={{
+          filter: 'brightness(65%)'
+        }}></video>
+        
+        <Image className="block lg:hidden" src={mobileImage ?? "/images/triumphLogo.png"} alt={model ?? "Hero Image" } width={1000} height={425} loading="lazy"/>
         <div
           className="absolute text-white flex flex-col items-center"
           style={{
@@ -66,24 +70,20 @@ const HeroSection = ({
   if (image) {
     return (
       <section
-        className="relative"
+        className="flex justify-center items-center subFamilyHeroBannerImage relative"
         style={{
           backgroundImage: `url("${image}")`,
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          height: "90vh",
+          height: "90vh"
+
         }}
       >
+        <Breadcrumbs />
+
         <div
-          className={`absolute text-white flex flex-col ${textLeftSide ? "items-start" : "items-center"} w-11/12`}
-          style={{
-            top: "40%",
-            left: "50%",
-            right: 0,
-            transform: "translate(-50%, -50%)",
-          }}
-        >
+          className={` text-white flex flex-col ${textLeftSide ? "items-start" : "items-center"} w-11/12`}>
           <p className={` text-3xl font-medium uppercase border-b-4 ${doesItContainOffRoad ? 'border-quartal' : "border-red-600" }  pb-4 inline`}>
             {model}
           </p>

@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: 
+
+Sitemap: https://triumph-chi.vercel.app/sitemap.xml

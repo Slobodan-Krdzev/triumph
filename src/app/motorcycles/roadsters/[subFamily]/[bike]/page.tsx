@@ -1,3 +1,4 @@
+import BikeGalleyCarousell from '@/app/components/BikePageComponents/BikeGalleyCarousell';
 import BikeTitle from '@/app/components/BikePageComponents/BikeTitle';
 import BikePageCarousell from '@/app/components/BikePageComponents/Carousell/BikePageCarousell';
 import ColorNamePreviewer from '@/app/components/BikePageComponents/ColorNamePreviewer';
@@ -5,12 +6,13 @@ import CustomizationColorsListing from '@/app/components/BikePageComponents/Cust
 import ImagePreview from '@/app/components/BikePageComponents/ImagePreview';
 import PricePriviewer from '@/app/components/BikePageComponents/PricePriviewer';
 import PromoBikeYoutubeVideo from '@/app/components/BikePageComponents/PromoBikeYoutubeVideo';
-import GrayBand from '@/app/components/GrayBand';
+import Breadcrumbs from '@/app/components/Breadcrumbs/Breadcrumbs';
 import MainBtn from '@/app/components/MainBtn';
 import SpecTableListi from '@/app/components/SubFamily/Specification/SpecTableListi';
 import SpecsTable from '@/app/components/SubFamily/Specification/SpecsTable';
 import TextAndImageFlexSection from '@/app/components/familiySharedComponents/TextAndImageFlexSection';
 import { BIKES, SUB_FAMILIES } from '@/app/constants/constants';
+import { redirect } from 'next/navigation';
 
 const RoadstersBikePage = async ({params}: any) => {
     const bikeModel = params.bike;
@@ -28,7 +30,9 @@ const RoadstersBikePage = async ({params}: any) => {
       const subFam = subFamData[0];
   
       return (
-        <main className="bg-white">
+        <main className="bg-white relative">
+          <Breadcrumbs dark />
+
           <section>
             <div className="flex flex-col justify-end pt-8 md:pt-16 px-4 md:px-8 lg:px-16">
               <BikeTitle text={bike.title} />
@@ -80,7 +84,7 @@ const RoadstersBikePage = async ({params}: any) => {
                 isOpen={true}
               />
             </div>
-            <SpecsTable specs={subFam.subFamilyPageInfo.fullSpecs} />
+            <SpecsTable specs={subFam} />
           </section>
   
           {bike.gallery.promoYoutubeVideo && (
@@ -99,13 +103,17 @@ const RoadstersBikePage = async ({params}: any) => {
               />
             </section>
           )}
+
+          {bike.bikePageImageGallery && 
+            <BikeGalleyCarousell images={bike.bikePageImageGallery} />
+          }
   
           {bike.bikePageCarousell && (
             <BikePageCarousell items={bike.bikePageCarousell} />
           )}
   
           {bike.bikePagePromo && (
-            <section className="px-4 md:px-24 py-4 md:py-16">
+            <section className="px-4 md:px-24 py-4 md:py-16 m-auto w-11/12 md:w-9/12">
               {bike.bikePagePromo.map((promo: any, idx: number) => (
                 <TextAndImageFlexSection
                   key={promo.title}
@@ -121,23 +129,11 @@ const RoadstersBikePage = async ({params}: any) => {
             </section>
           )}
   
-          <GrayBand
-            itemOne={{
-              text: "Контакт",
-              url: "/dealers/dealer-search",
-              icon: "/pin.svg",
-            }}
-            itemTwo={{
-              text: "КОНФИГУРАЦИЈА",
-              url: `/configure/families/roadsters`,
-              icon: "/icon-configurator.svg",
-            }}
-          />
+          
         </main>
       );
     } catch (err) {
-      console.log(err);
-      return "err";
+      return redirect(`/motorcycles/roadsters/${subFamQuery}`);
     }
 }
 

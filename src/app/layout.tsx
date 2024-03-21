@@ -1,31 +1,48 @@
-import "./globals.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Navbar from "./components/navbar/Navbar";
-import "@fortawesome/fontawesome-svg-core/styles.css";
-import { config } from "@fortawesome/fontawesome-svg-core";
 import Footer from "./components/footer/Footer";
+import Navbar from "./components/navbar/Navbar";
+import { FAMILIES, SUB_FAMILIES } from "./constants/constants";
+import "./globals.css";
 config.autoAddCss = false;
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Triumph Motorcycles Macedonia",
-  description: "Triumph Motorcycles Macedonia, Триумф Моторцикли Македонија, Триумф, Мотори, Triumph",
+  description:
+    "Triumph Motorcycles Macedonia, Триумф Моторцикли Македонија, Триумф, Мотори, Triumph",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>
-        <Navbar />
+  try {
+    const familiesRes = await fetch(`${FAMILIES}`, {
+      next: { revalidate: 3000 },
+    });
+    const families = await familiesRes.json();
 
-        {children}
-        <Footer />
-      </body>
-    </html>
-  );
+    const subFamiliesRes = await fetch(`${SUB_FAMILIES}`, {
+      next: { revalidate: 3000 },
+    });
+    const subFamilies = await subFamiliesRes.json();
+
+    return (
+      <html lang="en">
+        <body className={inter.className}>
+          <Navbar families={families} subFamilies={subFamilies} />
+          {children}
+          <Footer families={families} />
+        </body>
+      </html>
+    );
+  } catch (e) {
+    console.error(e);
+
+    return <>Err</>;
+  }
 }

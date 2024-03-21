@@ -3,6 +3,7 @@ import SecondaryPagesHeroSection from '@/app/components/SubFamily/SecondaryPages
 import BikeInfoTextImageBtn from '@/app/components/familiySharedComponents/BikeInfoTextImageBtn';
 import { formulateSubFamilyTitleOnBanner } from '@/app/components/helpers/formulateSubFamilyTilteOnBanner';
 import { BIKES, FAMILIES, SUB_FAMILIES } from '@/app/constants/constants';
+import { redirect } from 'next/navigation';
 import React from 'react'
 
 const SubFamReasonsToRide = async ({params}: any) => {
@@ -10,12 +11,14 @@ const SubFamReasonsToRide = async ({params}: any) => {
 
     try {
       const subFamilyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=${subFam}`, {
-        cache: "no-store",
+        next: { revalidate: 3000 },
       });
       const subFamilyData = await subFamilyRes.json();
       const subFamily = subFamilyData[0];
   
-      const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${subFam}`);
+      const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${subFam}`, {
+        next: { revalidate: 3000 },
+      });
       const bikesData = await bikesRes.json();
   
       return (
@@ -49,9 +52,8 @@ const SubFamReasonsToRide = async ({params}: any) => {
         </>
       );
     } catch (err) {
-      console.log(err);
   
-      return "err";
+      return redirect(`/motocycles/sport/${subFam}`)
     }
 }
 
