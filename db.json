@@ -7771,16 +7771,16 @@
           }
         ],
         "specNumbers": [
-          { "data": "2500", "info": "cc Мотор" },
-          { "data": "221", "info": "Nm обртен момент" },
-          { "data": "167", "info": "PS - Максимална Сила" },
-          { "data": "40", "info": "Kg ПОЛЕСЕН" }
+          { "data": "2500", "info": "cc" },
+          { "data": "221/225", "info": "Nm" },
+          { "data": "167/182", "info": "PS" },
+          { "data": "16,000км", "info": "С. Интервал" }
         ],
       "subFamilyPageInfo": {
         "soundSection": {
           "audio": "/images/rocket-3/rocketSound.mp3",
           "title": "Неверојатен Звук",
-          "desc": "Длабок три цилиндарски длабок звук кој доаѓа од моторот со моторна зафатнина од 2500 кубни сантиметри, со максимална јачина од 167 коњски сили и максимални 7,000 револуции на моторот.",
+          "desc": "Длабок три цилиндарски длабок звук кој доаѓа од моторот со моторна зафатнина од 2500 кубни сантиметри, со максимална јачина од 167 односно 182 коњски сили за Storm серијата) и максимални 7,000 револуции на моторот.",
           "logo": "/images/rocket-3/rocket3Logo.png"
         }
       },
@@ -13934,6 +13934,219 @@
         "/images/offRoad/tf250X/tf250XBikeGalleryCaro4.avif",
         "/images/offRoad/tf250X/tf250XBikeGalleryCaro5.avif",
         "/images/offRoad/tf250X/tf250XBikeGalleryCaro6.avif"
+      ]
+    },
+    {
+      "id": 62,
+      "title": "Rocket 3 Storm R",
+      "model": "rocket-3-storm-r",
+      "category": "rocket-3",
+      "subFamilyCategory": "rocket-3",
+      "edition": "rocket-3",
+      "price": null,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/rocket-3/rocketStormR/rocket3StormRBlack.png",
+          "alt": "Rocket 3 Storm R"
+        },
+        "promoYoutubeVideo": {
+          "src": "https://www.youtube.com/embed/fzoW0E3hFlc",
+          "alt": "Rocket 3 Storm R"
+        }
+      },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/rocket-3/rocketStormR/rocket3StormRBlack.png",
+        "color1": "/images/rocket-3/rocketStormR/rocket3StormRBlack.png",
+        "color1Reversed": "/images/rocket-3/rocketStormR/rocket3StormRBlackReversed.png",
+        "color2": "/images/rocket-3/rocketStormR/rocket3StormRRed.png",
+        "color2Reversed": "/images/rocket-3/rocketStormR/rocket3StormRRedReversed.png",
+        "color3": "/images/rocket-3/rocketStormR/rocket3StormRBlue.png",
+        "color3Reversed": "/images/rocket-3/rocketStormR/rocket3StormRBlueReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Sapphire Black / Granite",
+          "price": null,
+          "image": "/images/custom-collors/sapphireBlackGranite.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Carnival Red / Saphire Black",
+          "price": null,
+          "image": "/images/custom-collors/carnivalRedSapphireBlack.jpg",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Satin Pacific Blue / Matt Sapphire Black",
+          "price": null,
+          "image": "/images/custom-collors/satinPacificMattSapphireBlack.jpg",
+          "colorCode": "color3"
+        }
+      ],
+      "shortSpecInfo": {
+        "info1": "Три-цилиндричен Rocket 3 2,500cc мотор ",
+        "info2": "182hp / 225Nm",
+        "info3": "16 000 км сервисен интервал"
+      },
+      "subFamilyPromo": {
+        "title": "Новиот Rocket 3 Storm R",
+        "desc": "Врвниот мускулест “Roadster“. Со епски пропорции, имресивни перформанси, одлична агилност и извонреден стил. Цени Наскоро."
+      },
+      "bikePageInfo": {
+        "topDesc": {
+          "desc1": "Новиот Rocket 3 Storm R стои сам во своја класа. Со мускулеста сила и рекордно висок левел на вртежен момент, екслпозивниот карактер на Rocket 3 Storm R се парира само со своето неверојатно управување и извонреден финиш изработен со висок квалитет."
+        }
+      },
+      "bikePageCarousell": [
+        {
+          "title": "Мотор",
+          "desc": "Новиот мотор на Rocket 3 Storm R е еволуција на најголемиот продукциски мотор некогаш произведен. Три-цилиндричниот 2,458cc мотор продуцира со 225Nm вртежен момент и со максимална јачина од 182 коњски сили со одлична респонзивност при секој сетепен на преносот.",
+          "image": "/images/rocket-3/rocketStormR/rocket3StormRCaro1.avif"
+        },
+        {
+          "title": "Тркала и Пневматици",
+          "desc": "Лесниате 10 кракни тркала кои ги носи новиот Rocket 3 Storm R уште повеќе допринесуваат за одличната агилност како и безпрекорниот стил на моторот.",
+          "image": "/images/rocket-3/rocketStormR/rocket3StormRCaro2.avif"
+        },
+        {
+          "title": "Суспензија и Сопирачки",
+          "desc": "Високо специфицираната 47мм Showa предна вилушка и задниот monoshock армотизер ги скротуваат имресивните перформанси на моторот со цел да оддадат чувство на контрола и безгрижно искуство. Нивото на самодоверба и контрола врз моторт уште повеќе се зголемува одличниот Brembo Stylema систем за сопирање.",
+          "image": "/images/rocket-3/rocketStormR/rocket3StormRCaro3.avif"
+        },
+        {
+          "title": "Технологија",
+          "desc": "Од стандардниот ABS систем па се до системот за пролизгување Rocket 3 Storm R располага со најновата технологија и се грижи за вашата сигурност. На располагање ви е повеќе поставки за мапирање на апликацијата на гас како и луксузи како темпомат и слично.",
+          "image": "/images/rocket-3/rocketStormR/rocket3StormRCaro4.avif"
+        },
+        {
+          "title": "Темен Стил",
+          "desc": "Материјалите кои се дел од Rocket 3 Storm серијата се внимателно одбрани со цел да се испорача еден темен финиш без да се компромитира квалитетот и финишот на моторот. Вниманиетот посветено на деталите е тоа што ја одвојува оваа серија од другите.",
+          "image": "/images/rocket-3/rocketStormR/rocket3StormRCaro5.avif"
+        },
+        {
+          "title": "Спремно за Модификации",
+          "desc": "Во палетата на оригинални Triumph аксесоари на располагање ви стојат повеќе од 50 парчиња кои ќе ја подобрат ергономијата и нивото на технологија како за возачот така и за сопатникот.",
+          "image": "/images/rocket-3/rocketStormR/rocket3StormRCaro6.avif"
+        },
+        {
+          "title": "Светло",
+          "desc": "Моќни двојни предни светла со LED дневни светла како и Triumph амблем го красат предниот крај на моторот. Комбинирани со стилизирани трепкачи и интегрирано задно светло, Rocket 3 Storm серијата го добива онаа препознатлива целосно LED Triуmph расвета и стил.",
+          "image": "/images/rocket-3/rocketStormR/rocket3StormRCaro7.avif"
+        },
+        {
+          "title": "Стил",
+          "desc": "Чиста, мускулеста силуета е она што ги мами погледите да се вперат во Rocket 3 Storm серијата. Ситните детали одлично додаваат уште малку повеќе карактер и уникатен стил на моторот.",
+          "image": "/images/rocket-3/rocketStormR/rocket3StormRCaro8.avif"
+        }
+      ],
+      "bikePageImageGallery": [
+        "/images/rocket-3/rocketStormR/rocket3StormRBikeGalleryCaro1.avif",
+        "/images/rocket-3/rocketStormR/rocket3StormRBikeGalleryCaro2.avif"
+      ]
+    },
+    {
+      "id": 63,
+      "title": "Rocket 3 Storm GT",
+      "model": "rocket-3-storm-gt",
+      "category": "rocket-3",
+      "subFamilyCategory": "rocket-3",
+      "edition": "rocket-3",
+      "price": null,
+      "gallery": {
+        "modelImage": {
+          "src": "/images/rocket-3/rocketStormGT/rocket3StormGTRed.png",
+          "alt": "Rocket 3 Storm GT"
+        },
+        "promoYoutubeVideo": {
+          "src": "https://www.youtube.com/embed/J8mLRRLdQX8",
+          "alt": "Rocket 3 Storm GT"
+        }
+      },
+      "bikeCollorPalletteGallery": {
+        "default": "/images/rocket-3/rocketStormGT/rocket3StormGTRed.png",
+        "color1": "/images/rocket-3/rocketStormGT/rocket3StormGTRed.png",
+        "color1Reversed": "/images/rocket-3/rocketStormGT/rocket3StormGTRedReversed.png",
+        "color2": "/images/rocket-3/rocketStormGT/rocket3StormGTBlack.png",
+        "color2Reversed": "/images/rocket-3/rocketStormGT/rocket3StormGTBlackReversed.png",
+        "color3": "/images/rocket-3/rocketStormGT/rocket3StormGTBlue.png",
+        "color3Reversed": "/images/rocket-3/rocketStormGT/rocket3StormGTBlueReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Sapphire Black / Carnival Red",
+          "price": null,
+          "image": "/images/custom-collors/carnivalRedSapphireBlack.jpg",
+          "colorCode": "color1"
+        },
+        {
+          "colorName": "Granite / Saphire Black",
+          "price": null,
+          "image": "/images/custom-collors/sapphireBlackGranite.jpg",
+          "colorCode": "color2"
+        },
+        {
+          "colorName": "Satin Pacific Blue / Matt Sapphire Black",
+          "price": null,
+          "image": "/images/custom-collors/satinPacificMattSapphireBlack.jpg",
+          "colorCode": "color3"
+        }
+      ],
+      "shortSpecInfo": {
+        "info1": "Три-цилиндричен Rocket 3 2,500cc мотор ",
+        "info2": "182hp / 225Nm",
+        "info3": "16 000 км сервисен интервал"
+      },
+      "subFamilyPromo": {
+        "title": "Новиот Rocket 3 Storm GT",
+        "desc": "Одличните перформанси и управување се сплотија со лежерното возење и карактер. Цени Наскоро."
+      },
+      "bikePageInfo": {
+        "topDesc": {
+          "desc1": "Легендата за Rocket 3 серијата продолжува. Муслуеста сила и вртежен момент во комбинација со релаксиран стил и одлично возачко искуство целосно спакувано во извонреден финиш."
+        }
+      },
+      "bikePageCarousell": [
+        {
+          "title": "Мотор",
+          "desc": "Новиот мотор на Rocket 3 Storm R е еволуција на најголемиот продукциски мотор некогаш произведен. Три-цилиндричниот 2,458cc мотор продуцира со 225Nm вртежен момент и со максимална јачина од 182 коњски сили со одлична респонзивност при секој сетепен на преносот.",
+          "image": "/images/rocket-3/rocketStormGT/rocket3StormGTCaro1.avif"
+        },
+        {
+          "title": "Тркала и Пневматици",
+          "desc": "Лесниате 10 кракни тркала кои ги носи новиот Rocket 3 Storm R уште повеќе допринесуваат за одличната агилност како и безпрекорниот стил на моторот.",
+          "image": "/images/rocket-3/rocketStormGT/rocket3StormGTCaro2.avif"
+        },
+        {
+          "title": "Суспензија и Сопирачки",
+          "desc": "Високо специфицираната 47мм Showa предна вилушка и задниот monoshock армотизер ги скротуваат имресивните перформанси на моторот со цел да оддадат чувство на контрола и безгрижно искуство. Нивото на самодоверба и контрола врз моторт уште повеќе се зголемува одличниот Brembo Stylema систем за сопирање.",
+          "image": "/images/rocket-3/rocketStormGT/rocket3StormGTCaro3.avif"
+        },
+        {
+          "title": "Технологија",
+          "desc": "Од стандардниот ABS систем па се до системот за пролизгување Rocket 3 Storm R располага со најновата технологија и се грижи за вашата сигурност. На располагање ви е повеќе поставки за мапирање на апликацијата на гас како и луксузи како темпомат и слично.",
+          "image": "/images/rocket-3/rocketStormGT/rocket3StormGTCaro4.avif"
+        },
+        {
+          "title": "Темен Стил",
+          "desc": "Материјалите кои се дел од Rocket 3 Storm серијата се внимателно одбрани со цел да се испорача еден темен финиш без да се компромитира квалитетот и финишот на моторот. Вниманиетот посветено на деталите е тоа што ја одвојува оваа серија од другите.",
+          "image": "/images/rocket-3/rocketStormGT/rocket3StormGTCaro5.avif"
+        },
+        {
+          "title": "Спремно за Модификации",
+          "desc": "Во палетата на оригинални Triumph аксесоари на располагање ви стојат повеќе од 50 парчиња кои ќе ја подобрат ергономијата и нивото на технологија како за возачот така и за сопатникот.",
+          "image": "/images/rocket-3/rocketStormGT/rocket3StormGTCaro6.avif"
+        },
+        {
+          "title": "Светло",
+          "desc": "Моќни двојни предни светла со LED дневни светла како и Triumph амблем го красат предниот крај на моторот. Комбинирани со стилизирани трепкачи и интегрирано задно светло, Rocket 3 Storm серијата го добива онаа препознатлива целосно LED Triуmph расвета и стил.",
+          "image": "/images/rocket-3/rocketStormGT/rocket3StormGTCaro7.avif"
+        }
+      ],
+      "bikePageImageGallery": [
+        "/images/rocket-3/rocketStormGT/rocket3StormGTBikeGallery1.avif",
+        "/images/rocket-3/rocketStormGT/rocket3StormGTBikeGallery2.avif",
+        "/images/rocket-3/rocketStormGT/rocket3StormGTBikeGallery3.avif"
+
       ]
     }
   ],
