@@ -4,7 +4,7 @@
 
         <form action="{{ route('store-families') }}" method="POST" class="flex flex-col" enctype="multipart/form-data">
 
-        @csrf
+            @csrf
             <h1 class="font-bold text-3xl my-2">Base Info</h1>
 
             <label for="subFamilyName">Sub Family Name:</label>
@@ -31,15 +31,32 @@
 
             <h1 class="font-bold text-3xl my-2">Specs</h1>
 
-            @for ($i = 0; $i < 4; $i++)
-                <label for="specs[{{ $i }}][desc]">Description:</label>
-                <input type="text" id="specs[{{ $i }}][desc]" name="specs[{{ $i }}][desc]"
-                    value="{{ old('specs.' . $i . '.desc') }}">
+            <div id="dynamic-container">
 
-                <label for="specs[{{ $i }}][data]">Data:</label>
-                <input type="text" id="specs[{{ $i }}][data]" name="specs[{{ $i }}][data]"
-                    value="{{ old('specs.' . $i . '.data') }}">
-            @endfor
+                @for ($i = 0; $i < 1; $i++)
+                    <div>
+                        <label for="specs[{{ $i }}][desc]"
+                            class="block text-sm font-medium text-gray-700">Description:</label>
+                        <div class="">
+                            <input type="text" id="specs[{{ $i }}][desc]"
+                                name="specs[{{ $i }}][desc]"
+                                class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                value="{{ old('specs.' . $i . '.desc') }}">
+                        </div>
+                        <label for="specs[{{ $i }}][data]"
+                            class="block text-sm font-medium text-gray-700">Data:</label>
+                        <div>
+                            <input type="text"
+                                class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                id="specs[{{ $i }}][data]" name="specs[{{ $i }}][data]"
+                                value="{{ old('specs.' . $i . '.data') }}">
+                        </div>
+                    </div>
+                @endfor
+            </div>
+
+            <button id="add-new-spec" class="my-5 bg-lime-200 shadow rounded p-4">Add New</button>
+
 
             <h1 class="font-bold text-3xl my-2">Service</h1>
 
@@ -100,10 +117,8 @@
             <label for="audioSection_desc">Description:</label>
             <textarea id="audioSection_desc" name="subFamilyPageInfo[audioSection][desc]">{{ old('subFamilyPageInfo.audioSection.desc') }}</textarea>
 
-            <x-form.input labelText="Logo URL:" imageId="imageLogo"
-                name="subFamilyPageInfo[audioSection][logo]">
-                <img id='imageLogo' width="200" height="150"
-                    class="object-cover border m-3 border-gray-200" />
+            <x-form.input labelText="Logo URL:" imageId="imageLogo" name="subFamilyPageInfo[audioSection][logo]">
+                <img id='imageLogo' width="200" height="150" class="object-cover border m-3 border-gray-200" />
             </x-form.input>
 
 
@@ -121,8 +136,7 @@
             @endfor
 
             <h1 class="font-bold text-3xl my-2">Frame</h1>
-            {{-- Frame Fields --}}
-            @for ($i = 0; $i < 11; $i++)
+            @for ($i = 0; $i < 12; $i++)
                 <label for="frame_{{ $i }}_title">Title:</label>
                 <input type="text" id="frame_{{ $i }}_title" name="frame[{{ $i }}][title]"
                     placeholder="Enter Title">
@@ -134,7 +148,7 @@
 
             <h1 class="font-bold text-3xl my-2">Dimension</h1>
             {{-- Dimension Fields --}}
-            @for ($i = 0; $i < 9; $i++)
+            @for ($i = 0; $i < 12; $i++)
                 <label for="dimension_{{ $i }}_title">Title:</label>
                 <input type="text" id="dimension_{{ $i }}_title"
                     name="dimension[{{ $i }}][title]" placeholder="Enter Title">
@@ -157,7 +171,7 @@
             @endfor
 
             <h1 class="font-bold text-3xl my-2">Gray Carousel</h1>
-            @for ($i = 0; $i < 3; $i++)
+            @for ($i = 0; $i < 12; $i++)
                 <label for="grayCarousell_{{ $i }}_title">Title:</label>
                 <input type="text" id="grayCarousell_{{ $i }}_title"
                     name="grayCarousell[{{ $i }}][title]" placeholder="Enter Title">
@@ -385,5 +399,31 @@
                 URL.revokeObjectURL(output.src) // free memory
             }
         };
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var i = {{ $i }}; // Start index
+
+            $('#add-new-spec').click(function(e) {
+                e.preventDefault();
+
+                var newInputGroup = `
+                <div class="mt-4">
+                    <label for="specs[${i}][desc]" class="block text-sm font-medium text-gray-700">Description:</label>
+                    <div class="mt-1">
+                        <input type="text" id="specs[${i}][desc]" name="specs[${i}][desc]" value="" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md">
+                    </div>
+                    <label for="specs[${i}][data]" class="block text-sm font-medium text-gray-700">Data:</label>
+                    <div class="mt-1">
+                        <input type="text" id="specs[${i}][data]" name="specs[${i}][data]" value="" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md">
+                    </div>
+                </div>`;
+
+                $('#dynamic-container').append(newInputGroup);
+                i++;
+            });
+        });
     </script>
 </x-app-layout>

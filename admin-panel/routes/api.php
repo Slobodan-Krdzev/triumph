@@ -24,9 +24,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 
-Route::get('/edit-adventure', [SubFamAdventureController::class, 'index']);
+// Route::get('/edit-adventure', [SubFamAdventureController::class, 'index']);
 
-Route::get('/list-moto', [MotorcycleController::class, 'indexApi']);
+// Route::get('/list-moto', [MotorcycleController::class, 'indexApi']);
 
 
 
+Route::get('/get-sub-fam', [SubFamAdventureController::class, 'getSubFam']);

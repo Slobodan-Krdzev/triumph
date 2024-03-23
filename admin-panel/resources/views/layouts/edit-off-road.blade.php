@@ -48,8 +48,8 @@
 
             <x-form.input labelText="Gallery Image Source:" imageId="gallery[modelImage][src]"
                 name="gallery[modelImage][src]">
-                <img src="{{ $moto->gallery['modelImage']['src'] }}" id='gallery[modelImage][src]' width="400"
-                    height="150" class="object-cover border m-3 border-gray-200" />
+                <img src="{{ $moto->gallery['modelImage']['src'] }}" id='gallery[modelImage][src]'
+                    width="400" height="150" class="object-cover border m-3 border-gray-200" />
             </x-form.input>
 
             <label for="gallery[modelImage][alt]">Gallery Image Alt:</label>
@@ -61,8 +61,9 @@
 
             <x-form.input labelText="Color 1:" imageId="bikeCollorPalletteGallery[color1]"
                 name="bikeCollorPalletteGallery[color1]">
-                <img src="{{ $moto->bikeCollorPalletteGallery['color1'] }}" id='bikeCollorPalletteGallery[color1]'
-                    width="400" height="150" class="object-cover border m-3 border-gray-200" />
+                <img src="{{ $moto->bikeCollorPalletteGallery['color1'] }}"
+                    id='bikeCollorPalletteGallery[color1]' width="400" height="150"
+                    class="object-cover border m-3 border-gray-200" />
             </x-form.input>
 
             <x-form.input labelText="Color 1 Reversed:" imageId="bikeCollorPalletteGallery[color1Reversed]"
@@ -146,8 +147,14 @@
 
                     <x-form.input labelText="Image URL:" imageId="image-{{ $index }}"
                         name="bikePageCarousell[{{ $index }}][image]">
-                        <img src="/storage{{ $carouselItem['image'] }}" id='image-{{ $index }}'
-                            width="400" height="150" class="object-cover border m-3 border-gray-200" />
+                        @if (array_key_exists('image', $carouselItem))
+                            <img src="{{ $carouselItem['image'] }}" id='image-{{ $index }}'
+                                width="400" height="150" class="object-cover border m-3 border-gray-200" />
+                        @else
+                            <!-- Optionally, display a placeholder image or message if the 'image' key doesn't exist -->
+                            <img src="/path/to/placeholder/image.jpg" id='image-{{ $index }}' width="400"
+                                height="150" class="object-cover border m-3 border-gray-200" />
+                        @endif
                     </x-form.input>
                 @endforeach
             @endif
@@ -170,7 +177,7 @@
 
                     @if (isset($promoItem['image']) && !empty($promoItem['image']))
                         <div>
-                            <img src="/storage{{ $promoItem['image'] }}"
+                            <img src="{{ $promoItem['image'] }}"
                                 id='promo-image-preview-{{ $index }}' width="400" height="150"
                                 class="object-cover border m-3 border-gray-200" />
                         </div>
@@ -199,7 +206,7 @@
                 @foreach ($moto->bikePageImageGallery as $index => $imagePath)
                     <x-form.input labelText="Image URL:" imageId="image-{{ $index }}"
                         name="bikePageImageGallery[{{ $index }}]">
-                        <img src="/storage/{{ asset($imagePath) }}" id='image-{{ $index }}' width="400"
+                        <img src="{{ $imagePath }}" id='image-{{ $index }}' width="400"
                             height="150" class="object-cover border m-3 border-gray-200" />
                     </x-form.input>
                 @endforeach

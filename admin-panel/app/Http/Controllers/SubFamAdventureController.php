@@ -37,65 +37,65 @@ class SubFamAdventureController extends Controller
         $subFamAdventure = SubFamAdventure::findOrFail($id);
 
         $validatedData = $request->validate([
-//        'title' => 'nullable|string|max:255',
-        'subFamilyName' => ['required', Rule::unique('sub_fam_adventure', 'subFamilyName')->ignore($subFamAdventure)],
-//        'url' => 'string',
-//        'price' => 'nullable|numeric',
-//        'youtubeVideo' => 'nullable|string',
-//        'engineTransmission.*.title' => 'nullable|string|max:255',
-//        'engineTransmission.*.desc' => 'nullable|string|max:255',
-//        'subFamilyPageInfo.service.*.title' => 'nullable|string|max:255',
-//        'subFamilyPageInfo.service.*.desc' => 'nullable|string',
-//        'subFamilyPageInfo.audioSection.title' => 'nullable|string|max:255',
-//        'subFamilyPageInfo.audioSection.desc' => 'nullable|string',
-//        'subFamilyPageInfo.audioSection.audio' => 'nullable|string|max:255',
-//        'subFamilyPageInfo.topSection.title' => 'nullable|string|max:255',
-//        'subFamilyPageInfo.topSection.desc' => 'nullable|string',
-//        'subFamilyPageInfo.topSection.subtitle' => 'nullable|string|max:255',
-//        'heroSlogans.*' => 'nullable|string|max:255',
-//        'frame.*.title' => 'nullable|string|max:255',
-//        'frame.*.desc' => 'nullable|string|max:255',
-//        'dimension.*.title' => 'nullable|string|max:255',
-//        'dimension.*.desc' => 'nullable|string|max:255',
-//        'fuelConsumption.*.title' => 'nullable|string|max:255',
-//        'fuelConsumption.*.desc' => 'nullable|string|max:255',
-//        'grayCarousell.*.title' => 'nullable|string|max:255',
-//        'grayCarousell.*.desc' => 'nullable|string',
-//        'grayCarousell.*.image' => 'nullable|image|max:2048',
-//        'specNumbers.*.data' => 'nullable|string|max:255',
-//        'specNumbers.*.info' => 'nullable|string',
-//        'reasonsToDrive.banner.image' => 'nullable|image|max:2048',
-//        'reasonsToDrive.infoText.title' => 'nullable|string|max:255',
-//        'reasonsToDrive.infoText.desc' => 'nullable|string',
-//        'reasonsToDrive.reasons.*.title' => 'nullable|string|max:255',
-//        'reasonsToDrive.reasons.*.desc' => 'nullable|string',
-//        'reasonsToDrive.reasons.*.image' => 'nullable|image|max:2048',
-//         'accessory.banner.image' => 'nullable|image|max:2048',
-//         'accessory.infoText.title' => 'nullable|string|max:255',
-//         'accessory.infoText.desc' => 'nullable|string',
-//         'accessory.accessoryTypes.*.title' => 'nullable|string|max:255',
-//         'accessory.accessoryTypes.*.desc' => 'nullable|string',
-//         'accessory.accessoryTypes.*.itemsList.*' => 'nullable|string|max:255',
-//
-//         // Short Specs Info section
-//         'shortSpecInfo.info1' => 'nullable|string|max:255',
-//         'shortSpecInfo.info2' => 'nullable|string|max:255',
-//         'shortSpecInfo.info3' => 'nullable|string|max:255',
-//
-//         // Gallery section
-//         'gallery.modelImage.src' => 'nullable||image|max:2048',
-//         'gallery.modelImage.alt' => 'nullable|string|max:255',
-//         'gallery.subFamilyHeroVideo.src' => 'nullable|string|max:255',
-//         'gallery.subFamilyHeroVideo.alt' => 'nullable|string|max:255',
-//         'gallery.subFamilyTopSectionImage.src' => 'nullable|image|max:2048',
-//         'gallery.subFamilyTopSectionImage.alt' => 'nullable|string|max:255',
-//         'gallery.subFamilyTopSectionBGImage.src' => 'nullable|image|max:2048',
-//         'gallery.subFamilyTopSectionBGImage.alt' => 'nullable|string|max:255',
-//
-//        //  Service Section
-//
-//        'service.0.title' => 'nullable|string|max:255',
-//        'service.0.desc' => 'nullable|string|max:255',
+            //        'title' => 'nullable|string|max:255',
+            'subFamilyName' => ['required', Rule::unique('sub_fam_adventure', 'subFamilyName')->ignore($subFamAdventure)],
+            //        'url' => 'string',
+            //        'price' => 'nullable|numeric',
+            //        'youtubeVideo' => 'nullable|string',
+            //        'engineTransmission.*.title' => 'nullable|string|max:255',
+            //        'engineTransmission.*.desc' => 'nullable|string|max:255',
+            //        'subFamilyPageInfo.service.*.title' => 'nullable|string|max:255',
+            //        'subFamilyPageInfo.service.*.desc' => 'nullable|string',
+            //        'subFamilyPageInfo.audioSection.title' => 'nullable|string|max:255',
+            //        'subFamilyPageInfo.audioSection.desc' => 'nullable|string',
+            //        'subFamilyPageInfo.audioSection.audio' => 'nullable|string|max:255',
+            //        'subFamilyPageInfo.topSection.title' => 'nullable|string|max:255',
+            //        'subFamilyPageInfo.topSection.desc' => 'nullable|string',
+            //        'subFamilyPageInfo.topSection.subtitle' => 'nullable|string|max:255',
+            //        'heroSlogans.*' => 'nullable|string|max:255',
+            //        'frame.*.title' => 'nullable|string|max:255',
+            //        'frame.*.desc' => 'nullable|string|max:255',
+            //        'dimension.*.title' => 'nullable|string|max:255',
+            //        'dimension.*.desc' => 'nullable|string|max:255',
+            //        'fuelConsumption.*.title' => 'nullable|string|max:255',
+            //        'fuelConsumption.*.desc' => 'nullable|string|max:255',
+            //        'grayCarousell.*.title' => 'nullable|string|max:255',
+            //        'grayCarousell.*.desc' => 'nullable|string',
+            //        'grayCarousell.*.image' => 'nullable|image|max:2048',
+            //        'specNumbers.*.data' => 'nullable|string|max:255',
+            //        'specNumbers.*.info' => 'nullable|string',
+            //        'reasonsToDrive.banner.image' => 'nullable|image|max:2048',
+            //        'reasonsToDrive.infoText.title' => 'nullable|string|max:255',
+            //        'reasonsToDrive.infoText.desc' => 'nullable|string',
+            //        'reasonsToDrive.reasons.*.title' => 'nullable|string|max:255',
+            //        'reasonsToDrive.reasons.*.desc' => 'nullable|string',
+            //        'reasonsToDrive.reasons.*.image' => 'nullable|image|max:2048',
+            //         'accessory.banner.image' => 'nullable|image|max:2048',
+            //         'accessory.infoText.title' => 'nullable|string|max:255',
+            //         'accessory.infoText.desc' => 'nullable|string',
+            //         'accessory.accessoryTypes.*.title' => 'nullable|string|max:255',
+            //         'accessory.accessoryTypes.*.desc' => 'nullable|string',
+            //         'accessory.accessoryTypes.*.itemsList.*' => 'nullable|string|max:255',
+            //
+            //         // Short Specs Info section
+            //         'shortSpecInfo.info1' => 'nullable|string|max:255',
+            //         'shortSpecInfo.info2' => 'nullable|string|max:255',
+            //         'shortSpecInfo.info3' => 'nullable|string|max:255',
+            //
+            //         // Gallery section
+            //         'gallery.modelImage.src' => 'nullable||image|max:2048',
+            //         'gallery.modelImage.alt' => 'nullable|string|max:255',
+            //         'gallery.subFamilyHeroVideo.src' => 'nullable|string|max:255',
+            //         'gallery.subFamilyHeroVideo.alt' => 'nullable|string|max:255',
+            //         'gallery.subFamilyTopSectionImage.src' => 'nullable|image|max:2048',
+            //         'gallery.subFamilyTopSectionImage.alt' => 'nullable|string|max:255',
+            //         'gallery.subFamilyTopSectionBGImage.src' => 'nullable|image|max:2048',
+            //         'gallery.subFamilyTopSectionBGImage.alt' => 'nullable|string|max:255',
+            //
+            //        //  Service Section
+            //
+            //        'service.0.title' => 'nullable|string|max:255',
+            //        'service.0.desc' => 'nullable|string|max:255',
 
         ]);
 
@@ -126,6 +126,10 @@ class SubFamAdventureController extends Controller
                 $data['grayCarousell'][$i]['image'] = str_starts_with($newImagePath, '/storage/') ? $newImagePath : '/storage/' . $newImagePath;
             }
         }
+
+
+
+
 
         if ($request->hasFile('reasonsToDrive.banner.image')) {
             $storage->delete(str_replace('storage/', '', $subFamAdventure['reasonsToDrive']['banner']['image']));
@@ -340,5 +344,16 @@ class SubFamAdventureController extends Controller
 
 
         return redirect()->route('edit-sub-fam', ['id' => $id])->with('success', 'Your data has been updated successfully.');
+    }
+
+
+
+    public function getSubFam()
+    {
+        $subFamData = SubFamAdventure::all();
+
+        $subFamData->makeHidden(['created_at', 'updated_at']);
+
+        return response()->json($subFamData);
     }
 }
