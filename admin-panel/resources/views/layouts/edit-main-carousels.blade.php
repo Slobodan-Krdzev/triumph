@@ -30,13 +30,13 @@
 
 
             <x-form.input labelText="Profile image to edit:" imageId="image" name="image">
-                <img id="image" src="{{ asset($mainCarousels->image) }}" width="400" height="150" class="object-cover border m-3 border-gray-200" />
+                <img id="image" src="{{ $mainCarousels->image }}" width="400" height="150" class="object-cover border m-3 border-gray-200" />
             </x-form.input>
 
 
 
             <x-form.input labelText="Video to edit:" imageId="video" name="video">
-                <video id='video' src="{{$mainCarousels->video}}" muted controls autoplay width="400" height="150" class="object-cover border m-3 border-gray-200" />
+                <video id='video' src="{{ $mainCarousels->video }}" muted controls autoplay width="400" height="150" class="object-cover border m-3 border-gray-200" />
             </x-form.input>
 
             <x-form.input labelText="Mobile image to edit:" imageId="imageMobile"

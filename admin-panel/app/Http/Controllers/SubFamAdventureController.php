@@ -59,9 +59,9 @@ class SubFamAdventureController extends Controller
             //        'dimension.*.desc' => 'nullable|string|max:255',
             //        'fuelConsumption.*.title' => 'nullable|string|max:255',
             //        'fuelConsumption.*.desc' => 'nullable|string|max:255',
-            //        'grayCarousell.*.title' => 'nullable|string|max:255',
-            //        'grayCarousell.*.desc' => 'nullable|string',
-            //        'grayCarousell.*.image' => 'nullable|image|max:2048',
+            //        'grayCarousel.*.title' => 'nullable|string|max:255',
+            //        'grayCarousel.*.desc' => 'nullable|string',
+            //        'grayCarousel.*.image' => 'nullable|image|max:2048',
             //        'specNumbers.*.data' => 'nullable|string|max:255',
             //        'specNumbers.*.info' => 'nullable|string',
             //        'reasonsToDrive.banner.image' => 'nullable|image|max:2048',
@@ -107,6 +107,15 @@ class SubFamAdventureController extends Controller
 
         //ddd($request->hasFile('subFamilyPageInfo.audioSection.logo'));
 
+        if ($request->hasFile('subFamilyPageInfo.audioSection.audio')) {
+            $storage->delete(str_replace('storage/', '', $subFamAdventure['subFamilyPageInfo']['audioSection']['audio']));
+            $imagePath = $request->file('subFamilyPageInfo.audioSection.audio')->storeAs('subFamilies/' . $title . '/audio', $request->file('subFamilyPageInfo.audioSection.audio')->getClientOriginalName(), 'public');
+            $data['subFamilyPageInfo']['audioSection']['audio'] = str_starts_with($imagePath, '/storage/') ? $imagePath : '/storage/' . $imagePath;
+        } else {
+            $newImagePath = str_replace(Str::slug($subFamAdventure->subFamilyName), $title, $subFamAdventure['subFamilyPageInfo']['audioSection']['audio']);
+            $data['subFamilyPageInfo']['audioSection']['audio'] = str_starts_with($newImagePath, '/storage/') ? $newImagePath : '/storage/' . $newImagePath;
+        }
+
         if ($request->hasFile('subFamilyPageInfo.audioSection.logo')) {
             $storage->delete(str_replace('storage/', '', $subFamAdventure['subFamilyPageInfo']['audioSection']['logo']));
             $imagePath = $request->file('subFamilyPageInfo.audioSection.logo')->storeAs('subFamilies/' . $title . '/logo', $request->file('subFamilyPageInfo.audioSection.logo')->getClientOriginalName(), 'public');
@@ -117,13 +126,13 @@ class SubFamAdventureController extends Controller
         }
 
         for ($i = 0; $i < 3; $i++) {
-            if ($request->hasFile('grayCarousell.' . $i . '.image')) {
-                $storage->delete(str_replace('storage/', '', $subFamAdventure['grayCarousell'][$i]['image']));
-                $imagePath = $request->file('grayCarousell.' . $i . '.image')->storeAs('subFamilies/' . $title . '/grayCarousell', $request->file('grayCarousell.' . $i . '.image')->getClientOriginalName(), 'public');
-                $data['grayCarousell'][$i]['image'] = str_starts_with($imagePath, '/storage/') ? $imagePath : '/storage/' . $imagePath;
+            if ($request->hasFile('grayCarousel.' . $i . '.image')) {
+                $storage->delete(str_replace('storage/', '', $subFamAdventure['grayCarousel'][$i]['image']));
+                $imagePath = $request->file('grayCarousel.' . $i . '.image')->storeAs('subFamilies/' . $title . '/grayCarousel', $request->file('grayCarousel.' . $i . '.image')->getClientOriginalName(), 'public');
+                $data['grayCarousel'][$i]['image'] = str_starts_with($imagePath, '/storage/') ? $imagePath : '/storage/' . $imagePath;
             } else {
-                $newImagePath = str_replace(Str::slug($subFamAdventure->subFamilyName), $title, $subFamAdventure['grayCarousell'][$i]['image']);
-                $data['grayCarousell'][$i]['image'] = str_starts_with($newImagePath, '/storage/') ? $newImagePath : '/storage/' . $newImagePath;
+                $newImagePath = str_replace(Str::slug($subFamAdventure->subFamilyName), $title, $subFamAdventure['grayCarousel'][$i]['image']);
+                $data['grayCarousel'][$i]['image'] = str_starts_with($newImagePath, '/storage/') ? $newImagePath : '/storage/' . $newImagePath;
             }
         }
 
@@ -242,11 +251,14 @@ class SubFamAdventureController extends Controller
             $galleryVideo = 'subFamilies/' . $oldTitle . '/galleryVideo';
             $newGalleryVideo = 'subFamilies/' . $newTitle . '/galleryVideo';
 
-            $grayCarousell = 'subFamilies/' . $oldTitle . '/grayCarousell ';
-            $newGrayCarousell  = 'subFamilies/' . $newTitle . '/grayCarousell ';
+            $grayCarousel = 'subFamilies/' . $oldTitle . '/grayCarousel ';
+            $newGrayCarousell  = 'subFamilies/' . $newTitle . '/grayCarousel ';
 
             $logo = 'subFamilies/' . $oldTitle . '/logo';
             $newLogo = 'subFamilies/' . $newTitle . '/logo';
+
+            $audio = 'subFamilies/' . $oldTitle . '/audio';
+            $newAudio = 'subFamilies/' . $newTitle . '/audio';
 
             $reasonsToDriveBanner = 'subFamilies/' . $oldTitle . '/reasonsToDriveBanner';
             $newReasonsToDriveBanner = 'subFamilies/' . $newTitle . '/reasonsToDriveBanner';
@@ -311,7 +323,7 @@ class SubFamAdventureController extends Controller
                 }
             }
 
-            $files = Storage::disk('public')->files($grayCarousell);
+            $files = Storage::disk('public')->files($grayCarousel);
             if (!empty($files)) {
                 foreach ($files as $file) {
                     $filename = pathinfo($file, PATHINFO_BASENAME);
@@ -324,6 +336,14 @@ class SubFamAdventureController extends Controller
                 foreach ($files as $file) {
                     $filename = pathinfo($file, PATHINFO_BASENAME);
                     Storage::disk('public')->move($file, $newLogo . '/' . $filename);
+                }
+            }
+
+            $files = Storage::disk('public')->files($audio);
+            if (!empty($files)) {
+                foreach ($files as $file) {
+                    $filename = pathinfo($file, PATHINFO_BASENAME);
+                    Storage::disk('public')->move($file, $newAudio . '/' . $filename);
                 }
             }
 

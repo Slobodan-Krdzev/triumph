@@ -25,10 +25,11 @@ class AddFamiliesController extends Controller
 
         $title = Str::slug($validatedData['subFamilyName']);
 
+        $data['subFamilyPageInfo']['audioSection']['audio'] = ImageStorage::storeFile($request, 'subFamilyPageInfo.audioSection.audio', 'subFamilies/', $title, '/audio');
 
         $data['subFamilyPageInfo']['audioSection']['logo'] = ImageStorage::storeFile($request, 'subFamilyPageInfo.audioSection.logo', 'subFamilies/', $title, '/logo');
 
-        for ($i = 0; $i < 3; $i++) {
+        for ($i = 0; $i < count($request->input('grayCarousell')); $i++) {
             $data['grayCarousell'][$i]['image'] = ImageStorage::storeFile($request, 'grayCarousell.' . $i . '.image', 'subFamilies/', $title, '/grayCarousell');
         }
 

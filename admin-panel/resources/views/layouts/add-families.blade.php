@@ -29,59 +29,114 @@
 
 
 
-            <h1 class="font-bold text-3xl my-2">Specs</h1>
+{{--            <h1 class="font-bold text-3xl my-2">Specs</h1>--}}
 
-            <div id="dynamic-container">
+{{--            <div id="dynamic-container">--}}
 
-                @for ($i = 0; $i < 1; $i++)
+{{--                @for ($i = 0; $i < 1; $i++)--}}
+{{--                    <div>--}}
+{{--                        <label for="specs[{{ $i }}][desc]"--}}
+{{--                            class="block text-sm font-medium text-gray-700">Description:</label>--}}
+{{--                        <div class="">--}}
+{{--                            <input type="text" id="specs[{{ $i }}][desc]"--}}
+{{--                                name="specs[{{ $i }}][desc]"--}}
+{{--                                class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"--}}
+{{--                                value="{{ old('specs.' . $i . '.desc') }}">--}}
+{{--                        </div>--}}
+{{--                        <label for="specs[{{ $i }}][data]"--}}
+{{--                            class="block text-sm font-medium text-gray-700">Data:</label>--}}
+{{--                        <div>--}}
+{{--                            <input type="text"--}}
+{{--                                class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"--}}
+{{--                                id="specs[{{ $i }}][data]" name="specs[{{ $i }}][data]"--}}
+{{--                                value="{{ old('specs.' . $i . '.data') }}">--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                @endfor--}}
+{{--            </div>--}}
+
+{{--            <button id="add-new-spec" class="my-5 bg-lime-200 shadow rounded p-4">Add New</button>--}}
+
+
+            <div>
+                <h1 class="font-bold text-3xl my-2">Specs</h1>
+                <div class="dynamic-section" id="specsFields"
+                     data-id1="specs_desc" data-label1="desc" data-name="specs"
+                     data-id2="specs_data" data-label2="data">
                     <div>
-                        <label for="specs[{{ $i }}][desc]"
-                            class="block text-sm font-medium text-gray-700">Description:</label>
-                        <div class="">
-                            <input type="text" id="specs[{{ $i }}][desc]"
-                                name="specs[{{ $i }}][desc]"
-                                class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                                value="{{ old('specs.' . $i . '.desc') }}">
-                        </div>
-                        <label for="specs[{{ $i }}][data]"
-                            class="block text-sm font-medium text-gray-700">Data:</label>
+                        <label for="specs_desc_0"
+                               class="block text-sm font-medium text-gray-700">Description:</label>
                         <div>
-                            <input type="text"
-                                class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                                id="specs[{{ $i }}][data]" name="specs[{{ $i }}][data]"
-                                value="{{ old('specs.' . $i . '.data') }}">
+                            <input type="text" id="specs_desc_0"
+                                   name="specs[0][desc]"
+                                   class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                   placeholder="Enter Description">
+                        </div>
+                        <label for="specs_data_0"
+                               class="block text-sm font-medium text-gray-700">Data:</label>
+                        <div>
+                            <input type="text" id="specs_data_0"
+                                   name="specs[0][data]"
+                                   class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                   placeholder="Enter Data">
                         </div>
                     </div>
-                @endfor
+                </div>
+                <button class="add-two-fields my-5 bg-lime-200 shadow rounded p-4">Add Field</button>
             </div>
 
-            <button id="add-new-spec" class="my-5 bg-lime-200 shadow rounded p-4">Add New</button>
+            <div>
+                <h1 class="font-bold text-3xl my-2">Service</h1>
+                <div class="dynamic-section" id="serviceFields"
+                     data-id1="service_title" data-label1="title" data-name="service"
+                     data-id2="service_desc" data-label2="desc">
+                    <div>
+                        <label for="service_title_0"
+                               class="block text-sm font-medium text-gray-700">Title:</label>
+                        <div class="">
+                            <input type="text" id="service_title_0"
+                                   name="service[0][title]"
+                                   class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                   placeholder="Enter Title">
+                        </div>
+                        <label for="service_desc_0"
+                               class="block text-sm font-medium text-gray-700">Description:</label>
+                        <div>
+                            <input type="text" id="service_desc_0"
+                                   name="service[0][desc]"
+                                   class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                   placeholder="Enter Description">
+                        </div>
+                    </div>
+                </div>
+                <button class="add-two-fields my-5 bg-lime-200 shadow rounded p-4">Add Field</button>
+            </div>
 
 
-            <h1 class="font-bold text-3xl my-2">Service</h1>
 
-            <label for="service_title">Service Title:</label>
-            <input type="text" id="service_title" name="service[0][title]" placeholder="Enter Service Title"
-                value="{{ old('service.0.title') }}">
-            @error('service.0.title')
-                <div class="alert alert-danger">{{ $message }}</div>
-            @enderror
+{{--            <h1 class="font-bold text-3xl my-2">Hero Slogans</h1>--}}
+{{--            @for ($i = 0; $i < 3; $i++)--}}
+{{--                <label for="specs[{{ $i }}][data]">Input:</label>--}}
+{{--                <input type="text" class="my-2" name="heroSlogans[]" value="{{ old('heroSlogans.' . $i) }}">--}}
+{{--            @endfor--}}
 
-
-            <label for="service_desc">Description:</label>
-            <input type="text" id="service_desc" name="service[0][desc]" placeholder="Enter Description"
-                value="{{ old('service.0.desc') }}">
-            @error('service.0.desc')
-                <div class="alert alert-danger">{{ $message }}</div>
-            @enderror
-
-
-            <h1 class="font-bold text-3xl my-2">Hero Slogans</h1>
-            @for ($i = 0; $i < 3; $i++)
-                <label for="specs[{{ $i }}][data]">Input:</label>
-                <input type="text" class="my-2" name="heroSlogans[]" value="{{ old('heroSlogans.' . $i) }}">
-            @endfor
-
+            <div>
+                <h1 class="font-bold text-3xl my-2">Hero Slogans</h1>
+                <div class="dynamic-section" id="heroSlogansFields"
+                     data-id="hero_slogan" data-label="slogan" data-name="heroSlogans">
+                    <div>
+                        <label for="hero_slogan_0"
+                               class="block text-sm font-medium text-gray-700">Slogan:</label>
+                        <div>
+                            <input type="text" id="hero_slogan_0"
+                                   name="heroSlogans[0]"
+                                   class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                   placeholder="Enter Slogan">
+                        </div>
+                    </div>
+                </div>
+                <button class="add-field my-5 bg-lime-200 shadow rounded p-4">Add Field</button>
+            </div>
 
             {{-- YouTube Video --}}
             <label for="youtubeVideo">YouTube Video URL:</label>
@@ -105,10 +160,18 @@
                 value="{{ old('subFamilyPageInfo.topSection.subtitle') }}">
 
             {{-- Sub Family Page Info - Audio Section --}}
-            <h1 class="font-bold text-3xl my-2">Sub Family Page Info - Audio Section</h1>
-            <label for="audioSection_audio">Audio File URL:</label>
-            <input type="text" id="audioSection_audio" name="subFamilyPageInfo[audioSection][audio]"
-                value="{{ old('subFamilyPageInfo.audioSection.audio') }}">
+{{--            <h1 class="font-bold text-3xl my-2">Sub Family Page Info - Audio Section</h1>--}}
+{{--            <label for="audioSection_audio">Audio File URL:</label>--}}
+{{--            <input type="text" id="audioSection_audio" name="subFamilyPageInfo[audioSection][audio]"--}}
+{{--                value="{{ old('subFamilyPageInfo.audioSection.audio') }}">--}}
+
+            <section class="my-7 font-bold text-red-600">
+                <x-form.input labelText="Choose Audio" imageId="audioSection_audio"
+                              name="subFamilyPageInfo[audioSection][audio]" value="{{ old('subFamilyPageInfo.audioSection.audio') }}">
+                    <audio id="audioSection_audio" src="" controls autoplay muted type="audio/ogg">
+                    </audio>
+                </x-form.input>
+            </section>
 
             <label for="audioSection_title">Title:</label>
             <input type="text" id="audioSection_title" name="subFamilyPageInfo[audioSection][title]"
@@ -123,122 +186,346 @@
 
 
 
-            <h1 class="font-bold text-3xl my-2">Engine & Transmission</h1>
-            {{-- Engine & Transmission Fields --}}
-            @for ($i = 0; $i < 12; $i++)
-                <label for="engineTransmission_{{ $i }}_title">Title:</label>
-                <input type="text" id="engineTransmission_{{ $i }}_title"
-                    name="engineTransmission[{{ $i }}][title]" placeholder="Enter Title">
+{{--            <h1 class="font-bold text-3xl my-2">Engine & Transmission</h1>--}}
+{{--            --}}{{-- Engine & Transmission Fields --}}
+{{--            @for ($i = 0; $i < 12; $i++)--}}
+{{--                <label for="engineTransmission_{{ $i }}_title">Title:</label>--}}
+{{--                <input type="text" id="engineTransmission_{{ $i }}_title"--}}
+{{--                    name="engineTransmission[{{ $i }}][title]" placeholder="Enter Title">--}}
 
-                <label for="engineTransmission_{{ $i }}_desc">Description:</label>
-                <textarea id="engineTransmission_{{ $i }}_desc" name="engineTransmission[{{ $i }}][desc]"
-                    placeholder="Enter Description"></textarea>
-            @endfor
+{{--                <label for="engineTransmission_{{ $i }}_desc">Description:</label>--}}
+{{--                <textarea id="engineTransmission_{{ $i }}_desc" name="engineTransmission[{{ $i }}][desc]"--}}
+{{--                    placeholder="Enter Description"></textarea>--}}
+{{--            @endfor--}}
+            <div>
+                <h1 class="font-bold text-3xl my-2">Engine & Transmission</h1>
+                <div class="dynamic-section" id="engine&transmissionFields"
+                     data-id1="engineTransmission_title" data-label1="title" data-name="engineTransmission"
+                     data-id2="engineTransmission_desc" data-label2="desc">
+                    <div>
+                        <label for="engineTransmission_title_0"
+                               class="block text-sm font-medium text-gray-700">Title:</label>
+                        <div>
+                            <input type="text" id="engineTransmission_title_0"
+                                   name="engineTransmission[0][title]"
+                                   class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                   placeholder="Enter Title">
+                        </div>
+                        <label for="engineTransmission_desc_0"
+                               class="block text-sm font-medium text-gray-700">Description:</label>
+                        <div>
+                            <input type="text" id="engineTransmission_desc_0"
+                                   name="engineTransmission[0][desc]"
+                                   class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                   placeholder="Enter Description">
+                        </div>
+                    </div>
+                </div>
+                <button class="add-two-fields my-5 bg-lime-200 shadow rounded p-4">Add Field</button>
+            </div>
 
-            <h1 class="font-bold text-3xl my-2">Frame</h1>
-            @for ($i = 0; $i < 12; $i++)
-                <label for="frame_{{ $i }}_title">Title:</label>
-                <input type="text" id="frame_{{ $i }}_title" name="frame[{{ $i }}][title]"
-                    placeholder="Enter Title">
+{{--            <h1 class="font-bold text-3xl my-2">Frame</h1>--}}
+{{--            @for ($i = 0; $i < 12; $i++)--}}
+{{--                <label for="frame_{{ $i }}_title">Title:</label>--}}
+{{--                <input type="text" id="frame_{{ $i }}_title" name="frame[{{ $i }}][title]"--}}
+{{--                    placeholder="Enter Title">--}}
 
-                <label for="frame_{{ $i }}_desc">Description:</label>
-                <textarea id="frame_{{ $i }}_desc" name="frame[{{ $i }}][desc]"
-                    placeholder="Enter Description"></textarea>
-            @endfor
+{{--                <label for="frame_{{ $i }}_desc">Description:</label>--}}
+{{--                <textarea id="frame_{{ $i }}_desc" name="frame[{{ $i }}][desc]"--}}
+{{--                    placeholder="Enter Description"></textarea>--}}
+{{--            @endfor--}}
 
-            <h1 class="font-bold text-3xl my-2">Dimension</h1>
-            {{-- Dimension Fields --}}
-            @for ($i = 0; $i < 12; $i++)
-                <label for="dimension_{{ $i }}_title">Title:</label>
-                <input type="text" id="dimension_{{ $i }}_title"
-                    name="dimension[{{ $i }}][title]" placeholder="Enter Title">
+            <div>
+                <h1 class="font-bold text-3xl my-2">Frame</h1>
+                <div class="dynamic-section" id="frameFields"
+                     data-id1="frame_title" data-label1="title" data-name="frame"
+                     data-id2="frame_desc" data-label2="desc">
+                    <div>
+                        <label for="frame_title_0"
+                               class="block text-sm font-medium text-gray-700">Title:</label>
+                        <div>
+                            <input type="text" id="frame_title_0"
+                                   name="frame[0][title]"
+                                   class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                   placeholder="Enter Title">
+                        </div>
+                        <label for="frame_desc_0"
+                               class="block text-sm font-medium text-gray-700">Description:</label>
+                        <div>
+                            <input type="text" id="frame_desc_0"
+                                   name="frame[0][desc]"
+                                   class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                   placeholder="Enter Description">
+                        </div>
+                    </div>
+                </div>
+                <button class="add-two-fields my-5 bg-lime-200 shadow rounded p-4">Add Field</button>
+            </div>
 
-                <label for="dimension_{{ $i }}_desc">Description:</label>
-                <textarea id="dimension_{{ $i }}_desc" name="dimension[{{ $i }}][desc]"
-                    placeholder="Enter Description"></textarea>
-            @endfor
+{{--            <h1 class="font-bold text-3xl my-2">Dimension</h1>--}}
+{{--            --}}{{-- Dimension Fields --}}
+{{--            @for ($i = 0; $i < 12; $i++)--}}
+{{--                <label for="dimension_{{ $i }}_title">Title:</label>--}}
+{{--                <input type="text" id="dimension_{{ $i }}_title"--}}
+{{--                    name="dimension[{{ $i }}][title]" placeholder="Enter Title">--}}
 
-            <h1 class="font-bold text-3xl my-2">Fuel Consumption</h1>
-            {{-- Fuel Consumption & Emissions Fields --}}
-            @for ($i = 0; $i < 3; $i++)
-                <label for="fuelConsumption_{{ $i }}_title">Title:</label>
-                <input type="text" id="fuelConsumption_{{ $i }}_title"
-                    name="fuelConsumption[{{ $i }}][title]" placeholder="Enter Title">
+{{--                <label for="dimension_{{ $i }}_desc">Description:</label>--}}
+{{--                <textarea id="dimension_{{ $i }}_desc" name="dimension[{{ $i }}][desc]"--}}
+{{--                    placeholder="Enter Description"></textarea>--}}
+{{--            @endfor--}}
 
-                <label for="fuelConsumption_{{ $i }}_desc">Description:</label>
-                <textarea id="fuelConsumption_{{ $i }}_desc" name="fuelConsumption[{{ $i }}][desc]"
-                    placeholder="Enter Description"></textarea>
-            @endfor
+            <div>
+                <h1 class="font-bold text-3xl my-2">Dimension</h1>
+                <div class="dynamic-section" id="dimensionFields"
+                     data-id1="dimension_title" data-label1="title" data-name="dimension"
+                     data-id2="dimension_desc" data-label2="desc">
+                    <div>
+                        <label for="dimension_title_0"
+                               class="block text-sm font-medium text-gray-700">Title:</label>
+                        <div>
+                            <input type="text" id="dimension_title_0"
+                                   name="dimension[0][title]"
+                                   class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                   placeholder="Enter Title">
+                        </div>
+                        <label for="dimension_desc_0"
+                               class="block text-sm font-medium text-gray-700">Description:</label>
+                        <div>
+                            <input type="text" id="dimension_desc_0"
+                                   name="dimension[0][desc]"
+                                   class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                   placeholder="Enter Description">
+                        </div>
+                    </div>
+                </div>
+                <button class="add-two-fields my-5 bg-lime-200 shadow rounded p-4">Add Field</button>
+            </div>
 
-            <h1 class="font-bold text-3xl my-2">Gray Carousel</h1>
-            @for ($i = 0; $i < 12; $i++)
-                <label for="grayCarousell_{{ $i }}_title">Title:</label>
-                <input type="text" id="grayCarousell_{{ $i }}_title"
-                    name="grayCarousell[{{ $i }}][title]" placeholder="Enter Title">
+{{--            <h1 class="font-bold text-3xl my-2">Fuel Consumption</h1>--}}
+{{--            --}}{{-- Fuel Consumption & Emissions Fields --}}
+{{--            @for ($i = 0; $i < 3; $i++)--}}
+{{--                <label for="fuelConsumption_{{ $i }}_title">Title:</label>--}}
+{{--                <input type="text" id="fuelConsumption_{{ $i }}_title"--}}
+{{--                    name="fuelConsumption[{{ $i }}][title]" placeholder="Enter Title">--}}
 
-                <label for="grayCarousell_{{ $i }}_desc">Description:</label>
-                <textarea id="grayCarousell_{{ $i }}_desc" name="grayCarousell[{{ $i }}][desc]"
-                    placeholder="Enter Description"></textarea>
+{{--                <label for="fuelConsumption_{{ $i }}_desc">Description:</label>--}}
+{{--                <textarea id="fuelConsumption_{{ $i }}_desc" name="fuelConsumption[{{ $i }}][desc]"--}}
+{{--                    placeholder="Enter Description"></textarea>--}}
+{{--            @endfor--}}
+
+            <div>
+                <h1 class="font-bold text-3xl my-2">Fuel Consumption</h1>
+                <div class="dynamic-section" id="fuelConsumptionFields"
+                     data-id1="fuelConsumption_title" data-label1="title" data-name="fuelConsumption"
+                     data-id2="fuelConsumption_desc" data-label2="desc">
+                    <div>
+                        <label for="fuelConsumption_title_0"
+                               class="block text-sm font-medium text-gray-700">Title:</label>
+                        <div>
+                            <input type="text" id="fuelConsumption_title_0"
+                                   name="fuelConsumption[0][title]"
+                                   class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                   placeholder="Enter Title">
+                        </div>
+                        <label for="fuelConsumption_desc_0"
+                               class="block text-sm font-medium text-gray-700">Description:</label>
+                        <div>
+                            <input type="text" id="fuelConsumption_desc_0"
+                                   name="fuelConsumption[0][desc]"
+                                   class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                   placeholder="Enter Description">
+                        </div>
+                    </div>
+                </div>
+                <button class="add-two-fields my-5 bg-lime-200 shadow rounded p-4">Add Field</button>
+            </div>
+
+{{--            <h1 class="font-bold text-3xl my-2">Gray Carousel</h1>--}}
+{{--            @for ($i = 0; $i < 12; $i++)--}}
+{{--                <label for="grayCarousell_{{ $i }}_title">Title:</label>--}}
+{{--                <input type="text" id="grayCarousell_{{ $i }}_title"--}}
+{{--                    name="grayCarousell[{{ $i }}][title]" placeholder="Enter Title">--}}
+
+{{--                <label for="grayCarousell_{{ $i }}_desc">Description:</label>--}}
+{{--                <textarea id="grayCarousell_{{ $i }}_desc" name="grayCarousell[{{ $i }}][desc]"--}}
+{{--                    placeholder="Enter Description"></textarea>--}}
 
 
 
-                <x-form.input labelText="Image URL:" imageId="imageId_{{ $i }}"
-                    name="grayCarousell[{{ $i }}][image]">
-                    <img id='imageId_{{ $i }}' width="200" height="150"
-                        class="object-cover border m-3 border-gray-200" />
-                </x-form.input>
-            @endfor
+{{--                <x-form.input labelText="Image URL:" imageId="imageId_{{ $i }}"--}}
+{{--                    name="grayCarousell[{{ $i }}][image]">--}}
+{{--                    <img id='imageId_{{ $i }}' width="200" height="150"--}}
+{{--                        class="object-cover border m-3 border-gray-200" />--}}
+{{--                </x-form.input>--}}
+{{--            @endfor--}}
 
-            <h1 class="font-bold text-3xl my-2">YouTube Videos Carousel</h1>
-            @for ($i = 0; $i < 7; $i++)
-                <label for="youtubeVideosCarousellItems_{{ $i }}_src">Video Source:</label>
-                <input type="text" id="youtubeVideosCarousellItems_{{ $i }}_src"
-                    name="youtubeVideosCarousellItems[{{ $i }}][src]" placeholder="Enter Video Source">
+            <div>
+                <h1 class="font-bold text-3xl my-2">Gray Carousel</h1>
+                <div class="dynamic-section" id="grayCarousellFields"
+                     data-id1="grayCarousell_title" data-label1="title" data-name="grayCarousell"
+                     data-id2="grayCarousell_desc" data-label2="desc" data-img-label="Image">
+                    <div>
+                        <label for="grayCarousell_title_0"
+                               class="block text-sm font-medium text-gray-700">Title:</label>
+                        <div>
+                            <input type="text" id="grayCarousell_title_0"
+                                   name="grayCarousell[0][title]"
+                                   class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                   placeholder="Enter Title">
+                        </div>
+                        <label for="grayCarousell_desc_0"
+                               class="block text-sm font-medium text-gray-700">Description:</label>
+                        <div>
+                            <input type="text" id="grayCarousell_desc_0"
+                                   name="grayCarousell[0][desc]"
+                                   class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                   placeholder="Enter Description">
+                        </div>
+                        <x-form.input labelText="Image:" imageId="grayCarousell_0"
+                                      name="grayCarousell[0][image]">
+                            <img id='grayCarousell_0' width="200" height="150"
+                                 class="object-cover border m-3 border-gray-200" />
+                        </x-form.input>
+                    </div>
+                </div>
+                <button class="add-two-fields-and-img my-5 bg-lime-200 shadow rounded p-4">Add Field</button>
+            </div>
 
-                <label for="youtubeVideosCarousellItems_{{ $i }}_title">Video Title:</label>
-                <input type="text" id="youtubeVideosCarousellItems_{{ $i }}_title"
-                    name="youtubeVideosCarousellItems[{{ $i }}][title]" placeholder="Enter Video Title">
-            @endfor
+{{--            <h1 class="font-bold text-3xl my-2">YouTube Videos Carousel</h1>--}}
+{{--            @for ($i = 0; $i < 7; $i++)--}}
+{{--                <label for="youtubeVideosCarousellItems_{{ $i }}_src">Video Source:</label>--}}
+{{--                <input type="text" id="youtubeVideosCarousellItems_{{ $i }}_src"--}}
+{{--                    name="youtubeVideosCarousellItems[{{ $i }}][src]" placeholder="Enter Video Source">--}}
 
-            <h1 class="font-bold text-3xl my-2">Spec Numbers</h1>
-            @for ($i = 0; $i < 4; $i++)
-                <label for="specNumbers_{{ $i }}_data">Data:</label>
-                <input type="text" id="specNumbers_{{ $i }}_data"
-                    name="specNumbers[{{ $i }}][data]" placeholder="Enter Data">
+{{--                <label for="youtubeVideosCarousellItems_{{ $i }}_title">Video Title:</label>--}}
+{{--                <input type="text" id="youtubeVideosCarousellItems_{{ $i }}_title"--}}
+{{--                    name="youtubeVideosCarousellItems[{{ $i }}][title]" placeholder="Enter Video Title">--}}
+{{--            @endfor--}}
 
-                <label for="specNumbers_{{ $i }}_info">Info:</label>
-                <input type="text" id="specNumbers_{{ $i }}_info"
-                    name="specNumbers[{{ $i }}][info]" placeholder="Enter Info">
-            @endfor
+            <div>
+                <h1 class="font-bold text-3xl my-2">YouTube Videos Carousel</h1>
+                <div class="dynamic-section" id="youtubeVideosCarouselFields"
+                     data-id1="youtubeVideosCarouselItems_title" data-label1="src" data-name="youtubeVideosCarouselItems"
+                     data-id2="youtubeVideosCarouselItems_desc" data-label2="title">
+                    <div>
+                        <label for="youtubeVideosCarouselItems_src_0"
+                               class="block text-sm font-medium text-gray-700">Src:</label>
+                        <div>
+                            <input type="text" id="youtubeVideosCarouselItems_src_0"
+                                   name="youtubeVideosCarouselItems[0][src]"
+                                   class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                   placeholder="Enter Src">
+                        </div>
+                        <label for="youtubeVideosCarouselItems_title_0"
+                               class="block text-sm font-medium text-gray-700">Title:</label>
+                        <div>
+                            <input type="text" id="youtubeVideosCarouselItems_title_0"
+                                   name="youtubeVideosCarouselItems[0][title]"
+                                   class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                   placeholder="Enter Title">
+                        </div>
+                    </div>
+                </div>
+                <button class="add-two-fields my-5 bg-lime-200 shadow rounded p-4">Add Field</button>
+            </div>
+
+{{--            <h1 class="font-bold text-3xl my-2">Spec Numbers</h1>--}}
+{{--            @for ($i = 0; $i < 4; $i++)--}}
+{{--                <label for="specNumbers_{{ $i }}_data">Data:</label>--}}
+{{--                <input type="text" id="specNumbers_{{ $i }}_data"--}}
+{{--                    name="specNumbers[{{ $i }}][data]" placeholder="Enter Data">--}}
+
+{{--                <label for="specNumbers_{{ $i }}_info">Info:</label>--}}
+{{--                <input type="text" id="specNumbers_{{ $i }}_info"--}}
+{{--                    name="specNumbers[{{ $i }}][info]" placeholder="Enter Info">--}}
+{{--            @endfor--}}
+
+            <div>
+                <h1 class="font-bold text-3xl my-2">Spec Numbers</h1>
+                <div class="dynamic-section" id="specNumbersFields"
+                     data-id1="specNumbers_data" data-label1="data" data-name="specNumbers"
+                     data-id2="specNumbers_desc" data-label2="info">
+                    <div>
+                        <label for="specNumbers_data_0"
+                               class="block text-sm font-medium text-gray-700">Data:</label>
+                        <div>
+                            <input type="text" id="specNumbers_data_0"
+                                   name="specNumbers[0][data]"
+                                   class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                   placeholder="Enter Data">
+                        </div>
+                        <label for="specNumbers_info_0"
+                               class="block text-sm font-medium text-gray-700">Info:</label>
+                        <div>
+                            <input type="text" id="specNumbers_info_0"
+                                   name="specNumbers[0][info]"
+                                   class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                   placeholder="Enter Info">
+                        </div>
+                    </div>
+                </div>
+                <button class="add-two-fields my-5 bg-lime-200 shadow rounded p-4">Add Field</button>
+            </div>
 
 
             <h1 class="font-bold text-3xl my-2">ReasonsReasons to Drive Banner</h1>
-            <x-form.input labelText="Banner Image URL:" imageId="imageId_{{ $i }}"
+            <x-form.input labelText="Banner Image URL:" imageId="reasonsBanner"
                 name="reasonsToDrive[banner][image]">
-                <img id='imageId_{{ $i }}' width="200" height="150"
+                <img id='reasonsBanner' width="200" height="150"
                     class="object-cover border m-3 border-gray-200" />
             </x-form.input>
 
-            <h1 class="font-bold text-3xl my-2">Reasons to Drive Info Text</h1>
+            <h1 class="font-bold text-3xl my-2">Reasons to Drive Info </h1>
             <label for="reasonsToDrive_infoText_title">Info Text Title:</label>
             <input type="text" id="reasonsToDrive_infoText_title" name="reasonsToDrive[infoText][title]"
                 placeholder="Enter Info Text Title">
+            <label for="reasonsToDrive_infoText_title">Info Text Description:</label>
+            <input type="text" id="reasonsToDrive_infoText_desc" name="reasonsToDrive[infoText][_desc]"
+                   placeholder="Enter Info Text Description">
 
 
-            <h1 class="font-bold text-3xl my-2">Reasons</h1>
-            @for ($i = 0; $i < 3; $i++)
-                <label for="reasonsToDrive_reasons_{{ $i }}_title">Title:</label>
-                <input type="text" id="reasonsToDrive_reasons_{{ $i }}_title"
-                    name="reasonsToDrive[reasons][{{ $i }}][title]" placeholder="Enter Reason Title">
 
-                <label for="reasonsToDrive_reasons_{{ $i }}_desc">Description:</label>
-                <textarea id="reasonsToDrive_reasons_{{ $i }}_desc"
-                    name="reasonsToDrive[reasons][{{ $i }}][desc]" placeholder="Enter Description"></textarea>
+{{--            <h1 class="font-bold text-3xl my-2">Reasons</h1>--}}
+{{--            @for ($i = 0; $i < 3; $i++)--}}
+{{--                <label for="reasonsToDrive_reasons_{{ $i }}_title">Title:</label>--}}
+{{--                <input type="text" id="reasonsToDrive_reasons_{{ $i }}_title"--}}
+{{--                    name="reasonsToDrive[reasons][{{ $i }}][title]" placeholder="Enter Reason Title">--}}
 
-                <label for="reasonsToDrive_reasons_{{ $i }}_video">Video URL:</label>
-                <input type="text" id="reasonsToDrive_reasons_{{ $i }}_video"
-                    name="reasonsToDrive[reasons][{{ $i }}][video]" placeholder="Enter Video URL">
-            @endfor
+{{--                <label for="reasonsToDrive_reasons_{{ $i }}_desc">Description:</label>--}}
+{{--                <textarea id="reasonsToDrive_reasons_{{ $i }}_desc"--}}
+{{--                    name="reasonsToDrive[reasons][{{ $i }}][desc]" placeholder="Enter Description"></textarea>--}}
+
+{{--                <label for="reasonsToDrive_reasons_{{ $i }}_video">Video URL:</label>--}}
+{{--                <input type="text" id="reasonsToDrive_reasons_{{ $i }}_video"--}}
+{{--                    name="reasonsToDrive[reasons][{{ $i }}][video]" placeholder="Enter Video URL">--}}
+{{--            @endfor--}}
+
+            <div>
+                <h1 class="font-bold text-3xl my-2">Reasons</h1>
+                <div class="dynamic-section" id="reasonsFields"
+                     data-id1="reasons_title" data-label1="title" data-name="reasons"
+                     data-id2="reasons_desc" data-label2="desc">
+                    <div>
+                        <label for="reasons_title_0"
+                               class="block text-sm font-medium text-gray-700">Title:</label>
+                        <div>
+                            <input type="text" id="reasons_title_0"
+                                   name="reasons[0][title]"
+                                   class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                   placeholder="Enter Title">
+                        </div>
+                        <label for="reasons_desc_0"
+                               class="block text-sm font-medium text-gray-700">Description:</label>
+                        <div>
+                            <input type="text" id="reasons_desc_0"
+                                   name="reasons[0][desc]"
+                                   class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                   placeholder="Enter Description">
+                        </div>
+                    </div>
+                </div>
+                <button class="add-two-fields my-5 bg-lime-200 shadow rounded p-4">Add Field</button>
+            </div>
 
             <h1 class="font-bold text-3xl my-2">Short Spec Info</h1>
             <label for="shortSpecInfo_info1">Info 1:</label>
@@ -403,27 +690,136 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <script>
+        {{--$(document).ready(function() {--}}
+        {{--    var i = {{ $i }}; // Start index--}}
+
+        {{--    $('#add-new-spec').click(function(e) {--}}
+        {{--        e.preventDefault();--}}
+
+        {{--        var newInputGroup = `--}}
+        {{--        <div class="mt-4">--}}
+        {{--            <label for="specs[${i}][desc]" class="block text-sm font-medium text-gray-700">Description:</label>--}}
+        {{--            <div class="mt-1">--}}
+        {{--                <input type="text" id="specs[${i}][desc]" name="specs[${i}][desc]" value="" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md">--}}
+        {{--            </div>--}}
+        {{--            <label for="specs[${i}][data]" class="block text-sm font-medium text-gray-700">Data:</label>--}}
+        {{--            <div class="mt-1">--}}
+        {{--                <input type="text" id="specs[${i}][data]" name="specs[${i}][data]" value="" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md">--}}
+        {{--            </div>--}}
+        {{--        </div>`;--}}
+
+        {{--        $('#dynamic-container').append(newInputGroup);--}}
+        {{--        i++;--}}
+        {{--    });--}}
+        {{--});--}}
         $(document).ready(function() {
-            var i = {{ $i }}; // Start index
 
-            $('#add-new-spec').click(function(e) {
+            $('.add-field').click(function(e) {
                 e.preventDefault();
+                var section = $(this).prev('.dynamic-section');
+                var name = section.data('name')
+                var id = section.data('id');
+                var label = section.data('label');
+                addField(section, name, id, label);
+            });
 
-                var newInputGroup = `
-                <div class="mt-4">
-                    <label for="specs[${i}][desc]" class="block text-sm font-medium text-gray-700">Description:</label>
-                    <div class="mt-1">
-                        <input type="text" id="specs[${i}][desc]" name="specs[${i}][desc]" value="" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md">
-                    </div>
-                    <label for="specs[${i}][data]" class="block text-sm font-medium text-gray-700">Data:</label>
-                    <div class="mt-1">
-                        <input type="text" id="specs[${i}][data]" name="specs[${i}][data]" value="" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md">
+            function addField(section, name, id, label) {
+                var newIndex = section.children().length;
+                var newField = `
+                    <div>
+                    <label for="${id}_${newIndex}"
+                           class="block text-sm font-medium text-gray-700">${label.charAt(0).toUpperCase() + label.slice(1) + newIndex}:</label>
+                    <div class="">
+                        <input type="text" id="${id}_${newIndex}"
+                               name="${name}[${newIndex}]"
+                               class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                               placeholder="Enter ${label.charAt(0).toUpperCase() + label.slice(1)}">
                     </div>
                 </div>`;
 
-                $('#dynamic-container').append(newInputGroup);
-                i++;
+                section.append(newField);
+            }
+
+
+            $('.add-two-fields').click(function(e) {
+                e.preventDefault();
+                var section = $(this).prev('.dynamic-section');
+                var name = section.data('name')
+                var id1 = section.data('id1');
+                var id2 = section.data('id2');
+                var label1 = section.data('label1');
+                var label2 = section.data('label2');
+                addTwoFields(section, name, id1, id2, label1, label2);
             });
+
+            function addTwoFields(section, name, id1, id2, label1, label2) {
+                var newIndex = section.children().length;
+                var newField = `
+                    <div>
+                    <label for="${id1}_${newIndex}"
+                           class="block text-sm font-medium text-gray-700">${label1.charAt(0).toUpperCase() + label1.slice(1)}:</label>
+                    <div class="">
+                        <input type="text" id="${id1}_${newIndex}"
+                               name="${name}[${newIndex}][${label1}]"
+                               class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                               placeholder="Enter ${label1.charAt(0).toUpperCase() + label1.slice(1)}">
+                    </div>
+                    <label for="${id2}_${newIndex}"
+                           class="block text-sm font-medium text-gray-700">${label2.charAt(0).toUpperCase() + label2.slice(1)}:</label>
+                    <div>
+                        <input type="text" id="${id2}_${newIndex}"
+                               name="${name}[${newIndex}][${label2}]"
+                               class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                               placeholder="Enter ${label2.charAt(0).toUpperCase() + label2.slice(1)}">
+                    </div>
+                </div>`;
+
+
+                section.append(newField);
+            }
+
+            $('.add-two-fields-and-img').click(function(e) {
+                e.preventDefault();
+                var section = $(this).prev('.dynamic-section');
+                var name = section.data('name')
+                var id1 = section.data('id1');
+                var id2 = section.data('id2');
+                var label1 = section.data('label1');
+                var label2 = section.data('label2');
+                var imgLabel = section.data('img-label');
+                addTwoFieldsAndImg(section, name, id1, id2, label1, label2, imgLabel);
+            });
+
+            function addTwoFieldsAndImg(section, name, id1, id2, label1, label2, imgLabel) {
+                var newIndex = section.children().length;
+                var newField = `
+                    <div>
+                    <label for="${id1}_${newIndex}"
+                           class="block text-sm font-medium text-gray-700">${label1.charAt(0).toUpperCase() + label1.slice(1)}:</label>
+                    <div class="">
+                        <input type="text" id="${id1}_${newIndex}"
+                               name="${name}[${newIndex}][${label1}]"
+                               class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                               placeholder="Enter ${label1.charAt(0).toUpperCase() + label1.slice(1)}">
+                    </div>
+                    <label for="${id2}_${newIndex}"
+                           class="block text-sm font-medium text-gray-700">${label2.charAt(0).toUpperCase() + label2.slice(1)}:</label>
+                    <div>
+                        <input type="text" id="${id2}_${newIndex}"
+                               name="${name}[${newIndex}][${label2}]"
+                               class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                               placeholder="Enter ${label2.charAt(0).toUpperCase() + label2.slice(1)}">
+                    </div>
+                    <x-form.input labelText="${ imgLabel }:" imageId="${name}_${newIndex}"
+                    name="${name}[${ newIndex }][image]">
+                    <img id='${name}_${newIndex}' width="200" height="150"
+                        class="object-cover border m-3 border-gray-200" />
+                    </x-form.input>
+                </div>
+                `;
+
+                section.append(newField);
+            }
         });
     </script>
 </x-app-layout>

@@ -15,8 +15,8 @@ class ImageStorage
             $file = $request->file($fileName)->getClientOriginalName();
             $filePath = $request->file($fileName)->storeAs($directory . $title . $subDirectory, $file, 'public');
 
-            $fullUrl = asset('storage/' . $filePath);
-            return $fullUrl;
+//            $fullUrl = asset('storage/' . $filePath);
+            return Storage::url($filePath);
         } else return '';
     }
 
