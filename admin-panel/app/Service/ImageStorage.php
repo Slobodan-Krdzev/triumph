@@ -15,22 +15,21 @@ class ImageStorage
             $file = $request->file($fileName)->getClientOriginalName();
             $filePath = $request->file($fileName)->storeAs($directory . $title . $subDirectory, $file, 'public');
 
-//            $fullUrl = asset('storage/' . $filePath);
-            return Storage::url($filePath);
+            return asset(Storage::url($filePath));
         } else return '';
     }
 
 
 
-    public static function updateFile(Request $request, String $fileName, String $directory, String $title, String $subDirectory, MainCarousell $carousell)
+    public static function updateFile(Request $request, String $fileName, String $directory, String $title, String $subDirectory, String $path, String $objectTitle)
     {
         if ($request->hasFile($fileName)) {
-            Storage::disk('public')->delete(str_replace('storage/', '', $carousell->image));
-            $filePath = $request->file($fileName)->storeAs($directory . $title . $subDirectory, $request->file($fileName)->getClientOriginalName(), 'public');
-            return str_starts_with($filePath, '/storage/') ? $filePath : '/storage/' . $filePath;
+            Storage::disk('public')->delete(str_replace(asset('storage/'), '', $path));
+            return ImageStorage::storeFile($request, $fileName, $directory, $title, $subDirectory);
         } else {
-            $newFilePath = str_replace(Str::slug($carousell->title), $title, $carousell->image);
-            return str_starts_with($newFilePath, '/storage/') ? $newFilePath : '/storage/' . $newFilePath;
+            $newImagePath = str_replace(Str::slug($objectTitle), $title, $path);
+            return str_starts_with($newImagePath, asset('/storage/')) ? $newImagePath : asset('/storage/' . $newImagePath);
+
         }
     }
 }

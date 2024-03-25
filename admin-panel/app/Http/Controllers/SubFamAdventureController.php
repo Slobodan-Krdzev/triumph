@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\SubFamAdventure;
+use App\Service\ImageStorage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
@@ -105,126 +106,38 @@ class SubFamAdventureController extends Controller
         $title = Str::slug($request->subFamilyName);
         $storage = Storage::disk('public');
 
-        //ddd($request->hasFile('subFamilyPageInfo.audioSection.logo'));
 
-        if ($request->hasFile('subFamilyPageInfo.audioSection.audio')) {
-            $storage->delete(str_replace('storage/', '', $subFamAdventure['subFamilyPageInfo']['audioSection']['audio']));
-            $imagePath = $request->file('subFamilyPageInfo.audioSection.audio')->storeAs('subFamilies/' . $title . '/audio', $request->file('subFamilyPageInfo.audioSection.audio')->getClientOriginalName(), 'public');
-            $data['subFamilyPageInfo']['audioSection']['audio'] = str_starts_with($imagePath, '/storage/') ? $imagePath : '/storage/' . $imagePath;
-        } else {
-            $newImagePath = str_replace(Str::slug($subFamAdventure->subFamilyName), $title, $subFamAdventure['subFamilyPageInfo']['audioSection']['audio']);
-            $data['subFamilyPageInfo']['audioSection']['audio'] = str_starts_with($newImagePath, '/storage/') ? $newImagePath : '/storage/' . $newImagePath;
+        $data['subFamilyPageInfo']['audioSection']['audio'] = ImageStorage::updateFile($request, 'subFamilyPageInfo.audioSection.audio', 'subfamilies/', $title, '/audio', $subFamAdventure['subFamilyPageInfo']['audioSection']['audio'], $subFamAdventure->subFamilyName);
+
+        $data['subFamilyPageInfo']['audioSection']['logo'] = ImageStorage::updateFile($request, 'subFamilyPageInfo.audioSection.logo', 'subfamilies/', $title, '/logo', $subFamAdventure['subFamilyPageInfo']['audioSection']['logo'], $subFamAdventure->subFamilyName);
+
+
+        for ($i = 0; $i < count($request->input('grayCarousell')); $i++) {
+            $data['grayCarousell'][$i]['image'] = ImageStorage::updateFile($request, 'grayCarousell.' . $i . '.image', 'subfamilies/', $title, '/grayCarousell', $subFamAdventure['grayCarousell'][$i]['image'], $subFamAdventure->subFamilyName);
         }
 
-        if ($request->hasFile('subFamilyPageInfo.audioSection.logo')) {
-            $storage->delete(str_replace('storage/', '', $subFamAdventure['subFamilyPageInfo']['audioSection']['logo']));
-            $imagePath = $request->file('subFamilyPageInfo.audioSection.logo')->storeAs('subFamilies/' . $title . '/logo', $request->file('subFamilyPageInfo.audioSection.logo')->getClientOriginalName(), 'public');
-            $data['subFamilyPageInfo']['audioSection']['logo'] = str_starts_with($imagePath, '/storage/') ? $imagePath : '/storage/' . $imagePath;
-        } else {
-            $newImagePath = str_replace(Str::slug($subFamAdventure->subFamilyName), $title, $subFamAdventure['subFamilyPageInfo']['audioSection']['logo']);
-            $data['subFamilyPageInfo']['audioSection']['logo'] = str_starts_with($newImagePath, '/storage/') ? $newImagePath : '/storage/' . $newImagePath;
-        }
+        $data['reasonsToDrive']['banner']['image'] = ImageStorage::updateFile($request, 'reasonsToDrive.banner.image', 'subfamilies/', $title, '/reasonsToDriveBanner', $subFamAdventure['reasonsToDrive']['banner']['image'], $subFamAdventure->subFamilyName);
 
-        for ($i = 0; $i < 3; $i++) {
-            if ($request->hasFile('grayCarousel.' . $i . '.image')) {
-                $storage->delete(str_replace('storage/', '', $subFamAdventure['grayCarousel'][$i]['image']));
-                $imagePath = $request->file('grayCarousel.' . $i . '.image')->storeAs('subFamilies/' . $title . '/grayCarousel', $request->file('grayCarousel.' . $i . '.image')->getClientOriginalName(), 'public');
-                $data['grayCarousel'][$i]['image'] = str_starts_with($imagePath, '/storage/') ? $imagePath : '/storage/' . $imagePath;
-            } else {
-                $newImagePath = str_replace(Str::slug($subFamAdventure->subFamilyName), $title, $subFamAdventure['grayCarousel'][$i]['image']);
-                $data['grayCarousel'][$i]['image'] = str_starts_with($newImagePath, '/storage/') ? $newImagePath : '/storage/' . $newImagePath;
-            }
-        }
+        $data['gallery']['modelImage']['src'] = ImageStorage::updateFile($request, 'gallery.modelImage.src', 'subfamilies/', $title, '/galleryModelImage', $subFamAdventure['gallery']['modelImage']['src'], $subFamAdventure->subFamilyName);
 
+        $data['gallery']['subFamilyHeroImageMobile']['src'] = ImageStorage::updateFile($request, 'gallery.subFamilyHeroImageMobile.src', 'subfamilies/', $title, '/galleryMobileImage', $subFamAdventure['gallery']['subFamilyHeroImageMobile']['src'], $subFamAdventure->subFamilyName);
 
+        $data['gallery']['subFamilyTopSectionImage']['src'] = ImageStorage::updateFile($request, 'gallery.subFamilyTopSectionImage.src', 'subfamilies/', $title, '/galleryTopSectionImage', $subFamAdventure['gallery']['subFamilyTopSectionImage']['src'], $subFamAdventure->subFamilyName);
 
+        $data['gallery']['subFamilyTopSectionBGImage']['src'] = ImageStorage::updateFile($request, 'gallery.subFamilyTopSectionBGImage.src', 'subfamilies/', $title, '/galleryTopSectionBGImage', $subFamAdventure['gallery']['subFamilyTopSectionBGImage']['src'], $subFamAdventure->subFamilyName);
 
+        $data['accessory']['banner']['image'] = ImageStorage::updateFile($request, 'accessory.banner.image', 'subfamilies/', $title, '/accessoryBannerImage', $subFamAdventure['accessory']['banner']['image'], $subFamAdventure->subFamilyName);
 
-        if ($request->hasFile('reasonsToDrive.banner.image')) {
-            $storage->delete(str_replace('storage/', '', $subFamAdventure['reasonsToDrive']['banner']['image']));
-            $imagePath = $request->file('reasonsToDrive.banner.image')->storeAs('subFamilies/' . $title . '/reasonsToDriveBanner', $request->file('reasonsToDrive.banner.image')->getClientOriginalName(), 'public');
-            $data['reasonsToDrive']['banner']['image'] = str_starts_with($imagePath, '/storage/') ? $imagePath : '/storage/' . $imagePath;
-        } else {
-            $newImagePath = str_replace(Str::slug($subFamAdventure->subFamilyName), $title, $subFamAdventure['reasonsToDrive']['banner']['image']);
-            $data['reasonsToDrive']['banner']['image'] = str_starts_with($newImagePath, '/storage/') ? $newImagePath : '/storage/' . $newImagePath;
-        }
-
-        if ($request->hasFile('gallery.modelImage.src')) {
-            $storage->delete(str_replace('storage/', '', $subFamAdventure['gallery']['modelImage']['src']));
-            $imagePath = $request->file('gallery.modelImage.src')->storeAs('subFamilies/' . $title . '/galleryModelImage', $request->file('gallery.modelImage.src')->getClientOriginalName(), 'public');
-            $data['gallery']['modelImage']['src'] = str_starts_with($imagePath, '/storage/') ? $imagePath : '/storage/' . $imagePath;
-        } else {
-            $newImagePath = str_replace(Str::slug($subFamAdventure->subFamilyName), $title, $subFamAdventure['gallery']['modelImage']['src']);
-            $data['gallery']['modelImage']['src'] = str_starts_with($newImagePath, '/storage/') ? $newImagePath : '/storage/' . $newImagePath;
-        }
-
-        if ($request->hasFile('gallery.subFamilyHeroImageMobile.src')) {
-            $storage->delete(str_replace('storage/', '', $subFamAdventure['gallery']['subFamilyHeroImageMobile']['src']));
-            $imagePath = $request->file('gallery.subFamilyHeroImageMobile.src')->storeAs('subFamilies/' . $title . '/galleryMobileImage', $request->file('gallery.subFamilyHeroImageMobile.src')->getClientOriginalName(), 'public');
-            $data['gallery']['subFamilyHeroImageMobile']['src'] = str_starts_with($imagePath, '/storage/') ? $imagePath : '/storage/' . $imagePath;
-        } else {
-            $newImagePath = str_replace(Str::slug($subFamAdventure->subFamilyName), $title, $subFamAdventure['gallery']['subFamilyHeroImageMobile']['src']);
-            $data['gallery']['subFamilyHeroImageMobile']['src'] = str_starts_with($newImagePath, '/storage/') ? $newImagePath : '/storage/' . $newImagePath;
-        }
-
-        if ($request->hasFile('gallery.subFamilyTopSectionImage.src')) {
-            $storage->delete(str_replace('storage/', '', $subFamAdventure['gallery']['subFamilyTopSectionImage']['src']));
-            $imagePath = $request->file('gallery.subFamilyTopSectionImage.src')->storeAs('subFamilies/' . $title . '/galleryTopSectionImage', $request->file('gallery.subFamilyTopSectionImage.src')->getClientOriginalName(), 'public');
-            $data['gallery']['subFamilyTopSectionImage']['src'] = str_starts_with($imagePath, '/storage/') ? $imagePath : '/storage/' . $imagePath;
-        } else {
-            $newImagePath = str_replace(Str::slug($subFamAdventure->subFamilyName), $title, $subFamAdventure['gallery']['subFamilyTopSectionImage']['src']);
-            $data['gallery']['subFamilyTopSectionImage']['src'] = str_starts_with($newImagePath, '/storage/') ? $newImagePath : '/storage/' . $newImagePath;
-        }
-
-        if ($request->hasFile('gallery.subFamilyTopSectionBGImage.src')) {
-            $storage->delete(str_replace('storage/', '', $subFamAdventure['gallery']['subFamilyTopSectionBGImage']['src']));
-            $imagePath = $request->file('gallery.subFamilyTopSectionBGImage.src')->storeAs('subFamilies/' . $title . '/galleryTopSectionBGImage', $request->file('gallery.subFamilyTopSectionBGImage.src')->getClientOriginalName(), 'public');
-            $data['gallery']['subFamilyTopSectionBGImage']['src'] = str_starts_with($imagePath, '/storage/') ? $imagePath : '/storage/' . $imagePath;
-        } else {
-            $newImagePath = str_replace(Str::slug($subFamAdventure->subFamilyName), $title, $subFamAdventure['gallery']['subFamilyTopSectionBGImage']['src']);
-            $data['gallery']['subFamilyTopSectionBGImage']['src'] = str_starts_with($newImagePath, '/storage/') ? $newImagePath : '/storage/' . $newImagePath;
-        }
-
-        if ($request->hasFile('accessory.banner.image')) {
-            $storage->delete(str_replace('storage/', '', $subFamAdventure['accessory']['banner']['image']));
-            $imagePath = $request->file('accessory.banner.image')->storeAs('subFamilies/' . $title . '/accessoryBannerImage', $request->file('accessory.banner.image')->getClientOriginalName(), 'public');
-            $data['accessory']['banner']['image'] = str_starts_with($imagePath, '/storage/') ? $imagePath : '/storage/' . $imagePath;
-        } else {
-            $newImagePath = str_replace(Str::slug($subFamAdventure->subFamilyName), $title, $subFamAdventure['accessory']['banner']['image']);
-            $data['accessory']['banner']['image'] = str_starts_with($newImagePath, '/storage/') ? $newImagePath : '/storage/' . $newImagePath;
-        }
 
         foreach ($request->accessory['accessoryTypes'] as $key => $accessoryType) {
+            $data['accessory']['accessoryTypes'][$key]['image1']['src'] = ImageStorage::updateFile($request, 'accessory.accessoryTypes.' . $key . '.image1.src', 'subfamilies/', $title, '/accessoryTypesImages', $subFamAdventure['accessory']['accessoryTypes'][$key]['image1']['src'], $subFamAdventure->subFamilyName);
 
-            if ($request->hasFile('accessory.accessoryTypes.' . $key . '.image1.src')) {
-                $storage->delete(str_replace('storage/', '', $subFamAdventure['accessory']['accessoryTypes'][$key]['image1']['src']));
-                $imagePath = $request->file('accessory.accessoryTypes.' . $key . '.image1.src')->storeAs('subFamilies/' . $title . '/accessoryTypesImages', $request->file('accessory.accessoryTypes.' . $key . '.image1.src')->getClientOriginalName(), 'public');
-                $data['accessory']['accessoryTypes'][$key]['image1']['src'] = str_starts_with($imagePath, '/storage/') ? $imagePath : '/storage/' . $imagePath;
-            } else {
-                $newImagePath = str_replace(Str::slug($subFamAdventure->subFamilyName), $title, $subFamAdventure['accessory']['accessoryTypes'][$key]['image1']['src']);
-                $data['accessory']['accessoryTypes'][$key]['image1']['src'] = str_starts_with($newImagePath, '/storage/') ? $newImagePath : '/storage/' . $newImagePath;
-            }
-
-            if ($request->hasFile('accessory.accessoryTypes.' . $key . '.image2.src')) {
-                $storage->delete(str_replace('storage/', '', $subFamAdventure['accessory']['accessoryTypes'][$key]['image2']['src']));
-                $imagePath = $request->file('accessory.accessoryTypes.' . $key . '.image2.src')->storeAs('subFamilies/' . $title . '/accessoryTypesImages', $request->file('accessory.accessoryTypes.' . $key . '.image2.src')->getClientOriginalName(), 'public');
-                $data['accessory']['accessoryTypes'][$key]['image2']['src'] = str_starts_with($imagePath, '/storage/') ? $imagePath : '/storage/' . $imagePath;
-            } else {
-                $newImagePath = str_replace(Str::slug($subFamAdventure->subFamilyName), $title, $subFamAdventure['accessory']['accessoryTypes'][$key]['image2']['src']);
-                $data['accessory']['accessoryTypes'][$key]['image2']['src'] = str_starts_with($newImagePath, '/storage/') ? $newImagePath : '/storage/' . $newImagePath;
-            }
+            $data['accessory']['accessoryTypes'][$key]['image2']['src'] = ImageStorage::updateFile($request, 'accessory.accessoryTypes.' . $key . '.image2.src', 'subfamilies/', $title, '/accessoryTypesImages', $subFamAdventure['accessory']['accessoryTypes'][$key]['image2']['src'], $subFamAdventure->subFamilyName);
         }
 
-        if ($request->hasFile('gallery.subFamilyHeroVideo.src')) {
-            $storage->delete(str_replace('storage/', '', $subFamAdventure['gallery']['subFamilyHeroVideo']['src']));
-            $imagePath = $request->file('gallery.subFamilyHeroVideo.src')->storeAs('subFamilies/' . $title . '/galleryVideo', $request->file('gallery.subFamilyHeroVideo.src')->getClientOriginalName(), 'public');
-            $data['gallery']['subFamilyHeroVideo']['src'] = str_starts_with($imagePath, '/storage/') ? $imagePath : '/storage/' . $imagePath;
-        } else {
-            $newImagePath = str_replace(Str::slug($subFamAdventure->subFamilyName), $title, $subFamAdventure['gallery']['subFamilyHeroVideo']['src']);
-            $data['gallery']['subFamilyHeroVideo']['src'] = str_starts_with($newImagePath, '/storage/') ? $newImagePath : '/storage/' . $newImagePath;
-        }
+        $data['gallery']['subFamilyHeroVideo']['src'] = ImageStorage::updateFile($request, 'gallery.subFamilyHeroVideo.src', 'subfamilies/', $title, '/galleryVideo', $subFamAdventure['gallery']['subFamilyHeroVideo']['src'], $subFamAdventure->subFamilyName);
 
-        //ddd(Str::slug($request->subFamilyName) != Str::slug($subFamAdventure->subFamilyName));
+
 
         if (Str::slug($request->subFamilyName) != Str::slug($subFamAdventure->subFamilyName)) {
             $oldTitle = Str::slug($subFamAdventure->subFamilyName);
@@ -251,8 +164,8 @@ class SubFamAdventureController extends Controller
             $galleryVideo = 'subFamilies/' . $oldTitle . '/galleryVideo';
             $newGalleryVideo = 'subFamilies/' . $newTitle . '/galleryVideo';
 
-            $grayCarousel = 'subFamilies/' . $oldTitle . '/grayCarousel ';
-            $newGrayCarousell  = 'subFamilies/' . $newTitle . '/grayCarousel ';
+            $grayCarousell = 'subFamilies/' . $oldTitle . '/grayCarousell ';
+            $newGrayCarousell  = 'subFamilies/' . $newTitle . '/grayCarousell ';
 
             $logo = 'subFamilies/' . $oldTitle . '/logo';
             $newLogo = 'subFamilies/' . $newTitle . '/logo';
@@ -323,7 +236,7 @@ class SubFamAdventureController extends Controller
                 }
             }
 
-            $files = Storage::disk('public')->files($grayCarousel);
+            $files = Storage::disk('public')->files($grayCarousell);
             if (!empty($files)) {
                 foreach ($files as $file) {
                     $filename = pathinfo($file, PATHINFO_BASENAME);

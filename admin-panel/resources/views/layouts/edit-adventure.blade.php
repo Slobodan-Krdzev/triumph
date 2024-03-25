@@ -128,11 +128,11 @@
 
                 <section class="my-7 font-bold text-red-600">
                     <x-form.input labelText="Choose Audio" imageId="audioSection_audio"
-                        name="subFamilyPageInfo[audioSection][audio][url]">
+                        name="subFamilyPageInfo[audioSection][audio]">
                         <audio controls autoplay muted>
                             @if (isset($subFamData->subFamilyPageInfo['audioSection']['audio']))
                                 <source
-                                    src="/storage/{{ $subFamData->subFamilyPageInfo['audioSection']['audio']['url'] ?? '' }}"
+                                    src="{{ $subFamData->subFamilyPageInfo['audioSection']['audio'] ?? '' }}"
                                     type="audio/ogg">
                             @else
                                 Your browser does not support the audio element.
@@ -243,7 +243,7 @@
 
                     @if (isset($grayCarousell['image']) && !empty($grayCarousell['image']))
                         <x-form.input labelText="Banner Image:" imageId="grayCaroImage"
-                            name="reasonsToDrive[banner][image]">
+                            name="$grayCarousell[image]">
                             <img id='grayCaroImage' src="{{ $grayCarousell['image'] }}" width="600"
                                 height="300" class="object-cover border m-3 border-gray-200" />
                         </x-form.input>
@@ -283,7 +283,7 @@
                 <h1 class="font-bold text-3xl my-2">Reasons to Ride</h1>
                 <x-form.input labelText="Banner Image:" imageId="reasonsToDriveImage"
                     name="reasonsToDrive[banner][image]">
-                    <img id='reasonsToDriveImage' src="/storage/{{ $reasonsToDrive['banner']['image'] }}"
+                    <img id='reasonsToDriveImage' src="{{ $reasonsToDrive['banner']['image'] }}"
                         width="600" height="300" class="object-cover border m-3 border-gray-200" />
                 </x-form.input>
             @endif
@@ -433,7 +433,7 @@
 
 
             <x-form.input labelText="Model Image Source:" imageId="modelImageSource"
-                name="reasonsToDrive[banner][image]">
+                name="gallery[modelImage][src]">
                 @isset($subFamData->gallery['modelImage']['src'])
                     <img id='modelImageSource' src="/storage/{{ $subFamData->gallery['modelImage']['src'] ?? '' }}"
                         width="400" height="150" class="object-cover border m-3 border-gray-200" />

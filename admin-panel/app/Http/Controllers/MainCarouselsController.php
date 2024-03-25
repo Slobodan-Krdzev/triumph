@@ -30,7 +30,7 @@ class MainCarouselsController extends Controller
             'link2.text' => 'required|string',
             'image' => 'required|image|max:2048',
             'imageMobile' => 'required|image|max:2048',
-            'video' => 'required|mimes:mp4,mov,ogg,qt|max:20000',
+            'video' => 'required|mimes:mp4,mov,ogg,qt',
         ]);
 
         $carousel = new MainCarousell();
@@ -85,35 +85,17 @@ class MainCarouselsController extends Controller
         $storage = Storage::disk('public');
 
         // Process main image
-        if ($request->hasFile('image')) {
-            $storage->delete(str_replace('storage/', '', $carousel->image));
-            $imagePath = $request->file('image')->storeAs('mainCarousel/' . $title . '/images', $request->file('image')->getClientOriginalName(), 'public');
-            $validatedData['image'] = str_starts_with($imagePath, '/storage/') ? $imagePath : '/storage/' . $imagePath;
-        } else {
-            $newImagePath = str_replace(Str::slug($carousel->title), $title, $carousel->image);
-            $validatedData['image'] = str_starts_with($newImagePath, '/storage/') ? $newImagePath : '/storage/' . $newImagePath;
-        }
+        $validatedData['image'] = ImageStorage::updateFile($request, 'image', 'mainCarousel/', $title, '/images', $carousel->image, $carousel->title);
+
 
         // Process mobile image
-        if ($request->hasFile('imageMobile')) {
-            $storage->delete(str_replace('storage/', '', $carousel->imageMobile));
-            $imageMobilePath = $request->file('imageMobile')->storeAs('mainCarousel/' . $title . '/mobileImages', $request->file('imageMobile')->getClientOriginalName(), 'public');
-            $validatedData['imageMobile'] = str_starts_with($imageMobilePath, '/storage/') ? $imageMobilePath : '/storage/' . $imageMobilePath;
-        } else {
-            $newImageMobilePath = str_replace(Str::slug($carousel->title), $title, $carousel->imageMobile);
-            $validatedData['imageMobile'] = str_starts_with($newImageMobilePath, '/storage/') ? $newImageMobilePath : '/storage/' . $newImageMobilePath;
-        }
+        $validatedData['imageMobile'] = ImageStorage::updateFile($request, 'imageMobile', 'mainCarousel/', $title, '/mobileImages', $carousel->imageMobile, $carousel->title);
+
 
 
         // Process video
-        if ($request->hasFile('video')) {
-            $storage->delete(str_replace('storage/', '', $carousel->video));
-            $videoPath = $request->file('video')->storeAs('mainCarousel/' . $title . '/videos', $request->file('video')->getClientOriginalName(), 'public');
-            $validatedData['video'] = str_starts_with($videoPath, '/storage/') ? $videoPath : '/storage/' . $videoPath;
-        } else {
-            $newVideoPath = (str_replace(Str::slug($carousel->title), $title, $carousel->video));
-            $validatedData['video'] = str_starts_with($newVideoPath, '/storage/') ? $newVideoPath : '/storage/' . $newVideoPath;
-        }
+        $validatedData['video'] = ImageStorage::updateFile($request, 'video', 'mainCarousel/', $title, '/videos', $carousel->video, $carousel->title);
+
 
 
         // Check if the title has been changed
@@ -145,13 +127,9 @@ class MainCarouselsController extends Controller
                 Storage::disk('public')->move($videos . '/' . $filename, $newVideos . '/' . $filename);
             }
 
-            // ddd(Storage::disk('public')->deleteDirectory('mainCarousel/' . Str::slug($carousel->title)));
-            // After moving files, delete the original directory
             Storage::disk('public')->deleteDirectory('mainCarousel/' . Str::slug($carousel->title));
         }
 
-
-        // Update other attributes
         $carousel->update($validatedData);
 
         return redirect()->route('edit-main-carousels', ['id' => $id])->with('success', 'Your data has been updated successfully.');
