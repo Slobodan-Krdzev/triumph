@@ -12,9 +12,9 @@ class SubFamAdventure extends Model
     protected $table = 'sub_fam_adventure';
     protected $fillable = [
         'family_id', 'price', 'title', 'model_name', 'subFamilyName', 'url',
-        'subFamilyPageInfo', 'heroSlogans', 'youtubeVideo', 'engineTransmission',
+        'shortDesc', 'subFamilyPageInfo', 'heroSlogans', 'youtubeVideo', 'engineTransmission',
         'frame', 'dimension', 'fuelConsumption', 'grayCarousell', 'specNumbers',
-        'reasonsToDrive', 'gallery', 'shortSpecInfo', 'accessory', 'specs', 'service','familyType','youtubeVideosCarousellItems'
+        'reasonsToDrive', 'gallery', 'shortSpecInfo', 'accessory', 'specs', 'service', 'familyType', 'youtubeVideosCarousellItems'
     ];
 
     protected $casts = [
@@ -34,7 +34,6 @@ class SubFamAdventure extends Model
         'service' => 'json',
         'youtubeVideosCarousellItems' => 'json'
     ];
-
 
 
     public function famAdventure()

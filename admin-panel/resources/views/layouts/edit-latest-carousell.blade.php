@@ -13,7 +13,7 @@
         <h1 class="font-bold text-4xl">You are editing carousell:<span
                 class="uppercase text-red-500">{{ $latestCarousels->title }}</span></h1>
 
-        <form action="{{ route('update-carousell', $latestCarousels->id) }}" method="POST" class="flex flex-col">
+        <form action="{{ route('update-carousell', $latestCarousels->id) }}" method="POST" class="flex flex-col" enctype="multipart/form-data">
             @csrf
             @method('PUT')
 
@@ -27,17 +27,16 @@
                 </div>
             @endif
 
-            <label for="title">Title</label>
-            <input type="text" name="title" id="title" value="{{ old('title', $latestCarousels->title) }}">
 
-            <label for="desc">Description</label>
-            <textarea name="desc" id="desc">{{ old('desc', $latestCarousels->desc) }}</textarea>
+            <x-form.text-input forId="title" placeholder="Title" dataName="title" oldValue="title" dataValue="{{ $latestCarousels->title }}"/>
 
-            <label for="url">URL</label>
-            <input type="text" name="url" id="url" value="{{ old('url', $latestCarousels->url) }}">
+            <x-form.text-input forId="desc" placeholder="Description" dataName="desc" oldValue="desc" dataValue="{{ $latestCarousels->desc }}"/>
 
-            <label for="image">Image Path</label>
-            <input type="text" name="image" id="image" value="{{ old('image', $latestCarousels->image) }}">
+            <x-form.text-input forId="url" placeholder="URL" dataName="url" oldValue="url" dataValue="{{ $latestCarousels->url }}"/>
+
+            <x-form.input labelText="Image URL:" imageId="image" name="image">
+                <img id='image' src="{{ $latestCarousels->image }}" width="200" height="150" class="object-cover border m-3 border-gray-200"/>
+            </x-form.input>
 
 
             <button type="submit" class="my-5 bg-lime-200 shadow rounded p-4">Update</button>

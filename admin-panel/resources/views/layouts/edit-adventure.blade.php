@@ -17,38 +17,6 @@
         @endif
         <h1 class="font-bold text-4xl text-end">Edit Sub-Family of <span
                 class="text-red-500 capitalize">{{ $subFamData->subFamilyName }}</span></h1>
-        {{-- <div>
-            <h2>{{ $subFamData['subFamilyName'] }}</h2>
-            <p>Family Type: {{ $subFamData['familyType'] }}</p>
-            <p>Price: {{ $subFamData['price'] }}</p>
-            <p>Title: {{ $subFamData['title'] }}</p>
-            <p>URL: {{ $subFamData['url'] }}</p>
-
-            <h3>Specifications</h3>
-            <ul>
-                @foreach ($subFamData['specs'] as $spec)
-                    <li>{{ $spec['desc'] }}: {{ $spec['data'] }}</li>
-                @endforeach
-            </ul>
-
-            <h3>Sub Family Page Info</h3>
-            <p>Description: {{ $subFamData['subFamilyPageInfo']['audioSection']['desc'] }}</p>
-            <!-- Continue accessing other properties -->
-
-            <!-- Display gallery images -->
-            <h3>Gallery</h3>
-            <!-- Add your code to display gallery images here -->
-            <img src="{{ $subFamData['subFamilyPageInfo']['audioSection']['logo'] }}" width="200px" alt="">
-            @isset($subFamData['subFamilyPageInfo']['audioSection']['logo'])
-                <img src="{{ $subFamData['subFamilyPageInfo']['audioSection']['logo'] }}" width="200px" alt="">
-                <img src="/storage{{ $subFamData['subFamilyPageInfo']['audioSection']['logo'] }}" width="200px"
-                    alt="">
-            @else
-                <img src="{{ asset('images/logo.png') }}" width="200px" alt="">
-            @endisset
-
-        </div> --}}
-
 
         <form action="{{ route('update-sub-adventure', $subFamData->id) }}" method="POST" class="flex flex-col"
             enctype="multipart/form-data">
@@ -56,38 +24,29 @@
             @method('PUT')
 
             <h2 class="font-bold text-3xl">Basic Info</h2>
-            <label for="title">Title:</label>
-            <input type="text" name="title" value="{{ old('title', $subFamData->title) }}">
 
+            <x-form.text-input forId="title" placeholder="Title" dataName="title" oldValue="title" dataValue="{{ $subFamData->title }}"/>
 
+            <x-form.text-input forId="subFamilyName" placeholder="Sub Family Name" dataName="subFamilyName" oldValue="subFamilyName" dataValue="{{ $subFamData->subFamilyName }}"/>
 
+            <x-form.text-input forId="url" placeholder="URL" dataName="url" oldValue="url" dataValue="{{ $subFamData->url }}"/>
 
-            <label for="category">Sub-Family Name:</label>
-            <input type="text" name="subFamilyName" value="{{ old('subFamilyName', $subFamData->subFamilyName) }}">
+            <x-form.text-input forId="price" placeholder="Price" dataName="price" oldValue="price" dataValue="{{ $subFamData->price }}"/>
 
-            <label for="category">Url:</label>
-            <input type="text" name="url" value="{{ old('url', $subFamData->url) }}">
-
-
-            <label for="category">Price:</label>
-            <input type="text" name="price" value="{{ old('price', $subFamData->price) }}">
-
-
-
-
-            <h1 class="font-bold text-3xl my-2">Engine Transmission</h1>
 
             @if (isset($subFamData->engineTransmission))
-                @foreach ($subFamData->engineTransmission as $engineTransmission)
-                    <label>Title:</label>
-                    <input type="text" name="engineTransmission[{{ $loop->index }}][title]"
-                        value="{{ old('engineTransmission.' . $loop->index . '.title', $engineTransmission['title']) }}">
-
-
-                    <label>Description:</label>
-                    <input type="text" name="engineTransmission[{{ $loop->index }}][desc]"
-                        value="{{ old('engineTransmission.' . $loop->index . '.desc', $engineTransmission['desc']) }}">
-                @endforeach
+                <x-form.dynamic-text-inputs header="Engine & Transmission" divId="engine&transmissionFields"
+                                            dataId1="engineTransmission_title" dataLabel1="title"
+                                            dataName="engineTransmission"
+                                            dataId2="engineTransmission_desc" dataLabel2="desc"
+                                            :databaseData="$subFamData->engineTransmission"
+                                            fieldClass="add-two-fields"/>
+            @else
+                <x-form.dynamic-text-inputs header="Engine & Transmission" divId="engine&transmissionFields"
+                                            dataId1="engineTransmission_title" dataLabel1="title"
+                                            dataName="engineTransmission"
+                                            dataId2="engineTransmission_desc" dataLabel2="desc"
+                                            fieldClass="add-two-fields"/>
             @endif
 
 
@@ -202,7 +161,7 @@
 
             <h1 class="font-bold text-3xl my-2">Fuel Consumption</h1>
 
-            {{-- Assuming $subFamData->fuelConsumption might not be set or is empty --}}
+             Assuming $subFamData->fuelConsumption might not be set or is empty
             @php
                 $fuelConsumptionData = $subFamData->fuelConsumption ?? [['title' => '', 'desc' => '']];
             @endphp
@@ -248,8 +207,8 @@
                                 height="300" class="object-cover border m-3 border-gray-200" />
                         </x-form.input>
 
-                        {{-- <img id='grayCarousellImage{{ $index }}' src="/storage/{{ $grayCarousell['image']}}"
-                            width="600" height="300" class="object-cover border m-3 border-gray-200" /> --}}
+                         <img id='grayCarousellImage{{ $index }}' src="/storage/{{ $grayCarousell['image']}}"
+                            width="600" height="300" class="object-cover border m-3 border-gray-200" />
                     @endif
                 </div>
             @endforeach
@@ -278,7 +237,7 @@
                 $reasonsToDrive = $subFamData->reasonsToDrive ?? [];
             @endphp
 
-            {{-- Banner Image --}}
+             Banner Image
             @if (!empty(old('reasonsToDrive.banner.image', $reasonsToDrive['banner']['image'] ?? '')))
                 <h1 class="font-bold text-3xl my-2">Reasons to Ride</h1>
                 <x-form.input labelText="Banner Image:" imageId="reasonsToDriveImage"
@@ -288,20 +247,20 @@
                 </x-form.input>
             @endif
 
-            {{-- InfoText Title --}}
+             InfoText Title
             @if (!empty(old('reasonsToDrive.infoText.title', $reasonsToDrive['infoText']['title'] ?? '')))
                 <label for="infoText_title">InfoText Title:</label>
                 <input type="text" id="infoText_title" name="reasonsToDrive[infoText][title]"
                     value="{{ old('reasonsToDrive.infoText.title', $reasonsToDrive['infoText']['title'] ?? '') }}">
             @endif
 
-            {{-- InfoText Description --}}
+             InfoText Description
             @if (!empty(old('reasonsToDrive.infoText.desc', $reasonsToDrive['infoText']['desc'] ?? '')))
                 <label for="infoText_desc">InfoText Description:</label>
                 <textarea id="infoText_desc" name="reasonsToDrive[infoText][desc]">{{ old('reasonsToDrive.infoText.desc', $reasonsToDrive['infoText']['desc'] ?? '') }}</textarea>
             @endif
 
-            {{-- Reasons --}}
+             Reasons
 
             @php
                 $reasons = old('reasonsToDrive.reasons', $reasonsToDrive['reasons'] ?? []);
@@ -334,13 +293,13 @@
 
 
 
-            {{-- Accessory Banner Image --}}
+             Accessory Banner Image
             <x-form.input labelText="Banner Image:" imageId="accessoryBannerImage" name="accessory[banner][image]">
                 <img id='accessoryBannerImage' src="/storage/{{ $subFamData['accessory']['banner']['image'] ?? '' }}"
                     width="600" height="300" class="object-cover border m-3 border-gray-200" />
             </x-form.input>
 
-            {{-- Accessory InfoText Title --}}
+             Accessory InfoText Title
             <div class="mb-4">
                 <label for="infoTextTitle" class="block text-gray-700 text-sm font-bold mb-2">Accessory Info Text
                     Title:</label>
@@ -376,7 +335,7 @@
                     @endif
 
 
-                    {{-- Images for each accessoryType --}}
+                     Images for each accessoryType
                     @for ($i = 1; $i <= 2; $i++)
                         <x-form.input labelText="Image {{ $i }}:"
                             imageId="accessoryTypeImage{{ $index }}_{{ $i }}"
@@ -441,13 +400,13 @@
 
             </x-form.input>
 
-            {{-- <label>Model Image Alt Text:</label>
+             <label>Model Image Alt Text:</label>
             <input type="text" name="gallery[modelImage][alt]"
-                value="{{ old('gallery.modelImage.alt', $subFamData->gallery['modelImage']['alt']) }}"> --}}
+                value="{{ old('gallery.modelImage.alt', $subFamData->gallery['modelImage']['alt']) }}">
 
             <label for="modelImageAlt">Model Image Alt Text:</label>
-            {{-- <input type="text" class="form-control" id="modelImageAlt" name="gallery[modelImage][alt]"
-                    value="{{ $subFamData->gallery['modelImage']['alt'] }}"> --}}
+             <input type="text" class="form-control" id="modelImageAlt" name="gallery[modelImage][alt]"
+                    value="{{ $subFamData->gallery['modelImage']['alt'] }}">
             <input type="text" class="form-control" id="modelImageAlt" name="gallery[modelImage][alt]"
                 value="{{ $subFamData->gallery['modelImage']['alt'] ?? '' }}">
 
@@ -486,8 +445,8 @@
 
 
             <label>Model Image Alt Text:</label>
-            {{-- <input type="text" name="gallery[subFamilyTopSectionImage][alt]"
-                value="{{ old('gallery.subFamilyTopSectionImage.alt', $subFamData->gallery['subFamilyTopSectionImage']['alt'])  }}"> --}}
+             <input type="text" name="gallery[subFamilyTopSectionImage][alt]"
+                value="{{ old('gallery.subFamilyTopSectionImage.alt', $subFamData->gallery['subFamilyTopSectionImage']['alt'])  }}">
             <input type="text" name="gallery[subFamilyTopSectionImage][alt]"
                 value="{{ old('gallery.subFamilyTopSectionImage.alt', $subFamData->gallery['subFamilyTopSectionImage']['alt'] ?? '') }}">
 

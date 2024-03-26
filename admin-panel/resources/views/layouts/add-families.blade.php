@@ -23,6 +23,8 @@
                                         dataId1="specs_desc" dataLabel1="desc" dataName="specs"
                                         dataId2="specs_data" dataLabel2="data" fieldClass="add-two-fields"/>
 
+            <x-form.text-input forId="shortDesc" placeholder="Short Description" dataName="shortDesc" oldValue="shortDesc"/>
+
             <x-form.dynamic-text-inputs header="Service" divId="serviceFields"
                                         dataId1="service_title" dataLabel1="title" dataName="service"
                                         dataId2="service_desc" dataLabel2="desc" fieldClass="add-two-fields"/>

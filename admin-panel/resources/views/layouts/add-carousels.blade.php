@@ -7,7 +7,7 @@
         @endif
         <h1 class="font-bold text-4xl">Add New Carousel</h1>
 
-        <form action="{{ route('add-carousels') }}" method="POST" class="flex flex-col">
+        <form action="{{ route('add-carousels') }}" method="POST" class="flex flex-col" enctype="multipart/form-data">
             @csrf
 
             @if ($errors->any())
@@ -20,17 +20,15 @@
                 </div>
             @endif
 
-            <label for="title">Title</label>
-            <input type="text" name="title" id="title" value="{{ old('title') }}" required>
+            <x-form.text-input forId="title" placeholder="Title" dataName="title" oldValue="title"/>
 
-            <label for="desc">Description</label>
-            <textarea name="desc" id="desc" required>{{ old('desc') }}</textarea>
+            <x-form.text-input forId="desc" placeholder="Description" dataName="desc" oldValue="desc"/>
 
-            <label for="url">URL</label>
-            <input type="text" name="url" id="url" value="{{ old('url') }}" required>
+            <x-form.text-input forId="url" placeholder="URL" dataName="url" oldValue="url"/>
 
-            <label for="image">Image Path</label>
-            <input type="text" name="image" id="image" value="{{ old('image') }}" required>
+            <x-form.input labelText="Image URL:" imageId="image" name="image">
+                <img id='image' width="200" height="150" class="object-cover border m-3 border-gray-200"/>
+            </x-form.input>
 
             <button type="submit" class="my-5 bg-lime-200 shadow rounded p-4">Add Carousel</button>
         </form>
