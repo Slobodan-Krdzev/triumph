@@ -23,13 +23,14 @@ const RocketBikePage = async ({ params }: any) => {
 
   try {
     const bikeRes = await fetch(`${BIKES}?model=${params.bike}`, {
-      cache: "no-store",
+      next: {revalidate: 3000}
     });
     const bikeData = await bikeRes.json();
     const bike = bikeData[0];
 
     const subFamRes = await fetch(`${SUB_FAMILIES}?subFamilyName=rocket-3`, {
-      cache: "no-store",
+      next: {revalidate: 3000}
+
     });
     const subFamData = await subFamRes.json();
     const subFam = subFamData[0];

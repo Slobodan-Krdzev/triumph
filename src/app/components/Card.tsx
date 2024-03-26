@@ -62,7 +62,7 @@ const Card = ({ item, deleteBtn, updateGrg, handleBtn }: CardProps) => {
           {item.title}
         </h3>
         <p className="text-md mb-4 font-medium">
-          {item.price === null ? "Цени Наскоро." : `Oд ${item.price} €.`}
+          {item.price === null ? "Цени Наскоро" : `Oд ${item.price} €`}
         </p>
 
         {item.shortSpecInfo && (
