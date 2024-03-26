@@ -10,7 +10,7 @@
                    class="block text-sm font-medium text-gray-700">{{ ucfirst($dataLabel1) }}@if($dataLabel1 == 'desc')ription @endif:</label>
             <div>
                 <input type="text" id="{{ $dataId1 }}_0"
-                       name="{{ $dataName }}[0]{{ $dataLabel1 !== 'item Text' ? '[' . $dataLabel1 . ']' : '' }}"
+                       name="{{ $dataName }}[0]{{ $dataLabel1 !== 'item Text' && $dataLabel1 !== 'slogan' ? '[' . $dataLabel1 . ']' : '' }}"
                        class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
                        placeholder="Enter {{ ucfirst($dataLabel1) }}@if($dataLabel1 == 'desc')ription @endif">
             </div>
@@ -19,7 +19,7 @@
                    class="block text-sm font-medium text-gray-700 mt-3">{{ ucfirst($dataLabel2) }}@if($dataLabel2 == 'desc')ription @endif:</label>
             <div>
                 <input type="text" id="{{ $dataId2 }}_0"
-                       name="{{ $dataName }}[0][{{ $dataLabel2 }}"
+                       name="{{ $dataName }}[0][{{ $dataLabel2 }}]"
                        class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
                        placeholder="Enter {{ ucfirst($dataLabel2) }}@if($dataLabel2 == 'desc')ription @endif">
             </div>

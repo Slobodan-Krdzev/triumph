@@ -100,7 +100,7 @@
 
             <x-form.dynamic-text-inputs header="YouTube Videos Carousel" divId="youtubeVideosCarouselFields"
                                         dataId1="youtubeVideosCarouselItems_title" dataLabel1="src"
-                                        dataName="youtubeVideosCarouselItems"
+                                        dataName="youtubeVideosCarousellItems"
                                         dataId2="youtubeVideosCarouselItems_desc" dataLabel2="title"
                                         fieldClass="add-two-fields"/>
 
