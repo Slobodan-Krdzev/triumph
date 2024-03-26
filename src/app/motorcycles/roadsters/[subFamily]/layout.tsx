@@ -37,10 +37,13 @@ export default function SubFamilyLayout({
     }
   ];
 
+  console.log(pathname);
+  
+
   return (
     <section>
       <SecondaryNavFamily
-        items={secondaryNavItems}
+        items={params.subFamily === "trident-660" ? [...secondaryNavItems, {text: "Trident Tribute Edition", link: `/${path}/${params.subFamily}/trident-tribute-edition`}] : secondaryNavItems}
         title={formulateSubFamilyTitleOnBanner(params.subFamily.toString())}
         configLink={`/configure/bikes/${params.subFamily}`}
       />
