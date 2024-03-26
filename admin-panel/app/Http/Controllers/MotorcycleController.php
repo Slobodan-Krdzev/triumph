@@ -64,15 +64,13 @@ class MotorcycleController extends Controller
         Motorcycle::create($data);
 
         return redirect()->route('create-moto')->with('success', 'Motorcycle data stored successfully');
-
     }
 
 
     public function edit($id, $category)
 
     {
-        // $moto = Motorcycle::findOrFail($id);
-        // return view('layouts.edit-moto', compact('moto'));
+
 
 
 
@@ -119,12 +117,12 @@ class MotorcycleController extends Controller
     public function update(Request $request, $id)
     {
         $validatedData = $request->validate([
-            'title' => 'required|string|max:255',
-            'model' => 'required|string|max:255',
-            'price' => 'required|string|max:255',
-            'image' => 'required|image|max:2048',
-            'category' => 'required|string|max:255',
-            'subFamilyCategory' => 'required|string|max:255',
+            'title' => 'nullable|string|max:255',
+            'model' => 'nullable|string|max:255',
+            'price' => 'nullable|string|max:255',
+            'image' => 'nullable|image|max:2048',
+            'category' => 'nullable|string|max:255',
+            'subFamilyCategory' => 'nullable|string|max:255',
             'specs.cc' => 'nullable|string|max:255',
             'specs.hp' => 'nullable|string|max:255',
             'specs.torque' => 'nullable|string|max:255',
@@ -138,6 +136,4 @@ class MotorcycleController extends Controller
 
         return redirect()->back()->with('success', 'Moto updated successfully');
     }
-
-
 }
