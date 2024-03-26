@@ -14224,7 +14224,11 @@
         "/images/roadsters/tridentTribute/bikeGalleryImage6.avif",
         "/images/roadsters/tridentTribute/bikeGalleryImage7.avif"
 
-      ]
+      ],
+      "subFamilyPromo": {
+        "title": "Trident 660 Triple Tribute",
+        "desc": "Три-Цилиндричниот 660cc мотор е перфектен баланс помеѓу вртежен момент при ниски револуции на моторот и возбудлива моќност при високи вртежи на моторот со цел да се изработи една оптимизација помеѓу перформанси и респонзивност."
+      }
     }
   ],
   "main-carousell-items": [

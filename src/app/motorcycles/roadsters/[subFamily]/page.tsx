@@ -21,7 +21,7 @@ const RoadstersSubFamilyPage = async ({ params }: any) => {
     const subFamily = subFamilyData[0];
 
     const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${query}`, {
-      next: { revalidate: 3000 },
+      cache: 'no-store',
     });
     const bikes = await bikesRes.json();
 
@@ -108,7 +108,10 @@ const RoadstersSubFamilyPage = async ({ params }: any) => {
       </>
     );
   } catch (error) {
-    return redirect(`/motorcycles/roadsters`)
+    // return redirect(`/motorcycles/roadsters`)
+    console.log(error);
+    
+    return <>err</>
   }
 };
 

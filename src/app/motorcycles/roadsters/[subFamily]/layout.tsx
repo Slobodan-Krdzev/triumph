@@ -37,9 +37,6 @@ export default function SubFamilyLayout({
     }
   ];
 
-  console.log(pathname);
-  
-
   return (
     <section>
       <SecondaryNavFamily
