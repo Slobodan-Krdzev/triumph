@@ -99,9 +99,9 @@
                                         fieldClass="add-two-fields-and-img"/>
 
             <x-form.dynamic-text-inputs header="YouTube Videos Carousel" divId="youtubeVideosCarouselFields"
-                                        dataId1="youtubeVideosCarouselItems_title" dataLabel1="src"
-                                        dataName="youtubeVideosCarouselItems"
-                                        dataId2="youtubeVideosCarouselItems_desc" dataLabel2="title"
+                                        dataId1="youtubeVideosCarousellItems_title" dataLabel1="src"
+                                        dataName="youtubeVideosCarousellItems"
+                                        dataId2="youtubeVideosCarousellItems_desc" dataLabel2="title"
                                         fieldClass="add-two-fields"/>
 
             <x-form.dynamic-text-inputs header="Spec Numbers" divId="specNumbersFields"
