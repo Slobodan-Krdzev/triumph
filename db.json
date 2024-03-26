@@ -14128,9 +14128,121 @@
         "/images/rocket-3/rocketStormGT/rocket3StormGTBikeGallery3.avif"
 
       ]
+    },
+    {
+      "id": 64,
+      "title": "Trident 660 Triple Tribute",
+      "model": "trident-660-triple-tribute",
+      "category": "roadsters",
+      "subFamilyCategory": "trident-660",
+      "edition": "roadsters",
+      "price": null,
+      "bikeCollorPalletteGallery": {
+        "default": "/images/roadsters/tridentTribute/tridentTributeWhite.png",
+        "color1": "/images/roadsters/tridentTribute/tridentTributeWhite.png",
+        "color1Reversed": "/images/roadsters/tridentTribute/tridentTributeWhiteReversed.png"
+      },
+      "customizationColors": [
+        {
+          "colorName": "Snowdonia White",
+          "price": null,
+          "image": "/images/custom-collors/snowdoniaWhiteTripleTribute.jpg",
+          "colorCode": "color1"
+        }
+      ],
+      "gallery": {
+        "modelImage": {
+          "src": "/images/roadsters/tridentTribute/tridentTributeWhite.png",
+          "alt": "Trident 660 Tribute"
+        }
+      },
+      "shortSpecInfo": {
+        "info1": "660cc мотор",
+        "info2": "Само оваа година",
+        "info3": "16000км / 12 месеци сервисен интервал"
+      },
+      "bikePageCarousell": [
+        {
+          "title": "Најдоброто од сите светови",
+          "desc": "Три-Цилиндричниот 660cc мотор е перфектен баланс помеѓу вртежен момент при ниски револуции на моторот и возбудлива моќност при високи вртежи на моторот со цел да се изработи една оптимизација помеѓу перформанси и респонзивност.",
+          "image": "/images/roadsters/tridentTribute/latestCaro1.avif"
+        },
+        {
+          "title": "Одлично Управување",
+          "desc": "Одличната шасија и елементи од високи спецификации како премиум Showa суспензијата и Nissin сопирачките нудат одлична агилност и уште подобра контрола врз моторот.",
+          "image": "/images/roadsters/tridentTribute/latestCaro2.avif"
+        },
+        {
+          "title": "TFT Екран",
+          "desc": "Новиот Triumph TFT екран одлично ги испорачува сите потребни информации и одлично се справува со сите интеракции на возачот.",
+          "image": "/images/roadsters/tridentTribute/latestCaro3.avif"
+        },
+        {
+          "title": "Високо Ниво на Технологија",
+          "desc": "За максимална сигурност и уживање на возачот, Trident Triple Tribute серијата насебе носи технологија од највисоко ниво како два мода на работа (Road & Rain) како и систем за пролизгување кој се оптимизира според вашите потреби. Како стандард го добидаве и Triumph Shift Assist квачилото за брзо и лесно како и промена на степенеот на пренос без употреба на рачката на квачолото.",
+          "image": "/images/roadsters/tridentTribute/latestCaro4.avif"
+        },
+        {
+          "title": "LED Осветлување",
+          "desc": "За максимална сигурност и перформанси целосната расвета на Trident серијата почнувајки од предното главно светло па се до задното и трепкачите се LED светла.",
+          "image": "/images/roadsters/tridentTribute/latestCaro5.avif"
+        },
+        {
+          "title": "Достапност",
+          "desc": "Со тенок струк, перфектно позиционирани стапки за нозе, ниско седиште од 805 милиметри, подесувачки рачки за кочење и асистирачко квачило, Triumph испорачува и нуди комфортно возење и самодоверба - секој ден.",
+          "image": "/images/roadsters/tridentTribute/latestCaro6.avif"
+        },
+        {
+          "title": "Компатибилен со А2 возачка дозвола",
+          "desc": "За да овој Triumph мотор биде уште подостапен, додатен А2 сет може да биде вграден во моторот. Истиот ја намалува јачината на моторот со што го прави моторот компатибилен со А2 возачка дозвола. Истиот сет може да биде одстранет во било кој Triumph сервис и тоа за само неколку минути.",
+          "image": "/images/roadsters/tridentTribute/latestCaro7.avif"
+        },
+        {
+          "title": "Аксесоари",
+          "desc": "Персонализирајте го вашиот Triumph Trident 660 Triple Tribute Edition со палета од оргинални Triumph аксесоари.",
+          "image": "/images/roadsters/tridentTribute/latestCaro8.avif"
+        },
+        {
+          "title": "16,000км Сервисен Интервал",
+          "desc": "Со одлични цена и со неверојатен сервисен интервал од 16,000 километри, Trident 660 серијата е одлична вредност да се има во својоата гаража.",
+          "image": "/images/roadsters/tridentTribute/latestCaro9.avif"
+        }
+      ],
+      "bikePagePromo": [
+        {
+          "title": "16,000км - сервисен интервал",
+          "desc": "Со лидерски сервисен интервал од 16,000 километри и со одлична цена, Trident 660 е одличен избор за секој возач.",
+          "image": "/images/roadsters/trident660/trident660BikePromo1.avif"
+        }
+      ],
+      "bikePageImageGallery": [
+        "/images/roadsters/tridentTribute/bikeGalleryImage1.avif",
+        "/images/roadsters/tridentTribute/bikeGalleryImage2.avif",
+        "/images/roadsters/tridentTribute/bikeGalleryImage3.avif",
+        "/images/roadsters/tridentTribute/bikeGalleryImage4.avif",
+        "/images/roadsters/tridentTribute/bikeGalleryImage5.avif",
+        "/images/roadsters/tridentTribute/bikeGalleryImage6.avif",
+        "/images/roadsters/tridentTribute/bikeGalleryImage7.avif"
+
+      ]
     }
   ],
   "main-carousell-items": [
+    {
+      "video": "/images/home/mainCarousell/tripleTributeMainCaroVideo.webm",
+      "image": null,
+      "imageMobile": "/images/home/mainCarousell/tripleTributeMobile.avif",
+      "title": "Новиот Trident 660 Tribute Edition Серија",
+      "desc": "Создаден од мулти-класната, три-цилиндрична спортско-перформансна платформа на Triumph.",
+      "link1": {
+        "url": "/motorcycles/roadsters/trident-660/trident-tribute-edition",
+        "text": "Погледни го Моторот"
+      },
+      "link2": {
+        "url": "/configure/bike/trident-660-triple-tribute",
+        "text": "Конфигурација"
+      }
+    },
     {
       "video": "/images/home/mainCarousell/rocket3.webm",
       "image": null,
