@@ -147,7 +147,7 @@ const RocketBikePage = async ({ params }: any) => {
         )}
 
         <section className="text-center py-4 md:py-32">
-          <h2 className="text-4xl md:text-6xl font-bold uppercase border-b-4 border-red-600 w-1/4 m-auto pb-4 mb-4">
+          <h2 className="text-4xl md:text-6xl font-bold uppercase border-b-4 border-red-600 w-4/4 m-auto pb-4 mb-4">
             Rocket 3
           </h2>
           <p className="text-2xl md:text-4xl font-semibold uppercase mb-8">
