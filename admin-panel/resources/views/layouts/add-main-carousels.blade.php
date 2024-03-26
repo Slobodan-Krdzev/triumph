@@ -36,45 +36,20 @@
                 <img id='imageMobile' width="400" height="150" class="object-cover border m-3 border-gray-200" />
             </x-form.input>
 
-            <label for="title">Title</label>
-            <input type="text" name="title" id="title" value="{{ old('title') }}" >
+            <x-form.text-input forId="title" placeholder="Title"
+                               dataName="title" oldValue="title"/>
 
-            <label for="desc">Description</label>
-            <textarea name="desc" id="desc" >{{ old('desc') }}</textarea>
+            <x-form.text-input forId="desc" placeholder="Description"
+                               dataName="title" oldValue="title"/>
 
-            <label for="link1[url]">Link 1 URL</label>
-            <input type="text" name="link1[url]" id="link1[url]" value="{{ old('link1.url') }}" >
+            <x-form.text-input forId="link1Url" placeholder="Link 1 URL" dataName="link1[url]" oldValue="link1.url"/>
+            <x-form.text-input forId="link1Text" placeholder="Link 1 Text" dataName="link1[text]" oldValue="link1.text"/>
 
-            <label for="link1[text]">Link 1 Text</label>
-            <input type="text" name="link1[text]" id="link1[text]" value="{{ old('link1.text') }}" >
-
-            <label for="link2[url]">Link 2 URL</label>
-            <input type="text" name="link2[url]" id="link2[url]" value="{{ old('link2.url') }}" >
-
-            <label for="link2[text]">Link 2 Text</label>
-            <input type="text" name="link2[text]" id="link2[text]" value="{{ old('link2.text') }}" >
-
+            <x-form.text-input forId="link2Url" placeholder="Link 2 URL" dataName="link2[url]" oldValue="link2.url"/>
+            <x-form.text-input forId="link2Text" placeholder="Link 2 Text" dataName="link2[text]" oldValue="link2.text"/>
 
 
             <button type="submit" class="my-5 bg-lime-200 shadow rounded p-4">Add Carousel</button>
         </form>
     </div>
-    <script>
-        var loadFile = function(event, imageId) {
-
-            var input = event.target;
-            var file = input.files[0];
-            var type = file.type;
-
-            console.log(imageId);
-
-            var output = document.getElementById(imageId);
-
-
-            output.src = URL.createObjectURL(event.target.files[0]);
-            output.onload = function() {
-                URL.revokeObjectURL(output.src) // free memory
-            }
-        };
-    </script>
 </x-app-layout>

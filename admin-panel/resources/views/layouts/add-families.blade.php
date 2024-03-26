@@ -8,16 +8,16 @@
             <h1 class="font-bold text-3xl my-2">Base Info</h1>
 
             <x-form.text-input forId="subFamilyName" placeholder="Sub Family Name" dataName="subFamilyName"
-                               dataValue="subFamilyName"/>
+                               oldValue="subFamilyName"/>
 
             <x-form.text-input forId="familyType" placeholder="Family Type" dataName="familyType"
-                               dataValue="familyType"/>
+                               oldValue="familyType"/>
 
-            <x-form.text-input forId="title" placeholder="Title" dataName="title" dataValue="title"/>
+            <x-form.text-input forId="title" placeholder="Title" dataName="title" oldValue="title"/>
 
-            <x-form.text-input forId="price" placeholder="Price" dataName="price" dataValue="price"/>
+            <x-form.text-input forId="price" placeholder="Price" dataName="price" oldValue="price"/>
 
-            <x-form.text-input forId="url" placeholder="URL" dataName="url" dataValue="url"/>
+            <x-form.text-input forId="url" placeholder="URL" dataName="url" oldValue="url"/>
 
             <x-form.dynamic-text-inputs header="Specs" divId="specsFields"
                                         dataId1="specs_desc" dataLabel1="desc" dataName="specs"
@@ -32,10 +32,10 @@
                                         fieldClass="add-field"/>
 
             <x-form.text-input forId="youtubeVideo" placeholder="YouTube Video URL" dataName="youtubeVideo"
-                               dataValue="youtubeVideo"/>
+                               oldValue="youtubeVideo"/>
 
             <x-form.text-input forId="shortDesc" placeholder="Short Description" dataName="shortDesc"
-                               dataValue="shortDesc"/>
+                               oldValue="shortDesc"/>
 
 
             <div>
@@ -43,15 +43,15 @@
 
                 <x-form.text-input forId="topSection_title" placeholder="Top Section Title"
                                    dataName="subFamilyPageInfo[topSection][title]"
-                                   dataValue="subFamilyPageInfo.topSection.title"/>
+                                   oldValue="subFamilyPageInfo.topSection.title"/>
 
                 <x-form.text-input forId="topSection_desc" placeholder="Top Section Description"
                                    dataName="subFamilyPageInfo[topSection][desc]"
-                                   dataValue="subFamilyPageInfo.topSection.desc"/>
+                                   oldValue="subFamilyPageInfo.topSection.desc"/>
 
                 <x-form.text-input forId="topSection_subtitle" placeholder="Top Section Subtitle"
                                    dataName="subFamilyPageInfo[topSection][subtitle]"
-                                   dataValue="subFamilyPageInfo.topSection.subtitle"/>
+                                   oldValue="subFamilyPageInfo.topSection.subtitle"/>
 
                 <section class="my-7 font-bold text-red-600">
                     <x-form.input labelText="Choose Audio" imageId="audioSection_audio"
@@ -64,11 +64,11 @@
 
                 <x-form.text-input forId="audioSection_title" placeholder="Audio Section Title"
                                    dataName="subFamilyPageInfo[audioSection][title]"
-                                   dataValue="subFamilyPageInfo.audioSection.title"/>
+                                   oldValue="subFamilyPageInfo.audioSection.title"/>
 
                 <x-form.text-input forId="audioSection_desc" placeholder="Audio Section Description"
                                    dataName="subFamilyPageInfo[audioSection][desc]"
-                                   dataValue="subFamilyPageInfo.audioSection.desc"/>
+                                   oldValue="subFamilyPageInfo.audioSection.desc"/>
 
                 <x-form.input labelText="Logo URL:" imageId="imageLogo" name="subFamilyPageInfo[audioSection][logo]">
                     <img id='imageLogo' width="200" height="150" class="object-cover border m-3 border-gray-200"/>
@@ -121,10 +121,10 @@
 
                 <x-form.text-input forId="reasonsToDrive_infoText_title" placeholder="Info Text Title"
                                    dataName="reasonsToDrive[infoText][title]"
-                                   dataValue="reasonsToDrive.infoText.title"/>
+                                   oldValue="reasonsToDrive.infoText.title"/>
 
                 <x-form.text-input forId="reasonsToDrive_infoText_desc" placeholder="Info Text Description"
-                                   dataName="reasonsToDrive[infoText][desc]" dataValue="reasonsToDrive.infoText.desc"/>
+                                   dataName="reasonsToDrive[infoText][desc]" oldValue="reasonsToDrive.infoText.desc"/>
             </div>
 
             <x-form.dynamic-text-inputs header="Reasons" divId="reasonsFields"
@@ -135,11 +135,11 @@
                 <h1 class="font-bold text-3xl my-2">Short Spec Info</h1>
 
                 <x-form.text-input forId="shortSpecInfo_info1" placeholder="Short Spec Info 1"
-                                   dataName="shortSpecInfo[info1]" dataValue="shortSpecInfo.info1"/>
+                                   dataName="shortSpecInfo[info1]" oldValue="shortSpecInfo.info1"/>
                 <x-form.text-input forId="shortSpecInfo_info2" placeholder="Short Spec Info 2"
-                                   dataName="shortSpecInfo[info2]" dataValue="shortSpecInfo.info2"/>
+                                   dataName="shortSpecInfo[info2]" oldValue="shortSpecInfo.info2"/>
                 <x-form.text-input forId="shortSpecInfo_info3" placeholder="Short Spec Info 3"
-                                   dataName="shortSpecInfo[info3]" dataValue="shortSpecInfo.info3"/>
+                                   dataName="shortSpecInfo[info3]" oldValue="shortSpecInfo.info3"/>
 
             </div>
 
@@ -152,7 +152,7 @@
                 </x-form.input>
 
                 <x-form.text-input forId="gallery_modelImage_alt" placeholder="Gallery Model Image Alt Text"
-                                   dataName="gallery[modelImage][alt]" dataValue="gallery.modelImage.alt"/>
+                                   dataName="gallery[modelImage][alt]" oldValue="gallery.modelImage.alt"/>
 
                 <x-form.input labelText="Gallery SubFamily Hero Video URL:" imageId="subFamVideo"
                               name="gallery[subFamilyHeroVideo][src]">
@@ -163,7 +163,7 @@
                 <x-form.text-input forId="gallery_subFamilyHeroVideo_alt"
                                    placeholder="Gallery SubFamily Hero Video Alt Text"
                                    dataName="gallery[subFamilyHeroVideo][alt]"
-                                   dataValue="gallery.subFamilyHeroVideo.alt"/>
+                                   oldValue="gallery.subFamilyHeroVideo.alt"/>
 
                 <x-form.input labelText="Gallery SubFamily Hero Image Mobile URL:" imageId="subFamHeroImage"
                               name="gallery[subFamilyHeroImageMobile][src]">
@@ -174,7 +174,7 @@
                 <x-form.text-input forId="gallery_subFamilyHeroImageMobile_alt"
                                    placeholder="Gallery SubFamily Hero Image Mobile Alt Text"
                                    dataName="gallery[subFamilyHeroImageMobile][alt]"
-                                   dataValue="gallery.subFamilyHeroImageMobile.alt"/>
+                                   oldValue="gallery.subFamilyHeroImageMobile.alt"/>
 
                 <x-form.input labelText="Gallery SubFamily Top Section Image URL:" imageId="subFamTopSectionImg"
                               name="gallery[subFamilyTopSectionImage][src]">
@@ -185,7 +185,7 @@
                 <x-form.text-input forId="gallery_subFamilyTopSectionImage_alt"
                                    placeholder="Gallery SubFamily Top Section Image Alt Text"
                                    dataName="gallery[subFamilyTopSectionImage][alt]"
-                                   dataValue="gallery.subFamilyTopSectionImage.alt"/>
+                                   oldValue="gallery.subFamilyTopSectionImage.alt"/>
 
                 <x-form.input labelText="Gallery SubFamily Top Section BG Image URL:" imageId="subFamTopSectionImage"
                               name="gallery[subFamilyTopSectionBGImage][src]">
@@ -196,7 +196,7 @@
                 <x-form.text-input forId="gallery_subFamilyTopSectionBGImage_alt"
                                    placeholder="Gallery SubFamily Top Section BG Image Alt Text"
                                    dataName="gallery[subFamilyTopSectionBGImage][alt]"
-                                   dataValue="gallery.subFamilyTopSectionBGImage.alt"/>
+                                   oldValue="gallery.subFamilyTopSectionBGImage.alt"/>
             </div>
 
             <div>
@@ -209,38 +209,50 @@
                 </x-form.input>
 
                 <x-form.text-input forId="accessory_infoText_title" placeholder="Accessory InfoText Title"
-                                   dataName="accessory[infoText][title]" dataValue="accessory.infoText.title"/>
+                                   dataName="accessory[infoText][title]" oldValue="accessory.infoText.title"/>
 
                 <x-form.text-input forId="accessory_infoText_desc" placeholder="Accessory InfoText Description"
-                                   dataName="accessory[infoText][desc]" dataValue="accessory.infoText.desc"/>
+                                   dataName="accessory[infoText][desc]" oldValue="accessory.infoText.desc"/>
 
                 <div>
                     <h1 class="font-bold text-3xl my-2">Accessory Types</h1>
                     <div class="dynamic-section" id="accessoryTypesFields">
-                        <div  class="m-3 border-2 rounded border-black p-8">
-                            <x-form.text-input forId="accessory_type_0_title" placeholder="Accessory Type Title" dataName="accessory[accessoryTypes][0][title]" dataValue="accessory.accessoryTypes.0.title"/>
+                        <div class="m-3 border-2 rounded border-black p-8">
+                            <x-form.text-input forId="accessory_type_0_title" placeholder="Accessory Type Title"
+                                               dataName="accessory[accessoryTypes][0][title]"
+                                               oldValue="accessory.accessoryTypes.0.title"/>
 
-                            <x-form.text-input forId="accessory_type_0_desc" placeholder="Accessory Type Description" dataName="accessory[accessoryTypes][0][desc]" dataValue="accessory.accessoryTypes.0.desc"/>
+                            <x-form.text-input forId="accessory_type_0_desc" placeholder="Accessory Type Description"
+                                               dataName="accessory[accessoryTypes][0][desc]"
+                                               oldValue="accessory.accessoryTypes.0.desc"/>
 
-                            <x-form.dynamic-text-inputs header="Accesory Type Items List" divId="accessoryType0ItemsList"
-                                                        dataId1="items0" dataLabel1="item Text" dataName="accessory[accessoryTypes][0][itemsList]"
-                                                        fieldClass="add-field" />
+                            <x-form.dynamic-text-inputs header="Accesory Type Items List"
+                                                        divId="accessoryType0ItemsList"
+                                                        dataId1="items0" dataLabel1="item Text"
+                                                        dataName="accessory[accessoryTypes][0][itemsList]"
+                                                        fieldClass="add-field"/>
 
                             <x-form.input labelText="Accesory Type Image 1 URL:" imageId="accessoryType0Image1Url"
                                           name="accessory[accessoryTypes][0][image1][src]">
                                 <img id='accessoryType0Image1Url' width="200" height="150"
-                                     class="object-cover border m-3 border-gray-200" />
+                                     class="object-cover border m-3 border-gray-200"/>
                             </x-form.input>
 
-                            <x-form.text-input forId="accessory_type_0_image1_alt" placeholder="Accessory Type Image 1 Alt Text" dataName="accessory[accessoryTypes][0][image1][alt]" dataValue="accessory.accessoryTypes.0.image1.alt"/>
+                            <x-form.text-input forId="accessory_type_0_image1_alt"
+                                               placeholder="Accessory Type Image 1 Alt Text"
+                                               dataName="accessory[accessoryTypes][0][image1][alt]"
+                                               oldValue="accessory.accessoryTypes.0.image1.alt"/>
 
                             <x-form.input labelText="Accesory Type Image 2 URL:" imageId="accessoryType0Image2Url"
                                           name="accessory[accessoryTypes][0][image2][src]">
                                 <img id='accessoryType0Image2Url' width="200" height="150"
-                                     class="object-cover border m-3 border-gray-200" />
+                                     class="object-cover border m-3 border-gray-200"/>
                             </x-form.input>
 
-                            <x-form.text-input forId="accessory_type_0_image2_alt" placeholder="Accessory Type Image 2 Alt Text" dataName="accessory[accessoryTypes][0][image2][alt]" dataValue="accessory.accessoryTypes.0.image2.alt"/>
+                            <x-form.text-input forId="accessory_type_0_image2_alt"
+                                               placeholder="Accessory Type Image 2 Alt Text"
+                                               dataName="accessory[accessoryTypes][0][image2][alt]"
+                                               oldValue="accessory.accessoryTypes.0.image2.alt"/>
 
                         </div>
                     </div>
@@ -249,188 +261,7 @@
 
             </div>
 
-
             <button type="submit" class="my-5 bg-lime-200 shadow rounded p-4">Submit</button>
-
         </form>
     </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <script>
-        $(document).ready(function () {
-
-            $('.add-field').click(function (e) {
-                e.preventDefault();
-                var section = $(this).prev('.dynamic-section');
-                var name = section.data('name')
-                var id = section.data('id1');
-                var label = section.data('label1');
-                addField(section, name, id, label);
-            });
-
-            function addField(section, name, id, label) {
-                var newIndex = section.children().length;
-                var newField = `
-                    <div>
-                    <label for="${id}_${newIndex}"
-                           class="block text-sm font-medium text-gray-700">${label.charAt(0).toUpperCase() + label.slice(1) + newIndex}:</label>
-                    <div class="">
-                        <input type="text" id="${id}_${newIndex}"
-                               name="${name}[${newIndex}]"
-                               class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                               placeholder="Enter ${label.charAt(0).toUpperCase() + label.slice(1)}">
-                    </div>
-                </div>`;
-
-                section.append(newField);
-            }
-
-
-            $('.add-two-fields').click(function (e) {
-                e.preventDefault();
-                var section = $(this).prev('.dynamic-section');
-                var name = section.data('name')
-                var id1 = section.data('id1');
-                var id2 = section.data('id2');
-                var label1 = section.data('label1');
-                var label2 = section.data('label2');
-                addTwoFields(section, name, id1, id2, label1, label2);
-            });
-
-            function addTwoFields(section, name, id1, id2, label1, label2) {
-                var newIndex = section.children().length;
-                var newField = `
-                    <div  class="mt-3">
-                    <label for="${id1}_${newIndex}"
-                           class="block text-sm font-medium text-gray-700">${label1.charAt(0).toUpperCase() + label1.slice(1)}:</label>
-                    <div class="">
-                        <input type="text" id="${id1}_${newIndex}"
-                               name="${name}[${newIndex}][${label1}]"
-                               class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                               placeholder="Enter ${label1.charAt(0).toUpperCase() + label1.slice(1)}">
-                    </div>
-                    <label for="${id2}_${newIndex}"
-                           class="block text-sm font-medium text-gray-700">${label2.charAt(0).toUpperCase() + label2.slice(1)}:</label>
-                    <div>
-                        <input type="text" id="${id2}_${newIndex}"
-                               name="${name}[${newIndex}][${label2}]"
-                               class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                               placeholder="Enter ${label2.charAt(0).toUpperCase() + label2.slice(1)}">
-                    </div>
-                </div>`;
-
-
-                section.append(newField);
-            }
-
-            $('.add-two-fields-and-img').click(function (e) {
-                e.preventDefault();
-                var section = $(this).prev('.dynamic-section');
-                var name = section.data('name')
-                var id1 = section.data('id1');
-                var id2 = section.data('id2');
-                var label1 = section.data('label1');
-                var label2 = section.data('label2');
-                var imgLabel = section.data('img-label');
-                addTwoFieldsAndImg(section, name, id1, id2, label1, label2, imgLabel);
-            });
-
-            function addTwoFieldsAndImg(section, name, id1, id2, label1, label2, imgLabel) {
-                var newIndex = section.children().length;
-                var newField = `
-                    <div>
-                    <label for="${id1}_${newIndex}"
-                           class="block text-sm font-medium text-gray-700">${label1.charAt(0).toUpperCase() + label1.slice(1)}:</label>
-                    <div class="">
-                        <input type="text" id="${id1}_${newIndex}"
-                               name="${name}[${newIndex}][${label1}]"
-                               class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                               placeholder="Enter ${label1.charAt(0).toUpperCase() + label1.slice(1)}">
-                    </div>
-                    <label for="${id2}_${newIndex}"
-                           class="block text-sm font-medium text-gray-700">${label2.charAt(0).toUpperCase() + label2.slice(1)}:</label>
-                    <div>
-                        <input type="text" id="${id2}_${newIndex}"
-                               name="${name}[${newIndex}][${label2}]"
-                               class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                               placeholder="Enter ${label2.charAt(0).toUpperCase() + label2.slice(1)}">
-                    </div>
-                    <x-form.input labelText="${imgLabel}:" imageId="${name}_${newIndex}"
-                    name="${name}[${newIndex}][image]">
-                    <img id='${name}_${newIndex}' width="200" height="150"
-                        class="object-cover border m-3 border-gray-200" />
-                    </x-form.input>
-                </div>
-                `;
-
-                section.append(newField);
-            }
-
-
-
-            $('.add-accessory-type').click(function (e) {
-                e.preventDefault();
-                var section = $(this).prev('.dynamic-section');
-                addAccessoryField(section);
-            });
-
-            function addAccessoryField(section) {
-                var newIndex = section.children().length;
-                var newField = `
-                <div  class="m-3 border-2 rounded border-black p-8">
-                    <x-form.text-input forId="accessory_type_${newIndex}_title" placeholder="Accessory Type ${newIndex} Title" dataName="accessory[accessoryTypes][${newIndex}][title]" dataValue="accessory.accessoryTypes.${newIndex}.title"/>
-
-                    <x-form.text-input forId="accessory_type_${newIndex}_desc" placeholder="Accessory Type ${newIndex} Description" dataName="accessory[accessoryTypes][${newIndex}][desc]" dataValue="accessory.accessoryTypes.${newIndex}.desc"/>
-
-                    <x-form.dynamic-text-inputs header="Accesory Type ${newIndex} Items List" divId="accessoryType${newIndex}ItemsList"
-                                        dataId1="items${newIndex}" dataLabel1="item Text" dataName="accessory[accessoryTypes][${newIndex}][itemsList]"
-                                        fieldClass="add-field" />
-
-                    <x-form.input labelText="Accesory Type ${newIndex} Image 1 URL:" imageId="accessoryType${newIndex}Image1Url"
-                                    name="accessory[accessoryTypes][${newIndex}][image1][src]">
-                            <img id='accessoryType${newIndex}Image1Url' width="200" height="150"
-                                class="object-cover border m-3 border-gray-200" />
-                    </x-form.input>
-
-                    <x-form.text-input forId="accessory_type_${newIndex}_image1_alt" placeholder="Accessory Type ${newIndex} Image 1 Alt Text" dataName="accessory[accessoryTypes][${newIndex}][image1][alt]" dataValue="accessory.accessoryTypes.${newIndex}.image1.alt"/>
-
-                    <x-form.input labelText="Accesory Type ${newIndex} Image 2 URL:" imageId="accessoryType${newIndex}Image2Url"
-                                    name="accessory[accessoryTypes][${newIndex}][image2][src]">
-                            <img id='accessoryType${newIndex}Image2Url' width="200" height="150"
-                                class="object-cover border m-3 border-gray-200" />
-                    </x-form.input>
-
-                    <x-form.text-input forId="accessory_type_${newIndex}_image2_alt" placeholder="Accessory Type ${newIndex} Image 2 Alt Text" dataName="accessory[accessoryTypes][${newIndex}][image2][alt]" dataValue="accessory.accessoryTypes.${newIndex}.image2.alt"/>
-
-                </div>`;
-
-
-                section.append(newField);
-
-                section.find('.add-field').click(function (e) {
-                    e.preventDefault();
-                    var itemListSection = $(this).prev('.dynamic-section');
-                    var name = itemListSection.data('name');
-                    var id = itemListSection.data('id1');
-                    var label = itemListSection.data('label1');
-                    addField(itemListSection, name, id, label);
-                });
-                addFieldEvent(section);
-            }
-
-            // Function to attach event listener to dynamically added item's "Add Field" button
-            function addFieldEvent(section) {
-                section.find('.add-field').off('click'); // Remove previous click event handlers
-                section.find('.add-field').click(function (e) {
-                    e.preventDefault();
-                    var itemListSection = $(this).prev('.dynamic-section');
-                    var name = itemListSection.data('name');
-                    var id = itemListSection.data('id1');
-                    var label = itemListSection.data('label1');
-                    addField(itemListSection, name, id, label);
-                });
-            }
-        });
-    </script>
 </x-app-layout>

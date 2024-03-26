@@ -28,16 +28,15 @@
             @endif
 
 
+            <x-form.input labelText="Video to edit:" imageId="video" name="video">
+                <video id='video' src="{{ $mainCarousels->video }}" muted controls autoplay width="400" height="150" class="object-cover border m-3 border-gray-200" />
+            </x-form.input>
+
 
             <x-form.input labelText="Profile image to edit:" imageId="image" name="image">
                 <img id="image" src="{{ $mainCarousels->image }}" width="400" height="150" class="object-cover border m-3 border-gray-200" />
             </x-form.input>
 
-
-
-            <x-form.input labelText="Video to edit:" imageId="video" name="video">
-                <video id='video' src="{{ $mainCarousels->video }}" muted controls autoplay width="400" height="150" class="object-cover border m-3 border-gray-200" />
-            </x-form.input>
 
             <x-form.input labelText="Mobile image to edit:" imageId="imageMobile"
                           name="imageMobile">
@@ -45,35 +44,15 @@
             </x-form.input>
 
 
+            <x-form.text-input forId="title" placeholder="Title" dataName="title" oldValue="title" dataValue="{{ $mainCarousels->title }}"/>
 
+            <x-form.text-input forId="desc" placeholder="Description" dataName="desc" oldValue="desc" dataValue="{{ $mainCarousels->desc }}"/>
 
-            <label for="title">Title:</label>
-            <input type="text" name="title" id="title" value="{{ old('title', $mainCarousels->title) }}">
+            <x-form.text-input forId="link1Url" placeholder="Link 1 URL" dataName="link1[url]" oldValue="link1.url" dataValue="{{ $mainCarousels->link1['url'] }}"/>
+            <x-form.text-input forId="link1Text" placeholder="Link 1 Text" dataName="link1[text]" oldValue="link1.text" dataValue="{{ $mainCarousels->link1['text'] }}"/>
 
-
-            <label for="desc">Description:</label>
-            <textarea name="desc" id="desc">{{  $mainCarousels->desc }}</textarea>
-
-
-            <label for="link1[url]">Link 1 URL:</label>
-            <input type="text" name="link1[url]" id="link1[url]"
-                value="{{  $mainCarousels->link1['url'] }}">
-
-
-            <label for="link1[text]">Link 1 Text:</label>
-            <input type="text" name="link1[text]" id="link1[text]"
-                value="{{  $mainCarousels->link1['text'] }}">
-
-
-            <label for="link2[url]">Link 2 URL:</label>
-            <input type="text" name="link2[url]" id="link2[url]"
-                value="{{  $mainCarousels->link2['url'] }}">
-
-
-            <label for="link2[text]">Link 2 Text:</label>
-            <input type="text" name="link2[text]" id="link2[text]"
-                value="{{ $mainCarousels->link2['text'] }}">
-
+            <x-form.text-input forId="link2Url" placeholder="Link 2 URL" dataName="link2[url]" oldValue="link2.url" dataValue="{{ $mainCarousels->link2['url'] }}"/>
+            <x-form.text-input forId="link2Text" placeholder="Link 2 Text" dataName="link2[text]" oldValue="link2.text" dataValue="{{ $mainCarousels->link2['text'] }}"/>
 
             <button type="submit" class="my-5 bg-lime-200 shadow rounded p-4">Update</button>
         </form>
