@@ -12,36 +12,36 @@
             @csrf
             @method('PUT')
             <label for="title">Title:</label>
-            <input type="text" name="title" value="{{ old('title', $moto->title) }}" required>
+            <input type="text" name="title" value="{{ old('title', $moto->title) }}" >
 
 
             <label for="model">Model:</label>
-            <input type="text" name="model" value="{{ old('model', $moto->model) }}" required>
+            <input type="text" name="model" value="{{ old('model', $moto->model) }}" >
 
             <label for="category">Category:</label>
-            <input type="text" name="category" value="{{ old('category', $moto->category) }}" required>
+            <input type="text" name="category" value="{{ old('category', $moto->category) }}" >
 
 
             <label for="subFamilyCategory">Sub Family Category:</label>
             <input type="text" name="subFamilyCategory"
-                value="{{ old('subFamilyCategory', $moto->subFamilyCategory) }}" required>
+                value="{{ old('subFamilyCategory', $moto->subFamilyCategory) }}" >
 
             <label for="edition">Edition:</label>
-            <input type="text" name="edition" value="{{ old('edition', $moto->edition) }}" required>
+            <input type="text" name="edition" value="{{ old('edition', $moto->edition) }}" >
 
             <label for="price">Price:</label>
-            <input type="text" name="price" value="{{ old('price', $moto->price) }}" required>
+            <input type="text" name="price" value="{{ old('price', $moto->price) }}" >
 
             <label for="youtubeVideo">Promo YouTube Video</label>
             <input type="text" name="gallery[promoYoutubeVideo][src]"
                 value="{{ old('gallery.promoYoutubeVideo.src', $moto->gallery['promoYoutubeVideo']['src'] ?? '') }}"
-                required>
+                >
 
 
             <label for="youtubeVideo">Promo YouTube Alt</label>
             <input type="text" name="gallery[promoYoutubeVideo][alt]"
                 value="{{ old('gallery.promoYoutubeVideo.alt', $moto->gallery['promoYoutubeVideo']['alt'] ?? '') }}"
-                required>
+                >
 
 
 
@@ -55,7 +55,7 @@
             <label for="gallery[modelImage][alt]">Gallery Image Alt:</label>
             <input type="text" name="gallery[modelImage][alt]"
                 value="{{ old('gallery.modelImage.alt', isset($moto) ? $moto->gallery['modelImage']['alt'] : '') }}"
-                required>
+                >
 
 
 

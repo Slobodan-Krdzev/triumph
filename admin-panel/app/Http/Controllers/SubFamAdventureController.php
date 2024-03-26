@@ -14,7 +14,6 @@ class SubFamAdventureController extends Controller
     {
         $subFamData = SubFamAdventure::findOrFail($id);
         return view('layouts.edit-adventure', compact('subFamData'));
-        // return response()->json($subFamData);
     }
 
     public function index(Request $request)

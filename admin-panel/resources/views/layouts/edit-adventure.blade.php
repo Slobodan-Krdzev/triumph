@@ -17,37 +17,7 @@
         @endif
         <h1 class="font-bold text-4xl text-end">Edit Sub-Family of <span
                 class="text-red-500 capitalize">{{ $subFamData->subFamilyName }}</span></h1>
-        {{-- <div>
-            <h2>{{ $subFamData['subFamilyName'] }}</h2>
-            <p>Family Type: {{ $subFamData['familyType'] }}</p>
-            <p>Price: {{ $subFamData['price'] }}</p>
-            <p>Title: {{ $subFamData['title'] }}</p>
-            <p>URL: {{ $subFamData['url'] }}</p>
 
-            <h3>Specifications</h3>
-            <ul>
-                @foreach ($subFamData['specs'] as $spec)
-                    <li>{{ $spec['desc'] }}: {{ $spec['data'] }}</li>
-                @endforeach
-            </ul>
-
-            <h3>Sub Family Page Info</h3>
-            <p>Description: {{ $subFamData['subFamilyPageInfo']['audioSection']['desc'] }}</p>
-            <!-- Continue accessing other properties -->
-
-            <!-- Display gallery images -->
-            <h3>Gallery</h3>
-            <!-- Add your code to display gallery images here -->
-            <img src="{{ $subFamData['subFamilyPageInfo']['audioSection']['logo'] }}" width="200px" alt="">
-            @isset($subFamData['subFamilyPageInfo']['audioSection']['logo'])
-                <img src="{{ $subFamData['subFamilyPageInfo']['audioSection']['logo'] }}" width="200px" alt="">
-                <img src="/storage{{ $subFamData['subFamilyPageInfo']['audioSection']['logo'] }}" width="200px"
-                    alt="">
-            @else
-                <img src="{{ asset('images/logo.png') }}" width="200px" alt="">
-            @endisset
-
-        </div> --}}
 
 
         <form action="{{ route('update-sub-adventure', $subFamData->id) }}" method="POST" class="flex flex-col"
@@ -99,8 +69,6 @@
 
 
             <h1 class="font-bold text-3xl my-2">Sub Family Page Info:</h1>
-
-
             @if (isset($subFamData->subFamilyPageInfo['service']) && is_array($subFamData->subFamilyPageInfo['service']))
                 <h1 class="font-bold my-2 text-red-600">Service</h1>
                 @foreach ($subFamData->subFamilyPageInfo['service'] as $index => $service)
@@ -325,7 +293,6 @@
                         <img id='reasonsImage{{ $index }}' src="/storage/{{ $reason['image'] ?? '' }}"
                             width="600" height="150" class="object-cover border m-3 border-gray-200" />
                     </x-form.input>
-
                 @endif
             @endforeach
 
@@ -480,8 +447,8 @@
             <x-form.input labelText="Model Image Source:" imageId="modelImageSource"
                 name="gallery[subFamilyTopSectionImage][src]">
                 <img id='modelImageSource'
-                    src="/storage/{{ $subFamData->gallery['subFamilyTopSectionImage']['src'] ?? '' }}" width="400"
-                    height="150" class="object-cover border m-3 border-gray-200" />
+                    src="/storage/{{ $subFamData->gallery['subFamilyTopSectionImage']['src'] ?? '' }}"
+                    width="400" height="150" class="object-cover border m-3 border-gray-200" />
             </x-form.input>
 
 
