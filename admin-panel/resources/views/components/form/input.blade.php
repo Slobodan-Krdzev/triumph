@@ -1,6 +1,6 @@
 @props(['labelText','imageId'])
 
-<div class="flex items-center space-x-6">
+<div class="flex items-center space-x-6 mt-3">
     <label for="{{ $imageId }}" class="block">
         <span>{{ $labelText ?? 'Choose Image:' }}</span>
         <input {{ $attributes->merge(['class' => 'block w-full text-sm text-slate-500

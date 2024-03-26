@@ -22,6 +22,7 @@ use App\Http\Controllers\SubFamAdventureController;
 use App\Models\FamClassics;
 use App\Models\Families;
 use App\Models\FamOffRoad;
+use App\Models\Motorcycle;
 use App\Models\Promo;
 use App\Models\SubFamAdventure;
 use Illuminate\Support\Facades\Route;
@@ -151,5 +152,6 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
 
 require __DIR__.'/auth.php';
