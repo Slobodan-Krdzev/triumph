@@ -125,9 +125,6 @@ body {
   background-color: rgba(88, 88, 88, 0.537);
 }
 
-.border {
-  border: px solid red;
-}
 
 .border-bottom {
   border-bottom: 3px solid var(--secondary-color);

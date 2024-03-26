@@ -319,7 +319,7 @@ export const locations = [
   {
     id: 52,
     region: "Europe",
-    country: "grece",
+    country: "greece",
     link: "https://www.triumphmotorcycles.gr",
   },
   {
