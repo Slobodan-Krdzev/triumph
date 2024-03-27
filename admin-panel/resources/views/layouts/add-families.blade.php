@@ -36,10 +36,6 @@
             <x-form.text-input forId="youtubeVideo" placeholder="YouTube Video URL" dataName="youtubeVideo"
                                oldValue="youtubeVideo"/>
 
-            <x-form.text-input forId="shortDesc" placeholder="Short Description" dataName="shortDesc"
-                               oldValue="shortDesc"/>
-
-
             <div>
                 <h1 class="font-bold text-3xl my-2">Sub Family Page Info - Top Section</h1>
 

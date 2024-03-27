@@ -111,8 +111,14 @@ class SubFamAdventureController extends Controller
         $data['subFamilyPageInfo']['audioSection']['logo'] = ImageStorage::updateFile($request, 'subFamilyPageInfo.audioSection.logo', 'subfamilies/', $title, '/logo', $subFamAdventure['subFamilyPageInfo']['audioSection']['logo'], $subFamAdventure->subFamilyName);
 
 
-        for ($i = 0; $i < count($request->input('grayCarousell')); $i++) {
-            $data['grayCarousell'][$i]['image'] = ImageStorage::updateFile($request, 'grayCarousell.' . $i . '.image', 'subfamilies/', $title, '/grayCarousell', $subFamAdventure['grayCarousell'][$i]['image'], $subFamAdventure->subFamilyName);
+        if ($request->has('grayCarousell')) {
+            $grayCarousellData = $request->input('grayCarousell');
+            for ($i = 0; $i < count($grayCarousellData); $i++) {
+                $imageKey = 'grayCarousell.' . $i . '.image';
+                if(isset($grayCarousellData[$i]) && isset($grayCarousellData[$i]['image'])) {
+                    $data['grayCarousell'][$i]['image'] = ImageStorage::updateFile($request, $imageKey, 'subfamilies/', $title, '/grayCarousell', $subFamAdventure['grayCarousell'][$i]['image'], $subFamAdventure->subFamilyName);
+                }
+            }
         }
 
         $data['reasonsToDrive']['banner']['image'] = ImageStorage::updateFile($request, 'reasonsToDrive.banner.image', 'subfamilies/', $title, '/reasonsToDriveBanner', $subFamAdventure['reasonsToDrive']['banner']['image'], $subFamAdventure->subFamilyName);
@@ -127,15 +133,15 @@ class SubFamAdventureController extends Controller
 
         $data['accessory']['banner']['image'] = ImageStorage::updateFile($request, 'accessory.banner.image', 'subfamilies/', $title, '/accessoryBannerImage', $subFamAdventure['accessory']['banner']['image'], $subFamAdventure->subFamilyName);
 
+        if ($request->has('accessory.accessoryTypes')) {
+            foreach ($request->accessory['accessoryTypes'] as $key => $accessoryType) {
+                $data['accessory']['accessoryTypes'][$key]['image1']['src'] = ImageStorage::updateFile($request, 'accessory.accessoryTypes.' . $key . '.image1.src', 'subfamilies/', $title, '/accessoryTypesImages', $subFamAdventure['accessory']['accessoryTypes'][$key]['image1']['src'], $subFamAdventure->subFamilyName);
 
-        foreach ($request->accessory['accessoryTypes'] as $key => $accessoryType) {
-            $data['accessory']['accessoryTypes'][$key]['image1']['src'] = ImageStorage::updateFile($request, 'accessory.accessoryTypes.' . $key . '.image1.src', 'subfamilies/', $title, '/accessoryTypesImages', $subFamAdventure['accessory']['accessoryTypes'][$key]['image1']['src'], $subFamAdventure->subFamilyName);
-
-            $data['accessory']['accessoryTypes'][$key]['image2']['src'] = ImageStorage::updateFile($request, 'accessory.accessoryTypes.' . $key . '.image2.src', 'subfamilies/', $title, '/accessoryTypesImages', $subFamAdventure['accessory']['accessoryTypes'][$key]['image2']['src'], $subFamAdventure->subFamilyName);
+                $data['accessory']['accessoryTypes'][$key]['image2']['src'] = ImageStorage::updateFile($request, 'accessory.accessoryTypes.' . $key . '.image2.src', 'subfamilies/', $title, '/accessoryTypesImages', $subFamAdventure['accessory']['accessoryTypes'][$key]['image2']['src'], $subFamAdventure->subFamilyName);
+            }
         }
 
         $data['gallery']['subFamilyHeroVideo']['src'] = ImageStorage::updateFile($request, 'gallery.subFamilyHeroVideo.src', 'subfamilies/', $title, '/galleryVideo', $subFamAdventure['gallery']['subFamilyHeroVideo']['src'], $subFamAdventure->subFamilyName);
-
 
 
         if (Str::slug($request->subFamilyName) != Str::slug($subFamAdventure->subFamilyName)) {
@@ -164,7 +170,7 @@ class SubFamAdventureController extends Controller
             $newGalleryVideo = 'subFamilies/' . $newTitle . '/galleryVideo';
 
             $grayCarousell = 'subFamilies/' . $oldTitle . '/grayCarousell ';
-            $newGrayCarousell  = 'subFamilies/' . $newTitle . '/grayCarousell ';
+            $newGrayCarousell = 'subFamilies/' . $newTitle . '/grayCarousell ';
 
             $logo = 'subFamilies/' . $oldTitle . '/logo';
             $newLogo = 'subFamilies/' . $newTitle . '/logo';
@@ -271,13 +277,11 @@ class SubFamAdventureController extends Controller
         }
 
 
-
         $subFamAdventure->update($data);
 
 
         return redirect()->route('edit-sub-fam', ['id' => $id])->with('success', 'Your data has been updated successfully.');
     }
-
 
 
     public function getSubFam()
