@@ -48,7 +48,7 @@ const CardLinkItem = ({ title, image, text, url, desc }: CardLinkItemProps) => {
 
       {desc && <p className="mb-8">{desc}</p>}
 
-      <p className="lg:text-base text-sm font-semibold capitalize flex gap-2 items-center">
+      <p className="lg:text-base text-sm font-semibold  flex gap-2 items-center">
         {text} <FontAwesomeIcon icon={faArrowRight} />
       </p>
     </Link>

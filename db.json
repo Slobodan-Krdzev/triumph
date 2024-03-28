@@ -13545,117 +13545,6 @@
       ]
     },
     {
-      "id": 58,
-      "title": "Tiger 900 Rally",
-      "model": "tiger-900-rally",
-      "category": "adventure",
-      "subFamilyCategory": "tiger-900",
-      "edition": "adventure",
-      "price": 14990,
-
-      "gallery": {
-        "modelImage": {
-          "src": "/images/adventure/tiger900Rally/tiger900RallyWhite.png",
-          "alt": "Tiger 900 Rally"
-        }
-      },
-      "bikeCollorPalletteGallery": {
-        "default": "/images/adventure/tiger900Rally/tiger900RallyWhite.png",
-        "color1": "/images/adventure/tiger900Rally/tiger900RallyWhite.png",
-        "color1Reversed": "/images/adventure/tiger900Rally/tiger900RallyWhiteReversed.png",
-        "color2": "/images/adventure/tiger900Rally/tiger900RallySandstorm.png",
-        "color2Reversed": "/images/adventure/tiger900Rally/tiger900RallySandstormReversed.png",
-        "color3": "/images/adventure/tiger900Rally/tiger900RallyKhaki.png",
-        "color3Reversed": "/images/adventure/tiger900Rally/tiger900RallyKhakiReversed.png"
-      },
-      "customizationColors": [
-        {
-          "colorName": "Pure White",
-          "price": null,
-          "image": "/images/custom-collors/pureWhite.jpg",
-          "colorCode": "color1"
-        },
-        {
-          "colorName": "Sandstorm",
-          "price": 200,
-          "image": "/images/custom-collors/sandstorm.jpg",
-          "colorCode": "color2"
-        },
-        {
-          "colorName": "Matt Khaki",
-          "price": 200,
-          "image": "/images/custom-collors/mattKhaki.jpg",
-          "colorCode": "color3"
-        }
-      ],
-      "bikePageCarousell": [
-        {
-          "title": "7‘ Full-Color TFT Дисплеј",
-          "desc": "Овој „user-friendly“ 7 инчен TFT екран ги понудува сите функционалност на овој мотор и видливи ги презентира пред својот возач.",
-          "image": "/images/adventure/tiger900Rally/tiger900RallyBikeCaro1.jpg"
-        },
-        {
-          "title": "Премиум Showa Суспензија",
-          "desc": "Напред: Showa 45mm USD Cartridge вилушка (244mm travel). Назад: Showa gas 230mm.",
-          "image": "/images/adventure/tiger900Rally/tiger900RallyBikeCaro2.avif"
-        },
-        {
-          "title": "Оптимизиран ABS и Систем за Пролизгување",
-          "desc": "Оптимизираниот систем за контрола на тракцијата за исклучување постојано го пресметува аголот на нагиб на моторот за да обезбеди оптимална брзина на лизгање и контрола на вртежниот момент. Може да се вклучи или исклучи во секој момент.",
-          "image": "/images/adventure/tiger900Rally/tiger900RallyBikeCaro3.avif"
-        },
-        {
-          "title": "Brembo Stylema Сопирачки",
-          "desc": "Brembo Stylema сопирачките се лесни и компактни и се парирани со високо перформатни клешти.",
-          "image": "/images/adventure/tiger900Rally/tiger900RallyBikeCaro4.avif"
-        },
-        {
-          "title": "Жични Tubuless Тркала",
-          "desc": "Жичните тркала со жичи монтирани странично се одличен избор за off-road авантури.",
-          "image": "/images/adventure/tiger900Rally/tiger900RallyBikeCaro5.avif"
-        },
-        {
-          "title": "LED - насекаде",
-          "desc": "Препознатлива LED расвета со LED предно, задно светло и трепкачи.",
-          "image": "/images/adventure/tiger900Rally/tiger900RallyBikeCaro6.avif"
-        },
-        {
-          "title": "Греачи на Рачки",
-          "desc": "Перфектени за возење во секакви времеснски услови и дистанци. Уживајте во топлината, комоцијата и контролата со овие греачи кои лесно се вклучуваат и исклучуваат со допир на компче на воланот.",
-          "image": "/images/adventure/tiger900Rally/tiger900RallyBikeCaro7.avif"
-        },
-        {
-          "title": "20 литарски резервоар",
-          "desc": "20 литарскиот резервоар на Tiger 900 Rally дозволува уште повеќе време поминато на моторот отколку на бензиските станици.",
-          "image": "/images/adventure/tiger900Rally/tiger900RallyBikeCaro8.avif"
-        },
-        {
-          "title": "Четири Возачки Програми",
-          "desc": "Персонализирајте ја агресивноста на гаста, ABS системот и системот за пролизгување по ваши преференци со модифицирање на неколкуте модови на работа на моторот - Rain, Road, Sport & Off-Road.",
-          "image": "/images/adventure/tiger900Rally/tiger900RallyBikeCaro9.avif"
-        },
-        {
-          "title": "Квачило - Assisted Slip",
-          "desc": "Памаетното квачило ви овозможува лесно, прецизно и брзо менување на степенот на пренос без користење на квачилото.",
-          "image": "/images/adventure/tiger900Rally/tiger900RallyBikeCaro10.avif"
-        },
-        {
-          "title": "Темпомат",
-          "desc": "Електронскиот темпомат овозможува одмор на вашата дланка и уште повисоко ниво на комфорт и помала потрошувачка.",
-          "image": "/images/adventure/tiger900Rally/tiger900RallyBikeCaro11.avif"
-        }
-      ],
-      "shortSpecInfo": {
-        "info1": "660cc Triple Motor",
-        "info2": "Лидер во категоријата",
-        "info3": "Прилагодлива 'Showa' суспензија"
-      },
-      "subFamilyPromo": {
-        "title": "TIGER 900 Rally",
-        "desc": "Софистициран, со одлични перформанси и способност да ве однесе каде и да посакате. "
-      }
-    },
-    {
       "id": 59,
       "title": "Tiger 1200 GT",
       "model": "tiger-1200-gt",
@@ -14414,15 +14303,6 @@
       "desc": "Дизајниран за авантури по асфалт и комфорт, Tiger 900 GT серијата е фокусирана на возачот и нуди многу опрема и технологија на располагање.",
       "image": "/images/adventure/adventurePromoTiger900Gt.avif",
       "btnBlack": false
-    },
-    {
-      "id": 4,
-      "category": "adventure",
-      "title": "TIGER 900 RALLY",
-      "subFamilyType": "tiger-900-rally",
-      "desc": "Возбудлив Tiger серија, дизајнирана за максимално off-road доживување, комфорт и исклучително врвна контрола врз моторот со погон од најмоќниот три-цилиндричен Triumph мотор.",
-      "image": "/images/adventure/adventurePromoTiger900Rally.avif",
-      "btnBlack": true
     },
     {
       "id": 5,

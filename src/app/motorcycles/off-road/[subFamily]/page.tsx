@@ -54,7 +54,7 @@ const OffRoadSubFamilyPage = async ({ params }: any) => {
         </section>
 
         <section className="bg-white py-8 text-center px-4">
-          <SectionTitleH2 text={"Новата Daytona 660"} color={"dark"} />
+          <SectionTitleH2 text={"Новата TF 205-X Off Road Серија"} color={"dark"} />
           <BikeListingNoSlider bikes={bikes} configureLink={true} />
         </section>
       </>
