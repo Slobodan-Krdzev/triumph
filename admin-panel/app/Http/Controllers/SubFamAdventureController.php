@@ -103,21 +103,20 @@ class SubFamAdventureController extends Controller
 
 
         $title = Str::slug($request->subFamilyName);
-        $storage = Storage::disk('public');
-
 
         $data['subFamilyPageInfo']['audioSection']['audio'] = ImageStorage::updateFile($request, 'subFamilyPageInfo.audioSection.audio', 'subfamilies/', $title, '/audio', $subFamAdventure['subFamilyPageInfo']['audioSection']['audio'], $subFamAdventure->subFamilyName);
 
         $data['subFamilyPageInfo']['audioSection']['logo'] = ImageStorage::updateFile($request, 'subFamilyPageInfo.audioSection.logo', 'subfamilies/', $title, '/logo', $subFamAdventure['subFamilyPageInfo']['audioSection']['logo'], $subFamAdventure->subFamilyName);
 
+        if ($request->has('reasonsToDrive.reasons')) {
+            foreach ($request->reasonsToDrive['reasons'] as $key => $reasons) {
+                $data['reasonsToDrive']['reasons'][$key]['image'] = ImageStorage::updateFile($request, 'reasonsToDrive.reasons.' . $key . '.image', 'subfamilies/', $title, '/reasonsToDriveReasons', $subFamAdventure['reasonsToDrive']['reasons'][$key]['image'], $subFamAdventure->subFamilyName);
+            }
+        }
 
         if ($request->has('grayCarousell')) {
-            $grayCarousellData = $request->input('grayCarousell');
-            for ($i = 0; $i < count($grayCarousellData); $i++) {
-                $imageKey = 'grayCarousell.' . $i . '.image';
-                if(isset($grayCarousellData[$i]) && isset($grayCarousellData[$i]['image'])) {
-                    $data['grayCarousell'][$i]['image'] = ImageStorage::updateFile($request, $imageKey, 'subfamilies/', $title, '/grayCarousell', $subFamAdventure['grayCarousell'][$i]['image'], $subFamAdventure->subFamilyName);
-                }
+            foreach ($request->grayCarousell as $key => $carousel) {
+                $data['grayCarousell'][$key]['image'] = ImageStorage::updateFile($request, 'grayCarousell.' . $key . '.image', 'subfamilies/', $title, '/grayCarousell', $subFamAdventure['grayCarousell'][$key]['image'], $subFamAdventure->subFamilyName);
             }
         }
 
@@ -169,8 +168,11 @@ class SubFamAdventureController extends Controller
             $galleryVideo = 'subFamilies/' . $oldTitle . '/galleryVideo';
             $newGalleryVideo = 'subFamilies/' . $newTitle . '/galleryVideo';
 
-            $grayCarousell = 'subFamilies/' . $oldTitle . '/grayCarousell ';
-            $newGrayCarousell = 'subFamilies/' . $newTitle . '/grayCarousell ';
+            $reasonsToDriveReasons = 'subFamilies/' . $oldTitle . '/reasonsToDriveReasons';
+            $newReasonsToDriveReasons = 'subFamilies/' . $newTitle . '/reasonsToDriveReasons';
+
+            $grayCarousell = 'subFamilies/' . $oldTitle . '/grayCarousell';
+            $newGrayCarousell = 'subFamilies/' . $newTitle . '/grayCarousell';
 
             $logo = 'subFamilies/' . $oldTitle . '/logo';
             $newLogo = 'subFamilies/' . $newTitle . '/logo';
@@ -183,6 +185,21 @@ class SubFamAdventureController extends Controller
 
             Storage::disk('public')->makeDirectory('subFamilies/' . $newTitle);
 
+            $files = Storage::disk('public')->files($grayCarousell);
+            if (!empty($files)) {
+                foreach ($files as $file) {
+                    $filename = pathinfo($file, PATHINFO_BASENAME);
+                    Storage::disk('public')->move($file, $newGrayCarousell . '/' . $filename);
+                }
+            }
+
+            $files = Storage::disk('public')->files($reasonsToDriveReasons);
+            if (!empty($files)) {
+                foreach ($files as $file) {
+                    $filename = pathinfo($file, PATHINFO_BASENAME);
+                    Storage::disk('public')->move($file, $newReasonsToDriveReasons . '/' . $filename);
+                }
+            }
 
             $files = Storage::disk('public')->files($accessoryBannerImage);
             if (!empty($files)) {
@@ -193,7 +210,6 @@ class SubFamAdventureController extends Controller
             }
 
             $files = Storage::disk('public')->files($accessoryTypesImages);
-            //ddd($files);
             if (!empty($files)) {
                 foreach ($files as $file) {
                     $filename = pathinfo($file, PATHINFO_BASENAME);
@@ -241,14 +257,6 @@ class SubFamAdventureController extends Controller
                 }
             }
 
-            $files = Storage::disk('public')->files($grayCarousell);
-            if (!empty($files)) {
-                foreach ($files as $file) {
-                    $filename = pathinfo($file, PATHINFO_BASENAME);
-                    Storage::disk('public')->move($file, $newGrayCarousell . '/' . $filename);
-                }
-            }
-
             $files = Storage::disk('public')->files($logo);
             if (!empty($files)) {
                 foreach ($files as $file) {
@@ -275,7 +283,6 @@ class SubFamAdventureController extends Controller
 
             Storage::disk('public')->deleteDirectory('subFamilies/' . $oldTitle);
         }
-
 
         $subFamAdventure->update($data);
 

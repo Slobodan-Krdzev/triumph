@@ -7,169 +7,172 @@
 
             @if (session('success'))
                 <div class="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400"
-                    role="alert">
+                     role="alert">
                     {{ session('success') }}
                 </div>
             @endif
             <h1 class="font-bold text-3xl my-2">Base Info</h1>
 
-            <label for="title">Title:</label>
-            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="title">
+            <x-form.text-input forId="title" placeholder="Title" dataName="title" oldValue="title"/>
 
-            <label for="model">Model:</label>
-            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="model">
+            <x-form.text-input forId="model" placeholder="Model" dataName="model" oldValue="model"/>
 
-            <label for="model">Category:</label>
-            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="category">
+            <x-form.text-input forId="category" placeholder="Category" dataName="category" oldValue="category"/>
 
-            <label for="model">Sub Family Category:</label>
-            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="subFamilyCategory">
+            <x-form.text-input forId="subFamilyCategory" placeholder="Sub Family Category" dataName="subFamilyCategory"
+                               oldValue="subFamilyCategory"/>
 
-            <label for="model">Price:</label>
-            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="price">
+            <x-form.text-input forId="edition" placeholder="Edition" dataName="edition" oldValue="edition"/>
 
-            <label for="model">Edition</label>
-            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="edition">
+            <x-form.text-input forId="price" placeholder="Price" dataName="price" oldValue="price"/>
 
-            <h1 class="font-bold text-3xl my-2">Specifications</h1>
+            <div>
+                <h1 class="font-bold text-3xl my-2">Gallery</h1>
 
-            <label for="specs[cc]">CC:</label>
-            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="specs[cc]">
+                <x-form.input labelText="Gallery Model Image:" imageId="modelImageUrl" name="gallery[modelImage][src]">
+                    <img id='modelImageUrl' width="200" height="150"
+                         class="object-cover border m-3 border-gray-200"/>
+                </x-form.input>
 
-            <label for="specs[hp]">HP:</label>
-            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="specs[hp]">
+                <x-form.text-input forId="gallery_modelImage_alt" placeholder="Gallery Model Image Alt Text"
+                                   dataName="gallery[modelImage][alt]" oldValue="gallery.modelImage.alt"/>
 
-            <label for="specs[torque]">Torque:</label>
-            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="specs[torque]">
+                <x-form.input labelText="Promo Youtube Video URL:" imageId="promoYoutubeVideo"
+                              name="gallery[promoYoutubeVideo][src]">
+                    <video controls autoplay id='promoYoutubeVideo' width="200" height="150"
+                           class="object-cover border m-3 border-gray-200"/>
+                </x-form.input>
 
-            <x-form.input labelText="Model Image Source:" imageId="gallery[modelImage][src]" name="gallery[modelImage][src]">
-                <img id='gallery[modelImage][src]' width="400" height="150" class="object-cover border m-3 border-gray-200" />
-            </x-form.input>
+                <x-form.text-input forId="gallery_promoYoutubeVideo_alt"
+                                   placeholder="Promo Youtube Video Alt Text"
+                                   dataName="gallery[promoYoutubeVideo][alt]"
+                                   oldValue="gallery.promoYoutubeVideo.alt"/>
+            </div>
 
-            <label for="gallery[modelImage][alt]">Model Image Alt:</label>
-            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="gallery[modelImage][alt]">
+            <div>
+                <h1 class="font-bold text-3xl my-2">Bike Color Palette Gallery</h1>
 
-            <h1 class="font-bold text-3xl my-2">Bike Collor Pallette Gallery</h1>
+                <x-form.input labelText="Default Image:" imageId="defaultImage"
+                              name="bikeCollorPalletteGallery[default]">
+                    <img id='defaultImage' width="200" height="150"
+                         class="object-cover border m-3 border-gray-200"/>
+                </x-form.input>
 
-            <x-form.input labelText="Default Image:" imageId="bikeCollorPalletteGallery[default]" name="bikeCollorPalletteGallery[default]">
-                <img id='bikeCollorPalletteGallery[default]' width="400" height="150" class="object-cover border m-3 border-gray-200" />
-            </x-form.input>
+                <div class="dynamic-section" id="bikeColorPaletteGalleryFields">
+                    <div>
+                        <h1 class="font-bold text-xl my-2">Color 1</h1>
+                        <x-form.input labelText="Color 1 Image:" imageId="color_1_image"
+                                      name="bikeCollorPalletteGallery[color1]">
+                            <img id='color_1_image' width="200" height="150"
+                                 class="object-cover border m-3 border-gray-200"/>
+                        </x-form.input>
 
-            <x-form.input labelText="Color 1 Image:" imageId="bikeCollorPalletteGallery[color1]" name="bikeCollorPalletteGallery[color1]">
-                <img id='bikeCollorPalletteGallery[color1]' width="400" height="150" class="object-cover border m-3 border-gray-200" />
-            </x-form.input>
+                        <x-form.input labelText="Color 1 Reversed Image:" imageId="color_1_reversed_image"
+                                      name="bikeCollorPalletteGallery[color1Reversed]">
+                            <img id='color_1_reversed_image' width="200" height="150"
+                                 class="object-cover border m-3 border-gray-200"/>
+                        </x-form.input>
+                    </div>
+                </div>
+                <button class="add-two-images my-8 bg-lime-200 shadow rounded p-4">Add New Color</button>
+            </div>
 
-            <x-form.input labelText="Color 1 Reversed Image:" imageId="bikeCollorPalletteGallery[color1Reversed]" name="bikeCollorPalletteGallery[color1Reversed]">
-                <img id='bikeCollorPalletteGallery[color1Reversed]' width="400" height="150" class="object-cover border m-3 border-gray-200" />
-            </x-form.input>
+            <div>
+                <h1 class="font-bold text-3xl my-2">Customization Colors</h1>
 
-            <x-form.input labelText="Color 2 Image:" imageId="bikeCollorPalletteGallery[color2]" name="bikeCollorPalletteGallery[color2]">
-                <img id='bikeCollorPalletteGallery[color2]' width="400" height="150" class="object-cover border m-3 border-gray-200" />
-            </x-form.input>
+                <div class="dynamic-section" id="customizationColorsFields">
+                    <div>
+                        <h1 class="font-bold text-xl my-2">Color 1</h1>
 
-            <x-form.input labelText="Color 2 Reversed Image:" imageId="bikeCollorPalletteGallery[color2Reversed]" name="bikeCollorPalletteGallery[color2Reversed]">
-                <img id='bikeCollorPalletteGallery[color2Reversed]' width="400" height="150" class="object-cover border m-3 border-gray-200" />
-            </x-form.input>
+                        <x-form.text-input forId="color_0_name" placeholder="Color Name"
+                                           dataName="customizationColors[0][colorName]"
+                                           oldValue="customizationColors.0.colorName"/>
 
-            <x-form.input labelText="Color 3 Image:" imageId="bikeCollorPalletteGallery[color3]" name="bikeCollorPalletteGallery[color3]">
-                <img id='bikeCollorPalletteGallery[color3]' width="400" height="150" class="object-cover border m-3 border-gray-200" />
-            </x-form.input>
+                        <x-form.text-input forId="color_0_price" placeholder="Color Price"
+                                           dataName="customizationColors[0][price]"
+                                           oldValue="customizationColors.0.price"/>
 
-            <x-form.input labelText="Color 3 Reversed Image:" imageId="bikeCollorPalletteGallery[color3Reversed]" name="bikeCollorPalletteGallery[color3Reversed]">
-                <img id='bikeCollorPalletteGallery[color3Reversed]' width="400" height="150" class="object-cover border m-3 border-gray-200" />
-            </x-form.input>
+                        <x-form.input labelText="Color Image:" imageId="color_0_image"
+                                      name="customizationColors[0][image]">
+                            <img id='color_0_image' width="200" height="150"
+                                 class="object-cover border m-3 border-gray-200"/>
+                        </x-form.input>
 
+                        <x-form.text-input forId="color_0_code" placeholder="Color Code"
+                                           dataName="customizationColors[0][code]"
+                                           oldValue="customizationColors.0.code"/>
+                    </div>
+                </div>
+                <button class="add-custom-color my-8 bg-lime-200 shadow rounded p-4">Add New Color</button>
+            </div>
 
-            <h1 class="font-bold text-3xl my-2">Customization Colors</h1>
+            <div>
+                <h1 class="font-bold text-3xl my-2">Short Spec Info</h1>
 
-            <label for="customizationColors[0][colorName]">Color 1 Name:</label>
-            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="customizationColors[0][colorName]" required>
+                <x-form.text-input forId="shortSpecInfo_info1" placeholder="Short Spec Info 1"
+                                   dataName="shortSpecInfo[info1]" oldValue="shortSpecInfo.info1"/>
+                <x-form.text-input forId="shortSpecInfo_info2" placeholder="Short Spec Info 2"
+                                   dataName="shortSpecInfo[info2]" oldValue="shortSpecInfo.info2"/>
+                <x-form.text-input forId="shortSpecInfo_info3" placeholder="Short Spec Info 3"
+                                   dataName="shortSpecInfo[info3]" oldValue="shortSpecInfo.info3"/>
 
-            <label for="customizationColors[0][price]">Color 1 Price:</label>
-            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="customizationColors[0][price]" required>
+            </div>
 
-            <x-form.input labelText="Color 1 Image:" imageId="customizationColors[0][image]" name="customizationColors[0][image]">
-                <img id='customizationColors[0][image]' width="400" height="150" class="object-cover border m-3 border-gray-200" />
-            </x-form.input>
+            <div>
+                <h1 class="font-bold text-3xl my-2">Sub Family Promo</h1>
 
-            <label for="customizationColors[0][colorCode]">Color 1 Code:</label>
-            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="customizationColors[0][colorCode]" required>
+                <x-form.text-input forId="subFamilyPromo_title" placeholder="Sub Family Promo Title"
+                                   dataName="subFamilyPromo[title]" oldValue="subFamilyPromo.title"/>
 
+                <x-form.text-input forId="subFamilyPromo_desc" placeholder="Sub Family Promo Description"
+                                   dataName="subFamilyPromo[desc]" oldValue="subFamilyPromo.desc"/>
+            </div>
 
-            <label for="customizationColors[1][colorName]">Color 2 Name:</label>
-            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="customizationColors[1][colorName]" required>
+            <div>
+                <h1 class="font-bold text-3xl my-2">Bike Page Info</h1>
 
-            <label for="customizationColors[1][price]">Color 2 Price:</label>
-            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="customizationColors[1][price]" required>
+                <div class="dynamic-section" id="bikePageInfoFields">
+                    <div>
+                        <x-form.text-input forId="bikePageInfo_desc1" placeholder="Description 1"
+                                           dataName="bikePageInfo[topDesc][desc1]" oldValue="bikePageInfo.topDesc.desc1"/>
+                    </div>
+                </div>
+                <button class="add-desc my-8 bg-lime-200 shadow rounded p-4">Add New Description</button>
+            </div>
 
-            <x-form.input labelText="Color 2 Image:" imageId="customizationColors[1][image]" name="customizationColors[1][image]">
-                <img id='customizationColors[1][image]' width="400" height="150" class="object-cover border m-3 border-gray-200" />
-            </x-form.input>
+            <x-form.dynamic-text-inputs header="Features" divId="featuresFields"
+                                        dataId1="features_title" dataLabel1="title"
+                                        dataName="features"
+                                        dataId2="features_desc" dataLabel2="desc"
+                                        fieldClass="add-two-fields"/>
 
-            <label for="customizationColors[1][colorCode]">Color 2 Code:</label>
-            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="customizationColors[1][colorCode]" required>
+            <x-form.dynamic-text-inputs header="Bike Page Carousel" divId="bikePageCarousellFields"
+                                        dataId1="bikePageCarousell_title" dataLabel1="title" dataName="bikePageCarousell"
+                                        dataId2="bikePageCarousell_desc" dataLabel2="desc" imgLabel="Image"
+                                        fieldClass="add-two-fields-and-img"/>
 
+            <x-form.dynamic-text-inputs header="Bike Page Promo" divId="bikePagePromoFields"
+                                        dataId1="bikePagePromo_title" dataLabel1="title" dataName="bikePagePromo"
+                                        dataId2="bikePagePromo_desc" dataLabel2="desc" imgLabel="Image"
+                                        fieldClass="add-two-fields-and-img"/>
 
-            <label for="customizationColors[2][colorName]">Color 3 Name:</label>
-            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="customizationColors[2][colorName]" required>
+            <div>
+                <h1 class="font-bold text-3xl my-2">Bike Page Image Gallery</h1>
 
-            <label for="customizationColors[2][price]">Color 3 Price:</label>
-            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="customizationColors[2][price]" required>
-
-            <x-form.input labelText="Color 3 Image:" imageId="customizationColors[2][image]" name="customizationColors[2][image]">
-                <img id='customizationColors[2][image]' width="400" height="150" class="object-cover border m-3 border-gray-200" />
-            </x-form.input>
-
-            <label for="customizationColors[2][colorCode]">Color 3 Code:</label>
-            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="customizationColors[2][colorCode]" required>
-
-
-            <h1 class="font-bold text-3xl my-2">Short Spec Info</h1>
-
-            <label for="shortSpecInfo[info1]">Short Spec Info 1:</label>
-            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="shortSpecInfo[info1]" required>
-
-            <label for="shortSpecInfo[info2]">Short Spec Info 2:</label>
-            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="shortSpecInfo[info2]" required>
-
-            <label for="shortSpecInfo[info3]">Short Spec Info 3:</label>
-            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="shortSpecInfo[info3]" required>
-
-            <h1 class="font-bold text-3xl my-2">Sub Family Promo</h1>
-
-
-            <label for="subFamilyPromo[title]">Sub Family Promo Title:</label>
-            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="subFamilyPromo[title]" required>
-
-            <label for="subFamilyPromo[desc]">Sub Family Promo Description:</label>
-            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" name="subFamilyPromo[desc]" required>
-
-
-
+                <div class="dynamic-section" id="bikePageImageGalleryFields">
+                    <div>
+                        <x-form.input labelText="Image 1:" imageId="bikePageImageGallery_0"
+                                      name="bikePageImageGallery[0]">
+                            <img id='bikePageImageGallery_0' width="200" height="150"
+                                 class="object-cover border m-3 border-gray-200"/>
+                        </x-form.input>
+                    </div>
+                </div>
+                <button class="add-image my-8 bg-lime-200 shadow rounded p-4">Add New Image</button>
+            </div>
 
 
             <input type="submit" class="my-5 bg-lime-200 shadow rounded p-4" value="Submit">
-
-            <h1 class="font-bold text-3xl my-2">Bike Page Carousell</h1>
-            @for ($i = 0; $i < 8; $i++)
-            <div class="mb-4">
-                <label for="title-{{ $i }}" class="block text-sm font-medium text-gray-700">Title:</label>
-                <input type="text" id="title-{{ $i }}" name="bikePageCarousell[{{ $i }}][title]" value="{{ $bikePageCarousell[$i]['title'] ?? '' }}" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
-
-                <label for="desc-{{ $i }}" class="block text-sm font-medium text-gray-700">Description:</label>
-                <textarea id="desc-{{ $i }}" name="bikePageCarousell[{{ $i }}][desc]" rows="3" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">{{ $bikePageCarousell[$i]['desc'] ?? '' }}</textarea>
-
-                {{-- <label for="image-{{ $i }}" class="block text-sm font-medium text-gray-700">Image URL:</label>
-                <input type="text" id="image-{{ $i }}" name="bikePageCarousell[{{ $i }}][image]" value="{{ $bikePageCarousell[$i]['image'] ?? '' }}" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm"> --}}
-
-                <x-form.input labelText="Image:" imageId="image-{{ $i }}" name="bikePageCarousell[{{ $i }}][image]">
-                    <img id='image-{{ $i }}' width="400" height="150" class="object-cover border m-3 border-gray-200" />
-                </x-form.input>
-            </div>
-        @endfor
-
-
-
 
         </form>
 

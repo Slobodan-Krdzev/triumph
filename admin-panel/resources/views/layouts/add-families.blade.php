@@ -123,11 +123,11 @@
 
                 <x-form.text-input forId="reasonsToDrive_infoText_desc" placeholder="Info Text Description"
                                    dataName="reasonsToDrive[infoText][desc]" oldValue="reasonsToDrive.infoText.desc"/>
-            </div>
 
-            <x-form.dynamic-text-inputs header="Reasons" divId="reasonsFields"
-                                        dataId1="reasons_title" dataLabel1="title" dataName="reasons"
-                                        dataId2="reasons_desc" dataLabel2="desc" fieldClass="add-two-fields"/>
+                <x-form.dynamic-text-inputs header="Reasons" divId="reasonsFields"
+                                            dataId1="reasons_title" dataLabel1="title" dataName="reasonsToDrive[reasons]"
+                                            dataId2="reasons_desc" dataLabel2="desc" imgLabel="Image" fieldClass="add-two-fields-and-img"/>
+            </div>
 
             <div>
                 <h1 class="font-bold text-3xl my-2">Short Spec Info</h1>

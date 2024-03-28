@@ -83,6 +83,44 @@
                 section.append(newField);
             }
 
+            $('.add-desc').click(function (e) {
+                e.preventDefault();
+                var section = $(this).prev('.dynamic-section');
+                addDesc(section);
+            });
+
+            function addDesc(section) {
+                var newIndex = section.children().length + 1;
+                var newField = `
+                <div class="dynamic-input-wrapper">
+                    <x-form.text-input forId="bikePageInfo_desc${ newIndex }" placeholder="Description ${ newIndex }"
+                                           dataName="bikePageInfo[topDesc][desc${ newIndex }]" oldValue="bikePageInfo.topDesc.desc${ newIndex }"/>
+                    <x-form.remove-field-button />
+                </div>`;
+
+                section.append(newField);
+            }
+
+            $('.add-image').click(function (e) {
+                e.preventDefault();
+                var section = $(this).prev('.dynamic-section');
+                addImage(section);
+            });
+
+            function addImage(section, name, id, label) {
+                var newIndex = section.children().length;
+                var newField = `
+                <div class="dynamic-input-wrapper">
+                        <x-form.input labelText="Image ${ newIndex + 1}:" imageId="bikePageImageGallery_${ newIndex }"
+                                      name="bikePageImageGallery[${ newIndex }]">
+                            <img id='bikePageImageGallery_${ newIndex }' width="200" height="150"
+                                 class="object-cover border m-3 border-gray-200"/>
+                        </x-form.input>
+                        <x-form.remove-field-button />
+                </div>`;
+
+                section.append(newField);
+            }
 
             $('.add-two-fields').click(function (e) {
                 e.preventDefault();
@@ -106,6 +144,64 @@
 
                     <x-form.remove-field-button />
                     </div>`;
+
+                section.append(newField);
+            }
+
+            $('.add-two-images').click(function (e) {
+                e.preventDefault();
+                var section = $(this).prev('.dynamic-section');
+                addTwoImages(section);
+            });
+
+            function addTwoImages(section) {
+                var newIndex = section.children().length + 1;
+                var newField = `
+                 <div class="dynamic-input-wrapper">
+                        <h1 class="font-bold text-xl my-2">Color ${ newIndex }</h1>
+                        <x-form.input labelText="Color ${ newIndex } Image:" imageId="color_${ newIndex }_image" name="bikeCollorPalletteGallery[color${ newIndex }]">
+                            <img id='color_${ newIndex }_image' width="200" height="150"
+                                 class="object-cover border m-3 border-gray-200"/>
+                        </x-form.input>
+
+                        <x-form.input labelText="Color ${ newIndex } Reversed Image:" imageId="color_${ newIndex }_reversed_image" name="bikeCollorPalletteGallery[color${ newIndex }Reversed]">
+                            <img id='color_${ newIndex }_reversed_image' width="200" height="150"
+                                 class="object-cover border m-3 border-gray-200"/>
+                        </x-form.input>
+                    <x-form.remove-field-button />
+                    </div>
+                `;
+
+                section.append(newField);
+            }
+
+            $('.add-custom-color').click(function (e) {
+                e.preventDefault();
+                var section = $(this).prev('.dynamic-section');
+                addCustomColor(section);
+            });
+
+            function addCustomColor(section) {
+                var newIndex = section.children().length;
+                var newField = `
+                 <div class="dynamic-input-wrapper">
+                        <h1 class="font-bold text-xl my-2">Color ${ newIndex + 1 }</h1>
+                        <x-form.text-input forId="color_${ newIndex }_name" placeholder="Color Name"
+                                           dataName="customizationColors[${ newIndex }][colorName]" oldValue="customizationColors.${ newIndex }.colorName"/>
+
+                        <x-form.text-input forId="color_${ newIndex }_price" placeholder="Color Price"
+                                           dataName="customizationColors[${ newIndex }][price]" oldValue="customizationColors.${ newIndex }.price"/>
+
+                        <x-form.input labelText="Color Image:" imageId="color_${ newIndex }_image" name="customizationColors[${ newIndex }][image]">
+                            <img id='color_${ newIndex }_image' width="200" height="150"
+                                 class="object-cover border m-3 border-gray-200"/>
+                        </x-form.input>
+
+                        <x-form.text-input forId="color_${ newIndex }_code" placeholder="Color Code"
+                                           dataName="customizationColors[${ newIndex }][code]" oldValue="customizationColors.${ newIndex }.code"/>
+                    <x-form.remove-field-button />
+                    </div>
+                `;
 
                 section.append(newField);
             }

@@ -28,9 +28,9 @@ class MainCarouselsController extends Controller
             'link1.text' => 'required|string',
             'link2.url' => 'required|string',
             'link2.text' => 'required|string',
-            'image' => 'required|image|max:2048',
+            'image' => 'nullable',
             'imageMobile' => 'required|image|max:2048',
-            'video' => 'required|mimes:mp4,mov,ogg,qt',
+            'video' => 'nullable',
         ]);
 
         $carousel = new MainCarousell();

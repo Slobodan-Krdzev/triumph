@@ -28,8 +28,8 @@ class ImageStorage
             return ImageStorage::storeFile($request, $fileName, $directory, $title, $subDirectory);
         } else {
             $newImagePath = str_replace(Str::slug($objectTitle), $title, $path);
+            if ($newImagePath == '') return '';
             return str_starts_with($newImagePath, asset('/storage/')) ? $newImagePath : asset('/storage/' . $newImagePath);
-
         }
     }
 }

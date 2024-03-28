@@ -1,4 +1,4 @@
-@props(['header', 'divId', 'dataName',
+@props(['header' => null, 'divId', 'dataName',
         'dataId1', 'dataLabel1',
         'dataId2' => null, 'dataLabel2' => null, 'imgLabel' => null,
         'databaseData' => null, 'fieldClass'])
@@ -67,10 +67,9 @@
                         </div>
                     @endif
                     @if($imgLabel)
-                        <x-form.input labelText="{{ $imgLabel }}:" imageId="{{ $dataName }}_image_{{ $i }}"
-                                      name="{{ $dataName }}[{{ $i }}][image]"
-                                      value="{{ isset($databaseData[$i]['image']) && is_array($databaseData[$i]['image']) ? old($dataName . '.' .  $i . '.image', '') : old($dataName . '.' .  $i . '.image', $databaseData[$i]['image']) }}">
-                            <img id='{{ $dataName }}_{{ $i }}' src="{{ isset($databaseData[$i]['image']) && is_array($databaseData[$i]['image']) ? '' : $databaseData[$i]['image'] }}" width="200" height="150"
+                        <x-form.input labelText="{{ $imgLabel }}:" imageId="{{ $dataName }}[{{ $i }}][image]"
+                                      name="{{ $dataName }}[{{ $i }}][image]">
+                            <img id='{{ $dataName }}[{{ $i }}][image]' src="{{ $databaseData[$i]['image'] }}" width="200" height="150"
                                  class="object-cover border m-3 border-gray-200" />
                         </x-form.input>
                     @endif

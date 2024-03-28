@@ -40,7 +40,7 @@
                                dataName="title" oldValue="title"/>
 
             <x-form.text-input forId="desc" placeholder="Description"
-                               dataName="title" oldValue="title"/>
+                               dataName="desc" oldValue="desc"/>
 
             <x-form.text-input forId="link1Url" placeholder="Link 1 URL" dataName="link1[url]" oldValue="link1.url"/>
             <x-form.text-input forId="link1Text" placeholder="Link 1 Text" dataName="link1[text]" oldValue="link1.text"/>

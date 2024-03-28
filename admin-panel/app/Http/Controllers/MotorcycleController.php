@@ -57,8 +57,20 @@ class MotorcycleController extends Controller
         $data['bikeCollorPalletteGallery']['color3'] = ImageStorage::storeFile($request, 'bikeCollorPalletteGallery.color3', 'motorcycles/', $title, '/bikeCollorPalletteGallery');
         $data['bikeCollorPalletteGallery']['color3Reversed'] = ImageStorage::storeFile($request, 'bikeCollorPalletteGallery.color3Reversed', 'motorcycles/', $title, '/bikeCollorPalletteGallery');
 
-        for ($i = 0; $i < 3; $i++) {
+        for ($i = 0; $i < count($request->input('customizationColors')); $i++) {
             $data['customizationColors'][$i]['image'] = ImageStorage::storeFile($request, 'customizationColors.' . $i . '.image', 'motorcycles/', $title, '/customizationColors');
+        }
+
+        for ($i = 0; $i < count($request->input('bikePageCarousell')); $i++) {
+            $data['bikePageCarousell'][$i]['image'] = ImageStorage::storeFile($request, 'bikePageCarousell.' . $i . '.image', 'motorcycles/', $title, '/bikePageCarousell');
+        }
+
+        foreach ($request->bikePageImageGallery as $key => $pageImage) {
+            $data['bikePageImageGallery'][$key] = ImageStorage::storeFile($request, 'bikePageImageGallery.' . $key, 'motorcycles/', $title, '/bikePageImageGallery');
+        }
+
+        foreach ($request->bikePagePromo as $key => $bikePage) {
+            $data['bikePagePromo'][$key]['image'] = ImageStorage::storeFile($request, 'bikePagePromo.' . $key . '.image', 'motorcycles/', $title, '/bikePagePromo');
         }
 
         Motorcycle::create($data);

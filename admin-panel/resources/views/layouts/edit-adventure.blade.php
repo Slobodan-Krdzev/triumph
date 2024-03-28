@@ -247,19 +247,19 @@
                                    dataName="reasonsToDrive[infoText][desc]"
                                    oldValue="reasonsToDrive.infoText.desc"
                                    dataValue="{{ $subFamData['reasonsToDrive']['infoText']['desc'] ?? '' }}"/>
-            </div>
 
-            @if (isset($subFamData->reasons))
-                <x-form.dynamic-text-inputs header="Reasons" divId="reasonsFields"
-                                            dataId1="reasons_title" dataLabel1="title" dataName="reasons"
-                                            dataId2="reasons_desc" dataLabel2="desc"
-                                            :databaseData="$subFamData->reasons"
-                                            fieldClass="add-two-fields"/>
-            @else
-                <x-form.dynamic-text-inputs header="Reasons" divId="reasonsFields"
-                                            dataId1="reasons_title" dataLabel1="title" dataName="reasons"
-                                            dataId2="reasons_desc" dataLabel2="desc" fieldClass="add-two-fields"/>
-            @endif
+                @if (isset($subFamData['reasonsToDrive']['reasons']))
+                    <x-form.dynamic-text-inputs header="Reasons" divId="reasonsFields"
+                                                dataId1="reasons_title" dataLabel1="title" dataName="reasonsToDrive[reasons]"
+                                                dataId2="reasons_desc" dataLabel2="desc" imgLabel="Image"
+                                                :databaseData="$subFamData['reasonsToDrive']['reasons']"
+                                                fieldClass="add-two-fields-and-img"/>
+                @else
+                    <x-form.dynamic-text-inputs header="Reasons" divId="reasonsFields"
+                                                dataId1="reasons_title" dataLabel1="title" dataName="reasonsToDrive"
+                                                dataId2="reasons_desc" dataLabel2="desc" imgLabel="Image" fieldClass="add-two-fields-and-img"/>
+                @endif
+            </div>
 
             <div>
                 <h1 class="font-bold text-3xl my-2">Short Spec Info</h1>
