@@ -14,7 +14,7 @@
                    class="block text-sm font-medium text-gray-700">{{ ucfirst($dataLabel1) }}@if($dataLabel1 == 'desc')ription @endif:</label>
             <div>
                 <input type="text" id="{{ $dataId1 }}_0"
-                       name="{{ $dataName }}[0]{{ $dataLabel1 !== 'item Text' && $dataLabel1 !== 'slogan' ? '[' . $dataLabel1 . ']' : '' }}"
+                       name="{{ $dataName }}[0]{{ $dataLabel1 !== 'item Text' && $dataLabel1 !== 'slogan' && $dataId1 !== 'info-desc' ? '[' . $dataLabel1 . ']' : '' }}"
                        class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
                        placeholder="Enter {{ ucfirst($dataLabel1) }}@if($dataLabel1 == 'desc')ription @endif">
             </div>
@@ -47,13 +47,13 @@
                            class="block text-sm font-medium text-gray-700">{{ ucfirst($dataLabel1) }}@if($dataLabel1 == 'desc')ription @endif {{ $i }}:</label>
                     <div>
                         <input type="text" id="{{ $dataId1 }}_{{ $i }}"
-                               name="{{ $dataName }}[{{ $i }}]{{ $dataLabel1 !== 'item Text' && $dataLabel1 !== 'slogan' ? '[' . $dataLabel1 . ']' : '' }}"
+                               name="{{ $dataName }}[{{ $i }}]{{ $dataLabel1 !== 'item Text' && $dataLabel1 !== 'slogan' && $dataId1 !== 'info-desc' ? '[' . $dataLabel1 . ']' : '' }}"
                                class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
                                placeholder="Enter {{ ucfirst($dataLabel1) }}@if($dataLabel1 == 'desc')ription @endif"
                                @php
-                                    $dataValue = $dataLabel1 !== 'item Text' && $dataLabel1 !== 'slogan' ? $databaseData[$i][$dataLabel1] : $databaseData[$i];
+                                    $dataValue = $dataLabel1 !== 'item Text' && $dataLabel1 !== 'slogan' && $dataId1 !== 'info-desc' ? $databaseData[$i][$dataLabel1] : $databaseData[$i];
                                @endphp
-                               value="{{ old($dataName . '.' . $i . ($dataLabel1 !== 'item Text' && $dataLabel1 !== 'slogan' ? '.' . $dataLabel1 : ''), $dataValue) }}">
+                               value="{{ old($dataName . '.' . $i . ($dataLabel1 !== 'item Text' && $dataLabel1 !== 'slogan' && $dataId1 !== 'info-desc' ? '.' . $dataLabel1 : ''), $dataValue) }}">
                     </div>
                     @if($dataId1 && $dataLabel2)
                         <label for="{{ $dataId2 }}_{{ $i }}"
@@ -69,7 +69,7 @@
                     @if($imgLabel)
                         <x-form.input labelText="{{ $imgLabel }}:" imageId="{{ $dataName }}[{{ $i }}][image]"
                                       name="{{ $dataName }}[{{ $i }}][image]">
-                            <img id='{{ $dataName }}[{{ $i }}][image]' src="{{ $databaseData[$i]['image'] }}" width="200" height="150"
+                            <img id='{{ $dataName }}[{{ $i }}][image]' src="{{ $databaseData[$i]['image'] ?? '' }}" width="200" height="150"
                                  class="object-cover border m-3 border-gray-200" />
                         </x-form.input>
                     @endif

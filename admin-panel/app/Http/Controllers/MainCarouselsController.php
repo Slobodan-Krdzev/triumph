@@ -85,16 +85,16 @@ class MainCarouselsController extends Controller
         $storage = Storage::disk('public');
 
         // Process main image
-        $validatedData['image'] = ImageStorage::updateFile($request, 'image', 'mainCarousel/', $title, '/images', $carousel->image, $carousel->title);
+        $validatedData['image'] = ImageStorage::storeOrUpdateFile($request, 'image', 'mainCarousel/', $title, '/images', $carousel->image ?? '', $carousel->title);
 
 
         // Process mobile image
-        $validatedData['imageMobile'] = ImageStorage::updateFile($request, 'imageMobile', 'mainCarousel/', $title, '/mobileImages', $carousel->imageMobile, $carousel->title);
+        $validatedData['imageMobile'] = ImageStorage::storeOrUpdateFile($request, 'imageMobile', 'mainCarousel/', $title, '/mobileImages', $carousel->imageMobile ?? '', $carousel->title);
 
 
 
         // Process video
-        $validatedData['video'] = ImageStorage::updateFile($request, 'video', 'mainCarousel/', $title, '/videos', $carousel->video, $carousel->title);
+        $validatedData['video'] = ImageStorage::storeOrUpdateFile($request, 'video', 'mainCarousel/', $title, '/videos', $carousel->video ?? '', $carousel->title);
 
 
 

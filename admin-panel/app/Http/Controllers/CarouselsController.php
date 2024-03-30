@@ -71,7 +71,7 @@ class CarouselsController extends Controller
 
         $title = Str::slug($request->title);
 
-        $validatedData['image'] = ImageStorage::updateFile($request, 'image', 'latestCarousel/', $title, '/images', $carousel->image, $carousel->title);
+        $validatedData['image'] = ImageStorage::storeOrUpdateFile($request, 'image', 'latestCarousel/', $title, '/images', $carousel->image ?? '', $carousel->title);
 
         if (Str::slug($request->title) != Str::slug($carousel->title)) {
             $images = 'latestCarousel/' . Str::slug($carousel->title) . '/images';

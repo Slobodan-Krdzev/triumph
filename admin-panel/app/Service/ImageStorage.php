@@ -23,7 +23,7 @@ class ImageStorage
 
     public static function updateFile(Request $request, String $fileName, String $directory, String $title, String $subDirectory, String $path, String $objectTitle)
     {
-        if ($request->hasFile($fileName)) {
+        if ($request->has($fileName)) {
             Storage::disk('public')->delete(str_replace(asset('storage/'), '', $path));
             return ImageStorage::storeFile($request, $fileName, $directory, $title, $subDirectory);
         } else {
@@ -32,4 +32,21 @@ class ImageStorage
             return str_starts_with($newImagePath, asset('/storage/')) ? $newImagePath : asset('/storage/' . $newImagePath);
         }
     }
+
+    public static function updateNameInFile(String $title, String $newTitle, String $path)
+    {
+        return str_replace(Str::slug($title), $newTitle, $path);
+    }
+
+    public static function storeOrUpdateFile($request, $fileName, $directory, $title, $subDirectory, $path, $objectTitle) {
+        if (isset($request->$fileName) && isset($path)) {
+            return ImageStorage::updateFile($request, $fileName, $directory, $title, $subDirectory, $path, $objectTitle);
+        } else if (isset($path) && $path != '') {
+            return ImageStorage::updateNameInFile($objectTitle, $title, $path);
+        } else {
+            return ImageStorage::storeFile($request, $fileName, $directory, $title, $subDirectory);
+        }
+    }
+
+
 }

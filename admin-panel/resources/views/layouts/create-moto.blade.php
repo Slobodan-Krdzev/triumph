@@ -58,18 +58,24 @@
                          class="object-cover border m-3 border-gray-200"/>
                 </x-form.input>
 
+                <h1 class="font-bold text-xl my-2">Colors</h1>
+
                 <div class="dynamic-section" id="bikeColorPaletteGalleryFields">
                     <div>
-                        <h1 class="font-bold text-xl my-2">Color 1</h1>
-                        <x-form.input labelText="Color 1 Image:" imageId="color_1_image"
-                                      name="bikeCollorPalletteGallery[color1]">
-                            <img id='color_1_image' width="200" height="150"
+                        <x-form.text-input forId="color_0_name" placeholder="Color 1 Name"
+                                           dataName="bikeCollorPalletteGallery[colors][0][colorName]"
+                                           oldValue="bikeCollorPalletteGallery.colors.0.colorName"/>
+
+                        <x-form.input labelText="Color 1 Image:" imageId="color_0_base_image"
+                                      name="bikeCollorPalletteGallery[colors][0][base]">
+                            <img id='color_0_base_image' width="200" height="150"
                                  class="object-cover border m-3 border-gray-200"/>
                         </x-form.input>
 
-                        <x-form.input labelText="Color 1 Reversed Image:" imageId="color_1_reversed_image"
-                                      name="bikeCollorPalletteGallery[color1Reversed]">
-                            <img id='color_1_reversed_image' width="200" height="150"
+
+                        <x-form.input labelText="Color 1 Reversed Image:" imageId="color_0_reversed_image"
+                                      name="bikeCollorPalletteGallery[colors][0][reversed]">
+                            <img id='color_0_reversed_image' width="200" height="150"
                                  class="object-cover border m-3 border-gray-200"/>
                         </x-form.input>
                     </div>
@@ -128,17 +134,10 @@
                                    dataName="subFamilyPromo[desc]" oldValue="subFamilyPromo.desc"/>
             </div>
 
-            <div>
-                <h1 class="font-bold text-3xl my-2">Bike Page Info</h1>
+            <x-form.dynamic-text-inputs header="Bike Page Info" divId="bikePageInfoFields"
+                                        dataId1="info-desc" dataLabel1="description" dataName="bikePageInfo"
+                                        fieldClass="add-field"/>
 
-                <div class="dynamic-section" id="bikePageInfoFields">
-                    <div>
-                        <x-form.text-input forId="bikePageInfo_desc1" placeholder="Description 1"
-                                           dataName="bikePageInfo[topDesc][desc1]" oldValue="bikePageInfo.topDesc.desc1"/>
-                    </div>
-                </div>
-                <button class="add-desc my-8 bg-lime-200 shadow rounded p-4">Add New Description</button>
-            </div>
 
             <x-form.dynamic-text-inputs header="Features" divId="featuresFields"
                                         dataId1="features_title" dataLabel1="title"
@@ -147,7 +146,8 @@
                                         fieldClass="add-two-fields"/>
 
             <x-form.dynamic-text-inputs header="Bike Page Carousel" divId="bikePageCarousellFields"
-                                        dataId1="bikePageCarousell_title" dataLabel1="title" dataName="bikePageCarousell"
+                                        dataId1="bikePageCarousell_title" dataLabel1="title"
+                                        dataName="bikePageCarousell"
                                         dataId2="bikePageCarousell_desc" dataLabel2="desc" imgLabel="Image"
                                         fieldClass="add-two-fields-and-img"/>
 
@@ -161,14 +161,18 @@
 
                 <div class="dynamic-section" id="bikePageImageGalleryFields">
                     <div>
-                        <x-form.input labelText="Image 1:" imageId="bikePageImageGallery_0"
-                                      name="bikePageImageGallery[0]">
-                            <img id='bikePageImageGallery_0' width="200" height="150"
+                        <x-form.text-input forId="bikePageImageGallery_0_alt" placeholder="Image 1 Alt"
+                                           dataName="bikePageImageGallery[0][alt]"
+                                           oldValue="bikePageImageGallery.0.alt"/>
+
+                        <x-form.input labelText="Image 1 Src:" imageId="bikePageImageGallery_0_src"
+                                      name="bikePageImageGallery[0][src]">
+                            <img id='bikePageImageGallery_0_src' width="200" height="150"
                                  class="object-cover border m-3 border-gray-200"/>
                         </x-form.input>
                     </div>
                 </div>
-                <button class="add-image my-8 bg-lime-200 shadow rounded p-4">Add New Image</button>
+                <button class="add-field-and-image my-8 bg-lime-200 shadow rounded p-4">Add New Image</button>
             </div>
 
 

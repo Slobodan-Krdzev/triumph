@@ -29,6 +29,7 @@ class Motorcycle extends Model
         'bikePageCarousell',
         'features',
         'subFamilyPromo',
+        'bikePageInfo',
         'bikePagePromo',
         'bikePageImageGallery',
     ];
