@@ -11,23 +11,21 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('promos', function (Blueprint $table) {
+        Schema::create('main_carousell', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->string('category');
-            $table->string('subFamilyType');
-            $table->text('desc')->nullable();
+            $table->string('video')->nullable();
             $table->string('image')->nullable();
-            $table->boolean('btnBlack')->default(false);
+            $table->string('imageMobile')->nullable();
+            $table->string('title');
+            $table->text('desc')->nullable();
+            $table->json('link1')->nullable();
+            $table->json('link2')->nullable();
             $table->timestamps();
         });
     }
 
-    /**
-     * Reverse the migrations.
-     */
     public function down(): void
     {
-        Schema::dropIfExists('promos');
+        Schema::dropIfExists('main_carousell');
     }
 };

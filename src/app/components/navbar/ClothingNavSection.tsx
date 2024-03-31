@@ -23,7 +23,7 @@ export const clothingItems: ClothingCardProps[] = [
   {
     title: "Облека за Возење Мотор",
     desc: "Облека и Опрема спремни за врвни перформанси кои ги надополнуваат нашите мотори.Еволвирани заедно со секој мотор.",
-    link: "/clothing-collection/motorcycle",
+    link: "/clothing-collection/motorcycles",
     image: {
       src: "/images/adventureGearImage.avif",
       alt: "Motor Riding Gear",

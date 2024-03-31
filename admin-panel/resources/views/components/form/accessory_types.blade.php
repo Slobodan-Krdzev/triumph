@@ -21,7 +21,7 @@
                                             divId="accessoryType{{ $i }}ItemsList"
                                             dataId1="items{{ $i }}" dataLabel1="item Text"
                                             dataName="accessory[accessoryTypes][{{ $i }}][itemsList]"
-                                            :databaseData="$databaseData[$i]['itemsList']"
+                                            :databaseData="$databaseData[$i]['itemsList'] ?? null"
                                             fieldClass="add-field"/>
 
 
@@ -48,7 +48,8 @@
                                dataName="accessory[accessoryTypes][{{ $i }}][image2][alt]"
                                oldValue="accessory.accessoryTypes.{{ $i }}.image2.alt"
                                dataValue="{{ $databaseData[$i]['image2']['alt'] ?? '' }}"/>
-            @if($i > 0)
+
+            @if($i > 0 && $i === count($databaseData) - 1)
                 <x-form.remove-field-button />
             @endif
         </div>

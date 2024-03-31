@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Families;
+use App\Models\Family;
 use App\Models\MainCarousellItem;
 use App\Models\Motorcycle;
 use App\Service\ImageStorage;
@@ -14,30 +14,16 @@ use Illuminate\Validation\Rule;
 
 class MotorcycleController extends Controller
 {
+    public function index(Request $request)
+    {
+        $data = Motorcycle::all();
+        return view('layouts..motorcycles.view', ['data' => $data]);
+    }
+
     public function create()
     {
-        return view('layouts.create-moto',);
+        return view('layouts..motorcycles.add',);
     }
-
-    public function listMoto(Request $request)
-    {
-        $data = Motorcycle::get();
-        return view('layouts.view-moto', ['data' => $data]);
-
-
-        $motorcycle = Motorcycle::all();
-
-        return response()->json($motorcycle);
-
-        $category = $request->input('category');
-
-        $motorcycles = Motorcycle::when($category, function ($query) use ($category) {
-            return $query->where('category', $category);
-        })->get();
-
-        // return response()->json($motorcycles);
-    }
-
 
     public function store(Request $request)
     {
@@ -88,7 +74,7 @@ class MotorcycleController extends Controller
 
         Motorcycle::create($data);
 
-        return redirect()->route('create-moto')->with('success', 'Motorcycle data stored successfully');
+        return redirect()->back()->with('success', 'Motorcycle data stored successfully');
     }
 
 
@@ -96,7 +82,7 @@ class MotorcycleController extends Controller
 
     {
         $moto = Motorcycle::findOrFail($id);
-        return view('layouts.edit-moto', compact('moto'));
+        return view('layouts..motorcycles.edit', compact('moto'));
     }
 
 
@@ -119,7 +105,7 @@ class MotorcycleController extends Controller
 
         if (isset($request['bikeCollorPalletteGallery.colors'])) {
 //            $keysRequest = array_keys($request['bikeCollorPalletteGallery']['colors'] ?? []);
-//            $keysMotorcycle = array_keys($motorcycle['bikeCollorPalletteGallery']['colors'] ?? []);
+//            $keysMotorcycle = array_keys($motorcycles['bikeCollorPalletteGallery']['colors'] ?? []);
 //
 //            $maxLengthRequest = !empty($keysRequest) ? max($keysRequest) : 0;
 //            $maxLengthMotorcycle = !empty($keysMotorcycle) ? max($keysMotorcycle) : 0;
@@ -128,12 +114,12 @@ class MotorcycleController extends Controller
 //                if ($request->has('bikeCollorPalletteGallery.colors.' . $i . '.base')){
 //                    $colorData['bikeCollorPalletteGallery']['colors'][$i]['base'] = $request['bikeCollorPalletteGallery']['colors'][$i]['base'];
 //                } else {
-//                    $colorData['bikeCollorPalletteGallery']['colors'][$i]['base'] = $motorcycle['bikeCollorPalletteGallery']['colors'][$i]['base'];
+//                    $colorData['bikeCollorPalletteGallery']['colors'][$i]['base'] = $motorcycles['bikeCollorPalletteGallery']['colors'][$i]['base'];
 //                }
 //                if ($request->has('bikeCollorPalletteGallery.colors.' . $i . '.reversed')){
 //                    $colorData['bikeCollorPalletteGallery']['colors'][$i]['reversed'] = $request['bikeCollorPalletteGallery']['colors'][$i]['reversed'];
 //                } else {
-//                    $colorData['bikeCollorPalletteGallery']['colors'][$i]['reversed'] = $motorcycle['bikeCollorPalletteGallery']['colors'][$i]['reversed'];
+//                    $colorData['bikeCollorPalletteGallery']['colors'][$i]['reversed'] = $motorcycles['bikeCollorPalletteGallery']['colors'][$i]['reversed'];
 //                }
 //            }
 

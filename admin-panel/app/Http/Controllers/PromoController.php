@@ -9,7 +9,7 @@ class PromoController extends Controller
 {
     public function create()
     {
-        return view('layouts.add-promo');
+        return view('layouts.promos.add');
     }
 
     public function store(Request $request)
@@ -21,7 +21,7 @@ class PromoController extends Controller
         $promo->promo_data = json_encode($promoData);
         $promo->save();
 
-        return redirect()->route('add-promo')->with('success', 'Promo data stored successfully');
+        return redirect()->route('add-promos')->with('success', 'Promo data stored successfully');
     }
 
     public function delete($id)
@@ -38,18 +38,18 @@ class PromoController extends Controller
     {
         $promo = Promo::findOrFail($id);
         $promo->promo_data = json_decode($promo->promo_data, true);
-        return view('layouts.edit-promo', compact('promo'));
+        return view('layouts.promos.edit', compact('promo'));
     }
 
 
     public function update(Request $request, $id)
     {
         $request->validate([
-            'promo.*.title' => 'required',
-            'promo.*.subFamilyType' => 'required',
-            'promo.*.desc' => 'required',
-            'promo.*.image' => 'required',
-            'promo.*.btnBlack' => 'required|boolean',
+            'promos.*.title' => 'required',
+            'promos.*.subFamilyType' => 'required',
+            'promos.*.desc' => 'required',
+            'promos.*.image' => 'required',
+            'promos.*.btnBlack' => 'required|boolean',
         ]);
 
         $promo = Promo::findOrFail($id);

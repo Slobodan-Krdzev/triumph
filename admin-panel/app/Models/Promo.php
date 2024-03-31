@@ -9,11 +9,19 @@ class Promo extends Model
 {
     use HasFactory;
 
-    protected $table = 'promo';
-    protected $fillable = ['fam_adventure_id', 'promo_data'];
+    protected $table = 'promos';
 
-    public function famAdventure()
-    {
-        return $this->belongsTo(FamAdventure::class, 'fam_adventure_id');
-    }
+    protected $fillable = [
+        'id',
+        'category',
+        'title',
+        'subFamilyType',
+        'desc',
+        'image',
+        'btnBlack',
+    ];
+
+    protected $casts = [
+        'btnBlack' => 'boolean',
+    ];
 }

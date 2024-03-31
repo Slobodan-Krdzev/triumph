@@ -21,6 +21,7 @@ class Motorcycle extends Model
         'edition',
         'price',
         'desc',
+        'desc',
         'specs',
         'gallery',
         'bikeCollorPalletteGallery',

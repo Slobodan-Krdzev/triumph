@@ -19,17 +19,17 @@ return new class extends Migration
             $table->string('subFamilyCategory');
             $table->string('edition');
             $table->string('price')->nullable();
-            $table->string('desc')->nullable();
-            $table->json('specs')->nullable();
-            $table->json('gallery');
+            $table->text('desc')->nullable();
+            $table->json('gallery')->nullable();
             $table->json('bikeCollorPalletteGallery')->nullable();
             $table->json('customizationColors')->nullable();
             $table->json('shortSpecInfo')->nullable();
-            $table->json('bikePageCarousell')->nullable();
-            $table->json('features')->nullable();
             $table->json('subFamilyPromo')->nullable();
             $table->json('bikePageInfo')->nullable();
+            $table->json('features')->nullable();
+            $table->json('bikePageCarousell')->nullable();
             $table->json('bikePagePromo')->nullable();
+            $table->json('bikePageImageGallery')->nullable();
             $table->timestamps();
         });
     }

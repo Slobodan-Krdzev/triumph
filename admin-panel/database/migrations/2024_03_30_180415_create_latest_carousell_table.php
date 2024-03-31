@@ -11,14 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('promos', function (Blueprint $table) {
+        Schema::create('latest_carousell', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('category');
-            $table->string('subFamilyType');
-            $table->text('desc')->nullable();
-            $table->string('image')->nullable();
-            $table->boolean('btnBlack')->default(false);
+            $table->text('desc');
+            $table->string('url');
+            $table->string('image');
             $table->timestamps();
         });
     }
@@ -28,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('promos');
+        Schema::dropIfExists('latest_carousell');
     }
 };

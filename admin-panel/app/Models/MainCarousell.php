@@ -9,24 +9,13 @@ class MainCarousell extends Model
 {
     use HasFactory;
 
+    protected $table = 'main_carousell';
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array<int, string>
-     */
     protected $fillable = ['video', 'image', 'imageMobile', 'title', 'desc', 'link1', 'link2'];
 
-    protected $table = 'main-carousell-items';
 
-    /**
-     * The attributes that should be cast.
-     *
-     * @var array
-     */
     protected $casts = [
-        'link1' => 'array',
-        'link2' => 'array',
+        'link1' => 'json',
+        'link2' => 'json',
     ];
-
 }

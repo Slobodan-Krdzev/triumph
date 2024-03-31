@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-use App\Models\SubFamAdventure;
+use App\Models\LatestCarousell;
+use App\Models\MainCarousell;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -14,21 +14,13 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        $this->call(FamAdventureTableSeeder::class);
-        $this->call(FamClassicsTableSeeder::class);
-        $this->call(FamOffRoadTableSeeder::class);
-        $this->call(FamRoadstersTableSeeder::class);
-        $this->call(FamRocket3TableSeeder::class);
-        $this->call(FamSportTableSeeder::class);
-        $this->call(MotorcyclesTableSeeder::class);
-        $this->call(PromoTableSeeder::class);
-        $this->call(PromoClassicsTableSeeder::class);
-        $this->call(PromoOffRoadTableSeeder::class);
-        $this->call(PromoRoadstersTableSeeder::class);
-        $this->call(PromoSportTableSeeder::class);
-        $this->call(SubFamAdventureTableSeeder::class);
 
-
+        $this->call(FamiliesSeeder::class);
+        $this->call(SubFamiliesSeeder::class);
+        $this->call(MotorcyclesSeeder::class);
+        $this->call(PromosSeeder::class);
+        $this->call(MainCarousellSeeder::class);
+        $this->call(LatestCarousellSeeder::class);
 
     }
 }

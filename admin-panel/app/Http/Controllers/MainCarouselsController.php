@@ -13,16 +13,16 @@ use Illuminate\Validation\Rule;
 
 class MainCarouselsController extends Controller
 {
-    public function index()
+    public function create()
     {
-        return view('layouts.add-main-carousels');
+        return view('layouts.carousels.main-carousel.add');
     }
 
 
     public function store(Request $request)
     {
         $request->validate([
-            'title' => 'required|string|max:255|unique:main-carousell-items,title,',
+            'title' => 'required|string|max:255|unique:main_carousell,title,',
             'desc' => 'required|string',
             'link1.url' => 'required|string',
             'link1.text' => 'required|string',
@@ -60,7 +60,7 @@ class MainCarouselsController extends Controller
 
         $mainCarousels = MainCarousell::find($id);
 
-        return view('layouts.edit-main-carousels', compact('mainCarousels'));
+        return view('layouts.carousels.main-carousel.edit', compact('mainCarousels'));
     }
 
 
@@ -69,7 +69,7 @@ class MainCarouselsController extends Controller
         $carousel = MainCarousell::findOrFail($id);
 
         $validatedData = $request->validate([
-            'title' => ['required', Rule::unique('main-carousell-items', 'title')->ignore($carousel)],
+            'title' => ['required', Rule::unique('main_carousell', 'title')->ignore($carousel)],
             'desc' => 'required|string',
             'link1.url' => 'required|string',
             'link1.text' => 'required|string',

@@ -9,7 +9,7 @@ class LatestCarousell extends Model
 {
     use HasFactory;
 
-    protected $table = 'latest-models-carousell-items';
+    protected $table = 'latest_carousell';
 
     protected $fillable = ['title', 'desc', 'url', 'image'];
 

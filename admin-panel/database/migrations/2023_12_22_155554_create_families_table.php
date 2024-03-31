@@ -13,16 +13,15 @@ return new class extends Migration
     {
         Schema::create('families', function (Blueprint $table) {
             $table->id();
-            $table->json('type');
+            $table->string('type');
             $table->json('mainBikeLogoImage')->nullable();
-            $table->json('familyPageBannerDesc')->nullable();
-            $table->json('familyPageBannerVideo')->nullable();
-            $table->json('topSectionInfo')->nullable();
-            $table->json('audioSection')->nullable();
-            $table->json('promo')->nullable();
+            $table->text('familyPageBannerDesc')->nullable();
+            $table->string('familyPageBannerVideo')->nullable();
             $table->json('configPageInfo')->nullable();
+            $table->string('youtubeVideo')->nullable();
+            $table->json('grayCaro')->nullable();
             $table->json('configFamilyPageInfo')->nullable();
-            $table->json('subFamilies')->nullable();
+            $table->json('audioSection')->nullable();
             $table->timestamps();
         });
     }

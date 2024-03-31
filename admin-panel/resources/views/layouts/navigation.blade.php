@@ -17,12 +17,12 @@
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('create-moto')" :active="request()->routeIs('create-moto')">
+                    <x-nav-link :href="route('create-motorcycle')" :active="request()->routeIs('create-motorcycle')">
                         {{ __('Add Motorcycles') }}
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('view-moto')" :active="request()->routeIs('view-moto')">
+                    <x-nav-link :href="route('view-motorcycles')" :active="request()->routeIs('view-motorcycles')">
                         {{ __('View Motorcycles') }}
                     </x-nav-link>
                 </div>
@@ -32,7 +32,7 @@
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('add-families')" :active="request()->routeIs('add-families')">
+                    <x-nav-link :href="route('create-sub-family')" :active="request()->routeIs('create-sub-family')">
                         {{ __('Add Sub-Family') }}
                     </x-nav-link>
                 </div>
