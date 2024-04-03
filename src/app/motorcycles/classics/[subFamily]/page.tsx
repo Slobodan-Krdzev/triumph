@@ -64,7 +64,7 @@ const ClassicsSubFamilyPage = async ({ params }: any) => {
                 key={bike.id}
                 title={bike.title}
                 desc={bike.subFamilyPromo?.desc ?? ""}
-                desc2={bike.price && `Цени од: €${bike.price}.00`}
+                desc2={bike.price && `Цени од: € ${bike.price.toLocaleString('en-EN')} .`}
                 ctaBtn={{
                   text: "Детали",
                   link: `/motorcycles/classics/${subFam}/${bike.model}`,

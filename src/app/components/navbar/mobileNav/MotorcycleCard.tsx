@@ -39,7 +39,7 @@ const MotorcycleCard = ({
         <div className="basis-6/12">
           <h4 className="uppercase font-semibold">{bike.title}</h4>
           <p className="text-gray-500 text-sm">
-            {bike.price === null ? "Цени Наскоро" : `Цена: €${bike.price}.00 `}
+            {bike.price === null ? "Цени Наскоро" : `Цена: € ${bike.price.toLocaleString('en-EN')}`}
           </p>
         </div>
         <button className="mr-3" onClick={() => focusHandler(idx)}>
