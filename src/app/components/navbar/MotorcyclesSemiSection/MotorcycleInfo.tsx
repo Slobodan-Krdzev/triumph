@@ -17,7 +17,7 @@ const MotorcycleInfo = ({ bike }: MotorcycleInfoProps) => {
           {bike[0]?.price ? (
             <>
               Цена <br />
-              <span className="text-neutral-700 font-bold">{bike[0]?.price}.00 €</span>
+              <span className="text-neutral-700 font-bold">€ {bike[0]?.price.toLocaleString('en-EN')} </span>
             </>
           ) : (
             "Цена Наскоро"

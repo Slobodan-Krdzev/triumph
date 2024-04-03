@@ -30,9 +30,9 @@ const PricePriviewer = ({ bike }: PricePreviewerProps) => {
   };
 
   return (
-    <p className="text-5xl font-medium tracking-tighter mb-2 lg:mb-4">
+    <p className="text-4xl font-medium tracking-tighter mb-2 lg:mb-4">
       {handlePriceChange(bike.price)
-        ? `€${handlePriceChange(bike.price)}.00`
+        ? `€ ${handlePriceChange(bike.price).toLocaleString('en-EN')}`
         : "Наскоро"}
     </p>
   );

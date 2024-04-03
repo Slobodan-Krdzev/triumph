@@ -96,10 +96,13 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
 
   const handlePriceChange = (startingPrice: number) => {
     if (colorQuery !== null) {
-      return startingPrice + colorPrice;
+
+      const finalPrice = startingPrice + colorPrice
+
+      return finalPrice.toLocaleString('en-EN')
     }
 
-    return startingPrice;
+    return startingPrice.toLocaleString('en-EN');
   };
 
   const getLinkForSharing = () => window?.location.href;
@@ -230,7 +233,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
               <p className="text-sm">Цена</p>
               {info.price && (
                 <p className="text-xl font-medium">
-                  €{handlePriceChange(info.price)}.00{" "}
+                  € {handlePriceChange(info.price)}
                 </p>
               )}
               {info.price === null && (

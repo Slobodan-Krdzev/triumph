@@ -28,7 +28,7 @@ const BikeListingNoSliderCard = ({
       <div className="basis-1/2 flex flex-col justify-between">
         <h3 className="uppercase text-md font-medium mb-2">{title}</h3>
         <p className="text-sm">
-          {price === null ? "Цени Наскоро" : `Цени од: ${price}.00€`}
+          {price === null ? "Цени Наскоро" : `Цени од: € ${price.toLocaleString()}`}
         </p>
         <div className={`mt-2 flex ${configureLink ? "justify-between": "justify-center "}`}>
           <Link href={link} className={`text-red mt-4 pr-4  ${configureLink ? 'w-full text-center basis-1 grow' : 'w-1/2 basis-1/2'}`}>

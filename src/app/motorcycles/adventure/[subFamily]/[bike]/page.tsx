@@ -89,7 +89,7 @@ const BikePage = async ({ params }: any) => {
               items={[
                 {
                   title: "Цена",
-                  desc: `${bike.price ? `€ ${bike.price}.00` : "Наскоро"}`,
+                  desc: `${bike.price ? `€ ${bike.price.toLocaleString('en-EN')}` : "Наскоро"}`,
                 },
               ]}
               title={"Цена"}
