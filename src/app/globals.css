@@ -97,7 +97,7 @@ body {
   background-color: var(--secondary-hover-color);
 }
 
-.quartal-bg-color{
+.quartal-bg-color {
   background-color: var(--quartal-color)
 }
 
@@ -121,7 +121,7 @@ body {
   background-color: var(--primary-hover-color);
 }
 
-.modal-blur{
+.modal-blur {
   background-color: rgba(88, 88, 88, 0.537);
 }
 
@@ -130,18 +130,16 @@ body {
   border-bottom: 3px solid var(--secondary-color);
 }
 
-.border-thin{
+.border-thin {
   border: 1px solid #d3d4d7
 }
 
-.border-thin-left{
+.border-thin-left {
   border-left: 1px solid #d3d4d7
-
 }
 
-.border-thin-right{
+.border-thin-right {
   border-right: 1px solid #d3d4d7
-
 }
 
 .border-thin-gray {
@@ -163,11 +161,10 @@ body {
 
 .overlay-carousell-btn {
   background-color: rgba(0, 0, 0, 0.018)
-
 }
 
 .red-border-bottom {
-  border-bottom:4px solid var(--secondary-color);
+  border-bottom: 4px solid var(--secondary-color);
 }
 
 /* 
@@ -210,13 +207,13 @@ body {
 
 /* GRADIENT CAROUSELL BTNS */
 .gradient-caro-btn-right-to-left:hover {
-  background: rgb(227,227,227);
+  background: rgb(227, 227, 227);
   background: linear-gradient(90deg, rgba(22, 22, 22, 0) 0%, rgba(27, 27, 27, 0.178) 28%, rgba(15, 15, 15, 0.664) 56%, rgba(0, 0, 0, 0.781) 84%);
 }
 
 .gradient-caro-btn-left-to-right:hover {
-  background: rgb(227,227,227);
-background: linear-gradient(270deg, rgba(12, 12, 12, 0.021) 0%, rgba(31, 31, 31, 0.267) 28%, rgba(15, 15, 15, 0.616) 56%, rgba(0,0,0,0.7567401960784313) 84%);
+  background: rgb(227, 227, 227);
+  background: linear-gradient(270deg, rgba(12, 12, 12, 0.021) 0%, rgba(31, 31, 31, 0.267) 28%, rgba(15, 15, 15, 0.616) 56%, rgba(0, 0, 0, 0.7567401960784313) 84%);
 }
 
 /* HOVER EFFECT LINKS UNDERLINE */
@@ -341,11 +338,12 @@ p {
 }
 
 .swiper-pagination span {
-  width: 80px; /* Adjust the width as needed */
-  height: 3px; 
+  width: 80px;
+  /* Adjust the width as needed */
+  height: 3px;
   background-color: var(--secondary-color);
-  margin: 0 5px; 
-  border-radius: 5px; 
+  margin: 0 5px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -355,8 +353,6 @@ p {
 .actions {
   bottom: 2.5rem;
   left: 50%
-
-  
 }
 
 .swiper-button-prev {
@@ -367,18 +363,20 @@ p {
   margin-right: 4rem;
 }
 
-.subFamilyTopSectionBackgroundImage{
+.subFamilyTopSectionBackgroundImage {
   background-size: cover;
   height: 100vh;
 
 }
 
-.bikeGalleryCarousell{
+.bikeGalleryCarousell {
   background-size: cover;
   height: 100vh;
 }
 
-.privacyTable thead, th,td {
+.privacyTable thead,
+th,
+td {
   border: 1px solid black;
   border-collapse: collapse;
   padding: 30px 20px;
@@ -390,26 +388,45 @@ p {
   height: 100vh;
 }
 
+.motorcycleNavPadding {
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+@media screen and (max-width: 1800px) {
+  .motorcycleNavPadding {
+    padding-left: 2.5rem
+      /* 40px */
+    ;
+    padding-right: 2.5rem
+      /* 40px */
+    ;
+  }
+
+}
+
 
 @media screen and (max-width: 1200px) {
+
+
 
   .swiper-button-prev {
     margin-left: 1rem;
     visibility: hidden;
   }
-  
+
   .swiper-button-next {
     margin-right: 1rem;
     visibility: hidden;
 
   }
 
-  .subFamilyTopSectionBackgroundImage{
+  .subFamilyTopSectionBackgroundImage {
     background-size: contain;
     height: 90vh;
   }
 
-  .bikeGalleryCarousell{
+  .bikeGalleryCarousell {
     height: 90vh;
     background-size: contain;
   }
@@ -424,32 +441,29 @@ p {
 @media screen and (max-width: 768px) {
 
   .actions {
-    
+
     right: 2%;
     bottom: 55%;
     left: unset;
   }
 
-  .swiper-pagination span{
+  .swiper-pagination span {
     display: none;
   }
 
-  .subFamilyTopSectionBackgroundImage{
+  .subFamilyTopSectionBackgroundImage {
     background-size: contain;
     height: 50vh;
   }
 
-  .bikeGalleryCarousell{
+  .bikeGalleryCarousell {
     height: 50vh;
     background-size: contain;
   }
 
   .bikeGallerySinglePic {
-    margin-top:1rem;
+    margin-top: 1rem;
     height: 50vh;
     background-size: contain;
   }
 }
-
-
-

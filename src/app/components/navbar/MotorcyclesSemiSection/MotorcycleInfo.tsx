@@ -9,7 +9,7 @@ const MotorcycleInfo = ({ bike }: MotorcycleInfoProps) => {
 
   return (
     <div className="px-8 relative">
-      <h2 className="text-7xl text-light-color font-bold uppercase">
+      <h2 className="text-6xl text-light-color font-bold uppercase">
         {bike[0]?.title ?? "Triumph"}
       </h2>
       {bike[0]?.gallery.modelImage.src && (
