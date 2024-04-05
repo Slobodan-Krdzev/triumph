@@ -81,7 +81,7 @@ const DealerPage = () => {
                 />
               </Link>
               <Link
-                href={"https://www.instagram.com/triumphmotorcycles_skopje/"}
+                href={"https://www.instagram.com/triumph_skopje/"}
                 target="_blank"
               >
                 <Image
