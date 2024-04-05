@@ -27,7 +27,7 @@ export default async function RootLayout({
     const families = await familiesRes.json();
 
     const subFamiliesRes = await fetch(`${SUB_FAMILIES}`, {
-      cache: 'no-store',
+      next: { revalidate: 1000 },
     });
     const subFamilies = await subFamiliesRes.json();
 
