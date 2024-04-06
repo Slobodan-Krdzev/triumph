@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Promo;
+use App\Service\ImageStorage;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 class PromoController extends Controller
 {
@@ -14,14 +17,31 @@ class PromoController extends Controller
 
     public function store(Request $request)
     {
+        $validatedData = $request->validate([
+            'category' => 'required|string|max:255',
+            'title' => 'required|string',
+            'subFamilyType' => 'required|string',
+        ]);
 
-        $promoData = $request->input('promo_data', []);
+        $data = array_merge($request->all(), $validatedData);
 
         $promo = new Promo();
-        $promo->promo_data = json_encode($promoData);
+
+        $promo->category = $data['category'];
+        $promo->title = $data['title'];
+        $promo->subFamilyType = $data['subFamilyType'];
+        $promo->desc = $data['desc'];
+        $promo->btnBlack = $data['btnBlack'];
+
+        $sanitizedCategory = Str::slug($data['category']);
+        $sanitizedTitle = Str::slug($data['title']);
+
+        $promo->image = ImageStorage::storeFile($request, 'image', 'promos/' . $sanitizedCategory . '/', $sanitizedTitle);
+
+
         $promo->save();
 
-        return redirect()->route('add-promos')->with('success', 'Promo data stored successfully');
+        return redirect()->back()->with('success', 'Promo data stored successfully');
     }
 
     public function delete($id)
@@ -37,35 +57,35 @@ class PromoController extends Controller
     public function edit($id)
     {
         $promo = Promo::findOrFail($id);
-        $promo->promo_data = json_decode($promo->promo_data, true);
         return view('layouts.promos.edit', compact('promo'));
     }
 
 
     public function update(Request $request, $id)
     {
-        $request->validate([
-            'promos.*.title' => 'required',
-            'promos.*.subFamilyType' => 'required',
-            'promos.*.desc' => 'required',
-            'promos.*.image' => 'required',
-            'promos.*.btnBlack' => 'required|boolean',
+        $promo = Promo::findOrFail($id);
+        $validatedData = $request->validate([
+            'category' => 'required|string|max:255',
+            'title' => 'required|string',
+            'subFamilyType' => 'required|string',
         ]);
 
-        $promo = Promo::findOrFail($id);
+        $data = array_merge($request->all(), $validatedData);
 
-        $promoData = json_decode($promo->promo_data, true);
+        $sanitizedCategory = Str::slug($data['category']);
+        $sanitizedTitle = Str::slug($data['title']);
 
-        foreach ($request->promo as $key => $promoItem) {
-            $promoData[$key]['title'] = $promoItem['title'];
-            $promoData[$key]['subFamilyType'] = $promoItem['subFamilyType'];
-            $promoData[$key]['desc'] = $promoItem['desc'];
-            $promoData[$key]['image'] = $promoItem['image'];
-            $promoData[$key]['btnBlack'] = $promoItem['btnBlack'];
+        $data['image'] = ImageStorage::storeOrUpdateFile($request, 'image', 'promos/' . $sanitizedCategory . '/', $sanitizedTitle, '',$promo->image ?? '', $promo->title);
+
+        if (Str::slug($request->title) != Str::slug($promo->title)) {
+            Storage::disk('public')->makeDirectory('promos/' . $sanitizedCategory . '/' . Str::slug($request->title));
+
+            ImageStorage::placeFileInNewFolder(Str::slug($promo->title), Str::slug($request->title), 'promos/' . $sanitizedCategory . '/', $sanitizedTitle);
+
+            Storage::disk('public')->deleteDirectory('promos/' . $sanitizedCategory . '/' . Str::slug($promo->title));
         }
 
-        $promo->promo_data = json_encode($promoData);
-        $promo->save();
+        $promo->update($data);
 
         return redirect()->back()->with('success', 'Promo updated successfully.');
     }

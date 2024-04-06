@@ -4,7 +4,11 @@ use App\Http\Controllers\FamilyController;
 use App\Http\Controllers\MainCarousellItemController;
 use App\Http\Controllers\MotorcycleController;
 use App\Http\Controllers\SubFamilyController;
+use App\Models\Family;
+use App\Models\LatestCarousell;
+use App\Models\MainCarousell;
 use App\Models\Motorcycle;
+use App\Models\Promo;
 use App\Models\SubFamily;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -25,11 +29,12 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
-
-// Route::get('/edit-adventure', [SubFamilyController::class, 'index']);
-
-// Route::get('/list-moto', [MotorcycleController::class, 'indexApi']);
-
-Route::get('/json-api', function (){
-    return response()->json(['motorcycles'=>Motorcycle::all(),'subFamilies'=>SubFamily::all()]);
+Route::get('/', function () {
+    return response()->json([
+        'families' => Family::all(),
+        'subFamilies' => SubFamily::all(),
+        'bikes' => Motorcycle::all(),
+        'main-carousell-items' => MainCarousell::all(),
+        'latest-models-carousell-items' => LatestCarousell::all(),
+        'promos' => Promo::all()]);
 });

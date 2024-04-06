@@ -17,7 +17,7 @@ class SubFamilyController extends Controller
     }public function store(Request $request)
 {
     $validatedData = $request->validate([
-        'subFamilyName' => 'required|string|max:255|unique:sub_fam_adventure,subFamilyName,',
+        'subFamilyName' => 'required|string|max:255|unique:sub_families,subFamilyName,',
     ]);
 
     $data = array_merge($request->except('subFamilyName'), $validatedData);
@@ -76,7 +76,7 @@ class SubFamilyController extends Controller
         $subFamAdventure = SubFamily::findOrFail($id);
 
         $validatedData = $request->validate([
-            'subFamilyName' => ['required', Rule::unique('sub_fam_adventure', 'subFamilyName')->ignore($subFamAdventure)],
+            'subFamilyName' => ['required', Rule::unique('sub_families', 'subFamilyName')->ignore($subFamAdventure)],
         ]);
 
         $data = array_merge($request->except('subFamilyName'), $validatedData);
@@ -129,154 +129,31 @@ class SubFamilyController extends Controller
             }
         }
 
-
         $data['gallery']['subFamilyHeroVideo']['src'] = ImageStorage::storeOrUpdateFile($request, 'gallery.subFamilyHeroVideo.src', 'subfamilies/', $title, '/galleryVideo', $subFamAdventure['gallery']['subFamilyHeroVideo']['src'] ?? '', $subFamAdventure->subFamilyName);
 
 
         if (Str::slug($request->subFamilyName) != Str::slug($subFamAdventure->subFamilyName)) {
-            $oldTitle = Str::slug($subFamAdventure->subFamilyName);
-            $newTitle = Str::slug($request->subFamilyName);
+            Storage::disk('public')->makeDirectory('subFamilies/' . Str::slug($request->subFamilyName));
 
-            $accessoryBannerImage = 'subFamilies/' . $oldTitle . '/accessoryBannerImage';
-            $newAccessoryBannerImage = 'subFamilies/' . $newTitle . '/accessoryBannerImage';
+            ImageStorage::placeFileInNewFolder(Str::slug($subFamAdventure->subFamilyName), Str::slug($request->subFamilyName),'subFamilies/','/accessoryBannerImage');
+            ImageStorage::placeFileInNewFolder(Str::slug($subFamAdventure->subFamilyName), Str::slug($request->subFamilyName),'subFamilies/','/accessoryTypesImages');
+            ImageStorage::placeFileInNewFolder(Str::slug($subFamAdventure->subFamilyName), Str::slug($request->subFamilyName),'subFamilies/','/galleryMobileImage');
+            ImageStorage::placeFileInNewFolder(Str::slug($subFamAdventure->subFamilyName), Str::slug($request->subFamilyName),'subFamilies/','/galleryModelImage');
+            ImageStorage::placeFileInNewFolder(Str::slug($subFamAdventure->subFamilyName), Str::slug($request->subFamilyName),'subFamilies/','/galleryTopSectionBGImage');
+            ImageStorage::placeFileInNewFolder(Str::slug($subFamAdventure->subFamilyName), Str::slug($request->subFamilyName),'subFamilies/','/galleryTopSectionImage');
+            ImageStorage::placeFileInNewFolder(Str::slug($subFamAdventure->subFamilyName), Str::slug($request->subFamilyName),'subFamilies/','/galleryVideo');
+            ImageStorage::placeFileInNewFolder(Str::slug($subFamAdventure->subFamilyName), Str::slug($request->subFamilyName),'subFamilies/','/reasonsToDriveReasons');
+            ImageStorage::placeFileInNewFolder(Str::slug($subFamAdventure->subFamilyName), Str::slug($request->subFamilyName),'subFamilies/','/grayCarousell');
+            ImageStorage::placeFileInNewFolder(Str::slug($subFamAdventure->subFamilyName), Str::slug($request->subFamilyName),'subFamilies/','/logo');
+            ImageStorage::placeFileInNewFolder(Str::slug($subFamAdventure->subFamilyName), Str::slug($request->subFamilyName),'subFamilies/','/audio');
+            ImageStorage::placeFileInNewFolder(Str::slug($subFamAdventure->subFamilyName), Str::slug($request->subFamilyName),'subFamilies/','/reasonsToDriveBanner');
 
-            $accessoryTypesImages = 'subFamilies/' . $oldTitle . '/accessoryTypesImages';
-            $newAccessoryTypesImages = 'subFamilies/' . $newTitle . '/accessoryTypesImages';
-
-            $galleryMobileImage = 'subFamilies/' . $oldTitle . '/galleryMobileImage';
-            $newGalleryMobileImage = 'subFamilies/' . $newTitle . '/galleryMobileImage';
-
-            $galleryModelImage = 'subFamilies/' . $oldTitle . '/galleryModelImage';
-            $newGalleryModelImage = 'subFamilies/' . $newTitle . '/galleryModelImage';
-
-            $galleryTopSectionBGImage = 'subFamilies/' . $oldTitle . '/galleryTopSectionBGImage';
-            $newGalleryTopSectionBGImage = 'subFamilies/' . $newTitle . '/galleryTopSectionBGImage';
-
-            $galleryTopSectionImage = 'subFamilies/' . $oldTitle . '/galleryTopSectionImage';
-            $newGalleryTopSectionImage = 'subFamilies/' . $newTitle . '/galleryTopSectionImage';
-
-            $galleryVideo = 'subFamilies/' . $oldTitle . '/galleryVideo';
-            $newGalleryVideo = 'subFamilies/' . $newTitle . '/galleryVideo';
-
-            $reasonsToDriveReasons = 'subFamilies/' . $oldTitle . '/reasonsToDriveReasons';
-            $newReasonsToDriveReasons = 'subFamilies/' . $newTitle . '/reasonsToDriveReasons';
-
-            $grayCarousell = 'subFamilies/' . $oldTitle . '/grayCarousell';
-            $newGrayCarousell = 'subFamilies/' . $newTitle . '/grayCarousell';
-
-            $logo = 'subFamilies/' . $oldTitle . '/logo';
-            $newLogo = 'subFamilies/' . $newTitle . '/logo';
-
-            $audio = 'subFamilies/' . $oldTitle . '/audio';
-            $newAudio = 'subFamilies/' . $newTitle . '/audio';
-
-            $reasonsToDriveBanner = 'subFamilies/' . $oldTitle . '/reasonsToDriveBanner';
-            $newReasonsToDriveBanner = 'subFamilies/' . $newTitle . '/reasonsToDriveBanner';
-
-            Storage::disk('public')->makeDirectory('subFamilies/' . $newTitle);
-
-            $files = Storage::disk('public')->files($grayCarousell);
-            if (!empty($files)) {
-                foreach ($files as $file) {
-                    $filename = pathinfo($file, PATHINFO_BASENAME);
-                    Storage::disk('public')->move($file, $newGrayCarousell . '/' . $filename);
-                }
-            }
-
-            $files = Storage::disk('public')->files($reasonsToDriveReasons);
-            if (!empty($files)) {
-                foreach ($files as $file) {
-                    $filename = pathinfo($file, PATHINFO_BASENAME);
-                    Storage::disk('public')->move($file, $newReasonsToDriveReasons . '/' . $filename);
-                }
-            }
-
-            $files = Storage::disk('public')->files($accessoryBannerImage);
-            if (!empty($files)) {
-                foreach ($files as $file) {
-                    $filename = pathinfo($file, PATHINFO_BASENAME);
-                    Storage::disk('public')->move($file, $newAccessoryBannerImage . '/' . $filename);
-                }
-            }
-
-            $files = Storage::disk('public')->files($accessoryTypesImages);
-            if (!empty($files)) {
-                foreach ($files as $file) {
-                    $filename = pathinfo($file, PATHINFO_BASENAME);
-                    Storage::disk('public')->move($file, $newAccessoryTypesImages . '/' . $filename);
-                }
-            }
-
-            $files = Storage::disk('public')->files($galleryMobileImage);
-            if (!empty($files)) {
-                foreach ($files as $file) {
-                    $filename = pathinfo($file, PATHINFO_BASENAME);
-                    Storage::disk('public')->move($file, $newGalleryMobileImage . '/' . $filename);
-                }
-            }
-
-            $files = Storage::disk('public')->files($galleryModelImage);
-            if (!empty($files)) {
-                foreach ($files as $file) {
-                    $filename = pathinfo($file, PATHINFO_BASENAME);
-                    Storage::disk('public')->move($file, $newGalleryModelImage . '/' . $filename);
-                }
-            }
-
-            $files = Storage::disk('public')->files($galleryTopSectionBGImage);
-            if (!empty($files)) {
-                foreach ($files as $file) {
-                    $filename = pathinfo($file, PATHINFO_BASENAME);
-                    Storage::disk('public')->move($file, $newGalleryTopSectionBGImage . '/' . $filename);
-                }
-            }
-
-            $files = Storage::disk('public')->files($galleryTopSectionImage);
-            if (!empty($files)) {
-                foreach ($files as $file) {
-                    $filename = pathinfo($file, PATHINFO_BASENAME);
-                    Storage::disk('public')->move($file, $newGalleryTopSectionImage . '/' . $filename);
-                }
-            }
-
-            $files = Storage::disk('public')->files($galleryVideo);
-            if (!empty($files)) {
-                foreach ($files as $file) {
-                    $filename = pathinfo($file, PATHINFO_BASENAME);
-                    Storage::disk('public')->move($file, $newGalleryVideo . '/' . $filename);
-                }
-            }
-
-            $files = Storage::disk('public')->files($logo);
-            if (!empty($files)) {
-                foreach ($files as $file) {
-                    $filename = pathinfo($file, PATHINFO_BASENAME);
-                    Storage::disk('public')->move($file, $newLogo . '/' . $filename);
-                }
-            }
-
-            $files = Storage::disk('public')->files($audio);
-            if (!empty($files)) {
-                foreach ($files as $file) {
-                    $filename = pathinfo($file, PATHINFO_BASENAME);
-                    Storage::disk('public')->move($file, $newAudio . '/' . $filename);
-                }
-            }
-
-            $files = Storage::disk('public')->files($reasonsToDriveBanner);
-            if (!empty($files)) {
-                foreach ($files as $file) {
-                    $filename = pathinfo($file, PATHINFO_BASENAME);
-                    Storage::disk('public')->move($file, $newReasonsToDriveBanner . '/' . $filename);
-                }
-            }
-
-            Storage::disk('public')->deleteDirectory('subFamilies/' . $oldTitle);
+            Storage::disk('public')->deleteDirectory('subFamilies/' . Str::slug($subFamAdventure->subFamilyName));
         }
 
         $subFamAdventure->update($data);
 
 
-        return redirect()->route('edit-sub-fam', ['id' => $id])->with('success', 'Your data has been updated successfully.');
+        return redirect()->route('edit-sub-family', ['id' => $id])->with('success', 'Your data has been updated successfully.');
     }
 }

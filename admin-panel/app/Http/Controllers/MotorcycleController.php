@@ -2,19 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Family;
-use App\Models\MainCarousellItem;
 use App\Models\Motorcycle;
 use App\Service\ImageStorage;
 use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rule;
 
 class MotorcycleController extends Controller
 {
-    public function index(Request $request)
+    public function index()
     {
         $data = Motorcycle::all();
         return view('layouts..motorcycles.view', ['data' => $data]);
@@ -79,7 +76,6 @@ class MotorcycleController extends Controller
 
 
     public function edit($id)
-
     {
         $moto = Motorcycle::findOrFail($id);
         return view('layouts..motorcycles.edit', compact('moto'));
@@ -104,31 +100,10 @@ class MotorcycleController extends Controller
         $data['bikeCollorPalletteGallery']['default'] = ImageStorage::storeOrUpdateFile($request, 'bikeCollorPalletteGallery.default', 'motorcycles/', $title, '/bikeCollorPalletteGallery', $motorcycle['bikeCollorPalletteGallery']['default'] ?? '', $motorcycle->title);
 
         if (isset($request['bikeCollorPalletteGallery.colors'])) {
-//            $keysRequest = array_keys($request['bikeCollorPalletteGallery']['colors'] ?? []);
-//            $keysMotorcycle = array_keys($motorcycles['bikeCollorPalletteGallery']['colors'] ?? []);
-//
-//            $maxLengthRequest = !empty($keysRequest) ? max($keysRequest) : 0;
-//            $maxLengthMotorcycle = !empty($keysMotorcycle) ? max($keysMotorcycle) : 0;
-//            $length = max($maxLengthRequest, $maxLengthMotorcycle);
-//            for ($i=0; $i<$length + 1; $i++){
-//                if ($request->has('bikeCollorPalletteGallery.colors.' . $i . '.base')){
-//                    $colorData['bikeCollorPalletteGallery']['colors'][$i]['base'] = $request['bikeCollorPalletteGallery']['colors'][$i]['base'];
-//                } else {
-//                    $colorData['bikeCollorPalletteGallery']['colors'][$i]['base'] = $motorcycles['bikeCollorPalletteGallery']['colors'][$i]['base'];
-//                }
-//                if ($request->has('bikeCollorPalletteGallery.colors.' . $i . '.reversed')){
-//                    $colorData['bikeCollorPalletteGallery']['colors'][$i]['reversed'] = $request['bikeCollorPalletteGallery']['colors'][$i]['reversed'];
-//                } else {
-//                    $colorData['bikeCollorPalletteGallery']['colors'][$i]['reversed'] = $motorcycles['bikeCollorPalletteGallery']['colors'][$i]['reversed'];
-//                }
-//            }
-
             $bikeCollorPalletteGallery = array_values($request->input('bikeCollorPalletteGallery.colors'));
 
             $data['bikeCollorPalletteGallery']['colors'] = $bikeCollorPalletteGallery;
 
-//            $request->merge(['bikeCollorPalletteGallery' => $colorData['bikeCollorPalletteGallery']]);
-//            //ddd($request->all());
             foreach ($bikeCollorPalletteGallery as $i => $color) {
                 $data['bikeCollorPalletteGallery']['colors'][$i]['base'] = ImageStorage::storeOrUpdateFile($request, 'bikeCollorPalletteGallery.colors.' . $i . '.base', 'motorcycles/', $title, '/bikeCollorPalletteGallery', $motorcycle['bikeCollorPalletteGallery']['colors'][$i]['base'] ?? '', $motorcycle->title);
                 $data['bikeCollorPalletteGallery']['colors'][$i]['reversed'] = ImageStorage::storeOrUpdateFile($request, 'bikeCollorPalletteGallery.colors.' . $i . '.reversed', 'motorcycles/', $title, '/bikeCollorPalletteGallery', $motorcycle['bikeCollorPalletteGallery']['colors'][$i]['reversed'] ?? '', $motorcycle->title);
@@ -173,91 +148,17 @@ class MotorcycleController extends Controller
         }
 
         if (Str::slug($request->title) != Str::slug($motorcycle->title)) {
-            $oldTitle = Str::slug($motorcycle->title);
-            $newTitle = Str::slug($request->title);
+            Storage::disk('public')->makeDirectory('motorcycles/' . Str::slug($request->title));
 
-            $bikeCollorPalletteGallery = 'motorcycles/' . $oldTitle . '/bikeCollorPalletteGallery';
-            $newBikeCollorPalletteGallery = 'motorcycles/' . $newTitle . '/bikeCollorPalletteGallery';
+            ImageStorage::placeFileInNewFolder(Str::slug($motorcycle->title), Str::slug($request->title),'motorcycles/','/bikeCollorPalletteGallery');
+            ImageStorage::placeFileInNewFolder(Str::slug($motorcycle->title), Str::slug($request->title),'motorcycles/','/bikePageCarousell');
+            ImageStorage::placeFileInNewFolder(Str::slug($motorcycle->title), Str::slug($request->title),'motorcycles/','/bikePageImageGallery');
+            ImageStorage::placeFileInNewFolder(Str::slug($motorcycle->title), Str::slug($request->title),'motorcycles/','/bikePagePromo');
+            ImageStorage::placeFileInNewFolder(Str::slug($motorcycle->title), Str::slug($request->title),'motorcycles/','/customizationColors');
+            ImageStorage::placeFileInNewFolder(Str::slug($motorcycle->title), Str::slug($request->title),'motorcycles/','/modelImage');
+            ImageStorage::placeFileInNewFolder(Str::slug($motorcycle->title), Str::slug($request->title),'motorcycles/','/promoYoutubeVideo');
 
-            $bikePageCarousell= 'motorcycles/' . $oldTitle . '/bikePageCarousell';
-            $newBikePageCarousell = 'motorcycles/' . $newTitle . '/bikePageCarousell';
-
-            $bikePageImageGallery = 'motorcycles/' . $oldTitle . '/bikePageImageGallery';
-            $newBikePageImageGallery = 'motorcycles/' . $newTitle . '/bikePageImageGallery';
-
-            $bikePagePromo = 'motorcycles/' . $oldTitle . '/bikePagePromo';
-            $newBikePagePromo = 'motorcycles/' . $newTitle . '/bikePagePromo';
-
-            $customizationColors = 'motorcycles/' . $oldTitle . '/customizationColors';
-            $newCustomizationColors = 'motorcycles/' . $newTitle . '/customizationColors';
-
-            $modelImage = 'motorcycles/' . $oldTitle . '/modelImage';
-            $newModelImage = 'motorcycles/' . $newTitle . '/modelImage';
-
-            $promoYoutubeVideo = 'motorcycles/' . $oldTitle . '/promoYoutubeVideo';
-            $newPromoYoutubeVideo = 'motorcycles/' . $newTitle . '/promoYoutubeVideo';
-
-
-
-            Storage::disk('public')->makeDirectory('motorcycles/' . $newTitle);
-
-            $files = Storage::disk('public')->files($bikeCollorPalletteGallery);
-            if (!empty($files)) {
-                foreach ($files as $file) {
-                    $filename = pathinfo($file, PATHINFO_BASENAME);
-                    Storage::disk('public')->move($file, $newBikeCollorPalletteGallery . '/' . $filename);
-                }
-            }
-
-            $files = Storage::disk('public')->files($bikePageCarousell);
-            if (!empty($files)) {
-                foreach ($files as $file) {
-                    $filename = pathinfo($file, PATHINFO_BASENAME);
-                    Storage::disk('public')->move($file, $newBikePageCarousell . '/' . $filename);
-                }
-            }
-
-            $files = Storage::disk('public')->files($bikePageImageGallery);
-            if (!empty($files)) {
-                foreach ($files as $file) {
-                    $filename = pathinfo($file, PATHINFO_BASENAME);
-                    Storage::disk('public')->move($file, $newBikePageImageGallery . '/' . $filename);
-                }
-            }
-
-            $files = Storage::disk('public')->files($bikePagePromo);
-            if (!empty($files)) {
-                foreach ($files as $file) {
-                    $filename = pathinfo($file, PATHINFO_BASENAME);
-                    Storage::disk('public')->move($file, $newBikePagePromo . '/' . $filename);
-                }
-            }
-
-            $files = Storage::disk('public')->files($customizationColors);
-            if (!empty($files)) {
-                foreach ($files as $file) {
-                    $filename = pathinfo($file, PATHINFO_BASENAME);
-                    Storage::disk('public')->move($file, $newCustomizationColors . '/' . $filename);
-                }
-            }
-
-            $files = Storage::disk('public')->files($modelImage);
-            if (!empty($files)) {
-                foreach ($files as $file) {
-                    $filename = pathinfo($file, PATHINFO_BASENAME);
-                    Storage::disk('public')->move($file, $newModelImage . '/' . $filename);
-                }
-            }
-
-            $files = Storage::disk('public')->files($promoYoutubeVideo);
-            if (!empty($files)) {
-                foreach ($files as $file) {
-                    $filename = pathinfo($file, PATHINFO_BASENAME);
-                    Storage::disk('public')->move($file, $newPromoYoutubeVideo . '/' . $filename);
-                }
-            }
-
-            Storage::disk('public')->deleteDirectory('motorcycles/' . $oldTitle);
+            Storage::disk('public')->deleteDirectory('motorcycles/' . Str::slug($motorcycle->title));
         }
 
         $motorcycle->update($data);

@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
+use Nette\Utils\Image;
 
 class LatestCarouselController extends Controller
 {
@@ -71,22 +72,15 @@ class LatestCarouselController extends Controller
         $validatedData['image'] = ImageStorage::storeOrUpdateFile($request, 'image', 'latestCarousel/', $title, '/images', $carousel->image ?? '', $carousel->title);
 
         if (Str::slug($request->title) != Str::slug($carousel->title)) {
-            $images = 'latestCarousel/' . Str::slug($carousel->title) . '/images';
-            $newImages = 'latestCarousel/' . Str::slug($request->title) . '/images';
             Storage::disk('public')->makeDirectory('latestCarousel/' . Str::slug($request->title));
 
-
-            $file = Storage::disk('public')->files($images);
-            if (!empty($file)) {
-                $filename = pathinfo($file[0], PATHINFO_BASENAME);
-                Storage::disk('public')->move($images . '/' . $filename, $newImages . '/' . $filename);
-            }
+            ImageStorage::placeFileInNewFolder(Str::slug($carousel->title), Str::slug($request->title), 'latestCarousel/','/images' );
 
             Storage::disk('public')->deleteDirectory('latestCarousel/' . Str::slug($carousel->title));
         }
 
         $carousel->update($validatedData);
 
-        return redirect()->route('edit-latest-carousell', ['id' => $id])->with('success', 'Your data has been updated successfully.');
+        return redirect()->route('edit-latest-carousel', ['id' => $id])->with('success', 'Your data has been updated successfully.');
     }
 }
