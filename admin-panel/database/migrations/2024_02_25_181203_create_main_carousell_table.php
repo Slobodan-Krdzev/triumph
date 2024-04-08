@@ -21,6 +21,7 @@ return new class extends Migration
             $table->json('link1')->nullable();
             $table->json('link2')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

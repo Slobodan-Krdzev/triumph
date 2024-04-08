@@ -220,7 +220,7 @@
                                                dataName="accessory[accessoryTypes][0][title]"
                                                oldValue="accessory.accessoryTypes.0.title"/>
 
-                            <x-form.text-input forId="accessory_type_0_desc" placeholder="Accessory Type Description"
+                            <x-form.textarea forId="accessory_type_0_desc" placeholder="Accessory Type Description"
                                                dataName="accessory[accessoryTypes][0][desc]"
                                                oldValue="accessory.accessoryTypes.0.desc"/>
 

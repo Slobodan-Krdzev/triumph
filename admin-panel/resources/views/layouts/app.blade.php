@@ -76,7 +76,7 @@
                 var newIndex = section.children().length;
                 var newField = `
                 <div class="dynamic-input-wrapper">
-                    <x-form.text-input forId="${id}_${newIndex}" placeholder="${label.charAt(0).toUpperCase() + label.slice(1) + newIndex}" dataName="${name}[${newIndex}]" oldValue="${name}.${newIndex}"/>
+                    <x-form.text-input forId="${id}_${newIndex}" placeholder="${label.charAt(0).toUpperCase() + label.slice(1)} ${newIndex}" dataName="${name}[${newIndex}]" oldValue="${name}.${newIndex}"/>
                     <x-form.remove-field-button />
                 </div>`;
 
@@ -120,18 +120,38 @@
 
             function addTwoFields(section, name, id1, id2, label1, label2) {
                 var newIndex = section.children().length;
-                var newField = `
-                    <div  class="mt-3 dynamic-input-wrapper">
+                var newField;
 
-                    <x-form.text-input forId="${id1}_${newIndex}" placeholder="${label1.charAt(0).toUpperCase() + label1.slice(1)}" dataName="${name}[${newIndex}][${label1}]" oldValue="${name}.${newIndex}.${label1}"/>
+                // Check if label1 is 'desc', if true, render textarea, else render text input
+                if (label1 === 'desc') {
+                    newField = `
+                    <div class="mt-3 dynamic-input-wrapper">
+                        <x-form.textarea forId="${id1}_${newIndex}" placeholder="${label1.charAt(0).toUpperCase() + label1.slice(1)}ription ${newIndex}" dataName="${name}[${newIndex}][${label1}]" oldValue="${name}.${newIndex}.${label1}"></x-form.textarea>
+                        <x-form.text-input forId="${id2}_${newIndex}" placeholder="${label2.charAt(0).toUpperCase() + label2.slice(1)} ${newIndex}" dataName="${name}[${newIndex}][${label2}]" oldValue="${name}.${newIndex}.${label2}"></x-form.text-input>
 
-                    <x-form.text-input forId="${id2}_${newIndex}" placeholder="${label2.charAt(0).toUpperCase() + label2.slice(1)}" dataName="${name}[${newIndex}][${label2}]" oldValue="${name}.${newIndex}.${label2}"/>
-
-                    <x-form.remove-field-button />
+                        <x-form.remove-field-button />
                     </div>`;
+                } else if(label2 === 'desc') {
+                    newField = `
+                     <div class="mt-3 dynamic-input-wrapper">
+                        <x-form.text-input forId="${id1}_${newIndex}" placeholder="${label1.charAt(0).toUpperCase() + label1.slice(1)} ${newIndex}" dataName="${name}[${newIndex}][${label1}]" oldValue="${name}.${newIndex}.${label1}"></x-form.text-input>
+                        <x-form.textarea forId="${id2}_${newIndex}" placeholder="${label2.charAt(0).toUpperCase() + label2.slice(1)}ription ${newIndex}" dataName="${name}[${newIndex}][${label2}]" oldValue="${name}.${newIndex}.${label2}"></x-form.textarea>
+
+                        <x-form.remove-field-button />
+                    </div>`;
+                } else {
+                    newField = `
+                     <div class="mt-3 dynamic-input-wrapper">
+                        <x-form.text-input forId="${id1}_${newIndex}" placeholder="${label1.charAt(0).toUpperCase() + label1.slice(1)} ${newIndex}" dataName="${name}[${newIndex}][${label1}]" oldValue="${name}.${newIndex}.${label1}"></x-form.text-input>
+                        <x-form.text-input forId="${id2}_${newIndex}" placeholder="${label2.charAt(0).toUpperCase() + label2.slice(1)} ${newIndex}" dataName="${name}[${newIndex}][${label2}]" oldValue="${name}.${newIndex}.${label2}"></x-form.text-input>
+
+                        <x-form.remove-field-button />
+                    </div>`;
+                }
 
                 section.append(newField);
             }
+
 
             $('.add-two-images').click(function (e) {
                 e.preventDefault();
@@ -212,11 +232,11 @@
                 var newIndex = section.children().length;
                 var newField = `
                     <div class="dynamic-input-wrapper">
-                    <x-form.text-input forId="${id1}_${newIndex}" placeholder="${label1.charAt(0).toUpperCase() + label1.slice(1)}" dataName="${name}[${newIndex}][${label1}]" oldValue="${name}.${newIndex}.${label1}"/>
+                    <x-form.text-input forId="${id1}_${newIndex}" placeholder="${label1.charAt(0).toUpperCase() + label1.slice(1)} ${newIndex}" dataName="${name}[${newIndex}][${label1}]" oldValue="${name}.${newIndex}.${label1}"/>
 
-                    <x-form.text-input forId="${id2}_${newIndex}" placeholder="${label2.charAt(0).toUpperCase() + label2.slice(1)}" dataName="${name}[${newIndex}][${label2}]" oldValue="${name}.${newIndex}.${label2}"/>
+                    <x-form.textarea forId="${id2}_${newIndex}" placeholder="${label2.charAt(0).toUpperCase() + label2.slice(1)}ription ${newIndex}" dataName="${name}[${newIndex}][${label2}]" oldValue="${name}.${newIndex}.${label2}"/>
 
-                    <x-form.input labelText="${imgLabel}:" imageId="${name}_${newIndex}"
+                    <x-form.input labelText="${imgLabel} ${newIndex}:" imageId="${name}_${newIndex}"
                     name="${name}[${newIndex}][image]">
                     <img id='${name}_${newIndex}' width="200" height="150"
                         class="object-cover border m-3 border-gray-200" />
@@ -242,7 +262,7 @@
                 <div  class="m-3 border-2 rounded border-black p-8 dynamic-input-wrapper">
                     <x-form.text-input forId="accessory_type_${newIndex}_title" placeholder="Accessory Type ${newIndex} Title" dataName="accessory[accessoryTypes][${newIndex}][title]" oldValue="accessory.accessoryTypes.${newIndex}.title"/>
 
-                    <x-form.text-input forId="accessory_type_${newIndex}_desc" placeholder="Accessory Type ${newIndex} Description" dataName="accessory[accessoryTypes][${newIndex}][desc]" oldValue="accessory.accessoryTypes.${newIndex}.desc"/>
+                    <x-form.textarea forId="accessory_type_${newIndex}_desc" placeholder="Accessory Type ${newIndex} Description" dataName="accessory[accessoryTypes][${newIndex}][desc]" oldValue="accessory.accessoryTypes.${newIndex}.desc"/>
 
                     <x-form.dynamic-text-inputs header="Accesory Type ${newIndex} Items List" divId="accessoryType${newIndex}ItemsList"
                                         dataId1="items${newIndex}" dataLabel1="item Text" dataName="accessory[accessoryTypes][${newIndex}][itemsList]"

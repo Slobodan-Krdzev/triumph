@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('image')->nullable();
             $table->boolean('btnBlack')->default(false);
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
