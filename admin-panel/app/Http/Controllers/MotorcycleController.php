@@ -22,7 +22,7 @@ class MotorcycleController extends Controller
 
     public function create()
     {
-        return view('layouts..motorcycles.add',);
+        return view('layouts.motorcycles.add',);
     }
 
     public function store(Request $request)
