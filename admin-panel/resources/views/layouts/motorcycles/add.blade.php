@@ -13,10 +13,7 @@
             @endif
             <h1 class="font-bold text-3xl my-2">Base Info</h1>
 
-            <div class="flex items-center space-x-6">
                 <x-form.text-input forId="title"  placeholder="Title" dataName="title" oldValue="title" />
-                <button type="button" class="bg-red-500 p-4"></button>
-            </div>
 
             <x-form.text-input forId="model" placeholder="Model" dataName="model" oldValue="model" />
 
