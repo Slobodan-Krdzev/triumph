@@ -63,7 +63,7 @@ class SubFamilyController extends Controller
     SubFamily::create($data);
 
 
-    return back()->with('success', 'Sub-Family data stored successfully');
+    return redirect()->route('view-motorcycles')->with('success', 'Sub-Family data stored successfully');
 }
     public function edit($id)
     {

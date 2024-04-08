@@ -37,6 +37,7 @@ Route::get('/create-motorcycle', [MotorcycleController::class, 'create'])->name(
 Route::post('/store-motorcycle', [MotorcycleController::class, 'store'])->name('store-motorcycle');
 Route::get('/edit-motorcycle/{id}', [MotorcycleController::class, 'edit'])->name('edit-motorcycle');
 Route::put('/motorcycle/{id}', [MotorcycleController::class, 'update'])->name('update-motorcycle');
+Route::delete('/delete-motorcycle/{id}', [MotorcycleController::class, 'destroy'])->name('delete-motorcycle');
 
 
 // FAMILIES -----------------------------------------------
@@ -63,12 +64,14 @@ Route::get('/create-latest-carousel', [LatestCarouselController::class, 'create'
 Route::post('/store-latest-carousel', [LatestCarouselController::class, 'store'])->name('store-latest-carousel');
 Route::get('/edit-latest-carousel/{id}', [LatestCarouselController::class, 'edit'])->name('edit-latest-carousel');
 Route::put('/update-carousel/{id}', [LatestCarouselController::class, 'update'])->name('update-latest-carousel');
+Route::delete('/delete-carousel/{id}', [LatestCarouselController::class, 'destroy'])->name('delete-latest-carousel');
 
 // MAIN CAROUSELS -----------------------------------------------
 Route::get('/create-main-carousel', [MainCarouselsController::class, 'create'])->name('create-main-carousel');
 Route::post('/store-main-carousels', [MainCarouselsController::class, 'store'])->name('store-main-carousel');
 Route::get('/edit-main-carousel/{id}', [MainCarouselsController::class, 'edit'])->name('edit-main-carousel');
 Route::put('/update-main-carousel/{id}', [MainCarouselsController::class, 'update'])->name('update-main-carousel');
+Route::delete('/delete-main-carousel/{id}', [MainCarouselsController::class, 'destroy'])->name('delete-main-carousel');
 
 
 

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ApiController;
 use App\Http\Controllers\FamilyController;
 use App\Http\Controllers\MainCarousellItemController;
 use App\Http\Controllers\MotorcycleController;
@@ -29,12 +30,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
-Route::get('/', function () {
-    return response()->json([
-        'families' => Family::all(),
-        'subFamilies' => SubFamily::all(),
-        'bikes' => Motorcycle::all(),
-        'main-carousell-items' => MainCarousell::all(),
-        'latest-models-carousell-items' => LatestCarousell::all(),
-        'promos' => Promo::all()]);
-});
+Route::get('/data', [ApiController::class, 'index']);
+Route::get('/data/{table}', [ApiController::class, 'singleTable'])->where('table', '[a-zA-Z0-9_]+');
