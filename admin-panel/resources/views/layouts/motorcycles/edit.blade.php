@@ -19,11 +19,10 @@
             <x-form.text-input forId="model" placeholder="Model" dataName="model" oldValue="model"
                                dataValue="{{ $moto->model ?? '' }}"/>
 
-            <x-form.text-input forId="category" placeholder="Category" dataName="category" oldValue="category"
-                               dataValue="{{ $moto->category ?? '' }}"/>
+            <x-form.select-family forId="category" placeholder="Category" dataName="category" :families="$families" :type="$moto->category"/>
 
-            <x-form.text-input forId="subFamilyCategory" placeholder="Sub Family Category" dataName="subFamilyCategory"
-                               oldValue="subFamilyCategory" dataValue="{{ $moto->subFamilyCategory }}"/>
+            <x-form.select-sub-family forId="subFamilyCategory" placeholder="Sub Family Category" dataName="subFamilyCategory"
+                                      :subFamilies="$subFamilies" :subFamilyName="$moto->subFamilyCategory"/>
 
             <x-form.text-input forId="edition" placeholder="Edition" dataName="edition" oldValue="edition"
                                dataValue="{{ $moto->edition ?? '' }}"/>

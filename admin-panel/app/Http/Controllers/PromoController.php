@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Family;
 use App\Models\Promo;
+use App\Models\SubFamily;
 use App\Service\ImageStorage;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\Request;
@@ -11,9 +13,9 @@ use Illuminate\Support\Str;
 
 class PromoController extends Controller
 {
-    public function create()
+    public function create($family)
     {
-        return view('layouts.promos.add');
+        return view('layouts.promos.add', ['type' => $family, 'families' => Family::get(), 'subFamilies' => SubFamily::get()]);
     }
 
     public function store(Request $request)
@@ -61,7 +63,7 @@ class PromoController extends Controller
     public function edit($id)
     {
         $promo = Promo::findOrFail($id);
-        return view('layouts.promos.edit', compact('promo'));
+        return view('layouts.promos.edit', ['promo' => $promo, 'families' => Family::get(), 'subFamilies' => SubFamily::get()]);
     }
 
 

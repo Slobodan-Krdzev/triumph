@@ -114,7 +114,7 @@
             <button type="submit" class="my-5 bg-lime-200 shadow rounded p-4">Update Family</button>
         </form>
             <h1 class="font-bold text-3xl my-2">Promo Info For Family Page</h1>
-            <a href="{{ route('create-promo') }}"
+            <a href="{{ route('create-promo', ['family' => $family->type]) }}"
                class="block text-white my-2 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                 Add Promo
             </a>

@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Family;
 use App\Models\Motorcycle;
+use App\Models\SubFamily;
 use App\Service\ImageStorage;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Support\Facades\Storage;
@@ -20,7 +22,7 @@ class MotorcycleController extends Controller
 
     public function create()
     {
-        return view('layouts..motorcycles.add',);
+        return view('layouts..motorcycles.add', ['families' => Family::get(), 'subFamilies' => SubFamily::get()]);
     }
 
     public function store(Request $request)
@@ -71,14 +73,14 @@ class MotorcycleController extends Controller
 
         Motorcycle::create($data);
 
-        return redirect()->route('view-motorcycles')->with('success', 'Motorcycle data stored successfully');
+        return redirect()->route('view-motorcycles')->with('success', 'Motorcycle ' . $validatedData['title'] . ' stored successfully');
     }
 
 
     public function edit($id)
     {
         $moto = Motorcycle::findOrFail($id);
-        return view('layouts..motorcycles.edit', compact('moto'));
+        return view('layouts..motorcycles.edit', ['moto' => $moto, 'families' => Family::get(), 'subFamilies' => SubFamily::get()]);
     }
 
 
@@ -163,7 +165,7 @@ class MotorcycleController extends Controller
 
         $motorcycle->update($data);
 
-        return redirect()->route('view-motorcycles')->with('success', 'Motorcycle updated successfully');
+        return redirect()->back()->with('success', 'Motorcycle ' . $motorcycle->title . ' updated successfully');
     }
 
     public function destroy($id){

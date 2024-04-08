@@ -14,20 +14,22 @@
             @csrf
             @method('PUT')
 
-            <x-form.text-input forId="category" placeholder="Category"
+            <x-form.select-family forId="category" placeholder="Category"
                                dataName="category"
                                oldValue="category"
-                               dataValue="{{ $promo->category }}"/>
+                                  :families="$families"
+                                  :type="$promo->category"/>
 
             <x-form.text-input forId="title" placeholder="Title"
                                dataName="title"
                                oldValue="title"
                                dataValue="{{ $promo->title }}"/>
 
-            <x-form.text-input forId="subFamilyType" placeholder="Sub Family Type"
+            <x-form.select-sub-family forId="subFamilyType" placeholder="Sub Family Type"
                                dataName="subFamilyType"
                                oldValue="subFamilyType"
-                               dataValue="{{ $promo->subFamilyType }}"/>
+                                      :subFamilies="$subFamilies"
+                                      :subFamilyName="$promo->subFamilyType"/>
 
             <x-form.textarea forId="desc" placeholder="Description"
                              dataName="desc"

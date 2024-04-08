@@ -23,10 +23,10 @@
 
             <x-form.text-input forId="model" placeholder="Model" dataName="model" oldValue="model"/>
 
-            <x-form.text-input forId="category" placeholder="Category" dataName="category" oldValue="category"/>
+            <x-form.select-family forId="category" placeholder="Category" dataName="category" :families="$families" />
 
-            <x-form.text-input forId="subFamilyCategory" placeholder="Sub Family Category" dataName="subFamilyCategory"
-                               oldValue="subFamilyCategory"/>
+            <x-form.select-sub-family forId="subFamilyCategory" placeholder="Sub Family Category" dataName="subFamilyCategory"
+                               :subFamilies="$subFamilies"/>
 
             <x-form.text-input forId="edition" placeholder="Edition" dataName="edition" oldValue="edition"/>
 

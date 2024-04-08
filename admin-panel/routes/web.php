@@ -45,18 +45,18 @@ Route::get('/view-families',  [FamiliesController::class, 'index'])->name('view-
 Route::get('/edit-family/{id}', [FamiliesController::class, 'edit'])->name('edit-family');
 Route::put('/update-family/{id}', [FamiliesController::class, 'update'])->name('update-family');
 
+// PROMOS -----------------------------------------------
+Route::get('/edit-promo/{id}', [PromoController::class, 'edit'])->name('edit-promo');
+Route::get('/{family}/create-promo', [PromoController::class, 'create'])->name('create-promo');
+Route::post('/store-promo', [PromoController::class, 'store'])->name('store-promo');
+Route::delete('/promo/{id}', [PromoController::class, 'delete'])->name('delete-promo');
+Route::put('/promo/{id}', [PromoController::class, 'update'])->name('update-promo');
+
 // SUB FAMILIES -----------------------------------------------
 Route::get('/create-sub-family',  [SubFamilyController::class, 'create'])->name('create-sub-family');
 Route::post('/store-sub-family', [SubFamilyController::class, 'store'])->name('store-sub-family');
 Route::get('/edit-sub-family/{id}', [SubFamilyController::class, 'edit'])->name('edit-sub-family');
 Route::put('/update-sub-family/{id}', [SubFamilyController::class, 'update'])->name('update-sub-family');
-
-// PROMOS -----------------------------------------------
-Route::get('/edit-promo/{id}', [PromoController::class, 'edit'])->name('edit-promo');
-Route::get('/create-promo', [PromoController::class, 'create'])->name('create-promo');
-Route::post('/store-promo', [PromoController::class, 'store'])->name('store-promo');
-Route::delete('/promo/{id}', [PromoController::class, 'delete'])->name('delete-promo');
-Route::put('/promo/{id}', [PromoController::class, 'update'])->name('update-promo');
 
 // LATEST CAROUSELS -----------------------------------------------
 Route::get('/view-carousels', [LatestCarouselController::class, 'index'])->name('view-carousels');
