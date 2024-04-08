@@ -7,7 +7,6 @@ use App\Models\Promo;
 use App\Models\SubFamily;
 use App\Service\ImageStorage;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rule;
@@ -76,6 +75,6 @@ class FamiliesController extends Controller
 
         $family->update($data);
 
-        return Redirect::route('view-families')->with('success', 'Family updated successfully.');
+        return back()->with('success', 'Family updated successfully.');
     }
 }

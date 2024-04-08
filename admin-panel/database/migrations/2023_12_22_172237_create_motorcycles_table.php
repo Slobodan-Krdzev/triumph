@@ -31,6 +31,7 @@ return new class extends Migration
             $table->json('bikePagePromo')->nullable();
             $table->json('bikePageImageGallery')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

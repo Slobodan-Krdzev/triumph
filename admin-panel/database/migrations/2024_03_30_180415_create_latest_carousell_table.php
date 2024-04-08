@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('url');
             $table->string('image');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
