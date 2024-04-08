@@ -50,7 +50,7 @@ class MainCarouselsController extends Controller
 
         $carousel->save();
 
-        return redirect()->route('view-carousels')->with('success', 'MainCarousel item created successfully.');
+        return redirect()->route('view-carousels')->with('success', 'Main Carousel Item ' . $carousel->title . ' stored successfully.');
     }
 
 
@@ -101,7 +101,7 @@ class MainCarouselsController extends Controller
 
         $carousel->update($validatedData);
 
-        return redirect()->route('edit-main-carousel', ['id' => $id])->with('success', 'Your data has been updated successfully.');
+        return redirect()->back()->with('success', 'Main Carousel Item ' . $validatedData['title'] . ' updated successfully.');
     }
 
     public function destroy($id){

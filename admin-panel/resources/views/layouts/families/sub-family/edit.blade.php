@@ -31,8 +31,9 @@
             <x-form.text-input forId="title" placeholder="Title" dataName="title" oldValue="title"
                                dataValue="{{ $subFamData->title ?? '' }}"/>
 
-            <x-form.text-input forId="familyType" placeholder="Family Type" dataName="familyType" oldValue="familyType"
-                               dataValue="{{ $subFamData->familyType ?? '' }}"/>
+            <x-form.select-family forId="familyType" placeholder="Family Type" dataName="familyType" oldValue="familyType"
+                                  :families="$families"
+                                  :type="$subFamData->familyType"/>
 
             <x-form.text-input forId="price" placeholder="Price" dataName="price" oldValue="price"
                                dataValue="{{ $subFamData->price ?? '' }}"/>

@@ -10,8 +10,8 @@
             <x-form.text-input forId="subFamilyName" placeholder="Sub Family Name" dataName="subFamilyName"
                                oldValue="subFamilyName"/>
 
-            <x-form.text-input forId="familyType" placeholder="Family Type" dataName="familyType"
-                               oldValue="familyType"/>
+            <x-form.select-family forId="familyType" placeholder="Family Type" dataName="familyType"
+                               :families="$families"/>
 
             <x-form.text-input forId="title" placeholder="Title" dataName="title" oldValue="title"/>
 

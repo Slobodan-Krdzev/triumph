@@ -46,7 +46,7 @@ class LatestCarouselController extends Controller
 
         $carousel->save();
 
-        return redirect()->route('view-carousels')->with('success', 'Your data has been stored successfully.');
+        return redirect()->route('view-carousels')->with('success', 'Latest Carousel Item ' . $carousel->title . ' stored successfully.');
     }
     public function edit($id)
     {
@@ -82,7 +82,7 @@ class LatestCarouselController extends Controller
 
         $carousel->update($validatedData);
 
-        return redirect()->route('edit-latest-carousel', ['id' => $id])->with('success', 'Your data has been updated successfully.');
+        return redirect()->back()->with('success', 'Latest Carousel Item ' . $validatedData['title'] . ' updated successfully.');
     }
 
     public function destroy($id){
