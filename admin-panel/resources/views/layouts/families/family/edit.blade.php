@@ -8,6 +8,12 @@
                 {{ session('success') }}
             </div>
         @endif
+        @if (session('error'))
+            <div class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400"
+                 role="alert">
+                {{ session('error') }}
+            </div>
+        @endif
 
         <form action="{{ route('update-family', $family->id) }}" method="POST" class="flex flex-col"
               enctype="multipart/form-data">
@@ -116,8 +122,7 @@
                     <div class="flex justify-between items-center">
                         <a href="{{ route('edit-promo', ['id' => $promo->id]) }}"
                            class="bg-yellow-300 p-1 mr-3 rounded">Edit</a>
-                        <a href="{{ route('delete-promo', ['id' => $promo->id]) }}"
-                           class="bg-red-500 p-1 rounded text-white"
+                        <a href="#" class="bg-red-500 p-1 rounded text-white"
                            onclick="event.preventDefault(); if(confirm('Are you sure you want to delete this item?')) document.getElementById('delete-form-{{ $promo->id }}').submit();">Delete</a>
                         <form id="delete-form-{{ $promo->id }}"
                               action="{{ route('delete-promo', ['id' => $promo->id]) }}" method="POST"

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Promo;
 use App\Service\ImageStorage;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
@@ -46,10 +47,13 @@ class PromoController extends Controller
 
     public function delete($id)
     {
-        $promo = Promo::findOrFail($id);
-        $promo->delete();
-
-        return back()->with('success', 'Promo item deleted successfully.');
+        try {
+            $promo = Promo::findOrFail($id);
+            $promo->delete();
+            return back()->with('success', 'Promo item deleted successfully.');
+        } catch (ModelNotFoundException $e) {
+            return back()->with('error', 'Promo item not found.');
+        }
     }
 
 

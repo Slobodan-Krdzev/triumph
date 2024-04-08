@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Motorcycle;
 use App\Service\ImageStorage;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
@@ -57,7 +58,6 @@ class MotorcycleController extends Controller
             }
         }
 
-
         if($request->has('bikePageImageGallery')) {
             foreach ($request->bikePageImageGallery as $key => $pageImage) {
                 $data['bikePageImageGallery'][$key]['src'] = ImageStorage::storeFile($request, 'bikePageImageGallery.' . $key . '.src', 'motorcycles/', $title, '/bikePageImageGallery');
@@ -71,7 +71,7 @@ class MotorcycleController extends Controller
 
         Motorcycle::create($data);
 
-        return redirect()->back()->with('success', 'Motorcycle data stored successfully');
+        return redirect()->route('view-motorcycles')->with('success', 'Motorcycle data stored successfully');
     }
 
 
@@ -163,6 +163,16 @@ class MotorcycleController extends Controller
 
         $motorcycle->update($data);
 
-        return redirect()->back()->with('success', 'Motorcycle updated successfully');
+        return redirect()->route('view-motorcycles')->with('success', 'Motorcycle updated successfully');
+    }
+
+    public function destroy($id){
+        try {
+            $motorcycle = Motorcycle::findOrFail($id);
+            $motorcycle->delete();
+            return back()->with('success', $motorcycle->title . ' deleted successfully.');
+        } catch (ModelNotFoundException $e) {
+            return back()->with('error', $motorcycle->title . ' not found.');
+        }
     }
 }

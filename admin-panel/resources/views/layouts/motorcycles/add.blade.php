@@ -11,6 +11,12 @@
                     {{ session('success') }}
                 </div>
             @endif
+            @if (session('error'))
+                <div class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400"
+                     role="alert">
+                    {{ session('error') }}
+                </div>
+            @endif
             <h1 class="font-bold text-3xl my-2">Base Info</h1>
 
             <x-form.text-input forId="title" placeholder="Title" dataName="title" oldValue="title"/>

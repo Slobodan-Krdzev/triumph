@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\LatestCarousell;
 use App\Models\MainCarousell;
 use App\Service\ImageStorage;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Storage;
@@ -45,7 +46,7 @@ class LatestCarouselController extends Controller
 
         $carousel->save();
 
-        return back()->with('success', 'Your data has been stored successfully.');
+        return redirect()->route('view-carousels')->with('success', 'Your data has been stored successfully.');
     }
     public function edit($id)
     {
@@ -82,5 +83,15 @@ class LatestCarouselController extends Controller
         $carousel->update($validatedData);
 
         return redirect()->route('edit-latest-carousel', ['id' => $id])->with('success', 'Your data has been updated successfully.');
+    }
+
+    public function destroy($id){
+        try {
+            $carousel = LatestCarousell::findOrFail($id);
+            $carousel->delete();
+            return back()->with('success', 'Latest Carousel item deleted successfully.');
+        } catch (ModelNotFoundException $e) {
+            return back()->with('error', 'Latest Carousel item not found.');
+        }
     }
 }

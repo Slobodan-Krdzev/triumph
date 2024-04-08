@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\MainCarousell;
 use App\Service\ImageStorage;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
@@ -49,7 +50,7 @@ class MainCarouselsController extends Controller
 
         $carousel->save();
 
-        return back()->with('success', 'MainCarousel item created successfully.');
+        return redirect()->route('view-carousels')->with('success', 'MainCarousel item created successfully.');
     }
 
 
@@ -101,6 +102,16 @@ class MainCarouselsController extends Controller
         $carousel->update($validatedData);
 
         return redirect()->route('edit-main-carousel', ['id' => $id])->with('success', 'Your data has been updated successfully.');
+    }
+
+    public function destroy($id){
+        try {
+            $carousel = MainCarousell::findOrFail($id);
+            $carousel->delete();
+            return back()->with('success', 'Main Carousel item deleted successfully.');
+        } catch (ModelNotFoundException $e) {
+            return back()->with('error', 'Main Carousel item not found.');
+        }
     }
 
 }
