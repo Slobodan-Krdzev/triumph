@@ -10,7 +10,7 @@
             </div>
         @endif
 
-        <form method="post" action="{{ route('update-promo', ['id' => $promo->id]) }}" class="flex flex-col">
+        <form method="post" action="{{ route('update-promo', ['id' => $promo->id]) }}" class="flex flex-col" enctype="multipart/form-data">
             @csrf
             @method('PUT')
 

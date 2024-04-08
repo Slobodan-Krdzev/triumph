@@ -9,7 +9,7 @@ use Illuminate\Support\Str;
 
 class ImageStorage
 {
-    public static function storeFile(Request $request, String $fileName, String $directory, String $title, String $subDirectory)
+    public static function storeFile(Request $request, String $fileName, String $directory, String $title, ?String $subDirectory = null)
     {
         if ($request->hasFile($fileName)) {
             $file = $request->file($fileName)->getClientOriginalName();
@@ -45,6 +45,19 @@ class ImageStorage
             return ImageStorage::updateNameInFile($objectTitle, $title, $path);
         } else {
             return ImageStorage::storeFile($request, $fileName, $directory, $title, $subDirectory);
+        }
+    }
+
+    public static function placeFileInNewFolder($oldTitle, $newTitle, $directory, $subDirectory){
+        $oldFiles = $directory . Str::slug($oldTitle) . $subDirectory;
+        $newFiles = $directory . Str::slug($newTitle) . $subDirectory;
+
+        $files = Storage::disk('public')->files($oldFiles);
+        if (!empty($files)) {
+            foreach ($files as $file) {
+                $filename = pathinfo($file, PATHINFO_BASENAME);
+                Storage::disk('public')->move($file, $newFiles . '/' . $filename);
+            }
         }
     }
 

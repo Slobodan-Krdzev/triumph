@@ -2,7 +2,7 @@
 
     <div class="px-8 mt-10 w-8/12">
 
-        <form action="{{ route('store-promo') }}" method="POST" class="flex flex-col ">
+        <form action="{{ route('store-promo') }}" method="POST" class="flex flex-col " enctype="multipart/form-data">
             @csrf
 
             @if (session('success'))
