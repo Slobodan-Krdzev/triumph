@@ -35,7 +35,7 @@ const AdventurePage = async () => {
     const bikes = await bikesRes.json();
 
     const promosRes = await fetch(`${PROMOS}?category=adventure`, {
-      next: { revalidate: 3000 },
+      cache: 'no-store',
     });
     const promos = await promosRes.json();
 
@@ -102,8 +102,8 @@ const AdventurePage = async () => {
                 link: `/motorcycles/adventure/${promo.subFamilyType}`,
               }}
               image={{
-                src: `${promo.image}`,
-                alt: `${promo.title}`,
+                src: `${promo.image ?? "/images/triumphLogo.png"}`,
+                alt: `${promo.title ?? "Logo"}`,
               }}
               blackBtn={promo.btnBlack}
               imageOnTheLeft={idx % 2 === 0 ? true : false}
