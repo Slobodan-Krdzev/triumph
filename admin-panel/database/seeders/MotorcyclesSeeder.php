@@ -36,12 +36,23 @@ class MotorcyclesSeeder extends Seeder
                 ],
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/adventure/tiger900GT/tiger900GTGraphiteBlack.png",
-                    "color1" => "/images/adventure/tiger900GT/tiger900GTGraphiteBlack.png",
-                    "color1Reversed" => "/images/adventure/tiger900GT/tiger900GTGraphiteBlackReversed.png",
-                    "color2" => "/images/adventure/tiger900GT/tiger900GTSnowdonia.png",
-                    "color2Reversed" => "/images/adventure/tiger900GT/tiger900GTSnowdoniaReversed.png",
-                    "color3" => "/images/adventure/tiger900GT/tiger900GTRed.png",
-                    "color3Reversed" => "/images/adventure/tiger900GT/tiger900GTRedReversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "GraphiteBlack",
+                            "base" => "/images/adventure/tiger900GT/tiger900GTGraphiteBlack.png",
+                            "reversed" => "/images/adventure/tiger900GT/tiger900GTGraphiteBlackReversed.png"
+                        ],
+                        [
+                            "colorName" => "Snowdonia",
+                            "base" => "/images/adventure/tiger900GT/tiger900GTSnowdonia.png",
+                            "reversed" => "/images/adventure/tiger900GT/tiger900GTSnowdoniaReversed.png"
+                        ],
+                        [
+                            "colorName" => "Red",
+                            "base" => "/images/adventure/tiger900GT/tiger900GTRed.png",
+                            "reversed" => "/images/adventure/tiger900GT/tiger900GTRedReversed.png"
+                        ]
+                    ],
                 ],
                 "customizationColors" => [
                     [
@@ -186,12 +197,23 @@ class MotorcyclesSeeder extends Seeder
                 ],
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/adventure/tiger900GTPRO/tiger900GTPROGraphite.png",
-                    "color1" => "/images/adventure/tiger900GTPRO/tiger900GTPROGraphite.png",
-                    "color1Reversed" => "/images/adventure/tiger900GTPRO/tiger900GTPROGraphiteReversed.png",
-                    "color2" => "/images/adventure/tiger900GTPRO/tiger900GTPRORed.png",
-                    "color2Reversed" => "/images/adventure/tiger900GTPRO/tiger900GTPRORedReversed.png",
-                    "color3" => "/images/adventure/tiger900GTPRO/tiger900GTPROWhite.png",
-                    "color3Reversed" => "/images/adventure/tiger900GTPRO/tiger900GTPROWhiteReversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "Graphite",
+                            "base" => "/images/adventure/tiger900GTPRO/tiger900GTPROGraphite.png",
+                            "reversed" => "/images/adventure/tiger900GTPRO/tiger900GTPROGraphiteReversed.png"
+                        ],
+                        [
+                            "colorName" => "Red",
+                            "base" => "/images/adventure/tiger900GTPRO/tiger900GTPRORed.png",
+                            "reversed" => "/images/adventure/tiger900GTPRO/tiger900GTPRORedReversed.png"
+                        ],
+                        [
+                            "colorName" => "White",
+                            "base" => "/images/adventure/tiger900GTPRO/tiger900GTPROWhite.png",
+                            "reversed" => "/images/adventure/tiger900GTPRO/tiger900GTPROWhiteReversed.png"
+                        ]
+                    ],
                 ],
                 "customizationColors" => [
                     [
@@ -324,10 +346,22 @@ class MotorcyclesSeeder extends Seeder
                     ]
                 ],
                 "bikePageImageGallery" => [
-                    "/images/adventure/tiger900GTPRO/tiger900GTPROBikeGalleryCaro1.avif",
-                    "/images/adventure/tiger900GTPRO/tiger900GTPROBikeGalleryCaro2.avif",
-                    "/images/adventure/tiger900GTPRO/tiger900GTPROBikeGalleryCaro3.avif",
-                    "/images/adventure/tiger900GTPRO/tiger900GTPROBikeGalleryCaro4.avif"
+                    [
+                        "alt" => "tiger900GTPROBikeGalleryCaro1",
+                        "src" => "/images/adventure/tiger900GTPRO/tiger900GTPROBikeGalleryCaro1.avif"
+                    ],
+                    [
+                        "alt" => "tiger900GTPROBikeGalleryCaro2",
+                        "src" => "/images/adventure/tiger900GTPRO/tiger900GTPROBikeGalleryCaro2.avif"
+                    ],
+                    [
+                        "alt" => "tiger900GTPROBikeGalleryCaro3",
+                        "src" => "/images/adventure/tiger900GTPRO/tiger900GTPROBikeGalleryCaro3.avif"
+                    ],
+                    [
+                        "alt" => "tiger900GTPROBikeGalleryCaro4",
+                        "src" => "/images/adventure/tiger900GTPRO/tiger900GTPROBikeGalleryCaro4.avif"
+                    ]
                 ]
             ],
             [
@@ -350,12 +384,23 @@ class MotorcyclesSeeder extends Seeder
                 ],
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/adventure/tiger900RallyPro/tiger900RallyProOrange.png",
-                    "color1" => "/images/adventure/tiger900RallyPro/tiger900RallyProOrange.png",
-                    "color1Reversed" => "/images/adventure/tiger900RallyPro/tiger900RallyProOrangeReversed.png",
-                    "color2" => "/images/adventure/tiger900RallyPro/tiger900RallyProCarbonBlack.png",
-                    "color2Reversed" => "/images/adventure/tiger900RallyPro/tiger900RallyProCarbonBlackReversed.png",
-                    "color3" => "/images/adventure/tiger900RallyPro/tiger900RallyProKhaki.png",
-                    "color3Reversed" => "/images/adventure/tiger900RallyPro/tiger900RallyProKhakiReversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "Orange",
+                            "base" => "/images/adventure/tiger900RallyPro/tiger900RallyProOrange.png",
+                            "reversed" => "/images/adventure/tiger900RallyPro/tiger900RallyProOrangeReversed.png"
+                        ],
+                        [
+                            "colorName" => "CarbonBlack",
+                            "base" => "/images/adventure/tiger900RallyPro/tiger900RallyProCarbonBlack.png",
+                            "reversed" => "/images/adventure/tiger900RallyPro/tiger900RallyProCarbonBlackReversed.png"
+                        ],
+                        [
+                            "colorName" => "Khaki",
+                            "base" => "/images/adventure/tiger900RallyPro/tiger900RallyProKhaki.png",
+                            "reversed" => "/images/adventure/tiger900RallyPro/tiger900RallyProKhakiReversed.png"
+                        ]
+                    ],
                 ],
                 "customizationColors" => [
                     [
@@ -488,10 +533,22 @@ class MotorcyclesSeeder extends Seeder
                     ]
                 ],
                 "bikePageImageGallery" => [
-                    "/images/adventure/tiger900RallyPro/tiger900RallyProBikeGalleryCaro1.avif",
-                    "/images/adventure/tiger900RallyPro/tiger900RallyProBikeGalleryCaro2.avif",
-                    "/images/adventure/tiger900RallyPro/tiger900RallyProBikeGalleryCaro3.avif",
-                    "/images/adventure/tiger900RallyPro/tiger900RallyProBikeGalleryCaro4.avif"
+                    [
+                        "alt" => "tiger900RallyProBikeGalleryCaro1",
+                        "src" => "/images/adventure/tiger900RallyPro/tiger900RallyProBikeGalleryCaro1.avif"
+                    ],
+                    [
+                        "alt" => "tiger900RallyProBikeGalleryCaro2",
+                        "src" => "/images/adventure/tiger900RallyPro/tiger900RallyProBikeGalleryCaro2.avif"
+                    ],
+                    [
+                        "alt" => "tiger900RallyProBikeGalleryCaro3",
+                        "src" => "/images/adventure/tiger900RallyPro/tiger900RallyProBikeGalleryCaro3.avif"
+                    ],
+                    [
+                        "alt" => "tiger900RallyProBikeGalleryCaro4",
+                        "src" => "/images/adventure/tiger900RallyPro/tiger900RallyProBikeGalleryCaro4.avif"
+                    ]
                 ]
             ],
             [
@@ -514,12 +571,23 @@ class MotorcyclesSeeder extends Seeder
                 ],
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/adventure/tigerSport660/tiger660ModelImage.avif",
-                    "color1" => "/images/adventure/tigerSport660/tiger660JetBlackGraphite.avif",
-                    "color1Reversed" => "/images/adventure/tigerSport660/tigerSport660JetBlackGraphiteReversed.png",
-                    "color2" => "/images/adventure/tigerSport660/tigerSport660SnowdoniaWhiteJetBlack.png",
-                    "color2Reversed" => "/images/adventure/tigerSport660/tigerSport660SnowdoniaWhiteJetBlackReversed.png",
-                    "color3" => "/images/adventure/tigerSport660/tiger660ModelImage.avif",
-                    "color3Reversed" => "/images/adventure/tigerSport660/tigerSport660ModelImageReversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "JetBlackGraphite",
+                            "base" => "/images/adventure/tigerSport660/tiger660JetBlackGraphite.avif",
+                            "reversed" => "/images/adventure/tigerSport660/tigerSport660JetBlackGraphiteReversed.png"
+                        ],
+                        [
+                            "colorName" => "SnowdoniaWhiteJetBlack",
+                            "base" => "/images/adventure/tigerSport660/tigerSport660SnowdoniaWhiteJetBlack.png",
+                            "reversed" => "/images/adventure/tigerSport660/tigerSport660SnowdoniaWhiteJetBlackReversed.png"
+                        ],
+                        [
+                            "colorName" => "Color3",
+                            "base" => "/images/adventure/tigerSport660/tiger660ModelImage.avif",
+                            "reversed" => "/images/adventure/tigerSport660/tigerSport660ModelImageReversed.png"
+                        ]
+                    ],
                 ],
                 "customizationColors" => [
                     [
@@ -690,10 +758,18 @@ class MotorcyclesSeeder extends Seeder
                 ],
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/adventure/tigerSport850/tigerSport850DiabloRed.png",
-                    "color1" => "/images/adventure/tigerSport850/tigerSport850DiabloRed.png",
-                    "color1Reversed" => "/images/adventure/tigerSport850/tigerSport850DiabloRedReversed.png",
-                    "color2" => "/images/adventure/tigerSport850/tigerSport850GraphiteJetBlack.png",
-                    "color2Reversed" => "/images/adventure/tigerSport850/tigerSport850GraphiteJetBlackReversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "DiabloRed",
+                            "base" => "/images/adventure/tigerSport850/tigerSport850DiabloRed.png",
+                            "reversed" => "/images/adventure/tigerSport850/tigerSport850DiabloRedReversed.png"
+                        ],
+                        [
+                            "colorName" => "GraphiteJetBlack",
+                            "base" => "/images/adventure/tigerSport850/tigerSport850GraphiteJetBlack.png",
+                            "reversed" => "/images/adventure/tigerSport850/tigerSport850GraphiteJetBlackReversed.png"
+                        ]
+                    ]
                 ],
                 "customizationColors" => [
                     [
@@ -833,7 +909,10 @@ class MotorcyclesSeeder extends Seeder
                     ]
                 ],
                 "bikePageImageGallery" => [
-                    "/images/adventure/tigerSport850/tiger850SportBikeGalleryCaro1.avif"
+                    [
+                        "alt" => "tiger850SportBikeGalleryCaro1",
+                        "src" => "/images/adventure/tigerSport850/tiger850SportBikeGalleryCaro1.avif"
+                    ]
                 ]
             ],
             [
@@ -856,12 +935,23 @@ class MotorcyclesSeeder extends Seeder
                 ],
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/adventure/tiger1200GTPRO/tiger1200GTPROModelImage.png",
-                    "color1" => "/images/adventure/tiger1200GTPRO/tiger1200GTPROModelImage.png",
-                    "color1Reversed" => "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor1Reversed.png",
-                    "color2" => "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor2.png",
-                    "color2Reversed" => "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor2Reversed.png",
-                    "color3" => "/images/adventure/tiger1200GTPRO/tiger1200GTPRORed.png",
-                    "color3Reversed" => "/images/adventure/tiger1200GTPRO/tiger1200GTPRORedReversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "Color1",
+                            "base" => "/images/adventure/tiger1200GTPRO/tiger1200GTPROModelImage.png",
+                            "reversed" => "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor1Reversed.png"
+                        ],
+                        [
+                            "colorName" => "Color2",
+                            "base" => "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor2.png",
+                            "reversed" => "/images/adventure/tiger1200GTPRO/tiger1200GTPROColor2Reversed.png"
+                        ],
+                        [
+                            "colorName" => "Red",
+                            "base" => "/images/adventure/tiger1200GTPRO/tiger1200GTPRORed.png",
+                            "reversed" => "/images/adventure/tiger1200GTPRO/tiger1200GTPRORedReversed.png"
+                        ]
+                    ]
                 ],
                 "customizationColors" => [
                     [
@@ -995,7 +1085,10 @@ class MotorcyclesSeeder extends Seeder
                     "desc" => "Најдобриот во класата, GT Pro ги носи технологијата, возењето и спецификациите за оваа серија на ново ниво. Сега доаѓа и со новиот Active Preload Reduction мод кој овозможува прилагодлива суспензија."
                 ],
                 "bikePageImageGallery" => [
-                    "/images/adventure/tiger1200GTPRO/tiger1200GTPROBikeGalleryCaro1.avif"
+                    [
+                        "alt" => "tiger1200GTPROBikeGalleryCaro1tiger1200GTPROBikeGalleryCaro1",
+                        "src" => "/images/adventure/tiger1200GTPRO/tiger1200GTPROBikeGalleryCaro1.avif"
+                    ]
                 ]
             ],
             [
@@ -1018,12 +1111,23 @@ class MotorcyclesSeeder extends Seeder
                 ],
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerSnowdoniaWhite.png",
-                    "color1" => "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerSnowdoniaWhite.png",
-                    "color1Reversed" => "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerSnowdoniaWhiteReversed.png",
-                    "color2" => "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerSaphireBlack.png",
-                    "color2Reversed" => "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerSaphireBlackReversed.png",
-                    "color3" => "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerRed.png",
-                    "color3Reversed" => "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerRedReversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "SnowdoniaWhite",
+                            "base" => "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerSnowdoniaWhite.png",
+                            "reversed" => "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerSnowdoniaWhiteReversed.png"
+                        ],
+                        [
+                            "colorName" => "SaphireBlack",
+                            "base" => "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerSaphireBlack.png",
+                            "reversed" => "images/adventure/tiger1200GTExplorer/tiger1200GTExplorerSaphireBlackReversed.png"
+                        ],
+                        [
+                            "colorName" => "Red",
+                            "base" => "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerRed.png",
+                            "reversed" => "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerRedReversed.png"
+                        ]
+                    ],
                 ],
                 "customizationColors" => [
                     [
@@ -1161,7 +1265,10 @@ class MotorcyclesSeeder extends Seeder
                     "desc" => "GT Explorer има 30 литарски резервоар и ги поставува стандардите за транс-континентални авантури, притоа ги понудува најдобрите спецификации во оваа серија на мотори. Сега доаѓа и со новиот Active Preload Reduction мод кој овозможува прилагодлива суспензија."
                 ],
                 "bikePageImageGallery" => [
-                    "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerBikeGalleryCaro1.avif"
+                    [
+                        "alt" => "tiger1200GTExplorerBikeGalleryCaro1",
+                        "src" => "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerBikeGalleryCaro1.avif"
+                    ]
                 ]
             ],
             [
@@ -1184,12 +1291,23 @@ class MotorcyclesSeeder extends Seeder
                 ],
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/adventure/tiger1200RallyPro/tiger1200RallyProSandstorm.png",
-                    "color1" => "/images/adventure/tiger1200RallyPro/tiger1200RallyProSandstorm.png",
-                    "color1Reversed" => "/images/adventure/tiger1200RallyPro/tiger1200RallyProSandstormReversed.png",
-                    "color2" => "/images/adventure/tiger1200RallyPro/tiger1200RallyProBlack.png",
-                    "color2Reversed" => "/images/adventure/tiger1200RallyPro/tiger1200RallyProBlackReversed.png",
-                    "color3" => "/images/adventure/tiger1200RallyPro/tiger1200RallyProMattKhaki.png",
-                    "color3Reversed" => "/images/adventure/tiger1200RallyPro/tiger1200RallyProMattKhakiReversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "Sandstorm",
+                            "base" => "/images/adventure/tiger1200RallyPro/tiger1200RallyProSandstorm.png",
+                            "reversed" => "/images/adventure/tiger1200RallyPro/tiger1200RallyProSandstormReversed.png"
+                        ],
+                        [
+                            "colorName" => "Black",
+                            "base" => "/images/adventure/tiger1200RallyPro/tiger1200RallyProBlack.png",
+                            "reversed" => "/images/adventure/tiger1200RallyPro/tiger1200RallyProBlackReversed.png"
+                        ],
+                        [
+                            "colorName" => "MattKhaki",
+                            "base" => "/images/adventure/tiger1200RallyPro/tiger1200RallyProMattKhaki.png",
+                            "reversed" => "/images/adventure/tiger1200RallyPro/tiger1200RallyProMattKhakiReversed.png"
+                        ]
+                    ],
                 ],
                 "customizationColors" => [
                     [
@@ -1323,7 +1441,10 @@ class MotorcyclesSeeder extends Seeder
                     "desc" => "Без разлика на подлогата, Rally PRO серијата комбинира одлични способности, комфорт и перформанси со цел да понуди врвна авантура на патишта а пред се и надвор од нив. Отсега со новата активна суспензија за уште поголеми можности за персонализирање на моторот."
                 ],
                 "bikePageImageGallery" => [
-                    "/images/adventure/tiger1200RallyPro/tiger1200RallyProBikeGalleryCaro1.avif"
+                    [
+                        "alt" => "tiger1200RallyProBikeGalleryCaro1",
+                        "src" => "/images/adventure/tiger1200RallyPro/tiger1200RallyProBikeGalleryCaro1.avif"
+                    ]
                 ]
             ],
             [
@@ -1346,12 +1467,23 @@ class MotorcyclesSeeder extends Seeder
                 ],
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerSandstorm.png",
-                    "color1" => "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerSandstorm.png",
-                    "color1Reversed" => "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerSandstormReversed.png",
-                    "color2" => "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerBlack.png",
-                    "color2Reversed" => "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerBlackReversed.png",
-                    "color3" => "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerKhaki.png",
-                    "color3Reversed" => "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerKhakiReversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "Sandstorm",
+                            "base" => "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerSandstorm.png",
+                            "reversed" => "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerSandstormReversed.png"
+                        ],
+                        [
+                            "colorName" => "Black",
+                            "base" => "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerBlack.png",
+                            "reversed" => "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerBlackReversed.png"
+                        ],
+                        [
+                            "colorName" => "Khaki",
+                            "base" => "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerKhaki.png",
+                            "reversed" => "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerKhakiReversed.png"
+                        ]
+                    ],
                 ],
                 "customizationColors" => [
                     [
@@ -1489,7 +1621,10 @@ class MotorcyclesSeeder extends Seeder
                     "desc" => "Изработен за максимална издржливост и со цел да постави нови стандарди во класата. Отсега опремен со 30 литарски резервоар за уште подолго патување и со нова активна суспензија за уште поголем степен на персонализирање на моторот според вашите потреби."
                 ],
                 "bikePageImageGallery" => [
-                    "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerBikeGalleryCaro1.avif"
+                    [
+                        "alt" => "tiger1200RallyExplorerBikeGalleryCaro1",
+                        "src" => "/images/adventure/tiger1200RallyExplorer/tiger1200RallyExplorerBikeGalleryCaro1.avif"
+                    ]
                 ]
             ],
             [
@@ -1512,10 +1647,23 @@ class MotorcyclesSeeder extends Seeder
                 ],
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/roadsters/streetTriple765RModel.png",
-                    "color1" => "/images/roadsters/streetTriple765/streetTriple765Color1.avif",
-                    "color1Reversed" => "/images/roadsters/streetTriple765/streetTriple765Color1Reversed.png",
-                    "color2" => "/images/roadsters/streetTriple765/streetTriple765Color2.avif",
-                    "color2Reversed" => "/images/roadsters/streetTriple765/streetTriple765Color2Reversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "Color1",
+                            "base" => "/images/roadsters/streetTriple765/streetTriple765Color1.avif",
+                            "reversed" => "/images/roadsters/streetTriple765/streetTriple765Color1Reversed.png"
+                        ],
+                        [
+                            "colorName" => "Color2",
+                            "base" => "/images/roadsters/streetTriple765/streetTriple765Color2.avif",
+                            "reversed" => "/images/roadsters/streetTriple765/streetTriple765Color2Reversed.png"
+                        ],
+                        [
+                            "colorName" => "Red",
+                            "base" => "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerRed.png",
+                            "reversed" => "/images/adventure/tiger1200GTExplorer/tiger1200GTExplorerRedReversed.png"
+                        ]
+                    ],
                 ],
                 "customizationColors" => [
                     [
@@ -1652,15 +1800,42 @@ class MotorcyclesSeeder extends Seeder
                     ]
                 ],
                 "bikePageImageGallery" => [
-                    "/images/roadsters/streetTriple765R/streetTriple765RBikeGalleryCaro1.avif",
-                    "/images/roadsters/streetTriple765R/streetTriple765RBikeGalleryCaro2.avif",
-                    "/images/roadsters/streetTriple765R/streetTriple765RBikeGalleryCaro3.avif",
-                    "/images/roadsters/streetTriple765R/streetTriple765RBikeGalleryCaro4.avif",
-                    "/images/roadsters/streetTriple765R/streetTriple765RBikeGalleryCaro5.avif",
-                    "/images/roadsters/streetTriple765R/streetTriple765RBikeGalleryCaro6.avif",
-                    "/images/roadsters/streetTriple765R/streetTriple765RBikeGalleryCaro7.avif",
-                    "/images/roadsters/streetTriple765R/streetTriple765RBikeGalleryCaro8.avif",
-                    "/images/roadsters/streetTriple765R/streetTriple765RBikeGalleryCaro9.avif"
+                    [
+                        "alt" => "streetTriple765RBikeGalleryCaro1",
+                        "src" => "/images/roadsters/streetTriple765R/streetTriple765RBikeGalleryCaro1.avif"
+                    ],
+                    [
+                        "alt" => "streetTriple765RBikeGalleryCaro2",
+                        "src" => "/images/roadsters/streetTriple765R/streetTriple765RBikeGalleryCaro2.avif"
+                    ],
+                    [
+                        "alt" => "streetTriple765RBikeGalleryCaro3",
+                        "src" => "/images/roadsters/streetTriple765R/streetTriple765RBikeGalleryCaro3.avif"
+                    ],
+                    [
+                        "alt" => "streetTriple765RBikeGalleryCaro4",
+                        "src" => "/images/roadsters/streetTriple765R/streetTriple765RBikeGalleryCaro4.avif"
+                    ],
+                    [
+                        "alt" => "streetTriple765RBikeGalleryCaro5",
+                        "src" => "/images/roadsters/streetTriple765R/streetTriple765RBikeGalleryCaro5.avif"
+                    ],
+                    [
+                        "alt" => "streetTriple765RBikeGalleryCaro6",
+                        "src" => "/images/roadsters/streetTriple765R/streetTriple765RBikeGalleryCaro6.avif"
+                    ],
+                    [
+                        "alt" => "streetTriple765RBikeGalleryCaro7",
+                        "src" => "/images/roadsters/streetTriple765R/streetTriple765RBikeGalleryCaro7.avif"
+                    ],
+                    [
+                        "alt" => "streetTriple765RBikeGalleryCaro8",
+                        "src" => "/images/roadsters/streetTriple765R/streetTriple765RBikeGalleryCaro8.avif"
+                    ],
+                    [
+                        "alt" => "streetTriple765RBikeGalleryCaro9",
+                        "src" => "/images/roadsters/streetTriple765R/streetTriple765RBikeGalleryCaro9.avif"
+                    ]
                 ]
             ],
             [
@@ -1683,12 +1858,23 @@ class MotorcyclesSeeder extends Seeder
                 ],
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/roadsters/streetTriple765RS/speedTripleSilverIce.png",
-                    "color1" => "/images/roadsters/streetTriple765RS/speedTripleSilverIce.png",
-                    "color1Reversed" => "/images/roadsters/streetTriple765RS/speedTripleSilverIceReversed.png",
-                    "color2" => "/images/roadsters/streetTriple765RS/speedTripleRSCarnivalRed.png",
-                    "color2Reversed" => "/images/roadsters/streetTriple765RS/speedTripleRSCarnivalRedReversed.png",
-                    "color3" => "/images/roadsters/streetTriple765RS/speedTripleYellow.png",
-                    "color3Reversed" => "/images/roadsters/streetTriple765RS/speedTripleYellowReversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "SilverIce",
+                            "base" => "/images/roadsters/streetTriple765RS/speedTripleSilverIce.png",
+                            "reversed" => "/images/roadsters/streetTriple765RS/speedTripleSilverIceReversed.png"
+                        ],
+                        [
+                            "colorName" => "Red",
+                            "base" => "/images/roadsters/streetTriple765RS/speedTripleRSCarnivalRed.png",
+                            "reversed" => "/images/roadsters/streetTriple765RS/speedTripleRSCarnivalRedReversed.png"
+                        ],
+                        [
+                            "colorName" => "Yellow",
+                            "base" => "/images/roadsters/streetTriple765RS/speedTripleYellow.png",
+                            "reversed" => "/images/roadsters/streetTriple765RS/speedTripleYellowReversed.png"
+                        ]
+                    ],
                 ],
                 "customizationColors" => [
                     [
@@ -1827,16 +2013,46 @@ class MotorcyclesSeeder extends Seeder
                     ]
                 ],
                 "bikePageImageGallery" => [
-                    "/images/roadsters/streetTriple765RS/streetTriple765RSBikeGalleryCaro1.avif",
-                    "/images/roadsters/streetTriple765RS/streetTriple765RSBikeGalleryCaro2.avif",
-                    "/images/roadsters/streetTriple765RS/streetTriple765RSBikeGalleryCaro3.avif",
-                    "/images/roadsters/streetTriple765RS/streetTriple765RSBikeGalleryCaro4.avif",
-                    "/images/roadsters/streetTriple765RS/streetTriple765RSBikeGalleryCaro5.avif",
-                    "/images/roadsters/streetTriple765RS/streetTriple765RSBikeGalleryCaro6.avif",
-                    "/images/roadsters/streetTriple765RS/streetTriple765RSBikeGalleryCaro7.avif",
-                    "/images/roadsters/streetTriple765RS/streetTriple765RSBikeGalleryCaro8.avif",
-                    "/images/roadsters/streetTriple765RS/streetTriple765RSBikeGalleryCaro9.avif",
-                    "/images/roadsters/streetTriple765RS/streetTriple765RSBikeGalleryCaro10.avif"
+                    [
+                        "alt" => "streetTriple765RSBikeGalleryCaro1",
+                        "src" => "/images/roadsters/streetTriple765RS/streetTriple765RSBikeGalleryCaro1.avif"
+                    ],
+                    [
+                        "alt" => "streetTriple765RSBikeGalleryCaro2",
+                        "src" => "/images/roadsters/streetTriple765RS/streetTriple765RSBikeGalleryCaro2.avif",
+                    ],
+                    [
+                        "alt" => "streetTriple765RSBikeGalleryCaro3",
+                        "src" => "/images/roadsters/streetTriple765RS/streetTriple765RSBikeGalleryCaro3.avif",
+                    ],
+                    [
+                        "alt" => "streetTriple765RSBikeGalleryCaro4",
+                        "src" => "/images/roadsters/streetTriple765RS/streetTriple765RSBikeGalleryCaro4.avif",
+                    ],
+                    [
+                        "alt" => "streetTriple765RSBikeGalleryCaro5",
+                        "src" => "/images/roadsters/streetTriple765RS/streetTriple765RSBikeGalleryCaro5.avif",
+                    ],
+                    [
+                        "alt" => "streetTriple765RSBikeGalleryCaro6",
+                        "src" => "/images/roadsters/streetTriple765RS/streetTriple765RSBikeGalleryCaro6.avif",
+                    ],
+                    [
+                        "alt" => "streetTriple765RSBikeGalleryCaro7",
+                        "src" => "/images/roadsters/streetTriple765RS/streetTriple765RSBikeGalleryCaro7.avif",
+                    ],
+                    [
+                        "alt" => "streetTriple765RSBikeGalleryCaro8",
+                        "src" => "/images/roadsters/streetTriple765RS/streetTriple765RSBikeGalleryCaro8.avif",
+                    ],
+                    [
+                        "alt" => "streetTriple765RSBikeGalleryCaro9",
+                        "src" => "/images/roadsters/streetTriple765RS/streetTriple765RSBikeGalleryCaro9.avif",
+                    ],
+                    [
+                        "alt" => "streetTriple765RSBikeGalleryCaro10",
+                        "src" => "/images/roadsters/streetTriple765RS/streetTriple765RSBikeGalleryCaro10.avif"
+                    ]
                 ]
             ],
             [
@@ -1849,14 +2065,29 @@ class MotorcyclesSeeder extends Seeder
                 "price" => 9590,
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/roadsters/trident660/tridentMattBajaOrange.png",
-                    "color1" => "/images/roadsters/trident660/trident660SapphireBlack.png",
-                    "color1Reversed" => "/images/roadsters/trident660/trident660SapphireBlackReversed.png",
-                    "color2" => "/images/roadsters/trident660/trident660TriumphYellow.png",
-                    "color2Reversed" => "/images/roadsters/trident660/trident660TriumphYellowReversed.png",
-                    "color3" => "/images/roadsters/trident660/trident660MattBlack.png",
-                    "color3Reversed" => "/images/roadsters/trident660/trident660MattBlackReversed.png",
-                    "color4" => "/images/roadsters/trident660/tridentIceRed.png",
-                    "color4Reversed" => "/images/roadsters/trident660/tridentIceRedReversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "SaphireBlack",
+                            "base" => "/images/roadsters/trident660/trident660SapphireBlack.png",
+                            "reversed" => "/images/roadsters/trident660/trident660SapphireBlackReversed.png"
+                        ],
+                        [
+                            "colorName" => "Yellow",
+                            "base" => "/images/roadsters/trident660/trident660TriumphYellow.png",
+                            "reversed" => "/images/roadsters/trident660/trident660TriumphYellowReversed.png"
+                        ],
+                        [
+                            "colorName" => "MattBlack",
+                            "base" => "/images/roadsters/trident660/trident660MattBlack.png",
+                            "reversed" => "/images/roadsters/trident660/trident660MattBlackReversed.png"
+                        ]
+                        ,
+                        [
+                            "colorName" => "IceRed",
+                            "base" => "/images/roadsters/trident660/tridentIceRed.png",
+                            "reversed" => "/images/roadsters/trident660/tridentIceRedReversed.png"
+                        ]
+                    ],
                 ],
                 "customizationColors" => [
                     [
@@ -2004,7 +2235,10 @@ class MotorcyclesSeeder extends Seeder
                     ]
                 ],
                 "bikePageImageGallery" => [
-                    "/images/roadsters/trident660/trident660BikeGalleryCaro1.avif"
+                    [
+                        "alt" => "trident660BikeGalleryCaro1",
+                        "src" => "/images/roadsters/trident660/trident660BikeGalleryCaro1.avif"
+                    ]
                 ]
             ],
             [
@@ -2027,12 +2261,23 @@ class MotorcyclesSeeder extends Seeder
                 ],
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/roadsters/speedTriple1200RS/speedTriple1200rsCarnivalBlack.png",
-                    "color1" => "/images/roadsters/speedTriple1200RS/speedTriple1200rsCarnivalBlack.png",
-                    "color1Reversed" => "/images/roadsters/speedTriple1200RS/speedTriple1200rsCarnivalBlackReversed.png",
-                    "color2" => "/images/roadsters/speedTriple1200RS/speedTriple1200rsSilverIce.png",
-                    "color2Reversed" => "/images/roadsters/speedTriple1200RS/speedTriple1200rsSilverIceReversed.png",
-                    "color3" => "/images/roadsters/speedTriple1200RS/speedTriple1200rsCarnivalRed.png",
-                    "color3Reversed" => "/images/roadsters/speedTriple1200RS/speedTriple1200rsCarnivalRedReversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "CarnivalBlack",
+                            "base" => "/images/roadsters/speedTriple1200RS/speedTriple1200rsCarnivalBlack.png",
+                            "reversed" => "/images/roadsters/speedTriple1200RS/speedTriple1200rsCarnivalBlackReversed.png"
+                        ],
+                        [
+                            "colorName" => "SilverIce",
+                            "base" => "/images/roadsters/speedTriple1200RS/speedTriple1200rsSilverIce.png",
+                            "reversed" => "/images/roadsters/speedTriple1200RS/speedTriple1200rsSilverIceReversed.png"
+                        ],
+                        [
+                            "colorName" => "CarnivalRed",
+                            "base" => "/images/roadsters/speedTriple1200RS/speedTriple1200rsCarnivalRed.png",
+                            "reversed" => "/images/roadsters/speedTriple1200RS/speedTriple1200rsCarnivalRedReversed.png"
+                        ]
+                    ],
                 ],
                 "customizationColors" => [
                     [
@@ -2197,10 +2442,18 @@ class MotorcyclesSeeder extends Seeder
                 ],
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/roadsters/speedTriple1200RR/speedTriple1200RRGray.png",
-                    "color1" => "/images/roadsters/speedTriple1200RR/speedTriple1200RRGray.png",
-                    "color1Reversed" => "/images/roadsters/speedTriple1200RR/speedTriple1200RRGrayReversed.png",
-                    "color2" => "/images/roadsters/speedTriple1200RR/speedTriple1200RRRed.png",
-                    "color2Reversed" => "/images/roadsters/speedTriple1200RR/speedTriple1200RRRedReversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "Gray",
+                            "base" => "/images/roadsters/speedTriple1200RR/speedTriple1200RRGray.png",
+                            "reversed" => "/images/roadsters/speedTriple1200RR/speedTriple1200RRGrayReversed.png"
+                        ],
+                        [
+                            "colorName" => "SilverIce",
+                            "base" => "/images/roadsters/speedTriple1200RR/speedTriple1200RRRed.png",
+                            "reversed" => "/images/roadsters/speedTriple1200RR/speedTriple1200RRRedReversed.png"
+                        ]
+                    ]
                 ],
                 "customizationColors" => [
                     [
@@ -2341,14 +2594,28 @@ class MotorcyclesSeeder extends Seeder
                 ],
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/rocket-3/rocket3R/rocket3RSilverIce.png",
-                    "color1" => "/images/rocket-3/rocket3R/rocket3RSilverIce.png",
-                    "color1Reversed" => "/images/rocket-3/rocket3R/rocket3RSilverIceReversed.png",
-                    "color2" => "/images/rocket-3/rocket3R/rocket3RSaphireBlack.png",
-                    "color2Reversed" => "/images/rocket-3/rocket3R/rocket3RSaphireBlackReversed.png",
-                    "color3" => "/images/rocket-3/rocket3R/rocket3RSilverRedBlack.png",
-                    "color3Reversed" => "/images/rocket-3/rocket3R/rocket3RSilverRedBlackReversed.png",
-                    "color4" => "/images/rocket-3/rocket3R/rocket3RSaphireChrome.png",
-                    "color4Reversed" => "/images/rocket-3/rocket3R/rocket3RSaphireChromeReversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "SilverIce",
+                            "base" => "/images/rocket-3/rocket3R/rocket3RSilverIce.png",
+                            "reversed" => "/images/rocket-3/rocket3R/rocket3RSilverIceReversed.png"
+                        ],
+                        [
+                            "colorName" => "SaphireBlack",
+                            "base" => "/images/rocket-3/rocket3R/rocket3RSaphireBlack.png",
+                            "reversed" => "/images/rocket-3/rocket3R/rocket3RSaphireBlackReversed.png"
+                        ],
+                        [
+                            "colorName" => "SilverRedBlack",
+                            "base" => "/images/rocket-3/rocket3R/rocket3RSilverRedBlack.png",
+                            "reversed" => "/images/rocket-3/rocket3R/rocket3RSilverRedBlackReversed.png"
+                        ],
+                        [
+                            "colorName" => "SaphireChrome",
+                            "base" => "/images/rocket-3/rocket3R/rocket3RSaphireChrome.png",
+                            "reversed" => "/images/rocket-3/rocket3R/rocket3RSaphireChromeReversed.png"
+                        ]
+                    ]
                 ],
                 "customizationColors" => [
                     [
@@ -2386,12 +2653,10 @@ class MotorcyclesSeeder extends Seeder
                     "desc" => "Врвниот мускулест “Roadster“ кој испорачува инстанта сила и обртен момент, како и извонредна контрола и способност."
                 ],
                 "bikePageInfo" => [
-                    "topDesc" => [
-                        "desc1" => "Во своја засебна класа, Rocket 3 е врвниот и легендарен мускулест родстер со високи спецификации.",
-                        "desc2" => "Rocket 3 R произведува неверојатна контрола, удобност, способност и водечки вртежен момент во светот, што е 71% повисок од најблискиот конкурент и повеќе од претходната Rocket генерација. Истиот се карактеризира со неверојатно рамна крива на вртежниот момент што достигнува врв на 4.000 вртежи во минута. Моќта на три цилиндричниот 2500cc мотор се шири линеарно низ опсегот на вртежи, обезбедувајќи одлично забрзување и моментален одговор, во секој степен во менувачот.",
-                        "desc3" => "Максималната моќност е 167 КС при 6000 вртежи во минута што е 11% повисоко од моделот од претходната генерација. Голема моќност се чувствува уште од ниски 3500 револуции во минута па се до црвената линија на тахометарот односно при 7000 вртежи во минута, правејќи го Rocket 3 R неспоредливо највозбудлив мотор што некогаш сте го возеле.",
-                        "desc4" => "Заедно со своите неспоредливи перформанси, Rocket 3 R има неверојатно мускулесто присуство и неверојатен крузер стил, како и прекрасни детали и неспоредлив финиш. Се разбира, вие можете да го подобрите овој одличен мотор уште повеќе со избирање од широк опсег од над 50 оригинални Triumph аксесоари."
-                    ]
+                    "Во своја засебна класа, Rocket 3 е врвниот и легендарен мускулест родстер со високи спецификации.",
+                    "Rocket 3 R произведува неверојатна контрола, удобност, способност и водечки вртежен момент во светот, што е 71% повисок од најблискиот конкурент и повеќе од претходната Rocket генерација. Истиот се карактеризира со неверојатно рамна крива на вртежниот момент што достигнува врв на 4.000 вртежи во минута. Моќта на три цилиндричниот 2500cc мотор се шири линеарно низ опсегот на вртежи, обезбедувајќи одлично забрзување и моментален одговор, во секој степен во менувачот.",
+                    "Максималната моќност е 167 КС при 6000 вртежи во минута што е 11% повисоко од моделот од претходната генерација. Голема моќност се чувствува уште од ниски 3500 револуции во минута па се до црвената линија на тахометарот односно при 7000 вртежи во минута, правејќи го Rocket 3 R неспоредливо највозбудлив мотор што некогаш сте го возеле.",
+                    "Заедно со своите неспоредливи перформанси, Rocket 3 R има неверојатно мускулесто присуство и неверојатен крузер стил, како и прекрасни детали и неспоредлив финиш. Се разбира, вие можете да го подобрите овој одличен мотор уште повеќе со избирање од широк опсег од над 50 оригинални Triumph аксесоари."
                 ],
                 "features" => [
                     [
@@ -2536,16 +2801,46 @@ class MotorcyclesSeeder extends Seeder
                     ]
                 ],
                 "bikePageImageGallery" => [
-                    "/images/rocket-3/rocket3R/rocket3RBikeGalleryCaro1.avif",
-                    "/images/rocket-3/rocket3R/rocket3RBikeGalleryCaro2.avif",
-                    "/images/rocket-3/rocket3R/rocket3RBikeGalleryCaro3.avif",
-                    "/images/rocket-3/rocket3R/rocket3RBikeGalleryCaro4.avif",
-                    "/images/rocket-3/rocket3R/rocket3RBikeGalleryCaro5.avif",
-                    "/images/rocket-3/rocket3R/rocket3RBikeGalleryCaro6.avif",
-                    "/images/rocket-3/rocket3R/rocket3RBikeGalleryCaro7.avif",
-                    "/images/rocket-3/rocket3R/rocket3RBikeGalleryCaro8.avif",
-                    "/images/rocket-3/rocket3R/rocket3RBikeGalleryCaro9.avif",
-                    "/images/rocket-3/rocket3R/rocket3RBikeGalleryCaro10.avif"
+                    [
+                        "alt" => "rocket3RBikeGalleryCaro1",
+                        "src" => "/images/rocket-3/rocket3R/rocket3RBikeGalleryCaro1.avif",
+                    ],
+                    [
+                        "alt" => "rocket3RBikeGalleryCaro2",
+                        "src" => "/images/rocket-3/rocket3R/rocket3RBikeGalleryCaro2.avif",
+                    ],
+                    [
+                        "alt" => "rocket3RBikeGalleryCaro3",
+                        "src" => "/images/rocket-3/rocket3R/rocket3RBikeGalleryCaro3.avif",
+                    ],
+                    [
+                        "alt" => "rocket3RBikeGalleryCaro4",
+                        "src" => "/images/rocket-3/rocket3R/rocket3RBikeGalleryCaro4.avif",
+                    ],
+                    [
+                        "alt" => "rocket3RBikeGalleryCaro5",
+                        "src" => "/images/rocket-3/rocket3R/rocket3RBikeGalleryCaro5.avif",
+                    ],
+                    [
+                        "alt" => "rocket3RBikeGalleryCaro6",
+                        "src" => "/images/rocket-3/rocket3R/rocket3RBikeGalleryCaro6.avif",
+                    ],
+                    [
+                        "alt" => "rocket3RBikeGalleryCaro7",
+                        "src" => "/images/rocket-3/rocket3R/rocket3RBikeGalleryCaro7.avif",
+                    ],
+                    [
+                        "alt" => "rocket3RBikeGalleryCaro8",
+                        "src" => "/images/rocket-3/rocket3R/rocket3RBikeGalleryCaro8.avif",
+                    ],
+                    [
+                        "alt" => "rocket3RBikeGalleryCaro9",
+                        "src" => "/images/rocket-3/rocket3R/rocket3RBikeGalleryCaro9.avif",
+                    ],
+                    [
+                        "alt" => "rocket3RBikeGalleryCaro10",
+                        "src" => "/images/rocket-3/rocket3R/rocket3RBikeGalleryCaro10.avif"
+                    ]
                 ]
             ],
             [
@@ -2568,12 +2863,23 @@ class MotorcyclesSeeder extends Seeder
                 ],
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/rocket-3/rocket3GT/rocket3GTSaphireBlack.png",
-                    "color1" => "/images/rocket-3/rocket3GT/rocket3GTSaphireBlack.png",
-                    "color1Reversed" => "/images/rocket-3/rocket3GT/rocket3GTSaphireBlackReversed.png",
-                    "color2" => "/images/rocket-3/rocket3GT/rocket3GTCarnivalRedSaphireBlack.png",
-                    "color2Reversed" => "/images/rocket-3/rocket3GT/rocket3GTCarnivalRedSaphireBlackReversed.png",
-                    "color3" => "/images/rocket-3/rocket3GT/rocket3GTChrome.png",
-                    "color3Reversed" => "/images/rocket-3/rocket3GT/rocket3GTChromeReversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "SaphireBlack",
+                            "base" => "/images/rocket-3/rocket3GT/rocket3GTSaphireBlack.png",
+                            "reversed" => "/images/rocket-3/rocket3GT/rocket3GTSaphireBlackReversed.png"
+                        ],
+                        [
+                            "colorName" => "CarnivalRedSaphireBlack",
+                            "base" => "/images/rocket-3/rocket3GT/rocket3GTCarnivalRedSaphireBlack.png",
+                            "reversed" => "/images/rocket-3/rocket3GT/rocket3GTCarnivalRedSaphireBlackReversed.png"
+                        ],
+                        [
+                            "colorName" => "Chrome",
+                            "base" => "/images/rocket-3/rocket3GT/rocket3GTChrome.png",
+                            "reversed" => "/images/rocket-3/rocket3GT/rocket3GTChromeReversed.png"
+                        ]
+                    ]
                 ],
                 "customizationColors" => [
                     [
@@ -2605,12 +2911,10 @@ class MotorcyclesSeeder extends Seeder
                     "desc" => "Врвни перформанси и изглед, неверојатен комфорт со релаксирана возачка позиција која дозволува авантури со долги дистанци."
                 ],
                 "bikePageInfo" => [
-                    "topDesc" => [
-                        "desc1" => "Во своја засебна класа, Rocket 3 е врвниот и легендарен мускулест родстер со високи спецификации.",
-                        "desc2" => "Rocket 3 R произведува неверојатна контрола, удобност, способност и водечки вртежен момент во светот, што е 71% повисок од најблискиот конкурент и повеќе од претходната Rocket генерација. Истиот се карактеризира со неверојатно рамна крива на вртежниот момент што достигнува врв на 4.000 вртежи во минута. Моќта на три цилиндричниот 2500cc мотор се шири линеарно низ опсегот на вртежи, обезбедувајќи одлично забрзување и моментален одговор, во секој степен во менувачот.",
-                        "desc3" => "Максималната моќност е 167 КС при 6000 вртежи во минута што е 11% повисоко од моделот од претходната генерација. Голема моќност се чувствува уште од ниски 3500 револуции во минута па се до црвената линија на тахометарот односно при 7000 вртежи во минута, правејќи го Rocket 3 R неспоредливо највозбудлив мотор што некогаш сте го возеле.",
-                        "desc4" => "Заедно со своите неспоредливи перформанси, Rocket 3 R има неверојатно мускулесто присуство и неверојатен крузер стил, како и прекрасни детали и неспоредлив финиш. Се разбира, вие можете да го подобрите овој одличен мотор уште повеќе со избирање од широк опсег од над 50 оригинални Triumph аксесоари."
-                    ]
+                    "Во своја засебна класа, Rocket 3 е врвниот и легендарен мускулест родстер со високи спецификации.",
+                    "Rocket 3 R произведува неверојатна контрола, удобност, способност и водечки вртежен момент во светот, што е 71% повисок од најблискиот конкурент и повеќе од претходната Rocket генерација. Истиот се карактеризира со неверојатно рамна крива на вртежниот момент што достигнува врв на 4.000 вртежи во минута. Моќта на три цилиндричниот 2500cc мотор се шири линеарно низ опсегот на вртежи, обезбедувајќи одлично забрзување и моментален одговор, во секој степен во менувачот.",
+                    "Максималната моќност е 167 КС при 6000 вртежи во минута што е 11% повисоко од моделот од претходната генерација. Голема моќност се чувствува уште од ниски 3500 револуции во минута па се до црвената линија на тахометарот односно при 7000 вртежи во минута, правејќи го Rocket 3 R неспоредливо највозбудлив мотор што некогаш сте го возеле.",
+                    "Заедно со своите неспоредливи перформанси, Rocket 3 R има неверојатно мускулесто присуство и неверојатен крузер стил, како и прекрасни детали и неспоредлив финиш. Се разбира, вие можете да го подобрите овој одличен мотор уште повеќе со избирање од широк опсег од над 50 оригинални Triumph аксесоари."
                 ],
                 "features" => [
                     [
@@ -2765,14 +3069,38 @@ class MotorcyclesSeeder extends Seeder
                     ]
                 ],
                 "bikePageImageGallery" => [
-                    "/images/rocket-3/rocket3GT/rocket3GTBikeGalleryCaro1.avif",
-                    "/images/rocket-3/rocket3GT/rocket3GTBikeGalleryCaro2.avif",
-                    "/images/rocket-3/rocket3GT/rocket3GTBikeGalleryCaro3.avif",
-                    "/images/rocket-3/rocket3GT/rocket3GTBikeGalleryCaro4.avif",
-                    "/images/rocket-3/rocket3GT/rocket3GTBikeGalleryCaro5.avif",
-                    "/images/rocket-3/rocket3GT/rocket3GTBikeGalleryCaro6.avif",
-                    "/images/rocket-3/rocket3GT/rocket3GTBikeGalleryCaro7.avif",
-                    "/images/rocket-3/rocket3GT/rocket3GTBikeGalleryCaro8.avif"
+                    [
+                        "alt" => "rocket3GTBikeGalleryCaro1",
+                        "src" => "/images/rocket-3/rocket3GT/rocket3GTBikeGalleryCaro1.avif",
+                    ],
+                    [
+                        "alt" => "rocket3GTBikeGalleryCaro2",
+                        "src" => "/images/rocket-3/rocket3GT/rocket3GTBikeGalleryCaro2.avif",
+                    ],
+                    [
+                        "alt" => "rocket3GTBikeGalleryCaro3",
+                        "src" => "/images/rocket-3/rocket3GT/rocket3GTBikeGalleryCaro3.avif",
+                    ],
+                    [
+                        "alt" => "rocket3GTBikeGalleryCaro4",
+                        "src" => "/images/rocket-3/rocket3GT/rocket3GTBikeGalleryCaro4.avif",
+                    ],
+                    [
+                        "alt" => "rocket3GTBikeGalleryCaro5",
+                        "src" => "/images/rocket-3/rocket3GT/rocket3GTBikeGalleryCaro5.avif",
+                    ],
+                    [
+                        "alt" => "rocket3GTBikeGalleryCaro6",
+                        "src" => "/images/rocket-3/rocket3GT/rocket3GTBikeGalleryCaro6.avif",
+                    ],
+                    [
+                        "alt" => "rocket3GTBikeGalleryCaro7",
+                        "src" => "/images/rocket-3/rocket3GT/rocket3GTBikeGalleryCaro7.avif",
+                    ],
+                    [
+                        "alt" => "rocket3GTBikeGalleryCaro8",
+                        "src" => "/images/rocket-3/rocket3GT/rocket3GTBikeGalleryCaro8.avif"
+                    ]
                 ]
             ],
             [
@@ -2796,12 +3124,23 @@ class MotorcyclesSeeder extends Seeder
                 ],
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/classics/speed400CarnivalRed.png",
-                    "color1" => "/images/classics/speed400CarnivalRed.png",
-                    "color1Reversed" => "/images/classics/speed400CarnivalRedReversed.png",
-                    "color2" => "/images/classics/speed400CaspianBlue.png",
-                    "color2Reversed" => "/images/classics/speed400CaspianBlueStormGreyReversed.png",
-                    "color3" => "/images/classics/speed400PhantomBlack.png",
-                    "color3Reversed" => "/images/classics/speed400phantomBlackStormGreyReversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "CarnivalRed",
+                            "base" => "/images/classics/speed400CarnivalRed.png",
+                            "reversed" => "/images/classics/speed400CarnivalRedReversed.png"
+                        ],
+                        [
+                            "colorName" => "CaspianBlue",
+                            "base" => "/images/classics/speed400CaspianBlue.png",
+                            "reversed" => "/images/classics/speed400CaspianBlueStormGreyReversed.png"
+                        ],
+                        [
+                            "colorName" => "PhantomBlack",
+                            "base" => "/images/classics/speed400PhantomBlack.png",
+                            "reversed" => "/images/classics/speed400phantomBlackStormGreyReversed.png"
+                        ]
+                    ]
                 ],
                 "customizationColors" => [
                     [
@@ -2944,12 +3283,23 @@ class MotorcyclesSeeder extends Seeder
                 "price" => 6890,
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/classics/scrambler400X/scrambler400XKhakiGreen.png",
-                    "color1" => "/images/classics/scrambler400X/scrambler400XKhakiGreen.png",
-                    "color1Reversed" => "/images/classics/scrambler400X/scrambler400XKhakiGreenReversed.png",
-                    "color2" => "/images/classics/scrambler400X/scrambler400XRedBlack.png",
-                    "color2Reversed" => "/images/classics/scrambler400X/scrambler400XRedBlackReversed.png",
-                    "color3" => "/images/classics/scrambler400X/scrambler400XBlackSilver.png",
-                    "color3Reversed" => "/images/classics/scrambler400X/scrambler400XBlackSilverReversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "KhakiGreen",
+                            "base" => "/images/classics/scrambler400X/scrambler400XKhakiGreen.png",
+                            "reversed" => "/images/classics/scrambler400X/scrambler400XKhakiGreenReversed.png"
+                        ],
+                        [
+                            "colorName" => "RedBlack",
+                            "base" => "/images/classics/scrambler400X/scrambler400XRedBlack.png",
+                            "reversed" => "/images/classics/scrambler400X/scrambler400XRedBlackReversed.png"
+                        ],
+                        [
+                            "colorName" => "BlackSilver",
+                            "base" => "/images/classics/scrambler400X/scrambler400XBlackSilver.png",
+                            "reversed" => "/images/classics/scrambler400X/scrambler400XBlackSilverReversed.png"
+                        ]
+                    ]
                 ],
                 "customizationColors" => [
                     [
@@ -3097,14 +3447,28 @@ class MotorcyclesSeeder extends Seeder
                 "price" => 10690,
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/classics/speedTwin900/speedTwin900Ironstone.png",
-                    "color1" => "/images/classics/speedTwin900/speedTwin900Black.png",
-                    "color1Reversed" => "/images/classics/speedTwin900/speedTwin900BlackReversed.png",
-                    "color2" => "/images/classics/speedTwin900/speedTwin900CarnivalRed.png",
-                    "color2Reversed" => "/images/classics/speedTwin900/speedTwin900CarnivalRedReversed.png",
-                    "color3" => "/images/classics/speedTwin900/speedTwin900Competition.png",
-                    "color3Reversed" => "/images/classics/speedTwin900/speedTwin900CompetitionReversed.png",
-                    "color4" => "/images/classics/speedTwin900/speedTwin900StealthGreen.png",
-                    "color4Reversed" => "/images/classics/speedTwin900/speedTwin900StealthGreenReversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "Black",
+                            "base" => "/images/classics/speedTwin900/speedTwin900Black.png",
+                            "reversed" => "/images/classics/speedTwin900/speedTwin900BlackReversed.png"
+                        ],
+                        [
+                            "colorName" => "CarnivalRed",
+                            "base" => "/images/classics/speedTwin900/speedTwin900CarnivalRed.png",
+                            "reversed" => "/images/classics/speedTwin900/speedTwin900CarnivalRedReversed.png"
+                        ],
+                        [
+                            "colorName" => "Competition",
+                            "base" => "/images/classics/speedTwin900/speedTwin900Competition.png",
+                            "reversed" => "/images/classics/speedTwin900/speedTwin900CompetitionReversed.png"
+                        ],
+                        [
+                            "colorName" => "StealthGreen",
+                            "base" => "/images/classics/speedTwin900/speedTwin900StealthGreen.png",
+                            "reversed" => "/images/classics/speedTwin900/speedTwin900StealthGreenReversed.png"
+                        ]
+                    ]
                 ],
                 "customizationColors" => [
                     [
@@ -3243,16 +3607,33 @@ class MotorcyclesSeeder extends Seeder
                 "price" => 16990,
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/classics/bonnevilleBobber/bonnevilleBobberRedHopper.png",
-                    "color1" => "/images/classics/bonnevilleBobber/bonnevilleBobberBlack.png",
-                    "color1Reversed" => "/images/classics/bonnevilleBobber/bonnevilleBobberBlackReversed.png",
-                    "color2" => "/images/classics/bonnevilleBobber/bonnevilleBobberRedHopper.png",
-                    "color2Reversed" => "/images/classics/bonnevilleBobber/bonnevilleBobberRedHopperReversed.png",
-                    "color3" => "/images/classics/bonnevilleBobber/bonnevilleBobberBlackGray.png",
-                    "color3Reversed" => "/images/classics/bonnevilleBobber/bonnevilleBobberBlackGrayReversed.png",
-                    "color4" => "/images/classics/bonnevilleBobber/bonnevilleBobberChrome.png",
-                    "color4Reversed" => "/images/classics/bonnevilleBobber/bonnevilleBobberChromeReversed.png",
-                    "color5" => "/images/classics/bonnevilleBobber/bonnevilleBobberPurple.png",
-                    "color5Reversed" => "/images/classics/bonnevilleBobber/bonnevilleBobberPurpleReversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "Black",
+                            "base" => "/images/classics/bonnevilleBobber/bonnevilleBobberBlack.png",
+                            "reversed" => "/images/classics/bonnevilleBobber/bonnevilleBobberBlackReversed.png"
+                        ],
+                        [
+                            "colorName" => "RedHopper",
+                            "base" => "/images/classics/bonnevilleBobber/bonnevilleBobberRedHopper.png",
+                            "reversed" => "/images/classics/bonnevilleBobber/bonnevilleBobberRedHopperReversed.png"
+                        ],
+                        [
+                            "colorName" => "BlackGray",
+                            "base" => "/images/classics/bonnevilleBobber/bonnevilleBobberBlackGray.png",
+                            "reversed" => "/images/classics/bonnevilleBobber/bonnevilleBobberBlackGrayReversed.png"
+                        ],
+                        [
+                            "colorName" => "Chrome",
+                            "base" => "/images/classics/bonnevilleBobber/bonnevilleBobberChrome.png",
+                            "reversed" => "/images/classics/bonnevilleBobber/bonnevilleBobberChromeReversed.png"
+                        ],
+                        [
+                            "colorName" => "Purple",
+                            "base" => "/images/classics/bonnevilleBobber/bonnevilleBobberPurple.png",
+                            "reversed" => "/images/classics/bonnevilleBobber/bonnevilleBobberPurpleReversed.png"
+                        ]
+                    ]
                 ],
                 "customizationColors" => [
                     [
@@ -3384,7 +3765,10 @@ class MotorcyclesSeeder extends Seeder
                     ]
                 ],
                 "bikePageImageGallery" => [
-                    "/images/classics/bonnevilleBobber/bonnevilleBobberBikeGalleryCaro1.avif"
+                    [
+                        "alt" => "bonnevilleBobberBikeGalleryCaro1",
+                        "src" => "/images/classics/bonnevilleBobber/bonnevilleBobberBikeGalleryCaro1.avif"
+                    ]
                 ]
             ],
             [
@@ -3397,12 +3781,23 @@ class MotorcyclesSeeder extends Seeder
                 "price" => 16490,
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/classics/scrambler1200X/scrambler1200XSapphireBlack.png",
-                    "color1" => "/images/classics/scrambler1200X/scrambler1200XSapphireBlack.png",
-                    "color1Reversed" => "/images/classics/scrambler1200X/scrambler1200XSapphireBlackreversed.png",
-                    "color2" => "/images/classics/scrambler1200X/scrambler1200XSapphireGray.png",
-                    "color2Reversed" => "/images/classics/scrambler1200X/scrambler1200XSapphireGrayReversed.png",
-                    "color3" => "/images/classics/scrambler1200X/scrambler1200XSapphireRed.png",
-                    "color3Reversed" => "/images/classics/scrambler1200X/scrambler1200XSapphireRedReversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "SaphireBlack",
+                            "base" => "/images/classics/scrambler1200X/scrambler1200XSapphireBlack.png",
+                            "reversed" => "/images/classics/scrambler1200X/scrambler1200XSapphireBlackreversed.png"
+                        ],
+                        [
+                            "colorName" => "SaphireGray",
+                            "base" => "/images/classics/scrambler1200X/scrambler1200XSapphireGray.png",
+                            "reversed" => "/images/classics/scrambler1200X/scrambler1200XSapphireGrayReversed.png"
+                        ],
+                        [
+                            "colorName" => "SaphireRed",
+                            "base" => "/images/classics/scrambler1200X/scrambler1200XSapphireRed.png",
+                            "reversed" => "/images/classics/scrambler1200X/scrambler1200XSapphireRedReversed.png"
+                        ]
+                    ]
                 ],
                 "customizationColors" => [
                     [
@@ -3501,12 +3896,23 @@ class MotorcyclesSeeder extends Seeder
                 "price" => 16490,
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/classics/scrambler1200XC/scrambler1200XCSapphireBlack.png",
-                    "color1" => "/images/classics/scrambler1200XC/scrambler1200XCSapphireBlack.png",
-                    "color1Reversed" => "/images/classics/scrambler1200XC/scrambler1200XCSapphireBlackReversed.png",
-                    "color2" => "/images/classics/scrambler1200XC/scrambler1200XCKhaki.png",
-                    "color2Reversed" => "/images/classics/scrambler1200XC/scrambler1200XCKhakiReversed.png",
-                    "color3" => "/images/classics/scrambler1200XC/scrambler1200XCRed.png",
-                    "color3Reversed" => "/images/classics/scrambler1200XC/scrambler1200XCRedReversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "SaphireBlack",
+                            "base" => "/images/classics/scrambler1200XC/scrambler1200XCSapphireBlack.png",
+                            "reversed" => "/images/classics/scrambler1200XC/scrambler1200XCSapphireBlackReversed.png"
+                        ],
+                        [
+                            "colorName" => "Khaki",
+                            "base" => "/images/classics/scrambler1200XC/scrambler1200XCKhaki.png",
+                            "reversed" => "/images/classics/scrambler1200XC/scrambler1200XCKhakiReversed.png"
+                        ],
+                        [
+                            "colorName" => "Red",
+                            "base" => "/images/classics/scrambler1200XC/scrambler1200XCRed.png",
+                            "reversed" => "/images/classics/scrambler1200XC/scrambler1200XCRedReversed.png"
+                        ]
+                    ]
                 ],
                 "customizationColors" => [
                     [
@@ -3622,12 +4028,23 @@ class MotorcyclesSeeder extends Seeder
                 "price" => 17490,
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/classics/scrambler1200XE/scrambler1200XEBlack.png",
-                    "color1" => "/images/classics/scrambler1200XE/scrambler1200XEBlack.png",
-                    "color1Reversed" => "/images/classics/scrambler1200XE/scrambler1200XEBlackReversed.png",
-                    "color2" => "/images/classics/scrambler1200XE/scrambler1200XEBlackGray.png",
-                    "color2Reversed" => "/images/classics/scrambler1200XE/scrambler1200XEBlackGrayReversed.png",
-                    "color3" => "/images/classics/scrambler1200XE/scrambler1200XEOrange.png",
-                    "color3Reversed" => "/images/classics/scrambler1200XE/scrambler1200XEOrangeReversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "Black",
+                            "base" => "/images/classics/scrambler1200XE/scrambler1200XEBlack.png",
+                            "reversed" => "/images/classics/scrambler1200XE/scrambler1200XEBlackReversed.png"
+                        ],
+                        [
+                            "colorName" => "BlackGray",
+                            "base" => "/images/classics/scrambler1200XE/scrambler1200XEBlackGray.png",
+                            "reversed" => "/images/classics/scrambler1200XE/scrambler1200XEBlackGrayReversed.png"
+                        ],
+                        [
+                            "colorName" => "Orange",
+                            "base" => "/images/classics/scrambler1200XE/scrambler1200XEOrange.png",
+                            "reversed" => "/images/classics/scrambler1200XE/scrambler1200XEOrangeReversed.png"
+                        ]
+                    ]
                 ],
                 "customizationColors" => [
                     [
@@ -3726,14 +4143,28 @@ class MotorcyclesSeeder extends Seeder
                 "price" => 16690,
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/classics/speedmaster/speedmasterBlack.png",
-                    "color1" => "/images/classics/speedmaster/speedmasterBlack.png",
-                    "color1Reversed" => "/images/classics/speedmaster/speedmasterBlackReversed.png",
-                    "color2" => "/images/classics/speedmaster/speedmasterRed.png",
-                    "color2Reversed" => "/images/classics/speedmaster/speedmasterRedReversed.png",
-                    "color3" => "/images/classics/speedmaster/speedmasterBlackBlue.png",
-                    "color3Reversed" => "/images/classics/speedmaster/speedmasterBlackBlueReversed.png",
-                    "color4" => "/images/classics/speedmaster/speedmasterPhantomRed.png",
-                    "color4Reversed" => "/images/classics/speedmaster/speedmasterPhantomRedReversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "Black",
+                            "base" => "/images/classics/speedmaster/speedmasterBlack.png",
+                            "reversed" => "/images/classics/speedmaster/speedmasterBlackReversed.png"
+                        ],
+                        [
+                            "colorName" => "Red",
+                            "base" => "/images/classics/speedmaster/speedmasterRed.png",
+                            "reversed" => "/images/classics/speedmaster/speedmasterRedReversed.png"
+                        ],
+                        [
+                            "colorName" => "BlackBlue",
+                            "base" => "/images/classics/speedmaster/speedmasterBlackBlue.png",
+                            "reversed" => "/images/classics/speedmaster/speedmasterBlackBlueReversed.png"
+                        ],
+                        [
+                            "colorName" => "PhantomRed",
+                            "base" => "/images/classics/speedmaster/speedmasterPhantomRed.png",
+                            "reversed" => "/images/classics/speedmaster/speedmasterPhantomRedReversed.png"
+                        ]
+                    ],
                 ],
                 "customizationColors" => [
                     [
@@ -3861,7 +4292,10 @@ class MotorcyclesSeeder extends Seeder
                     ]
                 ],
                 "bikePageImageGallery" => [
-                    "/images/classics/speedmaster/speedmasterBikeGalleryCaro1.avif"
+                    [
+                        "alt" => "speedmasterBikeGalleryCaro1",
+                        "src" => "/images/classics/speedmaster/speedmasterBikeGalleryCaro1.avif"
+                    ]
                 ]
             ],
             [
@@ -3874,14 +4308,28 @@ class MotorcyclesSeeder extends Seeder
                 "price" => 14590,
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/classics/speedTwin1200/speedTwin1200Black.png",
-                    "color1" => "/images/classics/speedTwin1200/speedTwin1200Black.png",
-                    "color1Reversed" => "/images/classics/speedTwin1200/speedTwin1200BlackReversed.png",
-                    "color2" => "/images/classics/speedTwin1200/speedTwin1200MattSilver.png",
-                    "color2Reversed" => "/images/classics/speedTwin1200/speedTwin1200MattSilverReversed.png",
-                    "color3" => "/images/classics/speedTwin1200/speedTwin1200CarnivalRed.png",
-                    "color3Reversed" => "/images/classics/speedTwin1200/speedTwin1200CarnivalRedReversed.png",
-                    "color4" => "/images/classics/speedTwin1200/speedTwin1200PhantomRed.png",
-                    "color4Reversed" => "/images/classics/speedTwin1200/speedTwin1200PhantomRedReversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "Black",
+                            "base" => "/images/classics/speedTwin1200/speedTwin1200Black.png",
+                            "reversed" => "/images/classics/speedTwin1200/speedTwin1200BlackReversed.png"
+                        ],
+                        [
+                            "colorName" => "MattSilver",
+                            "base" => "/images/classics/speedTwin1200/speedTwin1200MattSilver.png",
+                            "reversed" => "/images/classics/speedTwin1200/speedTwin1200MattSilverReversed.png"
+                        ],
+                        [
+                            "colorName" => "CarnivalRed",
+                            "base" => "/images/classics/speedTwin1200/speedTwin1200CarnivalRed.png",
+                            "reversed" => "/images/classics/speedTwin1200/speedTwin1200CarnivalRedReversed.png"
+                        ],
+                        [
+                            "colorName" => "PhantomRed",
+                            "base" => "/images/classics/speedTwin1200/speedTwin1200PhantomRed.png",
+                            "reversed" => "/images/classics/speedTwin1200/speedTwin1200PhantomRedReversed.png"
+                        ]
+                    ]
                 ],
                 "customizationColors" => [
                     [
@@ -4023,14 +4471,28 @@ class MotorcyclesSeeder extends Seeder
                 "price" => 12290,
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/classics/scrambler900/scrambler900Black.png",
-                    "color1" => "/images/classics/scrambler900/scrambler900Black.png",
-                    "color1Reversed" => "/images/classics/scrambler900/scrambler900BlackReversed.png",
-                    "color2" => "/images/classics/scrambler900/scrambler900Yellow.png",
-                    "color2Reversed" => "/images/classics/scrambler900/scrambler900YellowReversed.png",
-                    "color3" => "/images/classics/scrambler900/scrambler900Khaki.png",
-                    "color3Reversed" => "/images/classics/scrambler900/scrambler900KhakiReversed.png",
-                    "color4" => "/images/classics/scrambler900/scrambler900PhantomOrange.png",
-                    "color4Reversed" => "/images/classics/scrambler900/scrambler900PhantomOrangeReversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "Black",
+                            "base" => "/images/classics/scrambler900/scrambler900Black.png",
+                            "reversed" => "/images/classics/scrambler900/scrambler900BlackReversed.png"
+                        ],
+                        [
+                            "colorName" => "Yellow",
+                            "base" => "/images/classics/scrambler900/scrambler900Yellow.png",
+                            "reversed" => "/images/classics/scrambler900/scrambler900YellowReversed.png"
+                        ],
+                        [
+                            "colorName" => "Khaki",
+                            "base" => "/images/classics/scrambler900/scrambler900Khaki.png",
+                            "reversed" => "/images/classics/scrambler900/scrambler900KhakiReversed.png"
+                        ],
+                        [
+                            "colorName" => "PhantomOrange",
+                            "base" => "/images/classics/scrambler900/scrambler900PhantomOrange.png",
+                            "reversed" => "/images/classics/scrambler900/scrambler900PhantomOrangeReversed.png"
+                        ]
+                    ]
                 ],
                 "customizationColors" => [
                     [
@@ -4185,7 +4647,10 @@ class MotorcyclesSeeder extends Seeder
                     ]
                 ],
                 "bikePageImageGallery" => [
-                    "/images/classics/scrambler900/scrambler900BikeGalleyCaro1.avif"
+                    [
+                        "alt" => "scrambler900BikeGalleyCaro1",
+                        "src" => "/images/classics/scrambler900/scrambler900BikeGalleyCaro1.avif"
+                    ]
                 ]
             ],
             [
@@ -4199,14 +4664,28 @@ class MotorcyclesSeeder extends Seeder
                 "price" => 11990,
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/classics/bonnevilleT100/t100Black.png",
-                    "color1" => "/images/classics/bonnevilleT100/t100Black.png",
-                    "color1Reversed" => "/images/classics/bonnevilleT100/t100BlackReversed.png",
-                    "color2" => "/images/classics/bonnevilleT100/t100RedWhite.png",
-                    "color2Reversed" => "/images/classics/bonnevilleT100/t100RedWhiteReversed.png",
-                    "color3" => "/images/classics/bonnevilleT100/t10CompGreen.png",
-                    "color3Reversed" => "/images/classics/bonnevilleT100/t10CompGreenReversed.png",
-                    "color4" => "/images/classics/bonnevilleT100/t100CobaltBlue.png",
-                    "color4Reversed" => "/images/classics/bonnevilleT100/t100CobaltBlueReversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "Black",
+                            "base" => "/images/classics/bonnevilleT100/t100Black.png",
+                            "reversed" => "/images/classics/bonnevilleT100/t100BlackReversed.png"
+                        ],
+                        [
+                            "colorName" => "RedWhite",
+                            "base" => "/images/classics/bonnevilleT100/t100RedWhite.png",
+                            "reversed" => "/images/classics/bonnevilleT100/t100RedWhiteReversed.png"
+                        ],
+                        [
+                            "colorName" => "CompGreen",
+                            "base" => "/images/classics/bonnevilleT100/t10CompGreen.png",
+                            "reversed" => "/images/classics/bonnevilleT100/t10CompGreenReversed.png"
+                        ],
+                        [
+                            "colorName" => "CobaltBlue",
+                            "base" => "/images/classics/bonnevilleT100/t100CobaltBlue.png",
+                            "reversed" => "/images/classics/bonnevilleT100/t100CobaltBlueReversed.png"
+                        ]
+                    ]
                 ],
                 "customizationColors" => [
                     [
@@ -4345,7 +4824,10 @@ class MotorcyclesSeeder extends Seeder
                     ]
                 ],
                 "bikePageImageGallery" => [
-                    "/images/classics/bonnevilleT100/t120BikeGalleryCaro1.avif"
+                    [
+                        "alt" => "t120BikeGalleryCaro1",
+                        "src" => "/images/classics/bonnevilleT100/t120BikeGalleryCaro1.avif"
+                    ]
                 ]
             ],
             [
@@ -4358,16 +4840,33 @@ class MotorcyclesSeeder extends Seeder
                 "price" => 14690,
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/classics/bonnevilleT120/bonnevillieT120Black.png",
-                    "color1" => "/images/classics/bonnevilleT120/bonnevillieT120Black.png",
-                    "color1Reversed" => "/images/classics/bonnevilleT120/bonnevillieT120BlackReversed.png",
-                    "color2" => "/images/classics/bonnevilleT120/bonnevillieT120Red.png",
-                    "color2Reversed" => "/images/classics/bonnevilleT120/bonnevillieT120RedReversed.png",
-                    "color3" => "/images/classics/bonnevilleT120/bonnevillieT120WhiteJetBlack.png",
-                    "color3Reversed" => "/images/classics/bonnevilleT120/bonnevillieT120WhiteJetBlackReversed.png",
-                    "color4" => "/images/classics/bonnevilleT120/t120ChromeEdition-MeridenBlueChrome.avif",
-                    "color4Reversed" => "/images/classics/bonnevilleT120/t120ChromeEdition-MeridenBlueChrome.avif",
-                    "color5" => "/images/classics/bonnevilleT120/bonnevillieT120PhantomBlue.png",
-                    "color5Reversed" => "/images/classics/bonnevilleT120/bonnevillieT120PhantomBlueReversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "Black",
+                            "base" => "/images/classics/bonnevilleT120/bonnevillieT120Black.png",
+                            "reversed" => "/images/classics/bonnevilleT120/bonnevillieT120BlackReversed.png"
+                        ],
+                        [
+                            "colorName" => "Red",
+                            "base" => "/images/classics/bonnevilleT120/bonnevillieT120Red.png",
+                            "reversed" => "/images/classics/bonnevilleT120/bonnevillieT120RedReversed.png"
+                        ],
+                        [
+                            "colorName" => "WhiteJetBlack",
+                            "base" => "/images/classics/bonnevilleT120/bonnevillieT120WhiteJetBlack.png",
+                            "reversed" => "/images/classics/bonnevilleT120/bonnevillieT120WhiteJetBlackReversed.png"
+                        ],
+                        [
+                            "colorName" => "MeridenBlueChrome",
+                            "base" => "/images/classics/bonnevilleT120/t120ChromeEdition-MeridenBlueChrome.avif",
+                            "reversed" => "/images/classics/bonnevilleT120/t120ChromeEdition-MeridenBlueChrome.avif"
+                        ],
+                        [
+                            "colorName" => "PhantomBlue",
+                            "base" => "/images/classics/bonnevilleT120/bonnevillieT120PhantomBlue.png",
+                            "reversed" => "/images/classics/bonnevilleT120/bonnevillieT120PhantomBlueReversed.png"
+                        ]
+                    ]
                 ],
                 "customizationColors" => [
                     [
@@ -4525,7 +5024,10 @@ class MotorcyclesSeeder extends Seeder
                     ]
                 ],
                 "bikePageImageGallery" => [
-                    "/images/classics/bonnevilleT100/t120BikeGalleryCaro1.avif"
+                    [
+                        "alt" => "t120BikeGalleryCaro1",
+                        "src" => "/images/classics/bonnevilleT100/t120BikeGalleryCaro1.avif"
+                    ]
                 ]
             ],
             [
@@ -4538,12 +5040,23 @@ class MotorcyclesSeeder extends Seeder
                 "price" => 14690,
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/classics/bonnevilleT120Black/t120BlackJetBlack.png",
-                    "color1" => "/images/classics/bonnevilleT120Black/t120BlackJetBlack.png",
-                    "color1Reversed" => "/images/classics/bonnevilleT120Black/t120BlackJetBlackReversed.png",
-                    "color2" => "/images/classics/bonnevilleT120Black/t120Graphite.png",
-                    "color2Reversed" => "/images/classics/bonnevilleT120Black/t120GraphiteReversed.png",
-                    "color3" => "/images/classics/bonnevilleT120Black/t120Ice.png",
-                    "color3Reversed" => "/images/classics/bonnevilleT120Black/t120IceReversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "JetBlack",
+                            "base" => "/images/classics/bonnevilleT120Black/t120BlackJetBlack.png",
+                            "reversed" => "/images/classics/bonnevilleT120Black/t120BlackJetBlackReversed.png"
+                        ],
+                        [
+                            "colorName" => "Graphite",
+                            "base" => "/images/classics/bonnevilleT120Black/t120Graphite.png",
+                            "reversed" => "/images/classics/bonnevilleT120Black/t120GraphiteReversed.png",
+                        ],
+                        [
+                            "colorName" => "Ice",
+                            "base" => "/images/classics/bonnevilleT120Black/t120Ice.png",
+                            "reversed" => "/images/classics/bonnevilleT120Black/t120IceReversed.png"
+                        ]
+                    ]
                 ],
                 "customizationColors" => [
                     [
@@ -4689,7 +5202,10 @@ class MotorcyclesSeeder extends Seeder
                     ]
                 ],
                 "bikePageImageGallery" => [
-                    "/images/classics/bonnevilleT120Black/t120BlackBikeGalleryCaro1.avif"
+                    [
+                        "alt" => "t120BlackBikeGalleryCaro1",
+                        "src" => "/images/classics/bonnevilleT120Black/t120BlackBikeGalleryCaro1.avif"
+                    ]
                 ]
             ],
             [
@@ -4702,14 +5218,28 @@ class MotorcyclesSeeder extends Seeder
                 "price" => 18490,
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/classics/thruxtonRS/thruxtonRSBlack.png",
-                    "color1" => "/images/classics/thruxtonRS/thruxtonRSBlack.png",
-                    "color1Reversed" => "/images/classics/thruxtonRS/thruxtonRSBlackReversed.png",
-                    "color2" => "/images/classics/thruxtonRS/thruxtonRSCompetitionGreen.png",
-                    "color2Reversed" => "/images/classics/thruxtonRS/thruxtonRSCompetitionGreenReversed.png",
-                    "color3" => "/images/classics/thruxtonRS/thruxtonRSBlackSilver.png",
-                    "color3Reversed" => "/images/classics/thruxtonRS/thruxtonRSBlackSilverReversed.png",
-                    "color4" => "/images/classics/thruxtonRS/thruxtonRSJetBlack.png",
-                    "color4Reversed" => "/images/classics/thruxtonRS/thruxtonRSJetBlackReversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "Black",
+                            "base" => "/images/classics/thruxtonRS/thruxtonRSBlack.png",
+                            "reversed" => "/images/classics/thruxtonRS/thruxtonRSBlackReversed.png"
+                        ],
+                        [
+                            "colorName" => "CompetitionGreen",
+                            "base" => "/images/classics/thruxtonRS/thruxtonRSCompetitionGreen.png",
+                            "reversed" => "/images/classics/thruxtonRS/thruxtonRSCompetitionGreenReversed.png"
+                        ],
+                        [
+                            "colorName" => "BlackSilver",
+                            "base" => "/images/classics/thruxtonRS/thruxtonRSBlackSilver.png",
+                            "reversed" => "/images/classics/thruxtonRS/thruxtonRSBlackSilverReversed.png"
+                        ],
+                        [
+                            "colorName" => "JetBlack",
+                            "base" => "/images/classics/thruxtonRS/thruxtonRSJetBlack.png",
+                            "reversed" => "/images/classics/thruxtonRS/thruxtonRSJetBlackReversed.png"
+                        ]
+                    ]
                 ],
                 "customizationColors" => [
                     [
@@ -4805,16 +5335,46 @@ class MotorcyclesSeeder extends Seeder
                     ]
                 ],
                 "bikePageImageGallery" => [
-                    "/images/classics/thruxtonRS/thruxtonRSBikeGalleryCaro1.avif",
-                    "/images/classics/thruxtonRS/thruxtonRSBikeGalleryCaro2.avif",
-                    "/images/classics/thruxtonRS/thruxtonRSBikeGalleryCaro3.avif",
-                    "/images/classics/thruxtonRS/thruxtonRSBikeGalleryCaro4.avif",
-                    "/images/classics/thruxtonRS/thruxtonRSBikeGalleryCaro5.avif",
-                    "/images/classics/thruxtonRS/thruxtonRSBikeGalleryCaro6.avif",
-                    "/images/classics/thruxtonRS/thruxtonRSBikeGalleryCaro7.avif",
-                    "/images/classics/thruxtonRS/thruxtonRSBikeGalleryCaro8.avif",
-                    "/images/classics/thruxtonRS/thruxtonRSBikeGalleryCaro9.avif",
-                    "/images/classics/thruxtonRS/thruxtonRSBikeGalleryCaro10.avif"
+                    [
+                        "alt" => "thruxtonRSBikeGalleryCaro1",
+                        "src" => "/images/classics/thruxtonRS/thruxtonRSBikeGalleryCaro1.avif",
+                    ],
+                    [
+                        "alt" => "thruxtonRSBikeGalleryCaro2",
+                        "src" => "/images/classics/thruxtonRS/thruxtonRSBikeGalleryCaro2.avif",
+                    ],
+                    [
+                        "alt" => "thruxtonRSBikeGalleryCaro3",
+                        "src" => "/images/classics/thruxtonRS/thruxtonRSBikeGalleryCaro3.avif",
+                    ],
+                    [
+                        "alt" => "thruxtonRSBikeGalleryCaro4",
+                        "src" => "/images/classics/thruxtonRS/thruxtonRSBikeGalleryCaro4.avif",
+                    ],
+                    [
+                        "alt" => "thruxtonRSBikeGalleryCaro5",
+                        "src" => "/images/classics/thruxtonRS/thruxtonRSBikeGalleryCaro5.avif",
+                    ],
+                    [
+                        "alt" => "thruxtonRSBikeGalleryCaro6",
+                        "src" => "/images/classics/thruxtonRS/thruxtonRSBikeGalleryCaro7.avif",
+                    ],
+                    [
+                        "alt" => "thruxtonRSBikeGalleryCaro7",
+                        "src" => "/images/rocket-3/rocket3GT/rocket3GTBikeGalleryCaro7.avif",
+                    ],
+                    [
+                        "alt" => "thruxtonRSBikeGalleryCaro8",
+                        "src" => "/images/classics/thruxtonRS/thruxtonRSBikeGalleryCaro8.avif",
+                    ],
+                    [
+                        "alt" => "thruxtonRSBikeGalleryCaro9",
+                        "src" => "/images/classics/thruxtonRS/thruxtonRSBikeGalleryCaro9.avif",
+                    ],
+                    [
+                        "alt" => "thruxtonRSBikeGalleryCaro10",
+                        "src" =>  "/images/classics/thruxtonRS/thruxtonRSBikeGalleryCaro10.avif"
+                    ]
                 ]
             ],
             [
@@ -4837,10 +5397,18 @@ class MotorcyclesSeeder extends Seeder
                 ],
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/roadsters/moto2/streetTripleMoto2Yellow.png",
-                    "color1" => "/images/roadsters/moto2/streetTripleMoto2Yellow.png",
-                    "color1Reversed" => "/images/roadsters/moto2/streetTripleMoto2YellowReversed.png",
-                    "color2" => "/images/roadsters/moto2/streetTripleMoto2White.png",
-                    "color2Reversed" => "/images/roadsters/moto2/streetTripleMoto2WhiteReversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "Yellow",
+                            "base" => "/images/roadsters/moto2/streetTripleMoto2Yellow.png",
+                            "reversed" => "/images/roadsters/moto2/streetTripleMoto2YellowReversed.png"
+                        ],
+                        [
+                            "colorName" => "White",
+                            "base" => "/images/roadsters/moto2/streetTripleMoto2White.png",
+                            "reversed" => "/images/roadsters/moto2/streetTripleMoto2WhiteReversed.png"
+                        ]
+                    ]
                 ],
                 "customizationColors" => [
                     [
@@ -4978,15 +5546,42 @@ class MotorcyclesSeeder extends Seeder
                     ]
                 ],
                 "bikePageImageGallery" => [
-                    "/images/roadsters/moto2/moto2BikeGalleryCaro1.avif",
-                    "/images/roadsters/moto2/moto2BikeGalleryCaro2.avif",
-                    "/images/roadsters/moto2/moto2BikeGalleryCaro3.avif",
-                    "/images/roadsters/moto2/moto2BikeGalleryCaro4.avif",
-                    "/images/roadsters/moto2/moto2BikeGalleryCaro5.avif",
-                    "/images/roadsters/moto2/moto2BikeGalleryCaro6.avif",
-                    "/images/roadsters/moto2/moto2BikeGalleryCaro7.avif",
-                    "/images/roadsters/moto2/moto2BikeGalleryCaro8.avif",
-                    "/images/roadsters/moto2/moto2BikeGalleryCaro9.avif"
+                    [
+                        "alt" => "moto2BikeGalleryCaro1",
+                        "src" => "/images/roadsters/moto2/moto2BikeGalleryCaro1.avif",
+                    ],
+                    [
+                        "alt" => "moto2BikeGalleryCaro2",
+                        "src" => "/images/roadsters/moto2/moto2BikeGalleryCaro2.avif",
+                    ],
+                    [
+                        "alt" => "moto2BikeGalleryCaro3",
+                        "src" => "/images/roadsters/moto2/moto2BikeGalleryCaro3.avif",
+                    ],
+                    [
+                        "alt" => "moto2BikeGalleryCaro4",
+                        "src" => "/images/roadsters/moto2/moto2BikeGalleryCaro4.avif",
+                    ],
+                    [
+                        "alt" => "moto2BikeGalleryCaro5",
+                        "src" => "/images/roadsters/moto2/moto2BikeGalleryCaro5.avif",
+                    ],
+                    [
+                        "alt" => "moto2BikeGalleryCaro6",
+                        "src" => "/images/roadsters/moto2/moto2BikeGalleryCaro6.avif",
+                    ],
+                    [
+                        "alt" => "moto2BikeGalleryCaro7",
+                        "src" => "/images/roadsters/moto2/moto2BikeGalleryCaro7.avif",
+                    ],
+                    [
+                        "alt" => "moto2BikeGalleryCaro8",
+                        "src" => "/images/roadsters/moto2/moto2BikeGalleryCaro8.avif",
+                    ],
+                    [
+                        "alt" => "moto2BikeGalleryCaro9",
+                        "src" => "/images/roadsters/moto2/moto2BikeGalleryCaro9.avif"
+                    ]
                 ]
             ],
             [
@@ -5005,12 +5600,23 @@ class MotorcyclesSeeder extends Seeder
                 ],
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/adventure/tiger900Rally/tiger900RallyWhite.png",
-                    "color1" => "/images/adventure/tiger900Rally/tiger900RallyWhite.png",
-                    "color1Reversed" => "/images/adventure/tiger900Rally/tiger900RallyWhiteReversed.png",
-                    "color2" => "/images/adventure/tiger900Rally/tiger900RallySandstorm.png",
-                    "color2Reversed" => "/images/adventure/tiger900Rally/tiger900RallySandstormReversed.png",
-                    "color3" => "/images/adventure/tiger900Rally/tiger900RallyKhaki.png",
-                    "color3Reversed" => "/images/adventure/tiger900Rally/tiger900RallyKhakiReversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "White",
+                            "base" => "/images/adventure/tiger900Rally/tiger900RallyWhite.png",
+                            "reversed" => "/images/adventure/tiger900Rally/tiger900RallyWhiteReversed.png"
+                        ],
+                        [
+                            "colorName" => "Sandstorm",
+                            "base" => "/images/adventure/tiger900Rally/tiger900RallySandstorm.png",
+                            "reversed" => "/images/adventure/tiger900Rally/tiger900RallySandstormReversed.png"
+                        ],
+                        [
+                            "colorName" => "Khaki",
+                            "base" => "/images/adventure/tiger900Rally/tiger900RallyKhaki.png",
+                            "reversed" => "/images/adventure/tiger900Rally/tiger900RallyKhakiReversed.png"
+                        ]
+                    ]
                 ],
                 "customizationColors" => [
                     [
@@ -5119,8 +5725,13 @@ class MotorcyclesSeeder extends Seeder
                 ],
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/adventure/tiger1200GT/tiger1200GTSnowdoniaWhite.png",
-                    "color1" => "/images/adventure/tiger1200GT/tiger1200GTSnowdoniaWhite.png",
-                    "color1Reversed" => "/images/adventure/tiger1200GT/tiger1200GTSnowdoniaWhiteReversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "SnowdoniaWhite",
+                            "base" => "/images/adventure/tiger1200GT/tiger1200GTSnowdoniaWhite.png",
+                            "reversed" => "/images/adventure/tiger1200GT/tiger1200GTSnowdoniaWhiteReversed.png"
+                        ]
+                    ]
                 ],
                 "customizationColors" => [
                     [
@@ -5160,12 +5771,23 @@ class MotorcyclesSeeder extends Seeder
                 ],
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/sport/daytona660/daytona660Satin.png",
-                    "color1" => "/images/sport/daytona660/daytona660Satin.png",
-                    "color1Reversed" => "/images/sport/daytona660/daytona660SatinReversed.png",
-                    "color2" => "/images/sport/daytona660/daytona660SnowdoniaWhite.png",
-                    "color2Reversed" => "/images/sport/daytona660/daytona660SnowdoniaWhiteReversed.png",
-                    "color3" => "/images/sport/daytona660/daytona660CarnivalRed.png",
-                    "color3Reversed" => "/images/sport/daytona660/daytona660CarnivalRedReversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "Satin",
+                            "base" => "/images/sport/daytona660/daytona660Satin.png",
+                            "reversed" => "/images/sport/daytona660/daytona660SatinReversed.png"
+                        ],
+                        [
+                            "colorName" => "SnowdoniaWhite",
+                            "base" => "/images/sport/daytona660/daytona660SnowdoniaWhite.png",
+                            "reversed" => "/images/sport/daytona660/daytona660SnowdoniaWhiteReversed.png"
+                        ],
+                        [
+                            "colorName" => "CarnivalRed",
+                            "base" => "/images/sport/daytona660/daytona660CarnivalRed.png",
+                            "reversed" => "/images/sport/daytona660/daytona660CarnivalRedReversed.png"
+                        ]
+                    ]
                 ],
                 "customizationColors" => [
                     [
@@ -5239,12 +5861,30 @@ class MotorcyclesSeeder extends Seeder
                     "desc" => "Интуитивна, агилна, спортска серија оптимизирана за секојдневен комфорт но со моќен и возбудлив три-цилиндречен погон. Новата Daytona 660 серија е спремна за секаков предизвик. "
                 ],
                 "bikePageImageGallery" => [
-                    "/images/sport/daytona660/daytona660BikeGalleryCaro1.avif",
-                    "/images/sport/daytona660/daytona660BikeGalleryCaro2.avif",
-                    "/images/sport/daytona660/daytona660BikeGalleryCaro3.avif",
-                    "/images/sport/daytona660/daytona660BikeGalleryCaro4.avif",
-                    "/images/sport/daytona660/daytona660BikeGalleryCaro5.avif",
-                    "/images/sport/daytona660/daytona660BikeGalleryCaro6.avif"
+                    [
+                        "alt" => "daytona660BikeGalleryCaro1",
+                        "src" => "/images/sport/daytona660/daytona660BikeGalleryCaro1.avif",
+                    ],
+                    [
+                        "alt" => "daytona660BikeGalleryCaro2",
+                        "src" => "/images/sport/daytona660/daytona660BikeGalleryCaro2.avif",
+                    ],
+                    [
+                        "alt" => "daytona660BikeGalleryCaro3",
+                        "src" => "/images/sport/daytona660/daytona660BikeGalleryCaro3.avif",
+                    ],
+                    [
+                        "alt" => "daytona660BikeGalleryCaro4",
+                        "src" => "/images/sport/daytona660/daytona660BikeGalleryCaro4.avif",
+                    ],
+                    [
+                        "alt" => "daytona660BikeGalleryCaro5",
+                        "src" => "/images/sport/daytona660/daytona660BikeGalleryCaro5.avif",
+                    ],
+                    [
+                        "alt" => "daytona660BikeGalleryCaro6",
+                        "src" => "/images/sport/daytona660/daytona660BikeGalleryCaro6.avif"
+                    ]
                 ]
             ],
             [
@@ -5267,8 +5907,13 @@ class MotorcyclesSeeder extends Seeder
                 ],
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/offRoad/tf250X/tf250xTriumphYellow.png",
-                    "color1" => "/images/offRoad/tf250X/tf250xTriumphYellow.png",
-                    "color1Reversed" => "/images/offRoad/tf250X/tf250xTriumphYellowReversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "Yellow",
+                            "base" => "/images/offRoad/tf250X/tf250xTriumphYellow.png",
+                            "reversed" => "/images/offRoad/tf250X/tf250xTriumphYellowReversed.png"
+                        ]
+                    ]
                 ],
                 "customizationColors" => [
                     [
@@ -5345,12 +5990,30 @@ class MotorcyclesSeeder extends Seeder
                     "desc" => "Сосема нова тркачка серија дизајнирана за победи на патеката. Дизајнирана како колаборација со најдобрите Triumph MX инжињери и светски шампиони како Рики Карлмајкл ваа серија е спремна за предизниците кои ќе и ги претставите."
                 ],
                 "bikePageImageGallery" => [
-                    "/images/offRoad/tf250X/tf250XBikeGalleryCaro1.avif",
-                    "/images/offRoad/tf250X/tf250XBikeGalleryCaro2.avif",
-                    "/images/offRoad/tf250X/tf250XBikeGalleryCaro3.avif",
-                    "/images/offRoad/tf250X/tf250XBikeGalleryCaro4.avif",
-                    "/images/offRoad/tf250X/tf250XBikeGalleryCaro5.avif",
-                    "/images/offRoad/tf250X/tf250XBikeGalleryCaro6.avif"
+                    [
+                        "alt" => "tf250XBikeGalleryCaro1",
+                        "src" => "/images/offRoad/tf250X/tf250XBikeGalleryCaro1.avif",
+                    ],
+                    [
+                        "alt" => "tf250XBikeGalleryCaro2",
+                        "src" => "/images/offRoad/tf250X/tf250XBikeGalleryCaro2.avif",
+                    ],
+                    [
+                        "alt" => "tf250XBikeGalleryCaro3",
+                        "src" => "/images/offRoad/tf250X/tf250XBikeGalleryCaro3.avif",
+                    ],
+                    [
+                        "alt" => "tf250XBikeGalleryCaro4",
+                        "src" => "/images/offRoad/tf250X/tf250XBikeGalleryCaro4.avif",
+                    ],
+                    [
+                        "alt" => "tf250XBikeGalleryCaro5",
+                        "src" => "/images/offRoad/tf250X/tf250XBikeGalleryCaro5.avif",
+                    ],
+                    [
+                        "alt" => "tf250XBikeGalleryCaro6",
+                        "src" => "/images/offRoad/tf250X/tf250XBikeGalleryCaro6.avif"
+                    ]
                 ]
             ],
             [
@@ -5373,12 +6036,24 @@ class MotorcyclesSeeder extends Seeder
                 ],
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/rocket-3/rocketStormR/rocket3StormRBlack.png",
-                    "color1" => "/images/rocket-3/rocketStormR/rocket3StormRBlack.png",
-                    "color1Reversed" => "/images/rocket-3/rocketStormR/rocket3StormRBlackReversed.png",
-                    "color2" => "/images/rocket-3/rocketStormR/rocket3StormRRed.png",
-                    "color2Reversed" => "/images/rocket-3/rocketStormR/rocket3StormRRedReversed.png",
-                    "color3" => "/images/rocket-3/rocketStormR/rocket3StormRBlue.png",
-                    "color3Reversed" => "/images/rocket-3/rocketStormR/rocket3StormRBlueReversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "Black",
+                            "base" => "/images/rocket-3/rocketStormR/rocket3StormRBlack.png",
+                            "reversed" => "/images/rocket-3/rocketStormR/rocket3StormRBlackReversed.png"
+                        ],
+                        [
+                            "colorName" => "Red",
+                            "base" => "/images/rocket-3/rocketStormR/rocket3StormRRed.png",
+                            "reversed" => "/images/rocket-3/rocketStormR/rocket3StormRRedReversed.png"
+                        ]
+                        ,
+                        [
+                            "colorName" => "Blue",
+                            "base" => "/images/rocket-3/rocketStormR/rocket3StormRBlue.png",
+                            "reversed" => "/images/rocket-3/rocketStormR/rocket3StormRBlueReversed.png"
+                        ]
+                    ]
                 ],
                 "customizationColors" => [
                     [
@@ -5410,9 +6085,7 @@ class MotorcyclesSeeder extends Seeder
                     "desc" => "Врвниот мускулест “Roadster“. Со епски пропорции, имресивни перформанси, одлична агилност и извонреден стил. Цени Наскоро."
                 ],
                 "bikePageInfo" => [
-                    "topDesc" => [
-                        "desc1" => "Новиот Rocket 3 Storm R стои сам во своја класа. Со мускулеста сила и рекордно висок левел на вртежен момент, екслпозивниот карактер на Rocket 3 Storm R се парира само со своето неверојатно управување и извонреден финиш изработен со висок квалитет."
-                    ]
+                    "Новиот Rocket 3 Storm R стои сам во своја класа. Со мускулеста сила и рекордно висок левел на вртежен момент, екслпозивниот карактер на Rocket 3 Storm R се парира само со своето неверојатно управување и извонреден финиш изработен со висок квалитет."
                 ],
                 "bikePageCarousell" => [
                     [
@@ -5457,8 +6130,14 @@ class MotorcyclesSeeder extends Seeder
                     ]
                 ],
                 "bikePageImageGallery" => [
-                    "/images/rocket-3/rocketStormR/rocket3StormRBikeGalleryCaro1.avif",
-                    "/images/rocket-3/rocketStormR/rocket3StormRBikeGalleryCaro2.avif"
+                    [
+                        "alt" => "rocket3StormRBikeGalleryCaro1",
+                        "src" => "/images/rocket-3/rocketStormR/rocket3StormRBikeGalleryCaro1.avif",
+                    ],
+                    [
+                        "alt" => "rocket3StormRBikeGalleryCaro2",
+                        "src" => "/images/rocket-3/rocketStormR/rocket3StormRBikeGalleryCaro2.avif"
+                    ]
                 ]
             ],
             [
@@ -5481,12 +6160,24 @@ class MotorcyclesSeeder extends Seeder
                 ],
                 "bikeCollorPalletteGallery" => [
                     "default" => "/images/rocket-3/rocketStormGT/rocket3StormGTRed.png",
-                    "color1" => "/images/rocket-3/rocketStormGT/rocket3StormGTRed.png",
-                    "color1Reversed" => "/images/rocket-3/rocketStormGT/rocket3StormGTRedReversed.png",
-                    "color2" => "/images/rocket-3/rocketStormGT/rocket3StormGTBlack.png",
-                    "color2Reversed" => "/images/rocket-3/rocketStormGT/rocket3StormGTBlackReversed.png",
-                    "color3" => "/images/rocket-3/rocketStormGT/rocket3StormGTBlue.png",
-                    "color3Reversed" => "/images/rocket-3/rocketStormGT/rocket3StormGTBlueReversed.png"
+                    "colors" => [
+                        [
+                            "colorName" => "Red",
+                            "base" => "/images/rocket-3/rocketStormGT/rocket3StormGTRed.png",
+                            "reversed" => "/images/rocket-3/rocketStormGT/rocket3StormGTRedReversed.png"
+                        ],
+                        [
+                            "colorName" => "Black",
+                            "base" => "/images/rocket-3/rocketStormGT/rocket3StormGTBlack.png",
+                            "reversed" => "/images/rocket-3/rocketStormGT/rocket3StormGTBlackReversed.png",
+                        ]
+                        ,
+                        [
+                            "colorName" => "Blue",
+                            "base" => "/images/rocket-3/rocketStormGT/rocket3StormGTBlue.png",
+                            "reversed" => "/images/rocket-3/rocketStormGT/rocket3StormGTBlueReversed.png"
+                        ]
+                    ]
                 ],
                 "customizationColors" => [
                     [
@@ -5518,9 +6209,7 @@ class MotorcyclesSeeder extends Seeder
                     "desc" => "Одличните перформанси и управување се сплотија со лежерното возење и карактер. Цени Наскоро."
                 ],
                 "bikePageInfo" => [
-                    "topDesc" => [
-                        "desc1" => "Легендата за Rocket 3 серијата продолжува. Муслуеста сила и вртежен момент во комбинација со релаксиран стил и одлично возачко искуство целосно спакувано во извонреден финиш."
-                    ]
+                    "Легендата за Rocket 3 серијата продолжува. Муслуеста сила и вртежен момент во комбинација со релаксиран стил и одлично возачко искуство целосно спакувано во извонреден финиш."
                 ],
                 "bikePageCarousell" => [
                     [
@@ -5560,15 +6249,24 @@ class MotorcyclesSeeder extends Seeder
                     ]
                 ],
                 "bikePageImageGallery" => [
-                    "/images/rocket-3/rocketStormGT/rocket3StormGTBikeGallery1.avif",
-                    "/images/rocket-3/rocketStormGT/rocket3StormGTBikeGallery2.avif",
-                    "/images/rocket-3/rocketStormGT/rocket3StormGTBikeGallery3.avif"
+                    [
+                        "alt" => "rocket3StormGTBikeGallery1",
+                        "src" => "/images/rocket-3/rocketStormGT/rocket3StormGTBikeGallery1.avif",
+                    ],
+                    [
+                        "alt" => "rocket3StormGTBikeGallery2",
+                        "src" => "/images/rocket-3/rocketStormGT/rocket3StormGTBikeGallery2.avif",
+                    ],
+                    [
+                        "alt" => "rocket3StormGTBikeGallery3",
+                        "src" => "/images/rocket-3/rocketStormGT/rocket3StormGTBikeGallery3.avif"
+                    ]
                 ]
             ]
         ];
 
 
-        foreach ($motorcyclesData as $motorcycle){
+        foreach ($motorcyclesData as $motorcycle) {
             Motorcycle::create($motorcycle);
         }
 
