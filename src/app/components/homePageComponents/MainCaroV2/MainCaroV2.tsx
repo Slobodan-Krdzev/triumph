@@ -185,10 +185,10 @@ const MainCaroV2 = ({ items }: MainCaroPropsType) => {
                 <Image
                   src={item.imageMobile}
                   alt="img"
-                  width={425}
+                  width={430}
                   height={700}
                 />
-                {/* <div className="p-8">
+                <div className="p-8">
                   <h2 className="mb-4 uppercase font-bold text-white text-3xl">
                     {item.title}
                   </h2>
@@ -213,7 +213,7 @@ const MainCaroV2 = ({ items }: MainCaroPropsType) => {
                       />
                     )}
                   </div>
-                </div> */}
+                </div>
               </div>
             </SwiperSlide>
           ))}
