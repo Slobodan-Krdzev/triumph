@@ -165,7 +165,7 @@ const MainCaroV2 = ({items}: MainCaroPropsType) => {
         </Swiper>
       </section>
 
-      <section className="md:hidden">
+      {/* <section className="md:hidden">
         <Swiper
           navigation={true}
           modules={[Navigation, Autoplay]}
@@ -219,7 +219,7 @@ const MainCaroV2 = ({items}: MainCaroPropsType) => {
             </SwiperSlide>
           ))}
         </Swiper>
-      </section>
+      </section> */}
      
     </>
   );
