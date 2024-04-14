@@ -48,8 +48,11 @@ export default async function Home() {
     return (
       <>
         {/* <MainCarousell items={mainCarousellItems} /> */}
-        <section className="text-center pt-16"><h1 className="text-5xl uppercase font-bold">Triumph Macedonia</h1></section>
-        {/* <MainCaroV2 items={mainCarousellItems}/>
+        <section className="text-center pt-16">
+
+        <MainCaroV2 items={mainCarousellItems}/>
+        </section>
+        {/* <
         <GrayBand
           itemOne={{
             text: "Конфигурации",
