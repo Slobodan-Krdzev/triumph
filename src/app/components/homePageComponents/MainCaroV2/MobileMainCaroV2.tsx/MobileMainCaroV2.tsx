@@ -36,7 +36,7 @@ const MobileMainCaroV2 = ({items}: MobileProps) => {
                 <Image
                   src={item.imageMobile}
                   alt="img"
-                  width={430}
+                  width={768}
                   height={700}
                 />
                 <div className="p-8">
