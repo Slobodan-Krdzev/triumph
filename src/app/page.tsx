@@ -48,11 +48,8 @@ export default async function Home() {
     return (
       <>
         {/* <MainCarousell items={mainCarousellItems} /> */}
-        <section className="text-center pt-16">
-
         <MainCaroV2 items={mainCarousellItems}/>
-        </section>
-        {/* <
+        
         <GrayBand
           itemOne={{
             text: "Конфигурации",
@@ -64,7 +61,7 @@ export default async function Home() {
             url: "/dealer",
             icon: "/pin.svg",
           }}
-        /> */}
+        />
 
         <section className="py-16 text-center">
           <h1 className="md:text-6xl text-4xl font-semibold mb-12">
