@@ -2,9 +2,9 @@ import React from "react";
 import MainBtn from "../../MainBtn";
 import Image from "next/image";
 
-type MainCarousellItemType = {
+export type MainCarousellItemType = {
   image?: string;
-  imageMobile?: string;
+  imageMobile: string | any;
   video?: string;
   title: string;
   desc: string;
