@@ -41,14 +41,14 @@ export default async function Home() {
     const mainCarousellItems = await mainCarousellItemsRes.json();
 
     const latestCarousellItemsRes = await fetch(`${LATESTCAROUSELLITEMS}`, {
-      next: { revalidate: 3000 },
+      next: { revalidate: 30 },
     });
     const latestCarousellitems = await latestCarousellItemsRes.json();
 
     return (
       <>
         {/* <MainCarousell items={mainCarousellItems} /> */}
-        <MainCaroV2 items={mainCarousellItems}/>
+        {/* <MainCaroV2 items={mainCarousellItems}/> */}
         <GrayBand
           itemOne={{
             text: "Конфигурации",
