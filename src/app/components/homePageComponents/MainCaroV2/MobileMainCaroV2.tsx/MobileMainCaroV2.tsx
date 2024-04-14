@@ -19,6 +19,9 @@ const MobileMainCaroV2 = ({items}: MobileProps) => {
         <Swiper
           navigation={true}
           modules={[Navigation, Autoplay]}
+          style={{
+            backgroundColor: "#2A2A2A"
+          }}
           className="mainCaroSwiper"
           autoplay={{
             delay: 2500,
@@ -30,7 +33,6 @@ const MobileMainCaroV2 = ({items}: MobileProps) => {
               <div
                 style={{
                   backgroundColor: "#2A2A2A",
-                  height: "100vh",
                 }}
               >
                 <Image
