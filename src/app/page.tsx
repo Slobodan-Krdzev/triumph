@@ -46,7 +46,7 @@ export default async function Home() {
 
     return (
       <>
-        <MainCarousell items={mainCarousellItems} />
+        {/* <MainCarousell items={mainCarousellItems} /> */}
         <GrayBand
           itemOne={{
             text: "Конфигурации",
