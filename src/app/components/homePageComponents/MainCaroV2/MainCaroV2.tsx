@@ -146,7 +146,7 @@ type MainCaroPropsType = {
 const MainCaroV2 = ({ items }: MainCaroPropsType) => {
   return (
     <>
-      <section className="hidden lg:block">
+      <section className="hidden md:block">
         <Swiper
           navigation={true}
           modules={[Navigation, Autoplay]}
@@ -164,7 +164,7 @@ const MainCaroV2 = ({ items }: MainCaroPropsType) => {
         </Swiper>
       </section>
 
-      <section className="lg:hidden">
+      <section className="md:hidden">
         <Swiper
           navigation={true}
           modules={[Navigation, Autoplay]}
@@ -179,10 +179,6 @@ const MainCaroV2 = ({ items }: MainCaroPropsType) => {
               <div
                 style={{
                   backgroundColor: "#2A2A2A",
-                  backgroundImage: item.imageMobile,
-                  backgroundPosition: "center center",
-                  backgroundRepeat: "no-repeat",
-                  backgroundSize: "cover",
                   height: "100vh",
                 }}
               >
@@ -192,7 +188,7 @@ const MainCaroV2 = ({ items }: MainCaroPropsType) => {
                   width={425}
                   height={700}
                 />
-                <div className="p-8">
+                {/* <div className="p-8">
                   <h2 className="mb-4 uppercase font-bold text-white text-3xl">
                     {item.title}
                   </h2>
@@ -217,7 +213,7 @@ const MainCaroV2 = ({ items }: MainCaroPropsType) => {
                       />
                     )}
                   </div>
-                </div>
+                </div> */}
               </div>
             </SwiperSlide>
           ))}
