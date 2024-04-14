@@ -147,10 +147,8 @@ const MainCaroV2 = ({ items }: MainCaroPropsType) => {
   //     }
   //   ]
 
-  const breakpoint = useBreakpoint();
-
-  if (breakpoint > 750) {
-    return (
+  return (
+    <>
       <section className="hidden md:block">
         <Swiper
           navigation={true}
@@ -169,14 +167,13 @@ const MainCaroV2 = ({ items }: MainCaroPropsType) => {
                 position: "relative",
               }}
             >
-              {/* <MainCarousellItem item={item} /> */}
-
-              {item.video && (
+               {/* {item.video && (
                 <video
-                  className="relative object-fill "
+                  className="relative object-fill"
                   autoPlay
                   muted
                   loop
+                  playsInline
                   style={{
                     height: "auto",
                     minWidth: "92%",
@@ -202,10 +199,26 @@ const MainCaroV2 = ({ items }: MainCaroPropsType) => {
                     height: "calc(100vh - 64px)",
                   }}
                 ></div>
-              )}
+              )}  */}
+
+              {item.video ? (
+                <video controls autoPlay muted loop>
+                <source src={item.video} type="video/mp4" />
+              </video>
+            // <>vid</>
+              ) : (<div
+                style={{
+                  minWidth: "100%",
+                  backgroundImage: `url('${item.image}')`,
+                  backgroundPosition: "center center",
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "cover",
+                  height: "calc(100vh - 64px)",
+                }}
+              ></div>)}
 
               <div className="ml-44 absolute" style={{ top: "15%" }}>
-                <h2 className="mb-4 uppercase font-bold text-7xl text-white w-2/4">
+                <h2 className="mb-4 uppercase font-bold  text-7xl text-white w-2/4">
                   {item.title}
                 </h2>
                 <p className="mb-4 w-2/4 text-white text-2xl font-semibold">
@@ -234,66 +247,8 @@ const MainCaroV2 = ({ items }: MainCaroPropsType) => {
           ))}
         </Swiper>
       </section>
-    );
-  }
 
-  return (
-    <>
-      <section className="md:hidden">
-        <Swiper
-          navigation={true}
-          modules={[Navigation, Autoplay]}
-          className="mainCaroSwiper"
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-        >
-          {items.map((item) => (
-            <SwiperSlide key={item.title}>
-              <div
-                style={{
-                  backgroundColor: "#2A2A2A",
-                  height: "100vh",
-                }}
-              >
-                <Image
-                  src={item.imageMobile}
-                  alt="img"
-                  width={430}
-                  height={700}
-                />
-                <div className="p-8">
-                  <h2 className="mb-4 uppercase font-bold text-white text-3xl">
-                    {item.title}
-                  </h2>
-                  <p className="mb-4  text-white text-xl font-semibold">
-                    {item.desc}
-                  </p>
-                  <div className="flex flex-col gap-4 text-center">
-                    {item.link1 && (
-                      <MainBtn
-                        text={item.link1.text}
-                        bgBlack={false}
-                        isLink={true}
-                        link={item.link1.url}
-                      />
-                    )}
-                    {item.link2 && (
-                      <MainBtn
-                        text={item.link2.text}
-                        bgBlack={true}
-                        isLink={true}
-                        link={item.link2.url}
-                      />
-                    )}
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </section>
+      
     </>
   );
 };
