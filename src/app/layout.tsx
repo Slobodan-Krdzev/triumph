@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   title: "Triumph Motorcycles Macedonia",
   description:
     "Triumph Motorcycles Macedonia, Триумф Моторцикли Македонија, Триумф, Мотори, Triumph",
+  viewport: 'width=device-width, initial-scale=1, maximum-scale=1'
 };
 
 export default async function RootLayout({
