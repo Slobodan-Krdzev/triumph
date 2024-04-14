@@ -34,7 +34,7 @@ const MainCarousellItem = ({
         backgroundPosition: "center center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        height: "100vh",
+        height: "calc(100vh - 64px)",
       }}
     >
       {video && video !== null && (
@@ -45,11 +45,10 @@ const MainCarousellItem = ({
               autoPlay
               muted
               loop
-              
               style={{
                 height: "auto",
                 minWidth: "92%",
-                filter: 'brightness(80%)'
+                filter: "brightness(80%)",
               }}
             >
               <source
@@ -59,11 +58,8 @@ const MainCarousellItem = ({
               />
             </video>
           </>
-              
-          <div
-            className="ml-44 absolute"
-            style={{ top: "15%" }}
-          >
+
+          <div className="ml-44 absolute" style={{ top: "15%" }}>
             <h2 className="mb-4 uppercase font-bold lg:text-4xl xl:text-7xl text-white w-2/4">
               {title}
             </h2>
@@ -93,38 +89,33 @@ const MainCarousellItem = ({
       )}
 
       {video === null && (
-          <div
-            className="ml-44 absolute"
-            style={{ top: "15%" }}
-          >
-            <h2 className="mb-4 uppercase font-bold lg:text-6xl xl:text-7xl text-white w-2/4">
-              {title}
-            </h2>
-            <p className="mb-4 w-2/4 text-white lg:text-xl xl:text-2xl font-semibold">
-              {desc}
-            </p>
-            <div className="flex gap-4">
-              {link1 && (
-                <MainBtn
-                  text={link1.text}
-                  bgBlack={false}
-                  isLink={true}
-                  link={link1.url}
-                />
-              )}
-              {link2 && (
-                <MainBtn
-                  text={link2.text}
-                  bgBlack={true}
-                  isLink={true}
-                  link={link2.url}
-                />
-              )}
-            </div>
+        <div className="ml-44 absolute" style={{ top: "15%" }}>
+          <h2 className="mb-4 uppercase font-bold lg:text-6xl xl:text-7xl text-white w-2/4">
+            {title}
+          </h2>
+          <p className="mb-4 w-2/4 text-white lg:text-xl xl:text-2xl font-semibold">
+            {desc}
+          </p>
+          <div className="flex gap-4">
+            {link1 && (
+              <MainBtn
+                text={link1.text}
+                bgBlack={false}
+                isLink={true}
+                link={link1.url}
+              />
+            )}
+            {link2 && (
+              <MainBtn
+                text={link2.text}
+                bgBlack={true}
+                isLink={true}
+                link={link2.url}
+              />
+            )}
           </div>
-        )
-
-      }
+        </div>
+      )}
     </div>
   );
 };

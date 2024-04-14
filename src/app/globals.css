@@ -167,43 +167,46 @@ body {
   border-bottom: 4px solid var(--secondary-color);
 }
 
-/* 
-.mainCaroSwiper > .swiper-button-next{
-  border:2px solid blue;
+/* MAIN CAROUSELL */
+
+.mainCaroSwiper .swiper-button-prev {
+  position: absolute;
+  top: 93%;
+  left: 87%;
   background-color: transparent;
-  background-position: center bottom;
-  top: 0;
-  right: 0;
-  padding: 2rem 2rem;
-  height: 100%;
-  margin: 0;
-  border-radius: 0%;
+  width: 2%;
+  height: 2%;
+  line-height: 30%;
+  border-radius: 100%;
+  padding: 1.5rem;
+  background-image: url('/left-arrow.png');
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.mainCaroSwiper > .swiper-button-prev{
-  border:2px solid yellow;
+.mainCaroSwiper .swiper-button-next {
+  position: absolute;
+  top: 93%;
+  left: 95%;
   background-color: transparent;
-  background-position: center bottom;
-
-  top: 0;
-  left: 92.9%;
-  padding: 0 2rem;
-  height: 100%;
-  margin: 0;
-  border-radius: 0%;
+  width: 2%;
+  height: 2%;
+  line-height: 30%;
+  border-radius: 100%;
+  padding: 1.5rem;
+  background-image: url('/right-arrow.png');
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.mainCaroSwiper > .swiper-button-next:hover{
-  background: rgb(227,227,227);
-  background: linear-gradient(270deg, rgba(12, 12, 12, 0.021) 0%, rgba(31, 31, 31, 0.267) 28%, rgba(15, 15, 15, 0.616) 56%, rgba(0,0,0,0.7567401960784313) 84%);
-  
+.mainCaroSwiper .swiper-button-next:hover{
+  background-color: #5959592c;
 }
 
-.mainCaroSwiper > .swiper-button-prev:hover {
-  background: rgb(227,227,227);
-  background: linear-gradient(90deg, rgba(22, 22, 22, 0) 0%, rgba(27, 27, 27, 0.178) 28%, rgba(15, 15, 15, 0.664) 56%, rgba(0, 0, 0, 0.781) 84%);
+.mainCaroSwiper .swiper-button-prev:hover{
+  background-color: #5959592c;
+}
 
-} */
 
 /* GRADIENT CAROUSELL BTNS */
 .gradient-caro-btn-right-to-left:hover {
@@ -339,7 +342,6 @@ p {
 
 .swiper-pagination span {
   width: 80px;
-  /* Adjust the width as needed */
   height: 3px;
   background-color: var(--secondary-color);
   margin: 0 5px;

@@ -4,6 +4,7 @@ import LoadingState from "./components/LoadingState";
 import CardLinkItem from "./components/homePageComponents/CardLinkItem";
 import DiscoverThriumphSection from "./components/homePageComponents/DiscoverThriumphSection";
 import LatestModelsCarousellSection from "./components/homePageComponents/LatestModelsCarousellSection";
+import MainCaroV2 from "./components/homePageComponents/MainCaroV2/MainCaroV2";
 import MainCarousell from "./components/homePageComponents/MainCarousell/MainCarousell";
 import {
   LATESTCAROUSELLITEMS,
@@ -47,6 +48,7 @@ export default async function Home() {
     return (
       <>
         {/* <MainCarousell items={mainCarousellItems} /> */}
+        <MainCaroV2 items={mainCarousellItems}/>
         <GrayBand
           itemOne={{
             text: "Конфигурации",
