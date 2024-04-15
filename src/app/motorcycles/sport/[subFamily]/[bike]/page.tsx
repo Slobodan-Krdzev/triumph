@@ -45,12 +45,12 @@ const SportBikePage = async ({ params }: any) => {
         <section>
           <div className="flex flex-col justify-end pt-8 md:pt-16 px-4 md:px-8 lg:px-16">
             <BikeTitle text={bike.title} />
-            <div className="flex items-center flex-col md:flex-row gap-4 md:gap-0">
-              <div className="flex flex-col w-full md:w-2/12 items-start md:justify-center lg:pl-24 md:pl-16 pl-0 order-3 md:order-1">
+            <div className="flex items-center flex-col md:flex-row gap-4 md:gap-0 w-full lg:w-10/12 m-auto">
+              <div className="flex flex-col w-full md:w-2/12 items-start md:justify-center order-3 md:order-1">
                 {bike.customizationColors && <ColorNamePreviewer bike={bike} />}
 
-                <p className="text-sm font-semibold text-neutral-500">
-                  Цени од:
+                <p className="text-md font-semibold text-neutral-500">
+                  Ценa:
                 </p>
                 <PricePriviewer bike={bike} />
                 <div className="flex flex-col gap-6 text-center">
