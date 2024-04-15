@@ -6,6 +6,7 @@ import Breadcrumbs from "../../Breadcrumbs/Breadcrumbs";
 import MainCarousellItem from "./MainCarousellItem";
 import MobileCarousell from "./MobileCarousell/MobileCarousell";
 import ProgressBar from "./ProgressBar";
+import { useBreakpoint } from "../../helpers/useBreakpoint";
 
 export type CarousellItemType = {
   image?: string;
@@ -31,6 +32,8 @@ const MainCarousell = ({ items = [] }: MainCarousellProps) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [progress, setProgress] = useState(0);
 
+  const breakpoint = useBreakpoint();
+
   const updateIndex = (newIndex: number) => {
     if (newIndex < 0) {
       newIndex = 0;
@@ -50,9 +53,9 @@ const MainCarousell = ({ items = [] }: MainCarousellProps) => {
     return () => clearInterval(interval);
   }, [activeIndex, items.length]);
 
-  return (
-    <>
-       <div
+  if (breakpoint >= 1024) {
+    return (
+      <div
         className="relative overflow-hidden lg:block hidden"
         style={{ height: "90vh" }}
       >
@@ -91,7 +94,7 @@ const MainCarousell = ({ items = [] }: MainCarousellProps) => {
               className="gradient-caro-btn-left-to-right bg-transparent h-full z-20 text-black  w-20 flex flex-col justify-end items-center pb-10 relative"
               style={{ right: "0%" }}
             >
-               <div
+              <div
                 className="red-bg-color h-2  absolute"
                 style={{
                   width: `5%`,
@@ -101,8 +104,8 @@ const MainCarousell = ({ items = [] }: MainCarousellProps) => {
                   left: 0,
                   bottom: 0,
                 }}
-              ></div> 
-              <ProgressBar activeIndex={activeIndex}/>
+              ></div>
+              <ProgressBar activeIndex={activeIndex} />
               <p className="rotate-90 text-white font-semibold uppercase font-xl mb-5">
                 {"Следно"}
               </p>
@@ -115,8 +118,12 @@ const MainCarousell = ({ items = [] }: MainCarousellProps) => {
             </button>
           </div>
         )}
-      </div> 
-
+      </div>
+    );
+  }
+  
+  return (
+    <>
       <MobileCarousell
         items={items}
         progress={progress}
