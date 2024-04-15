@@ -47,7 +47,7 @@ const WorldClassSupportPage = () => {
           }
           ctaBtn={{
             text: "Контакт",
-            link: `/dealers`,
+            link: `/dealer`,
           }}
           image={{
             src: `/images/offRoad/worldClassPromo.avif`,
