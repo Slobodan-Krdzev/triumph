@@ -12,23 +12,23 @@ import { redirect } from "next/navigation";
 const SportBikePage = async ({ params }: any) => {
   try {
     const familyRes = await fetch(`${FAMILIES}?type=sport`, {
-      next: { revalidate: 3000 },
+      next: { revalidate: 30 },
     });
     const familyData = await familyRes.json();
     const family = familyData[0];
 
     const subFamiliesRes = await fetch(`${SUB_FAMILIES}?familyType=sport`, {
-      next: { revalidate: 3000 },
+      next: { revalidate: 30 },
     });
     const subFamilies = await subFamiliesRes.json();
 
     const bikesRes = await fetch(`${BIKES}?category=sport`, {
-      next: { revalidate: 3000 },
+      next: { revalidate: 30 },
     });
     const bikes = await bikesRes.json();
 
     const promosRes = await fetch(`${PROMOS}?category=sport`, {
-      next: { revalidate: 3000 },
+      next: { revalidate: 30 },
     });
     const promos = await promosRes.json();
 

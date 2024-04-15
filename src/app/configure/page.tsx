@@ -5,16 +5,15 @@ import { getSufamiliesByFamilyType } from "../components/helpers/getSubfamiliesB
 import { FAMILIES, SUB_FAMILIES } from "../constants/constants";
 
 const ConfigurePage = async () => {
-  // PROMISE.ALL sredi
 
   try {
     const familiesRes = await fetch(`${FAMILIES}`, {
-      next: { revalidate: 3000 },
+      next: { revalidate: 30 },
     });
     const families = await familiesRes.json();
 
     const subFamiliesRes = await fetch(`${SUB_FAMILIES}`, {
-      next: { revalidate: 3000 },
+      next: { revalidate: 30 },
     });
     const subFamilies = await subFamiliesRes.json();
 

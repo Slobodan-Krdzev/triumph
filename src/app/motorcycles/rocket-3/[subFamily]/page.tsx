@@ -9,14 +9,14 @@ import { redirect } from "next/navigation";
 const Rocket3SubFamPage = async () => {
   try {
     const subFamilyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=rocket-3`, {
-      next: { revalidate: 3000 },
+      next: { revalidate: 30 },
     });
     const subFamilyData = await subFamilyRes.json();
     const subFamily = subFamilyData[0];
     const bikesRes = await fetch(
       `${BIKES}?category=rocket-3&subFamilyCategory=rocket-3`,
       {
-        next: { revalidate: 3000 },
+        next: { revalidate: 30 },
       }
     );
     const bikes = await bikesRes.json();

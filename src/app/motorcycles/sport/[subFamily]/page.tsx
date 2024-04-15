@@ -14,13 +14,13 @@ const SportSubFamilyPage = async ({ params }: any) => {
 
   try {
     const subFamilyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=${query}`, {
-      next: { revalidate: 3000 },
+      next: { revalidate: 30 },
     });
     const subfamilyData = await subFamilyRes.json();
     const subFamily = subfamilyData[0];
 
     const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${query}`, {
-      next: { revalidate: 3000 },
+      next: { revalidate: 30 },
     });
     const bikes = await bikesRes.json();
 
