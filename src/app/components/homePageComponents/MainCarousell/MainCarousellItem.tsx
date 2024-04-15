@@ -30,6 +30,7 @@ const MainCarousellItem = ({
       className="relative"
       style={{
         minWidth: "100%",
+        backgroundColor: '#2a2a2a',
         backgroundImage: `url('${image}')`,
         backgroundPosition: "center center",
         backgroundRepeat: "no-repeat",
@@ -38,7 +39,7 @@ const MainCarousellItem = ({
       }}
     >
       {video && video !== null && (
-        <div className="h-full " style={{ width: "100vw" }}>
+        <div className="h-full" style={{ width: "100vw" }}>
           <>
             <video
               className="relative object-fill "
@@ -54,7 +55,7 @@ const MainCarousellItem = ({
               <source
                 className="absolute w-full h-full top-0 left-0"
                 src={video}
-                type="video/webm"
+                type="video/mp4"
               />
             </video>
           </>

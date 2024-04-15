@@ -207,6 +207,9 @@ body {
   background-color: #5959592c;
 }
 
+.mainCaroMobileItem {
+  height: 70vh;
+}
 
 /* GRADIENT CAROUSELL BTNS */
 .gradient-caro-btn-right-to-left:hover {
@@ -468,4 +471,12 @@ td {
     height: 50vh;
     background-size: contain;
   }
+}
+
+@media screen and (max-width: 426px) {
+  
+  .mainCaroMobileItem{
+    height: 50vh;
+  }
+
 }

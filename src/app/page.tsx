@@ -48,9 +48,9 @@ export default async function Home() {
 
     return (
       <>
-        {/* <MainCarousell items={mainCarousellItems} /> */}
-        <MainCaroV2 items={mainCarousellItems}/>
-        <MobileMainCaroV2 items={mainCarousellItems}/>
+        <MainCarousell items={mainCarousellItems} />
+        {/* <MainCaroV2 items={mainCarousellItems}/>
+        <MobileMainCaroV2 items={mainCarousellItems}/> */}
         
         <GrayBand
           itemOne={{

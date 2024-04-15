@@ -12,7 +12,6 @@ type MobileProps = {
     items: any[]
 }
 
-
 const MobileMainCaroV2 = ({items}: MobileProps) => {
   return (
     <section className="md:hidden">

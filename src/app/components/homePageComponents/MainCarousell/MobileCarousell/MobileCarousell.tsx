@@ -48,7 +48,7 @@ const MobileCarousell = ({
         </button>
       )}
 
-      {/* <ProgressBar activeIndex={activeIndex} /> */}
+      <ProgressBar activeIndex={activeIndex} />
       <div
         style={{ transform: `translate(-${activeIndex * 100}%)` }}
         className="transition-transform delay-300 ease-in-out flex"

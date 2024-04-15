@@ -10,14 +10,15 @@ const MobileCaroItem = ({
   item: { imageMobile, title, desc, link1, link2 },
 }: MobiCaroItemProps) => {
   return (
-    <div className="flex flex-col min-w-full gray-bg">
+    <div className="flex flex-col min-w-full gray-bg ">
       <div
+        className="mainCaroMobileItem"
         style={{
           backgroundImage: `url('${imageMobile}')`,
           backgroundPosition: "center",
           backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          height: "50vh"
+          backgroundRepeat: "no-repeat"
+          // height e setiran vo globals
         }}
       ></div>
       <div className="gray-bg w-full py-8 px-8 text-white">
