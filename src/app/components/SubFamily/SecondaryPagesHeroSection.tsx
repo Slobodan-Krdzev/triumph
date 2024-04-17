@@ -19,6 +19,9 @@ const SecondaryPagesHeroSection = ({
 }: SecondaryPagesHeroSectionProps) => {
   const isOfRoad = Boolean(subFamily?.url.split("/")[2] ?? "");
 
+  console.log(subFamilyTitle, 'TUKA');
+  
+
   return (
     <section
       className="relative"
@@ -39,7 +42,7 @@ const SecondaryPagesHeroSection = ({
               isOfRoad ? "border-quartal" : "border-red-600"
             } pb-2`}
           >
-            {formulateSubFamilyTitleOnBanner(subFamilyTitle!)}
+            {subFamilyTitle ? formulateSubFamilyTitleOnBanner(subFamilyTitle!) : subFamilyTitle}
           </h1>
           <p className="md:text-7xl text-4xl uppercase font-bold tracking-tighter text-center w-full pt-2">
             {text}
