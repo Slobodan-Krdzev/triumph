@@ -9,13 +9,13 @@ import { redirect } from "next/navigation";
 const ReasonsRocketPage = async () => {
   try {
     const familyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=rocket-3`, {
-      next: { revalidate: 3000 },
+      next: { revalidate: 30 },
     });
     const familyData = await familyRes.json();
     const subFamily = familyData[0];
 
     const bikesRes = await fetch(`${BIKES}?model=${"rocket-3"}`, {
-      next: { revalidate: 3000 },
+      next: { revalidate: 30 },
     });
     const bikesData = await bikesRes.json();
 
