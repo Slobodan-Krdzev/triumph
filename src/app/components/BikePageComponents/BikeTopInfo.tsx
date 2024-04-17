@@ -31,7 +31,7 @@ const BikeTopInfo = ({ bike }: BikeTopInfoPropsType) => {
               text={"КОНТАКТ"}
               bgBlack={true}
               isLink={true}
-              link={"/dealers/dealer-search"}
+              link={"/dealer"}
             />
           </div>
         </div>
