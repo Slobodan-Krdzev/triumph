@@ -114,12 +114,12 @@ const AdventurePage = async () => {
         <GrayBand
           itemOne={{
             text: "Контакт",
-            url: "/",
+            url: "/dealer",
             icon: "/point.svg",
           }}
           itemTwo={{
-            text: "Тест Возење",
-            url: "/",
+            text: "Конфигурација",
+            url: "/configure",
             icon: "/bike.svg",
           }}
         />

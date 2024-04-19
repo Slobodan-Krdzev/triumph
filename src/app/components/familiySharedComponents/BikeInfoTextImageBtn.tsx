@@ -54,11 +54,11 @@ const BikeInfoTextImageBtn = ({
       >
         <div className="lg:max-w-xs md: max-w-md">
           <SectionTitleH2
-            text={title ?? ""}
+            text={title ?? "Triumph"}
             color={textWhite ? "white" : "dark"}
           />
-          <PageParagraph marginBot={true} text={desc} />
-          {desc2 && <PageParagraph marginBot={true} text={desc2} />}
+          <PageParagraph marginBot={true} text={desc ?? "Triumph"} />
+          {desc2 && <PageParagraph marginBot={true} text={desc2 ?? "Triumph"} />}
           {price && (
             <p className="mb-4">
               Цени од <b>€ {price}.</b>

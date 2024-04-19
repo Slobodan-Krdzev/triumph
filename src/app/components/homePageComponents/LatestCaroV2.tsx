@@ -14,22 +14,27 @@ type LatestCaroV2Props = {
 const LatestCaroV2 = ({ items }: LatestCaroV2Props) => {
   return (
     <section className="hidden lg:block py-8 lg:my-16">
+      <div className="text-center pb-4 lg:pb-16">
+        <SectionTitleH2 text={"Најнови Модели"} color={"dark"} />
+      </div>
       <Swiper
         navigation={true}
         modules={[Navigation, Autoplay]}
         className="latestSwiper"
         autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
       >
         {items.map((item) => (
           <SwiperSlide key={item.image}>
             <div className="flex flex-col lg:flex-row gap-8">
               <div
-              className="basis-3/5"
+                className="basis-3/5"
                 style={{
-                  backgroundImage: `url('${item.image ?? "/images/triumphLogo.png"}')`,
+                  backgroundImage: `url('${
+                    item.image ?? "/images/triumphLogo.png"
+                  }')`,
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
@@ -38,25 +43,29 @@ const LatestCaroV2 = ({ items }: LatestCaroV2Props) => {
               ></div>
               <div className="basis-2/5">
                 <div className="m-auto w-11/12 mt-24">
-                <SectionTitleH2 text={item.title} color={"dark"} />
-                <p className="mb-8 text-xl w-9/12">{item.desc}</p>
-                {item.url && (
-                  <MainBtn
-                    text={"Детали"}
-                    bgBlack={true}
-                    isLink={true}
-                    link={item.url}
-                    fullWidth={false}
+                  <SectionTitleH2
+                    text={item.title ?? "Triumph"}
+                    color={"dark"}
                   />
-                )}
+                  <p className="mb-8 text-xl w-9/12">
+                    {item.desc ?? "Triumph"}
+                  </p>
+                  {item.url && (
+                    <MainBtn
+                      text={"Детали"}
+                      bgBlack={true}
+                      isLink={true}
+                      link={item.url}
+                      fullWidth={false}
+                    />
+                  )}
                 </div>
-                
               </div>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-      </section>
+    </section>
   );
 };
 
