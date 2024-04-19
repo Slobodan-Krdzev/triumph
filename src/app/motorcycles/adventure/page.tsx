@@ -35,11 +35,7 @@ const AdventurePage = async () => {
     const bikes = await bikesRes.json();
 
     const promosRes = await fetch(`${PROMOS}?category=adventure`, {
-<<<<<<< HEAD
-      cache: 'no-store',
-=======
       next: { revalidate: 30 },
->>>>>>> 1e8c1bed19c8db0902808d91084b985a3a94ccba
     });
     const promos = await promosRes.json();
 

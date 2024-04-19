@@ -211,7 +211,7 @@
       "id": 1,
       "subFamilyName": "tiger-900",
       "familyType": "adventure",
-      "title": "Нова Tiger 900 Серија",
+      "title": "Tiger 900",
       "price": 14290,
       "url": "/motorcycles/adventure/tiger-900",
       "specs": [
@@ -1634,7 +1634,7 @@
       "subFamilyName": "tiger-1200-rally",
       "familyType": "adventure",
       "title": "Tiger 1200 Rally",
-      "price": 22590,
+      "price": 22790,
       "url": "/motorcycles/adventure/tiger-1200-gt",
       "specs": [
         {
@@ -2001,7 +2001,7 @@
       "subFamilyName": "speed-400",
       "familyType": "classics",
       "title": "Speed 400",
-      "price": 5690,
+      "price": 6390,
       "url": "/motorcycles/classics/speed-400",
       "cc": 400,
       "specs": [
@@ -2333,7 +2333,7 @@
       "subFamilyName": "scrambler-400-x",
       "familyType": "classics",
       "title": "Scrambler 400 X",
-      "price": 6390,
+      "price": 6890,
       "url": "/motorcycles/classics/scrambler-400-x",
       "cc": 400,
       "specs": [
@@ -2659,7 +2659,7 @@
       "subFamilyName": "speed-twin-900",
       "familyType": "classics",
       "title": "Speed Twin 900",
-      "price": 10390,
+      "price": 10690,
       "url": "/motorcycles/classics/speed-twin-900",
       "cc": 900,
       "specs": [
@@ -3014,7 +3014,7 @@
       "subFamilyName": "bonneville-bobber",
       "familyType": "classics",
       "title": "Bonneville Bobber",
-      "price": 16290,
+      "price": 16990,
       "url": "/motorcycles/classics/bonneville-bobber",
       "cc": 1200,
       "specs": [
@@ -3349,7 +3349,7 @@
       "subFamilyName": "scrambler-1200",
       "familyType": "classics",
       "title": "Scrambler 1200",
-      "price": 15990,
+      "price": 16490,
       "url": "/motorcycles/classics/scrambler-1200",
       "cc": 1200,
       "specs": [
@@ -3733,7 +3733,7 @@
       "subFamilyName": "bonneville-speedmaster",
       "familyType": "classics",
       "title": "Bonneville Speedmaster",
-      "price": 16290,
+      "price": 16690,
       "url": "/motorcycles/classics/bonneville-speedmaster",
       "cc": 1200,
       "specs": [
@@ -4067,7 +4067,7 @@
       "subFamilyName": "speed-twin-1200",
       "familyType": "classics",
       "title": "Speed Twin 1200",
-      "price": 14190,
+      "price": 14590,
       "url": "/motorcycles/classics/speed-twin-1200",
       "cc": 1200,
       "specs": [
@@ -4416,7 +4416,7 @@
       "subFamilyName": "scrambler-900",
       "familyType": "classics",
       "title": "Scrambler 900",
-      "price": 11890,
+      "price": 12290,
       "url": "/motorcycles/classics/scrambler-900",
       "cc": 900,
       "specs": [
@@ -4756,7 +4756,7 @@
       "subFamilyName": "bonneville-t100",
       "familyType": "classics",
       "title": "Bonneville T100",
-      "price": 11690,
+      "price": 11990,
       "url": "/motorcycles/classics/bonneville-t100",
       "cc": 900,
       "specs": [
@@ -5113,7 +5113,7 @@
       "subFamilyName": "bonneville-t120",
       "familyType": "classics",
       "title": "Bonneville T120",
-      "price": 14290,
+      "price": 14690,
       "url": "/motorcycles/classics/bonneville-t120",
       "cc": 1200,
       "specs": [
@@ -5471,7 +5471,7 @@
       "subFamilyName": "thruxton-rs",
       "familyType": "classics",
       "title": "Thruxton RS",
-      "price": 14290,
+      "price": 18490,
       "url": "/motorcycles/classics/thruxton-rs",
       "cc": 1200,
       "specs": [
@@ -5776,7 +5776,7 @@
       "subFamilyName": "street-triple-765",
       "familyType": "roadsters",
       "title": "Street Triple 765",
-      "price": 12290,
+      "price": 12590,
       "url": "/motorcycles/roadsters/street-triple-765",
       "specs": [
         {
@@ -6143,7 +6143,7 @@
       "familyType": "roadsters",
 
       "title": "Street Triple 765 Moto2",
-      "price": 12290,
+      "price": 17490,
       "url": "/motorcycles/roadsters/street-triple-765",
       "specs": [
         {
@@ -6515,7 +6515,7 @@
       "familyType": "roadsters",
 
       "title": "Trident 660",
-      "price": 8690,
+      "price": 9590,
       "url": "/motorcycles/roadsters/trident-660",
       "specs": [
         {
@@ -6858,7 +6858,7 @@
       "familyType": "roadsters",
 
       "title": "Speed Triple 1200 RS",
-      "price": 18990,
+      "price": 19590,
       "url": "/motorcycles/roadsters/speed-triple-1200-rs",
       "specs": [
         {
@@ -7205,7 +7205,7 @@
       "familyType": "roadsters",
 
       "title": "Speed Triple 1200 RR",
-      "price": 20990,
+      "price": 21590,
       "url": "/motorcycles/roadsters/speed-triple-1200-rr",
       "specs": [
         {
@@ -7552,7 +7552,7 @@
       "subFamilyName": "rocket-3",
       "familyType": "rocket-3",
       "title": "Новата Rocket 3 Storm",
-      "price": 25290,
+      "price": 26690,
       "url": "/motorcycles/rocket-3/rocket-3",
       "specs": [
         {
@@ -7773,8 +7773,8 @@
         ],
         "specNumbers": [
           { "data": "2500", "info": "cc" },
-          { "data": "221/225", "info": "Nm" },
-          { "data": "167/182", "info": "PS" },
+          { "data": "225", "info": "Nm" },
+          { "data": "182", "info": "PS" },
           { "data": "16,000км", "info": "С. Интервал" }
         ],
       "subFamilyPageInfo": {
@@ -7903,7 +7903,7 @@
       "subFamilyName": "daytona-660",
       "familyType": "sport",
       "title": "Daytona 660",
-      "price": null,
+      "price": 10790,
       "url": "/motorcycles/sport/daytona-660",
       "specs": [
         {
@@ -11468,7 +11468,7 @@
       ],
       "subFamilyPromo": {
         "title": "Speed 400",
-        "desc": "Уникатен Модерен Класик кој го поседува уникатниот 'roadster' дизајн на Triumph во својата ДНК. Пристигнува во Јануари 2024. Цени од: €5,690.00"
+        "desc": "Уникатен Модерен Класик кој го поседува уникатниот 'roadster' дизајн на Triumph во својата ДНК. Пристигнува во Јануари 2024."
       },
       "bikePagePromo": [
         {
@@ -11532,7 +11532,7 @@
       },
       "subFamilyPromo": {
         "title": "Scrambler 400 X",
-        "desc": "Уникатен Модерен Класик кој го поседува уникатниот 'roadster' дизајн на Triumph во својата ДНК. Пристигнува во Јануари 2024. Цени од: €5,690.00"
+        "desc": "Уникатен Модерен Класик кој го поседува уникатниот 'roadster' дизајн на Triumph во својата ДНК. Пристигнува во Јануари 2024."
       },
       "features": [
         {
@@ -11694,7 +11694,7 @@
       },
       "subFamilyPromo": {
         "title": "Speed Twin 900",
-        "desc": "Возбудливи перформанси и управување што инспирира самодоверба, сега со уште поголема удобност и стил Цени од: €10,690.00"
+        "desc": "Возбудливи перформанси и управување што инспирира самодоверба, сега со уште поголема удобност и стил."
       },
       "features": [
         {
@@ -11849,7 +11849,7 @@
       },
       "subFamilyPromo": {
         "title": "Bonneville Bobber",
-        "desc": "Мускулест изглед со одлични перформанси и управување - Bonneville Bobber. Цена од: 16790.00Є"
+        "desc": "Мускулест изглед со одлични перформанси и управување - Bonneville Bobber."
       },
       "features": [
         {
@@ -13545,47 +13545,6 @@
       ]
     },
     {
-      "id": 59,
-      "title": "Tiger 1200 GT",
-      "model": "tiger-1200-gt",
-      "category": "adventure",
-      "subFamilyCategory": "tiger-1200-gt",
-      "edition": "adventure",
-      "price": 20390,
-      "gallery": {
-        "modelImage": {
-          "src": "/images/adventure/tiger1200GT/tiger1200GTSnowdoniaWhite.png",
-          "alt": "Tiger 1200 GT"
-        },
-        "promoYoutubeVideo": {
-          "src": "https://www.youtube.com/embed/QvVCEk4t8IE",
-          "alt": "Tiger 660 Youtbe Video"
-        }
-      },
-      "bikeCollorPalletteGallery": {
-        "default": "/images/adventure/tiger1200GT/tiger1200GTSnowdoniaWhite.png",
-        "color1": "/images/adventure/tiger1200GT/tiger1200GTSnowdoniaWhite.png",
-        "color1Reversed": "/images/adventure/tiger1200GT/tiger1200GTSnowdoniaWhiteReversed.png"
-      },
-      "customizationColors": [
-        {
-          "colorName": "Snowdonia White",
-          "price": null,
-          "image": "/images/custom-collors/snowdoniaWhite.jpg",
-          "colorCode": "color1"
-        }
-      ],
-      "shortSpecInfo": {
-        "info1": "660cc Triple Motor",
-        "info2": "Лидер во категоријата",
-        "info3": "Прилагодлива 'Showa' суспензија"
-      },
-      "subFamilyPromo": {
-        "title": "TIGER 1200 GT",
-        "desc": "Стартерот но никако не подценетиот мотор од Tiger 1200 GT серијата. Одличен чекор доколку сакате да навлезете во GT моторите од класата на мотори со голема зафатнина на моторот."
-      }
-    },
-    {
       "id": 60,
       "title": "Daytona 660",
       "model": "daytona-660",
@@ -14176,18 +14135,8 @@
         "url": "/motorcycles/sport/daytona-660",
         "text": "Погледни ја Серијата"
       }
-    },
-    {
-      "video": "/images/home/mainCarousell/thruxtonCaroVideo.webm",
-      "image": "/images/home/mainCarousell/thruxtonCaroImg.avif",
-      "imageMobile": "/images/home/mainCarousell/stealthCaroImageMobile.avif",
-      "title": "Новата Thruxton Final Edition",
-      "desc": "За крај на една ера - Thruxton Final Edition",
-      "link1": {
-        "url": "/motorcycles/classics/thruxton-rs",
-        "text": "Погледни ја Серијата"
-      }
-    },
+    }
+    ,
     {
       "video": null,
       "image": "/images/home/mainCarousell/speed400CaroImage.avif",
@@ -14201,43 +14150,6 @@
       "link2": {
         "url": "/motorcycles/classics/scrambler-400-x",
         "text": "Scrambler 400 X"
-      }
-    },
-    {
-      "video": "/images/home/mainCarousell/scrambler1200CaroVideo.webm",
-      "image": "/images/home/mainCarousell/scrambler1200CaroImage.avif",
-      "imageMobile": "/images/home/mainCarousell/scrambler1200CaroImage.avif",
-      "title": "Направени за секој терен",
-      "desc": "Новите Scrambler 1200 XE & X",
-      "link1": {
-        "url": "/motorcycles/classics/scrambler-1200",
-        "text": "Погледни ја Серијата"
-      }
-    },
-    {
-      "video": "/images/home/mainCarousell/tigerCaroVideo.webm",
-      "image": "/images/home/mainCarousell/tigerCaroImage.avif",
-      "imageMobile": "/images/home/mainCarousell/tigerCaroImageMobile.avif",
-      "title": "Tiger 900 Серија",
-      "desc": "Новиот Tiger 900 повторно повторно се искачи на врвот и стана репер за останатите мотори од авантуристички карактер. Откријте го новиот Tiger 900.",
-      "link1": {
-        "url": "/motorcycles/adventure/tiger-900",
-        "text": "Погледни ја Серијата"
-      },
-      "link2": {
-        "url": "/configure/bike/tiger-900",
-        "text": "Конфигурација"
-      }
-    },
-    {
-      "video": "/images/home/mainCarousell/stealthEditionsCaroVideo.webm",
-      "image": "/images/home/mainCarousell/stealthCaroImage.avif",
-      "imageMobile": "/images/home/mainCarousell/stealthCaroImageMobile.avif",
-      "title": "Драматичен Custom Стил",
-      "desc": "Новата Triumph Stealth Серија",
-      "link1": {
-        "url": "/motorcycles/classics/stealth-editions",
-        "text": "Погледни ја Серијата"
       }
     }
   ],
@@ -14299,7 +14211,7 @@
       "id": 3,
       "category": "adventure",
       "title": "TIGER 900 GT",
-      "subFamilyType": "tiger-900-gt",
+      "subFamilyType": "tiger-900/tiger-900-gt",
       "desc": "Дизајниран за авантури по асфалт и комфорт, Tiger 900 GT серијата е фокусирана на возачот и нуди многу опрема и технологија на располагање.",
       "image": "/images/adventure/adventurePromoTiger900Gt.avif",
       "btnBlack": false
@@ -14308,7 +14220,7 @@
       "id": 5,
       "category": "adventure",
       "title": "TIGER 1200",
-      "subFamilyType": "configure/families/adventure",
+      "subFamilyType": "tiger-1200-rally",
       "desc": "All-terrain моторцикли кои го освојуваат светот...",
       "image": "/images/adventure/adventurePromoTiger1200Gif.gif",
       "btnBlack": true
@@ -14363,7 +14275,7 @@
       "category": "sport",
       "title": "НОВАТА DAYTONA 660",
       "subFamilyType": "daytona-660",
-      "desc": "Подкрепнат од еволуциран Moto2™ тркачки мотор. новата Speed Triple серија е високо перформантна, со висока спецификација и прилагодлива за секого. Цени од: €12,290.00",
+      "desc": "Подкрепнат од еволуциран Moto2™ тркачки мотор. новата Speed Triple серија е високо перформантна, со висока спецификација и прилагодлива за секого. Цени од: €12,290",
       "image": "/images/sport/daytona660/daytona660SnowdoniaWhite.png",
       "btnBlack": false
     },
@@ -14382,7 +14294,7 @@
       "title": "НОВАТА TF 250-X СЕРИЈА",
       "subFamilyType": "tf-250-x",
       "desc": "Ако сте зависник од адреналин, новата TF 250-X серија на моторцикли е правилен избор за вас. Цени од: €9,995.00",
-      "image": "/images/offRoad/tf250x/tf250XPromoImage.avif",
+      "image": "/images/offRoad/tf250X/tf250XPromoImage.avif",
       "btnBlack": false
     },
     {

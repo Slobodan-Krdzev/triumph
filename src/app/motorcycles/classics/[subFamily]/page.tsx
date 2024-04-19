@@ -71,7 +71,7 @@ const ClassicsSubFamilyPage = async ({ params }: any) => {
                 }}
                 image={{
                   src: `${bike.subFamilyPromo?.image ?? bike.gallery.modelImage.src}`,
-                  alt: `${bike.gallery.modelImage.alt}`,
+                  alt: `${bike.gallery.modelImage.alt }`,
                 }}
                 blackBtn={true}
                 imageOnTheLeft={false}
