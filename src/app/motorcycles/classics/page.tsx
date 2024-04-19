@@ -81,7 +81,7 @@ const ClassicPage = async () => {
             </div>
           </section>
 
-          <section className="flex flex-col md:flex-row md:px-8 px-4 md:gap-4">
+          <section className="flex flex-col xl:flex-row md:px-8 px-4 md:gap-4">
             {getBikesByCC(900, bikes).length > 3 ? (
               <BikesCarousell900 bikes={getBikesByCC(900, bikes)} />
             ) : (
