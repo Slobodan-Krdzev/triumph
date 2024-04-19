@@ -14,7 +14,7 @@ const MobileCaroItem = ({
       <div
         className="mainCaroMobileItem"
         style={{
-          backgroundImage: `url('${imageMobile}')`,
+          backgroundImage: `url('${imageMobile ?? "/images/triumphLogo.png"}')`,
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat"

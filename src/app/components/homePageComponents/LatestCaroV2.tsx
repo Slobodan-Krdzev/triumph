@@ -29,7 +29,7 @@ const LatestCaroV2 = ({ items }: LatestCaroV2Props) => {
               <div
               className="basis-3/5"
                 style={{
-                  backgroundImage: `url('${item.image}')`,
+                  backgroundImage: `url('${item.image ?? "/images/triumphLogo.png"}')`,
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",

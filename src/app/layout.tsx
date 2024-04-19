@@ -23,12 +23,12 @@ export default async function RootLayout({
 }) {
   try {
     const familiesRes = await fetch(`${FAMILIES}`, {
-      next: { revalidate: 3000 },
+      next: { revalidate: 30 },
     });
     const families = await familiesRes.json();
 
     const subFamiliesRes = await fetch(`${SUB_FAMILIES}`, {
-      next: { revalidate: 1000 },
+      next: { revalidate: 10 },
     });
     const subFamilies = await subFamiliesRes.json();
 

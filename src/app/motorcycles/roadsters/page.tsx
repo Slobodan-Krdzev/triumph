@@ -59,8 +59,8 @@ const RoadstersPage = async () => {
                 link: `/motorcycles/roadsters/${promo.subFamilyType}`,
               }}
               image={{
-                src: `${promo.image}`,
-                alt: `${promo.title}`,
+                src: `${promo.image ?? "/images/triumphLogo.png"}`,
+                alt: `${promo.title ?? 'Triumph'}`,
               }}
               blackBtn={promo.btnBlack}
               imageOnTheLeft={idx % 2 === 0 ? true : false}

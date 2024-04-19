@@ -31,7 +31,7 @@ const MainCarousellItem = ({
       style={{
         minWidth: "100%",
         backgroundColor: '#2a2a2a',
-        backgroundImage: `url('${image}')`,
+        backgroundImage: `url('${image ?? "/images/triumphLogo.png"}')`,
         backgroundPosition: "center center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",

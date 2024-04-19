@@ -14,8 +14,8 @@ const TopSection = ({ title, desc, subtitle, image, bgImage }: TopSectionProps) 
   return (
     <section className="relative pt-16">
       <div className="lg:w-6/12 pb-4 lg:pb-16 lg:px-56 px-4">
-        <SectionTitleH2 text={title} color={"dark"} />
-        <PageParagraph text={desc} />
+        <SectionTitleH2 text={title ?? ""} color={"dark"} />
+        <PageParagraph text={desc ?? ""} />
       </div>
 
       <div className="flex flex-col lg:flex-row  items-center xl:px-56 px-4" >
