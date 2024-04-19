@@ -46,14 +46,14 @@ const LatestModelsMobile = ({items = [], showTitle}: LatesModelsMObileProps) => 
       <div
         className="flex items-center justify-center w-full h-64 overflow-hidden"
         style={{
-          background: `url(${items[activeIndex].image}) center/cover`,
+          background: `url(${items[activeIndex].image ?? "/images/triumphLogo.png"}) center/cover`,
         }}
       >
       </div>
 
       <div className="md:basis-2/5 flex flex-col justify-center items-start mt-4">
-        <SectionTitleH2 text={items[activeIndex].title} color={"dark"} />
-        <p className="mb-4">{items[activeIndex].desc}</p>
+        <SectionTitleH2 text={items[activeIndex].title ?? "Triumph"} color={"dark"} />
+        <p className="mb-4">{items[activeIndex].desc ?? "Triumph"}</p>
         {items[activeIndex].url && <MainBtn
           text={"Детали"}
           bgBlack={true}

@@ -12,6 +12,7 @@ import { FAMILIES, PROMOS, SUB_FAMILIES } from "@/app/constants/constants";
 import { PromoDataType } from "@/app/types/HomeTypes/SharedTypes/types";
 import { redirect } from "next/navigation";
 import { getBikesByCC } from "./helpers/getBikesByCC";
+import BikesCarousell900 from "@/app/components/classicsPageComp/BikesCarousell900";
 
 const ClassicPage = async () => {
   try {
@@ -21,14 +22,16 @@ const ClassicPage = async () => {
     const familyData = await familyRes.json();
 
     const bikesRes = await fetch(`${SUB_FAMILIES}?familyType=classics`, {
-      next: { revalidate: 30 },
+      cache: "no-store",
     });
     const bikes = await bikesRes.json();
 
     const promosRes = await fetch(`${PROMOS}?category=classics`, {
       next: { revalidate: 30 },
-    })
-    const promos = await promosRes.json()
+    });
+    const promos = await promosRes.json();
+
+    console.log(getBikesByCC(900, bikes));
 
     return (
       <>
@@ -79,16 +82,22 @@ const ClassicPage = async () => {
           </section>
 
           <section className="flex flex-col md:flex-row md:px-8 px-4 md:gap-4">
-            {getBikesByCC(900, bikes).map((bike: any) => (
-              <CardLinkItem
-                key={bike.id}
-                title={bike.title ?? ""}
-                image={bike.gallery.modelImage.src ?? ""}
-                text={"Детали"}
-                url={`/motorcycles/classics/${bike.subFamilyName}`}
-                desc={bike.shortDesc ?? ""}
-              />
-            ))}
+            {getBikesByCC(900, bikes).length > 3 ? (
+              <BikesCarousell900 bikes={getBikesByCC(900, bikes)} />
+            ) : (
+              <>
+                {getBikesByCC(900, bikes).map((bike: any) => (
+                  <CardLinkItem
+                    key={bike.id}
+                    title={bike.title ?? "Triumph"}
+                    image={bike.gallery.modelImage.src ?? "/images/triumphLogo.png"}
+                    text={"Детали"}
+                    url={`/motorcycles/classics/${bike.subFamilyName}`}
+                    desc={bike.shortDesc ?? ""}
+                  />
+                ))}
+              </>
+            )}
           </section>
 
           <section className="pt-16 lg:pt-32">
@@ -107,7 +116,7 @@ const ClassicPage = async () => {
                 key={bike.bikeId}
                 desc={bike.shortDesc ?? ""}
                 image={bike.gallery.modelImage.src ?? ""}
-                title={bike.title ?? ''}
+                title={bike.title ?? ""}
                 url={`/motorcycles/${bike.familyType}/${bike.subFamilyName}`}
                 btnText={"Детали"}
               />
@@ -162,8 +171,6 @@ const ClassicPage = async () => {
             <BottomCarousell items={familyData[0].grayCaro} />
           )}
         </main>
-
-        
       </>
     );
   } catch (err) {

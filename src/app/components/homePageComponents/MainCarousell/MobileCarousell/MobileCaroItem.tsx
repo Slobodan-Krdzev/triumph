@@ -14,7 +14,7 @@ const MobileCaroItem = ({
       <div
         className="mainCaroMobileItem"
         style={{
-          backgroundImage: `url('${imageMobile}')`,
+          backgroundImage: `url('${imageMobile ?? "/images/triumphLogo.png"}')`,
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat"
@@ -22,8 +22,8 @@ const MobileCaroItem = ({
         }}
       ></div>
       <div className="gray-bg w-full py-8 px-8 text-white">
-          <h2 className="uppercase text-3xl font-bold tracking-tighter">{title}</h2>
-          <p className="text-lg mb-4 font-medium tracking-tighter">{desc}</p>
+          <h2 className="uppercase text-3xl font-bold tracking-tighter">{title ?? 'Triumph'}</h2>
+          <p className="text-lg mb-4 font-medium tracking-tighter">{desc ?? 'Triumph'}</p>
           <div className="flex flex-col items-start gap-4">
             {link1 && <MainBtn
               text={link1.text ?? 'Откриј Повеќе'}
