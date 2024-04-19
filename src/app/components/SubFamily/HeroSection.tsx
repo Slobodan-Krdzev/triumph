@@ -10,9 +10,9 @@ type HeroSectionProps = {
   image?: string;
   desc?: string;
   logo?: string;
-  bigTitle?: string
+  bigTitle?: string;
   mobileImage?: string;
-  textLeftSide?: boolean
+  textLeftSide?: boolean;
 };
 
 const HeroSection = ({
@@ -24,22 +24,39 @@ const HeroSection = ({
   logo,
   bigTitle,
   mobileImage,
-  textLeftSide
+  textLeftSide,
 }: HeroSectionProps) => {
+  const doesItContainOffRoad = Boolean(
+    image?.split("/").find((item) => item === "offRoad")
+  );
 
-  const doesItContainOffRoad = Boolean(image?.split('/').find(item => item === 'offRoad'));
- 
   if (video) {
     return (
       <section className="relative">
         <Breadcrumbs />
-        <video autoPlay muted loop className="w-full hidden lg:block" src={video} playsInline style={{
-          filter: 'brightness(65%)'
-        }}></video>
-        
-        <Image className="block lg:hidden" src={mobileImage ?? "/images/triumphLogo.png"} alt={model ?? "Hero Image" } width={1000} height={425} loading="lazy"/>
+        <video
+          autoPlay
+          muted
+          loop
+          className="w-full hidden lg:block"
+          src={video}
+          playsInline
+          style={{
+            filter: "brightness(65%)",
+          }}
+        ></video>
+
+        <Image
+          style={{ filter: "brightness(70%)" }}
+          className="block lg:hidden"
+          src={mobileImage ?? "/images/triumphLogo.png"}
+          alt={model ?? "Hero Image"}
+          width={1000}
+          height={425}
+          loading="lazy"
+        />
         <div
-          className="absolute text-white flex flex-col items-center"
+          className="absolute text-white flex flex-col items-center w-full"
           style={{
             top: "40%",
             left: "50%",
@@ -48,7 +65,11 @@ const HeroSection = ({
         >
           {slogans && (
             <>
-              <p className={`text-md md:text-5xl text-center font-medium uppercase border-b-4 ${doesItContainOffRoad ? 'border-quartal' : "border-red-600"} pb-4 inline`}>
+              <p
+                className={` text-2xl md:text-5xl text-center font-medium uppercase border-b-4 ${
+                  doesItContainOffRoad ? "border-quartal" : "border-red-600"
+                } pb-4 inline`}
+              >
                 {model}
               </p>
 
@@ -56,12 +77,24 @@ const HeroSection = ({
             </>
           )}
 
-          {bigTitle && <h1 className={`${slogans.length > 0 ? "hidden" : "block"} xl:text-8xl lg:text-6xl text-4xl font-bold text-center uppercase`}>{bigTitle}</h1>}
+          {bigTitle && (
+            <p
+              className={`${
+                slogans.length > 0 ? "hidden" : "block"
+              } xl:text-8xl lg:text-6xl text-4xl font-bold text-center uppercase`}
+            >
+              {bigTitle}
+            </p>
+          )}
 
-          {desc && <>
-            <p className="text-2xl md:text-4xl text-center mb-4 font-semibold">{desc}</p>
-            <Image src={logo ?? ''} alt="Model" width={160} height={90}/>
-          </>}
+          {desc && (
+            <>
+              <p className="text-2xl md:text-4xl text-center mb-4 font-semibold">
+                {desc}
+              </p>
+              <Image src={logo ?? ""} alt="Model" width={160} height={90} />
+            </>
+          )}
         </div>
       </section>
     );
@@ -70,30 +103,42 @@ const HeroSection = ({
   if (image) {
     return (
       <section
-        className="flex justify-center items-center subFamilyHeroBannerImage relative"
+        
         style={{
           backgroundImage: `url("${image}")`,
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          height: "90vh"
-
+          height: "90vh",
         }}
       >
-        <Breadcrumbs />
+        <div className="flex justify-center items-center relative w-full h-full overlay-darken">
+          <Breadcrumbs />
+          <div
+            className={` text-white flex flex-col ${
+              textLeftSide ? "items-start" : "items-center"
+            } w-11/12`}
+          >
+            <p
+              className={` text-3xl font-medium uppercase border-b-4 ${
+                doesItContainOffRoad ? "border-quartal" : "border-red-600"
+              }  pb-4 inline`}
+            >
+              {model}
+            </p>
+            {slogans && <FamilySloganAnimation slogans={slogans} />}
 
-        <div
-          className={` text-white flex flex-col ${textLeftSide ? "items-start" : "items-center"} w-11/12`}>
-          <p className={` text-3xl font-medium uppercase border-b-4 ${doesItContainOffRoad ? 'border-quartal' : "border-red-600" }  pb-4 inline`}>
-            {model}
-          </p>
-          {slogans && <FamilySloganAnimation slogans={slogans} />}
-          
-
-        {bigTitle && <h1 className={`${slogans.length > 0 ? "hidden" : "block"} xl:text-8xl lg:text-6xl text-4xl font-bold text-center uppercase text-white`}>{bigTitle}</h1>}
-
+            {bigTitle && (
+              <h1
+                className={`${
+                  slogans.length > 0 ? "hidden" : "block"
+                } xl:text-8xl lg:text-6xl text-4xl font-bold text-center uppercase text-white`}
+              >
+                {bigTitle}
+              </h1>
+            )}
+          </div>
         </div>
-
       </section>
     );
   }

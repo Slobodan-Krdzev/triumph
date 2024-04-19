@@ -1,5 +1,6 @@
 import React from "react";
 import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
+import { formulateSubFamilyTitleOnBanner } from "../helpers/formulateSubFamilyTilteOnBanner";
 
 type SecondaryPagesHeroSectionProps = {
   bannerImage: string;
@@ -18,6 +19,9 @@ const SecondaryPagesHeroSection = ({
 }: SecondaryPagesHeroSectionProps) => {
   const isOfRoad = Boolean(subFamily?.url.split("/")[2] ?? "");
 
+  console.log(subFamilyTitle, 'TUKA');
+  
+
   return (
     <section
       className="relative"
@@ -32,15 +36,15 @@ const SecondaryPagesHeroSection = ({
     >
       <Breadcrumbs />
       <div className="flex justify-center items-center w-full h-full overlay">
-        <div className="lg:w-6/12 md:w-9/12 w-full px-4 m-auto flex flex-col justify-center items-center text-white gap-6">
+        <div className="lg:w-6/12 md:w-9/12 w-full px-4 m-auto flex flex-col justify-center items-center text-white">
           <h1
-            className={`md:text-3xl font-semibold text-md border-b-4 ${
+            className={`font-semibold text-2xl uppercase border-b-4 ${
               isOfRoad ? "border-quartal" : "border-red-600"
-            } capitalize pb-2`}
+            } pb-2`}
           >
-            {subFamilyTitle}
+            {subFamilyTitle ? formulateSubFamilyTitleOnBanner(subFamilyTitle!) : subFamilyTitle}
           </h1>
-          <p className="md:text-7xl text-4xl uppercase font-bold tracking-tighter text-center w-full">
+          <p className="md:text-7xl text-4xl uppercase font-bold tracking-tighter text-center w-full pt-2">
             {text}
           </p>
           <p

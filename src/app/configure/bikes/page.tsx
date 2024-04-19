@@ -9,7 +9,7 @@ const BikesPage = async () => {
   try {
 
     const bikesRes = await fetch(`${BIKES}`, {
-      next: { revalidate: 3000 },
+      next: { revalidate: 30 },
     });
     const bikes = await bikesRes.json();
 

@@ -15,7 +15,7 @@ const RoadstersSubFamilyPage = async ({ params }: any) => {
 
   try {
     const subFamilyRes = await fetch(`${SUB_FAMILIES}?subFamilyName=${query}`, {
-      next: { revalidate: 3000 },
+      next: { revalidate: 30 },
     });
     const subFamilyData = await subFamilyRes.json();
     const subFamily = subFamilyData[0];

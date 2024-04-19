@@ -85,7 +85,7 @@ const BikeInfoTextImageBtn = ({
         </div>
       </div>
       <div className="flex justify-start items-center ">
-        <Image src={image.src} alt={image.alt} height={955} width={1000} />
+        <Image src={image?.src ?? "/images/triumphLogo.png"} alt={image?.alt ?? 'Triumph'} height={955} width={1000} />
       </div>
     </section>
   );

@@ -66,9 +66,7 @@ const MotorcyclesNav = ({ families = [], bikes = [], bikeToRender }: Props) => {
             </li>
           ))}
         </ul>
-        <Link href={"/"} className="text-sm text-black">
-          Проверени Second-Hand Мотори
-        </Link>
+        
         <ul className="flex flex-col gap-2">
           <li>
             <Link

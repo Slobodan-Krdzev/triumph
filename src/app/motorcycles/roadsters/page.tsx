@@ -12,17 +12,17 @@ const RoadstersPage = async () => {
 
   try {
     const familyRes = await fetch(`${FAMILIES}?type=roadsters`, {
-      next: { revalidate: 3000 },
+      next: { revalidate: 30 },
     });
     const familyData = await familyRes.json();
 
     const subFamiliesRes = await fetch(`${SUB_FAMILIES}?familyType=roadsters`, {
-      next: { revalidate: 3000 },
+      next: { revalidate: 30 },
     })
     const subFamilies = await subFamiliesRes.json()
 
     const promosRes = await fetch(`${PROMOS}?category=roadsters`, {
-      next: { revalidate: 3000 },
+      next: { revalidate: 30 },
     });
     const promos = await promosRes.json();
 
