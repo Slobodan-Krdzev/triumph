@@ -58,71 +58,6 @@
             </div>
 
             <div>
-                <h1 class="font-bold text-3xl my-2">Bike Color Palette Gallery</h1>
-
-                <x-form.input labelText="Default Image:" imageId="defaultImage"
-                              name="bikeCollorPalletteGallery[default]">
-                    <img id='defaultImage' src="{{ $moto->bikeCollorPalletteGallery['default'] ?? '' }}" width="200"
-                         height="150"
-                         class="object-cover border m-3 border-gray-200"/>
-                </x-form.input>
-
-                <h1 class="font-bold text-xl my-2">Colors</h1>
-
-                <div class="dynamic-section" id="bikeColorPaletteGalleryFields">
-                    @if (isset($moto->bikeCollorPalletteGallery['colors']))
-                        @for($i=0; $i<count($moto->bikeCollorPalletteGallery['colors']); $i++)
-                            <div class="{{ $i > 0 ? 'dynamic-input-wrapper' : '' }}">
-                                <x-form.text-input forId="color_{{ $i }}_name" placeholder="Color {{ $i + 1 }} Name"
-                                                   dataName="bikeCollorPalletteGallery[colors][{{ $i }}][colorName]"
-                                                   oldValue="bikeCollorPalletteGallery.colors.{{ $i }}.colorName"
-                                                   dataValue="{{ $moto->bikeCollorPalletteGallery['colors'][$i]['colorName'] ?? '' }}"/>
-
-                                <x-form.input labelText="Color {{ $i+1 }} Image:" imageId="color_{{ $i }}_base_image"
-                                              name="bikeCollorPalletteGallery[colors][{{ $i }}][base]">
-                                    <img id='color_{{ $i }}_base_image'
-                                         src="{{ $moto->bikeCollorPalletteGallery['colors'][$i]['base'] ?? '' }}"
-                                         width="200" height="150"
-                                         class="object-cover border m-3 border-gray-200"/>
-                                </x-form.input>
-
-                                <x-form.input labelText="Color {{ $i+1 }} Reversed Image:"
-                                              imageId="color_{{ $i }}_reversed_image"
-                                              name="bikeCollorPalletteGallery[colors][{{ $i }}][reversed]">
-                                    <img id='color_{{ $i }}_reversed_image'
-                                         src="{{ $moto->bikeCollorPalletteGallery['colors'][$i]['reversed'] ?? '' }}"
-                                         width="200" height="150"
-                                         class="object-cover border m-3 border-gray-200"/>
-                                </x-form.input>
-                                @if($i > 0 && $i === count($moto->bikeCollorPalletteGallery['colors']) - 1)
-                                    <x-form.remove-field-button />
-                                @endif
-                            </div>
-                        @endfor
-                    @else
-                        <div>
-                            <x-form.text-input forId="color_0_name" placeholder="Color Name"
-                                               dataName="bikeCollorPalletteGallery[colors][0][colorName]"
-                                               oldValue="bikeCollorPalletteGallery.colors.0.colorName"/>
-
-                            <x-form.input labelText="Color 1 Image:" imageId="color_0_base_image"
-                                          name="bikeCollorPalletteGallery[colors][0][base]">
-                                <img id='color_0_base_image' width="200" height="150"
-                                     class="object-cover border m-3 border-gray-200"/>
-                            </x-form.input>
-
-                            <x-form.input labelText="Color 1 Reversed Image:" imageId="color_0_reversed_image"
-                                          name="bikeCollorPalletteGallery[colors][0][reversed]">
-                                <img id='color_0_reversed_image' width="200" height="150"
-                                     class="object-cover border m-3 border-gray-200"/>
-                            </x-form.input>
-                        </div>
-                    @endif
-                </div>
-                <button class="add-two-images my-8 bg-lime-200 shadow rounded p-4">Add New Color</button>
-            </div>
-
-            <div>
                 <h1 class="font-bold text-3xl my-2">Customization Colors</h1>
 
                 <div class="dynamic-section" id="customizationColorsFields">
@@ -131,28 +66,36 @@
                             <div class="{{ $i > 0 ? 'dynamic-input-wrapper' : '' }}">
                                 <h1 class="font-bold text-xl my-2">Color {{ $i + 1 }}</h1>
 
-                                <x-form.text-input forId="color_{{ $i }}_name" placeholder="Color Name"
+                                <x-form.text-input forId="color_{{ $i }}_name" placeholder="Color {{ $i + 1 }} Name"
                                                    dataName="customizationColors[{{ $i }}][colorName]"
                                                    oldValue="customizationColors.{{ $i }}.colorName"
                                                    dataValue="{{ $moto->customizationColors[$i]['colorName'] ?? '' }}"/>
 
-                                <x-form.text-input forId="color_{{ $i }}_price" placeholder="Color Price"
+                                <x-form.text-input forId="color_{{ $i }}_price" placeholder="Color {{ $i + 1 }} Price"
                                                    dataName="customizationColors[{{ $i }}][price]"
                                                    oldValue="customizationColors.{{ $i }}.price"
                                                    dataValue="{{ $moto->customizationColors[$i]['price'] ?? '' }}"/>
 
-                                <x-form.input labelText="Color Image:" imageId="color_{{ $i }}_image"
+                                <x-form.input labelText="Color {{ $i + 1 }} Image:" imageId="color_{{ $i }}_image"
                                               name="customizationColors[{{ $i }}][image]">
-                                    <img id='color_0_image' src="{{ $moto->customizationColors[$i]['image'] ?? '' }}"
+                                    <img id='color_{{ $i }}_image' src="{{ $moto->customizationColors[$i]['image'] ?? '' }}"
                                          width="200" height="150"
                                          class="object-cover border m-3 border-gray-200"/>
                                 </x-form.input>
 
-                                <x-form.text-input forId="color_{{ $i }}_code" placeholder="Color Code"
-                                                   dataName="customizationColors[{{ $i }}][code]"
-                                                   oldValue="customizationColors.{{ $i }}.code"
-                                                   dataValue="{{ $moto->customizationColors[$i]['code'] ?? '' }}"/>
-                                @if($i > 0)
+                                <x-form.input labelText="Color {{ $i + 1 }} Base Motorcycle Image:" imageId="color_{{ $i }}_base_image"
+                                              name="customizationColors[{{ $i }}][base]">
+                                    <img id='color_{{ $i }}_base_image' src="{{ $moto->customizationColors[$i]['base'] ?? '' }}" width="200" height="150"
+                                         class="object-cover border m-3 border-gray-200" />
+                                </x-form.input>
+
+
+                                <x-form.input labelText="Color {{ $i + 1 }} Reversed Motorcycle Image:" imageId="color_{{ $i }}_reversed_image"
+                                              name="customizationColors[{{ $i }}][reversed]">
+                                    <img id='color_{{ $i }}_reversed_image' src="{{ $moto->customizationColors[$i]['reversed'] ?? '' }}" width="200" height="150"
+                                         class="object-cover border m-3 border-gray-200" />
+                                </x-form.input>
+                                @if($i > 0 && $i === count($moto->customizationColors) - 1)
                                     <x-form.remove-field-button />
                                 @endif
                             </div>
@@ -161,23 +104,32 @@
                         <div>
                             <h1 class="font-bold text-xl my-2">Color 1</h1>
 
-                            <x-form.text-input forId="color_0_name" placeholder="Color Name"
+                            <x-form.text-input forId="color_0_name" placeholder="Color 1 Name"
                                                dataName="customizationColors[0][colorName]"
                                                oldValue="customizationColors.0.colorName"/>
 
-                            <x-form.text-input forId="color_0_price" placeholder="Color Price"
+                            <x-form.text-input forId="color_0_price" placeholder="Color 1 Price"
                                                dataName="customizationColors[0][price]"
                                                oldValue="customizationColors.0.price"/>
 
-                            <x-form.input labelText="Color Image:" imageId="color_0_image"
+                            <x-form.input labelText="Color 1 Image:" imageId="color_0_image"
                                           name="customizationColors[0][image]">
                                 <img id='color_0_image' width="200" height="150"
                                      class="object-cover border m-3 border-gray-200"/>
                             </x-form.input>
 
-                            <x-form.text-input forId="color_0_code" placeholder="Color Code"
-                                               dataName="customizationColors[0][code]"
-                                               oldValue="customizationColors.0.code"/>
+                            <x-form.input labelText="Color 1 Base Motorcycle Image:" imageId="color_0_base_image"
+                                          name="customizationColors[0][base]">
+                                <img id='color_0_base_image' width="200" height="150"
+                                     class="object-cover border m-3 border-gray-200" />
+                            </x-form.input>
+
+
+                            <x-form.input labelText="Color 1 Reversed Motorcycle Image:" imageId="color_0_reversed_image"
+                                          name="customizationColors[0][reversed]">
+                                <img id='color_0_reversed_image' width="200" height="150"
+                                     class="object-cover border m-3 border-gray-200" />
+                            </x-form.input>
                         </div>
                     @endif
                 </div>

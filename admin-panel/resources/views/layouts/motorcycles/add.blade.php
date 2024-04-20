@@ -48,60 +48,36 @@
             </div>
 
             <div>
-                <h1 class="font-bold text-3xl my-2">Bike Color Palette Gallery</h1>
-
-                <x-form.input labelText="Default Image:" imageId="defaultImage"
-                    name="bikeCollorPalletteGallery[default]">
-                    <img id='defaultImage' width="200" height="150"
-                        class="object-cover border m-3 border-gray-200" />
-                </x-form.input>
-
-                <h1 class="font-bold text-xl my-2">Colors</h1>
-
-                <div class="dynamic-section" id="bikeColorPaletteGalleryFields">
-                    <div>
-                        <x-form.text-input forId="color_0_name" placeholder="Color 1 Name"
-                            dataName="bikeCollorPalletteGallery[colors][0][colorName]"
-                            oldValue="bikeCollorPalletteGallery.colors.0.colorName" />
-
-                        <x-form.input labelText="Color 1 Image:" imageId="color_0_base_image"
-                            name="bikeCollorPalletteGallery[colors][0][base]">
-                            <img id='color_0_base_image' width="200" height="150"
-                                class="object-cover border m-3 border-gray-200" />
-                        </x-form.input>
-
-
-                        <x-form.input labelText="Color 1 Reversed Image:" imageId="color_0_reversed_image"
-                            name="bikeCollorPalletteGallery[colors][0][reversed]">
-                            <img id='color_0_reversed_image' width="200" height="150"
-                                class="object-cover border m-3 border-gray-200" />
-                        </x-form.input>
-                    </div>
-                </div>
-                <button class="add-two-images my-8 bg-lime-200 shadow rounded p-4">Add New Color</button>
-            </div>
-
-            <div>
                 <h1 class="font-bold text-3xl my-2">Customization Colors</h1>
 
                 <div class="dynamic-section" id="customizationColorsFields">
                     <div>
                         <h1 class="font-bold text-xl my-2">Color 1</h1>
 
-                        <x-form.text-input forId="color_0_name" placeholder="Color Name"
+                        <x-form.text-input forId="color_0_name" placeholder="Color 1 Name"
                             dataName="customizationColors[0][colorName]" oldValue="customizationColors.0.colorName" />
 
-                        <x-form.text-input forId="color_0_price" placeholder="Color Price"
+                        <x-form.text-input forId="color_0_price" placeholder="Color 1 Price"
                             dataName="customizationColors[0][price]" oldValue="customizationColors.0.price" />
 
-                        <x-form.input labelText="Color Image:" imageId="color_0_image"
+                        <x-form.input labelText="Color 1 Image:" imageId="color_0_image"
                             name="customizationColors[0][image]">
                             <img id='color_0_image' width="200" height="150"
                                 class="object-cover border m-3 border-gray-200" />
                         </x-form.input>
 
-                        <x-form.text-input forId="color_0_code" placeholder="Color Code"
-                            dataName="customizationColors[0][code]" oldValue="customizationColors.0.code" />
+                        <x-form.input labelText="Color 1 Base Motorcycle Image:" imageId="color_0_base_image"
+                                      name="customizationColors[0][base]">
+                            <img id='color_0_base_image' width="200" height="150"
+                                 class="object-cover border m-3 border-gray-200" />
+                        </x-form.input>
+
+
+                        <x-form.input labelText="Color 1 Reversed Motorcycle Image:" imageId="color_0_reversed_image"
+                                      name="customizationColors[0][reversed]">
+                            <img id='color_0_reversed_image' width="200" height="150"
+                                 class="object-cover border m-3 border-gray-200" />
+                        </x-form.input>
                     </div>
                 </div>
                 <button class="add-custom-color my-8 bg-lime-200 shadow rounded p-4">Add New Color</button>

@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('price')->nullable();
             $table->text('desc')->nullable();
             $table->json('gallery')->nullable();
-            $table->json('bikeCollorPalletteGallery')->nullable();
+//            $table->json('bikeCollorPalletteGallery')->nullable();
             $table->json('customizationColors')->nullable();
             $table->json('shortSpecInfo')->nullable();
             $table->json('subFamilyPromo')->nullable();

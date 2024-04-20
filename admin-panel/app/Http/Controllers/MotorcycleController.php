@@ -39,18 +39,23 @@ class MotorcycleController extends Controller
 
         $data['gallery']['promoYoutubeVideo']['src'] = ImageStorage::storeFile($request, 'gallery.promoYoutubeVideo.src', 'motorcycles/', $title, '/promoYoutubeVideo');
 
-        $data['bikeCollorPalletteGallery']['default'] = ImageStorage::storeFile($request, 'bikeCollorPalletteGallery.default', 'motorcycles/', $title, '/bikeCollorPalletteGallery');
+//        $data['bikeCollorPalletteGallery']['default'] = ImageStorage::storeFile($request, 'bikeCollorPalletteGallery.default', 'motorcycles/', $title, '/bikeCollorPalletteGallery');
 
-        if ($request->has('bikeCollorPalletteGallery.colors')) {
-            foreach ($request->bikeCollorPalletteGallery['colors'] as $i => $color) {
-                $data['bikeCollorPalletteGallery']['colors'][$i]['base'] = ImageStorage::storeFile($request, 'bikeCollorPalletteGallery.colors.' . $i . '.base', 'motorcycles/', $title, '/bikeCollorPalletteGallery');
-                $data['bikeCollorPalletteGallery']['colors'][$i]['reversed'] = ImageStorage::storeFile($request, 'bikeCollorPalletteGallery.colors.' . $i . '.reversed', 'motorcycles/', $title, '/bikeCollorPalletteGallery');
-            }
-        }
+//        if ($request->has('bikeCollorPalletteGallery.colors')) {
+//            foreach ($request->bikeCollorPalletteGallery['colors'] as $i => $color) {
+//                $data['bikeCollorPalletteGallery']['colors'][$i]['base'] = ImageStorage::storeFile($request, 'bikeCollorPalletteGallery.colors.' . $i . '.base', 'motorcycles/', $title, '/bikeCollorPalletteGallery');
+//                $data['bikeCollorPalletteGallery']['colors'][$i]['reversed'] = ImageStorage::storeFile($request, 'bikeCollorPalletteGallery.colors.' . $i . '.reversed', 'motorcycles/', $title, '/bikeCollorPalletteGallery');
+//            }
+//        }
+
+        $data['customizationColors']['default'] = ImageStorage::storeFile($request, 'customizationColors.default', 'motorcycles/', $title, '/customizationColors');
+
 
         if ($request->has('customizationColors')) {
             foreach ($request->input('customizationColors') as $i => $customizationColor) {
                 $data['customizationColors'][$i]['image'] = ImageStorage::storeFile($request, 'customizationColors.' . $i . '.image', 'motorcycles/', $title, '/customizationColors');
+                $data['customizationColors'][$i]['base'] = ImageStorage::storeFile($request, 'customizationColors.' . $i . '.base', 'motorcycles/', $title, '/customizationColors');
+                $data['customizationColors'][$i]['reversed'] = ImageStorage::storeFile($request, 'customizationColors.' . $i . '.reversed', 'motorcycles/', $title, '/customizationColors');
             }
         }
 
@@ -99,18 +104,20 @@ class MotorcycleController extends Controller
 
         $data['gallery']['promoYoutubeVideo']['src'] = ImageStorage::storeOrUpdateFile($request, 'gallery.promoYoutubeVideo.src', 'motorcycles/', $title, '/promoYoutubeVideo', $motorcycle['gallery']['promoYoutubeVideo']['src'] ?? '', $motorcycle->title);
 
-        $data['bikeCollorPalletteGallery']['default'] = ImageStorage::storeOrUpdateFile($request, 'bikeCollorPalletteGallery.default', 'motorcycles/', $title, '/bikeCollorPalletteGallery', $motorcycle['bikeCollorPalletteGallery']['default'] ?? '', $motorcycle->title);
+//        $data['bikeCollorPalletteGallery']['default'] = ImageStorage::storeOrUpdateFile($request, 'bikeCollorPalletteGallery.default', 'motorcycles/', $title, '/bikeCollorPalletteGallery', $motorcycle['bikeCollorPalletteGallery']['default'] ?? '', $motorcycle->title);
+//
+//        if (isset($request['bikeCollorPalletteGallery.colors'])) {
+//            $bikeCollorPalletteGallery = array_values($request->input('bikeCollorPalletteGallery.colors'));
+//
+//            $data['bikeCollorPalletteGallery']['colors'] = $bikeCollorPalletteGallery;
+//
+//            foreach ($bikeCollorPalletteGallery as $i => $color) {
+//                $data['bikeCollorPalletteGallery']['colors'][$i]['base'] = ImageStorage::storeOrUpdateFile($request, 'bikeCollorPalletteGallery.colors.' . $i . '.base', 'motorcycles/', $title, '/bikeCollorPalletteGallery', $motorcycle['bikeCollorPalletteGallery']['colors'][$i]['base'] ?? '', $motorcycle->title);
+//                $data['bikeCollorPalletteGallery']['colors'][$i]['reversed'] = ImageStorage::storeOrUpdateFile($request, 'bikeCollorPalletteGallery.colors.' . $i . '.reversed', 'motorcycles/', $title, '/bikeCollorPalletteGallery', $motorcycle['bikeCollorPalletteGallery']['colors'][$i]['reversed'] ?? '', $motorcycle->title);
+//            }
+//        }
 
-        if (isset($request['bikeCollorPalletteGallery.colors'])) {
-            $bikeCollorPalletteGallery = array_values($request->input('bikeCollorPalletteGallery.colors'));
-
-            $data['bikeCollorPalletteGallery']['colors'] = $bikeCollorPalletteGallery;
-
-            foreach ($bikeCollorPalletteGallery as $i => $color) {
-                $data['bikeCollorPalletteGallery']['colors'][$i]['base'] = ImageStorage::storeOrUpdateFile($request, 'bikeCollorPalletteGallery.colors.' . $i . '.base', 'motorcycles/', $title, '/bikeCollorPalletteGallery', $motorcycle['bikeCollorPalletteGallery']['colors'][$i]['base'] ?? '', $motorcycle->title);
-                $data['bikeCollorPalletteGallery']['colors'][$i]['reversed'] = ImageStorage::storeOrUpdateFile($request, 'bikeCollorPalletteGallery.colors.' . $i . '.reversed', 'motorcycles/', $title, '/bikeCollorPalletteGallery', $motorcycle['bikeCollorPalletteGallery']['colors'][$i]['reversed'] ?? '', $motorcycle->title);
-            }
-        }
+        $data['customizationColors']['default'] = ImageStorage::storeOrUpdateFile($request, 'customizationColors.default', 'motorcycles/', $title, '/customizationColors', $motorcycle['customizationColors']['default'] ?? '', $motorcycle->title);
 
         if (isset($request['customizationColors'])) {
             $customizationColors = array_values($request->input('customizationColors'));
@@ -118,6 +125,8 @@ class MotorcycleController extends Controller
             $data['customizationColors'] = $customizationColors;
             foreach ($customizationColors as $i => $color) {
                 $data['customizationColors'][$i]['image'] = ImageStorage::storeOrUpdateFile($request, 'customizationColors.' . $i . '.image', 'motorcycles/', $title, '/customizationColors', $motorcycle['customizationColors'][$i]['image'] ?? '', $motorcycle->title);
+                $data['customizationColors'][$i]['base'] = ImageStorage::storeOrUpdateFile($request, 'customizationColors.' . $i . '.base', 'motorcycles/', $title, '/customizationColors', $motorcycle['customizationColors'][$i]['base'] ?? '', $motorcycle->title);
+                $data['customizationColors'][$i]['reversed'] = ImageStorage::storeOrUpdateFile($request, 'customizationColors.' . $i . '.reversed', 'motorcycles/', $title, '/customizationColors', $motorcycle['customizationColors'][$i]['reversed'] ?? '', $motorcycle->title);
             }
         }
 
@@ -152,7 +161,6 @@ class MotorcycleController extends Controller
         if (Str::slug($request->title) != Str::slug($motorcycle->title)) {
             Storage::disk('public')->makeDirectory('motorcycles/' . Str::slug($request->title));
 
-            ImageStorage::placeFileInNewFolder(Str::slug($motorcycle->title), Str::slug($request->title),'motorcycles/','/bikeCollorPalletteGallery');
             ImageStorage::placeFileInNewFolder(Str::slug($motorcycle->title), Str::slug($request->title),'motorcycles/','/bikePageCarousell');
             ImageStorage::placeFileInNewFolder(Str::slug($motorcycle->title), Str::slug($request->title),'motorcycles/','/bikePageImageGallery');
             ImageStorage::placeFileInNewFolder(Str::slug($motorcycle->title), Str::slug($request->title),'motorcycles/','/bikePagePromo');

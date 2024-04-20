@@ -153,38 +153,6 @@
             }
 
 
-            $('.add-two-images').click(function (e) {
-                e.preventDefault();
-                var section = $(this).prev('.dynamic-section');
-                addTwoImages(section);
-            });
-
-            function addTwoImages(section) {
-                var newIndex = section.children().length;
-                var newField = `
-                 <div class="dynamic-input-wrapper">
-                        <x-form.text-input forId="color_${ newIndex }_name" placeholder="Color ${ newIndex + 1 } Name"
-                                                   dataName="bikeCollorPalletteGallery[colors][${ newIndex }][colorName]"
-                                                   oldValue="bikeCollorPalletteGallery.colors.${ newIndex }.colorName"/>
-
-                        <x-form.input labelText="Color 1 Image:" imageId="color_${ newIndex }_base_image"
-                                      name="bikeCollorPalletteGallery[colors][${ newIndex }][base]">
-                            <img id='color_${ newIndex }_base_image' width="200" height="150"
-                                 class="object-cover border m-3 border-gray-200"/>
-                        </x-form.input>
-
-                        <x-form.input labelText="Color ${ newIndex + 1 } Reversed Image:" imageId="color_${ newIndex }_reversed_image"
-                                      name="bikeCollorPalletteGallery[colors][${ newIndex }][reversed]">
-                            <img id='color_${ newIndex }_reversed_image' width="200" height="150"
-                                 class="object-cover border m-3 border-gray-200"/>
-                        </x-form.input>
-                    <x-form.remove-field-button />
-                    </div>
-                `;
-
-                section.append(newField);
-            }
-
             $('.add-custom-color').click(function (e) {
                 e.preventDefault();
                 var section = $(this).prev('.dynamic-section');
@@ -196,19 +164,28 @@
                 var newField = `
                  <div class="dynamic-input-wrapper">
                         <h1 class="font-bold text-xl my-2">Color ${ newIndex + 1 }</h1>
-                        <x-form.text-input forId="color_${ newIndex }_name" placeholder="Color Name"
+                        <x-form.text-input forId="color_${ newIndex }_name" placeholder="Color ${ newIndex + 1 } Name"
                                            dataName="customizationColors[${ newIndex }][colorName]" oldValue="customizationColors.${ newIndex }.colorName"/>
 
-                        <x-form.text-input forId="color_${ newIndex }_price" placeholder="Color Price"
+                        <x-form.text-input forId="color_${ newIndex }_price" placeholder="Color ${ newIndex + 1 } Price"
                                            dataName="customizationColors[${ newIndex }][price]" oldValue="customizationColors.${ newIndex }.price"/>
 
-                        <x-form.input labelText="Color Image:" imageId="color_${ newIndex }_image" name="customizationColors[${ newIndex }][image]">
+                        <x-form.input labelText="Color ${ newIndex + 1 } Image:" imageId="color_${ newIndex }_image" name="customizationColors[${ newIndex }][image]">
                             <img id='color_${ newIndex }_image' width="200" height="150"
                                  class="object-cover border m-3 border-gray-200"/>
                         </x-form.input>
 
-                        <x-form.text-input forId="color_${ newIndex }_code" placeholder="Color Code"
-                                           dataName="customizationColors[${ newIndex }][code]" oldValue="customizationColors.${ newIndex }.code"/>
+                        <x-form.input labelText="Color ${ newIndex + 1 } Base Motorcycle Image:" imageId="color_${ newIndex }_base_image"
+                                      name="customizationColors[${ newIndex }][base]">
+                            <img id='color_${ newIndex }_base_image' width="200" height="150"
+                                 class="object-cover border m-3 border-gray-200"/>
+                        </x-form.input>
+
+                        <x-form.input labelText="Color ${ newIndex + 1 } Reversed Motorcycle  Image:" imageId="color_${ newIndex }_reversed_image"
+                                      name="customizationColors[${ newIndex }][reversed]">
+                            <img id='color_${ newIndex }_reversed_image' width="200" height="150"
+                                 class="object-cover border m-3 border-gray-200"/>
+                        </x-form.input>
                     <x-form.remove-field-button />
                     </div>
                 `;
