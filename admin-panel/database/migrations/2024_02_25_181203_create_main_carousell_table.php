@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('video')->nullable();
             $table->string('image')->nullable();
-            $table->string('imageMobile')->nullable();
+            $table->string('imageMobile');
             $table->string('title');
             $table->text('desc')->nullable();
             $table->json('link1')->nullable();

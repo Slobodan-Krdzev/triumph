@@ -13,14 +13,16 @@ use Illuminate\Support\Facades\DB;
 
 class ApiController extends Controller
 {
-    public function index(){
+    public function index()
+    {
         return response()->json([
             'families' => Family::get(),
             'subFamilies' => SubFamily::get(),
             'motorcycles' => Motorcycle::get(),
             'mainCarousels' => MainCarousell::get(),
             'latestCarousels' => LatestCarousell::get(),
-            'promos' => Promo::get()]);
+            'promos' => Promo::get()
+        ]);
     }
 
     public function singleTable($table)
@@ -47,9 +49,15 @@ class ApiController extends Controller
             $query->where($key, $value);
         }
 
-        $results = $query->get();
+        $results = $query->get()->map(function ($item) {
+            foreach ($item as $key => $value) {
+                if (is_string($value) && $decoded = json_decode($value, true)) {
+                    $item->$key = $decoded;
+                }
+            }
+            return $item;
+        });
 
         return response()->json($results);
     }
-
 }

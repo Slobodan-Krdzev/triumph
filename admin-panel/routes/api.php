@@ -32,3 +32,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('/data', [ApiController::class, 'index']);
 Route::get('/data/{table}', [ApiController::class, 'singleTable'])->where('table', '[a-zA-Z0-9_]+');
+
