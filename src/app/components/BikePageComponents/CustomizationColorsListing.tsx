@@ -1,28 +1,27 @@
-'use client'
-import { CustomizationColorType } from "@/app/types/HomeTypes/SharedTypes/types";
-import React, { useEffect, useState } from "react";
+// 'use client'
+// import { CustomizationColorType } from "@/app/types/HomeTypes/SharedTypes/types";
+import { ColorType } from "../customatizationPageComponents/BikeModelImage";
 import CustomizationColorBtn from "./CustomizationColorBtn";
-import { usePathname, useRouter } from "next/navigation";
 
 type CustomizationColorsListingProps = {
-    colors: CustomizationColorType[]
+    colors: ColorType[]
 }
 
 const CustomizationColorsListing = ({colors}: CustomizationColorsListingProps) => {
 
-    const [activeColor, setActiveColor] = useState('color1')
-    const router = useRouter()
-    const pathname = usePathname()
+    // const [activeColor, setActiveColor] = useState<undefined | string>()
+    // const router = useRouter()
+    // const pathname = usePathname()
 
-    useEffect(() => {
-        router.push(`${pathname}?color=${activeColor}`)
+    // useEffect(() => {
+    //     router.push(`${pathname}?color=${activeColor}`)
 
-    }, [activeColor])
+    // }, [activeColor])
 
 
   return (
     <ul className="flex flex-row md:flex-col gap-4">
-      {colors.map((color: CustomizationColorType) => (
+      {colors.map((color: ColorType) => (
         <CustomizationColorBtn key={color.colorName} color={color}/>
       ))}
     </ul>

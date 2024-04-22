@@ -11,12 +11,15 @@ import Image from "next/image";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
 import { handleBodyScrollWhenMenuIsOpen } from "../helpers/handleBodyScrollWhenMenuOpens";
+import { ColorType } from "./BikeModelImage";
 
 type ColorCardProps = {
   color: any;
+  idx:number;
+  allColors: ColorType[]
 };
 
-const ColorCard = ({ color }: ColorCardProps) => {
+const ColorCard = ({ color, idx }: ColorCardProps) => {
   const router = useRouter();
   const pathname = usePathname();
   const query = useSearchParams().get("color");
@@ -25,15 +28,9 @@ const ColorCard = ({ color }: ColorCardProps) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleColorChange = (query: any) => {
-
-    // console.log(query, "HERE");
-    
-
     router.push(`${pathname}?color=${query}&reversed=${rotationQuery}`);
   };
 
-  // console.log(color);
-  
 
   return (
     <>
@@ -51,7 +48,8 @@ const ColorCard = ({ color }: ColorCardProps) => {
         >
           <p className="absolute -top-1 right-0 p-1">
             <FontAwesomeIcon
-              icon={(query === null ? "color1" : query) === color.colorCode ? faCheck : faPlus}
+              icon={query === null && idx === 0 ? faCheck : (query === color.colorName ? faCheck : faPlus)}
+
               color="white"
               className="hover:text-white transition-colors ease-in-out delay-100"
             />

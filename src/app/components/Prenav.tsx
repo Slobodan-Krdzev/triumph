@@ -9,12 +9,16 @@ import React from "react";
 function Prenav() {
   const router = useRouter();
   const pathname = usePathname();
-  const handleSectionClose = () => router.push(pathname);
 
   const colorQuery = useSearchParams().get("color");
   const reversQuery = useSearchParams().get("reversed");
 
+  console.log(Boolean(colorQuery), Boolean(reversQuery));
+  
+  const handleSectionClose = () => router.push(`${pathname}${Boolean(colorQuery) ? `?color=${colorQuery}` : ""}${Boolean(reversQuery) ? `&reversed=${reversQuery}` : ''}`, { scroll: false });
+
   const handleLocationSection = () => {
+    
     router.push(`${pathname}/?navItem=Locations`, { scroll: false });
   };
 

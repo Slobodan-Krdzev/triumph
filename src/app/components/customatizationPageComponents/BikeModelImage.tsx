@@ -9,7 +9,7 @@ type BikeModelImageProps = {
   modalImage?: boolean
 };
 
-type ColorType = {
+export type ColorType = {
 colorName: string,
 price: number,
 image: string,
@@ -38,14 +38,14 @@ const BikeModelImage = ({ bike, modalImage }: BikeModelImageProps) => {
           width={modalImage ? 850 : 1124}
           height={76}
         /> */}
-        {/* <Image
+        <Image
           src={
-            bike.customizationColors.find((color:ColorType) => color.colorName === query.get('color'))
+            bike.customizationColors.find((color:ColorType) => color.colorName === query.get('color')).reversed
           }
           alt={bike.title ?? "Bike"}
           width={modalImage ? 850 : 1124}
           height={76}
-        /> */}
+        />
       </Suspense>
     );
   } else {
@@ -62,11 +62,11 @@ const BikeModelImage = ({ bike, modalImage }: BikeModelImageProps) => {
       // />
       <Image
         src={
-          query.get("color") === undefined
-            ? bike.customizationColors.find((color:ColorType) => color.colorName === query.get('color'))
-            : bike.customizationColors[0].base
+          query.get("color") 
+            ? bike.customizationColors.find((color:ColorType) => color.colorName === query.get('color')).base ?? "/images/triumphLogo.png"
+            : bike.customizationColors[0].base ?? "/images/triumphLogo.png"
         }
-        alt={bike.title}
+        alt={bike.title ?? 'Triumph Bike'}
         width={modalImage ? 850 : 1124}
         height={376}
       />

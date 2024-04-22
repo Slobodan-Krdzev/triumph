@@ -1,5 +1,5 @@
 "use client";
-import { CustomizationColorType } from "@/app/types/HomeTypes/SharedTypes/types";
+// import { CustomizationColorType } from "@/app/types/HomeTypes/SharedTypes/types";
 import {
   faBars,
   faChevronLeft,
@@ -32,6 +32,7 @@ import MainBtn from "../MainBtn";
 import { handleBodyScrollWhenMenuIsOpen } from "../helpers/handleBodyScrollWhenMenuOpens";
 import { useBreakpoint } from "../helpers/useBreakpoint";
 import Garage from "./Garage";
+import { ColorType } from "./BikeModelImage";
 
 type BottomFixedRibbonProps = {
   info: any;
@@ -55,10 +56,15 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
   const breakpoint = useBreakpoint();
   const router = useRouter();
   const pathname = usePathname()
-  const colorQuery = useSearchParams().get("color") ?? "color1";
+  // const colorQuery = useSearchParams().get("color") ?? "color1";
+  const colorQuery = useSearchParams().get("color");
 
-  const colorPrice = info.customizationColors.find(
-    (color: CustomizationColorType) => color.colorCode === colorQuery
+
+  const colorPrice = colorQuery === null ?  
+  info.customizationColors[0].price
+  : 
+  info.customizationColors.find(
+    (color: ColorType) => color.colorName === colorQuery
   ).price;
 
   useEffect(() => {

@@ -37,7 +37,7 @@ const BikeTopInfo = ({ bike }: BikeTopInfoPropsType) => {
         </div>
 
         <div className="md:w-8/12 w-full m-auto order-1 md:order-2">
-          {bike.bikeCollorPalletteGallery && <ImagePreview bike={bike} />}
+          {bike.customizationColors && <ImagePreview bike={bike} />}
         </div>
         <div className="md:w-2/12 w-full order-2 md:order-3">
           {bike.customizationColors && (

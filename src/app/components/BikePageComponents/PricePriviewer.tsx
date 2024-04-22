@@ -1,6 +1,7 @@
 "use client";
 import { useSearchParams } from "next/navigation";
 import React from "react";
+import { ColorType } from "../customatizationPageComponents/BikeModelImage";
 
 type CustomatizationColorType = {
   colorName: string;
@@ -17,10 +18,15 @@ const PricePriviewer = ({ bike }: PricePreviewerProps) => {
   const priceQuery = useSearchParams().get("color");
 
   const handlePriceChange = (startingPrice: number) => {
-    const chosenColor = bike.customizationColors.find(
-      (color: CustomatizationColorType) =>
-        color.colorCode === (priceQuery ?? "color1")
-    );
+
+    const chosenColor:ColorType = priceQuery ? 
+      bike.customizationColors.find((color:ColorType) => color.colorName === priceQuery)
+    : bike.customizationColors[0]
+
+    // const chosenColor = bike.customizationColors.find(
+    //   (color: CustomatizationColorType) =>
+    //     color.colorName === (priceQuery ?? "color1")
+    // );
 
     if (chosenColor.price !== null) {
       return startingPrice + chosenColor.price;
