@@ -25,17 +25,24 @@ const ColorCard = ({ color }: ColorCardProps) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleColorChange = (query: any) => {
+
+    // console.log(query, "HERE");
+    
+
     router.push(`${pathname}?color=${query}&reversed=${rotationQuery}`);
   };
+
+  // console.log(color);
+  
 
   return (
     <>
       <div className="md:basis-5/12 basis-1/3 grow sm:grow-0 shadow-lg">
         <button
-          onClick={() => handleColorChange(color.colorCode)}
+          onClick={() => handleColorChange(color.colorName)}
           className="w-full h-28 relative block"
           style={{
-            backgroundImage: `url('${color.image}')`,
+            backgroundImage: `url('${color.image ?? ''}')`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
@@ -55,10 +62,10 @@ const ColorCard = ({ color }: ColorCardProps) => {
           style={{ height: 76 }}
         >
           <h3 className="md:text-sm text-xs font-semibold uppercase basis-1/2">
-            {color.colorName}
+            {color.colorName ?? "Color"}
           </h3>
           <p className="text-xs text-gray-600 basis-1/2">
-            {color.price ? `€${color.price}.00` : `Вклучено во Цената`}
+            {color.price ? `€${color.price}` : `Вклучено во Цената`}
           </p>
           <button
             className="absolute bottom-1 right-2"

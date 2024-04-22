@@ -60,7 +60,7 @@ const BikeConfigPage = async ({ params }: any) => {
               </div>
             </div>
           </section>
-          <BottomFixedRibbon info={bike[0]} />
+          {/* <BottomFixedRibbon info={bike[0]} /> */}
         </main>
 
         
