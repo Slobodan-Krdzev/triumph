@@ -24,9 +24,9 @@ const BikeListingNoSliderCard = ({
 }: BikeListingNoSliderCardProps) => {
   return (
     <div className="lg:basis-1/4 md:basis-1/2 w-full flex flex-col justify-center items-center text-center px-4">
-      <Image src={image.src} alt={image.alt} width={243} height={137} />
+      <Image src={image.src ?? ""} alt={image.alt ?? ""} width={243} height={137} />
       <div className="basis-1/2 flex flex-col justify-between">
-        <h3 className="uppercase text-md font-medium mb-2">{title}</h3>
+        <h3 className="uppercase text-md font-medium mb-2">{title ?? ""}</h3>
         <p className="text-sm">
           {price === null ? "Цени Наскоро" : `Цени од: € ${price.toLocaleString()}`}
         </p>

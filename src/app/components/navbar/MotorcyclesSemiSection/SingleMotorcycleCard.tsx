@@ -20,9 +20,9 @@ const SingleMotorcycleCard = ({ bike }: SingleMorotcycleCardProps) => {
 
   return (
     <button onClick={handleBikeSelect} className="flex w-full gap-4 justify-start py-2 px-2 items-center border-thin-gray first:border-none hover:">
-      <Image src={bike.gallery.modelImage.src} alt={bike.gallery.modelImage.alt ?? "Bike Image"} width={120} height={68} />
+      <Image src={bike.gallery?.modelImage?.src ?? "/images/triumphLogo.png"} alt={bike.gallery?.modelImage?.alt ?? "Bike Image"} width={120} height={68} />
       <div className="text-start">
-        <p className="text-md text-black font-medium uppercase">{bike.title}</p>
+        <p className="text-md text-black font-medium uppercase">{bike.title ?? "Triumph"}</p>
         <p className="text-sm text-neutral-500">Цена:  {bike.price ? `€ ${bike.price.toLocaleString('en-EN')}` : "Наскоро"}</p>
       </div>
     </button>

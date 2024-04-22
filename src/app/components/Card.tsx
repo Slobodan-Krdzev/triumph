@@ -49,8 +49,8 @@ const Card = ({ item, deleteBtn, updateGrg, handleBtn }: CardProps) => {
       <div className="basis-2/6 border-thin-gray-bottom">
         {item.gallery.modelImage && (
           <Image
-            src={item.gallery?.modelImage.src}
-            alt={item.gallery?.modelImage.alt}
+            src={item.gallery?.modelImage.src ?? "/images/triumphLogo.png"}
+            alt={item.gallery?.modelImage.alt ?? "Triumph"}
             width={271}
             height={150}
           />

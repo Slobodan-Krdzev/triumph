@@ -66,8 +66,10 @@ const BikeConfigPage = async ({ params }: any) => {
         
       </>
     );
-  } catch {
-    return redirect(`/configure/bikes`);
+  } catch(e) {
+    console.log(e);
+    return <>err</>
+    // return redirect(`/configure/bikes`);
   }
 };
 

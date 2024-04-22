@@ -1,7 +1,7 @@
-export const BIKES = `http://localhost:8000/bikes`;
-export const FAMILIES = `http://localhost:8000/families`;
-export const SUB_FAMILIES = `http://localhost:8000/subFamilies`;
-export const MAINCAROUSELLITEMS = `http://localhost:8000/main-carousell-items`
-export const LATESTCAROUSELLITEMS = `http://localhost:8000/latest-models-carousell-items`
-export const PROMOS = `http://localhost:8000/api/table/promos`
+export const BIKES = `http://151.236.243.220:8000/api/data/motorcycles`;
+export const FAMILIES = `http://151.236.243.220:8000/api/data/families`;
+export const SUB_FAMILIES = `http://151.236.243.220:8000/api/data/subFamilies`;
+export const MAINCAROUSELLITEMS = `http://151.236.243.220:8000/api/data/mainCarousels`
+export const LATESTCAROUSELLITEMS = `http://151.236.243.220:8000/api/data/latestCarousels`
+export const PROMOS = `http://151.236.243.220:8000/api/data/promos`
 

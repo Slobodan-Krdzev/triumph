@@ -52,8 +52,8 @@ const ReasonsRocketPage = async () => {
                 link: `/configure/bike/${bike.model}`,
               }}
               image={{
-                src: bike.gallery.modelImage.src,
-                alt: bike.gallery.modelImage.alt,
+                src: bike.gallery?.modelImage?.src ?? "",
+                alt: bike.gallery?.modelImage?.alt ?? "",
               }}
               blackBtn={true}
             />

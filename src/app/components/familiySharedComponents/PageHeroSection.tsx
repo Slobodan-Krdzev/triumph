@@ -6,7 +6,7 @@ import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
 
 type PageHeroSectionProps = {
   title: string;
-  mainBikeLogo?: any;
+  mainBikeLogo?: {url: string, alt:string};
   desc?: string;
   video?: string;
   image?: string;
@@ -19,6 +19,10 @@ const PageHeroSection = ({
   video,
   image,
 }: PageHeroSectionProps) => {
+
+  console.log(mainBikeLogo, 'URL OF PIC NAJNOVO');
+  
+
   return (
     <section className="bg-neutral-800 flex flex-col lg:flex-row justify-between lg:pl-8 relative">
       <Breadcrumbs />
@@ -29,7 +33,7 @@ const PageHeroSection = ({
           {mainBikeLogo && (
             <Image
               className="mb-3"
-              src={`/images/${mainBikeLogo.url}`}
+              src={`http://151.236.243.220:8000///storage///families///adventure///mainBikeLogoImage///mainBikeLogo.png`}
               alt={mainBikeLogo.alt}
               width={110}
               height={35}
