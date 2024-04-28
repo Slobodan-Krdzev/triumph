@@ -43,12 +43,19 @@
                                    dataName="gallery[modelImage][alt]" oldValue="gallery.modelImage.alt"
                                    dataValue="{{ $moto->gallery['modelImage']['alt'] ?? '' }}"/>
 
-                <x-form.input labelText="Promo Youtube Video URL:" imageId="promoYoutubeVideo"
+                {{-- <x-form.input labelText="Promo Youtube Video URL:" imageId="promoYoutubeVideo"
                               name="gallery[promoYoutubeVideo][src]">
                     <video controls autoplay id='promoYoutubeVideo'
                            src="{{ $moto->gallery['promoYoutubeVideo']['src'] ?? '' }}" width="200" height="150"
                            class="object-cover border m-3 border-gray-200"/>
-                </x-form.input>
+                </x-form.input> --}}
+
+
+                <x-form.text-input forId="gallery[promoYoutubeVideo][src]" placeholder="Promo Youtube Video URL"
+                dataName="gallery[promoYoutubeVideo][src]" oldValue="gallery.promoYoutubeVideo.src"
+                dataValue="{{ $moto->gallery['promoYoutubeVideo']['src'] ?? '' }}"/>
+
+
 
                 <x-form.text-input forId="gallery_promoYoutubeVideo_alt"
                                    placeholder="Promo Youtube Video Alt Text"
