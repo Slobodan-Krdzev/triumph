@@ -26,6 +26,7 @@ class FamiliesController extends Controller
         $family = Family::findOrFail($id);
         $promos = Promo::where('category', $family->type)->get();
 
+
         return view('layouts.families.family.edit', compact('family', 'promos'));
     }
 
@@ -51,7 +52,7 @@ class FamiliesController extends Controller
 
         $data['audioSection']['logo'] = ImageStorage::storeOrUpdateFile($request, 'audioSection.logo', 'families/', $title, '/audioSection', $family['audioSection']['logo'] ?? '', $family->type);
 
-        if ($request->has('grayCarousell')) {
+        if ($request->has('grayCaro')) {
             $grayCarousellArray = array_values($request->input('grayCaro'));
 
             $data['grayCaro'] = $grayCarousellArray;
