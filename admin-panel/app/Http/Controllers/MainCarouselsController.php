@@ -30,7 +30,7 @@ class MainCarouselsController extends Controller
             'link2.url' => 'nullable|string',
             'link2.text' => 'nullable|string',
             'image' => 'nullable',
-            'imageMobile' => 'required|image|max:2048',
+            'imageMobile' => 'required|max:2048',
             'video' => 'nullable',
         ]);
 
@@ -76,7 +76,7 @@ class MainCarouselsController extends Controller
             'link2.text' => 'nullable|string',
             'image' => 'nullable',
             'imageMobile' => 'nullable',
-            'video' => 'nullable|file',
+            'video' => 'nullable',
         ]);
 
 
