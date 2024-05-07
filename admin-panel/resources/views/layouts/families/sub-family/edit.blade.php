@@ -71,22 +71,26 @@
                                oldValue="youtubeVideo" dataValue="{{ $subFamData->youtubeVideo ?? '' }}"/>
 
             <div>
-                <h1 class="font-bold text-3xl my-2">Sub Family Page Info - Top Section</h1>
+                <h1 class="font-bold text-3xl my-2">Top Section</h1>
 
                 <x-form.text-input forId="topSection_title" placeholder="Top Section Title"
-                                   dataName="subFamilyPageInfo[topSection][title]"
-                                   oldValue="subFamilyPageInfo.topSection.title"
-                                   dataValue="{{ $subFamData['subFamilyPageInfo']['topSection']['title'] ?? '' }}"/>
+                                   dataName="topSection[title]"
+                                   oldValue="topSection.title"
+                                   dataValue="{{ $subFamData['topSection']['title'] ?? '' }}"/>
 
                 <x-form.text-input forId="topSection_desc" placeholder="Top Section Description"
-                                   dataName="subFamilyPageInfo[topSection][desc]"
-                                   oldValue="subFamilyPageInfo.topSection.desc"
-                                   dataValue="{{ $subFamData['subFamilyPageInfo']['topSection']['desc'] ?? '' }}"/>
+                                   dataName="topSection[desc]"
+                                   oldValue="topSection.desc"
+                                   dataValue="{{ $subFamData['topSection']['desc'] ?? '' }}"/>
 
                 <x-form.text-input forId="topSection_subtitle" placeholder="Top Section Subtitle"
-                                   dataName="subFamilyPageInfo[topSection][subtitle]"
-                                   oldValue="subFamilyPageInfo.topSection.subtitle"
-                                   dataValue="{{ $subFamData['subFamilyPageInfo']['topSection']['subtitle'] ?? '' }}"/>
+                                   dataName="topSection[subtitle]"
+                                   oldValue="topSection.subtitle"
+                                   dataValue="{{ $subFamData['topSection']['subtitle'] ?? '' }}"/>
+            </div>
+
+            <div>
+                <h1 class="font-bold text-3xl my-2">Sub Family Page Info</h1>
 
                 <section class="my-7 font-bold text-red-600">
                     <x-form.input labelText="Choose Audio" imageId="audioSection_audio"

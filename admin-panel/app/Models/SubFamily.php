@@ -12,7 +12,7 @@ class SubFamily extends Model
     protected $table = 'sub_families';
     protected $fillable = [
         'family_id', 'price', 'title', 'model_name', 'subFamilyName', 'url', 'cc',
-        'shortDesc', 'subFamilyPageInfo', 'heroSlogans', 'youtubeVideo', 'engineTransmission',
+        'shortDesc', 'topSection', 'subFamilyPageInfo', 'heroSlogans', 'youtubeVideo', 'engineTransmission',
         'frame', 'dimension', 'fuelConsumption', 'grayCarousell', 'specNumbers',
         'reasonsToDrive', 'gallery', 'shortSpecInfo', 'accessory', 'specs', 'service', 'familyType', 'youtubeVideosCarousellItems'
     ];
