@@ -15,7 +15,7 @@ class PromoController extends Controller
 {
     public function create($family)
     {
-        return view('layouts.promos.add', ['type' => $family, 'families' => Family::get(), 'subFamilies' => SubFamily::get()]);
+        return view('layouts.promos.add', ['type' => $family, 'families' => Family::get(), 'subFamilies' => SubFamily::where('familyType', $family)->get()]);
     }
 
     public function store(Request $request)
@@ -63,7 +63,7 @@ class PromoController extends Controller
     public function edit($id)
     {
         $promo = Promo::findOrFail($id);
-        return view('layouts.promos.edit', ['promo' => $promo, 'families' => Family::get(), 'subFamilies' => SubFamily::get()]);
+        return view('layouts.promos.edit', ['promo' => $promo, 'families' => Family::get(), 'subFamilies' => SubFamily::where('familyType', $promo->category)->get()]);
     }
 
 

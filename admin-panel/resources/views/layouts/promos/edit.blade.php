@@ -1,5 +1,8 @@
 <x-app-layout>
-    <div class="px-8 mt-10 w-8/12">
+    <x-header>
+        Edit Promo <span class="text-red-500 uppercase">{{ $promo->title }}</span> for <span class="text-red-500 uppercase">{{ $promo->category }}</span> Family
+    </x-header>
+    <div class="px-8 mt-10 w-full">
         @if (session('success'))
             <div class="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400"
                 role="alert">
@@ -14,41 +17,46 @@
             @csrf
             @method('PUT')
 
-            <x-form.select-family forId="category" placeholder="Category"
-                               dataName="category"
-                               oldValue="category"
-                                  :families="$families"
-                                  :type="$promo->category"/>
+            <x-form.section-layout sectionId="1">
+                <h1 class="font-bold text-3xl my-2">Base Info</h1>
 
-            <x-form.text-input forId="title" placeholder="Title"
-                               dataName="title"
-                               oldValue="title"
-                               dataValue="{{ $promo->title }}"/>
+                <input type="hidden" name="category" value="{{ $promo->category }}"/>
 
-            <x-form.select-sub-family forId="subFamilyType" placeholder="Sub Family Type"
-                               dataName="subFamilyType"
-                               oldValue="subFamilyType"
-                                      :subFamilies="$subFamilies"
-                                      :subFamilyName="$promo->subFamilyType"/>
+                <x-form.text-input forId="title" placeholder="Title"
+                                   dataName="title"
+                                   oldValue="title"
+                                   dataValue="{{ $promo->title }}"/>
 
-            <x-form.textarea forId="desc" placeholder="Description"
-                             dataName="desc"
-                             oldValue="desc"
-                             dataValue="{{ $promo->desc }}"/>
+                <x-form.select-sub-family forId="subFamilyType" placeholder="Sub Family Type"
+                                          dataName="subFamilyType"
+                                          oldValue="subFamilyType"
+                                          :subFamilies="$subFamilies"
+                                          :subFamilyName="$promo->subFamilyType"/>
 
-            <x-form.input labelText="Image:" imageId="image"
-                          name="image">
-                <img id='image' src="{{ $promo->image }}" width="200" height="150"
-                     class="object-cover border m-3 border-gray-200"/>
-            </x-form.input>
+                <x-form.textarea forId="desc" placeholder="Description"
+                                 dataName="desc"
+                                 oldValue="desc"
+                                 dataValue="{{ $promo->desc }}"/>
 
-            <label for="btnBlack" class="block text-sm font-medium text-gray-700 mt-3">Button Black:</label>
-            <select id="btnBlack" name="btnBlack" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md">
-                <option value="1" class="bg-white hover:bg-gray-100" {{ old('btnBlack', $promo->btnBlack) == '1' ? 'selected' : '' }}>Yes</option>
-                <option value="0" class="bg-white hover:bg-gray-100" {{ old('btnBlack', $promo->btnBlack) == '0' ? 'selected' : '' }}>No</option>
-            </select>
+                <x-form.input labelText="Image:" imageId="image"
+                              name="image">
+                    <img id='image' src="{{ $promo->image }}" width="200" height="150"
+                         class="object-cover border m-3 border-gray-200"/>
+                </x-form.input>
 
-            <button type="submit" class="my-5 bg-lime-200 shadow rounded p-4">Update</button>
+                <label for="btnBlack" class="block text-sm font-medium text-gray-700 mt-3">Button Black:</label>
+                <div class="flex items-center cursor-pointer">
+                    <select id="btnBlack" name="btnBlack" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md">
+                        <option value="1" class="bg-white hover:bg-gray-100" {{ old('btnBlack', $promo->btnBlack) == '1' ? 'selected' : '' }}>Yes</option>
+                        <option value="0" class="bg-white hover:bg-gray-100" {{ old('btnBlack', $promo->btnBlack) == '0' ? 'selected' : '' }}>No</option>
+                    </select>
+                    <div>
+                        <x-form.modal id="btnBlack" name="Button Black:" imagePath=""/>
+                    </div>
+                </div>
+            </x-form.section-layout>
+
+            <button type="submit" class="w-full my-5 bg-yellow-300 hover:bg-yellow-200 shadow rounded p-4">Update</button>
         </form>
     </div>
 </x-app-layout>

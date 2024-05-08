@@ -1,10 +1,19 @@
 <x-app-layout>
-
+    <x-header>
+        Add Sub-Family
+    </x-header>
     <div class="px-8 mt-10 w-full">
 
         <form id="multiPartForm" action="{{ route('store-sub-family') }}" method="POST" class="flex flex-col"
               enctype="multipart/form-data">
             @csrf
+
+            @if (session('success'))
+                <div class="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400"
+                     role="alert">
+                    {{ session('success') }}
+                </div>
+            @endif
 
             <!-- Section 1 -->
             <x-form.section sectionId="1" prevSectionId="1" nextSectionId="2" :totalSections="19">
@@ -82,8 +91,8 @@
                                    oldValue="subFamilyPageInfo.audioSection.title"/>
 
                 <x-form.textarea forId="audioSection_desc" placeholder="Audio Section Description"
-                                   dataName="subFamilyPageInfo[audioSection][desc]"
-                                   oldValue="subFamilyPageInfo.audioSection.desc"/>
+                                 dataName="subFamilyPageInfo[audioSection][desc]"
+                                 oldValue="subFamilyPageInfo.audioSection.desc"/>
 
                 <x-form.input labelText="Logo URL:" imageId="imageLogo" name="subFamilyPageInfo[audioSection][logo]">
                     <img id='imageLogo' width="200" height="150"
@@ -309,38 +318,8 @@
                 <button class="add-accessory-type my-8 bg-lime-200 shadow rounded p-4">Add Accessory Type</button>
             </x-form.section>
         </form>
-        <div id="sectionIndicator" class="text-right pr-10 pt-5 font-bold text-lg">
+        <div id="sectionIndicator" class="text-right pr-10 pt-5 font-bold text-lg mb-5">
             Section <span id="currentSection">1</span> of 19
         </div>
     </div>
 </x-app-layout>
-
-<script>
-    function toggleModal(event, id) {
-        event.preventDefault();
-        var modal = document.getElementById('modal_' + id);
-        modal.classList.toggle('hidden');
-    }
-
-    function nextSection(currentSectionId, nextSectionId) {
-        // Hide the current section
-        document.getElementById(`section${currentSectionId}`).classList.add('hidden');
-
-        // Show the next section
-        document.getElementById(`section${nextSectionId}`).classList.remove('hidden');
-
-        // Update the section number display
-        document.getElementById('currentSection').textContent = nextSectionId;
-    }
-
-    function previousSection(currentSectionId, previousSectionId) {
-        // Hide the current section
-        document.getElementById(`section${currentSectionId}`).classList.add('hidden');
-
-        // Show the previous section
-        document.getElementById(`section${previousSectionId}`).classList.remove('hidden');
-
-        // Update the section number display
-        document.getElementById('currentSection').textContent = previousSectionId;
-    }
-</script>

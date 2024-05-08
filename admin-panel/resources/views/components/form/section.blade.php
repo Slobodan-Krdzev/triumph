@@ -20,7 +20,7 @@
         @endif
 
         @if($sectionId == $totalSections)
-            <button type="submit" class="w-full my-5 bg-green-400 hover:bg-green-300 shadow rounded p-4">Submit</button>
+            <button type="submit" class="w-full my-5 bg-blue-500 hover:bg-blue-300 shadow rounded p-4">Submit</button>
         @endif
     </div>
 </div>

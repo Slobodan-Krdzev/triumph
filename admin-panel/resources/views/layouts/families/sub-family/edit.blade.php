@@ -1,5 +1,8 @@
 <x-app-layout>
-    <div class="px-8 mt-10 w-8/12">
+    <x-header>
+        Edit of <span class="text-red-500">{{ $subFamData->subFamilyName }}</span> Sub-Family
+    </x-header>
+    <div class="px-8 mt-10 w-full">
         @if (session('success'))
             <div class="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400"
                  role="alert">
@@ -15,62 +18,68 @@
                 </ul>
             </div>
         @endif
-        <h1 class="font-bold text-4xl text-end">Edit Sub-Family of <span
-                class="text-red-500 capitalize">{{ $subFamData->subFamilyName }}</span></h1>
-
         <form action="{{ route('update-sub-family', $subFamData->id) }}" method="POST" class="flex flex-col"
               enctype="multipart/form-data">
             @csrf
             @method('PUT')
 
-            <h2 class="font-bold text-3xl">Base Info</h2>
+            <!-- Section 1 -->
+            <x-form.section-layout sectionId="1">
+                <h2 class="font-bold text-3xl">Base Info</h2>
 
-            <x-form.text-input forId="subFamilyName" placeholder="Sub Family Name" dataName="subFamilyName"
-                               oldValue="subFamilyName" dataValue="{{ $subFamData->subFamilyName ?? '' }}"/>
+                <x-form.text-input forId="subFamilyName" placeholder="Sub Family Name" dataName="subFamilyName"
+                                   oldValue="subFamilyName" dataValue="{{ $subFamData->subFamilyName ?? '' }}"/>
 
-            <x-form.text-input forId="title" placeholder="Title" dataName="title" oldValue="title"
-                               dataValue="{{ $subFamData->title ?? '' }}"/>
+                <x-form.text-input forId="title" placeholder="Title" dataName="title" oldValue="title"
+                                   dataValue="{{ $subFamData->title ?? '' }}"/>
 
-            <x-form.select-family forId="familyType" placeholder="Family Type" dataName="familyType" oldValue="familyType"
-                                  :families="$families"
-                                  :type="$subFamData->familyType"/>
+                <x-form.select-family forId="familyType" placeholder="Family Type" dataName="familyType"
+                                      oldValue="familyType"
+                                      :families="$families"
+                                      :type="$subFamData->familyType"/>
 
-            <x-form.text-input forId="price" placeholder="Price" dataName="price" oldValue="price"
-                               dataValue="{{ $subFamData->price ?? '' }}"/>
+                <x-form.text-input forId="price" placeholder="Price" dataName="price" oldValue="price"
+                                   dataValue="{{ $subFamData->price ?? '' }}"/>
 
-            <x-form.text-input forId="url" placeholder="URL" dataName="url" oldValue="url"
-                               dataValue="{{ $subFamData->url ?? '' }}"/>
+                <x-form.text-input forId="url" placeholder="URL" dataName="url" oldValue="url"
+                                   dataValue="{{ $subFamData->url ?? '' }}"/>
 
+                <x-form.text-input forId="shortDesc" placeholder="Short Description" dataName="shortDesc"
+                                   oldValue="shortDesc" dataValue="{{ $subFamData->shortDesc ?? '' }}"/>
+            </x-form.section-layout>
 
-            <x-form.dynamic-text-inputs header="Specs" divId="specsFields"
-                                        dataId1="specs_desc" dataLabel1="desc" dataName="specs"
-                                        dataId2="specs_data" dataLabel2="data"
-                                        :databaseData="$subFamData->specs"
-                                        fieldClass="add-two-fields"/>
+            <!-- Section 2 -->
+            <x-form.section-layout sectionId="2">
+                <x-form.dynamic-text-inputs header="Specs" divId="specsFields"
+                                            dataId1="specs_desc" dataLabel1="desc" dataName="specs"
+                                            dataId2="specs_data" dataLabel2="data"
+                                            :databaseData="$subFamData->specs"
+                                            fieldClass="add-two-fields"/>
+            </x-form.section-layout>
 
-
-            <x-form.text-input forId="shortDesc" placeholder="Short Description" dataName="shortDesc"
-                               oldValue="shortDesc" dataValue="{{ $subFamData->shortDesc ?? '' }}"/>
-
-
+            <!-- Section 3 -->
+            <x-form.section-layout sectionId="3">
                 <x-form.dynamic-text-inputs header="Service" divId="serviceFields"
                                             dataId1="service_title" dataLabel1="title" dataName="service"
                                             dataId2="service_desc" dataLabel2="desc"
                                             :databaseData="$subFamData->service"
                                             fieldClass="add-two-fields"/>
+            </x-form.section-layout>
 
-
-
+            <!-- Section 4 -->
+            <x-form.section-layout sectionId="4">
                 <x-form.dynamic-text-inputs header="Hero Slogans" divId="heroSlogansFields"
                                             dataId1="hero_slogan" dataLabel1="slogan" dataName="heroSlogans"
                                             :databaseData="$subFamData->heroSlogans"
                                             fieldClass="add-field"/>
 
 
-            <x-form.text-input forId="youtubeVideo" placeholder="YouTube Video URL" dataName="youtubeVideo"
-                               oldValue="youtubeVideo" dataValue="{{ $subFamData->youtubeVideo ?? '' }}"/>
+                <x-form.text-input forId="youtubeVideo" placeholder="YouTube Video URL" dataName="youtubeVideo"
+                                   oldValue="youtubeVideo" dataValue="{{ $subFamData->youtubeVideo ?? '' }}"/>
+            </x-form.section-layout>
 
-            <div>
+            <!-- Section 5 -->
+            <x-form.section-layout sectionId="5">
                 <h1 class="font-bold text-3xl my-2">Top Section</h1>
 
                 <x-form.text-input forId="topSection_title" placeholder="Top Section Title"
@@ -87,9 +96,10 @@
                                    dataName="topSection[subtitle]"
                                    oldValue="topSection.subtitle"
                                    dataValue="{{ $subFamData['topSection']['subtitle'] ?? '' }}"/>
-            </div>
+            </x-form.section-layout>
 
-            <div>
+            <!-- Section 6 -->
+            <x-form.section-layout sectionId="6">
                 <h1 class="font-bold text-3xl my-2">Sub Family Page Info</h1>
 
                 <section class="my-7 font-bold text-red-600">
@@ -117,67 +127,76 @@
                     <img id='imageLogo' src="{{ $subFamData['subFamilyPageInfo']['audioSection']['logo'] ?? '' }}"
                          width="200" height="150" class="object-cover border m-3 border-gray-200"/>
                 </x-form.input>
-            </div>
+            </x-form.section-layout>
 
-
+            <!-- Section 7 -->
+            <x-form.section-layout sectionId="7">
                 <x-form.dynamic-text-inputs header="Engine & Transmission" divId="engine&transmissionFields"
                                             dataId1="engineTransmission_title" dataLabel1="title"
                                             dataName="engineTransmission"
                                             dataId2="engineTransmission_desc" dataLabel2="desc"
                                             :databaseData="$subFamData->engineTransmission"
                                             fieldClass="add-two-fields"/>
+            </x-form.section-layout>
 
-
-
+            <!-- Section 8 -->
+            <x-form.section-layout sectionId="8">
                 <x-form.dynamic-text-inputs header="Frame" divId="frameFields"
                                             dataId1="frame_title" dataLabel1="title" dataName="frame"
                                             dataId2="frame_desc" dataLabel2="desc"
                                             :databaseData="$subFamData->frame"
                                             fieldClass="add-two-fields"/>
+            </x-form.section-layout>
 
-
-
-
+            <!-- Section 9 -->
+            <x-form.section-layout sectionId="9">
                 <x-form.dynamic-text-inputs header="Dimension" divId="dimensionFields"
                                             dataId1="dimension_title" dataLabel1="title" dataName="dimension"
                                             dataId2="dimension_desc" dataLabel2="desc"
                                             :databaseData="$subFamData->dimension"
                                             fieldClass="add-two-fields"/>
+            </x-form.section-layout>
 
-
-
+            <!-- Section 10 -->
+            <x-form.section-layout sectionId="10">
                 <x-form.dynamic-text-inputs header="Fuel Consumption" divId="fuelConsumptionFields"
                                             dataId1="fuelConsumption_title" dataLabel1="title"
                                             dataName="fuelConsumption"
                                             dataId2="fuelConsumption_desc" dataLabel2="desc"
                                             :databaseData="$subFamData->fuelConsumption"
                                             fieldClass="add-two-fields"/>
+            </x-form.section-layout>
 
-
-
-
+            <!-- Section 11 -->
+            <x-form.section-layout sectionId="11">
                 <x-form.dynamic-text-inputs header="Gray Carousel" divId="grayCarousellFields"
                                             dataId1="grayCarousell_title" dataLabel1="title" dataName="grayCarousell"
                                             dataId2="grayCarousell_desc" dataLabel2="desc" imgLabel="Image"
                                             :databaseData="$subFamData->grayCarousell"
                                             fieldClass="add-two-fields-and-img"/>
+            </x-form.section-layout>
 
+            <!-- Section 12 -->
+            <x-form.section-layout sectionId="12">
                 <x-form.dynamic-text-inputs header="YouTube Videos Carousel" divId="youtubeVideosCarouselFields"
                                             dataId1="youtubeVideosCarouselItems_title" dataLabel1="src"
                                             dataName="youtubeVideosCarousellItems"
                                             dataId2="youtubeVideosCarouselItems_desc" dataLabel2="title"
                                             :databaseData="$subFamData->youtubeVideosCarousellItems"
                                             fieldClass="add-two-fields"/>
+            </x-form.section-layout>
 
-
+            <!-- Section 13 -->
+            <x-form.section-layout sectionId="13">
                 <x-form.dynamic-text-inputs header="Spec Numbers" divId="specNumbersFields"
                                             dataId1="specNumbers_data" dataLabel1="data" dataName="specNumbers"
                                             dataId2="specNumbers_desc" dataLabel2="info"
                                             :databaseData="$subFamData->specNumbers"
                                             fieldClass="add-two-fields"/>
+            </x-form.section-layout>
 
-
-            <div>
+            <!-- Section 14 -->
+            <x-form.section-layout sectionId="14">
                 <h1 class="font-bold text-3xl my-2">ReasonsReasons to Drive Banner</h1>
 
                 <x-form.input labelText="Banner Image URL:" imageId="reasonsBanner"
@@ -198,17 +217,20 @@
                                    dataName="reasonsToDrive[infoText][desc]"
                                    oldValue="reasonsToDrive.infoText.desc"
                                    dataValue="{{ $subFamData['reasonsToDrive']['infoText']['desc'] ?? '' }}"/>
+            </x-form.section-layout>
 
-                    <x-form.dynamic-text-inputs header="Reasons" divId="reasonsFields"
-                                                dataId1="reasons_title" dataLabel1="title"
-                                                dataName="reasonsToDrive[reasons]"
-                                                dataId2="reasons_desc" dataLabel2="desc" imgLabel="Image"
-                                                :databaseData="$subFamData['reasonsToDrive']['reasons'] ?? null"
-                                                fieldClass="add-two-fields-and-img"/>
+            <!-- Section 15 -->
+            <x-form.section-layout sectionId="15">
+                <x-form.dynamic-text-inputs header="Reasons" divId="reasonsFields"
+                                            dataId1="reasons_title" dataLabel1="title"
+                                            dataName="reasonsToDrive[reasons]"
+                                            dataId2="reasons_desc" dataLabel2="desc" imgLabel="Image"
+                                            :databaseData="$subFamData['reasonsToDrive']['reasons'] ?? null"
+                                            fieldClass="add-two-fields-and-img"/>
+            </x-form.section-layout>
 
-            </div>
-
-            <div>
+            <!-- Section 16 -->
+            <x-form.section-layout sectionId="16">
                 <h1 class="font-bold text-3xl my-2">Short Spec Info</h1>
 
                 <x-form.text-input forId="shortSpecInfo_info1" placeholder="Short Spec Info 1"
@@ -220,10 +242,10 @@
                 <x-form.text-input forId="shortSpecInfo_info3" placeholder="Short Spec Info 3"
                                    dataName="shortSpecInfo[info3]" oldValue="shortSpecInfo.info3"
                                    dataValue="{{ $subFamData['shortSpecInfo']['info3'] ?? '' }}"/>
+            </x-form.section-layout>
 
-            </div>
-
-            <div>
+            <!-- Section 17 -->
+            <x-form.section-layout sectionId="17">
                 <h1 class="font-bold text-3xl my-2">Gallery</h1>
 
                 <x-form.input labelText="Gallery Model Image:" imageId="modelImageUrl" name="gallery[modelImage][src]">
@@ -291,9 +313,10 @@
                                    dataName="gallery[subFamilyTopSectionBGImage][alt]"
                                    oldValue="gallery.subFamilyTopSectionBGImage.alt"
                                    dataValue="{{ $subFamData['subFamilyTopSectionBGImage']['alt'] ?? '' }}"/>
-            </div>
+            </x-form.section-layout>
 
-            <div>
+            <!-- Section 18 -->
+            <x-form.section-layout sectionId="18">
                 <h1 class="font-bold text-3xl my-2">Accessory</h1>
 
                 <x-form.input labelText="Accessory Banner Image URL:" imageId="bannerImageUrl"
@@ -310,18 +333,18 @@
                 <x-form.text-input forId="accessory_infoText_desc" placeholder="Accessory InfoText Description"
                                    dataName="accessory[infoText][desc]" oldValue="accessory.infoText.desc"
                                    dataValue="{{ $subFamData['accessory']['infoText']['desc'] ?? '' }}"/>
+            </x-form.section-layout>
 
-                <div>
-                    <h1 class="font-bold text-3xl my-2">Accessory Types</h1>
-                    <div class="dynamic-section" id="accessoryTypesFields">
-                        <x-form.accessory_types :databaseData="$subFamData['accessory']['accessoryTypes'] ?? null" />
-                    </div>
-                    <button class="add-accessory-type my-8 bg-lime-200 shadow rounded p-4">Add Accessory Type</button>
+            <!-- Section 19 -->
+            <x-form.section-layout sectionId="19">
+                <h1 class="font-bold text-3xl my-2">Accessory Types</h1>
+                <div class="dynamic-section" id="accessoryTypesFields">
+                    <x-form.accessory_types :databaseData="$subFamData['accessory']['accessoryTypes'] ?? null"/>
                 </div>
+                <button class="add-accessory-type my-8 bg-lime-200 shadow rounded p-4">Add Accessory Type</button>
+            </x-form.section-layout>
 
-            </div>
-
-            <button type="submit" class="my-5 bg-lime-200 shadow rounded p-4">Update</button>
+            <button type="submit" class="w-full my-5 bg-yellow-300 hover:bg-yellow-200 shadow rounded p-4">Update</button>
         </form>
     </div>
 </x-app-layout>
