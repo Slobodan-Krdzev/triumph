@@ -1,4 +1,4 @@
-@props(['labelText','imageId'])
+@props(['labelText', 'imageId', 'imageDesc' => null])
 
 <div class="flex items-center space-x-6 mt-3">
     <label for="{{ $imageId }}" class="block">
@@ -12,5 +12,8 @@
     </label>
     <div class="shrink-0">
         {{ $slot }}
+    </div>
+    <div class="cursor-pointer">
+        <x-form.modal id="{{ $imageId }}" name="{{ $labelText }}" imagePath="{{ $imageDesc }}"/>
     </div>
 </div>
