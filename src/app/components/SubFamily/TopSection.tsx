@@ -19,7 +19,7 @@ const TopSection = ({ title, desc, subtitle, image, bgImage }: TopSectionProps) 
       </div>
 
       <div className="flex flex-col lg:flex-row  items-center xl:px-56 px-4" >
-        <Image src={image} alt={subtitle} height={788} width={1030} className="w-full"/>
+        <Image src={image} alt={subtitle} height={788} width={1030} className="w-full xl:w-10/12"/>
         <h2 className="2xl:text-6xl lg:text-3xl text-2xl mt-8 xl:mt-0 font-semibold uppercase xl:pl-20 lg:pl-16 order-1 xl:order-2">{subtitle}</h2>
       </div>
 
