@@ -23,7 +23,7 @@ const BikeModelImage = ({ bike, modalImage }: BikeModelImageProps) => {
           src={
             bike.bikeCollorPalletteGallery[(query.get("color") as string) + "Reversed"]
           }
-          alt={bike.title}
+          alt={bike?.title ?? "Bike"}
           width={modalImage ? 850 : 1124}
           height={76}
         />
@@ -35,9 +35,9 @@ const BikeModelImage = ({ bike, modalImage }: BikeModelImageProps) => {
         src={
           query.get("color")
             ? bike.bikeCollorPalletteGallery[query.get("color") as string]
-            : bike.bikeCollorPalletteGallery.color1
+            : bike.bikeCollorPalletteGallery?.color1
         }
-        alt={bike.title}
+        alt={bike.title ?? "Triumph Bike"}
         width={modalImage ? 850 : 1124}
         height={376}
       />

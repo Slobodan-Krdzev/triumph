@@ -97,6 +97,7 @@ const RoadstersSubFamilyPage = async ({ params }: any) => {
             title={subFamily.subFamilyPageInfo.audioSection.title}
             desc={subFamily.subFamilyPageInfo.audioSection.desc}
             model={query}
+            logo={subFamily.subFamilyPageInfo.audioSection.logo}
           />
         )}
 

@@ -3,6 +3,8 @@ import TopSection from "@/app/components/SubFamily/TopSection";
 import BottomCarousell from "@/app/components/classicsPageComp/BottomCarousell";
 import BikeInfoTextImageBtn from "@/app/components/familiySharedComponents/BikeInfoTextImageBtn";
 import PageParagraph from "@/app/components/familiySharedComponents/PageParagraph";
+import { formulateSubFamilyTitleOnBanner } from "@/app/components/helpers/formulateSubFamilyTilteOnBanner";
+import AudioSection from "@/app/components/roadstersUniqueComp/AudioSection";
 import { BIKES, SUB_FAMILIES } from "@/app/constants/constants";
 import { redirect } from "next/navigation";
 
@@ -102,6 +104,21 @@ const Rocket3SubFamPage = async () => {
             <BottomCarousell items={subFamily.grayCarousell} />
           )}
         </main>
+        {subFamily?.subFamilyPageInfo?.audioSection && (
+          <AudioSection
+            audio={subFamily?.subFamilyPageInfo?.audioSection?.audio ?? ""}
+            title={
+              subFamily?.subFamilyPageInfo?.audioSection?.title ??
+              "Triumph Три-Цилиндричен Звук"
+            }
+            desc={
+              subFamily?.subFamilyPageInfo?.audioSection?.desc ??
+              "Карактеристичен Три-Цилиндарски Британски Звук"
+            }
+            model={formulateSubFamilyTitleOnBanner("Rocket-3")}
+            logo={subFamily?.subFamilyPageInfo?.audioSection?.logo}
+          />
+        )}
       </>
     );
   } catch (err) {
