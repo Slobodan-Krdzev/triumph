@@ -27,7 +27,7 @@ const AudioSection = ({audio, title, desc, logo, model}:AudioSectionProps) => {
         </p>
         <p className="mb-4 md:text-2xl text-sm uppercase font-bold tracking-tighter">{model}</p>
         {logo && <Image
-          src={`${logo}`}
+          src={logo}
           alt={"Logo"}
           width={160}
           height={44}
