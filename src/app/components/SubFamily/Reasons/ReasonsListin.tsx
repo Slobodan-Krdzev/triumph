@@ -24,7 +24,7 @@ const ReasonsListin = ({ reasons = [], textWhite }: ReasonsListinProps) => {
             <p className="font-normal md:text-lg text-md">{reason.desc}</p>
           </div>
 
-          <div className="w-11/12 m-auto">
+          <div className="w-11/12 m-auto flex justify-center items-center" style={{border: '2px solid red'}}>
             {reason.image && (
               <Image
                 src={reason.image}
