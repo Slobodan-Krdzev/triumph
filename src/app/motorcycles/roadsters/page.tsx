@@ -84,10 +84,10 @@ const RoadstersPage = async () => {
 
         <AudioSection
           model="Speed ​​Triple 765"
-          logo={familyData[0].audioSection.audio.logo}
-          audio={familyData[0].audioSection.audio}
-          title={familyData[0].audioSection.title}
-          desc={familyData[0].audioSection.desc}
+          logo={familyData[0]?.audioSection?.logo ?? ""}
+          audio={familyData[0]?.audioSection?.audio ?? ""}
+          title={familyData[0]?.audioSection?.title ?? "Triumph"}
+          desc={familyData[0]?.audioSection?.desc ?? "Triumph Audio"}
         />
       </>
     );
