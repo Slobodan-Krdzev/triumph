@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\Family;
+use App\Models\Motorcycle;
 use App\Models\SubFamily;
 use App\Service\ImageStorage;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rule;
@@ -159,5 +161,17 @@ class SubFamilyController extends Controller
 
 
         return redirect()->back()->with('success', 'Sub-Family ' . $data['subFamilyName'] . ' updated successfully.');
+    }
+
+    public static function updatePricesOnSubfamilies()
+    {
+        $subFamilyPrices = Motorcycle::select('subFamilyCategory', DB::raw('MIN(price) as lowest_price'))
+            ->groupBy('subFamilyCategory')
+            ->get();
+
+        foreach ($subFamilyPrices as $price) {
+            SubFamily::where('subFamilyName', $price->subFamilyCategory)
+                ->update(['price' => $price->lowest_price]);
+        }
     }
 }

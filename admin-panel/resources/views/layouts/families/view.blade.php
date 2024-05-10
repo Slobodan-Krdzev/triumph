@@ -9,7 +9,7 @@
                 <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                     <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                         <tr>
-                            <th scope="col" class="px-6 py-3 border-b border-gray-200">
+                            <th scope="col" class="px-6 py-3 border-b border-gray-200 text-2xl">
                                 Families
                             </th>
 
@@ -39,7 +39,7 @@
                 <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                     <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                         <tr>
-                            <th scope="col" class="px-6 py-3 border-b border-gray-200">
+                            <th scope="col" class="px-6 py-3 border-b border-gray-200 text-2xl">
                                 Sub-Families of <span class="text-red-500 font-bold">Adventure</span>
                             </th>
 
@@ -72,7 +72,7 @@
                 <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                     <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                         <tr>
-                            <th scope="col" class="px-6 py-3 border-b border-gray-200">
+                            <th scope="col" class="px-6 py-3 border-b border-gray-200 text-2xl">
                                 Sub-Families of <span class="text-red-500 font-bold">Classics</span>
                             </th>
 
@@ -105,7 +105,7 @@
                 <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                     <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                         <tr>
-                            <th scope="col" class="px-6 py-3 border-b border-gray-200">
+                            <th scope="col" class="px-6 py-3 border-b border-gray-200 text-2xl">
                                 Sub-Families of <span class="text-red-500 font-bold">Roadsters</span>
                             </th>
 
@@ -139,7 +139,7 @@
                 <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                     <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                         <tr>
-                            <th scope="col" class="px-6 py-3 border-b border-gray-200">
+                            <th scope="col" class="px-6 py-3 border-b border-gray-200 text-2xl">
                                 Sub-Families of <span class="text-red-500 font-bold">Rocket-3</span>
                             </th>
 
@@ -173,7 +173,7 @@
                 <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                     <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                         <tr>
-                            <th scope="col" class="px-6 py-3 border-b border-gray-200">
+                            <th scope="col" class="px-6 py-3 border-b border-gray-200 text-2xl">
                                 Sub-Families of <span class="text-red-500 font-bold">Sport</span>
                             </th>
 
@@ -206,7 +206,7 @@
                 <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                     <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                         <tr>
-                            <th scope="col" class="px-6 py-3 border-b border-gray-200">
+                            <th scope="col" class="px-6 py-3 border-b border-gray-200 text-2xl">
                                 Sub-Families of <span class="text-red-500 font-bold">Off-Road</span>
                             </th>
 

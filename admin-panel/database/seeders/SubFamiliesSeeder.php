@@ -16,7 +16,6 @@ class SubFamiliesSeeder extends Seeder
     {
         $subFamiliesData = [
             [
-                "id" => 1,
                 "subFamilyName" => "tiger-900",
                 "familyType" => "adventure",
                 "title" => "Нова Tiger 900 Серија",
@@ -328,7 +327,6 @@ class SubFamiliesSeeder extends Seeder
                 ],
             ],
             [
-                "id" => 2,
                 "subFamilyName" => "tiger-sport-660",
                 "familyType" => "adventure",
                 "title" => "Tiger Sport 660",
@@ -654,7 +652,6 @@ class SubFamiliesSeeder extends Seeder
                 ],
             ],
             [
-                "id" => 3,
                 "subFamilyName" => "tiger-850-sport",
                 "familyType" => "adventure",
                 "title" => "Tiger 850 Sport",
@@ -964,7 +961,6 @@ class SubFamiliesSeeder extends Seeder
                 ],
             ],
             [
-                "id" => 4,
                 "subFamilyName" => "tiger-1200-gt",
                 "familyType" => "adventure",
                 "title" => "Tiger 1200 GT",
@@ -1325,7 +1321,6 @@ class SubFamiliesSeeder extends Seeder
                 ],
             ],
             [
-                "id" => 5,
                 "subFamilyName" => "tiger-1200-rally",
                 "familyType" => "adventure",
                 "title" => "Tiger 1200 Rally",
@@ -1684,7 +1679,6 @@ class SubFamiliesSeeder extends Seeder
                 ],
             ],
             [
-                "id" => 7,
                 "subFamilyName" => "speed-400",
                 "familyType" => "classics",
                 "title" => "Speed 400",
@@ -1974,7 +1968,6 @@ class SubFamiliesSeeder extends Seeder
                 ],
             ],
             [
-                "id" => 8,
                 "subFamilyName" => "scrambler-400-x",
                 "familyType" => "classics",
                 "title" => "Scrambler 400 X",
@@ -2263,7 +2256,6 @@ class SubFamiliesSeeder extends Seeder
                 ],
             ],
             [
-                "id" => 9,
                 "subFamilyName" => "speed-twin-900",
                 "familyType" => "classics",
                 "title" => "Speed Twin 900",
@@ -2570,7 +2562,6 @@ class SubFamiliesSeeder extends Seeder
                 ],
             ],
             [
-                "id" => 10,
                 "subFamilyName" => "bonneville-bobber",
                 "familyType" => "classics",
                 "title" => "Bonneville Bobber",
@@ -2851,7 +2842,6 @@ class SubFamiliesSeeder extends Seeder
                 ],
             ],
             [
-                "id" => 11,
                 "subFamilyName" => "scrambler-1200",
                 "familyType" => "classics",
                 "title" => "Scrambler 1200",
@@ -3198,7 +3188,6 @@ class SubFamiliesSeeder extends Seeder
                 ],
             ],
             [
-                "id" => 12,
                 "subFamilyName" => "bonneville-speedmaster",
                 "familyType" => "classics",
                 "title" => "Bonneville Speedmaster",
@@ -3470,7 +3459,6 @@ class SubFamiliesSeeder extends Seeder
                 ],
             ],
             [
-                "id" => 13,
                 "subFamilyName" => "speed-twin-1200",
                 "familyType" => "classics",
                 "title" => "Speed Twin 1200",
@@ -3777,7 +3765,6 @@ class SubFamiliesSeeder extends Seeder
                 ],
             ],
             [
-                "id" => 14,
                 "subFamilyName" => "scrambler-900",
                 "familyType" => "classics",
                 "title" => "Scrambler 900",
@@ -4073,7 +4060,6 @@ class SubFamiliesSeeder extends Seeder
                 ],
             ],
             [
-                "id" => 15,
                 "subFamilyName" => "bonneville-t100",
                 "familyType" => "classics",
                 "title" => "Bonneville T100",
@@ -4385,7 +4371,6 @@ class SubFamiliesSeeder extends Seeder
                 ],
             ],
             [
-                "id" => 16,
                 "subFamilyName" => "bonneville-t120",
                 "familyType" => "classics",
                 "title" => "Bonneville T120",
@@ -4702,7 +4687,6 @@ class SubFamiliesSeeder extends Seeder
                 ],
             ],
             [
-                "id" => 17,
                 "subFamilyName" => "thruxton-rs",
                 "familyType" => "classics",
                 "title" => "Thruxton RS",
@@ -4955,7 +4939,6 @@ class SubFamiliesSeeder extends Seeder
                 ],
             ],
             [
-                "id" => 18,
                 "subFamilyName" => "street-triple-765",
                 "familyType" => "roadsters",
                 "title" => "Street Triple 765",
@@ -5284,7 +5267,6 @@ class SubFamiliesSeeder extends Seeder
                 ],
             ],
             [
-                "id" => 19,
                 "subFamilyName" => "street-triple-moto2",
                 "familyType" => "roadsters",
                 "title" => "Street Triple 765 Moto2",
@@ -5625,7 +5607,6 @@ class SubFamiliesSeeder extends Seeder
                 ],
             ],
             [
-                "id" => 20,
                 "subFamilyName" => "trident-660",
                 "familyType" => "roadsters",
                 "title" => "Trident 660",
@@ -5939,7 +5920,6 @@ class SubFamiliesSeeder extends Seeder
                 ],
             ],
             [
-                "id" => 21,
                 "subFamilyName" => "speed-triple-1200-rs",
                 "familyType" => "roadsters",
                 "title" => "Speed Triple 1200 RS",
@@ -6239,7 +6219,6 @@ class SubFamiliesSeeder extends Seeder
                 ],
             ],
             [
-                "id" => 22,
                 "subFamilyName" => "speed-triple-1200-rr",
                 "familyType" => "roadsters",
                 "title" => "Speed Triple 1200 RR",
@@ -6541,7 +6520,6 @@ class SubFamiliesSeeder extends Seeder
                 ],
             ],
             [
-                "id" => 23,
                 "subFamilyName" => "rocket-3",
                 "familyType" => "rocket-3",
                 "title" => "Новата Rocket 3 Storm",
@@ -6832,7 +6810,6 @@ class SubFamiliesSeeder extends Seeder
                 ],
             ],
             [
-                "id" => 24,
                 "subFamilyName" => "daytona-660",
                 "familyType" => "sport",
                 "title" => "Daytona 660",
@@ -7130,7 +7107,6 @@ class SubFamiliesSeeder extends Seeder
                 ],
             ],
             [
-                "id" => 25,
                 "subFamilyName" => "tf-250-x",
                 "familyType" => "off-road",
                 "title" => "TF 250-X",

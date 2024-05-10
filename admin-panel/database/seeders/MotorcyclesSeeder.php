@@ -17,7 +17,6 @@ class MotorcyclesSeeder extends Seeder
 
         $motorcyclesData = [
             [
-                "id" => 1,
                 "title" => "Tiger 900 GT",
                 "model" => "tiger-900-gt",
                 "category" => "adventure",
@@ -161,7 +160,6 @@ class MotorcyclesSeeder extends Seeder
                 ]
             ],
             [
-                "id" => 2,
                 "title" => "Tiger 900 GT PRO",
                 "model" => "tiger-900-gt-pro",
                 "category" => "adventure",
@@ -331,7 +329,6 @@ class MotorcyclesSeeder extends Seeder
                 ]
             ],
             [
-                "id" => 3,
                 "title" => "Tiger 900 Rally PRO",
                 "model" => "tiger-900-rally-pro",
                 "category" => "adventure",
@@ -501,7 +498,6 @@ class MotorcyclesSeeder extends Seeder
                 ]
             ],
             [
-                "id" => 5,
                 "title" => "Tiger Sport 660",
                 "model" => "tiger-sport-660",
                 "category" => "adventure",
@@ -671,7 +667,6 @@ class MotorcyclesSeeder extends Seeder
                 ]
             ],
             [
-                "id" => 6,
                 "title" => "Tiger 850 Sport",
                 "model" => "tiger-850-sport",
                 "category" => "adventure",
@@ -835,7 +830,6 @@ class MotorcyclesSeeder extends Seeder
                 ]
             ],
             [
-                "id" => 7,
                 "title" => "Tiger 1200 GT PRO",
                 "model" => "tiger-1200-gt-pro-2022",
                 "category" => "adventure",
@@ -994,7 +988,6 @@ class MotorcyclesSeeder extends Seeder
                 ]
             ],
             [
-                "id" => 8,
                 "title" => "Tiger 1200 GT Explorer",
                 "model" => "tiger-1200-gt-explorer-2022",
                 "category" => "adventure",
@@ -1157,7 +1150,6 @@ class MotorcyclesSeeder extends Seeder
                 ]
             ],
             [
-                "id" => 9,
                 "title" => "Tiger 1200 Rally Pro",
                 "model" => "tiger-1200-rally-pro-2022",
                 "category" => "adventure",
@@ -1316,7 +1308,6 @@ class MotorcyclesSeeder extends Seeder
                 ]
             ],
             [
-                "id" => 10,
                 "title" => "Tiger 1200 Rally Explorer",
                 "model" => "tiger-1200-rally-explorer-2022",
                 "category" => "adventure",
@@ -1479,7 +1470,6 @@ class MotorcyclesSeeder extends Seeder
                 ]
             ],
             [
-                "id" => 15,
                 "title" => "Street Triple 765 R",
                 "model" => "street-triple-765-r",
                 "category" => "roadsters",
@@ -1672,7 +1662,6 @@ class MotorcyclesSeeder extends Seeder
                 ]
             ],
             [
-                "id" => 16,
                 "title" => "Street Triple 765 RS",
                 "model" => "street-triple-765-rs",
                 "category" => "roadsters",
@@ -1872,7 +1861,6 @@ class MotorcyclesSeeder extends Seeder
                 ]
             ],
             [
-                "id" => 17,
                 "title" => "Trident 660",
                 "model" => "trident-660",
                 "category" => "roadsters",
@@ -2036,7 +2024,6 @@ class MotorcyclesSeeder extends Seeder
                 ]
             ],
             [
-                "id" => 18,
                 "title" => "Speed Triple 1200 RS",
                 "model" => "speed-triple-1200-rs",
                 "category" => "roadsters",
@@ -2200,7 +2187,6 @@ class MotorcyclesSeeder extends Seeder
                 ]
             ],
             [
-                "id" => 19,
                 "title" => "Speed Triple 1200 RR",
                 "model" => "speed-triple-1200-rr",
                 "category" => "roadsters",
@@ -2339,7 +2325,6 @@ class MotorcyclesSeeder extends Seeder
                 ]
             ],
             [
-                "id" => 20,
                 "title" => "Rocket 3 R",
                 "model" => "rocket-3-r",
                 "category" => "rocket-3",
@@ -2587,7 +2572,6 @@ class MotorcyclesSeeder extends Seeder
                 ]
             ],
             [
-                "id" => 21,
                 "title" => "Rocket 3 GT",
                 "model" => "rocket-3-gt",
                 "category" => "rocket-3",
@@ -2830,7 +2814,6 @@ class MotorcyclesSeeder extends Seeder
                 ]
             ],
             [
-                "id" => 26,
                 "title" => "Speed 400",
                 "model" => "speed-400",
                 "category" => "classics",
@@ -2982,7 +2965,6 @@ class MotorcyclesSeeder extends Seeder
                 ]
             ],
             [
-                "id" => 27,
                 "title" => "Scrambler 400 X",
                 "model" => "scrambler-400-x",
                 "category" => "classics",
@@ -3129,7 +3111,6 @@ class MotorcyclesSeeder extends Seeder
                 ]
             ],
             [
-                "id" => 28,
                 "title" => "Speed Twin 900",
                 "model" => "speed-twin-900",
                 "category" => "classics",
@@ -3269,7 +3250,6 @@ class MotorcyclesSeeder extends Seeder
                 ]
             ],
             [
-                "id" => 29,
                 "title" => "Bonneville Bobber",
                 "model" => "bonneville-bobber",
                 "category" => "classics",
@@ -3418,7 +3398,6 @@ class MotorcyclesSeeder extends Seeder
                 ]
             ],
             [
-                "id" => 32,
                 "title" => "Scrambler 1200 X",
                 "model" => "scrambler-1200-x",
                 "category" => "classics",
@@ -3516,7 +3495,6 @@ class MotorcyclesSeeder extends Seeder
                 ]
             ],
             [
-                "id" => 180,
                 "title" => "Scrambler 1200 XC",
                 "model" => "scrambler-1200-xc",
                 "category" => "classics",
@@ -3631,7 +3609,6 @@ class MotorcyclesSeeder extends Seeder
                 ]
             ],
             [
-                "id" => 33,
                 "title" => "Scrambler 1200 XE",
                 "model" => "scrambler-1200-xe-2023",
                 "category" => "classics",
@@ -3729,7 +3706,6 @@ class MotorcyclesSeeder extends Seeder
                 ]
             ],
             [
-                "id" => 34,
                 "title" => "Bonneville Speedmaster",
                 "model" => "speedmaster-2023",
                 "category" => "classics",
@@ -3873,7 +3849,6 @@ class MotorcyclesSeeder extends Seeder
                 ]
             ],
             [
-                "id" => 35,
                 "title" => "Speed Twin 1200",
                 "model" => "speed-twin-1200",
                 "category" => "classics",
@@ -4014,7 +3989,6 @@ class MotorcyclesSeeder extends Seeder
                 ]
             ],
             [
-                "id" => 36,
                 "title" => "Scrambler 900",
                 "model" => "scrambler-900",
                 "category" => "classics",
@@ -4186,7 +4160,6 @@ class MotorcyclesSeeder extends Seeder
                 ]
             ],
             [
-                "id" => 37,
                 "title" => "Bonneville T100",
                 "model" => "t100-2023",
                 "category" => "classics",
@@ -4342,7 +4315,6 @@ class MotorcyclesSeeder extends Seeder
                 ]
             ],
             [
-                "id" => 38,
                 "title" => "Bonneville T120",
                 "model" => "t120-2023",
                 "category" => "classics",
@@ -4517,7 +4489,6 @@ class MotorcyclesSeeder extends Seeder
                 ]
             ],
             [
-                "id" => 39,
                 "title" => "Bonneville T120 Black",
                 "model" => "t120-black-2023",
                 "category" => "classics",
@@ -4678,7 +4649,6 @@ class MotorcyclesSeeder extends Seeder
                 ]
             ],
             [
-                "id" => 41,
                 "title" => "Thruxton RS",
                 "model" => "thruxton-rs-2023",
                 "category" => "classics",
@@ -4826,7 +4796,6 @@ class MotorcyclesSeeder extends Seeder
                 ]
             ],
             [
-                "id" => 57,
                 "title" => "Street Triple 765 MOTO2™ EDITION",
                 "model" => "street-triple-moto2-editon-2023",
                 "category" => "roadsters",
@@ -5020,7 +4989,6 @@ class MotorcyclesSeeder extends Seeder
                 ]
             ],
             [
-                "id" => 58,
                 "title" => "Tiger 900 Rally",
                 "model" => "tiger-900-rally",
                 "category" => "adventure",
@@ -5124,7 +5092,6 @@ class MotorcyclesSeeder extends Seeder
                 ]
             ],
             [
-                "id" => 59,
                 "title" => "Tiger 1200 GT",
                 "model" => "tiger-1200-gt",
                 "category" => "adventure",
@@ -5161,7 +5128,6 @@ class MotorcyclesSeeder extends Seeder
                 ]
             ],
             [
-                "id" => 60,
                 "title" => "Daytona 660",
                 "model" => "daytona-660",
                 "category" => "sport",
@@ -5280,7 +5246,6 @@ class MotorcyclesSeeder extends Seeder
                 ]
             ],
             [
-                "id" => 61,
                 "title" => "TF 250-X",
                 "model" => "tf-250-x",
                 "category" => "off-road",
@@ -5400,7 +5365,6 @@ class MotorcyclesSeeder extends Seeder
                 ]
             ],
             [
-                "id" => 62,
                 "title" => "Rocket 3 Storm R",
                 "model" => "rocket-3-storm-r",
                 "category" => "rocket-3",
@@ -5506,7 +5470,6 @@ class MotorcyclesSeeder extends Seeder
                 ]
             ],
             [
-                "id" => 63,
                 "title" => "Rocket 3 Storm GT",
                 "model" => "rocket-3-storm-gt",
                 "category" => "rocket-3",

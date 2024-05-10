@@ -27,13 +27,13 @@
             @endif
 
             <x-form.section-layout sectionId="1">
-                <x-form.text-input forId="title" placeholder="Title" dataName="title" oldValue="title" dataValue="{{ $latestCarousels->title }}"/>
+                <x-form.text-input forId="title" placeholder="Title" dataName="title" oldValue="title" dataValue="{{ $latestCarousels->title }}" imageDesc="images/latestCarousel/title.png"/>
 
-                <x-form.textarea forId="desc" placeholder="Description" dataName="desc" oldValue="desc" dataValue="{{ $latestCarousels->desc }}"/>
+                <x-form.textarea forId="desc" placeholder="Description" dataName="desc" oldValue="desc" dataValue="{{ $latestCarousels->desc }}" imageDesc="images/latestCarousel/description.png"/>
 
-                <x-form.text-input forId="url" placeholder="URL" dataName="url" oldValue="url" dataValue="{{ $latestCarousels->url }}"/>
+                <x-form.text-input forId="url" placeholder="URL" dataName="url" oldValue="url" dataValue="{{ $latestCarousels->url }}" imageDesc="images/latestCarousel/URL.png"/>
 
-                <x-form.input labelText="Image URL:" imageId="image" name="image">
+                <x-form.input labelText="Image URL:" imageId="image" name="image" imageDesc="images/latestCarousel/image.png">
                     <img id='image' src="{{ $latestCarousels->image }}" width="200" height="150" class="object-cover border m-3 border-gray-200"/>
                 </x-form.input>
             </x-form.section-layout>

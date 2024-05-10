@@ -25,7 +25,8 @@
                 <x-form.text-input forId="title" placeholder="Title"
                                    dataName="title"
                                    oldValue="title"
-                                   dataValue="{{ $promo->title }}"/>
+                                   dataValue="{{ $promo->title }}"
+                                   imageDesc="images/promo/title.png"/>
 
                 <x-form.select-sub-family forId="subFamilyType" placeholder="Sub Family Type"
                                           dataName="subFamilyType"
@@ -36,10 +37,11 @@
                 <x-form.textarea forId="desc" placeholder="Description"
                                  dataName="desc"
                                  oldValue="desc"
-                                 dataValue="{{ $promo->desc }}"/>
+                                 dataValue="{{ $promo->desc }}"
+                                 imageDesc="images/promo/description.png"/>
 
                 <x-form.input labelText="Image:" imageId="image"
-                              name="image">
+                              name="image" imageDesc="images/promo/image.png">
                     <img id='image' src="{{ $promo->image }}" width="200" height="150"
                          class="object-cover border m-3 border-gray-200"/>
                 </x-form.input>
@@ -51,7 +53,7 @@
                         <option value="0" class="bg-white hover:bg-gray-100" {{ old('btnBlack', $promo->btnBlack) == '0' ? 'selected' : '' }}>No</option>
                     </select>
                     <div>
-                        <x-form.modal id="btnBlack" name="Button Black:" imagePath=""/>
+                        <x-form.modal id="btnBlack" name="Button Black:" imagePath="images/promo/button.png"/>
                     </div>
                 </div>
             </x-form.section-layout>

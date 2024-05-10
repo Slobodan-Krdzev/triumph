@@ -19,10 +19,9 @@
                 <h1 class="font-bold text-3xl my-2">Base Info</h1>
 
                 <x-form.text-input forId="title" placeholder="Title" dataName="title" oldValue="title"
-                                   dataValue="{{ $moto->title ?? '' }}"/>
+                                   dataValue="{{ $moto->title ?? '' }}" imageDesc="images/motorcycle/title.png"/>
 
-                <x-form.text-input forId="model" placeholder="Model" dataName="model" oldValue="model"
-                                   dataValue="{{ $moto->model ?? '' }}"/>
+                <input name="model" type="hidden"/>
 
                 <x-form.select-family forId="category" placeholder="Category" dataName="category" :families="$families" :type="$moto->category"/>
 
@@ -30,17 +29,18 @@
                                           :subFamilies="$subFamilies" :subFamilyName="$moto->subFamilyCategory"/>
 
                 <x-form.text-input forId="edition" placeholder="Edition" dataName="edition" oldValue="edition"
-                                   dataValue="{{ $moto->edition ?? '' }}"/>
+                                   dataValue="{{ $moto->edition ?? '' }}" imageDesc="images/motorcycle/edition.png"/>
+                <p class="text-md text-gray-500">(Ако е од фамилија Classics се става од опциите(400cc, 900cc, 1200cc) ако не се става името на фамилијата)</p>
 
                 <x-form.text-input forId="price" placeholder="Price" dataName="price" oldValue="price"
-                                   dataValue="{{ $moto->price ?? '' }}"/>
+                                   dataValue="{{ $moto->price ?? '' }}" imageDesc="images/motorcycle/price.png"/>
             </x-form.section-layout>
 
             <!-- Section 2 -->
             <x-form.section-layout sectionId="2">
                 <h1 class="font-bold text-3xl my-2">Gallery</h1>
 
-                <x-form.input labelText="Gallery Model Image:" imageId="modelImageUrl" name="gallery[modelImage][src]">
+                <x-form.input labelText="Gallery Model Image:" imageId="modelImageUrl" name="gallery[modelImage][src]" imageDesc="images/motorcycle/galleryModelImage.png">
                     <img id='modelImageUrl' src="{{ $moto->gallery['modelImage']['src'] ?? '' }}" width="200"
                          height="150"
                          class="object-cover border m-3 border-gray-200"/>
@@ -48,11 +48,11 @@
 
                 <x-form.text-input forId="gallery_modelImage_alt" placeholder="Gallery Model Image Alt Text"
                                    dataName="gallery[modelImage][alt]" oldValue="gallery.modelImage.alt"
-                                   dataValue="{{ $moto->gallery['modelImage']['alt'] ?? '' }}"/>
+                                   dataValue="{{ $moto->gallery['modelImage']['alt'] ?? '' }}" imageDesc="images/motorcycle/galleryModelImage.png"/>
 
                 <x-form.text-input forId="gallery[promoYoutubeVideo][src]" placeholder="Promo Youtube Video URL"
                                    dataName="gallery[promoYoutubeVideo][src]" oldValue="gallery.promoYoutubeVideo.src"
-                                   dataValue="{{ $moto->gallery['promoYoutubeVideo']['src'] ?? '' }}"/>
+                                   dataValue="{{ $moto->gallery['promoYoutubeVideo']['src'] ?? '' }}" imageDesc="images/motorcycle/youtubeVideoPromo.png"/>
 
 
 
@@ -60,7 +60,7 @@
                                    placeholder="Promo Youtube Video Alt Text"
                                    dataName="gallery[promoYoutubeVideo][alt]"
                                    oldValue="gallery.promoYoutubeVideo.alt"
-                                   dataValue="{{ $moto->gallery['promoYoutubeVideo']['alt'] ?? '' }}"/>
+                                   dataValue="{{ $moto->gallery['promoYoutubeVideo']['alt'] ?? '' }}" imageDesc="images/motorcycle/youtubeVideoPromo.png"/>
             </x-form.section-layout>
 
             <!-- Section 3 -->
@@ -76,29 +76,31 @@
                                 <x-form.text-input forId="color_{{ $i }}_name" placeholder="Color {{ $i + 1 }} Name"
                                                    dataName="customizationColors[{{ $i }}][colorName]"
                                                    oldValue="customizationColors.{{ $i }}.colorName"
-                                                   dataValue="{{ $moto->customizationColors[$i]['colorName'] ?? '' }}"/>
+                                                   dataValue="{{ $moto->customizationColors[$i]['colorName'] ?? '' }}"
+                                                   imageDesc="images/motorcycle/customizationColorName.png"/>
 
                                 <x-form.text-input forId="color_{{ $i }}_price" placeholder="Color {{ $i + 1 }} Price"
                                                    dataName="customizationColors[{{ $i }}][price]"
                                                    oldValue="customizationColors.{{ $i }}.price"
-                                                   dataValue="{{ $moto->customizationColors[$i]['price'] ?? '' }}"/>
+                                                   dataValue="{{ $moto->customizationColors[$i]['price'] ?? '' }}"
+                                                   imageDesc="images/motorcycle/customizationColorPrice.png"/>
 
                                 <x-form.input labelText="Color {{ $i + 1 }} Image:" imageId="color_{{ $i }}_image"
-                                              name="customizationColors[{{ $i }}][image]">
+                                              name="customizationColors[{{ $i }}][image]" imageDesc="images/motorcycle/customizationColorImage.png">
                                     <img id='color_{{ $i }}_image' src="{{ $moto->customizationColors[$i]['image'] ?? '' }}"
                                          width="200" height="150"
                                          class="object-cover border m-3 border-gray-200"/>
                                 </x-form.input>
 
                                 <x-form.input labelText="Color {{ $i + 1 }} Base Motorcycle Image:" imageId="color_{{ $i }}_base_image"
-                                              name="customizationColors[{{ $i }}][base]">
+                                              name="customizationColors[{{ $i }}][base]" imageDesc="images/motorcycle/customizationBaseMotorcycleColor.png">
                                     <img id='color_{{ $i }}_base_image' src="{{ $moto->customizationColors[$i]['base'] ?? '' }}" width="200" height="150"
                                          class="object-cover border m-3 border-gray-200" />
                                 </x-form.input>
 
 
                                 <x-form.input labelText="Color {{ $i + 1 }} Reversed Motorcycle Image:" imageId="color_{{ $i }}_reversed_image"
-                                              name="customizationColors[{{ $i }}][reversed]">
+                                              name="customizationColors[{{ $i }}][reversed]" imageDesc="images/motorcycle/customizationReversedMotorcyclesColor.png">
                                     <img id='color_{{ $i }}_reversed_image' src="{{ $moto->customizationColors[$i]['reversed'] ?? '' }}" width="200" height="150"
                                          class="object-cover border m-3 border-gray-200" />
                                 </x-form.input>
@@ -113,27 +115,29 @@
 
                             <x-form.text-input forId="color_0_name" placeholder="Color 1 Name"
                                                dataName="customizationColors[0][colorName]"
-                                               oldValue="customizationColors.0.colorName"/>
+                                               oldValue="customizationColors.0.colorName"
+                                               imageDesc="images/motorcycle/customizationColorName.png"/>
 
                             <x-form.text-input forId="color_0_price" placeholder="Color 1 Price"
                                                dataName="customizationColors[0][price]"
-                                               oldValue="customizationColors.0.price"/>
+                                               oldValue="customizationColors.0.price"
+                                               imageDesc="images/motorcycle/customizationColorPrice.png"/>
 
                             <x-form.input labelText="Color 1 Image:" imageId="color_0_image"
-                                          name="customizationColors[0][image]">
+                                          name="customizationColors[0][image]" imageDesc="images/motorcycle/customizationColorImage.png">
                                 <img id='color_0_image' width="200" height="150"
                                      class="object-cover border m-3 border-gray-200"/>
                             </x-form.input>
 
                             <x-form.input labelText="Color 1 Base Motorcycle Image:" imageId="color_0_base_image"
-                                          name="customizationColors[0][base]">
+                                          name="customizationColors[0][base]" imageDesc="images/motorcycle/customizationBaseMotorcycleColor.png">
                                 <img id='color_0_base_image' width="200" height="150"
                                      class="object-cover border m-3 border-gray-200" />
                             </x-form.input>
 
 
                             <x-form.input labelText="Color 1 Reversed Motorcycle Image:" imageId="color_0_reversed_image"
-                                          name="customizationColors[0][reversed]">
+                                          name="customizationColors[0][reversed]" imageDesc="images/motorcycle/customizationReversedMotorcyclesColor.png">
                                 <img id='color_0_reversed_image' width="200" height="150"
                                      class="object-cover border m-3 border-gray-200" />
                             </x-form.input>
@@ -149,13 +153,13 @@
 
                 <x-form.text-input forId="shortSpecInfo_info1" placeholder="Short Spec Info 1"
                                    dataName="shortSpecInfo[info1]" oldValue="shortSpecInfo.info1"
-                                   dataValue="{{ $moto->shortSpecInfo['info1'] ?? '' }}"/>
+                                   dataValue="{{ $moto->shortSpecInfo['info1'] ?? '' }}" imageDesc="images/motorcycle/shortSpecInfo.png"/>
                 <x-form.text-input forId="shortSpecInfo_info2" placeholder="Short Spec Info 2"
                                    dataName="shortSpecInfo[info2]" oldValue="shortSpecInfo.info2"
-                                   dataValue="{{ $moto->shortSpecInfo['info2'] ?? '' }}"/>
+                                   dataValue="{{ $moto->shortSpecInfo['info2'] ?? '' }}" imageDesc="images/motorcycle/shortSpecInfo.png"/>
                 <x-form.text-input forId="shortSpecInfo_info3" placeholder="Short Spec Info 3"
                                    dataName="shortSpecInfo[info3]" oldValue="shortSpecInfo.info3"
-                                   dataValue="{{ $moto->shortSpecInfo['info3'] ?? '' }}"/>
+                                   dataValue="{{ $moto->shortSpecInfo['info3'] ?? '' }}" imageDesc="images/motorcycle/shortSpecInfo.png"/>
             </x-form.section-layout>
 
             <!-- Section 5 -->
@@ -164,11 +168,11 @@
 
                 <x-form.text-input forId="subFamilyPromo_title" placeholder="Sub Family Promo Title"
                                    dataName="subFamilyPromo[title]" oldValue="subFamilyPromo.title"
-                                   dataValue="{{ $moto->subFamilyPromo['title'] ?? '' }}"/>
+                                   dataValue="{{ $moto->subFamilyPromo['title'] ?? '' }}" imageDesc="images/motorcycle/subFamilyPromoTitle.png"/>
 
                 <x-form.text-input forId="subFamilyPromo_desc" placeholder="Sub Family Promo Description"
                                    dataName="subFamilyPromo[desc]" oldValue="subFamilyPromo.desc"
-                                   dataValue="{{ $moto->subFamilyPromo['desc'] ?? '' }}"/>
+                                   dataValue="{{ $moto->subFamilyPromo['desc'] ?? '' }}" imageDesc="images/motorcycle/subFamilyPromoDescription.png"/>
             </x-form.section-layout>
 
             <!-- Section 6 -->
@@ -176,7 +180,7 @@
                 <x-form.dynamic-text-inputs header="Bike Page Info" divId="bikePageInfoFields"
                                             dataId1="info-desc" dataLabel1="description" dataName="bikePageInfo"
                                             :databaseData="$moto->bikePageInfo"
-                                            fieldClass="add-field"/>
+                                            fieldClass="add-field" imageDesc1="images/motorcycle/bikePageInfo.png"/>
             </x-form.section-layout>
 
             <!-- Section 7 -->
@@ -186,7 +190,8 @@
                                             dataName="features"
                                             dataId2="features_desc" dataLabel2="desc"
                                             :databaseData="$moto->features"
-                                            fieldClass="add-two-fields"/>
+                                            fieldClass="add-two-fields"
+                                            imageDesc1="images/motorcycle/featuresTitle.png" imageDesc2="images/motorcycle/featuresDescription.png"/>
             </x-form.section-layout>
 
             <!-- Section 8 -->
@@ -196,7 +201,8 @@
                                             dataName="bikePageCarousell"
                                             dataId2="bikePageCarousell_desc" dataLabel2="desc" imgLabel="Image"
                                             :databaseData="$moto->bikePageCarousell"
-                                            fieldClass="add-two-fields-and-img"/>
+                                            fieldClass="add-two-fields-and-img"
+                                            imageDesc1="images/motorcycle/bikePageCaroTitle.png" imageDesc2="images/motorcycle/bikePageCaroDescription.png" imageDesc3="images/motorcycle/bikePageCaroImage.png"/>
             </x-form.section-layout>
 
             <!-- Section 9 -->
@@ -205,7 +211,8 @@
                                             dataId1="bikePagePromo_title" dataLabel1="title" dataName="bikePagePromo"
                                             dataId2="bikePagePromo_desc" dataLabel2="desc" imgLabel="Image"
                                             :databaseData="$moto->bikePagePromo"
-                                            fieldClass="add-two-fields-and-img"/>
+                                            fieldClass="add-two-fields-and-img"
+                                            imageDesc1="images/motorcycle/bikePagePromoTitle.png" imageDesc2="images/motorcycle/bikePagePromoDescription.png" imageDesc3="images/motorcycle/bikePagePromoImage.png"/>
             </x-form.section-layout>
 
             <!-- Section 10 -->
@@ -219,10 +226,11 @@
                                 <x-form.text-input forId="bikePageImageGallery_{{ $i }}_alt" placeholder="Image {{ $i + 1 }} Alt"
                                                    dataName="bikePageImageGallery[{{ $i }}][alt]"
                                                    oldValue="bikePageImageGallery.{{ $i }}.alt"
-                                                   dataValue="{{ $moto->bikePageImageGallery[$i]['alt'] ?? '' }}"/>
+                                                   dataValue="{{ $moto->bikePageImageGallery[$i]['alt'] ?? '' }}"
+                                                   imageDesc="images/motorcycle/bikePageImageGallery.png"/>
 
                                 <x-form.input labelText="Image {{ $i + 1 }} Src:" imageId="bikePageImageGallery_{{ $i }}_src"
-                                              name="bikePageImageGallery[{{ $i }}][src]">
+                                              name="bikePageImageGallery[{{ $i }}][src]"  imageDesc="images/motorcycle/bikePageImageGallery.png">
                                     <img id='bikePageImageGallery_{{ $i }}_src' src="{{ $moto->bikePageImageGallery[$i]['src'] ?? '' }}" width="200" height="150"
                                          class="object-cover border m-3 border-gray-200"/>
                                 </x-form.input>
@@ -235,10 +243,10 @@
                         <div>
                             <x-form.text-input forId="bikePageImageGallery_0_alt" placeholder="Image 1 Alt"
                                                dataName="bikePageImageGallery[0][alt]"
-                                               oldValue="bikePageImageGallery.0.alt"/>
+                                               oldValue="bikePageImageGallery.0.alt"  imageDesc="images/motorcycle/bikePageImageGallery.png"/>
 
                             <x-form.input labelText="Image 1 Src:" imageId="bikePageImageGallery_0_src"
-                                          name="bikePageImageGallery[0][src]">
+                                          name="bikePageImageGallery[0][src]"  imageDesc="images/motorcycle/bikePageImageGallery.png">
                                 <img id='bikePageImageGallery_0_src' width="200" height="150"
                                      class="object-cover border m-3 border-gray-200"/>
                             </x-form.input>

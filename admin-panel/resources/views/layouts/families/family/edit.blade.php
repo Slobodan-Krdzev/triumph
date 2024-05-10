@@ -26,24 +26,27 @@
                 <h1 class="font-bold text-3xl my-2">Base Info</h1>
 
                 <x-form.text-input forId="type" placeholder="Type" dataName="type" oldValue="type"
-                                   dataValue="{{ $family->type }}"/>
+                                   dataValue="{{ $family->type }}"
+                                   imageDesc="images/family/type.png"/>
 
                 <x-form.input labelText="Main Bike Logo Image URL:" imageId="mainBikeLogoImage"
-                              name="mainBikeLogoImage[url]">
+                              name="mainBikeLogoImage[url]" imageDesc="images/family/mainBikeImageLogo.png">
                     <img id='mainBikeLogoImage' src="{{ $family['mainBikeLogoImage']['url'] ?? ''}}" width="200"
                          height="150" class="object-cover border m-3 border-gray-200"/>
                 </x-form.input>
 
                 <x-form.text-input forId="mainBikeLogoImageALt" placeholder="Main Bike Logo Image Alt"
                                    dataName="mainBikeLogoImage[alt]" oldValue="mainBikeLogoImage.alt"
-                                   dataValue="{{ $family->mainBikeLogoImage['alt'] ?? '' }}"/>
+                                   dataValue="{{ $family->mainBikeLogoImage['alt'] ?? '' }}"
+                                   imageDesc="images/family/mainBikeImageLogo.png"/>
 
                 <x-form.textarea forId="familyPageBannerDesc" placeholder="Family Page Banner Desc"
                                  dataName="familyPageBannerDesc" oldValue="familyPageBannerDesc"
-                                 dataValue="{{ $family->familyPageBannerDesc ?? ''}}"/>
+                                 dataValue="{{ $family->familyPageBannerDesc ?? ''}}"
+                                 imageDesc="images/family/familyPageBannerDescription.png"/>
 
                 <x-form.input labelText="Family Page Banner Video:" imageId="familyPageBannerVideo"
-                              name="familyPageBannerVideo">
+                              name="familyPageBannerVideo" imageDesc="images/family/familyPageBannerVideo.png">
                     <video src="{{ $family->familyPageBannerVideo }}" muted controls autoplay
                            id='familyPageBannerVideo' width="200" height="150"
                            class="object-cover border m-3 border-gray-200"/>
@@ -56,15 +59,17 @@
 
                 <x-form.textarea forId="configPageInfoDesc" placeholder="Config Page Info Description"
                                  dataName="configPageInfo[desc]" oldValue="configPageInfo.desc"
-                                 dataValue="{{ $family->configPageInfo['desc'] ?? ''}}"/>
+                                 dataValue="{{ $family->configPageInfo['desc'] ?? ''}}"
+                                 imageDesc="images/family/configPageInfo_desc.png"/>
 
                 <x-form.text-input forId="configPageInfoLink" placeholder="Config Page Info Link"
                                    dataName="configPageInfo[link]" oldValue="configPageInfo.link"
-                                   dataValue="{{ $family->configPageInfo['link'] ?? ''}}"/>
+                                   dataValue="{{ $family->configPageInfo['link'] ?? ''}}"
+                                   imageDesc="images/family/configPageInfo_link.png"/>
 
 
                 <x-form.input labelText="Config Family Page Info:" imageId="configFamilyPageInfoImageSrc"
-                              name="configFamilyPageInfo[image][src]">
+                              name="configFamilyPageInfo[image][src]" imageDesc="images/family/configPageInfo_image.png">
                     <img id='configFamilyPageInfoImageSrc'
                          src="{{ $family->configFamilyPageInfo['image']['src'] ?? '' }}"
                          width="200"
@@ -73,18 +78,22 @@
 
                 <x-form.text-input forId="configFamilyPageInfoImageAlt" placeholder="Config Family Page Info Image Alt"
                                    dataName="configFamilyPageInfo[image][alt]" oldValue="configFamilyPageInfo.image.alt"
-                                   dataValue="{{ $family->configFamilyPageInfo['image']['alt'] ?? ''}}"/>
+                                   dataValue="{{ $family->configFamilyPageInfo['image']['alt'] ?? ''}}"
+                                   imageDesc="images/family/configPageInfo_image.png"/>
 
                 <x-form.text-input forId="configFamilyPageInfoTitle" placeholder="Config Family Page Info Title"
                                    dataName="configFamilyPageInfo[title]" oldValue="configFamilyPageInfo.title"
-                                   dataValue="{{ $family->configFamilyPageInfo['title'] ?? ''}}"/>
+                                   dataValue="{{ $family->configFamilyPageInfo['title'] ?? ''}}"
+                                   imageDesc="images/family/configFamilyPageInfo_title.png"/>
 
                 <x-form.text-input forId="configFamilyPageInfoLink" placeholder="Config Family Page Info Link"
                                    dataName="configFamilyPageInfo[link]" oldValue="configFamilyPageInfo.link"
-                                   dataValue="{{ $family->configFamilyPageInfo['link'] ?? ''}}"/>
+                                   dataValue="{{ $family->configFamilyPageInfo['link'] ?? ''}}"
+                                   imageDesc="images/family/configFamilyPageInfo_link.png"/>
 
                 <x-form.text-input forId="youtubeVideo" placeholder="YouTube Video Link" dataName="youtubeVideo"
-                                   oldValue="youtubeVideo" dataValue="{{ $family->youtubeVideo ?? ''}}"/>
+                                   oldValue="youtubeVideo" dataValue="{{ $family->youtubeVideo ?? ''}}"
+                                   imageDesc="images/family/youtubeVideoURL.png"/>
             </x-form.section-layout>
 
             <!-- Section 3 -->
@@ -94,7 +103,8 @@
                 <section class="my-7 font-bold text-red-600">
                     <x-form.input labelText="Choose Audio" imageId="audioSection_audio"
                                   name="audioSection[audio]"
-                                  value="{{ old('audioSection.audio') }}">
+                                  value="{{ old('audioSection.audio') }}"
+                                  imageDesc="images/family/audioSection_audio.png">
                         <audio id="audioSection_audio" src="{{ $family->audioSection['audio'] ?? '' }}" controls
                                autoplay
                                muted type="audio/ogg">
@@ -104,14 +114,16 @@
 
                 <x-form.text-input forId="audioSection_title" placeholder="Audio Section Title"
                                    dataName="audioSection[title]" oldValue="audioSection.title"
-                                   dataValue="{{ $family->audioSection['title'] ?? ''}}"/>
+                                   dataValue="{{ $family->audioSection['title'] ?? ''}}"
+                                   imageDesc="images/family/audioSection_title.png"/>
 
                 <x-form.textarea forId="audioSection_desc" placeholder="Audio Section Description"
                                  dataName="audioSection[desc]" oldValue="audioSection.desc"
-                                 dataValue="{{ $family->audioSection['desc'] ?? ''}}"/>
+                                 dataValue="{{ $family->audioSection['desc'] ?? ''}}"
+                                 imageDesc="images/family/audioSection_desc.png"/>
 
                 <x-form.input labelText="Audio Section Logo" imageId="audioSection_logo"
-                              name="audioSection[logo]">
+                              name="audioSection[logo]" imageDesc="images/sub-family/audioSection_logo.png">
                     <img id='audioSection_logo' src="{{ $family->audioSection['logo'] ?? '' }}" width="200"
                          height="150" class="object-cover border m-3 border-gray-200"/>
                 </x-form.input>
@@ -123,7 +135,10 @@
                                             dataId1="grayCarousell_title" dataLabel1="title" dataName="grayCaro"
                                             dataId2="grayCarousell_desc" dataLabel2="desc" imgLabel="Image"
                                             :databaseData="$family->grayCaro"
-                                            fieldClass="add-two-fields-and-img"/>
+                                            fieldClass="add-two-fields-and-img"
+                                            imageDesc1="images/family/grayCarousel_title.png"
+                                            imageDesc2="images/family/grayCarousel_desc.png"
+                                            imageDesc3="images/family/grayCarousel_image.png"/>
             </x-form.section-layout>
 
             <button type="submit" class="w-full my-5 bg-yellow-300 hover:bg-yellow-200 shadow rounded p-4">Update
