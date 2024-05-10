@@ -783,7 +783,7 @@ class SubFamiliesSeeder extends Seeder
                     ["data" => "60+", "info" => "Аксесоари"],
                 ],
                 "subFamilyPageInfo" => [
-                    "soundSection" => [
+                    "audioSection" => [
                         "desc" =>
                             "Уникатен звук произведен од три-цилиндричниот мотор со T-crank радалица.",
                         "audio" => "/images/adventure/tiger850Sport/tigerSound.mp3",
@@ -6682,7 +6682,7 @@ class SubFamiliesSeeder extends Seeder
                     ["data" => "16,000км", "info" => "С. Интервал"],
                 ],
                 "subFamilyPageInfo" => [
-                    "soundSection" => [
+                    "audioSection" => [
                         "audio" => "/images/rocket-3/rocketSound.mp3",
                         "title" => "Неверојатен Звук",
                         "desc" =>
