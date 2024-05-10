@@ -13,13 +13,19 @@ type TopSectionProps = {
 const TopSection = ({ title, desc, subtitle, image, bgImage }: TopSectionProps) => {
   return (
     <section className="relative pt-16">
+<<<<<<< HEAD
       <div className="lg:w-6/12 pb-4 lg:pb-16 lg:px-56 px-4">
         <SectionTitleH2 text={title ?? ""} color={"dark"} />
         <PageParagraph text={desc ?? ""} />
+=======
+      <div className="xl:w-6/12 pb-4 lg:pb-16 md:px-32 lg:px-56 px-4">
+        <SectionTitleH2 text={title} color={"dark"} />
+        <PageParagraph text={desc} />
+>>>>>>> 07b969689c18fbab99e2ccde41273fdafd736d47
       </div>
 
-      <div className="flex flex-col lg:flex-row  items-center xl:px-56 px-4" >
-        <Image src={image} alt={subtitle} height={788} width={630} />
+      <div className="flex flex-col lg:flex-row  items-center xl:px-56 px-4 py-20" >
+        <Image src={image} alt={subtitle} height={788} width={1030} className="w-full lg:w-8/12 xl:w-10/12"/>
         <h2 className="2xl:text-6xl lg:text-3xl text-2xl mt-8 xl:mt-0 font-semibold uppercase xl:pl-20 lg:pl-16 order-1 xl:order-2">{subtitle}</h2>
       </div>
 

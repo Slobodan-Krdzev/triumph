@@ -26,7 +26,7 @@ const SubFamReasonsToRidePage = async ({ params }: any) => {
         <section
         className="relative"
           style={{
-            backgroundImage: `url("${subFamily.reasonsToDrive.banner.image}")`,
+            backgroundImage: `url("${subFamily?.reasonsToDrive?.banner?.image ?? "/images/triumphLogo.png"}")`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
@@ -47,33 +47,33 @@ const SubFamReasonsToRidePage = async ({ params }: any) => {
           </div>
         </section>
         <main className="px-4">
-          {subFamily.reasonsToDrive.infoText && (
+          {subFamily?.reasonsToDrive.infoText && (
             <div className="md:w-10/12 lg:w-6/12 m-auto md:py-16 py-8 text-center">
               <SectionTitleH2
-                text={subFamily.reasonsToDrive.infoText?.title ?? ""}
+                text={subFamily?.reasonsToDrive?.infoText?.title ?? "Зошто баш Triumph?"}
                 color={"dark"}
               />
               <p className="font-normal md:text-lg text-md">
-                {subFamily.reasonsToDrive.infoText?.desc ?? ""}
+                {subFamily?.reasonsToDrive?.infoText?.desc ?? ""}
               </p>
             </div>
           )}
 
-          {subFamily.reasonsToDrive.reasons && <ReasonsListin reasons={subFamily.reasonsToDrive.reasons ?? []} />}
+          {subFamily?.reasonsToDrive?.reasons && <ReasonsListin reasons={subFamily.reasonsToDrive.reasons ?? []} />}
           
 
           {bikesData.map((bike: any) => (
             <BikeInfoTextImageBtn
               key={bike.id}
-              title={bike.title}
-              desc={bike.subFamilyPromo.desc}
+              title={bike?.title ?? "Triumph"}
+              desc={bike?.subFamilyPromo.desc ?? "Triumph"}
               ctaBtn={{
                 text: "КОнфигурација",
                 link: `/configure/bike/${bike.model}`,
               }}
               image={{
-                src: bike.gallery.modelImage.src,
-                alt: bike.gallery.modelImage.alt,
+                src: bike?.gallery?.modelImage?.src ?? "/images/triumphLogo.png",
+                alt: bike?.gallery?.modelImage?.alt ?? "Triumph",
               }}
               blackBtn={true}
             />

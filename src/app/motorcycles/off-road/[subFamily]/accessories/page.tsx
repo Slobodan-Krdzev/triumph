@@ -23,27 +23,27 @@ const SubFamReasonsToRide = async ({ params }: any) => {
     return (
       <>
         <SecondaryPagesHeroSection
-          bannerImage={subFamily.accessory.banner.image}
-          subFamilyTitle={formulateSubFamilyTitleOnBanner(subFam)}
-          subFamily={subFamily}
+          bannerImage={subFamily?.accessory?.banner?.image ?? "/images/triumphLogo.png"}
+          subFamilyTitle={formulateSubFamilyTitleOnBanner(subFam) ?? 'Triumph Motocross'}
+          subFamily={subFamily ?? "Triumph Motocross"}
           text={`Аксесоари`}
         />
 
         <main className="px-4 md:px-16 lg:px-40">
-          <AccessoriesListing items={subFamily.accessory.accessoryTypes} />
+          <AccessoriesListing items={subFamily?.accessory?.accessoryTypes ?? []} />
 
           {bikesData.map((bike: any) => (
             <BikeInfoTextImageBtn
-              key={bike.id}
-              title={bike.title}
-              desc={bike.subFamilyPromo.desc ?? ""}
+              key={bike?.id}
+              title={bike?.title}
+              desc={bike?.subFamilyPromo.desc ?? ""}
               ctaBtn={{
                 text: "Кoнфигурација",
-                link: `/configure/bike/${bike.model}`,
+                link: `/configure/bike/${bike?.model}`,
               }}
               image={{
-                src: bike.gallery.modelImage?.src ?? "",
-                alt: bike.gallery.modelImage?.alt ?? "Bike Image",
+                src: bike?.gallery?.modelImage?.src ?? "/images/triumphLogo.png",
+                alt: bike?.gallery?.modelImage?.alt ?? "Bike Image",
               }}
               blackBtn={true}
             />

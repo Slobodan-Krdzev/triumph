@@ -22,7 +22,7 @@ const ReasonsRocketPage = async () => {
     return (
       <>
         <SecondaryPagesHeroSection
-          bannerImage={subFamily.reasonsToDrive.banner.image}
+          bannerImage={subFamily?.reasonsToDrive?.banner?.image ?? "/images/triumphLogo.png"}
           subFamilyTitle={"rocket-3"}
           text={`Детали`}
         />
@@ -30,30 +30,35 @@ const ReasonsRocketPage = async () => {
         <main className="px-4">
           <div className="md:w-10/12 lg:w-5/12 m-auto pt-8">
             <SectionTitleH2
-              text={subFamily.reasonsToDrive.infoText.title}
+              text={subFamily?.reasonsToDrive?.infoText?.title ?? "Rocket-3"}
               color={"dark"}
             />
             <p className="font-normal md:text-lg text-md">
-              {subFamily.reasonsToDrive.infoText.desc}
+              {subFamily?.reasonsToDrive?.infoText?.desc ?? "Triumph Rocket-3"}
             </p>
           </div>
 
-          {subFamily.reasonsToDrive.reasons && (
-            <ReasonsListin reasons={subFamily.reasonsToDrive.reasons} />
+          {subFamily?.reasonsToDrive?.reasons && (
+            <ReasonsListin reasons={subFamily?.reasonsToDrive?.reasons ?? []} />
           )}
 
-          {bikesData.map((bike: any) => (
+          {bikesData?.map((bike: any) => (
             <BikeInfoTextImageBtn
               key={bike.id}
-              title={bike.title}
-              desc={bike.subFamilyPromo.desc}
+              title={bike?.title ?? "Triumph Rocket-3"}
+              desc={bike?.subFamilyPromo?.desc ?? "Triumph Rocket-3"}
               ctaBtn={{
                 text: "КОнфигурација",
                 link: `/configure/bike/${bike.model}`,
               }}
               image={{
+<<<<<<< HEAD
                 src: bike.gallery?.modelImage?.src ?? "",
                 alt: bike.gallery?.modelImage?.alt ?? "",
+=======
+                src: bike?.gallery?.modelImage?.src ?? "/images/triumphLogo.png",
+                alt: bike?.gallery?.modelImage?.alt ?? "/images/triumphLogo.png",
+>>>>>>> 07b969689c18fbab99e2ccde41273fdafd736d47
               }}
               blackBtn={true}
             />

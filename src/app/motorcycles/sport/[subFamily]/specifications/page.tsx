@@ -32,7 +32,7 @@ const SpecsSportPage = async ({ params }: any) => {
             />
           </div>
 
-          <SpecsTable specs={subFamily ?? []} />
+          <SpecsTable specs={subFamily} />
         </main>
       </>
     );

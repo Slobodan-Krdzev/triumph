@@ -26,49 +26,49 @@ const SubFamReasonsToRide = async ({ params }: any) => {
     return (
       <>
         <SecondaryPagesHeroSection
-          bannerImage={subFamily.accessory.banner.image}
+          bannerImage={subFamily?.accessory?.banner?.image ?? "/images/triumphLogo.png"}
           subFamilyTitle={formulateSubFamilyTitleOnBanner(subFam.toUpperCase())}
           text={`Аксесоари`}
         />
 
         <main className="px-4 md:px-16 lg:px-40">
 
-          {subFamily.accessory.infoText && 
+          {subFamily?.accessory?.infoText && 
             <section className="m-auto md:w-6/12 pt-4 md:pt-8 lg:pt-16 text-center">
-                <SectionTitleH2 text={subFamily.accessory.infoText.title ?? ""} color="dark"/>
-                <PageParagraph text={subFamily.accessory.infoText.desc ?? ""}/>
+                <SectionTitleH2 text={subFamily?.accessory?.infoText?.title ?? "Triumph"} color="dark"/>
+                <PageParagraph text={subFamily?.accessory?.infoText?.desc ?? "Triumph Tiger"}/>
             </section>
           }
             
 
-          {subFamily.accessory.accessoryTypes && (
+          {subFamily?.accessory?.accessoryTypes && (
             <AccessoriesListing
-              items={subFamily.accessory.accessoryTypes ?? []}
+              items={subFamily?.accessory?.accessoryTypes ?? []}
             />
           )}
 
-          {subFamily.subFamilyName !== "tiger-900" &&
+          {subFamily?.subFamilyName !== "tiger-900" &&
             bikes.map((bike: any) => (
               <BikeInfoTextImageBtn
                 key={bike.id}
-                title={bike.title}
-                desc={bike.subFamilyPromo.desc ?? ""}
+                title={bike?.title ?? "Triumph"}
+                desc={bike?.subFamilyPromo?.desc ?? "Triumph Tiger"}
                 ctaBtn={{
                   text: "Кoнфигурација",
                   link: `/configure/bike/${bike.model}`,
                 }}
                 image={{
-                  src: bike.gallery.modelImage?.src ?? "",
-                  alt: bike.gallery.modelImage?.alt ?? "Bike Image",
+                  src: bike.gallery.modelImage?.src ?? "/images/triumphLogo.png",
+                  alt: bike.gallery.modelImage?.alt ?? "Triumph Bike Image",
                 }}
                 blackBtn={true}
               />
             ))}
 
-          {subFamily.subFamilyName === "tiger-900" && (
+          {subFamily?.subFamilyName === "tiger-900" && (
             <section className="text-center">
               <SectionTitleH2 color="dark" text="Одберете го вашиот фаворит!" />
-              <BikeListingNoSlider bikes={bikes} configureLink={true} />
+              <BikeListingNoSlider bikes={bikes ?? []} configureLink={true} />
             </section>
           )}
         </main>

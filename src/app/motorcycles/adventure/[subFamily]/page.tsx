@@ -23,23 +23,22 @@ const SubFamilyPage = async ({ params }: any) => {
     const subFamilyData = await subFamilyRes.json();
     const subFamily = subFamilyData[0];
 
-    const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${query}`,{
+    const bikesRes = await fetch(`${BIKES}?subFamilyCategory=${query}`, {
       next: { revalidate: 30 },
     });
     const bikes = await bikesRes.json();
 
     return (
       <>
-         <HeroSection
-          video={subFamily.gallery.subFamilyHeroVideo.src}
-          mobileImage={subFamily.gallery.subFamilyHeroImageMobile?.src ?? "/"}
+        <HeroSection
+          video={subFamily?.gallery?.subFamilyHeroVideo?.src ?? ""}
+          mobileImage={subFamily?.gallery?.subFamilyHeroImageMobile?.src ?? ""}
           model={formulateSubFamilyTitleOnBanner(query)}
-          slogans={subFamily.heroSlogans ?? []}
+          slogans={subFamily?.heroSlogans ?? ["Triumph", "Adventure", "Tiger"]}
         />
 
         <main className="bg-white">
-          
-          {subFamily.subFamilyName === "tiger-900" && (
+          {subFamily?.subFamilyName === "tiger-900" && (
             <section className="bg-secondary m-auto w-11/12 md:w-10/12 lg:w-7/12 py-4 md:py-8 lg:py-16 text-center">
               <h1 className="text-3xl md:text-6xl font-semibold uppercase mb-4 md:mb-8">
                 Новата Τiger 900 Серија
@@ -63,27 +62,31 @@ const SubFamilyPage = async ({ params }: any) => {
             </section>
           )}
 
-          {subFamily.subFamilyName === "tiger-900" && (
+          {subFamily?.subFamilyName === "tiger-900" && (
             <section className="text-center">
               <SectionTitleH2 color="dark" text="Одберете го вашиот фаворит!" />
-              <BikeListingNoSlider bikes={bikes} configureLink={true} />
+              <BikeListingNoSlider bikes={bikes ?? []} configureLink={true} />
             </section>
           )}
 
-          
-          {subFamily.topSection && (
+          {subFamily?.topSection && (
             <TopSection
-              title={subFamily.topSection.title}
-              desc={subFamily.topSection.desc}
-              subtitle={subFamily.topSection.subtitle}
-              image={subFamily.gallery.subFamilyTopSectionImage.src}
-              bgImage={subFamily.gallery.subFamilyTopSectionBGImage.src}
+              title={subFamily?.topSection?.title ?? "Triumph"}
+              desc={subFamily?.topSection?.desc ?? "Triumph Adventure Tiger"}
+              subtitle={subFamily?.topSection?.subtitle ?? "Triumph Tiger"}
+              image={
+                subFamily?.gallery.subFamilyTopSectionImage.src ??
+                "/images/triumphLogo.png"
+              }
+              bgImage={
+                subFamily?.gallery.subFamilyTopSectionBGImage.src ?? "Triumph"
+              }
             />
           )}
 
-          {Boolean(
-            subFamily.subFamilyName === "tiger-1200-rally" ||
-              subFamily.subFamilyName === "tiger-1200-gt"
+          {/* {Boolean(
+            subFamily?.subFamilyName === "tiger-1200-rally" ||
+              subFamily?.subFamilyName === "tiger-1200-gt"
           ) && (
             <section
               className={`flex flex-col lg:flex-row justify-between items-center lg:gap-8 gap-4 py-4 md:py-8 lg:py-16 m-auto w-11/12 md:w-8/12 lg:w-9/12`}
@@ -110,26 +113,38 @@ const SubFamilyPage = async ({ params }: any) => {
               </div>
 
               <div className={`basis-1/2 rounded-lg`}>
-                <iframe className="m-auto w-full rounded-sm shadow-2xl" width="955" height="537" src="https://www.youtube.com/embed/1_NEKTuBbMQ" title="Web | Tiger 1200 MY24 Suspension" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                <iframe
+                  className="m-auto w-full rounded-sm shadow-2xl"
+                  width="955"
+                  height="537"
+                  src="https://www.youtube.com/embed/1_NEKTuBbMQ"
+                  title="Web | Tiger 1200 MY24 Suspension"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
               </div>
             </section>
-          )}
+          )} */}
 
-          {subFamily.subFamilyName !== "tiger-900" && (
+          {subFamily?.subFamilyName !== "tiger-900" && (
             <section className="px-4 lg:px-20 xl:px-40">
               {bikes.map((bike: any) => (
                 <BikeInfoTextImageBtn
                   key={bike.id}
-                  title={bike.subFamilyPromo.title ?? bike.title}
-                  desc={bike.subFamilyPromo.desc ?? ""}
-                  desc2={bike.price && `Цени од: €${bike.price}.00`}
+                  title={bike?.subFamilyPromo?.title ?? bike?.title}
+                  desc={bike?.subFamilyPromo?.desc ?? ""}
+                  desc2={bike?.price && `Цени од: €${bike?.price}.00`}
                   ctaBtn={{
                     text: "Детали",
-                    link: `/motorcycles/adventure/${query}/${bike.model}`,
+                    link: `/motorcycles/adventure/${query}/${bike?.model}`,
                   }}
                   image={{
-                    src: `${bike.gallery.modelImage.src}`,
-                    alt: `${bike.gallery.modelImage.alt}`,
+                    src: `${
+                      bike?.gallery?.modelImage?.src ??
+                      "/images/triumphLogo.png"
+                    }`,
+                    alt: `${bike?.gallery?.modelImage?.alt ?? "Triumph"}`,
                   }}
                   blackBtn={true}
                   imageOnTheLeft={false}
@@ -140,15 +155,15 @@ const SubFamilyPage = async ({ params }: any) => {
           )}
         </main>
 
-        {subFamily.youtubeVideo && (
-          <YouTubePromo video={subFamily.youtubeVideo} />
+        {subFamily?.youtubeVideo && (
+          <YouTubePromo video={subFamily?.youtubeVideo ?? ""} />
         )}
 
-        {subFamily.grayCarousell && (
-          <BottomCarousell items={subFamily.grayCarousell} />
+        {subFamily?.grayCarousell && (
+          <BottomCarousell items={subFamily?.grayCarousell ?? []} />
         )}
 
-        {subFamily.subFamilyName === "tiger-900" && (
+        {subFamily?.subFamilyName === "tiger-900" && (
           <section className="gray-bg py-4 md:py-8 lg:py-16 text-center text-white">
             <p className="m-auto w-3/12 text-xl uppercase pb-4 mb-4 border-b-2 border-white">
               Tiger 900 - Лидер во Класата
@@ -174,26 +189,32 @@ const SubFamilyPage = async ({ params }: any) => {
           </section>
         )}
 
-      {subFamily.specNumbers && 
-        <NumbersSection
-        model={query}
-        specNumbers={subFamily.specNumbers}
-      />
-      }
-        
-
-        {subFamily.subFamilyPageInfo?.audioSection && (
-          <AudioSection
-            audio={subFamily.subFamilyPageInfo.audioSection.audio}
-            title={subFamily.subFamilyPageInfo.audioSection.title}
-            desc={subFamily.subFamilyPageInfo.audioSection.desc}
-            model={formulateSubFamilyTitleOnBanner(query)}
+        {subFamily?.specNumbers && (
+          <NumbersSection
+            model={query}
+            specNumbers={subFamily?.specNumbers ?? []}
           />
-        )} 
+        )}
+
+        {subFamily?.subFamilyPageInfo?.audioSection && (
+          <AudioSection
+            audio={subFamily?.subFamilyPageInfo?.audioSection?.audio ?? ""}
+            title={
+              subFamily?.subFamilyPageInfo?.audioSection?.title ??
+              "Triumph Три-Цилиндричен Звук"
+            }
+            desc={
+              subFamily?.subFamilyPageInfo?.audioSection?.desc ??
+              "Карактеристичен Три-Цилиндарски Британски Звук"
+            }
+            model={formulateSubFamilyTitleOnBanner(query ?? "Triumph")}
+            logo={subFamily?.subFamilyPageInfo?.audioSection?.logo}
+          />
+        )}
       </>
     );
   } catch (error) {
-    return redirect('/motorcycles/adventure');
+    return redirect("/motorcycles/adventure");
   }
 };
 

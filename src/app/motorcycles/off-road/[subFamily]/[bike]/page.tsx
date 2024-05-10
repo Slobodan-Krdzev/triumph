@@ -52,22 +52,22 @@ const OffRoadBikePage = async ({ params }: any) => {
               items={[
                 {
                   title: "Цена",
-                  desc: `${bike.price ? `€ ${bike.price.toLocaleString('en-EN')}` : "Наскоро"}`,
+                  desc: `${bike?.price ? `€ ${bike.price.toLocaleString('en-EN')}` : "Наскоро"}`,
                 },
               ]}
               title={"Цена"}
               isOpen={true}
             />
           </div>
-          <SpecsTable specs={subFam ?? []} />
+          <SpecsTable specs={subFam} />
         </section>
 
         <section className="bg-black">
-          {bike.gallery.promoYoutubeVideo && (
+          {bike?.gallery?.promoYoutubeVideo && (
             <PromoBikeYoutubeVideo
               bgBlack
-              video={bike.gallery.promoYoutubeVideo.src ?? ""}
-              alt={bike.gallery.promoYoutubeVideo.alt ?? "Promo Video"}
+              video={bike?.gallery?.promoYoutubeVideo?.src ?? ""}
+              alt={bike?.gallery?.promoYoutubeVideo?.alt ?? "Promo Video"}
             />
           )}
 
@@ -78,7 +78,7 @@ const OffRoadBikePage = async ({ params }: any) => {
             btnText={"Конфигурирај"}
           />
 
-          {bike.features && (
+          {bike?.features && (
             <SpecTableListi
               items={bike.features ?? []}
               title={"Карактеристики"}
@@ -86,7 +86,7 @@ const OffRoadBikePage = async ({ params }: any) => {
             />
           )}
 
-          {subFam.specNumbers && (
+          {subFam?.specNumbers && (
             <NumbersSection
               model={formulateSubFamilyTitleOnBanner(bike.model) ?? ""}
               specNumbers={subFam.specNumbers ?? []}
@@ -95,8 +95,8 @@ const OffRoadBikePage = async ({ params }: any) => {
           )}
         </section>
 
-        {bike.bikePageImageGallery && 
-            <BikeGalleyCarousell images={bike.bikePageImageGallery} />
+        {bike?.bikePageImageGallery && 
+            <BikeGalleyCarousell images={bike?.bikePageImageGallery ?? []} />
           }
 
         <section
@@ -110,8 +110,8 @@ const OffRoadBikePage = async ({ params }: any) => {
           }}
         ></section>
 
-        {bike.bikePageCarousell && (
-          <BikePageCarousell items={bike.bikePageCarousell} />
+        {bike?.bikePageCarousell && (
+          <BikePageCarousell items={bike?.bikePageCarousell ?? []} />
         )}
 
         <section

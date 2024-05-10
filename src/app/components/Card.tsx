@@ -47,7 +47,7 @@ const Card = ({ item, deleteBtn, updateGrg, handleBtn }: CardProps) => {
         </button>
       )}
       <div className="basis-2/6 border-thin-gray-bottom">
-        {item.gallery.modelImage && (
+        {item.gallery?.modelImage && (
           <Image
             src={item.gallery?.modelImage.src ?? "/images/triumphLogo.png"}
             alt={item.gallery?.modelImage.alt ?? "Triumph"}
@@ -59,24 +59,24 @@ const Card = ({ item, deleteBtn, updateGrg, handleBtn }: CardProps) => {
 
       <div className="mb-8 p-4 text-center flex flex-col justify-start basis-2/6 w-72">
         <h3 className="text-xl font-semibold uppercase tracking-tighter">
-          {item.title}
+          {item?.title ?? "Triumph"}
         </h3>
         <p className="text-md mb-4 font-medium">
-          {item.price === null ? "Цени Наскоро" : `€ ${item.price.toLocaleString('en-EN')} `}
+          {item?.price === null ? "Цени Наскоро" : `€ ${item.price.toLocaleString('en-EN')} `}
         </p>
 
-        {item.shortSpecInfo && (
+        {item?.shortSpecInfo && (
           <ul className="flex flex-col list-disc text-sm px-8 text-start">
-            {item.shortSpecInfo.info1 && <li>{item.shortSpecInfo.info1}</li>}
-            {item.shortSpecInfo.info2 && <li>{item.shortSpecInfo.info2}</li>}
-            {item.shortSpecInfo.info3 && <li>{item.shortSpecInfo.info3}</li>}
+            {item?.shortSpecInfo?.info1 && <li>{item?.shortSpecInfo?.info1 ?? "Triumph"}</li>}
+            {item?.shortSpecInfo?.info2 && <li>{item?.shortSpecInfo?.info2 ?? "Triumph"}</li>}
+            {item?.shortSpecInfo?.info3 && <li>{item?.shortSpecInfo?.info3 ?? "Triumph"}</li>}
           </ul>
         )}
       </div>
       <div className="flex border-thin-gray-top py-2 items-center text-center ">
         <Link
           href={`${
-            item.model
+            item?.model
               ? `/configure/bike/${item.model}`
               : `/configure/bikes/${item.subFamilyName}`
           }`}

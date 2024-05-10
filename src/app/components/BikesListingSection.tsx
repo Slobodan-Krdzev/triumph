@@ -56,13 +56,17 @@ const BikesListingSection = ({ bikes }: BikesListingSectionProps) => {
     }
   }, [query]);
 
-  return (
-    <section className="flex flex-wrap justify-center md:justify-between gap-8">
-      {bikesToRender.map((bike: any) => (
+  if (bikes.length > 0) {
+    return (
+      <section className="flex flex-wrap justify-center md:justify-between gap-8">
+        {bikesToRender.map((bike: any) => (
           <Card key={bike.id} item={bike} />
-      ))}
-    </section>
-  );
+        ))}
+      </section>
+    );
+  }
+
+  return <></>
 };
 
 export default BikesListingSection;

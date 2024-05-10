@@ -13,8 +13,6 @@ type AudioSectionProps = {
 
 const AudioSection = ({audio, title, desc, logo, model}:AudioSectionProps) => {
 
-  console.log(logo, "LOGO");
-  
   return (
     <section className="lg:px-8 px-4 md:py-12  bg">
       <div className="flex flex-col lg:flex-row justify-between m-auto w-full md:w-10/12">
@@ -25,9 +23,9 @@ const AudioSection = ({audio, title, desc, logo, model}:AudioSectionProps) => {
         <p className="mb-4 md:text-xl text-sm">
           {desc} 
         </p>
-        <p className="mb-4 md:text-2xl text-sm uppercase font-bold tracking-tighter">{model}</p>
+        <p className="mb-4 md:text-2xl text-sm uppercase font-bold tracking-tighter">{model.split("-").join(' ')}</p>
         {logo && <Image
-          src={`${logo}`}
+          src={logo}
           alt={"Logo"}
           width={160}
           height={44}

@@ -101,18 +101,18 @@ const AdventurePage = async () => {
 
           {promos.map((promo: PromoDataType, idx: number) => (
             <BikeInfoTextImageBtn
-              key={promo.id}
-              title={promo.title}
-              desc={promo.desc}
+              key={promo?.id ?? idx}
+              title={promo?.title ?? "Triumph"}
+              desc={promo?.desc ?? "Triumph"}
               ctaBtn={{
                 text: "Детали",
-                link: `/motorcycles/adventure/${promo.subFamilyType}`,
+                link: `/motorcycles/adventure/${promo?.subFamilyType}`,
               }}
               image={{
-                src: `${promo.image ?? "/images/triumphLogo.png"}`,
-                alt: `${promo.title ?? "Logo"}`,
+                src: `${promo.image}`,
+                alt: `${promo.title}`,
               }}
-              blackBtn={promo.btnBlack}
+              blackBtn={promo?.btnBlack ?? false}
               imageOnTheLeft={idx % 2 === 0 ? true : false}
               mobileTextRight={idx % 2 === 0 ? true : false}
             />

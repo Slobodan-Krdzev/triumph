@@ -61,42 +61,42 @@ const BikePage = async ({ params }: any) => {
           <SpecsTable specs={subFam} />
         </section>
 
-        {bike.gallery.promoYoutubeVideo && (
+        {bike?.gallery?.promoYoutubeVideo && (
           <PromoBikeYoutubeVideo
-            video={bike.gallery.promoYoutubeVideo.src}
-            alt={bike.gallery.promoYoutubeVideo.alt}
+            video={bike?.gallery?.promoYoutubeVideo?.src ?? ""}
+            alt={bike?.gallery?.promoYoutubeVideo?.alt ?? ""}
           />
         )}
 
-        {bike.features && (
+        {bike?.features && (
           <section className="w-11/12 m-auto md:w-full py-4 md:py-8 lg:py-16">
             <SpecTableListi
-              items={bike.features}
+              items={bike?.features ?? []}
               title={"Карактеристики"}
               isOpen={true}
             />
           </section>
         )}
 
-        {bike.bikePageImageGallery && (
-          <BikeGalleyCarousell images={bike.bikePageImageGallery} />
+        {bike?.bikePageImageGallery && (
+          <BikeGalleyCarousell images={bike?.bikePageImageGallery ?? []} />
         )}
 
-        {bike.bikePageCarousell && (
-          <BikePageCarousell items={bike.bikePageCarousell} />
+        {bike?.bikePageCarousell && (
+          <BikePageCarousell items={bike?.bikePageCarousell ?? []} />
         )}
 
-        {bike.bikePagePromo && (
+        {bike?.bikePagePromo && (
           <section className="m-auto w-full md:w-10/12 px-4 md:px-24 py-4 md:py-16">
             {bike.bikePagePromo.map((promo: BikePagePromoType, idx: number) => (
               <TextAndImageFlexSection
-                key={promo.title}
-                title={promo.title}
-                textMain={promo.desc}
+                key={promo?.title ?? idx}
+                title={promo?.title ?? "Triumph"}
+                textMain={promo?.desc ?? "Triumph"}
                 imageLeft={idx % 2 !== 0 ? true : false}
                 image={{
-                  src: promo.image,
-                  alt: bike.model,
+                  src: promo?.image ?? "/images/triumphLogo.png",
+                  alt: bike?.model ?? "Triumph",
                 }}
               />
             ))}

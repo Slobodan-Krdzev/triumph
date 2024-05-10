@@ -46,7 +46,7 @@ export default async function Home() {
 
     return (
       <>
-        <MainCarousell items={mainCarousellItems} />
+        <MainCarousell items={mainCarousellItems ?? []} />
         
         <GrayBand
           itemOne={{
@@ -71,13 +71,13 @@ export default async function Home() {
         </section>
 
         <section className="pb-16 flex flex-col md:flex-row md:px-8 px-4 md:gap-4 w-full md:w-10/12 m-auto">
-          {linkCardsSection.map((card) => (
+          {linkCardsSection?.map((card) => (
             <CardLinkItem
               key={card.title}
-              title={card.title}
-              image={card.image}
-              text={card.text}
-              url={card.url}
+              title={card?.title ?? "Triumph"}
+              image={card?.image ?? "/images/triumphLogo.png"}
+              text={card?.text ?? ""}
+              url={card?.url ?? ""}
             />
           ))}
         </section>
@@ -89,7 +89,7 @@ export default async function Home() {
           btnText={"Конфигурирај"}
         />
         <LatestModelsCarousellSection
-          items={latestCarousellitems}
+          items={latestCarousellitems ?? []}
           showTitle={true}
         />
         <DiscoverThriumphSection />

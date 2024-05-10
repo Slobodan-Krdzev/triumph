@@ -32,8 +32,8 @@ const RoadstersPage = async () => {
 
         <PageHeroSection
           title={"roadsters"}
-          desc={familyData[0].familyPageBannerDesc ?? ""}
-          video={familyData[0].familyPageBannerVideo ?? ""}
+          desc={familyData[0]?.familyPageBannerDesc ?? ""}
+          video={familyData[0]?.familyPageBannerVideo ?? ""}
         />
 
         <main className="py-4 md:py-8 lg:py-16 m-auto w-11/12 md:w-9/12">
@@ -49,11 +49,11 @@ const RoadstersPage = async () => {
             }}
           />
 
-          {promos.map((promo: PromoDataType, idx: number) => (
+          {promos?.map((promo: PromoDataType, idx: number) => (
             <BikeInfoTextImageBtn
               key={`${promo.title},${idx}`}
-              title={promo.title}
-              desc={promo.desc}
+              title={promo?.title ?? "Triumph Roadsters"}
+              desc={promo?.desc ?? "Triumph Roadsters"}
               ctaBtn={{
                 text: "Детали",
                 link: `/motorcycles/roadsters/${promo.subFamilyType}`,
@@ -62,7 +62,7 @@ const RoadstersPage = async () => {
                 src: `${promo.image ?? "/images/triumphLogo.png"}`,
                 alt: `${promo.title ?? 'Triumph'}`,
               }}
-              blackBtn={promo.btnBlack}
+              blackBtn={promo?.btnBlack ?? false}
               imageOnTheLeft={idx % 2 === 0 ? true : false}
               mobileTextRight={idx % 2 === 0 ? true : false}
             />
@@ -84,10 +84,10 @@ const RoadstersPage = async () => {
 
         <AudioSection
           model="Speed ​​Triple 765"
-          logo={familyData[0].audioSection.audio.logo}
-          audio={familyData[0].audioSection.audio}
-          title={familyData[0].audioSection.title}
-          desc={familyData[0].audioSection.desc}
+          logo={familyData[0]?.audioSection?.logo}
+          audio={familyData[0]?.audioSection?.audio ?? ""}
+          title={familyData[0]?.audioSection?.title ?? "Triumph"}
+          desc={familyData[0]?.audioSection?.desc ?? "Triumph Audio"}
         />
       </>
     );

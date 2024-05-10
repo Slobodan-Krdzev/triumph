@@ -20,7 +20,7 @@ const SportModelsPage = async ({params}: any) => {
 
           <h1 className='uppercase text-4xl font-semibold text-center md:mb-16 mb-4'>{model}</h1>
           <BikeListingNoSlider
-              bikes={bikesData}
+              bikes={bikesData ?? []}
               configureLink={true}/>
         </main>
       )

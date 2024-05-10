@@ -34,7 +34,7 @@ const BikeModelImage = ({ bike, modalImage }: BikeModelImageProps) => {
           src={
             bike.bikeCollorPalletteGallery[(query.get("color") as string) + "Reversed"]
           }
-          alt={bike.title}
+          alt={bike?.title ?? "Bike"}
           width={modalImage ? 850 : 1124}
           height={76}
         /> */}
@@ -66,7 +66,7 @@ const BikeModelImage = ({ bike, modalImage }: BikeModelImageProps) => {
             ? bike.customizationColors.find((color:ColorType) => color.colorName === query.get('color')).base ?? "/images/triumphLogo.png"
             : bike.customizationColors[0].base ?? "/images/triumphLogo.png"
         }
-        alt={bike.title ?? 'Triumph Bike'}
+        alt={bike.title}
         width={modalImage ? 850 : 1124}
         height={376}
       />

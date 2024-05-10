@@ -40,7 +40,7 @@ const SportBikePage = async ({ params }: any) => {
           configLink={"/configure"}
         />
 
-        <HeroSection video={family.familyPageBannerVideo} bigTitle="Sport" mobileImage="/images/sport/famPageVideoPoster.avif"/>
+        <HeroSection video={family?.familyPageBannerVideo ?? ""} bigTitle="Sport" mobileImage="/images/sport/famPageVideoPoster.avif"/>
 
         <section className="text-white text-center px-6 py-4 md:py-8 lg:py-16">
           <div className="lg:w-5/12 w-10/12 m-auto">
@@ -62,20 +62,20 @@ const SportBikePage = async ({ params }: any) => {
         </section>
 
         <section className="text-white px-4">
-          {promos.map((promo: PromoDataType, idx: number) => (
+          {promos?.map((promo: PromoDataType, idx: number) => (
             <BikeInfoTextImageBtn
               key={`${promo.title},${idx}`}
-              title={promo.title}
-              desc={promo.desc}
+              title={promo?.title ?? "Triumph Sport"}
+              desc={promo?.desc ?? ""}
               ctaBtn={{
                 text: "Детали",
                 link: `/motorcycles/sport/${promo.subFamilyType}`,
               }}
               image={{
-                src: `${promo.image}`,
-                alt: `${promo.title}`,
+                src: `${promo?.image ?? "/images/triumphLogo.png"}`,
+                alt: `${promo?.title ?? "Triumph Sport "}`,
               }}
-              blackBtn={promo.btnBlack}
+              blackBtn={promo?.btnBlack ?? false}
               textWhite={true}
               imageOnTheLeft={idx % 2 !== 0 ? true : false}
               mobileTextRight={idx % 2 !== 0 ? true : false}
@@ -85,7 +85,7 @@ const SportBikePage = async ({ params }: any) => {
 
         <section className="bg-white py-8 text-center px-4">
           <SectionTitleH2 text={"Новата Sport Серија"} color={"dark"} />
-          <BikeListingNoSlider bikes={bikes} configureLink={true} />
+          <BikeListingNoSlider bikes={bikes ?? []} configureLink={true} />
         </section>
 
         <GrayBand

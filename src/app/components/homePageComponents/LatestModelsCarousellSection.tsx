@@ -22,8 +22,8 @@ const LatestModelsCarousellSection = ({
   
   return (
     <>
-      <LatestCaroV2 items={items} />
-      <LatestModelsMobile items={items} showTitle={true} />
+      <LatestCaroV2 items={items ?? []} />
+      <LatestModelsMobile items={items ?? []} showTitle={true} />
     </>
   );
 };

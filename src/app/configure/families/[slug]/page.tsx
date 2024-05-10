@@ -36,7 +36,7 @@ const TypeOfFamilyPage = async (data: any, props: Props) => {
     return (
       <main className="slight-white-bg">
         <HeroSectionCTA
-          image={family.configFamilyPageInfo.image.src}
+          image={family.configFamilyPageInfo?.image?.src ?? "/images/triumphLogo.png"}
           title={"Додајте аксесоари на вашиот мотор"}
           link={{
             text: "Види ги Сите",
@@ -49,8 +49,8 @@ const TypeOfFamilyPage = async (data: any, props: Props) => {
               key={subFam.subFamilyName}
               items={getBikesBySubfamilyCategory(subFam.subFamilyName, bikes)}
               familyData={{
-                title: subFam.title,
-                desc: subFam.shortDesc ?? "",
+                title: subFam?.title ?? "Triumph Bike",
+                desc: subFam?.shortDesc ?? "",
                 url: "",
               }}
             />
