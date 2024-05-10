@@ -46,6 +46,7 @@ const MainCarousellItem = ({
               autoPlay
               muted
               loop
+              playsInline
               style={{
                 height: "auto",
                 minWidth: "92%",
