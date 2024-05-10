@@ -36,8 +36,8 @@ const ClassicPage = async () => {
     return (
       <>
         <PageHeroSection
-          title={`${familyData[0].type}`}
-          video={familyData[0].familyPageBannerVideo}
+          title={`${familyData[0]?.type ?? "Classics"}`}
+          video={familyData[0]?.familyPageBannerVideo ?? ""}
         />
 
         <main className="bg-white">
@@ -56,15 +56,15 @@ const ClassicPage = async () => {
             {getBikesByCC(400, bikes).map((bike: any) => (
               <BikeInfoTextImageBtn
                 key={bike.id}
-                title={bike.title ?? ""}
-                desc={bike.shortDesc ?? ""}
+                title={bike?.title ?? "Triumph"}
+                desc={bike?.shortDesc ?? "Triumph Classics"}
                 ctaBtn={{
                   text: "Детали",
                   link: `/motorcycles/classics/${bike.subFamilyName}`,
                 }}
                 image={{
-                  src: bike.gallery.modelImage.src ?? "",
-                  alt: bike.gallery.modelImage.alt ?? "",
+                  src: bike?.gallery?.modelImage?.src ?? "/images/triumphLogo.png",
+                  alt: bike?.gallery?.modelImage?.alt ?? "Triumph Classic Bike",
                 }}
                 blackBtn={true}
               />
@@ -89,11 +89,11 @@ const ClassicPage = async () => {
                 {getBikesByCC(900, bikes).map((bike: any) => (
                   <CardLinkItem
                     key={bike.id}
-                    title={bike.title ?? "Triumph"}
-                    image={bike.gallery.modelImage.src ?? "/images/triumphLogo.png"}
+                    title={bike?.title ?? "Triumph"}
+                    image={bike?.gallery?.modelImage.src ?? "/images/triumphLogo.png"}
                     text={"Детали"}
-                    url={`/motorcycles/classics/${bike.subFamilyName}`}
-                    desc={bike.shortDesc ?? ""}
+                    url={`/motorcycles/classics/${bike?.subFamilyName}`}
+                    desc={bike?.shortDesc ?? ""}
                   />
                 ))}
               </>
@@ -114,10 +114,10 @@ const ClassicPage = async () => {
             {getBikesByCC(1200, bikes).map((bike: any) => (
               <DiscoverThriumphCard
                 key={bike.bikeId}
-                desc={bike.shortDesc ?? ""}
-                image={bike.gallery.modelImage.src ?? ""}
-                title={bike.title ?? ""}
-                url={`/motorcycles/${bike.familyType}/${bike.subFamilyName}`}
+                desc={bike?.shortDesc ?? ""}
+                image={bike?.gallery?.modelImage.src ?? "/images/triumphLogo.png"}
+                title={bike?.title ?? ""}
+                url={`/motorcycles/${bike?.familyType}/${bike?.subFamilyName}`}
                 btnText={"Детали"}
               />
             ))}
@@ -126,18 +126,18 @@ const ClassicPage = async () => {
           <section className="m-auto w-11/12 md:w-10/12">
             {promos.map((promo: PromoDataType, idx: number) => (
               <BikeInfoTextImageBtn
-                key={promo.title}
-                title={promo.title}
-                desc={promo.desc}
+                key={promo?.title ?? idx}
+                title={promo?.title ?? "Triumph"}
+                desc={promo?.desc ?? "Triumph Classic Bike"}
                 ctaBtn={{
                   text: "Детали",
-                  link: `/motorcycles/classics/${promo.subFamilyType}`,
+                  link: `/motorcycles/classics/${promo?.subFamilyType}`,
                 }}
                 image={{
-                  src: promo.image,
-                  alt: promo.title,
+                  src: promo?.image ?? "/images/triumphLogo.png",
+                  alt: promo?.title ?? 'Triumph',
                 }}
-                blackBtn={promo.btnBlack}
+                blackBtn={promo?.btnBlack ?? false}
                 imageOnTheLeft={idx % 2 === 0 ? true : false}
               />
             ))}
@@ -167,8 +167,8 @@ const ClassicPage = async () => {
             <BikeListingNoSlider bikes={getBikesByEdition("chrome", bikes)} />
           </section> */}
 
-          {familyData[0].grayCaro && (
-            <BottomCarousell items={familyData[0].grayCaro} />
+          {familyData[0]?.grayCaro && (
+            <BottomCarousell items={familyData[0]?.grayCaro ?? []} />
           )}
         </main>
       </>

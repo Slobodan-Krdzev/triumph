@@ -41,71 +41,71 @@ const RocketBikePage = async ({ params }: any) => {
           <Breadcrumbs dark />
           <BikeTopInfo bike={bike}/>
 
-        {bike.bikePageInfo && (
-          <Rocket3TopDesc info={bike.bikePageInfo.topDesc} />
+        {bike?.bikePageInfo && (
+          <Rocket3TopDesc info={bike?.bikePageInfo?.topDesc ?? ""} />
         )}
 
-        {subFam.specNumbers && (
+        {subFam?.specNumbers && (
           <NumbersSection
-            model={bikeModel}
-            specNumbers={subFam.specNumbers}
+            model={bikeModel ?? "Triumph Rocket-3"}
+            specNumbers={subFam?.specNumbers ?? []}
             bgBlack={true}
           />
         )}
 
-        {bike.gallery.promoYoutubeVideo && (
+        {bike?.gallery?.promoYoutubeVideo && (
           <PromoBikeYoutubeVideo
-            video={bike.gallery.promoYoutubeVideo.src}
-            alt={bike.gallery.promoYoutubeVideo.alt}
+            video={bike?.gallery?.promoYoutubeVideo?.src ?? ""}
+            alt={bike?.gallery?.promoYoutubeVideo?.alt ?? ""}
           />
         )}
 
-        {bike.features && (
+        {bike?.features && (
           <section className="px-4 py-4 md:py-8 lg:py-16">
             <div className="text-center md:mb-8">
               <SectionTitleH2 text={"Карактеристики"} color={"dark"} />
             </div>
             <SpecTableListi
-              items={bike.features}
+              items={bike?.features ?? []}
               title={"Карактеристики"}
               isOpen={true}
             />
           </section>
         )}
 
-        {bike.bikePageCarousell && (
-          <BikePageCarousell items={bike.bikePageCarousell} />
+        {bike?.bikePageCarousell && (
+          <BikePageCarousell items={bike?.bikePageCarousell ?? []} />
         )}
 
-        {bike.bikePagePromo && (
+        {bike?.bikePagePromo && (
           <section className="px-4 md:px-24 py-4 md:py-16 m-auto w-11/12 md:w-9/12">
-            {bike.bikePagePromo.map((promo: any, idx: number) => (
+            {bike?.bikePagePromo.map((promo: any, idx: number) => (
               <TextAndImageFlexSection
-                key={promo.title}
-                title={promo.title}
-                textMain={promo.desc}
+                key={promo?.title ?? idx}
+                title={promo?.title ?? "Triumph Rocket-3"}
+                textMain={promo?.desc ?? ""}
                 imageLeft={idx % 2 !== 0 ? true : false}
                 image={{
-                  src: promo.image,
-                  alt: bike.model,
+                  src: promo?.image ?? "/images/triumphLogo.png",
+                  alt: bike?.model,
                 }}
               />
             ))}
           </section>
         )}
 
-        {subFam.subFamilyPageInfo.soundSection && (
+        {subFam?.subFamilyPageInfo.soundSection && (
           <AudioSection
-            audio={subFam.subFamilyPageInfo.soundSection?.audio}
-            title={subFam.subFamilyPageInfo.soundSection?.title}
-            desc={subFam.subFamilyPageInfo.soundSection?.desc}
-            logo={subFam.subFamilyPageInfo.soundSection?.logo}
-            model={subFam.title}
+            audio={subFam?.subFamilyPageInfo?.soundSection?.audio ?? ""}
+            title={subFam?.subFamilyPageInfo?.soundSection?.title ?? "Rocket-3"}
+            desc={subFam?.subFamilyPageInfo?.soundSection?.desc ?? "Triumph Rocket-3 "}
+            logo={subFam?.subFamilyPageInfo?.soundSection?.logo}
+            model={subFam?.title ?? "Rocket-3"}
           />
         )}
 
-        {bike.bikePageImageGallery && (
-          <BikeGalleyCarousell images={bike.bikePageImageGallery} />
+        {bike?.bikePageImageGallery && (
+          <BikeGalleyCarousell images={bike?.bikePageImageGallery ?? []} />
         )}
 
         <section className="text-center py-4 md:py-32">
@@ -119,7 +119,7 @@ const RocketBikePage = async ({ params }: any) => {
             text={"Откријте Повеќе"}
             bgBlack={false}
             isLink={true}
-            link={`/configure/bike/${bike.model}`}
+            link={`/configure/bike/${bike?.model}`}
           />
         </section>
       </main>

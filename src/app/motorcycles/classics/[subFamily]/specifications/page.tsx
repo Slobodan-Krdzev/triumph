@@ -11,7 +11,7 @@ const ClassicsSpecsPage = async ({ params }: any) => {
     const subFamilyRes = await fetch(
       `${SUB_FAMILIES}?subFamilyName=${subFam}`,
       {
-        next: { revalidate: 3000 },
+        next: { revalidate: 30 },
       }
     );
     const subFamilyData = await subFamilyRes.json();

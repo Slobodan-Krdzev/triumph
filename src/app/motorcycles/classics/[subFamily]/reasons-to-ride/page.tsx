@@ -25,39 +25,39 @@ const ClassicsReasonsToRide = async ({ params }: any) => {
     return (
       <>
         <SecondaryPagesHeroSection
-          bannerImage={subFamily.reasonsToDrive.banner.image ?? ""}
-          subFamilyTitle={subFam}
+          bannerImage={subFamily?.reasonsToDrive?.banner?.image ?? "/images/triumphLogo.png"}
+          subFamilyTitle={subFam ?? 'Triumph Classic'}
           text={`Детали`}
         />
 
         <main className="px-4">
           <div className="md:w-10/12 lg:w-6/12 m-auto pt-8">
             <SectionTitleH2
-              text={subFamily.reasonsToDrive.infoText.title ?? ""}
+              text={subFamily?.reasonsToDrive?.infoText?.title ?? ""}
               color={"dark"}
             />
             <p className="font-normal md:text-lg text-md">
-              {subFamily.reasonsToDrive.infoText.desc ?? ""}
+              {subFamily?.reasonsToDrive?.infoText?.desc ?? ""}
             </p>
           </div>
 
-          {subFamily.reasonsToDrive.reasons && (
-            <ReasonsListin reasons={subFamily.reasonsToDrive.reasons} />
+          {subFamily?.reasonsToDrive?.reasons && (
+            <ReasonsListin reasons={subFamily?.reasonsToDrive?.reasons ?? []} />
           )}
 
           {bikesData.map((bike: any) => (
             
             <BikeInfoTextImageBtn
               key={bike.id}
-              title={bike.title ?? bike.title}
-              desc={bike.subFamilyPromo?.desc ?? `Цени од:€ ${bike.price}.00`}
+              title={bike?.title ?? "Triumph Classics"}
+              desc={bike?.subFamilyPromo?.desc ?? `Цени од:€ ${bike.price}.00`}
               ctaBtn={{
                 text: "КОнфигурација",
-                link: `/configure/bike/${bike.model}`,
+                link: `/configure/bike/${bike?.model ?? 'Triumph'}`,
               }}
               image={{
-                src: bike.gallery.modelImage.src,
-                alt: bike.gallery.modelImage.alt,
+                src: bike?.gallery?.modelImage?.src ?? "/images/triumphLogo.png",
+                alt: bike?.gallery?.modelImage?.alt ?? "Triumph",
               }}
               blackBtn={true}
             />

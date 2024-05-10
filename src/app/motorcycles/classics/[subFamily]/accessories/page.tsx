@@ -26,33 +26,33 @@ const ClassicsAccesoriesPage = async ({ params }: any) => {
     return (
       <>
         <SecondaryPagesHeroSection
-          bannerImage={subFamily.accessory.banner.image}
-          subFamilyTitle={subFam}
+          bannerImage={subFamily?.accessory?.banner?.image ?? "/images/triumphLogo.png"}
+          subFamilyTitle={subFam ?? 'Triumph'}
           text={`Аксесоари`}
         />
 
         <main className="px-4 md:px-16 lg:px-40">
-          {subFamily.accessory.infoText && 
+          {subFamily?.accessory?.infoText && 
             <section className="m-auto w-11/12 md:w-6/12 py-4 md:py-8 lg:py-16">
-              {subFamily.accessory.infoText.title && <SectionTitleH2 text={subFamily.accessory.infoText.title ?? ""} color={"dark"} />}
-              {subFamily.accessory.infoText.desc && <PageParagraph text={subFamily.accessory.infoText.desc ?? ""} />}
+              {subFamily?.accessory?.infoText?.title && <SectionTitleH2 text={subFamily?.accessory?.infoText?.title ?? "Triumph Classics"} color={"dark"} />}
+              {subFamily?.accessory?.infoText?.desc && <PageParagraph text={subFamily?.accessory?.infoText?.desc ?? ""} />}
 
             </section>}
 
-          <AccessoriesListing items={subFamily.accessory.accessoryTypes ?? []} />
+          <AccessoriesListing items={subFamily?.accessory?.accessoryTypes ?? []} />
 
           {bikesData.map((bike: any) => (
             <BikeInfoTextImageBtn
               key={bike.id}
-              title={bike.title ?? bike.title}
-              desc={bike.subFamilyPromo?.desc ?? `Цени од:€ ${bike.price}.00`}
+              title={bike?.title ?? 'Triumph'}
+              desc={bike?.subFamilyPromo?.desc ?? `Цени од:€ ${bike?.price}.00`}
               ctaBtn={{
                 text: "КОнфигурација",
-                link: `/configure/bike/${bike.model}`,
+                link: `/configure/bike/${bike?.model}`,
               }}
               image={{
-                src: bike.gallery.modelImage.src,
-                alt: bike.gallery.modelImage.alt,
+                src: bike?.gallery?.modelImage?.src ?? "/images/triumphLogo.png",
+                alt: bike?.gallery?.modelImage?.alt,
               }}
               blackBtn={true}
             />

@@ -25,18 +25,18 @@ const SportSubFamilyPage = async ({ params }: any) => {
     const bikes = await bikesRes.json();
 
     const hasGrayCaro =
-      subFamily.hasOwnProperty("grayCarousell");
+      subFamily?.hasOwnProperty("grayCarousell");
 
     const hasYoutubeVid =
-      subFamily.hasOwnProperty("youtubeVideo");
+      subFamily?.hasOwnProperty("youtubeVideo");
 
     return (
       <>
         <HeroSection
-          video={subFamily.gallery.subFamilyHeroVideo.src}
-          mobileImage={subFamily.gallery.subFamilyHeroImageMobile.src}
-          model={formulateSubFamilyTitleOnBanner(query)}
-          slogans={subFamily.heroSlogans}
+          video={subFamily?.gallery?.subFamilyHeroVideo?.src ?? ""}
+          mobileImage={subFamily?.gallery?.subFamilyHeroImageMobile?.src ?? "/images/triumphLogo.png"}
+          model={formulateSubFamilyTitleOnBanner(query) ?? "Triumph Sport"}
+          slogans={subFamily?.heroSlogans ?? ['Triumph', "sport"]}
         />
 
         <main className="bg-black">
@@ -59,32 +59,32 @@ const SportSubFamilyPage = async ({ params }: any) => {
             </div>
             {hasYoutubeVid && (
               <YouTubePromo
-                video={subFamily.youtubeVideo ?? ""}
+                video={subFamily?.youtubeVideo ?? ""}
               />
             )}
           </section>
 
           {hasGrayCaro && (
             <BottomCarousell
-              items={subFamily.grayCarousell}
+              items={subFamily?.grayCarousell ?? []}
             />
           )}
         </main>
         <section className="px-4 lg:px-20 xl:px-40">
-          {bikes.map((bike: any) => (
+          {bikes?.map((bike: any) => (
             <BikeInfoTextImageBtn
               key={bike.id}
-              title={bike.subFamilyPromo.title ?? bike.title}
-              desc={bike.subFamilyPromo?.desc ?? ""}
-              desc2={bike.price && `Цени од: € ${bike.price.toLocaleString('en-EN')}`}
+              title={bike?.subFamilyPromo?.title ?? "Triumph Sport"}
+              desc={bike?.subFamilyPromo?.desc ?? ""}
+              desc2={bike?.price && `Цени од: € ${bike.price.toLocaleString('en-EN')}`}
 
               ctaBtn={{
                 text: "Детали",
-                link: `/motorcycles/${subFamily.familyType}/${query}/${bike.model}`,
+                link: `/motorcycles/${subFamily?.familyType}/${query}/${bike.model}`,
               }}
               image={{
-                src: `${bike.gallery.modelImage.src}`,
-                alt: `${bike.gallery.modelImage.alt}`,
+                src: `${bike?.gallery?.modelImage?.src ?? "/images/triumphLogo.png"}`,
+                alt: `${bike?.gallery?.modelImage?.alt ?? "/images/triumphLogo.png"}`,
               }}
               blackBtn={true}
               imageOnTheLeft={false}

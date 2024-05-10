@@ -54,8 +54,8 @@ const SportBikePage = async ({ params }: any) => {
                 {
                   title: "Цена",
                   desc: `${
-                    bike.price
-                      ? `€ ${bike.price.toLocaleString("en-EN")}`
+                    bike?.price
+                      ? `€ ${bike?.price.toLocaleString("en-EN")}`
                       : "Наскоро"
                   }`,
                 },
@@ -67,48 +67,48 @@ const SportBikePage = async ({ params }: any) => {
           <SpecsTable specs={subFam} />
         </section>
 
-        {bike.gallery.promoYoutubeVideo && (
+        {bike?.gallery?.promoYoutubeVideo && (
           <PromoBikeYoutubeVideo
-            video={bike.gallery.promoYoutubeVideo.src ?? ""}
-            alt={bike.gallery.promoYoutubeVideo.alt ?? "Promo Video"}
+            video={bike?.gallery?.promoYoutubeVideo.src ?? ""}
+            alt={bike?.gallery?.promoYoutubeVideo.alt ?? "Promo Video"}
           />
         )}
 
-        {bike.features && (
+        {bike?.features && (
           <SpecTableListi
-            items={bike.features ?? []}
+            items={bike?.features ?? []}
             title={"Карактеристики"}
             isOpen={true}
           />
         )}
 
-        {subFam.specNumbers && (
+        {subFam?.specNumbers && (
           <NumbersSection
-            model={formulateSubFamilyTitleOnBanner(bike.model) ?? ""}
+            model={formulateSubFamilyTitleOnBanner(bike?.model) ?? "Triumph Sport Section"}
             specNumbers={subFam.specNumbers ?? []}
             bgBlack={false}
           />
         )}
 
-        {bike.bikePageImageGallery && (
-          <BikeGalleyCarousell images={bike.bikePageImageGallery} />
+        {bike?.bikePageImageGallery && (
+          <BikeGalleyCarousell images={bike?.bikePageImageGallery ?? []} />
         )}
 
-        {bike.bikePageCarousell && (
-          <BikePageCarousell items={bike.bikePageCarousell} />
+        {bike?.bikePageCarousell && (
+          <BikePageCarousell items={bike?.bikePageCarousell ?? []} />
         )}
 
-        {bike.bikePagePromo && (
+        {bike?.bikePagePromo && (
           <section className="px-4 md:px-24 py-4 md:py-16">
-            {bike.bikePagePromo.map((promo: BikePagePromoType, idx: number) => (
+            {bike?.bikePagePromo?.map((promo: BikePagePromoType, idx: number) => (
               <TextAndImageFlexSection
                 key={promo.title}
-                title={promo.title}
-                textMain={promo.desc}
+                title={promo?.title ?? "Triumph Sport"}
+                textMain={promo?.desc ?? "Triumph Sport"}
                 imageLeft={idx % 2 !== 0 ? true : false}
                 image={{
-                  src: promo.image,
-                  alt: bike.model,
+                  src: promo?.image ?? "/images/triumphLogo.png",
+                  alt: bike?.model ?? "/images/triumphLogo.png",
                 }}
               />
             ))}

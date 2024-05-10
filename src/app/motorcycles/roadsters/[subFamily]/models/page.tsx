@@ -19,9 +19,9 @@ const RoadstersModelPage = async ({ params }: any) => {
         <Breadcrumbs dark />
 
         <h1 className="uppercase text-4xl font-semibold text-center md:mb-16 mb-4">
-          {formulateSubFamilyTitleOnBanner(model)}
+          {formulateSubFamilyTitleOnBanner(model) ?? "triumph Roadster"}
         </h1>
-        <BikeListingNoSlider bikes={bikesData} configureLink={true} />
+        <BikeListingNoSlider bikes={bikesData ?? []} configureLink={true} />
       </main>
     );
   } catch (err) {

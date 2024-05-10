@@ -47,7 +47,7 @@ const OffRoadFamilyPage = async () => {
         />
 
         <HeroSection
-          video={familyData[0].familyPageBannerVideo}
+          video={familyData[0]?.familyPageBannerVideo ?? ""}
           mobileImage={"/images/offRoad/offRoadConfigBanner.avif"}
           bigTitle="Off-Road"
           slogans={["Фокусирана", "Тркачка", "Серија"]}
@@ -72,8 +72,8 @@ const OffRoadFamilyPage = async () => {
           />
         </div>
 
-        {familyData[0].youtubeVideo !== null ? (
-          <YouTubePromo video={familyData[0].youtubeVideo ?? ""} />
+        {familyData[0]?.youtubeVideo !== null ? (
+          <YouTubePromo video={familyData[0]?.youtubeVideo ?? ""} />
         ) : (
           ""
         )}
@@ -98,17 +98,17 @@ const OffRoadFamilyPage = async () => {
           {promos.map((promo: PromoDataType, idx: number) => (
             <BikeInfoTextImageBtn
               key={`${promo.title},${idx}`}
-              title={promo.title}
-              desc={promo.desc}
+              title={promo?.title ?? "Triumph Motocross"}
+              desc={promo?.desc ?? ""}
               ctaBtn={{
                 text: "Детали",
-                link: `/motorcycles/off-road/${promo.subFamilyType}`,
+                link: `/motorcycles/off-road/${promo?.subFamilyType}`,
               }}
               image={{
-                src: `${promo.image ?? "/images/triumphLogo.png"}`,
-                alt: `${promo.title}`,
+                src: `${promo?.image ?? "/images/triumphLogo.png"}`,
+                alt: `${promo?.title ?? "Triumph Motocross"}`,
               }}
-              blackBtn={promo.btnBlack}
+              blackBtn={promo?.btnBlack ?? false}
               textWhite={true}
               imageOnTheLeft={idx % 2 !== 0 ? true : false}
               mobileTextRight={idx % 2 !== 0 ? true : false}
@@ -118,7 +118,7 @@ const OffRoadFamilyPage = async () => {
 
         <section className="bg-white py-8 text-center px-4">
           <SectionTitleH2 text={"Новата Off-Road Серија"} color={"dark"} />
-          <BikeListingNoSlider bikes={bikes} configureLink={true} />
+          <BikeListingNoSlider bikes={bikes ?? []} configureLink={true} />
         </section>
 
         <GrayBand

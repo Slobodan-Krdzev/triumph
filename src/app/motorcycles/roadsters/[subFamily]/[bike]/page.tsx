@@ -41,7 +41,7 @@ const RoadstersBikePage = async ({params}: any) => {
             </h2>
             <div className="px-4">
               <SpecTableListi
-                items={[{ title: "Цена", desc: `${bike.price ? `€ ${bike.price.toLocaleString('en-EN')}` : "Наскоро"}` }]}
+                items={[{ title: "Цена", desc: `${bike?.price ? `€ ${bike.price.toLocaleString('en-EN')}` : "Наскоро"}` }]}
                 title={"Цена"}
                 isOpen={true}
               />
@@ -49,42 +49,42 @@ const RoadstersBikePage = async ({params}: any) => {
             <SpecsTable specs={subFam} />
           </section>
   
-          {bike.gallery.promoYoutubeVideo && (
+          {bike?.gallery?.promoYoutubeVideo && (
             <PromoBikeYoutubeVideo
-              video={bike.gallery.promoYoutubeVideo.src}
-              alt={bike.gallery.promoYoutubeVideo.alt}
+              video={bike?.gallery?.promoYoutubeVideo?.src ?? ""}
+              alt={bike?.gallery?.promoYoutubeVideo?.alt ?? ""}
             />
           )}
   
-          {bike.features && (
+          {bike?.features && (
             <section className="px-4">
               <SpecTableListi
-                items={bike.features}
+                items={bike?.features ?? []}
                 title={"Карактеристики"}
                 isOpen={true}
               />
             </section>
           )}
 
-          {bike.bikePageImageGallery && 
-            <BikeGalleyCarousell images={bike.bikePageImageGallery} />
+          {bike?.bikePageImageGallery && 
+            <BikeGalleyCarousell images={bike?.bikePageImageGallery ?? []} />
           }
   
-          {bike.bikePageCarousell && (
-            <BikePageCarousell items={bike.bikePageCarousell} />
+          {bike?.bikePageCarousell && (
+            <BikePageCarousell items={bike?.bikePageCarousell ?? []} />
           )}
   
-          {bike.bikePagePromo && (
+          {bike?.bikePagePromo && (
             <section className="px-4 md:px-24 py-4 md:py-16 m-auto w-11/12 md:w-9/12">
-              {bike.bikePagePromo.map((promo: any, idx: number) => (
+              {bike?.bikePagePromo?.map((promo: any, idx: number) => (
                 <TextAndImageFlexSection
                   key={promo.title}
-                  title={promo.title}
-                  textMain={promo.desc}
+                  title={promo?.title ?? "Triumph Roadster"}
+                  textMain={promo?.desc ?? ""}
                   imageLeft={idx % 2 !== 0 ? true : false}
                   image={{
-                    src: promo.image,
-                    alt: bike.model,
+                    src: promo?.image ?? "/images/triumphLogo.png",
+                    alt: bike?.model,
                   }}
                 />
               ))}

@@ -40,35 +40,35 @@ const RoadstersSubFamilyPage = async ({ params }: any) => {
     return (
       <>
         <HeroSection
-          video={subFamily.gallery.subFamilyHeroVideo.src}
-          mobileImage={subFamily.gallery.subFamilyHeroImageMobile?.src ?? "/"}
-          model={formulateSubFamilyTitleOnBanner(query)}
-          slogans={subFamily.heroSlogans}
+          video={subFamily?.gallery?.subFamilyHeroVideo?.src ?? ""}
+          mobileImage={subFamily?.gallery?.subFamilyHeroImageMobile?.src ?? "/images/triumphLogo.png"}
+          model={formulateSubFamilyTitleOnBanner(query) ?? "Triumph Roadsters"}
+          slogans={subFamily?.heroSlogans ?? ["Triumph", "Roadsters"]}
         />
 
         <main className="bg-white">
           <TopSection
-            title={subFamily.topSection.title}
-            desc={subFamily.topSection.desc}
-            subtitle={subFamily.topSection.subtitle}
-            image={subFamily.gallery.subFamilyTopSectionImage.src}
-            bgImage={subFamily.gallery.subFamilyTopSectionBGImage.src}
+            title={subFamily?.topSection?.title ?? "Triumph"}
+            desc={subFamily?.topSection?.desc ?? ""}
+            subtitle={subFamily?.topSection?.subtitle ?? "Triumph Roadsters"}
+            image={subFamily?.gallery?.subFamilyTopSectionImage?.src ?? "/images/triumphLogo.png"}
+            bgImage={subFamily?.gallery?.subFamilyTopSectionBGImage?.src ?? ""}
           />
 
           <section className="px-4 lg:px-20 xl:px-40 pb-16">
-            {bikes.map((bike: any) => (
+            {bikes?.map((bike: any) => (
               <BikeInfoTextImageBtn
                 key={bike.id}
-                title={bike.subFamilyPromo.title ?? bike.title}
+                title={bike?.subFamilyPromo?.title ?? "Triumph Roadsters"}
                 desc={bike.subFamilyPromo?.desc ?? ""}
-                desc2={bike.price && `Цени од: €${bike.price}.00`}
+                desc2={bike.price && `Цени од: €${bike?.price}.00`}
                 ctaBtn={{
                   text: "Детали",
                   link: `/motorcycles/roadsters/${query}/${bike.model}`,
                 }}
                 image={{
-                  src: `${bike.gallery.modelImage.src}`,
-                  alt: `${bike.gallery.modelImage.alt}`,
+                  src: `${bike.gallery?.modelImage.src ?? "/images/triumphLogo.png"}`,
+                  alt: `${bike.gallery?.modelImage.alt ?? "/images/triumphLogo.png"}`,
                 }}
                 blackBtn={true}
                 imageOnTheLeft={false}
@@ -79,40 +79,37 @@ const RoadstersSubFamilyPage = async ({ params }: any) => {
         </main>
 
         {hasYoutubeVid && (
-          <YouTubePromo video={subFamily.youtubeVideo} />
+          <YouTubePromo video={subFamily?.youtubeVideo} />
         )}
 
         {hasGrayCaro && (
-          <BottomCarousell items={subFamily.grayCarousell} />
+          <BottomCarousell items={subFamily?.grayCarousell ?? []} />
         )}
 
         <NumbersSection
-          model={query}
-          specNumbers={subFamily.specNumbers}
+          model={query ?? "Triumph Roadster"}
+          specNumbers={subFamily?.specNumbers ?? []}
         />
 
         {hasAudio && (
           <AudioSection
-            audio={subFamily.subFamilyPageInfo.audioSection.audio}
-            title={subFamily.subFamilyPageInfo.audioSection.title}
-            desc={subFamily.subFamilyPageInfo.audioSection.desc}
+            audio={subFamily?.subFamilyPageInfo?.audioSection?.audio ?? ""}
+            title={subFamily?.subFamilyPageInfo?.audioSection?.title ?? "Triumph Roadster Sound"}
+            desc={subFamily?.subFamilyPageInfo?.audioSection?.desc ?? ""}
             model={query}
-            logo={subFamily.subFamilyPageInfo.audioSection.logo}
+            logo={subFamily?.subFamilyPageInfo?.audioSection?.logo}
           />
         )}
 
         {hasYoutubeCaro && (
           <YoutubeVideoCarousell
-            items={subFamily.youtubeVideosCarousellItems}
+            items={subFamily?.youtubeVideosCarousellItems ?? []}
           />
         )}
       </>
     );
   } catch (error) {
-    // return redirect(`/motorcycles/roadsters`)
-    console.log(error);
-    
-    return <>err</>
+    return redirect(`/motorcycles/roadsters`)
   }
 };
 

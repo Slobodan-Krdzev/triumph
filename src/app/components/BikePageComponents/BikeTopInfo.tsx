@@ -13,10 +13,10 @@ type BikeTopInfoPropsType = {
 const BikeTopInfo = ({ bike }: BikeTopInfoPropsType) => {
   return (
     <section className="flex flex-col justify-end pt-8 md:pt-16 px-4 md:px-8 lg:px-16">
-      <BikeTitle text={bike.title} />
+      <BikeTitle text={bike?.title ?? "Triumph"} />
       <div className="flex items-center flex-col md:flex-row gap-4 md:gap-0 w-full lg:w-10/12 m-auto">
         <div className="flex flex-col w-full md:w-2/12 items-start md:justify-center order-3 md:order-1">
-          {bike.customizationColors && <ColorNamePreviewer bike={bike} />}
+          {bike?.customizationColors && <ColorNamePreviewer bike={bike} />}
 
           <p className="text-md font-semibold text-neutral-500">Ценa:</p>
           <PricePriviewer bike={bike} />
@@ -37,11 +37,11 @@ const BikeTopInfo = ({ bike }: BikeTopInfoPropsType) => {
         </div>
 
         <div className="md:w-8/12 w-full m-auto order-1 md:order-2">
-          {bike.bikeCollorPalletteGallery && <ImagePreview bike={bike} />}
+          {bike?.bikeCollorPalletteGallery && <ImagePreview bike={bike} />}
         </div>
         <div className="md:w-2/12 w-full order-2 md:order-3">
-          {bike.customizationColors && (
-            <CustomizationColorsListing colors={bike.customizationColors} />
+          {bike?.customizationColors && (
+            <CustomizationColorsListing colors={bike?.customizationColors ?? []} />
           )}
         </div>
       </div>

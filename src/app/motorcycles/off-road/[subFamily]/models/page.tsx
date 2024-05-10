@@ -18,9 +18,9 @@ const SportModelsPage = async ({params}: any) => {
         <main className='bg-white md:py-16 py-4 relative'>
           <Breadcrumbs dark />
 
-          <h1 className='uppercase text-4xl font-semibold text-center md:mb-16 mb-4'>{model}</h1>
+          <h1 className='uppercase text-4xl font-semibold text-center md:mb-16 mb-4'>{model ?? 'Triumph Motocrosss'}</h1>
           <BikeListingNoSlider
-              bikes={bikesData}
+              bikes={bikesData ?? []}
               configureLink={true}/>
         </main>
       )

@@ -27,38 +27,38 @@ const AccessoriesPageRoadsters = async ({ params }: any) => {
     return (
       <>
         <SecondaryPagesHeroSection
-          bannerImage={subFamily.accessory.banner.image}
-          subFamilyTitle={subFam.toUpperCase()}
+          bannerImage={subFamily?.accessory?.banner?.image ?? "/images/triumphLogo.png"}
+          subFamilyTitle={subFam.toUpperCase() ?? "Triumph"}
           text={`Аксесоари`}
         />
 
         <main className="px-4 md:px-16 lg:px-40">
-          {subFamily.accessory.infoText && (
+          {subFamily?.accessory?.infoText && (
             <div className="md:w-10/12 lg:w-6/12 m-auto pt-8">
               <SectionTitleH2
-                text={subFamily.accessory.infoText?.title ?? ""}
+                text={subFamily?.accessory?.infoText?.title ?? ""}
                 color={"dark"}
               />
               <p className="font-normal md:text-lg text-md">
-                {subFamily.accessory.infoText?.desc ?? ""}
+                {subFamily?.accessory?.infoText?.desc ?? ""}
               </p>
             </div>
           )}
 
-          <AccessoriesListing items={subFamily.accessory.accessoryTypes} />
+          <AccessoriesListing items={subFamily?.accessory?.accessoryTypes ?? []} />
 
-          {bikesData.map((bike: any) => (
+          {bikesData?.map((bike: any) => (
             <BikeInfoTextImageBtn
               key={bike.id}
-              title={bike.title}
-              desc={bike.subFamilyPromo.desc}
+              title={bike?.title ?? "Triumph Roadster"}
+              desc={bike?.subFamilyPromo?.desc ?? ""}
               ctaBtn={{
                 text: "КОнфигурација",
                 link: `/configure/bike/${bike.model}`,
               }}
               image={{
-                src: bike.gallery.modelImage.src,
-                alt: bike.gallery.modelImage.alt,
+                src: bike?.gallery?.modelImage?.src ?? "/images/triumphLogo.png",
+                alt: bike?.gallery?.modelImage?.alt ?? "Triumph Bike",
               }}
               blackBtn={true}
             />

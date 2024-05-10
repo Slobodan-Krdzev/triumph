@@ -36,11 +36,11 @@ const Rocket3SpecsPage = async () => {
             />
           </div>
 
-          <SpecsTable specs={subFamily ?? []} />
+          <SpecsTable specs={subFamily} />
 
           <section className="py-4 md:py-16 my-4 md:my-16 text-center border-thin-gray">
             <SectionTitleH2 text={"Rocket-3 Модели"} color={"dark"} />
-            <BikeListingNoSlider bikes={bikesData} configureLink={true} />
+            <BikeListingNoSlider bikes={bikesData ?? []} configureLink={true} />
           </section>
         </main>
       </>

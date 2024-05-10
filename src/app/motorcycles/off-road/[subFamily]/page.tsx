@@ -24,10 +24,10 @@ const OffRoadSubFamilyPage = async ({ params }: any) => {
     return (
       <>
         <HeroSection
-          video={subFamily.gallery.subFamilyHeroVideo.src}
-          mobileImage={subFamily.gallery.subFamilyHeroImageMobile.src}
-          model={formulateSubFamilyTitleOnBanner(query)}
-          slogans={subFamily.heroSlogans ?? []}
+          video={subFamily?.gallery?.subFamilyHeroVideo?.src ?? ""}
+          mobileImage={subFamily?.gallery?.subFamilyHeroImageMobile?.src ?? "/images/triumphLogo.png"}
+          model={formulateSubFamilyTitleOnBanner(query) ?? "Triumph Motocross"}
+          slogans={subFamily?.heroSlogans ?? ["Triumph", "Off-Road", "Motocross"]}
         />
 
         <main className="bg-black"></main>
@@ -35,16 +35,16 @@ const OffRoadSubFamilyPage = async ({ params }: any) => {
           {bikes.map((bike: any) => (
             <BikeInfoTextImageBtn
               key={bike.id}
-              title={bike.subFamilyPromo.title ?? bike.title}
-              desc={bike.subFamilyPromo?.desc ?? ""}
-              desc2={bike.price && `Цени од: €${bike.price}.00`}
+              title={bike?.subFamilyPromo?.title ?? "Triumph Motocross"}
+              desc={bike?.subFamilyPromo?.desc ?? ""}
+              desc2={bike?.price && `Цени од: €${bike?.price}.00`}
               ctaBtn={{
                 text: "Детали",
-                link: `/motorcycles/off-road/${query}/${bike.model}`,
+                link: `/motorcycles/off-road/${query}/${bike?.model}`,
               }}
               image={{
-                src: `${bike.gallery.modelImage.src}`,
-                alt: `${bike.gallery.modelImage.alt}`,
+                src: `${bike?.gallery?.modelImage?.src ?? "/images/triumphLogo.png"}`,
+                alt: `${bike?.gallery?.modelImage?.alt ?? "Triumph Motocross"}`,
               }}
               blackBtn={true}
               imageOnTheLeft={false}
@@ -55,7 +55,7 @@ const OffRoadSubFamilyPage = async ({ params }: any) => {
 
         <section className="bg-white py-8 text-center px-4">
           <SectionTitleH2 text={"Новата TF 205-X Off Road Серија"} color={"dark"} />
-          <BikeListingNoSlider bikes={bikes} configureLink={true} />
+          <BikeListingNoSlider bikes={bikes ?? []} configureLink={true} />
         </section>
       </>
     );
