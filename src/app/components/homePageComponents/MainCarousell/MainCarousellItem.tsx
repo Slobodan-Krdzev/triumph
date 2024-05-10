@@ -25,6 +25,10 @@ type MainCarousellItemProps = {
 const MainCarousellItem = ({
   item: { image, video, title, desc, link1, link2 },
 }: MainCarousellItemProps) => {
+
+  console.log(video);
+  
+
   return (
     <div
       className="relative"
