@@ -34,10 +34,10 @@ const linkCardsSection: HomeCardLinkType[] = [
 
 export default async function Home() {
   try {
-    // const mainCarousellItemsRes = await fetch(`${MAINCAROUSELLITEMS}`, {
-    //   next: { revalidate: 20 },
-    // });
-    // const mainCarousellItems = await mainCarousellItemsRes.json();
+    const mainCarousellItemsRes = await fetch(`${MAINCAROUSELLITEMS}`, {
+      next: { revalidate: 50 },
+    });
+    const mainCarousellItems = await mainCarousellItemsRes.json();
 
     const latestCarousellItemsRes = await fetch(`${LATESTCAROUSELLITEMS}`, {
       next: { revalidate: 30 },
@@ -46,7 +46,7 @@ export default async function Home() {
 
     return (
       <>
-        {/* <MainCarousell items={mainCarousellItems ?? []} /> */}
+        <MainCarousell items={mainCarousellItems ?? []} />
         
         <GrayBand
           itemOne={{
