@@ -23,7 +23,7 @@ type MainCarousellItemProps = {
 };
 
 const MainCarousellItem = ({
-  item: { image, video, title, desc, link1, link2 },
+  item: { image, video, title, desc, link1, link2, imageMobile },
 }: MainCarousellItemProps) => {
 
   return (
@@ -48,6 +48,8 @@ const MainCarousellItem = ({
               muted
               loop
               playsInline
+              preload="auto"
+              poster={imageMobile}
               style={{
                 height: "auto",
                 minWidth: "92%",
