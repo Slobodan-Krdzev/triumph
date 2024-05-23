@@ -9,13 +9,42 @@ import React from "react";
 function Prenav() {
   const router = useRouter();
   const pathname = usePathname();
-  const handleSectionClose = () => router.push(pathname);
 
   const colorQuery = useSearchParams().get("color");
   const reversQuery = useSearchParams().get("reversed");
 
+  const handleSectionClose = () => {
+
+    if(colorQuery && reversQuery){
+      router.push(`${pathname}/?color=${colorQuery}&reversed=${reversQuery}`, { scroll: false });
+
+    }else if(colorQuery){
+      router.push(`${pathname}/?color=${colorQuery}`, { scroll: false });
+
+    }else if(reversQuery){
+      router.push(`${pathname}/?reversed=${reversQuery}`, { scroll: false });
+    }else {
+      router.push(`${pathname}`,{scroll: false})
+    }
+
+  };
+
+
   const handleLocationSection = () => {
-    router.push(`${pathname}/?navItem=Locations`, { scroll: false });
+
+    if(colorQuery && reversQuery){
+      router.push(`${pathname}/?navItem=Locations&color=${colorQuery}&reversed=${reversQuery}`, { scroll: false });
+
+    }else if(colorQuery){
+      router.push(`${pathname}/?navItem=Locations&color=${colorQuery}`, { scroll: false });
+
+    }else if(reversQuery){
+      router.push(`${pathname}/?navItem=Locations&reversed=${reversQuery}`, { scroll: false });
+    }else {
+      router.push(`${pathname}/?navItem=Locations`, { scroll: false });
+
+    }
+
   };
 
   return (

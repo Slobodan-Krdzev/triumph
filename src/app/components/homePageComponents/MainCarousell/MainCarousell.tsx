@@ -32,7 +32,7 @@ const MainCarousell = ({ items = [] }: MainCarousellProps) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [progress, setProgress] = useState(0);
 
-  const breakpoint = useBreakpoint();
+  // const breakpoint = useBreakpoint();
 
   const updateIndex = (newIndex: number) => {
     if (newIndex < 0) {
@@ -53,16 +53,17 @@ const MainCarousell = ({ items = [] }: MainCarousellProps) => {
     return () => clearInterval(interval);
   }, [activeIndex, items.length]);
 
-  if (breakpoint >= 1024) {
     return (
+
+      <>
       <div
-        className="relative overflow-hidden lg:block hidden"
+        className="relative overflow-hidden lg:block hidden gray-bg"
         style={{ height: "90vh" }}
       >
         {/* <Breadcrumbs /> */}
 
         <div
-          style={{ transform: `translate(-${activeIndex * 100}%)` }}
+          style={{ transform: `translate(-${activeIndex * 100.9}%)` }}
           className="transition-transform delay-300 ease-in-out flex"
         >
           {items.map((item, idx) => (
@@ -105,7 +106,7 @@ const MainCarousell = ({ items = [] }: MainCarousellProps) => {
                   bottom: 0,
                 }}
               ></div>
-              {/* <ProgressBar activeIndex={activeIndex} /> */}
+              <ProgressBar activeIndex={activeIndex} />
               <p className="rotate-90 text-white font-semibold uppercase font-xl mb-5">
                 {"Следно"}
               </p>
@@ -119,19 +120,18 @@ const MainCarousell = ({ items = [] }: MainCarousellProps) => {
           </div>
         )}
       </div>
-    );
-  }
-  
-  return (
-    <>
+
       <MobileCarousell
         items={items}
         progress={progress}
         activeIndex={activeIndex}
         updateIndex={updateIndex}
       />
-    </>
-  );
-};
+      </>
+    );
+  }
+  
+  
+
 
 export default MainCarousell;
