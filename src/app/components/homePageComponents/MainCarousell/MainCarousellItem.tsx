@@ -6,6 +6,7 @@ export type MainCarousellItemType = {
   image?: string;
   imageMobile: string | any;
   video?: string;
+  videoPoster?: string;
   title: string;
   desc: string;
   link1?: {
@@ -23,7 +24,7 @@ type MainCarousellItemProps = {
 };
 
 const MainCarousellItem = ({
-  item: { image, video, title, desc, link1, link2, imageMobile },
+  item: { image, video, title, desc, link1, link2, imageMobile, videoPoster },
 }: MainCarousellItemProps) => {
 
   return (
@@ -49,7 +50,7 @@ const MainCarousellItem = ({
               loop
               playsInline
               preload="auto"
-              poster={imageMobile}
+              poster={videoPoster ?? imageMobile}
               style={{
                 height: "auto",
                 minWidth: "92%",

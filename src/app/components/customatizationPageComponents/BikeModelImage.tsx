@@ -16,6 +16,9 @@ const BikeModelImage = ({ bike, modalImage }: BikeModelImageProps) => {
     return (
       <Suspense fallback={<LoadingState />}>
         <Image
+          priority={true}
+          placeholder={'blur'}
+          blurDataURL="/images/triumphLogo.png"
           src={
             bike.bikeCollorPalletteGallery[
               (query.get("color") as string) + "Reversed"
@@ -31,6 +34,9 @@ const BikeModelImage = ({ bike, modalImage }: BikeModelImageProps) => {
     return (
       <Suspense fallback={<LoadingState />}>
         <Image
+          priority={true}
+          placeholder={'blur'}
+          blurDataURL="/images/triumphLogo.png"
           src={
             query.get("color")
               ? bike.bikeCollorPalletteGallery[query.get("color") as string]

@@ -59,7 +59,7 @@ const MainCarousell = ({ items = [] }: MainCarousellProps) => {
         className="relative overflow-hidden lg:block hidden"
         style={{ height: "90vh" }}
       >
-        <Breadcrumbs />
+        {/* <Breadcrumbs /> */}
 
         <div
           style={{ transform: `translate(-${activeIndex * 100}%)` }}
@@ -105,7 +105,7 @@ const MainCarousell = ({ items = [] }: MainCarousellProps) => {
                   bottom: 0,
                 }}
               ></div>
-              <ProgressBar activeIndex={activeIndex} />
+              {/* <ProgressBar activeIndex={activeIndex} /> */}
               <p className="rotate-90 text-white font-semibold uppercase font-xl mb-5">
                 {"Следно"}
               </p>
