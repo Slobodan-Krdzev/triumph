@@ -6,7 +6,7 @@ import LoadingState from "../LoadingState";
 
 type BikeModelImageProps = {
   bike: any;
-  modalImage?: boolean
+  modalImage?: boolean;
 };
 
 const BikeModelImage = ({ bike, modalImage }: BikeModelImageProps) => {
@@ -14,14 +14,12 @@ const BikeModelImage = ({ bike, modalImage }: BikeModelImageProps) => {
 
   if (query.get("color") && query.get("reversed") === "true") {
     return (
-      <Suspense
-        fallback={
-          <LoadingState/>
-        }
-      >
+      <Suspense fallback={<LoadingState />}>
         <Image
           src={
-            bike.bikeCollorPalletteGallery[(query.get("color") as string) + "Reversed"]
+            bike.bikeCollorPalletteGallery[
+              (query.get("color") as string) + "Reversed"
+            ]
           }
           alt={bike?.title ?? "Bike"}
           width={modalImage ? 850 : 1124}
@@ -31,16 +29,18 @@ const BikeModelImage = ({ bike, modalImage }: BikeModelImageProps) => {
     );
   } else {
     return (
-      <Image
-        src={
-          query.get("color")
-            ? bike.bikeCollorPalletteGallery[query.get("color") as string]
-            : bike.bikeCollorPalletteGallery?.color1
-        }
-        alt={bike.title ?? "Triumph Bike"}
-        width={modalImage ? 850 : 1124}
-        height={376}
-      />
+      <Suspense fallback={<LoadingState />}>
+        <Image
+          src={
+            query.get("color")
+              ? bike.bikeCollorPalletteGallery[query.get("color") as string]
+              : bike.bikeCollorPalletteGallery?.color1
+          }
+          alt={bike.title ?? "Triumph Bike"}
+          width={modalImage ? 850 : 1124}
+          height={376}
+        />
+      </Suspense>
     );
   }
 };
