@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import BanerAndCTASection from "./components/BanerAndCTASection";
 import GrayBand from "./components/GrayBand";
 import LoadingState from "./components/LoadingState";
@@ -46,53 +47,55 @@ export default async function Home() {
 
     return (
       <>
-        <MainCarousell items={mainCarousellItems ?? []} />
-        
-        <GrayBand
-          itemOne={{
-            text: "Конфигурации",
-            url: "/configure",
-            icon: "/icon-configurator.svg",
-          }}
-          itemTwo={{
-            text: "Контакт",
-            url: "/dealer",
-            icon: "/pin.svg",
-          }}
-        />
+        <Suspense fallback={<LoadingState />}>
+          <MainCarousell items={mainCarousellItems ?? []} />
 
-        <section className="py-16 text-center">
-          <h1 className="md:text-6xl text-4xl font-semibold mb-12">
-            Добредојдовте
-          </h1>
-          <h2 className="md:text-2xl text-xl uppercase font-semibold tracking-tighter">
-            Каде би сакале да започнете?
-          </h2>
-        </section>
+          <GrayBand
+            itemOne={{
+              text: "Конфигурации",
+              url: "/configure",
+              icon: "/icon-configurator.svg",
+            }}
+            itemTwo={{
+              text: "Контакт",
+              url: "/dealer",
+              icon: "/pin.svg",
+            }}
+          />
 
-        <section className="pb-16 flex flex-col md:flex-row md:px-8 px-4 md:gap-4 w-full md:w-10/12 m-auto">
-          {linkCardsSection?.map((card) => (
-            <CardLinkItem
-              key={card.title}
-              title={card?.title ?? "Triumph"}
-              image={card?.image ?? "/images/triumphLogo.png"}
-              text={card?.text ?? ""}
-              url={card?.url ?? ""}
-            />
-          ))}
-        </section>
+          <section className="py-16 text-center">
+            <h1 className="md:text-6xl text-4xl font-semibold mb-12">
+              Добредојдовте
+            </h1>
+            <h2 className="md:text-2xl text-xl uppercase font-semibold tracking-tighter">
+              Каде би сакале да започнете?
+            </h2>
+          </section>
 
-        <BanerAndCTASection
-          text={"Конфигурирајте го вашиот перфектен мотор"}
-          image={"/images/bigBannerImg.avif"}
-          link={"/configure"}
-          btnText={"Конфигурирај"}
-        />
-        <LatestModelsCarousellSection
-          items={latestCarousellitems ?? []}
-          showTitle={true}
-        />
-        <DiscoverThriumphSection />
+          <section className="pb-16 flex flex-col md:flex-row md:px-8 px-4 md:gap-4 w-full md:w-10/12 m-auto">
+            {linkCardsSection?.map((card) => (
+              <CardLinkItem
+                key={card.title}
+                title={card?.title ?? "Triumph"}
+                image={card?.image ?? "/images/triumphLogo.png"}
+                text={card?.text ?? ""}
+                url={card?.url ?? ""}
+              />
+            ))}
+          </section>
+
+          <BanerAndCTASection
+            text={"Конфигурирајте го вашиот перфектен мотор"}
+            image={"/images/bigBannerImg.avif"}
+            link={"/configure"}
+            btnText={"Конфигурирај"}
+          />
+          <LatestModelsCarousellSection
+            items={latestCarousellitems ?? []}
+            showTitle={true}
+          />
+          <DiscoverThriumphSection />
+        </Suspense>
       </>
     );
   } catch {
