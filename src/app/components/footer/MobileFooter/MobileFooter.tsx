@@ -9,7 +9,7 @@ type MobileFooterProps = {
 const MobileFooter = ({ familyItems }: MobileFooterProps) => {
   return (
     <>
-      <div className="flex flex-col items-start xl:hidden">
+      <div className="flex flex-col items-start lg:hidden">
         <MobileFooterList
           list={{ title: "Мoторцикли", items: createFamilies(familyItems) }}
         />
