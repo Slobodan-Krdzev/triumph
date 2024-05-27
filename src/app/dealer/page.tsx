@@ -37,7 +37,6 @@ const DealerPage = () => {
       <div className="bg-white m-auto w-11/12 lg:w-10/12 xl:w-7/12 rounded-lg flex flex-col justify-between items-start">
         <div className="flex flex-col justify-center items-center w-full h-full basis-1/5 p-5 md:p-10">
           <Image src={logo1} alt={"Logo"} height={100} width={228} />
-          <h1 className="text-4xl font-semibold">Македонија</h1>
         </div>
         <div className="basis-4/5 w-full flex flex-col lg:flex-row justify-between">
           <div className="flex flex-col justify-center items-start basis-1/2 p-4 md:p-20">
@@ -45,20 +44,6 @@ const DealerPage = () => {
             <p className="mb-8 text-lg">
               Св. Кирил и Методиј бр.20, Скопје 1000
             </p>
-
-            <p className="font-semibold text-xl">Телефони за контакт:</p>
-            <ul className="mb-8 text-lg">
-              <li>
-                <a href="tel:+389 2 312 0706" className="underline">
-                  +389 2 312 0706
-                </a>
-              </li>
-              <li>
-                <a href="tel:+389 78 255 535" className="underline">
-                  +389 78 255 535
-                </a>
-              </li>
-            </ul>
 
             <p className="font-semibold text-xl">Email:</p>
             <a
@@ -116,7 +101,7 @@ const DealerPage = () => {
             </div>
           </div>
 
-          <div className="flex flex-col justify-center items-center basis-1/2 py-6 lg:py-0 overflow-hidden">
+          <div className="flex flex-col justify-center items-center basis-1/2 py-6 lg:py-0 overflow-hidden lg:mb-16">
             <Map />
           </div>
         </div>
