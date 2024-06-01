@@ -6,6 +6,7 @@ export type MainCarousellItemType = {
   image?: string;
   imageMobile: string | any;
   video?: string;
+  videoPoster?: string;
   title: string;
   desc: string;
   link1?: {
@@ -23,32 +24,25 @@ type MainCarousellItemProps = {
 };
 
 const MainCarousellItem = ({
-  item: { image, video, title, desc, link1, link2 },
+  item: { image, video, title, desc, link1, link2, imageMobile, videoPoster },
 }: MainCarousellItemProps) => {
-  return (
-    <div
-      className="relative"
-      style={{
-        minWidth: "100%",
-        backgroundColor: '#2a2a2a',
-        backgroundImage: `url('${image ?? "/images/triumphLogo.png"}')`,
-        backgroundPosition: "center center",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        height: "calc(100vh - 64px)",
-      }}
-    >
-      {video && video !== null && (
-        <div className="h-full" style={{ width: "100vw" }}>
+
+  if(video && video !== null){
+
+    return (
+      <div className="h-full relative" style={{ minWidth: "100vw" }}>
           <>
             <video
               className="relative object-fill "
               autoPlay
               muted
               loop
+              playsInline
+              preload="auto"
+              poster={videoPoster ?? imageMobile}
               style={{
                 height: "auto",
-                minWidth: "92%",
+                minWidth: "100%",
                 filter: "brightness(80%)",
               }}
             >
@@ -60,7 +54,7 @@ const MainCarousellItem = ({
             </video>
           </>
 
-          <div className="ml-44 absolute" style={{ top: "15%" }}>
+          <div className="ml-44 absolute" style={{ top: "20%" }}>
             <h2 className="mb-4 uppercase font-bold lg:text-4xl xl:text-7xl text-white w-2/4">
               {title ?? "Triumph"}
             </h2>
@@ -87,10 +81,24 @@ const MainCarousellItem = ({
             </div>
           </div>
         </div>
-      )}
+    )
+  }
 
-      {video === null && (
-        <div className="ml-44 absolute" style={{ top: "15%" }}>
+  return (
+    <div
+      className="relative"
+      style={{
+        minWidth: "100%",
+        backgroundColor: '#2a2a2a',
+        backgroundImage: `url('${image ?? "/images/triumphLogo.png"}')`,
+        backgroundPosition: "center center",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        height: "calc(100vh - 64px)",
+      }}
+    >
+
+        <div className="ml-44 absolute" style={{ top: "20%" }}>
           <h2 className="mb-4 uppercase font-bold lg:text-6xl xl:text-7xl text-white w-2/4">
             {title ?? "Triumph"}
           </h2>
@@ -116,7 +124,6 @@ const MainCarousellItem = ({
             )}
           </div>
         </div>
-      )}
     </div>
   );
 };
