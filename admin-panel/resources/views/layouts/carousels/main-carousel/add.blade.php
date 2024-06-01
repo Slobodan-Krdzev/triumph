@@ -43,12 +43,13 @@
             <x-form.section sectionId="2" prevSectionId="1" nextSectionId="3" :totalSections="2">
                 <h1 class="font-bold text-3xl my-2">Video and Images for Main Carousel</h1>
 
-                <x-form.input labelText="VideoPath:" imageId="video" name="video">
+                <x-form.input labelText="VideoPath:" imageId="video" name="video" imageDesc="images/mainCarousel/image.png">
                     <video id='video' muted controls autoplay width="400" height="150" class="object-cover border m-3 border-gray-200 z-0" />
                 </x-form.input>
 
-                <x-form.input labelText="Video Poster:" imageId="videoPoster" name="videoPoster">
-                    <video id='videoPoster' muted controls autoplay width="400" height="150" class="object-cover border m-3 border-gray-200 z-0" />
+                <x-form.input labelText="Choose videoPoster to upload:" imageId="videoPoster"
+                              name="videoPoster" imageDesc="images/mainCarousel/image.png">
+                    <img id='videoPoster' width="400" height="150" class="object-cover border m-3 border-gray-200" />
                 </x-form.input>
 
                 <x-form.input labelText="Choose image to upload:" imageId="image"

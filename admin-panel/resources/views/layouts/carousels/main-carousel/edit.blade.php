@@ -58,14 +58,15 @@
             <x-form.section-layout sectionId="1">
                 <h1 class="font-bold text-3xl my-2">Video and Images for Main Carousel</h1>
 
-                <x-form.input labelText="Video to edit:" imageId="video" name="video">
+                <x-form.input labelText="Video to edit:" imageId="video" name="video" imageDesc="images/mainCarousel/image.png">
                     <video id='video' src="{{ $mainCarousels->video }}" muted controls autoplay width="400" height="150"
                            class="object-cover border m-3 border-gray-200"/>
                 </x-form.input>
 
-                <x-form.input labelText="VideoPoster to edit:" imageId="videoPoster" name="videoPoster">
-                    <video id='videoPoster' src="{{ $mainCarousels->videoPoster }}" muted controls autoplay width="400" height="150"
-                           class="object-cover border m-3 border-gray-200"/>
+                <x-form.input labelText="Video Poster to edit:" imageId="videoPoster" name="videoPoster"
+                              imageDesc="images/mainCarousel/image.png">
+                    <img id="videoPoster" src="{{ $mainCarousels->videoPoster }}" width="400" height="150"
+                         class="object-cover border m-3 border-gray-200"/>
                 </x-form.input>
 
                 <x-form.input labelText="Profile image to edit:" imageId="image" name="image"
