@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('main_carousell', function (Blueprint $table) {
             $table->id();
             $table->string('video')->nullable();
+            $table->string('videoPoster')->nullable();
             $table->string('image')->nullable();
             $table->string('imageMobile');
             $table->string('title');

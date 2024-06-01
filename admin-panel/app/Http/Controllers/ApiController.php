@@ -14,7 +14,6 @@ class ApiController extends Controller
 {
     public function index()
     {
-        SubFamilyController::updatePricesOnSubfamilies();
         return response()->json([
             'families' => Family::get(),
             'subFamilies' => SubFamily::get(),
@@ -30,8 +29,6 @@ class ApiController extends Controller
         $validatedData = request()->validate([
             'table' => ['regex:/^[a-zA-Z0-9_-]+$/'],
         ]);
-
-        SubFamilyController::updatePricesOnSubfamilies();
 
         switch ($table) {
             case 'subFamilies':

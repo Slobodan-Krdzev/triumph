@@ -63,6 +63,10 @@
                            class="object-cover border m-3 border-gray-200"/>
                 </x-form.input>
 
+                <x-form.input labelText="VideoPoster to edit:" imageId="videoPoster" name="videoPoster">
+                    <video id='videoPoster' src="{{ $mainCarousels->videoPoster }}" muted controls autoplay width="400" height="150"
+                           class="object-cover border m-3 border-gray-200"/>
+                </x-form.input>
 
                 <x-form.input labelText="Profile image to edit:" imageId="image" name="image"
                               imageDesc="images/mainCarousel/image.png">

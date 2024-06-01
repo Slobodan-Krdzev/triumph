@@ -80,6 +80,8 @@ class MotorcycleController extends Controller
 
         Motorcycle::create($data);
 
+        SubFamilyController::updatePricesOnSubfamilies();
+
         return redirect()->route('view-motorcycles')->with('success', 'Motorcycle ' . $validatedData['title'] . ' stored successfully');
     }
 
@@ -163,6 +165,8 @@ class MotorcycleController extends Controller
         }
 
         $motorcycle->update($data);
+
+        SubFamilyController::updatePricesOnSubfamilies();
 
         return redirect()->back()->with('success', 'Motorcycle ' . $motorcycle->title . ' updated successfully');
     }

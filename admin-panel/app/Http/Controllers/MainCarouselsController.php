@@ -32,6 +32,7 @@ class MainCarouselsController extends Controller
             'image' => 'nullable',
             'imageMobile' => 'required|max:2048',
             'video' => 'nullable',
+            'videoPoster' => 'nullable',
         ]);
 
         $carousel = new MainCarousell();
@@ -47,6 +48,8 @@ class MainCarouselsController extends Controller
         $carousel->imageMobile = ImageStorage::storeFile($request, 'imageMobile', 'mainCarousel/',$sanitizedTitle, '/mobileImages');
 
         $carousel->video = ImageStorage::storeFile($request, 'video', 'mainCarousel/',$sanitizedTitle, '/videos');
+
+        $carousel->videoPoster = ImageStorage::storeFile($request, 'videoPoster', 'mainCarousel/',$sanitizedTitle, '/videoPosters');
 
         $carousel->save();
 
@@ -77,6 +80,7 @@ class MainCarouselsController extends Controller
             'image' => 'nullable',
             'imageMobile' => 'nullable',
             'video' => 'nullable',
+            'videoPoster' => 'nullable',
         ]);
 
 
@@ -88,6 +92,8 @@ class MainCarouselsController extends Controller
 
         $validatedData['video'] = ImageStorage::storeOrUpdateFile($request, 'video', 'mainCarousel/', $title, '/videos', $carousel->video ?? '', $carousel->title);
 
+        $validatedData['videoPoster'] = ImageStorage::storeOrUpdateFile($request, 'videoPoster', 'mainCarousel/', $title, '/videoPosters', $carousel->videoPoster ?? '', $carousel->title);
+
 
         if (Str::slug($request->title) != Str::slug($carousel->title)) {
             Storage::disk('public')->makeDirectory('mainCarousel/' . Str::slug($request->title));
@@ -95,6 +101,7 @@ class MainCarouselsController extends Controller
             ImageStorage::placeFileInNewFolder(Str::slug($carousel->title), Str::slug($request->title),'mainCarousel/','/images');
             ImageStorage::placeFileInNewFolder(Str::slug($carousel->title), Str::slug($request->title),'mainCarousel/','/mobileImages');
             ImageStorage::placeFileInNewFolder(Str::slug($carousel->title), Str::slug($request->title),'mainCarousel/','/videos');
+            ImageStorage::placeFileInNewFolder(Str::slug($carousel->title), Str::slug($request->title),'mainCarousel/','/videoPosters');
 
             Storage::disk('public')->deleteDirectory('mainCarousel/' . Str::slug($carousel->title));
         }

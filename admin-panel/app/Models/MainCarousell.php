@@ -13,7 +13,7 @@ class MainCarousell extends Model
 
     protected $table = 'main_carousell';
 
-    protected $fillable = ['video', 'image', 'imageMobile', 'title', 'desc', 'link1', 'link2'];
+    protected $fillable = ['videoPoster', 'video', 'image', 'imageMobile', 'title', 'desc', 'link1', 'link2'];
 
 
     protected $casts = [

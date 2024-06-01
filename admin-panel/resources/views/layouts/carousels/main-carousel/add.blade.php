@@ -47,6 +47,10 @@
                     <video id='video' muted controls autoplay width="400" height="150" class="object-cover border m-3 border-gray-200 z-0" />
                 </x-form.input>
 
+                <x-form.input labelText="Video Poster:" imageId="videoPoster" name="videoPoster">
+                    <video id='videoPoster' muted controls autoplay width="400" height="150" class="object-cover border m-3 border-gray-200 z-0" />
+                </x-form.input>
+
                 <x-form.input labelText="Choose image to upload:" imageId="image"
                               name="image" imageDesc="images/mainCarousel/image.png">
                     <img id='image' width="400" height="150" class="object-cover border m-3 border-gray-200" />
