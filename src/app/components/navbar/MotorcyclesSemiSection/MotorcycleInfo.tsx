@@ -12,7 +12,7 @@ const MotorcycleInfo = ({ bike }: MotorcycleInfoProps) => {
       <h2 className="text-6xl text-light-color font-bold uppercase">
         {bike[0]?.title ?? "Triumph"}
       </h2>
-      {bike[0]?.gallery.modelImage.src && (
+      {bike[0]?.gallery?.modelImage?.src && (
         <p className="text-neutral-500 text-xl font-medium mt-4">
           {bike[0]?.price ? (
             <>
@@ -27,8 +27,8 @@ const MotorcycleInfo = ({ bike }: MotorcycleInfoProps) => {
 
       <div className="flex justify-between items-end">
         <Image
-          src={bike[0]?.gallery.modelImage.src ?? "/images/triumphLogo.png"}
-          alt={bike[0]?.gallery.modelImage.src ?? "Triumph"}
+          src={bike[0]?.gallery?.modelImage?.src ?? "/images/triumphLogo.png"}
+          alt={bike[0]?.gallery?.modelImage?.src ?? "Triumph"}
           width={422}
           height={241}
           className="basis-1/2"

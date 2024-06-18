@@ -20,8 +20,8 @@ const BikeListingNoSlider = ({ bikes = [], configureLink }: BikeListingNoSliderP
                   model={bike.model}
                   link={`/motorcycles/${bike.category}/${bike.subFamilyCategory}/${bike.model}`}
                   image={{
-                    src: bike.gallery.modelImage.src,
-                    alt: bike.title,
+                    src: bike.gallery?.modelImage?.src ?? "",
+                    alt: bike.title ?? "",
                   }}
                   configureLink={configureLink}
                 />

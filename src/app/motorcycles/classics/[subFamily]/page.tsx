@@ -70,8 +70,13 @@ const ClassicsSubFamilyPage = async ({ params }: any) => {
                   link: `/motorcycles/classics/${subFam}/${bike?.model}`,
                 }}
                 image={{
+<<<<<<< HEAD
+                  src: `${bike.subFamilyPromo?.image ?? bike.gallery.modelImage.src}`,
+                  alt: `${bike.gallery.modelImage.alt }`,
+=======
                   src: `${bike?.subFamilyPromo?.image ?? bike?.gallery?.modelImage?.src ?? "/images/triumphLogo.png"}`,
                   alt: `${bike?.gallery?.modelImage?.alt ?? "Triumph Classics"}`,
+>>>>>>> 07b969689c18fbab99e2ccde41273fdafd736d47
                 }}
                 blackBtn={true}
                 imageOnTheLeft={false}

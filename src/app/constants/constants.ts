@@ -1,7 +1,7 @@
-export const BIKES = `${process.env.API_ENDPOINT}/bikes`;
-export const FAMILIES = `${process.env.API_ENDPOINT}/families`;
-export const SUB_FAMILIES = `${process.env.API_ENDPOINT}/subFamilies`;
-export const MAINCAROUSELLITEMS = `${process.env.API_ENDPOINT}/main-carousell-items`
-export const LATESTCAROUSELLITEMS = `${process.env.API_ENDPOINT}/latest-models-carousell-items`
-export const PROMOS = `${process.env.API_ENDPOINT}/promos`
+export const BIKES = `http://206.81.29.247/api/data/motorcycles`;
+export const FAMILIES = `http://206.81.29.247/api/data/families`;
+export const SUB_FAMILIES = `http://206.81.29.247/api/data/subFamilies`;
+export const MAINCAROUSELLITEMS = `http://206.81.29.247/api/data/mainCarousels`
+export const LATESTCAROUSELLITEMS = `http://206.81.29.247/api/data/latestCarousels`
+export const PROMOS = `http://206.81.29.247/api/data/promos`
 

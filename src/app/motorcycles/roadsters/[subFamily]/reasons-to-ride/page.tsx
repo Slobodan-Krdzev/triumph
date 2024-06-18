@@ -76,8 +76,13 @@ const ReasonsRoadstersPage = async ({ params }: any) => {
                 link: `/configure/bike/${bike.model}`,
               }}
               image={{
+<<<<<<< HEAD
+                src: bike.gallery?.modelImage?.src ?? "",
+                alt: bike.gallery?.modelImage?.alt ?? "",
+=======
                 src: bike?.gallery?.modelImage?.src ?? "/images/triumphLogo.png",
                 alt: bike?.gallery?.modelImage?.alt ?? "Triumph",
+>>>>>>> 07b969689c18fbab99e2ccde41273fdafd736d47
               }}
               blackBtn={true}
             />

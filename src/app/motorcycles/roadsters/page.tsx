@@ -60,7 +60,7 @@ const RoadstersPage = async () => {
               }}
               image={{
                 src: `${promo.image ?? "/images/triumphLogo.png"}`,
-                alt: `${promo.title ?? "Triumph"}`,
+                alt: `${promo.title ?? 'Triumph'}`,
               }}
               blackBtn={promo?.btnBlack ?? false}
               imageOnTheLeft={idx % 2 === 0 ? true : false}

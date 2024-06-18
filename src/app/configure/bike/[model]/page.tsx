@@ -53,8 +53,8 @@ const BikeConfigPage = async ({ params }: any) => {
                   Боите кои се на располагање се прикажани долу.
                 </p>
                 <div className="grid grid-rows-2 grid-cols-2 gap-4">
-                  {bike[0].customizationColors?.map((color: any) => (
-                    <ColorCard key={color?.colorName ?? "color1"} color={color} />
+                  {bike[0].customizationColors.map((color: any, idx:number) => (
+                    <ColorCard key={color.colorName} color={color} idx={idx} allColors={bike[0].customizationColors}/>
                   ))}
                 </div>
               </div>
@@ -66,8 +66,10 @@ const BikeConfigPage = async ({ params }: any) => {
         
       </>
     );
-  } catch {
-    return redirect(`/configure/bikes`);
+  } catch(e) {
+    console.log(e);
+    return <>err</>
+    // return redirect(`/configure/bikes`);
   }
 };
 

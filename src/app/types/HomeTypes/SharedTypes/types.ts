@@ -8,7 +8,7 @@ export type PromoDataType = {
   btnBlack: boolean;
 };
 
-export type CustomizationColorType = {
+export type ColorType = {
   colorName: string;
   price: number;
   image: string;

@@ -21,13 +21,13 @@ const ImageActions = ({ bike, modalVersion }: ImageActionsProps) => {
   const colorQuery = useSearchParams().get("color");
 
   const handleReversal = () => {
-    if (colorQuery) {
+    if (colorQuery !== null) {
       router.push(
         `${pathname}?color=${colorQuery}&reversed=${isImageReversed}`,
         { scroll: false }
       );
     } else {
-      router.push(`${pathname}?color=color1&reversed=${isImageReversed}`, {
+      router.push(`${pathname}?color=${bike.customizationColors[0].colorName}&reversed=${isImageReversed}`, {
         scroll: false,
       });
     }

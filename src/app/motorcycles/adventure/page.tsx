@@ -35,9 +35,12 @@ const AdventurePage = async () => {
     const bikes = await bikesRes.json();
 
     const promosRes = await fetch(`${PROMOS}?category=adventure`, {
-      next: { revalidate: 30 },
+      cache: 'no-store',
     });
     const promos = await promosRes.json();
+
+    console.log(familyData, 'FAMILYDATA');
+    
 
     return (
       <main className="relative white-bg">
@@ -47,10 +50,14 @@ const AdventurePage = async () => {
           configLink={"/configure"}
         />
         <PageHeroSection
-          title={familyData[0]?.type ?? ""}
-          mainBikeLogo={familyData[0]?.mainBikeLogoImage ?? ""}
-          desc={familyData[0]?.familyPageBannerDesc ?? ""}
-          video={familyData[0]?.familyPageBannerVideo ?? ""}
+          title={familyData[0].type}
+          mainBikeLogo={familyData[0].mainBikeLogoImage}
+          // mainBikeLogo={{
+          //   url: "http://151.236.243.220:8000///storage///families///adventure///mainBikeLogoImage///mainBikeLogo.png",
+          //   alt: "Balaush"
+          // }}
+          desc={familyData[0].familyPageBannerDesc}
+          video={familyData[0].familyPageBannerVideo}
         />
 
         <section className="p-4 lg:p-28 ">
@@ -102,8 +109,8 @@ const AdventurePage = async () => {
                 link: `/motorcycles/adventure/${promo?.subFamilyType}`,
               }}
               image={{
-                src: `${promo?.image ?? '"/images/triumphLogo.png"'}`,
-                alt: `${promo?.title ?? "Triumph"}`,
+                src: `${promo.image}`,
+                alt: `${promo.title}`,
               }}
               blackBtn={promo?.btnBlack ?? false}
               imageOnTheLeft={idx % 2 === 0 ? true : false}

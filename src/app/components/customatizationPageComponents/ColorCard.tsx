@@ -11,12 +11,15 @@ import Image from "next/image";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
 import { handleBodyScrollWhenMenuIsOpen } from "../helpers/handleBodyScrollWhenMenuOpens";
+import { ColorType } from "./BikeModelImage";
 
 type ColorCardProps = {
   color: any;
+  idx:number;
+  allColors: ColorType[]
 };
 
-const ColorCard = ({ color }: ColorCardProps) => {
+const ColorCard = ({ color, idx }: ColorCardProps) => {
   const router = useRouter();
   const pathname = usePathname();
   const query = useSearchParams().get("color");
@@ -28,14 +31,15 @@ const ColorCard = ({ color }: ColorCardProps) => {
     router.push(`${pathname}?color=${query}&reversed=${rotationQuery}`);
   };
 
+
   return (
     <>
       <div className="md:basis-5/12 basis-1/3 grow sm:grow-0 shadow-lg">
         <button
-          onClick={() => handleColorChange(color.colorCode)}
+          onClick={() => handleColorChange(color.colorName)}
           className="w-full h-28 relative block"
           style={{
-            backgroundImage: `url('${color.image}')`,
+            backgroundImage: `url('${color.image ?? ''}')`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
@@ -44,7 +48,8 @@ const ColorCard = ({ color }: ColorCardProps) => {
         >
           <p className="absolute -top-1 right-0 p-1">
             <FontAwesomeIcon
-              icon={(query === null ? "color1" : query) === color.colorCode ? faCheck : faPlus}
+              icon={query === null && idx === 0 ? faCheck : (query === color.colorName ? faCheck : faPlus)}
+
               color="white"
               className="hover:text-white transition-colors ease-in-out delay-100"
             />
@@ -55,10 +60,10 @@ const ColorCard = ({ color }: ColorCardProps) => {
           style={{ height: 76 }}
         >
           <h3 className="md:text-sm text-xs font-semibold uppercase basis-1/2">
-            {color.colorName}
+            {color.colorName ?? "Color"}
           </h3>
           <p className="text-xs text-gray-600 basis-1/2">
-            {color.price ? `€${color.price}.00` : `Вклучено во Цената`}
+            {color.price ? `€${color.price}` : `Вклучено во Цената`}
           </p>
           <button
             className="absolute bottom-1 right-2"
