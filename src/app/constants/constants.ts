@@ -1,7 +1,7 @@
-export const BIKES = `https://triumph-admin-mk.com/api/data/motorcycles`;
-export const FAMILIES = `https://triumph-admin-mk.com/api/data/families`;
-export const SUB_FAMILIES = `https://triumph-admin-mk.com/api/data/subFamilies`;
-export const MAINCAROUSELLITEMS = `https://triumph-admin-mk.com/api/data/mainCarousels`
-export const LATESTCAROUSELLITEMS = `https://triumph-admin-mk.com/api/data/latestCarousels`
-export const PROMOS = `https://triumph-admin-mk.com/api/data/promos`
+export const BIKES = `${process.env.API_ENDPOINT}motorcycles`;
+export const FAMILIES = `${process.env.API_ENDPOINT}families`;
+export const SUB_FAMILIES = `${process.env.API_ENDPOINT}subFamilies`;
+export const MAINCAROUSELLITEMS = `${process.env.API_ENDPOINT}mainCarousels`
+export const LATESTCAROUSELLITEMS = `${process.env.API_ENDPOINT}latestCarousels`
+export const PROMOS = `${process.env.API_ENDPOINT}promos`
 
