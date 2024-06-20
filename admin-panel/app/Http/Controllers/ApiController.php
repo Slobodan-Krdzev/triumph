@@ -9,18 +9,37 @@ use App\Models\Motorcycle;
 use App\Models\Promo;
 use App\Models\SubFamily;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Schema;
 
 class ApiController extends Controller
 {
+    private function decodeHtmlEntities($data)
+    {
+        array_walk_recursive($data, function (&$value) {
+            if (is_string($value)) {
+                $value = htmlspecialchars_decode($value, ENT_QUOTES | ENT_HTML5);
+            }
+        });
+
+        return $data;
+    }
+
     public function index()
     {
+        $families = $this->decodeHtmlEntities(Family::get());
+        $subFamilies = $this->decodeHtmlEntities(SubFamily::get());
+        $motorcycles = $this->decodeHtmlEntities(Motorcycle::get());
+        $mainCarousels = $this->decodeHtmlEntities(MainCarousell::get());
+        $latestCarousels = $this->decodeHtmlEntities(LatestCarousell::get());
+        $promos = $this->decodeHtmlEntities(Promo::get());
+
         return response()->json([
-            'families' => Family::get(),
-            'subFamilies' => SubFamily::get(),
-            'motorcycles' => Motorcycle::get(),
-            'mainCarousels' => MainCarousell::get(),
-            'latestCarousels' => LatestCarousell::get(),
-            'promos' => Promo::get()
+            'families' => $families,
+            'subFamilies' => $subFamilies,
+            'motorcycles' => $motorcycles,
+            'mainCarousels' => $mainCarousels,
+            'latestCarousels' => $latestCarousels,
+            'promos' => $promos,
         ]);
     }
 
@@ -42,7 +61,11 @@ class ApiController extends Controller
                 break;
         }
 
-        $query = DB::table($table)->whereNull('deleted_at');
+        $query = DB::table($table);
+
+        if (Schema::hasColumn($table, 'deleted_at')){
+            $query = DB::table($table)->whereNull('deleted_at');
+        }
 
         foreach (request()->except(['table', 'page']) as $key => $value) {
             $query->where($key, $value);
@@ -57,6 +80,6 @@ class ApiController extends Controller
             return $item;
         });
 
-        return response()->json($results);
+        return response()->json($this->decodeHtmlEntities($results));
     }
 }
