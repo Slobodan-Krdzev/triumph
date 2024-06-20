@@ -44,6 +44,6 @@ export default async function RootLayout({
   } catch (e) {
     console.error(e);
 
-    return <>Err</>;
+    return <><h1>Error</h1></>;
   }
 }
