@@ -1,7 +1,7 @@
-export const BIKES = `https://quark-oxidized-dogsled.glitch.me/motorcycles`;
-export const FAMILIES = `https://quark-oxidized-dogsled.glitch.me/families`;
-export const SUB_FAMILIES = `https://quark-oxidized-dogsled.glitch.me/subFamilies`;
-export const MAINCAROUSELLITEMS = `https://quark-oxidized-dogsled.glitch.me/mainCarousels`
-export const LATESTCAROUSELLITEMS = `https://quark-oxidized-dogsled.glitch.me/latestCarousels`
-export const PROMOS = `https://quark-oxidized-dogsled.glitch.me/promos`
+export const BIKES = `https://triumph-admin-mk.com/api/data/motorcycles`;
+export const FAMILIES = `https://triumph-admin-mk.com/api/data/families`;
+export const SUB_FAMILIES = `https://triumph-admin-mk.com/api/data/subFamilies`;
+export const MAINCAROUSELLITEMS = `https://triumph-admin-mk.com/api/data/mainCarousels`
+export const LATESTCAROUSELLITEMS = `https://triumph-admin-mk.com/api/data/latestCarousels`
+export const PROMOS = `https://triumph-admin-mk.com/api/data/promos`
 
