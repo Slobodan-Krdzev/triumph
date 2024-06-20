@@ -25,11 +25,11 @@ const AccessoryItemWrapper = ({
         </ul>
       </div>
       <div className="flex flex-col lg:flex-row justify-center gap-4">
-        {image1 && (
-          <Image src={image1.src} alt={image1.alt} width={image2 ? 739 : 1410 } height={image2 ? 462 : 793} />
+        {image1?.alt !== null && (
+          <Image src={image1?.src ?? ""} alt={image1?.alt ?? ""} width={image2 ? 739 : 1410 } height={image2 ? 462 : 793} />
         )}
-        {image2 && (
-          <Image src={image2.src} alt={image2.alt} width={739} height={462} />
+        {image2?.alt !== null && (
+          <Image src={image2?.src ?? ""} alt={image2?.alt ?? ""} width={739} height={462} />
         )}
       </div>
     </div>

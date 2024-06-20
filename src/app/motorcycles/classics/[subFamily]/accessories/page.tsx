@@ -21,8 +21,6 @@ const ClassicsAccesoriesPage = async ({ params }: any) => {
     });
     const bikesData = await bikesRes.json();
 
-    console.log(subFamily, subFam);
-
     return (
       <>
         <SecondaryPagesHeroSection
