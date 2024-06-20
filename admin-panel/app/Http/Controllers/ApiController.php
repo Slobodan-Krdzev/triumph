@@ -42,7 +42,7 @@ class ApiController extends Controller
                 break;
         }
 
-        $query = DB::table($table);
+        $query = DB::table($table)->whereNull('deleted_at');
 
         foreach (request()->except(['table', 'page']) as $key => $value) {
             $query->where($key, $value);
