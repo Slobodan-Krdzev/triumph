@@ -34,10 +34,10 @@ const ClassicPage = async () => {
 
     return (
       <>
-        <PageHeroSection
+        {/* <PageHeroSection
           title={`${familyData[0]?.type ?? "Classics"}`}
           video={familyData[0]?.familyPageBannerVideo ?? ""}
-        />
+        /> */}
 
         <main className="bg-white">
           {/* <section className="pt-16 lg:pt-32">
@@ -121,7 +121,7 @@ const ClassicPage = async () => {
             ))}
           </section> */}
 
-          <section className="m-auto w-11/12 md:w-10/12">
+          {/* <section className="m-auto w-11/12 md:w-10/12">
             {promos.map((promo: PromoDataType, idx: number) => (
               <BikeInfoTextImageBtn
                 key={promo?.title ?? idx}
@@ -139,7 +139,7 @@ const ClassicPage = async () => {
                 imageOnTheLeft={idx % 2 === 0 ? true : false}
               />
             ))}
-          </section>
+          </section> */}
 
           {/* <section className="lg:py-16 lg:px-8 flex flex-col ">
             <div className="text-center">
@@ -165,9 +165,10 @@ const ClassicPage = async () => {
             <BikeListingNoSlider bikes={getBikesByEdition("chrome", bikes)} />
           </section> */}
 
-          {familyData[0]?.grayCaro && (
+          {/* {familyData[0]?.grayCaro && (
             <BottomCarousell items={familyData[0]?.grayCaro ?? []} />
-          )}
+          )} */}
+          <h1>Classics</h1>
         </main>
       </>
     );
