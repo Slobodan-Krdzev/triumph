@@ -14,33 +14,34 @@ import { redirect } from "next/navigation";
 import { getBikesByCC } from "./helpers/getBikesByCC";
 import BikesCarousell900 from "@/app/components/classicsPageComp/BikesCarousell900";
 
-const ClassicPage = () => {
-  // try {
-    // const familyRes = await fetch(`${FAMILIES}?type=classics`, {
-    //   next: { revalidate: 30 },
-    // });
-    // const familyData = await familyRes.json();
+const ClassicPage = async () => {
+  try {
+    const familyRes = await fetch(`${FAMILIES}?type=classics`, {
+      next: { revalidate: 30 },
+    });
+    const familyData = await familyRes.json();
 
-    // const bikesRes = await fetch(`${SUB_FAMILIES}?familyType=classics`, {
-    //   cache: "no-store",
-    // });
-    // const bikes = await bikesRes.json();
+    const bikesRes = await fetch(`${SUB_FAMILIES}?familyType=classics`, {
+      cache: "no-store",
+    });
+    const bikes = await bikesRes.json();
 
-    // const promosRes = await fetch(`${PROMOS}?category=classics`, {
-    //   next: { revalidate: 30 },
-    // });
-    // const promos = await promosRes.json();
+    const promosRes = await fetch(`${PROMOS}?category=classics`, {
+      next: { revalidate: 30 },
+    });
+    const promos = await promosRes.json();
 
-{/*
+    console.log(getBikesByCC(900, bikes));
+
     return (
       <>
-         <PageHeroSection
+        <PageHeroSection
           title={`${familyData[0]?.type ?? "Classics"}`}
           video={familyData[0]?.familyPageBannerVideo ?? ""}
-        /> 
+        />
 
         <main className="bg-white">
-           <section className="pt-16 lg:pt-32">
+          <section className="pt-16 lg:pt-32">
             <div className="flex flex-col justify-items-center items-center lg:w-2/4 w-11/12 m-auto text-center">
               <SectionTitleH2 text="400cc engine" color="dark" />
               <PageParagraph
@@ -51,6 +52,7 @@ const ClassicPage = () => {
           </section>
 
           <section className="m-auto w-11/12 md:w-9/12">
+            {/* type treba da e subFamily */}
             {getBikesByCC(400, bikes).map((bike: any) => (
               <BikeInfoTextImageBtn
                 key={bike.id}
@@ -119,9 +121,9 @@ const ClassicPage = () => {
                 btnText={"Детали"}
               />
             ))}
-          </section> */}
+          </section>
 
-          {/* <section className="m-auto w-11/12 md:w-10/12">
+          <section className="m-auto w-11/12 md:w-10/12">
             {promos.map((promo: PromoDataType, idx: number) => (
               <BikeInfoTextImageBtn
                 key={promo?.title ?? idx}
@@ -139,7 +141,7 @@ const ClassicPage = () => {
                 imageOnTheLeft={idx % 2 === 0 ? true : false}
               />
             ))}
-          </section> */}
+          </section>
 
           {/* <section className="lg:py-16 lg:px-8 flex flex-col ">
             <div className="text-center">
@@ -165,18 +167,15 @@ const ClassicPage = () => {
             <BikeListingNoSlider bikes={getBikesByEdition("chrome", bikes)} />
           </section> */}
 
-          {/* {familyData[0]?.grayCaro && (
+          {familyData[0]?.grayCaro && (
             <BottomCarousell items={familyData[0]?.grayCaro ?? []} />
-          )} 
-          <h1>Classics</h1>
+          )}
         </main>
       </>
     );
   } catch (err) {
     return redirect("/configure");
-  }*/}
-
-  return <>Classics Page</>
+  }
 };
 
 export default ClassicPage;
