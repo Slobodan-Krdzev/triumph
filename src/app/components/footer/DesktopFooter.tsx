@@ -7,11 +7,12 @@ type DesktopFooterProps = {
 };
 
 const DesktopFooter = ({ familyItems }: DesktopFooterProps) => {
+  
   return (
     <>
       <div className="lg:flex hidden">
         <FooterList
-          title={"Моторцикли"}
+          title={"Моторцикли "}
           items={createFamilies(familyItems) ?? []}
         />
 
