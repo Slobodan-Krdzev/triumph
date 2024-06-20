@@ -15,7 +15,7 @@ import { getBikesByCC } from "./helpers/getBikesByCC";
 import BikesCarousell900 from "@/app/components/classicsPageComp/BikesCarousell900";
 
 const ClassicPage = async () => {
-  try {
+  // try {
     // const familyRes = await fetch(`${FAMILIES}?type=classics`, {
     //   next: { revalidate: 30 },
     // });
@@ -31,16 +31,16 @@ const ClassicPage = async () => {
     // });
     // const promos = await promosRes.json();
 
-
+{/*
     return (
       <>
-        {/* <PageHeroSection
+         <PageHeroSection
           title={`${familyData[0]?.type ?? "Classics"}`}
           video={familyData[0]?.familyPageBannerVideo ?? ""}
-        /> */}
+        /> 
 
         <main className="bg-white">
-          {/* <section className="pt-16 lg:pt-32">
+           <section className="pt-16 lg:pt-32">
             <div className="flex flex-col justify-items-center items-center lg:w-2/4 w-11/12 m-auto text-center">
               <SectionTitleH2 text="400cc engine" color="dark" />
               <PageParagraph
@@ -167,14 +167,16 @@ const ClassicPage = async () => {
 
           {/* {familyData[0]?.grayCaro && (
             <BottomCarousell items={familyData[0]?.grayCaro ?? []} />
-          )} */}
+          )} 
           <h1>Classics</h1>
         </main>
       </>
     );
   } catch (err) {
     return redirect("/configure");
-  }
+  }*/}
+
+  return <>Classics Page</>
 };
 
 export default ClassicPage;
