@@ -16,20 +16,20 @@ import BikesCarousell900 from "@/app/components/classicsPageComp/BikesCarousell9
 
 const ClassicPage = async () => {
   try {
-    const familyRes = await fetch(`${FAMILIES}?type=classics`, {
-      next: { revalidate: 30 },
-    });
-    const familyData = await familyRes.json();
+    // const familyRes = await fetch(`${FAMILIES}?type=classics`, {
+    //   next: { revalidate: 30 },
+    // });
+    // const familyData = await familyRes.json();
 
-    const bikesRes = await fetch(`${SUB_FAMILIES}?familyType=classics`, {
-      cache: "no-store",
-    });
-    const bikes = await bikesRes.json();
+    // const bikesRes = await fetch(`${SUB_FAMILIES}?familyType=classics`, {
+    //   cache: "no-store",
+    // });
+    // const bikes = await bikesRes.json();
 
-    const promosRes = await fetch(`${PROMOS}?category=classics`, {
-      next: { revalidate: 30 },
-    });
-    const promos = await promosRes.json();
+    // const promosRes = await fetch(`${PROMOS}?category=classics`, {
+    //   next: { revalidate: 30 },
+    // });
+    // const promos = await promosRes.json();
 
 
     return (
