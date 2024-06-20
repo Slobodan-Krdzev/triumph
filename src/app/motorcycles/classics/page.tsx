@@ -31,7 +31,6 @@ const ClassicPage = async () => {
     });
     const promos = await promosRes.json();
 
-    console.log(getBikesByCC(900, bikes));
 
     return (
       <>
@@ -41,7 +40,7 @@ const ClassicPage = async () => {
         />
 
         <main className="bg-white">
-          <section className="pt-16 lg:pt-32">
+          {/* <section className="pt-16 lg:pt-32">
             <div className="flex flex-col justify-items-center items-center lg:w-2/4 w-11/12 m-auto text-center">
               <SectionTitleH2 text="400cc engine" color="dark" />
               <PageParagraph
@@ -52,7 +51,6 @@ const ClassicPage = async () => {
           </section>
 
           <section className="m-auto w-11/12 md:w-9/12">
-            {/* type treba da e subFamily */}
             {getBikesByCC(400, bikes).map((bike: any) => (
               <BikeInfoTextImageBtn
                 key={bike.id}
@@ -121,7 +119,7 @@ const ClassicPage = async () => {
                 btnText={"Детали"}
               />
             ))}
-          </section>
+          </section> */}
 
           <section className="m-auto w-11/12 md:w-10/12">
             {promos.map((promo: PromoDataType, idx: number) => (
