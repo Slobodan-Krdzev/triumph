@@ -12,7 +12,7 @@ const DesktopFooter = ({ familyItems }: DesktopFooterProps) => {
     <>
       <div className="lg:flex hidden">
         <FooterList
-          title={"Моторцикли "}
+          title={"Моторцикли"}
           items={createFamilies(familyItems) ?? []}
         />
 

@@ -54,7 +54,7 @@ const SpecTableListi = ({
               <p className="capitalize py-4 slight-white-bg md:text-md text-sm w-4/12 md:basis-3/12 px-2 md:px-4 flex justify-start items-center text-neutral-600">
                 {item.title}
               </p>
-              <p className="capitalize border-thin-left py-4 font-medium md:text-lg text-sm w-8/12 md:basis-9/12 px-2 md:px-4 flex justify-start items-center">
+              <p className="border-thin-left py-4 font-medium md:text-lg text-sm w-8/12 md:basis-9/12 px-2 md:px-4 flex justify-start items-center">
                 {item.desc}
               </p>
             </li>
