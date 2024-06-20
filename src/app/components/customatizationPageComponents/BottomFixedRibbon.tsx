@@ -103,7 +103,7 @@ const BottomFixedRibbon = ({ info }: BottomFixedRibbonProps) => {
   const handlePriceChange = (startingPrice: number) => {
     if (colorQuery !== null) {
 
-      const finalPrice = startingPrice + colorPrice
+      const finalPrice = startingPrice + +colorPrice
 
       return finalPrice.toLocaleString('en-EN')
     }
