@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\LatestCarousell;
 use App\Models\MainCarousell;
+use App\Service\DecodeHtmlEntities;
 use App\Service\ImageStorage;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\Request;
@@ -43,6 +44,7 @@ class LatestCarouselController extends Controller
 
         $carousel->image = ImageStorage::storeFile($request, 'image', 'latestCarousel/',$sanitizedTitle, '/images');
 
+        DecodeHtmlEntities::decodeHtmlEntities($carousel);
 
         $carousel->save();
 
@@ -79,6 +81,8 @@ class LatestCarouselController extends Controller
 
             Storage::disk('public')->deleteDirectory('latestCarousel/' . Str::slug($carousel->title));
         }
+
+        DecodeHtmlEntities::decodeHtmlEntities($carousel);
 
         $carousel->update($validatedData);
 

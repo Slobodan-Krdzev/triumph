@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Family;
 use App\Models\Promo;
 use App\Models\SubFamily;
+use App\Service\DecodeHtmlEntities;
 use App\Service\ImageStorage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -73,6 +74,8 @@ class FamiliesController extends Controller
 
             Storage::disk('public')->deleteDirectory('families/' . Str::slug($family->type));
         }
+
+        $data = DecodeHtmlEntities::decodeHtmlEntities($data);
 
         $family->update($data);
 

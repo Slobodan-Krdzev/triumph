@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Family;
 use App\Models\Promo;
 use App\Models\SubFamily;
+use App\Service\DecodeHtmlEntities;
 use App\Service\ImageStorage;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\Request;
@@ -41,6 +42,7 @@ class PromoController extends Controller
 
         $promo->image = ImageStorage::storeFile($request, 'image', 'promos/' . $sanitizedCategory . '/', $sanitizedTitle);
 
+        DecodeHtmlEntities::decodeHtmlEntities($promo);
 
         $promo->save();
 
@@ -90,6 +92,8 @@ class PromoController extends Controller
 
             Storage::disk('public')->deleteDirectory('promos/' . $sanitizedCategory . '/' . Str::slug($promo->title));
         }
+
+        $data = DecodeHtmlEntities::decodeHtmlEntities($data);
 
         $promo->update($data);
 

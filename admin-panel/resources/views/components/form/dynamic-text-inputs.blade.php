@@ -80,7 +80,7 @@
                                    @php
                                        $dataValue = $dataLabel1 !== 'item Text' && $dataLabel1 !== 'slogan' && $dataId1 !== 'info-desc' ? $databaseData[$i][$dataLabel1] : $databaseData[$i];
                                    @endphp
-                                   value="{{ old($dataName . '.' . $i . ($dataLabel1 !== 'item Text' && $dataLabel1 !== 'slogan' && $dataId1 !== 'info-desc' ? '.' . $dataLabel1 : ''), $dataValue) }}">
+                                   value="{{ htmlspecialchars_decode(old($dataName . '.' . $i . ($dataLabel1 !== 'item Text' && $dataLabel1 !== 'slogan' && $dataId1 !== 'info-desc' ? '.' . $dataLabel1 : ''), $dataValue), ENT_QUOTES | ENT_HTML5) }}">
                             <div class="cursor-pointer">
                                 <x-form.modal id="{{ $dataId1 }}_{{ $i }}" name="{{ ucfirst($dataLabel1) }} {{ $i+1 }}"
                                               imagePath="{{ $imageDesc1 }}"/>
@@ -103,7 +103,7 @@
                                    name="{{ $dataName }}[{{ $i }}][{{ $dataLabel2 }}]"
                                    class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
                                    placeholder="Enter {{ ucfirst($dataLabel2) }}"
-                                   value="{{ old($dataName . '.' .  $i . '.' .$dataLabel2, $databaseData[$i][$dataLabel2] ?? '') }}">
+                                   value="{{ htmlspecialchars_decode(old($dataName . '.' .  $i . '.' .$dataLabel2, $databaseData[$i][$dataLabel2] ?? ''), ENT_QUOTES | ENT_HTML5) }}">
                             <div class="cursor-pointer">
                                 <x-form.modal id="{{ $dataId2 }}_{{ $i }}" name="{{ ucfirst($dataLabel2) }} {{ $i+1 }}"
                                               imagePath="{{ $imageDesc2 }}"/>

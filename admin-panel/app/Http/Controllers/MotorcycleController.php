@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Family;
 use App\Models\Motorcycle;
 use App\Models\SubFamily;
+use App\Service\DecodeHtmlEntities;
 use App\Service\ImageStorage;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Support\Facades\Storage;
@@ -77,6 +78,8 @@ class MotorcycleController extends Controller
                 $data['bikePagePromo'][$key]['image'] = ImageStorage::storeFile($request, 'bikePagePromo.' . $key . '.image', 'motorcycles/', $title, '/bikePagePromo');
             }
         }
+
+        $data = DecodeHtmlEntities::decodeHtmlEntities($data);
 
         Motorcycle::create($data);
 
@@ -163,6 +166,8 @@ class MotorcycleController extends Controller
 
             Storage::disk('public')->deleteDirectory('motorcycles/' . Str::slug($motorcycle->title));
         }
+
+        $data = DecodeHtmlEntities::decodeHtmlEntities($data);
 
         $motorcycle->update($data);
 

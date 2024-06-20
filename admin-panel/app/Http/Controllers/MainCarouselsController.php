@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\MainCarousell;
+use App\Service\DecodeHtmlEntities;
 use App\Service\ImageStorage;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\Request;
@@ -50,6 +51,8 @@ class MainCarouselsController extends Controller
         $carousel->video = ImageStorage::storeFile($request, 'video', 'mainCarousel/',$sanitizedTitle, '/videos');
 
         $carousel->videoPoster = ImageStorage::storeFile($request, 'videoPoster', 'mainCarousel/',$sanitizedTitle, '/videoPosters');
+
+        DecodeHtmlEntities::decodeHtmlEntities($carousel);
 
         $carousel->save();
 
@@ -105,6 +108,8 @@ class MainCarouselsController extends Controller
 
             Storage::disk('public')->deleteDirectory('mainCarousel/' . Str::slug($carousel->title));
         }
+
+        DecodeHtmlEntities::decodeHtmlEntities($carousel);
 
         $carousel->update($validatedData);
 

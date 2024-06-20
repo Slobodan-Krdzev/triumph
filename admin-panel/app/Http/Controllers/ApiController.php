@@ -8,30 +8,22 @@ use App\Models\MainCarousell;
 use App\Models\Motorcycle;
 use App\Models\Promo;
 use App\Models\SubFamily;
+use App\Service\DecodeHtmlEntities;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
 class ApiController extends Controller
 {
-    private function decodeHtmlEntities($data)
-    {
-        array_walk_recursive($data, function (&$value) {
-            if (is_string($value)) {
-                $value = htmlspecialchars_decode($value, ENT_QUOTES | ENT_HTML5);
-            }
-        });
 
-        return $data;
-    }
 
     public function index()
     {
-        $families = $this->decodeHtmlEntities(Family::get());
-        $subFamilies = $this->decodeHtmlEntities(SubFamily::get());
-        $motorcycles = $this->decodeHtmlEntities(Motorcycle::get());
-        $mainCarousels = $this->decodeHtmlEntities(MainCarousell::get());
-        $latestCarousels = $this->decodeHtmlEntities(LatestCarousell::get());
-        $promos = $this->decodeHtmlEntities(Promo::get());
+        $families = DecodeHtmlEntities::decodeHtmlEntities(Family::get());
+        $subFamilies = DecodeHtmlEntities::decodeHtmlEntities(SubFamily::get());
+        $motorcycles = DecodeHtmlEntities::decodeHtmlEntities(Motorcycle::get());
+        $mainCarousels = DecodeHtmlEntities::decodeHtmlEntities(MainCarousell::get());
+        $latestCarousels = DecodeHtmlEntities::decodeHtmlEntities(LatestCarousell::get());
+        $promos = DecodeHtmlEntities::decodeHtmlEntities(Promo::get());
 
         return response()->json([
             'families' => $families,
@@ -80,6 +72,6 @@ class ApiController extends Controller
             return $item;
         });
 
-        return response()->json($this->decodeHtmlEntities($results));
+        return response()->json(DecodeHtmlEntities::decodeHtmlEntities($results));
     }
 }

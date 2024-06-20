@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Family;
 use App\Models\Motorcycle;
 use App\Models\SubFamily;
+use App\Service\DecodeHtmlEntities;
 use App\Service\ImageStorage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -64,6 +65,7 @@ class SubFamilyController extends Controller
 
         $data['gallery']['subFamilyHeroVideo']['src'] = ImageStorage::storeFile($request, 'gallery.subFamilyHeroVideo.src', 'subFamilies/', $title, '/galleryVideo');
 
+        $data = DecodeHtmlEntities::decodeHtmlEntities($data);
 
         SubFamily::create($data);
 
@@ -156,6 +158,8 @@ class SubFamilyController extends Controller
 
             Storage::disk('public')->deleteDirectory('subFamilies/' . Str::slug($subFamAdventure->subFamilyName));
         }
+
+        $data = DecodeHtmlEntities::decodeHtmlEntities($data);
 
         $subFamAdventure->update($data);
 

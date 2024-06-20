@@ -7,7 +7,7 @@
            name="{{ $dataName }}"
            class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
            placeholder="Enter {{ $placeholder }}"
-           value="{{ old($oldValue, $dataValue) }}">
+           value="{{ htmlspecialchars_decode(old($oldValue, $dataValue), ENT_QUOTES | ENT_HTML5) }}">
     <div>
         <x-form.modal id="{{ $forId }}" name="{{ $placeholder }}" imagePath="{{ $imageDesc }}"/>
     </div>
