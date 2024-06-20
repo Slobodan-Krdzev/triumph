@@ -14,7 +14,7 @@ import { redirect } from "next/navigation";
 import { getBikesByCC } from "./helpers/getBikesByCC";
 import BikesCarousell900 from "@/app/components/classicsPageComp/BikesCarousell900";
 
-const ClassicPage = async () => {
+const ClassicPage = () => {
   // try {
     // const familyRes = await fetch(`${FAMILIES}?type=classics`, {
     //   next: { revalidate: 30 },
