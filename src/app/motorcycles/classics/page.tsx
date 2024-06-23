@@ -71,7 +71,7 @@ const ClassicPage = async () => {
 
         <section className="pt-16 lg:pt-32">
           <div className="flex flex-col justify-items-center items-center lg:w-2/4 w-11/12 m-auto text-center">
-            <SectionTitleH2 text="900cc engine" color="dark" />
+            <SectionTitleH2 text="900 cc engine" color="dark" />
             <PageParagraph
               marginBot={true}
               text='"Modern Classic 900 cc" серијата на Triumph обезбедува возбудливи перформанси и управување што инспирира самодоверба.'
