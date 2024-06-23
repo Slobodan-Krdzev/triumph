@@ -35,13 +35,12 @@ const AdventurePage = async () => {
     const bikes = await bikesRes.json();
 
     const promosRes = await fetch(`${PROMOS}?category=adventure`, {
-      cache: 'no-store',
+      cache: "no-store",
     });
     const promos = await promosRes.json();
 
-
     return (
-      <main className="relative white-bg">
+      <section className="relative white-bg">
         <SecondaryNavFamily
           items={createSubFamLinksForSecondary(subFamilies)}
           title={"Adventure"}
@@ -124,10 +123,10 @@ const AdventurePage = async () => {
             icon: "/bike.svg",
           }}
         />
-      </main>
+      </section>
     );
   } catch (e) {
-    return redirect("/configure");
+    redirect("/configure")
   }
 };
 

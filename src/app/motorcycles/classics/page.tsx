@@ -18,7 +18,7 @@ const ClassicPage = async () => {
   const familyRes = await fetch(`${FAMILIES}?type=classics`, {
     next: { revalidate: 30 },
   });
-  const familyData = await familyRes.json();
+  const familyData = await familyRes?.json();
 
   // const bikesRes = await fetch(`${SUB_FAMILIES}?familyType=classics`, {
   //   cache: "no-store",
@@ -28,7 +28,7 @@ const ClassicPage = async () => {
   const promosRes = await fetch(`${PROMOS}?category=classics`, {
     next: { revalidate: 30 },
   });
-  const promos = await promosRes.json();
+  const promos = await promosRes?.json();
 
   return (
     <>
@@ -123,7 +123,7 @@ const ClassicPage = async () => {
         </section> */}
 
         <section className="m-auto w-11/12 md:w-10/12">
-          {promos.map((promo: PromoDataType, idx: number) => (
+          {promos?.map((promo: PromoDataType, idx: number) => (
             <BikeInfoTextImageBtn
               key={promo?.title ?? idx}
               title={promo?.title ?? "Triumph"}
