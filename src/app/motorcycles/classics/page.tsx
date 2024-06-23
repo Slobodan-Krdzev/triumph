@@ -20,10 +20,10 @@ const ClassicPage = async () => {
   });
   const familyData = await familyRes.json();
 
-  const bikesRes = await fetch(`${SUB_FAMILIES}?familyType=classics`, {
-    cache: "no-store",
-  });
-  const bikes = await bikesRes.json();
+  // const bikesRes = await fetch(`${SUB_FAMILIES}?familyType=classics`, {
+  //   cache: "no-store",
+  // });
+  // const bikes = await bikesRes.json();
 
   const promosRes = await fetch(`${PROMOS}?category=classics`, {
     next: { revalidate: 30 },
@@ -48,8 +48,7 @@ const ClassicPage = async () => {
           </div>
         </section>
 
-        <section className="m-auto w-11/12 md:w-9/12">
-          {/* type treba da e subFamily */}
+        {/* <section className="m-auto w-11/12 md:w-9/12">
           {getBikesByCC(400, bikes).map((bike: any) => (
             <BikeInfoTextImageBtn
               key={bike.id}
@@ -67,7 +66,7 @@ const ClassicPage = async () => {
               blackBtn={true}
             />
           ))}
-        </section>
+        </section> */}
 
         <section className="pt-16 lg:pt-32">
           <div className="flex flex-col justify-items-center items-center lg:w-2/4 w-11/12 m-auto text-center">
@@ -79,7 +78,7 @@ const ClassicPage = async () => {
           </div>
         </section>
 
-        <section className="flex flex-col xl:flex-row md:px-8 px-4 md:gap-4">
+        {/* <section className="flex flex-col xl:flex-row md:px-8 px-4 md:gap-4">
           {getBikesByCC(900, bikes).length > 3 ? (
             <BikesCarousell900 bikes={getBikesByCC(900, bikes)} />
           ) : (
@@ -98,7 +97,7 @@ const ClassicPage = async () => {
               ))}
             </>
           )}
-        </section>
+        </section> */}
 
         <section className="pt-16 lg:pt-32">
           <div className="flex flex-col justify-items-center items-center lg:w-2/4 w-11/12 m-auto text-center">
@@ -110,7 +109,7 @@ const ClassicPage = async () => {
           </div>
         </section>
 
-        <section className="flex flex-wrap px-8">
+        {/* <section className="flex flex-wrap px-8">
           {getBikesByCC(1200, bikes).map((bike: any) => (
             <DiscoverThriumphCard
               key={bike.bikeId}
@@ -121,7 +120,7 @@ const ClassicPage = async () => {
               btnText={"Детали"}
             />
           ))}
-        </section>
+        </section> */}
 
         <section className="m-auto w-11/12 md:w-10/12">
           {promos.map((promo: PromoDataType, idx: number) => (
