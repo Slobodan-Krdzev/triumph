@@ -20,7 +20,7 @@ import { redirect } from "next/navigation";
 const AdventurePage = async () => {
   try {
     const familyRes = await fetch(`${FAMILIES}?type=adventure`, {
-      next: { revalidate: 30 },
+      next: { revalidate: 3000 },
     });
 
     if (!familyRes.ok) {
@@ -30,7 +30,7 @@ const AdventurePage = async () => {
     const familyData = await familyRes.json();
 
     const subFamiliesRes = await fetch(`${SUB_FAMILIES}?familyType=adventure`, {
-      next: { revalidate: 30 },
+      next: { revalidate: 3000 },
     });
 
     if (!subFamiliesRes.ok) {
@@ -40,7 +40,7 @@ const AdventurePage = async () => {
     const subFamilies = await subFamiliesRes.json();
 
     const bikesRes = await fetch(`${BIKES}?category=adventure`, {
-      cache: "no-store",
+      next: {revalidate: 300}
     });
 
     if (!bikesRes.ok) {
@@ -49,7 +49,7 @@ const AdventurePage = async () => {
     const bikes = await bikesRes.json();
 
     const promosRes = await fetch(`${PROMOS}?category=adventure`, {
-      cache: "no-store",
+      next: {revalidate: 300}
     });
 
     if (!promosRes.ok) {
