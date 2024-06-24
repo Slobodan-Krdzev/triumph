@@ -22,21 +22,39 @@ const AdventurePage = async () => {
     const familyRes = await fetch(`${FAMILIES}?type=adventure`, {
       next: { revalidate: 30 },
     });
+
+    if (!familyRes.ok) {
+      throw new Error(`Failed to fetch: ${familyRes.statusText}`);
+    }
+
     const familyData = await familyRes.json();
 
     const subFamiliesRes = await fetch(`${SUB_FAMILIES}?familyType=adventure`, {
       next: { revalidate: 30 },
     });
+
+    if (!subFamiliesRes.ok) {
+      throw new Error(`Failed to fetch: ${subFamiliesRes.statusText}`);
+    }
+
     const subFamilies = await subFamiliesRes.json();
 
     const bikesRes = await fetch(`${BIKES}?category=adventure`, {
       cache: "no-store",
     });
+
+    if (!bikesRes.ok) {
+      throw new Error(`Failed to fetch: ${bikesRes.statusText}`);
+    }
     const bikes = await bikesRes.json();
 
     const promosRes = await fetch(`${PROMOS}?category=adventure`, {
       cache: "no-store",
     });
+
+    if (!promosRes.ok) {
+      throw new Error(`Failed to fetch: ${promosRes.statusText}`);
+    }
     const promos = await promosRes.json();
 
     return (
@@ -126,7 +144,10 @@ const AdventurePage = async () => {
       </section>
     );
   } catch (e) {
-    redirect("/configure")
+    // redirect("/configure");
+    console.log(e);
+    
+    return <>Some Error Ocured During Fetch</>
   }
 };
 

@@ -17,7 +17,7 @@ const ConfigurePage = async () => {
     });
     const subFamilies = await subFamiliesRes.json();
 
-    getSufamiliesByFamilyType("adventure", subFamilies);
+    // getSufamiliesByFamilyType("adventure", subFamilies);
 
     return (
       <>
