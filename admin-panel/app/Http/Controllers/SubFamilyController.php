@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Family;
 use App\Models\Motorcycle;
 use App\Models\SubFamily;
+use App\Service\ArrayObjectCheck;
 use App\Service\DecodeHtmlEntities;
 use App\Service\ImageStorage;
 use Illuminate\Http\Request;
@@ -66,6 +67,8 @@ class SubFamilyController extends Controller
         $data['gallery']['subFamilyHeroVideo']['src'] = ImageStorage::storeFile($request, 'gallery.subFamilyHeroVideo.src', 'subFamilies/', $title, '/galleryVideo');
 
         $data = DecodeHtmlEntities::decodeHtmlEntities($data);
+
+        $data = ArrayObjectCheck::processItem($data);
 
         SubFamily::create($data);
 
@@ -161,8 +164,9 @@ class SubFamilyController extends Controller
 
         $data = DecodeHtmlEntities::decodeHtmlEntities($data);
 
-        $subFamAdventure->update($data);
+        $data = ArrayObjectCheck::processItem($data);
 
+        $subFamAdventure->update($data);
 
         return redirect()->back()->with('success', 'Sub-Family ' . $data['subFamilyName'] . ' updated successfully.');
     }

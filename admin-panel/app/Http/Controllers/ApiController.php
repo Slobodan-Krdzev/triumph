@@ -15,7 +15,6 @@ use Illuminate\Support\Facades\Schema;
 class ApiController extends Controller
 {
 
-
     public function index()
     {
         $families = DecodeHtmlEntities::decodeHtmlEntities(Family::get());

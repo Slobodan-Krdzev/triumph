@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Family;
 use App\Models\Motorcycle;
 use App\Models\SubFamily;
+use App\Service\ArrayObjectCheck;
 use App\Service\DecodeHtmlEntities;
 use App\Service\ImageStorage;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
@@ -42,18 +43,6 @@ class MotorcycleController extends Controller
 
         $data['gallery']['promoYoutubeVideo']['src'] = ImageStorage::storeFile($request, 'gallery.promoYoutubeVideo.src', 'motorcycles/', $title, '/promoYoutubeVideo');
 
-//        $data['bikeCollorPalletteGallery']['default'] = ImageStorage::storeFile($request, 'bikeCollorPalletteGallery.default', 'motorcycles/', $title, '/bikeCollorPalletteGallery');
-
-//        if ($request->has('bikeCollorPalletteGallery.colors')) {
-//            foreach ($request->bikeCollorPalletteGallery['colors'] as $i => $color) {
-//                $data['bikeCollorPalletteGallery']['colors'][$i]['base'] = ImageStorage::storeFile($request, 'bikeCollorPalletteGallery.colors.' . $i . '.base', 'motorcycles/', $title, '/bikeCollorPalletteGallery');
-//                $data['bikeCollorPalletteGallery']['colors'][$i]['reversed'] = ImageStorage::storeFile($request, 'bikeCollorPalletteGallery.colors.' . $i . '.reversed', 'motorcycles/', $title, '/bikeCollorPalletteGallery');
-//            }
-//        }
-
-        $data['customizationColors']['default'] = ImageStorage::storeFile($request, 'customizationColors.default', 'motorcycles/', $title, '/customizationColors');
-
-
         if ($request->has('customizationColors')) {
             foreach ($request->input('customizationColors') as $i => $customizationColor) {
                 $data['customizationColors'][$i]['image'] = ImageStorage::storeFile($request, 'customizationColors.' . $i . '.image', 'motorcycles/', $title, '/customizationColors');
@@ -80,6 +69,8 @@ class MotorcycleController extends Controller
         }
 
         $data = DecodeHtmlEntities::decodeHtmlEntities($data);
+
+        $data = ArrayObjectCheck::processItem($data);
 
         Motorcycle::create($data);
 
@@ -112,8 +103,6 @@ class MotorcycleController extends Controller
         $data['gallery']['modelImage']['src'] = ImageStorage::storeOrUpdateFile($request, 'gallery.modelImage.src', 'motorcycles/', $title, '/modelImage', $motorcycle['gallery']['modelImage']['src'] ?? '', $motorcycle->title);
 
         $data['gallery']['promoYoutubeVideo']['src'] = ImageStorage::storeOrUpdateFile($request, 'gallery.promoYoutubeVideo.src', 'motorcycles/', $title, '/promoYoutubeVideo', $motorcycle['gallery']['promoYoutubeVideo']['src'] ?? '', $motorcycle->title);
-
-        $data['customizationColors']['default'] = ImageStorage::storeOrUpdateFile($request, 'customizationColors.default', 'motorcycles/', $title, '/customizationColors', $motorcycle['customizationColors']['default'] ?? '', $motorcycle->title);
 
         if (isset($request['customizationColors'])) {
             $customizationColors = array_values($request->input('customizationColors'));
@@ -168,6 +157,8 @@ class MotorcycleController extends Controller
         }
 
         $data = DecodeHtmlEntities::decodeHtmlEntities($data);
+
+        $data = ArrayObjectCheck::processItem($data);
 
         $motorcycle->update($data);
 

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\MainCarousell;
+use App\Service\ArrayObjectCheck;
 use App\Service\DecodeHtmlEntities;
 use App\Service\ImageStorage;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
@@ -26,8 +27,8 @@ class MainCarouselsController extends Controller
         $request->validate([
             'title' => 'required|string|max:255|unique:main_carousell,title,',
             'desc' => 'required|string',
-            'link1.url' => 'nullable|string',
-            'link1.text' => 'nullable|string',
+            'link1.url' => 'required|string',
+            'link1.text' => 'required|string',
             'link2.url' => 'nullable|string',
             'link2.text' => 'nullable|string',
             'image' => 'nullable',
@@ -54,7 +55,11 @@ class MainCarouselsController extends Controller
 
         DecodeHtmlEntities::decodeHtmlEntities($carousel);
 
-        $carousel->save();
+        $carouselArray = $carousel->toArray();
+
+        $carouselArray = ArrayObjectCheck::processItem($carouselArray);
+
+       MainCarousell::create($carouselArray);
 
         return redirect()->route('view-carousels')->with('success', 'Main Carousel Item ' . $carousel->title . ' stored successfully.');
     }
@@ -110,6 +115,8 @@ class MainCarouselsController extends Controller
         }
 
         DecodeHtmlEntities::decodeHtmlEntities($carousel);
+
+        $validatedData = ArrayObjectCheck::processItem($validatedData);
 
         $carousel->update($validatedData);
 

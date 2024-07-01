@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Family;
 use App\Models\Promo;
 use App\Models\SubFamily;
+use App\Service\ArrayObjectCheck;
 use App\Service\DecodeHtmlEntities;
 use App\Service\ImageStorage;
 use Illuminate\Http\Request;
@@ -76,6 +77,8 @@ class FamiliesController extends Controller
         }
 
         $data = DecodeHtmlEntities::decodeHtmlEntities($data);
+
+        $data = ArrayObjectCheck::processItem($data);
 
         $family->update($data);
 
