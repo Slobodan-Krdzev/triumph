@@ -21,14 +21,14 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  try {
+  
     const familiesRes = await fetch(`${FAMILIES}`, {
-      next: { revalidate: 30 },
+      next: { revalidate: 3000 },
     });
     const families = await familiesRes.json();
 
     const subFamiliesRes = await fetch(`${SUB_FAMILIES}`, {
-      next: { revalidate: 10 },
+      next: { revalidate: 1000 },
     });
     const subFamilies = await subFamiliesRes.json();
 
@@ -41,9 +41,5 @@ export default async function RootLayout({
         </body>
       </html>
     );
-  } catch (e) {
-    console.error(e);
-
-    return <><h1>Error</h1></>;
-  }
+  
 }

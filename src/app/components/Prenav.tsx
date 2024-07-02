@@ -13,8 +13,7 @@ function Prenav() {
   const colorQuery = useSearchParams().get("color");
   const reversQuery = useSearchParams().get("reversed");
 
-  console.log(Boolean(colorQuery), Boolean(reversQuery));
-  
+
   const handleSectionClose = () => router.push(`${pathname}${Boolean(colorQuery) ? `?color=${colorQuery}` : ""}${Boolean(reversQuery) ? `&reversed=${reversQuery}` : ''}`, { scroll: false });
 
   const handleLocationSection = () => {
