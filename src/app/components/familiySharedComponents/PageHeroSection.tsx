@@ -19,7 +19,6 @@ const PageHeroSection = ({
   video,
   image,
 }: PageHeroSectionProps) => {
-  console.log(mainBikeLogo, "URL OF PIC NAJNOVO");
 
   return (
     <section className="bg-neutral-800 flex flex-col lg:flex-row justify-between lg:pl-8 relative">

@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    reactStrictMode: true,
     images: {
         domains: ["placekitten.com", "http://151.236.240.176", "http://151.236.243.220", "www.google.com", "triumph-admin-mk.com" ,"undefined", "151.236.240.176", "151.236.243.220", "127.0.0.1", "206.81.29.247", "http://206.81.29.247"]}
 }
