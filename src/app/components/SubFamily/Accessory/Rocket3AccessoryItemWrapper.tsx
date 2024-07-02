@@ -19,7 +19,7 @@ const Rocket3AccessoryItemWrapper = ({
 
           <p className="font-normal md:text-lg text-md">{desc}</p>
           <ul className="mt-4 md:mt-8 list-disc marker:text-red-600 marker:text-2xl list-inside">
-            {itemsList.length && itemsList?.map((item) => (
+            {itemsList && itemsList?.map((item) => (
               <li key={item} className="text-sm md:text-lg">
                 {item}
               </li>
