@@ -44,17 +44,6 @@ export default async function RootLayout({
   } catch (e) {
     console.error(e);
 
-    return (
-      <html lang="en">
-        <body className={inter.className}>
-          <Navbar families={[]} subFamilies={[]} />
-          <main>
-            <h1>Error loading content</h1>
-            <p>Please try again later.</p>
-          </main>
-          <Footer families={[]} />
-        </body>
-      </html>
-    );
+    return <><h1>Error</h1></>;
   }
 }
