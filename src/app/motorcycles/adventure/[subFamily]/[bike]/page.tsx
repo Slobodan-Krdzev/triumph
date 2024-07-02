@@ -25,9 +25,9 @@ const BikePage = async ({ params }: any) => {
   const subFamQuery = params.subFamily;
 
   try {
-    const bikeRes = await fetch(`${BIKES}?model=${params.bike}`, {
-      cache: "no-store",
-    });
+    const bikeRes = await fetch(`${BIKES}?model=${params.bike}`, 
+      {next: {revalidate: 2000}}
+    );
     const bikeData = await bikeRes.json();
     const bike = bikeData[0];
 

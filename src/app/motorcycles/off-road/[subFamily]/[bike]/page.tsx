@@ -29,7 +29,7 @@ const OffRoadBikePage = async ({ params }: any) => {
 
   try {
     const bikeRes = await fetch(`${BIKES}?model=${params.bike}`, {
-      cache: "no-store",
+      next: {revalidate: 2000}
     });
     const bikeData = await bikeRes.json();
     const bike = bikeData[0];

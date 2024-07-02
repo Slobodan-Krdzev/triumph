@@ -66,7 +66,7 @@ const AdventurePage = async () => {
         />
         <PageHeroSection
           title={familyData[0].type}
-          mainBikeLogo={familyData[0].mainBikeLogoImage}
+          mainBikeLogo={{url: '/images/adventure/mainBikeLogo.png', alt:'Tiger Logo'}}
           desc={familyData[0].familyPageBannerDesc}
           video={familyData[0].familyPageBannerVideo}
         />

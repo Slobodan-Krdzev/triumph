@@ -11,7 +11,7 @@ import { redirect } from "next/navigation";
 const BikeConfigPage = async ({ params }: any) => {
   try {
     const bikeRes = await fetch(`${BIKES}?model=${params.model}`, {
-      cache: "no-store",
+      next:{revalidate: 1000}
     });
     const bike = await bikeRes.json();
 

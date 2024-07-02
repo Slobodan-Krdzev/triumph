@@ -11,7 +11,7 @@ const ConfigTypeOfFamPage = async ({ params }: any) => {
   try {
     const bikesRes = await fetch(
       `${BIKES}?subFamilyCategory=${params.typeOfSubFamily}`,
-      {cache: 'no-store'}
+      {next: {revalidate: 2000}}
     );
     const bikes = await bikesRes.json();
   
