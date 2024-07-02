@@ -37,7 +37,7 @@ const ClassicPage = async () => {
         video={familyData[0]?.familyPageBannerVideo ?? ""}
       />
 
-      <main className="bg-white">
+      <section className="bg-white">
         <section className="pt-16 lg:pt-32">
           <div className="flex flex-col justify-items-center items-center lg:w-2/4 w-11/12 m-auto text-center">
             <SectionTitleH2 text="400cc engine" color="dark" />
@@ -169,7 +169,7 @@ const ClassicPage = async () => {
         {familyData[0]?.grayCaro && (
           <BottomCarousell items={familyData[0]?.grayCaro ?? []} />
         )}
-      </main>
+      </section>
     </>
   );
 };

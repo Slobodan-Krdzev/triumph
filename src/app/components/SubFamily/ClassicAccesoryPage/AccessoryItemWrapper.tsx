@@ -26,7 +26,7 @@ const AccessoryItemWrapper = ({
           </ul>
         )}
       </div>
-      {image1?.alt !== null && (
+      {image1 && (
         <div className="flex flex-col lg:flex-row justify-center gap-4">
           {image1?.alt !== null && (
             <Image
@@ -37,7 +37,7 @@ const AccessoryItemWrapper = ({
               loading="lazy"
             />
           )}
-          {image2?.alt !== null && (
+          {image2 && (
             <Image
               src={image2?.src ?? ""}
               alt={image2?.alt ?? ""}

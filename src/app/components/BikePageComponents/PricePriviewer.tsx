@@ -23,13 +23,9 @@ const PricePriviewer = ({ bike }: PricePreviewerProps) => {
       bike.customizationColors.find((color:ColorType) => color.colorName === priceQuery)
     : bike.customizationColors[0]
 
-    // const chosenColor = bike.customizationColors.find(
-    //   (color: CustomatizationColorType) =>
-    //     color.colorName === (priceQuery ?? "color1")
-    // );
-
+    
     if (chosenColor.price !== null) {
-      return startingPrice + chosenColor.price;
+      return startingPrice + +chosenColor.price;
     }
 
     return startingPrice;
