@@ -16,7 +16,7 @@ const AccessoryItemWrapper = ({
         <SectionTitleH2 text={title} color={"dark"} />
 
         <p className="font-normal md:text-lg text-md">{desc}</p>
-        {itemsList[0] !== null && (
+        {itemsList && (
           <ul className="mt-4 md:mt-8 list-disc marker:text-red-600 marker:text-2xl list-inside">
             {itemsList.map((item) => (
               <li key={item} className="text-xl">
