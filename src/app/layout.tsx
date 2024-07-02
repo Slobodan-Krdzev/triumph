@@ -21,7 +21,7 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  
+  try {
     const familiesRes = await fetch(`${FAMILIES}`, {
       next: { revalidate: 3000 },
     });
@@ -41,5 +41,9 @@ export default async function RootLayout({
         </body>
       </html>
     );
-  
+  } catch (e) {
+    console.error(e);
+
+    return <><h1>Error</h1></>;
+  }
 }

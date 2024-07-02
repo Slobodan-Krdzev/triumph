@@ -8,7 +8,11 @@ type NavbarProps = {
 
 const Navbar = ({ families, subFamilies }: NavbarProps) => {
   if (families.length === 0 || subFamilies.length === 0) {
-    return <>LOADING</>;
+    return (
+      <header className={`fixed top-0 left-0 right-0 `} style={{ zIndex: 9999 }}>
+        <div>LOADING</div>
+      </header>
+    );
   }
 
   return (

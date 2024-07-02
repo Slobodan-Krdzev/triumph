@@ -67,7 +67,13 @@ const Footer = ({ families }: FooterProps) => {
       </footer>
     );
   } else {
-    return "Loading";
+    return (
+      <footer className="md:px-0 border-thin-gray md:pt-8 mt-8 md:mt-0 w-full md:w-10/12 m-auto">
+        <div className="px-4 py-4">
+          Loading...
+        </div>
+      </footer>
+    );
   }
 };
 
